@@ -50,7 +50,7 @@ Each section ends with a **section review** that mixes its 6 units.
 <!-- counts:start -->
 | Section | Core words |
 |---|---|
-| 1 | 136 |
+| 1 | 137 |
 | 2 | 125 |
 | 3 | 118 |
 | 4 | 104 |
@@ -88,7 +88,7 @@ Each section ends with a **section review** that mixes its 6 units.
   in *Ni Ane naiz*.
 
 <!-- vocab:1.1:start -->
-**Vocabulary (25 words)**
+**Vocabulary (27 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -117,6 +117,8 @@ Each section ends with a **section review** that mixes its 6 units.
 | zer | qué | pron. |  |
 | zein | cuál | pron. |  |
 | nola | cómo | adv. |  |
+| zer moduz | qué tal | phrase |  |
+| eta | y | conj. |  |
 <!-- vocab:1.1:end -->
 
 #### Unit 1.2 · Nor zara?
@@ -129,7 +131,7 @@ Each section ends with a **section review** that mixes its 6 units.
   read out phone numbers.
 
 <!-- vocab:1.2:start -->
-**Vocabulary (22 words)**
+**Vocabulary (21 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -154,7 +156,6 @@ Each section ends with a **section review** that mixes its 6 units.
 | zenbaki | número | noun |  |
 | helbide | dirección | noun |  |
 | nongo | de dónde (origen) | adv. |  |
-| eta | y | conj. |  |
 
 **Closed set (not counted towards the limit):** zero (cero), bat (uno), bi (dos), hiru (tres), lau (cuatro), bost (cinco), sei (seis), zazpi (siete), zortzi (ocho), bederatzi (nueve), hamar (diez)
 <!-- vocab:1.2:end -->

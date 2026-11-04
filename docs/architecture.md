@@ -10,7 +10,7 @@
 :feature:leaderboard       Locally simulated leagues
 :feature:shop              Gem shop
 :core:designsystem         Material 3 theme, components and previews (see design-system.md)
-:core:data                 Repositories, Room, DataStore, content assets
+:core:data                 Repositories, Room, DataStore, bundled course content (assets/)
 :core:domain               Use cases and repository interfaces (pure Kotlin)
 :core:model                Domain model (pure Kotlin)
 ```
@@ -30,6 +30,8 @@ Dependency rules:
 - **UDF / MVVM**: each screen has a `ViewModel` exposing an immutable `StateFlow<UiState>` and
   receiving actions (`onAction(Action)`). One-off events (navigation, snackbars) go through a
   `Channel` exposed as a `Flow`.
+- **Content as data**: course JSON in `core:data` assets, decoded into the `core:model` content
+  model and served by `CourseRepository` (see `docs/content-guide.md`).
 - **Use cases** in `core:domain` (`operator fun invoke`), injected with Hilt.
 - **Offline-first**: the source of truth is local (Room and DataStore). `SyncRepository` is the
   seam for a future backend; today `OfflineSyncRepository` returns `SyncResult.Disabled`.
@@ -64,7 +66,7 @@ Dependency rules:
 
 | Workflow | Trigger | What it does |
 |---|---|---|
-| `ci.yml` | PRs and pushes to `main` | Syllabus check, detekt, Lint, unit tests, debug build, APK artifact |
+| `ci.yml` | PRs and pushes to `main` | Syllabus check, content validator and its tests, detekt, Lint, unit tests, debug build, APK artifact |
 | `ui-tests.yml` | Manual and nightly | Roborazzi (verify, or record and open a PR) and instrumented tests on an emulator |
 | `release.yml` | `v*` tag | Signed AAB and APK, GitHub Release with generated changelog |
 | `pr-title.yml` | PRs | Conventional Commits title |
