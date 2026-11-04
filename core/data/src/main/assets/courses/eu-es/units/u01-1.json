@@ -1,0 +1,580 @@
+{
+  "schemaVersion": 1,
+  "id": "u01-1",
+  "section": "s1",
+  "bookUnit": 1,
+  "title": {
+    "es": "¡Hola!",
+    "eu": "Kaixo!"
+  },
+  "goals": [
+    {
+      "es": "Saludar y despedirse según el momento del día.",
+      "eu": "Eguneko unearen arabera agurtu."
+    },
+    {
+      "es": "Usar fórmulas de cortesía: dar las gracias, pedir perdón y felicitar.",
+      "eu": "Adeitasun-formulak erabili: eskerrak eman, barkamena eskatu eta zoriondu."
+    },
+    {
+      "es": "Decir tu nombre y preguntar el de otra persona.",
+      "eu": "Zure izena esan eta besteena galdetu."
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Saludar según la hora",
+          "eu": "Orduaren arabera agurtu"
+        },
+        "body": {
+          "es": "«Egun on» se dice por la mañana, «arratsalde on» por la tarde y «gabon» por la noche, también para despedirse. «Kaixo» sirve a cualquier hora.",
+          "eu": "Goizean «egun on» esaten da, arratsaldean «arratsalde on» eta gauean «gabon», agur esateko ere bai. «Kaixo» edozein ordutan erabil daiteke."
+        },
+        "examples": [
+          {
+            "eu": "Egun on, Mikel!",
+            "es": "¡Buenos días, Mikel!"
+          },
+          {
+            "eu": "Gabon!",
+            "es": "¡Buenas noches!"
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Presentarse: ni … naiz",
+          "eu": "Aurkeztu: ni … naiz"
+        },
+        "body": {
+          "es": "Para decir quién eres: «Ni» + nombre + «naiz». Para preguntar a otra persona: «Nor zara?». El verbo va al final de la frase.",
+          "eu": "Nor zaren esateko: «Ni» + izena + «naiz». Besteari galdetzeko: «Nor zara?». Aditza esaldiaren amaieran doa."
+        },
+        "examples": [
+          {
+            "eu": "Ni Jon naiz.",
+            "es": "Soy Jon."
+          },
+          {
+            "eu": "Nor zara?",
+            "es": "¿Quién eres?"
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Cortesía",
+          "eu": "Adeitasuna"
+        },
+        "body": {
+          "es": "A «eskerrik asko» se responde con «ez horregatik». «Barkatu» sirve para pedir perdón y para llamar la atención de alguien.",
+          "eu": "«Eskerrik asko» esaten digutenean, «ez horregatik» erantzuten dugu. «Barkatu» barkamena eskatzeko eta norbaiten arreta erakartzeko erabiltzen da."
+        },
+        "examples": [
+          {
+            "eu": "Eskerrik asko!",
+            "es": "¡Muchas gracias!"
+          },
+          {
+            "eu": "Ez horregatik.",
+            "es": "De nada."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "type": "lesson",
+      "id": "u01-1.l1",
+      "title": {
+        "es": "Saludos",
+        "eu": "Agurrak"
+      },
+      "lessons": [
+        {
+          "id": "u01-1.l1.s1",
+          "exercises": [
+            {
+              "id": "u01-1.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kaixo! Ni Ane naiz."
+              },
+              "answers": [
+                "¡Hola! Soy Ane.",
+                "¡Hola! Yo soy Ane.",
+                "Hola, soy Ane."
+              ],
+              "distractors": [
+                "eres",
+                "adiós",
+                "tú"
+              ],
+              "vocabulary": [
+                "kaixo",
+                "ni",
+                "izan"
+              ],
+              "structures": [
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Buenos días, ¿qué tal?"
+              },
+              "answers": [
+                "Egun on, zer moduz?"
+              ],
+              "distractors": [
+                "gabon",
+                "agur"
+              ],
+              "vocabulary": [
+                "egun on",
+                "zer moduz"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e03",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Muchas gracias."
+              },
+              "answers": [
+                "Eskerrik asko."
+              ],
+              "vocabulary": [
+                "eskerrik asko"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e04",
+              "type": "choose_image",
+              "prompt": "buenas noches",
+              "options": [
+                {
+                  "text": "egun on",
+                  "image": "greeting_morning.webp"
+                },
+                {
+                  "text": "arratsalde on",
+                  "image": "greeting_afternoon.webp"
+                },
+                {
+                  "text": "gabon",
+                  "image": "greeting_night.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "gabon",
+                "egun on",
+                "arratsalde on"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e05",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "kaixo",
+                  "es": "hola"
+                },
+                {
+                  "eu": "agur",
+                  "es": "adiós"
+                },
+                {
+                  "eu": "mesedez",
+                  "es": "por favor"
+                },
+                {
+                  "eu": "barkatu",
+                  "es": "perdón"
+                },
+                {
+                  "eu": "zorionak",
+                  "es": "felicidades"
+                }
+              ],
+              "vocabulary": [
+                "kaixo",
+                "agur",
+                "mesedez",
+                "barkatu",
+                "zorionak"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e06",
+              "type": "listen_tap",
+              "text": "Gero arte, Jon!",
+              "distractors": [
+                "gabon",
+                "agur"
+              ],
+              "vocabulary": [
+                "gero arte"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e07",
+              "type": "listen_type",
+              "text": "Eskerrik asko!",
+              "answers": [
+                "Eskerrik asko"
+              ],
+              "vocabulary": [
+                "eskerrik asko"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e08",
+              "type": "fill_blank",
+              "sentence": "Ni Ane ___.",
+              "options": [
+                "naiz",
+                "zara"
+              ],
+              "correct": 0,
+              "translation": "Yo soy Ane.",
+              "vocabulary": [
+                "ni",
+                "izan"
+              ],
+              "structures": [
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e09",
+              "type": "choose_meaning",
+              "text": "Barkatu!",
+              "options": [
+                "¡Perdón!",
+                "¡Gracias!",
+                "¡De nada!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "barkatu"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e10",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Mikel",
+                  "text": "Kaixo! Ni Mikel naiz. Eta zu?"
+                }
+              ],
+              "options": [
+                "Ni Itziar naiz.",
+                "Ez horregatik.",
+                "Gabon, Mikel."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "ni",
+                "zu",
+                "eta",
+                "izan"
+              ],
+              "structures": [
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e11",
+              "type": "read_true_false",
+              "passage": "Egun on! Ni Jon naiz. Zorionak, Ane!",
+              "statement": "Jon felicita a Ane.",
+              "answer": true,
+              "vocabulary": [
+                "egun on",
+                "zorionak",
+                "izan"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e12",
+              "type": "order_sentence",
+              "answer": "Zu Mikel zara?",
+              "translation": "¿Tú eres Mikel?",
+              "vocabulary": [
+                "zu",
+                "izan"
+              ],
+              "structures": [
+                "izan-present",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e13",
+              "type": "speak",
+              "text": "Egun on, Ane!",
+              "translation": "¡Buenos días, Ane!",
+              "vocabulary": [
+                "egun on"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "lesson",
+      "id": "u01-1.l2",
+      "title": {
+        "es": "¿Quién eres?",
+        "eu": "Nor zara?"
+      },
+      "lessons": [
+        {
+          "id": "u01-1.l2.s1",
+          "exercises": [
+            {
+              "id": "u01-1.l2.s1.e01",
+              "type": "choose_meaning",
+              "text": "Nor zara?",
+              "options": [
+                "¿Quién eres?",
+                "¿Cómo estás?",
+                "¿Qué es?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nor",
+                "zu",
+                "izan"
+              ],
+              "structures": [
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Muy bien, gracias."
+              },
+              "answers": [
+                "Oso ondo, eskerrik asko."
+              ],
+              "distractors": [
+                "mesedez",
+                "ez"
+              ],
+              "vocabulary": [
+                "oso",
+                "ondo",
+                "eskerrik asko"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s1.e03",
+              "type": "fill_blank",
+              "sentence": "Zu Iker ___?",
+              "options": [
+                "naiz",
+                "zara"
+              ],
+              "correct": 1,
+              "translation": "¿Tú eres Iker?",
+              "vocabulary": [
+                "zu",
+                "izan"
+              ],
+              "structures": [
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s1.e04",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Maialen",
+                  "text": "Eskerrik asko!"
+                }
+              ],
+              "options": [
+                "Ez horregatik.",
+                "Zorionak!",
+                "Bihar arte."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "eskerrik asko",
+                "ez horregatik"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s1.e05",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bai, ni Jon naiz."
+              },
+              "answers": [
+                "Sí, soy Jon.",
+                "Sí, yo soy Jon."
+              ],
+              "vocabulary": [
+                "bai",
+                "ni",
+                "izan"
+              ],
+              "structures": [
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s1.e06",
+              "type": "listen_tap",
+              "text": "Arratsalde on, Itziar!",
+              "distractors": [
+                "gabon",
+                "zu"
+              ],
+              "vocabulary": [
+                "arratsalde on"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "u01-1.l3",
+      "title": {
+        "es": "Historia: el primer día",
+        "eu": "Istorioa: lehen eguna"
+      },
+      "story": {
+        "id": "u01-1.l3.story",
+        "title": "Lehen eguna",
+        "lines": [
+          {
+            "speaker": "Ane",
+            "eu": "Egun on!",
+            "es": "¡Buenos días!"
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Kaixo! Zer moduz?",
+            "es": "¡Hola! ¿Qué tal?"
+          },
+          {
+            "speaker": "Ane",
+            "eu": "Oso ondo, eskerrik asko. Ni Ane naiz. Eta zu?",
+            "es": "Muy bien, gracias. Soy Ane. ¿Y tú?"
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Ni Iker naiz.",
+            "es": "Yo soy Iker."
+          },
+          {
+            "speaker": "Ane",
+            "eu": "Agur, Iker! Bihar arte!",
+            "es": "¡Adiós, Iker! ¡Hasta mañana!"
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Gero arte!",
+            "es": "¡Hasta luego!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 2,
+            "prompt": "¿Cómo está Ane?",
+            "options": [
+              "Muy bien",
+              "Regular",
+              "No lo dice"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 5,
+            "prompt": "¿Cuándo volverán a verse, según Ane?",
+            "options": [
+              "Mañana",
+              "Esta noche",
+              "No lo dice"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "type": "review",
+      "id": "u01-1.l4",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "type": "legendary",
+      "id": "u01-1.l5",
+      "title": {
+        "es": "Nivel legendario",
+        "eu": "Maila legendarioa"
+      }
+    }
+  ]
+}

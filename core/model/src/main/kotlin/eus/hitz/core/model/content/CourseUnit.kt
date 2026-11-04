@@ -1,0 +1,84 @@
+package eus.hitz.core.model.content
+
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+/** A unit of the path (`courses/<id>/units/<unitId>.json`), with its guidebook and levels. */
+@Serializable
+data class CourseUnit(
+    val schemaVersion: Int,
+    val id: String,
+    val section: String,
+    /** Unit of the reference textbook this unit is based on (1–12). */
+    val bookUnit: Int,
+    val title: LocalizedText,
+    val goals: List<LocalizedText>,
+    val guidebook: Guidebook,
+    val levels: List<Level>,
+)
+
+/** Short grammar and usage notes shown before or during the unit. */
+@Serializable
+data class Guidebook(
+    val sections: List<GuidebookSection>,
+)
+
+@Serializable
+data class GuidebookSection(
+    val title: LocalizedText,
+    val body: LocalizedText,
+    val examples: List<Example> = emptyList(),
+)
+
+@Serializable
+data class Example(
+    val eu: String,
+    val es: String,
+)
+
+/** A node of the learning path. */
+@Serializable
+sealed interface Level {
+    val id: String
+    val title: LocalizedText
+
+    /** A level made of authored lessons. */
+    @Serializable
+    @SerialName("lesson")
+    data class Lessons(
+        override val id: String,
+        override val title: LocalizedText,
+        val lessons: List<Lesson>,
+    ) : Level
+
+    /** A short interactive story. */
+    @Serializable
+    @SerialName("story")
+    data class StoryLevel(
+        override val id: String,
+        override val title: LocalizedText,
+        val story: Story,
+    ) : Level
+
+    /** Unit review: generated at run time from the unit's content and the learner's mistakes. */
+    @Serializable
+    @SerialName("review")
+    data class Review(
+        override val id: String,
+        override val title: LocalizedText,
+    ) : Level
+
+    /** Optional legendary level: a harder generated review with no hints. */
+    @Serializable
+    @SerialName("legendary")
+    data class Legendary(
+        override val id: String,
+        override val title: LocalizedText,
+    ) : Level
+}
+
+@Serializable
+data class Lesson(
+    val id: String,
+    val exercises: List<Exercise>,
+)

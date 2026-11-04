@@ -17,7 +17,7 @@ red-trousered helpers of Basque mythology.
 |---|---|---|
 | M0 | Repo, build-logic and CI | ✅ |
 | M1 | Design system and theme | ✅ |
-| M2 | Content model and validator | ⏳ |
+| M2 | Content model and validator | ✅ |
 | M3 | Lesson engine and 4 exercise types | ⏳ |
 | M4 | Learning path and progress | ⏳ |
 | M5 | Remaining exercise types | ⏳ |
@@ -37,6 +37,7 @@ Requirements: JDK 17 and the Android SDK (API 37).
 ./gradlew testDebugUnitTest      # unit tests
 ./gradlew recordRoborazziDebug   # re-record reference screenshots
 python3 tools/syllabus_vocab.py  # regenerate the syllabus tables
+python3 tools/validate_content.py # validate course content (pip install -r tools/requirements.txt)
 ```
 
 Every PR produces a debug APK as an artifact of the **CI** workflow.

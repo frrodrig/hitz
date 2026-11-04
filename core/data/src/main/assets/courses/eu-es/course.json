@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "eu-es",
+  "learningLanguage": "eu",
+  "fromLanguage": "es",
+  "title": {
+    "es": "Euskera para hispanohablantes",
+    "eu": "Euskara gaztelaniaz"
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "title": {
+        "es": "Primeros pasos",
+        "eu": "Lehen urratsak"
+      },
+      "description": {
+        "es": "Saludar, presentarse, ubicarse en el pueblo y hablar de la familia.",
+        "eu": "Agurtu, aurkeztu, herrian kokatu eta familiaz hitz egin."
+      },
+      "units": [
+        "u01-1"
+      ]
+    }
+  ]
+}
