@@ -1,6 +1,9 @@
 package eus.hitz.feature.lesson
 
 import eus.hitz.core.domain.content.CourseRepository
+import eus.hitz.core.domain.lesson.Mistake
+import eus.hitz.core.domain.progress.MistakeStats
+import eus.hitz.core.domain.progress.ProgressRepository
 import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.Course
 import eus.hitz.core.model.content.CourseUnit
@@ -13,9 +16,12 @@ import eus.hitz.core.model.content.Level
 import eus.hitz.core.model.content.LocalizedText
 import eus.hitz.core.model.content.Phrase
 import eus.hitz.core.model.content.WordPair
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flowOf
 
 internal object TestLesson {
     const val UNIT = "u01-1"
+    const val LEVEL = "u01-1.l1"
     const val LESSON = "u01-1.l1.s1"
 
     val wordBank = Exercise.TranslateWordBank(
@@ -55,7 +61,7 @@ internal object TestLesson {
             title = text,
             goals = listOf(text),
             guidebook = Guidebook(emptyList()),
-            levels = listOf(Level.Lessons("u01-1.l1", text, listOf(Lesson(LESSON, exercises.toList())))),
+            levels = listOf(Level.Lessons(LEVEL, text, listOf(Lesson(LESSON, exercises.toList())))),
         )
         return object : CourseRepository {
             override suspend fun getCourse(courseId: CourseId): Course = error("unused")
@@ -63,4 +69,21 @@ internal object TestLesson {
             override suspend fun getUnit(courseId: CourseId, unitId: String): CourseUnit = unit
         }
     }
+}
+
+internal class FakeProgressRepository : ProgressRepository {
+    val completed = mutableSetOf<String>()
+    val mistakes = mutableListOf<Mistake>()
+
+    override fun observeCompleted(): Flow<Set<String>> = flowOf(completed)
+
+    override suspend fun recordCompletion(unitId: String, completionId: String, accuracy: Float, completedAt: Long) {
+        completed += completionId
+    }
+
+    override suspend fun recordMistakes(unitId: String, mistakes: List<Mistake>, recordedAt: Long) {
+        this.mistakes += mistakes
+    }
+
+    override suspend fun mistakeStats(unitId: String): MistakeStats = MistakeStats()
 }

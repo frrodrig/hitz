@@ -19,7 +19,7 @@ red-trousered helpers of Basque mythology.
 | M1 | Design system and theme | ✅ |
 | M2 | Content model and validator | ✅ |
 | M3 | Lesson engine and 4 exercise types | ✅ |
-| M4 | Learning path and progress | ⏳ |
+| M4 | Learning path and progress | ✅ |
 | M5 | Remaining exercise types | ⏳ |
 | M6 | Gamification | ⏳ |
 | M7 | Full A1 content | ⏳ |

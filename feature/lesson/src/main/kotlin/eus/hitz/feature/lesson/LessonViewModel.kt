@@ -7,11 +7,11 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import eus.hitz.core.domain.lesson.AnswerChecker
 import eus.hitz.core.domain.lesson.AnswerResult
 import eus.hitz.core.domain.lesson.LessonSession
-import eus.hitz.core.domain.lesson.LoadLessonUseCase
 import eus.hitz.core.domain.lesson.MatchPairsState
 import eus.hitz.core.domain.lesson.Mistake
 import eus.hitz.core.domain.lesson.WordBank
-import eus.hitz.core.model.CourseId
+import eus.hitz.core.domain.session.PlanSessionUseCase
+import eus.hitz.core.domain.session.RecordSessionUseCase
 import eus.hitz.core.model.content.Exercise
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
@@ -33,11 +33,13 @@ internal fun Exercise.isSupported(): Boolean = when (this) {
 @HiltViewModel
 class LessonViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
-    private val loadLesson: LoadLessonUseCase,
+    private val planSession: PlanSessionUseCase,
+    private val recordSession: RecordSessionUseCase,
     private val checker: AnswerChecker,
 ) : ViewModel() {
     private val unitId: String = checkNotNull(savedStateHandle["unitId"])
-    private val lessonId: String = checkNotNull(savedStateHandle["lessonId"])
+    private val levelId: String = checkNotNull(savedStateHandle["levelId"])
+    private val lessonId: String? = savedStateHandle["lessonId"]
 
     private val _state = MutableStateFlow<LessonUiState>(LessonUiState.Loading)
     val state: StateFlow<LessonUiState> = _state.asStateFlow()
@@ -50,11 +52,11 @@ class LessonViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-            runCatching { loadLesson(CourseId.BASQUE_FROM_SPANISH, unitId, lessonId) }
-                .onSuccess { content ->
-                    val playable = content.lesson.exercises.filter { it.isSupported() }
+            runCatching { planSession(unitId, levelId, lessonId) }
+                .onSuccess { plan ->
+                    val playable = plan.exercises.filter { it.isSupported() }
                     exercises = playable.associateBy { it.id }
-                    session = LessonSession.start(lessonId, playable.map { it.id }, hearts = STARTING_HEARTS)
+                    session = LessonSession.start(plan.sessionId, playable.map { it.id }, hearts = plan.hearts)
                     showCurrent()
                 }
                 .onFailure { _state.value = LessonUiState.Error }
@@ -159,6 +161,10 @@ class LessonViewModel @Inject constructor(
 
     private fun showCurrent() {
         val current = session.current
+        if (session.isOver) {
+            val result = session.result()
+            viewModelScope.launch { recordSession(unitId, result.lessonId, result) }
+        }
         _state.value = when {
             session.isOutOfHearts -> LessonUiState.OutOfHearts
             current == null -> LessonUiState.Finished(session.result())
@@ -186,10 +192,6 @@ class LessonViewModel @Inject constructor(
     }
 
     private fun randomFor(exerciseId: String, retry: Boolean) = Random(exerciseId.hashCode() + if (retry) 1 else 0)
-
-    private companion object {
-        const val STARTING_HEARTS = 5
-    }
 }
 
 internal fun Exercise.toUi(random: Random): ExerciseUi = when (this) {
