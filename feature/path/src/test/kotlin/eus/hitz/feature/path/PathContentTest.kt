@@ -2,6 +2,8 @@ package eus.hitz.feature.path
 
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
@@ -44,7 +46,7 @@ class PathContentTest {
     @Test
     fun currentNodeStartsItsLesson() {
         show()
-        composeRule.onNodeWithText("Empezar").assertExists()
+        composeRule.onNodeWithText("Empezar", useUnmergedTree = true).assertExists()
         composeRule.onNodeWithContentDescription("Lección: ¿Quién eres?, disponible").performClick()
         assertThat(started).isEqualTo(Triple("u01-1", "u01-1.l2", "u01-1.l2.s1"))
     }
@@ -59,7 +61,7 @@ class PathContentTest {
     fun unitHeaderOpensTheGuidebook() {
         show()
         composeRule.onNodeWithText("Unidad 1.1").assertExists()
-        composeRule.onNodeWithText("Guía").performClick()
+        composeRule.onAllNodesWithText("Guía").onFirst().performClick()
         assertThat(guidebook).isEqualTo("u01-1")
     }
 
