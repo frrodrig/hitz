@@ -4,7 +4,7 @@ import com.android.build.api.dsl.CommonExtension
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 
-/** Activa Compose y añade el BOM, Material 3 y las herramientas de preview. */
+/** Enables Compose and adds the BOM, Material 3, preview tooling and screenshot-test libraries. */
 internal fun Project.configureAndroidCompose(commonExtension: CommonExtension) {
     commonExtension.apply {
         buildFeatures.apply {

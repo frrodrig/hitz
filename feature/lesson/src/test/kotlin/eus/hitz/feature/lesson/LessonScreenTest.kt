@@ -17,7 +17,7 @@ class LessonScreenTest {
     val composeRule = createComposeRule()
 
     @Test
-    fun muestraElTitulo() {
+    fun showsTitle() {
         composeRule.setContent { HitzTheme { LessonScreen() } }
         composeRule.onNodeWithText("Lección").assertIsDisplayed()
     }

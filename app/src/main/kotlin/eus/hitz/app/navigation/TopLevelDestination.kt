@@ -10,7 +10,7 @@ import eus.hitz.feature.shop.navigation.ShopRoute
 import kotlin.reflect.KClass
 import eus.hitz.core.designsystem.R as DesignR
 
-/** Destinos de la barra de navegación inferior. */
+/** Destinations shown in the bottom navigation bar. */
 enum class TopLevelDestination(
     val route: Any,
     val routeClass: KClass<*>,

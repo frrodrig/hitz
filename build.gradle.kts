@@ -12,9 +12,9 @@ plugins {
     alias(libs.plugins.detekt)
 }
 
-// detekt (con las reglas de ktlint vía detekt-formatting) se ejecuta una sola vez
-// sobre todo el código desde el proyecto raíz. Así no depende de la API de variantes
-// de Android, que AGP 9 ha retirado.
+// detekt (with the ktlint rules from detekt-formatting) runs once, from the root project,
+// over the whole code base. This keeps it independent of the Android variant API,
+// which AGP 9 removed.
 detekt {
     buildUponDefaultConfig = true
     parallel = true
@@ -31,8 +31,8 @@ dependencies {
     detektPlugins(libs.detekt.formatting)
 }
 
-// detekt 1.23 está compilado con Kotlin 2.0.x; evitamos que Gradle lo alinee con el
-// Kotlin del proyecto.
+// detekt 1.23 is built against Kotlin 2.0.x; keep Gradle from aligning it with the
+// project's Kotlin version.
 configurations.matching { it.name == "detekt" }.configureEach {
     resolutionStrategy.eachDependency {
         if (requested.group == "org.jetbrains.kotlin") {

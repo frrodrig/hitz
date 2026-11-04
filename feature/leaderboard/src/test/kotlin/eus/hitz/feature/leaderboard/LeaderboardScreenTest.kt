@@ -17,7 +17,7 @@ class LeaderboardScreenTest {
     val composeRule = createComposeRule()
 
     @Test
-    fun muestraElTitulo() {
+    fun showsTitle() {
         composeRule.setContent { HitzTheme { LeaderboardScreen() } }
         composeRule.onNodeWithText("Ligas").assertIsDisplayed()
     }

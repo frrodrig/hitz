@@ -1,21 +1,21 @@
-name: Error
-description: Algo no funciona como debería
+name: Bug
+description: Something does not work as expected
 labels: [fix]
 body:
   - type: textarea
     id: what
     attributes:
-      label: ¿Qué ha pasado?
-      description: Describe el error y qué esperabas que ocurriera.
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Pasos para reproducirlo
-      placeholder: "1. Abre la unidad 2.1\n2. ..."
+      label: Steps to reproduce
+      placeholder: "1. Open unit 2.1\n2. ..."
   - type: input
     id: version
     attributes:
-      label: Versión de la app y de Android
+      label: App and Android version
       placeholder: "Hitz 0.3.0 · Android 15"

@@ -11,7 +11,7 @@ abstract class AndroidLibraryConventionPlugin : Plugin<Project> {
             apply(plugin = "com.android.library")
             extensions.configure<LibraryExtension> {
                 configureKotlinAndroid(this)
-                // Prefijo de recursos derivado de la ruta: :feature:path -> "feature_path_"
+                // Resource prefix derived from the module path: :feature:path -> "feature_path_"
                 resourcePrefix = path.split(':', '-').filter(String::isNotBlank)
                     .joinToString(separator = "_", postfix = "_")
                     .lowercase()

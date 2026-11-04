@@ -6,14 +6,14 @@ import kotlin.test.assertFailsWith
 
 class CourseIdTest {
     @Test
-    fun `separa idioma aprendido e idioma base`() {
+    fun `splits learning and base language`() {
         val id = CourseId.BASQUE_FROM_SPANISH
         assertThat(id.learningLanguage).isEqualTo("eu")
         assertThat(id.fromLanguage).isEqualTo("es")
     }
 
     @Test
-    fun `rechaza formatos no válidos`() {
+    fun `rejects invalid formats`() {
         assertFailsWith<IllegalArgumentException> { CourseId("euskera") }
         assertFailsWith<IllegalArgumentException> { CourseId("EU-ES") }
     }

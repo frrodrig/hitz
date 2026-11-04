@@ -1,36 +1,45 @@
-# Cómo contribuir
+# Contributing
 
-## Ramas y PR
+## Branches and pull requests
 
-- `main` está protegida: todo entra por PR y con el CI en verde.
-- Nombres de rama: `feat/…`, `fix/…`, `content/…`, `docs/…`, `ci/…`, `build/…`.
-- Se fusiona con *squash*, así que **el título del PR es el mensaje del commit** y debe seguir
-  [Conventional Commits](https://www.conventionalcommits.org/es/v1.0.0/). El workflow
-  *Título del PR* lo comprueba.
+- `main` is protected: every change goes through a PR with green checks.
+- Branch names: `feat/…`, `fix/…`, `content/…`, `docs/…`, `ci/…`, `build/…`, `test/…`.
+- PRs are squash-merged, so **the PR title becomes the commit message** and must follow
+  [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). The *PR title*
+  workflow checks it.
 
-Tipos admitidos: `feat`, `fix`, `docs`, `content` (contenido del curso), `style`, `refactor`,
-`perf`, `test`, `build`, `ci`, `chore`, `revert`. El ámbito suele ser el módulo:
-`feat(lesson): ejercicio de emparejar parejas`.
+Allowed types: `feat`, `fix`, `docs`, `content` (course content), `style`, `refactor`, `perf`,
+`test`, `build`, `ci`, `chore`, `revert`. The scope is usually the module:
+`feat(lesson): match-pairs exercise`.
+
+Code, comments, documentation and commit messages are written in **English**. User-facing
+strings live in `values/` (Spanish, the default) and `values-eu/` (Basque).
 
 ## Releases
 
-1. Actualiza `README.md` si cambia el estado de los hitos.
-2. Crea un tag `vMAJOR.MINOR.PATCH` en `main` y súbelo: `git tag v0.1.0 && git push origin v0.1.0`.
-3. El workflow **Release** compila el AAB y el APK firmados y publica una GitHub Release con
-   changelog automático.
+1. Update `README.md` if the milestone status changed.
+2. Tag `main` with `vMAJOR.MINOR.PATCH` and push the tag: `git tag v0.1.0 && git push origin v0.1.0`.
+3. The **Release** workflow builds the signed AAB and APK and publishes a GitHub Release with a
+   generated changelog.
 
-### Secretos necesarios (Settings → Secrets and variables → Actions)
+### Required secrets (Settings → Secrets and variables → Actions)
 
-| Secreto | Contenido |
+| Secret | Value |
 |---|---|
-| `HITZ_KEYSTORE_BASE64` | El keystore en base64 (`base64 -w0 release.jks`) |
-| `HITZ_KEYSTORE_PASSWORD` | Contraseña del keystore |
-| `HITZ_KEY_ALIAS` | Alias de la clave |
-| `HITZ_KEY_PASSWORD` | Contraseña de la clave |
+| `HITZ_KEYSTORE_BASE64` | The keystore encoded in base64 (`base64 -w0 release.jks`) |
+| `HITZ_KEYSTORE_PASSWORD` | Keystore password |
+| `HITZ_KEY_ALIAS` | Key alias |
+| `HITZ_KEY_PASSWORD` | Key password |
 
-Los keystores nunca se suben al repo (`*.jks` y `*.keystore` están en `.gitignore`).
+Keystores are never committed (`*.jks` and `*.keystore` are git-ignored).
 
-## Contenido
+## Screenshot tests
 
-Lee [`docs/content-guide.md`](docs/content-guide.md) antes de escribir lecciones. Nunca copies
-textos, diálogos, ejercicios ni imágenes del libro de referencia.
+`ui-tests.yml` verifies the Roborazzi screenshots every night. When a UI change is intentional,
+run the workflow manually with **record_screenshots** enabled: it re-records the references
+and opens a PR with them.
+
+## Content
+
+Read [`docs/content-guide.md`](docs/content-guide.md) before writing lessons. Never copy
+texts, dialogues, exercises or images from the reference textbook.

@@ -35,7 +35,7 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            // Sin keystore (builds locales y CI de PR) el release queda sin firmar.
+            // Without a keystore (local builds, PR CI) the release build is left unsigned.
             if (keystorePath.isPresent) {
                 signingConfig = signingConfigs.getByName("release")
             }

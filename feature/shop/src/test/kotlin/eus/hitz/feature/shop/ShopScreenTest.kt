@@ -17,7 +17,7 @@ class ShopScreenTest {
     val composeRule = createComposeRule()
 
     @Test
-    fun muestraElTitulo() {
+    fun showsTitle() {
         composeRule.setContent { HitzTheme { ShopScreen() } }
         composeRule.onNodeWithText("Tienda").assertIsDisplayed()
     }

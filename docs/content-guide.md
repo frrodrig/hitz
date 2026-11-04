@@ -1,32 +1,33 @@
-# Guía de contenido
+# Content guide
 
-> Este documento se completa en M2 (modelo de contenido y validador). Por ahora recoge las
-> reglas que ya están en vigor.
+> This guide is completed in M2 (content model and validator). For now it records the rules
+> that already apply.
 
-## Principios
+## Principles
 
-1. **Contenido original.** El libro *Arian A1* solo marca el temario (orden, objetivos, gramática
-   y campos léxicos). No se copian textos, diálogos, ejercicios, listas ni imágenes.
-2. **Euskera batua.** Cualquier duda se marca con `TODO(revisión-nativa)` en el JSON (campo
-   `notes`) o en un comentario, y no se publica sin revisar.
-3. **Solo vocabulario del temario.** Cada lección usa palabras de su unidad o de unidades
-   anteriores según `content/syllabus/vocabulary.csv`. El validador lo comprobará (M2).
+1. **Original content.** The *Arian A1* textbook only defines the syllabus (order, goals,
+   grammar and lexical fields). Texts, dialogues, exercises, word lists and images are never
+   copied.
+2. **Standard Basque (euskara batua).** Any doubt is flagged with `TODO(revisión-nativa)` in the
+   JSON (`notes` field) or in a comment, and is not shipped until reviewed.
+3. **Syllabus vocabulary only.** Each lesson uses words from its unit or from earlier units, as
+   listed in `content/syllabus/vocabulary.csv`. The validator will enforce this (M2).
 
-## Temario
+## Syllabus
 
-- Fuente de datos: `content/syllabus/vocabulary.csv`, con las columnas `lemma`, `es`, `pos`,
-  `section`, `book_unit`, `app_unit`, `set` (`core` o `closed`) y `note`.
-- `docs/syllabus.md` se regenera con `python3 tools/syllabus_vocab.py`, y el CI comprueba que
-  esté sincronizado (`--check`) y que cada sección tenga entre 100 y 150 palabras núcleo.
-- Las series cerradas (números, días de la semana y meses) usan `set=closed` y no cuentan en
-  ese límite.
+- Data source: `content/syllabus/vocabulary.csv`, with the columns `lemma`, `es`, `pos`,
+  `section`, `book_unit`, `app_unit`, `set` (`core` or `closed`) and `note`.
+- `docs/syllabus.md` is regenerated with `python3 tools/syllabus_vocab.py`. CI checks that it is
+  in sync (`--check`) and that every section has 100–150 core words.
+- Closed sets (numbers, weekdays and months) use `set=closed` and do not count towards that
+  limit.
 
-## Estructura (prevista para M2)
+## Layout (planned for M2)
 
 ```
-app/src/main/assets/courses/eu-es/   JSON del curso (Course > Section > Unit > Level > Lesson > Exercise)
-app/src/main/assets/audio/           Audios pregrabados, nombrados por id
-content/schema/                      JSON Schema del contenido
-content/syllabus/                    Temario como datos
-tools/                               Validadores y generadores
+app/src/main/assets/courses/eu-es/   Course JSON (Course > Section > Unit > Level > Lesson > Exercise)
+app/src/main/assets/audio/           Pre-recorded audio, named by id
+content/schema/                      JSON Schema for the content
+content/syllabus/                    Syllabus as data
+tools/                               Validators and generators
 ```
