@@ -9,7 +9,7 @@
 :feature:profile           Profile, streak, achievements
 :feature:leaderboard       Locally simulated leagues
 :feature:shop              Gem shop
-:core:designsystem         Material 3 theme, components and previews
+:core:designsystem         Material 3 theme, components and previews (see design-system.md)
 :core:data                 Repositories, Room, DataStore, content assets
 :core:domain               Use cases and repository interfaces (pure Kotlin)
 :core:model                Domain model (pure Kotlin)

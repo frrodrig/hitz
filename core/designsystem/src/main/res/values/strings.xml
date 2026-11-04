@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_designsystem_state_selected">Seleccionada</string>
+    <string name="core_designsystem_state_correct">Correcta</string>
+    <string name="core_designsystem_state_incorrect">Incorrecta</string>
+    <string name="core_designsystem_word_used">%1$s, ya usada</string>
+    <string name="core_designsystem_mascot_description">Galtzagorri, la mascota de Hitz</string>
+    <plurals name="core_designsystem_stat_streak">
+        <item quantity="one">Racha de %d día</item>
+        <item quantity="other">Racha de %d días</item>
+    </plurals>
+    <plurals name="core_designsystem_stat_gems">
+        <item quantity="one">%d gema</item>
+        <item quantity="other">%d gemas</item>
+    </plurals>
+    <plurals name="core_designsystem_stat_hearts">
+        <item quantity="one">%d vida</item>
+        <item quantity="other">%d vidas</item>
+    </plurals>
+    <plurals name="core_designsystem_stat_xp">
+        <item quantity="one">%d punto de experiencia</item>
+        <item quantity="other">%d puntos de experiencia</item>
+    </plurals>
+</resources>
