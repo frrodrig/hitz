@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Regenera las tablas de vocabulario de docs/syllabus.md a partir de
+"""Regenerates the vocabulary tables in docs/syllabus.md from
 content/syllabus/vocabulary.csv.
 
-Las tablas se insertan entre los marcadores
-<!-- vocab:<app_unit>:start --> y <!-- vocab:<app_unit>:end -->.
-Uso: python3 tools/syllabus_vocab.py [--check]
-Con --check falla (exit 1) si el documento no está sincronizado o si
-alguna sección queda fuera del rango de 100–150 palabras.
+Tables are written between the markers
+<!-- vocab:<app_unit>:start --> and <!-- vocab:<app_unit>:end -->.
+Usage: python3 tools/syllabus_vocab.py [--check]
+With --check it fails (exit 1) if the document is out of sync or if a
+section falls outside the 100–150 core-word range.
 """
 from __future__ import annotations
 
@@ -22,9 +22,9 @@ DOC_PATH = ROOT / "docs" / "syllabus.md"
 MIN_CORE, MAX_CORE = 100, 150
 
 POS = {
-    "n": "sust.", "v": "verbo", "adj": "adj.", "adv": "adv.", "pron": "pron.",
-    "interj": "interj.", "expr": "expr.", "conj": "conj.", "postp": "posp.",
-    "num": "núm.",
+    "n": "noun", "v": "verb", "adj": "adj.", "adv": "adv.", "pron": "pron.",
+    "interj": "interj.", "expr": "phrase", "conj": "conj.", "postp": "postp.",
+    "num": "num.",
 }
 
 
@@ -36,12 +36,12 @@ def load() -> list[dict[str, str]]:
 def table(rows: list[dict[str, str]]) -> str:
     core = [r for r in rows if r["set"] == "core"]
     closed = [r for r in rows if r["set"] == "closed"]
-    out = [f"**Vocabulario ({len(core)} palabras)**", "",
-           "| Euskera | Castellano | Tipo | Nota |", "|---|---|---|---|"]
+    out = [f"**Vocabulary ({len(core)} words)**", "",
+           "| Basque | Spanish | Type | Note |", "|---|---|---|---|"]
     out += [f"| {r['lemma']} | {r['es']} | {POS.get(r['pos'], r['pos'])} | {r['note']} |"
             for r in core]
     if closed:
-        out += ["", "**Serie cerrada (no cuenta en el límite):** "
+        out += ["", "**Closed set (not counted towards the limit):** "
                 + ", ".join(f"{r['lemma']} ({r['es']})" for r in closed)]
     return "\n".join(out)
 
@@ -58,8 +58,8 @@ def render(doc: str, rows: list[dict[str, str]]) -> str:
     doc = re.sub(r"<!-- vocab:([\d.]+):start -->.*?<!-- vocab:\1:end -->", repl, doc, flags=re.S)
     counts = collections.Counter(r["section"] for r in rows if r["set"] == "core")
     summary = "\n".join(f"| {s} | {counts[s]} |" for s in sorted(counts, key=int))
-    return re.sub(r"(<!-- counts:start -->\n).*?(\n<!-- counts:end -->)",
-                  lambda m: m.group(1) + "| Sección | Palabras |\n|---|---|\n" + summary + m.group(2),
+    return re.sub(r"(<!-- counts:start -->\n).*?(<!-- counts:end -->)",
+                  lambda m: m.group(1) + "| Section | Core words |\n|---|---|\n" + summary + "\n" + m.group(2),
                   doc, flags=re.S)
 
 
@@ -68,16 +68,16 @@ def main() -> int:
     errors = []
     dup = [k for k, v in collections.Counter(r["lemma"] for r in rows).items() if v > 1]
     if dup:
-        errors.append(f"lemas duplicados: {dup}")
+        errors.append(f"duplicate lemmas: {dup}")
     counts = collections.Counter(r["section"] for r in rows if r["set"] == "core")
     for sec, n in sorted(counts.items()):
         if not MIN_CORE <= n <= MAX_CORE:
-            errors.append(f"sección {sec}: {n} palabras (rango {MIN_CORE}–{MAX_CORE})")
+            errors.append(f"section {sec}: {n} words (expected {MIN_CORE}–{MAX_CORE})")
     doc = DOC_PATH.read_text(encoding="utf-8")
     new = render(doc, rows)
     if "--check" in sys.argv:
         if new != doc:
-            errors.append("docs/syllabus.md no está sincronizado; ejecuta tools/syllabus_vocab.py")
+            errors.append("docs/syllabus.md is out of sync; run tools/syllabus_vocab.py")
     else:
         DOC_PATH.write_text(new, encoding="utf-8")
     for e in errors:
