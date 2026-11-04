@@ -34,6 +34,12 @@ jobs:
       - uses: gradle/actions/setup-gradle@v6
         with:
           cache-read-only: true
+      - name: Cache Robolectric runtime jars
+        uses: actions/cache@v6
+        with:
+          path: ~/.m2/repository/org/robolectric
+          key: robolectric-${{ hashFiles('gradle/libs.versions.toml') }}
+          restore-keys: robolectric-
       - name: Verify screenshots
         if: ${{ !inputs.record_screenshots }}
         run: .github/scripts/gradlew-annotated.sh verifyRoborazziDebug
@@ -84,6 +90,12 @@ jobs:
       - uses: gradle/actions/setup-gradle@v6
         with:
           cache-read-only: true
+      - name: Cache Robolectric runtime jars
+        uses: actions/cache@v6
+        with:
+          path: ~/.m2/repository/org/robolectric
+          key: robolectric-${{ hashFiles('gradle/libs.versions.toml') }}
+          restore-keys: robolectric-
       - name: Build test APKs
         run: .github/scripts/gradlew-annotated.sh assembleDebug assembleDebugAndroidTest
       - name: Run on emulator

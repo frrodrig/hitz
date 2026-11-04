@@ -47,6 +47,12 @@ jobs:
       - uses: gradle/actions/setup-gradle@v6
         with:
           cache-read-only: ${{ github.ref != 'refs/heads/main' }}
+      - name: Cache Robolectric runtime jars
+        uses: actions/cache@v6
+        with:
+          path: ~/.m2/repository/org/robolectric
+          key: robolectric-${{ hashFiles('gradle/libs.versions.toml') }}
+          restore-keys: robolectric-
       - name: detekt (ktlint) + Android Lint + unit tests + debug build
         run: .github/scripts/gradlew-annotated.sh --continue detekt lintDebug testDebugUnitTest assembleDebug
       - name: Upload debug APK
