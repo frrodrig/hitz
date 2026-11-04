@@ -25,7 +25,7 @@ style:
     ignoreCompanionObjectPropertyDeclaration: true
     excludes: ['**/test/**', '**/androidTest/**', '**/*.gradle.kts', '**/designsystem/**', '**/preview/**']
   UnusedPrivateMember:
-    ignoreAnnotated: ['Preview', 'PreviewLightDark', 'PreviewFontScale']
+    ignoreAnnotated: ['Preview', 'PreviewLightDark', 'PreviewFontScale', 'HitzPreviews']
   WildcardImport:
     excludeImports: []
 

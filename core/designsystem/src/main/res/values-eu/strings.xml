@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO(revisión-nativa): review all strings in this file -->
+    <string name="core_designsystem_state_selected">Hautatuta</string>
+    <string name="core_designsystem_state_correct">Zuzena</string>
+    <string name="core_designsystem_state_incorrect">Okerra</string>
+    <string name="core_designsystem_word_used">%1$s, erabilita</string>
+    <string name="core_designsystem_mascot_description">Galtzagorri, Hitzen maskota</string>
+    <plurals name="core_designsystem_stat_streak">
+        <item quantity="one">Egun %d jarraian</item>
+        <item quantity="other">%d egun jarraian</item>
+    </plurals>
+    <plurals name="core_designsystem_stat_gems">
+        <item quantity="one">Harribitxi %d</item>
+        <item quantity="other">%d harribitxi</item>
+    </plurals>
+    <plurals name="core_designsystem_stat_hearts">
+        <item quantity="one">Bizitza %d</item>
+        <item quantity="other">%d bizitza</item>
+    </plurals>
+    <plurals name="core_designsystem_stat_xp">
+        <item quantity="one">Esperientzia-puntu %d</item>
+        <item quantity="other">%d esperientzia-puntu</item>
+    </plurals>
+</resources>

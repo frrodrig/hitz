@@ -16,7 +16,7 @@ red-trousered helpers of Basque mythology.
 | Milestone | Scope | Status |
 |---|---|---|
 | M0 | Repo, build-logic and CI | ✅ |
-| M1 | Design system and theme | ⏳ |
+| M1 | Design system and theme | ✅ |
 | M2 | Content model and validator | ⏳ |
 | M3 | Lesson engine and 4 exercise types | ⏳ |
 | M4 | Learning path and progress | ⏳ |
@@ -44,6 +44,7 @@ Every PR produces a debug APK as an artifact of the **CI** workflow.
 ## Documentation
 
 - [`docs/architecture.md`](docs/architecture.md): modules, layers and technical decisions.
+- [`docs/design-system.md`](docs/design-system.md): colours, type, icons and components.
 - [`docs/content-guide.md`](docs/content-guide.md): how content is written and validated.
 - [`docs/syllabus.md`](docs/syllabus.md): syllabus (units, goals, grammar and vocabulary).
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): branches, commits and releases.
