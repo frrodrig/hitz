@@ -1,0 +1,31 @@
+# Gradle / Android
+.gradle/
+build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# IDE
+.idea/
+*.iml
+.kotlin/
+.DS_Store
+
+# Firma: nunca se suben keystores ni credenciales
+*.jks
+*.keystore
+keystore.properties
+
+# Material de referencia con copyright (libros Arian): no debe entrar al repo
+*.pdf
+reference/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
