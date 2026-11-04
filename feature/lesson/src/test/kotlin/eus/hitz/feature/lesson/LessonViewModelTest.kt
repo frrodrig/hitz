@@ -44,7 +44,7 @@ class LessonViewModelTest {
     @Test
     fun `correct word bank answer advances the progress`() {
         val vm = viewModel(TestLesson.wordBank, TestLesson.typing)
-        vm.tap("Hola Yo soy Ane")
+        vm.tap("Hola Soy Ane")
         vm.onAction(LessonAction.Check)
         assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.Correct))
         assertThat(vm.active.progress).isEqualTo(0.5f)

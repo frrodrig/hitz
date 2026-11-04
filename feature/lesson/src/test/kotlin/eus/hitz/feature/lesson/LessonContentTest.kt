@@ -7,7 +7,9 @@ import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
 import com.google.common.truth.Truth.assertThat
 import eus.hitz.core.designsystem.theme.HitzTheme
 import org.junit.Rule
@@ -16,7 +18,7 @@ import org.junit.runner.RunWith
 import org.robolectric.annotation.Config
 
 @RunWith(AndroidJUnit4::class)
-@Config(sdk = [35])
+@Config(sdk = [35], qualifiers = RobolectricDeviceQualifiers.Pixel7)
 class LessonContentTest {
     @get:Rule
     val composeRule = createComposeRule()
@@ -31,7 +33,7 @@ class LessonContentTest {
     fun tappingAWordSelectsIt() {
         show(LessonPreviewData.active.copy(exercise = LessonPreviewData.wordBank.copy(selected = emptyList())))
         composeRule.onNodeWithText("Traduce esta frase").assertIsDisplayed()
-        composeRule.onNodeWithText("Hola").performClick()
+        composeRule.onNodeWithText("Hola").performScrollTo().performClick()
         assertThat(actions).containsExactly(LessonAction.SelectTile(2))
     }
 
