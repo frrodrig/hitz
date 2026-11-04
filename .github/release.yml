@@ -1,0 +1,12 @@
+changelog:
+  exclude:
+    authors: [dependabot]
+  categories:
+    - title: Novedades
+      labels: [feat]
+    - title: Contenido del curso
+      labels: [content]
+    - title: Correcciones
+      labels: [fix]
+    - title: Otros cambios
+      labels: ["*"]

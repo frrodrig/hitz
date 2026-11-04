@@ -1,0 +1,18 @@
+name: Error de contenido o de euskera
+description: Una frase incorrecta, una traducción dudosa o un audio que falla
+labels: [content]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: ¿Dónde está?
+      description: Id del ejercicio o unidad (aparece en la pantalla de feedback).
+      placeholder: "u02-1.l3.e07"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: ¿Qué está mal y cómo debería ser?
+    validations:
+      required: true
