@@ -29,6 +29,8 @@ data class QueuedExercise(val exerciseId: String, val isRetry: Boolean)
  *
  * * exercises are asked in order; a wrong answer costs a heart (when hearts are on) and the
  *   exercise is asked again at the end of the lesson, until it is answered correctly;
+ * * a skipped exercise (e.g. speaking when the learner cannot talk) leaves the lesson without
+ *   counting towards progress or accuracy;
  * * progress only grows with correct answers;
  * * running out of hearts ends the lesson as not completed.
  */
@@ -40,8 +42,9 @@ data class LessonSession(
     val solved: Set<String> = emptySet(),
     val firstTryCorrect: Int = 0,
     val mistakes: List<Mistake> = emptyList(),
+    val skipped: Set<String> = emptySet(),
 ) {
-    private val exerciseCount: Int = queue.count { !it.isRetry }
+    private val exerciseCount: Int = queue.count { !it.isRetry && it.exerciseId !in skipped }
 
     val current: QueuedExercise? get() = queue.getOrNull(position).takeIf { !isOver }
 
@@ -68,6 +71,16 @@ data class LessonSession(
             position = position + 1,
             hearts = hearts?.minus(1),
             mistakes = mistakes + mistake,
+        )
+    }
+
+    /** Moves on without an answer: the exercise no longer counts and is not asked again. */
+    fun skip(): LessonSession {
+        val item = checkNotNull(current) { "the lesson is over" }
+        return copy(
+            queue = queue.filterIndexed { index, queued -> index <= position || queued.exerciseId != item.exerciseId },
+            position = position + 1,
+            skipped = skipped + item.exerciseId,
         )
     }
 

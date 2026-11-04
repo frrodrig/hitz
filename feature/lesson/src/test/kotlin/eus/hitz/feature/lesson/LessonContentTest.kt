@@ -74,4 +74,41 @@ class LessonContentTest {
         composeRule.onAllNodesWithText("kaixo").onFirst().performClick()
         assertThat(actions).hasSize(1)
     }
+
+    @Test
+    fun listenButtonPlaysTheClip() {
+        show(LessonPreviewData.active.copy(exercise = LessonPreviewData.listenTap))
+        composeRule.onNodeWithText("Toca lo que oyes").assertIsDisplayed()
+        composeRule.onNodeWithText("Escuchar").performClick()
+        assertThat(actions).containsExactly(LessonAction.PlayAudio)
+    }
+
+    @Test
+    fun choosingAMeaningSelectsIt() {
+        show(LessonPreviewData.active.copy(exercise = LessonPreviewData.meaning.copy(selected = null)))
+        composeRule.onNodeWithText("¡De nada!").performScrollTo().performClick()
+        assertThat(actions).containsExactly(LessonAction.SelectOption(2))
+    }
+
+    @Test
+    fun trueFalseIncorrectNeedsNoCorrection() {
+        show(LessonPreviewData.trueFalseIncorrect)
+        composeRule.onNodeWithText("No es correcto").assertIsDisplayed()
+    }
+
+    @Test
+    fun chatShowsTheChosenReplyAsTheLearners() {
+        show(LessonPreviewData.active.copy(exercise = LessonPreviewData.chat))
+        composeRule.onNodeWithText("Tú").assertIsDisplayed()
+        assertThat(composeRule.onAllNodesWithText("Ni Itziar naiz.").fetchSemanticsNodes()).hasSize(2)
+    }
+
+    @Test
+    fun speakingCanBeSkippedWithoutARecognizer() {
+        show(LessonPreviewData.active.copy(exercise = LessonPreviewData.speak))
+        assertThat(composeRule.onAllNodesWithText("Comprobar").fetchSemanticsNodes()).isEmpty()
+        composeRule.onNodeWithText("reconocimiento de voz", substring = true).assertIsDisplayed()
+        composeRule.onNodeWithText("Ahora no puedo hablar").performScrollTo().performClick()
+        assertThat(actions).containsExactly(LessonAction.SkipSpeaking)
+    }
 }

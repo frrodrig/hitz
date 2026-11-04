@@ -18,33 +18,157 @@ class LessonViewModelTest {
     val mainDispatcherRule = MainDispatcherRule()
 
     private val progress = FakeProgressRepository()
+    private val audio = FakeAudioProvider()
 
-    private fun viewModel(vararg exercises: Exercise) = LessonViewModel(
+    private fun viewModel(vararg exercises: Exercise, speakingEnabled: Boolean = true) = LessonViewModel(
         savedStateHandle = SavedStateHandle(
             mapOf("unitId" to TestLesson.UNIT, "levelId" to TestLesson.LEVEL, "lessonId" to TestLesson.LESSON),
         ),
         planSession = PlanSessionUseCase(TestLesson.repository(*exercises), progress),
         recordSession = RecordSessionUseCase(progress) { 1L },
         checker = AnswerChecker(),
+        settings = FakeSettingsRepository(speakingEnabled),
+        audio = audio,
     )
 
     private val LessonViewModel.active get() = state.value as LessonUiState.Active
 
     /** Taps the tiles that spell [sentence]. */
     private fun LessonViewModel.tap(sentence: String) {
-        val tiles = (active.exercise as ExerciseUi.WordBank).tiles
         WordBank.words(sentence).forEach { word ->
-            val tile = tiles.first { it.text == word && it.id !in (active.exercise as ExerciseUi.WordBank).selected }
+            val exercise = active.exercise as ExerciseUi.TileAnswer
+            val tile = exercise.tiles.first { it.text == word && it.id !in exercise.selected }
             onAction(LessonAction.SelectTile(tile.id))
         }
     }
 
+    /** Selects the shown option with [text]. */
+    private fun LessonViewModel.choose(text: String) {
+        val options = when (val exercise = active.exercise) {
+            is ExerciseUi.FillBlank -> exercise.options
+            is ExerciseUi.ChooseMeaning -> exercise.options
+            is ExerciseUi.CompleteChat -> exercise.options
+            else -> error("not a text choice")
+        }
+        onAction(LessonAction.SelectOption(options.indexOf(text)))
+    }
+
     @Test
-    fun `starts with the first supported exercise and skips the rest`() {
-        val vm = viewModel(TestLesson.unsupported, TestLesson.wordBank)
+    fun `starts with the first exercise`() {
+        val vm = viewModel(TestLesson.wordBank, TestLesson.typing)
         assertThat(vm.active.exercise.id).isEqualTo(TestLesson.wordBank.id)
         assertThat(vm.active.hearts).isEqualTo(5)
         assertThat(vm.active.canCheck).isFalse()
+    }
+
+    @Test
+    fun `listening exercises play their clip when shown and on demand`() {
+        val vm = viewModel(TestLesson.listenTap)
+        assertThat(audio.played).containsExactly(TestLesson.listenTap.id)
+        vm.onAction(LessonAction.PlayAudio)
+        assertThat(audio.played).hasSize(2)
+    }
+
+    @Test
+    fun `listen and tap accepts the words in order`() {
+        val vm = viewModel(TestLesson.listenTap)
+        vm.tap("Gero arte Jon")
+        vm.onAction(LessonAction.Check)
+        assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.Correct))
+    }
+
+    @Test
+    fun `listen and type tolerates a typo`() {
+        val vm = viewModel(TestLesson.listenType)
+        vm.onAction(LessonAction.ChangeInput("eskerrik aska"))
+        vm.onAction(LessonAction.Check)
+        assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.AlmostCorrect, "Eskerrik asko"))
+    }
+
+    @Test
+    fun `ordering the words wrongly is incorrect`() {
+        val vm = viewModel(TestLesson.order)
+        vm.tap("Mikel Zu zara")
+        vm.onAction(LessonAction.Check)
+        assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.Incorrect, "Zu Mikel zara?"))
+        assertThat(vm.active.hearts).isEqualTo(4)
+    }
+
+    @Test
+    fun `a wrong word in the gap shows the whole sentence`() {
+        val vm = viewModel(TestLesson.fillBlank)
+        val exercise = vm.active.exercise as ExerciseUi.FillBlank
+        assertThat(exercise.before).isEqualTo("Ni Ane ")
+        assertThat(exercise.after).isEqualTo(".")
+        vm.choose("zara")
+        vm.onAction(LessonAction.Check)
+        assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.Incorrect, "Ni Ane naiz."))
+    }
+
+    @Test
+    fun `shuffled options are checked by their content`() {
+        val vm = viewModel(TestLesson.meaning, TestLesson.chat)
+        vm.choose("¡Perdón!")
+        vm.onAction(LessonAction.Check)
+        assertThat(vm.active.feedback?.type).isEqualTo(FeedbackType.Correct)
+        vm.onAction(LessonAction.Continue)
+        vm.choose("Ez horregatik.")
+        vm.onAction(LessonAction.Check)
+        assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.Incorrect, "Ni Itziar naiz."))
+    }
+
+    @Test
+    fun `true or false shows no correction`() {
+        val vm = viewModel(TestLesson.trueFalse)
+        vm.onAction(LessonAction.SelectOption(ExerciseUi.ReadTrueFalse.FALSE))
+        vm.onAction(LessonAction.Check)
+        assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.Incorrect, null))
+        vm.onAction(LessonAction.Continue)
+        vm.onAction(LessonAction.SelectOption(ExerciseUi.ReadTrueFalse.TRUE))
+        vm.onAction(LessonAction.Check)
+        assertThat(vm.active.feedback?.type).isEqualTo(FeedbackType.Correct)
+    }
+
+    @Test
+    fun `recognized speech is checked tolerantly`() {
+        val vm = viewModel(TestLesson.speak)
+        assertThat(vm.active.canCheck).isFalse()
+        vm.onAction(LessonAction.SpeechResult(listOf("egun ona", "egun on")))
+        assertThat(vm.active.feedback?.type).isEqualTo(FeedbackType.Correct)
+        vm.onAction(LessonAction.Continue)
+        assertThat((vm.state.value as LessonUiState.Finished).result.accuracy).isEqualTo(1f)
+    }
+
+    @Test
+    fun `unrecognized speech shows the sentence and costs no heart`() {
+        val vm = viewModel(TestLesson.speak, TestLesson.typing)
+        vm.onAction(LessonAction.SpeechResult(listOf("kaixo zer moduz")))
+        assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.Incorrect, "Egun on!"))
+        assertThat(vm.active.hearts).isEqualTo(5)
+        vm.onAction(LessonAction.Continue)
+        assertThat(vm.active.exercise.id).isEqualTo(TestLesson.typing.id)
+    }
+
+    @Test
+    fun `skipping speaking skips the remaining speaking exercises`() {
+        val second = TestLesson.speak.copy(id = "${TestLesson.LESSON}.e20")
+        val vm = viewModel(TestLesson.speak, TestLesson.typing, second)
+        vm.onAction(LessonAction.SkipSpeaking)
+        assertThat(vm.active.exercise.id).isEqualTo(TestLesson.typing.id)
+        assertThat(vm.active.progress).isEqualTo(0f)
+        vm.onAction(LessonAction.ChangeInput("Eskerrik asko"))
+        vm.onAction(LessonAction.Check)
+        vm.onAction(LessonAction.Continue)
+        val finished = vm.state.value as LessonUiState.Finished
+        assertThat(finished.result.exerciseCount).isEqualTo(1)
+        assertThat(progress.completed).containsExactly(TestLesson.LESSON)
+    }
+
+    @Test
+    fun `speaking exercises are left out when turned off`() {
+        val vm = viewModel(TestLesson.speak, TestLesson.typing, speakingEnabled = false)
+        assertThat(vm.active.exercise.id).isEqualTo(TestLesson.typing.id)
+        assertThat(vm.active.progress).isEqualTo(0f)
     }
 
     @Test

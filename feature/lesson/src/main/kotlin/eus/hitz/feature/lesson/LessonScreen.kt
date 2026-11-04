@@ -46,7 +46,15 @@ import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.model.content.Language
 import eus.hitz.feature.lesson.exercise.ChooseImageExercise
+import eus.hitz.feature.lesson.exercise.ChooseMeaningExercise
+import eus.hitz.feature.lesson.exercise.CompleteChatExercise
+import eus.hitz.feature.lesson.exercise.FillBlankExercise
+import eus.hitz.feature.lesson.exercise.ListenTapExercise
+import eus.hitz.feature.lesson.exercise.ListenTypeExercise
 import eus.hitz.feature.lesson.exercise.MatchPairsExercise
+import eus.hitz.feature.lesson.exercise.OrderSentenceExercise
+import eus.hitz.feature.lesson.exercise.ReadTrueFalseExercise
+import eus.hitz.feature.lesson.exercise.SpeakExercise
 import eus.hitz.feature.lesson.exercise.TypingExercise
 import eus.hitz.feature.lesson.exercise.WordBankExercise
 import kotlin.math.roundToInt
@@ -132,17 +140,30 @@ private fun ActiveLesson(
                 style = MaterialTheme.typography.headlineSmallEmphasized,
                 modifier = Modifier.semantics { heading() },
             )
-            val enabled = state.feedback == null
-            when (val exercise = state.exercise) {
-                is ExerciseUi.WordBank -> WordBankExercise(exercise, onAction, enabled = enabled)
-                is ExerciseUi.Typing -> TypingExercise(exercise, onAction, enabled = enabled)
-                is ExerciseUi.ChooseImage -> ChooseImageExercise(exercise, onAction, enabled = enabled)
-                is ExerciseUi.MatchPairs -> MatchPairsExercise(exercise, onAction, enabled = enabled)
-            }
+            ExerciseContent(state.exercise, state.feedback?.type, onAction)
         }
     }
     if (state.showQuitDialog) {
         QuitDialog(onAction)
+    }
+}
+
+@Composable
+private fun ExerciseContent(exercise: ExerciseUi, feedback: FeedbackType?, onAction: (LessonAction) -> Unit) {
+    val enabled = feedback == null
+    when (exercise) {
+        is ExerciseUi.WordBank -> WordBankExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.Typing -> TypingExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.ChooseImage -> ChooseImageExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.MatchPairs -> MatchPairsExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.ListenTap -> ListenTapExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.ListenType -> ListenTypeExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.OrderSentence -> OrderSentenceExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.FillBlank -> FillBlankExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.ChooseMeaning -> ChooseMeaningExercise(exercise, feedback, onAction)
+        is ExerciseUi.CompleteChat -> CompleteChatExercise(exercise, feedback, onAction)
+        is ExerciseUi.ReadTrueFalse -> ReadTrueFalseExercise(exercise, feedback, onAction)
+        is ExerciseUi.Speak -> SpeakExercise(exercise, onAction, enabled = enabled)
     }
 }
 
@@ -158,10 +179,23 @@ private fun instruction(exercise: ExerciseUi): String = when (exercise) {
     )
     is ExerciseUi.ChooseImage -> stringResource(R.string.feature_lesson_instruction_image, exercise.prompt)
     is ExerciseUi.MatchPairs -> stringResource(R.string.feature_lesson_instruction_pairs)
+    is ExerciseUi.ListenTap -> stringResource(R.string.feature_lesson_instruction_listen_tap)
+    is ExerciseUi.ListenType -> stringResource(R.string.feature_lesson_instruction_listen_type)
+    is ExerciseUi.OrderSentence -> stringResource(R.string.feature_lesson_instruction_order)
+    is ExerciseUi.FillBlank -> stringResource(R.string.feature_lesson_instruction_fill_blank)
+    is ExerciseUi.ChooseMeaning -> stringResource(R.string.feature_lesson_instruction_meaning)
+    is ExerciseUi.CompleteChat -> stringResource(R.string.feature_lesson_instruction_chat)
+    is ExerciseUi.ReadTrueFalse -> stringResource(R.string.feature_lesson_instruction_true_false)
+    is ExerciseUi.Speak -> stringResource(R.string.feature_lesson_instruction_speak)
 }
 
 @Composable
-private fun LessonTopBar(progress: Float, hearts: Int?, onClose: () -> Unit) {
+internal fun LessonTopBar(
+    progress: Float,
+    hearts: Int?,
+    onClose: () -> Unit,
+    closeLabel: String = stringResource(R.string.feature_lesson_close),
+) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -171,7 +205,7 @@ private fun LessonTopBar(progress: Float, hearts: Int?, onClose: () -> Unit) {
         horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
     ) {
         IconButton(onClick = onClose) {
-            Icon(painterResource(HitzIcons.Close), contentDescription = stringResource(R.string.feature_lesson_close))
+            Icon(painterResource(HitzIcons.Close), contentDescription = closeLabel)
         }
         HitzLessonProgressBar(progress, Modifier.weight(1f))
         if (hearts != null) {
@@ -190,18 +224,13 @@ private fun LessonBottomBar(state: LessonUiState.Active, onAction: (LessonAction
                 FeedbackType.AlmostCorrect -> FeedbackKind.AlmostCorrect
                 FeedbackType.Incorrect -> FeedbackKind.Incorrect
             },
-            title = stringResource(
-                when (feedback.type) {
-                    FeedbackType.Correct -> R.string.feature_lesson_correct
-                    FeedbackType.AlmostCorrect -> R.string.feature_lesson_almost
-                    FeedbackType.Incorrect -> R.string.feature_lesson_incorrect
-                },
-            ),
+            title = stringResource(feedback.title),
             message = feedback.expected,
             continueLabel = stringResource(R.string.feature_lesson_continue),
             onContinue = { onAction(LessonAction.Continue) },
         )
-        state.exercise !is ExerciseUi.MatchPairs -> HitzButton(
+        // Pairs finish on their own and speaking has its own buttons.
+        state.exercise !is ExerciseUi.MatchPairs && state.exercise !is ExerciseUi.Speak -> HitzButton(
             text = stringResource(R.string.feature_lesson_check),
             onClick = { onAction(LessonAction.Check) },
             enabled = state.canCheck,
@@ -212,6 +241,14 @@ private fun LessonBottomBar(state: LessonUiState.Active, onAction: (LessonAction
         )
     }
 }
+
+private val FeedbackUi.title: Int
+    get() = when {
+        type == FeedbackType.Correct -> R.string.feature_lesson_correct
+        type == FeedbackType.AlmostCorrect -> R.string.feature_lesson_almost
+        expected == null -> R.string.feature_lesson_incorrect_plain
+        else -> R.string.feature_lesson_incorrect
+    }
 
 @Composable
 private fun QuitDialog(onAction: (LessonAction) -> Unit) {
@@ -233,7 +270,7 @@ private fun QuitDialog(onAction: (LessonAction) -> Unit) {
 }
 
 @Composable
-private fun LessonMessage(
+internal fun LessonMessage(
     title: String,
     body: String?,
     action: String,

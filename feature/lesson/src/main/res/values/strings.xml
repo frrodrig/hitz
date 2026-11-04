@@ -25,4 +25,27 @@
     <string name="feature_lesson_out_of_hearts_title">Te has quedado sin vidas</string>
     <string name="feature_lesson_out_of_hearts_body">Repasa un poco y vuelve a intentarlo.</string>
     <string name="feature_lesson_error">No se ha podido cargar la lección.</string>
+    <string name="feature_lesson_instruction_listen_tap">Toca lo que oyes</string>
+    <string name="feature_lesson_instruction_listen_type">Escribe lo que oyes</string>
+    <string name="feature_lesson_instruction_order">Ordena la frase</string>
+    <string name="feature_lesson_instruction_fill_blank">Completa la frase</string>
+    <string name="feature_lesson_instruction_meaning">¿Qué significa?</string>
+    <string name="feature_lesson_instruction_chat">Completa la conversación</string>
+    <string name="feature_lesson_instruction_true_false">Lee y responde: ¿verdadero o falso?</string>
+    <string name="feature_lesson_instruction_speak">Di esta frase</string>
+    <string name="feature_lesson_listen">Escuchar</string>
+    <string name="feature_lesson_blank">hueco</string>
+    <string name="feature_lesson_chat_you">Tú</string>
+    <string name="feature_lesson_true">Verdadero</string>
+    <string name="feature_lesson_false">Falso</string>
+    <string name="feature_lesson_incorrect_plain">No es correcto</string>
+    <string name="feature_lesson_speak_start">Toca para hablar</string>
+    <string name="feature_lesson_speak_prompt">Di la frase en euskera</string>
+    <string name="feature_lesson_speak_skip">Ahora no puedo hablar</string>
+    <string name="feature_lesson_speak_unavailable">Este dispositivo no tiene reconocimiento de voz. Puedes saltar este ejercicio o desactivarlos en el perfil.</string>
+    <string name="feature_lesson_story_close">Salir de la historia</string>
+    <string name="feature_lesson_story_translation">Ver traducción</string>
+    <string name="feature_lesson_story_finished_title">¡Historia completada!</string>
+    <string name="feature_lesson_story_finished_accuracy">Has acertado el %1$d %% de las preguntas a la primera.</string>
+    <string name="feature_lesson_story_error">No se ha podido cargar la historia.</string>
 </resources>

@@ -64,4 +64,26 @@ class LessonSessionTest {
         assertThat(session.current?.exerciseId).isEqualTo("a")
         assertThat(session.mistakes).hasSize(1)
     }
+
+    @Test
+    fun `a skipped exercise leaves the lesson without counting`() {
+        val session = LessonSession.start("l", listOf("a", "b"), hearts = 5).skip()
+        assertThat(session.current?.exerciseId).isEqualTo("b")
+        assertThat(session.progress).isEqualTo(0f)
+        val result = session.answerCorrect().result()
+        assertThat(result.completed).isTrue()
+        assertThat(result.exerciseCount).isEqualTo(1)
+        assertThat(result.accuracy).isEqualTo(1f)
+        assertThat(result.heartsLeft).isEqualTo(5)
+    }
+
+    @Test
+    fun `skipping a retried exercise removes it from the queue`() {
+        val session = LessonSession.start("l", listOf("a", "b"), hearts = 5)
+            .answerIncorrect(mistake("a"))
+            .answerCorrect()
+            .skip()
+        assertThat(session.isOver).isTrue()
+        assertThat(session.result().exerciseCount).isEqualTo(1)
+    }
 }

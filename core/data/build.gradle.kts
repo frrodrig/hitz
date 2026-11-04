@@ -12,6 +12,7 @@ dependencies {
     api(project(":core:domain"))
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.serialization.json)
+    implementation(libs.androidx.datastore.preferences)
 
     testImplementation(libs.robolectric)
     testImplementation(libs.androidx.test.core)

@@ -1,0 +1,29 @@
+package eus.hitz.core.data.settings
+
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.core.booleanPreferencesKey
+import androidx.datastore.preferences.core.edit
+import eus.hitz.core.domain.settings.SettingsRepository
+import eus.hitz.core.domain.settings.UserSettings
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
+import javax.inject.Inject
+
+/** Learner preferences, stored with Preferences DataStore. */
+internal class DataStoreSettingsRepository @Inject constructor(
+    private val dataStore: DataStore<Preferences>,
+) : SettingsRepository {
+    override val settings: Flow<UserSettings> = dataStore.data.map { preferences ->
+        UserSettings(speakingEnabled = preferences[SPEAKING_ENABLED] ?: true)
+    }
+
+    override suspend fun setSpeakingEnabled(enabled: Boolean) {
+        dataStore.edit { it[SPEAKING_ENABLED] = enabled }
+    }
+
+    companion object {
+        const val FILE_NAME = "settings"
+        private val SPEAKING_ENABLED = booleanPreferencesKey("speaking_enabled")
+    }
+}

@@ -7,9 +7,9 @@ import eus.hitz.core.model.content.Level
 /**
  * Builds the learning path from the course and the learner's completions.
  *
- * Progression is linear over the *required* levels (lessons and unit reviews): every required level
- * before the current one is completed, the current one is available and the rest are locked.
- * Stories and legendary levels are optional: they unlock when reached and never block progress.
+ * Progression is linear over the *required* levels (lessons, stories and unit reviews): every
+ * required level before the current one is completed, the current one is available and the rest
+ * are locked. Legendary levels are optional: they unlock when reached and never block progress.
  */
 object LearningPathBuilder {
     fun build(course: Course, units: Map<String, CourseUnit>, completed: Set<String>): LearningPath {
@@ -36,7 +36,7 @@ object LearningPathBuilder {
         return LearningPath(sections)
     }
 
-    private val Level.isRequired: Boolean get() = this is Level.Lessons || this is Level.Review
+    private val Level.isRequired: Boolean get() = this !is Level.Legendary
 
     private val Level.nodeType: NodeType
         get() = when (this) {

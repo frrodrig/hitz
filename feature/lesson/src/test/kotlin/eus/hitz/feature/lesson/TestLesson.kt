@@ -1,10 +1,14 @@
 package eus.hitz.feature.lesson
 
+import eus.hitz.core.domain.audio.AudioProvider
 import eus.hitz.core.domain.content.CourseRepository
 import eus.hitz.core.domain.lesson.Mistake
 import eus.hitz.core.domain.progress.MistakeStats
 import eus.hitz.core.domain.progress.ProgressRepository
+import eus.hitz.core.domain.settings.SettingsRepository
+import eus.hitz.core.domain.settings.UserSettings
 import eus.hitz.core.model.CourseId
+import eus.hitz.core.model.content.ChatMessage
 import eus.hitz.core.model.content.Course
 import eus.hitz.core.model.content.CourseUnit
 import eus.hitz.core.model.content.Exercise
@@ -17,6 +21,7 @@ import eus.hitz.core.model.content.LocalizedText
 import eus.hitz.core.model.content.Phrase
 import eus.hitz.core.model.content.WordPair
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flowOf
 
 internal object TestLesson {
@@ -49,7 +54,25 @@ internal object TestLesson {
         pairs = listOf(WordPair("kaixo", "hola"), WordPair("agur", "adiós"), WordPair("barkatu", "perdón")),
         vocabulary = listOf("kaixo", "agur", "barkatu"),
     )
-    val unsupported = Exercise.Speak("$LESSON.e05", "Egun on!", "¡Buenos días!")
+    val speak = Exercise.Speak("$LESSON.e05", "Egun on!", "¡Buenos días!")
+    val listenTap = Exercise.ListenTap("$LESSON.e06", "Gero arte, Jon!", distractors = listOf("gabon"))
+    val listenType = Exercise.ListenType("$LESSON.e07", "Eskerrik asko!", answers = listOf("Eskerrik asko"))
+    val fillBlank = Exercise.FillBlank(
+        id = "$LESSON.e08",
+        sentence = "Ni Ane ___.",
+        options = listOf("naiz", "zara"),
+        correct = 0,
+        translation = "Yo soy Ane.",
+    )
+    val meaning = Exercise.ChooseMeaning("$LESSON.e09", "Barkatu!", listOf("¡Perdón!", "¡Gracias!", "¡De nada!"), 0)
+    val chat = Exercise.CompleteChat(
+        id = "$LESSON.e10",
+        messages = listOf(ChatMessage("Mikel", "Kaixo! Ni Mikel naiz. Eta zu?")),
+        options = listOf("Ni Itziar naiz.", "Ez horregatik."),
+        correct = 0,
+    )
+    val trueFalse = Exercise.ReadTrueFalse("$LESSON.e11", "Egun on! Ni Jon naiz.", "Jon saluda.", answer = true)
+    val order = Exercise.OrderSentence("$LESSON.e12", "Zu Mikel zara?", "¿Tú eres Mikel?")
 
     fun repository(vararg exercises: Exercise): CourseRepository {
         val text = LocalizedText("x", "x")
@@ -86,4 +109,25 @@ internal class FakeProgressRepository : ProgressRepository {
     }
 
     override suspend fun mistakeStats(unitId: String): MistakeStats = MistakeStats()
+}
+
+internal class FakeSettingsRepository(speakingEnabled: Boolean = true) : SettingsRepository {
+    override val settings = MutableStateFlow(UserSettings(speakingEnabled = speakingEnabled))
+
+    override suspend fun setSpeakingEnabled(enabled: Boolean) {
+        settings.value = settings.value.copy(speakingEnabled = enabled)
+    }
+}
+
+internal class FakeAudioProvider : AudioProvider {
+    val played = mutableListOf<String>()
+    var stopped = false
+
+    override fun play(clipId: String, text: String) {
+        played += clipId
+    }
+
+    override fun stop() {
+        stopped = true
+    }
 }
