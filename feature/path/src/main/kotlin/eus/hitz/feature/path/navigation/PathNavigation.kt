@@ -22,8 +22,11 @@ fun NavController.navigateToGuidebook(unitId: String) = navigate(GuidebookRoute(
 fun NavGraphBuilder.pathScreen(
     onStartLevel: (unitId: String, levelId: String, lessonId: String?) -> Unit,
     onOpenGuidebook: (unitId: String) -> Unit,
+    onStartStory: (unitId: String, levelId: String) -> Unit,
 ) {
-    composable<PathRoute> { PathScreen(onStartLevel = onStartLevel, onOpenGuidebook = onOpenGuidebook) }
+    composable<PathRoute> {
+        PathScreen(onStartLevel = onStartLevel, onOpenGuidebook = onOpenGuidebook, onStartStory = onStartStory)
+    }
 }
 
 fun NavGraphBuilder.guidebookScreen(onBack: () -> Unit) {

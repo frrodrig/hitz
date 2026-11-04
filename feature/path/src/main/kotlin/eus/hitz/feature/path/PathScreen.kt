@@ -18,16 +18,11 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.LoadingIndicator
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.SnackbarHost
-import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -46,7 +41,6 @@ import eus.hitz.core.domain.path.NodeType
 import eus.hitz.core.domain.path.PathNode
 import eus.hitz.core.domain.path.PathSection
 import eus.hitz.core.domain.path.PathUnit
-import kotlinx.coroutines.launch
 
 /** Horizontal offsets that make the path wind gently down the screen. */
 private val Winding = listOf(0.dp, 44.dp, 64.dp, 44.dp, 0.dp, (-44).dp, (-64).dp, (-44).dp)
@@ -55,22 +49,16 @@ private val Winding = listOf(0.dp, 44.dp, 64.dp, 44.dp, 0.dp, (-44).dp, (-64).dp
 fun PathScreen(
     onStartLevel: (unitId: String, levelId: String, lessonId: String?) -> Unit,
     onOpenGuidebook: (unitId: String) -> Unit,
+    onStartStory: (unitId: String, levelId: String) -> Unit,
     viewModel: PathViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
-    val snackbarHostState = remember { SnackbarHostState() }
-    val scope = rememberCoroutineScope()
-    val storiesComing = stringResource(R.string.feature_path_stories_coming)
-    Scaffold(snackbarHost = { SnackbarHost(snackbarHostState) }) { padding ->
-        PathContent(
-            state = state,
-            onStartLevel = onStartLevel,
-            onOpenGuidebook = onOpenGuidebook,
-            // The story player arrives in M5.
-            onStartStory = { scope.launch { snackbarHostState.showSnackbar(storiesComing) } },
-            modifier = Modifier.padding(padding),
-        )
-    }
+    PathContent(
+        state = state,
+        onStartLevel = onStartLevel,
+        onOpenGuidebook = onOpenGuidebook,
+        onStartStory = onStartStory,
+    )
 }
 
 @Composable
@@ -79,7 +67,7 @@ internal fun PathContent(
     onStartLevel: (unitId: String, levelId: String, lessonId: String?) -> Unit,
     onOpenGuidebook: (unitId: String) -> Unit,
     modifier: Modifier = Modifier,
-    onStartStory: () -> Unit = {},
+    onStartStory: (unitId: String, levelId: String) -> Unit = { _, _ -> },
     listState: LazyListState = rememberLazyListState(),
 ) {
     when (state) {
@@ -91,7 +79,7 @@ internal fun PathContent(
             path = state.path,
             onNodeClick = { node ->
                 if (node.type == NodeType.Story) {
-                    onStartStory()
+                    onStartStory(node.unitId, node.levelId)
                 } else {
                     onStartLevel(node.unitId, node.levelId, node.nextLessonId)
                 }

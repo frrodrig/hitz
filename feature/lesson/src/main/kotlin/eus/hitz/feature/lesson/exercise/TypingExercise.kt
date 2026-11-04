@@ -24,7 +24,7 @@ import eus.hitz.feature.lesson.R
 import eus.hitz.feature.lesson.ui.PromptCard
 import eus.hitz.feature.lesson.ui.localeList
 
-/** Translate by typing. Autocorrect is off so the keyboard does not "fix" Basque words. */
+/** Translate by typing. */
 @Composable
 internal fun TypingExercise(
     exercise: ExerciseUi.Typing,
@@ -34,22 +34,34 @@ internal fun TypingExercise(
 ) {
     Column(modifier, verticalArrangement = Arrangement.spacedBy(HitzSpacing.xl)) {
         PromptCard(exercise.prompt, exercise.promptLanguage)
-        OutlinedTextField(
-            value = exercise.input,
-            onValueChange = { onAction(LessonAction.ChangeInput(it)) },
-            modifier = Modifier.fillMaxWidth(),
-            enabled = enabled,
-            label = { Text(stringResource(R.string.feature_lesson_input_hint)) },
-            minLines = 3,
-            keyboardOptions = KeyboardOptions(
-                capitalization = KeyboardCapitalization.Sentences,
-                autoCorrectEnabled = false,
-                imeAction = ImeAction.Done,
-                hintLocales = exercise.answerLanguage.localeList,
-            ),
-            keyboardActions = KeyboardActions(onDone = { onAction(LessonAction.Check) }),
-        )
+        AnswerField(exercise.input, exercise.answerLanguage, onAction, enabled = enabled)
     }
+}
+
+/** Free-text answer. Autocorrect is off so the keyboard does not "fix" Basque words. */
+@Composable
+internal fun AnswerField(
+    input: String,
+    language: Language,
+    onAction: (LessonAction) -> Unit,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
+) {
+    OutlinedTextField(
+        value = input,
+        onValueChange = { onAction(LessonAction.ChangeInput(it)) },
+        modifier = modifier.fillMaxWidth(),
+        enabled = enabled,
+        label = { Text(stringResource(R.string.feature_lesson_input_hint)) },
+        minLines = 3,
+        keyboardOptions = KeyboardOptions(
+            capitalization = KeyboardCapitalization.Sentences,
+            autoCorrectEnabled = false,
+            imeAction = ImeAction.Done,
+            hintLocales = language.localeList,
+        ),
+        keyboardActions = KeyboardActions(onDone = { onAction(LessonAction.Check) }),
+    )
 }
 
 @HitzPreviews

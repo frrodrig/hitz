@@ -29,18 +29,21 @@ class LearningPathBuilderTest {
     }
 
     @Test
-    fun `stories are optional and do not block the review`() {
+    fun `stories are required before the review`() {
         val nodes = nodes(setOf("u01-1.l1.s1", "u01-1.l2.s1", "u01-1.l2.s2"))
         assertThat(nodes[2].type).isEqualTo(NodeType.Story)
-        assertThat(nodes[2].state).isEqualTo(NodeState.Available)
-        assertThat(nodes[2].isCurrent).isFalse()
+        assertThat(nodes[2].isCurrent).isTrue()
         assertThat(nodes[3].type).isEqualTo(NodeType.Review)
-        assertThat(nodes[3].isCurrent).isTrue()
+        assertThat(nodes[3].state).isEqualTo(NodeState.Locked)
+
+        val afterStory = nodes(setOf("u01-1.l1.s1", "u01-1.l2.s1", "u01-1.l2.s2", "u01-1.l3"))
+        assertThat(afterStory[2].state).isEqualTo(NodeState.Completed)
+        assertThat(afterStory[3].isCurrent).isTrue()
     }
 
     @Test
     fun `finishing the review unlocks the legendary level and the next unit`() {
-        val nodes = nodes(setOf("u01-1.l1.s1", "u01-1.l2.s1", "u01-1.l2.s2", "u01-1.l4"))
+        val nodes = nodes(setOf("u01-1.l1.s1", "u01-1.l2.s1", "u01-1.l2.s2", "u01-1.l3", "u01-1.l4"))
         assertThat(nodes[4].type).isEqualTo(NodeType.Legendary)
         assertThat(nodes[4].state).isEqualTo(NodeState.Available)
         val nextUnitFirst = nodes[5]

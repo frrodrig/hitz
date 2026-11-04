@@ -37,12 +37,55 @@ internal object LessonPreviewData {
         ).select(PairSide.Left, 1).select(PairSide.Right, 1).select(PairSide.Left, 0),
     )
 
+    val listenTap = ExerciseUi.ListenTap(
+        id = "preview-listen",
+        clip = AudioClip("preview-listen", "Gero arte, Jon!"),
+        tiles = listOf("agur", "Jon", "Gero", "gabon", "arte").mapIndexed { i, t -> Tile(i, t) },
+        selected = listOf(2, 4),
+    )
+
+    val fillBlank = ExerciseUi.FillBlank(
+        id = "preview-blank",
+        before = "Ni Ane ",
+        after = ".",
+        translation = "Yo soy Ane.",
+        options = listOf("zara", "naiz"),
+        selected = 1,
+    )
+
+    val meaning = ExerciseUi.ChooseMeaning(
+        id = "preview-meaning",
+        clip = AudioClip("preview-meaning", "Barkatu!"),
+        options = listOf("¡Gracias!", "¡Perdón!", "¡De nada!"),
+        selected = 1,
+    )
+
+    val chat = ExerciseUi.CompleteChat(
+        id = "preview-chat",
+        messages = listOf(ChatMessageUi("Mikel", "Kaixo! Ni Mikel naiz. Eta zu?")),
+        options = listOf("Ez horregatik.", "Ni Itziar naiz.", "Gabon, Mikel."),
+        selected = 1,
+    )
+
+    val trueFalse = ExerciseUi.ReadTrueFalse(
+        id = "preview-true-false",
+        passage = "Egun on! Ni Jon naiz. Zorionak, Ane!",
+        statement = "Jon felicita a Ane.",
+    )
+
+    val speak = ExerciseUi.Speak("preview-speak", AudioClip("preview-speak", "Egun on, Ane!"), "¡Buenos días, Ane!")
+
     val active = LessonUiState.Active(progress = 0.4f, hearts = 4, exercise = wordBank)
     val typingAlmost = active.copy(
         exercise = typing,
         feedback = FeedbackUi(FeedbackType.AlmostCorrect, "Eskerrik asko.")
     )
     val incorrect = active.copy(feedback = FeedbackUi(FeedbackType.Incorrect, "¡Hola! Soy Ane."))
+    val chatCorrect = active.copy(exercise = chat, feedback = FeedbackUi(FeedbackType.Correct))
+    val trueFalseIncorrect = active.copy(
+        exercise = trueFalse.copy(selected = ExerciseUi.ReadTrueFalse.FALSE),
+        feedback = FeedbackUi(FeedbackType.Incorrect),
+    )
     val finished = LessonUiState.Finished(LessonResult("preview", true, 5, 4, 4, emptyList()))
 }
 

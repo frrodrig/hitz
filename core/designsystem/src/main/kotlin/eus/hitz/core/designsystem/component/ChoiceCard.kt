@@ -146,8 +146,9 @@ fun HitzChoiceCard(
             headlineContent = { Text(text, style = MaterialTheme.typography.bodyLarge) },
             supportingContent = supportingText?.let { { Text(it) } },
             leadingContent = leading ?: {
+                // A checked option stays selected: correct/incorrect is shown by colour and icon.
                 RadioButton(
-                    selected = state == ChoiceState.Selected,
+                    selected = state.isActive,
                     onClick = null,
                     enabled = state != ChoiceState.Disabled,
                 )

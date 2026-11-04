@@ -27,8 +27,7 @@ import eus.hitz.feature.lesson.LessonAction
 import eus.hitz.feature.lesson.R
 import eus.hitz.feature.lesson.ui.PromptCard
 
-/** Translate by tapping words: selected words move to the answer line; tap again to remove. */
-@OptIn(ExperimentalLayoutApi::class)
+/** Translate by tapping words. */
 @Composable
 internal fun WordBankExercise(
     exercise: ExerciseUi.WordBank,
@@ -36,9 +35,40 @@ internal fun WordBankExercise(
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
 ) {
-    val answerDescription = stringResource(R.string.feature_lesson_answer_area)
     Column(modifier, verticalArrangement = Arrangement.spacedBy(HitzSpacing.xl)) {
         PromptCard(exercise.prompt, exercise.promptLanguage)
+        TileAnswerArea(exercise, onAction, enabled = enabled)
+    }
+}
+
+/** Put the words of a Basque sentence in order; the Spanish meaning is the prompt. */
+@Composable
+internal fun OrderSentenceExercise(
+    exercise: ExerciseUi.OrderSentence,
+    onAction: (LessonAction) -> Unit,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
+) {
+    Column(modifier, verticalArrangement = Arrangement.spacedBy(HitzSpacing.xl)) {
+        PromptCard(exercise.translation, Language.Spanish)
+        TileAnswerArea(exercise, onAction, enabled = enabled)
+    }
+}
+
+/**
+ * The answer line and the word bank: selected words move to the answer line; tapping them there
+ * puts them back.
+ */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+internal fun TileAnswerArea(
+    exercise: ExerciseUi.TileAnswer,
+    onAction: (LessonAction) -> Unit,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
+) {
+    val answerDescription = stringResource(R.string.feature_lesson_answer_area)
+    Column(modifier, verticalArrangement = Arrangement.spacedBy(HitzSpacing.xl)) {
         Column(verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
             FlowRow(
                 modifier = Modifier
@@ -79,6 +109,25 @@ private fun WordBankExercisePreview() {
                     promptLanguage = Language.Spanish,
                     tiles = listOf("zer", "gabon", "Egun", "moduz", "agur", "on").mapIndexed { i, t -> Tile(i, t) },
                     selected = listOf(2, 5),
+                ),
+                onAction = {},
+                modifier = Modifier.padding(HitzSpacing.lg),
+            )
+        }
+    }
+}
+
+@HitzPreviews
+@Composable
+private fun OrderSentenceExercisePreview() {
+    HitzTheme {
+        Surface {
+            OrderSentenceExercise(
+                exercise = ExerciseUi.OrderSentence(
+                    id = "preview",
+                    translation = "¿Tú eres Mikel?",
+                    tiles = listOf("zara", "Zu", "Mikel").mapIndexed { i, t -> Tile(i, t) },
+                    selected = listOf(1),
                 ),
                 onAction = {},
                 modifier = Modifier.padding(HitzSpacing.lg),

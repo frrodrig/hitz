@@ -39,7 +39,7 @@ class PathContentTest {
                         state = PathUiState.Ready(PathTestData.path),
                         onStartLevel = { u, l, s -> started = Triple(u, l, s) },
                         onOpenGuidebook = { guidebook = it },
-                        onStartStory = { storyTapped = true },
+                        onStartStory = { _, _ -> storyTapped = true },
                     )
                 }
             }

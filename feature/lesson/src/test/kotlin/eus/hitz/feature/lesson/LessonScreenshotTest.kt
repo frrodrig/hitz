@@ -49,6 +49,34 @@ class LessonScreenshotTest {
     fun matchPairs() = capture("lesson_match_pairs", LessonPreviewData.active.copy(exercise = LessonPreviewData.pairs))
 
     @Test
+    fun listenTap() = capture(
+        "lesson_listen_tap",
+        LessonPreviewData.active.copy(exercise = LessonPreviewData.listenTap)
+    )
+
+    @Test
+    fun fillBlank() = capture(
+        "lesson_fill_blank",
+        LessonPreviewData.active.copy(exercise = LessonPreviewData.fillBlank)
+    )
+
+    @Test
+    fun chooseMeaningDark() = capture(
+        "lesson_choose_meaning_dark",
+        LessonPreviewData.active.copy(exercise = LessonPreviewData.meaning),
+        darkTheme = true,
+    )
+
+    @Test
+    fun completeChatCorrect() = capture("lesson_complete_chat_correct", LessonPreviewData.chatCorrect)
+
+    @Test
+    fun trueFalseIncorrect() = capture("lesson_true_false_incorrect", LessonPreviewData.trueFalseIncorrect)
+
+    @Test
+    fun speak() = capture("lesson_speak", LessonPreviewData.active.copy(exercise = LessonPreviewData.speak))
+
+    @Test
     fun finished() = capture("lesson_finished", LessonPreviewData.finished)
 
     @Test

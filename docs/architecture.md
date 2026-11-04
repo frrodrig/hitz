@@ -49,21 +49,42 @@ unit-tested without Android:
 | `AnswerChecker` | Any accepted answer is correct; a small typo (optimal string alignment distance ≤ 1, or ≤ 2 from 12 letters; none under 4 letters; same number of words) is *almost correct* and shows the right spelling. |
 | `WordBank` | Tiles = canonical answer words + distractors, shuffled with a per-exercise seed. Tile answers must be exact (an "almost" tile answer is a wrong order). |
 | `MatchPairsState` | Pair selection; wrong pairs are counted and recorded as mistakes but cost no heart. |
-| `LessonSession` | Queue: a wrong answer costs a heart and the exercise is asked again at the end until it is right; progress only grows with correct answers; no hearts left ends the lesson. Produces a `LessonResult` with first-try accuracy and the `Mistake`s (by word and structure) for spaced repetition. |
+| `LessonSession` | Queue: a wrong answer costs a heart and the exercise is asked again at the end until it is right; progress only grows with correct answers; no hearts left ends the lesson; a skipped exercise (speaking) leaves without counting. Produces a `LessonResult` with first-try accuracy and the `Mistake`s (by word and structure) for spaced repetition. |
+| `StorySession` | Story flow: lines revealed one by one, each question after the line it refers to; a wrong option is marked and the learner tries again (no hearts). Accuracy = questions right at the first try. |
 
 `feature:lesson` maps the session to an immutable `LessonUiState` in `LessonViewModel`
 (`StateFlow` + `LessonAction`s in, one-off `LessonEvent`s out). `LessonContent` is stateless and is
-what previews, UI tests and screenshot tests render. Exercise types not yet supported by the UI are
-skipped (M3 supports word bank, typing, choose image and match pairs).
+what previews, UI tests and screenshot tests render. All twelve exercise types are supported:
+
+- **Tiles** (`ExerciseUi.TileAnswer`): translate with a word bank, listen and tap, order the
+  sentence. Answers must be exact.
+- **Typing** (`ExerciseUi.TextAnswer`): translate by typing, listen and type. Tolerant checking.
+- **Single choice** (`ExerciseUi.SingleChoice`): choose the image, fill the blank, choose the
+  meaning, complete the chat, true or false. Text options are shuffled per exercise; `order` maps
+  them back to the content index. True/false shows no correction (the other option is right).
+- **Match pairs** finishes by itself; **speak** uses the system speech recogniser
+  (`RecognizerIntent`, `eu-ES`, no microphone permission). Recognised speech is checked tolerantly;
+  a failed attempt shows the sentence but costs no heart, and *"I can't speak now"* skips the
+  remaining speaking exercises of the session. Speaking can be turned off in the profile
+  (`SettingsRepository`, Preferences DataStore), which leaves them out of every session.
+
+**Audio**: `AudioProvider` (`core:domain`) plays `assets/audio/<clip id>.ogg` and falls back to the
+system TTS (Basque if the engine has it, else a Spanish voice) when a clip is not recorded yet
+(`AndroidAudioProvider`, `core:data`). Listening exercises play on start; story lines play as they
+appear.
+
+**Stories** (`StoryRoute`, `StoryViewModel`, `feature:lesson`): the player shows the lines read so
+far (tap a line for its translation, or its speaker button to hear it again) and the current
+question. Finishing records the story level as completed.
 
 ## Learning path and progress
 
 - **Progress** is stored in Room (`HitzDatabase`, `core:data`): `completions` (a lesson id, or the
-  level id of a review/legendary level, with best first-try accuracy) and `mistakes` with
+  level id of a story, review or legendary level, with best first-try accuracy) and `mistakes` with
   `mistake_tags` (`lemma` / `structure`). Room schemas are exported to `core/data/schemas/` and
   committed by the screenshot-recording workflow.
 - **Path rules** (`LearningPathBuilder`, pure Kotlin): progression is linear over the required
-  levels (lessons and unit reviews); a lesson level is complete when all its lessons are; stories and
+  levels (lessons, stories and unit reviews); a lesson level is complete when all its lessons are;
   legendary levels are optional and never block. Exactly one node is *current*.
 - **Sessions** (`PlanSessionUseCase`): lesson levels play the next lesson; the **review** picks the
   10 unit exercises with the highest mistake score (3 × mistakes on the exercise + mistakes on its

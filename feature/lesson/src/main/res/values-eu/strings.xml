@@ -26,4 +26,27 @@
     <string name="feature_lesson_out_of_hearts_title">Bizitzarik gabe geratu zara</string>
     <string name="feature_lesson_out_of_hearts_body">Errepasatu pixka bat eta saiatu berriro.</string>
     <string name="feature_lesson_error">Ezin izan da ikasgaia kargatu.</string>
+    <string name="feature_lesson_instruction_listen_tap">Ukitu entzuten duzuna</string>
+    <string name="feature_lesson_instruction_listen_type">Idatzi entzuten duzuna</string>
+    <string name="feature_lesson_instruction_order">Ordenatu esaldia</string>
+    <string name="feature_lesson_instruction_fill_blank">Osatu esaldia</string>
+    <string name="feature_lesson_instruction_meaning">Zer esan nahi du?</string>
+    <string name="feature_lesson_instruction_chat">Osatu elkarrizketa</string>
+    <string name="feature_lesson_instruction_true_false">Irakurri eta erantzun: egia ala gezurra?</string>
+    <string name="feature_lesson_instruction_speak">Esan esaldi hau</string>
+    <string name="feature_lesson_listen">Entzun</string>
+    <string name="feature_lesson_blank">hutsunea</string>
+    <string name="feature_lesson_chat_you">Zu</string>
+    <string name="feature_lesson_true">Egia</string>
+    <string name="feature_lesson_false">Gezurra</string>
+    <string name="feature_lesson_incorrect_plain">Ez da zuzena</string>
+    <string name="feature_lesson_speak_start">Ukitu hitz egiteko</string>
+    <string name="feature_lesson_speak_prompt">Esan esaldia euskaraz</string>
+    <string name="feature_lesson_speak_skip">Orain ezin dut hitz egin</string>
+    <string name="feature_lesson_speak_unavailable">Gailu honek ez du ahots-ezagutzarik. Ariketa hau salta dezakezu edo profilean desaktibatu.</string>
+    <string name="feature_lesson_story_close">Istoriotik irten</string>
+    <string name="feature_lesson_story_translation">Itzulpena ikusi</string>
+    <string name="feature_lesson_story_finished_title">Istorioa osatuta!</string>
+    <string name="feature_lesson_story_finished_accuracy">Lehen saiakeran galderen %%%1$d asmatu duzu.</string>
+    <string name="feature_lesson_story_error">Ezin izan da istorioa kargatu.</string>
 </resources>

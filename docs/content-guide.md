@@ -51,7 +51,12 @@ Course ─ Section ─ Unit (guidebook) ─ Level ─ Lesson ─ Exercise
 | Story | `u01-1.l3.story` | Inside a `story` level. |
 
 `review` and `legendary` levels carry no exercises: the app builds them at run time from the
-unit's exercises and the learner's mistakes (spaced repetition).
+unit's exercises and the learner's mistakes (spaced repetition). Stories are required to move on
+along the path; legendary levels are optional.
+
+A story is a short dialogue: `lines[{speaker, eu, es}]` and `questions[{afterLine, prompt,
+options, correct}]`, where `afterLine` is the 0-based line after which the question appears.
+Questions are in Spanish and check comprehension, not translation.
 
 Every exercise can declare `vocabulary` (syllabus lemmas it practises) and `structures` (grammar
 tags such as `izan-present`). Both feed spaced repetition, so declare them carefully.
@@ -72,6 +77,10 @@ tags such as `izan-present`). Both feed spaced repetition, so declare them caref
 | `read_true_false` | `passage` (eu), `statement` (es), `answer` | passage |
 | `order_sentence` | `answer` (eu), `translation` | answer |
 | `speak` | `text` (eu), `translation` | text |
+
+Options of `fill_blank`, `choose_meaning` and `complete_chat` are shuffled in the app, so their
+order in the JSON does not matter. `speak` exercises can be turned off by the learner, so a lesson
+must still make sense without them.
 
 Accepted answers are lists: the **first** one is canonical (it is shown as the correction and
 used to build word-bank tiles). Add every natural variant, e.g. with and without the subject
