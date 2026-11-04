@@ -26,6 +26,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
@@ -105,6 +106,7 @@ internal fun ShopContent(state: ShopUiState, onBuy: (ShopItem) -> Unit, modifier
         val nextHeart = state.nextHeartAt
         ShopItemCard(
             icon = HitzIcons.Heart,
+            tint = HitzTheme.extendedColors.heart.color,
             title = stringResource(R.string.feature_shop_hearts_title),
             description = if (heartsFull || nextHeart == null) {
                 stringResource(R.string.feature_shop_hearts_description_full)
@@ -122,6 +124,7 @@ internal fun ShopContent(state: ShopUiState, onBuy: (ShopItem) -> Unit, modifier
         )
         ShopItemCard(
             icon = HitzIcons.Streak,
+            tint = HitzTheme.extendedColors.streak.color,
             title = stringResource(R.string.feature_shop_freeze_title),
             description = stringResource(
                 R.string.feature_shop_freeze_description,
@@ -143,6 +146,7 @@ internal fun ShopContent(state: ShopUiState, onBuy: (ShopItem) -> Unit, modifier
 @Composable
 private fun ShopItemCard(
     @DrawableRes icon: Int,
+    tint: Color,
     title: String,
     description: String,
     price: Int,
@@ -155,7 +159,7 @@ private fun ShopItemCard(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(HitzSpacing.md)
             ) {
-                Icon(painterResource(icon), contentDescription = null, modifier = Modifier.size(40.dp))
+                Icon(painterResource(icon), contentDescription = null, tint = tint, modifier = Modifier.size(40.dp))
                 Column(Modifier.weight(1f)) {
                     Text(title, style = MaterialTheme.typography.titleLarge)
                     Text(description, style = MaterialTheme.typography.bodyMedium)
