@@ -38,6 +38,9 @@ EXTENDED = {
     "heart": 0xFFE5487A,
 }
 
+# Calmer chroma where the default (48) is too loud for large containers.
+EXTENDED_CHROMA = {"success": 30.0}
+
 ROLES = [
     "primary", "onPrimary", "primaryContainer", "onPrimaryContainer",
     "secondary", "onSecondary", "secondaryContainer", "onSecondaryContainer",
@@ -63,7 +66,7 @@ def scheme(dark: bool, contrast: float) -> DynamicScheme:
         contrast_level=contrast,
         is_dark=dark,
         primary_palette=palette(SEEDS["primary"]),
-        secondary_palette=palette(SEEDS["secondary"], chroma=30.0),
+        secondary_palette=palette(SEEDS["secondary"], chroma=16.0),
         tertiary_palette=palette(SEEDS["tertiary"], chroma=40.0),
         neutral_palette=TonalPalette.from_hue_and_chroma(*NEUTRAL),
         neutral_variant_palette=TonalPalette.from_hue_and_chroma(*NEUTRAL_VARIANT),
@@ -85,7 +88,7 @@ def extended_kotlin(name: str, dark: bool) -> str:
     tones = (80, 20, 30, 90) if dark else (40, 100, 90, 10)
     lines = [f"internal val {name} = HitzExtendedColors("]
     for key, seed in EXTENDED.items():
-        p = palette(seed)
+        p = palette(seed, chroma=EXTENDED_CHROMA.get(key))
         c, on, cont, on_cont = (p.tone(t) for t in tones)
         lines.append(
             f"    {key} = ColorFamily({hex_color(c)}, {hex_color(on)}, {hex_color(cont)}, {hex_color(on_cont)}),"

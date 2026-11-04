@@ -18,13 +18,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import eus.hitz.core.designsystem.component.ChoiceState
 import eus.hitz.core.designsystem.component.FeedbackKind
+import eus.hitz.core.designsystem.component.GroupPosition
 import eus.hitz.core.designsystem.component.HitzButton
 import eus.hitz.core.designsystem.component.HitzButtonStyle
 import eus.hitz.core.designsystem.component.HitzChoiceCard
+import eus.hitz.core.designsystem.component.HitzChoiceGroup
 import eus.hitz.core.designsystem.component.HitzFeedbackPanel
 import eus.hitz.core.designsystem.component.HitzLessonProgressBar
 import eus.hitz.core.designsystem.component.HitzMascot
-import eus.hitz.core.designsystem.component.HitzStatCounter
+import eus.hitz.core.designsystem.component.HitzStatBar
 import eus.hitz.core.designsystem.component.HitzWordBank
 import eus.hitz.core.designsystem.component.HitzWordChip
 import eus.hitz.core.designsystem.component.StatKind
@@ -58,24 +60,22 @@ fun ComponentCatalog(modifier: Modifier = Modifier, scrollable: Boolean = true) 
                     Text("Euskara pausoz pauso", style = MaterialTheme.typography.bodyLarge)
                 }
             }
-            Row(
+            HitzStatBar(
+                stats = listOf(StatKind.Streak to 12, StatKind.Gems to 340, StatKind.Hearts to 5, StatKind.Xp to 90),
                 modifier = Modifier.padding(horizontal = HitzSpacing.lg),
-                horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
-            ) {
-                HitzStatCounter(StatKind.Streak, 12)
-                HitzStatCounter(StatKind.Gems, 340)
-                HitzStatCounter(StatKind.Hearts, 5)
-                HitzStatCounter(StatKind.Xp, 90)
-            }
+            )
             HitzLessonProgressBar(0.6f, Modifier.padding(horizontal = HitzSpacing.lg))
             Column(
                 modifier = Modifier.padding(horizontal = HitzSpacing.lg),
                 verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
             ) {
                 Text("Zer esan nahi du «etxea»?", style = MaterialTheme.typography.titleLargeEmphasized)
-                HitzChoiceCard("la casa", ChoiceState.Correct, {})
-                HitzChoiceCard("la calle", ChoiceState.Default, {})
-                HitzChoiceCard("la escuela", ChoiceState.Incorrect, {})
+                HitzChoiceGroup {
+                    HitzChoiceCard("la casa", ChoiceState.Correct, {}, position = GroupPosition.First)
+                    HitzChoiceCard("la calle", ChoiceState.Default, {}, position = GroupPosition.Middle)
+                    HitzChoiceCard("la escuela", ChoiceState.Incorrect, {}, position = GroupPosition.Middle)
+                    HitzChoiceCard("el monte", ChoiceState.Default, {}, position = GroupPosition.Last)
+                }
             }
             HitzWordBank(Modifier.padding(horizontal = HitzSpacing.lg)) {
                 listOf("Ni", "Ane", "naiz", "zu", "Bilbokoa").forEachIndexed { index, word ->
