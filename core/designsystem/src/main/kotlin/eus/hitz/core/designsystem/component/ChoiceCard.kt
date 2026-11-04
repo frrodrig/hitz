@@ -1,22 +1,18 @@
 package eus.hitz.core.designsystem.component
 
-import androidx.compose.animation.animateColorAsState
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Icon
+import androidx.compose.material3.ListItem
+import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
@@ -24,7 +20,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
-import androidx.compose.ui.unit.dp
 import eus.hitz.core.designsystem.R
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.preview.HitzPreviews
@@ -34,35 +29,23 @@ import eus.hitz.core.designsystem.theme.HitzTheme
 /** Visual state of an answer option. */
 enum class ChoiceState { Default, Selected, Correct, Incorrect, Disabled }
 
-private data class ChoiceColors(val container: Color, val content: Color, val border: Color, val borderWidth: Int)
-
 @Composable
-private fun choiceColors(state: ChoiceState): ChoiceColors {
+private fun containerColor(state: ChoiceState): Pair<Color, Color> {
     val scheme = MaterialTheme.colorScheme
     val success = HitzTheme.extendedColors.success
     return when (state) {
-        ChoiceState.Default -> ChoiceColors(scheme.surface, scheme.onSurface, scheme.outlineVariant, 2)
-        ChoiceState.Selected -> ChoiceColors(
-            scheme.secondaryContainer,
-            scheme.onSecondaryContainer,
-            scheme.secondary,
-            3
-        )
-        ChoiceState.Correct -> ChoiceColors(success.container, success.onContainer, success.color, 3)
-        ChoiceState.Incorrect -> ChoiceColors(scheme.errorContainer, scheme.onErrorContainer, scheme.error, 3)
-        ChoiceState.Disabled -> ChoiceColors(
-            scheme.surfaceContainerLow,
-            scheme.onSurfaceVariant,
-            scheme.outlineVariant,
-            2
-        )
+        ChoiceState.Default -> scheme.surfaceContainerHigh to scheme.onSurface
+        ChoiceState.Selected -> scheme.secondaryContainer to scheme.onSecondaryContainer
+        ChoiceState.Correct -> success.container to success.onContainer
+        ChoiceState.Incorrect -> scheme.errorContainer to scheme.onErrorContainer
+        ChoiceState.Disabled -> scheme.surfaceContainerLow to scheme.onSurfaceVariant
     }
 }
 
 /**
- * Selectable answer option used by "choose the meaning", "choose the image", chat and
- * true/false exercises. The state is announced by TalkBack, and correct/incorrect are shown
- * with an icon as well as colour.
+ * Single-choice answer option: a Material 3 [ListItem] with a [RadioButton] on a tonal surface.
+ * Used by "choose the meaning", "choose the image", chat and true/false exercises. The state is
+ * announced by TalkBack, and correct/incorrect also show an icon, not only colour.
  */
 @Composable
 fun HitzChoiceCard(
@@ -73,9 +56,7 @@ fun HitzChoiceCard(
     supportingText: String? = null,
     leading: (@Composable () -> Unit)? = null,
 ) {
-    val colors = choiceColors(state)
-    val container by animateColorAsState(colors.container, label = "choiceContainer")
-    val border by animateColorAsState(colors.border, label = "choiceBorder")
+    val (container, content) = containerColor(state)
     val description = when (state) {
         ChoiceState.Selected -> stringResource(R.string.core_designsystem_state_selected)
         ChoiceState.Correct -> stringResource(R.string.core_designsystem_state_correct)
@@ -83,39 +64,42 @@ fun HitzChoiceCard(
         else -> null
     }
     Surface(
-        modifier = modifier
-            .fillMaxWidth()
-            .heightIn(min = 56.dp)
-            .selectable(
-                selected = state == ChoiceState.Selected,
-                enabled = state != ChoiceState.Disabled,
-                role = Role.RadioButton,
-                onClick = onClick,
-            )
-            .semantics { if (description != null) stateDescription = description },
-        shape = MaterialTheme.shapes.medium,
+        modifier = modifier.fillMaxWidth(),
+        shape = MaterialTheme.shapes.large,
         color = container,
-        contentColor = colors.content,
-        border = BorderStroke(colors.borderWidth.dp, border),
+        contentColor = content,
     ) {
-        Row(
-            modifier = Modifier.padding(horizontal = HitzSpacing.lg, vertical = HitzSpacing.md),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(HitzSpacing.md),
-        ) {
-            leading?.invoke()
-            Column(Modifier.weight(1f)) {
-                Text(text, style = MaterialTheme.typography.bodyLarge)
-                if (supportingText != null) {
-                    Text(supportingText, style = MaterialTheme.typography.bodySmall)
-                }
-            }
-            when (state) {
-                ChoiceState.Correct -> Icon(painterResource(HitzIcons.Check), null, Modifier.size(24.dp))
-                ChoiceState.Incorrect -> Icon(painterResource(HitzIcons.Close), null, Modifier.size(24.dp))
-                else -> Unit
-            }
-        }
+        // Selection semantics live on the ListItem, which is the merging node in material3 1.5.
+        ListItem(
+            modifier = Modifier
+                .selectable(
+                    selected = state == ChoiceState.Selected,
+                    enabled = state != ChoiceState.Disabled,
+                    role = Role.RadioButton,
+                    onClick = onClick,
+                )
+                .semantics { if (description != null) stateDescription = description },
+            headlineContent = { Text(text, style = MaterialTheme.typography.bodyLarge) },
+            supportingContent = supportingText?.let { { Text(it) } },
+            leadingContent = leading ?: {
+                RadioButton(
+                    selected = state == ChoiceState.Selected,
+                    onClick = null,
+                    enabled = state != ChoiceState.Disabled,
+                )
+            },
+            trailingContent = when (state) {
+                ChoiceState.Correct -> { { Icon(painterResource(HitzIcons.Check), contentDescription = null) } }
+                ChoiceState.Incorrect -> { { Icon(painterResource(HitzIcons.Close), contentDescription = null) } }
+                else -> null
+            },
+            colors = ListItemDefaults.colors(
+                containerColor = Color.Transparent,
+                headlineColor = content,
+                supportingColor = content,
+                trailingIconColor = content,
+            ),
+        )
     }
 }
 
