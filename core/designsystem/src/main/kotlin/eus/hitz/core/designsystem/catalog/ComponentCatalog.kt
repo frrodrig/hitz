@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
+
 package eus.hitz.core.designsystem.catalog
 
 import androidx.compose.foundation.layout.Arrangement
@@ -7,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -51,11 +54,14 @@ fun ComponentCatalog(modifier: Modifier = Modifier, scrollable: Boolean = true) 
             ) {
                 HitzMascot(size = HitzSpacing.xxxl * 2, contentDescription = null)
                 Column {
-                    Text("Hitz", style = MaterialTheme.typography.displaySmall)
+                    Text("Hitz", style = MaterialTheme.typography.displaySmallEmphasized)
                     Text("Euskara pausoz pauso", style = MaterialTheme.typography.bodyLarge)
                 }
             }
-            Row(Modifier.padding(horizontal = HitzSpacing.sm)) {
+            Row(
+                modifier = Modifier.padding(horizontal = HitzSpacing.lg),
+                horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
+            ) {
                 HitzStatCounter(StatKind.Streak, 12)
                 HitzStatCounter(StatKind.Gems, 340)
                 HitzStatCounter(StatKind.Hearts, 5)
@@ -66,7 +72,7 @@ fun ComponentCatalog(modifier: Modifier = Modifier, scrollable: Boolean = true) 
                 modifier = Modifier.padding(horizontal = HitzSpacing.lg),
                 verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
             ) {
-                Text("Zer esan nahi du «etxea»?", style = MaterialTheme.typography.titleLarge)
+                Text("Zer esan nahi du «etxea»?", style = MaterialTheme.typography.titleLargeEmphasized)
                 HitzChoiceCard("la casa", ChoiceState.Correct, {})
                 HitzChoiceCard("la calle", ChoiceState.Default, {})
                 HitzChoiceCard("la escuela", ChoiceState.Incorrect, {})

@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
+
 package eus.hitz.core.designsystem.theme
 
 import android.app.UiModeManager
@@ -5,7 +7,10 @@ import android.content.Context
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ColorScheme
-import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
+import androidx.compose.material3.MaterialExpressiveTheme
+import androidx.compose.material3.MotionScheme
+import androidx.compose.material3.Shapes
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.runtime.Composable
@@ -15,7 +20,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 
 /**
- * Hitz theme: brand colour schemes, Fredoka + Atkinson Hyperlegible typography and rounded shapes.
+ * Hitz theme, built on [MaterialExpressiveTheme]: brand colour schemes, the expressive motion
+ * scheme, the default expressive shapes and Google Sans Flex typography.
  *
  * @param darkTheme use the dark colour scheme.
  * @param dynamicColor use the wallpaper-based colours on Android 12+. Off by default to keep the
@@ -41,10 +47,11 @@ fun HitzTheme(
     val extendedColors = if (darkTheme) DarkExtendedColors else LightExtendedColors
 
     CompositionLocalProvider(LocalHitzExtendedColors provides extendedColors) {
-        MaterialTheme(
+        MaterialExpressiveTheme(
             colorScheme = colorScheme,
+            motionScheme = MotionScheme.expressive(),
+            shapes = Shapes(),
             typography = HitzTypography,
-            shapes = HitzShapes,
             content = content,
         )
     }

@@ -3,6 +3,14 @@
 Everything lives in `:core:designsystem`. Features never hard-code colours, fonts, sizes or icons:
 they use `MaterialTheme`, `HitzTheme.extendedColors`, `HitzSpacing` and `HitzIcons`.
 
+The UI follows **Material 3 Expressive**. `HitzTheme` wraps `MaterialExpressiveTheme` with the
+expressive motion scheme, and components are standard Material 3 / Expressive components wherever
+one exists; Hitz wrappers only fix sizes, colours and accessibility semantics.
+
+> Expressive APIs are public from `androidx.compose.material3:material3` **1.5.0** (the 1.4.x
+> version in the Compose BOM keeps them internal), so the catalog pins material3 to the latest
+> 1.5.0 pre-release. Move back to the BOM version once 1.5.0 is stable.
+
 ## Identity
 
 - **Mascot:** a *Galtzagorri*, one of the tiny red-trousered helpers of Basque mythology, wearing a
@@ -37,18 +45,15 @@ Never use colour alone to convey meaning: correct and incorrect also show an ico
 
 ## Typography
 
-| Role | Family |
-|---|---|
-| Display, headline, title, labelLarge (buttons) | **Fredoka** (variable, rounded) |
-| Body, labelMedium, labelSmall | **Atkinson Hyperlegible** (designed for low-vision legibility) |
-
-Both fonts are SIL Open Font License 1.1 (`third_party/fonts/`). Sizes follow the Material 3 scale
-in `sp`, so they respect the user's font scale; screenshots are also taken at 200 %.
+**Google Sans Flex** (the Material 3 Expressive typeface, SIL OFL 1.1, `third_party/fonts/`) for every
+role, including the emphasized styles (`titleLargeEmphasized`, …). The font is subset to Latin and
+instanced to its weight axis (≈180 KB). Sizes follow the Material 3 scale in `sp`, so they respect
+the user's font scale; screenshots are also taken at 200 %.
 
 ## Shapes and spacing
 
-Corner radii: 6 / 10 / 16 / 24 / 32 dp (`HitzShapes`). Spacing: 4 dp grid (`HitzSpacing`), with
-48 dp minimum touch targets.
+Default Material 3 Expressive `Shapes()`, plus `MaterialShapes` (e.g. `Cookie9Sided`, `Sunny`) for
+decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum touch targets.
 
 ## Icons
 
@@ -57,17 +62,17 @@ Corner radii: 6 / 10 / 16 / 24 / 32 dp (`HitzShapes`). Spacing: 4 dp grid (`Hitz
 
 ## Components
 
-| Component | Purpose |
-|---|---|
-| `HitzButton` | M3 buttons (primary, tonal, outlined, text) at 52 dp with optional icon |
-| `HitzChoiceCard` | Answer option with default, selected, correct, incorrect and disabled states |
-| `HitzWordChip` / `HitzWordBank` | Word-bank chips that keep their slot when used |
-| `HitzFeedbackPanel` | Result panel (correct, almost, incorrect) announced as a live region |
-| `HitzLessonProgressBar` | Animated lesson progress |
-| `HitzStatCounter` | Streak, gems, hearts and XP counters with spoken plurals |
-| `HitzMascot` | The Galtzagorri |
-| `PlaceholderScreen` | Temporary screen for unfinished features |
+| Hitz component | Built on | Purpose |
+|---|---|---|
+| `HitzButton` | `Button`, `FilledTonalButton`, `OutlinedButton`, `TextButton` with `ButtonDefaults.shapes()` (shape morph) and expressive sizes | Actions |
+| `HitzChoiceCard` | `ListItem` + `RadioButton` on a tonal `Surface` | Answer option: default, selected, correct, incorrect, disabled |
+| `HitzWordChip` / `HitzWordBank` | `FilledTonalButton` in a `FlowRow` | Word bank; used words keep an empty slot |
+| `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel, announced as a live region |
+| `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress |
+| `HitzStatCounter` | `AssistChip` | Streak, gems, hearts and XP with spoken plurals |
+| `HitzMascot` | Image on a `MaterialShapes.Sunny` container | The Galtzagorri |
+| `PlaceholderScreen` | — | Temporary screen for unfinished features |
 
-Every component has `@HitzPreviews` (light, dark, 200 % font and Basque). `ComponentCatalog`
-shows them all and is captured by `ComponentCatalogScreenshotTest` (light, dark, high contrast,
-200 % font).
+The app uses `ShortNavigationBar` for top-level navigation. Every component has `@HitzPreviews`
+(light, dark, 200 % font and Basque). `ComponentCatalog` shows them all and is captured by
+`ComponentCatalogScreenshotTest` (light, dark, high contrast, 200 % font).

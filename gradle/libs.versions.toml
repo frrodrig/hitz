@@ -15,18 +15,20 @@ roborazzi = "1.77.0"
 # AndroidX
 androidxActivity = "1.9.3"
 androidxComposeBom = "2026.09.00"
-androidxCore = "1.15.0"
-androidxCoreSplashscreen = "1.0.1"
-androidxDataStore = "1.2.0"
-androidxHiltNavigationCompose = "1.2.0"
+# Material 3 Expressive APIs are only public from 1.5.0 (1.4.x in the BOM keeps them internal)
+androidxComposeMaterial3 = "1.5.0-beta02"
+androidxCore = "1.19.1"
+androidxCoreSplashscreen = "1.2.0"
+androidxDataStore = "1.3.0"
+androidxHiltNavigationCompose = "1.4.0"
 androidxLifecycle = "2.10.0"
-androidxNavigation = "2.8.5"
-androidxWork = "2.10.0"
+androidxNavigation = "2.10.2"
+androidxWork = "2.12.0"
 androidxTestCore = "1.6.1"
 androidxTestExt = "1.2.1"
 androidxTestRunner = "1.6.2"
 androidxEspresso = "3.6.1"
-room = "2.8.3"
+room = "2.8.5"
 
 # Third party
 hilt = "2.60.1"
@@ -51,7 +53,7 @@ androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "androidxComposeMaterial3" }
 androidx-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "androidxDataStore" }
 androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "androidxHiltNavigationCompose" }
 androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
