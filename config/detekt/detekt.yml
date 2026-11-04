@@ -1,9 +1,9 @@
-# Se aplica sobre la configuración por defecto de detekt (buildUponDefaultConfig).
+# Applied on top of detekt's default configuration (buildUponDefaultConfig).
 config:
   validation: true
 
 naming:
-  # Los ficheros *Navigation.kt agrupan la ruta y sus extensiones de navegación.
+  # *Navigation.kt files group a route with its navigation extensions.
   MatchingDeclarationName:
     active: false
   FunctionNaming:

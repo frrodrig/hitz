@@ -2,7 +2,7 @@ package eus.hitz.core.domain.sync
 
 import javax.inject.Inject
 
-/** Lanza una sincronización solo si hay backend; si no, no hace nada. */
+/** Triggers a sync only when a backend is configured; otherwise it is a no-op. */
 class SyncNowUseCase @Inject constructor(
     private val repository: SyncRepository,
 ) {

@@ -1,14 +1,14 @@
-name: Propuesta
-description: Una idea o mejora para la app
+name: Feature request
+description: An idea or improvement for the app
 labels: [feat]
 body:
   - type: textarea
     id: problem
     attributes:
-      label: ¿Qué problema resuelve?
+      label: What problem does it solve?
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Propuesta
+      label: Proposal

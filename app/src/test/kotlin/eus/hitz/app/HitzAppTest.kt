@@ -25,7 +25,7 @@ class HitzAppTest {
     val composeRule = createComposeRule()
 
     @Test
-    fun navegaEntreDestinosPrincipales() {
+    fun navigatesBetweenTopLevelDestinations() {
         composeRule.setContent { HitzTheme(darkTheme = false) { HitzApp() } }
         composeRule.onNodeWithText("Aprender").assertIsSelected()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/app_path.png")

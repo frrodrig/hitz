@@ -15,7 +15,7 @@ class MainActivityTest {
     val composeRule = createAndroidComposeRule<MainActivity>()
 
     @Test
-    fun arrancaEnLaRutaYNavegaALaTienda() {
+    fun startsOnPathAndNavigatesToShop() {
         composeRule.onNodeWithText("Ruta").assertIsDisplayed()
         composeRule.onNodeWithText("Tienda").performClick()
         composeRule.onNodeWithText("La tienda de gemas llegará en M6.").assertIsDisplayed()

@@ -17,7 +17,7 @@ class ProfileScreenTest {
     val composeRule = createComposeRule()
 
     @Test
-    fun muestraElTitulo() {
+    fun showsTitle() {
         composeRule.setContent { HitzTheme { ProfileScreen() } }
         composeRule.onNodeWithText("Perfil").assertIsDisplayed()
     }

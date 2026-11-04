@@ -5,7 +5,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.dependencies
 
-/** Módulo de feature: librería Compose + Hilt + navegación type-safe + dependencias de core. */
+/** Feature module: Compose library + Hilt + type-safe navigation + core dependencies. */
 abstract class AndroidFeatureConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {

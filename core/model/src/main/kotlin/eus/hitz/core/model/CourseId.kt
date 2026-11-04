@@ -1,13 +1,13 @@
 package eus.hitz.core.model
 
 /**
- * Identificador de un curso con el formato `<idioma-aprendido>-<idioma-base>`,
- * por ejemplo `eu-es` (euskera desde castellano).
+ * Course identifier in the form `<learning-language>-<base-language>`,
+ * e.g. `eu-es` (Basque for Spanish speakers).
  */
 @JvmInline
 value class CourseId(val value: String) {
     init {
-        require(PATTERN.matches(value)) { "CourseId no válido: '$value'" }
+        require(PATTERN.matches(value)) { "Invalid CourseId: '$value'" }
     }
 
     val learningLanguage: String get() = value.substringBefore('-')

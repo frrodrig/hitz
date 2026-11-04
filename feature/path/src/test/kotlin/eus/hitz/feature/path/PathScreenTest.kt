@@ -17,7 +17,7 @@ class PathScreenTest {
     val composeRule = createComposeRule()
 
     @Test
-    fun muestraElTitulo() {
+    fun showsTitle() {
         composeRule.setContent { HitzTheme { PathScreen() } }
         composeRule.onNodeWithText("Ruta").assertIsDisplayed()
     }

@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
-// Paleta provisional de M0. El tema definitivo (colores, tipografía y shapes) llega en M1.
+// Temporary M0 palette. The final theme (colours, typography and shapes) arrives in M1.
 private val GaltzagorriRed = Color(0xFFC8102E)
 private val GaltzagorriRedDark = Color(0xFFFFB3B0)
 
@@ -19,11 +19,11 @@ private val LightColors = lightColorScheme(primary = GaltzagorriRed)
 private val DarkColors = darkColorScheme(primary = GaltzagorriRedDark)
 
 /**
- * Tema de Hitz.
+ * Hitz theme.
  *
- * @param darkTheme usa el esquema oscuro.
- * @param dynamicColor usa el color dinámico del sistema (Android 12+); desactivado por defecto
- * para mantener la identidad de marca.
+ * @param darkTheme use the dark colour scheme.
+ * @param dynamicColor use the system dynamic colours (Android 12+); off by default to keep the
+ * brand identity.
  */
 @Composable
 fun HitzTheme(

@@ -18,7 +18,7 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import eus.hitz.core.designsystem.theme.HitzTheme
 
-/** Pantalla provisional para las features que todavía no están implementadas. */
+/** Temporary screen for features that are not implemented yet. */
 @Composable
 fun PlaceholderScreen(
     title: String,
@@ -46,7 +46,7 @@ fun PlaceholderScreen(
 }
 
 @PreviewLightDark
-@Preview(name = "Fuente 200 %", fontScale = 2f)
+@Preview(name = "Font 200 %", fontScale = 2f)
 @Composable
 private fun PlaceholderScreenPreview() {
     HitzTheme {

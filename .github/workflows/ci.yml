@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   content:
-    name: Contenido
+    name: Content
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -22,12 +22,12 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.13"
-      - name: Temario sincronizado con vocabulary.csv
+      - name: Syllabus in sync with vocabulary.csv
         run: |
-          if [ -f tools/syllabus_vocab.py ]; then python3 tools/syllabus_vocab.py --check; else echo "Sin temario todavía"; fi
+          if [ -f tools/syllabus_vocab.py ]; then python3 tools/syllabus_vocab.py --check; else echo "No syllabus yet"; fi
 
   build:
-    name: Lint, tests y build
+    name: Lint, tests and build
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -40,15 +40,15 @@ jobs:
       - uses: gradle/actions/setup-gradle@v6
         with:
           cache-read-only: ${{ github.ref != 'refs/heads/main' }}
-      - name: detekt (ktlint) + Android Lint + tests unitarios + build debug
+      - name: detekt (ktlint) + Android Lint + unit tests + debug build
         run: .github/scripts/gradlew-annotated.sh --continue detekt lintDebug testDebugUnitTest assembleDebug
-      - name: Subir APK debug
+      - name: Upload debug APK
         uses: actions/upload-artifact@v7
         with:
           name: hitz-debug-apk
           path: app/build/outputs/apk/debug/*.apk
           retention-days: 14
-      - name: Subir informes
+      - name: Upload reports
         if: always()
         uses: actions/upload-artifact@v7
         with:

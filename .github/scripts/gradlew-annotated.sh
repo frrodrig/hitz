@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Ejecuta ./gradlew y, si falla, publica los errores como anotaciones del check
-# (bloque "What went wrong", errores del compilador "e: …" y fallos de tests),
-# para poder leerlos en la pestaña de checks del PR o a través de la API.
+# Runs ./gradlew and, on failure, publishes the errors as check annotations
+# ("What went wrong" block, Kotlin compiler "e: …" lines and failed tests) so they can
+# be read from the PR checks tab or through the REST API.
 set -uo pipefail
 
 log="$(mktemp)"
@@ -11,13 +11,13 @@ status=${PIPESTATUS[0]}
 if [ "$status" -ne 0 ]; then
   encode() { sed -e 's/%/%25/g' -e 's/\r//g' | awk 'BEGIN{ORS="%0A"} {print}'; }
 
-  # Errores de compilación de Kotlin, de Lint y de tests (máx. 40 líneas).
+  # Kotlin compiler, Lint and test errors (at most 60 lines, stack frames removed).
   grep -E -A4 '^(e: |ERROR:|FAILURE:|.*FAILED$)|Error: |error: ' "$log" | grep -v -E '^\s+at ' | head -n 60 > "$log.err" || true
   if [ -s "$log.err" ]; then
-    echo "::error title=Errores de Gradle ($*)::$(encode < "$log.err")"
+    echo "::error title=Gradle errors ($*)::$(encode < "$log.err")"
   fi
 
-  # Bloque "What went wrong" completo (configuración, dependencias, etc.).
+  # Full "What went wrong" block (configuration, dependency resolution, ...).
   awk '/\* What went wrong:/{f=1} /\* Try:/{f=0} f' "$log" | head -n 60 > "$log.wrong" || true
   if [ -s "$log.wrong" ]; then
     echo "::error title=What went wrong ($*)::$(encode < "$log.wrong")"

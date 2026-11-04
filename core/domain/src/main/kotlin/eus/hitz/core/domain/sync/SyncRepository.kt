@@ -1,14 +1,14 @@
 package eus.hitz.core.domain.sync
 
 /**
- * Punto de extensión para un backend futuro. La app es offline-first: mientras no haya
- * backend, la implementación no hace nada y devuelve [SyncResult.Disabled].
+ * Extension point for a future backend. The app is offline-first: until a backend exists,
+ * the implementation does nothing and returns [SyncResult.Disabled].
  */
 interface SyncRepository {
-    /** Sube el progreso local y descarga cambios remotos. */
+    /** Uploads local progress and downloads remote changes. */
     suspend fun sync(): SyncResult
 
-    /** Indica si hay un backend configurado. */
+    /** Whether a backend is configured. */
     val isEnabled: Boolean
 }
 

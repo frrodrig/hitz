@@ -16,7 +16,7 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
 
 private val JAVA_VERSION = JavaVersion.VERSION_17
 
-/** Configuración común de Kotlin y Android para módulos de app y librería. */
+/** Shared Kotlin and Android configuration for application and library modules. */
 internal fun Project.configureKotlinAndroid(commonExtension: CommonExtension) {
     commonExtension.apply {
         compileSdk = libs.versionInt("compileSdk")
@@ -42,7 +42,7 @@ internal fun Project.configureKotlinAndroid(commonExtension: CommonExtension) {
     addUnitTestDependencies()
 }
 
-/** Configuración de módulos Kotlin puros (sin Android): :core:model y :core:domain. */
+/** Configuration for pure Kotlin (non-Android) modules: :core:model and :core:domain. */
 internal fun Project.configureKotlinJvm() {
     extensions.configure<JavaPluginExtension> {
         sourceCompatibility = JAVA_VERSION

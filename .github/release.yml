@@ -2,11 +2,11 @@ changelog:
   exclude:
     authors: [dependabot]
   categories:
-    - title: Novedades
+    - title: New features
       labels: [feat]
-    - title: Contenido del curso
+    - title: Course content
       labels: [content]
-    - title: Correcciones
+    - title: Fixes
       labels: [fix]
-    - title: Otros cambios
+    - title: Other changes
       labels: ["*"]

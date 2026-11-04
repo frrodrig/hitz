@@ -4,7 +4,7 @@ import eus.hitz.core.domain.sync.SyncRepository
 import eus.hitz.core.domain.sync.SyncResult
 import javax.inject.Inject
 
-/** Implementación offline: no hay backend, así que no se sincroniza nada. */
+/** Offline implementation: there is no backend, so nothing is synced. */
 internal class OfflineSyncRepository @Inject constructor() : SyncRepository {
     override val isEnabled: Boolean = false
 

@@ -15,14 +15,14 @@ class SyncNowUseCaseTest {
     }
 
     @Test
-    fun `sin backend no sincroniza`() = runTest {
+    fun `does not sync without a backend`() = runTest {
         val repo = FakeSyncRepository(isEnabled = false)
         assertThat(SyncNowUseCase(repo)()).isEqualTo(SyncResult.Disabled)
         assertThat(repo.calls).isEqualTo(0)
     }
 
     @Test
-    fun `con backend delega en el repositorio`() = runTest {
+    fun `delegates to the repository when a backend exists`() = runTest {
         val repo = FakeSyncRepository(isEnabled = true)
         assertThat(SyncNowUseCase(repo)()).isEqualTo(SyncResult.Success(42L))
         assertThat(repo.calls).isEqualTo(1)
