@@ -76,6 +76,8 @@ fun HitzApp(
                 },
                 onOpenGuidebook = { unitId -> navController.navigateToGuidebook(unitId) },
                 onStartStory = { unitId, levelId -> navController.navigateToStory(unitId, levelId) },
+                onOpenShop = { navController.navigateToTopLevel(TopLevelDestination.SHOP) },
+                onOpenProfile = { navController.navigateToTopLevel(TopLevelDestination.PROFILE) },
             )
             guidebookScreen(onBack = { navController.popBackStack() })
             lessonScreen(onClose = { navController.popBackStack() })
@@ -95,22 +97,23 @@ private fun TopLevelNavigationBar(currentDestination: NavDestination?, navContro
                 ?.any { it.hasRoute(destination.routeClass) } == true
             ShortNavigationBarItem(
                 selected = selected,
-                onClick = {
-                    navController.navigate(
-                        destination.route,
-                        navOptions {
-                            popUpTo(navController.graph.findStartDestination().id) { saveState = true }
-                            launchSingleTop = true
-                            restoreState = true
-                        },
-                    )
-                },
+                onClick = { navController.navigateToTopLevel(destination) },
                 icon = { Icon(painterResource(destination.icon), contentDescription = null) },
                 label = { Text(stringResource(destination.label)) },
             )
         }
     }
 }
+
+/** Top-level navigation keeps one copy of each destination and restores its state. */
+private fun NavHostController.navigateToTopLevel(destination: TopLevelDestination) = navigate(
+    destination.route,
+    navOptions {
+        popUpTo(graph.findStartDestination().id) { saveState = true }
+        launchSingleTop = true
+        restoreState = true
+    },
+)
 
 @PreviewLightDark
 @Composable

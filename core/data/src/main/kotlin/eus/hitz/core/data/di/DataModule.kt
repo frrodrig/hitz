@@ -18,17 +18,23 @@ import eus.hitz.core.data.content.AssetCourseRepository
 import eus.hitz.core.data.content.ContentSource
 import eus.hitz.core.data.database.HitzDatabase
 import eus.hitz.core.data.database.ProgressDao
+import eus.hitz.core.data.gamification.RoomGamificationRepository
 import eus.hitz.core.data.progress.RoomProgressRepository
+import eus.hitz.core.data.reminder.WorkManagerReminderScheduler
 import eus.hitz.core.data.settings.DataStoreSettingsRepository
 import eus.hitz.core.data.sync.OfflineSyncRepository
 import eus.hitz.core.domain.audio.AudioProvider
 import eus.hitz.core.domain.content.CourseRepository
+import eus.hitz.core.domain.gamification.GamificationRepository
 import eus.hitz.core.domain.progress.ProgressRepository
+import eus.hitz.core.domain.settings.ReminderScheduler
 import eus.hitz.core.domain.settings.SettingsRepository
 import eus.hitz.core.domain.sync.SyncRepository
 import eus.hitz.core.domain.time.EpochClock
+import eus.hitz.core.domain.time.ZoneProvider
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
+import java.time.ZoneId
 import javax.inject.Named
 import javax.inject.Singleton
 
@@ -60,6 +66,13 @@ internal interface DataModule {
     fun bindSettingsRepository(impl: DataStoreSettingsRepository): SettingsRepository
 
     @Binds
+    @Singleton
+    fun bindGamificationRepository(impl: RoomGamificationRepository): GamificationRepository
+
+    @Binds
+    fun bindReminderScheduler(impl: WorkManagerReminderScheduler): ReminderScheduler
+
+    @Binds
     fun bindAudioProvider(impl: AndroidAudioProvider): AudioProvider
 
     companion object {
@@ -84,5 +97,8 @@ internal interface DataModule {
 
         @Provides
         fun provideClock(): EpochClock = EpochClock { System.currentTimeMillis() }
+
+        @Provides
+        fun provideZone(): ZoneProvider = ZoneProvider { ZoneId.systemDefault() }
     }
 }

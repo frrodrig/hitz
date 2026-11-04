@@ -19,6 +19,6 @@ class MainActivityTest {
     fun startsOnThePathAndNavigatesToTheShop() {
         composeRule.waitUntil(10_000) { composeRule.onAllNodesWithText("¡Hola!").fetchSemanticsNodes().isNotEmpty() }
         composeRule.onNodeWithText("Tienda").performClick()
-        composeRule.onNodeWithText("La tienda de gemas llegará en M6.").assertIsDisplayed()
+        composeRule.onNodeWithText("Recargar vidas").assertIsDisplayed()
     }
 }

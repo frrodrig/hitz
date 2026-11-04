@@ -15,14 +15,19 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.LoadingIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -34,6 +39,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import eus.hitz.core.designsystem.component.HitzButton
 import eus.hitz.core.designsystem.component.HitzButtonSize
 import eus.hitz.core.designsystem.component.HitzButtonStyle
+import eus.hitz.core.designsystem.component.HitzStatBar
+import eus.hitz.core.designsystem.component.StatKind
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.domain.path.LearningPath
@@ -50,6 +57,8 @@ fun PathScreen(
     onStartLevel: (unitId: String, levelId: String, lessonId: String?) -> Unit,
     onOpenGuidebook: (unitId: String) -> Unit,
     onStartStory: (unitId: String, levelId: String) -> Unit,
+    onOpenShop: () -> Unit,
+    onOpenProfile: () -> Unit,
     viewModel: PathViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -58,6 +67,8 @@ fun PathScreen(
         onStartLevel = onStartLevel,
         onOpenGuidebook = onOpenGuidebook,
         onStartStory = onStartStory,
+        onOpenShop = onOpenShop,
+        onOpenProfile = onOpenProfile,
     )
 }
 
@@ -68,25 +79,72 @@ internal fun PathContent(
     onOpenGuidebook: (unitId: String) -> Unit,
     modifier: Modifier = Modifier,
     onStartStory: (unitId: String, levelId: String) -> Unit = { _, _ -> },
+    onOpenShop: () -> Unit = {},
+    onOpenProfile: () -> Unit = {},
     listState: LazyListState = rememberLazyListState(),
 ) {
+    var showNoHearts by rememberSaveable { mutableStateOf(false) }
     when (state) {
         PathUiState.Loading -> Box(modifier.fillMaxSize(), contentAlignment = Alignment.Center) { LoadingIndicator() }
         PathUiState.Error -> Box(modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             Text(stringResource(R.string.feature_path_error), Modifier.padding(HitzSpacing.xl))
         }
-        is PathUiState.Ready -> LearningPathList(
-            path = state.path,
-            onNodeClick = { node ->
-                if (node.type == NodeType.Story) {
-                    onStartStory(node.unitId, node.levelId)
-                } else {
-                    onStartLevel(node.unitId, node.levelId, node.nextLessonId)
+        is PathUiState.Ready -> Column(modifier.fillMaxSize()) {
+            StatsRow(state.stats, onOpenShop = onOpenShop, onOpenProfile = onOpenProfile)
+            LearningPathList(
+                path = state.path,
+                onNodeClick = { node ->
+                    when {
+                        node.type == NodeType.Story -> onStartStory(node.unitId, node.levelId)
+                        // Lessons need hearts; reviews are free practice and legendary levels bring their own.
+                        node.type == NodeType.Lesson && state.stats.hearts == 0 -> showNoHearts = true
+                        else -> onStartLevel(node.unitId, node.levelId, node.nextLessonId)
+                    }
+                },
+                onOpenGuidebook = onOpenGuidebook,
+                listState = listState,
+                modifier = Modifier.weight(1f),
+            )
+        }
+    }
+    if (showNoHearts) {
+        AlertDialog(
+            onDismissRequest = { showNoHearts = false },
+            title = { Text(stringResource(R.string.feature_path_no_hearts_title)) },
+            text = { Text(stringResource(R.string.feature_path_no_hearts_body)) },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showNoHearts = false
+                        onOpenShop()
+                    },
+                ) { Text(stringResource(R.string.feature_path_no_hearts_shop)) }
+            },
+            dismissButton = {
+                TextButton(onClick = { showNoHearts = false }) {
+                    Text(stringResource(R.string.feature_path_no_hearts_dismiss))
                 }
             },
-            onOpenGuidebook = onOpenGuidebook,
-            listState = listState,
-            modifier = modifier,
+        )
+    }
+}
+
+/** Streak, gems and hearts; tapping them opens the profile or the shop. */
+@Composable
+private fun StatsRow(stats: PathStats, onOpenShop: () -> Unit, onOpenProfile: () -> Unit) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = HitzSpacing.lg, vertical = HitzSpacing.sm),
+        horizontalArrangement = Arrangement.End,
+    ) {
+        HitzStatBar(
+            stats = listOf(
+                StatKind.Streak to stats.streak,
+                StatKind.Gems to stats.gems,
+                StatKind.Hearts to stats.hearts
+            ),
+            onStatClick = { kind -> if (kind == StatKind.Streak) onOpenProfile() else onOpenShop() },
         )
     }
 }

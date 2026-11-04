@@ -86,7 +86,10 @@ internal object LessonPreviewData {
         exercise = trueFalse.copy(selected = ExerciseUi.ReadTrueFalse.FALSE),
         feedback = FeedbackUi(FeedbackType.Incorrect),
     )
-    val finished = LessonUiState.Finished(LessonResult("preview", true, 5, 4, 4, emptyList()))
+    val finished = LessonUiState.Finished(
+        result = LessonResult("preview", true, 5, 4, 4, emptyList()),
+        reward = RewardUi(xp = 10, streak = 4, streakExtended = true, gems = 15),
+    )
 }
 
 @HitzPreviews

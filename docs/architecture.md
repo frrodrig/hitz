@@ -6,13 +6,14 @@
 :app                       Activity, root navigation, Hilt application
 :feature:path              Learning path (nodes, sections, unit guidebook)
 :feature:lesson            Lesson engine and exercises
-:feature:profile           Profile, streak, achievements
-:feature:leaderboard       Locally simulated leagues
-:feature:shop              Gem shop
+:feature:profile           Stats, daily quests, achievements, settings
+:feature:leaderboard       Weekly leagues, simulated on the device
+:feature:shop              Gem shop (hearts, streak freezes)
 :core:designsystem         Material 3 theme, components and previews (see design-system.md)
 :core:data                 Repositories, Room, DataStore, bundled course content (assets/)
 :core:domain               Use cases and repository interfaces (pure Kotlin)
 :core:model                Domain model (pure Kotlin)
+:core:testing              Test doubles shared by other modules' tests (testImplementation only)
 ```
 
 Dependency rules:
@@ -93,6 +94,30 @@ question. Finishing records the story level as completed.
   `RecordSessionUseCase` saves mistakes always and the completion only when the session is finished.
 - `feature:path` shows sections, unit headers with the guidebook, and nodes whose Material
   expressive shape depends on the level type (lesson, story, review, legendary).
+
+## Gamification
+
+Rules are pure Kotlin in `core:domain` (`eus.hitz.core.domain.gamification`); state lives in Room
+(`activities`, `streak_days`, `player`, `claimed_rewards`, schema version 2 via auto-migration).
+Days follow the learner's local midnight (`ZoneProvider`).
+
+| Piece | Rules |
+|---|---|
+| XP (`XpRules`) | Lesson 10, story 15, review 10, legendary 20; +5 for a perfect session. |
+| Streak (`StreakRules`) | Practiced days in a row up to today or yesterday. A streak freeze (shop, up to 2) is spent automatically on a missed day: it keeps the streak but does not add to it. |
+| Hearts (`HeartRules`) | 5 shared hearts for lessons; a wrong answer costs one; one comes back every 4 h; a finished review gives one. Reviews are free practice; legendary levels bring 3 hearts of their own. |
+| Gems | Start with 20. Earned with daily quests, achievement tiers and the league's top 3 (20/15/10); spent in the shop (refill hearts 30, streak freeze 20). Every reward is granted once (`claimed_rewards`). |
+| Daily quests (`DailyQuests`) | 3 a day, the same all day (seeded by the date): an XP goal plus two of sessions, perfect sessions, a story, a review. |
+| Achievements (`Achievements`) | Streak, XP, lessons, perfect sessions, stories; 4 tiers each (5/10/20/40 gems). |
+| Leagues (`Leagues`) | Weekly (Monday to Sunday), 6 tiers named after Basque mountains, groups of 15. Rivals are generated from the week and tier (stable names, XP growing along a personal curve). Top 5 go up, bottom 3 go down. |
+
+- `RecordSessionUseCase` → `CompleteSessionUseCase` saves XP and the streak day and grants
+  rewards; the lesson and story end screens show the `SessionReward`.
+- `RefreshPlayerUseCase` runs whenever the app comes to the foreground (`MainViewModel`):
+  regenerates hearts, spends freezes, and closes the past league week.
+- **Streak reminder**: opt-in from the profile (asks for the notification permission on
+  Android 13+). `WorkManagerReminderScheduler` runs `StreakReminderWorker` daily around 19:00;
+  it notifies only if the learner has not practiced today.
 
 ## Build
 

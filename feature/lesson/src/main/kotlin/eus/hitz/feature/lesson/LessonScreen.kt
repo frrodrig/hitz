@@ -29,6 +29,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
@@ -40,6 +41,7 @@ import eus.hitz.core.designsystem.component.HitzButton
 import eus.hitz.core.designsystem.component.HitzFeedbackPanel
 import eus.hitz.core.designsystem.component.HitzLessonProgressBar
 import eus.hitz.core.designsystem.component.HitzMascot
+import eus.hitz.core.designsystem.component.HitzStatBar
 import eus.hitz.core.designsystem.component.HitzStatCounter
 import eus.hitz.core.designsystem.component.StatKind
 import eus.hitz.core.designsystem.icon.HitzIcons
@@ -106,11 +108,12 @@ internal fun LessonContent(
             title = stringResource(R.string.feature_lesson_finished_title),
             body = stringResource(
                 R.string.feature_lesson_finished_accuracy,
-                (state.result.accuracy * PERCENT).roundToInt()
+                (state.result.accuracy * PERCENT).roundToInt(),
             ),
             action = stringResource(R.string.feature_lesson_continue),
             onAction = onClose,
             modifier = modifier,
+            reward = state.reward,
         )
         is LessonUiState.Active -> ActiveLesson(state, onAction, modifier)
     }
@@ -276,6 +279,7 @@ internal fun LessonMessage(
     action: String,
     onAction: () -> Unit,
     modifier: Modifier = Modifier,
+    reward: RewardUi? = null,
 ) {
     Column(
         modifier = modifier
@@ -295,6 +299,44 @@ internal fun LessonMessage(
         if (body != null) {
             Text(body, style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
         }
+        if (reward != null) {
+            RewardSummary(reward)
+        }
         HitzButton(text = action, onClick = onAction, modifier = Modifier.fillMaxWidth())
+    }
+}
+
+/** XP, streak and gems earned by the session. */
+@Composable
+private fun RewardSummary(reward: RewardUi) {
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
+    ) {
+        HitzStatBar(
+            stats = buildList {
+                add(StatKind.Xp to reward.xp)
+                add(StatKind.Streak to reward.streak)
+                if (reward.gems > 0) add(StatKind.Gems to reward.gems)
+            },
+        )
+        val message = when {
+            reward.streakExtended -> pluralStringResource(
+                R.plurals.feature_lesson_streak_extended,
+                reward.streak,
+                reward.streak
+            )
+            else -> null
+        }
+        if (message != null) {
+            Text(message, style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
+        }
+        if (reward.gems > 0) {
+            Text(
+                text = pluralStringResource(R.plurals.feature_lesson_gems_earned, reward.gems, reward.gems),
+                style = MaterialTheme.typography.bodyMedium,
+                textAlign = TextAlign.Center,
+            )
+        }
     }
 }

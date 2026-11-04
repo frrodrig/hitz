@@ -54,7 +54,7 @@ class HitzAppTest {
     fun navigatesToLeagues() {
         waitForText("¡Hola!")
         composeRule.onNodeWithText("Ligas").performClick()
-        waitForText("Las ligas llegarán en M6.")
+        waitForText("Liga Jaizkibel")
     }
 
     private companion object {

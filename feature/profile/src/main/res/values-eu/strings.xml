@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- TODO(revisión-nativa): review all strings in this file; confirm "segida" as the term for a streak -->
     <string name="feature_profile_title">Profila</string>
-    <!-- TODO(revisión-nativa): confirm "segida" as the term for a streak -->
-    <string name="feature_profile_placeholder">Zure aurrerapena, segida eta lorpenak M6an iritsiko dira.</string>
+    <string name="feature_profile_stat_streak">Segidako egunak</string>
+    <string name="feature_profile_stat_longest">Segidarik onena</string>
+    <string name="feature_profile_stat_xp">XP guztira</string>
+    <string name="feature_profile_stat_gems">Harribitxiak</string>
+    <string name="feature_profile_quests">Eguneko erronkak</string>
+    <string name="feature_profile_quest_xp">Irabazi %1$d XP</string>
+    <plurals name="feature_profile_quest_sessions">
+        <item quantity="one">Osatu ikasgai, istorio edo errepaso %d</item>
+        <item quantity="other">Osatu %d ikasgai, istorio edo errepaso</item>
+    </plurals>
+    <plurals name="feature_profile_quest_perfect">
+        <item quantity="one">Amaitu saio %d akatsik gabe</item>
+        <item quantity="other">Amaitu %d saio akatsik gabe</item>
+    </plurals>
+    <string name="feature_profile_quest_story">Osatu istorio bat</string>
+    <string name="feature_profile_quest_review">Egin errepaso bat</string>
+    <string name="feature_profile_quest_progress">%2$d-tik %1$d · %3$d harribitxi</string>
+    <string name="feature_profile_quest_done">Eginda! +%1$d harribitxi</string>
+    <string name="feature_profile_achievements">Lorpenak</string>
+    <string name="feature_profile_achievement_streak">Iraunkortasuna: egunak jarraian</string>
+    <string name="feature_profile_achievement_xp">Esperientzia: irabazitako XP</string>
+    <string name="feature_profile_achievement_lessons">Ikasketa: osatutako ikasgaiak</string>
+    <string name="feature_profile_achievement_perfect">Zehaztasuna: akatsik gabeko saioak</string>
+    <string name="feature_profile_achievement_stories">Irakurketa: osatutako istorioak</string>
+    <string name="feature_profile_achievement_next">%2$d mailatik %1$d · %4$d-tik %3$d</string>
+    <string name="feature_profile_achievement_complete">%1$d mailak lortuta!</string>
     <string name="feature_profile_settings">Ezarpenak</string>
     <string name="feature_profile_speaking">Hitz egiteko ariketak</string>
     <string name="feature_profile_speaking_description">Esaldiak ozen errepikatzeko ariketak dituzten ikasgaiak.</string>
+    <string name="feature_profile_reminder">Eguneko gogorarazlea</string>
+    <string name="feature_profile_reminder_description">Abisu bat arratsaldean, oraindik praktikatu ez baduzu.</string>
 </resources>

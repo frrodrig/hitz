@@ -2,6 +2,7 @@ package eus.hitz.feature.lesson.story
 
 import androidx.compose.runtime.Immutable
 import eus.hitz.feature.lesson.AudioClip
+import eus.hitz.feature.lesson.RewardUi
 
 /** Immutable state of the story player. */
 sealed interface StoryUiState {
@@ -22,7 +23,7 @@ sealed interface StoryUiState {
         val canContinue: Boolean get() = question == null || question.correct != null
     }
 
-    data class Finished(val accuracy: Float) : StoryUiState
+    data class Finished(val accuracy: Float, val reward: RewardUi? = null) : StoryUiState
 }
 
 data class StoryLineUi(

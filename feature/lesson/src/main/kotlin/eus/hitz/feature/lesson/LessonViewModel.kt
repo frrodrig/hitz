@@ -5,12 +5,16 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import eus.hitz.core.domain.audio.AudioProvider
+import eus.hitz.core.domain.gamification.ActivityKind
+import eus.hitz.core.domain.gamification.HeartsUseCase
 import eus.hitz.core.domain.lesson.AnswerChecker
 import eus.hitz.core.domain.lesson.AnswerResult
+import eus.hitz.core.domain.lesson.LessonResult
 import eus.hitz.core.domain.lesson.LessonSession
 import eus.hitz.core.domain.lesson.MatchPairsState
 import eus.hitz.core.domain.lesson.Mistake
 import eus.hitz.core.domain.lesson.WordBank
+import eus.hitz.core.domain.session.HeartPolicy
 import eus.hitz.core.domain.session.PlanSessionUseCase
 import eus.hitz.core.domain.session.RecordSessionUseCase
 import eus.hitz.core.domain.settings.SettingsRepository
@@ -32,13 +36,15 @@ class LessonViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val planSession: PlanSessionUseCase,
     private val recordSession: RecordSessionUseCase,
-    private val checker: AnswerChecker,
     private val settings: SettingsRepository,
     private val audio: AudioProvider,
+    private val hearts: HeartsUseCase,
 ) : ViewModel() {
     private val unitId: String = checkNotNull(savedStateHandle["unitId"])
     private val levelId: String = checkNotNull(savedStateHandle["levelId"])
     private val lessonId: String? = savedStateHandle["lessonId"]
+
+    private val checker = AnswerChecker()
 
     private val _state = MutableStateFlow<LessonUiState>(LessonUiState.Loading)
     val state: StateFlow<LessonUiState> = _state.asStateFlow()
@@ -48,6 +54,8 @@ class LessonViewModel @Inject constructor(
 
     private var exercises: Map<String, Exercise> = emptyMap()
     private lateinit var session: LessonSession
+    private var heartPolicy: HeartPolicy = HeartPolicy.Unlimited
+    private var kind: ActivityKind = ActivityKind.Lesson
 
     /** Set by "I can't speak now": the remaining speaking exercises are skipped. */
     private var skipSpeaking = false
@@ -60,8 +68,15 @@ class LessonViewModel @Inject constructor(
                 plan to plan.exercises.filter { speakingEnabled || it !is Exercise.Speak }
             }.onSuccess { (plan, playable) ->
                 exercises = playable.associateBy { it.id }
-                session = LessonSession.start(plan.sessionId, playable.map { it.id }, hearts = plan.hearts)
-                showCurrent()
+                heartPolicy = plan.hearts
+                kind = plan.kind
+                val startHearts = when (val policy = plan.hearts) {
+                    HeartPolicy.Shared -> hearts.current()
+                    is HeartPolicy.Limited -> policy.hearts
+                    HeartPolicy.Unlimited -> null
+                }
+                session = LessonSession.start(plan.sessionId, playable.map { it.id }, hearts = startHearts)
+                if (session.isOutOfHearts) _state.value = LessonUiState.OutOfHearts else showCurrent()
             }.onFailure { _state.value = LessonUiState.Error }
         }
     }
@@ -135,6 +150,7 @@ class LessonViewModel @Inject constructor(
         } else {
             val mistake =
                 Mistake(exercise.id, exercise.vocabulary, exercise.structures, evaluation.given, result.expected)
+            if (heartPolicy == HeartPolicy.Shared) viewModelScope.launch { hearts.lose() }
             session.answerIncorrect(mistake)
         }
         val expected = result.expected.takeIf { evaluation.showExpected }
@@ -237,10 +253,6 @@ class LessonViewModel @Inject constructor(
             session = session.skip()
         }
         val current = session.current
-        if (session.isOver) {
-            val result = session.result()
-            viewModelScope.launch { recordSession(unitId, result.lessonId, result) }
-        }
         _state.value = when {
             session.isOutOfHearts -> LessonUiState.OutOfHearts
             current == null -> LessonUiState.Finished(session.result())
@@ -250,8 +262,16 @@ class LessonViewModel @Inject constructor(
                 exercise = exercises.getValue(current.exerciseId).toUi(randomFor(current.exerciseId, current.isRetry)),
             )
         }
+        if (session.isOver) record(session.result())
         val shown = (_state.value as? LessonUiState.Active)?.exercise
         if (shown is ExerciseUi.ListenTap || shown is ExerciseUi.ListenType) playCurrent()
+    }
+
+    private fun record(result: LessonResult) {
+        viewModelScope.launch {
+            val reward = recordSession(unitId, result.lessonId, result, kind) ?: return@launch
+            _state.update { if (it is LessonUiState.Finished) it.copy(reward = RewardUi.of(reward)) else it }
+        }
     }
 
     private fun close() {

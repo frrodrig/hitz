@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="feature_leaderboard_title">Ligas</string>
-    <string name="feature_leaderboard_placeholder">Las ligas llegarán en M6.</string>
+    <string name="feature_leaderboard_league">Liga %1$s</string>
+    <string name="feature_leaderboard_tier_of">Liga %1$d de %2$d</string>
+    <plurals name="feature_leaderboard_days_left">
+        <item quantity="one">Queda %d día</item>
+        <item quantity="other">Quedan %d días</item>
+    </plurals>
+    <string name="feature_leaderboard_rules">Los %1$d primeros suben de liga. Gana XP con lecciones, historias y repasos.</string>
+    <string name="feature_leaderboard_last_promoted">La semana pasada quedaste en el puesto %1$d y subiste de liga.</string>
+    <string name="feature_leaderboard_last_stayed">La semana pasada quedaste en el puesto %1$d.</string>
+    <string name="feature_leaderboard_last_demoted">La semana pasada quedaste en el puesto %1$d y bajaste de liga.</string>
+    <string name="feature_leaderboard_promotion_zone">Zona de ascenso</string>
+    <string name="feature_leaderboard_demotion_zone">Zona de descenso</string>
+    <string name="feature_leaderboard_you">Tú</string>
+    <string name="feature_leaderboard_xp">%1$d XP</string>
+    <!-- League names are Basque mountains (proper nouns, not translated). -->
+    <string name="feature_leaderboard_tier_0" translatable="false">Jaizkibel</string>
+    <string name="feature_leaderboard_tier_1" translatable="false">Adarra</string>
+    <string name="feature_leaderboard_tier_2" translatable="false">Txindoki</string>
+    <string name="feature_leaderboard_tier_3" translatable="false">Gorbeia</string>
+    <string name="feature_leaderboard_tier_4" translatable="false">Aizkorri</string>
+    <string name="feature_leaderboard_tier_5" translatable="false">Orhi</string>
 </resources>

@@ -64,6 +64,8 @@ class LessonContentTest {
         show(LessonPreviewData.finished)
         composeRule.onNodeWithText("¡Lección completada!").assertIsDisplayed()
         composeRule.onNodeWithText("Has acertado el 80 % a la primera.").assertIsDisplayed()
+        composeRule.onNodeWithText("¡Racha de 4 días!").assertIsDisplayed()
+        composeRule.onNodeWithText("Has ganado 15 gemas con misiones y logros.").assertIsDisplayed()
     }
 
     @Test

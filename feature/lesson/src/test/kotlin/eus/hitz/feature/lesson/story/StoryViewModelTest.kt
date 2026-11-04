@@ -4,7 +4,6 @@ import androidx.lifecycle.SavedStateHandle
 import app.cash.turbine.test
 import com.google.common.truth.Truth.assertThat
 import eus.hitz.core.domain.content.CourseRepository
-import eus.hitz.core.domain.session.RecordSessionUseCase
 import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.Course
 import eus.hitz.core.model.content.CourseUnit
@@ -14,9 +13,11 @@ import eus.hitz.core.model.content.LocalizedText
 import eus.hitz.core.model.content.Story
 import eus.hitz.core.model.content.StoryLine
 import eus.hitz.core.model.content.StoryQuestion
+import eus.hitz.core.testing.FakeGamificationRepository
 import eus.hitz.feature.lesson.FakeAudioProvider
 import eus.hitz.feature.lesson.FakeProgressRepository
 import eus.hitz.feature.lesson.MainDispatcherRule
+import eus.hitz.feature.lesson.recordSession
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -27,6 +28,7 @@ class StoryViewModelTest {
 
     private val progress = FakeProgressRepository()
     private val audio = FakeAudioProvider()
+    private val gamification = FakeGamificationRepository()
 
     private val story = Story(
         id = "u01-1.l3.story",
@@ -59,7 +61,7 @@ class StoryViewModelTest {
     private fun viewModel(levelId: String = LEVEL) = StoryViewModel(
         savedStateHandle = SavedStateHandle(mapOf("unitId" to UNIT, "levelId" to levelId)),
         courses = courses,
-        recordSession = RecordSessionUseCase(progress) { 1L },
+        recordSession = gamification.recordSession(progress),
         audio = audio,
     )
 
@@ -97,7 +99,9 @@ class StoryViewModelTest {
         vm.onAction(StoryAction.Continue)
         vm.onAction(StoryAction.Answer(1))
         vm.onAction(StoryAction.Continue)
-        assertThat(vm.state.value).isEqualTo(StoryUiState.Finished(accuracy = 1f))
+        val finished = vm.state.value as StoryUiState.Finished
+        assertThat(finished.accuracy).isEqualTo(1f)
+        assertThat(finished.reward?.xp).isEqualTo(20)
         assertThat(progress.completed).containsExactly(LEVEL)
     }
 

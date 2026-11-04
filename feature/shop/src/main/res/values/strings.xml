@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="feature_shop_title">Tienda</string>
-    <string name="feature_shop_placeholder">La tienda de gemas llegará en M6.</string>
+    <string name="feature_shop_intro">Usa tus gemas para seguir aprendiendo sin pausas.</string>
+    <string name="feature_shop_hearts_title">Recargar vidas</string>
+    <string name="feature_shop_hearts_description">Tienes %1$d de %2$d. La próxima vida llega a las %3$s.</string>
+    <string name="feature_shop_hearts_description_full">Tienes todas las vidas.</string>
+    <string name="feature_shop_freeze_title">Protector de racha</string>
+    <string name="feature_shop_freeze_description">Mantiene tu racha si un día no practicas. Tienes %1$d de %2$d.</string>
+    <plurals name="feature_shop_buy">
+        <item quantity="one">Comprar por %d gema</item>
+        <item quantity="other">Comprar por %d gemas</item>
+    </plurals>
+    <string name="feature_shop_earn">Ganas gemas con las misiones del día, los logros y los primeros puestos de la liga.</string>
+    <string name="feature_shop_bought_hearts">¡Vidas recargadas!</string>
+    <string name="feature_shop_bought_freeze">Protector de racha listo.</string>
+    <string name="feature_shop_not_enough_gems">No tienes suficientes gemas.</string>
+    <string name="feature_shop_hearts_full">Ya tienes todas las vidas.</string>
+    <string name="feature_shop_freezes_full">Ya tienes el máximo de protectores.</string>
 </resources>

@@ -3,6 +3,7 @@ package eus.hitz.feature.path
 import app.cash.turbine.test
 import com.google.common.truth.Truth.assertThat
 import eus.hitz.core.domain.content.CourseRepository
+import eus.hitz.core.domain.gamification.ObservePlayerUseCase
 import eus.hitz.core.domain.lesson.Mistake
 import eus.hitz.core.domain.path.ObserveLearningPathUseCase
 import eus.hitz.core.domain.progress.MistakeStats
@@ -16,6 +17,7 @@ import eus.hitz.core.model.content.Lesson
 import eus.hitz.core.model.content.Level
 import eus.hitz.core.model.content.LocalizedText
 import eus.hitz.core.model.content.Section
+import eus.hitz.core.testing.FakeGamificationRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -71,12 +73,17 @@ class PathViewModelTest {
 
     @Test
     fun `the path updates when a lesson is completed`() = runTest {
-        val vm = PathViewModel(ObserveLearningPathUseCase(courses, progress))
+        val gamification = FakeGamificationRepository()
+        val vm = PathViewModel(
+            ObserveLearningPathUseCase(courses, progress),
+            ObservePlayerUseCase(gamification, gamification.clock),
+        )
         vm.state.test {
             var state = awaitItem()
             if (state is PathUiState.Loading) state = awaitItem()
-            val node = (state as PathUiState.Ready).path.currentNode
-            assertThat(node?.levelId).isEqualTo("u01-1.l1")
+            val ready = state as PathUiState.Ready
+            assertThat(ready.path.currentNode?.levelId).isEqualTo("u01-1.l1")
+            assertThat(ready.stats).isEqualTo(PathStats(streak = 0, practicedToday = false, gems = 20, hearts = 5))
             completed.value = setOf("u01-1.l1.s1")
             assertThat((awaitItem() as PathUiState.Ready).path.currentNode).isNull()
         }

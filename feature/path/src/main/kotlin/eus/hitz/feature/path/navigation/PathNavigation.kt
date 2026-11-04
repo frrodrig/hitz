@@ -23,9 +23,17 @@ fun NavGraphBuilder.pathScreen(
     onStartLevel: (unitId: String, levelId: String, lessonId: String?) -> Unit,
     onOpenGuidebook: (unitId: String) -> Unit,
     onStartStory: (unitId: String, levelId: String) -> Unit,
+    onOpenShop: () -> Unit,
+    onOpenProfile: () -> Unit,
 ) {
     composable<PathRoute> {
-        PathScreen(onStartLevel = onStartLevel, onOpenGuidebook = onOpenGuidebook, onStartStory = onStartStory)
+        PathScreen(
+            onStartLevel = onStartLevel,
+            onOpenGuidebook = onOpenGuidebook,
+            onStartStory = onStartStory,
+            onOpenShop = onOpenShop,
+            onOpenProfile = onOpenProfile,
+        )
     }
 }
 

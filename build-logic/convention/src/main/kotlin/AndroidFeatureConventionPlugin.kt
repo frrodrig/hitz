@@ -21,6 +21,7 @@ abstract class AndroidFeatureConventionPlugin : Plugin<Project> {
                 "implementation"(libs.lib("androidx-lifecycle-viewmodel-compose"))
                 "implementation"(libs.lib("androidx-navigation-compose"))
                 "implementation"(libs.lib("kotlinx-serialization-json"))
+                "testImplementation"(project(":core:testing"))
             }
         }
     }

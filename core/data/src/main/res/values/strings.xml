@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="core_data_reminder_channel">Recordatorios de racha</string>
+    <string name="core_data_reminder_title">Hitz te espera</string>
+    <string name="core_data_reminder_start">Dedica cinco minutos al euskera hoy.</string>
+    <plurals name="core_data_reminder_streak">
+        <item quantity="one">Llevas %d día de racha. Haz una lección para no perderla.</item>
+        <item quantity="other">Llevas %d días de racha. Haz una lección para no perderla.</item>
+    </plurals>
+</resources>

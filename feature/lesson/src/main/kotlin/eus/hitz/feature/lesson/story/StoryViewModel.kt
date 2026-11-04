@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import eus.hitz.core.domain.audio.AudioProvider
 import eus.hitz.core.domain.content.CourseRepository
+import eus.hitz.core.domain.gamification.ActivityKind
 import eus.hitz.core.domain.lesson.LessonResult
 import eus.hitz.core.domain.session.RecordSessionUseCase
 import eus.hitz.core.domain.story.StorySession
@@ -13,12 +14,14 @@ import eus.hitz.core.domain.story.StoryStep
 import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.Level
 import eus.hitz.feature.lesson.AudioClip
+import eus.hitz.feature.lesson.RewardUi
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.receiveAsFlow
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -95,8 +98,11 @@ class StoryViewModel @Inject constructor(
                 heartsLeft = null,
                 mistakes = emptyList(),
             )
-            viewModelScope.launch { recordSession(unitId, levelId, result) }
             _state.value = StoryUiState.Finished(session.accuracy)
+            viewModelScope.launch {
+                val reward = recordSession(unitId, levelId, result, ActivityKind.Story) ?: return@launch
+                _state.update { if (it is StoryUiState.Finished) it.copy(reward = RewardUi.of(reward)) else it }
+            }
         } else {
             show(readLine = session.current is StoryStep.Line)
         }
