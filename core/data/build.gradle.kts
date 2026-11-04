@@ -8,6 +8,6 @@ android {
 }
 
 dependencies {
-    api(projects.core.domain)
+    api(project(":core:domain"))
     implementation(libs.kotlinx.coroutines.android)
 }

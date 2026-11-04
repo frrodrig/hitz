@@ -48,14 +48,14 @@ android {
 }
 
 dependencies {
-    implementation(projects.core.data)
-    implementation(projects.core.designsystem)
-    implementation(projects.core.domain)
-    implementation(projects.feature.path)
-    implementation(projects.feature.lesson)
-    implementation(projects.feature.profile)
-    implementation(projects.feature.leaderboard)
-    implementation(projects.feature.shop)
+    implementation(project(":core:data"))
+    implementation(project(":core:designsystem"))
+    implementation(project(":core:domain"))
+    implementation(project(":feature:path"))
+    implementation(project(":feature:lesson"))
+    implementation(project(":feature:profile"))
+    implementation(project(":feature:leaderboard"))
+    implementation(project(":feature:shop"))
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.core.ktx)
