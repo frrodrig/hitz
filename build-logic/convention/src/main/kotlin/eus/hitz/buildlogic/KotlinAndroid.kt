@@ -1,0 +1,64 @@
+package eus.hitz.buildlogic
+
+import com.android.build.api.dsl.CommonExtension
+import org.gradle.api.JavaVersion
+import org.gradle.api.Project
+import org.gradle.api.plugins.JavaPluginExtension
+import org.gradle.kotlin.dsl.configure
+import org.gradle.kotlin.dsl.dependencies
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
+
+private val JAVA_VERSION = JavaVersion.VERSION_17
+
+/** Configuración común de Kotlin y Android para módulos de app y librería. */
+internal fun Project.configureKotlinAndroid(commonExtension: CommonExtension) {
+    commonExtension.apply {
+        compileSdk = libs.versionInt("compileSdk")
+        defaultConfig.apply {
+            minSdk = libs.versionInt("minSdk")
+            testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+            vectorDrawables.useSupportLibrary = true
+        }
+        compileOptions.apply {
+            sourceCompatibility = JAVA_VERSION
+            targetCompatibility = JAVA_VERSION
+        }
+        testOptions.apply {
+            unitTests.isIncludeAndroidResources = true
+            unitTests.isReturnDefaultValues = true
+        }
+    }
+    extensions.configure<KotlinAndroidProjectExtension> {
+        compilerOptions {
+            freeCompilerArgs.add("-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi")
+        }
+    }
+    addUnitTestDependencies()
+}
+
+/** Configuración de módulos Kotlin puros (sin Android): :core:model y :core:domain. */
+internal fun Project.configureKotlinJvm() {
+    extensions.configure<JavaPluginExtension> {
+        sourceCompatibility = JAVA_VERSION
+        targetCompatibility = JAVA_VERSION
+    }
+    extensions.configure<KotlinJvmProjectExtension> {
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_17)
+            freeCompilerArgs.add("-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi")
+        }
+    }
+    addUnitTestDependencies()
+}
+
+private fun Project.addUnitTestDependencies() {
+    dependencies {
+        "testImplementation"(libs.lib("junit4"))
+        "testImplementation"(libs.lib("kotlin-test"))
+        "testImplementation"(libs.lib("truth"))
+        "testImplementation"(libs.lib("kotlinx-coroutines-test"))
+        "testImplementation"(libs.lib("turbine"))
+    }
+}

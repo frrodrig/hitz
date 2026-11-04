@@ -1,0 +1,21 @@
+name: Error
+description: Algo no funciona como debería
+labels: [fix]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: ¿Qué ha pasado?
+      description: Describe el error y qué esperabas que ocurriera.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducirlo
+      placeholder: "1. Abre la unidad 2.1\n2. ..."
+  - type: input
+    id: version
+    attributes:
+      label: Versión de la app y de Android
+      placeholder: "Hitz 0.3.0 · Android 15"

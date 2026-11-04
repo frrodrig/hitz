@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Hitz" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.Hitz.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/hitz_brand</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.Hitz</item>
+    </style>
+</resources>
