@@ -1,0 +1,75 @@
+package eus.hitz.feature.lesson
+
+import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.assertIsNotEnabled
+import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onFirst
+import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.performClick
+import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.google.common.truth.Truth.assertThat
+import eus.hitz.core.designsystem.theme.HitzTheme
+import org.junit.Rule
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.annotation.Config
+
+@RunWith(AndroidJUnit4::class)
+@Config(sdk = [35])
+class LessonContentTest {
+    @get:Rule
+    val composeRule = createComposeRule()
+
+    private val actions = mutableListOf<LessonAction>()
+
+    private fun show(state: LessonUiState) {
+        composeRule.setContent { HitzTheme { LessonContent(state, onAction = { actions += it }, onClose = {}) } }
+    }
+
+    @Test
+    fun tappingAWordSelectsIt() {
+        show(LessonPreviewData.active.copy(exercise = LessonPreviewData.wordBank.copy(selected = emptyList())))
+        composeRule.onNodeWithText("Traduce esta frase").assertIsDisplayed()
+        composeRule.onNodeWithText("Hola").performClick()
+        assertThat(actions).containsExactly(LessonAction.SelectTile(2))
+    }
+
+    @Test
+    fun checkIsDisabledWithoutAnAnswer() {
+        show(LessonPreviewData.active.copy(exercise = LessonPreviewData.wordBank.copy(selected = emptyList())))
+        composeRule.onNodeWithText("Comprobar").assertIsNotEnabled()
+    }
+
+    @Test
+    fun incorrectFeedbackShowsTheAnswerAndContinues() {
+        show(LessonPreviewData.incorrect)
+        composeRule.onNodeWithText("¡Hola! Soy Ane.", substring = true).assertIsDisplayed()
+        composeRule.onNodeWithText("Continuar").performClick()
+        assertThat(actions).containsExactly(LessonAction.Continue)
+    }
+
+    @Test
+    fun quitDialogConfirms() {
+        show(LessonPreviewData.active.copy(showQuitDialog = true))
+        composeRule.onNodeWithText("¿Salir de la lección?").assertIsDisplayed()
+        composeRule.onNodeWithText("Salir").performClick()
+        assertThat(actions).containsExactly(LessonAction.ConfirmQuit)
+    }
+
+    @Test
+    fun finishedShowsAccuracy() {
+        show(LessonPreviewData.finished)
+        composeRule.onNodeWithText("¡Lección completada!").assertIsDisplayed()
+        composeRule.onNodeWithText("Has acertado el 80 % a la primera.").assertIsDisplayed()
+    }
+
+    @Test
+    fun matchPairsHasNoCheckButton() {
+        show(LessonPreviewData.active.copy(exercise = LessonPreviewData.pairs))
+        composeRule.onNodeWithText("Toca las parejas").assertIsDisplayed()
+        assertThat(composeRule.onAllNodesWithText("Comprobar").fetchSemanticsNodes()).isEmpty()
+        composeRule.onAllNodesWithText("kaixo").onFirst().performClick()
+        assertThat(actions).hasSize(1)
+    }
+}

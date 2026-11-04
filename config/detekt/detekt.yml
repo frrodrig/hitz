@@ -20,7 +20,11 @@ complexity:
     ignorePrivate: true
 
 style:
+  ReturnCount:
+    max: 3
+    excludeGuardClauses: true
   MagicNumber:
+    ignoreAnnotated: ['Preview', 'PreviewLightDark', 'HitzPreviews']
     ignorePropertyDeclaration: true
     ignoreCompanionObjectPropertyDeclaration: true
     excludes: ['**/test/**', '**/androidTest/**', '**/*.gradle.kts', '**/designsystem/**', '**/preview/**']

@@ -38,6 +38,24 @@ Dependency rules:
 - **Type-safe navigation** with `@Serializable` routes defined by each feature
   (`feature/*/navigation`).
 
+## Lesson engine
+
+The rules live in `core:domain` (`eus.hitz.core.domain.lesson`) as pure Kotlin, so they are fully
+unit-tested without Android:
+
+| Piece | Responsibility |
+|---|---|
+| `AnswerNormalizer` | Lower case, no vowel accents, no punctuation, single spaces (`ñ` is kept). |
+| `AnswerChecker` | Any accepted answer is correct; a small typo (optimal string alignment distance ≤ 1, or ≤ 2 from 12 letters; none under 4 letters; same number of words) is *almost correct* and shows the right spelling. |
+| `WordBank` | Tiles = canonical answer words + distractors, shuffled with a per-exercise seed. Tile answers must be exact (an "almost" tile answer is a wrong order). |
+| `MatchPairsState` | Pair selection; wrong pairs are counted and recorded as mistakes but cost no heart. |
+| `LessonSession` | Queue: a wrong answer costs a heart and the exercise is asked again at the end until it is right; progress only grows with correct answers; no hearts left ends the lesson. Produces a `LessonResult` with first-try accuracy and the `Mistake`s (by word and structure) for spaced repetition. |
+
+`feature:lesson` maps the session to an immutable `LessonUiState` in `LessonViewModel`
+(`StateFlow` + `LessonAction`s in, one-off `LessonEvent`s out). `LessonContent` is stateless and is
+what previews, UI tests and screenshot tests render. Exercise types not yet supported by the UI are
+skipped (M3 supports word bank, typing, choose image and match pairs).
+
 ## Build
 
 - Version catalog in `gradle/libs.versions.toml`.

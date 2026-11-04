@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="feature_lesson_title">Lección</string>
-    <string name="feature_lesson_placeholder">El motor de lecciones llegará en M3.</string>
+    <string name="feature_lesson_instruction_translate">Traduce esta frase</string>
+    <string name="feature_lesson_instruction_type_eu">Escríbelo en euskera</string>
+    <string name="feature_lesson_instruction_type_es">Escríbelo en castellano</string>
+    <string name="feature_lesson_instruction_image">¿Cuál es «%1$s»?</string>
+    <string name="feature_lesson_instruction_pairs">Toca las parejas</string>
+    <string name="feature_lesson_input_hint">Tu respuesta</string>
+    <string name="feature_lesson_answer_area">Tu respuesta</string>
+    <string name="feature_lesson_pair_selected">Seleccionada</string>
+    <string name="feature_lesson_pair_matched">Emparejada</string>
+    <string name="feature_lesson_check">Comprobar</string>
+    <string name="feature_lesson_continue">Continuar</string>
+    <string name="feature_lesson_finish">Terminar</string>
+    <string name="feature_lesson_correct">¡Muy bien!</string>
+    <string name="feature_lesson_almost">¡Casi! Fíjate en cómo se escribe:</string>
+    <string name="feature_lesson_incorrect">Respuesta correcta:</string>
+    <string name="feature_lesson_close">Salir de la lección</string>
+    <string name="feature_lesson_quit_title">¿Salir de la lección?</string>
+    <string name="feature_lesson_quit_body">Perderás el progreso de esta lección.</string>
+    <string name="feature_lesson_quit_confirm">Salir</string>
+    <string name="feature_lesson_quit_dismiss">Seguir aprendiendo</string>
+    <string name="feature_lesson_finished_title">¡Lección completada!</string>
+    <string name="feature_lesson_finished_accuracy">Has acertado el %1$d %% a la primera.</string>
+    <string name="feature_lesson_out_of_hearts_title">Te has quedado sin vidas</string>
+    <string name="feature_lesson_out_of_hearts_body">Repasa un poco y vuelve a intentarlo.</string>
+    <string name="feature_lesson_error">No se ha podido cargar la lección.</string>
 </resources>
