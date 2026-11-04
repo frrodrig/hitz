@@ -40,14 +40,8 @@ jobs:
       - uses: gradle/actions/setup-gradle@v6
         with:
           cache-read-only: ${{ github.ref != 'refs/heads/main' }}
-      - name: detekt + ktlint (detekt-formatting)
-        run: ./gradlew detekt
-      - name: Android Lint
-        run: ./gradlew lintDebug
-      - name: Tests unitarios
-        run: ./gradlew testDebugUnitTest
-      - name: Build debug
-        run: ./gradlew assembleDebug
+      - name: detekt (ktlint) + Android Lint + tests unitarios + build debug
+        run: .github/scripts/gradlew-annotated.sh --continue detekt lintDebug testDebugUnitTest assembleDebug
       - name: Subir APK debug
         uses: actions/upload-artifact@v7
         with:

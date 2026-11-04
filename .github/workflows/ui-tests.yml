@@ -33,10 +33,10 @@ jobs:
           cache-read-only: true
       - name: Comparar capturas
         if: ${{ !inputs.record_screenshots }}
-        run: ./gradlew verifyRoborazziDebug
+        run: .github/scripts/gradlew-annotated.sh verifyRoborazziDebug
       - name: Grabar capturas
         if: ${{ inputs.record_screenshots }}
-        run: ./gradlew recordRoborazziDebug
+        run: .github/scripts/gradlew-annotated.sh recordRoborazziDebug
       - name: Subir capturas
         if: always()
         uses: actions/upload-artifact@v7
@@ -66,7 +66,7 @@ jobs:
         with:
           cache-read-only: true
       - name: Compilar APKs de test
-        run: ./gradlew assembleDebug assembleDebugAndroidTest
+        run: .github/scripts/gradlew-annotated.sh assembleDebug assembleDebugAndroidTest
       - name: Ejecutar en emulador
         uses: reactivecircus/android-emulator-runner@v2
         with:
