@@ -22,6 +22,7 @@ internal fun Project.configureAndroidCompose(commonExtension: CommonExtension) {
         "debugImplementation"(libs.lib("androidx-compose-ui-tooling"))
         "debugImplementation"(libs.lib("androidx-compose-ui-test-manifest"))
         "testImplementation"(libs.lib("androidx-compose-ui-test-junit4"))
+        "testImplementation"(libs.lib("androidx-test-ext-junit"))
         "testImplementation"(libs.lib("robolectric"))
         "testImplementation"(libs.lib("roborazzi"))
         "testImplementation"(libs.lib("roborazzi-compose"))

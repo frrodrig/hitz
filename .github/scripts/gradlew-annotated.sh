@@ -12,7 +12,7 @@ if [ "$status" -ne 0 ]; then
   encode() { sed -e 's/%/%25/g' -e 's/\r//g' | awk 'BEGIN{ORS="%0A"} {print}'; }
 
   # Errores de compilación de Kotlin, de Lint y de tests (máx. 40 líneas).
-  grep -E '^(e: |ERROR:|FAILURE:|.*FAILED$|.* > .* FAILED)|Error: |error: ' "$log" | head -n 40 > "$log.err" || true
+  grep -E -A4 '^(e: |ERROR:|FAILURE:|.*FAILED$)|Error: |error: ' "$log" | grep -v -E '^\s+at ' | head -n 60 > "$log.err" || true
   if [ -s "$log.err" ]; then
     echo "::error title=Errores de Gradle ($*)::$(encode < "$log.err")"
   fi

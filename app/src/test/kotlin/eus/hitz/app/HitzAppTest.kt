@@ -1,5 +1,6 @@
 package eus.hitz.app
 
+import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
@@ -30,6 +31,6 @@ class HitzAppTest {
         composeRule.onRoot().captureRoboImage("src/test/screenshots/app_path.png")
 
         composeRule.onNodeWithText("Ligas").performClick()
-        composeRule.onNodeWithText("Ligas").assertIsSelected()
+        composeRule.onNodeWithText("Las ligas llegarán en M6.").assertIsDisplayed()
     }
 }
