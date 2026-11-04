@@ -1,0 +1,14 @@
+name: Feature request
+description: An idea or improvement for the app
+labels: [feat]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal

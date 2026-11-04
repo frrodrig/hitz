@@ -1,0 +1,21 @@
+name: Bug
+description: Something does not work as expected
+labels: [fix]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open unit 2.1\n2. ..."
+  - type: input
+    id: version
+    attributes:
+      label: App and Android version
+      placeholder: "Hitz 0.3.0 · Android 15"

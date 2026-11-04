@@ -1,0 +1,27 @@
+version: 2
+updates:
+  - package-ecosystem: gradle
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: build
+    groups:
+      kotlin-ksp-compose:
+        patterns: ["org.jetbrains.kotlin*", "com.google.devtools.ksp*", "androidx.compose*"]
+      androidx:
+        patterns: ["androidx.*"]
+      test:
+        patterns: ["junit*", "org.robolectric*", "io.github.takahirom.roborazzi*", "app.cash.turbine*", "com.google.truth*"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    commit-message:
+      prefix: ci
+    groups:
+      actions:
+        patterns: ["*"]
