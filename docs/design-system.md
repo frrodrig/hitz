@@ -55,6 +55,17 @@ the user's font scale; screenshots are also taken at 200 %.
 Default Material 3 Expressive `Shapes()`, plus `MaterialShapes` (e.g. `Cookie9Sided`, `Sunny`) for
 decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum touch targets.
 
+## Expressive tactics applied
+
+| Tactic | Where |
+|---|---|
+| **Containment and grouping** | Answer options form a segmented group (2 dp gaps, large outer and small inner corners); counters share one tonal container (`HitzStatBar`). |
+| **Shape morphing** | Buttons morph on press (`ButtonDefaults.shapes()`); the active option morphs to fully rounded corners. |
+| **Shape variety** | `MaterialShapes` containers for the mascot (`Sunny`) and the feedback badge (`Cookie9Sided` / `Cookie4Sided`). |
+| **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour). |
+| **Emphasized type** | Screen and question titles, feedback result and counter values. |
+| **Tonal colour** | Tonal containers carry state; bold colour is reserved for the primary action. |
+
 ## Icons
 
 `HitzIcons`: original icons on a 24 dp grid. UI icons use 2 dp rounded strokes; counters
@@ -65,11 +76,11 @@ decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum to
 | Hitz component | Built on | Purpose |
 |---|---|---|
 | `HitzButton` | `Button`, `FilledTonalButton`, `OutlinedButton`, `TextButton` with `ButtonDefaults.shapes()` (shape morph) and expressive sizes | Actions |
-| `HitzChoiceCard` | `ListItem` + `RadioButton` on a tonal `Surface` | Answer option: default, selected, correct, incorrect, disabled |
+| `HitzChoiceCard` / `HitzChoiceGroup` | `ListItem` + `RadioButton` on tonal surfaces, grouped as a segmented list | Answer option: default, selected, correct, incorrect, disabled |
 | `HitzWordChip` / `HitzWordBank` | `FilledTonalButton` in a `FlowRow` | Word bank; used words keep an empty slot |
 | `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel, announced as a live region |
 | `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress |
-| `HitzStatCounter` | `AssistChip` | Streak, gems, hearts and XP with spoken plurals |
+| `HitzStatCounter` / `HitzStatBar` | `AssistChip`s in one tonal container | Streak, gems, hearts and XP with spoken plurals |
 | `HitzMascot` | Image on a `MaterialShapes.Sunny` container | The Galtzagorri |
 | `PlaceholderScreen` | — | Temporary screen for unfinished features |
 

@@ -1,9 +1,12 @@
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
+
 package eus.hitz.core.designsystem.component
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -33,7 +36,7 @@ fun PlaceholderScreen(
             HitzMascot(contentDescription = null)
             Text(
                 text = title,
-                style = MaterialTheme.typography.headlineMedium,
+                style = MaterialTheme.typography.headlineMediumEmphasized,
                 modifier = Modifier.semantics { heading() },
             )
             Text(
