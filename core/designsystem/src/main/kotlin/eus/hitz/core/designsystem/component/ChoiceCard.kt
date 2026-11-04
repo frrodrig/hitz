@@ -64,20 +64,21 @@ fun HitzChoiceCard(
         else -> null
     }
     Surface(
-        modifier = modifier
-            .fillMaxWidth()
-            .selectable(
-                selected = state == ChoiceState.Selected,
-                enabled = state != ChoiceState.Disabled,
-                role = Role.RadioButton,
-                onClick = onClick,
-            )
-            .semantics { if (description != null) stateDescription = description },
+        modifier = modifier.fillMaxWidth(),
         shape = MaterialTheme.shapes.large,
         color = container,
         contentColor = content,
     ) {
+        // Selection semantics live on the ListItem, which is the merging node in material3 1.5.
         ListItem(
+            modifier = Modifier
+                .selectable(
+                    selected = state == ChoiceState.Selected,
+                    enabled = state != ChoiceState.Disabled,
+                    role = Role.RadioButton,
+                    onClick = onClick,
+                )
+                .semantics { if (description != null) stateDescription = description },
             headlineContent = { Text(text, style = MaterialTheme.typography.bodyLarge) },
             supportingContent = supportingText?.let { { Text(it) } },
             leadingContent = leading ?: {
