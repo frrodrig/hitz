@@ -95,6 +95,7 @@ internal fun StoryContent(
             action = stringResource(R.string.feature_lesson_continue),
             onAction = onClose,
             modifier = modifier,
+            reward = state.reward,
         )
         is StoryUiState.Active -> ActiveStory(state, onAction, modifier)
     }

@@ -30,13 +30,15 @@ class PathContentTest {
     private var started: Triple<String, String, String?>? = null
     private var guidebook: String? = null
     private var storyTapped = false
+    private var shopOpened = false
 
-    private fun show(darkTheme: Boolean = false) {
+    private fun show(darkTheme: Boolean = false, stats: PathStats = PathStats(streak = 3, gems = 120)) {
         composeRule.setContent {
             HitzTheme(darkTheme = darkTheme) {
                 Surface {
                     PathContent(
-                        state = PathUiState.Ready(PathTestData.path),
+                        state = PathUiState.Ready(PathTestData.path, stats),
+                        onOpenShop = { shopOpened = true },
                         onStartLevel = { u, l, s -> started = Triple(u, l, s) },
                         onOpenGuidebook = { guidebook = it },
                         onStartStory = { _, _ -> storyTapped = true },
@@ -52,6 +54,16 @@ class PathContentTest {
         composeRule.onNodeWithText("Empezar", useUnmergedTree = true).assertExists()
         composeRule.onNodeWithContentDescription("Lección: ¿Quién eres?, disponible").performClick()
         assertThat(started).isEqualTo(Triple("u01-1", "u01-1.l2", "u01-1.l2.s1"))
+    }
+
+    @Test
+    fun withoutHeartsALessonOffersTheShop() {
+        show(stats = PathStats(hearts = 0))
+        composeRule.onNodeWithContentDescription("Lección: ¿Quién eres?, disponible").performClick()
+        assertThat(started).isNull()
+        composeRule.onNodeWithText("Te has quedado sin vidas").assertExists()
+        composeRule.onNodeWithText("Ir a la tienda").performClick()
+        assertThat(shopOpened).isTrue()
     }
 
     @Test

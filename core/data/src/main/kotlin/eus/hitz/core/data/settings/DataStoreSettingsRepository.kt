@@ -15,15 +15,23 @@ internal class DataStoreSettingsRepository @Inject constructor(
     private val dataStore: DataStore<Preferences>,
 ) : SettingsRepository {
     override val settings: Flow<UserSettings> = dataStore.data.map { preferences ->
-        UserSettings(speakingEnabled = preferences[SPEAKING_ENABLED] ?: true)
+        UserSettings(
+            speakingEnabled = preferences[SPEAKING_ENABLED] ?: true,
+            reminderEnabled = preferences[REMINDER_ENABLED] ?: false,
+        )
     }
 
     override suspend fun setSpeakingEnabled(enabled: Boolean) {
         dataStore.edit { it[SPEAKING_ENABLED] = enabled }
     }
 
+    override suspend fun setReminderEnabled(enabled: Boolean) {
+        dataStore.edit { it[REMINDER_ENABLED] = enabled }
+    }
+
     companion object {
         const val FILE_NAME = "settings"
         private val SPEAKING_ENABLED = booleanPreferencesKey("speaking_enabled")
+        private val REMINDER_ENABLED = booleanPreferencesKey("reminder_enabled")
     }
 }

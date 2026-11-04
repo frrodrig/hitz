@@ -3,12 +3,15 @@ package eus.hitz.feature.lesson
 import androidx.lifecycle.SavedStateHandle
 import app.cash.turbine.test
 import com.google.common.truth.Truth.assertThat
-import eus.hitz.core.domain.lesson.AnswerChecker
+import eus.hitz.core.domain.gamification.HeartsUseCase
+import eus.hitz.core.domain.gamification.PlayerData
+import eus.hitz.core.domain.gamification.Wallet
 import eus.hitz.core.domain.lesson.PairSide
 import eus.hitz.core.domain.lesson.WordBank
 import eus.hitz.core.domain.session.PlanSessionUseCase
-import eus.hitz.core.domain.session.RecordSessionUseCase
 import eus.hitz.core.model.content.Exercise
+import eus.hitz.core.testing.FakeGamificationRepository
+import eus.hitz.core.testing.FakeGamificationRepository.Companion.NOW
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -19,16 +22,17 @@ class LessonViewModelTest {
 
     private val progress = FakeProgressRepository()
     private val audio = FakeAudioProvider()
+    private val gamification = FakeGamificationRepository()
 
     private fun viewModel(vararg exercises: Exercise, speakingEnabled: Boolean = true) = LessonViewModel(
         savedStateHandle = SavedStateHandle(
             mapOf("unitId" to TestLesson.UNIT, "levelId" to TestLesson.LEVEL, "lessonId" to TestLesson.LESSON),
         ),
         planSession = PlanSessionUseCase(TestLesson.repository(*exercises), progress),
-        recordSession = RecordSessionUseCase(progress) { 1L },
-        checker = AnswerChecker(),
+        recordSession = gamification.recordSession(progress),
         settings = FakeSettingsRepository(speakingEnabled),
         audio = audio,
+        hearts = HeartsUseCase(gamification, gamification.clock),
     )
 
     private val LessonViewModel.active get() = state.value as LessonUiState.Active
@@ -280,5 +284,34 @@ class LessonViewModelTest {
         vm.onAction(LessonAction.Check)
         vm.onAction(LessonAction.SelectOption(0))
         assertThat((vm.active.exercise as ExerciseUi.ChooseImage).selected).isEqualTo(1)
+    }
+
+    @Test
+    fun `lessons use and spend the shared hearts`() {
+        gamification.data.value = PlayerData(wallet = Wallet(hearts = 2, heartsUpdatedAt = NOW))
+        val vm = viewModel(TestLesson.image)
+        assertThat(vm.active.hearts).isEqualTo(2)
+        vm.onAction(LessonAction.SelectOption(0))
+        vm.onAction(LessonAction.Check)
+        assertThat(gamification.data.value.wallet.hearts).isEqualTo(1)
+    }
+
+    @Test
+    fun `without hearts a lesson cannot start`() {
+        gamification.data.value = PlayerData(wallet = Wallet(hearts = 0, heartsUpdatedAt = NOW))
+        val vm = viewModel(TestLesson.image)
+        assertThat(vm.state.value).isEqualTo(LessonUiState.OutOfHearts)
+    }
+
+    @Test
+    fun `a finished lesson shows its XP and streak`() {
+        val vm = viewModel(TestLesson.image)
+        vm.onAction(LessonAction.SelectOption(1))
+        vm.onAction(LessonAction.Check)
+        vm.onAction(LessonAction.Continue)
+        val reward = (vm.state.value as LessonUiState.Finished).reward
+        assertThat(reward?.xp).isEqualTo(15)
+        assertThat(reward?.streak).isEqualTo(1)
+        assertThat(reward?.streakExtended).isTrue()
     }
 }

@@ -24,7 +24,7 @@
     <string name="feature_lesson_finished_title">Ikasgaia osatuta!</string>
     <string name="feature_lesson_finished_accuracy">Lehen saiakeran %%%1$d asmatu duzu.</string>
     <string name="feature_lesson_out_of_hearts_title">Bizitzarik gabe geratu zara</string>
-    <string name="feature_lesson_out_of_hearts_body">Errepasatu pixka bat eta saiatu berriro.</string>
+    <string name="feature_lesson_out_of_hearts_body">Bizitza bat berreskuratzen duzu 4 orduro. Egin errepaso bat bizitza bat irabazteko, edo bete itzazu dendan.</string>
     <string name="feature_lesson_error">Ezin izan da ikasgaia kargatu.</string>
     <string name="feature_lesson_instruction_listen_tap">Ukitu entzuten duzuna</string>
     <string name="feature_lesson_instruction_listen_type">Idatzi entzuten duzuna</string>
@@ -49,4 +49,12 @@
     <string name="feature_lesson_story_finished_title">Istorioa osatuta!</string>
     <string name="feature_lesson_story_finished_accuracy">Lehen saiakeran galderen %%%1$d asmatu duzu.</string>
     <string name="feature_lesson_story_error">Ezin izan da istorioa kargatu.</string>
+    <plurals name="feature_lesson_streak_extended">
+        <item quantity="one">%d eguneko segida!</item>
+        <item quantity="other">%d eguneko segida!</item>
+    </plurals>
+    <plurals name="feature_lesson_gems_earned">
+        <item quantity="one">Harribitxi %d irabazi duzu erronka eta lorpenekin.</item>
+        <item quantity="other">%d harribitxi irabazi dituzu erronka eta lorpenekin.</item>
+    </plurals>
 </resources>

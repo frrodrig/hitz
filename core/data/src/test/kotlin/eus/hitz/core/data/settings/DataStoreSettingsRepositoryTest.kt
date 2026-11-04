@@ -28,4 +28,12 @@ class DataStoreSettingsRepositoryTest {
         repository.setSpeakingEnabled(false)
         assertThat(repository.settings.first().speakingEnabled).isFalse()
     }
+
+    @Test
+    fun `the reminder is off until turned on`() = runTest {
+        val repository = repository()
+        assertThat(repository.settings.first().reminderEnabled).isFalse()
+        repository.setReminderEnabled(true)
+        assertThat(repository.settings.first().reminderEnabled).isTrue()
+    }
 }

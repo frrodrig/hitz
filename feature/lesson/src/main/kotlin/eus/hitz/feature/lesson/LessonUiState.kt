@@ -1,6 +1,7 @@
 package eus.hitz.feature.lesson
 
 import androidx.compose.runtime.Immutable
+import eus.hitz.core.domain.gamification.SessionReward
 import eus.hitz.core.domain.lesson.LessonResult
 import eus.hitz.core.domain.lesson.MatchPairsState
 import eus.hitz.core.domain.lesson.PairSide
@@ -24,9 +25,18 @@ sealed interface LessonUiState {
         val canCheck: Boolean get() = feedback == null && exercise.hasAnswer
     }
 
-    data class Finished(val result: LessonResult) : LessonUiState
+    /** [reward] arrives once the session is saved. */
+    data class Finished(val result: LessonResult, val reward: RewardUi? = null) : LessonUiState
 
     data object OutOfHearts : LessonUiState
+}
+
+/** What a finished session earned: XP, the streak, and the gems of quests and achievements. */
+data class RewardUi(val xp: Int, val streak: Int, val streakExtended: Boolean, val gems: Int) {
+    companion object {
+        fun of(reward: SessionReward) =
+            RewardUi(reward.xp, reward.streak, reward.streakExtended, reward.rewards.sumOf { it.gems })
+    }
 }
 
 /** What the learner sees and has answered in the current exercise. */

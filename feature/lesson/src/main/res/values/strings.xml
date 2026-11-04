@@ -23,7 +23,7 @@
     <string name="feature_lesson_finished_title">¡Lección completada!</string>
     <string name="feature_lesson_finished_accuracy">Has acertado el %1$d %% a la primera.</string>
     <string name="feature_lesson_out_of_hearts_title">Te has quedado sin vidas</string>
-    <string name="feature_lesson_out_of_hearts_body">Repasa un poco y vuelve a intentarlo.</string>
+    <string name="feature_lesson_out_of_hearts_body">Recuperas una vida cada 4 horas. Haz un repaso para ganar una, o recárgalas en la tienda.</string>
     <string name="feature_lesson_error">No se ha podido cargar la lección.</string>
     <string name="feature_lesson_instruction_listen_tap">Toca lo que oyes</string>
     <string name="feature_lesson_instruction_listen_type">Escribe lo que oyes</string>
@@ -48,4 +48,12 @@
     <string name="feature_lesson_story_finished_title">¡Historia completada!</string>
     <string name="feature_lesson_story_finished_accuracy">Has acertado el %1$d %% de las preguntas a la primera.</string>
     <string name="feature_lesson_story_error">No se ha podido cargar la historia.</string>
+    <plurals name="feature_lesson_streak_extended">
+        <item quantity="one">¡Racha de %d día!</item>
+        <item quantity="other">¡Racha de %d días!</item>
+    </plurals>
+    <plurals name="feature_lesson_gems_earned">
+        <item quantity="one">Has ganado %d gema con misiones y logros.</item>
+        <item quantity="other">Has ganado %d gemas con misiones y logros.</item>
+    </plurals>
 </resources>

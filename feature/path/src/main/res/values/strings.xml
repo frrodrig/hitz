@@ -17,4 +17,8 @@
     <string name="feature_path_state_completed">completado</string>
     <string name="feature_path_lessons_done">%1$d de %2$d lecciones</string>
     <string name="feature_path_error">No se ha podido cargar el curso.</string>
+    <string name="feature_path_no_hearts_title">Te has quedado sin vidas</string>
+    <string name="feature_path_no_hearts_body">Recuperas una vida cada 4 horas. Haz un repaso para ganar una, o recárgalas en la tienda.</string>
+    <string name="feature_path_no_hearts_shop">Ir a la tienda</string>
+    <string name="feature_path_no_hearts_dismiss">Ahora no</string>
 </resources>
