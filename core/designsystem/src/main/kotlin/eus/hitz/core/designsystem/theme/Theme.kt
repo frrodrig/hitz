@@ -1,43 +1,71 @@
 package eus.hitz.core.designsystem.theme
 
+import android.app.UiModeManager
+import android.content.Context
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
-import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.ReadOnlyComposable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 
-// Temporary M0 palette. The final theme (colours, typography and shapes) arrives in M1.
-private val GaltzagorriRed = Color(0xFFC8102E)
-private val GaltzagorriRedDark = Color(0xFFFFB3B0)
-
-private val LightColors = lightColorScheme(primary = GaltzagorriRed)
-private val DarkColors = darkColorScheme(primary = GaltzagorriRedDark)
-
 /**
- * Hitz theme.
+ * Hitz theme: brand colour schemes, Fredoka + Atkinson Hyperlegible typography and rounded shapes.
  *
  * @param darkTheme use the dark colour scheme.
- * @param dynamicColor use the system dynamic colours (Android 12+); off by default to keep the
- * brand identity.
+ * @param dynamicColor use the wallpaper-based colours on Android 12+. Off by default to keep the
+ * brand identity; the user can enable it in the settings.
+ * @param highContrast use the high-contrast schemes. Defaults to the system contrast setting
+ * (Android 14+).
  */
 @Composable
 fun HitzTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     dynamicColor: Boolean = false,
+    highContrast: Boolean = rememberSystemHighContrast(),
     content: @Composable () -> Unit,
 ) {
-    val colorScheme = when {
-        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-            val context = LocalContext.current
+    val context = LocalContext.current
+    val colorScheme: ColorScheme = when {
+        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S ->
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-        }
-        darkTheme -> DarkColors
-        else -> LightColors
+        highContrast -> if (darkTheme) DarkHighContrastColorScheme else LightHighContrastColorScheme
+        darkTheme -> DarkColorScheme
+        else -> LightColorScheme
     }
-    MaterialTheme(colorScheme = colorScheme, content = content)
+    val extendedColors = if (darkTheme) DarkExtendedColors else LightExtendedColors
+
+    CompositionLocalProvider(LocalHitzExtendedColors provides extendedColors) {
+        MaterialTheme(
+            colorScheme = colorScheme,
+            typography = HitzTypography,
+            shapes = HitzShapes,
+            content = content,
+        )
+    }
+}
+
+/** Accessors for the tokens that Material 3 does not cover. */
+object HitzTheme {
+    val extendedColors: HitzExtendedColors
+        @Composable
+        @ReadOnlyComposable
+        get() = LocalHitzExtendedColors.current
+}
+
+private const val HIGH_CONTRAST_THRESHOLD = 0.5f
+
+@Composable
+private fun rememberSystemHighContrast(): Boolean {
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.UPSIDE_DOWN_CAKE) return false
+    val context = LocalContext.current
+    return remember(context) {
+        val uiModeManager = context.getSystemService(Context.UI_MODE_SERVICE) as? UiModeManager
+        (uiModeManager?.contrast ?: 0f) >= HIGH_CONTRAST_THRESHOLD
+    }
 }

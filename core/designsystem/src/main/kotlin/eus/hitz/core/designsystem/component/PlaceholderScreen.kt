@@ -13,9 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.PreviewLightDark
-import androidx.compose.ui.unit.dp
+import eus.hitz.core.designsystem.preview.HitzPreviews
+import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.designsystem.theme.HitzTheme
 
 /** Temporary screen for features that are not implemented yet. */
@@ -27,10 +26,11 @@ fun PlaceholderScreen(
 ) {
     Surface(modifier = modifier.fillMaxSize()) {
         Column(
-            modifier = Modifier.padding(24.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterVertically),
+            modifier = Modifier.padding(HitzSpacing.xl),
+            verticalArrangement = Arrangement.spacedBy(HitzSpacing.md, Alignment.CenterVertically),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
+            HitzMascot(contentDescription = null)
             Text(
                 text = title,
                 style = MaterialTheme.typography.headlineMedium,
@@ -45,11 +45,10 @@ fun PlaceholderScreen(
     }
 }
 
-@PreviewLightDark
-@Preview(name = "Font 200 %", fontScale = 2f)
+@HitzPreviews
 @Composable
 private fun PlaceholderScreenPreview() {
     HitzTheme {
-        PlaceholderScreen(title = "Hitz", description = "Laster hemen! · ¡Muy pronto aquí!")
+        PlaceholderScreen(title = "Hitz", description = "Laster hemen!")
     }
 }
