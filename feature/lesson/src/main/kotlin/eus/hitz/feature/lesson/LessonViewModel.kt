@@ -150,6 +150,7 @@ class LessonViewModel @Inject constructor(
         } else {
             val mistake =
                 Mistake(exercise.id, exercise.vocabulary, exercise.structures, evaluation.given, result.expected)
+            if (heartPolicy == HeartPolicy.Shared) viewModelScope.launch { hearts.lose() }
             session.answerIncorrect(mistake)
         }
         val expected = result.expected.takeIf { evaluation.showExpected }

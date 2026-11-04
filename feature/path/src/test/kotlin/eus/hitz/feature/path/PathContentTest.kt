@@ -9,6 +9,7 @@ import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
 import com.github.takahirom.roborazzi.captureRoboImage
@@ -76,7 +77,7 @@ class PathContentTest {
     fun unitHeaderOpensTheGuidebook() {
         show()
         composeRule.onNodeWithText("Unidad 1.1").assertExists()
-        composeRule.onAllNodesWithText("Guía").onFirst().performClick()
+        composeRule.onAllNodesWithText("Guía").onFirst().performScrollTo().performClick()
         assertThat(guidebook).isEqualTo("u01-1")
     }
 
