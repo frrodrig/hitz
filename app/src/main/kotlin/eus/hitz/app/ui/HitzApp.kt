@@ -31,7 +31,10 @@ import eus.hitz.feature.leaderboard.navigation.leaderboardScreen
 import eus.hitz.feature.lesson.navigation.LessonRoute
 import eus.hitz.feature.lesson.navigation.lessonScreen
 import eus.hitz.feature.lesson.navigation.navigateToLesson
+import eus.hitz.feature.path.navigation.GuidebookRoute
 import eus.hitz.feature.path.navigation.PathRoute
+import eus.hitz.feature.path.navigation.guidebookScreen
+import eus.hitz.feature.path.navigation.navigateToGuidebook
 import eus.hitz.feature.path.navigation.pathScreen
 import eus.hitz.feature.profile.navigation.profileScreen
 import eus.hitz.feature.shop.navigation.shopScreen
@@ -44,8 +47,10 @@ fun HitzApp(
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = backStackEntry?.destination
 
-    // Lessons are full screen: no bottom navigation.
-    val showNavigationBar = currentDestination?.hasRoute(LessonRoute::class) != true
+    // Lessons and guidebooks are full screen: no bottom navigation.
+    val showNavigationBar = currentDestination?.let {
+        it.hasRoute(LessonRoute::class) || it.hasRoute(GuidebookRoute::class)
+    } != true
 
     Scaffold(
         modifier = modifier,
@@ -62,7 +67,13 @@ fun HitzApp(
                 .padding(padding)
                 .consumeWindowInsets(padding),
         ) {
-            pathScreen(onStartLesson = { unitId, lessonId -> navController.navigateToLesson(unitId, lessonId) })
+            pathScreen(
+                onStartLevel = { unitId, levelId, lessonId ->
+                    navController.navigateToLesson(unitId, levelId, lessonId)
+                },
+                onOpenGuidebook = { unitId -> navController.navigateToGuidebook(unitId) },
+            )
+            guidebookScreen(onBack = { navController.popBackStack() })
             lessonScreen(onClose = { navController.popBackStack() })
             leaderboardScreen()
             profileScreen()

@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- TODO(revisión-nativa): review all strings in this file -->
     <string name="feature_path_title">Ibilbidea</string>
-    <string name="feature_path_placeholder">Ikasbidea M4an iritsiko da.</string>
-    <string name="feature_path_try_lesson">Probatu 1.1 ikasgaia</string>
+    <string name="feature_path_section">%1$d. atala</string>
+    <string name="feature_path_unit">%1$s unitatea</string>
+    <string name="feature_path_guidebook">Gida</string>
+    <string name="feature_path_guidebook_title">%1$s unitatearen gida</string>
+    <string name="feature_path_goals">Unitate honetan ikasiko duzu:</string>
+    <string name="feature_path_back">Itzuli</string>
+    <string name="feature_path_start">Hasi</string>
+    <string name="feature_path_node_lesson">Ikasgaia</string>
+    <string name="feature_path_node_story">Istorioa</string>
+    <string name="feature_path_node_review">Errepasoa</string>
+    <string name="feature_path_node_legendary">Maila legendarioa</string>
+    <string name="feature_path_state_locked">blokeatuta</string>
+    <string name="feature_path_state_available">eskuragarri</string>
+    <string name="feature_path_state_completed">osatuta</string>
+    <string name="feature_path_lessons_done">%2$d ikasgaitik %1$d</string>
+    <string name="feature_path_stories_coming">Istorioak laster iritsiko dira.</string>
+    <string name="feature_path_error">Ezin izan da ikastaroa kargatu.</string>
 </resources>

@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="feature_path_title">Ruta</string>
-    <string name="feature_path_placeholder">La ruta de aprendizaje llegará en M4.</string>
-    <string name="feature_path_try_lesson">Probar la lección 1.1</string>
+    <string name="feature_path_section">Sección %1$d</string>
+    <string name="feature_path_unit">Unidad %1$s</string>
+    <string name="feature_path_guidebook">Guía</string>
+    <string name="feature_path_guidebook_title">Guía de la unidad %1$s</string>
+    <string name="feature_path_goals">En esta unidad aprenderás a:</string>
+    <string name="feature_path_back">Volver</string>
+    <string name="feature_path_start">Empezar</string>
+    <string name="feature_path_node_lesson">Lección</string>
+    <string name="feature_path_node_story">Historia</string>
+    <string name="feature_path_node_review">Repaso</string>
+    <string name="feature_path_node_legendary">Nivel legendario</string>
+    <string name="feature_path_state_locked">bloqueado</string>
+    <string name="feature_path_state_available">disponible</string>
+    <string name="feature_path_state_completed">completado</string>
+    <string name="feature_path_lessons_done">%1$d de %2$d lecciones</string>
+    <string name="feature_path_stories_coming">Las historias llegarán muy pronto.</string>
+    <string name="feature_path_error">No se ha podido cargar el curso.</string>
 </resources>

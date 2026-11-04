@@ -45,13 +45,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          git add -A '*/src/test/screenshots/*.png'
+          git add -A '*/src/test/screenshots/*.png' '*/schemas/*.json'
           if git diff --cached --quiet; then echo "Screenshots unchanged"; exit 0; fi
           branch="test/screenshots-${{ github.run_id }}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
-          git commit -m "test: update Roborazzi reference screenshots"
+          git commit -m "test: update Roborazzi reference screenshots and Room schemas"
           git push origin "$branch"
           gh pr create --base "${{ github.ref_name }}" --head "$branch" \
             --title "test: update Roborazzi reference screenshots" \

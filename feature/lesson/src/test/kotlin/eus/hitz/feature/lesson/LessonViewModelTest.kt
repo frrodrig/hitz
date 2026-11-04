@@ -4,9 +4,10 @@ import androidx.lifecycle.SavedStateHandle
 import app.cash.turbine.test
 import com.google.common.truth.Truth.assertThat
 import eus.hitz.core.domain.lesson.AnswerChecker
-import eus.hitz.core.domain.lesson.LoadLessonUseCase
 import eus.hitz.core.domain.lesson.PairSide
 import eus.hitz.core.domain.lesson.WordBank
+import eus.hitz.core.domain.session.PlanSessionUseCase
+import eus.hitz.core.domain.session.RecordSessionUseCase
 import eus.hitz.core.model.content.Exercise
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
@@ -16,9 +17,14 @@ class LessonViewModelTest {
     @get:Rule
     val mainDispatcherRule = MainDispatcherRule()
 
+    private val progress = FakeProgressRepository()
+
     private fun viewModel(vararg exercises: Exercise) = LessonViewModel(
-        savedStateHandle = SavedStateHandle(mapOf("unitId" to TestLesson.UNIT, "lessonId" to TestLesson.LESSON)),
-        loadLesson = LoadLessonUseCase(TestLesson.repository(*exercises)),
+        savedStateHandle = SavedStateHandle(
+            mapOf("unitId" to TestLesson.UNIT, "levelId" to TestLesson.LEVEL, "lessonId" to TestLesson.LESSON),
+        ),
+        planSession = PlanSessionUseCase(TestLesson.repository(*exercises), progress),
+        recordSession = RecordSessionUseCase(progress) { 1L },
         checker = AnswerChecker(),
     )
 
@@ -116,6 +122,7 @@ class LessonViewModelTest {
         val finished = vm.state.value as LessonUiState.Finished
         assertThat(finished.result.completed).isTrue()
         assertThat(finished.result.accuracy).isEqualTo(1f)
+        assertThat(progress.completed).containsExactly(TestLesson.LESSON)
     }
 
     @Test
@@ -127,6 +134,8 @@ class LessonViewModelTest {
             vm.onAction(LessonAction.Continue)
         }
         assertThat(vm.state.value).isEqualTo(LessonUiState.OutOfHearts)
+        assertThat(progress.completed).isEmpty()
+        assertThat(progress.mistakes).hasSize(5)
     }
 
     @Test

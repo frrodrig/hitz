@@ -56,6 +56,23 @@ unit-tested without Android:
 what previews, UI tests and screenshot tests render. Exercise types not yet supported by the UI are
 skipped (M3 supports word bank, typing, choose image and match pairs).
 
+## Learning path and progress
+
+- **Progress** is stored in Room (`HitzDatabase`, `core:data`): `completions` (a lesson id, or the
+  level id of a review/legendary level, with best first-try accuracy) and `mistakes` with
+  `mistake_tags` (`lemma` / `structure`). Room schemas are exported to `core/data/schemas/` and
+  committed by the screenshot-recording workflow.
+- **Path rules** (`LearningPathBuilder`, pure Kotlin): progression is linear over the required
+  levels (lessons and unit reviews); a lesson level is complete when all its lessons are; stories and
+  legendary levels are optional and never block. Exactly one node is *current*.
+- **Sessions** (`PlanSessionUseCase`): lesson levels play the next lesson; the **review** picks the
+  10 unit exercises with the highest mistake score (3 × mistakes on the exercise + mistakes on its
+  lemmas + mistakes on its structures), so spaced repetition follows the learner's weak words and
+  grammar; the **legendary** level plays every unit exercise shuffled with 3 hearts.
+  `RecordSessionUseCase` saves mistakes always and the completion only when the session is finished.
+- `feature:path` shows sections, unit headers with the guidebook, and nodes whose Material
+  expressive shape depends on the level type (lesson, story, review, legendary).
+
 ## Build
 
 - Version catalog in `gradle/libs.versions.toml`.
