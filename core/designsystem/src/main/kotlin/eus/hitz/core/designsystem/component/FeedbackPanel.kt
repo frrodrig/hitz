@@ -1,22 +1,28 @@
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
+
 package eus.hitz.core.designsystem.component
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CornerSize
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
+import androidx.compose.material3.ListItem
+import androidx.compose.material3.ListItemDefaults
+import androidx.compose.material3.MaterialShapes
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.toShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.LiveRegionMode
 import androidx.compose.ui.semantics.heading
@@ -44,8 +50,9 @@ private fun feedbackColors(kind: FeedbackKind): ColorFamily {
 }
 
 /**
- * Bottom panel shown after checking an answer. It is a polite live region, so TalkBack reads the
- * result and the correct answer without the learner having to move focus.
+ * Bottom panel shown after checking an answer: a surface-container sheet with a Material 3
+ * [ListItem] whose icon sits in an expressive shape, and an expressive button. It is a polite live
+ * region, so TalkBack reads the result and the correct answer without moving focus.
  */
 @Composable
 fun HitzFeedbackPanel(
@@ -57,14 +64,11 @@ fun HitzFeedbackPanel(
     message: String? = null,
 ) {
     val colors = feedbackColors(kind)
+    val badgeShape = if (kind == FeedbackKind.Incorrect) MaterialShapes.Cookie4Sided else MaterialShapes.Cookie9Sided
     Surface(
         modifier = modifier.fillMaxWidth(),
-        color = colors.container,
-        contentColor = colors.onContainer,
-        shape = MaterialTheme.shapes.large.copy(
-            bottomStart = CornerSize(0.dp),
-            bottomEnd = CornerSize(0.dp),
-        ),
+        color = MaterialTheme.colorScheme.surfaceContainerHigh,
+        shape = MaterialTheme.shapes.extraLarge.copy(bottomStart = CornerSize(0.dp), bottomEnd = CornerSize(0.dp)),
     ) {
         Column(
             modifier = Modifier
@@ -72,39 +76,37 @@ fun HitzFeedbackPanel(
                 .padding(HitzSpacing.lg),
             verticalArrangement = Arrangement.spacedBy(HitzSpacing.md),
         ) {
-            Column(
+            ListItem(
                 modifier = Modifier.semantics(mergeDescendants = true) { liveRegion = LiveRegionMode.Polite },
-                verticalArrangement = Arrangement.spacedBy(HitzSpacing.xs),
-            ) {
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
-                ) {
-                    Icon(
-                        painter = painterResource(
-                            if (kind == FeedbackKind.Incorrect) HitzIcons.Close else HitzIcons.Check,
-                        ),
-                        contentDescription = null,
-                        tint = colors.color,
-                        modifier = Modifier.size(28.dp),
-                    )
+                leadingContent = {
+                    Surface(shape = badgeShape.toShape(), color = colors.container, modifier = Modifier.size(48.dp)) {
+                        Box(contentAlignment = Alignment.Center) {
+                            Icon(
+                                painter = painterResource(
+                                    if (kind == FeedbackKind.Incorrect) HitzIcons.Close else HitzIcons.Check,
+                                ),
+                                contentDescription = null,
+                                tint = colors.onContainer,
+                            )
+                        }
+                    }
+                },
+                headlineContent = {
                     Text(
                         text = title,
-                        style = MaterialTheme.typography.titleLarge,
+                        style = MaterialTheme.typography.titleLargeEmphasized,
                         modifier = Modifier.semantics { heading() },
                     )
-                }
-                if (message != null) {
-                    Text(message, style = MaterialTheme.typography.bodyLarge)
-                }
-            }
-            Button(
+                },
+                supportingContent = message?.let { { Text(it, style = MaterialTheme.typography.bodyLarge) } },
+                colors = ListItemDefaults.colors(containerColor = Color.Transparent),
+            )
+            HitzButton(
+                text = continueLabel,
                 onClick = onContinue,
-                modifier = Modifier.fillMaxWidth().padding(top = HitzSpacing.xs),
-                colors = ButtonDefaults.buttonColors(containerColor = colors.color, contentColor = colors.onColor),
-            ) {
-                Text(continueLabel, Modifier.padding(vertical = 6.dp))
-            }
+                modifier = Modifier.fillMaxWidth(),
+                size = HitzButtonSize.Medium,
+            )
         }
     }
 }

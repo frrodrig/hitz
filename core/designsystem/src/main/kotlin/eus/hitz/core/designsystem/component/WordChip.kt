@@ -1,11 +1,14 @@
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
+
 package eus.hitz.core.designsystem.component
 
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
-import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
+import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -16,15 +19,15 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.unit.dp
 import eus.hitz.core.designsystem.R
 import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.designsystem.theme.HitzTheme
 
 /**
- * A tappable word for word-bank exercises. When [used] is true the chip keeps its size as an
- * empty slot, so the word bank does not reflow while the learner builds the answer.
+ * A tappable word for word-bank exercises: a Material 3 Expressive tonal button. When [used] is
+ * true it leaves an empty slot of the same size, so the bank does not reflow while the learner
+ * builds the answer.
  */
 @Composable
 fun HitzWordChip(
@@ -33,33 +36,24 @@ fun HitzWordChip(
     modifier: Modifier = Modifier,
     used: Boolean = false,
 ) {
-    val scheme = MaterialTheme.colorScheme
     if (used) {
         val usedDescription = stringResource(R.string.core_designsystem_word_used, word)
         Surface(
-            modifier = modifier
-                .heightIn(min = 48.dp)
-                .clearAndSetSemantics { contentDescription = usedDescription },
-            shape = MaterialTheme.shapes.small,
-            color = scheme.surfaceContainerHigh,
-        ) {
-            Text(word, Modifier.padding(horizontal = 14.dp, vertical = 12.dp).alpha(0f))
-        }
-    } else {
-        Surface(
-            onClick = onClick,
-            modifier = modifier.heightIn(min = 48.dp),
-            shape = MaterialTheme.shapes.small,
-            color = scheme.surface,
-            contentColor = scheme.onSurface,
-            border = BorderStroke(2.dp, scheme.outlineVariant),
-            shadowElevation = 1.dp,
+            modifier = modifier.clearAndSetSemantics { contentDescription = usedDescription },
+            shape = ButtonDefaults.shape,
+            color = MaterialTheme.colorScheme.surfaceContainerHighest,
         ) {
             Text(
                 text = word,
                 style = MaterialTheme.typography.bodyLarge,
-                modifier = Modifier.padding(horizontal = 14.dp, vertical = 12.dp),
+                modifier = Modifier
+                    .padding(ButtonDefaults.contentPaddingFor(ButtonDefaults.MinHeight))
+                    .alpha(0f),
             )
+        }
+    } else {
+        FilledTonalButton(onClick = onClick, shapes = ButtonDefaults.shapes(), modifier = modifier) {
+            Text(word, style = MaterialTheme.typography.bodyLarge)
         }
     }
 }

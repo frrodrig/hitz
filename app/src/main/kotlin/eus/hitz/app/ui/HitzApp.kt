@@ -1,10 +1,13 @@
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
+
 package eus.hitz.app.ui
 
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
-import androidx.compose.material3.NavigationBar
-import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.ShortNavigationBar
+import androidx.compose.material3.ShortNavigationBarItem
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -40,11 +43,11 @@ fun HitzApp(
     Scaffold(
         modifier = modifier,
         bottomBar = {
-            NavigationBar {
+            ShortNavigationBar {
                 TopLevelDestination.entries.forEach { destination ->
                     val selected = currentDestination?.hierarchy
                         ?.any { it.hasRoute(destination.routeClass) } == true
-                    NavigationBarItem(
+                    ShortNavigationBarItem(
                         selected = selected,
                         onClick = {
                             navController.navigate(
