@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="feature_lesson_title">Ikasgaia</string>
-    <string name="feature_lesson_placeholder">Ikasgaien motorra M3an iritsiko da.</string>
+    <!-- TODO(revisión-nativa): review all strings in this file -->
+    <string name="feature_lesson_instruction_translate">Itzuli esaldi hau</string>
+    <string name="feature_lesson_instruction_type_eu">Idatzi euskaraz</string>
+    <string name="feature_lesson_instruction_type_es">Idatzi gaztelaniaz</string>
+    <string name="feature_lesson_instruction_image">Zein da «%1$s»?</string>
+    <string name="feature_lesson_instruction_pairs">Lotu bikoteak</string>
+    <string name="feature_lesson_input_hint">Zure erantzuna</string>
+    <string name="feature_lesson_answer_area">Zure erantzuna</string>
+    <string name="feature_lesson_pair_selected">Hautatuta</string>
+    <string name="feature_lesson_pair_matched">Lotuta</string>
+    <string name="feature_lesson_check">Egiaztatu</string>
+    <string name="feature_lesson_continue">Jarraitu</string>
+    <string name="feature_lesson_finish">Amaitu</string>
+    <string name="feature_lesson_correct">Oso ondo!</string>
+    <string name="feature_lesson_almost">Ia-ia! Begiratu nola idazten den:</string>
+    <string name="feature_lesson_incorrect">Erantzun zuzena:</string>
+    <string name="feature_lesson_close">Ikasgaitik irten</string>
+    <string name="feature_lesson_quit_title">Ikasgaitik irten?</string>
+    <string name="feature_lesson_quit_body">Ikasgai honetako aurrerapena galduko duzu.</string>
+    <string name="feature_lesson_quit_confirm">Irten</string>
+    <string name="feature_lesson_quit_dismiss">Ikasten jarraitu</string>
+    <string name="feature_lesson_finished_title">Ikasgaia osatuta!</string>
+    <string name="feature_lesson_finished_accuracy">Lehen saiakeran %%%1$d asmatu duzu.</string>
+    <string name="feature_lesson_out_of_hearts_title">Bizitzarik gabe geratu zara</string>
+    <string name="feature_lesson_out_of_hearts_body">Errepasatu pixka bat eta saiatu berriro.</string>
+    <string name="feature_lesson_error">Ezin izan da ikasgaia kargatu.</string>
 </resources>

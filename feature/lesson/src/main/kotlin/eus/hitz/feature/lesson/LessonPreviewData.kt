@@ -1,0 +1,65 @@
+package eus.hitz.feature.lesson
+
+import androidx.compose.runtime.Composable
+import eus.hitz.core.designsystem.preview.HitzPreviews
+import eus.hitz.core.designsystem.theme.HitzTheme
+import eus.hitz.core.domain.lesson.LessonResult
+import eus.hitz.core.domain.lesson.MatchPairsState
+import eus.hitz.core.domain.lesson.PairSide
+import eus.hitz.core.domain.lesson.Tile
+import eus.hitz.core.model.content.Language
+import kotlin.random.Random
+
+internal object LessonPreviewData {
+    val wordBank = ExerciseUi.WordBank(
+        id = "preview",
+        prompt = "Kaixo! Ni Ane naiz.",
+        promptLanguage = Language.Basque,
+        tiles = listOf("Soy", "tú", "Hola", "adiós", "Ane").mapIndexed { i, t -> Tile(i, t) },
+        selected = listOf(2, 0, 4),
+    )
+
+    val typing = ExerciseUi.Typing("preview-typing", "Muchas gracias.", Language.Spanish, input = "Eskerik asko")
+
+    val image = ExerciseUi.ChooseImage(
+        id = "preview-image",
+        prompt = "buenas noches",
+        options = listOf("egun on", "arratsalde on", "gabon").map { ImageOptionUi(it, "") },
+        selected = 2,
+    )
+
+    val pairs = ExerciseUi.MatchPairs(
+        id = "preview-pairs",
+        state = MatchPairsState.start(
+            left = listOf("kaixo", "agur", "mesedez", "barkatu"),
+            right = listOf("hola", "adiós", "por favor", "perdón"),
+            random = Random(4),
+        ).select(PairSide.Left, 1).select(PairSide.Right, 1).select(PairSide.Left, 0),
+    )
+
+    val active = LessonUiState.Active(progress = 0.4f, hearts = 4, exercise = wordBank)
+    val typingAlmost = active.copy(
+        exercise = typing,
+        feedback = FeedbackUi(FeedbackType.AlmostCorrect, "Eskerrik asko.")
+    )
+    val incorrect = active.copy(feedback = FeedbackUi(FeedbackType.Incorrect, "¡Hola! Soy Ane."))
+    val finished = LessonUiState.Finished(LessonResult("preview", true, 5, 4, 4, emptyList()))
+}
+
+@HitzPreviews
+@Composable
+private fun LessonActivePreview() {
+    HitzTheme { LessonContent(LessonPreviewData.active, onAction = {}, onClose = {}) }
+}
+
+@HitzPreviews
+@Composable
+private fun LessonIncorrectPreview() {
+    HitzTheme { LessonContent(LessonPreviewData.incorrect, onAction = {}, onClose = {}) }
+}
+
+@HitzPreviews
+@Composable
+private fun LessonFinishedPreview() {
+    HitzTheme { LessonContent(LessonPreviewData.finished, onAction = {}, onClose = {}) }
+}

@@ -12,6 +12,7 @@ data object PathRoute
 
 fun NavController.navigateToPath(navOptions: NavOptions? = null) = navigate(PathRoute, navOptions)
 
-fun NavGraphBuilder.pathScreen() {
-    composable<PathRoute> { PathScreen() }
+/** [onStartLesson] receives the unit id and the lesson id. */
+fun NavGraphBuilder.pathScreen(onStartLesson: (unitId: String, lessonId: String) -> Unit) {
+    composable<PathRoute> { PathScreen(onStartLesson = onStartLesson) }
 }
