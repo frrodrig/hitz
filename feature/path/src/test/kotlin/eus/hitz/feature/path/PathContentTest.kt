@@ -1,5 +1,6 @@
 package eus.hitz.feature.path
 
+import androidx.compose.material3.Surface
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
@@ -33,12 +34,14 @@ class PathContentTest {
     private fun show(darkTheme: Boolean = false) {
         composeRule.setContent {
             HitzTheme(darkTheme = darkTheme) {
-                PathContent(
-                    state = PathUiState.Ready(PathTestData.path),
-                    onStartLevel = { u, l, s -> started = Triple(u, l, s) },
-                    onOpenGuidebook = { guidebook = it },
-                    onStartStory = { storyTapped = true },
-                )
+                Surface {
+                    PathContent(
+                        state = PathUiState.Ready(PathTestData.path),
+                        onStartLevel = { u, l, s -> started = Triple(u, l, s) },
+                        onOpenGuidebook = { guidebook = it },
+                        onStartStory = { storyTapped = true },
+                    )
+                }
             }
         }
     }
