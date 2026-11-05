@@ -3,15 +3,20 @@ package eus.hitz.feature.lesson
 import androidx.lifecycle.SavedStateHandle
 import app.cash.turbine.test
 import com.google.common.truth.Truth.assertThat
+import eus.hitz.core.domain.audio.SoundEffect
 import eus.hitz.core.domain.gamification.HeartsUseCase
 import eus.hitz.core.domain.gamification.PlayerData
 import eus.hitz.core.domain.gamification.Wallet
 import eus.hitz.core.domain.lesson.PairSide
 import eus.hitz.core.domain.lesson.WordBank
 import eus.hitz.core.domain.session.PlanSessionUseCase
+import eus.hitz.core.domain.settings.UserSettings
 import eus.hitz.core.model.content.Exercise
+import eus.hitz.core.testing.FakeAudioProvider
 import eus.hitz.core.testing.FakeGamificationRepository
 import eus.hitz.core.testing.FakeGamificationRepository.Companion.NOW
+import eus.hitz.core.testing.FakeSettingsRepository
+import eus.hitz.core.testing.FakeSoundEffects
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
@@ -22,16 +27,21 @@ class LessonViewModelTest {
 
     private val progress = FakeProgressRepository()
     private val audio = FakeAudioProvider()
+    private val effects = FakeSoundEffects()
     private val gamification = FakeGamificationRepository()
 
-    private fun viewModel(vararg exercises: Exercise, speakingEnabled: Boolean = true) = LessonViewModel(
+    private fun viewModel(
+        vararg exercises: Exercise,
+        speakingEnabled: Boolean = true,
+        settings: UserSettings = UserSettings(speakingEnabled = speakingEnabled),
+    ) = LessonViewModel(
         savedStateHandle = SavedStateHandle(
             mapOf("unitId" to TestLesson.UNIT, "levelId" to TestLesson.LEVEL, "lessonId" to TestLesson.LESSON),
         ),
         planSession = PlanSessionUseCase(TestLesson.repository(*exercises), progress),
         recordSession = gamification.recordSession(progress),
-        settings = FakeSettingsRepository(speakingEnabled),
-        audio = audio,
+        settings = FakeSettingsRepository(settings),
+        audio = LessonAudio(audio, effects),
         hearts = HeartsUseCase(gamification, gamification.clock),
     )
 
@@ -69,8 +79,9 @@ class LessonViewModelTest {
     fun `listening exercises play their clip when shown and on demand`() {
         val vm = viewModel(TestLesson.listenTap)
         assertThat(audio.played).containsExactly(TestLesson.listenTap.id)
-        vm.onAction(LessonAction.PlayAudio)
+        vm.onAction(LessonAction.PlayAudio(slow = true))
         assertThat(audio.played).hasSize(2)
+        assertThat(audio.playedSlow).containsExactly(TestLesson.listenTap.id)
     }
 
     @Test
@@ -313,5 +324,53 @@ class LessonViewModelTest {
         assertThat(reward?.xp).isEqualTo(15)
         assertThat(reward?.streak).isEqualTo(1)
         assertThat(reward?.streakExtended).isTrue()
+    }
+
+    @Test
+    fun `listening exercises are left out when turned off`() {
+        val vm = viewModel(
+            TestLesson.listenTap,
+            TestLesson.listenType,
+            TestLesson.typing,
+            settings = UserSettings(listeningEnabled = false)
+        )
+        assertThat(vm.active.exercise.id).isEqualTo(TestLesson.typing.id)
+        assertThat(audio.played).isEmpty()
+    }
+
+    @Test
+    fun `checking plays a sound effect and the Basque answer`() = runTest {
+        val vm = viewModel(TestLesson.order, TestLesson.image)
+        vm.events.test {
+            vm.tap("Zu Mikel zara")
+            vm.onAction(LessonAction.Check)
+            assertThat(awaitItem()).isEqualTo(LessonEvent.Feedback(correct = true))
+            assertThat(effects.played).containsExactly(SoundEffect.Correct)
+            assertThat(audio.played).containsExactly(TestLesson.order.id)
+            vm.onAction(LessonAction.Continue)
+            vm.onAction(LessonAction.SelectOption(0))
+            vm.onAction(LessonAction.Check)
+            assertThat(awaitItem()).isEqualTo(LessonEvent.Feedback(correct = false))
+        }
+        assertThat(effects.played).containsExactly(SoundEffect.Correct, SoundEffect.Incorrect).inOrder()
+    }
+
+    @Test
+    fun `sound effects can be turned off`() = runTest {
+        val vm = viewModel(TestLesson.image, settings = UserSettings(soundEffectsEnabled = false))
+        vm.onAction(LessonAction.SelectOption(1))
+        vm.onAction(LessonAction.Check)
+        vm.onAction(LessonAction.Continue)
+        assertThat(effects.played).isEmpty()
+        assertThat(vm.state.value).isInstanceOf(LessonUiState.Finished::class.java)
+    }
+
+    @Test
+    fun `finishing plays the finished sound`() {
+        val vm = viewModel(TestLesson.image)
+        vm.onAction(LessonAction.SelectOption(1))
+        vm.onAction(LessonAction.Check)
+        vm.onAction(LessonAction.Continue)
+        assertThat(effects.played.last()).isEqualTo(SoundEffect.Finished)
     }
 }

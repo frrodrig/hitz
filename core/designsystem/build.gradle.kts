@@ -7,5 +7,6 @@ android {
 }
 
 dependencies {
+    implementation(libs.lottie.compose)
     testImplementation(libs.androidx.test.ext.junit)
 }

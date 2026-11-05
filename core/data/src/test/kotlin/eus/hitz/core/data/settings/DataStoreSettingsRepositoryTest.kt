@@ -36,4 +36,17 @@ class DataStoreSettingsRepositoryTest {
         repository.setReminderEnabled(true)
         assertThat(repository.settings.first().reminderEnabled).isTrue()
     }
+
+    @Test
+    fun `listening and sound effects are on until turned off`() = runTest {
+        val repository = repository()
+        val defaults = repository.settings.first()
+        assertThat(defaults.listeningEnabled).isTrue()
+        assertThat(defaults.soundEffectsEnabled).isTrue()
+        repository.setListeningEnabled(false)
+        repository.setSoundEffectsEnabled(false)
+        val changed = repository.settings.first()
+        assertThat(changed.listeningEnabled).isFalse()
+        assertThat(changed.soundEffectsEnabled).isFalse()
+    }
 }

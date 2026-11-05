@@ -4,7 +4,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import eus.hitz.core.domain.audio.AudioProvider
+import eus.hitz.core.domain.audio.SoundEffect
 import eus.hitz.core.domain.gamification.ActivityKind
 import eus.hitz.core.domain.gamification.HeartsUseCase
 import eus.hitz.core.domain.lesson.AnswerChecker
@@ -37,7 +37,7 @@ class LessonViewModel @Inject constructor(
     private val planSession: PlanSessionUseCase,
     private val recordSession: RecordSessionUseCase,
     private val settings: SettingsRepository,
-    private val audio: AudioProvider,
+    private val audio: LessonAudio,
     private val hearts: HeartsUseCase,
 ) : ViewModel() {
     private val unitId: String = checkNotNull(savedStateHandle["unitId"])
@@ -59,13 +59,21 @@ class LessonViewModel @Inject constructor(
 
     /** Set by "I can't speak now": the remaining speaking exercises are skipped. */
     private var skipSpeaking = false
+    private var soundEffects = true
 
     init {
         viewModelScope.launch {
             runCatching {
-                val speakingEnabled = settings.settings.first().speakingEnabled
+                val preferences = settings.settings.first()
+                soundEffects = preferences.soundEffectsEnabled
                 val plan = planSession(unitId, levelId, lessonId)
-                plan to plan.exercises.filter { speakingEnabled || it !is Exercise.Speak }
+                plan to plan.exercises.filter { exercise ->
+                    when (exercise) {
+                        is Exercise.Speak -> preferences.speakingEnabled
+                        is Exercise.ListenTap, is Exercise.ListenType -> preferences.listeningEnabled
+                        else -> true
+                    }
+                }
             }.onSuccess { (plan, playable) ->
                 exercises = playable.associateBy { it.id }
                 heartPolicy = plan.hearts
@@ -92,7 +100,7 @@ class LessonViewModel @Inject constructor(
             is LessonAction.ChangeInput -> updateExercise<ExerciseUi.TextAnswer> { it.withInput(action.text) }
             is LessonAction.SelectOption -> updateExercise<ExerciseUi.SingleChoice> { it.withSelected(action.index) }
             is LessonAction.SelectPair -> selectPair(action)
-            LessonAction.PlayAudio -> playCurrent()
+            is LessonAction.PlayAudio -> playCurrent(action.slow)
             is LessonAction.SpeechResult -> speech(action.candidates)
             LessonAction.SkipSpeaking -> skipSpeakingExercises()
             LessonAction.Check -> check()
@@ -110,7 +118,7 @@ class LessonViewModel @Inject constructor(
     }
 
     override fun onCleared() {
-        audio.stop()
+        audio.voice.stop()
     }
 
     private fun selectPair(action: LessonAction.SelectPair) {
@@ -136,6 +144,7 @@ class LessonViewModel @Inject constructor(
         if (pairs.state.isComplete && active.feedback == null) {
             session = session.answerCorrect()
             _state.value = active.copy(progress = session.progress, feedback = FeedbackUi(FeedbackType.Correct))
+            announce(FeedbackType.Correct)
         }
     }
 
@@ -160,6 +169,7 @@ class LessonViewModel @Inject constructor(
             is AnswerResult.Incorrect -> FeedbackUi(FeedbackType.Incorrect, expected)
         }
         _state.value = active.copy(progress = session.progress, hearts = session.hearts, feedback = feedback)
+        announce(feedback.type)
     }
 
     private class Evaluation(val result: AnswerResult, val given: String, val showExpected: Boolean = true)
@@ -228,6 +238,7 @@ class LessonViewModel @Inject constructor(
         session = if (accepted) session.answerCorrect() else session.skip()
         val feedback = if (accepted) FeedbackUi(FeedbackType.Correct) else FeedbackUi(FeedbackType.Incorrect, ui.text)
         _state.value = active.copy(progress = session.progress, feedback = feedback)
+        announce(feedback.type)
     }
 
     private fun skipSpeakingExercises() {
@@ -237,9 +248,22 @@ class LessonViewModel @Inject constructor(
         showCurrent()
     }
 
-    private fun playCurrent() {
-        val exercise = (_state.value as? LessonUiState.Active)?.exercise as? ExerciseUi.Audible ?: return
-        audio.play(exercise.clip.id, exercise.clip.text)
+    /** The answer's clip after checking, the prompt's before. */
+    private fun playCurrent(slow: Boolean = false) {
+        val active = _state.value as? LessonUiState.Active ?: return
+        val exercise = exercises[active.exercise.id] ?: return
+        val answer = if (active.feedback != null) ExerciseClips.answer(exercise) else null
+        val clip = answer ?: ExerciseClips.prompt(exercise)
+        clip?.let { audio.voice.play(it.id, it.text, slow) }
+    }
+
+    /** Sound, vibration (through the screen) and the Basque answer after a check. */
+    private fun announce(type: FeedbackType) {
+        if (soundEffects) {
+            audio.effects.play(if (type == FeedbackType.Incorrect) SoundEffect.Incorrect else SoundEffect.Correct)
+            viewModelScope.launch { _events.send(LessonEvent.Feedback(correct = type != FeedbackType.Incorrect)) }
+        }
+        playCurrent()
     }
 
     private fun next() {
@@ -263,8 +287,11 @@ class LessonViewModel @Inject constructor(
             )
         }
         if (session.isOver) record(session.result())
-        val shown = (_state.value as? LessonUiState.Active)?.exercise
-        if (shown is ExerciseUi.ListenTap || shown is ExerciseUi.ListenType) playCurrent()
+        if (_state.value is LessonUiState.Active) {
+            playCurrent()
+        } else if (_state.value is LessonUiState.Finished && soundEffects) {
+            audio.effects.play(SoundEffect.Finished)
+        }
     }
 
     private fun record(result: LessonResult) {

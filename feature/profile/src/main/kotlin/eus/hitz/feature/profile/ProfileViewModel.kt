@@ -37,6 +37,14 @@ class ProfileViewModel @Inject constructor(
         viewModelScope.launch { settingsRepository.setSpeakingEnabled(enabled) }
     }
 
+    fun setListeningEnabled(enabled: Boolean) {
+        viewModelScope.launch { settingsRepository.setListeningEnabled(enabled) }
+    }
+
+    fun setSoundEffectsEnabled(enabled: Boolean) {
+        viewModelScope.launch { settingsRepository.setSoundEffectsEnabled(enabled) }
+    }
+
     /** Call with true only once notifications are allowed. */
     fun setReminderEnabled(enabled: Boolean) {
         viewModelScope.launch {

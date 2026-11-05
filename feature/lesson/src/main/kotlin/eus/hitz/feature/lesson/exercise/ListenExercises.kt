@@ -2,12 +2,19 @@ package eus.hitz.feature.lesson.exercise
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.material3.FilledTonalIconButton
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import eus.hitz.core.designsystem.component.HitzButton
 import eus.hitz.core.designsystem.component.HitzButtonStyle
 import eus.hitz.core.designsystem.icon.HitzIcons
@@ -49,16 +56,34 @@ internal fun ListenTypeExercise(
     }
 }
 
-/** Plays the clip of the current exercise. It stays enabled after checking, to listen again. */
+/**
+ * Plays the clip of the current exercise, normally or slowly. It stays enabled after checking, to
+ * listen again.
+ */
 @Composable
 internal fun ListenButton(onAction: (LessonAction) -> Unit, modifier: Modifier = Modifier) {
-    HitzButton(
-        text = stringResource(R.string.feature_lesson_listen),
-        onClick = { onAction(LessonAction.PlayAudio) },
+    Row(
         modifier = modifier.fillMaxWidth(),
-        style = HitzButtonStyle.Tonal,
-        icon = HitzIcons.Speaker,
-    )
+        horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        HitzButton(
+            text = stringResource(R.string.feature_lesson_listen),
+            onClick = { onAction(LessonAction.PlayAudio()) },
+            modifier = Modifier.weight(1f),
+            style = HitzButtonStyle.Tonal,
+            icon = HitzIcons.Speaker,
+        )
+        FilledTonalIconButton(
+            onClick = { onAction(LessonAction.PlayAudio(slow = true)) },
+            modifier = Modifier.size(56.dp),
+        ) {
+            Icon(
+                painterResource(HitzIcons.Slow),
+                contentDescription = stringResource(R.string.feature_lesson_listen_slow)
+            )
+        }
+    }
 }
 
 @HitzPreviews

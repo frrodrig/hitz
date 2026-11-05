@@ -18,6 +18,8 @@ internal class DataStoreSettingsRepository @Inject constructor(
         UserSettings(
             speakingEnabled = preferences[SPEAKING_ENABLED] ?: true,
             reminderEnabled = preferences[REMINDER_ENABLED] ?: false,
+            listeningEnabled = preferences[LISTENING_ENABLED] ?: true,
+            soundEffectsEnabled = preferences[SOUND_EFFECTS_ENABLED] ?: true,
         )
     }
 
@@ -29,9 +31,19 @@ internal class DataStoreSettingsRepository @Inject constructor(
         dataStore.edit { it[REMINDER_ENABLED] = enabled }
     }
 
+    override suspend fun setListeningEnabled(enabled: Boolean) {
+        dataStore.edit { it[LISTENING_ENABLED] = enabled }
+    }
+
+    override suspend fun setSoundEffectsEnabled(enabled: Boolean) {
+        dataStore.edit { it[SOUND_EFFECTS_ENABLED] = enabled }
+    }
+
     companion object {
         const val FILE_NAME = "settings"
         private val SPEAKING_ENABLED = booleanPreferencesKey("speaking_enabled")
         private val REMINDER_ENABLED = booleanPreferencesKey("reminder_enabled")
+        private val LISTENING_ENABLED = booleanPreferencesKey("listening_enabled")
+        private val SOUND_EFFECTS_ENABLED = booleanPreferencesKey("sound_effects_enabled")
     }
 }

@@ -65,33 +65,47 @@ fun ProfileScreen(
     viewModel: ProfileViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
-    val context = LocalContext.current
-    val permission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
-        if (granted) viewModel.setReminderEnabled(true)
-    }
+    val onReminderChange = rememberReminderToggle(viewModel)
     ProfileContent(
         state = state,
-        onSpeakingChange = viewModel::setSpeakingEnabled,
-        onReminderChange = { enabled ->
-            val needsPermission = enabled && Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
-                ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) !=
-                PackageManager.PERMISSION_GRANTED
-            if (needsPermission) {
-                permission.launch(Manifest.permission.POST_NOTIFICATIONS)
-            } else {
-                viewModel.setReminderEnabled(enabled)
+        onSettingChange = { setting, enabled ->
+            when (setting) {
+                Setting.Speaking -> viewModel.setSpeakingEnabled(enabled)
+                Setting.Listening -> viewModel.setListeningEnabled(enabled)
+                Setting.SoundEffects -> viewModel.setSoundEffectsEnabled(enabled)
+                Setting.Reminder -> onReminderChange(enabled)
             }
         },
         modifier = modifier,
     )
 }
 
+/** The learner's switches in the profile. */
+internal enum class Setting { Speaking, Listening, SoundEffects, Reminder }
+
+@Composable
+private fun rememberReminderToggle(viewModel: ProfileViewModel): (Boolean) -> Unit {
+    val context = LocalContext.current
+    val permission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
+        if (granted) viewModel.setReminderEnabled(true)
+    }
+    return { enabled ->
+        val needsPermission = enabled && Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+            ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) !=
+            PackageManager.PERMISSION_GRANTED
+        if (needsPermission) {
+            permission.launch(Manifest.permission.POST_NOTIFICATIONS)
+        } else {
+            viewModel.setReminderEnabled(enabled)
+        }
+    }
+}
+
 /** Stats, today's quests, achievements and settings. */
 @Composable
 internal fun ProfileContent(
     state: ProfileUiState,
-    onSpeakingChange: (Boolean) -> Unit,
-    onReminderChange: (Boolean) -> Unit,
+    onSettingChange: (Setting, Boolean) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Surface(modifier.fillMaxSize()) {
@@ -107,26 +121,47 @@ internal fun ProfileContent(
                 sectionTitle(R.string.feature_profile_achievements)
                 items(state.player.achievements, key = { "achievement-${it.type}" }) { AchievementRow(it) }
                 sectionTitle(R.string.feature_profile_settings)
-                item(key = "speaking") {
+                items(settingRows(state.settings), key = { "setting-${it.setting}" }) { row ->
                     SettingRow(
-                        title = stringResource(R.string.feature_profile_speaking),
-                        description = stringResource(R.string.feature_profile_speaking_description),
-                        checked = state.settings.speakingEnabled,
-                        onChange = onSpeakingChange,
-                    )
-                }
-                item(key = "reminder") {
-                    SettingRow(
-                        title = stringResource(R.string.feature_profile_reminder),
-                        description = stringResource(R.string.feature_profile_reminder_description),
-                        checked = state.settings.reminderEnabled,
-                        onChange = onReminderChange,
+                        title = stringResource(row.title),
+                        description = stringResource(row.description),
+                        checked = row.checked,
+                        onChange = { onSettingChange(row.setting, it) },
                     )
                 }
             }
         }
     }
 }
+
+private data class SettingRowUi(val setting: Setting, val title: Int, val description: Int, val checked: Boolean)
+
+private fun settingRows(settings: UserSettings) = listOf(
+    SettingRowUi(
+        Setting.Speaking,
+        R.string.feature_profile_speaking,
+        R.string.feature_profile_speaking_description,
+        settings.speakingEnabled,
+    ),
+    SettingRowUi(
+        Setting.Listening,
+        R.string.feature_profile_listening,
+        R.string.feature_profile_listening_description,
+        settings.listeningEnabled,
+    ),
+    SettingRowUi(
+        Setting.SoundEffects,
+        R.string.feature_profile_sound_effects,
+        R.string.feature_profile_sound_effects_description,
+        settings.soundEffectsEnabled,
+    ),
+    SettingRowUi(
+        Setting.Reminder,
+        R.string.feature_profile_reminder,
+        R.string.feature_profile_reminder_description,
+        settings.reminderEnabled,
+    ),
+)
 
 @Composable
 private fun Header(state: ProfileUiState.Ready) {
@@ -302,8 +337,7 @@ private fun ProfileContentPreview() {
     HitzTheme {
         ProfileContent(
             state = ProfilePreviewData.ready,
-            onSpeakingChange = {},
-            onReminderChange = {},
+            onSettingChange = { _, _ -> },
         )
     }
 }

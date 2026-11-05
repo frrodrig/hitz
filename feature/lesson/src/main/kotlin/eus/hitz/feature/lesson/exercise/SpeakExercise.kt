@@ -61,7 +61,7 @@ internal fun SpeakExercise(
         if (result.resultCode == Activity.RESULT_OK) onAction(LessonAction.SpeechResult(candidates))
     }
     Column(modifier, verticalArrangement = Arrangement.spacedBy(HitzSpacing.xl)) {
-        PromptCard(exercise.text, Language.Basque, onPlay = { onAction(LessonAction.PlayAudio) })
+        PromptCard(exercise.text, Language.Basque, onPlay = { onAction(LessonAction.PlayAudio()) })
         LanguageText(
             text = exercise.translation,
             language = Language.Spanish,

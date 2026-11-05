@@ -22,6 +22,8 @@ object HitzIcons {
 
     @DrawableRes val Speaker = R.drawable.core_designsystem_ic_speaker
 
+    @DrawableRes val Slow = R.drawable.core_designsystem_ic_slow
+
     @DrawableRes val Mic = R.drawable.core_designsystem_ic_mic
 
     @DrawableRes val Lock = R.drawable.core_designsystem_ic_lock

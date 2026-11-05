@@ -18,6 +18,7 @@ import eus.hitz.core.designsystem.theme.HitzTheme
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.robolectric.RuntimeEnvironment
 import org.robolectric.annotation.Config
 import org.robolectric.annotation.GraphicsMode
 
@@ -91,5 +92,12 @@ class PathContentTest {
     fun screenshotDark() {
         show(darkTheme = true)
         composeRule.onRoot().captureRoboImage("src/test/screenshots/path_dark.png")
+    }
+
+    @Test
+    fun screenshotFontScale200() {
+        RuntimeEnvironment.setFontScale(2f)
+        show()
+        composeRule.onRoot().captureRoboImage("src/test/screenshots/path_font_200.png")
     }
 }

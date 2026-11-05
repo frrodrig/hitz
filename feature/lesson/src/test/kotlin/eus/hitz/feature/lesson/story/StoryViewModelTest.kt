@@ -3,6 +3,7 @@ package eus.hitz.feature.lesson.story
 import androidx.lifecycle.SavedStateHandle
 import app.cash.turbine.test
 import com.google.common.truth.Truth.assertThat
+import eus.hitz.core.domain.audio.SoundEffect
 import eus.hitz.core.domain.content.CourseRepository
 import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.Course
@@ -13,9 +14,12 @@ import eus.hitz.core.model.content.LocalizedText
 import eus.hitz.core.model.content.Story
 import eus.hitz.core.model.content.StoryLine
 import eus.hitz.core.model.content.StoryQuestion
+import eus.hitz.core.testing.FakeAudioProvider
 import eus.hitz.core.testing.FakeGamificationRepository
-import eus.hitz.feature.lesson.FakeAudioProvider
+import eus.hitz.core.testing.FakeSettingsRepository
+import eus.hitz.core.testing.FakeSoundEffects
 import eus.hitz.feature.lesson.FakeProgressRepository
+import eus.hitz.feature.lesson.LessonAudio
 import eus.hitz.feature.lesson.MainDispatcherRule
 import eus.hitz.feature.lesson.recordSession
 import kotlinx.coroutines.test.runTest
@@ -28,6 +32,7 @@ class StoryViewModelTest {
 
     private val progress = FakeProgressRepository()
     private val audio = FakeAudioProvider()
+    private val effects = FakeSoundEffects()
     private val gamification = FakeGamificationRepository()
 
     private val story = Story(
@@ -62,7 +67,8 @@ class StoryViewModelTest {
         savedStateHandle = SavedStateHandle(mapOf("unitId" to UNIT, "levelId" to levelId)),
         courses = courses,
         recordSession = gamification.recordSession(progress),
-        audio = audio,
+        audio = LessonAudio(audio, effects),
+        settings = FakeSettingsRepository(),
     )
 
     private val StoryViewModel.active get() = state.value as StoryUiState.Active
@@ -85,6 +91,7 @@ class StoryViewModelTest {
         assertThat(vm.active.canContinue).isFalse()
         vm.onAction(StoryAction.Answer(0))
         assertThat(vm.active.question?.wrong).containsExactly(0)
+        assertThat(effects.played).containsExactly(SoundEffect.Incorrect)
         vm.onAction(StoryAction.Continue)
         assertThat(vm.active.question).isNotNull()
         vm.onAction(StoryAction.Answer(1))
@@ -102,6 +109,7 @@ class StoryViewModelTest {
         val finished = vm.state.value as StoryUiState.Finished
         assertThat(finished.accuracy).isEqualTo(1f)
         assertThat(finished.reward?.xp).isEqualTo(20)
+        assertThat(effects.played).containsExactly(SoundEffect.Correct, SoundEffect.Finished).inOrder()
         assertThat(progress.completed).containsExactly(LEVEL)
     }
 

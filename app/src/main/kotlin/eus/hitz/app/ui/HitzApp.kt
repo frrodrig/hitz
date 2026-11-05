@@ -2,7 +2,9 @@
 
 package eus.hitz.app.ui
 
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.consumeWindowInsets
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
@@ -10,12 +12,17 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.ShortNavigationBar
 import androidx.compose.material3.ShortNavigationBarItem
 import androidx.compose.material3.Text
+import androidx.compose.material3.WideNavigationRail
+import androidx.compose.material3.WideNavigationRailItem
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalWindowInfo
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewLightDark
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavDestination.Companion.hierarchy
@@ -55,13 +62,36 @@ fun HitzApp(
         it.hasRoute(LessonRoute::class) || it.hasRoute(StoryRoute::class) || it.hasRoute(GuidebookRoute::class)
     } != true
 
+    // Wide windows (tablets, foldables, landscape) use a navigation rail instead of the bottom bar.
+    val wide = with(LocalDensity.current) { LocalWindowInfo.current.containerSize.width.toDp() } >= RAIL_MIN_WIDTH
+
+    Row(modifier.fillMaxSize()) {
+        if (wide && showNavigationBar) {
+            TopLevelNavigationRail(currentDestination, navController)
+        }
+        HitzScaffold(
+            navController = navController,
+            bottomBar = {
+                if (!wide && showNavigationBar) {
+                    TopLevelNavigationBar(currentDestination, navController)
+                }
+            },
+            modifier = Modifier.weight(1f),
+        )
+    }
+}
+
+private val RAIL_MIN_WIDTH = 600.dp
+
+@Composable
+private fun HitzScaffold(
+    navController: NavHostController,
+    bottomBar: @Composable () -> Unit,
+    modifier: Modifier = Modifier,
+) {
     Scaffold(
         modifier = modifier,
-        bottomBar = {
-            if (showNavigationBar) {
-                TopLevelNavigationBar(currentDestination, navController)
-            }
-        },
+        bottomBar = bottomBar,
     ) { padding ->
         NavHost(
             navController = navController,
@@ -85,6 +115,23 @@ fun HitzApp(
             leaderboardScreen()
             profileScreen()
             shopScreen()
+        }
+    }
+}
+
+@Composable
+private fun TopLevelNavigationRail(currentDestination: NavDestination?, navController: NavHostController) {
+    WideNavigationRail {
+        TopLevelDestination.entries.forEach { destination ->
+            val selected = currentDestination?.hierarchy
+                ?.any { it.hasRoute(destination.routeClass) } == true
+            WideNavigationRailItem(
+                selected = selected,
+                onClick = { navController.navigateToTopLevel(destination) },
+                icon = { Icon(painterResource(destination.icon), contentDescription = null) },
+                label = { Text(stringResource(destination.label)) },
+                railExpanded = false,
+            )
         }
     }
 }

@@ -1,8 +1,10 @@
 package eus.hitz.core.data.audio
 
 import android.content.Context
+import android.content.res.AssetFileDescriptor
 import android.media.AudioAttributes
 import android.media.MediaPlayer
+import android.media.PlaybackParams
 import android.speech.tts.TextToSpeech
 import android.util.Log
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -27,55 +29,58 @@ internal class AndroidAudioProvider @Inject constructor(
     private var player: MediaPlayer? = null
     private var tts: TextToSpeech? = null
     private var ttsReady = false
-    private var pendingText: String? = null
+    private var pending: Pair<String, Boolean>? = null
 
-    override fun play(clipId: String, text: String) {
+    override fun play(clipId: String, text: String, slow: Boolean) {
         stop()
-        if (clipId in clips && playClip(clipId)) return
-        speak(text)
+        if (clipId in clips && playClip(clipId, slow)) return
+        speak(text, slow)
     }
 
     override fun stop() {
         player?.release()
         player = null
         tts?.stop()
-        pendingText = null
+        pending = null
     }
 
-    private fun playClip(clipId: String): Boolean = try {
-        context.assets.openFd("$AUDIO_DIR/$clipId$CLIP_EXTENSION").use { fd ->
-            player = MediaPlayer().apply {
-                setAudioAttributes(
-                    AudioAttributes.Builder()
-                        .setUsage(AudioAttributes.USAGE_MEDIA)
-                        .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
-                        .build(),
-                )
-                setDataSource(fd.fileDescriptor, fd.startOffset, fd.length)
-                setOnCompletionListener { finished ->
-                    finished.release()
-                    if (player === finished) player = null
-                }
-                prepare()
-                start()
-            }
-        }
+    private fun playClip(clipId: String, slow: Boolean): Boolean = try {
+        player = context.assets.openFd("$AUDIO_DIR/$clipId$CLIP_EXTENSION").use { fd -> preparedPlayer(fd) }
+        player?.let { if (slow) it.playbackParams = PlaybackParams().setSpeed(SLOW_SPEED) }
+        player?.start()
         true
     } catch (e: IOException) {
         Log.w(TAG, "Cannot play clip $clipId", e)
         false
     }
 
-    private fun speak(text: String) {
+    private fun preparedPlayer(fd: AssetFileDescriptor): MediaPlayer = MediaPlayer().apply {
+        setAudioAttributes(SPEECH)
+        setDataSource(fd.fileDescriptor, fd.startOffset, fd.length)
+        setOnCompletionListener(::release)
+        prepare()
+    }
+
+    private fun release(finished: MediaPlayer) {
+        finished.release()
+        if (player === finished) player = null
+    }
+
+    private fun speak(text: String, slow: Boolean) {
         val engine = tts
         if (engine == null) {
-            pendingText = text
+            pending = text to slow
             tts = TextToSpeech(context) { status -> onTtsInit(status) }
         } else if (ttsReady) {
-            engine.speak(text, TextToSpeech.QUEUE_FLUSH, null, UTTERANCE_ID)
+            engine.say(text, slow)
         } else {
-            pendingText = text
+            pending = text to slow
         }
+    }
+
+    private fun TextToSpeech.say(text: String, slow: Boolean) {
+        setSpeechRate(if (slow) SLOW_SPEED else 1f)
+        speak(text, TextToSpeech.QUEUE_FLUSH, null, UTTERANCE_ID)
     }
 
     private fun onTtsInit(status: Int) {
@@ -89,8 +94,8 @@ internal class AndroidAudioProvider @Inject constructor(
             engine.setLanguage(SPANISH)
         }
         ttsReady = true
-        pendingText?.let { engine.speak(it, TextToSpeech.QUEUE_FLUSH, null, UTTERANCE_ID) }
-        pendingText = null
+        pending?.let { (text, slow) -> engine.say(text, slow) }
+        pending = null
     }
 
     private companion object {
@@ -98,7 +103,12 @@ internal class AndroidAudioProvider @Inject constructor(
         const val AUDIO_DIR = "audio"
         const val CLIP_EXTENSION = ".ogg"
         const val UTTERANCE_ID = "hitz"
+        const val SLOW_SPEED = 0.7f
         val BASQUE: Locale = Locale.forLanguageTag("eu-ES")
         val SPANISH: Locale = Locale.forLanguageTag("es-ES")
+        val SPEECH: AudioAttributes = AudioAttributes.Builder()
+            .setUsage(AudioAttributes.USAGE_MEDIA)
+            .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
+            .build()
     }
 }

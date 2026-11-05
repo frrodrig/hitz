@@ -1,6 +1,5 @@
 package eus.hitz.feature.lesson
 
-import eus.hitz.core.domain.audio.AudioProvider
 import eus.hitz.core.domain.content.CourseRepository
 import eus.hitz.core.domain.gamification.CompleteSessionUseCase
 import eus.hitz.core.domain.gamification.GrantRewardsUseCase
@@ -8,8 +7,6 @@ import eus.hitz.core.domain.lesson.Mistake
 import eus.hitz.core.domain.progress.MistakeStats
 import eus.hitz.core.domain.progress.ProgressRepository
 import eus.hitz.core.domain.session.RecordSessionUseCase
-import eus.hitz.core.domain.settings.SettingsRepository
-import eus.hitz.core.domain.settings.UserSettings
 import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.ChatMessage
 import eus.hitz.core.model.content.Course
@@ -25,7 +22,6 @@ import eus.hitz.core.model.content.Phrase
 import eus.hitz.core.model.content.WordPair
 import eus.hitz.core.testing.FakeGamificationRepository
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flowOf
 
 internal object TestLesson {
@@ -115,33 +111,8 @@ internal class FakeProgressRepository : ProgressRepository {
     override suspend fun mistakeStats(unitId: String): MistakeStats = MistakeStats()
 }
 
-internal class FakeSettingsRepository(speakingEnabled: Boolean = true) : SettingsRepository {
-    override val settings = MutableStateFlow(UserSettings(speakingEnabled = speakingEnabled))
-
-    override suspend fun setSpeakingEnabled(enabled: Boolean) {
-        settings.value = settings.value.copy(speakingEnabled = enabled)
-    }
-
-    override suspend fun setReminderEnabled(enabled: Boolean) {
-        settings.value = settings.value.copy(reminderEnabled = enabled)
-    }
-}
-
 internal fun FakeGamificationRepository.recordSession(progress: ProgressRepository) = RecordSessionUseCase(
     progress = progress,
     clock = { FakeGamificationRepository.NOW },
     completeSession = CompleteSessionUseCase(this, clock, GrantRewardsUseCase(this, clock)),
 )
-
-internal class FakeAudioProvider : AudioProvider {
-    val played = mutableListOf<String>()
-    var stopped = false
-
-    override fun play(clipId: String, text: String) {
-        played += clipId
-    }
-
-    override fun stop() {
-        stopped = true
-    }
-}

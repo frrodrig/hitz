@@ -13,6 +13,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import eus.hitz.core.data.audio.AndroidAudioProvider
+import eus.hitz.core.data.audio.AndroidSoundEffects
 import eus.hitz.core.data.content.AssetContentSource
 import eus.hitz.core.data.content.AssetCourseRepository
 import eus.hitz.core.data.content.ContentSource
@@ -24,6 +25,7 @@ import eus.hitz.core.data.reminder.WorkManagerReminderScheduler
 import eus.hitz.core.data.settings.DataStoreSettingsRepository
 import eus.hitz.core.data.sync.OfflineSyncRepository
 import eus.hitz.core.domain.audio.AudioProvider
+import eus.hitz.core.domain.audio.SoundEffects
 import eus.hitz.core.domain.content.CourseRepository
 import eus.hitz.core.domain.gamification.GamificationRepository
 import eus.hitz.core.domain.progress.ProgressRepository
@@ -74,6 +76,9 @@ internal interface DataModule {
 
     @Binds
     fun bindAudioProvider(impl: AndroidAudioProvider): AudioProvider
+
+    @Binds
+    fun bindSoundEffects(impl: AndroidSoundEffects): SoundEffects
 
     companion object {
         @Provides

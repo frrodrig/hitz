@@ -40,7 +40,7 @@ internal fun ChooseMeaningExercise(
     modifier: Modifier = Modifier,
 ) {
     Column(modifier, verticalArrangement = Arrangement.spacedBy(HitzSpacing.xl)) {
-        PromptCard(exercise.text, Language.Basque, onPlay = { onAction(LessonAction.PlayAudio) })
+        PromptCard(exercise.text, Language.Basque, onPlay = { onAction(LessonAction.PlayAudio()) })
         ChoiceOptions(exercise.options, exercise.selected, feedback, onAction)
     }
 }

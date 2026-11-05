@@ -9,6 +9,7 @@ import eus.hitz.core.designsystem.theme.HitzTheme
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.robolectric.RuntimeEnvironment
 import org.robolectric.annotation.Config
 import org.robolectric.annotation.GraphicsMode
 
@@ -19,7 +20,8 @@ class LessonScreenshotTest {
     @get:Rule
     val composeRule = createComposeRule()
 
-    private fun capture(name: String, state: LessonUiState, darkTheme: Boolean = false) {
+    private fun capture(name: String, state: LessonUiState, darkTheme: Boolean = false, fontScale: Float = 1f) {
+        RuntimeEnvironment.setFontScale(fontScale)
         composeRule.setContent {
             HitzTheme(darkTheme = darkTheme) { LessonContent(state, onAction = {}, onClose = {}) }
         }
@@ -75,6 +77,12 @@ class LessonScreenshotTest {
 
     @Test
     fun speak() = capture("lesson_speak", LessonPreviewData.active.copy(exercise = LessonPreviewData.speak))
+
+    @Test
+    fun activeFontScale200() = capture("lesson_active_font_200", LessonPreviewData.active, fontScale = 2f)
+
+    @Test
+    fun finishedFontScale200() = capture("lesson_finished_font_200", LessonPreviewData.finished, fontScale = 2f)
 
     @Test
     fun finished() = capture("lesson_finished", LessonPreviewData.finished)

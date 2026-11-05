@@ -18,6 +18,7 @@ import eus.hitz.core.designsystem.theme.HitzTheme
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.robolectric.RuntimeEnvironment
 import org.robolectric.annotation.Config
 import org.robolectric.annotation.GraphicsMode
 
@@ -28,16 +29,14 @@ class ProfileScreenTest {
     @get:Rule
     val composeRule = createComposeRule()
 
-    private var speaking: Boolean? = null
-    private var reminder: Boolean? = null
+    private val changes = mutableListOf<Pair<Setting, Boolean>>()
 
     private fun show(darkTheme: Boolean = false) {
         composeRule.setContent {
             HitzTheme(darkTheme = darkTheme) {
                 ProfileContent(
                     state = ProfilePreviewData.ready,
-                    onSpeakingChange = { speaking = it },
-                    onReminderChange = { reminder = it },
+                    onSettingChange = { setting, enabled -> changes += setting to enabled },
                 )
             }
         }
@@ -68,15 +67,27 @@ class ProfileScreenTest {
         show()
         scrollTo("Ejercicios de hablar")
         composeRule.onNodeWithText("Ejercicios de hablar").assertIsOn().performClick()
-        assertThat(speaking).isFalse()
+        scrollTo("Efectos de sonido")
+        composeRule.onNodeWithText("Efectos de sonido").assertIsOn().performClick()
         scrollTo("Recordatorio diario")
         composeRule.onNodeWithText("Recordatorio diario").assertIsOff().performClick()
-        assertThat(reminder).isTrue()
+        assertThat(changes).containsExactly(
+            Setting.Speaking to false,
+            Setting.SoundEffects to false,
+            Setting.Reminder to true,
+        ).inOrder()
     }
 
     @Test
     fun screenshot() {
         show()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/profile.png")
+    }
+
+    @Test
+    fun screenshotFontScale200() {
+        RuntimeEnvironment.setFontScale(2f)
+        show()
+        composeRule.onRoot().captureRoboImage("src/test/screenshots/profile_font_200.png")
     }
 }

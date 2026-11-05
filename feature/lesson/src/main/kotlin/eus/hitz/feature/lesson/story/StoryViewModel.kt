@@ -4,22 +4,25 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import eus.hitz.core.domain.audio.AudioProvider
+import eus.hitz.core.domain.audio.SoundEffect
 import eus.hitz.core.domain.content.CourseRepository
 import eus.hitz.core.domain.gamification.ActivityKind
 import eus.hitz.core.domain.lesson.LessonResult
 import eus.hitz.core.domain.session.RecordSessionUseCase
+import eus.hitz.core.domain.settings.SettingsRepository
 import eus.hitz.core.domain.story.StorySession
 import eus.hitz.core.domain.story.StoryStep
 import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.Level
 import eus.hitz.feature.lesson.AudioClip
+import eus.hitz.feature.lesson.LessonAudio
 import eus.hitz.feature.lesson.RewardUi
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
@@ -34,7 +37,8 @@ class StoryViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val courses: CourseRepository,
     private val recordSession: RecordSessionUseCase,
-    private val audio: AudioProvider,
+    private val audio: LessonAudio,
+    private val settings: SettingsRepository,
 ) : ViewModel() {
     private val unitId: String = checkNotNull(savedStateHandle["unitId"])
     private val levelId: String = checkNotNull(savedStateHandle["levelId"])
@@ -47,10 +51,12 @@ class StoryViewModel @Inject constructor(
 
     private lateinit var session: StorySession
     private var translated: Set<Int> = emptySet()
+    private var soundEffects = true
 
     init {
         viewModelScope.launch {
             runCatching {
+                soundEffects = settings.settings.first().soundEffectsEnabled
                 val unit = courses.getUnit(CourseId.BASQUE_FROM_SPANISH, unitId)
                 unit.levels.filterIsInstance<Level.StoryLevel>().first { it.id == levelId }.story
             }.onSuccess { story ->
@@ -67,10 +73,7 @@ class StoryViewModel @Inject constructor(
         }
         when (action) {
             StoryAction.Continue -> advance()
-            is StoryAction.Answer -> {
-                session = session.answer(action.option)
-                show(readLine = false)
-            }
+            is StoryAction.Answer -> answer(action.option)
             is StoryAction.ToggleTranslation -> {
                 translated = if (action.line in translated) translated - action.line else translated + action.line
                 show(readLine = false)
@@ -81,7 +84,16 @@ class StoryViewModel @Inject constructor(
     }
 
     override fun onCleared() {
-        audio.stop()
+        audio.voice.stop()
+    }
+
+    private fun answer(option: Int) {
+        val before = session
+        session = session.answer(option)
+        if (soundEffects && session != before) {
+            audio.effects.play(if (session.answered) SoundEffect.Correct else SoundEffect.Incorrect)
+        }
+        show(readLine = false)
     }
 
     private fun advance() {
@@ -89,7 +101,8 @@ class StoryViewModel @Inject constructor(
         session = session.next()
         if (session == before) return
         if (session.isOver) {
-            audio.stop()
+            audio.voice.stop()
+            if (soundEffects) audio.effects.play(SoundEffect.Finished)
             val result = LessonResult(
                 lessonId = levelId,
                 completed = true,
@@ -128,7 +141,7 @@ class StoryViewModel @Inject constructor(
 
     private fun play(line: Int) {
         val text = session.story.lines.getOrNull(line)?.eu ?: return
-        audio.play(clipId(line), text)
+        audio.voice.play(clipId(line), text)
     }
 
     /** Clip ids of story lines: `<story id>.<line index>` (see docs/content-guide.md). */
