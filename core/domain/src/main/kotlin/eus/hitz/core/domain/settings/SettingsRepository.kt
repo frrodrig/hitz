@@ -8,6 +8,10 @@ data class UserSettings(
     val speakingEnabled: Boolean = true,
     /** Whether a daily notification reminds the learner to keep the streak. */
     val reminderEnabled: Boolean = false,
+    /** Whether lessons include listening exercises (listen and tap, listen and type). */
+    val listeningEnabled: Boolean = true,
+    /** Whether answers play a sound effect (and a vibration). */
+    val soundEffectsEnabled: Boolean = true,
 )
 
 interface SettingsRepository {
@@ -16,6 +20,10 @@ interface SettingsRepository {
     suspend fun setSpeakingEnabled(enabled: Boolean)
 
     suspend fun setReminderEnabled(enabled: Boolean)
+
+    suspend fun setListeningEnabled(enabled: Boolean)
+
+    suspend fun setSoundEffectsEnabled(enabled: Boolean)
 }
 
 /** Schedules the daily streak reminder (a background job on Android). */

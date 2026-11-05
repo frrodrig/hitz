@@ -36,7 +36,12 @@ internal fun WordBankExercise(
     enabled: Boolean = true,
 ) {
     Column(modifier, verticalArrangement = Arrangement.spacedBy(HitzSpacing.xl)) {
-        PromptCard(exercise.prompt, exercise.promptLanguage)
+        PromptCard(
+            text = exercise.prompt,
+            language = exercise.promptLanguage,
+            // Basque prompts can be heard; Spanish ones need no audio.
+            onPlay = { onAction(LessonAction.PlayAudio()) }.takeIf { exercise.promptLanguage == Language.Basque },
+        )
         TileAnswerArea(exercise, onAction, enabled = enabled)
     }
 }

@@ -5,6 +5,7 @@ package eus.hitz.core.designsystem.component
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.AssistChipDefaults
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
@@ -15,11 +16,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.onClick
+import androidx.compose.ui.unit.sp
 import eus.hitz.core.designsystem.R
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.preview.HitzPreviews
@@ -56,6 +59,8 @@ private val StatKind.plural: Int
         StatKind.Xp -> R.plurals.core_designsystem_stat_xp
     }
 
+private val ICON_SIZE = 18.sp
+
 /** Streak, gems, hearts or XP as a Material 3 [AssistChip] with a full spoken description. */
 @Composable
 fun HitzStatCounter(
@@ -69,10 +74,12 @@ fun HitzStatCounter(
         onClick = onClick,
         label = { Text(value.toString(), style = MaterialTheme.typography.labelLargeEmphasized) },
         leadingIcon = {
+            // Sized in sp so the icon grows with the font scale, like its number.
             Icon(
                 painter = painterResource(kind.icon),
                 contentDescription = null,
                 tint = kind.colors().color,
+                modifier = Modifier.size(with(LocalDensity.current) { ICON_SIZE.toDp() }),
             )
         },
         modifier = modifier.clearAndSetSemantics {

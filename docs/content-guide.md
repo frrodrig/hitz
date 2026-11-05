@@ -120,9 +120,27 @@ only when a clip is missing. Clip ids are derived from the content, so they stay
 | Story | `<story id>.<line index>` | each line |
 | Guidebook example | `<unit id>.gb<section>.<example>` | each example |
 
-Put recordings in `assets/audio/<clip id>.ogg` (Opus, mono). `content/audio/pending.csv` lists the
-clips that are still missing; regenerate it with `python3 tools/validate_content.py --write`. CI
-fails if it is out of date.
+### Recording
+
+1. Take the lines to record from `content/audio/pending.csv` (`id,text,unit`; sorted by unit, so a
+   speaker can record one unit at a time). Record in a quiet room, one file per line, and name each
+   file after its id: `u01-1.l1.s1.e03.wav` (wav, flac, m4a, mp3 or ogg).
+2. Import them:
+   ```bash
+   python3 tools/audio/import_recordings.py ~/recordings --dry-run   # check the names first
+   python3 tools/audio/import_recordings.py ~/recordings
+   python3 tools/validate_content.py --write                        # refresh pending.csv
+   ```
+   The script trims silence, normalises loudness (−18 LUFS) and encodes mono Opus at 32 kb/s into
+   `core/data/src/main/assets/audio/<clip id>.ogg`; unknown names are skipped.
+3. CI fails if `pending.csv` is out of date, so commit it with the clips.
+
+Until a clip is recorded the app speaks the text with the device's text-to-speech (Basque when
+the engine has it, otherwise a Spanish voice). Learners can play any clip slowly (snail button) and
+can turn listening exercises off in the profile.
+
+Sound effects are not recordings: `tools/audio/make_sound_effects.py` synthesises them (original,
+reproducible) into `core/data/src/main/res/raw/`.
 
 ## Images
 

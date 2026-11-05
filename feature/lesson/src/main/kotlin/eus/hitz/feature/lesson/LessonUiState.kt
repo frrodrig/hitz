@@ -239,8 +239,8 @@ sealed interface LessonAction {
 
     data class SelectPair(val side: PairSide, val pairIndex: Int) : LessonAction
 
-    /** Plays the Basque audio of the current exercise. */
-    data object PlayAudio : LessonAction
+    /** Plays the Basque audio of the current exercise, optionally slower. */
+    data class PlayAudio(val slow: Boolean = false) : LessonAction
 
     /** Speech recognition candidates for a speaking exercise, best first. */
     data class SpeechResult(val candidates: List<String>) : LessonAction

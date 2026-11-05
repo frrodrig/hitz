@@ -5,13 +5,16 @@ package eus.hitz.feature.lesson
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
@@ -28,6 +31,8 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.hapticfeedback.HapticFeedbackType
+import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
@@ -38,6 +43,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import eus.hitz.core.designsystem.component.FeedbackKind
 import eus.hitz.core.designsystem.component.HitzButton
+import eus.hitz.core.designsystem.component.HitzCelebration
 import eus.hitz.core.designsystem.component.HitzFeedbackPanel
 import eus.hitz.core.designsystem.component.HitzLessonProgressBar
 import eus.hitz.core.designsystem.component.HitzMascot
@@ -69,10 +75,14 @@ fun LessonScreen(
     viewModel: LessonViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
+    val haptics = LocalHapticFeedback.current
     LaunchedEffect(viewModel) {
         viewModel.events.collect { event ->
             when (event) {
                 LessonEvent.Close -> onClose()
+                is LessonEvent.Feedback -> haptics.performHapticFeedback(
+                    if (event.correct) HapticFeedbackType.Confirm else HapticFeedbackType.Reject,
+                )
             }
         }
     }
@@ -281,29 +291,49 @@ internal fun LessonMessage(
     modifier: Modifier = Modifier,
     reward: RewardUi? = null,
 ) {
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .navigationBarsPadding()
-            .padding(HitzSpacing.xl),
-        verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg, Alignment.CenterVertically),
-        horizontalAlignment = Alignment.CenterHorizontally,
-    ) {
-        HitzMascot(contentDescription = null)
-        Text(
-            text = title,
-            style = MaterialTheme.typography.headlineMediumEmphasized,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.semantics { heading() },
-        )
-        if (body != null) {
-            Text(body, style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
+    // Scrolls when large fonts do not fit, and stays centred otherwise.
+    BoxWithConstraints(modifier.fillMaxSize()) {
+        Column(
+            modifier = Modifier
+                .verticalScroll(rememberScrollState())
+                .heightIn(min = maxHeight)
+                .fillMaxWidth()
+                .navigationBarsPadding()
+                .padding(HitzSpacing.xl),
+            verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg, Alignment.CenterVertically),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            LessonMessageContent(title, body, action, onAction, reward)
         }
-        if (reward != null) {
-            RewardSummary(reward)
-        }
-        HitzButton(text = action, onClick = onAction, modifier = Modifier.fillMaxWidth())
     }
+}
+
+@Composable
+private fun LessonMessageContent(
+    title: String,
+    body: String?,
+    action: String,
+    onAction: () -> Unit,
+    reward: RewardUi?,
+) {
+    Box(contentAlignment = Alignment.Center) {
+        HitzMascot(contentDescription = null)
+        // Drawn around the mascot without taking layout space.
+        if (reward != null) HitzCelebration(Modifier.matchParentSize().wrapContentSize(unbounded = true))
+    }
+    Text(
+        text = title,
+        style = MaterialTheme.typography.headlineMediumEmphasized,
+        textAlign = TextAlign.Center,
+        modifier = Modifier.semantics { heading() },
+    )
+    if (body != null) {
+        Text(body, style = MaterialTheme.typography.bodyLarge, textAlign = TextAlign.Center)
+    }
+    if (reward != null) {
+        RewardSummary(reward)
+    }
+    HitzButton(text = action, onClick = onAction, modifier = Modifier.fillMaxWidth())
 }
 
 /** XP, streak and gems earned by the session. */

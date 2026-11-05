@@ -51,6 +51,16 @@ class HitzAppTest {
     }
 
     @Test
+    @Config(qualifiers = RobolectricDeviceQualifiers.MediumTablet)
+    fun wideScreensUseANavigationRail() {
+        waitForText("¡Hola!")
+        composeRule.onNodeWithText("Aprender").assertIsSelected()
+        composeRule.onRoot().captureRoboImage("src/test/screenshots/app_path_tablet.png")
+        composeRule.onNodeWithText("Ligas").performClick()
+        waitForText("Liga Jaizkibel")
+    }
+
+    @Test
     fun navigatesToLeagues() {
         waitForText("¡Hola!")
         composeRule.onNodeWithText("Ligas").performClick()
