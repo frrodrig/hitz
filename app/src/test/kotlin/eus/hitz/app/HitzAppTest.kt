@@ -42,7 +42,7 @@ class HitzAppTest {
         composeRule.onNodeWithText("Aprender").assertIsSelected()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/app_path.png")
 
-        val current = "Lección: Saludos, disponible"
+        val current = "Lección: Saludos, disponible, 0 de 3 lecciones"
         composeRule.waitUntil(TIMEOUT) {
             composeRule.onAllNodesWithContentDescription(current).fetchSemanticsNodes().isNotEmpty()
         }
