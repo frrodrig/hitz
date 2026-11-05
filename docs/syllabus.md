@@ -51,10 +51,10 @@ Each section ends with a **section review** that mixes its 6 units.
 <!-- counts:start -->
 | Section | Core words |
 |---|---|
-| 1 | 137 |
-| 2 | 125 |
-| 3 | 118 |
-| 4 | 104 |
+| 1 | 141 |
+| 2 | 127 |
+| 3 | 115 |
+| 4 | 102 |
 <!-- counts:end -->
 
 ## 3. Overview
@@ -89,7 +89,7 @@ Each section ends with a **section review** that mixes its 6 units.
   in *Ni Ane naiz*.
 
 <!-- vocab:1.1:start -->
-**Vocabulary (27 words)**
+**Vocabulary (28 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -120,6 +120,7 @@ Each section ends with a **section review** that mixes its 6 units.
 | nola | cómo | adv. |  |
 | zer moduz | qué tal | phrase |  |
 | eta | y | conj. |  |
+| euskara | euskera | noun | added for autonomous learners (not in Arian) |
 <!-- vocab:1.1:end -->
 
 #### Unit 1.2 · Nor zara?
@@ -132,7 +133,7 @@ Each section ends with a **section review** that mixes its 6 units.
   read out phone numbers.
 
 <!-- vocab:1.2:start -->
-**Vocabulary (21 words)**
+**Vocabulary (22 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -157,8 +158,11 @@ Each section ends with a **section review** that mixes its 6 units.
 | zenbaki | número | noun |  |
 | helbide | dirección | noun |  |
 | nongo | de dónde (origen) | adv. |  |
+| hitz egin | hablar | verb | added for autonomous learners (not in Arian) |
 
 **Closed set (not counted towards the limit):** zero (cero), bat (uno), bi (dos), hiru (tres), lau (cuatro), bost (cinco), sei (seis), zazpi (siete), zortzi (ocho), bederatzi (nueve), hamar (diez)
+
+**Function words and survival phrases (not counted towards the limit):** ere (también), baina (pero), edo (o), ez dakit (no sé), pixka bat (un poco), berriro (otra vez), poliki (despacio)
 <!-- vocab:1.2:end -->
 
 ### Textbook 2 · Non dago? → Units 2.1 and 2.2
@@ -170,7 +174,7 @@ Each section ends with a **section review** that mixes its 6 units.
   hemen?*); adverbs *hemen*, *hor*, *han*.
 
 <!-- vocab:2.1:start -->
-**Vocabulary (25 words)**
+**Vocabulary (26 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -199,6 +203,9 @@ Each section ends with a **section review** that mixes its 6 units.
 | hemen | aquí | adv. |  |
 | hor | ahí | adv. |  |
 | han | allí | adv. |  |
+| egun | día | noun | added for autonomous learners (not in Arian) |
+
+**Function words and survival phrases (not counted towards the limit):** gaur (hoy), bihar (mañana (día)), asko (mucho), beste (otro)
 <!-- vocab:2.1:end -->
 
 #### Unit 2.2 · Non dago?
@@ -240,6 +247,8 @@ Each section ends with a **section review** that mixes its 6 units.
 | hotz | frío | noun |  |
 | bero | calor | noun |  |
 | ordu | hora | noun |  |
+
+**Function words and survival phrases (not counted towards the limit):** orain (ahora), noiz (cuándo), beti (siempre)
 <!-- vocab:2.2:end -->
 
 ### Textbook 3 · Familia eta lagunak → Units 3.1 and 3.2
@@ -277,7 +286,7 @@ Each section ends with a **section review** that mixes its 6 units.
 | noren | de quién | pron. |  |
 | norekin | con quién | pron. |  |
 | bizi izan | vivir | verb |  |
-| ukan | haber; tener (auxiliar) | verb |  |
+| gaztelania | castellano (lengua) | noun | added for autonomous learners (not in Arian) |
 <!-- vocab:3.1:end -->
 
 #### Unit 3.2 · Nolakoa da?
@@ -288,10 +297,11 @@ Each section ends with a **section review** that mixes its 6 units.
   *berrogeita bost*); ZENBAT; chained personal-information questions.
 
 <!-- vocab:3.2:start -->
-**Vocabulary (17 words)**
+**Vocabulary (18 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
+| ukan | haber; tener (auxiliar) | verb | moved earlier: needed by this unit's grammar or goals |
 | altu | alto | adj. |  |
 | baxu | bajo | adj. |  |
 | lodi | gordo; grueso | adj. |  |
@@ -325,7 +335,7 @@ Each section ends with a **section review** that mixes its 6 units.
   *mila*); BEHAR IZAN (*mahai bat behar dut*); plural *-ak* with UKAN (*ditut*).
 
 <!-- vocab:4.1:start -->
-**Vocabulary (21 words)**
+**Vocabulary (22 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -350,6 +360,9 @@ Each section ends with a **section review** that mixes its 6 units.
 | ilun | oscuro | adj. |  |
 | eguzkitsu | soleado | adj. |  |
 | zabal | amplio; ancho | adj. |  |
+| mahai | mesa | noun | moved earlier: needed by this unit's grammar or goals |
+
+**Closed set (not counted towards the limit):** mila (mil), berrehun (doscientos)
 <!-- vocab:4.1:end -->
 
 #### Unit 4.2 · Etxe bila
@@ -359,7 +372,7 @@ Each section ends with a **section review** that mixes its 6 units.
   comparison (*handiagoa*, *merkeagoa*); GEHIAGO / GUTXIAGO.
 
 <!-- vocab:4.2:start -->
-**Vocabulary (22 words)**
+**Vocabulary (21 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -377,7 +390,6 @@ Each section ends with a **section review** that mixes its 6 units.
 | gehiago | más | adv. |  |
 | gutxiago | menos | adv. |  |
 | ohe | cama | noun |  |
-| mahai | mesa | noun |  |
 | aulki | silla | noun |  |
 | sofa | sofá | noun |  |
 | armairu | armario | noun |  |
@@ -385,8 +397,6 @@ Each section ends with a **section review** that mixes its 6 units.
 | garbigailu | lavadora | noun |  |
 | labe | horno | noun |  |
 | dutxa | ducha | noun |  |
-
-**Closed set (not counted towards the limit):** mila (mil), berrehun (doscientos)
 <!-- vocab:4.2:end -->
 
 ### Textbook 5 · On egin → Units 5.1 and 5.2
@@ -397,7 +407,7 @@ Each section ends with a **section review** that mixes its 6 units.
   proper and common nouns and demonstratives (*Aneri*, *umeari*, *honi*); NAHIAGO IZAN.
 
 <!-- vocab:5.1:start -->
-**Vocabulary (25 words)**
+**Vocabulary (27 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -426,6 +436,8 @@ Each section ends with a **section review** that mixes its 6 units.
 | gosari | desayuno | noun |  |
 | bazkari | comida (del mediodía) | noun |  |
 | afari | cena | noun |  |
+| jan | comer | verb | moved earlier: needed by this unit's grammar or goals |
+| edan | beber | verb | moved earlier: needed by this unit's grammar or goals |
 <!-- vocab:5.1:end -->
 
 #### Unit 5.2 · Sukaldean
@@ -461,6 +473,8 @@ Each section ends with a **section review** that mixes its 6 units.
 | egunero | todos los días | adv. |  |
 | askotan | a menudo | adv. |  |
 | komeni izan | convenir | verb |  |
+
+**Function words and survival phrases (not counted towards the limit):** astero (cada semana)
 <!-- vocab:5.2:end -->
 
 ### Textbook 6 · Erosketak → Units 6.1 and 6.2
@@ -548,7 +562,6 @@ Each section ends with a **section review** that mixes its 6 units.
 |---|---|---|---|
 | atzo | ayer | adv. |  |
 | herenegun | anteayer | adv. |  |
-| gaur | hoy | adv. |  |
 | goiz | mañana (parte del día) | noun |  |
 | arratsalde | tarde | noun |  |
 | gau | noche | noun |  |
@@ -565,6 +578,7 @@ Each section ends with a **section review** that mixes its 6 units.
 | irakurri | leer | verb |  |
 | idatzi | escribir | verb |  |
 | deitu | llamar | verb |  |
+| liburu | libro | noun | moved earlier: needed by this unit's grammar or goals |
 | hartu | coger; tomar | verb |  |
 | bazkaldu | comer (al mediodía) | verb |  |
 | afaldu | cenar | verb |  |
@@ -582,21 +596,17 @@ Each section ends with a **section review** that mixes its 6 units.
   questions and answers; months of the year.
 
 <!-- vocab:7.2:start -->
-**Vocabulary (21 words)**
+**Vocabulary (17 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
-| bihar | mañana (día) | adv. |  |
 | etzi | pasado mañana | adv. |  |
 | datorren | próximo; que viene | adj. |  |
 | aurten | este año | adv. |  |
-| orain | ahora | adv. |  |
 | joan | ir | verb |  |
 | etorri | venir | verb |  |
 | ibili | andar | verb |  |
 | egin | hacer | verb |  |
-| jan | comer | verb |  |
-| edan | beber | verb |  |
 | lo egin | dormir | verb |  |
 | eraman | llevar | verb |  |
 | sartu | entrar; meter | verb |  |
@@ -619,7 +629,7 @@ Each section ends with a **section review** that mixes its 6 units.
   (*hiruretan*).
 
 <!-- vocab:8.1:start -->
-**Vocabulary (20 words)**
+**Vocabulary (22 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -643,6 +653,8 @@ Each section ends with a **section review** that mixes its 6 units.
 | hotzeria | resfriado | noun |  |
 | gaixo | enfermo | adj. |  |
 | nekatuta | cansado | adj. |  |
+| osasun-etxe | centro de salud | noun | moved earlier: needed by this unit's grammar or goals |
+| hitzordu | cita | noun | moved earlier: needed by this unit's grammar or goals |
 <!-- vocab:8.1:end -->
 
 #### Unit 8.2 · Medikuarengana
@@ -653,14 +665,12 @@ Each section ends with a **section review** that mixes its 6 units.
   naiz*); frequency (*astean behin*, *noizean behin*, *inoiz ez*).
 
 <!-- vocab:8.2:start -->
-**Vocabulary (19 words)**
+**Vocabulary (16 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
-| osasun-etxe | centro de salud | noun |  |
 | botika | medicina; medicamento | noun |  |
 | pilula | pastilla | noun |  |
-| hitzordu | cita | noun |  |
 | errezeta | receta (médica) | noun |  |
 | hautsi | romper | verb |  |
 | jaiki | levantarse | verb |  |
@@ -670,7 +680,6 @@ Each section ends with a **section review** that mixes its 6 units.
 | inoiz | alguna vez; nunca (con ez) | adv. |  |
 | noizean behin | de vez en cuando | adv. |  |
 | gutxitan | pocas veces | adv. |  |
-| asko | mucho | adv. |  |
 | bakarrik | solo; solamente | adv. |  |
 | eseri | sentarse | verb |  |
 | eskatu | pedir | verb |  |
@@ -687,7 +696,7 @@ Each section ends with a **section review** that mixes its 6 units.
   with NOR and NOR-NORK (*bota ezazu*); indirect imperative (*esan dit… -tzeko*).
 
 <!-- vocab:9.1:start -->
-**Vocabulary (23 words)**
+**Vocabulary (26 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -712,6 +721,9 @@ Each section ends with a **section review** that mixes its 6 units.
 | hondakin | residuo | noun |  |
 | egur | madera | noun |  |
 | burdina | hierro | noun |  |
+| bota | tirar | verb | moved earlier: needed by this unit's grammar or goals |
+| ezin | no poder | adv. | moved earlier: needed by this unit's grammar or goals |
+| esan | decir | verb | moved earlier: needed by this unit's grammar or goals |
 | gela | habitación; aula | noun |  |
 | leku | lugar | noun |  |
 <!-- vocab:9.1:end -->
@@ -724,7 +736,7 @@ Each section ends with a **section review** that mixes its 6 units.
   clauses with -(E)NEAN (*etxera iristen naizenean*).
 
 <!-- vocab:9.2:start -->
-**Vocabulary (11 words)**
+**Vocabulary (10 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -733,12 +745,11 @@ Each section ends with a **section review** that mixes its 6 units.
 | itzali | apagar | verb |  |
 | piztu | encender | verb |  |
 | erabili | usar | verb |  |
-| bota | tirar | verb |  |
 | debekatuta | prohibido | adj. |  |
 | ados | de acuerdo | adv. |  |
 | uste izan | creer; opinar | verb |  |
 | iritzi | opinión | noun |  |
-| ezin | no poder | adv. |  |
+| garrantzitsu | importante | adj. | added for autonomous learners (not in Arian) |
 <!-- vocab:9.2:end -->
 
 ---
@@ -753,7 +764,7 @@ Each section ends with a **section review** that mixes its 6 units.
   (*hobe*, *gehiago*); HAIN / HAINBESTE; superlative …-(R)IK / …-EN(A)(K) (*herririk politena*).
 
 <!-- vocab:10.1:start -->
-**Vocabulary (24 words)**
+**Vocabulary (26 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -781,6 +792,8 @@ Each section ends with a **section review** that mixes its 6 units.
 | museo | museo | noun |  |
 | igerileku | piscina | noun |  |
 | aparkaleku | aparcamiento | noun |  |
+| on | bueno | adj. | moved earlier: needed by this unit's grammar or goals |
+| hobe | mejor | adj. | moved earlier: needed by this unit's grammar or goals |
 <!-- vocab:10.1:end -->
 
 #### Unit 10.2 · Bizitzeko lekua
@@ -790,7 +803,7 @@ Each section ends with a **section review** that mixes its 6 units.
   `TODO(revisión-nativa)`: settle which past form of *gustatu* is taught at A1.
 
 <!-- vocab:10.2:start -->
-**Vocabulary (18 words)**
+**Vocabulary (16 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -803,9 +816,7 @@ Each section ends with a **section review** that mixes its 6 units.
 | atzerri | extranjero | noun |  |
 | jende | gente | noun |  |
 | auzo | barrio | noun |  |
-| on | bueno | adj. |  |
 | txar | malo | adj. |  |
-| hobe | mejor | adj. |  |
 | iruditu | parecer | verb |  |
 | egoki | adecuado | adj. |  |
 | turista | turista | noun |  |
@@ -823,7 +834,7 @@ Each section ends with a **section review** that mixes its 6 units.
   NORAKO; present of NOR-NORI-NORK in all persons (*diot*, *didazu*…).
 
 <!-- vocab:11.1:start -->
-**Vocabulary (15 words)**
+**Vocabulary (21 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -842,6 +853,12 @@ Each section ends with a **section review** that mixes its 6 units.
 | iragarki | anuncio | noun |  |
 | gidari | conductor; conductora | noun |  |
 | idazkari | secretario; secretaria | noun |  |
+| jakin | saber | verb | moved earlier: needed by this unit's grammar or goals |
+| eman | dar | verb | moved earlier: needed by this unit's grammar or goals |
+| galdetu | preguntar | verb | moved earlier: needed by this unit's grammar or goals |
+| hizkuntza | idioma | noun | moved earlier: needed by this unit's grammar or goals |
+| ingeles | inglés | noun | moved earlier: needed by this unit's grammar or goals |
+| gidatu | conducir | verb | added for autonomous learners (not in Arian) |
 <!-- vocab:11.1:end -->
 
 #### Unit 11.2 · Lan bila
@@ -851,22 +868,16 @@ Each section ends with a **section review** that mixes its 6 units.
   -T(Z)EN with *ikasi* and *irakatsi* (*gidatzen ikasi du*).
 
 <!-- vocab:11.2:start -->
-**Vocabulary (15 words)**
+**Vocabulary (9 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
-| jakin | saber | verb |  |
-| eman | dar | verb |  |
-| esan | decir | verb |  |
 | ekarri | traer | verb |  |
 | erakutsi | enseñar (mostrar) | verb |  |
 | bidali | enviar | verb |  |
-| galdetu | preguntar | verb |  |
 | erantzun | responder | verb |  |
 | irakatsi | enseñar (instruir) | verb |  |
 | esperientzia | experiencia | noun |  |
-| hizkuntza | idioma | noun |  |
-| ingeles | inglés | noun |  |
 | gidabaimen | carné de conducir | noun | TODO(revisión-nativa): gidabaimen or gidatzeko baimen |
 | ordenagailu | ordenador | noun |  |
 | libre | libre | adj. |  |
@@ -881,7 +892,7 @@ Each section ends with a **section review** that mixes its 6 units.
   instrumental -Z (*autoz*, *trenez*); the indefinite (*mugagabea*); NORAINO.
 
 <!-- vocab:12.1:start -->
-**Vocabulary (22 words)**
+**Vocabulary (24 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -896,11 +907,13 @@ Each section ends with a **section review** that mixes its 6 units.
 | kontzertu | concierto | noun |  |
 | antzerki | teatro (obra) | noun |  |
 | film | película | noun |  |
-| liburu | libro | noun |  |
 | marraztu | dibujar | verb |  |
 | abestu | cantar | verb |  |
 | jolastu | jugar | verb |  |
-| noiz | cuándo | adv. |  |
+| auto | coche | noun | moved earlier: needed by this unit's grammar or goals |
+| bizikleta | bicicleta | noun | moved earlier: needed by this unit's grammar or goals |
+| oinez | a pie | adv. | moved earlier: needed by this unit's grammar or goals |
+| noraino | hasta dónde | adv. | moved earlier: needed by this unit's grammar or goals |
 | asteburu | fin de semana | noun |  |
 | jai | fiesta; día festivo | noun |  |
 | ikastaro | curso | noun |  |
@@ -917,16 +930,12 @@ Each section ends with a **section review** that mixes its 6 units.
   aspect in the past (*joaten nintzen*).
 
 <!-- vocab:12.2:start -->
-**Vocabulary (10 words)**
+**Vocabulary (6 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
 | txango | excursión | noun |  |
-| auto | coche | noun |  |
-| bizikleta | bicicleta | noun |  |
 | hegazkin | avión | noun |  |
-| oinez | a pie | adv. |  |
-| noraino | hasta dónde | adv. |  |
 | gogo | ganas | noun |  |
 | asmo | intención; plan | noun |  |
 | ehuneko | porcentaje; por ciento | noun |  |
@@ -943,25 +952,37 @@ Each section ends with a **section review** that mixes its 6 units.
 - In M7 every lesson is written from scratch from these goals; the validator will reject words that
   are neither in this syllabus nor in earlier units.
 
-## Known gaps found while writing the content (M7)
+## Additions beyond the textbook (for autonomous learners)
 
-All 24 units are written within this syllabus. These gaps made some sentences plainer than they
-would naturally be; they are candidates for the next revision of `vocabulary.csv`:
+Arian is a classroom book: a teacher supplies basic words and phrases orally. Hitz has no teacher,
+so a few very frequent words are taught earlier than in the book, or added. In
+`content/syllabus/vocabulary.csv` they are marked "added for autonomous learners (not in Arian)"
+or "moved earlier: needed by this unit's grammar or goals". Function words and survival phrases are
+listed separately in each unit and do not count towards the 100–150 words per section.
 
-- **Everyday words missing or late.** Not taught at all: *ere*, *baina*, *edo*, *beti*, *beste*,
-  *ezer*, *egun* (on its own), *euskara*, *gaztelania*, *hitz egin*, *garrantzitsu*, *astero*,
-  *gidatu*. Taught late compared with their use: *noiz* (12.1), *asko* (8.2), *gaur* and *atzo*
-  (7.1), *bihar* and *orain* (7.2), *jan* and *edan* (7.2: food units 5.x cannot say "eat" or
-  "drink"), *liburu* (12.1), *esan* (11.2), *bota* and *ezin* (9.2), *hobe* and *on* (10.2).
-  *ere* was added as a grammar word in 5.1.
-- **Grammar examples using later words**: *etxe aurrean* (2.2, *etxe* is 4.1), *mahai bat behar
-  dut* (4.1, *mahai* is 4.2), *berrehun* and *mila* (4.1 grammar, taught in 4.2), *bota ezazu*
-  and *ezin da* (9.1, taught in 9.2), *esan dit … -tzeko* (9.1), *duela bi egun* and *orain dela
-  gutxi* (7.1), *osasun-etxe* and *hitzordu* (8.1 goal, taught in 8.2), *autoz*, *oinez*,
-  *bizikleta* and *noraino* (12.1 grammar, taught in 12.2), NOR-NORI-NORK verbs (11.1 grammar,
-  verbs taught in 11.2), *hizkuntza* and *ingeles* (11.1, taught in 11.2).
-- **Lemma and grammar out of step**: *ukan* is listed in 3.1 but its forms are taught in 3.2;
-  *jakin* is listed in 11.2 but taught in 11.1.
-- **Goals the vocabulary cannot fully express**: giving one's address in 1.2 (*kale* is 2.1,
-  *nire/zure* 3.1); telling the time above 10 in 2.2 (numbers 11+ are 3.2).
-- **Open usage questions** are marked `TODO(revisión-nativa)` in `content/source/units/*.yaml`.
+| Unit | Added | Moved earlier |
+|---|---|---|
+| 1.1 | *euskara* (fixed phrase *Euskara ikasten ari naiz*) | |
+| 1.2 | *ere*, *baina*, *edo*, *hitz egin* (fixed phrase *euskaraz hitz egiten dut*), *ez dakit*, *pixka bat*, *berriro*, *poliki* | |
+| 2.1 | *egun* (on its own), *beste* | *gaur*, *bihar*, *asko* |
+| 2.2 | *beti* | *orain*, *noiz* |
+| 3.1 | *gaztelania* | |
+| 3.2 | | *ukan* (its forms are taught here) |
+| 4.1 | | *mahai*, *mila*, *berrehun* |
+| 5.1 | | *jan*, *edan* |
+| 5.2 | *astero* | |
+| 7.1 | | *liburu* |
+| 8.1 | | *osasun-etxe*, *hitzordu* |
+| 9.1 | | *bota*, *ezin*, *esan* |
+| 9.2 | *garrantzitsu* | |
+| 10.1 | | *on*, *hobe* |
+| 11.1 | *gidatu* | *jakin*, *eman*, *galdetu*, *hizkuntza*, *ingeles* |
+| 12.1 | | *auto*, *bizikleta*, *oinez*, *noraino* |
+
+Fixed phrases are taught as chunks before their grammar (as *bizi naiz* or *gustatzen zait*); their
+forms are listed in `content/syllabus/forms/<unit>.csv` with the note "chunk".
+
+**Still open**: *etxe aurrean* in the 2.2 grammar (*etxe* is 4.1; other places are used); giving an
+address in 1.2 (asked, not given: *kale* is 2.1, *nire/zure* 3.1); telling the time above 10 in 2.2
+(numbers 11+ are 3.2); *ezer* is not taught. Usage doubts are marked `TODO(revisión-nativa)` in
+`content/source/units/*.yaml`.

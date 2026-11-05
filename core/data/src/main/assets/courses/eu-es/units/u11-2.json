@@ -129,7 +129,7 @@
               ],
               "distractors": [
                 "Bai",
-                "daukazu"
+                "ondo"
               ],
               "vocabulary": [
                 "zenbat",
@@ -147,7 +147,7 @@
               "text": "Hiru hizkuntza dakit.",
               "distractors": [
                 "badakit",
-                "dauzkagu"
+                "dut"
               ],
               "vocabulary": [
                 "hiru",
@@ -344,18 +344,21 @@
             {
               "id": "u11-2.l1.s1.e11",
               "type": "read_true_false",
-              "passage": "Haizea idazkaria da. Bi hizkuntza daki. Gidabaimena dauka.",
+              "passage": "Haizea idazkaria da. Euskaraz eta ingelesez hitz egiten du. Gidabaimena ere badu.",
               "statement": "Haizea no tiene carné de conducir.",
               "answer": false,
               "vocabulary": [
                 "haize",
                 "idazkari",
                 "izan",
-                "bi",
-                "hizkuntza",
-                "jakin",
+                "euskara",
+                "eta",
+                "ingeles",
+                "hitz egin",
+                "egin",
+                "ukan",
                 "gidabaimen",
-                "eduki"
+                "ere"
               ],
               "structures": [
                 "hizkuntzak",
@@ -382,23 +385,28 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Lantegian ordenagailu berriak dauzkagu."
+                "text": "Euskaraz eta gaztelaniaz hitz egiten dut, baina ingelesez ez."
               },
               "answers": [
-                "En la fábrica tenemos ordenadores nuevos.",
-                "Tenemos ordenadores nuevos en la fábrica."
+                "Hablo euskera y castellano, pero inglés no.",
+                "Yo hablo euskera y castellano, pero inglés no."
               ],
               "distractors": [
-                "ordenador",
                 "Sé",
+                "Sí",
                 "conducir",
-                "inglés"
+                "tres"
               ],
               "vocabulary": [
-                "lantegi",
-                "ordenagailu",
-                "berri",
-                "eduki"
+                "euskara",
+                "eta",
+                "gaztelania",
+                "hitz egin",
+                "egin",
+                "ukan",
+                "baina",
+                "ingeles",
+                "ez"
               ],
               "structures": [
                 "hizkuntzak",
@@ -415,9 +423,9 @@
               "type": "listen_tap",
               "text": "Nagusiak kontratua eman dit.",
               "distractors": [
-                "dizu",
-                "dizut",
-                "Guk"
+                "Idazkariak",
+                "diogu",
+                "didazu"
               ],
               "vocabulary": [
                 "nagusi",
@@ -610,11 +618,12 @@
             {
               "id": "u11-2.l1.s2.e10",
               "type": "speak",
-              "text": "Zuk zer eman diozu Aneri?",
-              "translation": "¿Qué le has dado a Ane?",
+              "text": "Anek beste ordenagailu bat eman dit.",
+              "translation": "Ane me ha dado otro ordenador.",
               "vocabulary": [
-                "zu",
-                "zer",
+                "beste",
+                "ordenagailu",
+                "bat",
                 "eman",
                 "ukan"
               ],
@@ -655,9 +664,9 @@
                 "Le hemos mandado un ordenador."
               ],
               "distractors": [
-                "he",
-                "Ane",
-                "oficina"
+                "jefe",
+                "café",
+                "otro"
               ],
               "vocabulary": [
                 "gu",
@@ -681,8 +690,8 @@
                 "Ogia ekarri didazu?"
               ],
               "distractors": [
-                "erakutsi",
-                "diogu"
+                "dizu",
+                "bulegoa"
               ],
               "vocabulary": [
                 "ogi",
@@ -898,20 +907,25 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Gaur libre nago."
+                "text": "Gaur libre nago, baina bihar ez."
               },
               "answers": [
-                "Hoy estoy libre.",
-                "Estoy libre hoy."
+                "Hoy estoy libre, pero mañana no.",
+                "Estoy libre hoy, pero mañana no."
               ],
               "distractors": [
-                "La",
-                "experiencia"
+                "enseñado",
+                "qué",
+                "Tienes",
+                "madre"
               ],
               "vocabulary": [
                 "gaur",
                 "libre",
-                "egon"
+                "egon",
+                "baina",
+                "bihar",
+                "ez"
               ],
               "structures": [
                 "nor-nori-nork",
@@ -921,13 +935,15 @@
             {
               "id": "u11-2.l1.s3.e11",
               "type": "read_true_false",
-              "passage": "Nagusiari galdetu diot. Ez dit erantzun.",
+              "passage": "Nagusiari soldata galdetu diot, baina ez dit erantzun.",
               "statement": "El jefe ha respondido.",
               "answer": false,
               "vocabulary": [
                 "nagusi",
+                "soldata",
                 "galdetu",
                 "ukan",
+                "baina",
                 "ez",
                 "erantzun"
               ],
@@ -947,8 +963,8 @@
                 "Bihar libre zaude?"
               ],
               "distractors": [
-                "dit",
-                "didazu"
+                "ingelesa",
+                "Zergatik"
               ],
               "vocabulary": [
                 "bihar",
@@ -965,9 +981,9 @@
               "type": "listen_tap",
               "text": "Zergatik ez didazu erantzun?",
               "distractors": [
-                "daukat",
-                "dit",
-                "bost"
+                "nago",
+                "Bai",
+                "urteko"
               ],
               "vocabulary": [
                 "zergatik",
@@ -1060,8 +1076,7 @@
                 "Ez dakit non dagoen bulegoa."
               ],
               "vocabulary": [
-                "ez",
-                "jakin",
+                "ez dakit",
                 "non",
                 "egon",
                 "bulego"
@@ -1082,8 +1097,7 @@
               "correct": 0,
               "translation": "No sé dónde está la oficina.",
               "vocabulary": [
-                "ez",
-                "jakin",
+                "ez dakit",
                 "non",
                 "egon",
                 "bulego"
@@ -1131,21 +1145,23 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Galdetu dit ea esperientzia dudan."
+                "text": "Galdetu diot noiz dagoen libre."
               },
               "answers": [
-                "Me ha preguntado si tengo experiencia."
+                "Le he preguntado cuándo está libre."
               ],
               "distractors": [
-                "he",
-                "jefe",
+                "horario",
+                "Jon",
                 "cuál",
-                "sabemos"
+                "Sabes"
               ],
               "vocabulary": [
                 "galdetu",
                 "ukan",
-                "esperientzia"
+                "noiz",
+                "egon",
+                "libre"
               ],
               "structures": [
                 "ea-indirect"
@@ -1190,8 +1206,8 @@
               ],
               "distractors": [
                 "dit",
-                "duzun",
-                "nagusia"
+                "ea",
+                "Nagusiak"
               ],
               "vocabulary": [
                 "ez",
@@ -1214,6 +1230,7 @@
                 "nagusi",
                 "galdetu",
                 "ukan",
+                "gidatu",
                 "jakin"
               ],
               "structures": [
@@ -1250,9 +1267,9 @@
                 "Ez dakit ea Jonek ingelesa dakien."
               ],
               "vocabulary": [
-                "ez",
-                "jakin",
-                "ingeles"
+                "ez dakit",
+                "ingeles",
+                "jakin"
               ],
               "structures": [
                 "ea-indirect"
@@ -1387,9 +1404,9 @@
                 "Hemos aprendido mucho de ella."
               ],
               "distractors": [
-                "mi",
-                "inglés",
-                "ti"
+                "profesor",
+                "ti",
+                "madre"
               ],
               "vocabulary": [
                 "hura",
@@ -1426,21 +1443,25 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Los alumnos han aprendido del profesor."
+                "text": "He aprendido euskera del profesor, y castellano de mi madre."
               },
               "answers": [
-                "Ikasleek irakaslearengandik ikasi dute."
+                "Euskara irakaslearengandik ikasi dut, eta gaztelania amarengandik."
               ],
               "distractors": [
+                "lana",
+                "Niregandik",
                 "Zuregandik",
-                "Ingelesa",
-                "Ordenagailua"
+                "gugandik"
               ],
               "vocabulary": [
-                "ikasle",
+                "euskara",
                 "irakasle",
                 "ikasi",
-                "ukan"
+                "ukan",
+                "eta",
+                "gaztelania",
+                "ama"
               ],
               "structures": [
                 "norengandik"
@@ -1478,9 +1499,9 @@
               "type": "listen_tap",
               "text": "Ordenagailua erabiltzen lankidearengandik ikasi dut.",
               "distractors": [
-                "Zuregandik",
-                "dugu",
-                "lana"
+                "Niregandik",
+                "eta",
+                "duzu"
               ],
               "vocabulary": [
                 "ordenagailu",
@@ -1595,6 +1616,7 @@
               "correct": 0,
               "translation": "He aprendido a conducir.",
               "vocabulary": [
+                "gidatu",
                 "ikasi",
                 "ukan"
               ],
@@ -1614,8 +1636,8 @@
                 "Estoy estudiando inglés."
               ],
               "distractors": [
-                "ha",
-                "Quién"
+                "leer",
+                "enseña"
               ],
               "vocabulary": [
                 "ingeles",
@@ -1650,20 +1672,20 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Mi madre enseña inglés."
+                "text": "Mi madre enseña euskera."
               },
               "answers": [
-                "Nire amak ingelesa irakasten du."
+                "Nire amak euskara irakasten du."
               ],
               "distractors": [
-                "ordenagailua",
-                "erabiltzen",
-                "Umeek"
+                "Ingelesa",
+                "Umeek",
+                "gidatzen"
               ],
               "vocabulary": [
                 "ni",
                 "ama",
-                "ingeles",
+                "euskara",
                 "irakatsi",
                 "ukan"
               ],
@@ -1688,6 +1710,7 @@
               "correct": 0,
               "vocabulary": [
                 "jakin",
+                "gidatu",
                 "bai",
                 "aita",
                 "irakatsi",
@@ -1749,7 +1772,8 @@
               "vocabulary": [
                 "nor",
                 "irakatsi",
-                "ukan"
+                "ukan",
+                "gidatu"
               ],
               "structures": [
                 "ikasi-tzen"
@@ -1782,6 +1806,7 @@
                 "Mikel ha aprendido a conducir."
               ],
               "vocabulary": [
+                "gidatu",
                 "ikasi",
                 "ukan"
               ],
@@ -1878,7 +1903,7 @@
                 "Zure",
                 "Bai",
                 "da",
-                "guretzat"
+                "gidabaimena"
               ],
               "vocabulary": [
                 "ingeles",
@@ -1924,8 +1949,8 @@
               "type": "listen_tap",
               "text": "Eta gidabaimena?",
               "distractors": [
-                "Iragarkiagatik",
-                "ordenagailua"
+                "Ingelesa",
+                "ona"
               ],
               "vocabulary": [
                 "eta",
@@ -1999,7 +2024,7 @@
             {
               "id": "u11-2.l3.s1.e09",
               "type": "read_true_false",
-              "passage": "Idazkari bat behar dugu. Ingelesa jakin behar du. Ordenagailua erabiltzen jakin behar du.",
+              "passage": "Idazkari bat behar dugu. Ingelesa jakin behar du. Euskara ere garrantzitsua da.",
               "statement": "La secretaria tiene que saber inglés.",
               "answer": true,
               "vocabulary": [
@@ -2009,8 +2034,10 @@
                 "ukan",
                 "ingeles",
                 "jakin",
-                "ordenagailu",
-                "erabili"
+                "euskara",
+                "ere",
+                "garrantzitsu",
+                "izan"
               ],
               "structures": [
                 "hizkuntzak",
@@ -2037,18 +2064,22 @@
             {
               "id": "u11-2.l3.s1.e11",
               "type": "read_true_false",
-              "passage": "Ni Ibai naiz. Ez dakit ingelesa. Gidabaimena daukat.",
+              "passage": "Ni Ibai naiz. Euskaraz eta gaztelaniaz hitz egiten dut, baina ez dakit ingelesa.",
               "statement": "Ibai sabe inglés.",
               "answer": false,
               "vocabulary": [
+                "ez dakit",
                 "ni",
                 "ibai",
                 "izan",
-                "ez",
-                "jakin",
-                "ingeles",
-                "gidabaimen",
-                "eduki"
+                "euskara",
+                "eta",
+                "gaztelania",
+                "hitz egin",
+                "egin",
+                "ukan",
+                "baina",
+                "ingeles"
               ],
               "structures": [
                 "hizkuntzak",
@@ -2072,8 +2103,8 @@
                 "¿Dónde ha trabajado usted?"
               ],
               "distractors": [
-                "aprendido",
-                "cinco"
+                "también",
+                "en"
               ],
               "vocabulary": [
                 "non",
@@ -2096,10 +2127,10 @@
                 "Bost urtez lan egin dut Bilbon."
               ],
               "distractors": [
-                "naiz",
-                "izan",
                 "handi",
-                "Han"
+                "ikasi",
+                "izan",
+                "bai"
               ],
               "vocabulary": [
                 "lan egin",
@@ -2138,9 +2169,9 @@
               "text": "Idazkaria izan naiz enpresa handi batean.",
               "distractors": [
                 "ingelesa",
-                "dut",
-                "daukazu",
-                "Esperientzia"
+                "Han",
+                "eta",
+                "egin"
               ],
               "vocabulary": [
                 "idazkari",
@@ -2242,13 +2273,17 @@
             {
               "id": "u11-2.l3.s2.e08",
               "type": "order_sentence",
-              "answer": "Han ingelesa ikasi dut.",
-              "translation": "Allí he aprendido inglés.",
+              "answer": "Han ingelesa ikasi dut, eta euskara ere bai.",
+              "translation": "Allí he aprendido inglés, y también euskera.",
               "vocabulary": [
                 "han",
                 "ingeles",
                 "ikasi",
-                "ukan"
+                "ukan",
+                "eta",
+                "euskara",
+                "ere",
+                "bai"
               ],
               "structures": [
                 "esperientzia"
@@ -2352,6 +2387,7 @@
               "vocabulary": [
                 "galdetu",
                 "ukan",
+                "gidatu",
                 "jakin"
               ],
               "structures": [
@@ -2627,8 +2663,8 @@
           },
           {
             "speaker": "Julen",
-            "eu": "Ados. Ordenagailua erabiltzen badakit.",
-            "es": "De acuerdo. Sé usar el ordenador."
+            "eu": "Ados. Euskaraz eta gaztelaniaz ere hitz egiten dut.",
+            "es": "De acuerdo. También hablo euskera y castellano."
           },
           {
             "speaker": "Leire",

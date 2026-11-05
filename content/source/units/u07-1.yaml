@@ -39,20 +39,20 @@ guidebook:
           es: He visto a Mikel.
         - eu: Zuk zer erosi duzu?
           es: ¿Qué has comprado?
-        - eu: Lagunak ikusi ditut.
-          es: He visto a mis amigos.
+        - eu: Liburu asko irakurri ditut.
+          es: He leído muchos libros.
     - title:
         es: ¿Cuándo?
         eu: Noiz?
       body:
-        es: «Gaur» es hoy, «atzo» ayer, «herenegun» anteayer e «iaz» el año pasado. Los días de la semana y las partes del día llevan -(e)an (astelehenean, goizean) y «duela» va delante de la cantidad (duela bi aste).
+        es: «Gaur» es hoy, «atzo» ayer, «herenegun» anteayer e «iaz» el año pasado. Los días de la semana y las partes del día llevan -(e)an (astelehenean, goizean) y «duela» va delante de la cantidad (duela bi egun, duela bi aste).
         # TODO(revisión-nativa): en batua escrito, con «atzo», «iaz» o «duela…» se prefiere el pasado (joan nintzen); aquí se usa el perfecto (joan naiz), habitual en la lengua hablada y en A1.
-        eu: «Gaur», «atzo», «herenegun» eta «iaz» denbora adierazten dute. Asteko egunek eta eguneko uneek -(e)an hartzen dute (astelehenean, goizean), eta «duela» kopuruaren aurretik doa (duela bi aste).
+        eu: «Gaur», «atzo», «herenegun» eta «iaz» denbora adierazten dute. Asteko egunek eta eguneko uneek -(e)an hartzen dute (astelehenean, goizean), eta «duela» kopuruaren aurretik doa (duela bi egun, duela bi aste).
       examples:
         - eu: Atzo gauean etxean afaldu dut.
           es: Anoche cené en casa.
-        - eu: Duela bi aste Parisera joan naiz.
-          es: Hace dos semanas fui a París.
+        - eu: Duela bi egun Parisera joan naiz.
+          es: Hace dos días fui a París.
         - eu: Joan den larunbatean mendira joan gara.
           es: El sábado pasado fuimos al monte.
     - title:
@@ -79,9 +79,9 @@ levels:
           - Gaur jatetxean bazkaldu dugu. = Hoy hemos comido en el restaurante. | Hoy comimos en el restaurante. | Hoy hemos comido en un restaurante.
           - Herenegun lagunekin afaldu dut. = Anteayer cené con mis amigos. | Anteayer cené con amigos. | Anteayer cené con mis amigas.
           - Gaur arratsaldean Mikel ikusi dut. = Esta tarde he visto a Mikel. | Hoy por la tarde he visto a Mikel. | Esta tarde vi a Mikel.
-          - Atzo gauean ez dut afaldu. = Anoche no cené. | Ayer por la noche no cené.
+          - Atzo gauean ez dut afaldu, baina gaur asko jan dut. = Anoche no cené, pero hoy he comido mucho. | Ayer por la noche no cené, pero hoy he comido mucho. | Anoche no cené, pero hoy comí mucho.
           - Zer egin duzu gaur? | Gaur zer egin duzu? = ¿Qué has hecho hoy? | ¿Qué ha hecho usted hoy? | ¿Qué hiciste hoy?
-          - Gaur goizean ogia erosi dut. = Esta mañana he comprado pan. | Hoy por la mañana he comprado pan. | Esta mañana compré pan.
+          - Gaur goizean liburu bat erosi dut. = Esta mañana he comprado un libro. | Hoy por la mañana he comprado un libro. | Esta mañana compré un libro.
         pairs:
           - - atzo = ayer
             - gaur = hoy
@@ -107,18 +107,18 @@ levels:
               - Jatetxean bazkaldu naiz.
               - Bihar arte.
         true_false:
-          - passage: Gaur goizean kafe bat hartu dut. Gero ogia erosi dut.
-            statement: Ha comprado pan.
+          - passage: Gaur goizean kafe bat hartu dut. Gero liburu bat ere erosi dut.
+            statement: Ha comprado un libro.
             answer: true
       - structures: [weekdays, time-markers]
         sentences:
           - Astelehenean Bilbon lan egin dut. = El lunes trabajé en Bilbao. | El lunes he trabajado en Bilbao.
-          - Asteartean liburutegian ikasi dut. = El martes estudié en la biblioteca. | El martes he estudiado en la biblioteca.
+          - Asteartean liburutegian euskara ikasi dut. = El martes estudié euskera en la biblioteca. | El martes he estudiado euskera en la biblioteca.
           - Asteazkenean amari deitu diot. = El miércoles llamé a mi madre. | El miércoles he llamado a mi madre.
           - Ostegunean lagunak ikusi ditut. = El jueves vi a mis amigos. | El jueves he visto a mis amigos. | El jueves vi a mis amigas.
           - Ostiralean Leirerekin afaldu dut. = El viernes cené con Leire. | El viernes he cenado con Leire.
           - Larunbatean telefonoa galdu dut. = El sábado perdí el teléfono. | El sábado he perdido el teléfono. | El sábado perdí el móvil.
-          - Igandean etxean irakurri dut. = El domingo leí en casa. | El domingo he leído en casa.
+          - Igandean etxean liburu bat irakurri dut. = El domingo leí un libro en casa. | El domingo he leído un libro en casa.
           - Joan den astean Donostian bazkaldu dugu. = La semana pasada comimos en San Sebastián. | La semana pasada comimos en Donostia. | La semana pasada hemos comido en San Sebastián.
         pairs:
           - - astelehena = lunes
@@ -155,14 +155,14 @@ levels:
           - Nire alaba iaz jaio da. = Mi hija nació el año pasado.
           - Iaz Frantziara bidaiatu dugu. = El año pasado viajamos a Francia.  # TODO(revisión-nativa): auxiliar de «bidaiatu» (du, NOR-NORK) y régimen con -ra
           - Duela hilabete bat Londresera joan naiz. = Hace un mes fui a Londres.
-          - Duela bi aste Mikeli idatzi diot. = Hace dos semanas le escribí a Mikel. | Hace dos semanas escribí a Mikel.
-          - Barkatu, ez dut entzun. = Perdona, no lo he oído. | Perdona, no he oído. | Perdone, no lo he oído.
+          - Duela bi egun Mikeli idatzi diot. = Hace dos días le escribí a Mikel. | Hace dos días escribí a Mikel.
+          - Barkatu, ez dut entzun. Berriro, mesedez. = Perdona, no lo he oído. Otra vez, por favor. | Perdona, no he oído. Otra vez, por favor. | Perdone, no lo he oído. Otra vez, por favor.
           - Zu non jaio zara? | Non jaio zara zu? = ¿Dónde naciste? | ¿Dónde naciste tú? | ¿Dónde nació usted? | ¿Dónde has nacido?
           - Iaz Itziar eta Unai ezkondu dira. = El año pasado Itziar y Unai se casaron. | Itziar y Unai se casaron el año pasado.
         pairs:
           - - jaio = nacer
             - bidaiatu = viajar
-            - idatzi = escribir
+            - liburu = libro
             - entzun = escuchar
             - iaz = el año pasado
             - hilabete = mes
@@ -204,7 +204,7 @@ levels:
           - Herenegun Bilbora joan gara. = Anteayer fuimos a Bilbao.
           - Zuek nora joan zarete? | Nora joan zarete zuek? = ¿Adónde habéis ido? | ¿A dónde habéis ido? | ¿Adónde fuisteis? | ¿Adónde han ido ustedes?
           - Gurasoak Gasteizera joan dira. = Mis padres han ido a Vitoria. | Mis padres fueron a Vitoria. | Mis padres han ido a Gasteiz.
-          - Ni ez naiz joan. = Yo no he ido. | No he ido. | Yo no fui.
+          - Ni ez naiz joan, baina Ane joan da. = Yo no he ido, pero Ane sí. | Yo no he ido, pero Ane ha ido. | No he ido, pero Ane sí. | Yo no fui, pero Ane sí.
           - Mikel eta Nerea etxera etorri dira. = Mikel y Nerea han venido a casa. | Mikel y Nerea vinieron a casa.
           - Zu nora joan zara gaur? | Gaur nora joan zara? = ¿Adónde has ido hoy? | ¿A dónde has ido hoy? | ¿Adónde ha ido usted hoy? | ¿Adónde fuiste hoy?
         blanks:
@@ -237,7 +237,7 @@ levels:
         sentences:
           - Nik kafe bat hartu dut. = Yo he tomado un café. | He tomado un café. | Tomé un café.
           - Zuk zer erosi duzu? | Zer erosi duzu zuk? = ¿Qué has comprado? | ¿Qué has comprado tú? | ¿Qué ha comprado usted?
-          - Anek liburutegian idatzi du. = Ane ha escrito en la biblioteca. | Ane escribió en la biblioteca.
+          - Anek liburu bat idatzi du. = Ane ha escrito un libro. | Ane escribió un libro.
           - Guk jatetxean afaldu dugu. = Hemos cenado en el restaurante. | Nosotros hemos cenado en el restaurante. | Cenamos en el restaurante.
           - Haiek txartela galdu dute. = Han perdido la tarjeta. | Ellos han perdido la tarjeta. | Ellas han perdido la tarjeta.
           - Zuek Mikel ikusi duzue? = ¿Habéis visto a Mikel? | ¿Vosotros habéis visto a Mikel? | ¿Visteis a Mikel? | ¿Han visto ustedes a Mikel?
@@ -275,7 +275,7 @@ levels:
           - Donostiatik etorri naiz. = He venido de San Sebastián. | Vengo de San Sebastián. | He venido de Donostia. | Vine de San Sebastián.
           - Ama ospitaletik etorri da. = Mi madre ha venido del hospital. | Mi madre vino del hospital.
           - Zertara joan zara Bilbora? = ¿A qué has ido a Bilbao? | ¿A qué fuiste a Bilbao? | ¿A qué ha ido usted a Bilbao?
-          - Arropa erostera joan naiz. = He ido a comprar ropa. | Fui a comprar ropa.
+          - Liburu bat erostera joan naiz. = He ido a comprar un libro. | Fui a comprar un libro.
           - Lagunak ikustera joan gara. = Hemos ido a ver a los amigos. | Hemos ido a ver a nuestros amigos. | Fuimos a ver a los amigos.
           - Jatetxera bazkaltzera joan dira. = Han ido a comer al restaurante. | Fueron a comer al restaurante.
           - Liburutegira ikastera joan zara? = ¿Has ido a estudiar a la biblioteca? | ¿Has ido a la biblioteca a estudiar? | ¿Fuiste a estudiar a la biblioteca? | ¿Ha ido usted a estudiar a la biblioteca?
@@ -324,7 +324,7 @@ levels:
           - Arratsaldean liburutegian ikasi dut. = Por la tarde he estudiado en la biblioteca. | Por la tarde estudié en la biblioteca.
           - Eta zuk? Zer egin duzu? = ¿Y tú? ¿Qué has hecho? | ¿Y usted? ¿Qué ha hecho? | ¿Y tú? ¿Qué hiciste?
           - Nik gaur ez dut lan egin. | Gaur ez dut lan egin. = Hoy no he trabajado. | Yo hoy no he trabajado. | Hoy no trabajé.
-          - Gauean lagunekin afaldu dut. = Por la noche he cenado con mis amigos. | Por la noche he cenado con amigos. | Por la noche cené con mis amigos.
+          - Gauean lagunekin afaldu dut eta ardo pixka bat edan dut. = Por la noche he cenado con mis amigos y he bebido un poco de vino. | Por la noche he cenado con amigos y he bebido un poco de vino. | Por la noche cené con mis amigos y bebí un poco de vino.
         chats:
           - messages:
               - Nahia | Kaixo, Ander! Zer egin duzu gaur?
@@ -377,8 +377,8 @@ levels:
               - Ama ikusi naiz.
               - Herritik.
         true_false:
-          - passage: Joan den larunbatean Durangora joan gara. Arropa erostera joan gara.
-            statement: Fueron a Durango a comprar comida.
+          - passage: Joan den larunbatean Durangora joan gara. Liburuak erostera joan gara.
+            statement: Fueron a Durango a comprar ropa.
             answer: false
           - passage: Herenegun Gorka Madriletik etorri da. Gaur Gasteizen dago.
             statement: Gorka llegó de Madrid anteayer.
@@ -395,7 +395,7 @@ levels:
           - Asteazkenean Mireni idatzi diot. = El miércoles le escribí a Miren. | El miércoles escribí a Miren. | El miércoles le he escrito a Miren.
           - Ostegunean ospitalera joan naiz. = El jueves fui al hospital. | El jueves he ido al hospital.
           - Ostiralean taberna batean afaldu dugu. = El viernes cenamos en un bar. | El viernes hemos cenado en un bar.
-          - Igandean hondartzara joan gara. = El domingo fuimos a la playa. | El domingo hemos ido a la playa.
+          - Igandean hondartzara joan gara eta arraina jan dugu. = El domingo fuimos a la playa y comimos pescado. | El domingo hemos ido a la playa y hemos comido pescado.
         chats:
           - messages:
               - Miren | Zer egin duzu larunbatean?
@@ -434,7 +434,8 @@ levels:
         - Ane | Kaixo, Iker! Zer moduz? = ¡Hola, Iker! ¿Qué tal?
         - Iker | Ez oso ondo. Telefonoa galdu dut! = No muy bien. ¡He perdido el teléfono!
         - Ane | Nola? Non galdu duzu? = ¿Cómo? ¿Dónde lo has perdido?
-        - Iker | Gaur goizean kafe bat hartu dut tabernan. = Esta mañana he tomado un café en el bar.
+        - Iker | Ez dakit! Gaur goizean kafe bat hartu dut tabernan. = ¡No lo sé! Esta mañana he tomado un café en el bar.
+
         - Iker | Gero liburutegira joan naiz, ikastera. = Después he ido a la biblioteca, a estudiar.
         - Ane | Eta liburutegitik nora joan zara? = ¿Y de la biblioteca adónde has ido?
         - Iker | Jatetxe batera, Mikelekin bazkaltzera. = A un restaurante, a comer con Mikel.

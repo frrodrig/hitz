@@ -82,8 +82,8 @@
         },
         "examples": [
           {
-            "eu": "Logela bat behar dut.",
-            "es": "Necesito un dormitorio."
+            "eu": "Mahai bat behar dut.",
+            "es": "Necesito una mesa."
           },
           {
             "eu": "Zer behar duzu?",
@@ -101,8 +101,8 @@
           "eu": "Nolakoa da etxea?"
         },
         "body": {
-          "es": "Los adjetivos van detrás del nombre: etxe berria (la casa nueva), pisu argitsua (el piso luminoso). La planta se dice con «-garren»: hirugarren solairuan (en el tercer piso). Del 100 en adelante se dice «ehun eta…»: ehun eta hogei (120).",
-          "eu": "Adjektiboa izenaren ondoren doa: etxe berria, pisu argitsua. Solairua «-garren» atzizkiarekin: hirugarren solairuan. 100etik aurrera, «ehun eta…»: ehun eta hogei."
+          "es": "Los adjetivos van detrás del nombre: etxe berria (la casa nueva), pisu argitsua (el piso luminoso). La planta se dice con «-garren»: hirugarren solairuan (en el tercer piso). Del 100 en adelante: ehun (100), ehun eta hogei (120), berrehun (200), mila (1000), mila eta berrehun (1200).",
+          "eu": "Adjektiboa izenaren ondoren doa: etxe berria, pisu argitsua. Solairua «-garren» atzizkiarekin: hirugarren solairuan. 100etik aurrera: ehun, ehun eta hogei, berrehun, mila, mila eta berrehun."
         },
         "examples": [
           {
@@ -114,8 +114,8 @@
             "es": "Vivo en el tercer piso."
           },
           {
-            "eu": "Etxe honek ehun eta hogei urte ditu.",
-            "es": "Esta casa tiene ciento veinte años."
+            "eu": "Etxe honek berrehun urte ditu.",
+            "es": "Esta casa tiene doscientos años."
           }
         ]
       }
@@ -144,9 +144,9 @@
                 "Hau nire etxea da."
               ],
               "distractors": [
-                "sukaldearen",
-                "handia",
-                "Egongela"
+                "dago",
+                "non",
+                "Logela"
               ],
               "vocabulary": [
                 "hau",
@@ -163,9 +163,9 @@
               "type": "listen_tap",
               "text": "Pisu hau txikia da.",
               "distractors": [
-                "ondoan",
-                "hor",
-                "non"
+                "atzean",
+                "sukaldean",
+                "Egongela"
               ],
               "vocabulary": [
                 "pisu",
@@ -223,14 +223,14 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "La cocina está aquí."
+                "text": "La mesa está en la cocina."
               },
               "answers": [
-                "Sukaldea hemen dago."
+                "Mahaia sukaldean dago."
               ],
               "vocabulary": [
+                "mahai",
                 "sukalde",
-                "hemen",
                 "egon"
               ],
               "structures": [
@@ -362,7 +362,7 @@
             {
               "id": "u04-1.l1.s1.e11",
               "type": "read_true_false",
-              "passage": "Nire pisua txikia da. Sukaldea, egongela eta logela bat ditu.",
+              "passage": "Nire pisua txikia da, baina oso polita. Sukaldea, egongela eta logela bat ditu.",
               "statement": "El piso es grande.",
               "answer": false,
               "vocabulary": [
@@ -370,6 +370,9 @@
                 "pisu",
                 "txiki",
                 "izan",
+                "baina",
+                "oso",
+                "polit",
                 "sukalde",
                 "egongela",
                 "eta",
@@ -384,12 +387,14 @@
             {
               "id": "u04-1.l1.s1.e12",
               "type": "speak",
-              "text": "Bainugela txikia da.",
-              "translation": "El cuarto de baño es pequeño.",
+              "text": "Bainugela txikia da, baina polita.",
+              "translation": "El cuarto de baño es pequeño, pero bonito.",
               "vocabulary": [
                 "bainugela",
                 "txiki",
-                "izan"
+                "izan",
+                "baina",
+                "polit"
               ],
               "structures": [
                 "rooms"
@@ -407,10 +412,10 @@
                 "Mi habitación está detrás de la cocina."
               ],
               "distractors": [
-                "favor",
-                "casa",
-                "grande",
-                "Dónde"
+                "aseo",
+                "del",
+                "lado",
+                "Esta"
               ],
               "vocabulary": [
                 "ni",
@@ -433,9 +438,9 @@
               "type": "listen_tap",
               "text": "Ataria handia eta polita da.",
               "distractors": [
-                "Atea",
-                "ez",
-                "han"
+                "etxearen",
+                "azpian",
+                "du"
               ],
               "vocabulary": [
                 "atari",
@@ -512,12 +517,16 @@
             {
               "id": "u04-1.l1.s2.e04",
               "type": "order_sentence",
-              "answer": "Eskailera ezkerrean dago.",
-              "translation": "La escalera está a la izquierda.",
+              "answer": "Eskailera ezkerrean dago, eta igogailua ere bai.",
+              "translation": "La escalera está a la izquierda, y el ascensor también.",
               "vocabulary": [
                 "eskailera",
                 "ezker",
-                "egon"
+                "egon",
+                "eta",
+                "igogailu",
+                "ere",
+                "bai"
               ],
               "structures": [
                 "house-parts"
@@ -702,9 +711,9 @@
                 "Atea ez dago hemen, han dago."
               ],
               "distractors": [
-                "Logelak",
-                "solairuan",
-                "handia"
+                "leiho",
+                "naiz",
+                "Garajea"
               ],
               "vocabulary": [
                 "ate",
@@ -816,16 +825,16 @@
             {
               "id": "u04-1.l1.s3.e05",
               "type": "fill_blank",
-              "sentence": "Leiho handiak ditu, oso ___ da.",
+              "sentence": "Leiho asko ditu, oso ___ da.",
               "options": [
                 "argitsua",
                 "iluna"
               ],
               "correct": 0,
-              "translation": "Tiene ventanas grandes, es muy luminoso.",
+              "translation": "Tiene muchas ventanas, es muy luminoso.",
               "vocabulary": [
                 "leiho",
-                "handi",
+                "asko",
                 "ukan",
                 "oso",
                 "argitsu",
@@ -919,22 +928,23 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Atari hau ez da berria."
+                "text": "Mahai berria egongelan dago."
               },
               "answers": [
-                "Este portal no es nuevo."
+                "La mesa nueva está en la sala de estar.",
+                "La mesa nueva está en el salón."
               ],
               "distractors": [
-                "estar",
-                "muy",
-                "luminosa"
+                "y",
+                "escalera",
+                "cocina",
+                "Tu"
               ],
               "vocabulary": [
-                "atari",
-                "hau",
-                "ez",
-                "izan",
-                "berri"
+                "mahai",
+                "berri",
+                "egongela",
+                "egon"
               ],
               "structures": [
                 "describing-home"
@@ -968,7 +978,7 @@
                 "Eskailera zabala eta argitsua da."
               ],
               "distractors": [
-                "Atari",
+                "Bainugela",
                 "Zure",
                 "oso"
               ],
@@ -988,8 +998,8 @@
               "type": "listen_tap",
               "text": "Zure logela eguzkitsua da?",
               "distractors": [
-                "berria",
-                "ez",
+                "dago",
+                "etxea",
                 "Terraza"
               ],
               "vocabulary": [
@@ -1157,7 +1167,7 @@
                 "¿Vosotros tenéis una casa nueva?"
               ],
               "distractors": [
-                "garaje",
+                "La",
                 "piso",
                 "padres"
               ],
@@ -1207,8 +1217,8 @@
                 "Nire gurasoek etxe bat daukate Lekeition."
               ],
               "distractors": [
+                "Zuek",
                 "pisu",
-                "sukalde",
                 "berri",
                 "garaje"
               ],
@@ -1245,16 +1255,17 @@
             {
               "id": "u04-1.l2.s1.e12",
               "type": "listen_tap",
-              "text": "Pisuak sukalde zabala dauka.",
+              "text": "Sukaldeak mahai handi bat dauka.",
               "distractors": [
-                "handi",
-                "gurasoek",
-                "Lekeition"
+                "Guk",
+                "etxe",
+                "garajerik"
               ],
               "vocabulary": [
-                "pisu",
                 "sukalde",
-                "zabal",
+                "mahai",
+                "handi",
+                "bat",
                 "eduki"
               ],
               "structures": [
@@ -1397,8 +1408,8 @@
                 "¿Cuántas habitaciones tenéis?"
               ],
               "distractors": [
-                "Tenemos",
-                "tienen"
+                "casa",
+                "cuatro"
               ],
               "vocabulary": [
                 "zuek",
@@ -1444,9 +1455,9 @@
                 "Bi etxe dituzte."
               ],
               "distractors": [
-                "Zure",
-                "dituzue",
-                "lau"
+                "Zuek",
+                "Egongelak",
+                "leiho"
               ],
               "vocabulary": [
                 "haiek",
@@ -1494,7 +1505,7 @@
               "distractors": [
                 "bainugela",
                 "Guk",
-                "dauzkat"
+                "Zuek"
               ],
               "vocabulary": [
                 "egongela",
@@ -1533,16 +1544,15 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Tengo dos terrazas."
+                "text": "La sala de estar tiene dos mesas."
               },
               "answers": [
-                "Nik bi terraza dauzkat.",
-                "Bi terraza dauzkat."
+                "Egongelak bi mahai dauzka."
               ],
               "vocabulary": [
-                "ni",
+                "egongela",
                 "bi",
-                "terraza",
+                "mahai",
                 "eduki"
               ],
               "structures": [
@@ -1606,15 +1616,15 @@
             {
               "id": "u04-1.l2.s3.e03",
               "type": "fill_blank",
-              "sentence": "Logela bat ___ dut.",
+              "sentence": "Mahai bat ___ dut.",
               "options": [
                 "behar",
                 "bizi"
               ],
               "correct": 0,
-              "translation": "Necesito un dormitorio.",
+              "translation": "Necesito una mesa.",
               "vocabulary": [
-                "logela",
+                "mahai",
                 "bat",
                 "ukan"
               ],
@@ -1628,17 +1638,17 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Igogailu bat behar dugu."
+                "text": "Mahai bat behar dugu."
               },
               "answers": [
-                "Necesitamos un ascensor."
+                "Necesitamos una mesa."
               ],
               "distractors": [
                 "veinte",
-                "cien"
+                "ciento"
               ],
               "vocabulary": [
-                "igogailu",
+                "mahai",
                 "bat",
                 "ukan"
               ],
@@ -1677,8 +1687,8 @@
                 "Mikelek garaje bat behar du."
               ],
               "distractors": [
-                "eta",
-                "Logela",
+                "hogei",
+                "duzu",
                 "Ez"
               ],
               "vocabulary": [
@@ -1721,16 +1731,17 @@
             {
               "id": "u04-1.l2.s3.e08",
               "type": "listen_tap",
-              "text": "Etxe berri bat behar dugu.",
+              "text": "Herri honek mila urte ditu.",
               "distractors": [
                 "eta",
-                "du",
-                "terrazarik"
+                "berrehun",
+                "behar"
               ],
               "vocabulary": [
-                "etxe",
-                "berri",
-                "bat",
+                "herri",
+                "hau",
+                "mila",
+                "urte",
                 "ukan"
               ],
               "structures": [
@@ -1741,8 +1752,8 @@
             {
               "id": "u04-1.l2.s3.e09",
               "type": "read_true_false",
-              "passage": "Eliza hau oso zaharra da. Ehun eta laurogei urte ditu.",
-              "statement": "La iglesia tiene más de cien años.",
+              "passage": "Eliza hau oso zaharra da. Mila eta berrehun urte ditu.",
+              "statement": "La iglesia tiene más de mil años.",
               "answer": true,
               "vocabulary": [
                 "eliza",
@@ -1750,9 +1761,9 @@
                 "oso",
                 "zahar",
                 "izan",
-                "ehun",
+                "mila",
                 "eta",
-                "laurogei",
+                "berrehun",
                 "urte",
                 "ukan"
               ],
@@ -1766,15 +1777,15 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Esta casa tiene cien años."
+                "text": "Esta casa tiene doscientos años."
               },
               "answers": [
-                "Etxe honek ehun urte ditu."
+                "Etxe honek berrehun urte ditu."
               ],
               "vocabulary": [
                 "etxe",
                 "hau",
-                "ehun",
+                "berrehun",
                 "urte",
                 "ukan"
               ],
@@ -2300,7 +2311,7 @@
             {
               "id": "u04-1.l3.s2.e09",
               "type": "read_true_false",
-              "passage": "Ni Garazi naiz. Pisu bat behar dut Iruñean. Bi logela behar ditut.",
+              "passage": "Ni Garazi naiz. Pisu bat behar dut Iruñean. Bi logela eta mahai handi bat behar ditut.",
               "statement": "Garazi necesita un piso en Pamplona.",
               "answer": true,
               "vocabulary": [
@@ -2310,7 +2321,10 @@
                 "bat",
                 "ukan",
                 "bi",
-                "logela"
+                "logela",
+                "eta",
+                "mahai",
+                "handi"
               ],
               "structures": [
                 "behar",
@@ -2412,17 +2426,21 @@
             {
               "id": "u04-1.l3.s3.e03",
               "type": "choose_meaning",
-              "text": "Hondartzaren ondoan dago.",
+              "text": "Herri honek mila eta berrehun etxe ditu.",
               "options": [
-                "Está al lado de la playa.",
-                "Está delante de la playa.",
-                "Está lejos de la playa."
+                "Este pueblo tiene 1200 casas.",
+                "Este pueblo tiene 1020 casas.",
+                "Este pueblo tiene 200 casas."
               ],
               "correct": 0,
               "vocabulary": [
-                "hondartza",
-                "ondoan",
-                "egon"
+                "herri",
+                "hau",
+                "mila",
+                "eta",
+                "berrehun",
+                "etxe",
+                "ukan"
               ],
               "structures": [
                 "rooms",
@@ -2459,7 +2477,7 @@
                 },
                 {
                   "speaker": "Patxi",
-                  "text": "Handia eta zaharra da."
+                  "text": "Handia da, baina zaharra."
                 },
                 {
                   "speaker": "Edurne",
@@ -2478,7 +2496,7 @@
                 "nola",
                 "izan",
                 "handi",
-                "eta",
+                "baina",
                 "zahar",
                 "argitsu",
                 "ez",
@@ -2676,8 +2694,8 @@
           },
           {
             "speaker": "Leire",
-            "eu": "Hor dago, egongelaren ondoan. Txikia da.",
-            "es": "Está ahí, al lado de la sala de estar. Es pequeña."
+            "eu": "Hor dago, egongelaren ondoan. Txikia da, baina polita.",
+            "es": "Está ahí, al lado de la sala de estar. Es pequeña, pero bonita."
           },
           {
             "speaker": "Iker",
@@ -2696,8 +2714,8 @@
           },
           {
             "speaker": "Leire",
-            "eu": "Lagunak! Eta zu hemen zaude. Eskerrik asko, Iker!",
-            "es": "¡Amigos! Y tú estás aquí. ¡Gracias, Iker!"
+            "eu": "Mahai bat eta lagunak! Zu hemen zaude. Eskerrik asko, Iker!",
+            "es": "¡Una mesa y amigos! Tú estás aquí. ¡Gracias, Iker!"
           }
         ],
         "questions": [
@@ -2725,7 +2743,7 @@
             "afterLine": 11,
             "prompt": "¿Qué dice Leire que necesita?",
             "options": [
-              "Amigos",
+              "Una mesa y amigos",
               "Una cocina grande",
               "Un garaje"
             ],

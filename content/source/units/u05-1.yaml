@@ -50,14 +50,16 @@ guidebook:
         - eu: Nik tea nahiago dut.
           es: Yo prefiero té.
     - title:
-        es: Las comidas del día y «ere»
-        eu: Eguneko otorduak eta «ere»
+        es: Comer, beber y las comidas del día
+        eu: Jan, edan eta eguneko otorduak
       body:
-        es: Gosaria es el desayuno, bazkaria la comida y afaria la cena; «gosarian» significa «en el desayuno». Para decir «a mí también», «niri ere bai»; para «a mí tampoco», «niri ere ez».
-        eu: Goizean gosaria, eguerdian bazkaria eta gauean afaria. «Gosarian» esaten dugu. Ados gaudenean, «niri ere bai» edo «niri ere ez».
+        es: "«Jan» es comer y «edan» beber. Para lo que haces normalmente se usa jaten / edaten + dut, duzu, du…: arraina jaten dut (como pescado). Con «nahi»: zer jan nahi duzu? Gosaria es el desayuno, bazkaria la comida y afaria la cena; «gosarian» es «en el desayuno». «A mí también» es «niri ere bai»; «a mí tampoco», «niri ere ez»."
+        eu: "Jan eta edan: jaten dut, edaten dut. Nahi-rekin: zer jan nahi duzu? Goizean gosaria, eguerdian bazkaria eta gauean afaria; «gosarian» esaten dugu. Ados gaudenean, «niri ere bai» edo «niri ere ez»."
       examples:
-        - eu: Gosarian kafea nahiago dut.
-          es: En el desayuno prefiero café.
+        - eu: Gosarian ogia jaten dut.
+          es: En el desayuno como pan.
+        - eu: Zer edan nahi duzu?
+          es: ¿Qué quieres beber?
         - eu: Niri ere bai.
           es: A mí también.
 levels:
@@ -68,12 +70,12 @@ levels:
     lessons:
       - structures: [food-vocab]
         sentences:
-          - Ura nahi dut, mesedez. = Quiero agua, por favor.
+          - Ura edan nahi dut, mesedez. = Quiero beber agua, por favor.
           - Kafea ala tea? = ¿Café o té?
           - Esnea hozkailuan dago. = La leche está en el frigorífico. | La leche está en la nevera.
           - Laranja zukua nahi duzu? = ¿Quieres zumo de naranja? | ¿Quiere zumo de naranja?
           - Ardoa ala garagardoa? = ¿Vino o cerveza?
-          - Tea eta ura, mesedez. = Té y agua, por favor.
+          - Zer edan nahi duzu? = ¿Qué quieres beber? | ¿Qué quiere beber?
           - Garagardo bat, mesedez. = Una cerveza, por favor.
           - Edariak mahai gainean daude. = Las bebidas están encima de la mesa. | Las bebidas están sobre la mesa.
         pairs:
@@ -96,7 +98,7 @@ levels:
               - ez
         chats:
           - messages:
-              - Iker | Kaixo! Zer nahi duzu?
+              - Iker | Kaixo! Zer edan nahi duzu?
             options:
               - Kafe bat, mesedez.
               - Ez horregatik.
@@ -111,10 +113,10 @@ levels:
           - Arraina ala haragia? = ¿Pescado o carne?
           - Oilaskoa eta patatak nahi ditut. = Quiero pollo y patatas.
           - Bi arrautza behar ditut. = Necesito dos huevos.
-          - Gazta eta ogia daukat. = Tengo queso y pan.
+          - Ogi asko jaten dut. = Como mucho pan.
           - Arrautzak hozkailuan daude. = Los huevos están en el frigorífico. | Los huevos están en la nevera.
           - Haragia eta arraina behar ditugu. = Necesitamos carne y pescado.
-          - Oilaskoa sukaldean dago. = El pollo está en la cocina.
+          - Gaur oilaskoa jan nahi dut. = Hoy quiero comer pollo.
         pairs:
           - - ogi = pan
             - arrain = pescado
@@ -147,7 +149,7 @@ levels:
       - structures: [food-vocab, meals]
         sentences:
           - Gosarian kafea nahi dut. = En el desayuno quiero café. | Para desayunar quiero café.
-          - Bazkaria sukaldean dago. = La comida está en la cocina.
+          - Bazkarian arraina jaten dugu. = En la comida comemos pescado. | Para comer comemos pescado.
           - Afarian arraina daukagu. = En la cena tenemos pescado. | Para cenar tenemos pescado.
           - Sagar bat ala laranja bat? = ¿Una manzana o una naranja?
           - Patatak eta tomateak behar ditugu. = Necesitamos patatas y tomates.
@@ -180,8 +182,8 @@ levels:
               - Afaria, mesedez.
               - Zorionak!
         true_false:
-          - passage: Gosarian esnea daukagu. Bazkarian oilaskoa eta patatak daude.
-            statement: En el desayuno hay pollo.
+          - passage: Gosarian esnea edaten dugu. Bazkarian oilaskoa eta patatak jaten ditugu.
+            statement: En el desayuno comen pollo.
             answer: false
   - type: lesson
     title:
@@ -221,7 +223,7 @@ levels:
               - Bai, gazta gustatzen zaizkit.
               - Bai, ni Jon naiz.
         true_false:
-          - passage: Ni Leire naiz. Arraina gustatzen zait. Ez zait haragia gustatzen.
+          - passage: Ni Leire naiz. Arraina gustatzen zait, baina ez zait haragia gustatzen.
             statement: A Leire le gusta la carne.
             answer: false
       - structures: [nori-dative, gustatu-present]
@@ -257,7 +259,7 @@ levels:
               - Bai, kafea gustatzen zait.
               - Bai, nire aita da.
         true_false:
-          - passage: Nire lagunari, Unairi, gazta gustatzen zaio. Ez zaizkio sagarrak gustatzen.
+          - passage: Nire lagunari, Unairi, gazta gustatzen zaio, baina ez zaizkio sagarrak gustatzen.
             statement: A Unai le gustan las manzanas.
             answer: false
       - structures: [nahiago-izan]
@@ -269,7 +271,7 @@ levels:
           - Haragia ala oilaskoa nahiago duzue? = ¿Preferís carne o pollo?
           - Haiek patatak nahiago dituzte. | Patatak nahiago dituzte. = Ellos prefieren patatas. | Prefieren patatas. | Ellas prefieren patatas.
           - Gosarian zukua nahiago dut. = En el desayuno prefiero zumo. | Para desayunar prefiero zumo.
-          - Mikelek garagardoa nahiago du. = Mikel prefiere cerveza. | Mikel prefiere la cerveza.
+          - Mikelek ez du ardorik edaten. Garagardoa nahiago du. = Mikel no bebe vino. Prefiere cerveza. | Mikel no bebe vino. Prefiere la cerveza.
         pairs:
           - - nahiago dut = prefiero
             - nahi dut = quiero
@@ -308,7 +310,7 @@ levels:
           - Zukua nahiago dut, mesedez. = Prefiero zumo, por favor.
           - Niri ere kafea gustatzen zait. = A mí también me gusta el café.
           - Ez zait garagardoa gustatzen. Ura nahiago dut. = No me gusta la cerveza. Prefiero agua.
-          - Tabernan ogia eta gazta daude. = En el bar hay pan y queso.
+          - Gaur tabernan jan nahi dut. = Hoy quiero comer en el bar.
           - Laranjak gustatzen zaizkizu? = ¿Te gustan las naranjas? | ¿Le gustan las naranjas?
         chats:
           - messages:
@@ -331,7 +333,7 @@ levels:
               - A mí tampoco.
               - Yo no.
         true_false:
-          - passage: Tabernan, Oierrek garagardoa nahi du. Haizeak ura nahiago du.
+          - passage: Tabernan, Oierrek garagardoa edan nahi du, baina Haizeak ura nahiago du.
             statement: Haizea prefiere agua.
             answer: true
           - passage: Niri ez zait kafea gustatzen. Tea nahiago dut.
@@ -377,7 +379,7 @@ levels:
           - Gosarian kafea nahiago dut. = En el desayuno prefiero café. | Para desayunar prefiero café.
           - Bazkarian oilaskoa daukagu. = En la comida tenemos pollo. | Para comer tenemos pollo.
           - Afarian arraina nahiago dugu. = En la cena preferimos pescado. | Para cenar preferimos pescado.
-          - Afaria sukaldean dago. = La cena está en la cocina.
+          - Zer jaten duzu afarian? = ¿Qué comes en la cena? | ¿Qué cenas? | ¿Qué come usted en la cena?
           - Jatetxe honetan arraina eta haragia daude. = En este restaurante hay pescado y carne.
           - Zer nahi duzu afarian? = ¿Qué quieres para cenar? | ¿Qué quieres en la cena? | ¿Qué quiere para cenar?
         chats:
@@ -401,8 +403,8 @@ levels:
               - En la cena tenemos pollo.
               - En el desayuno tenemos pollo.
         true_false:
-          - passage: Ni Julen naiz. Gosarian zukua nahiago dut. Afarian arraina nahiago dut.
-            statement: Julen prefiere zumo en el desayuno.
+          - passage: Ni Julen naiz. Gosarian beti zukua edaten dut. Afarian arraina jaten dut.
+            statement: Julen bebe zumo en el desayuno.
             answer: true
           - passage: Jatetxe honetan ez dago haragirik. Arraina eta oilaskoa daude.
             statement: En el restaurante hay carne.
@@ -418,7 +420,7 @@ levels:
         - Iker | Kaixo! Zer daukagu afarian? = ¡Hola! ¿Qué tenemos para cenar?
         - Ane | Arraina eta patatak. Arraina gustatzen zaizu? = Pescado y patatas. ¿Te gusta el pescado?
         - Iker | Bai, gustatzen zait. Ardoa daukazu? = Sí, me gusta. ¿Tienes vino?
-        - Ane | Ez, ez dago ardorik. Garagardoa ala ura? = No, no hay vino. ¿Cerveza o agua?
+        - Ane | Ez, ez dago ardorik. Zer edan nahi duzu, garagardoa ala ura? = No, no hay vino. ¿Qué quieres beber, cerveza o agua?
         - Iker | Ura nahiago dut, eskerrik asko. = Prefiero agua, gracias.
         - Ane | Nire ahizpari ez zaio arraina gustatzen. = A mi hermana no le gusta el pescado.
         - Iker | Eta zer nahiago du? = ¿Y qué prefiere?

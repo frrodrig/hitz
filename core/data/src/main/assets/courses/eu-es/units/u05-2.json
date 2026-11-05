@@ -93,8 +93,8 @@
           "eu": "Aholku osasuntsuak"
         },
         "body": {
-          "es": "Para aconsejar, «komeni da» o «kaltegarria da» + verbo con -t(z)ea: egostea, frijitzea. Un «eta» al final de la frase explica el motivo («…, porque…»). Para la frecuencia: egunero, askotan.",
-          "eu": "Aholkuak emateko, «komeni da» edo «kaltegarria da» + -t(z)ea: egostea, frijitzea. Esaldiaren amaieran «eta» jarrita, arrazoia ematen dugu. Maiztasuna: egunero, askotan."
+          "es": "Para aconsejar, «komeni da» o «kaltegarria da» + verbo con -t(z)ea: egostea, frijitzea, jatea, edatea. Un «eta» al final de la frase explica el motivo («…, porque…»). Para la frecuencia: egunero (todos los días), astero (cada semana), askotan (a menudo).",
+          "eu": "Aholkuak emateko, «komeni da» edo «kaltegarria da» + -t(z)ea: egostea, frijitzea, jatea, edatea. Esaldiaren amaieran «eta» jarrita, arrazoia ematen dugu. Maiztasuna: egunero, astero, askotan."
         },
         "examples": [
           {
@@ -106,8 +106,8 @@
             "es": "Prefiero pescado, porque es sano."
           },
           {
-            "eu": "Askotan arraina daukagu.",
-            "es": "A menudo tenemos pescado."
+            "eu": "Astero arraina jaten dugu.",
+            "es": "Comemos pescado cada semana."
           }
         ]
       }
@@ -899,7 +899,7 @@
               ],
               "distractors": [
                 "último",
-                "corta",
+                "cena",
                 "añade"
               ],
               "vocabulary": [
@@ -915,16 +915,18 @@
             {
               "id": "u05-2.l1.s3.e11",
               "type": "read_true_false",
-              "passage": "Egunero kafea daukat gosarian. Askotan zukua ere bai.",
-              "statement": "Todos los días hay café en su desayuno.",
+              "passage": "Gosarian egunero kafea edaten dut. Askotan zukua ere bai.",
+              "statement": "Todos los días bebe café en el desayuno.",
               "answer": true,
               "vocabulary": [
+                "gosari",
                 "egunero",
                 "kafe",
-                "eduki",
-                "gosari",
+                "edan",
+                "ukan",
                 "askotan",
                 "zuku",
+                "ere",
                 "bai"
               ],
               "structures": [
@@ -937,21 +939,21 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Todos los días hace falta agua."
+                "text": "Bebo agua todos los días."
               },
               "answers": [
-                "Egunero ura behar da."
+                "Egunero ura edaten dut."
               ],
               "distractors": [
-                "daukagu",
-                "osasuntsua",
-                "Azkenik"
+                "olioa",
+                "jaten",
+                "letxuga"
               ],
               "vocabulary": [
                 "egunero",
                 "ur",
-                "behar izan",
-                "izan"
+                "edan",
+                "ukan"
               ],
               "structures": [
                 "discourse-markers",
@@ -961,16 +963,17 @@
             {
               "id": "u05-2.l1.s3.e13",
               "type": "listen_tap",
-              "text": "Askotan arraina daukagu afarian.",
+              "text": "Astero arraina jaten dugu afarian.",
               "distractors": [
-                "behar",
-                "da",
-                "letxuga"
+                "Egunero",
+                "moztu",
+                "edaten"
               ],
               "vocabulary": [
-                "askotan",
+                "astero",
                 "arrain",
-                "eduki",
+                "jan",
+                "ukan",
                 "afari"
               ],
               "structures": [
@@ -1438,9 +1441,9 @@
                 "Berotu esnea bero egon arte."
               ],
               "distractors": [
-                "eta",
+                "frijitu",
                 "moztuta",
-                "frijitu"
+                "Gatza"
               ],
               "vocabulary": [
                 "berotu",
@@ -1476,8 +1479,8 @@
               "type": "listen_tap",
               "text": "Gatza gehituta gero, nahastu.",
               "distractors": [
-                "Berotu",
-                "Bazkaria",
+                "egon",
+                "bero",
                 "lehen"
               ],
               "vocabulary": [
@@ -1496,13 +1499,13 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Antes de la comida, corta el pan."
+                "text": "Antes de comer, corta el pan."
               },
               "answers": [
-                "Bazkaria baino lehen, moztu ogia."
+                "Jan baino lehen, moztu ogia."
               ],
               "vocabulary": [
-                "bazkari",
+                "jan",
                 "bai",
                 "moztu",
                 "ogi"
@@ -1601,9 +1604,9 @@
                 "Se necesitan cuatro patatas."
               ],
               "distractors": [
-                "Te",
-                "menudo",
-                "Conviene"
+                "olla",
+                "Hace",
+                "añadir"
               ],
               "vocabulary": [
                 "lau",
@@ -1648,9 +1651,9 @@
                 "Lapiko handi bat behar da."
               ],
               "distractors": [
-                "egostea",
-                "Komeni",
-                "Zer"
+                "gatza",
+                "askotan",
+                "edatea"
               ],
               "vocabulary": [
                 "lapiko",
@@ -1691,9 +1694,9 @@
               "type": "listen_tap",
               "text": "Komeni da arraina egostea.",
               "distractors": [
-                "zaizu",
+                "bat",
                 "Olioa",
-                "Lau"
+                "dira"
               ],
               "vocabulary": [
                 "komeni izan",
@@ -1779,16 +1782,18 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Arraina komeni zaizu."
+                "text": "Komeni da egunero ura edatea."
               },
               "answers": [
-                "Te conviene el pescado.",
-                "Le conviene el pescado."
+                "Conviene beber agua todos los días.",
+                "Conviene beber agua cada día."
               ],
               "vocabulary": [
-                "arrain",
                 "komeni izan",
-                "gustatu"
+                "izan",
+                "egunero",
+                "ur",
+                "edan"
               ],
               "structures": [
                 "behar-da",
@@ -2086,9 +2091,9 @@
                 "Prefiero el pescado porque es sano."
               ],
               "distractors": [
-                "añadir",
-                "patatas",
-                "las"
+                "cocer",
+                "azúcar",
+                "cada"
               ],
               "vocabulary": [
                 "arrain",
@@ -2114,10 +2119,10 @@
                 "Ez dut azukrerik nahi, kaltegarria da eta."
               ],
               "distractors": [
-                "osasuntsua",
-                "zaizkizu",
-                "gehitzea",
-                "Askotan"
+                "Komeni",
+                "patatak",
+                "gehiago",
+                "asko"
               ],
               "vocabulary": [
                 "ez",
@@ -2161,10 +2166,10 @@
               "type": "listen_tap",
               "text": "Komeni da patatak egostea, ez frijitzea.",
               "distractors": [
-                "Kaltegarria",
+                "gehitzea",
                 "Arraina",
-                "azukre",
-                "gehitzea"
+                "astero",
+                "gehiago"
               ],
               "vocabulary": [
                 "komeni izan",
@@ -2271,14 +2276,14 @@
             {
               "id": "u05-2.l3.s2.e08",
               "type": "order_sentence",
-              "answer": "Letxuga eta sagarrak komeni zaizkizu.",
-              "translation": "Te convienen la lechuga y las manzanas.",
+              "answer": "Kaltegarria da azukre asko jatea.",
+              "translation": "Es perjudicial comer mucho azúcar.",
               "vocabulary": [
-                "letxuga",
-                "eta",
-                "sagar",
-                "komeni izan",
-                "gustatu"
+                "kaltegarri",
+                "izan",
+                "azukre",
+                "asko",
+                "jan"
               ],
               "structures": [
                 "nominalization",
@@ -2311,16 +2316,17 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Askotan arraina daukagu, osasuntsua da eta."
+                "text": "Arraina astero jaten dugu, osasuntsua da eta."
               },
               "answers": [
-                "A menudo tenemos pescado, porque es sano.",
-                "Tenemos pescado a menudo porque es sano."
+                "Comemos pescado cada semana, porque es sano.",
+                "Cada semana comemos pescado porque es sano."
               ],
               "vocabulary": [
-                "askotan",
                 "arrain",
-                "eduki",
+                "astero",
+                "jan",
+                "ukan",
                 "osasuntsu",
                 "izan",
                 "eta"
@@ -2368,7 +2374,7 @@
               "distractors": [
                 "gosarian",
                 "arraina",
-                "da"
+                "berri"
               ],
               "vocabulary": [
                 "egunero",
@@ -2384,16 +2390,17 @@
             {
               "id": "u05-2.l3.s3.e02",
               "type": "listen_tap",
-              "text": "Askotan oilaskoa daukagu bazkarian.",
+              "text": "Askotan oilaskoa jaten dugu bazkarian.",
               "distractors": [
-                "nahi",
-                "dago",
+                "da",
+                "gosarian",
                 "zaizu"
               ],
               "vocabulary": [
                 "askotan",
                 "oilasko",
-                "eduki",
+                "jan",
+                "ukan",
                 "bazkari"
               ],
               "structures": [
@@ -2404,17 +2411,18 @@
             {
               "id": "u05-2.l3.s3.e03",
               "type": "choose_meaning",
-              "text": "Askotan arraina daukagu.",
+              "text": "Askotan arraina jaten dugu.",
               "options": [
-                "A menudo tenemos pescado.",
-                "Todos los días tenemos pescado.",
-                "Nunca tenemos pescado."
+                "A menudo comemos pescado.",
+                "Todos los días comemos pescado.",
+                "Cada semana bebemos agua."
               ],
               "correct": 0,
               "vocabulary": [
                 "askotan",
                 "arrain",
-                "eduki"
+                "jan",
+                "ukan"
               ],
               "structures": [
                 "frequency",
@@ -2426,15 +2434,15 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Todos los días quiero café en el desayuno."
+                "text": "Todos los días bebo café en el desayuno."
               },
               "answers": [
-                "Egunero kafea nahi dut gosarian."
+                "Egunero kafea edaten dut gosarian."
               ],
               "vocabulary": [
                 "egunero",
                 "kafe",
-                "nahi izan",
+                "edan",
                 "ukan",
                 "gosari"
               ],
@@ -2449,11 +2457,11 @@
               "messages": [
                 {
                   "speaker": "Haizea",
-                  "text": "Egunero arraina daukazu?"
+                  "text": "Egunero arraina jaten duzu?"
                 }
               ],
               "options": [
-                "Ez, askotan oilaskoa daukat.",
+                "Ez, astero bakarrik.",
                 "Bai, egunero gatza gustatzen zait.",
                 "Ez horregatik."
               ],
@@ -2461,10 +2469,10 @@
               "vocabulary": [
                 "egunero",
                 "arrain",
-                "eduki",
+                "jan",
+                "ukan",
                 "ez",
-                "askotan",
-                "oilasko"
+                "astero"
               ],
               "structures": [
                 "frequency",
@@ -2474,14 +2482,14 @@
             {
               "id": "u05-2.l3.s3.e06",
               "type": "order_sentence",
-              "answer": "Gure etxean askotan arraina dago.",
-              "translation": "En nuestra casa a menudo hay pescado.",
+              "answer": "Zuek astero arraina jaten duzue?",
+              "translation": "¿Coméis pescado cada semana?",
               "vocabulary": [
-                "gu",
-                "etxe",
-                "askotan",
+                "zuek",
+                "astero",
                 "arrain",
-                "egon"
+                "jan",
+                "ukan"
               ],
               "structures": [
                 "frequency",
@@ -2518,6 +2526,7 @@
                 "patata",
                 "ondo",
                 "olio",
+                "ere",
                 "bai"
               ],
               "structures": [
@@ -2562,6 +2571,7 @@
                 "izan",
                 "askotan",
                 "kafe",
+                "ere",
                 "bai"
               ],
               "structures": [
@@ -2625,8 +2635,8 @@
         "lines": [
           {
             "speaker": "Amona",
-            "eu": "Kaixo, Izaro! Patatak eta arrautzak daude.",
-            "es": "¡Hola, Izaro! Hay patatas y huevos."
+            "eu": "Kaixo, Izaro! Gaur patatak eta arrautzak jaten ditugu.",
+            "es": "¡Hola, Izaro! Hoy comemos patatas y huevos."
           },
           {
             "speaker": "Izaro",
@@ -2680,8 +2690,8 @@
           },
           {
             "speaker": "Amona",
-            "eu": "Egunero frijitzea, bai. Bazkari hau, ez!",
-            "es": "Freír todos los días, sí. ¡Esta comida, no!"
+            "eu": "Egunero frijitzea, bai. Gaur, ez!",
+            "es": "Freír todos los días, sí. ¡Hoy, no!"
           }
         ],
         "questions": [

@@ -25,8 +25,8 @@
           "eu": "Uste dut…: -ela"
         },
         "body": {
-          "es": "Tras «uste dut» (creo que) o «iruditzen zait» (me parece que), el verbo de la segunda frase lleva -ela al final (da → dela, dago → dagoela, daude → daudela).",
-          "eu": "«Uste dut» edo «iruditzen zait» esan ondoren, bigarren esaldiko aditzak -ela hartzen du (da → dela, dago → dagoela, daude → daudela)."
+          "es": "Tras «uste dut» (creo que), «iruditzen zait» (me parece que) o «esan du» (ha dicho que), el verbo de la segunda frase lleva -ela al final (da → dela, dago → dagoela, daude → daudela).",
+          "eu": "«Uste dut», «iruditzen zait» edo «esan du» esan ondoren, bigarren esaldiko aditzak -ela hartzen du (da → dela, dago → dagoela, daude → daudela)."
         },
         "examples": [
           {
@@ -36,6 +36,10 @@
           {
             "eu": "Iruditzen zait auzoan trafiko asko dagoela.",
             "es": "Me parece que en el barrio hay mucho tráfico."
+          },
+          {
+            "eu": "Anek esan du kanpina oso ona dela.",
+            "es": "Ane ha dicho que el camping es muy bueno."
           }
         ]
       },
@@ -124,9 +128,9 @@
                 "Hirian trafiko asko dago."
               ],
               "distractors": [
-                "auzoan",
-                "ditu",
-                "Auzo"
+                "da",
+                "Auzo",
+                "Gure"
               ],
               "vocabulary": [
                 "hiri",
@@ -144,9 +148,9 @@
               "type": "listen_tap",
               "text": "Nire auzoan zarata gutxi dago.",
               "distractors": [
-                "Herriak",
-                "bizitzeko",
-                "lasaia"
+                "hau",
+                "da",
+                "auzoa"
               ],
               "vocabulary": [
                 "ni",
@@ -335,15 +339,18 @@
             {
               "id": "u10-2.l1.s1.e10",
               "type": "listen_type",
-              "text": "Herriak sarbide onak ditu.",
+              "text": "Gure auzoan jende asko dago, baina zarata gutxi.",
               "answers": [
-                "Herriak sarbide onak ditu."
+                "Gure auzoan jende asko dago, baina zarata gutxi."
               ],
               "vocabulary": [
-                "herri",
-                "sarbide",
-                "on",
-                "ukan"
+                "gu",
+                "auzo",
+                "jende",
+                "asko",
+                "egon",
+                "baina",
+                "zarata"
               ],
               "structures": [
                 "nolakoa",
@@ -353,15 +360,16 @@
             {
               "id": "u10-2.l1.s1.e11",
               "type": "read_true_false",
-              "passage": "Nire auzoan trafiko asko dago. Zarata handia da.",
+              "passage": "Nire auzoan beti dago trafiko asko. Zarata handia da.",
               "statement": "En el barrio hay poco tráfico.",
               "answer": false,
               "vocabulary": [
                 "ni",
                 "auzo",
+                "beti",
+                "egon",
                 "trafiko",
                 "asko",
-                "egon",
                 "zarata",
                 "handi",
                 "izan"
@@ -399,10 +407,10 @@
                 "Este barrio no es adecuado para vivir."
               ],
               "distractors": [
+                "de",
                 "calle",
-                "buenos",
-                "gente",
-                "buena"
+                "la",
+                "calidad"
               ],
               "vocabulary": [
                 "auzo",
@@ -427,9 +435,9 @@
               "type": "listen_tap",
               "text": "Oporrak hondartzan pasatzen ditut.",
               "distractors": [
-                "Oporretan",
-                "gara",
-                "Kanpina"
+                "atzerrira",
+                "izan",
+                "eta"
               ],
               "vocabulary": [
                 "opor",
@@ -655,21 +663,24 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Oporretan Parisera bidaiatu dut."
+                "text": "Oporretan Parisera bidaiatu dut, eta Londresera ere bai."
               },
               "answers": [
-                "En vacaciones he viajado a París."
+                "En vacaciones he viajado a París, y también a Londres."
               ],
               "distractors": [
-                "ha",
-                "viaje",
+                "Sebastián",
                 "año",
-                "de"
+                "hay",
+                "extranjero"
               ],
               "vocabulary": [
                 "opor",
                 "bidaiatu",
-                "ukan"
+                "ukan",
+                "eta",
+                "ere",
+                "bai"
               ],
               "structures": [
                 "holidays"
@@ -680,21 +691,22 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "El camping está al lado de la playa."
+                "text": "En vacaciones siempre vamos a la playa."
               },
               "answers": [
-                "Kanpina hondartzaren ondoan dago."
+                "Oporretan beti hondartzara joaten gara."
               ],
               "distractors": [
-                "Parisera",
+                "eta",
                 "Aurten",
-                "gara"
+                "egon"
               ],
               "vocabulary": [
-                "kanpin",
+                "opor",
+                "beti",
                 "hondartza",
-                "ondoan",
-                "egon"
+                "joan",
+                "izan"
               ],
               "structures": [
                 "holidays"
@@ -1131,10 +1143,10 @@
             {
               "id": "u10-2.l2.s1.e06",
               "type": "speak",
-              "text": "Uste dut Bilbo hiri interesgarria dela.",
-              "translation": "Creo que Bilbao es una ciudad interesante.",
+              "text": "Anek esan du Bilbo hiri interesgarria dela.",
+              "translation": "Ane ha dicho que Bilbao es una ciudad interesante.",
               "vocabulary": [
-                "uste izan",
+                "esan",
                 "ukan",
                 "hiri",
                 "interesgarri",
@@ -1177,10 +1189,10 @@
                 "Me parece que aquí hay poca gente."
               ],
               "distractors": [
-                "una",
                 "pueblo",
-                "turistas",
-                "buenos"
+                "más",
+                "mejor",
+                "muchos"
               ],
               "vocabulary": [
                 "iruditu",
@@ -1225,24 +1237,24 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Creo que en el barrio hay buenos servicios."
+                "text": "Jon me ha dicho que el barrio está muy limpio."
               },
               "answers": [
-                "Uste dut auzoan zerbitzu onak daudela."
+                "Jonek esan dit auzoa oso garbia dela."
               ],
               "distractors": [
-                "jende",
-                "auzo",
-                "dela",
-                "baino"
+                "dagoela",
+                "Iruditzen",
+                "daudela",
+                "asko"
               ],
               "vocabulary": [
-                "uste izan",
+                "esan",
                 "ukan",
                 "auzo",
-                "zerbitzu",
-                "on",
-                "egon"
+                "oso",
+                "garbi",
+                "izan"
               ],
               "structures": [
                 "ela-completive"
@@ -1253,10 +1265,10 @@
               "type": "listen_tap",
               "text": "Uste dut kanpina hotela baino hobea dela.",
               "distractors": [
-                "segurua",
+                "oso",
                 "lasaiagoa",
-                "gehiago",
-                "turista"
+                "dit",
+                "hiri"
               ],
               "vocabulary": [
                 "uste izan",
@@ -1634,10 +1646,10 @@
                 "Me ha gustado mucho pasar las vacaciones en Lekeitio."
               ],
               "distractors": [
-                "gusta",
-                "estar",
+                "Londres",
                 "camping",
-                "viajar"
+                "la",
+                "estar"
               ],
               "vocabulary": [
                 "asko",
@@ -1681,7 +1693,7 @@
               ],
               "distractors": [
                 "Gustatu",
-                "egitea",
+                "pasatzea",
                 "egotea"
               ],
               "vocabulary": [
@@ -1726,7 +1738,7 @@
               "type": "listen_tap",
               "text": "Gustatu zaizu Parisen egotea?",
               "distractors": [
-                "Ez",
+                "hirian",
                 "Asko",
                 "kanpinean"
               ],
@@ -1780,12 +1792,14 @@
             {
               "id": "u10-2.l2.s3.e11",
               "type": "order_sentence",
-              "answer": "Gustatzen zait oporrak mendian pasatzea.",
-              "translation": "Me gusta pasar las vacaciones en el monte.",
+              "answer": "Gustatzen zait oporrak mendian edo hondartzan pasatzea.",
+              "translation": "Me gusta pasar las vacaciones en el monte o en la playa.",
               "vocabulary": [
                 "gustatu",
                 "opor",
                 "mendi",
+                "edo",
+                "hondartza",
                 "pasatu"
               ],
               "structures": [
@@ -1857,10 +1871,10 @@
                 "Me parece que hay mucho ruido en el barrio."
               ],
               "distractors": [
-                "Este",
-                "opinión",
-                "peligrosa",
-                "vida"
+                "de",
+                "tu",
+                "vivir",
+                "Creo"
               ],
               "vocabulary": [
                 "iruditu",
@@ -1910,10 +1924,10 @@
                 "Nire ustez, herrian bizi-kalitatea hobea da."
               ],
               "distractors": [
-                "zait",
-                "egokia",
-                "ados",
-                "zure"
+                "zaratatsuagoa",
+                "auzoa",
+                "garrantzitsua",
+                "ados"
               ],
               "vocabulary": [
                 "ni",
@@ -1974,10 +1988,10 @@
               "type": "listen_tap",
               "text": "Uste dut hiria ez dela hain arriskutsua.",
               "distractors": [
-                "hobea",
-                "hau",
-                "dagoela",
-                "zure"
+                "garrantzitsua",
+                "zure",
+                "ere",
+                "zaratatsuagoa"
               ],
               "vocabulary": [
                 "uste izan",
@@ -2029,10 +2043,10 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "No estoy de acuerdo. La ciudad es más ruidosa."
+                "text": "No estoy de acuerdo. La ciudad es más ruidosa, pero también más interesante."
               },
               "answers": [
-                "Ez nago ados. Hiria zaratatsuagoa da."
+                "Ez nago ados. Hiria zaratatsuagoa da, baina interesgarriagoa ere bai."
               ],
               "vocabulary": [
                 "ez",
@@ -2040,7 +2054,11 @@
                 "ados",
                 "hiri",
                 "zaratatsu",
-                "izan"
+                "izan",
+                "baina",
+                "interesgarri",
+                "ere",
+                "bai"
               ],
               "structures": [
                 "ela-completive",
@@ -2050,7 +2068,7 @@
             {
               "id": "u10-2.l3.s1.e09",
               "type": "read_true_false",
-              "passage": "Edurnek uste du Gasteiz hiri segurua eta garbia dela.",
+              "passage": "Edurnek uste du Gasteiz hiri segurua eta garbia dela. Bere lagunak ere bai.",
               "statement": "Edurne cree que Vitoria es una ciudad sucia.",
               "answer": false,
               "vocabulary": [
@@ -2060,7 +2078,11 @@
                 "seguru",
                 "eta",
                 "garbi",
-                "izan"
+                "izan",
+                "hura",
+                "lagun",
+                "ere",
+                "bai"
               ],
               "structures": [
                 "ela-completive",
@@ -2070,15 +2092,16 @@
             {
               "id": "u10-2.l3.s1.e10",
               "type": "order_sentence",
-              "answer": "Auzo hau ez da egokia umeentzat.",
-              "translation": "Este barrio no es adecuado para los niños.",
+              "answer": "Niretzat garrantzitsua da auzo lasai batean bizitzea.",
+              "translation": "Para mí es importante vivir en un barrio tranquilo.",
               "vocabulary": [
-                "auzo",
-                "hau",
-                "ez",
+                "ni",
+                "garrantzitsu",
                 "izan",
-                "egoki",
-                "ume"
+                "auzo",
+                "lasai",
+                "bat",
+                "bizi izan"
               ],
               "structures": [
                 "ela-completive",
@@ -2121,7 +2144,7 @@
                 "¿Dónde pasa usted las vacaciones?"
               ],
               "distractors": [
-                "hay",
+                "hotel",
                 "Prefiero",
                 "En"
               ],
@@ -2148,8 +2171,8 @@
               ],
               "distractors": [
                 "Bartzelonara",
-                "baino",
-                "bidaiatzea"
+                "asko",
+                "da"
               ],
               "vocabulary": [
                 "opor",
@@ -2188,9 +2211,9 @@
               "type": "listen_tap",
               "text": "Atzerrira bidaiatzea nahiago dut.",
               "distractors": [
-                "pasatzen",
-                "hondartzan",
-                "Kanpina"
+                "gustatzen",
+                "oporrak",
+                "hondartzan"
               ],
               "vocabulary": [
                 "atzerri",
@@ -2298,12 +2321,12 @@
             {
               "id": "u10-2.l3.s2.e08",
               "type": "order_sentence",
-              "answer": "Aurten Bartzelonara bidaiatu dugu.",
-              "translation": "Este año hemos viajado a Barcelona.",
+              "answer": "Bihar oporretan Bartzelonara goaz.",
+              "translation": "Mañana nos vamos de vacaciones a Barcelona.",
               "vocabulary": [
-                "aurten",
-                "bidaiatu",
-                "ukan"
+                "bihar",
+                "opor",
+                "joan"
               ],
               "structures": [
                 "gustatu-tzea",
@@ -2709,13 +2732,13 @@
           },
           {
             "speaker": "Garazi",
-            "eu": "Londres ez da Zarautz bezain lasaia!",
-            "es": "¡Londres no es tan tranquilo como Zarautz!"
+            "eu": "Londres ez da Zarautz bezain lasaia, baina oso interesgarria da!",
+            "es": "¡Londres no es tan tranquilo como Zarautz, pero es muy interesante!"
           },
           {
             "speaker": "Ibai",
-            "eu": "Ez, ez da hain lasaia!",
-            "es": "¡No, no es tan tranquilo!"
+            "eu": "Ni ere Londresera joan nahi dut!",
+            "es": "¡Yo también quiero ir a Londres!"
           }
         ],
         "questions": [

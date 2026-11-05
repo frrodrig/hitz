@@ -133,8 +133,8 @@
               ],
               "distractors": [
                 "zait",
-                "beltzak",
-                "urdina"
+                "behar",
+                "beltzak"
               ],
               "vocabulary": [
                 "alkandora",
@@ -151,9 +151,9 @@
               "type": "listen_tap",
               "text": "Galtza beltzak behar ditut.",
               "distractors": [
-                "marroia",
-                "da",
-                "dut"
+                "baina",
+                "Beroki",
+                "Soineko"
               ],
               "vocabulary": [
                 "galtza",
@@ -348,7 +348,7 @@
             {
               "id": "u06-2.l1.s1.e11",
               "type": "read_true_false",
-              "passage": "Armairuan soineko bat eta bi gona daude. Soinekoa berdea da.",
+              "passage": "Armairuan soineko bat eta bi gona daude. Soinekoa berdea da, eta gonak ere bai.",
               "statement": "El vestido es verde.",
               "answer": true,
               "vocabulary": [
@@ -360,7 +360,9 @@
                 "gona",
                 "egon",
                 "berde",
-                "izan"
+                "izan",
+                "ere",
+                "bai"
               ],
               "structures": [
                 "clothes-vocab"
@@ -385,21 +387,24 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Zapata grisak merkeak dira."
+                "text": "Zapata grisak merkeak dira, baina zaharrak."
               },
               "answers": [
-                "Los zapatos grises son baratos."
+                "Los zapatos grises son baratos, pero viejos."
               ],
               "distractors": [
                 "negros",
                 "El",
-                "roja"
+                "roja",
+                "amarilla"
               ],
               "vocabulary": [
                 "zapata",
                 "gris",
                 "merke",
-                "izan"
+                "izan",
+                "baina",
+                "zahar"
               ],
               "structures": [
                 "clothes-vocab"
@@ -415,9 +420,9 @@
               "type": "listen_tap",
               "text": "Kamiseta gorria ala urdina?",
               "distractors": [
-                "dut",
-                "gustatzen",
-                "zuriak"
+                "daukat",
+                "zuria",
+                "eta"
               ],
               "vocabulary": [
                 "kamiseta",
@@ -609,9 +614,10 @@
             {
               "id": "u06-2.l1.s2.e10",
               "type": "speak",
-              "text": "Arropa beltza nahiago dut.",
-              "translation": "Prefiero la ropa negra.",
+              "text": "Beti arropa beltza nahiago dut.",
+              "translation": "Siempre prefiero la ropa negra.",
               "vocabulary": [
+                "beti",
                 "arropa",
                 "beltz",
                 "nahiago izan",
@@ -650,9 +656,9 @@
                 "El vestido amarillo es muy bonito."
               ],
               "distractors": [
-                "negra",
                 "Los",
-                "Prefiero",
+                "Siempre",
+                "roja",
                 "azul"
               ],
               "vocabulary": [
@@ -671,21 +677,25 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Las camisetas blancas son baratas."
+                "text": "Quiero una camiseta roja o azul."
               },
               "answers": [
-                "Kamiseta zuriak merkeak dira."
+                "Kamiseta gorri edo urdin bat nahi dut."
               ],
               "distractors": [
                 "berdea",
                 "horia",
-                "ala"
+                "ala",
+                "zait"
               ],
               "vocabulary": [
                 "kamiseta",
-                "zuri",
-                "merke",
-                "izan"
+                "gorri",
+                "edo",
+                "urdin",
+                "bat",
+                "nahi izan",
+                "ukan"
               ],
               "structures": [
                 "colors"
@@ -701,12 +711,13 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Es el cumpleaños de Ane."
+                "text": "Hoy es el cumpleaños de Ane."
               },
               "answers": [
-                "Aneren urtebetetzea da."
+                "Gaur Aneren urtebetetzea da."
               ],
               "vocabulary": [
+                "gaur",
                 "urtebetetze",
                 "izan"
               ],
@@ -905,9 +916,9 @@
                 "¿Tiene una talla más grande?"
               ],
               "distractors": [
-                "mesa",
-                "Quiero",
-                "Quieres"
+                "probarte",
+                "encima",
+                "un"
               ],
               "vocabulary": [
                 "neurri",
@@ -921,10 +932,11 @@
             {
               "id": "u06-2.l1.s3.e11",
               "type": "read_true_false",
-              "passage": "Iratiren urtebetetzea da. Bere amak opari bat dauka.",
-              "statement": "Es el cumpleaños de la madre de Irati.",
+              "passage": "Bihar Iratiren urtebetetzea da. Bere amak opari bat dauka.",
+              "statement": "Mañana es el cumpleaños de la madre de Irati.",
               "answer": false,
               "vocabulary": [
+                "bihar",
                 "urtebetetze",
                 "izan",
                 "hura",
@@ -948,8 +960,8 @@
                 "Zapatak probatu nahi dituzu?"
               ],
               "distractors": [
-                "Opari",
-                "Hau",
+                "neurria",
+                "handiagoa",
                 "da"
               ],
               "vocabulary": [
@@ -968,8 +980,8 @@
               "text": "Opariak mahai gainean daude.",
               "distractors": [
                 "Aneren",
-                "erosi",
-                "neurria"
+                "Zapatak",
+                "Zorionak"
               ],
               "vocabulary": [
                 "opari",
@@ -1140,9 +1152,9 @@
                 "Esta falda es demasiado corta."
               ],
               "distractors": [
-                "La",
-                "caro",
-                "bonitos"
+                "zapatos",
+                "pequeña",
+                "negros"
               ],
               "vocabulary": [
                 "gona",
@@ -1194,9 +1206,9 @@
                 "Beroki hau garestiegia da."
               ],
               "distractors": [
-                "politak",
                 "Kamiseta",
-                "Galtza"
+                "beltzak",
+                "dira"
               ],
               "vocabulary": [
                 "beroki",
@@ -1234,9 +1246,9 @@
               "type": "listen_tap",
               "text": "Galtza hauek luzeegiak dira.",
               "distractors": [
-                "Zapatak",
-                "Nolakoa",
-                "eta"
+                "Gona",
+                "beltzak",
+                "da"
               ],
               "vocabulary": [
                 "galtza",
@@ -1254,15 +1266,19 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "La camiseta es demasiado pequeña."
+                "text": "Esta camiseta es demasiado pequeña. Otra, por favor."
               },
               "answers": [
-                "Kamiseta txikiegia da."
+                "Kamiseta hau txikiegia da. Beste bat, mesedez."
               ],
               "vocabulary": [
                 "kamiseta",
+                "hau",
                 "txiki",
-                "izan"
+                "izan",
+                "beste",
+                "bat",
+                "mesedez"
               ],
               "structures": [
                 "nolakoa",
@@ -1723,7 +1739,7 @@
             {
               "id": "u06-2.l2.s3.e09",
               "type": "read_true_false",
-              "passage": "Ikerri ez zaio arropa erostea gustatzen. Opariak erostea nahiago du.",
+              "passage": "Ikerri ez zaio arropa erostea gustatzen, baina opariak erostea bai.",
               "statement": "A Iker le gusta comprar ropa.",
               "answer": false,
               "vocabulary": [
@@ -1731,9 +1747,9 @@
                 "gustatu",
                 "arropa",
                 "erosi",
+                "baina",
                 "opari",
-                "nahiago izan",
-                "ukan"
+                "bai"
               ],
               "structures": [
                 "gustatu-nominalization",
@@ -1820,9 +1836,10 @@
             {
               "id": "u06-2.l3.s1.e01",
               "type": "speak",
-              "text": "Lagun baten urtebetetzea da.",
-              "translation": "Es el cumpleaños de un amigo.",
+              "text": "Bihar lagun baten urtebetetzea da.",
+              "translation": "Mañana es el cumpleaños de un amigo.",
               "vocabulary": [
+                "bihar",
                 "lagun",
                 "bat",
                 "urtebetetze",
@@ -1845,10 +1862,10 @@
                 "¿Qué le gusta a tu amiga?"
               ],
               "distractors": [
+                "el",
                 "Talla",
                 "y",
-                "un",
-                "una"
+                "mi"
               ],
               "vocabulary": [
                 "zer",
@@ -1891,10 +1908,10 @@
                 "Kamiseta bat nahi dut nire lagunarentzat."
               ],
               "distractors": [
-                "Zein",
+                "lagun",
+                "txikia",
                 "urtebetetzea",
-                "zaio",
-                "Lagun"
+                "gustatzen"
               ],
               "vocabulary": [
                 "kamiseta",
@@ -1956,9 +1973,9 @@
               "type": "listen_tap",
               "text": "Nolakoa da? Berdea eta grisa.",
               "distractors": [
-                "zaio",
-                "zure",
-                "urtebetetzea"
+                "Zein",
+                "dut",
+                "nahi"
               ],
               "vocabulary": [
                 "nola",
@@ -2095,7 +2112,7 @@
               "distractors": [
                 "y",
                 "es",
-                "zapatos"
+                "un"
               ],
               "vocabulary": [
                 "galtza",
@@ -2121,8 +2138,8 @@
               ],
               "distractors": [
                 "hau",
-                "Galtza",
-                "garestiegia"
+                "eta",
+                "Galtza"
               ],
               "vocabulary": [
                 "txiki",
@@ -2162,9 +2179,9 @@
               "type": "listen_tap",
               "text": "Alkandora hau nola daukazu?",
               "distractors": [
-                "hauek",
-                "dira",
-                "ditut"
+                "handiegiak",
+                "dago",
+                "dauzkagu"
               ],
               "vocabulary": [
                 "alkandora",
@@ -2310,20 +2327,20 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Jertse hau ondo dago, eta ez da garestiegia."
+                "text": "Jertse hau ondo dago, baina pixka bat garestia da."
               },
               "answers": [
-                "Este jersey está bien, y no es demasiado caro."
+                "Este jersey está bien, pero es un poco caro."
               ],
               "vocabulary": [
+                "pixka bat",
                 "jertse",
                 "hau",
                 "ondo",
                 "egon",
-                "eta",
-                "ez",
-                "izan",
-                "garesti"
+                "baina",
+                "garesti",
+                "izan"
               ],
               "structures": [
                 "egi-excess",
@@ -2366,10 +2383,10 @@
                 "Zergatik erosi nahi duzu jertse hau?"
               ],
               "distractors": [
-                "Soineko",
-                "garestiegia",
-                "Ez",
-                "zaio"
+                "nahiago",
+                "zaiolako",
+                "probatzea",
+                "Soineko"
               ],
               "vocabulary": [
                 "zergatik",
@@ -2389,9 +2406,9 @@
               "type": "listen_tap",
               "text": "Nire anaiari urdina gustatzen zaiolako.",
               "distractors": [
-                "probatzea",
-                "erosi",
-                "zait"
+                "hitz",
+                "zaio",
+                "probatzea"
               ],
               "vocabulary": [
                 "ni",
@@ -2577,13 +2594,13 @@
             {
               "id": "u06-2.l3.s3.e10",
               "type": "listen_type",
-              "text": "Opariak erostea gustatzen zait.",
+              "text": "Euskaraz hitz egitea gustatzen zait.",
               "answers": [
-                "Opariak erostea gustatzen zait."
+                "Euskaraz hitz egitea gustatzen zait."
               ],
               "vocabulary": [
-                "opari",
-                "erosi",
+                "euskara",
+                "hitz egin",
                 "gustatu"
               ],
               "structures": [
@@ -2643,8 +2660,8 @@
           },
           {
             "speaker": "Izaro",
-            "eu": "Arropa gustatzen zaio. Soineko bat?",
-            "es": "Le gusta la ropa. ¿Un vestido?"
+            "eu": "Arropa asko gustatzen zaio. Soineko bat edo jertse bat?",
+            "es": "Le gusta mucho la ropa. ¿Un vestido o un jersey?"
           },
           {
             "speaker": "Saltzailea",
@@ -2658,13 +2675,13 @@
           },
           {
             "speaker": "Saltzailea",
-            "eu": "Hau oso polita da. Ehun euro.",
-            "es": "Este es muy bonito. Cien euros."
+            "eu": "Hau oso polita da. Berrehun euro.",
+            "es": "Este es muy bonito. Doscientos euros."
           },
           {
             "speaker": "Izaro",
-            "eu": "Ehun euro? Garestiegia da!",
-            "es": "¿Cien euros? ¡Es demasiado caro!"
+            "eu": "Berrehun euro? Garestiegia da!",
+            "es": "¿Doscientos euros? ¡Es demasiado caro!"
           },
           {
             "speaker": "Saltzailea",

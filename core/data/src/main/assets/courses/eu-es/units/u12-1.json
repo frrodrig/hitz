@@ -73,13 +73,17 @@
           "eu": "Nola eta noraino: trenez, Bilboraino"
         },
         "body": {
-          "es": "El medio de transporte lleva «-z» sin artículo (trenez, metroz, autobusez). «Hasta dónde» se dice con «-raino» (Bilboraino, hondartzaraino).",
-          "eu": "Garraiobideak «-z» hartzen du, artikulurik gabe (trenez, metroz, autobusez). Muga adierazteko «-raino» erabiltzen da (Bilboraino)."
+          "es": "El medio de transporte lleva «-z» sin artículo (trenez, autoz, bizikletaz); «a pie» es «oinez». Para preguntar «hasta dónde» se dice «noraino?», y la respuesta lleva «-raino» (Bilboraino, hondartzaraino).",
+          "eu": "Garraiobideak «-z» hartzen du, artikulurik gabe (trenez, autoz, bizikletaz); bestela, «oinez». Muga galdetzeko «noraino?» erabiltzen da, eta erantzunean «-raino» (Bilboraino)."
         },
         "examples": [
           {
-            "eu": "Trenez joaten naiz.",
-            "es": "Voy en tren."
+            "eu": "Autoz edo oinez joaten zara?",
+            "es": "¿Vas en coche o a pie?"
+          },
+          {
+            "eu": "Noraino doa autobusa?",
+            "es": "¿Hasta dónde va el autobús?"
           },
           {
             "eu": "Autobusa Bilboraino doa.",
@@ -132,9 +136,9 @@
                 "Zer egiten duzu aisialdian?"
               ],
               "distractors": [
-                "zait",
-                "gustatzen",
-                "Mikeli"
+                "asko",
+                "Umeak",
+                "Asteburuetan"
               ],
               "vocabulary": [
                 "zer",
@@ -150,15 +154,17 @@
             {
               "id": "u12-1.l1.s1.e02",
               "type": "listen_tap",
-              "text": "Kirola egiten dut.",
+              "text": "Asteburuetan bizikletan ibiltzen naiz.",
               "distractors": [
                 "Anek",
-                "gustatzen"
+                "zaizu",
+                "ari"
               ],
               "vocabulary": [
-                "kirol",
-                "egin",
-                "ukan"
+                "asteburu",
+                "bizikleta",
+                "ibili",
+                "izan"
               ],
               "structures": [
                 "aisialdia",
@@ -395,9 +401,9 @@
                 "¿Qué deporte le gusta?"
               ],
               "distractors": [
-                "fútbol",
-                "libre",
-                "jugando"
+                "tiempo",
+                "la",
+                "libre"
               ],
               "vocabulary": [
                 "zein",
@@ -420,7 +426,7 @@
               "text": "Musika entzuten dut.",
               "distractors": [
                 "du",
-                "bat"
+                "zait"
               ],
               "vocabulary": [
                 "musika",
@@ -499,11 +505,14 @@
             {
               "id": "u12-1.l1.s2.e04",
               "type": "order_sentence",
-              "answer": "Antzerkia gustatzen zait.",
-              "translation": "Me gusta el teatro.",
+              "answer": "Antzerkia gustatzen zait, baina zinema gehiago.",
+              "translation": "Me gusta el teatro, pero el cine más.",
               "vocabulary": [
                 "antzerki",
-                "gustatu"
+                "gustatu",
+                "baina",
+                "zinema",
+                "gehiago"
               ],
               "structures": [
                 "aisialdia",
@@ -642,13 +651,15 @@
             {
               "id": "u12-1.l1.s2.e11",
               "type": "read_true_false",
-              "passage": "Jonek ez du abesten. Dantza egiten du.",
+              "passage": "Jonek ez du abesten, baina beti dantza egiten du.",
               "statement": "Jon canta.",
               "answer": false,
               "vocabulary": [
                 "ez",
                 "ukan",
                 "abestu",
+                "baina",
+                "beti",
                 "dantza",
                 "egin"
               ],
@@ -668,9 +679,9 @@
                 "Jon canta y yo bailo."
               ],
               "distractors": [
-                "Escucho",
-                "Hoy",
-                "Los"
+                "plaza",
+                "Estoy",
+                "concierto"
               ],
               "vocabulary": [
                 "abestu",
@@ -696,9 +707,9 @@
                 "Argazkiak egiten ditut mendian."
               ],
               "distractors": [
-                "Liburu",
-                "ikusten",
-                "naiz"
+                "zinema",
+                "gehiago",
+                "ondo"
               ],
               "vocabulary": [
                 "argazki",
@@ -1558,6 +1569,72 @@
             },
             {
               "id": "u12-1.l2.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "autoz",
+                  "es": "en coche"
+                },
+                {
+                  "eu": "trenez",
+                  "es": "en tren"
+                },
+                {
+                  "eu": "bizikletaz",
+                  "es": "en bicicleta"
+                },
+                {
+                  "eu": "oinez",
+                  "es": "a pie"
+                },
+                {
+                  "eu": "noraino",
+                  "es": "hasta dónde"
+                }
+              ],
+              "vocabulary": [
+                "auto",
+                "tren",
+                "bizikleta",
+                "oinez",
+                "noraino"
+              ],
+              "structures": [
+                "nola-instrumental",
+                "noraino",
+                "mugagabea"
+              ]
+            },
+            {
+              "id": "u12-1.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Autoz joango gara Donostiara."
+              },
+              "answers": [
+                "Iremos a Donostia en coche.",
+                "Iremos en coche a San Sebastián.",
+                "Vamos a ir a Donostia en coche."
+              ],
+              "distractors": [
+                "bicicleta",
+                "Zarautz",
+                "has"
+              ],
+              "vocabulary": [
+                "auto",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "nola-instrumental",
+                "noraino",
+                "mugagabea"
+              ]
+            },
+            {
+              "id": "u12-1.l2.s3.e05",
               "type": "fill_blank",
               "sentence": "___ joaten naiz.",
               "options": [
@@ -1579,25 +1656,22 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e04",
+              "id": "u12-1.l2.s3.e06",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "eu",
-                "text": "Autobusez joango gara Donostiara."
+                "lang": "es",
+                "text": "He venido en bicicleta."
               },
               "answers": [
-                "Iremos a Donostia en autobús.",
-                "Iremos en autobús a San Sebastián.",
-                "Vamos a ir a Donostia en autobús."
+                "Bizikletaz etorri naiz."
               ],
               "distractors": [
-                "concierto",
-                "tren",
-                "has"
+                "izena",
+                "Donostiara"
               ],
               "vocabulary": [
-                "autobus",
-                "joan",
+                "bizikleta",
+                "etorri",
                 "izan"
               ],
               "structures": [
@@ -1607,7 +1681,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e05",
+              "id": "u12-1.l2.s3.e07",
               "type": "choose_meaning",
               "text": "Hondartzaraino joan gara.",
               "options": [
@@ -1628,67 +1702,16 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e06",
-              "type": "translate_wordbank",
-              "prompt": {
-                "lang": "es",
-                "text": "He venido en metro."
-              },
-              "answers": [
-                "Metroz etorri naiz."
-              ],
-              "distractors": [
-                "ikastarotan",
-                "Donostiara"
-              ],
-              "vocabulary": [
-                "metro",
-                "etorri",
-                "izan"
-              ],
-              "structures": [
-                "nola-instrumental",
-                "noraino",
-                "mugagabea"
-              ]
-            },
-            {
-              "id": "u12-1.l2.s3.e07",
-              "type": "complete_chat",
-              "messages": [
-                {
-                  "speaker": "Leire",
-                  "text": "Nola joango zara Bilbora?"
-                }
-              ],
-              "options": [
-                "Trenez.",
-                "Bilbon.",
-                "Larunbatean."
-              ],
-              "correct": 0,
-              "vocabulary": [
-                "nola",
-                "joan",
-                "izan",
-                "tren"
-              ],
-              "structures": [
-                "nola-instrumental",
-                "noraino",
-                "mugagabea"
-              ]
-            },
-            {
               "id": "u12-1.l2.s3.e08",
               "type": "listen_tap",
-              "text": "Donostiatik Zarautzeraino joan gara.",
+              "text": "Noraino joan zarete? Zarautzeraino.",
               "distractors": [
-                "Nola",
-                "naiz",
-                "etorri"
+                "eman",
+                "joango",
+                "Zenbat"
               ],
               "vocabulary": [
+                "noraino",
                 "joan",
                 "izan"
               ],
@@ -1700,15 +1723,24 @@
             },
             {
               "id": "u12-1.l2.s3.e09",
-              "type": "read_true_false",
-              "passage": "Peio metroz joaten da lanera. Metroa Getxoraino doa.",
-              "statement": "Peio va al trabajo en autobús.",
-              "answer": false,
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Nola joango zara Bilbora?"
+                }
+              ],
+              "options": [
+                "Autoz.",
+                "Bilbon.",
+                "Larunbatean."
+              ],
+              "correct": 0,
               "vocabulary": [
-                "metro",
+                "nola",
                 "joan",
                 "izan",
-                "lan"
+                "auto"
               ],
               "structures": [
                 "nola-instrumental",
@@ -1739,6 +1771,24 @@
             },
             {
               "id": "u12-1.l2.s3.e11",
+              "type": "read_true_false",
+              "passage": "Peio metroz joaten da lanera. Metroa Getxoraino doa.",
+              "statement": "Peio va al trabajo en autobús.",
+              "answer": false,
+              "vocabulary": [
+                "metro",
+                "joan",
+                "izan",
+                "lan"
+              ],
+              "structures": [
+                "nola-instrumental",
+                "noraino",
+                "mugagabea"
+              ]
+            },
+            {
+              "id": "u12-1.l2.s3.e12",
               "type": "order_sentence",
               "answer": "Zenbat ikastarotan eman duzu izena?",
               "translation": "¿En cuántos cursos te has apuntado?",
@@ -1756,7 +1806,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e12",
+              "id": "u12-1.l2.s3.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1822,9 +1872,9 @@
                 "Sí, los martes y los jueves."
               ],
               "distractors": [
-                "hora",
-                "ocho",
-                "un"
+                "la",
+                "pie",
+                "Voy"
               ],
               "vocabulary": [
                 "bai",
@@ -1868,8 +1918,8 @@
                 "Zer ordutatik zer ordutara?"
               ],
               "distractors": [
-                "bat",
-                "Arratsaldeko"
+                "Kiroldegian",
+                "bat"
               ],
               "vocabulary": [
                 "zer",
@@ -1915,8 +1965,8 @@
               "type": "listen_tap",
               "text": "Arratsaldeko seietatik zortzietara.",
               "distractors": [
-                "duzu",
-                "nahi"
+                "eman",
+                "astearteetan"
               ],
               "vocabulary": [
                 "arratsalde",
@@ -1975,13 +2025,15 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "¿Dónde es?"
+                "text": "Voy al polideportivo a pie."
               },
               "answers": [
-                "Non da?"
+                "Kiroldegira oinez joaten naiz."
               ],
               "vocabulary": [
-                "non",
+                "kiroldegi",
+                "oinez",
+                "joan",
                 "izan"
               ],
               "structures": [
@@ -2062,10 +2114,10 @@
                 "¿Qué hace usted los fines de semana?"
               ],
               "distractors": [
+                "Mañana",
                 "Vamos",
-                "domingos",
-                "libros",
-                "gusta"
+                "el",
+                "y"
               ],
               "vocabulary": [
                 "zer",
@@ -2089,9 +2141,9 @@
                 "Larunbatetan mendira joaten naiz."
               ],
               "distractors": [
-                "joango",
-                "ditut",
-                "nago"
+                "nago",
+                "kontzertura",
+                "dantza"
               ],
               "vocabulary": [
                 "larunbat",
@@ -2131,8 +2183,8 @@
               "type": "listen_tap",
               "text": "Igandeetan liburuak irakurtzen ditut.",
               "distractors": [
-                "joango",
-                "gara",
+                "joaten",
+                "Musika",
                 "egiten"
               ],
               "vocabulary": [
@@ -2179,15 +2231,19 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Me gusta mucho la música."
+                "text": "Me gusta mucho la música, y también el baile."
               },
               "answers": [
-                "Musika asko gustatzen zait."
+                "Musika asko gustatzen zait, eta dantza ere bai."
               ],
               "vocabulary": [
                 "musika",
                 "asko",
-                "gustatu"
+                "gustatu",
+                "eta",
+                "dantza",
+                "ere",
+                "bai"
               ],
               "structures": [
                 "aisialdia",
@@ -2332,9 +2388,9 @@
                 "Kontzertua Bilbon da, larunbatean."
               ],
               "distractors": [
-                "gara",
-                "hamarretatik",
-                "ordu"
+                "metroa",
+                "metroz",
+                "geltokitik"
               ],
               "vocabulary": [
                 "kontzertu",
@@ -2351,9 +2407,9 @@
               "type": "listen_tap",
               "text": "Nola joango gara? Trenez?",
               "distractors": [
-                "metroz",
-                "geltokitik",
-                "ordu"
+                "Merkeagoa",
+                "Kontzertua",
+                "Noraino"
               ],
               "vocabulary": [
                 "nola",
@@ -2416,7 +2472,7 @@
                 }
               ],
               "options": [
-                "Autobusez.",
+                "Bizikletaz.",
                 "Kiroldegian.",
                 "Asteburuan."
               ],
@@ -2425,7 +2481,7 @@
                 "nola",
                 "joan",
                 "kiroldegi",
-                "autobus"
+                "bizikleta"
               ],
               "structures": [
                 "nola-instrumental",
@@ -2464,7 +2520,7 @@
                 }
               ],
               "options": [
-                "Gero metroz.",
+                "Gero oinez.",
                 "Plazan.",
                 "Larunbatean."
               ],
@@ -2478,7 +2534,7 @@
                 "bakarrik",
                 "eta",
                 "gero",
-                "metro"
+                "oinez"
               ],
               "structures": [
                 "nola-instrumental",
@@ -2527,16 +2583,14 @@
             {
               "id": "u12-1.l3.s3.e10",
               "type": "listen_type",
-              "text": "Kontzertua hamarretatik ordu batera da.",
+              "text": "Noraino doa metroa?",
               "answers": [
-                "Kontzertua hamarretatik ordu batera da."
+                "Noraino doa metroa?"
               ],
               "vocabulary": [
-                "kontzertu",
-                "hamar",
-                "ordu",
-                "bat",
-                "izan"
+                "noraino",
+                "joan",
+                "metro"
               ],
               "structures": [
                 "nola-instrumental",
@@ -2626,8 +2680,8 @@
           },
           {
             "speaker": "Eneko",
-            "eu": "Primeran! Bihar izena emango dut.",
-            "es": "¡Genial! Mañana me apuntaré."
+            "eu": "Primeran! Bihar bizikletaz joango naiz, eta izena emango dut.",
+            "es": "¡Genial! Mañana iré en bici y me apuntaré."
           }
         ],
         "questions": [

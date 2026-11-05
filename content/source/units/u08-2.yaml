@@ -75,8 +75,8 @@ levels:
         sentences:
           - Egunero zazpietan jaikitzen naiz. = Todos los días me levanto a las siete. | Me levanto todos los días a las siete. | Me levanto a las siete todos los días.
           - Gero dutxatzen naiz. = Después me ducho. | Luego me ducho.
-          - Etxean gosaltzen dut. = Desayuno en casa.
-          - Goizean kafea hartzen dut. = Por la mañana tomo café. | Por las mañanas tomo café.
+          - Beti etxean gosaltzen dut. = Siempre desayuno en casa.
+          - Goizean kafea edo tea hartzen dut. = Por la mañana tomo café o té. | Por las mañanas tomo café o té.
           - Ordu batean bazkaltzen dut. = Como a la una.
           - Gauean bederatzietan afaltzen dugu. = Por la noche cenamos a las nueve. | Cenamos a las nueve de la noche.
           - Hamaiketan oheratzen naiz. = Me acuesto a las once.
@@ -107,7 +107,7 @@ levels:
               - Hamaiketan oheratzen dut.
               - Hamaika urte ditut.
         true_false:
-          - passage: Egunero sei eta erdietan jaikitzen naiz. Ez dut gosaltzen.
+          - passage: Egunero sei eta erdietan jaikitzen naiz, baina ez dut gosaltzen.
             statement: Desayuna todos los días.
             answer: false
       - structures: [frequency, habitual]
@@ -115,17 +115,17 @@ levels:
           - Astean behin igeri egiten dut. = Nado una vez a la semana. | Una vez a la semana nado.
           - Noizean behin mendira joaten naiz. = De vez en cuando voy al monte. | Voy al monte de vez en cuando.
           - Ez dut inoiz ardoa edaten. | Inoiz ez dut ardoa edaten. = Nunca bebo vino. | No bebo vino nunca.
-          - Haragia gutxitan jaten dut. = Como carne pocas veces. | Pocas veces como carne.
+          - Haragia gutxitan jaten dut, baina arraina askotan. = Como carne pocas veces, pero pescado a menudo. | Pocas veces como carne, pero pescado a menudo.
           - Mikelek asko lan egiten du. = Mikel trabaja mucho.
-          - Amonak bakarrik bazkaltzen du. = La abuela come sola. | Mi abuela come sola.
+          - Amonak bakarrik bazkaltzen du, baina gaur gurekin jango du. = La abuela come sola, pero hoy comerá con nosotros. | Mi abuela come sola, pero hoy comerá con nosotros.
           - Askotan igeri egiten duzu? = ¿Nadas a menudo? | ¿Nada usted a menudo?
-          - Asko lo egiten dut. = Duermo mucho.
+          - Astero amarekin bazkaltzen dut. = Cada semana como con mi madre. | Como con mi madre todas las semanas. | Todas las semanas como con mi madre.
         pairs:
           - - ez… inoiz = nunca
             - noizean behin = de vez en cuando
             - gutxitan = pocas veces
             - askotan = a menudo
-            - egunero = todos los días
+            - astero = cada semana
             - astean behin = una vez a la semana
         meanings:
           - text: Noizean behin kafea hartzen dut.
@@ -305,7 +305,7 @@ levels:
           - Gosaltzen duzu? = ¿Desayunas? | ¿Desayuna usted?
           - Bai, kafea eta ogia gosaltzen ditut. = Sí, desayuno café y pan. | Sí, desayuno café con pan.
           - Noizean behin igeri egiten dut. = De vez en cuando nado. | Nado de vez en cuando.
-          - Gauean asko afaltzen duzu? = ¿Cenas mucho por la noche? | ¿Cena usted mucho por la noche?
+          - Gauean asko jaten duzu? = ¿Comes mucho por la noche? | ¿Come usted mucho por la noche?
         chats:
           - messages:
               - Medikua | Asko lo egiten duzu?
@@ -339,7 +339,7 @@ levels:
           - Zer egin behar dut? = ¿Qué tengo que hacer? | ¿Qué debo hacer?
           - Pilula hauek hartu, goizean eta gauean. = Toma estas pastillas, por la mañana y por la noche. | Tome estas pastillas, por la mañana y por la noche.
           - Hemen duzu errezeta. = Aquí tiene la receta. | Aquí tienes la receta.
-          - Sukarra baduzu, deitu. = Si tienes fiebre, llama. | Si tiene fiebre, llame.
+          - Sukarra baduzu, osasun-etxera deitu. = Si tienes fiebre, llama al centro de salud. | Si tiene fiebre, llame al centro de salud.
           - Datorren astean hitzordua eskatu, mesedez. = La semana que viene pide cita, por favor. | La semana que viene pida cita, por favor.
           - Eskerrik asko. Agur! = Gracias. ¡Adiós! | Muchas gracias. ¡Adiós!
         chats:
@@ -372,11 +372,11 @@ levels:
       - structures: [habitual, ta-da-participle]
         sentences:
           - Nire amonak laurogeita hamar urte ditu. = Mi abuela tiene noventa años.
-          - Egunero goiz jaikitzen da. = Se levanta pronto todos los días. | Todos los días se levanta temprano. | Se levanta temprano todos los días.
+          - Beti goiz jaikitzen da. = Siempre se levanta pronto. | Siempre se levanta temprano.
           - Astean behin hondartzara joaten da eta igeri egiten du. = Una vez a la semana va a la playa y nada. | Va a la playa una vez a la semana y nada.
           - Gutxitan hartzen ditu pilulak. = Pocas veces toma pastillas. | Toma pastillas pocas veces.
           - Sendabelarrak nahiago ditu. = Prefiere las plantas medicinales.
-          - Arratsaldean eserita irakurtzen du. = Por la tarde lee sentada.
+          - Arratsaldean eserita liburuak irakurtzen ditu. = Por la tarde lee libros sentada.
         chats:
           - messages:
               - June | Zure amona oso ondo dago!
@@ -387,13 +387,14 @@ levels:
               - Ez, lagunak.
               - Bai, bihar.
           - messages:
-              - Eneko | Eta zuk, igeri egiten duzu?
+              - Eneko | Zuk ere igeri egiten duzu?
+
             options:
               - Bai, noizean behin.
               - Bai, atzo egingo dut.
               - Bai, noizean behin nago.
         true_false:
-          - passage: Amona hamarretan oheratzen da. Ez du inoiz kafea hartzen.
+          - passage: Amona hamarretan oheratzen da. Ez du inoiz kafea edaten, baina tea bai.
             statement: La abuela toma café por la noche.
             answer: false
           - passage: Nire aitonak hanka hautsita dauka. Etxean dago, eserita.
@@ -420,7 +421,7 @@ levels:
         - Medikua | Zer egiten duzu egunero? = ¿Qué hace usted todos los días?
         - Kepa | Zortzi orduz lan egiten dut, eserita. = Trabajo ocho horas, sentado.
         - Medikua | Igeri egiten duzu? = ¿Nada usted?
-        - Kepa | Ez, inoiz ez. = No, nunca.
+        - Kepa | Ez, inoiz ez. Baina egunero ibiltzen naiz. = No, nunca. Pero camino todos los días.
         - Medikua | Mina baduzu, pilula bat hartu. Eta astean behin igeri egin, mesedez. = Si le duele, tómese una pastilla. Y nade una vez a la semana, por favor.
         - Kepa | Ondo. Errezeta behar dut? = Bien. ¿Necesito receta?
         - Medikua | Bai, hemen duzu. Datorren hilabetean hitzordua eskatu. = Sí, aquí la tiene. Pida cita para el mes que viene.

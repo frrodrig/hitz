@@ -140,9 +140,9 @@
                 "Logelan ohe bat dago."
               ],
               "distractors": [
-                "Lau",
-                "daude",
-                "Armairua"
+                "Sofa",
+                "Armairua",
+                "da"
               ],
               "vocabulary": [
                 "logela",
@@ -159,7 +159,7 @@
               "type": "listen_tap",
               "text": "Mahaia sukaldean dago.",
               "distractors": [
-                "hau",
+                "garestia",
                 "Aulkiak"
               ],
               "vocabulary": [
@@ -367,14 +367,16 @@
             {
               "id": "u04-2.l1.s1.e12",
               "type": "speak",
-              "text": "Sofa hau oso polita da.",
-              "translation": "Este sofá es muy bonito.",
+              "text": "Sofa hau oso polita da, baina garestia.",
+              "translation": "Este sofá es muy bonito, pero caro.",
               "vocabulary": [
                 "sofa",
                 "hau",
                 "oso",
                 "polit",
-                "izan"
+                "izan",
+                "baina",
+                "garesti"
               ],
               "structures": [
                 "furniture"
@@ -392,10 +394,10 @@
                 "Mi habitación tiene un armario amplio."
               ],
               "distractors": [
-                "cocina",
+                "sala",
                 "bonito",
-                "lado",
-                "El"
+                "caro",
+                "está"
               ],
               "vocabulary": [
                 "ni",
@@ -622,12 +624,14 @@
             {
               "id": "u04-2.l1.s2.e10",
               "type": "speak",
-              "text": "Garbigailu berri bat behar dugu.",
-              "translation": "Necesitamos una lavadora nueva.",
+              "text": "Gaur garbigailu berri bat erosi behar dugu.",
+              "translation": "Hoy tenemos que comprar una lavadora nueva.",
               "vocabulary": [
+                "gaur",
                 "garbigailu",
                 "berri",
                 "bat",
+                "erosi",
                 "behar izan",
                 "ukan"
               ],
@@ -639,7 +643,7 @@
             {
               "id": "u04-2.l1.s2.e11",
               "type": "read_true_false",
-              "passage": "Gure sukaldeak ez du hozkailurik. Hozkailu bat erosi behar dugu.",
+              "passage": "Gure sukaldeak ez du hozkailurik. Bihar hozkailu bat erosi behar dugu.",
               "statement": "La cocina tiene frigorífico.",
               "answer": false,
               "vocabulary": [
@@ -648,6 +652,7 @@
                 "ez",
                 "ukan",
                 "hozkailu",
+                "bihar",
                 "bat",
                 "erosi",
                 "behar izan"
@@ -887,13 +892,15 @@
             {
               "id": "u04-2.l1.s3.e08",
               "type": "speak",
-              "text": "Pisu hau merkea da.",
-              "translation": "Este piso es barato.",
+              "text": "Pisu hau merkea da, baina txikia.",
+              "translation": "Este piso es barato, pero pequeño.",
               "vocabulary": [
                 "pisu",
                 "hau",
                 "merke",
-                "izan"
+                "izan",
+                "baina",
+                "txiki"
               ],
               "structures": [
                 "buying-renting",
@@ -906,22 +913,22 @@
               "messages": [
                 {
                   "speaker": "Unai",
-                  "text": "Pisua erosi nahi duzu?"
+                  "text": "Pisua erosi edo alokatu nahi duzu?"
                 }
               ],
               "options": [
-                "Ez, alokatu nahi dut.",
-                "Ez, alokatu nahi naiz.",
-                "Ez, pisua merkea naiz."
+                "Alokatu nahi dut.",
+                "Alokatu nahi naiz.",
+                "Pisua merkea naiz."
               ],
               "correct": 0,
               "vocabulary": [
                 "pisu",
                 "erosi",
+                "edo",
+                "alokatu",
                 "nahi izan",
-                "ukan",
-                "ez",
-                "alokatu"
+                "ukan"
               ],
               "structures": [
                 "buying-renting",
@@ -939,9 +946,9 @@
                 "Esa casa es muy cara."
               ],
               "distractors": [
-                "Quieres",
+                "pero",
                 "alquilar",
-                "comprar"
+                "piso"
               ],
               "vocabulary": [
                 "etxe",
@@ -986,7 +993,7 @@
                 "Zein da prezioa?"
               ],
               "distractors": [
-                "euro",
+                "etxea",
                 "Pisua"
               ],
               "vocabulary": [
@@ -1004,9 +1011,9 @@
               "type": "listen_tap",
               "text": "Prezioa berrehun mila euro da.",
               "distractors": [
-                "merkea",
-                "dute",
-                "saldu"
+                "nahi",
+                "dut",
+                "trukatu"
               ],
               "vocabulary": [
                 "prezio",
@@ -1366,14 +1373,15 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Zer nahi duzu?"
+                "text": "Beste aulki bat nahi dut."
               },
               "answers": [
-                "¿Qué quieres?",
-                "¿Qué quiere usted?"
+                "Quiero otra silla."
               ],
               "vocabulary": [
-                "zer",
+                "beste",
+                "aulki",
+                "bat",
                 "nahi izan",
                 "ukan"
               ],
@@ -1477,8 +1485,8 @@
                 "Ane y Jon quieren cambiar el piso."
               ],
               "distractors": [
-                "quieres",
-                "comprar",
+                "Vosotros",
+                "No",
                 "armario",
                 "vender"
               ],
@@ -1583,7 +1591,7 @@
                 "Aulki",
                 "Ane",
                 "Zuek",
-                "dugu"
+                "du"
               ],
               "vocabulary": [
                 "ni",
@@ -1905,7 +1913,7 @@
             {
               "id": "u04-2.l2.s3.e11",
               "type": "read_true_false",
-              "passage": "Aneren pisuak hiru logela ditu. Jonen pisuak bi logela ditu.",
+              "passage": "Aneren pisuak hiru logela ditu. Jonen pisuak bi logela ditu, baina terraza ere badu.",
               "statement": "El piso de Jon tiene menos dormitorios.",
               "answer": true,
               "vocabulary": [
@@ -1913,7 +1921,10 @@
                 "hiru",
                 "logela",
                 "ukan",
-                "bi"
+                "bi",
+                "baina",
+                "terraza",
+                "ere"
               ],
               "structures": [
                 "ago-comparison",
@@ -2005,7 +2016,7 @@
                 "¿Cuántos dormitorios quiere usted?"
               ],
               "distractors": [
-                "una",
+                "Quiero",
                 "Pamplona"
               ],
               "vocabulary": [
@@ -2046,18 +2057,21 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Dos dormitorios y una terraza."
+                "text": "Dos o tres dormitorios, y una terraza."
               },
               "answers": [
-                "Bi logela eta terraza bat."
+                "Bi edo hiru logela, eta terraza bat."
               ],
               "distractors": [
-                "oso",
+                "Pisu",
                 "argitsua",
-                "dago"
+                "Zazpiehun",
+                "da"
               ],
               "vocabulary": [
                 "bi",
+                "edo",
+                "hiru",
                 "logela",
                 "eta",
                 "terraza",
@@ -2115,10 +2129,10 @@
               "type": "listen_tap",
               "text": "Pisu hau Iruñean dago, eta oso argitsua da.",
               "distractors": [
+                "Zenbat",
                 "Zazpiehun",
-                "dut",
                 "dituzu",
-                "balio"
+                "du"
               ],
               "vocabulary": [
                 "pisu",
@@ -2231,7 +2245,7 @@
             {
               "id": "u04-2.l3.s1.e11",
               "type": "read_true_false",
-              "passage": "Nereak pisu bat alokatu nahi du. Ez du pisua erosi nahi.",
+              "passage": "Nereak pisu bat alokatu nahi du, baina ez du erosi nahi.",
               "statement": "Nerea quiere comprar un piso.",
               "answer": false,
               "vocabulary": [
@@ -2240,6 +2254,7 @@
                 "alokatu",
                 "nahi izan",
                 "ukan",
+                "baina",
                 "ez",
                 "erosi"
               ],
@@ -2265,10 +2280,10 @@
                 "El piso de Bilbao es viejo y el de Getxo, más nuevo."
               ],
               "distractors": [
+                "también",
                 "quiero",
-                "dormitorios",
-                "luminoso",
-                "Cuál"
+                "Yo",
+                "menos"
               ],
               "vocabulary": [
                 "pisu",
@@ -2293,9 +2308,9 @@
                 "Getxoko pisuak logela gehiago ditu."
               ],
               "distractors": [
-                "dut",
-                "Getxokoa",
-                "pisua"
+                "du",
+                "pisua",
+                "da"
               ],
               "vocabulary": [
                 "pisu",
@@ -2333,9 +2348,9 @@
               "type": "listen_tap",
               "text": "Bilboko pisuak gutxiago balio du.",
               "distractors": [
-                "Zein",
-                "zaharra",
-                "berriagoa"
+                "gehiago",
+                "nahi",
+                "Getxoko"
               ],
               "vocabulary": [
                 "pisu",
@@ -2440,11 +2455,15 @@
             {
               "id": "u04-2.l3.s2.e08",
               "type": "order_sentence",
-              "answer": "Getxokoa eguzkitsuagoa da.",
-              "translation": "El de Getxo es más soleado.",
+              "answer": "Getxokoa argitsuagoa da, eta eguzkitsuagoa ere bai.",
+              "translation": "El de Getxo es más luminoso, y también más soleado.",
               "vocabulary": [
+                "argitsu",
+                "izan",
+                "eta",
                 "eguzkitsu",
-                "izan"
+                "ere",
+                "bai"
               ],
               "structures": [
                 "ago-comparison",
@@ -2530,9 +2549,9 @@
                 "Zer erosi behar dugu?"
               ],
               "distractors": [
-                "bat",
-                "nahi",
-                "dago"
+                "dago",
+                "hozkailurik",
+                "Sofa"
               ],
               "vocabulary": [
                 "zer",
@@ -2552,8 +2571,8 @@
               "distractors": [
                 "aulki",
                 "merke",
-                "Mahai",
-                "sei"
+                "ez",
+                "hozkailurik"
               ],
               "vocabulary": [
                 "ohe",
@@ -2625,7 +2644,7 @@
                 },
                 {
                   "speaker": "Josu",
-                  "text": "Garbigailu bat."
+                  "text": "Garbigailu bat, eta labe bat ere bai."
                 },
                 {
                   "speaker": "Edurne",
@@ -2645,6 +2664,10 @@
                 "ukan",
                 "garbigailu",
                 "bat",
+                "eta",
+                "labe",
+                "ere",
+                "bai",
                 "berri",
                 "ez",
                 "merke"
@@ -2707,13 +2730,14 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Hozkailu merke bat erosi nahi dut."
+                "text": "Bihar hozkailu merke bat erosi nahi dut."
               },
               "answers": [
-                "Quiero comprar un frigorífico barato.",
-                "Quiero comprar una nevera barata."
+                "Mañana quiero comprar un frigorífico barato.",
+                "Mañana quiero comprar una nevera barata."
               ],
               "vocabulary": [
+                "bihar",
                 "hozkailu",
                 "merke",
                 "bat",
@@ -2824,8 +2848,8 @@
           },
           {
             "speaker": "June",
-            "eu": "Nire pisua handiagoa da. Hiru logela ditu.",
-            "es": "Mi piso es más grande. Tiene tres dormitorios."
+            "eu": "Nire pisua handiagoa da. Hiru logela ditu, eta bi bainugela ere bai.",
+            "es": "Mi piso es más grande. Tiene tres dormitorios, y también dos cuartos de baño."
           },
           {
             "speaker": "Eneko",
@@ -2839,8 +2863,8 @@
           },
           {
             "speaker": "Eneko",
-            "eu": "Nire pisua txikiagoa eta ilunagoa da.",
-            "es": "Mi piso es más pequeño y más oscuro."
+            "eu": "Nire pisua txikiagoa da, baina berriagoa.",
+            "es": "Mi piso es más pequeño, pero más nuevo."
           },
           {
             "speaker": "June",
@@ -2883,9 +2907,9 @@
             "afterLine": 6,
             "prompt": "¿Cómo es el piso de Eneko?",
             "options": [
-              "Más pequeño y más oscuro",
+              "Más pequeño, pero más nuevo",
               "Más grande y más luminoso",
-              "Más nuevo y más soleado"
+              "Más viejo y más oscuro"
             ],
             "correct": 0
           },

@@ -19,15 +19,15 @@ guidebook:
         es: "Saber: dakit, dakizu"
         eu: "Jakin: dakit, dakizu"
       body:
-        es: "«Jakin» (saber) tiene formas propias en presente: dakit, dakizu, daki, dakigu, dakizue, dakite. En respuestas afirmativas sin más palabras se usa «ba-»: «Badakit»."
-        eu: "«Jakin» aditzak orainaldiko forma trinkoak ditu: dakit, dakizu, daki, dakigu, dakizue, dakite. Baiezko erantzun laburretan «ba-» erabiltzen da: «Badakit»."
+        es: "«Jakin» (saber) tiene formas propias en presente: dakit, dakizu, daki, dakigu, dakizue, dakite. También se usa con idiomas (hizkuntzak): «ingelesa daki» (sabe inglés). En respuestas afirmativas sin más palabras se usa «ba-»: «Badakit»."
+        eu: "«Jakin» aditzak orainaldiko forma trinkoak ditu: dakit, dakizu, daki, dakigu, dakizue, dakite. Hizkuntzekin ere erabiltzen da: «ingelesa daki». Baiezko erantzun laburretan «ba-» erabiltzen da: «Badakit»."
       examples:
         - eu: Ez dakit.
           es: No lo sé.
-        - eu: Badakizu Mikelen helbidea?
-          es: ¿Sabes la dirección de Mikel?
+        - eu: Badakizu ingelesa?
+          es: ¿Sabes inglés?
         - eu: Bai, badakit.
-          es: Sí, la sé.
+          es: Sí, sé.
     - title:
         es: "Saber hacer algo: gidatzen dakit"
         eu: "Zerbait egiten jakin: gidatzen dakit"
@@ -54,13 +54,13 @@ guidebook:
         es: "Hacer algo a alguien: diot, didazu"
         eu: "Norbaiti zerbait egin: diot, didazu"
       body:
-        es: "Cuando hay alguien que recibe la acción (a quién, con -ri), el auxiliar cambia: diot (yo a él), diozu (tú a él), dio (él a él), dit (él a mí), didazu (tú a mí), dizut (yo a ti), diet (yo a ellos)."
+        es: "Cuando hay alguien que recibe la acción (a quién, con -ri), como con «eman» (dar) o «galdetu» (preguntar), el auxiliar cambia: diot (yo a él), diozu (tú a él), dio (él a él), dit (él a mí), didazu (tú a mí), dizut (yo a ti), diet (yo a ellos)."
         eu: "Norbaitek zerbait jasotzen duenean (nori, -ri), laguntzailea aldatzen da: diot, diozu, dio, dit, didazu, dizut, diet."
       examples:
-        - eu: Nagusiari deitu diot.
-          es: He llamado al jefe.
-        - eu: Zuk idatzi didazu?
-          es: ¿Me has escrito?
+        - eu: Nagusiari galdetu diot.
+          es: Le he preguntado al jefe.
+        - eu: Kontratua eman didazu?
+          es: ¿Me has dado el contrato?
         - eu: Enpresak soldata ordaindu dit.
           es: La empresa me ha pagado el sueldo.
 levels:
@@ -106,7 +106,7 @@ levels:
               - Ni Ane naiz.
               - Oso ondo, eskerrik asko.
         true_false:
-          - passage: Kaixo! Ni Jon naiz. Autobus gidaria naiz.
+          - passage: Kaixo! Ni Jon naiz. Autobus gidaria naiz. Egunero autobusa gidatzen dut.
             statement: Jon es conductor de autobús.
             answer: true
       - structures: [lantokiak]
@@ -114,7 +114,7 @@ levels:
           - Nik bulego batean lan egiten dut. = Trabajo en una oficina. | Yo trabajo en una oficina.
           - Jonek lantegi batean lan egiten du. = Jon trabaja en una fábrica.
           - Gure enpresa Bilbon dago. = Nuestra empresa está en Bilbao.
-          - Bulegoa hirugarren solairuan dago. = La oficina está en el tercer piso.
+          - Bulegoan bi hizkuntza erabiltzen ditugu, euskara eta gaztelania. = En la oficina usamos dos idiomas, euskera y castellano. | En la oficina usamos dos lenguas, euskera y castellano.
           - Lantegiak ehun langile ditu. = La fábrica tiene cien trabajadores.
           - Zure enpresa handia da? = ¿Tu empresa es grande? | ¿Es grande tu empresa? | ¿Su empresa es grande?
           - Nire lankideak bulegoan daude. = Mis compañeros están en la oficina. | Mis compañeras están en la oficina.
@@ -152,7 +152,7 @@ levels:
         sentences:
           - Zein da zure ordutegia? = ¿Cuál es tu horario? | ¿Cuál es su horario?
           - Zortzietatik hiruetara lan egiten dut. = Trabajo de ocho a tres. | Trabajo de las ocho a las tres.
-          - Soldata ona da. = El sueldo es bueno.
+          - Soldata ona da, baina ordutegia ez. = El sueldo es bueno, pero el horario no.
           - Soldata 1500 euro da hilabetean. = El sueldo es de 1500 euros al mes. | El sueldo son 1500 euros al mes.
           - Kontratua sei hilabeterako da. = El contrato es para seis meses. | El contrato es de seis meses.
           - Lanaldi osoa da. = Es jornada completa. | Es a jornada completa.
@@ -196,11 +196,11 @@ levels:
       - structures: [jakin-present]
         sentences:
           - Ez dakit. = No sé. | No lo sé. | Yo no lo sé.
-          - Zuk badakizu? = ¿Tú lo sabes? | ¿Lo sabes? | ¿Usted lo sabe?
+          - Zein hizkuntza dakizu? = ¿Qué idioma sabes? | ¿Qué idioma sabe usted? | ¿Qué idiomas sabes?
           - Jonek ez daki. = Jon no lo sabe. | Jon no sabe.
           - Guk badakigu. = Nosotros lo sabemos. | Nosotras lo sabemos. | Lo sabemos.
-          - Haiek badakite. = Ellos lo saben. | Ellas lo saben. | Lo saben.
-          - Nagusiak badaki. = El jefe lo sabe. | La jefa lo sabe.
+          - Haiek ez dakite ingelesa. = Ellos no saben inglés. | Ellas no saben inglés. | No saben inglés.
+          - Nagusiak ingelesa daki. = El jefe sabe inglés. | La jefa sabe inglés.
           - Badakizu Mikelen helbidea? = ¿Sabes la dirección de Mikel? | ¿Sabe usted la dirección de Mikel?
           - Anek nagusiaren telefono zenbakia daki. = Ane sabe el número de teléfono del jefe. | Ane sabe el número de teléfono de la jefa.
         pairs:
@@ -240,7 +240,7 @@ levels:
           - Mikelek ez daki gidatzen. = Mikel no sabe conducir.
           - Gure umeek badakite irakurtzen. = Nuestros niños saben leer. | Nuestros hijos saben leer.
           - Amonak ez daki idazten. = La abuela no sabe escribir.
-          - Zuek badakizue janaria prestatzen? = ¿Vosotros sabéis preparar la comida? | ¿Sabéis preparar la comida? | ¿Sabéis cocinar?
+          - Badakizu euskaraz hitz egiten? Bai, pixka bat. = ¿Sabes hablar euskera? Sí, un poco. | ¿Sabe usted hablar euskera? Sí, un poco. | ¿Sabe hablar euskera? Sí, un poco.
           - Unaik ondo daki ogia egiten. = Unai sabe hacer pan muy bien. | Unai sabe hacer bien el pan. | Unai sabe hacer pan bien.
         meanings:
           - text: Amonak ez daki idazten.
@@ -271,9 +271,9 @@ levels:
           - Nagusiari deitu diot. = He llamado al jefe. | He llamado a la jefa. | Llamé al jefe.
           - Zuk idatzi didazu? = ¿Tú me has escrito? | ¿Me has escrito? | ¿Me ha escrito usted?
           - Nik kafe bat erosi dizut. = Te he comprado un café. | Yo te he comprado un café.
-          - Anek lankideari opari bat erosi dio. = Ane le ha comprado un regalo al compañero. | Ane le ha comprado un regalo a la compañera. | Ane ha comprado un regalo para su compañero.
+          - Anek lankideari liburu bat eman dio. = Ane le ha dado un libro al compañero. | Ane le ha dado un libro a la compañera. | Ane ha dado un libro a su compañero.
           - Guk nagusiari kontratu berri bat eskatu diogu. = Le hemos pedido al jefe un contrato nuevo. | Hemos pedido un contrato nuevo a la jefa. | Le hemos pedido un contrato nuevo al jefe.
-          - Lankideek idazkariari deitu diote. = Los compañeros han llamado a la secretaria. | Los compañeros han llamado al secretario.
+          - Lankideek idazkariari ordutegia galdetu diote. = Los compañeros le han preguntado el horario a la secretaria. | Los compañeros le han preguntado el horario al secretario. | Los compañeros han preguntado el horario a la secretaria.
           - Hau lanerako da. = Esto es para el trabajo.
           - Bilborako autobusa hemen dago. = El autobús para Bilbao está aquí. | El autobús a Bilbao está aquí.
         pairs:
@@ -302,8 +302,8 @@ levels:
               - Bai, deitu didazu.
               - Ez dakit gidatzen.
         true_false:
-          - passage: Gaur Itziarren urtebetetzea da. Nik opari bat erosi diot.
-            statement: La persona que habla le ha comprado un regalo a Itziar.
+          - passage: Gaur Itziarren urtebetetzea da. Nik opari bat eman diot.
+            statement: La persona que habla le ha dado un regalo a Itziar.
             answer: true
   - type: lesson
     title:
@@ -312,9 +312,9 @@ levels:
     lessons:
       - structures: [lan-baldintzak, izan-present]
         sentences:
-          - Zein da ordutegia? = ¿Cuál es el horario?
+          - Nagusiari soldata galdetu diot. = Le he preguntado el sueldo al jefe. | Le he preguntado al jefe por el sueldo. | Le he preguntado el sueldo a la jefa.
           - Goizez lan egiten dugu, zortzietatik hiruetara. = Trabajamos por la mañana, de ocho a tres. | Trabajamos de mañana, de ocho a tres.
-          - Eta soldata? = ¿Y el sueldo?
+          - Lanerako euskara eta ingelesa behar dituzu. = Para el trabajo necesitas euskera e inglés. | Para el trabajo necesita usted euskera e inglés.
           - Soldata 1400 euro da hilabetean. = El sueldo es de 1400 euros al mes. | El sueldo son 1400 euros al mes.
           - Kontratua urte baterako da. = El contrato es para un año. | El contrato es de un año.
           - Lanaldi osoa da? = ¿Es jornada completa? | ¿Es a jornada completa?
@@ -351,7 +351,7 @@ levels:
           - Badakizu gidatzen? Gidari bat behar dugu. = ¿Sabes conducir? Necesitamos un conductor. | ¿Sabe conducir? Necesitamos un conductor. | ¿Sabe usted conducir? Necesitamos un conductor.
           - Bai, nik autobusa gidatzen dut. = Sí, yo conduzco un autobús. | Sí, conduzco un autobús.
           - Idazkariak ondo idazten daki. = La secretaria sabe escribir bien. | El secretario sabe escribir bien.
-          - Nire lankideak ez daki igeri egiten. = Mi compañero no sabe nadar. | Mi compañera no sabe nadar.
+          - Nire lankideak ingelesa daki, baina euskara ez. = Mi compañero sabe inglés, pero euskera no. | Mi compañera sabe inglés, pero euskera no.
           - Zuek badakizue ogia egiten? = ¿Vosotros sabéis hacer pan? | ¿Sabéis hacer pan?
           - Bai, badakigu. Okindegian lan egiten dugu. = Sí, sabemos. Trabajamos en una panadería. | Sí, lo sabemos. Trabajamos en una panadería.
         chats:
@@ -373,8 +373,8 @@ levels:
           - passage: Ni Amaia naiz. Badakit gidatzen. Ez dakit igeri egiten.
             statement: Amaia sabe nadar.
             answer: false
-          - passage: Peio idazkaria da. Oso ondo idazten daki.
-            statement: Peio escribe bien.
+          - passage: Peio idazkaria da. Hizkuntzak gustatzen zaizkio, eta ingelesa ere badaki.
+            statement: A Peio le gustan los idiomas.
             answer: true
         blanks:
           - text: Haiek ez ___ irakurtzen. = Ellos no saben leer.
@@ -386,7 +386,7 @@ levels:
         sentences:
           - Barkatu, nagusiak deitu dizu. = Perdona, te ha llamado el jefe. | Perdone, le ha llamado el jefe. | Perdona, la jefa te ha llamado.
           - Eskerrik asko. Gero deituko diot. = Gracias. Luego le llamo. | Gracias. Le llamaré luego. | Muchas gracias. Luego la llamo.
-          - Idazkariak kafe bat prestatu dit. = La secretaria me ha preparado un café. | El secretario me ha preparado un café.
+          - Idazkariak kontratua eman dit. = La secretaria me ha dado el contrato. | El secretario me ha dado el contrato.
           - Zuk idatzi didazu gaur? = ¿Me has escrito hoy? | ¿Tú me has escrito hoy? | ¿Me ha escrito usted hoy?
           - Bai, eta lankideei idatzi diet. = Sí, y les he escrito a los compañeros. | Sí, y he escrito a los compañeros.
           - Enpresak ez dit soldata ordaindu. = La empresa no me ha pagado el sueldo.
@@ -400,10 +400,10 @@ levels:
           - messages:
               - Miren | Enpresak soldata ordaindu dizu?
               - Kepa | Ez, ez dit ordaindu.
-              - Miren | Nagusiari deitu diozu?
+              - Miren | Nagusiari galdetu diozu?
             options:
-              - Bai, gaur deitu diot.
-              - Bai, gaur deitu dit.
+              - Bai, gaur galdetu diot.
+              - Bai, gaur galdetu dit.
               - Ez dakit gidatzen.
         true_false:
           - passage: Gaur nagusiak deitu dit. Kontratu berri bat daukat!
@@ -434,8 +434,9 @@ levels:
         - Gorka | Nagusia oso jatorra da. Gaur kafe bat erosi dit! = El jefe es muy majo. ¡Hoy me ha comprado un café!
         - Nerea | Zorionak! Zure enpresak gidariak behar ditu? = ¡Enhorabuena! ¿Tu empresa necesita conductores?
         - Gorka | Bai! Badakizu autobusa gidatzen? = ¡Sí! ¿Sabes conducir un autobús?
-        - Nerea | Ez, ez dakit. Ni idazkaria naiz. = No, no sé. Yo soy secretaria.
-        - Gorka | Lasai! Gure enpresak idazkari bat behar du. = ¡Tranquila! Nuestra empresa necesita una secretaria.
+        - Nerea | Ez, ez dakit. Ni idazkaria naiz, eta ingelesa badakit. = No, no sé. Yo soy secretaria, y sé inglés.
+        - Gorka | Lasai! Gure enpresak idazkari bat behar du. Nagusiari galdetuko diot. = ¡Tranquila! Nuestra empresa necesita una secretaria. Le preguntaré al jefe.
+
         - Nerea | Primeran! Bihar deituko dizut. = ¡Genial! Mañana te llamo.
       questions:
         - afterLine: 3

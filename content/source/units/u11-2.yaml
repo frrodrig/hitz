@@ -68,14 +68,14 @@ levels:
     lessons:
       - structures: [hizkuntzak, jakin-present]
         sentences:
-          - Zenbat hizkuntza dakizu? = ¿Cuántos idiomas sabes? | ¿Cuántos idiomas sabe usted? | ¿Cuántos idiomas hablas?
-          - Hiru hizkuntza dakit. = Sé tres idiomas. | Hablo tres idiomas. | Yo sé tres idiomas.
+          - Zenbat hizkuntza dakizu? = ¿Cuántos idiomas sabes? | ¿Cuántos idiomas sabe usted? | ¿Cuántos idiomas hablas?  # TODO(revisión-nativa): con objeto plural, ¿«dakizkizu» en batua estándar? Se mantiene «dakizu» (uso común) en A1
+          - Hiru hizkuntza dakit. = Sé tres idiomas. | Hablo tres idiomas. | Yo sé tres idiomas.  # TODO(revisión-nativa): ¿«hiru hizkuntza dakizkit»? (concordancia plural de jakin)
           - Ingelesa badakizu? = ¿Sabes inglés? | ¿Sabe usted inglés? | ¿Hablas inglés?
           - Bai, ingelesa ondo dakit. = Sí, sé bien inglés. | Sí, sé inglés bien. | Sí, hablo bien inglés.
           - Gidabaimena daukazu? = ¿Tienes carné de conducir? | ¿Tiene usted carné de conducir? | ¿Tienes el carné de conducir?  # TODO(revisión-nativa): gidabaimen vs gidatzeko baimena (see syllabus)
           - Ez, ez daukat gidabaimenik. = No, no tengo carné de conducir. | No, no tengo carné.
           - Ordenagailua erabiltzen badakit. = Sé usar el ordenador. | Yo sé usar el ordenador.
-          - Lantegian ordenagailu berriak dauzkagu. = En la fábrica tenemos ordenadores nuevos. | Tenemos ordenadores nuevos en la fábrica.
+          - Euskaraz eta gaztelaniaz hitz egiten dut, baina ingelesez ez. = Hablo euskera y castellano, pero inglés no. | Yo hablo euskera y castellano, pero inglés no.
         pairs:
           - - hizkuntza = idioma
             - ingeles = inglés
@@ -103,7 +103,7 @@ levels:
               - Bai, ondo dakizu.
               - Ez, ez daukat.
         true_false:
-          - passage: Haizea idazkaria da. Bi hizkuntza daki. Gidabaimena dauka.
+          - passage: Haizea idazkaria da. Euskaraz eta ingelesez hitz egiten du. Gidabaimena ere badu.
             statement: Haizea no tiene carné de conducir.
             answer: false
       - structures: [nor-nori-nork]
@@ -113,7 +113,7 @@ levels:
           - Lankideak kafe bat ekarri dit. = Mi compañero me ha traído un café. | El compañero me ha traído un café. | Mi compañera me ha traído un café.
           - Idazkariak bulegoa erakutsi dit. = La secretaria me ha enseñado la oficina. | El secretario me ha enseñado la oficina. | La secretaria me ha mostrado la oficina.
           - Nire helbidea bidali dizut. = Te he enviado mi dirección. | Te he mandado mi dirección. | Le he enviado mi dirección.
-          - Zuk zer eman diozu Aneri? = ¿Qué le has dado a Ane? | ¿Qué le ha dado usted a Ane? | ¿Tú qué le has dado a Ane?
+          - Anek beste ordenagailu bat eman dit. = Ane me ha dado otro ordenador.
           - Guk ordenagailu bat bidali diogu. = Le hemos enviado un ordenador. | Le hemos mandado un ordenador.
           - Ogia ekarri didazu? = ¿Me has traído el pan? | ¿Me ha traído usted el pan?
         pairs:
@@ -152,7 +152,7 @@ levels:
           - Esperientzia daukazu? = ¿Tienes experiencia? | ¿Tiene usted experiencia?
           - Bai, bost urteko esperientzia daukat. = Sí, tengo cinco años de experiencia. | Sí, tengo una experiencia de cinco años.
           - Amak ingelesa irakatsi dit. = Mi madre me ha enseñado inglés. | Mi madre me enseñó inglés.
-          - Gaur libre nago. = Hoy estoy libre. | Estoy libre hoy.
+          - Gaur libre nago, baina bihar ez. = Hoy estoy libre, pero mañana no. | Estoy libre hoy, pero mañana no.
           - Bihar libre zaude? = ¿Mañana estás libre? | ¿Estás libre mañana? | ¿Está usted libre mañana?
           - Zergatik ez didazu erantzun? = ¿Por qué no me has respondido? | ¿Por qué no me has contestado? | ¿Por qué no me ha respondido usted?
         pairs:
@@ -181,7 +181,7 @@ levels:
               - Bai, libre zaude.
               - Ingelesa dakit.
         true_false:
-          - passage: Nagusiari galdetu diot. Ez dit erantzun.
+          - passage: Nagusiari soldata galdetu diot, baina ez dit erantzun.
             statement: El jefe ha respondido.
             answer: false
   - type: lesson
@@ -195,7 +195,7 @@ levels:
           - Galdetu diot ea gidabaimena duen. = Le he preguntado si tiene carné de conducir. | Le he preguntado si tiene el carné de conducir.
           - Ez dakit non dagoen bulegoa. = No sé dónde está la oficina. | Yo no sé dónde está la oficina.
           - Badakizu nor den nagusia? = ¿Sabes quién es el jefe? | ¿Sabes quién es la jefa? | ¿Sabe usted quién es el jefe?
-          - Galdetu dit ea esperientzia dudan. = Me ha preguntado si tengo experiencia.
+          - Galdetu diot noiz dagoen libre. = Le he preguntado cuándo está libre.
           - Ez dakigu zein den ordutegia. = No sabemos cuál es el horario.
           - Anek galdetu dizu ea ordenagailua duzun. = Ane te ha preguntado si tienes ordenador. | Ane le ha preguntado si tiene ordenador.
           - Ez dakit ea Jonek ingelesa dakien. = No sé si Jon sabe inglés.
@@ -233,7 +233,7 @@ levels:
           - Ingelesa amarengandik ikasi dut. = He aprendido inglés de mi madre. | Aprendí inglés de mi madre.
           - Nire lana aitarengandik ikasi dut. = He aprendido mi trabajo de mi padre. | Aprendí mi oficio de mi padre.
           - Harengandik asko ikasi dugu. = Hemos aprendido mucho de él. | Hemos aprendido mucho de ella.
-          - Ikasleek irakaslearengandik ikasi dute. = Los alumnos han aprendido del profesor. | Los alumnos han aprendido de la profesora. | Los estudiantes han aprendido del profesor.
+          - Euskara irakaslearengandik ikasi dut, eta gaztelania amarengandik. = He aprendido euskera del profesor, y castellano de mi madre. | He aprendido euskera de la profesora, y castellano de mi madre.
           - Ordenagailua erabiltzen lankidearengandik ikasi dut. = He aprendido a usar el ordenador de un compañero. | He aprendido a usar el ordenador de mi compañero. | Aprendí a usar el ordenador de una compañera.
           - Umeek gugandik ikasi dute. = Los niños han aprendido de nosotros. | Los niños han aprendido de nosotras.
           - Niregandik ikasi duzu? = ¿Has aprendido de mí? | ¿Lo has aprendido de mí? | ¿Ha aprendido usted de mí?
@@ -271,7 +271,7 @@ levels:
           - Aitak igeri egiten irakatsi dit. = Mi padre me ha enseñado a nadar. | Mi padre me enseñó a nadar.
           - Unaik ordenagailua erabiltzen ikasi du. = Unai ha aprendido a usar el ordenador.
           - Ingelesa ikasten ari naiz. = Estoy aprendiendo inglés. | Estoy estudiando inglés.
-          - Nire amak ingelesa irakasten du. = Mi madre enseña inglés. | Mi madre da clases de inglés.
+          - Nire amak euskara irakasten du. = Mi madre enseña euskera. | Mi madre da clases de euskera.
           - Umeek irakurtzen ikasi dute. = Los niños han aprendido a leer.
           - Nork irakatsi dizu gidatzen? = ¿Quién te ha enseñado a conducir? | ¿Quién te enseñó a conducir? | ¿Quién le ha enseñado a conducir?
           - Zuk irakatsi didazu janaria prestatzen. = Tú me has enseñado a cocinar. | Tú me has enseñado a preparar la comida. | Usted me ha enseñado a cocinar.
@@ -328,10 +328,10 @@ levels:
               - Bai, gidabaimena daukat.
               - Ez, ez dakizu.
         true_false:
-          - passage: Idazkari bat behar dugu. Ingelesa jakin behar du. Ordenagailua erabiltzen jakin behar du.
+          - passage: Idazkari bat behar dugu. Ingelesa jakin behar du. Euskara ere garrantzitsua da.
             statement: La secretaria tiene que saber inglés.
             answer: true
-          - passage: Ni Ibai naiz. Ez dakit ingelesa. Gidabaimena daukat.
+          - passage: Ni Ibai naiz. Euskaraz eta gaztelaniaz hitz egiten dut, baina ez dakit ingelesa.
             statement: Ibai sabe inglés.
             answer: false
         meanings:
@@ -346,7 +346,7 @@ levels:
           - Bost urtez lan egin dut Bilbon. = He trabajado cinco años en Bilbao. | He trabajado durante cinco años en Bilbao.
           - Idazkaria izan naiz enpresa handi batean. = He sido secretaria en una empresa grande. | He sido secretario en una empresa grande.
           - Bi urtez gidaria izan naiz. = He sido conductor durante dos años. | He sido conductora durante dos años. | He sido conductor dos años.
-          - Han ingelesa ikasi dut. = Allí he aprendido inglés. | Allí aprendí inglés.
+          - Han ingelesa ikasi dut, eta euskara ere bai. = Allí he aprendido inglés, y también euskera. | Allí aprendí inglés, y también euskera.
           - Esperientzia asko daukazu! = ¡Tienes mucha experiencia! | ¡Tiene usted mucha experiencia!
         chats:
           - messages:
@@ -428,7 +428,8 @@ levels:
         - Leire | Primeran. Eta ingelesa badakizu? = Estupendo. ¿Y sabes inglés?
         - Julen | Ez oso ondo. Orain ikasten ari naiz. = No muy bien. Ahora lo estoy aprendiendo.
         - Leire | Ondo. Gure bezero asko turistak dira. = Bien. Muchos de nuestros clientes son turistas.
-        - Julen | Ados. Ordenagailua erabiltzen badakit. = De acuerdo. Sé usar el ordenador.
+        - Julen | Ados. Euskaraz eta gaztelaniaz ere hitz egiten dut. = De acuerdo. También hablo euskera y castellano.
+
         - Leire | Oso ondo. Bihar kontratua bidaliko dizut. = Muy bien. Mañana te enviaré el contrato.
         - Julen | Eskerrik asko! Agur! = ¡Muchas gracias! ¡Adiós!
       questions:

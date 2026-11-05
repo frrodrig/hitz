@@ -61,6 +61,19 @@ guidebook:
           es: ¿Qué hora es? Son las tres y media.
         - eu: Euria ari du, eta hotz egiten du.
           es: Llueve y hace frío.
+    - title:
+        es: "Ahora, siempre, ¿cuándo?"
+        eu: "Orain, beti, noiz?"
+      body:
+        es: "«Orain» (ahora) y «beti» (siempre) suelen ir al principio de la frase o delante del verbo: «Orain euria ari du», «Bilbon beti euria ari du». «Noiz?» (¿cuándo?) va al principio de la pregunta y justo delante del verbo, como «non?»."
+        eu: "«Orain» eta «beti» esaldiaren hasieran edo aditzaren aurrean joan ohi dira: «Orain euria ari du», «Bilbon beti euria ari du». «Noiz?» galderaren hasieran doa, aditzaren aurrean, «non?» galdera bezala."
+      examples:
+        - eu: Zer ordu da orain?
+          es: ¿Qué hora es ahora?
+        - eu: Bilbon beti euria ari du!
+          es: ¡En Bilbao siempre llueve!
+        - eu: Noiz egiten du bero hemen?
+          es: ¿Cuándo hace calor aquí?
 levels:
   - type: lesson
     title:
@@ -75,8 +88,8 @@ levels:
           - Parkea eskolaren atzean dago. = El parque está detrás de la escuela.
           - Udaletxea elizaren aurrean dago. = El ayuntamiento está delante de la iglesia.
           - Liburutegia plazaren eta parkearen artean dago. = La biblioteca está entre la plaza y el parque.
-          - Ane Jonen ondoan dago. = Ane está al lado de Jon.
-          - Geltokia hotelaren aurrean dago. = La estación está delante del hotel.
+          - Orain Ane Jonen ondoan dago. = Ahora Ane está al lado de Jon.
+          - Hotelaren aurrean taberna asko daude. = Delante del hotel hay muchos bares. | Hay muchos bares delante del hotel.
         pairs:
           - - aurrean = delante
             - atzean = detrás
@@ -104,7 +117,7 @@ levels:
               - Bankua farmaziaren ondoan da.
               - Bai, badago.
         true_false:
-          - passage: Hotela plazan dago. Taberna hotelaren azpian dago.
+          - passage: Hotela plazan dago. Taberna hotelaren azpian dago, eta jatetxea ere bai.
             statement: El bar está encima del hotel.
             answer: false
       - structures: [directions, compass]
@@ -113,8 +126,8 @@ levels:
           - Segi zuzen eta eskuinera. = Sigue recto y a la derecha. | Siga recto y a la derecha. | Todo recto y a la derecha.
           - Farmazia ezkerrean dago. = La farmacia está a la izquierda.
           - Hotela eskuinean dago. = El hotel está a la derecha.
-          - Hondartza gertu dago. = La playa está cerca.
-          - Mendia urrun dago. = El monte está lejos.
+          - Hondartza gertu dago, baina mendia urrun. = La playa está cerca, pero el monte está lejos. | La playa está cerca, pero el monte, lejos.
+          - Geltokia pixka bat urrun dago. = La estación está un poco lejos.
           - Baiona iparraldean dago. = Bayona está en el norte. | Bayona está al norte.
           - Tutera hegoaldean dago. = Tudela está en el sur. | Tudela está al sur.
         pairs:
@@ -154,9 +167,9 @@ levels:
           - Plaza hau txikia da. = Esta plaza es pequeña.
           - Euria ari du. = Llueve. | Está lloviendo.
           - Elurra ari du. = Nieva. | Está nevando.
-          - Eguzkia dago. = Hace sol. | Hay sol.
+          - Orain eguzkia dago. = Ahora hace sol. | Ahora hay sol.
           - Haize egiten du. = Hace viento.  # TODO(revisión-nativa): «haize egiten du» frente a «haizea dabil»; ¿cuál enseñar en A1?
-          - Hotz egiten du. = Hace frío.
+          - Mendian beti hotz egiten du. = En el monte siempre hace frío. | Siempre hace frío en el monte.
         pairs:
           - - handi = grande
             - txiki = pequeño
@@ -184,7 +197,7 @@ levels:
               - Euria da.
               - Donostiakoa naiz.
         true_false:
-          - passage: Gasteizen hotz egiten du, eta elurra ari du.
+          - passage: Gaur Gasteizen hotz egiten du, eta elurra ari du. Bihar ere bai!
             statement: En Vitoria hace calor.
             answer: false
   - type: lesson
@@ -194,12 +207,12 @@ levels:
     lessons:
       - structures: [postpositions-noren, egon-present]
         sentences:
-          - Ni Mikelen ondoan nago. = Estoy al lado de Mikel. | Yo estoy al lado de Mikel.
+          - Gaur Mikelen ondoan nago. = Hoy estoy al lado de Mikel. | Hoy yo estoy al lado de Mikel.
           - Zu Aneren atzean zaude. = Estás detrás de Ane. | Tú estás detrás de Ane. | Usted está detrás de Ane.
           - Gu udaletxearen aurrean gaude. = Estamos delante del ayuntamiento. | Nosotros estamos delante del ayuntamiento.
           - Hotela geltokiaren eta bankuaren artean dago. = El hotel está entre la estación y el banco.
           - Jatetxea tabernaren gainean dago. = El restaurante está encima del bar.
-          - Farmazia ez dago ospitalearen ondoan. = La farmacia no está al lado del hospital.
+          - Beste farmazia bat ospitalearen ondoan dago. = Hay otra farmacia al lado del hospital. | Otra farmacia está al lado del hospital.
           - Non dago liburutegia? Eskolaren atzean. = ¿Dónde está la biblioteca? Detrás de la escuela.
           - Ikasleak irakaslearen aurrean daude. = Los estudiantes están delante del profesor. | Los estudiantes están delante de la profesora. | Las estudiantes están delante de la profesora.
         blanks:
@@ -221,24 +234,24 @@ levels:
               - Estás delante de Ane.
         chats:
           - messages:
-              - Unai | Kaixo! Non zaude?
+              - Unai | Kaixo! Non zaude orain?
             options:
               - Geltokiaren aurrean nago.
               - Geltokiaren aurrean naiz.
               - Geltokiaren aurrean zaude.
         true_false:
-          - passage: Taberna plazan dago, elizaren ondoan. Eliza udaletxearen aurrean dago.
-            statement: El bar está al lado de la iglesia.
+          - passage: Plazan taberna asko daude. Taberna bat elizaren ondoan dago, eta eliza udaletxearen aurrean.
+            statement: Hay un bar al lado de la iglesia.
             answer: true
       - structures: [time]
         sentences:
-          - Zer ordu da? = ¿Qué hora es?
+          - Barkatu, zer ordu da orain? = Perdona, ¿qué hora es ahora? | Perdone, ¿qué hora es ahora?
           - Ordu bata da. = Es la una.
           - Ordu biak dira. = Son las dos.
           - Hirurak eta erdiak dira. = Son las tres y media.
           - Laurak eta laurden dira. = Son las cuatro y cuarto.
           - Bostak laurden gutxi dira. = Son las cinco menos cuarto.
-          - Zazpiak dira. = Son las siete.
+          - Ez dakit. Zazpiak edo zortziak dira. = No lo sé. Son las siete o las ocho. | No sé. Son las siete o las ocho.
           - Hamarrak eta erdiak dira. = Son las diez y media.
         pairs:
           - - ordu bata = la una
@@ -275,17 +288,22 @@ levels:
           - Zer eguraldi egiten du? = ¿Qué tiempo hace?
           - Bero egiten du. = Hace calor.
           - Oso hotz egiten du. = Hace mucho frío.
-          - Donostian euria ari du. = En San Sebastián llueve. | Llueve en San Sebastián. | Está lloviendo en San Sebastián.
+          - Bilbon beti euria ari du! = ¡En Bilbao siempre llueve! | ¡Siempre llueve en Bilbao!
           - Mendian elurra ari du. = En el monte nieva. | Nieva en el monte. | Está nevando en el monte.
-          - Hondartzan eguzkia dago. = En la playa hace sol. | Hace sol en la playa. | Hay sol en la playa.
-          - Kale txiki batean nago. = Estoy en una calle pequeña. | Yo estoy en una calle pequeña.
-          - Plazan hotel handi bat dago. = En la plaza hay un hotel grande. | Hay un hotel grande en la plaza.
+          - Gaur hondartzan eguzkia dago. = Hoy hace sol en la playa. | Hoy en la playa hace sol. | Hoy hay sol en la playa.
+          - Noiz egiten du bero Gasteizen? = ¿Cuándo hace calor en Vitoria?
+          - Egun hotza da, baina eguzkia dago. = Es un día frío, pero hace sol. | Es un día frío, pero hay sol.
         blanks:
           - text: Oso hotz egiten ___. = Hace mucho frío.
             options:
               - du
               - da
               - dago
+          - text: ___ egiten du hotz Gasteizen? Beti! = ¿Cuándo hace frío en Vitoria? ¡Siempre!
+            options:
+              - Noiz
+              - Non
+              - Nor
         meanings:
           - text: Bero egiten du.
             options:
@@ -300,7 +318,7 @@ levels:
               - Hotz da.
               - Gasteizen nago.
         true_false:
-          - passage: Lekeition eguzkia dago, eta bero egiten du.
+          - passage: Lekeition orain eguzkia dago, eta bero egiten du.
             statement: En Lekeitio hace frío.
             answer: false
   - type: lesson
@@ -315,14 +333,14 @@ levels:
           - Segi zuzen eta ezkerrera. = Sigue recto y a la izquierda. | Siga recto y a la izquierda. | Todo recto y a la izquierda.
           - Ospitalea parkearen ondoan dago. = El hospital está al lado del parque.
           - Geltokia eskuinean dago, hotelaren atzean. = La estación está a la derecha, detrás del hotel.
-          - Eskerrik asko! Ez horregatik. = ¡Muchas gracias! De nada. | ¡Gracias! De nada.
+          - Barkatu, berriro eta poliki, mesedez. = Perdona, otra vez y despacio, por favor. | Perdone, otra vez y despacio, por favor.
         chats:
           - messages:
-              - Asier | Barkatu, non dago eskola?
+              - Asier | Ospitalea parkearen ondoan dago, eskolaren eta elizaren artean.
             options:
-              - Segi zuzen. Eskola plazaren ondoan dago.
-              - Segi zuzen. Eskola plazaren ondoan da.
-              - Ni eskolan nago.
+              - Barkatu, euskara ikasten ari naiz. Poliki, mesedez.
+              - Bai, ospitalean nago.
+              - Ez horregatik.
           - messages:
               - Olatz | Barkatu, badago farmaziarik hemen?
               - Xabier | Bai, kale honetan, bankuaren ondoan.
@@ -335,7 +353,7 @@ levels:
           - passage: Segi zuzen eta eskuinera. Jatetxea tabernaren ondoan dago.
             statement: Hay que girar a la izquierda.
             answer: false
-          - passage: Hondartza ez dago urrun. Hotelaren atzean dago.
+          - passage: Hondartza ez dago urrun, hotelaren atzean dago. Beste hondartza bat urrun dago.
             statement: La playa está cerca del hotel.
             answer: true
         meanings:
@@ -349,18 +367,18 @@ levels:
           - Hondarribia herri polita da. = Hondarribia es un pueblo bonito.
           - Herri hau Gipuzkoako iparraldean dago. = Este pueblo está en el norte de Gipuzkoa. | Este pueblo está al norte de Gipuzkoa.
           - Plaza txikia da, eta eliza handia. = La plaza es pequeña y la iglesia, grande. | La plaza es pequeña y la iglesia es grande.
-          - Hondartza handi bat dago. = Hay una playa grande.
+          - Hondartza handia da, baina hotela txikia. = La playa es grande, pero el hotel es pequeño. | La playa es grande, pero el hotel, pequeño.
           - Gasteiz Euskal Herriko hegoaldean dago. = Vitoria está en el sur de Euskal Herria. | Vitoria está en el sur del País Vasco.
           - Zuberoa Euskal Herriko ekialdean dago. = Zuberoa está en el este de Euskal Herria. | Sola está en el este de Euskal Herria. | Zuberoa está en el este del País Vasco.
         chats:
           - messages:
-              - Alaitz | Bermeo herri handia da?
+              - Alaitz | Kaixo! Euskaraz hitz egiten duzu?
             options:
-              - Ez, herri txikia da.
-              - Ez, herri txikia naiz.
-              - Bai, Bermeokoa naiz.
+              - Bai, pixka bat.
+              - Bai, euskara da.
+              - Ez, Bermeon nago.
           - messages:
-              - Kepa | Kaixo, Miren! Non zaude?
+              - Kepa | Kaixo, Miren! Non zaude orain?
               - Miren | Getxon nago, hondartzan.
               - Kepa | Hondartza polita da?
             options:
@@ -371,8 +389,8 @@ levels:
           - passage: Bilbo hiri handia da, eta Euskal Herriko mendebaldean dago.
             statement: Bilbao es una ciudad pequeña.
             answer: false
-          - passage: Elizondo herri txikia da. Nafarroako iparraldean dago.
-            statement: Elizondo está en el norte de Navarra.
+          - passage: Ni Elizondon nago. Herri txikia da, baina oso polita. Hemen euskaraz hitz egiten dut.
+            statement: Elizondo es un pueblo pequeño, pero bonito.
             answer: true
         meanings:
           - text: Plaza txikia da, eta eliza handia.
@@ -386,28 +404,27 @@ levels:
           - Ordu bata eta erdiak dira. = Es la una y media.  # TODO(revisión-nativa): concordancia «ordu bata eta erdiak dira» (¿da o dira?)
           - Zer eguraldi egiten du Bilbon? = ¿Qué tiempo hace en Bilbao?
           - Bilbon euria ari du, eta haize egiten du. = En Bilbao llueve y hace viento. | En Bilbao está lloviendo y hace viento.
-          - Hemen eguzkia dago, eta bero egiten du. = Aquí hace sol y hace calor. | Aquí hay sol y hace calor.
-          - Mendian oso hotz egiten du. = En el monte hace mucho frío.
+          - Gaur eguzkia dago, eta egun polita da. = Hoy hace sol y es un día bonito. | Hoy hay sol y es un día bonito.
+          - Hemen beti haize egiten du. = Aquí siempre hace viento.  # TODO(revisión-nativa): «haize egiten du» (ver lección 3)
         chats:
           - messages:
-              - Ander | Barkatu, zer ordu da?
+              - Ander | Barkatu, zer ordu da orain?
             options:
               - Zortziak eta laurden dira.
               - Zortziak eta laurden dago.
               - Zortzi naiz.
           - messages:
-              - Haizea | Kaixo, Julen! Non zaude?
-              - Julen | Hondartzan nago. Eguzkia dago!
-              - Haizea | Bero egiten du?
+              - Julen | Kaixo, Haizea! Mendian elurra ari du!
+              - Haizea | Bai? Noiz?
             options:
-              - Bai, oso bero egiten du.
-              - Bai, oso bero naiz.
-              - Ez, hondartzan nago.
+              - Orain, eta bihar ere bai.
+              - Mendian nago.
+              - Elurra naiz.
         true_false:
-          - passage: Bederatziak dira. Euria ari du, eta hotz egiten du.
+          - passage: Bederatziak edo hamarrak dira. Euria ari du, eta hotz egiten du.
             statement: Hace sol.
             answer: false
-          - passage: Laurak eta erdiak dira. Mendian elurra ari du.
+          - passage: Laurak eta erdiak dira. Orain mendian elurra ari du.
             statement: Nieva en el monte.
             answer: true
         meanings:
@@ -423,16 +440,17 @@ levels:
     story:
       title: Eguzkia ala euria?
       lines:
-        - Nerea | Kaixo, Aitor! Non zaude? = ¡Hola, Aitor! ¿Dónde estás?
+        - Nerea | Kaixo, Aitor! Non zaude orain? = ¡Hola, Aitor! ¿Dónde estás ahora?
         - Aitor | Zarautzen nago, hondartzaren ondoan. = Estoy en Zarautz, al lado de la playa.
         - Nerea | Zer eguraldi egiten du Zarautzen? = ¿Qué tiempo hace en Zarautz?
         - Aitor | Eguzkia dago, eta oso bero egiten du! Eta Gasteizen? = ¡Hace sol y mucho calor! ¿Y en Vitoria?
         - Nerea | Hemen euria ari du, eta hotz egiten du. = Aquí llueve y hace frío.
-        - Aitor | Zer ordu da? = ¿Qué hora es?
-        - Nerea | Hirurak eta erdiak dira. = Son las tres y media.
-        - Nerea | Zarautzen jatetxe polit bat dago, plazan. Elizaren ondoan dago. = En Zarautz hay un restaurante bonito, en la plaza. Está al lado de la iglesia.
-        - Aitor | Plaza urrun dago? = ¿La plaza está lejos?
-        - Nerea | Ez, oso gertu. Segi zuzen eta ezkerrera. = No, muy cerca. Sigue recto y a la izquierda.
+        - Aitor | Gasteizen beti hotz egiten du! Noiz egiten du bero? = ¡En Vitoria siempre hace frío! ¿Cuándo hace calor?
+        - Nerea | Ez dakit! Gaur ez. = ¡No lo sé! Hoy no.
+        - Aitor | Zer ordu da orain? = ¿Qué hora es ahora?
+        - Nerea | Hirurak eta erdiak. Zarautzen jatetxe polit bat dago, elizaren ondoan. = Las tres y media. En Zarautz hay un restaurante bonito, al lado de la iglesia.
+        - Aitor | Barkatu? Berriro, mesedez. = ¿Perdona? Otra vez, por favor.
+        - Nerea | Elizaren ondoan. Ez dago urrun. Segi zuzen eta ezkerrera. = Al lado de la iglesia. No está lejos. Sigue recto y a la izquierda.
         - Aitor | Eskerrik asko! Agur! = ¡Muchas gracias! ¡Adiós!
       questions:
         - afterLine: 4
@@ -441,13 +459,13 @@ levels:
             - Llueve y hace frío
             - Hace sol y calor
             - Nieva
-        - afterLine: 6
+        - afterLine: 8
           prompt: ¿Qué hora es?
           options:
             - Las tres y media
             - Las tres y cuarto
             - Las cuatro menos cuarto
-        - afterLine: 10
+        - afterLine: 11
           prompt: ¿Dónde está el restaurante?
           options:
             - Al lado de la iglesia

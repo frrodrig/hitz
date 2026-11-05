@@ -36,6 +36,7 @@ def load() -> list[dict[str, str]]:
 def table(rows: list[dict[str, str]]) -> str:
     core = [r for r in rows if r["set"] == "core"]
     closed = [r for r in rows if r["set"] == "closed"]
+    function = [r for r in rows if r["set"] == "function"]
     out = [f"**Vocabulary ({len(core)} words)**", "",
            "| Basque | Spanish | Type | Note |", "|---|---|---|---|"]
     out += [f"| {r['lemma']} | {r['es']} | {POS.get(r['pos'], r['pos'])} | {r['note']} |"
@@ -43,6 +44,9 @@ def table(rows: list[dict[str, str]]) -> str:
     if closed:
         out += ["", "**Closed set (not counted towards the limit):** "
                 + ", ".join(f"{r['lemma']} ({r['es']})" for r in closed)]
+    if function:
+        out += ["", "**Function words and survival phrases (not counted towards the limit):** "
+                + ", ".join(f"{r['lemma']} ({r['es']})" for r in function)]
     return "\n".join(out)
 
 

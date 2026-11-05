@@ -140,9 +140,9 @@
                 "Egunero zazpietan jaikitzen naiz."
               ],
               "distractors": [
-                "Hamaiketan",
+                "bazkaltzen",
                 "afaltzen",
-                "Zer"
+                "zara"
               ],
               "vocabulary": [
                 "egunero",
@@ -159,8 +159,8 @@
               "type": "listen_tap",
               "text": "Gero dutxatzen naiz.",
               "distractors": [
-                "Gauean",
-                "ordutan"
+                "Egunero",
+                "Gauean"
               ],
               "vocabulary": [
                 "gero",
@@ -217,12 +217,13 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Desayuno en casa."
+                "text": "Siempre desayuno en casa."
               },
               "answers": [
-                "Etxean gosaltzen dut."
+                "Beti etxean gosaltzen dut."
               ],
               "vocabulary": [
+                "beti",
                 "etxe",
                 "gosaldu",
                 "ukan"
@@ -254,11 +255,13 @@
             {
               "id": "u08-2.l1.s1.e06",
               "type": "order_sentence",
-              "answer": "Goizean kafea hartzen dut.",
-              "translation": "Por la mañana tomo café.",
+              "answer": "Goizean kafea edo tea hartzen dut.",
+              "translation": "Por la mañana tomo café o té.",
               "vocabulary": [
                 "goiz",
                 "kafe",
+                "edo",
+                "te",
                 "hartu",
                 "ukan"
               ],
@@ -351,7 +354,7 @@
             {
               "id": "u08-2.l1.s1.e11",
               "type": "read_true_false",
-              "passage": "Egunero sei eta erdietan jaikitzen naiz. Ez dut gosaltzen.",
+              "passage": "Egunero sei eta erdietan jaikitzen naiz, baina ez dut gosaltzen.",
               "statement": "Desayuna todos los días.",
               "answer": false,
               "vocabulary": [
@@ -360,6 +363,7 @@
                 "eta",
                 "jaiki",
                 "izan",
+                "baina",
                 "ez",
                 "ukan",
                 "gosaldu"
@@ -394,9 +398,9 @@
                 "¿A qué hora se levanta usted?"
               ],
               "distractors": [
-                "una",
-                "Me",
-                "en"
+                "siete",
+                "Después",
+                "las"
               ],
               "vocabulary": [
                 "zer",
@@ -418,9 +422,9 @@
               "type": "listen_tap",
               "text": "Astean behin igeri egiten dut.",
               "distractors": [
-                "bazkaltzen",
-                "mendira",
-                "ardoa"
+                "Askotan",
+                "du",
+                "bakarrik"
               ],
               "vocabulary": [
                 "aste",
@@ -475,8 +479,8 @@
                   "es": "a menudo"
                 },
                 {
-                  "eu": "egunero",
-                  "es": "todos los días"
+                  "eu": "astero",
+                  "es": "cada semana"
                 },
                 {
                   "eu": "astean behin",
@@ -489,7 +493,7 @@
                 "noizean behin",
                 "gutxitan",
                 "askotan",
-                "egunero",
+                "astero",
                 "aste"
               ],
               "structures": [
@@ -541,17 +545,20 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Haragia gutxitan jaten dut."
+                "text": "Haragia gutxitan jaten dut, baina arraina askotan."
               },
               "answers": [
-                "Como carne pocas veces.",
-                "Pocas veces como carne."
+                "Como carne pocas veces, pero pescado a menudo.",
+                "Pocas veces como carne, pero pescado a menudo."
               ],
               "vocabulary": [
                 "haragi",
                 "gutxitan",
                 "jan",
-                "ukan"
+                "ukan",
+                "baina",
+                "arrain",
+                "askotan"
               ],
               "structures": [
                 "frequency",
@@ -628,13 +635,17 @@
             {
               "id": "u08-2.l1.s2.e10",
               "type": "speak",
-              "text": "Amonak bakarrik bazkaltzen du.",
-              "translation": "La abuela come sola.",
+              "text": "Amonak bakarrik bazkaltzen du, baina gaur gurekin jango du.",
+              "translation": "La abuela come sola, pero hoy comerá con nosotros.",
               "vocabulary": [
                 "amona",
                 "bakarrik",
                 "bazkaldu",
-                "ukan"
+                "ukan",
+                "baina",
+                "gaur",
+                "gu",
+                "jan"
               ],
               "structures": [
                 "frequency",
@@ -674,8 +685,8 @@
                 "¿Nada usted a menudo?"
               ],
               "distractors": [
-                "vez",
-                "al"
+                "madre",
+                "sola"
               ],
               "vocabulary": [
                 "askotan",
@@ -693,20 +704,20 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Duermo mucho."
+                "text": "Cada semana como con mi madre."
               },
               "answers": [
-                "Asko lo egiten dut."
+                "Astero amarekin bazkaltzen dut."
               ],
               "distractors": [
-                "jaten",
-                "edaten",
-                "Astean"
+                "baina",
+                "egiten",
+                "Haragia"
               ],
               "vocabulary": [
-                "asko",
-                "lo egin",
-                "egin",
+                "astero",
+                "ama",
+                "bazkaldu",
                 "ukan"
               ],
               "structures": [
@@ -1812,7 +1823,7 @@
                 "café",
                 "De",
                 "Desayunas",
-                "Cenas"
+                "Comes"
               ],
               "vocabulary": [
                 "sei",
@@ -1859,7 +1870,7 @@
               ],
               "distractors": [
                 "eta",
-                "Bai"
+                "Seietan"
               ],
               "vocabulary": [
                 "gosaldu",
@@ -1919,10 +1930,10 @@
               "type": "listen_tap",
               "text": "Bai, kafea eta ogia gosaltzen ditut.",
               "distractors": [
-                "dutxatzen",
-                "asko",
+                "dut",
                 "behin",
-                "zara"
+                "ordutan",
+                "Gauean"
               ],
               "vocabulary": [
                 "bai",
@@ -2010,12 +2021,12 @@
             {
               "id": "u08-2.l3.s1.e10",
               "type": "order_sentence",
-              "answer": "Gauean asko afaltzen duzu?",
-              "translation": "¿Cenas mucho por la noche?",
+              "answer": "Gauean asko jaten duzu?",
+              "translation": "¿Comes mucho por la noche?",
               "vocabulary": [
                 "gau",
                 "asko",
-                "afaldu",
+                "jan",
                 "ukan"
               ],
               "structures": [
@@ -2062,9 +2073,9 @@
                 "¿Qué debo hacer?"
               ],
               "distractors": [
-                "viene",
-                "fiebre",
-                "por"
+                "salud",
+                "tienes",
+                "fiebre"
               ],
               "vocabulary": [
                 "zer",
@@ -2088,10 +2099,10 @@
                 "Pilula hauek hartu, goizean eta gauean."
               ],
               "distractors": [
-                "Sukarra",
-                "deitu",
                 "baduzu",
-                "Datorren"
+                "Hemen",
+                "deitu",
+                "eskatu"
               ],
               "vocabulary": [
                 "pilula",
@@ -2131,7 +2142,7 @@
               "type": "listen_tap",
               "text": "Hemen duzu errezeta.",
               "distractors": [
-                "hartu",
+                "mesedez",
                 "astean"
               ],
               "vocabulary": [
@@ -2191,14 +2202,15 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Si tienes fiebre, llama."
+                "text": "Si tienes fiebre, llama al centro de salud."
               },
               "answers": [
-                "Sukarra baduzu, deitu."
+                "Sukarra baduzu, osasun-etxera deitu."
               ],
               "vocabulary": [
                 "sukar",
                 "ukan",
+                "osasun-etxe",
                 "deitu"
               ],
               "structures": [
@@ -2332,8 +2344,8 @@
               "distractors": [
                 "igeri",
                 "Gutxitan",
-                "Egunero",
-                "nahiago"
+                "egiten",
+                "liburuak"
               ],
               "vocabulary": [
                 "ni",
@@ -2351,14 +2363,14 @@
             {
               "id": "u08-2.l3.s3.e02",
               "type": "listen_tap",
-              "text": "Egunero goiz jaikitzen da.",
+              "text": "Beti goiz jaikitzen da.",
               "distractors": [
                 "igeri",
                 "amonak",
-                "pilulak"
+                "Nire"
               ],
               "vocabulary": [
-                "egunero",
+                "beti",
                 "goiz",
                 "jaiki",
                 "izan"
@@ -2479,7 +2491,7 @@
               "messages": [
                 {
                   "speaker": "Eneko",
-                  "text": "Eta zuk, igeri egiten duzu?"
+                  "text": "Zuk ere igeri egiten duzu?"
                 }
               ],
               "options": [
@@ -2489,8 +2501,8 @@
               ],
               "correct": 0,
               "vocabulary": [
-                "eta",
                 "zu",
+                "ere",
                 "igeri egin",
                 "egin",
                 "ukan",
@@ -2525,7 +2537,7 @@
             {
               "id": "u08-2.l3.s3.e09",
               "type": "read_true_false",
-              "passage": "Amona hamarretan oheratzen da. Ez du inoiz kafea hartzen.",
+              "passage": "Amona hamarretan oheratzen da. Ez du inoiz kafea edaten, baina tea bai.",
               "statement": "La abuela toma café por la noche.",
               "answer": false,
               "vocabulary": [
@@ -2537,7 +2549,10 @@
                 "ukan",
                 "inoiz",
                 "kafe",
-                "hartu"
+                "edan",
+                "baina",
+                "te",
+                "bai"
               ],
               "structures": [
                 "habitual",
@@ -2547,13 +2562,14 @@
             {
               "id": "u08-2.l3.s3.e10",
               "type": "listen_type",
-              "text": "Arratsaldean eserita irakurtzen du.",
+              "text": "Arratsaldean eserita liburuak irakurtzen ditu.",
               "answers": [
-                "Arratsaldean eserita irakurtzen du."
+                "Arratsaldean eserita liburuak irakurtzen ditu."
               ],
               "vocabulary": [
                 "arratsalde",
                 "eseri",
+                "liburu",
                 "irakurri",
                 "ukan"
               ],
@@ -2640,8 +2656,8 @@
           },
           {
             "speaker": "Kepa",
-            "eu": "Ez, inoiz ez.",
-            "es": "No, nunca."
+            "eu": "Ez, inoiz ez. Baina egunero ibiltzen naiz.",
+            "es": "No, nunca. Pero camino todos los días."
           },
           {
             "speaker": "Medikua",

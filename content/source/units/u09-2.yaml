@@ -15,12 +15,14 @@ goals:
 guidebook:
   sections:
     - title:
-        es: "Conviene ahorrar: -tzea"
-        eu: "Komeni da aurreztea: -tzea"
+        es: "Es importante ahorrar: -tzea"
+        eu: "Garrantzitsua da aurreztea: -tzea"
       body:
-        es: El verbo con -tzea o -tea funciona como un nombre, igual que el infinitivo español en «ahorrar es bueno». Se usa con «komeni da» (conviene), «ondo dago» (está bien) o «gustatzen zait».
-        eu: -tzea edo -tea duen aditza izen bat bezala erabiltzen da. «Komeni da», «ondo dago» edo «gustatzen zait» esapideekin erabiltzen da.
+        es: El verbo con -tzea o -tea funciona como un nombre, igual que el infinitivo español en «ahorrar es bueno». Se usa con «garrantzitsua da» (es importante), «komeni da» (conviene), «ondo dago» (está bien) o «gustatzen zait».
+        eu: -tzea edo -tea duen aditza izen bat bezala erabiltzen da. «Garrantzitsua da», «komeni da», «ondo dago» edo «gustatzen zait» esapideekin erabiltzen da.
       examples:
+        - eu: Garrantzitsua da natura zaintzea.
+          es: Es importante cuidar la naturaleza.
         - eu: Komeni da energia aurreztea.
           es: Conviene ahorrar energía.
         - eu: Ondo dago papera birziklatzea.
@@ -73,7 +75,7 @@ levels:
           - Argia itzaltzen dut. = Apago la luz. | Yo apago la luz.
           - Gelan argia pizten dugu. = Encendemos la luz en la habitación. | En el aula encendemos la luz. | Encendemos la luz en el aula.
           - Energia aurreztu behar dugu. = Tenemos que ahorrar energía. | Debemos ahorrar energía.
-          - Ura aurrezten dut. = Ahorro agua. | Yo ahorro agua.
+          - Etxean beti ura aurrezten dut. = En casa siempre ahorro agua. | Siempre ahorro agua en casa.
           - Paperezko poltsak erabiltzen ditugu. = Usamos bolsas de papel.
           - Itzal ezazu argia, mesedez! = ¡Apaga la luz, por favor! | ¡Apague la luz, por favor!
           - Ez piztu argia orain. = No enciendas la luz ahora. | No encienda la luz ahora.
@@ -114,7 +116,7 @@ levels:
           - Ezin da hemen sartu. = No se puede entrar aquí. | Aquí no se puede entrar.
           - Ibaian ezin da igeri egin. = En el río no se puede nadar. | No se puede nadar en el río.
           - Debekatuta dago hondakinak ibaira botatzea. = Está prohibido tirar residuos al río.
-          - Gaur ezin naiz etorri. = Hoy no puedo venir. | No puedo venir hoy.
+          - Gaur ezin naiz etorri, baina bihar bai. = Hoy no puedo venir, pero mañana sí.
           - Zakarrontzian bota behar duzu. = Tienes que tirarlo a la papelera. | Lo tienes que tirar a la papelera. | Tiene que tirarlo a la papelera.
         pairs:
           - - debekatuta = prohibido
@@ -148,14 +150,14 @@ levels:
           - Ez nago ados. = No estoy de acuerdo.
           - Nire ustez, ondo dago. = En mi opinión, está bien. | Creo que está bien.
           - Zein da zure iritzia? = ¿Cuál es tu opinión? | ¿Cuál es su opinión?
-          - Ingurumena zaintzen dugu. = Cuidamos el medio ambiente.
+          - Guk ere ingurumena zaintzen dugu. = Nosotros también cuidamos el medio ambiente. | También cuidamos el medio ambiente. | Nosotras también cuidamos el medio ambiente.
           - Zu ados zaude? = ¿Tú estás de acuerdo? | ¿Estás de acuerdo? | ¿Está usted de acuerdo?
         pairs:
           - - zaindu = cuidar
             - ados = de acuerdo
             - iritzi = opinión
             - uste izan = creer
-            - debekatuta = prohibido
+            - garrantzitsu = importante
         meanings:
           - text: Ez nago ados.
             options:
@@ -187,8 +189,8 @@ levels:
         sentences:
           - Komeni da energia aurreztea. = Conviene ahorrar energía. | Es conveniente ahorrar energía.
           - Ondo dago papera birziklatzea. = Está bien reciclar el papel.
-          - Komeni da argiak itzaltzea. = Conviene apagar las luces. | Es conveniente apagar las luces.
-          - Natura zaintzea komeni da. = Conviene cuidar la naturaleza. | Es conveniente cuidar la naturaleza.
+          - Garrantzitsua da argiak itzaltzea. = Es importante apagar las luces.
+          - Natura zaintzea garrantzitsua da. = Cuidar la naturaleza es importante. | Es importante cuidar la naturaleza.
           - Ondo dago paperezko poltsak erabiltzea. = Está bien usar bolsas de papel.
           - Komeni da ura aurreztea. = Conviene ahorrar agua. | Es conveniente ahorrar agua.
           - Ez dago ondo ibaira hondakinak botatzea. = No está bien tirar residuos al río.
@@ -210,16 +212,16 @@ levels:
               - Las luces están apagadas.
         chats:
           - messages:
-              - Ander | Zer komeni da?
+              - Ander | Zer da garrantzitsua?
             options:
-              - Komeni da energia aurreztea.
+              - Garrantzitsua da energia aurreztea.
               - Ados nago.
               - Plastikozkoa da.
       - structures: [ezin-da, debekatuta]
         sentences:
           - Ezin da hemen plastikoa bota. = Aquí no se puede tirar plástico. | No se puede tirar plástico aquí.
           - Basoan ezin da zuhaitzik moztu. = En el bosque no se pueden cortar árboles. | No se pueden cortar árboles en el bosque.
-          - Liburutegian ezin da jan. = En la biblioteca no se puede comer. | No se puede comer en la biblioteca.
+          - Liburutegian ezin da jan edo edan. = En la biblioteca no se puede comer ni beber. | No se puede comer ni beber en la biblioteca.
           - Debekatuta dago itsasora plastikoa botatzea. = Está prohibido tirar plástico al mar.
           - Debekatuta dago basoan hondakinak botatzea. = Está prohibido tirar residuos en el bosque.
           - Ezin dut argia piztu. = No puedo encender la luz.
@@ -293,7 +295,7 @@ levels:
     lessons:
       - structures: [opinion, tzea-nominal]
         sentences:
-          - Nire ustez, komeni da ura aurreztea. = En mi opinión, conviene ahorrar agua. | Creo que conviene ahorrar agua.
+          - Nire ustez, garrantzitsua da ura aurreztea. = En mi opinión, es importante ahorrar agua. | Creo que es importante ahorrar agua.
           - Ados nago, Ane. = Estoy de acuerdo, Ane.
           - Ez nago ados, Mikel. = No estoy de acuerdo, Mikel.
           - Zer uste duzu, Olatz? = ¿Qué opinas, Olatz? | ¿Qué crees, Olatz? | ¿Qué piensas, Olatz?
@@ -366,8 +368,9 @@ levels:
         sentences:
           - Etxetik joaten naizenean, argiak itzaltzen ditut. = Cuando me voy de casa, apago las luces. | Cuando salgo de casa, apago las luces.
           - Gure etxean ura eta energia aurrezten ditugu. = En nuestra casa ahorramos agua y energía.
-          - Eskolan papera eta plastikoa birziklatzen ditugu. = En la escuela reciclamos el papel y el plástico. | En la escuela reciclamos papel y plástico.
-          - Ingurumena zaintzea komeni da. = Conviene cuidar el medio ambiente. | Es conveniente cuidar el medio ambiente.
+          - Eskolan papera eta plastikoa ere birziklatzen ditugu. = En la escuela también reciclamos el papel y el plástico. | En la escuela también reciclamos papel y plástico.
+
+          - Ingurumena zaintzea oso garrantzitsua da. = Cuidar el medio ambiente es muy importante. | Es muy importante cuidar el medio ambiente.
           - Gaur ez dut plastikorik erabili. = Hoy no he usado plástico. | No he usado plástico hoy.
           - Parkeko zuhaitzak zaindu behar ditugu. = Tenemos que cuidar los árboles del parque. | Debemos cuidar los árboles del parque.
         chats:
@@ -407,7 +410,7 @@ levels:
       lines:
         - Nerea | Aitor, gelatik joaten zarenean, argia itzali behar duzu! = Aitor, cuando te vas de la habitación, ¡tienes que apagar la luz!
         - Aitor | Barkatu, Nerea. Zergatik? = Perdona, Nerea. ¿Por qué?
-        - Nerea | Energia aurreztea komeni delako. = Porque conviene ahorrar energía.
+        - Nerea | Energia aurreztea garrantzitsua delako. = Porque es importante ahorrar energía.
         - Aitor | Ados nago. Eta zer gehiago egiten duzu zuk? = Estoy de acuerdo. ¿Y qué más haces tú?
         - Nerea | Dutxatzen naizenean, ura aurrezten dut. = Cuando me ducho, ahorro agua.
         - Nerea | Eta ez dut plastikozko poltsarik erabiltzen. = Y no uso bolsas de plástico.

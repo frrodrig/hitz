@@ -100,6 +100,10 @@
           {
             "eu": "Eskudirutan ordaindu nahi dut.",
             "es": "Quiero pagar en efectivo."
+          },
+          {
+            "eu": "Ez daukat eskudirurik, baina txartela daukat.",
+            "es": "No tengo efectivo, pero tengo tarjeta."
           }
         ]
       }
@@ -128,8 +132,8 @@
                 "Okindegian ogia dago."
               ],
               "distractors": [
-                "honetan",
-                "eta"
+                "Harategian",
+                "daude"
               ],
               "vocabulary": [
                 "okindegi",
@@ -335,7 +339,7 @@
             {
               "id": "u06-1.l1.s1.e11",
               "type": "read_true_false",
-              "passage": "Kale honetan harategi bat eta frutadenda bat daude. Okindegia plazan dago.",
+              "passage": "Kale honetan harategi bat eta frutadenda bat daude, baina okindegia plazan dago.",
               "statement": "La panadería está en esta calle.",
               "answer": false,
               "vocabulary": [
@@ -346,6 +350,7 @@
                 "eta",
                 "frutadenda",
                 "egon",
+                "baina",
                 "okindegi",
                 "plaza"
               ],
@@ -356,13 +361,12 @@
             {
               "id": "u06-1.l1.s1.e12",
               "type": "speak",
-              "text": "Harategian oilaskoa eta haragia daude.",
-              "translation": "En la carnicería hay pollo y carne.",
+              "text": "Harategian haragi asko dago.",
+              "translation": "En la carnicería hay mucha carne.",
               "vocabulary": [
                 "harategi",
-                "oilasko",
-                "eta",
                 "haragi",
+                "asko",
                 "egon"
               ],
               "structures": [
@@ -380,8 +384,8 @@
                 "En la frutería hay manzanas y naranjas."
               ],
               "distractors": [
+                "pescadería",
                 "pescado",
-                "plaza",
                 "de",
                 "librería"
               ],
@@ -406,7 +410,7 @@
               "type": "listen_tap",
               "text": "Saltzailea dendan dago.",
               "distractors": [
-                "dirurik",
+                "daukazu",
                 "Txartela"
               ],
               "vocabulary": [
@@ -606,13 +610,14 @@
             {
               "id": "u06-1.l1.s2.e11",
               "type": "read_true_false",
-              "passage": "Jonek ez dauka dirurik. Txartela dauka.",
+              "passage": "Jonek ez dauka eskudirurik, baina txartela dauka.",
               "statement": "Jon tiene tarjeta.",
               "answer": true,
               "vocabulary": [
                 "ez",
                 "eduki",
-                "diru",
+                "eskudiru",
+                "baina",
                 "txartel"
               ],
               "structures": [
@@ -631,8 +636,8 @@
                 "Necesito efectivo."
               ],
               "distractors": [
-                "están",
-                "un",
+                "tarjeta",
+                "Los",
                 "tengo"
               ],
               "vocabulary": [
@@ -649,19 +654,22 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "El cliente quiere pan."
+                "text": "El cliente quiere otro pan."
               },
               "answers": [
-                "Bezeroak ogia nahi du."
+                "Bezeroak beste ogi bat nahi du."
               ],
               "distractors": [
-                "daukat",
+                "supermerkatuan",
+                "dirurik",
                 "dendan",
-                "daukazu"
+                "Ez"
               ],
               "vocabulary": [
                 "bezero",
+                "beste",
                 "ogi",
+                "bat",
                 "nahi izan",
                 "ukan"
               ],
@@ -874,9 +882,9 @@
                 "¿Cuánto cuesta este queso?"
               ],
               "distractors": [
-                "favor",
+                "manzanas",
                 "baratas",
-                "por"
+                "Son"
               ],
               "vocabulary": [
                 "zenbat",
@@ -919,9 +927,9 @@
                 "Hogeita bost euro dira."
               ],
               "distractors": [
-                "merkeak",
-                "Hau",
-                "Arraina"
+                "hau",
+                "Arraina",
+                "bat"
               ],
               "vocabulary": [
                 "hogei",
@@ -936,16 +944,18 @@
             {
               "id": "u06-1.l1.s3.e13",
               "type": "listen_tap",
-              "text": "Hau oso merkea da!",
+              "text": "Gazta hau pixka bat garestia da.",
               "distractors": [
-                "Hogeita",
-                "mesedez",
-                "Zenbat"
+                "merkeak",
+                "Sagarrak",
+                "Zenbat",
+                "Ogi"
               ],
               "vocabulary": [
+                "pixka bat",
+                "gazta",
                 "hau",
-                "oso",
-                "merke",
+                "garesti",
                 "izan"
               ],
               "structures": [
@@ -1106,9 +1116,9 @@
                 "Quiero pagar con tarjeta."
               ],
               "distractors": [
-                "casa",
                 "Queremos",
-                "en"
+                "pescado",
+                "Qué"
               ],
               "vocabulary": [
                 "txartel",
@@ -1160,9 +1170,9 @@
                 "Eskudiruz ordaindu nahi duzu?"
               ],
               "distractors": [
-                "dute",
-                "Arraina",
-                "hau"
+                "hau",
+                "erosi",
+                "Gaur"
               ],
               "vocabulary": [
                 "eskudiru",
@@ -1199,7 +1209,7 @@
               "distractors": [
                 "ditu",
                 "Arraina",
-                "Ogia"
+                "Gaur"
               ],
               "vocabulary": [
                 "etxe",
@@ -1217,12 +1227,13 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Quiero comprar en el supermercado."
+                "text": "Hoy quiero comprar en el supermercado."
               },
               "answers": [
-                "Supermerkatuan erosi nahi dut."
+                "Gaur supermerkatuan erosi nahi dut."
               ],
               "vocabulary": [
+                "gaur",
                 "supermerkatu",
                 "erosi",
                 "nahi izan",
@@ -1340,8 +1351,8 @@
                 "Queremos alquilar un piso."
               ],
               "distractors": [
+                "hoy",
                 "la",
-                "librería",
                 "ser"
               ],
               "vocabulary": [
@@ -1389,10 +1400,10 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "¿Quieres estar aquí?"
+                "text": "¿Qué quieres comer hoy?"
               },
               "answers": [
-                "Hemen egon nahi duzu?"
+                "Zer jan nahi duzu gaur?"
               ],
               "distractors": [
                 "bat",
@@ -1400,10 +1411,11 @@
                 "Haiek"
               ],
               "vocabulary": [
-                "hemen",
-                "egon",
+                "zer",
+                "jan",
                 "nahi izan",
-                "ukan"
+                "ukan",
+                "gaur"
               ],
               "structures": [
                 "verb-nahi"
@@ -1412,7 +1424,7 @@
             {
               "id": "u06-1.l2.s2.e09",
               "type": "read_true_false",
-              "passage": "Nire ahizpak ez du supermerkatuan erosi nahi. Frutadenda nahiago du.",
+              "passage": "Nire ahizpak ez du supermerkatuan erosi nahi. Frutadenda nahiago du, merkeagoa da eta.",
               "statement": "Su hermana prefiere la frutería.",
               "answer": true,
               "vocabulary": [
@@ -1424,7 +1436,10 @@
                 "erosi",
                 "nahi izan",
                 "frutadenda",
-                "nahiago izan"
+                "nahiago izan",
+                "merke",
+                "izan",
+                "eta"
               ],
               "structures": [
                 "verb-nahi"
@@ -1435,10 +1450,10 @@
               "type": "listen_tap",
               "text": "Zure lagunak zer erosi nahi du?",
               "distractors": [
-                "Bilbon",
-                "ordaindu",
-                "dut",
-                "eskudirutan"
+                "liburu-denda",
+                "duzu",
+                "gaur",
+                "dut"
               ],
               "vocabulary": [
                 "zu",
@@ -1604,7 +1619,7 @@
                 "Txartelarekin ala eskudiruz?"
               ],
               "distractors": [
-                "dira",
+                "da",
                 "ordaindu"
               ],
               "vocabulary": [
@@ -1648,7 +1663,7 @@
               "text": "Txartelarekin, mesedez.",
               "distractors": [
                 "balio",
-                "bi"
+                "Berriro"
               ],
               "vocabulary": [
                 "txartel",
@@ -1722,16 +1737,17 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Hamar euro dira, mesedez."
+                "text": "Berriro, mesedez. Zenbat da?"
               },
               "answers": [
-                "Son diez euros, por favor."
+                "Otra vez, por favor. ¿Cuánto es?",
+                "Repite, por favor. ¿Cuánto es?"
               ],
               "vocabulary": [
-                "hamar",
-                "euro",
-                "izan",
-                "mesedez"
+                "berriro",
+                "mesedez",
+                "zenbat",
+                "izan"
               ],
               "structures": [
                 "zenbat-da",
@@ -1827,7 +1843,7 @@
               "distractors": [
                 "bat",
                 "Agur",
-                "euro"
+                "Eskudirutan"
               ],
               "vocabulary": [
                 "eskerrik asko",
@@ -1887,7 +1903,7 @@
               "type": "listen_tap",
               "text": "Bi euro dira.",
               "distractors": [
-                "Ez",
+                "Egun",
                 "Agur"
               ],
               "vocabulary": [
@@ -2022,7 +2038,7 @@
               "distractors": [
                 "al",
                 "de",
-                "y",
+                "un",
                 "manzanas"
               ],
               "vocabulary": [
@@ -2050,9 +2066,9 @@
                 "Harategia arrandegiaren ondoan dago."
               ],
               "distractors": [
-                "Haragia",
                 "Liburu-denda",
-                "Merkataritza-gunean"
+                "Merkataritza-gunean",
+                "nahi"
               ],
               "vocabulary": [
                 "harategi",
@@ -2092,9 +2108,9 @@
               "type": "listen_tap",
               "text": "Merkataritza-gunean supermerkatu handi bat dago.",
               "distractors": [
-                "Non",
                 "Okindegia",
-                "daude"
+                "ondoan",
+                "baina"
               ],
               "vocabulary": [
                 "merkataritza-gune",
@@ -2245,17 +2261,19 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Okindegia eta frutadenda gertu daude."
+                "text": "Okindegia gertu dago, baina frutadenda urrun."
               },
               "answers": [
-                "La panadería y la frutería están cerca."
+                "La panadería está cerca, pero la frutería, lejos.",
+                "La panadería está cerca, pero la frutería está lejos."
               ],
               "vocabulary": [
                 "okindegi",
-                "eta",
-                "frutadenda",
                 "gertu",
-                "egon"
+                "egon",
+                "baina",
+                "frutadenda",
+                "urrun"
               ],
               "structures": [
                 "shops-tegi",
@@ -2297,9 +2315,9 @@
                 "Barkatu, zenbat da arrain hau?"
               ],
               "distractors": [
-                "eskudirutan",
-                "dago",
-                "ordaindu"
+                "du",
+                "Bezeroak",
+                "Non"
               ],
               "vocabulary": [
                 "barkatu",
@@ -2318,9 +2336,9 @@
               "type": "listen_tap",
               "text": "Hamabost euro. Garestia da!",
               "distractors": [
-                "hau",
-                "dago",
-                "Dirua"
+                "dut",
+                "Bezeroak",
+                "Bihar"
               ],
               "vocabulary": [
                 "hamabost",
@@ -2382,7 +2400,7 @@
                 },
                 {
                   "speaker": "Saltzailea",
-                  "text": "Bi euro."
+                  "text": "Bi euro, eta tomateak ere bi euro."
                 }
               ],
               "options": [
@@ -2398,6 +2416,9 @@
                 "hau",
                 "bi",
                 "euro",
+                "eta",
+                "tomate",
+                "ere",
                 "ondo",
                 "hemen",
                 "eduki"
@@ -2512,15 +2533,16 @@
             {
               "id": "u06-1.l3.s3.e10",
               "type": "listen_type",
-              "text": "Saltzailea oso jatorra da.",
+              "text": "Bihar arraina erosi nahi dut.",
               "answers": [
-                "Saltzailea oso jatorra da."
+                "Bihar arraina erosi nahi dut."
               ],
               "vocabulary": [
-                "saltzaile",
-                "oso",
-                "jator",
-                "izan"
+                "bihar",
+                "arrain",
+                "erosi",
+                "nahi izan",
+                "ukan"
               ],
               "structures": [
                 "zenbat-da",
@@ -2600,8 +2622,8 @@
           },
           {
             "speaker": "Unai",
-            "eu": "Ez daukat dirurik! Non dago bankua?",
-            "es": "¡No tengo dinero! ¿Dónde está el banco?"
+            "eu": "Ez daukat eskudirurik! Non dago bankua?",
+            "es": "¡No tengo efectivo! ¿Dónde está el banco?"
           },
           {
             "speaker": "Saltzailea",

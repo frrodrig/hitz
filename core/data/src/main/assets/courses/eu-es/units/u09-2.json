@@ -25,14 +25,18 @@
     "sections": [
       {
         "title": {
-          "es": "Conviene ahorrar: -tzea",
-          "eu": "Komeni da aurreztea: -tzea"
+          "es": "Es importante ahorrar: -tzea",
+          "eu": "Garrantzitsua da aurreztea: -tzea"
         },
         "body": {
-          "es": "El verbo con -tzea o -tea funciona como un nombre, igual que el infinitivo español en «ahorrar es bueno». Se usa con «komeni da» (conviene), «ondo dago» (está bien) o «gustatzen zait».",
-          "eu": "-tzea edo -tea duen aditza izen bat bezala erabiltzen da. «Komeni da», «ondo dago» edo «gustatzen zait» esapideekin erabiltzen da."
+          "es": "El verbo con -tzea o -tea funciona como un nombre, igual que el infinitivo español en «ahorrar es bueno». Se usa con «garrantzitsua da» (es importante), «komeni da» (conviene), «ondo dago» (está bien) o «gustatzen zait».",
+          "eu": "-tzea edo -tea duen aditza izen bat bezala erabiltzen da. «Garrantzitsua da», «komeni da», «ondo dago» edo «gustatzen zait» esapideekin erabiltzen da."
         },
         "examples": [
+          {
+            "eu": "Garrantzitsua da natura zaintzea.",
+            "es": "Es importante cuidar la naturaleza."
+          },
           {
             "eu": "Komeni da energia aurreztea.",
             "es": "Conviene ahorrar energía."
@@ -136,8 +140,8 @@
                 "Argia itzaltzen dut."
               ],
               "distractors": [
-                "ezazu",
-                "erabiltzen"
+                "aurrezten",
+                "Energia"
               ],
               "vocabulary": [
                 "argi",
@@ -154,9 +158,9 @@
               "type": "listen_tap",
               "text": "Gelan argia pizten dugu.",
               "distractors": [
-                "erabiltzen",
-                "dut",
-                "piztu"
+                "ditugu",
+                "Nik",
+                "Paperezko"
               ],
               "vocabulary": [
                 "gela",
@@ -250,9 +254,11 @@
             {
               "id": "u09-2.l1.s1.e06",
               "type": "order_sentence",
-              "answer": "Ura aurrezten dut.",
-              "translation": "Ahorro agua.",
+              "answer": "Etxean beti ura aurrezten dut.",
+              "translation": "En casa siempre ahorro agua.",
               "vocabulary": [
+                "etxe",
+                "beti",
                 "ur",
                 "aurreztu",
                 "ukan"
@@ -422,9 +428,9 @@
               "type": "listen_tap",
               "text": "Ez bota papera kalera!",
               "distractors": [
-                "edukiontzi",
-                "duzu",
-                "ibaira"
+                "igeri",
+                "hondakinak",
+                "Ibaian"
               ],
               "vocabulary": [
                 "ez",
@@ -648,22 +654,25 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Gaur ezin naiz etorri."
+                "text": "Gaur ezin naiz etorri, baina bihar bai."
               },
               "answers": [
-                "Hoy no puedo venir.",
-                "No puedo venir hoy."
+                "Hoy no puedo venir, pero mañana sí."
               ],
               "distractors": [
                 "que",
                 "Aquí",
-                "papel"
+                "papel",
+                "Tienes"
               ],
               "vocabulary": [
                 "gaur",
                 "ezin",
                 "izan",
-                "etorri"
+                "etorri",
+                "baina",
+                "bihar",
+                "bai"
               ],
               "structures": [
                 "ezin-da",
@@ -681,8 +690,8 @@
                 "Zakarrontzian bota behar duzu."
               ],
               "distractors": [
-                "etorri",
-                "dago",
+                "Debekatuta",
+                "botatzea",
                 "da"
               ],
               "vocabulary": [
@@ -756,8 +765,8 @@
                   "es": "creer"
                 },
                 {
-                  "eu": "debekatuta",
-                  "es": "prohibido"
+                  "eu": "garrantzitsu",
+                  "es": "importante"
                 }
               ],
               "vocabulary": [
@@ -765,7 +774,7 @@
                 "ados",
                 "iritzi",
                 "uste izan",
-                "debekatuta"
+                "garrantzitsu"
               ],
               "structures": [
                 "opinion"
@@ -897,9 +906,9 @@
                 "¿Cuál es su opinión?"
               ],
               "distractors": [
-                "está",
-                "En",
-                "Tenemos"
+                "la",
+                "opinas",
+                "está"
               ],
               "vocabulary": [
                 "zein",
@@ -935,16 +944,19 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Cuidamos el medio ambiente."
+                "text": "Nosotros también cuidamos el medio ambiente."
               },
               "answers": [
-                "Ingurumena zaintzen dugu."
+                "Guk ere ingurumena zaintzen dugu."
               ],
               "distractors": [
                 "zaindu",
-                "duzu"
+                "duzu",
+                "Natura"
               ],
               "vocabulary": [
+                "gu",
+                "ere",
                 "ingurumen",
                 "zaindu",
                 "ukan"
@@ -958,8 +970,8 @@
               "type": "listen_tap",
               "text": "Zu ados zaude?",
               "distractors": [
-                "zaindu",
-                "Zer"
+                "zure",
+                "uste"
               ],
               "vocabulary": [
                 "zu",
@@ -1043,12 +1055,12 @@
             {
               "id": "u09-2.l2.s1.e04",
               "type": "listen_type",
-              "text": "Komeni da argiak itzaltzea.",
+              "text": "Garrantzitsua da argiak itzaltzea.",
               "answers": [
-                "Komeni da argiak itzaltzea."
+                "Garrantzitsua da argiak itzaltzea."
               ],
               "vocabulary": [
-                "komeni izan",
+                "garrantzitsu",
                 "izan",
                 "argi",
                 "itzali"
@@ -1080,12 +1092,12 @@
             {
               "id": "u09-2.l2.s1.e06",
               "type": "speak",
-              "text": "Natura zaintzea komeni da.",
-              "translation": "Conviene cuidar la naturaleza.",
+              "text": "Natura zaintzea garrantzitsua da.",
+              "translation": "Cuidar la naturaleza es importante.",
               "vocabulary": [
                 "natura",
                 "zaindu",
-                "komeni izan",
+                "garrantzitsu",
                 "izan"
               ],
               "structures": [
@@ -1123,10 +1135,10 @@
                 "Está bien usar bolsas de papel."
               ],
               "distractors": [
-                "ahorrar",
-                "cuidar",
-                "No",
-                "gusta"
+                "residuos",
+                "importante",
+                "Conviene",
+                "el"
               ],
               "vocabulary": [
                 "ondo",
@@ -1145,19 +1157,19 @@
               "messages": [
                 {
                   "speaker": "Ander",
-                  "text": "Zer komeni da?"
+                  "text": "Zer da garrantzitsua?"
                 }
               ],
               "options": [
-                "Komeni da energia aurreztea.",
+                "Garrantzitsua da energia aurreztea.",
                 "Ados nago.",
                 "Plastikozkoa da."
               ],
               "correct": 0,
               "vocabulary": [
                 "zer",
-                "komeni izan",
                 "izan",
+                "garrantzitsu",
                 "energia",
                 "aurreztu"
               ],
@@ -1176,9 +1188,9 @@
                 "Komeni da ura aurreztea."
               ],
               "distractors": [
-                "Natura",
                 "poltsak",
-                "Ondo"
+                "hondakinak",
+                "itzaltzea"
               ],
               "vocabulary": [
                 "komeni izan",
@@ -1195,10 +1207,10 @@
               "type": "listen_tap",
               "text": "Ez dago ondo ibaira hondakinak botatzea.",
               "distractors": [
-                "da",
                 "Natura",
-                "birziklatzea",
-                "erabiltzea"
+                "Komeni",
+                "erabiltzea",
+                "birziklatzea"
               ],
               "vocabulary": [
                 "ez",
@@ -1303,13 +1315,15 @@
             {
               "id": "u09-2.l2.s2.e04",
               "type": "speak",
-              "text": "Liburutegian ezin da jan.",
-              "translation": "En la biblioteca no se puede comer.",
+              "text": "Liburutegian ezin da jan edo edan.",
+              "translation": "En la biblioteca no se puede comer ni beber.",
               "vocabulary": [
                 "liburutegi",
                 "ezin",
                 "izan",
-                "jan"
+                "jan",
+                "edo",
+                "edan"
               ],
               "structures": [
                 "ezin-da",
@@ -1348,10 +1362,10 @@
                 "Está prohibido tirar plástico al mar."
               ],
               "distractors": [
-                "Hoy",
+                "luz",
+                "bosque",
                 "comer",
-                "cortar",
-                "No"
+                "cortar"
               ],
               "vocabulary": [
                 "debekatuta",
@@ -1398,8 +1412,8 @@
               ],
               "distractors": [
                 "Zakarrontzia",
-                "ikusi",
-                "non"
+                "edan",
+                "bota"
               ],
               "vocabulary": [
                 "debekatuta",
@@ -1448,7 +1462,7 @@
               "distractors": [
                 "zuhaitzik",
                 "basora",
-                "naiz"
+                "edo"
               ],
               "vocabulary": [
                 "ezin",
@@ -1819,12 +1833,12 @@
             {
               "id": "u09-2.l3.s1.e01",
               "type": "speak",
-              "text": "Nire ustez, komeni da ura aurreztea.",
-              "translation": "En mi opinión, conviene ahorrar agua.",
+              "text": "Nire ustez, garrantzitsua da ura aurreztea.",
+              "translation": "En mi opinión, es importante ahorrar agua.",
               "vocabulary": [
                 "ni",
                 "uste izan",
-                "komeni izan",
+                "garrantzitsu",
                 "izan",
                 "ur",
                 "aurreztu"
@@ -1845,8 +1859,8 @@
                 "Estoy de acuerdo, Ane."
               ],
               "distractors": [
+                "importante",
                 "es",
-                "En",
                 "más"
               ],
               "vocabulary": [
@@ -1890,8 +1904,8 @@
               ],
               "distractors": [
                 "Zein",
-                "herrian",
-                "komeni"
+                "gehiago",
+                "Kepa"
               ],
               "vocabulary": [
                 "ez",
@@ -1954,7 +1968,7 @@
               "text": "Zer uste duzu, Olatz?",
               "distractors": [
                 "ditugu",
-                "iritzia",
+                "herrian",
                 "Zein"
               ],
               "vocabulary": [
@@ -2377,7 +2391,7 @@
               ],
               "distractors": [
                 "erabili",
-                "ura",
+                "plastikorik",
                 "dut",
                 "zuhaitzak"
               ],
@@ -2399,10 +2413,10 @@
               "type": "listen_tap",
               "text": "Gure etxean ura eta energia aurrezten ditugu.",
               "distractors": [
-                "plastikoa",
-                "Parkeko",
                 "da",
-                "Eskolan"
+                "Ingurumena",
+                "ere",
+                "oso"
               ],
               "vocabulary": [
                 "gu",
@@ -2445,16 +2459,17 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "En la escuela reciclamos el papel y el plástico."
+                "text": "En la escuela también reciclamos el papel y el plástico."
               },
               "answers": [
-                "Eskolan papera eta plastikoa birziklatzen ditugu."
+                "Eskolan papera eta plastikoa ere birziklatzen ditugu."
               ],
               "vocabulary": [
                 "eskola",
                 "paper",
                 "eta",
                 "plastiko",
+                "ere",
                 "birziklatu",
                 "ukan"
               ],
@@ -2498,12 +2513,13 @@
             {
               "id": "u09-2.l3.s3.e06",
               "type": "order_sentence",
-              "answer": "Ingurumena zaintzea komeni da.",
-              "translation": "Conviene cuidar el medio ambiente.",
+              "answer": "Ingurumena zaintzea oso garrantzitsua da.",
+              "translation": "Cuidar el medio ambiente es muy importante.",
               "vocabulary": [
                 "ingurumen",
                 "zaindu",
-                "komeni izan",
+                "oso",
+                "garrantzitsu",
                 "izan"
               ],
               "structures": [
@@ -2665,8 +2681,8 @@
           },
           {
             "speaker": "Nerea",
-            "eu": "Energia aurreztea komeni delako.",
-            "es": "Porque conviene ahorrar energía."
+            "eu": "Energia aurreztea garrantzitsua delako.",
+            "es": "Porque es importante ahorrar energía."
           },
           {
             "speaker": "Aitor",

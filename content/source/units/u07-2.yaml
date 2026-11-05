@@ -45,15 +45,15 @@ guidebook:
         es: "Ahora mismo: -tzen ari naiz"
         eu: "Orain bertan: -tzen ari naiz"
       body:
-        es: Para decir lo que estás haciendo ahora, el verbo lleva -tzen o -ten y le sigue «ari» + naiz, zara, da… Se usa siempre naiz/zara/da, aunque el verbo tenga objeto.
-        eu: Orain egiten ari zarena esateko, aditzak -tzen edo -ten hartzen du, eta ondoren «ari» + naiz, zara, da… Beti naiz/zara/da erabiltzen da, aditzak objektua izan arren.
+        es: Para decir lo que estás haciendo ahora, el verbo lleva -tzen o -ten y le sigue «ari» + naiz, zara, da… Se usa siempre naiz/zara/da, aunque el verbo tenga objeto. Ya conoces un ejemplo, «Euskara ikasten ari naiz».
+        eu: Orain egiten ari zarena esateko, aditzak -tzen edo -ten hartzen du, eta ondoren «ari» + naiz, zara, da… Beti naiz/zara/da erabiltzen da, aditzak objektua izan arren. Adibide bat ezagutzen duzu, «Euskara ikasten ari naiz».
       examples:
         - eu: Zer egiten ari zara?
           es: ¿Qué estás haciendo?
         - eu: Afaria prestatzen ari naiz.
           es: Estoy preparando la cena.
-        - eu: Umeak lo egiten ari dira.
-          es: Los niños están durmiendo.
+        - eu: Euskara ikasten ari naiz.
+          es: Estoy aprendiendo euskera.
     - title:
         es: "Voy, vengo, ando: noa, nator, nabil"
         eu: "Noa, nator, nabil"
@@ -79,10 +79,10 @@ levels:
           - Etzi amarekin bazkalduko dut. = Pasado mañana comeré con mi madre. | Pasado mañana voy a comer con mi madre.
           - Datorren astean Ane etorriko da. = La semana que viene vendrá Ane. | La próxima semana vendrá Ane. | Ane vendrá la semana que viene.
           - Aurten Frantziara bidaiatuko dugu. = Este año viajaremos a Francia. | Este año vamos a viajar a Francia.
-          - Gaur gauean etxean afalduko dugu. = Esta noche cenaremos en casa. | Esta noche vamos a cenar en casa.
+          - Gaur gauean etxean afalduko dugu edo jatetxera joango gara. = Esta noche cenaremos en casa o iremos a un restaurante. | Esta noche vamos a cenar en casa o vamos a ir a un restaurante.
           - Bihar goizean ogia erosiko dut. = Mañana por la mañana compraré pan. | Mañana por la mañana voy a comprar pan.
           - Zer egingo duzu bihar? | Bihar zer egingo duzu? = ¿Qué harás mañana? | ¿Qué vas a hacer mañana? | ¿Qué hará usted mañana? | ¿Qué va a hacer usted mañana?
-          - Datorren urtean Londresen ikasiko dut. = El año que viene estudiaré en Londres. | El próximo año estudiaré en Londres. | El año que viene voy a estudiar en Londres.
+          - Datorren urtean euskara ikasiko dut. = El año que viene aprenderé euskera. | El año que viene estudiaré euskera. | El próximo año aprenderé euskera. | El año que viene voy a aprender euskera.
         pairs:
           - - bihar = mañana
             - etzi = pasado mañana
@@ -117,7 +117,8 @@ levels:
           - Zer edango duzu? = ¿Qué vas a beber? | ¿Qué beberás? | ¿Qué va a beber usted? | ¿Qué vas a tomar?
           - Nik afaria prestatuko dut. = Yo prepararé la cena. | Prepararé la cena. | Yo voy a preparar la cena.
           - Jonek ardoa eramango du. = Jon llevará el vino. | Jon va a llevar el vino.
-          - Zortzietan bukatuko dut. = Terminaré a las ocho. | Voy a terminar a las ocho.
+          - Gaur ez dut asko jango. Zortzietan bukatuko dut. = Hoy no comeré mucho. Terminaré a las ocho. | Hoy no voy a comer mucho. Voy a terminar a las ocho.
+
           - Bihar etxean geratuko naiz. = Mañana me quedaré en casa. | Mañana voy a quedarme en casa. | Mañana me voy a quedar en casa.
           - Bederatzietan itzuliko gara. = Volveremos a las nueve. | Vamos a volver a las nueve.
           - Gaur hamar orduz lo egingo dut. = Hoy dormiré diez horas. | Hoy voy a dormir diez horas.
@@ -151,7 +152,7 @@ levels:
               - Ura edan dut.
               - Ura edango naiz.
         true_false:
-          - passage: Gaur Itziarrek afaria prestatuko du. Mikelek ardoa eramango du.
+          - passage: Gaur Itziarrek afaria prestatuko du. Mikelek ardoa eramango du, eta ogia ere bai.
             statement: Mikel preparará la cena.
             answer: false
       - structures: [synthetic-present, months]
@@ -202,10 +203,10 @@ levels:
         sentences:
           - Zer egiten ari zara? | Zertan ari zara? = ¿Qué estás haciendo? | ¿Qué está haciendo usted? | ¿Qué haces?
           - Afaria prestatzen ari naiz. = Estoy preparando la cena. | Preparo la cena.
-          - Ane irakurtzen ari da. = Ane está leyendo.
+          - Ane liburu bat irakurtzen ari da. = Ane está leyendo un libro.
           - Umeak lo egiten ari dira. = Los niños están durmiendo. | Las niñas están durmiendo.
           - Kafea hartzen ari gara. = Estamos tomando café. | Estamos tomando un café.
-          - Mikel liburutegian ikasten ari da. = Mikel está estudiando en la biblioteca.
+          - Mikel liburutegian euskara ikasten ari da. = Mikel está estudiando euskera en la biblioteca. | Mikel está aprendiendo euskera en la biblioteca.
           - Zuek zer jaten ari zarete? = ¿Qué estáis comiendo? | ¿Vosotros qué estáis comiendo? | ¿Qué están comiendo ustedes?
           - Orain amari idazten ari naiz. = Ahora le estoy escribiendo a mi madre. | Ahora estoy escribiendo a mi madre. | Ahora le escribo a mi madre.
         blanks:
@@ -231,7 +232,7 @@ levels:
               - Afaltzen ari dut.
               - Bihar afalduko dut.
         true_false:
-          - passage: Orain Leire eta Ibai hondartzan daude. Ibai irakurtzen ari da.
+          - passage: Orain Leire eta Ibai hondartzan daude. Ibai liburu bat irakurtzen ari da.
             statement: Ibai está nadando.
             answer: false
       - structures: [future-ko, word-order]
@@ -239,9 +240,9 @@ levels:
           - Bihar etorriko zara? = ¿Vendrás mañana? | ¿Vas a venir mañana? | ¿Vendrá usted mañana?
           - Bai, etorriko naiz. = Sí, vendré. | Sí, voy a venir.
           - Ez, ez naiz etorriko. = No, no vendré. | No, no voy a venir.
-          - Ez dut kafea hartuko. = No tomaré café. | No voy a tomar café.
+          - Ez dut kafea hartuko, baina tea bai. = No tomaré café, pero té sí. | No voy a tomar café, pero té sí.
           - Nora joango zarete datorren hilabetean? = ¿Adónde iréis el mes que viene? | ¿A dónde iréis el mes que viene? | ¿Adónde vais a ir el mes que viene? | ¿Adónde irán ustedes el mes que viene?
-          - Gasteizera joango gara. = Iremos a Vitoria. | Vamos a ir a Vitoria. | Iremos a Gasteiz.
+          - Gasteizera edo Bilbora joango gara. = Iremos a Vitoria o a Bilbao. | Vamos a ir a Vitoria o a Bilbao. | Iremos a Gasteiz o a Bilbao.
           - Nork prestatuko du bazkaria? = ¿Quién preparará la comida? | ¿Quién va a preparar la comida?
           - Nik prestatuko dut. = La prepararé yo. | Yo la prepararé. | Yo la voy a preparar.
         blanks:
@@ -323,7 +324,7 @@ levels:
           - Kaixo, Markel! Zer egingo duzu larunbatean? = ¡Hola, Markel! ¿Qué harás el sábado? | ¡Hola, Markel! ¿Qué vas a hacer el sábado?
           - Mendira joango naiz lagunekin. = Iré al monte con mis amigos. | Voy a ir al monte con mis amigos. | Iré al monte con amigos.
           - Eta igandean? = ¿Y el domingo?
-          - Igandean etxean geratuko naiz. = El domingo me quedaré en casa. | El domingo voy a quedarme en casa.
+          - Igandean etxean geratuko naiz eta liburu bat irakurriko dut. = El domingo me quedaré en casa y leeré un libro. | El domingo voy a quedarme en casa y voy a leer un libro.
           - Bazkaltzera etorriko zara? = ¿Vendrás a comer? | ¿Vas a venir a comer? | ¿Vendrá usted a comer?
           - Bai! Zer eramango dut? = ¡Sí! ¿Qué llevaré? | ¡Sí! ¿Qué llevo?
         chats:
@@ -360,7 +361,7 @@ levels:
           - Apaindegian nago. = Estoy en la peluquería.
           - Eta zu, zer egiten ari zara? = Y tú, ¿qué estás haciendo? | ¿Y tú qué estás haciendo? | Y usted, ¿qué está haciendo?
           - Bazkaria prestatzen ari naiz. = Estoy preparando la comida.
-          - Aita berandu dator. = Papá viene tarde. | Mi padre viene tarde. | Mi padre llega tarde.
+          - Aita beti berandu dator. = Papá siempre viene tarde. | Mi padre siempre viene tarde. | Mi padre siempre llega tarde. | Papá siempre llega tarde.
           - Sartu, mesedez! = ¡Pasa, por favor! | ¡Entra, por favor! | ¡Pase, por favor!
         chats:
           - messages:
@@ -394,7 +395,7 @@ levels:
           - Egun on! Abuztuan Londresera joan nahi dut. = ¡Buenos días! En agosto quiero ir a Londres.
           - Zenbat aste geratuko zara? = ¿Cuántas semanas te quedarás? | ¿Cuántas semanas te vas a quedar? | ¿Cuántas semanas se quedará usted?
           - Bi aste geratuko naiz. = Me quedaré dos semanas. | Voy a quedarme dos semanas.
-          - Irailean itzuliko naiz. = Volveré en septiembre. | Voy a volver en septiembre.
+          - Noiz itzuliko zara? Irailean. = ¿Cuándo volverás? En septiembre. | ¿Cuándo vas a volver? En septiembre. | ¿Cuándo volverá usted? En septiembre.
           - Martxoan eta apirilean ez dut bidaiatuko. = En marzo y abril no viajaré. | En marzo y en abril no viajaré. | En marzo y abril no voy a viajar.
           - Urrian, azaroan eta abenduan Bilbon lan egingo dut. = En octubre, noviembre y diciembre trabajaré en Bilbao. | En octubre, noviembre y diciembre voy a trabajar en Bilbao.
         chats:
@@ -439,7 +440,7 @@ levels:
         - Maialen | Eta zenbat aste geratuko zara? = ¿Y cuántas semanas te quedarás?
         - Aitor | Bi aste. Urtarrilean itzuliko naiz. = Dos semanas. Volveré en enero.
         - Aitor | Eta zu? Zer egingo duzu abenduan? = ¿Y tú? ¿Qué harás en diciembre?
-        - Maialen | Etxean geratuko naiz. Urrian eta azaroan bidaiatu dut. = Me quedaré en casa. En octubre y noviembre ya he viajado.
+        - Maialen | Etxean geratuko naiz. Urrian eta azaroan asko bidaiatu dut. = Me quedaré en casa. En octubre y noviembre he viajado mucho.
         - Aitor | Eta orain nora zoaz? = ¿Y ahora adónde vas?
         - Maialen | Apaindegira. Berandu da! Agur, Aitor! = A la peluquería. ¡Es tarde! ¡Adiós, Aitor!
         - Aitor | Agur! Gero arte! = ¡Adiós! ¡Hasta luego!

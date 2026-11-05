@@ -9,8 +9,8 @@ title:
 goals:
   - es: Decir qué te duele y describir síntomas.
     eu: Non duzun mina esan eta sintomak azaldu.
-  - es: Pedir hora con el médico y quedar a una hora.
-    eu: Medikuarekin ordua hartu eta ordu bat adostu.
+  - es: Pedir cita en el centro de salud y quedar a una hora.
+    eu: Osasun-etxean hitzordua hartu eta ordu bat adostu.
 guidebook:
   sections:
     - title:
@@ -46,21 +46,21 @@ guidebook:
       examples:
         - eu: Bilboko ospitalea handia da.
           es: El hospital de Bilbao es grande.
-        - eu: Herriko farmazia plazan dago.
-          es: La farmacia del pueblo está en la plaza.
+        - eu: Herriko osasun-etxea plazan dago.
+          es: El centro de salud del pueblo está en la plaza.
     - title:
         es: "¿A qué hora? Zer ordutan?"
         eu: "Zer ordutan?"
       body:
-        es: Para decir a qué hora pasa algo, el número lleva -(r)etan (hiruretan, bostetan); «a la una» es «ordu batean». Se puede añadir goizeko, arratsaldeko o gaueko delante.
-        eu: Zerbait zer ordutan gertatzen den esateko, zenbakiak -(r)etan hartzen du (hiruretan, bostetan); «ordu batean» esaten da. Aurretik goizeko, arratsaldeko edo gaueko jar daiteke.
+        es: Para decir a qué hora pasa algo, el número lleva -(r)etan (hiruretan, bostetan); «a la una» es «ordu batean». Se puede añadir goizeko, arratsaldeko o gaueko delante. Para pedir cita en el centro de salud (osasun-etxea) se dice «Hitzordua hartu nahi dut».
+        eu: Zerbait zer ordutan gertatzen den esateko, zenbakiak -(r)etan hartzen du (hiruretan, bostetan); «ordu batean» esaten da. Aurretik goizeko, arratsaldeko edo gaueko jar daiteke. Osasun-etxean «Hitzordua hartu nahi dut» esaten da.
       examples:
         - eu: Zer ordutan? Hiruretan.
           es: ¿A qué hora? A las tres.
         - eu: Goizeko hamarretan etorriko naiz.
           es: Vendré a las diez de la mañana.
-        - eu: Ordu batean bazkalduko dut.
-          es: Comeré a la una.
+        - eu: Osasun-etxean hitzordua daukat, hiruretan.
+          es: Tengo cita en el centro de salud a las tres.
 levels:
   - type: lesson
     title:
@@ -103,7 +103,7 @@ levels:
               - Burua mina daukat.
               - Bihar arte.
         true_false:
-          - passage: Gaur hortzetako mina daukat. Ez dut bazkaldu.
+          - passage: Gaur hortzetako mina daukat. Ez dut asko jan.
             statement: Le duelen las muelas.
             answer: true
       - structures: [body-parts, nongo-mina]
@@ -152,9 +152,9 @@ levels:
           - Eztula daukazu? | Eztula duzu? = ¿Tienes tos? | ¿Tiene usted tos?
           - Hotzeria daukat. | Hotzeria dut. = Tengo un resfriado. | Estoy resfriado. | Estoy resfriada.
           - Oso nekatuta nago. = Estoy muy cansado. | Estoy muy cansada.
-          - Ane gaixo dago. = Ane está enferma.
+          - Ane gaixo dago, eta Jon ere bai. = Ane está enferma, y Jon también.
           - Zer daukazu? = ¿Qué tienes? | ¿Qué te pasa? | ¿Qué tiene usted? | ¿Qué le pasa?
-          - Ez daukat sukarrik. | Ez dut sukarrik. = No tengo fiebre.
+          - Ez daukat sukarrik, baina eztula daukat. | Ez dut sukarrik, baina eztula dut. = No tengo fiebre, pero tengo tos.
         pairs:
           - - sukarra = la fiebre
             - eztula = la tos
@@ -231,9 +231,9 @@ levels:
           - Herriko farmazia plazan dago. = La farmacia del pueblo está en la plaza.
           - Ospitaleko medikua oso jatorra da. = El médico del hospital es muy majo. | La médica del hospital es muy maja.
           - Eskolako erizaina Itziar da. = La enfermera de la escuela es Itziar.
-          - Gasteizko medikuarekin ordua hartu dut. = He pedido hora con el médico de Vitoria. | He pedido cita con el médico de Vitoria. | He pedido hora con la médica de Vitoria.
+          - Gasteizko osasun-etxean hitzordua hartu dut. = He pedido cita en el centro de salud de Vitoria. | He pedido hora en el centro de salud de Vitoria. | He pedido cita en el centro de salud de Gasteiz.
           - Donostiako ospitalea handia da. = El hospital de San Sebastián es grande. | El hospital de Donostia es grande.
-          - Hau Tolosako farmazia da? = ¿Esta es la farmacia de Tolosa?
+          - Hau Tolosako osasun-etxea da? = ¿Este es el centro de salud de Tolosa?
           - Nire herriko medikua Aitor da. = El médico de mi pueblo es Aitor.
         blanks:
           - text: ___ farmazia plazan dago. = La farmacia del pueblo está en la plaza.
@@ -261,7 +261,7 @@ levels:
         sentences:
           - Zer ordutan? = ¿A qué hora?
           - Hiruretan. = A las tres.
-          - Bostetan ospitalera joango naiz. = A las cinco iré al hospital. | A las cinco voy a ir al hospital.
+          - Bostetan osasun-etxera joango naiz. = A las cinco iré al centro de salud. | A las cinco voy a ir al centro de salud.
           - Zer ordutan bazkalduko duzu? = ¿A qué hora comerás? | ¿A qué hora vas a comer? | ¿A qué hora comerá usted?
           - Ordu batean bazkalduko dut. = Comeré a la una. | Voy a comer a la una.
           - Goizeko hamarretan etorriko naiz. = Vendré a las diez de la mañana. | Voy a venir a las diez de la mañana.
@@ -292,8 +292,8 @@ levels:
               - Seiak dira.
               - Seietan etorri naiz.
         true_false:
-          - passage: Gaur medikuarekin ordua daukat. Bostetan joango naiz.
-            statement: Irá al médico a las cinco.
+          - passage: Gaur osasun-etxean hitzordua daukat. Bostetan joango naiz.
+            statement: Irá al centro de salud a las cinco.
             answer: true
   - type: lesson
     title:
@@ -338,7 +338,7 @@ levels:
               - ¿Estás en casa?
       - structures: [zer-ordutan]
         sentences:
-          - Kaixo, egun on. Medikuarekin ordua hartu nahi dut. = Hola, buenos días. Quiero pedir hora con el médico. | Hola, buenos días. Quiero pedir cita con el médico. | Hola, buenos días. Quiero pedir hora con la médica.
+          - Kaixo, egun on. Hitzordua hartu nahi dut. = Hola, buenos días. Quiero pedir cita. | Hola, buenos días. Quiero pedir hora.  # TODO(revisión-nativa): «hitzordua hartu» frente a «hitzordua eskatu» (8.2) para «pedir cita»
           - Zure izena, mesedez? = ¿Su nombre, por favor? | ¿Tu nombre, por favor?
           - Bihar, goizeko bederatzietan, ondo? = Mañana, a las nueve de la mañana, ¿bien? | Mañana, a las nueve de la mañana, ¿le va bien? | Mañana, a las nueve de la mañana, ¿te va bien?
           - Ez, goizean lan egiten dut. = No, por la mañana trabajo.
@@ -347,7 +347,7 @@ levels:
         chats:
           - messages:
               - Erizaina | Egun on! Zer nahi duzu?
-              - Kepa | Medikuarekin ordua hartu nahi dut.
+              - Kepa | Medikuarekin hitzordua hartu nahi dut.
               - Erizaina | Zer ordutan?
             options:
               - Arratsaldeko bostetan.
@@ -360,25 +360,25 @@ levels:
               - Bai, hamaiketan etorri naiz.
               - Bai, hamaika urte ditut.
         true_false:
-          - passage: Ostiralean medikuarekin ordua daukat, goizeko hamarretan.
+          - passage: Ostiralean osasun-etxean hitzordua daukat, goizeko hamarretan.
             statement: La cita es el viernes por la tarde.
             answer: false
           - passage: Gaur biretan Donostiako ospitalera joango naiz. Amak sabeleko mina dauka.
             statement: Irá al hospital a las dos.
             answer: true
         blanks:
-          - text: Medikuarekin ordua ___ nahi dut. = Quiero pedir hora con el médico.
+          - text: Hitzordua ___ nahi dut. = Quiero pedir cita.
             options:
               - hartu
               - hartzen
       - structures: [nongo, symptoms]
         sentences:
-          - Barkatu, non dago Getxoko ospitalea? = Perdona, ¿dónde está el hospital de Getxo? | Perdone, ¿dónde está el hospital de Getxo?
+          - Barkatu, non dago Getxoko osasun-etxea? = Perdona, ¿dónde está el centro de salud de Getxo? | Perdone, ¿dónde está el centro de salud de Getxo?
           - Herriko farmazia urrun dago? = ¿La farmacia del pueblo está lejos? | ¿Está lejos la farmacia del pueblo?
           - Ez, gertu dago, elizaren ondoan. = No, está cerca, al lado de la iglesia.
           - Nire semeak eztula eta sukarra dauzka. = Mi hijo tiene tos y fiebre.
           - Gaur ez da eskolara joango. = Hoy no irá a la escuela. | Hoy no va a ir a la escuela.
-          - Hamabietan medikuarekin ordua daukagu. = A las doce tenemos hora con el médico. | Tenemos cita con el médico a las doce. | A las doce tenemos cita con el médico.
+          - Hamabietan hitzordua daukagu osasun-etxean. = A las doce tenemos cita en el centro de salud. | Tenemos cita en el centro de salud a las doce.
         chats:
           - messages:
               - Uxue | Kaixo, Peio! Zer moduz?
@@ -420,7 +420,7 @@ levels:
         - Josu | Buruko mina eta eztula. Oso nekatuta nago. = Dolor de cabeza y tos. Estoy muy cansado.
         - Miren | Sukarra daukazu? = ¿Tienes fiebre?
         - Josu | Bai, atzo gauean sukarra izan dut. = Sí, anoche tuve fiebre.
-        - Miren | Medikuarekin ordua hartu duzu? = ¿Has pedido hora con el médico?
+        - Miren | Osasun-etxean hitzordua hartu duzu? = ¿Has pedido cita en el centro de salud?
         - Josu | Bai, gaur arratsaldeko lauretan. = Sí, hoy a las cuatro de la tarde.
         - Miren | Ni Durangoko farmaziara noa. Zer behar duzu? = Voy a la farmacia de Durango. ¿Qué necesitas?
         - Josu | Ura eta zukua, mesedez. = Agua y zumo, por favor.
@@ -433,7 +433,8 @@ levels:
             - Le duele la espalda.
             - Le duele un pie.
         - afterLine: 7
-          prompt: ¿A qué hora tiene Josu cita con el médico?
+          prompt: ¿A qué hora tiene Josu cita en el centro de salud?
+
           options:
             - A las cuatro
             - A las cinco

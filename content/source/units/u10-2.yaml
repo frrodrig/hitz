@@ -16,13 +16,15 @@ guidebook:
         es: "Creo que…: -ela"
         eu: "Uste dut…: -ela"
       body:
-        es: Tras «uste dut» (creo que) o «iruditzen zait» (me parece que), el verbo de la segunda frase lleva -ela al final (da → dela, dago → dagoela, daude → daudela).
-        eu: «Uste dut» edo «iruditzen zait» esan ondoren, bigarren esaldiko aditzak -ela hartzen du (da → dela, dago → dagoela, daude → daudela).
+        es: Tras «uste dut» (creo que), «iruditzen zait» (me parece que) o «esan du» (ha dicho que), el verbo de la segunda frase lleva -ela al final (da → dela, dago → dagoela, daude → daudela).
+        eu: «Uste dut», «iruditzen zait» edo «esan du» esan ondoren, bigarren esaldiko aditzak -ela hartzen du (da → dela, dago → dagoela, daude → daudela).
       examples:
         - eu: Uste dut herria lasaiagoa dela.
           es: Creo que el pueblo es más tranquilo.
         - eu: Iruditzen zait auzoan trafiko asko dagoela.
           es: Me parece que en el barrio hay mucho tráfico.
+        - eu: Anek esan du kanpina oso ona dela.
+          es: Ane ha dicho que el camping es muy bueno.
     - title:
         es: "No tan … como: bezain"
         eu: "Ez da … bezain"
@@ -69,7 +71,7 @@ levels:
           - Kalean jende asko dago. = En la calle hay mucha gente. | Hay mucha gente en la calle.
           - Gure auzoa oso lasaia da. = Nuestro barrio es muy tranquilo.
           - Herrian bizi-kalitatea ona da. = En el pueblo la calidad de vida es buena.
-          - Herriak sarbide onak ditu. = El pueblo tiene buenos accesos.
+          - Gure auzoan jende asko dago, baina zarata gutxi. = En nuestro barrio hay mucha gente, pero poco ruido.
           - Leku hau egokia da umeentzat. = Este lugar es adecuado para los niños.
           - Auzo hau ez da egokia bizitzeko. = Este barrio no es adecuado para vivir.
         pairs:
@@ -98,7 +100,7 @@ levels:
               - Trafikoa naiz.
               - Bai, jende asko naiz.
         true_false:
-          - passage: Nire auzoan trafiko asko dago. Zarata handia da.
+          - passage: Nire auzoan beti dago trafiko asko. Zarata handia da.
             statement: En el barrio hay poco tráfico.
             answer: false
       - structures: [holidays]
@@ -109,8 +111,8 @@ levels:
           - Bidaia oso ona izan da. = El viaje ha sido muy bueno.
           - Donostian turista asko daude. = En San Sebastián hay muchos turistas. | En Donostia hay muchos turistas.
           - Primeran pasatu dugu! = ¡Lo hemos pasado estupendamente! | ¡Lo hemos pasado genial!
-          - Oporretan Parisera bidaiatu dut. = En vacaciones he viajado a París.
-          - Kanpina hondartzaren ondoan dago. = El camping está al lado de la playa.
+          - Oporretan Parisera bidaiatu dut, eta Londresera ere bai. = En vacaciones he viajado a París, y también a Londres.
+          - Oporretan beti hondartzara joaten gara. = En vacaciones siempre vamos a la playa. | Siempre vamos a la playa en vacaciones.
         pairs:
           - - opor = vacaciones
             - bidaia = viaje
@@ -189,9 +191,9 @@ levels:
           - Uste dut herria lasaiagoa dela. = Creo que el pueblo es más tranquilo.
           - Uste dut hirian trafiko gehiago dagoela. = Creo que en la ciudad hay más tráfico. | Creo que hay más tráfico en la ciudad.
           - Iruditzen zait auzo hau segurua dela. = Me parece que este barrio es seguro.
-          - Uste dut Bilbo hiri interesgarria dela. = Creo que Bilbao es una ciudad interesante.
+          - Anek esan du Bilbo hiri interesgarria dela. = Ane ha dicho que Bilbao es una ciudad interesante.
           - Iruditzen zait hemen jende gutxi dagoela. = Me parece que aquí hay poca gente.
-          - Uste dut auzoan zerbitzu onak daudela. = Creo que en el barrio hay buenos servicios. | Creo que hay buenos servicios en el barrio.
+          - Jonek esan dit auzoa oso garbia dela. = Jon me ha dicho que el barrio está muy limpio. | Jon me ha dicho que el barrio es muy limpio.
           - Uste dut kanpina hotela baino hobea dela. = Creo que el camping es mejor que el hotel.
           - Iruditzen zait Donostian turista asko daudela. = Me parece que en San Sebastián hay muchos turistas. | Me parece que en Donostia hay muchos turistas.
         blanks:
@@ -259,7 +261,7 @@ levels:
           - Ez zait gustatzen hirian bizitzea. = No me gusta vivir en la ciudad.
           - Gustatu zaizu Parisen egotea? = ¿Te ha gustado estar en París? | ¿Le ha gustado estar en París?
           - Asko gustatu zaigu Londresera bidaiatzea. = Nos ha gustado mucho viajar a Londres.
-          - Gustatzen zait oporrak mendian pasatzea. = Me gusta pasar las vacaciones en el monte. | Me gusta pasar las vacaciones en la montaña.
+          - Gustatzen zait oporrak mendian edo hondartzan pasatzea. = Me gusta pasar las vacaciones en el monte o en la playa. | Me gusta pasar las vacaciones en la montaña o en la playa.
           - Ez zait gustatu kanpinean lo egitea. = No me ha gustado dormir en el camping.
         blanks:
           - text: Asko gustatzen zait kanpinean ___. = Me gusta mucho estar en el camping.
@@ -294,8 +296,8 @@ levels:
           - Iruditzen zait auzoan zarata asko dagoela. = Me parece que en el barrio hay mucho ruido. | Me parece que hay mucho ruido en el barrio.
           - Nire ustez, herrian bizi-kalitatea hobea da. = En mi opinión, en el pueblo la calidad de vida es mejor. | Creo que en el pueblo la calidad de vida es mejor.
           - Uste dut hiria ez dela hain arriskutsua. = Creo que la ciudad no es tan peligrosa.
-          - Ez nago ados. Hiria zaratatsuagoa da. = No estoy de acuerdo. La ciudad es más ruidosa.
-          - Auzo hau ez da egokia umeentzat. = Este barrio no es adecuado para los niños.
+          - Ez nago ados. Hiria zaratatsuagoa da, baina interesgarriagoa ere bai. = No estoy de acuerdo. La ciudad es más ruidosa, pero también más interesante.
+          - Niretzat garrantzitsua da auzo lasai batean bizitzea. = Para mí es importante vivir en un barrio tranquilo.
         chats:
           - messages:
               - Unai | Zer iruditzen zaizu Bilbo?
@@ -312,7 +314,7 @@ levels:
               - Ados nago. Herria zaratatsuagoa da.
               - Bai, auzoa naiz.
         true_false:
-          - passage: Edurnek uste du Gasteiz hiri segurua eta garbia dela.
+          - passage: Edurnek uste du Gasteiz hiri segurua eta garbia dela. Bere lagunak ere bai.
             statement: Edurne cree que Vitoria es una ciudad sucia.
             answer: false
           - passage: Patxiri iruditzen zaio bere auzoan jende gutxi dagoela.
@@ -330,7 +332,7 @@ levels:
           - Oporretan herrian egotea gustatzen zait. = En vacaciones me gusta estar en el pueblo.
           - Atzerrira bidaiatzea nahiago dut. = Prefiero viajar al extranjero.
           - Kanpina hotela baino merkeagoa da. = El camping es más barato que el hotel.
-          - Aurten Bartzelonara bidaiatu dugu. = Este año hemos viajado a Barcelona.
+          - Bihar oporretan Bartzelonara goaz. = Mañana nos vamos de vacaciones a Barcelona.
           - Oporretan turista asko daude hondartzan. = En vacaciones hay muchos turistas en la playa.
         chats:
           - messages:
@@ -411,8 +413,9 @@ levels:
         - Ibai | Herri polita da. Abuztuan turista asko daude. = Es un pueblo bonito. En agosto hay muchos turistas.
         - Ibai | Iruditzen zait trafiko eta zarata asko dagoela. = Me parece que hay mucho tráfico y ruido.
         - "Garazi | Nik oporrak atzerrian pasatu ditut, Londresen. = Yo he pasado las vacaciones en el extranjero, en Londres."
-        - Garazi | Londres ez da Zarautz bezain lasaia! = ¡Londres no es tan tranquilo como Zarautz!
-        - Ibai | Ez, ez da hain lasaia! = ¡No, no es tan tranquilo!
+        - Garazi | Londres ez da Zarautz bezain lasaia, baina oso interesgarria da! = ¡Londres no es tan tranquilo como Zarautz, pero es muy interesante!
+        - Ibai | Ni ere Londresera joan nahi dut! = ¡Yo también quiero ir a Londres!
+
       questions:
         - afterLine: 1
           prompt: ¿Dónde ha estado Ibai de vacaciones?

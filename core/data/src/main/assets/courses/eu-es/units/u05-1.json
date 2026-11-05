@@ -89,17 +89,21 @@
       },
       {
         "title": {
-          "es": "Las comidas del día y «ere»",
-          "eu": "Eguneko otorduak eta «ere»"
+          "es": "Comer, beber y las comidas del día",
+          "eu": "Jan, edan eta eguneko otorduak"
         },
         "body": {
-          "es": "Gosaria es el desayuno, bazkaria la comida y afaria la cena; «gosarian» significa «en el desayuno». Para decir «a mí también», «niri ere bai»; para «a mí tampoco», «niri ere ez».",
-          "eu": "Goizean gosaria, eguerdian bazkaria eta gauean afaria. «Gosarian» esaten dugu. Ados gaudenean, «niri ere bai» edo «niri ere ez»."
+          "es": "«Jan» es comer y «edan» beber. Para lo que haces normalmente se usa jaten / edaten + dut, duzu, du…: arraina jaten dut (como pescado). Con «nahi»: zer jan nahi duzu? Gosaria es el desayuno, bazkaria la comida y afaria la cena; «gosarian» es «en el desayuno». «A mí también» es «niri ere bai»; «a mí tampoco», «niri ere ez».",
+          "eu": "Jan eta edan: jaten dut, edaten dut. Nahi-rekin: zer jan nahi duzu? Goizean gosaria, eguerdian bazkaria eta gauean afaria; «gosarian» esaten dugu. Ados gaudenean, «niri ere bai» edo «niri ere ez»."
         },
         "examples": [
           {
-            "eu": "Gosarian kafea nahiago dut.",
-            "es": "En el desayuno prefiero café."
+            "eu": "Gosarian ogia jaten dut.",
+            "es": "En el desayuno como pan."
+          },
+          {
+            "eu": "Zer edan nahi duzu?",
+            "es": "¿Qué quieres beber?"
           },
           {
             "eu": "Niri ere bai.",
@@ -126,18 +130,19 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Quiero agua, por favor."
+                "text": "Quiero beber agua, por favor."
               },
               "answers": [
-                "Ura nahi dut, mesedez."
+                "Ura edan nahi dut, mesedez."
               ],
               "distractors": [
-                "hozkailuan",
-                "eta",
+                "Kafea",
+                "gainean",
                 "bat"
               ],
               "vocabulary": [
                 "ur",
+                "edan",
                 "nahi izan",
                 "ukan",
                 "mesedez"
@@ -151,8 +156,8 @@
               "type": "listen_tap",
               "text": "Kafea ala tea?",
               "distractors": [
-                "eta",
-                "mahai"
+                "mesedez",
+                "hozkailuan"
               ],
               "vocabulary": [
                 "kafe",
@@ -298,7 +303,7 @@
               "messages": [
                 {
                   "speaker": "Iker",
-                  "text": "Kaixo! Zer nahi duzu?"
+                  "text": "Kaixo! Zer edan nahi duzu?"
                 }
               ],
               "options": [
@@ -310,6 +315,7 @@
               "vocabulary": [
                 "kaixo",
                 "zer",
+                "edan",
                 "nahi izan",
                 "ukan",
                 "kafe",
@@ -323,15 +329,15 @@
             {
               "id": "u05-1.l1.s1.e10",
               "type": "listen_type",
-              "text": "Tea eta ura, mesedez.",
+              "text": "Zer edan nahi duzu?",
               "answers": [
-                "Tea eta ura, mesedez."
+                "Zer edan nahi duzu?"
               ],
               "vocabulary": [
-                "te",
-                "eta",
-                "ur",
-                "mesedez"
+                "zer",
+                "edan",
+                "nahi izan",
+                "ukan"
               ],
               "structures": [
                 "food-vocab"
@@ -381,9 +387,9 @@
                 "Las bebidas están sobre la mesa."
               ],
               "distractors": [
-                "leche",
                 "naranja",
-                "cerveza",
+                "Una",
+                "Café",
                 "agua"
               ],
               "vocabulary": [
@@ -406,8 +412,8 @@
               "type": "listen_tap",
               "text": "Ogia mahai gainean dago.",
               "distractors": [
-                "ditut",
-                "behar",
+                "Haragia",
+                "Gaur",
                 "Arrautzak"
               ],
               "vocabulary": [
@@ -556,15 +562,15 @@
             {
               "id": "u05-1.l1.s2.e08",
               "type": "listen_type",
-              "text": "Gazta eta ogia daukat.",
+              "text": "Ogi asko jaten dut.",
               "answers": [
-                "Gazta eta ogia daukat."
+                "Ogi asko jaten dut."
               ],
               "vocabulary": [
-                "gazta",
-                "eta",
                 "ogi",
-                "eduki"
+                "asko",
+                "jan",
+                "ukan"
               ],
               "structures": [
                 "food-vocab"
@@ -639,9 +645,9 @@
                 "Necesitamos carne y pescado."
               ],
               "distractors": [
-                "Los",
                 "huevos",
-                "de"
+                "frigorífico",
+                "Como"
               ],
               "vocabulary": [
                 "haragi",
@@ -659,19 +665,22 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "El pollo está en la cocina."
+                "text": "Hoy quiero comer pollo."
               },
               "answers": [
-                "Oilaskoa sukaldean dago."
+                "Gaur oilaskoa jan nahi dut."
               ],
               "distractors": [
-                "ditugu",
-                "hozkailuan"
+                "daude",
+                "jaten",
+                "Arrautzak"
               ],
               "vocabulary": [
+                "gaur",
                 "oilasko",
-                "sukalde",
-                "egon"
+                "jan",
+                "nahi izan",
+                "ukan"
               ],
               "structures": [
                 "food-vocab"
@@ -706,12 +715,13 @@
             {
               "id": "u05-1.l1.s3.e02",
               "type": "order_sentence",
-              "answer": "Bazkaria sukaldean dago.",
-              "translation": "La comida está en la cocina.",
+              "answer": "Bazkarian arraina jaten dugu.",
+              "translation": "En la comida comemos pescado.",
               "vocabulary": [
                 "bazkari",
-                "sukalde",
-                "egon"
+                "arrain",
+                "jan",
+                "ukan"
               ],
               "structures": [
                 "food-vocab",
@@ -893,10 +903,10 @@
                 "La comida y la bebida están sobre la mesa."
               ],
               "distractors": [
+                "comemos",
                 "tomates",
-                "Tenemos",
-                "cena",
-                "pollo"
+                "pollo",
+                "quiero"
               ],
               "vocabulary": [
                 "janari",
@@ -914,18 +924,19 @@
             {
               "id": "u05-1.l1.s3.e11",
               "type": "read_true_false",
-              "passage": "Gosarian esnea daukagu. Bazkarian oilaskoa eta patatak daude.",
-              "statement": "En el desayuno hay pollo.",
+              "passage": "Gosarian esnea edaten dugu. Bazkarian oilaskoa eta patatak jaten ditugu.",
+              "statement": "En el desayuno comen pollo.",
               "answer": false,
               "vocabulary": [
                 "gosari",
                 "esne",
-                "eduki",
+                "edan",
+                "ukan",
                 "bazkari",
                 "oilasko",
                 "eta",
                 "patata",
-                "egon"
+                "jan"
               ],
               "structures": [
                 "food-vocab",
@@ -943,9 +954,9 @@
                 "Letxuga eta tomatea daukagu."
               ],
               "distractors": [
-                "edaria",
-                "daude",
-                "dago"
+                "gainean",
+                "dugu",
+                "ditugu"
               ],
               "vocabulary": [
                 "letxuga",
@@ -963,9 +974,9 @@
               "type": "listen_tap",
               "text": "Bazkarian oilaskoa nahi dut.",
               "distractors": [
-                "Gosarian",
-                "Janaria",
-                "daude"
+                "Patatak",
+                "kafea",
+                "Sagar"
               ],
               "vocabulary": [
                 "bazkari",
@@ -1182,7 +1193,7 @@
             {
               "id": "u05-1.l2.s1.e11",
               "type": "read_true_false",
-              "passage": "Ni Leire naiz. Arraina gustatzen zait. Ez zait haragia gustatzen.",
+              "passage": "Ni Leire naiz. Arraina gustatzen zait, baina ez zait haragia gustatzen.",
               "statement": "A Leire le gusta la carne.",
               "answer": false,
               "vocabulary": [
@@ -1190,6 +1201,7 @@
                 "izan",
                 "arrain",
                 "gustatu",
+                "baina",
                 "ez",
                 "haragi"
               ],
@@ -1453,7 +1465,7 @@
             {
               "id": "u05-1.l2.s2.e11",
               "type": "read_true_false",
-              "passage": "Nire lagunari, Unairi, gazta gustatzen zaio. Ez zaizkio sagarrak gustatzen.",
+              "passage": "Nire lagunari, Unairi, gazta gustatzen zaio, baina ez zaizkio sagarrak gustatzen.",
               "statement": "A Unai le gustan las manzanas.",
               "answer": false,
               "vocabulary": [
@@ -1461,6 +1473,7 @@
                 "lagun",
                 "gazta",
                 "gustatu",
+                "baina",
                 "ez",
                 "sagar"
               ],
@@ -1586,8 +1599,8 @@
                 "Ane prefiere el agua."
               ],
               "distractors": [
-                "té",
-                "patatas"
+                "desayuno",
+                "o"
               ],
               "vocabulary": [
                 "ur",
@@ -1630,9 +1643,9 @@
                 "Arraina nahiago dugu."
               ],
               "distractors": [
-                "Haragia",
-                "dut",
-                "Mikelek"
+                "zukua",
+                "Garagardoa",
+                "Haiek"
               ],
               "vocabulary": [
                 "gu",
@@ -1669,9 +1682,9 @@
               "type": "listen_tap",
               "text": "Haragia ala oilaskoa nahiago duzue?",
               "distractors": [
-                "dituzte",
                 "Haiek",
-                "ura"
+                "ura",
+                "Garagardoa"
               ],
               "vocabulary": [
                 "haragi",
@@ -1769,16 +1782,19 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Mikelek garagardoa nahiago du."
+                "text": "Mikelek ez du ardorik edaten. Garagardoa nahiago du."
               },
               "answers": [
-                "Mikel prefiere cerveza.",
-                "Mikel prefiere la cerveza."
+                "Mikel no bebe vino. Prefiere cerveza.",
+                "Mikel no bebe vino. Prefiere la cerveza."
               ],
               "vocabulary": [
+                "ez",
+                "ukan",
+                "ardo",
+                "edan",
                 "garagardo",
-                "nahiago izan",
-                "ukan"
+                "nahiago izan"
               ],
               "structures": [
                 "nahiago-izan"
@@ -1828,8 +1844,8 @@
               ],
               "distractors": [
                 "quieres",
-                "y",
-                "la"
+                "naranjas",
+                "Hoy"
               ],
               "vocabulary": [
                 "zuku",
@@ -1854,6 +1870,7 @@
               "correct": 0,
               "vocabulary": [
                 "ni",
+                "ere",
                 "bai"
               ],
               "structures": [
@@ -1873,11 +1890,12 @@
               ],
               "distractors": [
                 "ala",
-                "garagardoa",
-                "Zukua"
+                "Gaur",
+                "Zer"
               ],
               "vocabulary": [
                 "ni",
+                "ere",
                 "kafe",
                 "gustatu"
               ],
@@ -1930,9 +1948,9 @@
               "text": "Ez zait garagardoa gustatzen. Ura nahiago dut.",
               "distractors": [
                 "kafea",
-                "nahi",
-                "Tabernan",
-                "Zer"
+                "mesedez",
+                "Laranjak",
+                "Niri"
               ],
               "vocabulary": [
                 "ez",
@@ -1967,7 +1985,8 @@
                 "gustatu",
                 "bai",
                 "eta",
-                "laranja"
+                "laranja",
+                "ere"
               ],
               "structures": [
                 "gustatu-present",
@@ -1979,17 +1998,17 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "En el bar hay pan y queso."
+                "text": "Hoy quiero comer en el bar."
               },
               "answers": [
-                "Tabernan ogia eta gazta daude."
+                "Gaur tabernan jan nahi dut."
               ],
               "vocabulary": [
+                "gaur",
                 "taberna",
-                "ogi",
-                "eta",
-                "gazta",
-                "egon"
+                "jan",
+                "nahi izan",
+                "ukan"
               ],
               "structures": [
                 "gustatu-present",
@@ -1999,14 +2018,16 @@
             {
               "id": "u05-1.l3.s1.e09",
               "type": "read_true_false",
-              "passage": "Tabernan, Oierrek garagardoa nahi du. Haizeak ura nahiago du.",
+              "passage": "Tabernan, Oierrek garagardoa edan nahi du, baina Haizeak ura nahiago du.",
               "statement": "Haizea prefiere agua.",
               "answer": true,
               "vocabulary": [
                 "taberna",
                 "garagardo",
+                "edan",
                 "nahi izan",
                 "ukan",
+                "baina",
                 "haize",
                 "ur",
                 "nahiago izan"
@@ -2334,9 +2355,9 @@
                 "Gosarian kafea nahiago dut."
               ],
               "distractors": [
-                "sukaldean",
-                "dago",
-                "Afaria"
+                "Afarian",
+                "nahi",
+                "honetan"
               ],
               "vocabulary": [
                 "gosari",
@@ -2354,8 +2375,8 @@
               "type": "listen_tap",
               "text": "Bazkarian oilaskoa daukagu.",
               "distractors": [
-                "sukaldean",
-                "dugu"
+                "arraina",
+                "nahi"
               ],
               "vocabulary": [
                 "bazkari",
@@ -2441,12 +2462,13 @@
             {
               "id": "u05-1.l3.s3.e06",
               "type": "order_sentence",
-              "answer": "Afaria sukaldean dago.",
-              "translation": "La cena está en la cocina.",
+              "answer": "Zer jaten duzu afarian?",
+              "translation": "¿Qué comes en la cena?",
               "vocabulary": [
-                "afari",
-                "sukalde",
-                "egon"
+                "zer",
+                "jan",
+                "ukan",
+                "afari"
               ],
               "structures": [
                 "meals",
@@ -2514,18 +2536,20 @@
             {
               "id": "u05-1.l3.s3.e09",
               "type": "read_true_false",
-              "passage": "Ni Julen naiz. Gosarian zukua nahiago dut. Afarian arraina nahiago dut.",
-              "statement": "Julen prefiere zumo en el desayuno.",
+              "passage": "Ni Julen naiz. Gosarian beti zukua edaten dut. Afarian arraina jaten dut.",
+              "statement": "Julen bebe zumo en el desayuno.",
               "answer": true,
               "vocabulary": [
                 "ni",
                 "izan",
                 "gosari",
+                "beti",
                 "zuku",
-                "nahiago izan",
+                "edan",
                 "ukan",
                 "afari",
-                "arrain"
+                "arrain",
+                "jan"
               ],
               "structures": [
                 "meals",
@@ -2608,8 +2632,8 @@
           },
           {
             "speaker": "Ane",
-            "eu": "Ez, ez dago ardorik. Garagardoa ala ura?",
-            "es": "No, no hay vino. ¿Cerveza o agua?"
+            "eu": "Ez, ez dago ardorik. Zer edan nahi duzu, garagardoa ala ura?",
+            "es": "No, no hay vino. ¿Qué quieres beber, cerveza o agua?"
           },
           {
             "speaker": "Iker",

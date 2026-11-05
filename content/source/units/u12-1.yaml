@@ -44,11 +44,13 @@ guidebook:
         es: "Cómo y hasta dónde: trenez, Bilboraino"
         eu: "Nola eta noraino: trenez, Bilboraino"
       body:
-        es: El medio de transporte lleva «-z» sin artículo (trenez, metroz, autobusez). «Hasta dónde» se dice con «-raino» (Bilboraino, hondartzaraino).
-        eu: Garraiobideak «-z» hartzen du, artikulurik gabe (trenez, metroz, autobusez). Muga adierazteko «-raino» erabiltzen da (Bilboraino).
+        es: El medio de transporte lleva «-z» sin artículo (trenez, autoz, bizikletaz); «a pie» es «oinez». Para preguntar «hasta dónde» se dice «noraino?», y la respuesta lleva «-raino» (Bilboraino, hondartzaraino).
+        eu: Garraiobideak «-z» hartzen du, artikulurik gabe (trenez, autoz, bizikletaz); bestela, «oinez». Muga galdetzeko «noraino?» erabiltzen da, eta erantzunean «-raino» (Bilboraino).
       examples:
-        - eu: Trenez joaten naiz.
-          es: Voy en tren.
+        - eu: Autoz edo oinez joaten zara?
+          es: ¿Vas en coche o a pie?
+        - eu: Noraino doa autobusa?
+          es: ¿Hasta dónde va el autobús?
         - eu: Autobusa Bilboraino doa.
           es: El autobús va hasta Bilbao.
     - title:
@@ -71,7 +73,7 @@ levels:
       - structures: [aisialdia, kirolak]
         sentences:
           - Zer egiten duzu aisialdian? = ¿Qué haces en tu tiempo libre? | ¿Qué hace usted en su tiempo libre?
-          - Kirola egiten dut. = Hago deporte. | Yo hago deporte.
+          - Asteburuetan bizikletan ibiltzen naiz. = Los fines de semana monto en bicicleta. | Los fines de semana ando en bici. | Los fines de semana voy en bici.
           - Larunbatetan futbolean jolasten dut. = Los sábados juego al fútbol.  # TODO(revisión-nativa): jolastu with du (jolasten dut) or da (jolasten naiz)
           - Anek saskibaloian jolasten du. = Ane juega al baloncesto.
           - Igeriketa gustatzen zait. = Me gusta la natación.
@@ -112,7 +114,7 @@ levels:
         sentences:
           - Musika entzuten dut. = Escucho música. | Yo escucho música.
           - Gaur kontzertu bat dago plazan. = Hoy hay un concierto en la plaza.
-          - Antzerkia gustatzen zait. = Me gusta el teatro.
+          - Antzerkia gustatzen zait, baina zinema gehiago. = Me gusta el teatro, pero el cine más.
           - Asteburuetan filmak ikusten ditugu. = Los fines de semana vemos películas.
           - Liburu bat irakurtzen ari naiz. = Estoy leyendo un libro.
           - Itziarrek oso ondo marrazten du. = Itziar dibuja muy bien.
@@ -145,7 +147,7 @@ levels:
               - Ez dakit gidatzen.
               - Liburutegia hemen dago.
         true_false:
-          - passage: Jonek ez du abesten. Dantza egiten du.
+          - passage: Jonek ez du abesten, baina beti dantza egiten du.
             statement: Jon canta.
             answer: false
       - structures: [ikastaroak]
@@ -263,12 +265,18 @@ levels:
         sentences:
           - Nola joaten zara kontzertura? = ¿Cómo vas al concierto? | ¿Cómo va usted al concierto?
           - Trenez joaten naiz. = Voy en tren. | Yo voy en tren.
-          - Autobusez joango gara Donostiara. = Iremos a Donostia en autobús. | Iremos en autobús a San Sebastián. | Vamos a ir a Donostia en autobús.
-          - Metroz etorri naiz. = He venido en metro.
-          - Donostiatik Zarautzeraino joan gara. = Hemos ido desde Donostia hasta Zarautz. | Hemos ido de San Sebastián hasta Zarautz.
+          - Autoz joango gara Donostiara. = Iremos a Donostia en coche. | Iremos en coche a San Sebastián. | Vamos a ir a Donostia en coche.
+          - Bizikletaz etorri naiz. = He venido en bicicleta. | He venido en bici.
+          - Noraino joan zarete? Zarautzeraino. = ¿Hasta dónde habéis ido? Hasta Zarautz. | ¿Hasta dónde han ido ustedes? Hasta Zarautz.
           - Hondartzaraino joan gara. = Hemos ido hasta la playa.
           - Zenbat ikastarotan eman duzu izena? = ¿En cuántos cursos te has apuntado? | ¿A cuántos cursos te has apuntado? | ¿A cuántos cursos se ha apuntado usted?
           - Hiru ikastarotan eman dut izena. = Me he apuntado a tres cursos. | Me he inscrito en tres cursos.
+        pairs:
+          - - autoz = en coche
+            - trenez = en tren
+            - bizikletaz = en bicicleta
+            - oinez = a pie
+            - noraino = hasta dónde
         meanings:
           - text: Hondartzaraino joan gara.
             options:
@@ -285,7 +293,7 @@ levels:
           - messages:
               - Leire | Nola joango zara Bilbora?
             options:
-              - Trenez.
+              - Autoz.
               - Bilbon.
               - Larunbatean.
         true_false:
@@ -303,7 +311,7 @@ levels:
           - Bai, astearteetan eta ostegunetan. = Sí, los martes y los jueves.
           - Zer ordutatik zer ordutara? = ¿De qué hora a qué hora?
           - Arratsaldeko seietatik zortzietara. = De seis a ocho de la tarde.
-          - Non da? = ¿Dónde es?
+          - Kiroldegira oinez joaten naiz. = Voy al polideportivo a pie. | Voy andando al polideportivo.
           - Kiroldegian. Izena eman nahi duzu? = En el polideportivo. ¿Quieres apuntarte? | En el polideportivo. ¿Quiere usted apuntarse?
         chats:
           - messages:
@@ -338,7 +346,7 @@ levels:
           - Zer egiten duzu asteburuetan? = ¿Qué haces los fines de semana? | ¿Qué hace usted los fines de semana?
           - Larunbatetan mendira joaten naiz. = Los sábados voy al monte.
           - Igandeetan liburuak irakurtzen ditut. = Los domingos leo libros.
-          - Musika asko gustatzen zait. = Me gusta mucho la música.
+          - Musika asko gustatzen zait, eta dantza ere bai. = Me gusta mucho la música, y también el baile.
           - Gaur kontzertura joango gara? = ¿Vamos hoy al concierto? | ¿Iremos hoy al concierto?
           - Ez, gaur ez. Bihar libre nago. = No, hoy no. Mañana estoy libre.
         chats:
@@ -376,12 +384,12 @@ levels:
           - Ez, autobusez. Merkeagoa da. = No, en autobús. Es más barato.
           - Autobusa Bilboraino doa? = ¿El autobús va hasta Bilbao? | ¿El autobús llega hasta Bilbao?
           - Bai, eta geltokitik metroz joango gara. = Sí, y desde la estación iremos en metro.
-          - Kontzertua hamarretatik ordu batera da. = El concierto es de diez a una.
+          - Noraino doa metroa? = ¿Hasta dónde va el metro? | ¿Hasta dónde llega el metro?
         chats:
           - messages:
               - Markel | Nola zoaz kiroldegira?
             options:
-              - Autobusez.
+              - Bizikletaz.
               - Kiroldegian.
               - Asteburuan.
           - messages:
@@ -389,7 +397,7 @@ levels:
               - Julen | Ez, plazaraino bakarrik.
               - Izaro | Eta gero?
             options:
-              - Gero metroz.
+              - Gero oinez.
               - Plazan.
               - Larunbatean.
         true_false:
@@ -421,7 +429,8 @@ levels:
         - June | Gasteizen. Trenez joaten naiz. = En Gasteiz. Voy en tren.
         - Eneko | Nik sukaldaritza ikastaro bat egin nahi dut. = Yo quiero hacer un curso de cocina.
         - June | Liburutegian sukaldaritza ikastaro bat dago, urritik ekainera. = En la biblioteca hay un curso de cocina, de octubre a junio.
-        - Eneko | Primeran! Bihar izena emango dut. = ¡Genial! Mañana me apuntaré.
+        - Eneko | Primeran! Bihar bizikletaz joango naiz, eta izena emango dut. = ¡Genial! Mañana iré en bici y me apuntaré.
+
       questions:
         - afterLine: 2
           prompt: ¿Qué hace Eneko los sábados?

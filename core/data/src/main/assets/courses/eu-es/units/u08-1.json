@@ -13,8 +13,8 @@
       "eu": "Non duzun mina esan eta sintomak azaldu."
     },
     {
-      "es": "Pedir hora con el médico y quedar a una hora.",
-      "eu": "Medikuarekin ordua hartu eta ordu bat adostu."
+      "es": "Pedir cita en el centro de salud y quedar a una hora.",
+      "eu": "Osasun-etxean hitzordua hartu eta ordu bat adostu."
     }
   ],
   "guidebook": {
@@ -78,8 +78,8 @@
             "es": "El hospital de Bilbao es grande."
           },
           {
-            "eu": "Herriko farmazia plazan dago.",
-            "es": "La farmacia del pueblo está en la plaza."
+            "eu": "Herriko osasun-etxea plazan dago.",
+            "es": "El centro de salud del pueblo está en la plaza."
           }
         ]
       },
@@ -89,8 +89,8 @@
           "eu": "Zer ordutan?"
         },
         "body": {
-          "es": "Para decir a qué hora pasa algo, el número lleva -(r)etan (hiruretan, bostetan); «a la una» es «ordu batean». Se puede añadir goizeko, arratsaldeko o gaueko delante.",
-          "eu": "Zerbait zer ordutan gertatzen den esateko, zenbakiak -(r)etan hartzen du (hiruretan, bostetan); «ordu batean» esaten da. Aurretik goizeko, arratsaldeko edo gaueko jar daiteke."
+          "es": "Para decir a qué hora pasa algo, el número lleva -(r)etan (hiruretan, bostetan); «a la una» es «ordu batean». Se puede añadir goizeko, arratsaldeko o gaueko delante. Para pedir cita en el centro de salud (osasun-etxea) se dice «Hitzordua hartu nahi dut».",
+          "eu": "Zerbait zer ordutan gertatzen den esateko, zenbakiak -(r)etan hartzen du (hiruretan, bostetan); «ordu batean» esaten da. Aurretik goizeko, arratsaldeko edo gaueko jar daiteke. Osasun-etxean «Hitzordua hartu nahi dut» esaten da."
         },
         "examples": [
           {
@@ -102,8 +102,8 @@
             "es": "Vendré a las diez de la mañana."
           },
           {
-            "eu": "Ordu batean bazkalduko dut.",
-            "es": "Comeré a la una."
+            "eu": "Osasun-etxean hitzordua daukat, hiruretan.",
+            "es": "Tengo cita en el centro de salud a las tres."
           }
         ]
       }
@@ -355,7 +355,7 @@
             {
               "id": "u08-1.l1.s1.e11",
               "type": "read_true_false",
-              "passage": "Gaur hortzetako mina daukat. Ez dut bazkaldu.",
+              "passage": "Gaur hortzetako mina daukat. Ez dut asko jan.",
               "statement": "Le duelen las muelas.",
               "answer": true,
               "vocabulary": [
@@ -365,7 +365,8 @@
                 "eduki",
                 "ez",
                 "ukan",
-                "bazkaldu"
+                "asko",
+                "jan"
               ],
               "structures": [
                 "body-parts",
@@ -912,18 +913,23 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Ane gaixo dago."
+                "text": "Ane gaixo dago, eta Jon ere bai."
               },
               "answers": [
-                "Ane está enferma."
+                "Ane está enferma, y Jon también."
               ],
               "distractors": [
+                "Estoy",
+                "tos",
                 "muy",
-                "Estoy"
+                "No"
               ],
               "vocabulary": [
                 "gaixo",
-                "egon"
+                "egon",
+                "eta",
+                "ere",
+                "bai"
               ],
               "structures": [
                 "symptoms"
@@ -961,8 +967,8 @@
                 "Zer daukazu?"
               ],
               "distractors": [
-                "Ane",
-                "dago"
+                "Eztula",
+                "Ez"
               ],
               "vocabulary": [
                 "zer",
@@ -975,15 +981,18 @@
             {
               "id": "u08-1.l1.s3.e13",
               "type": "listen_tap",
-              "text": "Ez daukat sukarrik.",
+              "text": "Ez daukat sukarrik, baina eztula daukat.",
               "distractors": [
-                "Gaixo",
-                "nago"
+                "Sukarra",
+                "Ane",
+                "dago"
               ],
               "vocabulary": [
                 "ez",
                 "eduki",
-                "sukar"
+                "sukar",
+                "baina",
+                "eztul"
               ],
               "structures": [
                 "symptoms"
@@ -1377,7 +1386,7 @@
                 "Aitor",
                 "Tolosa",
                 "médico",
-                "pedido"
+                "plaza"
               ],
               "vocabulary": [
                 "eskola",
@@ -1421,19 +1430,19 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "He pedido hora con el médico de Vitoria."
+                "text": "He pedido cita en el centro de salud de Vitoria."
               },
               "answers": [
-                "Gasteizko medikuarekin ordua hartu dut."
+                "Gasteizko osasun-etxean hitzordua hartu dut."
               ],
               "distractors": [
-                "ospitalean",
+                "ospitalea",
                 "erizaina",
                 "Eskolako"
               ],
               "vocabulary": [
-                "mediku",
-                "ordu",
+                "osasun-etxe",
+                "hitzordu",
                 "hartu",
                 "ukan"
               ],
@@ -1464,9 +1473,9 @@
               "type": "listen_tap",
               "text": "Donostiako ospitalea handia da.",
               "distractors": [
-                "Herriko",
+                "egiten",
                 "du",
-                "egiten"
+                "osasun-etxean"
               ],
               "vocabulary": [
                 "ospitale",
@@ -1482,14 +1491,14 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "¿Esta es la farmacia de Tolosa?"
+                "text": "¿Este es el centro de salud de Tolosa?"
               },
               "answers": [
-                "Hau Tolosako farmazia da?"
+                "Hau Tolosako osasun-etxea da?"
               ],
               "vocabulary": [
                 "hau",
-                "farmazia",
+                "osasun-etxe",
                 "izan"
               ],
               "structures": [
@@ -1585,21 +1594,21 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Bostetan ospitalera joango naiz."
+                "text": "Bostetan osasun-etxera joango naiz."
               },
               "answers": [
-                "A las cinco iré al hospital.",
-                "A las cinco voy a ir al hospital."
+                "A las cinco iré al centro de salud.",
+                "A las cinco voy a ir al centro de salud."
               ],
               "distractors": [
-                "once",
-                "la",
+                "qué",
+                "mañana",
                 "comerás",
-                "Vendré"
+                "y"
               ],
               "vocabulary": [
                 "bost",
-                "ospitale",
+                "osasun-etxe",
                 "joan",
                 "izan"
               ],
@@ -1738,13 +1747,13 @@
             {
               "id": "u08-1.l2.s3.e11",
               "type": "read_true_false",
-              "passage": "Gaur medikuarekin ordua daukat. Bostetan joango naiz.",
-              "statement": "Irá al médico a las cinco.",
+              "passage": "Gaur osasun-etxean hitzordua daukat. Bostetan joango naiz.",
+              "statement": "Irá al centro de salud a las cinco.",
               "answer": true,
               "vocabulary": [
                 "gaur",
-                "mediku",
-                "ordu",
+                "osasun-etxe",
+                "hitzordu",
                 "eduki",
                 "bost",
                 "joan",
@@ -1935,9 +1944,9 @@
               "type": "listen_tap",
               "text": "Bai, eta oso nekatuta nago.",
               "distractors": [
-                "mina",
-                "etxean",
-                "Hotzeria"
+                "dauzkat",
+                "Gaur",
+                "Egun"
               ],
               "vocabulary": [
                 "bai",
@@ -2065,12 +2074,11 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Kaixo, egun on. Medikuarekin ordua hartu nahi dut."
+                "text": "Kaixo, egun on. Hitzordua hartu nahi dut."
               },
               "answers": [
-                "Hola, buenos días. Quiero pedir hora con el médico.",
-                "Hola, buenos días. Quiero pedir cita con el médico.",
-                "Hola, buenos días. Quiero pedir hora con la médica."
+                "Hola, buenos días. Quiero pedir cita.",
+                "Hola, buenos días. Quiero pedir hora."
               ],
               "distractors": [
                 "de",
@@ -2081,8 +2089,7 @@
               "vocabulary": [
                 "egun on",
                 "kaixo",
-                "mediku",
-                "ordu",
+                "hitzordu",
                 "hartu",
                 "nahi izan",
                 "ukan"
@@ -2102,8 +2109,8 @@
                 "Zure izena, mesedez?"
               ],
               "distractors": [
-                "erdietan",
-                "Ez"
+                "Arratsaldeko",
+                "hartu"
               ],
               "vocabulary": [
                 "zu",
@@ -2117,16 +2124,15 @@
             {
               "id": "u08-1.l3.s2.e03",
               "type": "fill_blank",
-              "sentence": "Medikuarekin ordua ___ nahi dut.",
+              "sentence": "Hitzordua ___ nahi dut.",
               "options": [
                 "hartu",
                 "hartzen"
               ],
               "correct": 0,
-              "translation": "Quiero pedir hora con el médico.",
+              "translation": "Quiero pedir cita.",
               "vocabulary": [
-                "mediku",
-                "ordu",
+                "hitzordu",
                 "hartu",
                 "nahi izan",
                 "ukan"
@@ -2140,9 +2146,9 @@
               "type": "listen_tap",
               "text": "Bihar, goizeko bederatzietan, ondo?",
               "distractors": [
+                "hiru",
                 "Zure",
-                "lan",
-                "nahi"
+                "lan"
               ],
               "vocabulary": [
                 "bihar",
@@ -2164,7 +2170,7 @@
                 },
                 {
                   "speaker": "Kepa",
-                  "text": "Medikuarekin ordua hartu nahi dut."
+                  "text": "Medikuarekin hitzordua hartu nahi dut."
                 },
                 {
                   "speaker": "Erizaina",
@@ -2183,8 +2189,9 @@
                 "nahi izan",
                 "ukan",
                 "mediku",
-                "ordu",
+                "hitzordu",
                 "hartu",
+                "ordu",
                 "arratsalde",
                 "bost"
               ],
@@ -2256,13 +2263,13 @@
             {
               "id": "u08-1.l3.s2.e09",
               "type": "read_true_false",
-              "passage": "Ostiralean medikuarekin ordua daukat, goizeko hamarretan.",
+              "passage": "Ostiralean osasun-etxean hitzordua daukat, goizeko hamarretan.",
               "statement": "La cita es el viernes por la tarde.",
               "answer": false,
               "vocabulary": [
                 "ostiral",
-                "mediku",
-                "ordu",
+                "osasun-etxe",
+                "hitzordu",
                 "eduki",
                 "goiz",
                 "hamar"
@@ -2323,21 +2330,21 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Perdona, ¿dónde está el hospital de Getxo?"
+                "text": "Perdona, ¿dónde está el centro de salud de Getxo?"
               },
               "answers": [
-                "Barkatu, non dago Getxoko ospitalea?"
+                "Barkatu, non dago Getxoko osasun-etxea?"
               ],
               "distractors": [
                 "Ez",
-                "ordua",
+                "osasun-etxean",
                 "Herriko"
               ],
               "vocabulary": [
                 "barkatu",
                 "non",
                 "egon",
-                "ospitale"
+                "osasun-etxe"
               ],
               "structures": [
                 "nongo",
@@ -2539,15 +2546,15 @@
             {
               "id": "u08-1.l3.s3.e10",
               "type": "listen_type",
-              "text": "Hamabietan medikuarekin ordua daukagu.",
+              "text": "Hamabietan hitzordua daukagu osasun-etxean.",
               "answers": [
-                "Hamabietan medikuarekin ordua daukagu."
+                "Hamabietan hitzordua daukagu osasun-etxean."
               ],
               "vocabulary": [
                 "hamabi",
-                "mediku",
-                "ordu",
-                "eduki"
+                "hitzordu",
+                "eduki",
+                "osasun-etxe"
               ],
               "structures": [
                 "nongo",
@@ -2623,8 +2630,8 @@
           },
           {
             "speaker": "Miren",
-            "eu": "Medikuarekin ordua hartu duzu?",
-            "es": "¿Has pedido hora con el médico?"
+            "eu": "Osasun-etxean hitzordua hartu duzu?",
+            "es": "¿Has pedido cita en el centro de salud?"
           },
           {
             "speaker": "Josu",
@@ -2660,7 +2667,7 @@
           },
           {
             "afterLine": 7,
-            "prompt": "¿A qué hora tiene Josu cita con el médico?",
+            "prompt": "¿A qué hora tiene Josu cita en el centro de salud?",
             "options": [
               "A las cuatro",
               "A las cinco",

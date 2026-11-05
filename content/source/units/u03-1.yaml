@@ -68,6 +68,17 @@ guidebook:
           es: ¿Con quién vives?
         - eu: Nire gurasoekin bizi naiz.
           es: Vivo con mis padres.
+    - title:
+        es: "En euskera, en castellano: euskaraz, gaztelaniaz"
+        eu: "Euskaraz eta gaztelaniaz"
+      body:
+        es: "Para decir en qué idioma se habla se añade -z: euskaraz (en euskera), gaztelaniaz (en castellano). «Hitz egiten du» (habla) y «euskara ikasten ari da» (está aprendiendo euskera) se aprenden por ahora como frases hechas. Recuerda también «ere» (también), «baina» (pero) y «edo» (o)."
+        eu: "Hizkuntza esateko -z gehitzen da: euskaraz, gaztelaniaz. «Hitz egiten du» eta «euskara ikasten ari da» esaldi finko gisa ikasten dira oraingoz."
+      examples:
+        - eu: Nire aitona Madrilgoa da, baina euskara ikasten ari da.
+          es: Mi abuelo es de Madrid, pero está aprendiendo euskera.
+        - eu: Euskaraz hitz egiten du, eta gaztelaniaz ere bai.
+          es: Habla en euskera, y en castellano también.
 levels:
   - type: lesson
     title:
@@ -79,8 +90,8 @@ levels:
           - Hau nire ama da. = Esta es mi madre.
           - Hau nire aita da. = Este es mi padre.
           - Hauek nire gurasoak dira. = Estos son mis padres.
-          - Nire aita medikua da. = Mi padre es médico.
-          - Nire ama irakaslea da. = Mi madre es profesora.
+          - Nire aita medikua da, eta nire anaia ere bai. = Mi padre es médico y mi hermano también.
+          - Nire ama gaztelaniako irakaslea da. = Mi madre es profesora de castellano.
           - Jon Mikelen semea da. = Jon es el hijo de Mikel.
           - Ane Itziarren alaba da. = Ane es la hija de Itziar.
           - Zure alaba ikaslea da? = ¿Tu hija es estudiante? | ¿Su hija es estudiante? | ¿Es estudiante tu hija? | ¿Es estudiante su hija?
@@ -109,7 +120,7 @@ levels:
               - Bai, hau zure aita da.
               - Ez horregatik.
         true_false:
-          - passage: Ni Ane naiz. Nire ama Itziar da. Nire ama erizaina da.
+          - passage: Ni Ane naiz. Nire ama Itziar da. Erizaina da, eta orain euskara ikasten ari da.
             statement: La madre de Ane es enfermera.
             answer: true
       - structures: [family, siblings]
@@ -121,7 +132,7 @@ levels:
           - Ni Jon naiz, eta hau nire arreba da. = Soy Jon y esta es mi hermana. | Yo soy Jon y esta es mi hermana.
           - Ni Maialen naiz, eta hau nire neba da. = Soy Maialen y este es mi hermano. | Yo soy Maialen y este es mi hermano.
           - Mikel eta Jon anaiak dira. = Mikel y Jon son hermanos.
-          - Zu Ikerren anaia zara? = ¿Tú eres el hermano de Iker? | ¿Eres el hermano de Iker? | ¿Es usted el hermano de Iker?
+          - Hau nire beste ahizpa da. = Esta es mi otra hermana.
         pairs:
           - - anaia = hermano (de un chico)
             - arreba = hermana (de un chico)
@@ -154,11 +165,11 @@ levels:
           - Hau nire aitona da. = Este es mi abuelo.
           - Nire amona Donostiakoa da. = Mi abuela es de San Sebastián. | Mi abuela es de Donostia.
           - Mikel nire osaba da. = Mikel es mi tío.
-          - Itziar nire izeba da. = Itziar es mi tía.
+          - Nire izeba Bilbon edo Getxon bizi da. Ez dakit. = Mi tía vive en Bilbao o en Getxo. No sé. | Mi tía vive en Bilbao o en Getxo. No lo sé.
           - Jon eta Ane nire lehengusuak dira. = Jon y Ane son mis primos.
           - Iker Maialenen senarra da. = Iker es el marido de Maialen.
           - Maialen Ikerren emaztea da. = Maialen es la esposa de Iker. | Maialen es la mujer de Iker.
-          - Leire nire laguna da. = Leire es mi amiga.
+          - Nire osaba Baionakoa da, baina Bilbon bizi da. = Mi tío es de Bayona, pero vive en Bilbao.
         pairs:
           - - aitona = abuelo
             - amona = abuela
@@ -185,7 +196,7 @@ levels:
               - Ni zure amona naiz.
               - Zorionak, Ane.
         true_false:
-          - passage: Hau Unai da. Unai nire lehengusua da. Bilbokoa da.
+          - passage: Hau Unai da, nire lehengusua. Bilbokoa da, baina orain Madrilen bizi da.
             statement: Unai es el tío de quien habla.
             answer: false
   - type: lesson
@@ -201,17 +212,17 @@ levels:
           - Zuen aita irakaslea da? = ¿Vuestro padre es profesor? | ¿Es profesor vuestro padre?
           - Haien ama sukaldaria da. = Su madre es cocinera. | La madre de ellos es cocinera.
           - Hau Mikel da. Haren aita medikua da. = Este es Mikel. Su padre es médico.
-          - Nire anaia ingeniaria da. = Mi hermano es ingeniero.
-          - Zein da zure telefono zenbakia? = ¿Cuál es tu número de teléfono? | ¿Cuál es su número de teléfono?
+          - Gure gurasoak orain Bilbon daude. = Nuestros padres ahora están en Bilbao. | Ahora nuestros padres están en Bilbao.
+          - Zuen amona Madrilgoa da? = ¿Vuestra abuela es de Madrid? | ¿Es de Madrid vuestra abuela?
         blanks:
           - text: Hauek ___ gurasoak dira. = Estos son nuestros padres.
             options:
               - gure
               - zuen
-          - text: Hau ___ aita da? = ¿Este es tu padre?
+          - text: Leire Madrilgoa da, eta ___ hitz egiten du. = Leire es de Madrid y habla en castellano.
             options:
-              - zure
-              - nire
+              - gaztelaniaz
+              - gaztelania
         meanings:
           - text: Zuen ama medikua da?
             options:
@@ -226,8 +237,8 @@ levels:
               - Ez, hau zure laguna da.
               - Bai, ni zure lehengusua naiz.
         true_false:
-          - passage: Kaixo! Ni Gorka naiz. Hau Amaia da, nire emaztea. Amaia medikua da.
-            statement: Amaia es la mujer de Gorka.
+          - passage: Hau Leire da, nire laguna. Gaztelaniaz hitz egiten du, eta euskaraz pixka bat.
+            statement: Leire habla un poco de euskera.
             answer: true
       - structures: [noren, noren-postposition]
         sentences:
@@ -267,7 +278,7 @@ levels:
           - Bilbon bizi naiz. = Vivo en Bilbao. | Yo vivo en Bilbao.
           - Norekin bizi zara? = ¿Con quién vives? | ¿Con quién vive usted?
           - Nire gurasoekin bizi naiz. = Vivo con mis padres. | Yo vivo con mis padres.
-          - Ane bere ahizparekin bizi da. = Ane vive con su hermana.
+          - Ane beti bere ahizparekin dago. = Ane siempre está con su hermana.
           - Mikel bakarrik bizi da. = Mikel vive solo.
           - Gu Donostian bizi gara. | Donostian bizi gara. = Vivimos en San Sebastián. | Nosotros vivimos en San Sebastián. | Vivimos en Donostia.
           - Zuek lagunekin bizi zarete? | Lagunekin bizi zarete? = ¿Vosotros vivís con amigos? | ¿Vivís con amigos?
@@ -314,17 +325,17 @@ levels:
           - messages:
               - Amaia | Kaixo! Nor da hau?
               - Aitor | Hau nire aita da.
-              - Amaia | Egun on! Zu medikua zara?
+              - Amaia | Barkatu? Berriro, mesedez.
             options:
-              - Ez, ni irakaslea naiz.
-              - Ez, zu irakaslea zara.
+              - Nire aita da, Patxi.
+              - Zure aita da, Patxi.
               - Bai, ni Amaia naiz.
           - messages:
-              - Leire | Zure ahizpa non bizi da?
+              - Leire | Noiz zaude zure ahizparekin?
             options:
+              - Gaur eta bihar.
               - Getxon bizi da.
-              - Getxokoa naiz.
-              - Nire ahizparekin.
+              - Nire ahizpa da.
         true_false:
           - passage: Hau Unai da. Unai nire senarra da. Gu Eibarren bizi gara.
             statement: La persona que habla vive en Eibar.
@@ -333,17 +344,17 @@ levels:
             statement: Irati es la prima de Ander.
             answer: false
         meanings:
-          - text: Hauek nire lehengusuak dira.
+          - text: Euskaraz edo gaztelaniaz?
             options:
-              - Estos son mis primos.
-              - Estos son mis tíos.
-              - Estos son mis amigos.
+              - ¿En euskera o en castellano?
+              - ¿En euskera y en castellano?
+              - ¿Euskera o castellano?
       - structures: [norekin, bizi-izan]
         sentences:
           - Non bizi zara, Oier? = ¿Dónde vives, Oier?
           - Zarautzen bizi naiz, nire lagunekin. = Vivo en Zarautz con mis amigos. | Vivo en Zarautz, con mis amigos. | Yo vivo en Zarautz con mis amigos.
           - Eta zure gurasoak? = ¿Y tus padres? | ¿Y sus padres?
-          - Nire gurasoak Tolosan bizi dira. = Mis padres viven en Tolosa.
+          - Nire gurasoak orain Tolosan bizi dira. = Mis padres ahora viven en Tolosa. | Ahora mis padres viven en Tolosa.
           - Haizea bakarrik bizi da? = ¿Haizea vive sola? | ¿Vive sola Haizea?
           - Ez, bere senarrarekin bizi da. = No, vive con su marido.
         chats:
@@ -362,7 +373,7 @@ levels:
               - Ez, Irunekoa naiz.
               - Ez, nire emaztea naiz.
         true_false:
-          - passage: Ni Olatz naiz. Hondarribian bizi naiz, nire aitarekin.
+          - passage: Ni Olatz naiz. Hondarribian bizi naiz, nire aitarekin. Gaur nire amonarekin nago.
             statement: Olatz vive con su madre.
             answer: false
           - passage: Xabier eta Uxue Durangon bizi dira. Xabier Uxueren senarra da.
@@ -377,8 +388,8 @@ levels:
         sentences:
           - Noren laguna da Nahia? = ¿De quién es amiga Nahia?
           - Nahia Markelen laguna da. = Nahia es amiga de Markel. | Nahia es la amiga de Markel.
-          - Izaro Ibairen arreba da. = Izaro es la hermana de Ibai.
-          - Ibai bere gurasoekin bizi da. = Ibai vive con sus padres.
+          - Izaro Ibairen arreba da. Euskaraz eta gaztelaniaz hitz egiten du. = Izaro es la hermana de Ibai. Habla euskera y castellano. | Izaro es la hermana de Ibai. Habla en euskera y en castellano.
+          - Ibai bere gurasoekin bizi da, eta Izaro ere bai. = Ibai vive con sus padres, e Izaro también. | Ibai vive con sus padres y también Izaro.
           - Zure izeba eta osaba non bizi dira? = ¿Dónde viven tu tía y tu tío? | ¿Dónde viven tus tíos? | ¿Dónde viven sus tíos?
           - Nire izeba eta osaba Elizondon bizi dira. = Mi tía y mi tío viven en Elizondo. | Mis tíos viven en Elizondo.
         chats:
@@ -393,7 +404,7 @@ levels:
           - messages:
               - Josu | Zure lehengusua Gasteizen bizi da?
             options:
-              - Bai, bere gurasoekin.
+              - Ez dakit. Gasteizen edo Bilbon.
               - Bai, Gasteizkoa naiz.
               - Ez, nire lehengusua naiz.
         true_false:
@@ -416,17 +427,18 @@ levels:
     story:
       title: Parkean
       lines:
-        - Unai | Kaixo, Ane! Zer moduz? = ¡Hola, Ane! ¿Qué tal?
+        - Unai | Kaixo, Ane! Zer moduz gaur? = ¡Hola, Ane! ¿Qué tal hoy?
         - Ane | Oso ondo! Unai, hau Mikel da, nire neba. = ¡Muy bien! Unai, este es Mikel, mi hermano.
         - Mikel | Kaixo, Unai! Zu Aneren laguna zara? = ¡Hola, Unai! ¿Tú eres el amigo de Ane?
         - Unai | Bai. Eta hura nor da? = Sí. ¿Y aquella quién es?
         - Ane | Hura gure amona da, Miren. = Aquella es nuestra abuela, Miren.
         - Unai | Zuen amona Bilbon bizi da? = ¿Vuestra abuela vive en Bilbao?
-        - Mikel | Ez, Bermeon bizi da, gure aitonarekin. = No, vive en Bermeo, con nuestro abuelo.
-        - Ane | Eta zu, norekin bizi zara? = ¿Y tú, con quién vives?
+        - Mikel | Ez, Bermeon bizi da, gure aitonarekin. Aitona Madrilgoa da. = No, vive en Bermeo, con nuestro abuelo. El abuelo es de Madrid.
+        - Ane | Baina orain euskara ikasten ari da! Eta zu, norekin bizi zara? = ¡Pero ahora está aprendiendo euskera! ¿Y tú, con quién vives?
         - Unai | Nire gurasoekin eta nire arrebarekin. = Con mis padres y con mi hermana.
         - Ane | Zure arreba Leire da? = ¿Tu hermana es Leire?
-        - Unai | Bai! Leire nire arreba da. Agur, gero arte! = ¡Sí! Leire es mi hermana. ¡Adiós, hasta luego!
+        - Unai | Bai! Leire nire arreba da. Gaur parkean dago, baina ez dakit non. = ¡Sí! Leire es mi hermana. Hoy está en el parque, pero no sé dónde.
+        - Ane | Ondo, Unai. Agur, gero arte! = Bien, Unai. ¡Adiós, hasta luego!
       questions:
         - afterLine: 2
           prompt: ¿Quién es Mikel?
@@ -434,13 +446,14 @@ levels:
             - El hermano de Ane
             - El primo de Ane
             - El amigo de Unai
-        - afterLine: 6
-          prompt: ¿Dónde vive la abuela de Ane?
+        - afterLine: 7
+          prompt: ¿Qué está aprendiendo el abuelo de Ane?
           options:
-            - En Bermeo
-            - En Bilbao
-            - Con Unai
-        - afterLine: 10
+            - Euskera
+            - Castellano
+            - Inglés
+        - afterLine: 11
+
           prompt: ¿Con quién vive Unai?
           options:
             - Con sus padres y su hermana
