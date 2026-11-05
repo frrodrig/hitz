@@ -60,12 +60,16 @@ sealed interface Level {
         val story: Story,
     ) : Level
 
-    /** Unit review: generated at run time from the unit's content and the learner's mistakes. */
+    /**
+     * Review generated at run time from the content and the learner's mistakes: of its unit, or of
+     * the whole section when [scope] is [ReviewScope.Section] (the section review closes a section).
+     */
     @Serializable
     @SerialName("review")
     data class Review(
         override val id: String,
         override val title: LocalizedText,
+        val scope: ReviewScope = ReviewScope.Unit,
     ) : Level
 
     /** Optional legendary level: a harder generated review with no hints. */
@@ -75,6 +79,15 @@ sealed interface Level {
         override val id: String,
         override val title: LocalizedText,
     ) : Level
+}
+
+@Serializable
+enum class ReviewScope {
+    @SerialName("unit")
+    Unit,
+
+    @SerialName("section")
+    Section,
 }
 
 @Serializable

@@ -291,6 +291,13 @@
             },
             "title": {
               "$ref": "#/$defs/localized"
+            },
+            "scope": {
+              "description": "What a review draws from: its unit (default) or the whole section.",
+              "enum": [
+                "unit",
+                "section"
+              ]
             }
           }
         }

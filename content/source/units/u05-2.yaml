@@ -1,0 +1,444 @@
+# Unit 5.2 · Sukaldean — recipes (imperative without auxiliary, discourse markers, time clauses),
+# BEHAR DA / DIRA, -T(Z)EA with komeni / kaltegarri, causal "eta", frequency.
+id: u05-2
+section: s2
+bookUnit: 5
+title:
+  es: En la cocina
+  eu: Sukaldean
+goals:
+  - es: Dar y seguir las instrucciones de una receta.
+    eu: Errezeta baten argibideak eman eta jarraitu.
+  - es: Dar consejos para comer de forma sana.
+    eu: Osasuntsu jateko aholkuak eman.
+guidebook:
+  sections:
+    - title:
+        es: "Órdenes: moztu tomatea"
+        eu: "Aginduak: moztu tomatea"
+      body:
+        es: En las recetas, la orden es el verbo tal cual, sin auxiliar (moztu, egosi, frijitu). Para decir «no», se pone «ez» delante, y la cosa va con -rik.
+        eu: Errezetetan, agindua aditza bera da, laguntzailerik gabe (moztu, egosi, frijitu). Ezeztatzeko, «ez» aurrean, eta gauzak -rik hartzen du.
+      examples:
+        - eu: Moztu tomatea.
+          es: Corta el tomate.
+        - eu: Egosi patatak.
+          es: Cuece las patatas.
+        - eu: Ez gehitu gatzik.
+          es: No añadas sal.
+    - title:
+        es: Los pasos de una receta
+        eu: Errezeta baten urratsak
+      body:
+        es: "Ordena los pasos con lehenengo, gero, ondoren y azkenik. «… baino lehen» es «antes de …» y «…-ta gero» es «después de …»: el verbo va delante."
+        eu: "Urratsak ordenatzeko: lehenengo, gero, ondoren eta azkenik. «… baino lehen» eta «…-ta gero»: aditza aurrean doa."
+      examples:
+        - eu: Lehenengo, berotu olioa.
+          es: Primero, calienta el aceite.
+        - eu: Moztu patatak frijitu baino lehen.
+          es: Corta las patatas antes de freírlas.
+        - eu: Patatak moztuta gero, frijitu.
+          es: Después de cortar las patatas, fríelas.
+    - title:
+        es: "Hace falta: behar da / behar dira"
+        eu: "Behar da / behar dira"
+      body:
+        es: "«Behar da» para una cosa y «behar dira» para varias. Con números, el nombre no lleva artículo: bi arrautza."
+        eu: "Gauza bat bada, «behar da»; bat baino gehiago, «behar dira». Zenbakiekin, izenak ez du artikulurik: bi arrautza."
+      examples:
+        - eu: Olioa behar da.
+          es: Hace falta aceite.
+        - eu: Bi arrautza behar dira.
+          es: Hacen falta dos huevos.
+    - title:
+        es: Consejos sanos
+        eu: Aholku osasuntsuak
+      body:
+        es: "Para aconsejar, «komeni da» o «kaltegarria da» + verbo con -t(z)ea: egostea, frijitzea. Un «eta» al final de la frase explica el motivo («…, porque…»). Para la frecuencia: egunero, askotan."
+        eu: "Aholkuak emateko, «komeni da» edo «kaltegarria da» + -t(z)ea: egostea, frijitzea. Esaldiaren amaieran «eta» jarrita, arrazoia ematen dugu. Maiztasuna: egunero, askotan."
+      examples:
+        - eu: Komeni da arraina egostea.
+          es: Conviene cocer el pescado.
+        - eu: Arraina nahiago dut, osasuntsua da eta.
+          es: Prefiero pescado, porque es sano.
+        - eu: Askotan arraina daukagu.
+          es: A menudo tenemos pescado.
+levels:
+  - type: lesson
+    title:
+      es: En la cocina
+      eu: Sukaldean
+    lessons:
+      - structures: [cooking-vocab]
+        sentences:
+          - Olioa eta gatza daukagu. = Tenemos aceite y sal.
+          - Azukrea mahai gainean dago. = El azúcar está encima de la mesa. | El azúcar está sobre la mesa.
+          - Lapikoa sukaldean dago. = La olla está en la cocina.
+          - Zartagina eta lapikoa behar ditut. = Necesito la sartén y la olla. | Necesito una sartén y una olla.
+          - Platerak armairuan daude. = Los platos están en el armario.
+          - Gatza ala azukrea? = ¿Sal o azúcar?
+          - Olioa zartaginean dago. = El aceite está en la sartén.
+          - Plater bat behar dut, mesedez. = Necesito un plato, por favor.
+        pairs:
+          - - olio = aceite
+            - gatz = sal
+            - azukre = azúcar
+            - lapiko = olla
+            - zartagin = sartén
+            - plater = plato
+        meanings:
+          - text: Gatza ala azukrea?
+            options:
+              - ¿Sal o azúcar?
+              - ¿Sal o aceite?
+              - ¿Azúcar o aceite?
+        blanks:
+          - text: Olioa ___ dago. = El aceite está en la sartén.
+            options:
+              - zartaginean
+              - lapikoa
+        chats:
+          - messages:
+              - Aitor | Non dago gatza?
+            options:
+              - Gatza mahai gainean dago.
+              - Gatza gustatzen zait.
+              - Ez horregatik.
+        true_false:
+          - passage: Sukaldean lapiko bat eta zartagin bat daude. Platerak armairuan daude.
+            statement: Los platos están en la mesa.
+            answer: false
+      - structures: [imperative]
+        sentences:
+          - Moztu tomatea, mesedez. = Corta el tomate, por favor. | Corte el tomate, por favor.
+          - Egosi patatak. = Cuece las patatas. | Cueza las patatas.
+          - Frijitu arrautzak. = Fríe los huevos. | Fría los huevos.
+          - Nahastu esnea eta azukrea. = Mezcla la leche y el azúcar. | Mezcle la leche y el azúcar.
+          - Gehitu gatza. = Añade la sal. | Añade sal. | Añada sal. | Echa sal.
+          - Berotu olioa zartaginean. = Calienta el aceite en la sartén. | Caliente el aceite en la sartén.
+          - Berotu ura lapikoan. = Calienta el agua en la olla. | Caliente el agua en la olla.
+          - Moztu ogia eta gazta. = Corta el pan y el queso. | Corte el pan y el queso.
+        pairs:
+          - - moztu = cortar
+            - egosi = cocer
+            - frijitu = freír
+            - nahastu = mezclar
+            - gehitu = añadir
+            - berotu = calentar
+        meanings:
+          - text: Frijitu arrautzak.
+            options:
+              - Fríe los huevos.
+              - Cuece los huevos.
+              - Corta los huevos.
+        blanks:
+          - text: ___ olioa zartaginean. = Calienta el aceite en la sartén.
+            options:
+              - Berotu
+              - Moztu
+        chats:
+          - messages:
+              - Ane | Patatak frijitu ala egosi?
+            options:
+              - Egosi, mesedez.
+              - Gatza, mesedez.
+              - Gabon, Ane.
+        true_false:
+          - passage: Moztu patatak eta frijitu. Ez egosi!
+            statement: Hay que cocer las patatas.
+            answer: false
+      - structures: [discourse-markers, healthy-food]
+        sentences:
+          - Lehenengo, moztu letxuga. = Primero, corta la lechuga. | Primero, corte la lechuga.
+          - Gero, gehitu olioa. = Después, añade el aceite. | Luego, añade el aceite. | Después, añada el aceite.
+          - Ondoren, nahastu letxuga eta tomatea. = A continuación, mezcla la lechuga y el tomate. | A continuación, mezcle la lechuga y el tomate.
+          - Azkenik, gehitu gatza. = Por último, añade la sal. | Por último, añade sal. | Por último, añada sal.
+          - Arraina osasuntsua da. = El pescado es sano.
+          - Azukrea kaltegarria da. = El azúcar es perjudicial.
+          - Egunero ura behar da. = Todos los días hace falta agua. | Cada día hace falta agua. | Todos los días se necesita agua.
+          - Askotan arraina daukagu afarian. = A menudo tenemos pescado para cenar. | A menudo tenemos pescado en la cena.
+        pairs:
+          - - lehenengo = primero
+            - gero = después
+            - ondoren = a continuación
+            - azkenik = por último
+            - egunero = todos los días
+            - askotan = a menudo
+        meanings:
+          - text: Azukrea kaltegarria da.
+            options:
+              - El azúcar es perjudicial.
+              - El azúcar es sano.
+              - La sal es perjudicial.
+        blanks:
+          - text: Arraina ___ da. = El pescado es sano.
+            options:
+              - osasuntsua
+              - kaltegarria
+        chats:
+          - messages:
+              - Irati | Letxuga osasuntsua da?
+            options:
+              - Bai, oso osasuntsua da.
+              - Bai, oso kaltegarria da.
+              - Bai, gustatzen zaizkit.
+        true_false:
+          - passage: Egunero kafea daukat gosarian. Askotan zukua ere bai.
+            statement: Todos los días hay café en su desayuno.
+            answer: true
+  - type: lesson
+    title:
+      es: Paso a paso
+      eu: Urratsez urrats
+    lessons:
+      - structures: [discourse-markers, imperative]
+        sentences:
+          - Lehenengo, berotu olioa. = Primero, calienta el aceite. | Primero, caliente el aceite.
+          - Gero, frijitu patatak. = Después, fríe las patatas. | Luego, fríe las patatas. | Después, fría las patatas.
+          - Ondoren, gehitu arrautzak. = A continuación, añade los huevos. | A continuación, añada los huevos.
+          - Azkenik, nahastu ondo. = Por último, mezcla bien. | Por último, mezcle bien.
+          - Ez frijitu arraina, egosi. = No frías el pescado, cuécelo. | No fría el pescado, cuézalo.
+          - Ez gehitu azukrerik. = No añadas azúcar. | No añada azúcar.
+          - Lehenengo moztu, eta gero egosi. = Primero corta y después cuece. | Primero corta y luego cuece. | Primero corte y después cueza.
+          - Ez gehitu gatzik, mesedez. = No añadas sal, por favor. | No añada sal, por favor.
+        meanings:
+          - text: Azkenik, nahastu ondo.
+            options:
+              - Por último, mezcla bien.
+              - Primero, mezcla bien.
+              - Por último, corta bien.
+        blanks:
+          - text: ___, gehitu arrautzak. = A continuación, añade los huevos.
+            options:
+              - Ondoren
+              - Lehenengo
+          - text: Ez ___ arraina, egosi. = No frías el pescado, cuécelo.
+            options:
+              - frijitu
+              - egosi
+        chats:
+          - messages:
+              - Unai | Lehenengo, moztu tomatea. Eta gero?
+            options:
+              - Gero, gehitu olioa eta gatza.
+              - Gero arte, Unai.
+              - Lehenengo, tomatea gustatzen zait.
+        true_false:
+          - passage: Lehenengo, egosi arrautzak. Gero, moztu. Azkenik, gehitu gatza.
+            statement: La sal se añade al principio.
+            answer: false
+      - structures: [time-clauses, imperative]
+        sentences:
+          - Moztu patatak frijitu baino lehen. = Corta las patatas antes de freírlas. | Corte las patatas antes de freírlas.
+          - Olioa berotu baino lehen, moztu tomatea. = Antes de calentar el aceite, corta el tomate. | Antes de calentar el aceite, corte el tomate.
+          - Patatak moztuta gero, frijitu. = Después de cortar las patatas, fríelas. | Después de cortar las patatas, fríalas.
+          - Arrautzak egosita gero, moztu. = Después de cocer los huevos, córtalos. | Después de cocer los huevos, córtelos.
+          - Berotu esnea bero egon arte. = Calienta la leche hasta que esté caliente. | Caliente la leche hasta que esté caliente.  # TODO(revisión-nativa): «bero egon» for food (vs «beroa egon»)
+          - Gatza gehituta gero, nahastu. = Después de añadir la sal, mezcla. | Después de añadir la sal, mezcle.
+          - Bazkaria baino lehen, moztu ogia. = Antes de la comida, corta el pan. | Antes de comer, corta el pan. | Antes de la comida, corte el pan.
+          - Egosi arrautzak, eta gero moztu. = Cuece los huevos y después córtalos. | Cuece los huevos y luego córtalos. | Cueza los huevos y después córtelos.
+        meanings:
+          - text: Patatak moztuta gero, frijitu.
+            options:
+              - Después de cortar las patatas, fríelas.
+              - Antes de cortar las patatas, fríelas.
+              - Corta las patatas y cuécelas.
+        blanks:
+          - text: ___ patatak frijitu baino lehen. = Corta las patatas antes de freírlas.
+            options:
+              - Moztu
+              - Egosi
+        chats:
+          - messages:
+              - Garazi | Patatak moztuta daude.
+            options:
+              - Ondo! Gero, frijitu.
+              - Ondo! Lehenengo, moztu.
+              - Ez horregatik.
+        true_false:
+          - passage: Moztu tomatea olioa berotu baino lehen.
+            statement: Primero se calienta el aceite y después se corta el tomate.
+            answer: false
+      - structures: [behar-da, nominalization]
+        sentences:
+          - Zer behar da? = ¿Qué hace falta? | ¿Qué se necesita?
+          - Olioa eta gatza behar dira. = Hacen falta aceite y sal. | Se necesitan aceite y sal.
+          - Lau patata behar dira. = Hacen falta cuatro patatas. | Se necesitan cuatro patatas.
+          - Lapiko handi bat behar da. = Hace falta una olla grande. | Se necesita una olla grande.
+          - Komeni da arraina egostea. = Conviene cocer el pescado.
+          - Kaltegarria da patatak askotan frijitzea. = Es perjudicial freír las patatas a menudo. | Freír las patatas a menudo es perjudicial.
+          - Komeni da gatz gutxiago gehitzea. = Conviene añadir menos sal. | Conviene echar menos sal.
+          - Arraina komeni zaizu. = Te conviene el pescado. | Le conviene el pescado.
+        meanings:
+          - text: Komeni da gatz gutxiago gehitzea.
+            options:
+              - Conviene añadir menos sal.
+              - Conviene añadir más sal.
+              - Es perjudicial añadir sal.
+        blanks:
+          - text: Bi arrautza behar ___. = Hacen falta dos huevos.
+            options:
+              - dira
+              - da
+          - text: Komeni da arraina ___. = Conviene cocer el pescado.
+            options:
+              - egostea
+              - egosi
+        chats:
+          - messages:
+              - Nahia | Zer behar da?
+            options:
+              - Bi arrautza eta patatak behar dira.
+              - Bi arrautza behar da.
+              - Zartagina gustatzen zait.
+  - type: lesson
+    title:
+      es: Cocinar sano
+      eu: Osasuntsu sukaldean
+    lessons:
+      - structures: [imperative, discourse-markers]
+        sentences:
+          - Lehenengo, egosi arrautzak lapikoan. = Primero, cuece los huevos en la olla. | Primero, cueza los huevos en la olla.
+          - Gero, moztu letxuga eta tomatea. = Después, corta la lechuga y el tomate. | Luego, corta la lechuga y el tomate. | Después, corte la lechuga y el tomate.
+          - Ondoren, gehitu olioa eta gatza. = A continuación, añade aceite y sal. | A continuación, añade el aceite y la sal. | A continuación, añada aceite y sal.
+          - Azkenik, moztu arrautzak. = Por último, corta los huevos. | Por último, corte los huevos.
+          - Letxuga eta tomatea osasuntsuak dira. = La lechuga y el tomate son sanos.
+          - Arrautzak platerean daude. = Los huevos están en el plato.
+        chats:
+          - messages:
+              - Ibai | Zer behar da?
+              - Olatz | Letxuga, tomatea eta bi arrautza.
+              - Ibai | Eta gero?
+            options:
+              - Gero, egosi arrautzak.
+              - Gero arte, Ibai.
+              - Gero, gustatzen zait.
+          - messages:
+              - Olatz | Olioa gehitu baino lehen, moztu tomatea.
+            options:
+              - Bai, eta gero gehitu olioa.
+              - Bai, eta lehenengo gehitu olioa.
+              - Ez horregatik.
+        meanings:
+          - text: Ondoren, gehitu olioa eta gatza.
+            options:
+              - A continuación, añade aceite y sal.
+              - Primero, añade aceite y sal.
+              - Por último, añade azúcar.
+        true_false:
+          - passage: Lehenengo, berotu olioa. Gero, frijitu arraina. Azkenik, gehitu gatza.
+            statement: Lo último es añadir sal.
+            answer: true
+          - passage: Ez egosi patatak. Frijitu zartaginean.
+            statement: Hay que cocer las patatas en la olla.
+            answer: false
+      - structures: [nominalization, causal-eta]
+        sentences:
+          - Arraina nahiago dut, osasuntsua da eta. = Prefiero pescado, porque es sano. | Prefiero el pescado porque es sano.
+          - Ez dut azukrerik nahi, kaltegarria da eta. = No quiero azúcar, porque es perjudicial. | No quiero azúcar porque es perjudicial.
+          - Komeni da patatak egostea, ez frijitzea. = Conviene cocer las patatas, no freírlas.
+          - Kaltegarria da azukre gehiago gehitzea. = Es perjudicial añadir más azúcar. | Añadir más azúcar es perjudicial.
+          - Letxuga eta sagarrak komeni zaizkizu. = Te convienen la lechuga y las manzanas. | Le convienen la lechuga y las manzanas.
+          - Askotan arraina daukagu, osasuntsua da eta. = A menudo tenemos pescado, porque es sano. | Tenemos pescado a menudo porque es sano.
+        chats:
+          - messages:
+              - Asier | Kafea azukrearekin?
+            options:
+              - Ez, azukrea kaltegarria da eta.
+              - Bai, gatza nahiago dut.
+              - Gabon, Asier.
+          - messages:
+              - Uxue | Patatak frijitu ala egosi?
+              - Markel | Egosi. Osasuntsuagoa da.
+              - Uxue | Eta olioa?
+            options:
+              - Gehitu olio gutxiago.
+              - Gehitu olio gehiago, kaltegarria da eta.
+              - Ni Markel naiz.
+        blanks:
+          - text: Arraina nahiago dut, osasuntsua da ___. = Prefiero pescado, porque es sano.
+            options:
+              - eta
+              - ez
+        true_false:
+          - passage: Arraina eta letxuga osasuntsuak dira. Azukrea eta gatza kaltegarriak dira.
+            statement: La sal es sana.
+            answer: false
+          - passage: Komeni da arraina egostea. Ez da komeni egunero frijitzea.
+            statement: Conviene cocer el pescado.
+            answer: true
+      - structures: [frequency, behar-da]
+        sentences:
+          - Egunero ogia behar dugu. = Necesitamos pan todos los días. | Todos los días necesitamos pan.
+          - Askotan oilaskoa daukagu bazkarian. = A menudo tenemos pollo en la comida. | A menudo tenemos pollo para comer.
+          - Egunero kafea nahi dut gosarian. = Todos los días quiero café en el desayuno. | Quiero café en el desayuno todos los días.
+          - Gure etxean askotan arraina dago. = En nuestra casa a menudo hay pescado. | En nuestra casa hay pescado a menudo.
+          - Egunero sagar bat komeni zaizu. = Te conviene una manzana cada día. | Le conviene una manzana cada día. | Te conviene una manzana todos los días.
+          - Zartagin berri bat behar da. = Hace falta una sartén nueva. | Se necesita una sartén nueva.
+        chats:
+          - messages:
+              - Haizea | Egunero arraina daukazu?
+            options:
+              - Ez, askotan oilaskoa daukat.
+              - Bai, egunero gatza gustatzen zait.
+              - Ez horregatik.
+          - messages:
+              - Eneko | Zer behar da afarian?
+              - June | Lau arrautza eta patatak.
+            options:
+              - Ondo! Eta olioa ere bai.
+              - Ondo! Eta olioa ere gustatzen.
+              - Egun on, June!
+        meanings:
+          - text: Askotan arraina daukagu.
+            options:
+              - A menudo tenemos pescado.
+              - Todos los días tenemos pescado.
+              - Nunca tenemos pescado.
+        true_false:
+          - passage: Egunero ura behar da. Askotan kafea ere bai.
+            statement: Hace falta agua todos los días.
+            answer: true
+          - passage: Gure etxean ez dago gatzik. Gatza behar da!
+            statement: En casa hay sal.
+            answer: false
+  - type: story
+    title:
+      es: "Historia: la receta de la abuela"
+      eu: "Istorioa: amonaren errezeta"
+    story:
+      title: Amonaren sukaldean
+      lines:
+        - Amona | Kaixo, Izaro! Patatak eta arrautzak daude. = ¡Hola, Izaro! Hay patatas y huevos.
+        - Izaro | Ondo! Zer behar da? = ¡Bien! ¿Qué hace falta?
+        - Amona | Olioa, gatza eta zartagin bat. = Aceite, sal y una sartén.
+        - Amona | Lehenengo, moztu patatak. = Primero, corta las patatas.
+        - Izaro | Moztuta daude! Eta gero? = ¡Ya están cortadas! ¿Y después?
+        - Amona | Gero, berotu olioa zartaginean eta frijitu patatak. = Después, calienta el aceite en la sartén y fríe las patatas.
+        - Izaro | Azukrea ere gehitu? = ¿Añado también azúcar?
+        - Amona | Ez! Ez gehitu azukrerik! Gatza, bai. = ¡No! ¡No añadas azúcar! Sal, sí.
+        - Izaro | Ondoren, arrautzak? = ¿A continuación, los huevos?
+        - Amona | Bai. Azkenik, nahastu arrautzak eta patatak. = Sí. Por último, mezcla los huevos y las patatas.
+        - Izaro | Amona, frijitzea kaltegarria da? = Abuela, ¿freír es perjudicial?
+        - Amona | Egunero frijitzea, bai. Bazkari hau, ez! = Freír todos los días, sí. ¡Esta comida, no!
+      questions:
+        - afterLine: 2
+          prompt: ¿Qué hace falta?
+          options:
+            - Aceite, sal y una sartén
+            - Aceite, azúcar y una olla
+            - Leche y huevos
+        - afterLine: 7
+          prompt: ¿Qué no hay que añadir?
+          options:
+            - Azúcar
+            - Sal
+            - Aceite
+        - afterLine: 11
+          prompt: Según la abuela, ¿qué es perjudicial?
+          options:
+            - Freír todos los días
+            - Añadir sal
+            - Cocer las patatas
+  - type: review
+  - type: legendary

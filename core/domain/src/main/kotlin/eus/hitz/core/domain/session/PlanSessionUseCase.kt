@@ -5,8 +5,10 @@ import eus.hitz.core.domain.gamification.ActivityKind
 import eus.hitz.core.domain.progress.MistakeStats
 import eus.hitz.core.domain.progress.ProgressRepository
 import eus.hitz.core.model.CourseId
+import eus.hitz.core.model.content.CourseUnit
 import eus.hitz.core.model.content.Exercise
 import eus.hitz.core.model.content.Level
+import eus.hitz.core.model.content.ReviewScope
 import javax.inject.Inject
 import kotlin.random.Random
 
@@ -55,19 +57,28 @@ class PlanSessionUseCase @Inject constructor(
         val unit = courses.getUnit(courseId, unitId)
         val level = unit.levels.firstOrNull { it.id == levelId }
             ?: throw NoSuchElementException("level $levelId not found in unit $unitId")
-        val unitExercises = unit.levels
-            .filterIsInstance<Level.Lessons>()
-            .flatMap { lessonLevel -> lessonLevel.lessons.flatMap { it.exercises } }
+        val unitExercises = unit.lessonExercises()
         return when (level) {
             is Level.Lessons -> {
                 val lesson = level.lessons.firstOrNull { it.id == lessonId } ?: level.lessons.first()
                 SessionPlan(lesson.id, lesson.exercises, HeartPolicy.Shared, ActivityKind.Lesson)
             }
             is Level.Review -> {
-                val stats = progress.mistakeStats(unitId)
+                val unitIds = when (level.scope) {
+                    ReviewScope.Unit -> listOf(unitId)
+                    ReviewScope.Section -> courses.getCourse(courseId).sections
+                        .first { unitId in it.units }
+                        .units
+                }
+                val exercises = if (unitIds == listOf(unitId)) {
+                    unitExercises
+                } else {
+                    unitIds.flatMap { courses.getUnit(courseId, it).lessonExercises() }
+                }
+                val stats = unitIds.map { progress.mistakeStats(it) }.reduce(MistakeStats::plus)
                 SessionPlan(
                     level.id,
-                    reviewSelection(unitExercises, stats, random),
+                    reviewSelection(exercises, stats, random),
                     HeartPolicy.Unlimited,
                     ActivityKind.Review
                 )
@@ -82,9 +93,14 @@ class PlanSessionUseCase @Inject constructor(
         }
     }
 
+    private fun CourseUnit.lessonExercises(): List<Exercise> =
+        levels.filterIsInstance<Level.Lessons>().flatMap { lessonLevel -> lessonLevel.lessons.flatMap { it.exercises } }
+
     companion object {
         const val LEGENDARY_HEARTS = 3
-        const val REVIEW_SIZE = 10
+
+        /** Exercises in a review (unit or section). */
+        const val REVIEW_SIZE = 12
         private const val EXERCISE_WEIGHT = 3
 
         /** Highest mistake score first; ties keep a random order so reviews vary. */

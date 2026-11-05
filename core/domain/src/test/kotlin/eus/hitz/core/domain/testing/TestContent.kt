@@ -12,6 +12,7 @@ import eus.hitz.core.model.content.Guidebook
 import eus.hitz.core.model.content.Lesson
 import eus.hitz.core.model.content.Level
 import eus.hitz.core.model.content.LocalizedText
+import eus.hitz.core.model.content.ReviewScope
 import eus.hitz.core.model.content.Section
 import eus.hitz.core.model.content.Story
 import kotlinx.coroutines.flow.Flow
@@ -23,8 +24,11 @@ internal object TestContent {
     fun speak(id: String, vocabulary: List<String> = emptyList(), structures: List<String> = emptyList()) =
         Exercise.Speak(id, "Kaixo", "Hola", vocabulary, structures)
 
-    /** A unit with two lesson levels (the second with two lessons), a story, a review and a legendary level. */
-    fun unit(id: String) = CourseUnit(
+    /**
+     * A unit with two lesson levels (the second with two lessons), a story, a review and a legendary
+     * level; the last unit of the section also closes it with a section review.
+     */
+    fun unit(id: String, sectionReview: Boolean = false) = CourseUnit(
         schemaVersion = 1,
         id = id,
         section = "s1",
@@ -32,7 +36,7 @@ internal object TestContent {
         title = text,
         goals = listOf(text),
         guidebook = Guidebook(emptyList()),
-        levels = listOf(
+        levels = listOfNotNull(
             Level.Lessons("$id.l1", text, listOf(Lesson("$id.l1.s1", listOf(speak("$id.l1.s1.e01", listOf("kaixo")))))),
             Level.Lessons(
                 "$id.l2",
@@ -45,10 +49,11 @@ internal object TestContent {
             Level.StoryLevel("$id.l3", text, Story("$id.l3.story", "t", emptyList(), emptyList())),
             Level.Review("$id.l4", text),
             Level.Legendary("$id.l5", text),
+            Level.Review("$id.l6", text, ReviewScope.Section).takeIf { sectionReview },
         ),
     )
 
-    val units = listOf(unit("u01-1"), unit("u01-2")).associateBy { it.id }
+    val units = listOf(unit("u01-1"), unit("u01-2", sectionReview = true)).associateBy { it.id }
 
     val course = Course(1, "eu-es", "eu", "es", text, listOf(Section("s1", text, text, listOf("u01-1", "u01-2"))))
 

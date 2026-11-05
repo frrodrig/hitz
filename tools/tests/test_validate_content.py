@@ -73,6 +73,12 @@ class ValidateContentTest(unittest.TestCase):
         self.save(unit)
         self.assertEqual(self.errors(), [])
 
+    def test_declined_proper_nouns_are_accepted(self) -> None:
+        unit = self.unit()
+        self.first_exercise(unit, "speak")["text"] = "Kaixo, Bilboko Ane eta Euskal Herriko Jon!"
+        self.save(unit)
+        self.assertEqual(self.errors(), [])
+
     def test_declared_lemma_from_a_later_unit_is_reported(self) -> None:
         unit = self.unit()
         self.first_exercise(unit, "speak")["vocabulary"] = ["etxe"]
@@ -117,13 +123,16 @@ class ValidateContentTest(unittest.TestCase):
         self.assert_error("unknown exercise type 'dance'")
 
     def test_unlisted_unit_file_is_reported(self) -> None:
-        shutil.copy(self.assets / UNIT, self.assets / "courses/eu-es/units/u01-2.json")
+        shutil.copy(self.assets / UNIT, self.assets / "courses/eu-es/units/u13-1.json")
         self.assert_error("unit is not listed in course.json")
 
     def test_wordbank_distractor_in_answer_is_reported(self) -> None:
         unit = self.unit()
-        exercise = self.first_exercise(unit, "translate_wordbank")
-        exercise["distractors"] = ["soy"]
+        exercise = next(
+            e for level in unit["levels"] for lesson in level.get("lessons", []) for e in lesson["exercises"]
+            if e["type"] == "translate_wordbank" and e["prompt"]["lang"] == "eu"
+        )
+        exercise["distractors"] = [exercise["answers"][0].split()[0].strip("¡¿!?.,")]
         self.save(unit)
         self.assert_error("distractors also appear in the answer")
 

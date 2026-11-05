@@ -9,7 +9,7 @@ Checks, for every course under ``<assets>/courses/``:
 * references: every image exists in ``<assets>/images/``; audio is matched against
   ``<assets>/audio/`` and missing clips are listed in ``content/audio/pending.csv``;
 * vocabulary: every Basque word is a lemma of the syllabus taught in this unit or earlier, a known
-  inflected form (``content/syllabus/forms.csv``), a proper noun or a number. Declared
+  inflected form (``content/syllabus/forms/<unit>.csv``), a proper noun or a number. Declared
   ``vocabulary`` lemmas must exist and must not belong to a later unit.
 
 Usage::
@@ -59,6 +59,15 @@ def unit_key_from_id(unit_id: str) -> tuple[int, int]:
     return int(match.group(1)), int(match.group(2))
 
 
+def name_words(name: str) -> list[str]:
+    """Words of a proper noun. A final -a may drop when the name is declined (Euskal Herria →
+    Euskal Herrian, Iruñea → Iruñean, Bizkaia → Bizkaiko), so the stem without it counts too."""
+    parts = name.lower().split()
+    if parts[-1].endswith("a") and len(parts[-1]) >= 5:
+        parts.append(parts[-1][:-1])
+    return parts
+
+
 def clean_lemma(lemma: str) -> str:
     """Drops qualifiers such as 'hori (kolorea)' → 'hori'."""
     return re.sub(r"\s*\(.*?\)", "", lemma).strip().lower()
@@ -79,15 +88,18 @@ class Syllabus:
                 lemma = clean_lemma(row["lemma"])
                 # A homograph keeps the earliest unit in which it is taught.
                 syllabus.lemmas[lemma] = min(key, syllabus.lemmas.get(lemma, key))
-        forms_file = content / "syllabus" / "forms.csv"
-        if forms_file.exists():
+        # One file per app unit (forms/u02-1.csv): the forms whose grammar that unit teaches.
+        for forms_file in sorted((content / "syllabus" / "forms").glob("u*.csv")):
+            key = unit_key_from_id(forms_file.stem)
             with forms_file.open(encoding="utf-8") as fh:
                 for row in csv.DictReader(fh):
-                    syllabus.forms[row["form"].lower()] = unit_key(row["app_unit"])
+                    form = row["form"].strip().lower()
+                    syllabus.forms[form] = min(key, syllabus.forms.get(form, key))
         nouns_file = content / "syllabus" / "proper-nouns.csv"
         if nouns_file.exists():
             with nouns_file.open(encoding="utf-8") as fh:
-                syllabus.proper_nouns = {row["name"].lower() for row in csv.DictReader(fh)}
+                # Each word of a multi-word name (Euskal Herria) counts on its own.
+                syllabus.proper_nouns = {word for row in csv.DictReader(fh) for word in name_words(row["name"])}
         return syllabus
 
     def allowed(self, entries: dict[str, tuple[int, int]], unit: tuple[int, int]) -> set[str]:
@@ -192,6 +204,10 @@ def check_vocabulary(where: str, texts: list[str], unit: tuple[int, int], syllab
             if token in lemmas or token in forms or token in syllabus.proper_nouns or token.isdigit():
                 continue
             if any(token.startswith(stem) and len(token) - len(stem) <= MAX_SUFFIX for stem in stems):
+                continue
+            # Declined names: Bilbon, Gasteizen, Donostiako, Aneren.
+            if any(token.startswith(name) and len(token) - len(name) <= MAX_SUFFIX
+                   for name in syllabus.proper_nouns if len(name) >= MIN_STEM):
                 continue
             later = syllabus.lemmas.get(token) or syllabus.forms.get(token)
             if later:
@@ -312,8 +328,12 @@ def unit_schema_errors(unit_schema: dict, unit: dict) -> list[str]:
     return messages
 
 
-def validate(assets: Path = DEFAULT_ASSETS, content: Path = DEFAULT_CONTENT) -> tuple[Report, list[tuple[str, str, str]]]:
-    """Validates all courses. Returns the report and the (id, text, unit) clips without audio."""
+def validate(
+    assets: Path = DEFAULT_ASSETS,
+    content: Path = DEFAULT_CONTENT,
+    only: set[str] | None = None,
+) -> tuple[Report, list[tuple[str, str, str]]]:
+    """Validates all courses (or only the units in [only]). Returns the report and the clips without audio."""
     from jsonschema import Draft202012Validator
 
     report = Report()
@@ -345,6 +365,10 @@ def validate(assets: Path = DEFAULT_ASSETS, content: Path = DEFAULT_CONTENT) -> 
         if len({u for u, _ in listed}) != len(listed):
             report.error(f"{course['id']}/course.json", "a unit is listed twice")
 
+        if only is not None:
+            # A partial run also checks units being written that course.json does not list yet.
+            sections = dict(listed)
+            listed = [(u, sections.get(u)) for u in sorted(only)]
         for unit_id, section_id in listed:
             where = f"{course['id']}/units/{unit_id}.json"
             path = course_dir / "units" / f"{unit_id}.json"
@@ -361,7 +385,7 @@ def validate(assets: Path = DEFAULT_ASSETS, content: Path = DEFAULT_CONTENT) -> 
                 continue
             if unit["id"] != unit_id:
                 report.error(where, f"id '{unit['id']}' does not match the file name")
-            if unit["section"] != section_id:
+            if section_id is not None and unit["section"] != section_id:
                 report.error(where, f"section '{unit['section']}' but listed under '{section_id}'")
             key = unit_key_from_id(unit_id)
             if key[0] != unit["bookUnit"]:
@@ -420,12 +444,16 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--write", action="store_true", help="regenerate content/audio/pending.csv")
     parser.add_argument("--assets", type=Path, default=DEFAULT_ASSETS)
     parser.add_argument("--content", type=Path, default=DEFAULT_CONTENT)
+    parser.add_argument("--only", help="comma-separated unit ids to validate (skips the pending.csv check)")
     args = parser.parse_args(argv)
 
-    report, pending = validate(args.assets, args.content)
+    only = set(args.only.split(",")) if args.only else None
+    report, pending = validate(args.assets, args.content, only)
     csv_path = args.content / "audio" / "pending.csv"
     expected = pending_csv(pending)
-    if args.write:
+    if only is not None:
+        pass  # a partial run cannot tell whether pending.csv is complete
+    elif args.write:
         csv_path.parent.mkdir(parents=True, exist_ok=True)
         csv_path.write_text(expected, encoding="utf-8")
     elif not csv_path.exists() or csv_path.read_text(encoding="utf-8") != expected:

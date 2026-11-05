@@ -5,7 +5,8 @@ Lan-koadernoa* (workbook), published by Elkar. Only the unit order, communicativ
 grammar points and lexical fields are taken from the books. No text, dialogue, exercise, word list
 or image from them goes into the app: all content is written from scratch for each goal.
 
-> Status: draft for review. Language doubts are flagged with `TODO(revisión-nativa)`.
+> Status: all units written (M7); pending native review. Language doubts are flagged with
+> `TODO(revisión-nativa)`.
 
 ## 1. Structure
 
@@ -941,3 +942,26 @@ Each section ends with a **section review** that mixes its 6 units.
   the preferred batua form should be confirmed.
 - In M7 every lesson is written from scratch from these goals; the validator will reject words that
   are neither in this syllabus nor in earlier units.
+
+## Known gaps found while writing the content (M7)
+
+All 24 units are written within this syllabus. These gaps made some sentences plainer than they
+would naturally be; they are candidates for the next revision of `vocabulary.csv`:
+
+- **Everyday words missing or late.** Not taught at all: *ere*, *baina*, *edo*, *beti*, *beste*,
+  *ezer*, *egun* (on its own), *euskara*, *gaztelania*, *hitz egin*, *garrantzitsu*, *astero*,
+  *gidatu*. Taught late compared with their use: *noiz* (12.1), *asko* (8.2), *gaur* and *atzo*
+  (7.1), *bihar* and *orain* (7.2), *jan* and *edan* (7.2: food units 5.x cannot say "eat" or
+  "drink"), *liburu* (12.1), *esan* (11.2), *bota* and *ezin* (9.2), *hobe* and *on* (10.2).
+  *ere* was added as a grammar word in 5.1.
+- **Grammar examples using later words**: *etxe aurrean* (2.2, *etxe* is 4.1), *mahai bat behar
+  dut* (4.1, *mahai* is 4.2), *berrehun* and *mila* (4.1 grammar, taught in 4.2), *bota ezazu*
+  and *ezin da* (9.1, taught in 9.2), *esan dit … -tzeko* (9.1), *duela bi egun* and *orain dela
+  gutxi* (7.1), *osasun-etxe* and *hitzordu* (8.1 goal, taught in 8.2), *autoz*, *oinez*,
+  *bizikleta* and *noraino* (12.1 grammar, taught in 12.2), NOR-NORI-NORK verbs (11.1 grammar,
+  verbs taught in 11.2), *hizkuntza* and *ingeles* (11.1, taught in 11.2).
+- **Lemma and grammar out of step**: *ukan* is listed in 3.1 but its forms are taught in 3.2;
+  *jakin* is listed in 11.2 but taught in 11.1.
+- **Goals the vocabulary cannot fully express**: giving one's address in 1.2 (*kale* is 2.1,
+  *nire/zure* 3.1); telling the time above 10 in 2.2 (numbers 11+ are 3.2).
+- **Open usage questions** are marked `TODO(revisión-nativa)` in `content/source/units/*.yaml`.

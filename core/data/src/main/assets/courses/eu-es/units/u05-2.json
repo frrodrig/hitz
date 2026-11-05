@@ -1,0 +1,2738 @@
+{
+  "schemaVersion": 1,
+  "id": "u05-2",
+  "section": "s2",
+  "bookUnit": 5,
+  "title": {
+    "es": "En la cocina",
+    "eu": "Sukaldean"
+  },
+  "goals": [
+    {
+      "es": "Dar y seguir las instrucciones de una receta.",
+      "eu": "Errezeta baten argibideak eman eta jarraitu."
+    },
+    {
+      "es": "Dar consejos para comer de forma sana.",
+      "eu": "Osasuntsu jateko aholkuak eman."
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Órdenes: moztu tomatea",
+          "eu": "Aginduak: moztu tomatea"
+        },
+        "body": {
+          "es": "En las recetas, la orden es el verbo tal cual, sin auxiliar (moztu, egosi, frijitu). Para decir «no», se pone «ez» delante, y la cosa va con -rik.",
+          "eu": "Errezetetan, agindua aditza bera da, laguntzailerik gabe (moztu, egosi, frijitu). Ezeztatzeko, «ez» aurrean, eta gauzak -rik hartzen du."
+        },
+        "examples": [
+          {
+            "eu": "Moztu tomatea.",
+            "es": "Corta el tomate."
+          },
+          {
+            "eu": "Egosi patatak.",
+            "es": "Cuece las patatas."
+          },
+          {
+            "eu": "Ez gehitu gatzik.",
+            "es": "No añadas sal."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Los pasos de una receta",
+          "eu": "Errezeta baten urratsak"
+        },
+        "body": {
+          "es": "Ordena los pasos con lehenengo, gero, ondoren y azkenik. «… baino lehen» es «antes de …» y «…-ta gero» es «después de …»: el verbo va delante.",
+          "eu": "Urratsak ordenatzeko: lehenengo, gero, ondoren eta azkenik. «… baino lehen» eta «…-ta gero»: aditza aurrean doa."
+        },
+        "examples": [
+          {
+            "eu": "Lehenengo, berotu olioa.",
+            "es": "Primero, calienta el aceite."
+          },
+          {
+            "eu": "Moztu patatak frijitu baino lehen.",
+            "es": "Corta las patatas antes de freírlas."
+          },
+          {
+            "eu": "Patatak moztuta gero, frijitu.",
+            "es": "Después de cortar las patatas, fríelas."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Hace falta: behar da / behar dira",
+          "eu": "Behar da / behar dira"
+        },
+        "body": {
+          "es": "«Behar da» para una cosa y «behar dira» para varias. Con números, el nombre no lleva artículo: bi arrautza.",
+          "eu": "Gauza bat bada, «behar da»; bat baino gehiago, «behar dira». Zenbakiekin, izenak ez du artikulurik: bi arrautza."
+        },
+        "examples": [
+          {
+            "eu": "Olioa behar da.",
+            "es": "Hace falta aceite."
+          },
+          {
+            "eu": "Bi arrautza behar dira.",
+            "es": "Hacen falta dos huevos."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Consejos sanos",
+          "eu": "Aholku osasuntsuak"
+        },
+        "body": {
+          "es": "Para aconsejar, «komeni da» o «kaltegarria da» + verbo con -t(z)ea: egostea, frijitzea. Un «eta» al final de la frase explica el motivo («…, porque…»). Para la frecuencia: egunero, askotan.",
+          "eu": "Aholkuak emateko, «komeni da» edo «kaltegarria da» + -t(z)ea: egostea, frijitzea. Esaldiaren amaieran «eta» jarrita, arrazoia ematen dugu. Maiztasuna: egunero, askotan."
+        },
+        "examples": [
+          {
+            "eu": "Komeni da arraina egostea.",
+            "es": "Conviene cocer el pescado."
+          },
+          {
+            "eu": "Arraina nahiago dut, osasuntsua da eta.",
+            "es": "Prefiero pescado, porque es sano."
+          },
+          {
+            "eu": "Askotan arraina daukagu.",
+            "es": "A menudo tenemos pescado."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u05-2.l1",
+      "type": "lesson",
+      "title": {
+        "es": "En la cocina",
+        "eu": "Sukaldean"
+      },
+      "lessons": [
+        {
+          "id": "u05-2.l1.s1",
+          "exercises": [
+            {
+              "id": "u05-2.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Tenemos aceite y sal."
+              },
+              "answers": [
+                "Olioa eta gatza daukagu."
+              ],
+              "distractors": [
+                "sukaldean",
+                "dut",
+                "behar"
+              ],
+              "vocabulary": [
+                "olio",
+                "eta",
+                "gatz",
+                "eduki"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e02",
+              "type": "listen_tap",
+              "text": "Azukrea mahai gainean dago.",
+              "distractors": [
+                "dut",
+                "behar",
+                "eta"
+              ],
+              "vocabulary": [
+                "azukre",
+                "mahai",
+                "gainean",
+                "egon"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "olio",
+                  "es": "aceite"
+                },
+                {
+                  "eu": "gatz",
+                  "es": "sal"
+                },
+                {
+                  "eu": "azukre",
+                  "es": "azúcar"
+                },
+                {
+                  "eu": "lapiko",
+                  "es": "olla"
+                },
+                {
+                  "eu": "zartagin",
+                  "es": "sartén"
+                },
+                {
+                  "eu": "plater",
+                  "es": "plato"
+                }
+              ],
+              "vocabulary": [
+                "olio",
+                "gatz",
+                "azukre",
+                "lapiko",
+                "zartagin",
+                "plater"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "La olla está en la cocina."
+              },
+              "answers": [
+                "Lapikoa sukaldean dago."
+              ],
+              "vocabulary": [
+                "lapiko",
+                "sukalde",
+                "egon"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Olioa ___ dago.",
+              "options": [
+                "zartaginean",
+                "lapikoa"
+              ],
+              "correct": 0,
+              "translation": "El aceite está en la sartén.",
+              "vocabulary": [
+                "olio",
+                "zartagin",
+                "egon"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e06",
+              "type": "order_sentence",
+              "answer": "Zartagina eta lapikoa behar ditut.",
+              "translation": "Necesito la sartén y la olla.",
+              "vocabulary": [
+                "zartagin",
+                "eta",
+                "lapiko",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e07",
+              "type": "choose_meaning",
+              "text": "Gatza ala azukrea?",
+              "options": [
+                "¿Sal o azúcar?",
+                "¿Sal o aceite?",
+                "¿Azúcar o aceite?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gatz",
+                "azukre"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Platerak armairuan daude."
+              },
+              "answers": [
+                "Los platos están en el armario."
+              ],
+              "vocabulary": [
+                "plater",
+                "armairu",
+                "egon"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Aitor",
+                  "text": "Non dago gatza?"
+                }
+              ],
+              "options": [
+                "Gatza mahai gainean dago.",
+                "Gatza gustatzen zait.",
+                "Ez horregatik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "non",
+                "egon",
+                "gatz",
+                "mahai",
+                "gainean"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e10",
+              "type": "listen_type",
+              "text": "Gatza ala azukrea?",
+              "answers": [
+                "Gatza ala azukrea?"
+              ],
+              "vocabulary": [
+                "gatz",
+                "azukre"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e11",
+              "type": "read_true_false",
+              "passage": "Sukaldean lapiko bat eta zartagin bat daude. Platerak armairuan daude.",
+              "statement": "Los platos están en la mesa.",
+              "answer": false,
+              "vocabulary": [
+                "sukalde",
+                "lapiko",
+                "bat",
+                "eta",
+                "zartagin",
+                "egon",
+                "plater",
+                "armairu"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e12",
+              "type": "speak",
+              "text": "Olioa zartaginean dago.",
+              "translation": "El aceite está en la sartén.",
+              "vocabulary": [
+                "olio",
+                "zartagin",
+                "egon"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Plater bat behar dut, mesedez."
+              },
+              "answers": [
+                "Necesito un plato, por favor."
+              ],
+              "distractors": [
+                "en",
+                "Los",
+                "aceite"
+              ],
+              "vocabulary": [
+                "plater",
+                "bat",
+                "behar izan",
+                "ukan",
+                "mesedez"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u05-2.l1.s2",
+          "exercises": [
+            {
+              "id": "u05-2.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Moztu tomatea, mesedez.",
+              "distractors": [
+                "ura",
+                "arrautzak"
+              ],
+              "vocabulary": [
+                "moztu",
+                "tomate",
+                "mesedez"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Cuece las patatas."
+              },
+              "answers": [
+                "Egosi patatak."
+              ],
+              "vocabulary": [
+                "egosi",
+                "patata"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "moztu",
+                  "es": "cortar"
+                },
+                {
+                  "eu": "egosi",
+                  "es": "cocer"
+                },
+                {
+                  "eu": "frijitu",
+                  "es": "freír"
+                },
+                {
+                  "eu": "nahastu",
+                  "es": "mezclar"
+                },
+                {
+                  "eu": "gehitu",
+                  "es": "añadir"
+                },
+                {
+                  "eu": "berotu",
+                  "es": "calentar"
+                }
+              ],
+              "vocabulary": [
+                "moztu",
+                "egosi",
+                "frijitu",
+                "nahastu",
+                "gehitu",
+                "berotu"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Frijitu arrautzak."
+              },
+              "answers": [
+                "Fríe los huevos.",
+                "Fría los huevos."
+              ],
+              "vocabulary": [
+                "frijitu",
+                "arrautza"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e05",
+              "type": "fill_blank",
+              "sentence": "___ olioa zartaginean.",
+              "options": [
+                "Berotu",
+                "Moztu"
+              ],
+              "correct": 0,
+              "translation": "Calienta el aceite en la sartén.",
+              "vocabulary": [
+                "berotu",
+                "olio",
+                "zartagin"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nahastu esnea eta azukrea."
+              },
+              "answers": [
+                "Mezcla la leche y el azúcar.",
+                "Mezcle la leche y el azúcar."
+              ],
+              "vocabulary": [
+                "nahastu",
+                "esne",
+                "eta",
+                "azukre"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e07",
+              "type": "choose_meaning",
+              "text": "Frijitu arrautzak.",
+              "options": [
+                "Fríe los huevos.",
+                "Cuece los huevos.",
+                "Corta los huevos."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "frijitu",
+                "arrautza"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e08",
+              "type": "listen_type",
+              "text": "Gehitu gatza.",
+              "answers": [
+                "Gehitu gatza."
+              ],
+              "vocabulary": [
+                "gehitu",
+                "gatz"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ane",
+                  "text": "Patatak frijitu ala egosi?"
+                }
+              ],
+              "options": [
+                "Egosi, mesedez.",
+                "Gatza, mesedez.",
+                "Gabon, Ane."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "patata",
+                "frijitu",
+                "egosi",
+                "mesedez"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e10",
+              "type": "speak",
+              "text": "Berotu olioa zartaginean.",
+              "translation": "Calienta el aceite en la sartén.",
+              "vocabulary": [
+                "berotu",
+                "olio",
+                "zartagin"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e11",
+              "type": "read_true_false",
+              "passage": "Moztu patatak eta frijitu. Ez egosi!",
+              "statement": "Hay que cocer las patatas.",
+              "answer": false,
+              "vocabulary": [
+                "moztu",
+                "patata",
+                "eta",
+                "frijitu",
+                "ez",
+                "egosi"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Berotu ura lapikoan."
+              },
+              "answers": [
+                "Calienta el agua en la olla.",
+                "Caliente el agua en la olla."
+              ],
+              "distractors": [
+                "Mezcla",
+                "favor",
+                "los",
+                "patatas"
+              ],
+              "vocabulary": [
+                "berotu",
+                "ur",
+                "lapiko"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Corta el pan y el queso."
+              },
+              "answers": [
+                "Moztu ogia eta gazta."
+              ],
+              "distractors": [
+                "olioa",
+                "esnea",
+                "gatza"
+              ],
+              "vocabulary": [
+                "moztu",
+                "ogi",
+                "eta",
+                "gazta"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u05-2.l1.s3",
+          "exercises": [
+            {
+              "id": "u05-2.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Primero, corta la lechuga."
+              },
+              "answers": [
+                "Lehenengo, moztu letxuga."
+              ],
+              "vocabulary": [
+                "lehenengo",
+                "moztu",
+                "letxuga"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e02",
+              "type": "order_sentence",
+              "answer": "Gero, gehitu olioa.",
+              "translation": "Después, añade el aceite.",
+              "vocabulary": [
+                "gero",
+                "gehitu",
+                "olio"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "lehenengo",
+                  "es": "primero"
+                },
+                {
+                  "eu": "gero",
+                  "es": "después"
+                },
+                {
+                  "eu": "ondoren",
+                  "es": "a continuación"
+                },
+                {
+                  "eu": "azkenik",
+                  "es": "por último"
+                },
+                {
+                  "eu": "egunero",
+                  "es": "todos los días"
+                },
+                {
+                  "eu": "askotan",
+                  "es": "a menudo"
+                }
+              ],
+              "vocabulary": [
+                "lehenengo",
+                "gero",
+                "ondoren",
+                "azkenik",
+                "egunero",
+                "askotan"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ondoren, nahastu letxuga eta tomatea."
+              },
+              "answers": [
+                "A continuación, mezcla la lechuga y el tomate.",
+                "A continuación, mezcle la lechuga y el tomate."
+              ],
+              "vocabulary": [
+                "ondoren",
+                "nahastu",
+                "letxuga",
+                "eta",
+                "tomate"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Arraina ___ da.",
+              "options": [
+                "osasuntsua",
+                "kaltegarria"
+              ],
+              "correct": 0,
+              "translation": "El pescado es sano.",
+              "vocabulary": [
+                "arrain",
+                "osasuntsu",
+                "izan"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e06",
+              "type": "listen_type",
+              "text": "Azkenik, gehitu gatza.",
+              "answers": [
+                "Azkenik, gehitu gatza."
+              ],
+              "vocabulary": [
+                "azkenik",
+                "gehitu",
+                "gatz"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e07",
+              "type": "choose_meaning",
+              "text": "Azukrea kaltegarria da.",
+              "options": [
+                "El azúcar es perjudicial.",
+                "El azúcar es sano.",
+                "La sal es perjudicial."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "azukre",
+                "kaltegarri",
+                "izan"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e08",
+              "type": "speak",
+              "text": "Arraina osasuntsua da.",
+              "translation": "El pescado es sano.",
+              "vocabulary": [
+                "arrain",
+                "osasuntsu",
+                "izan"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Irati",
+                  "text": "Letxuga osasuntsua da?"
+                }
+              ],
+              "options": [
+                "Bai, oso osasuntsua da.",
+                "Bai, oso kaltegarria da.",
+                "Bai, gustatzen zaizkit."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "letxuga",
+                "osasuntsu",
+                "izan",
+                "bai",
+                "oso"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Azukrea kaltegarria da."
+              },
+              "answers": [
+                "El azúcar es perjudicial."
+              ],
+              "distractors": [
+                "último",
+                "corta",
+                "añade"
+              ],
+              "vocabulary": [
+                "azukre",
+                "kaltegarri",
+                "izan"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e11",
+              "type": "read_true_false",
+              "passage": "Egunero kafea daukat gosarian. Askotan zukua ere bai.",
+              "statement": "Todos los días hay café en su desayuno.",
+              "answer": true,
+              "vocabulary": [
+                "egunero",
+                "kafe",
+                "eduki",
+                "gosari",
+                "askotan",
+                "zuku",
+                "bai"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Todos los días hace falta agua."
+              },
+              "answers": [
+                "Egunero ura behar da."
+              ],
+              "distractors": [
+                "daukagu",
+                "osasuntsua",
+                "Azkenik"
+              ],
+              "vocabulary": [
+                "egunero",
+                "ur",
+                "behar izan",
+                "izan"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e13",
+              "type": "listen_tap",
+              "text": "Askotan arraina daukagu afarian.",
+              "distractors": [
+                "behar",
+                "da",
+                "letxuga"
+              ],
+              "vocabulary": [
+                "askotan",
+                "arrain",
+                "eduki",
+                "afari"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u05-2.l2",
+      "type": "lesson",
+      "title": {
+        "es": "Paso a paso",
+        "eu": "Urratsez urrats"
+      },
+      "lessons": [
+        {
+          "id": "u05-2.l2.s1",
+          "exercises": [
+            {
+              "id": "u05-2.l2.s1.e01",
+              "type": "order_sentence",
+              "answer": "Lehenengo, berotu olioa.",
+              "translation": "Primero, calienta el aceite.",
+              "vocabulary": [
+                "lehenengo",
+                "berotu",
+                "olio"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gero, frijitu patatak."
+              },
+              "answers": [
+                "Después, fríe las patatas.",
+                "Luego, fríe las patatas.",
+                "Después, fría las patatas."
+              ],
+              "vocabulary": [
+                "gero",
+                "frijitu",
+                "patata"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e03",
+              "type": "fill_blank",
+              "sentence": "___, gehitu arrautzak.",
+              "options": [
+                "Ondoren",
+                "Lehenengo"
+              ],
+              "correct": 0,
+              "translation": "A continuación, añade los huevos.",
+              "vocabulary": [
+                "ondoren",
+                "gehitu",
+                "arrautza"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e04",
+              "type": "listen_type",
+              "text": "Ondoren, gehitu arrautzak.",
+              "answers": [
+                "Ondoren, gehitu arrautzak."
+              ],
+              "vocabulary": [
+                "ondoren",
+                "gehitu",
+                "arrautza"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Ez ___ arraina, egosi.",
+              "options": [
+                "frijitu",
+                "egosi"
+              ],
+              "correct": 0,
+              "translation": "No frías el pescado, cuécelo.",
+              "vocabulary": [
+                "ez",
+                "frijitu",
+                "arrain",
+                "egosi"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e06",
+              "type": "speak",
+              "text": "Azkenik, nahastu ondo.",
+              "translation": "Por último, mezcla bien.",
+              "vocabulary": [
+                "azkenik",
+                "nahastu",
+                "ondo"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e07",
+              "type": "choose_meaning",
+              "text": "Azkenik, nahastu ondo.",
+              "options": [
+                "Por último, mezcla bien.",
+                "Primero, mezcla bien.",
+                "Por último, corta bien."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "azkenik",
+                "nahastu",
+                "ondo"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez frijitu arraina, egosi."
+              },
+              "answers": [
+                "No frías el pescado, cuécelo.",
+                "No fría el pescado, cuézalo."
+              ],
+              "distractors": [
+                "cuece",
+                "azúcar",
+                "sal"
+              ],
+              "vocabulary": [
+                "ez",
+                "frijitu",
+                "arrain",
+                "egosi"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Unai",
+                  "text": "Lehenengo, moztu tomatea. Eta gero?"
+                }
+              ],
+              "options": [
+                "Gero, gehitu olioa eta gatza.",
+                "Gero arte, Unai.",
+                "Lehenengo, tomatea gustatzen zait."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "lehenengo",
+                "moztu",
+                "tomate",
+                "eta",
+                "gero",
+                "gehitu",
+                "olio",
+                "gatz"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "No añadas azúcar."
+              },
+              "answers": [
+                "Ez gehitu azukrerik."
+              ],
+              "distractors": [
+                "gatzik",
+                "berotu"
+              ],
+              "vocabulary": [
+                "ez",
+                "gehitu",
+                "azukre"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e11",
+              "type": "read_true_false",
+              "passage": "Lehenengo, egosi arrautzak. Gero, moztu. Azkenik, gehitu gatza.",
+              "statement": "La sal se añade al principio.",
+              "answer": false,
+              "vocabulary": [
+                "lehenengo",
+                "egosi",
+                "arrautza",
+                "gero",
+                "moztu",
+                "azkenik",
+                "gehitu",
+                "gatz"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e12",
+              "type": "listen_tap",
+              "text": "Lehenengo moztu, eta gero egosi.",
+              "distractors": [
+                "arrautzak",
+                "Ondoren",
+                "mesedez"
+              ],
+              "vocabulary": [
+                "lehenengo",
+                "moztu",
+                "eta",
+                "gero",
+                "egosi"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "No añadas sal, por favor."
+              },
+              "answers": [
+                "Ez gehitu gatzik, mesedez."
+              ],
+              "vocabulary": [
+                "ez",
+                "gehitu",
+                "gatz",
+                "mesedez"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u05-2.l2.s2",
+          "exercises": [
+            {
+              "id": "u05-2.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Moztu patatak frijitu baino lehen."
+              },
+              "answers": [
+                "Corta las patatas antes de freírlas.",
+                "Corte las patatas antes de freírlas."
+              ],
+              "vocabulary": [
+                "moztu",
+                "patata",
+                "frijitu",
+                "bai"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e02",
+              "type": "listen_type",
+              "text": "Olioa berotu baino lehen, moztu tomatea.",
+              "answers": [
+                "Olioa berotu baino lehen, moztu tomatea."
+              ],
+              "vocabulary": [
+                "olio",
+                "berotu",
+                "bai",
+                "moztu",
+                "tomate"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e03",
+              "type": "fill_blank",
+              "sentence": "___ patatak frijitu baino lehen.",
+              "options": [
+                "Moztu",
+                "Egosi"
+              ],
+              "correct": 0,
+              "translation": "Corta las patatas antes de freírlas.",
+              "vocabulary": [
+                "moztu",
+                "patata",
+                "frijitu",
+                "bai"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e04",
+              "type": "speak",
+              "text": "Patatak moztuta gero, frijitu.",
+              "translation": "Después de cortar las patatas, fríelas.",
+              "vocabulary": [
+                "patata",
+                "moztu",
+                "gero",
+                "frijitu"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e05",
+              "type": "choose_meaning",
+              "text": "Patatak moztuta gero, frijitu.",
+              "options": [
+                "Después de cortar las patatas, fríelas.",
+                "Antes de cortar las patatas, fríelas.",
+                "Corta las patatas y cuécelas."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "patata",
+                "moztu",
+                "gero",
+                "frijitu"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Arrautzak egosita gero, moztu."
+              },
+              "answers": [
+                "Después de cocer los huevos, córtalos.",
+                "Después de cocer los huevos, córtelos."
+              ],
+              "distractors": [
+                "fríelas",
+                "esté",
+                "freírlas",
+                "cortar"
+              ],
+              "vocabulary": [
+                "arrautza",
+                "egosi",
+                "gero",
+                "moztu"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Garazi",
+                  "text": "Patatak moztuta daude."
+                }
+              ],
+              "options": [
+                "Ondo! Gero, frijitu.",
+                "Ondo! Lehenengo, moztu.",
+                "Ez horregatik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "patata",
+                "moztu",
+                "egon",
+                "ondo",
+                "gero",
+                "frijitu"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Calienta la leche hasta que esté caliente."
+              },
+              "answers": [
+                "Berotu esnea bero egon arte."
+              ],
+              "distractors": [
+                "eta",
+                "moztuta",
+                "frijitu"
+              ],
+              "vocabulary": [
+                "berotu",
+                "esne",
+                "bero",
+                "egon"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e09",
+              "type": "read_true_false",
+              "passage": "Moztu tomatea olioa berotu baino lehen.",
+              "statement": "Primero se calienta el aceite y después se corta el tomate.",
+              "answer": false,
+              "vocabulary": [
+                "moztu",
+                "tomate",
+                "olio",
+                "berotu",
+                "bai"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e10",
+              "type": "listen_tap",
+              "text": "Gatza gehituta gero, nahastu.",
+              "distractors": [
+                "Berotu",
+                "Bazkaria",
+                "lehen"
+              ],
+              "vocabulary": [
+                "gatz",
+                "gehitu",
+                "gero",
+                "nahastu"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e11",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Antes de la comida, corta el pan."
+              },
+              "answers": [
+                "Bazkaria baino lehen, moztu ogia."
+              ],
+              "vocabulary": [
+                "bazkari",
+                "bai",
+                "moztu",
+                "ogi"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e12",
+              "type": "order_sentence",
+              "answer": "Egosi arrautzak, eta gero moztu.",
+              "translation": "Cuece los huevos y después córtalos.",
+              "vocabulary": [
+                "egosi",
+                "arrautza",
+                "eta",
+                "gero",
+                "moztu"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u05-2.l2.s3",
+          "exercises": [
+            {
+              "id": "u05-2.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Zer behar da?",
+              "answers": [
+                "Zer behar da?"
+              ],
+              "vocabulary": [
+                "zer",
+                "behar izan",
+                "izan"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e02",
+              "type": "speak",
+              "text": "Olioa eta gatza behar dira.",
+              "translation": "Hacen falta aceite y sal.",
+              "vocabulary": [
+                "olio",
+                "eta",
+                "gatz",
+                "behar izan",
+                "izan"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e03",
+              "type": "fill_blank",
+              "sentence": "Bi arrautza behar ___.",
+              "options": [
+                "dira",
+                "da"
+              ],
+              "correct": 0,
+              "translation": "Hacen falta dos huevos.",
+              "vocabulary": [
+                "bi",
+                "arrautza",
+                "behar izan",
+                "izan"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lau patata behar dira."
+              },
+              "answers": [
+                "Hacen falta cuatro patatas.",
+                "Se necesitan cuatro patatas."
+              ],
+              "distractors": [
+                "Te",
+                "menudo",
+                "Conviene"
+              ],
+              "vocabulary": [
+                "lau",
+                "patata",
+                "behar izan",
+                "izan"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Komeni da arraina ___.",
+              "options": [
+                "egostea",
+                "egosi"
+              ],
+              "correct": 0,
+              "translation": "Conviene cocer el pescado.",
+              "vocabulary": [
+                "komeni izan",
+                "izan",
+                "arrain",
+                "egosi"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Hace falta una olla grande."
+              },
+              "answers": [
+                "Lapiko handi bat behar da."
+              ],
+              "distractors": [
+                "egostea",
+                "Komeni",
+                "Zer"
+              ],
+              "vocabulary": [
+                "lapiko",
+                "handi",
+                "bat",
+                "behar izan",
+                "izan"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e07",
+              "type": "choose_meaning",
+              "text": "Komeni da gatz gutxiago gehitzea.",
+              "options": [
+                "Conviene añadir menos sal.",
+                "Conviene añadir más sal.",
+                "Es perjudicial añadir sal."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "komeni izan",
+                "izan",
+                "gatz",
+                "gutxiago",
+                "gehitu"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e08",
+              "type": "listen_tap",
+              "text": "Komeni da arraina egostea.",
+              "distractors": [
+                "zaizu",
+                "Olioa",
+                "Lau"
+              ],
+              "vocabulary": [
+                "komeni izan",
+                "izan",
+                "arrain",
+                "egosi"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nahia",
+                  "text": "Zer behar da?"
+                }
+              ],
+              "options": [
+                "Bi arrautza eta patatak behar dira.",
+                "Bi arrautza behar da.",
+                "Zartagina gustatzen zait."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "behar izan",
+                "izan",
+                "bi",
+                "arrautza",
+                "eta",
+                "patata"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Es perjudicial freír las patatas a menudo."
+              },
+              "answers": [
+                "Kaltegarria da patatak askotan frijitzea."
+              ],
+              "vocabulary": [
+                "kaltegarri",
+                "izan",
+                "patata",
+                "askotan",
+                "frijitu"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e11",
+              "type": "order_sentence",
+              "answer": "Komeni da gatz gutxiago gehitzea.",
+              "translation": "Conviene añadir menos sal.",
+              "vocabulary": [
+                "komeni izan",
+                "izan",
+                "gatz",
+                "gutxiago",
+                "gehitu"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Arraina komeni zaizu."
+              },
+              "answers": [
+                "Te conviene el pescado.",
+                "Le conviene el pescado."
+              ],
+              "vocabulary": [
+                "arrain",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u05-2.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Cocinar sano",
+        "eu": "Osasuntsu sukaldean"
+      },
+      "lessons": [
+        {
+          "id": "u05-2.l3.s1",
+          "exercises": [
+            {
+              "id": "u05-2.l3.s1.e01",
+              "type": "speak",
+              "text": "Lehenengo, egosi arrautzak lapikoan.",
+              "translation": "Primero, cuece los huevos en la olla.",
+              "vocabulary": [
+                "lehenengo",
+                "egosi",
+                "arrautza",
+                "lapiko"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gero, moztu letxuga eta tomatea."
+              },
+              "answers": [
+                "Después, corta la lechuga y el tomate.",
+                "Luego, corta la lechuga y el tomate.",
+                "Después, corte la lechuga y el tomate."
+              ],
+              "distractors": [
+                "cuece",
+                "continuación",
+                "Primero",
+                "aceite"
+              ],
+              "vocabulary": [
+                "gero",
+                "moztu",
+                "letxuga",
+                "eta",
+                "tomate"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Ondoren, gehitu olioa eta gatza.",
+              "options": [
+                "A continuación, añade aceite y sal.",
+                "Primero, añade aceite y sal.",
+                "Por último, añade azúcar."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ondoren",
+                "gehitu",
+                "olio",
+                "eta",
+                "gatz"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "A continuación, añade aceite y sal."
+              },
+              "answers": [
+                "Ondoren, gehitu olioa eta gatza."
+              ],
+              "distractors": [
+                "Gero",
+                "daude",
+                "Azkenik"
+              ],
+              "vocabulary": [
+                "ondoren",
+                "gehitu",
+                "olio",
+                "eta",
+                "gatz"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s1.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ibai",
+                  "text": "Zer behar da?"
+                },
+                {
+                  "speaker": "Olatz",
+                  "text": "Letxuga, tomatea eta bi arrautza."
+                },
+                {
+                  "speaker": "Ibai",
+                  "text": "Eta gero?"
+                }
+              ],
+              "options": [
+                "Gero, egosi arrautzak.",
+                "Gero arte, Ibai.",
+                "Gero, gustatzen zait."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "behar izan",
+                "izan",
+                "letxuga",
+                "tomate",
+                "eta",
+                "bi",
+                "arrautza",
+                "gero",
+                "egosi"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Azkenik, moztu arrautzak.",
+              "distractors": [
+                "daude",
+                "dira"
+              ],
+              "vocabulary": [
+                "azkenik",
+                "moztu",
+                "arrautza"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s1.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Olatz",
+                  "text": "Olioa gehitu baino lehen, moztu tomatea."
+                }
+              ],
+              "options": [
+                "Bai, eta gero gehitu olioa.",
+                "Bai, eta lehenengo gehitu olioa.",
+                "Ez horregatik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "olio",
+                "gehitu",
+                "bai",
+                "moztu",
+                "tomate",
+                "eta",
+                "gero"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "La lechuga y el tomate son sanos."
+              },
+              "answers": [
+                "Letxuga eta tomatea osasuntsuak dira."
+              ],
+              "vocabulary": [
+                "letxuga",
+                "eta",
+                "tomate",
+                "osasuntsu",
+                "izan"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s1.e09",
+              "type": "read_true_false",
+              "passage": "Lehenengo, berotu olioa. Gero, frijitu arraina. Azkenik, gehitu gatza.",
+              "statement": "Lo último es añadir sal.",
+              "answer": true,
+              "vocabulary": [
+                "lehenengo",
+                "berotu",
+                "olio",
+                "gero",
+                "frijitu",
+                "arrain",
+                "azkenik",
+                "gehitu",
+                "gatz"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s1.e10",
+              "type": "order_sentence",
+              "answer": "Arrautzak platerean daude.",
+              "translation": "Los huevos están en el plato.",
+              "vocabulary": [
+                "arrautza",
+                "plater",
+                "egon"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s1.e11",
+              "type": "read_true_false",
+              "passage": "Ez egosi patatak. Frijitu zartaginean.",
+              "statement": "Hay que cocer las patatas en la olla.",
+              "answer": false,
+              "vocabulary": [
+                "ez",
+                "egosi",
+                "patata",
+                "frijitu",
+                "zartagin"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u05-2.l3.s2",
+          "exercises": [
+            {
+              "id": "u05-2.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Arraina nahiago dut, osasuntsua da eta."
+              },
+              "answers": [
+                "Prefiero pescado, porque es sano.",
+                "Prefiero el pescado porque es sano."
+              ],
+              "distractors": [
+                "añadir",
+                "patatas",
+                "las"
+              ],
+              "vocabulary": [
+                "arrain",
+                "nahiago izan",
+                "ukan",
+                "osasuntsu",
+                "izan",
+                "eta"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "No quiero azúcar, porque es perjudicial."
+              },
+              "answers": [
+                "Ez dut azukrerik nahi, kaltegarria da eta."
+              ],
+              "distractors": [
+                "osasuntsua",
+                "zaizkizu",
+                "gehitzea",
+                "Askotan"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "azukre",
+                "nahi izan",
+                "kaltegarri",
+                "izan",
+                "eta"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Arraina nahiago dut, osasuntsua da ___.",
+              "options": [
+                "eta",
+                "ez"
+              ],
+              "correct": 0,
+              "translation": "Prefiero pescado, porque es sano.",
+              "vocabulary": [
+                "arrain",
+                "nahiago izan",
+                "ukan",
+                "osasuntsu",
+                "izan",
+                "eta"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e04",
+              "type": "listen_tap",
+              "text": "Komeni da patatak egostea, ez frijitzea.",
+              "distractors": [
+                "Kaltegarria",
+                "Arraina",
+                "azukre",
+                "gehitzea"
+              ],
+              "vocabulary": [
+                "komeni izan",
+                "izan",
+                "patata",
+                "egosi",
+                "ez",
+                "frijitu"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Asier",
+                  "text": "Kafea azukrearekin?"
+                }
+              ],
+              "options": [
+                "Ez, azukrea kaltegarria da eta.",
+                "Bai, gatza nahiago dut.",
+                "Gabon, Asier."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kafe",
+                "azukre",
+                "ez",
+                "kaltegarri",
+                "izan",
+                "eta"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Es perjudicial añadir más azúcar."
+              },
+              "answers": [
+                "Kaltegarria da azukre gehiago gehitzea."
+              ],
+              "vocabulary": [
+                "kaltegarri",
+                "izan",
+                "azukre",
+                "gehiago",
+                "gehitu"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Uxue",
+                  "text": "Patatak frijitu ala egosi?"
+                },
+                {
+                  "speaker": "Markel",
+                  "text": "Egosi. Osasuntsuagoa da."
+                },
+                {
+                  "speaker": "Uxue",
+                  "text": "Eta olioa?"
+                }
+              ],
+              "options": [
+                "Gehitu olio gutxiago.",
+                "Gehitu olio gehiago, kaltegarria da eta.",
+                "Ni Markel naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "patata",
+                "frijitu",
+                "egosi",
+                "osasuntsu",
+                "izan",
+                "eta",
+                "olio",
+                "gehitu",
+                "gutxiago"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e08",
+              "type": "order_sentence",
+              "answer": "Letxuga eta sagarrak komeni zaizkizu.",
+              "translation": "Te convienen la lechuga y las manzanas.",
+              "vocabulary": [
+                "letxuga",
+                "eta",
+                "sagar",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e09",
+              "type": "read_true_false",
+              "passage": "Arraina eta letxuga osasuntsuak dira. Azukrea eta gatza kaltegarriak dira.",
+              "statement": "La sal es sana.",
+              "answer": false,
+              "vocabulary": [
+                "arrain",
+                "eta",
+                "letxuga",
+                "osasuntsu",
+                "izan",
+                "azukre",
+                "gatz",
+                "kaltegarri"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Askotan arraina daukagu, osasuntsua da eta."
+              },
+              "answers": [
+                "A menudo tenemos pescado, porque es sano.",
+                "Tenemos pescado a menudo porque es sano."
+              ],
+              "vocabulary": [
+                "askotan",
+                "arrain",
+                "eduki",
+                "osasuntsu",
+                "izan",
+                "eta"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e11",
+              "type": "read_true_false",
+              "passage": "Komeni da arraina egostea. Ez da komeni egunero frijitzea.",
+              "statement": "Conviene cocer el pescado.",
+              "answer": true,
+              "vocabulary": [
+                "komeni izan",
+                "izan",
+                "arrain",
+                "egosi",
+                "ez",
+                "egunero",
+                "frijitu"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u05-2.l3.s3",
+          "exercises": [
+            {
+              "id": "u05-2.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Necesitamos pan todos los días."
+              },
+              "answers": [
+                "Egunero ogia behar dugu."
+              ],
+              "distractors": [
+                "gosarian",
+                "arraina",
+                "da"
+              ],
+              "vocabulary": [
+                "egunero",
+                "ogi",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "frequency",
+                "behar-da"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Askotan oilaskoa daukagu bazkarian.",
+              "distractors": [
+                "nahi",
+                "dago",
+                "zaizu"
+              ],
+              "vocabulary": [
+                "askotan",
+                "oilasko",
+                "eduki",
+                "bazkari"
+              ],
+              "structures": [
+                "frequency",
+                "behar-da"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Askotan arraina daukagu.",
+              "options": [
+                "A menudo tenemos pescado.",
+                "Todos los días tenemos pescado.",
+                "Nunca tenemos pescado."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "askotan",
+                "arrain",
+                "eduki"
+              ],
+              "structures": [
+                "frequency",
+                "behar-da"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Todos los días quiero café en el desayuno."
+              },
+              "answers": [
+                "Egunero kafea nahi dut gosarian."
+              ],
+              "vocabulary": [
+                "egunero",
+                "kafe",
+                "nahi izan",
+                "ukan",
+                "gosari"
+              ],
+              "structures": [
+                "frequency",
+                "behar-da"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Haizea",
+                  "text": "Egunero arraina daukazu?"
+                }
+              ],
+              "options": [
+                "Ez, askotan oilaskoa daukat.",
+                "Bai, egunero gatza gustatzen zait.",
+                "Ez horregatik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "egunero",
+                "arrain",
+                "eduki",
+                "ez",
+                "askotan",
+                "oilasko"
+              ],
+              "structures": [
+                "frequency",
+                "behar-da"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Gure etxean askotan arraina dago.",
+              "translation": "En nuestra casa a menudo hay pescado.",
+              "vocabulary": [
+                "gu",
+                "etxe",
+                "askotan",
+                "arrain",
+                "egon"
+              ],
+              "structures": [
+                "frequency",
+                "behar-da"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Eneko",
+                  "text": "Zer behar da afarian?"
+                },
+                {
+                  "speaker": "June",
+                  "text": "Lau arrautza eta patatak."
+                }
+              ],
+              "options": [
+                "Ondo! Eta olioa ere bai.",
+                "Ondo! Eta olioa ere gustatzen.",
+                "Egun on, June!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "behar izan",
+                "izan",
+                "afari",
+                "lau",
+                "arrautza",
+                "eta",
+                "patata",
+                "ondo",
+                "olio",
+                "bai"
+              ],
+              "structures": [
+                "frequency",
+                "behar-da"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Egunero sagar bat komeni zaizu."
+              },
+              "answers": [
+                "Te conviene una manzana cada día.",
+                "Le conviene una manzana cada día.",
+                "Te conviene una manzana todos los días."
+              ],
+              "vocabulary": [
+                "egunero",
+                "sagar",
+                "bat",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "frequency",
+                "behar-da"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s3.e09",
+              "type": "read_true_false",
+              "passage": "Egunero ura behar da. Askotan kafea ere bai.",
+              "statement": "Hace falta agua todos los días.",
+              "answer": true,
+              "vocabulary": [
+                "egunero",
+                "ur",
+                "behar izan",
+                "izan",
+                "askotan",
+                "kafe",
+                "bai"
+              ],
+              "structures": [
+                "frequency",
+                "behar-da"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s3.e10",
+              "type": "listen_type",
+              "text": "Zartagin berri bat behar da.",
+              "answers": [
+                "Zartagin berri bat behar da."
+              ],
+              "vocabulary": [
+                "zartagin",
+                "berri",
+                "bat",
+                "behar izan",
+                "izan"
+              ],
+              "structures": [
+                "frequency",
+                "behar-da"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s3.e11",
+              "type": "read_true_false",
+              "passage": "Gure etxean ez dago gatzik. Gatza behar da!",
+              "statement": "En casa hay sal.",
+              "answer": false,
+              "vocabulary": [
+                "gu",
+                "etxe",
+                "ez",
+                "egon",
+                "gatz",
+                "behar izan",
+                "izan"
+              ],
+              "structures": [
+                "frequency",
+                "behar-da"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u05-2.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: la receta de la abuela",
+        "eu": "Istorioa: amonaren errezeta"
+      },
+      "story": {
+        "id": "u05-2.l4.story",
+        "title": "Amonaren sukaldean",
+        "lines": [
+          {
+            "speaker": "Amona",
+            "eu": "Kaixo, Izaro! Patatak eta arrautzak daude.",
+            "es": "¡Hola, Izaro! Hay patatas y huevos."
+          },
+          {
+            "speaker": "Izaro",
+            "eu": "Ondo! Zer behar da?",
+            "es": "¡Bien! ¿Qué hace falta?"
+          },
+          {
+            "speaker": "Amona",
+            "eu": "Olioa, gatza eta zartagin bat.",
+            "es": "Aceite, sal y una sartén."
+          },
+          {
+            "speaker": "Amona",
+            "eu": "Lehenengo, moztu patatak.",
+            "es": "Primero, corta las patatas."
+          },
+          {
+            "speaker": "Izaro",
+            "eu": "Moztuta daude! Eta gero?",
+            "es": "¡Ya están cortadas! ¿Y después?"
+          },
+          {
+            "speaker": "Amona",
+            "eu": "Gero, berotu olioa zartaginean eta frijitu patatak.",
+            "es": "Después, calienta el aceite en la sartén y fríe las patatas."
+          },
+          {
+            "speaker": "Izaro",
+            "eu": "Azukrea ere gehitu?",
+            "es": "¿Añado también azúcar?"
+          },
+          {
+            "speaker": "Amona",
+            "eu": "Ez! Ez gehitu azukrerik! Gatza, bai.",
+            "es": "¡No! ¡No añadas azúcar! Sal, sí."
+          },
+          {
+            "speaker": "Izaro",
+            "eu": "Ondoren, arrautzak?",
+            "es": "¿A continuación, los huevos?"
+          },
+          {
+            "speaker": "Amona",
+            "eu": "Bai. Azkenik, nahastu arrautzak eta patatak.",
+            "es": "Sí. Por último, mezcla los huevos y las patatas."
+          },
+          {
+            "speaker": "Izaro",
+            "eu": "Amona, frijitzea kaltegarria da?",
+            "es": "Abuela, ¿freír es perjudicial?"
+          },
+          {
+            "speaker": "Amona",
+            "eu": "Egunero frijitzea, bai. Bazkari hau, ez!",
+            "es": "Freír todos los días, sí. ¡Esta comida, no!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 2,
+            "prompt": "¿Qué hace falta?",
+            "options": [
+              "Aceite, sal y una sartén",
+              "Aceite, azúcar y una olla",
+              "Leche y huevos"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 7,
+            "prompt": "¿Qué no hay que añadir?",
+            "options": [
+              "Azúcar",
+              "Sal",
+              "Aceite"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 11,
+            "prompt": "Según la abuela, ¿qué es perjudicial?",
+            "options": [
+              "Freír todos los días",
+              "Añadir sal",
+              "Cocer las patatas"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u05-2.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u05-2.l6",
+      "type": "legendary",
+      "title": {
+        "es": "Nivel legendario",
+        "eu": "Maila legendarioa"
+      }
+    }
+  ]
+}

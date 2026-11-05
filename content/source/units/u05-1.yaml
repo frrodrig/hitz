@@ -1,0 +1,447 @@
+# Unit 5.1 · Gustuko janaria — food and drink, likes (gustatu, NOR-NORI), NORI case, nahiago izan.
+id: u05-1
+section: s2
+bookUnit: 5
+title:
+  es: Comida favorita
+  eu: Gustuko janaria
+goals:
+  - es: Hablar de comida y bebida.
+    eu: Janariaz eta edariaz hitz egin.
+  - es: Expresar gustos y preferencias.
+    eu: Gustuak eta lehentasunak adierazi.
+guidebook:
+  sections:
+    - title:
+        es: "Me gusta: gustatzen zait"
+        eu: "Gustatzen zait"
+      body:
+        es: Lo que gusta va con artículo (kafea, sagarrak) y el verbo cambia si es plural, como en castellano «gusta / gustan», «gustatzen zait» y «gustatzen zaizkit». Para negar, «ez» va delante del auxiliar.
+        eu: "Gustatzen zaigun gauzak artikulua darama (kafea, sagarrak), eta aditza aldatu egiten da pluralean: «gustatzen zait» eta «gustatzen zaizkit». Ezeztatzeko, «ez» laguntzailearen aurrean doa."
+      examples:
+        - eu: Kafea gustatzen zait.
+          es: Me gusta el café.
+        - eu: Sagarrak gustatzen zaizkit.
+          es: Me gustan las manzanas.
+        - eu: Ez zait esnea gustatzen.
+          es: No me gusta la leche.
+    - title:
+        es: "¿A quién? El caso NORI"
+        eu: "NORI kasua"
+      body:
+        es: "La persona a la que le gusta algo lleva -(r)i (Aneri, umeari, mutil honi), y el verbo cambia con ella. Pronombres: niri (zait), zuri (zaizu), hari (zaio), guri (zaigu), zuei (zaizue), haiei (zaie)."
+        eu: "Zerbait gustatzen zaion pertsonak -(r)i darama (Aneri, umeari, mutil honi), eta aditza harekin aldatzen da. Izenordainak: niri (zait), zuri (zaizu), hari (zaio), guri (zaigu), zuei (zaizue), haiei (zaie)."
+      examples:
+        - eu: Aneri ardoa gustatzen zaio.
+          es: A Ane le gusta el vino.
+        - eu: Umeari zukua gustatzen zaio.
+          es: Al niño le gusta el zumo.
+        - eu: Guri arraina gustatzen zaigu.
+          es: Nos gusta el pescado.
+    - title:
+        es: "Preferir: nahiago izan"
+        eu: "Nahiago izan"
+      body:
+        es: "«Nahiago» funciona como «nahi»: nahiago dut, nahiago duzu, nahiago du. Quien prefiere lleva -k (nik, zuk, Anek). Con dos opciones se pregunta con «ala»."
+        eu: "«Nahiago» «nahi» bezala erabiltzen da: nahiago dut, nahiago duzu, nahiago du. Nahiago duenak -k darama (nik, zuk, Anek). Bi aukera badaude, «ala» erabiltzen da galderan."
+      examples:
+        - eu: Kafea ala tea nahiago duzu?
+          es: ¿Prefieres café o té?
+        - eu: Nik tea nahiago dut.
+          es: Yo prefiero té.
+    - title:
+        es: Las comidas del día y «ere»
+        eu: Eguneko otorduak eta «ere»
+      body:
+        es: Gosaria es el desayuno, bazkaria la comida y afaria la cena; «gosarian» significa «en el desayuno». Para decir «a mí también», «niri ere bai»; para «a mí tampoco», «niri ere ez».
+        eu: Goizean gosaria, eguerdian bazkaria eta gauean afaria. «Gosarian» esaten dugu. Ados gaudenean, «niri ere bai» edo «niri ere ez».
+      examples:
+        - eu: Gosarian kafea nahiago dut.
+          es: En el desayuno prefiero café.
+        - eu: Niri ere bai.
+          es: A mí también.
+levels:
+  - type: lesson
+    title:
+      es: Comida y bebida
+      eu: Janaria eta edaria
+    lessons:
+      - structures: [food-vocab]
+        sentences:
+          - Ura nahi dut, mesedez. = Quiero agua, por favor.
+          - Kafea ala tea? = ¿Café o té?
+          - Esnea hozkailuan dago. = La leche está en el frigorífico. | La leche está en la nevera.
+          - Laranja zukua nahi duzu? = ¿Quieres zumo de naranja? | ¿Quiere zumo de naranja?
+          - Ardoa ala garagardoa? = ¿Vino o cerveza?
+          - Tea eta ura, mesedez. = Té y agua, por favor.
+          - Garagardo bat, mesedez. = Una cerveza, por favor.
+          - Edariak mahai gainean daude. = Las bebidas están encima de la mesa. | Las bebidas están sobre la mesa.
+        pairs:
+          - - ur = agua
+            - esne = leche
+            - kafe = café
+            - ardo = vino
+            - garagardo = cerveza
+            - zuku = zumo
+        meanings:
+          - text: Garagardo bat, mesedez.
+            options:
+              - Una cerveza, por favor.
+              - Un vino, por favor.
+              - Un café, por favor.
+        blanks:
+          - text: Kafea ___ tea? = ¿Café o té?
+            options:
+              - ala
+              - ez
+        chats:
+          - messages:
+              - Iker | Kaixo! Zer nahi duzu?
+            options:
+              - Kafe bat, mesedez.
+              - Ez horregatik.
+              - Gero arte.
+        true_false:
+          - passage: Kaixo! Ura nahi dut, mesedez. Anek ardoa nahi du.
+            statement: Ane quiere agua.
+            answer: false
+      - structures: [food-vocab]
+        sentences:
+          - Ogia mahai gainean dago. = El pan está encima de la mesa. | El pan está sobre la mesa.
+          - Arraina ala haragia? = ¿Pescado o carne?
+          - Oilaskoa eta patatak nahi ditut. = Quiero pollo y patatas.
+          - Bi arrautza behar ditut. = Necesito dos huevos.
+          - Gazta eta ogia daukat. = Tengo queso y pan.
+          - Arrautzak hozkailuan daude. = Los huevos están en el frigorífico. | Los huevos están en la nevera.
+          - Haragia eta arraina behar ditugu. = Necesitamos carne y pescado.
+          - Oilaskoa sukaldean dago. = El pollo está en la cocina.
+        pairs:
+          - - ogi = pan
+            - arrain = pescado
+            - haragi = carne
+            - oilasko = pollo
+            - arrautza = huevo
+            - gazta = queso
+        meanings:
+          - text: Arraina ala haragia?
+            options:
+              - ¿Pescado o carne?
+              - ¿Pollo o carne?
+              - ¿Pescado o pollo?
+        blanks:
+          - text: Bi ___ behar ditut. = Necesito dos huevos.
+            options:
+              - arrautza
+              - esne
+        chats:
+          - messages:
+              - Mikel | Arraina ala haragia?
+            options:
+              - Arraina, mesedez.
+              - Ni Mikel naiz.
+              - Bihar arte.
+        true_false:
+          - passage: Hozkailuan esnea eta arrautzak daude. Ogia mahai gainean dago.
+            statement: El pan está en el frigorífico.
+            answer: false
+      - structures: [food-vocab, meals]
+        sentences:
+          - Gosarian kafea nahi dut. = En el desayuno quiero café. | Para desayunar quiero café.
+          - Bazkaria sukaldean dago. = La comida está en la cocina.
+          - Afarian arraina daukagu. = En la cena tenemos pescado. | Para cenar tenemos pescado.
+          - Sagar bat ala laranja bat? = ¿Una manzana o una naranja?
+          - Patatak eta tomateak behar ditugu. = Necesitamos patatas y tomates.
+          - Janaria eta edaria mahai gainean daude. = La comida y la bebida están encima de la mesa. | La comida y la bebida están sobre la mesa.
+          - Letxuga eta tomatea daukagu. = Tenemos lechuga y tomate.
+          - Bazkarian oilaskoa nahi dut. = En la comida quiero pollo. | Para comer quiero pollo.
+        pairs:
+          - - gosari = desayuno
+            - bazkari = comida del mediodía
+            - afari = cena
+            - sagar = manzana
+            - laranja = naranja
+            - letxuga = lechuga
+        meanings:
+          - text: Afarian arraina daukagu.
+            options:
+              - En la cena tenemos pescado.
+              - En el desayuno tenemos pescado.
+              - En la cena tenemos carne.
+        blanks:
+          - text: ___ bat ala laranja bat? = ¿Una manzana o una naranja?
+            options:
+              - Sagar
+              - Tomate
+        chats:
+          - messages:
+              - Ane | Gosarian kafea ala tea?
+            options:
+              - Tea, mesedez.
+              - Afaria, mesedez.
+              - Zorionak!
+        true_false:
+          - passage: Gosarian esnea daukagu. Bazkarian oilaskoa eta patatak daude.
+            statement: En el desayuno hay pollo.
+            answer: false
+  - type: lesson
+    title:
+      es: Me gusta
+      eu: Gustatzen zait
+    lessons:
+      - structures: [gustatu-present]
+        sentences:
+          - Kafea gustatzen zait. | Niri kafea gustatzen zait. = Me gusta el café. | A mí me gusta el café.
+          - Sagarrak gustatzen zaizkit. | Niri sagarrak gustatzen zaizkit. = Me gustan las manzanas. | A mí me gustan las manzanas.
+          - Ez zait esnea gustatzen. | Esnea ez zait gustatzen. = No me gusta la leche. | A mí no me gusta la leche.
+          - Arraina gustatzen zaizu? = ¿Te gusta el pescado? | ¿Le gusta el pescado?
+          - Bai, arraina gustatzen zait. = Sí, me gusta el pescado.
+          - Patatak gustatzen zaizkizu? = ¿Te gustan las patatas? | ¿Le gustan las patatas?
+          - Ez zaizkit tomateak gustatzen. | Tomateak ez zaizkit gustatzen. = No me gustan los tomates. | A mí no me gustan los tomates.
+          - Zer gustatzen zaizu? = ¿Qué te gusta? | ¿Qué le gusta?
+        meanings:
+          - text: Ez zait esnea gustatzen.
+            options:
+              - No me gusta la leche.
+              - Me gusta la leche.
+              - ¿Te gusta la leche?
+        blanks:
+          - text: Sagarrak gustatzen ___. = Me gustan las manzanas.
+            options:
+              - zaizkit
+              - zait
+          - text: Kafea gustatzen ___. = Me gusta el café.
+            options:
+              - zait
+              - zaizkit
+        chats:
+          - messages:
+              - Jon | Gazta gustatzen zaizu?
+            options:
+              - Bai, gazta gustatzen zait.
+              - Bai, gazta gustatzen zaizkit.
+              - Bai, ni Jon naiz.
+        true_false:
+          - passage: Ni Leire naiz. Arraina gustatzen zait. Ez zait haragia gustatzen.
+            statement: A Leire le gusta la carne.
+            answer: false
+      - structures: [nori-dative, gustatu-present]
+        sentences:
+          - Aneri ardoa gustatzen zaio. = A Ane le gusta el vino.
+          - Umeari zukua gustatzen zaio. = Al niño le gusta el zumo. | A la niña le gusta el zumo.
+          - Guri arraina gustatzen zaigu. = A nosotros nos gusta el pescado. | Nos gusta el pescado. | A nosotras nos gusta el pescado.
+          - Zuei garagardoa gustatzen zaizue? = ¿A vosotros os gusta la cerveza? | ¿Os gusta la cerveza? | ¿A vosotras os gusta la cerveza?
+          - Haiei arrautzak gustatzen zaizkie. = A ellos les gustan los huevos. | Les gustan los huevos. | A ellas les gustan los huevos.
+          - Mutil honi ez zaio esnea gustatzen. = A este chico no le gusta la leche.
+          - Hari oilaskoa gustatzen zaio. = A él le gusta el pollo. | A ella le gusta el pollo. | Le gusta el pollo.
+          - Nire amari tea gustatzen zaio. = A mi madre le gusta el té.
+        meanings:
+          - text: Umeari zukua gustatzen zaio.
+            options:
+              - Al niño le gusta el zumo.
+              - Me gusta el zumo.
+              - Al niño no le gusta el zumo.
+        blanks:
+          - text: Aneri ardoa gustatzen ___. = A Ane le gusta el vino.
+            options:
+              - zaio
+              - zait
+          - text: ___ arraina gustatzen zaigu. = A nosotros nos gusta el pescado.
+            options:
+              - Guri
+              - Niri
+        chats:
+          - messages:
+              - Gorka | Zure aitari kafea gustatzen zaio?
+            options:
+              - Bai, kafea gustatzen zaio.
+              - Bai, kafea gustatzen zait.
+              - Bai, nire aita da.
+        true_false:
+          - passage: Nire lagunari, Unairi, gazta gustatzen zaio. Ez zaizkio sagarrak gustatzen.
+            statement: A Unai le gustan las manzanas.
+            answer: false
+      - structures: [nahiago-izan]
+        sentences:
+          - Kafea ala tea nahiago duzu? = ¿Prefieres café o té? | ¿Prefiere café o té?
+          - Nik tea nahiago dut. | Tea nahiago dut. = Yo prefiero té. | Prefiero té. | Prefiero el té.
+          - Anek ura nahiago du. = Ane prefiere agua. | Ane prefiere el agua.
+          - Guk arraina nahiago dugu. | Arraina nahiago dugu. = Nosotros preferimos pescado. | Preferimos pescado. | Nosotras preferimos pescado.
+          - Haragia ala oilaskoa nahiago duzue? = ¿Preferís carne o pollo?
+          - Haiek patatak nahiago dituzte. | Patatak nahiago dituzte. = Ellos prefieren patatas. | Prefieren patatas. | Ellas prefieren patatas.
+          - Gosarian zukua nahiago dut. = En el desayuno prefiero zumo. | Para desayunar prefiero zumo.
+          - Mikelek garagardoa nahiago du. = Mikel prefiere cerveza. | Mikel prefiere la cerveza.
+        pairs:
+          - - nahiago dut = prefiero
+            - nahi dut = quiero
+            - behar dut = necesito
+            - gustatzen zait = me gusta
+        meanings:
+          - text: Guk arraina nahiago dugu.
+            options:
+              - Nosotros preferimos pescado.
+              - Nosotros queremos pescado.
+              - A nosotros nos gusta el pescado.
+        blanks:
+          - text: Nik tea nahiago ___. = Yo prefiero té.
+            options:
+              - dut
+              - du
+        chats:
+          - messages:
+              - Edurne | Ardoa ala ura nahiago duzu?
+            options:
+              - Ura nahiago dut, eskerrik asko.
+              - Ura nahiago zait.
+              - Ardoa gustatzen zaizkit.
+        true_false:
+          - passage: Josuk gosarian kafea nahiago du. Bere ahizpak tea nahiago du.
+            statement: Josu prefiere té.
+            answer: false
+  - type: lesson
+    title:
+      es: En el bar y en casa
+      eu: Tabernan eta etxean
+    lessons:
+      - structures: [gustatu-present, nahiago-izan]
+        sentences:
+          - Zer nahi duzu, kafea ala zukua? = ¿Qué quieres, café o zumo? | ¿Qué quiere, café o zumo?
+          - Zukua nahiago dut, mesedez. = Prefiero zumo, por favor.
+          - Niri ere kafea gustatzen zait. = A mí también me gusta el café.
+          - Ez zait garagardoa gustatzen. Ura nahiago dut. = No me gusta la cerveza. Prefiero agua.
+          - Tabernan ogia eta gazta daude. = En el bar hay pan y queso.
+          - Laranjak gustatzen zaizkizu? = ¿Te gustan las naranjas? | ¿Le gustan las naranjas?
+        chats:
+          - messages:
+              - Alaitz | Kaixo! Zer nahi duzu?
+              - Peio | Kafe bat, mesedez. Eta zuk?
+            options:
+              - Nik tea nahiago dut.
+              - Nik tea nahiago du.
+              - Niri tea gustatzen zaizkit.
+          - messages:
+              - Amaia | Sagarrak gustatzen zaizkizu?
+            options:
+              - Bai, eta laranjak ere bai.
+              - Bai, sagarrak nahiago zait.
+              - Ez, ni Amaia naiz.
+        meanings:
+          - text: Niri ere bai.
+            options:
+              - A mí también.
+              - A mí tampoco.
+              - Yo no.
+        true_false:
+          - passage: Tabernan, Oierrek garagardoa nahi du. Haizeak ura nahiago du.
+            statement: Haizea prefiere agua.
+            answer: true
+          - passage: Niri ez zait kafea gustatzen. Tea nahiago dut.
+            statement: A esta persona le gusta el café.
+            answer: false
+      - structures: [nori-dative, gustatu-present]
+        sentences:
+          - Nire aitari haragia gustatzen zaio. = A mi padre le gusta la carne.
+          - Nire amari ez zaio haragia gustatzen. = A mi madre no le gusta la carne.
+          - Umeei patatak gustatzen zaizkie. = A los niños les gustan las patatas. | A las niñas les gustan las patatas.
+          - Zuri zer gustatzen zaizu? = ¿A ti qué te gusta? | ¿Qué te gusta a ti? | ¿A usted qué le gusta?
+          - Niri arraina eta oilaskoa gustatzen zaizkit. = A mí me gustan el pescado y el pollo. | Me gustan el pescado y el pollo.
+          - Neska horri gazta gustatzen zaio. = A esa chica le gusta el queso.
+        chats:
+          - messages:
+              - Xabier | Zure lagunei zer gustatzen zaie?
+            options:
+              - Oilaskoa eta patatak gustatzen zaizkie.
+              - Oilaskoa gustatzen zaizkie.
+              - Lagunak Bilbon bizi dira.
+          - messages:
+              - Nerea | Afarian arraina daukagu.
+              - Ander | Niri ez zait arraina gustatzen!
+              - Nerea | Eta zer nahiago duzu?
+            options:
+              - Oilaskoa nahiago dut.
+              - Oilaskoa nahiago zait.
+              - Arraina gustatzen zait.
+        blanks:
+          - text: Nire ___ haragia gustatzen zaio. = A mi padre le gusta la carne.
+            options:
+              - aitari
+              - aita
+        true_false:
+          - passage: Nire etxean, aitari kafea gustatzen zaio. Amari tea gustatzen zaio.
+            statement: A la madre le gusta el té.
+            answer: true
+          - passage: Umeei ez zaie esnea gustatzen. Zukua nahiago dute.
+            statement: Los niños prefieren leche.
+            answer: false
+      - structures: [meals, nahiago-izan]
+        sentences:
+          - Gosarian kafea nahiago dut. = En el desayuno prefiero café. | Para desayunar prefiero café.
+          - Bazkarian oilaskoa daukagu. = En la comida tenemos pollo. | Para comer tenemos pollo.
+          - Afarian arraina nahiago dugu. = En la cena preferimos pescado. | Para cenar preferimos pescado.
+          - Afaria sukaldean dago. = La cena está en la cocina.
+          - Jatetxe honetan arraina eta haragia daude. = En este restaurante hay pescado y carne.
+          - Zer nahi duzu afarian? = ¿Qué quieres para cenar? | ¿Qué quieres en la cena? | ¿Qué quiere para cenar?
+        chats:
+          - messages:
+              - Leire | Zer nahi duzu afarian?
+            options:
+              - Arrautzak eta patatak, mesedez.
+              - Gosaria, mesedez.
+              - Arratsalde on.
+          - messages:
+              - Kepa | Gosarian zer nahiago duzu, kafea ala esnea?
+              - Miren | Esnea. Eta zuk?
+            options:
+              - Nik kafea nahiago dut.
+              - Niri kafea nahiago zait.
+              - Nik kafea gustatzen zait.
+        meanings:
+          - text: Bazkarian oilaskoa daukagu.
+            options:
+              - En la comida tenemos pollo.
+              - En la cena tenemos pollo.
+              - En el desayuno tenemos pollo.
+        true_false:
+          - passage: Ni Julen naiz. Gosarian zukua nahiago dut. Afarian arraina nahiago dut.
+            statement: Julen prefiere zumo en el desayuno.
+            answer: true
+          - passage: Jatetxe honetan ez dago haragirik. Arraina eta oilaskoa daude.
+            statement: En el restaurante hay carne.
+            answer: false
+  - type: story
+    title:
+      es: "Historia: la cena"
+      eu: "Istorioa: afaria"
+    story:
+      title: Afaria Aneren etxean
+      lines:
+        - Ane | Arratsalde on, Iker! Sukaldean nago. = ¡Buenas tardes, Iker! Estoy en la cocina.
+        - Iker | Kaixo! Zer daukagu afarian? = ¡Hola! ¿Qué tenemos para cenar?
+        - Ane | Arraina eta patatak. Arraina gustatzen zaizu? = Pescado y patatas. ¿Te gusta el pescado?
+        - Iker | Bai, gustatzen zait. Ardoa daukazu? = Sí, me gusta. ¿Tienes vino?
+        - Ane | Ez, ez dago ardorik. Garagardoa ala ura? = No, no hay vino. ¿Cerveza o agua?
+        - Iker | Ura nahiago dut, eskerrik asko. = Prefiero agua, gracias.
+        - Ane | Nire ahizpari ez zaio arraina gustatzen. = A mi hermana no le gusta el pescado.
+        - Iker | Eta zer nahiago du? = ¿Y qué prefiere?
+        - Ane | Arrautzak nahiago ditu. Eta gazta! = Prefiere huevos. ¡Y queso!
+        - Iker | Niri ere gazta gustatzen zait! = ¡A mí también me gusta el queso!
+      questions:
+        - afterLine: 2
+          prompt: ¿Qué hay para cenar?
+          options:
+            - Pescado y patatas
+            - Carne y patatas
+            - Huevos y queso
+        - afterLine: 5
+          prompt: ¿Qué prefiere beber Iker?
+          options:
+            - Agua
+            - Vino
+            - Cerveza
+        - afterLine: 9
+          prompt: ¿Qué prefiere la hermana de Ane?
+          options:
+            - Huevos
+            - Pescado
+            - Patatas
+  - type: review
+  - type: legendary

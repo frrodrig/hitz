@@ -1,0 +1,455 @@
+# Unit 2.1 · Herrian — places and services in town, NON (inessive), present of EGON,
+# BA…-(R)IK? questions, demonstratives in NON (honetan, horretan, hartan), hemen / hor / han.
+id: u02-1
+section: s1
+bookUnit: 2
+title:
+  es: En el pueblo
+  eu: Herrian
+goals:
+  - es: Nombrar lugares y servicios de un pueblo o una ciudad.
+    eu: Herri edo hiri bateko lekuak eta zerbitzuak izendatu.
+  - es: Preguntar si hay un lugar y dónde está.
+    eu: Leku bat badagoen eta non dagoen galdetu.
+guidebook:
+  sections:
+    - title:
+        es: "¿Dónde? El caso NON"
+        eu: "Non? NON kasua"
+      body:
+        es: "Para decir dónde está algo se añade -n, -an o -ean: plaza → plazan, kale → kalean, hotel → hotelean. Con nombres de lugar: Bilbo → Bilbon, Gasteiz → Gasteizen."
+        eu: "Zerbait non dagoen esateko -n, -an edo -ean gehitzen da: plaza → plazan, kale → kalean, hotel → hotelean. Leku-izenekin: Bilbo → Bilbon, Gasteiz → Gasteizen."
+      examples:
+        - eu: Ane plazan dago.
+          es: Ane está en la plaza.
+        - eu: Ni Bilbon nago.
+          es: Estoy en Bilbao.
+    - title:
+        es: "El verbo egon (estar)"
+        eu: "Egon aditza"
+      body:
+        es: "«Egon» se usa para el lugar: nago, zaude, dago, gaude, zaudete, daude. «Izan» dice quién eres o de dónde eres: «Bilbokoa naiz» (soy de Bilbao), pero «Bilbon nago» (estoy en Bilbao)."
+        eu: "Lekua esateko «egon» erabiltzen da: nago, zaude, dago, gaude, zaudete, daude. «Izan» nor edo nongoa zaren esateko da: «Bilbokoa naiz», baina «Bilbon nago»."
+      examples:
+        - eu: Non zaude? Liburutegian nago.
+          es: ¿Dónde estás? Estoy en la biblioteca.
+        - eu: Gu hondartzan gaude.
+          es: Estamos en la playa.
+        - eu: Ni Donostiakoa naiz, eta Bilbon nago.
+          es: Soy de San Sebastián y estoy en Bilbao.
+    - title:
+        es: "¿Hay…? Badago …-rik?"
+        eu: "Badago …-rik?"
+      body:
+        es: "Para preguntar si hay algo: «Badago» + nombre con -rik (o -ik tras consonante). Se responde «Bai, badago» o «Ez, ez dago …-rik». En la frase afirmativa se usa «bat»: «Plazan taberna bat dago»."
+        eu: "Zerbait dagoen galdetzeko: «Badago» + izena -rik atzizkiarekin (-ik kontsonantearen ondoren). Erantzuna: «Bai, badago» edo «Ez, ez dago …-rik». Baiezkoan «bat» erabiltzen da: «Plazan taberna bat dago»."
+      examples:
+        - eu: Badago farmaziarik hemen?
+          es: ¿Hay alguna farmacia aquí?
+        - eu: Ez, ez dago hotelik.
+          es: No, no hay hotel.
+        - eu: Plazan taberna bat dago.
+          es: En la plaza hay un bar.
+    - title:
+        es: "Aquí, ahí, allí"
+        eu: "Hemen, hor, han"
+      body:
+        es: "Hemen (aquí), hor (ahí) y han (allí) van con hau (este), hori (ese) y hura (aquel). Con un lugar, el demostrativo toma -n: kale honetan (en esta calle), plaza horretan (en esa plaza), herri hartan (en aquel pueblo)."
+        eu: "Hemen, hor eta han hau, hori eta hura erakusleekin doaz. Leku batekin, erakusleak -n hartzen du: kale honetan, plaza horretan, herri hartan."
+      examples:
+        - eu: Hotela hemen dago.
+          es: El hotel está aquí.
+        - eu: Kale honetan banku bat dago.
+          es: En esta calle hay un banco.
+levels:
+  - type: lesson
+    title:
+      es: Lugares del pueblo
+      eu: Herriko lekuak
+    lessons:
+      - structures: [places, non-inessive]
+        sentences:
+          - Bilbo hiria da. = Bilbao es una ciudad.
+          - Tolosa herria da. = Tolosa es un pueblo.
+          - Hau plaza da. = Esta es la plaza. | Esto es la plaza.
+          - Hau udaletxea da. = Este es el ayuntamiento. | Esto es el ayuntamiento.
+          - Hori eliza da. = Esa es la iglesia. | Eso es la iglesia.
+          - Hura parkea da. = Aquel es el parque. | Aquello es el parque.
+          - Udaletxea plazan dago. = El ayuntamiento está en la plaza.
+          - Ni kalean nago. = Estoy en la calle. | Yo estoy en la calle.
+        pairs:
+          - - herri = pueblo
+            - hiri = ciudad
+            - kale = calle
+            - parke = parque
+            - eliza = iglesia
+            - udaletxe = ayuntamiento
+        blanks:
+          - text: Hau udaletxea ___. = Este es el ayuntamiento.
+            options:
+              - da
+              - dago
+              - naiz
+        meanings:
+          - text: Hori eliza da.
+            options:
+              - Esa es la iglesia.
+              - Esta es la iglesia.
+              - La iglesia está ahí.
+        chats:
+          - messages:
+              - Ane | Barkatu, hau udaletxea da?
+            options:
+              - Bai, hau udaletxea da.
+              - Bai, ni udaletxea naiz.
+              - Ez horregatik.
+        true_false:
+          - passage: Hau Oñati da. Oñati herria da.
+            statement: Oñati es una ciudad.
+            answer: false
+      - structures: [places, non-inessive]
+        sentences:
+          - Hau bankua da. = Este es el banco. | Esto es el banco.
+          - Farmazia hemen dago. = La farmacia está aquí.
+          - Eskola hor dago. = La escuela está ahí.
+          - Ospitalea han dago. = El hospital está allí.
+          - Liburutegia plazan dago. = La biblioteca está en la plaza.
+          - Medikua ospitalean dago. = El médico está en el hospital. | La médica está en el hospital.
+          - Irakaslea eskolan dago. = El profesor está en la escuela. | La profesora está en la escuela.
+          - Ikasleak liburutegian daude. = Los estudiantes están en la biblioteca. | Las estudiantes están en la biblioteca.
+        pairs:
+          - - banku = banco
+            - farmazia = farmacia
+            - eskola = escuela
+            - ospitale = hospital
+            - liburutegi = biblioteca
+            - hemen = aquí
+        blanks:
+          - text: Ospitalea ___ dago. = El hospital está allí.
+            options:
+              - han
+              - hemen
+              - hor
+        meanings:
+          - text: Farmazia hemen dago.
+            options:
+              - La farmacia está aquí.
+              - La farmacia está allí.
+              - ¿Dónde está la farmacia?
+        chats:
+          - messages:
+              - Jon | Kaixo, Itziar! Non zaude?
+            options:
+              - Liburutegian nago.
+              - Liburutegia naiz.
+              - Liburutegikoa naiz.
+        true_false:
+          - passage: Ni Maialen naiz. Medikua naiz, eta ospitalean nago.
+            statement: Maialen está en el hospital.
+            answer: true
+      - structures: [places, non-inessive]
+        sentences:
+          - Jatetxea hemen dago. = El restaurante está aquí.
+          - Taberna plazan dago. = El bar está en la plaza.
+          - Hotela Donostian dago. = El hotel está en San Sebastián. | El hotel está en Donostia.
+          - Geltokia han dago. = La estación está allí.
+          - Hondartza Zarautzen dago. = La playa está en Zarautz.
+          - Mendia hor dago. = El monte está ahí.
+          - Sukaldaria jatetxean dago. = El cocinero está en el restaurante. | La cocinera está en el restaurante.
+          - Mikel eta Ane tabernan daude. = Mikel y Ane están en el bar.
+        pairs:
+          - - jatetxe = restaurante
+            - taberna = bar
+            - hotel = hotel
+            - geltoki = estación
+            - hondartza = playa
+            - mendi = monte
+        blanks:
+          - text: Mikel eta Ane tabernan ___. = Mikel y Ane están en el bar.
+            options:
+              - daude
+              - dago
+              - dira
+        meanings:
+          - text: Geltokia han dago.
+            options:
+              - La estación está allí.
+              - La estación está aquí.
+              - La playa está allí.
+        chats:
+          - messages:
+              - Leire | Barkatu, non dago hotela?
+            options:
+              - Hotela hemen dago.
+              - Hotela hemen da.
+              - Ni hotela naiz.
+        true_false:
+          - passage: Gu Zarautzen gaude. Hondartzan gaude.
+            statement: Los que hablan están en el monte.
+            answer: false
+  - type: lesson
+    title:
+      es: Estar y haber
+      eu: Egon eta badago
+    lessons:
+      - structures: [egon-present, non-inessive]
+        sentences:
+          - Non zaude? = ¿Dónde estás? | ¿Dónde está usted?
+          - Ni Bilbon nago. = Estoy en Bilbao. | Yo estoy en Bilbao.
+          - Ane Gasteizen dago. = Ane está en Vitoria. | Ane está en Vitoria-Gasteiz.
+          - Gu Iruñean gaude. = Estamos en Pamplona. | Nosotros estamos en Pamplona. | Nosotras estamos en Pamplona.
+          - Zuek non zaudete? = ¿Dónde estáis? | ¿Vosotros dónde estáis? | ¿Dónde están ustedes?
+          - Haiek Baionan daude. = Están en Bayona. | Ellos están en Bayona. | Ellas están en Bayona.
+          - Ni Donostiakoa naiz, eta Bilbon nago. = Soy de San Sebastián y estoy en Bilbao. | Yo soy de San Sebastián y estoy en Bilbao.
+          - Zu hotelean zaude? = ¿Estás en el hotel? | ¿Tú estás en el hotel? | ¿Está usted en el hotel?
+        blanks:
+          - text: Gu Iruñean ___. = Estamos en Pamplona.
+            options:
+              - gaude
+              - gara
+              - daude
+          - text: Ni Bilbokoa ___, eta Gasteizen nago. = Soy de Bilbao y estoy en Vitoria.
+            options:
+              - naiz
+              - nago
+        meanings:
+          - text: Zuek non zaudete?
+            options:
+              - ¿Dónde estáis?
+              - ¿De dónde sois?
+              - ¿Quiénes sois?
+        chats:
+          - messages:
+              - Uxue | Kaixo, Asier! Non zaude?
+            options:
+              - Geltokian nago.
+              - Geltokia naiz.
+              - Geltokian zaude.
+        true_false:
+          - passage: Ni Gorka naiz. Gasteizkoa naiz, eta Donostian nago.
+            statement: Gorka está en Vitoria.
+            answer: false
+      - structures: [ba-rik, egon-present]
+        sentences:
+          - Badago farmaziarik hemen? = ¿Hay alguna farmacia aquí? | ¿Hay farmacia aquí? | ¿Hay una farmacia por aquí?
+          - Bai, badago. = Sí, hay. | Sí, sí que hay.
+          - Ez, ez dago farmaziarik. = No, no hay farmacia. | No, no hay ninguna farmacia.
+          - Badago bankurik herrian? = ¿Hay algún banco en el pueblo? | ¿Hay banco en el pueblo?
+          - Plazan taberna bat dago. = En la plaza hay un bar. | Hay un bar en la plaza.
+          - Herrian ez dago hotelik. = En el pueblo no hay hotel. | No hay hotel en el pueblo. | En el pueblo no hay ningún hotel.
+          - Badago jatetxerik hor? = ¿Hay algún restaurante ahí? | ¿Hay restaurante ahí?
+          - Hirian ospitale bat dago. = En la ciudad hay un hospital. | Hay un hospital en la ciudad.
+        blanks:
+          - text: Ez, ez ___ hotelik. = No, no hay hotel.
+            options:
+              - dago
+              - da
+              - gaude
+        meanings:
+          - text: Badago bankurik herrian?
+            options:
+              - ¿Hay algún banco en el pueblo?
+              - ¿Dónde está el banco del pueblo?
+              - El banco está en el pueblo.
+        chats:
+          - messages:
+              - Ibai | Barkatu, badago farmaziarik hemen?
+            options:
+              - Bai, plazan farmazia bat dago.
+              - Bai, plazan farmaziarik dago.
+              - Eskerrik asko.
+        true_false:
+          - passage: Tolosan ez dago hondartzarik.
+            statement: En Tolosa hay playa.
+            answer: false
+      - structures: [demonstratives, hemen-hor-han]
+        sentences:
+          - Kale honetan banku bat dago. = En esta calle hay un banco. | Hay un banco en esta calle.
+          - Plaza horretan eliza bat dago. = En esa plaza hay una iglesia. | Hay una iglesia en esa plaza.
+          - Herri hartan ez dago eskolarik. = En aquel pueblo no hay escuela. | No hay escuela en aquel pueblo. | En aquel pueblo no hay ninguna escuela.
+          - Hau liburutegia da, eta hori eskola. = Esta es la biblioteca y esa, la escuela. | Esta es la biblioteca y esa es la escuela.
+          - Hura geltokia da? = ¿Aquella es la estación? | ¿Aquello es la estación?
+          - Hotel honetan nago. = Estoy en este hotel. | Yo estoy en este hotel.
+          - Jatetxe horretan daude. = Están en ese restaurante. | Ellos están en ese restaurante.
+          - Parkea hor dago? = ¿El parque está ahí? | ¿Está ahí el parque?
+        pairs:
+          - - hemen = aquí
+            - hor = ahí
+            - han = allí
+            - honetan = en este
+            - horretan = en ese
+            - hartan = en aquel
+        blanks:
+          - text: Kale ___ farmazia bat dago. = En esta calle hay una farmacia.
+            options:
+              - honetan
+              - hau
+              - hemen
+        meanings:
+          - text: Herri hartan ez dago eskolarik.
+            options:
+              - En aquel pueblo no hay escuela.
+              - En este pueblo no hay escuela.
+              - En aquel pueblo hay una escuela.
+        chats:
+          - messages:
+              - Nerea | Barkatu, non dago udaletxea?
+            options:
+              - Han dago, plaza hartan.
+              - Han da, plaza hura.
+              - Ni udaletxea naiz.
+        true_false:
+          - passage: Hau Lekeitio da. Herri honetan hondartza bat dago.
+            statement: En Lekeitio hay playa.
+            answer: true
+  - type: lesson
+    title:
+      es: Conversaciones
+      eu: Elkarrizketak
+    lessons:
+      - structures: [egon-present, non-inessive]
+        sentences:
+          - Barkatu, non dago geltokia? = Perdona, ¿dónde está la estación? | Perdone, ¿dónde está la estación?
+          - Geltokia han dago. = La estación está allí.
+          - Mesedez, non dago liburutegia? = Por favor, ¿dónde está la biblioteca?
+          - Liburutegia eskolan dago. = La biblioteca está en la escuela.
+          - Ospitalea ez dago hemen, Gasteizen dago. = El hospital no está aquí, está en Vitoria.
+          - Ondo, eskerrik asko! Agur! = Bien, ¡gracias! ¡Adiós! | Bien, ¡muchas gracias! ¡Adiós!
+        chats:
+          - messages:
+              - Aitor | Barkatu, non dago udaletxea?
+            options:
+              - Udaletxea plazan dago.
+              - Udaletxea plazan da.
+              - Ni udaletxean nago.
+          - messages:
+              - Izaro | Egun on! Badago hotelik herrian?
+              - Kepa | Bai, badago. Kale honetan dago.
+              - Izaro | Eta jatetxerik?
+            options:
+              - Bai, hotelean jatetxe bat dago.
+              - Bai, hotelean jatetxerik dago.
+              - Ni sukaldaria naiz.
+        true_false:
+          - passage: Non dago farmazia? Hor dago, plazan.
+            statement: La farmacia está en la plaza.
+            answer: true
+          - passage: Gu Bermeon gaude. Herri honetan ez dago hotelik.
+            statement: En Bermeo hay un hotel.
+            answer: false
+        meanings:
+          - text: Ospitalea ez dago hemen.
+            options:
+              - El hospital no está aquí.
+              - El hospital está aquí.
+              - No hay hospital allí.
+      - structures: [egon-present, demonstratives]
+        sentences:
+          - Kaixo, Oier! Non zaude? = ¡Hola, Oier! ¿Dónde estás?
+          - Mendian nago, eta zu? = Estoy en el monte, ¿y tú? | Estoy en el monte, ¿y usted?
+          - Ni hondartzan nago. = Estoy en la playa. | Yo estoy en la playa.
+          - Garazi eta Julen non daude? = ¿Dónde están Garazi y Julen?
+          - Parkean daude. = Están en el parque.
+          - Gu jatetxe honetan gaude. = Estamos en este restaurante. | Nosotros estamos en este restaurante. | Nosotras estamos en este restaurante.
+        chats:
+          - messages:
+              - Haizea | Kaixo! Non zaudete?
+            options:
+              - Gu tabernan gaude.
+              - Gu tabernan gara.
+              - Zuek tabernan zaudete.
+          - messages:
+              - Peio | Kaixo, Amaia! Non zaude?
+              - Amaia | Liburutegian nago. Eta zu?
+            options:
+              - Ni geltokian nago.
+              - Zu geltokian zaude.
+              - Ni geltokia naiz.
+        true_false:
+          - passage: Ni Miren naiz. Irakaslea naiz, eta eskolan nago.
+            statement: Miren está en la escuela.
+            answer: true
+          - passage: Josu eta Edurne mendian daude. Ni hondartzan nago.
+            statement: Josu está en la playa.
+            answer: false
+        blanks:
+          - text: Garazi eta Julen parkean ___. = Garazi y Julen están en el parque.
+            options:
+              - daude
+              - dago
+              - gaude
+      - structures: [ba-rik, places]
+        sentences:
+          - Hau Elizondo da. Herri hau Nafarroan dago. = Este es Elizondo. Este pueblo está en Navarra.
+          - Herri honetan eliza bat eta plaza bat daude. = En este pueblo hay una iglesia y una plaza. | Hay una iglesia y una plaza en este pueblo.
+          - Badago bankurik? Ez, ez dago. = ¿Hay algún banco? No, no hay. | ¿Hay banco? No, no hay.
+          - Hiri honetan ospitale bat dago. = En esta ciudad hay un hospital. | Hay un hospital en esta ciudad.
+          - Hondartza ez dago hemen, Hondarribian dago. = La playa no está aquí, está en Hondarribia.
+          - Mendia han dago. = El monte está allí.
+        chats:
+          - messages:
+              - Eneko | Barkatu, badago liburutegirik hiri honetan?
+            options:
+              - Bai, udaletxean liburutegi bat dago.
+              - Bai, udaletxean liburutegirik dago.
+              - Bai, ni Gasteizkoa naiz.
+          - messages:
+              - June | Zu Lizarrakoa zara?
+              - Markel | Ez, ni Tuterakoa naiz.
+              - June | Eta non zaude?
+            options:
+              - Lizarran nago.
+              - Lizarrakoa naiz.
+              - Lizarran zaude.
+        true_false:
+          - passage: Herri hau Bizkaian dago. Herri honetan ez dago hondartzarik.
+            statement: El pueblo tiene playa.
+            answer: false
+          - passage: Getxo herria da. Getxon hondartza bat eta parke bat daude.
+            statement: En Getxo hay un parque.
+            answer: true
+        meanings:
+          - text: Herri honetan eliza bat eta plaza bat daude.
+            options:
+              - En este pueblo hay una iglesia y una plaza.
+              - En aquel pueblo hay una iglesia y una plaza.
+              - En este pueblo no hay iglesia.
+  - type: story
+    title:
+      es: "Historia: ¿dónde está el hotel?"
+      eu: "Istorioa: non dago hotela?"
+    story:
+      title: Non dago hotela?
+      lines:
+        - Uxue | Barkatu! Zu Lekeitiokoa zara? = ¡Perdona! ¿Eres de Lekeitio?
+        - Ibai | Bai, Lekeitiokoa naiz. Zer moduz? = Sí, soy de Lekeitio. ¿Qué tal?
+        - Uxue | Ondo, eskerrik asko. Badago hotelik herrian? = Bien, gracias. ¿Hay algún hotel en el pueblo?
+        - Ibai | Bai, badago. Hotela hondartzan dago. = Sí, hay. El hotel está en la playa.
+        - Uxue | Eta hondartza non dago? = ¿Y dónde está la playa?
+        - Ibai | Han dago. Hura hotela da. = Está allí. Aquel es el hotel.
+        - Uxue | Oso ondo! Eta badago farmaziarik? = ¡Muy bien! ¿Y hay alguna farmacia?
+        - Ibai | Bai, plazan. Udaletxea eta farmazia plazan daude. = Sí, en la plaza. El ayuntamiento y la farmacia están en la plaza.
+        - Uxue | Eta bankurik? = ¿Y algún banco?
+        - Ibai | Ez, herri honetan ez dago bankurik. = No, en este pueblo no hay banco.
+        - Uxue | Eskerrik asko! Agur! = ¡Muchas gracias! ¡Adiós!
+      questions:
+        - afterLine: 3
+          prompt: ¿Dónde está el hotel?
+          options:
+            - En la playa
+            - En la plaza
+            - En la estación
+        - afterLine: 7
+          prompt: ¿Qué hay en la plaza?
+          options:
+            - El ayuntamiento y la farmacia
+            - El hotel y el banco
+            - La iglesia y el bar
+        - afterLine: 10
+          prompt: ¿Hay banco en el pueblo?
+          options:
+            - "No"
+            - Sí, en la plaza
+            - Sí, en la playa
+  - type: review
+  - type: legendary

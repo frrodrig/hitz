@@ -1,0 +1,2767 @@
+{
+  "schemaVersion": 1,
+  "id": "u09-2",
+  "section": "s3",
+  "bookUnit": 9,
+  "title": {
+    "es": "Cuidar el medio ambiente",
+    "eu": "Ingurumena zaindu"
+  },
+  "goals": [
+    {
+      "es": "Conocer medidas para proteger el medio ambiente y dar tu opinión sobre ellas.",
+      "eu": "Ingurumena babesteko neurriak ezagutu eta haiei buruzko iritzia eman."
+    },
+    {
+      "es": "Decir qué hacemos para cuidar el medio ambiente.",
+      "eu": "Ingurumena zaintzeko zer egiten dugun esan."
+    },
+    {
+      "es": "Entender prohibiciones y normas sencillas.",
+      "eu": "Debekuak eta arau errazak ulertu."
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Conviene ahorrar: -tzea",
+          "eu": "Komeni da aurreztea: -tzea"
+        },
+        "body": {
+          "es": "El verbo con -tzea o -tea funciona como un nombre, igual que el infinitivo español en «ahorrar es bueno». Se usa con «komeni da» (conviene), «ondo dago» (está bien) o «gustatzen zait».",
+          "eu": "-tzea edo -tea duen aditza izen bat bezala erabiltzen da. «Komeni da», «ondo dago» edo «gustatzen zait» esapideekin erabiltzen da."
+        },
+        "examples": [
+          {
+            "eu": "Komeni da energia aurreztea.",
+            "es": "Conviene ahorrar energía."
+          },
+          {
+            "eu": "Ondo dago papera birziklatzea.",
+            "es": "Está bien reciclar el papel."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "No se puede, está prohibido",
+          "eu": "Ezin da, debekatuta dago"
+        },
+        "body": {
+          "es": "«Ezin da» + participio significa «no se puede» (Ezin da hemen sartu). «Debekatuta dago» + verbo con -tzea significa «está prohibido». Para una persona concreta, «ezin dut», «ezin naiz»…",
+          "eu": "«Ezin da» partizipioarekin erabiltzen da (Ezin da hemen sartu). «Debekatuta dago» -tzea duen aditzarekin doa. Pertsona batekin, «ezin dut», «ezin naiz»…"
+        },
+        "examples": [
+          {
+            "eu": "Ezin da hemen plastikoa bota.",
+            "es": "Aquí no se puede tirar plástico."
+          },
+          {
+            "eu": "Debekatuta dago ibaian igeri egitea.",
+            "es": "Está prohibido nadar en el río."
+          },
+          {
+            "eu": "Gaur ezin naiz etorri.",
+            "es": "Hoy no puedo venir."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Dar tu opinión",
+          "eu": "Iritzia eman"
+        },
+        "body": {
+          "es": "«Nire ustez» significa «en mi opinión». Para preguntar, «Zer uste duzu?» o «Zein da zure iritzia?». Para responder, «ados nago» (estoy de acuerdo) o «ez nago ados».",
+          "eu": "«Nire ustez» esaten dugu gure iritzia emateko. Galdetzeko, «Zer uste duzu?» edo «Zein da zure iritzia?». Erantzuteko, «ados nago» edo «ez nago ados»."
+        },
+        "examples": [
+          {
+            "eu": "Nire ustez, ondo dago.",
+            "es": "En mi opinión, está bien."
+          },
+          {
+            "eu": "Zer uste duzu?",
+            "es": "¿Qué opinas?"
+          },
+          {
+            "eu": "Ez nago ados.",
+            "es": "No estoy de acuerdo."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Cuando…: -(e)nean",
+          "eu": "-(e)nean"
+        },
+        "body": {
+          "es": "Para decir «cuando», se añade -(e)nean al verbo auxiliar, que va al final de esa parte de la frase (naiz → naizenean, da → denean, dago → dagoenean).",
+          "eu": "«Noiz» adierazteko, -(e)nean gehitzen zaio laguntzaileari (naiz → naizenean, da → denean, dago → dagoenean)."
+        },
+        "examples": [
+          {
+            "eu": "Gelatik joaten naizenean, argia itzaltzen dut.",
+            "es": "Cuando salgo de la habitación, apago la luz."
+          },
+          {
+            "eu": "Dutxatzen naizenean, ura aurrezten dut.",
+            "es": "Cuando me ducho, ahorro agua."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u09-2.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Acciones verdes",
+        "eu": "Ingurumena zaintzen"
+      },
+      "lessons": [
+        {
+          "id": "u09-2.l1.s1",
+          "exercises": [
+            {
+              "id": "u09-2.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Apago la luz."
+              },
+              "answers": [
+                "Argia itzaltzen dut."
+              ],
+              "distractors": [
+                "ezazu",
+                "erabiltzen"
+              ],
+              "vocabulary": [
+                "argi",
+                "itzali",
+                "ukan"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e02",
+              "type": "listen_tap",
+              "text": "Gelan argia pizten dugu.",
+              "distractors": [
+                "erabiltzen",
+                "dut",
+                "piztu"
+              ],
+              "vocabulary": [
+                "gela",
+                "argi",
+                "piztu",
+                "ukan"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "itzali",
+                  "es": "apagar"
+                },
+                {
+                  "eu": "piztu",
+                  "es": "encender"
+                },
+                {
+                  "eu": "aurreztu",
+                  "es": "ahorrar"
+                },
+                {
+                  "eu": "erabili",
+                  "es": "usar"
+                },
+                {
+                  "eu": "bota",
+                  "es": "tirar"
+                }
+              ],
+              "vocabulary": [
+                "itzali",
+                "piztu",
+                "aurreztu",
+                "erabili",
+                "bota"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Tenemos que ahorrar energía."
+              },
+              "answers": [
+                "Energia aurreztu behar dugu."
+              ],
+              "vocabulary": [
+                "energia",
+                "aurreztu",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Ura ___ dut.",
+              "options": [
+                "aurrezten",
+                "pizten"
+              ],
+              "correct": 0,
+              "translation": "Ahorro agua.",
+              "vocabulary": [
+                "ur",
+                "aurreztu",
+                "ukan"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e06",
+              "type": "order_sentence",
+              "answer": "Ura aurrezten dut.",
+              "translation": "Ahorro agua.",
+              "vocabulary": [
+                "ur",
+                "aurreztu",
+                "ukan"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e07",
+              "type": "choose_meaning",
+              "text": "Argia itzaltzen dut.",
+              "options": [
+                "Apago la luz.",
+                "Enciendo la luz.",
+                "Ahorro agua."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "argi",
+                "itzali",
+                "ukan"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Paperezko poltsak erabiltzen ditugu."
+              },
+              "answers": [
+                "Usamos bolsas de papel."
+              ],
+              "vocabulary": [
+                "paper",
+                "poltsa",
+                "erabili",
+                "ukan"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nahia",
+                  "text": "Argia piztuta dago!"
+                }
+              ],
+              "options": [
+                "Bai, orain itzaltzen dut.",
+                "Bai, ura aurrezten dut.",
+                "Ez, paperezkoa da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "argi",
+                "piztu",
+                "egon",
+                "bai",
+                "orain",
+                "itzali",
+                "ukan"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e10",
+              "type": "listen_type",
+              "text": "Itzal ezazu argia, mesedez!",
+              "answers": [
+                "Itzal ezazu argia, mesedez!"
+              ],
+              "vocabulary": [
+                "itzali",
+                "ukan",
+                "argi",
+                "mesedez"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e11",
+              "type": "read_true_false",
+              "passage": "Etxean energia aurrezten dugu. Argiak itzaltzen ditugu.",
+              "statement": "En esa casa ahorran energía.",
+              "answer": true,
+              "vocabulary": [
+                "etxe",
+                "energia",
+                "aurreztu",
+                "ukan",
+                "argi",
+                "itzali"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e12",
+              "type": "speak",
+              "text": "Ez piztu argia orain.",
+              "translation": "No enciendas la luz ahora.",
+              "vocabulary": [
+                "ez",
+                "piztu",
+                "argi",
+                "orain"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nik plastiko gutxi erabiltzen dut."
+              },
+              "answers": [
+                "Yo uso poco plástico.",
+                "Uso poco plástico."
+              ],
+              "distractors": [
+                "Usamos",
+                "ahorrar",
+                "Apaga"
+              ],
+              "vocabulary": [
+                "ni",
+                "plastiko",
+                "erabili",
+                "ukan"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u09-2.l1.s2",
+          "exercises": [
+            {
+              "id": "u09-2.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Ez bota papera kalera!",
+              "distractors": [
+                "edukiontzi",
+                "duzu",
+                "ibaira"
+              ],
+              "vocabulary": [
+                "ez",
+                "bota",
+                "paper",
+                "kale"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Tira la botella al contenedor verde."
+              },
+              "answers": [
+                "Bota ezazu botila edukiontzi berdera."
+              ],
+              "vocabulary": [
+                "bota",
+                "ukan",
+                "botila",
+                "edukiontzi",
+                "berde"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "debekatuta",
+                  "es": "prohibido"
+                },
+                {
+                  "eu": "ezin",
+                  "es": "no poder"
+                },
+                {
+                  "eu": "ados",
+                  "es": "de acuerdo"
+                },
+                {
+                  "eu": "iritzi",
+                  "es": "opinión"
+                },
+                {
+                  "eu": "zaindu",
+                  "es": "cuidar"
+                }
+              ],
+              "vocabulary": [
+                "debekatuta",
+                "ezin",
+                "ados",
+                "iritzi",
+                "zaindu"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e04",
+              "type": "order_sentence",
+              "answer": "Hemen debekatuta dago igeri egitea.",
+              "translation": "Aquí está prohibido nadar.",
+              "vocabulary": [
+                "hemen",
+                "debekatuta",
+                "egon",
+                "igeri egin",
+                "egin"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Ezin ___ hemen sartu.",
+              "options": [
+                "da",
+                "du"
+              ],
+              "correct": 0,
+              "translation": "No se puede entrar aquí.",
+              "vocabulary": [
+                "ezin",
+                "izan",
+                "hemen",
+                "sartu"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ezin da hemen sartu."
+              },
+              "answers": [
+                "No se puede entrar aquí.",
+                "Aquí no se puede entrar."
+              ],
+              "vocabulary": [
+                "ezin",
+                "izan",
+                "hemen",
+                "sartu"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e07",
+              "type": "choose_meaning",
+              "text": "Hemen debekatuta dago igeri egitea.",
+              "options": [
+                "Aquí está prohibido nadar.",
+                "Aquí se puede nadar.",
+                "Aquí hay que nadar."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hemen",
+                "debekatuta",
+                "egon",
+                "igeri egin",
+                "egin"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e08",
+              "type": "listen_type",
+              "text": "Ibaian ezin da igeri egin.",
+              "answers": [
+                "Ibaian ezin da igeri egin."
+              ],
+              "vocabulary": [
+                "igeri egin",
+                "ibai",
+                "ezin",
+                "izan"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Xabier",
+                  "text": "Botila hau ibaira bota daiteke?"
+                }
+              ],
+              "options": [
+                "Ez! Debekatuta dago.",
+                "Bai, ados nago.",
+                "Ez, ura aurrezten dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "botila",
+                "hau",
+                "ibai",
+                "bota",
+                "izan",
+                "ez",
+                "debekatuta",
+                "egon"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e10",
+              "type": "speak",
+              "text": "Debekatuta dago hondakinak ibaira botatzea.",
+              "translation": "Está prohibido tirar residuos al río.",
+              "vocabulary": [
+                "debekatuta",
+                "egon",
+                "hondakin",
+                "ibai",
+                "bota"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaur ezin naiz etorri."
+              },
+              "answers": [
+                "Hoy no puedo venir.",
+                "No puedo venir hoy."
+              ],
+              "distractors": [
+                "que",
+                "Aquí",
+                "papel"
+              ],
+              "vocabulary": [
+                "gaur",
+                "ezin",
+                "izan",
+                "etorri"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Tienes que tirarlo a la papelera."
+              },
+              "answers": [
+                "Zakarrontzian bota behar duzu."
+              ],
+              "distractors": [
+                "etorri",
+                "dago",
+                "da"
+              ],
+              "vocabulary": [
+                "zakarrontzi",
+                "bota",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u09-2.l1.s3",
+          "exercises": [
+            {
+              "id": "u09-2.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Tenemos que cuidar la naturaleza."
+              },
+              "answers": [
+                "Natura zaindu behar dugu."
+              ],
+              "vocabulary": [
+                "natura",
+                "zaindu",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e02",
+              "type": "order_sentence",
+              "answer": "Zer uste duzu?",
+              "translation": "¿Qué opinas?",
+              "vocabulary": [
+                "zer",
+                "uste izan",
+                "ukan"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "zaindu",
+                  "es": "cuidar"
+                },
+                {
+                  "eu": "ados",
+                  "es": "de acuerdo"
+                },
+                {
+                  "eu": "iritzi",
+                  "es": "opinión"
+                },
+                {
+                  "eu": "uste izan",
+                  "es": "creer"
+                },
+                {
+                  "eu": "debekatuta",
+                  "es": "prohibido"
+                }
+              ],
+              "vocabulary": [
+                "zaindu",
+                "ados",
+                "iritzi",
+                "uste izan",
+                "debekatuta"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ados nago."
+              },
+              "answers": [
+                "Estoy de acuerdo."
+              ],
+              "vocabulary": [
+                "ados",
+                "egon"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Ados ___.",
+              "options": [
+                "nago",
+                "naiz"
+              ],
+              "correct": 0,
+              "translation": "Estoy de acuerdo.",
+              "vocabulary": [
+                "ados",
+                "egon"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e06",
+              "type": "listen_type",
+              "text": "Ez nago ados.",
+              "answers": [
+                "Ez nago ados."
+              ],
+              "vocabulary": [
+                "ez",
+                "egon",
+                "ados"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e07",
+              "type": "choose_meaning",
+              "text": "Ez nago ados.",
+              "options": [
+                "No estoy de acuerdo.",
+                "Estoy de acuerdo.",
+                "No estoy en casa."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "egon",
+                "ados"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e08",
+              "type": "speak",
+              "text": "Nire ustez, ondo dago.",
+              "translation": "En mi opinión, está bien.",
+              "vocabulary": [
+                "ni",
+                "uste izan",
+                "ondo",
+                "egon"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Gorka",
+                  "text": "Natura zaindu behar dugu."
+                }
+              ],
+              "options": [
+                "Bai, ados nago.",
+                "Ez, ezin da.",
+                "Argia itzaltzen dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "natura",
+                "zaindu",
+                "behar izan",
+                "ukan",
+                "bai",
+                "ados",
+                "egon"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zein da zure iritzia?"
+              },
+              "answers": [
+                "¿Cuál es tu opinión?",
+                "¿Cuál es su opinión?"
+              ],
+              "distractors": [
+                "está",
+                "En",
+                "Tenemos"
+              ],
+              "vocabulary": [
+                "zein",
+                "izan",
+                "zu",
+                "iritzi"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e11",
+              "type": "read_true_false",
+              "passage": "Nire ustez, plastiko gutxiago erabili behar dugu.",
+              "statement": "Esta persona cree que hay que usar más plástico.",
+              "answer": false,
+              "vocabulary": [
+                "ni",
+                "uste izan",
+                "plastiko",
+                "gutxiago",
+                "erabili",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Cuidamos el medio ambiente."
+              },
+              "answers": [
+                "Ingurumena zaintzen dugu."
+              ],
+              "distractors": [
+                "zaindu",
+                "duzu"
+              ],
+              "vocabulary": [
+                "ingurumen",
+                "zaindu",
+                "ukan"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e13",
+              "type": "listen_tap",
+              "text": "Zu ados zaude?",
+              "distractors": [
+                "zaindu",
+                "Zer"
+              ],
+              "vocabulary": [
+                "zu",
+                "ados",
+                "egon"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u09-2.l2",
+      "type": "lesson",
+      "title": {
+        "es": "Normas y costumbres",
+        "eu": "Zer komeni da?"
+      },
+      "lessons": [
+        {
+          "id": "u09-2.l2.s1",
+          "exercises": [
+            {
+              "id": "u09-2.l2.s1.e01",
+              "type": "order_sentence",
+              "answer": "Komeni da energia aurreztea.",
+              "translation": "Conviene ahorrar energía.",
+              "vocabulary": [
+                "komeni izan",
+                "izan",
+                "energia",
+                "aurreztu"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ondo dago papera birziklatzea."
+              },
+              "answers": [
+                "Está bien reciclar el papel."
+              ],
+              "vocabulary": [
+                "ondo",
+                "egon",
+                "paper",
+                "birziklatu"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e03",
+              "type": "fill_blank",
+              "sentence": "Komeni da ura ___.",
+              "options": [
+                "aurreztea",
+                "aurrezten"
+              ],
+              "correct": 0,
+              "translation": "Conviene ahorrar agua.",
+              "vocabulary": [
+                "komeni izan",
+                "izan",
+                "ur",
+                "aurreztu"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e04",
+              "type": "listen_type",
+              "text": "Komeni da argiak itzaltzea.",
+              "answers": [
+                "Komeni da argiak itzaltzea."
+              ],
+              "vocabulary": [
+                "komeni izan",
+                "izan",
+                "argi",
+                "itzali"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Ondo dago papera ___.",
+              "options": [
+                "birziklatzea",
+                "birziklatzen"
+              ],
+              "correct": 0,
+              "translation": "Está bien reciclar el papel.",
+              "vocabulary": [
+                "ondo",
+                "egon",
+                "paper",
+                "birziklatu"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e06",
+              "type": "speak",
+              "text": "Natura zaintzea komeni da.",
+              "translation": "Conviene cuidar la naturaleza.",
+              "vocabulary": [
+                "natura",
+                "zaindu",
+                "komeni izan",
+                "izan"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e07",
+              "type": "choose_meaning",
+              "text": "Komeni da argiak itzaltzea.",
+              "options": [
+                "Conviene apagar las luces.",
+                "Conviene encender las luces.",
+                "Las luces están apagadas."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "komeni izan",
+                "izan",
+                "argi",
+                "itzali"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ondo dago paperezko poltsak erabiltzea."
+              },
+              "answers": [
+                "Está bien usar bolsas de papel."
+              ],
+              "distractors": [
+                "ahorrar",
+                "cuidar",
+                "No",
+                "gusta"
+              ],
+              "vocabulary": [
+                "ondo",
+                "egon",
+                "paper",
+                "poltsa",
+                "erabili"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ander",
+                  "text": "Zer komeni da?"
+                }
+              ],
+              "options": [
+                "Komeni da energia aurreztea.",
+                "Ados nago.",
+                "Plastikozkoa da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "komeni izan",
+                "izan",
+                "energia",
+                "aurreztu"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Conviene ahorrar agua."
+              },
+              "answers": [
+                "Komeni da ura aurreztea."
+              ],
+              "distractors": [
+                "Natura",
+                "poltsak",
+                "Ondo"
+              ],
+              "vocabulary": [
+                "komeni izan",
+                "izan",
+                "ur",
+                "aurreztu"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e11",
+              "type": "listen_tap",
+              "text": "Ez dago ondo ibaira hondakinak botatzea.",
+              "distractors": [
+                "da",
+                "Natura",
+                "birziklatzea",
+                "erabiltzea"
+              ],
+              "vocabulary": [
+                "ez",
+                "egon",
+                "ondo",
+                "ibai",
+                "hondakin",
+                "bota"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Me gusta cuidar la naturaleza."
+              },
+              "answers": [
+                "Gustatzen zait natura zaintzea."
+              ],
+              "vocabulary": [
+                "gustatu",
+                "natura",
+                "zaindu"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u09-2.l2.s2",
+          "exercises": [
+            {
+              "id": "u09-2.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ezin da hemen plastikoa bota."
+              },
+              "answers": [
+                "Aquí no se puede tirar plástico.",
+                "No se puede tirar plástico aquí."
+              ],
+              "vocabulary": [
+                "ezin",
+                "izan",
+                "hemen",
+                "plastiko",
+                "bota"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e02",
+              "type": "listen_type",
+              "text": "Basoan ezin da zuhaitzik moztu.",
+              "answers": [
+                "Basoan ezin da zuhaitzik moztu."
+              ],
+              "vocabulary": [
+                "baso",
+                "ezin",
+                "izan",
+                "zuhaitz",
+                "moztu"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Debekatuta ___ itsasora plastikoa botatzea.",
+              "options": [
+                "dago",
+                "daude"
+              ],
+              "correct": 0,
+              "translation": "Está prohibido tirar plástico al mar.",
+              "vocabulary": [
+                "debekatuta",
+                "egon",
+                "itsaso",
+                "plastiko",
+                "bota"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e04",
+              "type": "speak",
+              "text": "Liburutegian ezin da jan.",
+              "translation": "En la biblioteca no se puede comer.",
+              "vocabulary": [
+                "liburutegi",
+                "ezin",
+                "izan",
+                "jan"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Ezin ___ argia piztu.",
+              "options": [
+                "dut",
+                "naiz"
+              ],
+              "correct": 0,
+              "translation": "No puedo encender la luz.",
+              "vocabulary": [
+                "ezin",
+                "ukan",
+                "argi",
+                "piztu"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Debekatuta dago itsasora plastikoa botatzea."
+              },
+              "answers": [
+                "Está prohibido tirar plástico al mar."
+              ],
+              "distractors": [
+                "Hoy",
+                "comer",
+                "cortar",
+                "No"
+              ],
+              "vocabulary": [
+                "debekatuta",
+                "egon",
+                "itsaso",
+                "plastiko",
+                "bota"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e07",
+              "type": "choose_meaning",
+              "text": "Liburutegian ezin da jan.",
+              "options": [
+                "En la biblioteca no se puede comer.",
+                "En la biblioteca se puede comer.",
+                "En la biblioteca no hay comida."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "liburutegi",
+                "ezin",
+                "izan",
+                "jan"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Está prohibido tirar residuos en el bosque."
+              },
+              "answers": [
+                "Debekatuta dago basoan hondakinak botatzea."
+              ],
+              "distractors": [
+                "Zakarrontzia",
+                "ikusi",
+                "non"
+              ],
+              "vocabulary": [
+                "debekatuta",
+                "egon",
+                "baso",
+                "hondakin",
+                "bota"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Asier",
+                  "text": "Hemen igeri egin daiteke?"
+                }
+              ],
+              "options": [
+                "Ez, debekatuta dago.",
+                "Bai, ezin da.",
+                "Ez, ados nago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "igeri egin",
+                "hemen",
+                "izan",
+                "ez",
+                "debekatuta",
+                "egon"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e10",
+              "type": "listen_tap",
+              "text": "Ezin dut argia piztu.",
+              "distractors": [
+                "zuhaitzik",
+                "basora",
+                "naiz"
+              ],
+              "vocabulary": [
+                "ezin",
+                "ukan",
+                "argi",
+                "piztu"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e11",
+              "type": "read_true_false",
+              "passage": "Hondartza honetan debekatuta dago botilak botatzea. Zakarrontziak plazan daude.",
+              "statement": "En esta playa se pueden tirar botellas.",
+              "answer": false,
+              "vocabulary": [
+                "hondartza",
+                "hau",
+                "debekatuta",
+                "egon",
+                "botila",
+                "bota",
+                "zakarrontzi",
+                "plaza"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Hoy no puedo ir al bosque."
+              },
+              "answers": [
+                "Ezin naiz gaur basora joan."
+              ],
+              "vocabulary": [
+                "ezin",
+                "izan",
+                "gaur",
+                "baso",
+                "joan"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s2.e13",
+              "type": "order_sentence",
+              "answer": "Zakarrontzia non dago? Ezin dut ikusi.",
+              "translation": "¿Dónde está la papelera? No la veo.",
+              "vocabulary": [
+                "zakarrontzi",
+                "non",
+                "egon",
+                "ezin",
+                "ukan",
+                "ikusi"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u09-2.l2.s3",
+          "exercises": [
+            {
+              "id": "u09-2.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Gelatik joaten naizenean, argia itzaltzen dut.",
+              "answers": [
+                "Gelatik joaten naizenean, argia itzaltzen dut."
+              ],
+              "vocabulary": [
+                "gela",
+                "joan",
+                "izan",
+                "argi",
+                "itzali",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e02",
+              "type": "speak",
+              "text": "Dutxatzen naizenean, ura aurrezten dut.",
+              "translation": "Cuando me ducho, ahorro agua.",
+              "vocabulary": [
+                "dutxatu",
+                "izan",
+                "ur",
+                "aurreztu",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e03",
+              "type": "fill_blank",
+              "sentence": "Gelatik joaten ___, argia itzaltzen dut.",
+              "options": [
+                "naizenean",
+                "naiz"
+              ],
+              "correct": 0,
+              "translation": "Cuando salgo de la habitación, apago la luz.",
+              "vocabulary": [
+                "gela",
+                "joan",
+                "izan",
+                "argi",
+                "itzali",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Supermerkatura joaten naizenean, poltsa eramaten dut."
+              },
+              "answers": [
+                "Cuando voy al supermercado, llevo una bolsa.",
+                "Cuando voy al supermercado, llevo bolsa."
+              ],
+              "distractors": [
+                "vengo",
+                "la",
+                "contenedor",
+                "ducho"
+              ],
+              "vocabulary": [
+                "supermerkatu",
+                "joan",
+                "izan",
+                "poltsa",
+                "eraman",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Eguzkia ___, ez dut argia pizten.",
+              "options": [
+                "dagoenean",
+                "dago"
+              ],
+              "correct": 0,
+              "translation": "Cuando hace sol, no enciendo la luz.",
+              "vocabulary": [
+                "eguzki",
+                "egon",
+                "ez",
+                "ukan",
+                "argi",
+                "piztu"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Cuando vengo a casa, enciendo la luz."
+              },
+              "answers": [
+                "Etxera etortzen naizenean, argia pizten dut."
+              ],
+              "distractors": [
+                "poltsa",
+                "eramaten",
+                "dudanean",
+                "aurrezten"
+              ],
+              "vocabulary": [
+                "etxe",
+                "etorri",
+                "izan",
+                "argi",
+                "piztu",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e07",
+              "type": "choose_meaning",
+              "text": "Ilun dagoenean, argia pizten dugu.",
+              "options": [
+                "Cuando está oscuro, encendemos la luz.",
+                "Cuando hace sol, encendemos la luz.",
+                "Cuando está oscuro, apagamos la luz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ilun",
+                "egon",
+                "argi",
+                "piztu",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e08",
+              "type": "listen_tap",
+              "text": "Ilun dagoenean, argia pizten dugu.",
+              "distractors": [
+                "poltsa",
+                "Dutxatzen",
+                "edukiontzi"
+              ],
+              "vocabulary": [
+                "ilun",
+                "egon",
+                "argi",
+                "piztu",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Miren",
+                  "text": "Zer egiten duzu gelatik joaten zarenean?"
+                }
+              ],
+              "options": [
+                "Argia itzaltzen dut.",
+                "Argia pizten dut.",
+                "Ados nago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "egin",
+                "ukan",
+                "gela",
+                "joan",
+                "izan",
+                "argi",
+                "itzali"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Cuando hace sol, no enciendo la luz."
+              },
+              "answers": [
+                "Eguzkia dagoenean, ez dut argia pizten."
+              ],
+              "vocabulary": [
+                "eguzki",
+                "egon",
+                "ez",
+                "ukan",
+                "argi",
+                "piztu"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e11",
+              "type": "read_true_false",
+              "passage": "Iker dutxatzen denean, ura aurrezten du.",
+              "statement": "Iker ahorra agua cuando se ducha.",
+              "answer": true,
+              "vocabulary": [
+                "dutxatu",
+                "izan",
+                "ur",
+                "aurreztu",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e12",
+              "type": "order_sentence",
+              "answer": "Botila bat dudanean, edukiontzi berdera eramaten dut.",
+              "translation": "Cuando tengo una botella, la llevo al contenedor verde.",
+              "vocabulary": [
+                "botila",
+                "bat",
+                "ukan",
+                "edukiontzi",
+                "berde",
+                "eraman"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u09-2.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Opiniones",
+        "eu": "Iritziak"
+      },
+      "lessons": [
+        {
+          "id": "u09-2.l3.s1",
+          "exercises": [
+            {
+              "id": "u09-2.l3.s1.e01",
+              "type": "speak",
+              "text": "Nire ustez, komeni da ura aurreztea.",
+              "translation": "En mi opinión, conviene ahorrar agua.",
+              "vocabulary": [
+                "ni",
+                "uste izan",
+                "komeni izan",
+                "izan",
+                "ur",
+                "aurreztu"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ados nago, Ane."
+              },
+              "answers": [
+                "Estoy de acuerdo, Ane."
+              ],
+              "distractors": [
+                "es",
+                "En",
+                "más"
+              ],
+              "vocabulary": [
+                "ados",
+                "egon"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Zer uste duzu?",
+              "options": [
+                "¿Qué opinas?",
+                "¿Qué haces?",
+                "¿Dónde estás?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "uste izan",
+                "ukan"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "No estoy de acuerdo, Mikel."
+              },
+              "answers": [
+                "Ez nago ados, Mikel."
+              ],
+              "distractors": [
+                "Zein",
+                "herrian",
+                "komeni"
+              ],
+              "vocabulary": [
+                "ez",
+                "egon",
+                "ados"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s1.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Olatz",
+                  "text": "Nire ustez, komeni da argiak itzaltzea."
+                },
+                {
+                  "speaker": "Peio",
+                  "text": "Ados nago!"
+                },
+                {
+                  "speaker": "Olatz",
+                  "text": "Eta zuk, Uxue, zer uste duzu?"
+                }
+              ],
+              "options": [
+                "Ados nago. Energia aurreztu behar dugu.",
+                "Argia piztuta dago, eskerrik asko.",
+                "Plastikozkoa da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ni",
+                "uste izan",
+                "komeni izan",
+                "izan",
+                "argi",
+                "itzali",
+                "ados",
+                "egon",
+                "eta",
+                "zu",
+                "zer",
+                "ukan",
+                "energia",
+                "aurreztu",
+                "behar izan"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Zer uste duzu, Olatz?",
+              "distractors": [
+                "ditugu",
+                "iritzia",
+                "Zein"
+              ],
+              "vocabulary": [
+                "zer",
+                "uste izan",
+                "ukan"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s1.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Josu",
+                  "text": "Plastikozko poltsak debekatuta egon behar dute."
+                }
+              ],
+              "options": [
+                "Ez nago ados. Nire ustez, birzikla daitezke.",
+                "Bai, poltsa hori da.",
+                "Ez, gelan nago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "plastiko",
+                "poltsa",
+                "debekatuta",
+                "egon",
+                "behar izan",
+                "ukan",
+                "ez",
+                "ados",
+                "ni",
+                "uste izan",
+                "birziklatu",
+                "izan"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "En mi opinión, en el pueblo necesitamos más contenedores."
+              },
+              "answers": [
+                "Nire ustez, herrian edukiontzi gehiago behar ditugu."
+              ],
+              "vocabulary": [
+                "ni",
+                "uste izan",
+                "herri",
+                "edukiontzi",
+                "gehiago",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s1.e09",
+              "type": "read_true_false",
+              "passage": "Nire ustez, herriko ibaia zaindu behar dugu. Ibaian kutsadura asko dago.",
+              "statement": "Esta persona cree que el río está limpio.",
+              "answer": false,
+              "vocabulary": [
+                "ni",
+                "uste izan",
+                "herri",
+                "ibai",
+                "zaindu",
+                "behar izan",
+                "ukan",
+                "kutsadura",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s1.e10",
+              "type": "order_sentence",
+              "answer": "Zein da zure iritzia, Kepa?",
+              "translation": "¿Cuál es tu opinión, Kepa?",
+              "vocabulary": [
+                "zein",
+                "izan",
+                "zu",
+                "iritzi"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s1.e11",
+              "type": "read_true_false",
+              "passage": "Zein da zure iritzia, Edurne? Ados nago, Patxi.",
+              "statement": "Edurne está de acuerdo con Patxi.",
+              "answer": true,
+              "vocabulary": [
+                "zein",
+                "izan",
+                "zu",
+                "iritzi",
+                "ados",
+                "egon"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u09-2.l3.s2",
+          "exercises": [
+            {
+              "id": "u09-2.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hondartzara ezin da beirazko botilarik eraman."
+              },
+              "answers": [
+                "No se pueden llevar botellas de vidrio a la playa.",
+                "A la playa no se pueden llevar botellas de vidrio."
+              ],
+              "distractors": [
+                "En",
+                "Tenemos",
+                "apagar",
+                "bosque"
+              ],
+              "vocabulary": [
+                "hondartza",
+                "ezin",
+                "izan",
+                "beira",
+                "botila",
+                "eraman"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "En el bosque no se puede coger madera."
+              },
+              "answers": [
+                "Basoan ezin da egurrik hartu."
+              ],
+              "distractors": [
+                "argia",
+                "Hondartzara",
+                "dago"
+              ],
+              "vocabulary": [
+                "baso",
+                "ezin",
+                "izan",
+                "egur",
+                "hartu"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Hondartzara ___ da beirazko botilarik eraman.",
+              "options": [
+                "ezin",
+                "ados"
+              ],
+              "correct": 0,
+              "translation": "No se pueden llevar botellas de vidrio a la playa.",
+              "vocabulary": [
+                "hondartza",
+                "ezin",
+                "izan",
+                "beira",
+                "botila",
+                "eraman"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e04",
+              "type": "listen_tap",
+              "text": "Itsasoa zaindu behar dugu.",
+              "distractors": [
+                "da",
+                "Ez",
+                "eraman"
+              ],
+              "vocabulary": [
+                "itsaso",
+                "zaindu",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Alaitz",
+                  "text": "Barkatu, hemen igeri egin daiteke?"
+                },
+                {
+                  "speaker": "Markel",
+                  "text": "Ez, debekatuta dago."
+                },
+                {
+                  "speaker": "Alaitz",
+                  "text": "Zergatik?"
+                }
+              ],
+              "options": [
+                "Ibaian kutsadura dagoelako.",
+                "Beirazkoa delako.",
+                "Zakarrontzia delako."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "igeri egin",
+                "barkatu",
+                "hemen",
+                "izan",
+                "ez",
+                "debekatuta",
+                "egon",
+                "zergatik",
+                "ibai",
+                "kutsadura"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Está prohibido nadar aquí?"
+              },
+              "answers": [
+                "Debekatuta dago hemen igeri egitea?"
+              ],
+              "vocabulary": [
+                "debekatuta",
+                "egon",
+                "hemen",
+                "igeri egin",
+                "egin"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ibai",
+                  "text": "Hondartzara beirazko botila eraman daiteke?"
+                }
+              ],
+              "options": [
+                "Ez, ezin da.",
+                "Bai, beirazkoa da.",
+                "Ez, ados nago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hondartza",
+                "beira",
+                "botila",
+                "eraman",
+                "izan",
+                "ez",
+                "ezin"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e08",
+              "type": "order_sentence",
+              "answer": "Ez, hemen igeri egin daiteke.",
+              "translation": "No, aquí se puede nadar.",
+              "vocabulary": [
+                "igeri egin",
+                "ez",
+                "hemen",
+                "izan"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e09",
+              "type": "read_true_false",
+              "passage": "Parkean ezin da hondakinik bota. Zakarrontziak erabili behar dira.",
+              "statement": "En el parque hay que usar las papeleras.",
+              "answer": true,
+              "vocabulary": [
+                "parke",
+                "ezin",
+                "izan",
+                "hondakin",
+                "bota",
+                "zakarrontzi",
+                "erabili",
+                "behar izan"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Liburutegian argia itzali behar dugu."
+              },
+              "answers": [
+                "En la biblioteca tenemos que apagar la luz.",
+                "Tenemos que apagar la luz en la biblioteca."
+              ],
+              "vocabulary": [
+                "liburutegi",
+                "argi",
+                "itzali",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e11",
+              "type": "read_true_false",
+              "passage": "Liburutegian argiak itzali behar dira. Energia aurreztu behar dugu.",
+              "statement": "En la biblioteca hay que dejar las luces encendidas.",
+              "answer": false,
+              "vocabulary": [
+                "liburutegi",
+                "argi",
+                "itzali",
+                "behar izan",
+                "izan",
+                "energia",
+                "aurreztu",
+                "ukan"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u09-2.l3.s3",
+          "exercises": [
+            {
+              "id": "u09-2.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Cuando me voy de casa, apago las luces."
+              },
+              "answers": [
+                "Etxetik joaten naizenean, argiak itzaltzen ditut."
+              ],
+              "distractors": [
+                "erabili",
+                "ura",
+                "dut",
+                "zuhaitzak"
+              ],
+              "vocabulary": [
+                "etxe",
+                "joan",
+                "izan",
+                "argi",
+                "itzali",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Gure etxean ura eta energia aurrezten ditugu.",
+              "distractors": [
+                "plastikoa",
+                "Parkeko",
+                "da",
+                "Eskolan"
+              ],
+              "vocabulary": [
+                "gu",
+                "etxe",
+                "ur",
+                "eta",
+                "energia",
+                "aurreztu",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Gaur ez dut plastikorik erabili.",
+              "options": [
+                "Hoy no he usado plástico.",
+                "Hoy he usado plástico.",
+                "Hoy no he reciclado plástico."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gaur",
+                "ez",
+                "ukan",
+                "plastiko",
+                "erabili"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "En la escuela reciclamos el papel y el plástico."
+              },
+              "answers": [
+                "Eskolan papera eta plastikoa birziklatzen ditugu."
+              ],
+              "vocabulary": [
+                "eskola",
+                "paper",
+                "eta",
+                "plastiko",
+                "birziklatu",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Zer egiten duzu ingurumena zaintzeko?"
+                }
+              ],
+              "options": [
+                "Ura aurrezten dut eta papera birziklatzen dut.",
+                "Ez nago ados.",
+                "Plastikozko poltsa da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "egin",
+                "ukan",
+                "ingurumen",
+                "zaindu",
+                "ur",
+                "aurreztu",
+                "eta",
+                "paper",
+                "birziklatu"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Ingurumena zaintzea komeni da.",
+              "translation": "Conviene cuidar el medio ambiente.",
+              "vocabulary": [
+                "ingurumen",
+                "zaindu",
+                "komeni izan",
+                "izan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Unai",
+                  "text": "Kaixo, Leire!"
+                },
+                {
+                  "speaker": "Leire",
+                  "text": "Kaixo, Unai!"
+                },
+                {
+                  "speaker": "Unai",
+                  "text": "Supermerkatura joaten zarenean, zer eramaten duzu?"
+                }
+              ],
+              "options": [
+                "Paperezko poltsa bat.",
+                "Gelan nago.",
+                "Ez, debekatuta dago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "supermerkatu",
+                "joan",
+                "izan",
+                "zer",
+                "eraman",
+                "ukan",
+                "paper",
+                "poltsa",
+                "bat"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaur ez dut plastikorik erabili."
+              },
+              "answers": [
+                "Hoy no he usado plástico.",
+                "No he usado plástico hoy."
+              ],
+              "vocabulary": [
+                "gaur",
+                "ez",
+                "ukan",
+                "plastiko",
+                "erabili"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e09",
+              "type": "read_true_false",
+              "passage": "Gure etxean ingurumena zaintzen dugu. Argiak itzaltzen ditugu eta ura aurrezten dugu.",
+              "statement": "En esa casa no ahorran agua.",
+              "answer": false,
+              "vocabulary": [
+                "gu",
+                "etxe",
+                "ingurumen",
+                "zaindu",
+                "ukan",
+                "argi",
+                "itzali",
+                "eta",
+                "ur",
+                "aurreztu"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e10",
+              "type": "listen_type",
+              "text": "Parkeko zuhaitzak zaindu behar ditugu.",
+              "answers": [
+                "Parkeko zuhaitzak zaindu behar ditugu."
+              ],
+              "vocabulary": [
+                "parke",
+                "zuhaitz",
+                "zaindu",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e11",
+              "type": "read_true_false",
+              "passage": "Haizea eskolara joaten denean, ez du plastikozko botilarik eramaten.",
+              "statement": "Haizea lleva una botella de plástico a la escuela.",
+              "answer": false,
+              "vocabulary": [
+                "haize",
+                "eskola",
+                "joan",
+                "izan",
+                "ez",
+                "ukan",
+                "plastiko",
+                "botila",
+                "eraman"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u09-2.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: ¡apaga la luz!",
+        "eu": "Istorioa: itzal ezazu argia!"
+      },
+      "story": {
+        "id": "u09-2.l4.story",
+        "title": "Itzal ezazu argia!",
+        "lines": [
+          {
+            "speaker": "Nerea",
+            "eu": "Aitor, gelatik joaten zarenean, argia itzali behar duzu!",
+            "es": "Aitor, cuando te vas de la habitación, ¡tienes que apagar la luz!"
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Barkatu, Nerea. Zergatik?",
+            "es": "Perdona, Nerea. ¿Por qué?"
+          },
+          {
+            "speaker": "Nerea",
+            "eu": "Energia aurreztea komeni delako.",
+            "es": "Porque conviene ahorrar energía."
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Ados nago. Eta zer gehiago egiten duzu zuk?",
+            "es": "Estoy de acuerdo. ¿Y qué más haces tú?"
+          },
+          {
+            "speaker": "Nerea",
+            "eu": "Dutxatzen naizenean, ura aurrezten dut.",
+            "es": "Cuando me ducho, ahorro agua."
+          },
+          {
+            "speaker": "Nerea",
+            "eu": "Eta ez dut plastikozko poltsarik erabiltzen.",
+            "es": "Y no uso bolsas de plástico."
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Nire ustez, plastikozko poltsak debekatuta egon behar dute.",
+            "es": "En mi opinión, las bolsas de plástico deberían estar prohibidas."
+          },
+          {
+            "speaker": "Nerea",
+            "eu": "Ados nago! Ibaian eta itsasoan plastiko asko dago.",
+            "es": "¡Estoy de acuerdo! En el río y en el mar hay mucho plástico."
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Bihar ibaira joango gara eta hondakinak hartuko ditugu.",
+            "es": "Mañana iremos al río y recogeremos los residuos."
+          },
+          {
+            "speaker": "Nerea",
+            "eu": "Oso ondo! Natura zaindu behar dugu.",
+            "es": "¡Muy bien! Tenemos que cuidar la naturaleza."
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 2,
+            "prompt": "¿Por qué tiene que apagar la luz Aitor?",
+            "options": [
+              "Para ahorrar energía",
+              "Porque es de noche",
+              "Porque Nerea quiere dormir"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 6,
+            "prompt": "¿Qué opina Aitor de las bolsas de plástico?",
+            "options": [
+              "Que deberían estar prohibidas",
+              "Que son muy útiles",
+              "Que no se pueden reciclar"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 9,
+            "prompt": "¿Qué van a hacer mañana?",
+            "options": [
+              "Recoger residuos en el río",
+              "Nadar en el mar",
+              "Comprar bolsas de papel"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u09-2.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u09-2.l6",
+      "type": "legendary",
+      "title": {
+        "es": "Nivel legendario",
+        "eu": "Maila legendarioa"
+      }
+    },
+    {
+      "id": "u09-2.l7",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la sección",
+        "eu": "Atalaren errepasoa"
+      },
+      "scope": "section"
+    }
+  ]
+}

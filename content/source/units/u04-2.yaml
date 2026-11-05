@@ -1,0 +1,460 @@
+# Unit 4.2 · Etxe bila — renting, buying and swapping a home, comparing homes, furnishing:
+# BALIO IZAN, NAHI IZAN, BEHAR IZAN + verb, -AGO, GEHIAGO / GUTXIAGO, numbers to 1000+.
+# Source format: see docs/content-guide.md and u01-1.yaml.
+id: u04-2
+section: s2
+bookUnit: 4
+title:
+  es: Buscando casa
+  eu: Etxe bila
+goals:
+  - es: Pedir y dar información para alquilar, comprar o intercambiar una vivienda.
+    eu: Etxebizitza bat alokatzeko, erosteko edo trukatzeko informazioa eskatu eta eman.
+  - es: Comparar dos viviendas.
+    eu: Bi etxebizitza alderatu.
+  - es: Decir qué hay que comprar para amueblar una casa.
+    eu: Etxe bat altzariz hornitzeko zer erosi behar den esan.
+guidebook:
+  sections:
+    - title:
+        es: "¿Cuánto cuesta? Zenbat balio du?"
+        eu: "Zenbat balio du?"
+      body:
+        es: "Para preguntar el precio, «Zenbat balio du?». La cosa que cuesta lleva -k (sofa honek, pisuak) y el verbo queda en «du». Los cientos se forman con «-ehun»: berrehun (200), hirurehun (300), bostehun (500); mil es «mila»."
+        eu: Prezioa galdetzeko, «Zenbat balio du?». Subjektuak -k hartzen du (sofa honek, pisuak). Ehunekoak «-ehun» atzizkiarekin osatzen dira, eta 1000 «mila» da.
+      examples:
+        # TODO(revisión-nativa): confirmar «… euro balio du» (verbo en singular) con cantidades plurales.
+        - eu: Zenbat balio du sofa honek?
+          es: ¿Cuánto cuesta este sofá?
+        - eu: Berrehun euro balio du.
+          es: Cuesta doscientos euros.
+        - eu: Etxe horrek hirurehun mila euro balio du.
+          es: Esa casa cuesta trescientos mil euros.
+    - title:
+        es: "Querer: nahi dut"
+        eu: "Nahi izan: nahi dut"
+      body:
+        es: "«Nahi» + el verbo «ukan» significa «querer». Puede ir con un nombre (sofa bat nahi dut) o con otro verbo, que va delante: pisu bat alokatu nahi dut (quiero alquilar un piso). En negativa, «ez dut … nahi»."
+        eu: "«Nahi» + ukan aditza. Izen batekin (sofa bat nahi dut) edo beste aditz batekin: pisu bat alokatu nahi dut. Ezezkoan, «ez dut … nahi»."
+      examples:
+        - eu: Pisu bat alokatu nahi dut.
+          es: Quiero alquilar un piso.
+        - eu: Zer erosi nahi duzu?
+          es: ¿Qué quieres comprar?
+        - eu: Ez dut etxea saldu nahi.
+          es: No quiero vender la casa.
+    - title:
+        es: "Tener que: behar dut"
+        eu: "Behar izan aditz batekin"
+      body:
+        es: "«Behar» también va con otro verbo y significa «tener que» o «necesitar»: ohe bat erosi behar dut. Si se necesitan varias cosas, el verbo va en plural: behar ditugu."
+        eu: "«Behar» beste aditz batekin ere erabiltzen da: ohe bat erosi behar dut. Objektua plurala bada, behar ditugu."
+      examples:
+        - eu: Ohe bat erosi behar dut.
+          es: Tengo que comprar una cama.
+        - eu: Mahai bat eta sei aulki behar ditugu.
+          es: Necesitamos una mesa y seis sillas.
+    - title:
+        es: "Más y menos: -ago, gehiago, gutxiago"
+        eu: "-ago, gehiago, gutxiago"
+      body:
+        es: Para decir «más barato» o «más grande», se añade -ago al adjetivo, y luego el artículo -a. Con nombres y verbos se usa «gehiago» (más) y «gutxiago» (menos), siempre detrás.
+        eu: Adjektiboari -ago gehitzen zaio, eta gero -a artikulua. Izenekin eta aditzekin «gehiago» eta «gutxiago» erabiltzen dira, atzean.
+      examples:
+        - eu: Pisu hau merkeagoa da.
+          es: Este piso es más barato.
+        - eu: Etxe honek logela gehiago ditu.
+          es: Esta casa tiene más dormitorios.
+        - eu: Sofa honek gutxiago balio du.
+          es: Este sofá cuesta menos.
+levels:
+  - type: lesson
+    title:
+      es: Muebles y compras
+      eu: Altzariak eta erosketak
+    lessons:
+      - structures: [furniture]
+        sentences:
+          - Logelan ohe bat dago. = En el dormitorio hay una cama. | En la habitación hay una cama.
+          - Mahaia sukaldean dago. = La mesa está en la cocina.
+          - Egongelan sofa handi bat dago. = En la sala de estar hay un sofá grande. | En el salón hay un sofá grande.
+          - Lau aulki ditugu. = Tenemos cuatro sillas.
+          - Armairua ohearen ondoan dago. = El armario está al lado de la cama.
+          - Aulkiak mahaiaren ondoan daude. = Las sillas están al lado de la mesa.
+          - Sofa hau oso polita da. = Este sofá es muy bonito.
+          - Nire logelak armairu zabal bat dauka. = Mi dormitorio tiene un armario amplio. | Mi habitación tiene un armario amplio.
+        pairs:
+          - - ohea = cama
+            - mahaia = mesa
+            - aulkia = silla
+            - sofa = sofá
+            - armairua = armario
+        meanings:
+          - text: Ohea logelan dago.
+            options:
+              - La cama está en el dormitorio.
+              - La mesa está en el dormitorio.
+              - La cama está en la sala de estar.
+        blanks:
+          - text: Aulkiak mahaiaren ondoan ___. = Las sillas están al lado de la mesa.
+            options:
+              - daude
+              - dago
+        chats:
+          - messages:
+              - Ane | Non dago sofa?
+            options:
+              - Egongelan dago.
+              - Egongelan daude.
+              - Sofa bat daukat.
+        true_false:
+          - passage: Nire logela txikia da. Ohe bat eta armairu bat dauzka.
+            statement: En el dormitorio hay una mesa.
+            answer: false
+      - structures: [appliances, behar-verb]
+        sentences:
+          - Hozkailua sukaldean dago. = El frigorífico está en la cocina. | La nevera está en la cocina.
+          - Garbigailua bainugelan dago. = La lavadora está en el cuarto de baño. | La lavadora está en el baño.
+          - Sukaldeak labe berri bat dauka. = La cocina tiene un horno nuevo.
+          - Bainugelak dutxa bat du. = El cuarto de baño tiene una ducha. | El baño tiene una ducha.
+          - Hozkailu bat erosi behar dut. = Tengo que comprar un frigorífico. | Necesito comprar un frigorífico. | Tengo que comprar una nevera.
+          - Garbigailu berri bat behar dugu. = Necesitamos una lavadora nueva.
+          - Ohe bat eta mahai bat erosi behar ditugu. = Tenemos que comprar una cama y una mesa. | Necesitamos comprar una cama y una mesa.
+          - Zer erosi behar duzu? = ¿Qué tienes que comprar? | ¿Qué necesitas comprar? | ¿Qué tiene que comprar usted?
+        pairs:
+          - - hozkailua = frigorífico
+            - garbigailua = lavadora
+            - labea = horno
+            - dutxa = ducha
+            - erosi = comprar
+        meanings:
+          - text: Labe bat erosi behar dugu.
+            options:
+              - Tenemos que comprar un horno.
+              - Tenemos un horno.
+              - Tenemos que vender un horno.
+        blanks:
+          - text: Hozkailu bat ___ behar dut. = Tengo que comprar un frigorífico.
+            options:
+              - erosi
+              - saldu
+        chats:
+          - messages:
+              - Mikel | Zer erosi behar duzu?
+            options:
+              - Garbigailu bat erosi behar dut.
+              - Garbigailu bat naiz.
+              - Garbigailua bainugelan dago.
+        true_false:
+          - passage: Gure sukaldeak ez du hozkailurik. Hozkailu bat erosi behar dugu.
+            statement: La cocina tiene frigorífico.
+            answer: false
+      - structures: [buying-renting, nahi-izan]
+        sentences:
+          - Pisu bat alokatu nahi dut. = Quiero alquilar un piso.
+          - Etxe bat erosi nahi dugu. = Queremos comprar una casa.
+          - Nire gurasoek etxea saldu nahi dute. = Mis padres quieren vender la casa.
+          - Pisua trukatu nahi duzu? = ¿Quieres intercambiar el piso? | ¿Quiere usted intercambiar el piso? | ¿Quieres cambiar el piso?
+          - Pisu hau merkea da. = Este piso es barato.
+          - Etxe hori oso garestia da. = Esa casa es muy cara.
+          - Zein da prezioa? = ¿Cuál es el precio?
+          - Prezioa berrehun mila euro da. = El precio es de doscientos mil euros. | El precio es doscientos mil euros.
+        pairs:
+          - - alokatu = alquilar
+            - erosi = comprar
+            - saldu = vender
+            - trukatu = intercambiar
+            - merkea = barato
+            - garestia = caro
+        meanings:
+          - text: Etxea saldu nahi dute.
+            options:
+              - Quieren vender la casa.
+              - Quieren comprar la casa.
+              - Quieren alquilar la casa.
+        blanks:
+          - text: Pisu bat alokatu ___ dut. = Quiero alquilar un piso.
+            options:
+              - nahi
+              - behar
+        chats:
+          - messages:
+              - Unai | Pisua erosi nahi duzu?
+            options:
+              - Ez, alokatu nahi dut.
+              - Ez, alokatu nahi naiz.
+              - Ez, pisua merkea naiz.
+        true_false:
+          - passage: Leirek pisu bat alokatu nahi du Donostian. Pisu merke bat behar du.
+            statement: Leire quiere comprar un piso.
+            answer: false
+  - type: lesson
+    title:
+      es: Precios y comparaciones
+      eu: Prezioak eta alderaketak
+    lessons:
+      - structures: [balio-izan, numbers-1000]
+        sentences:
+          - Zenbat balio du? = ¿Cuánto cuesta? | ¿Cuánto vale?
+          - Sofa honek berrehun euro balio du. = Este sofá cuesta doscientos euros. | Este sofá vale doscientos euros. | Este sofá cuesta 200 euros.
+          - Zenbat balio du mahai horrek? = ¿Cuánto cuesta esa mesa? | ¿Cuánto vale esa mesa?
+          - Aulki honek hogeita hamar euro balio du. = Esta silla cuesta treinta euros. | Esta silla vale treinta euros. | Esta silla cuesta 30 euros.
+          - Hozkailuak bostehun euro balio du. = El frigorífico cuesta quinientos euros. | El frigorífico vale quinientos euros. | El frigorífico cuesta 500 euros. | La nevera cuesta quinientos euros.
+          - Garbigailu honek laurehun eta berrogeita hamar euro balio du. = Esta lavadora cuesta cuatrocientos cincuenta euros. | Esta lavadora vale cuatrocientos cincuenta euros. | Esta lavadora cuesta 450 euros.
+          - Ohe honek mila euro balio du! = ¡Esta cama cuesta mil euros! | ¡Esta cama vale mil euros!
+          - Etxe horrek hirurehun mila euro balio du. = Esa casa cuesta trescientos mil euros. | Esa casa vale trescientos mil euros.
+        pairs:
+          - - berrehun = doscientos
+            - hirurehun = trescientos
+            - bostehun = quinientos
+            - mila = mil
+            - bi mila = dos mil
+        blanks:
+          - text: Zenbat ___ du sofa honek? = ¿Cuánto cuesta este sofá?
+            options:
+              - balio
+              - behar
+        meanings:
+          - text: Armairu honek berrehun euro balio du.
+            options:
+              - Este armario cuesta doscientos euros.
+              - Este armario cuesta dos mil euros.
+              - Este armario cuesta veinte euros.
+        chats:
+          - messages:
+              - Nahia | Zenbat balio du labe honek?
+            options:
+              - Laurehun euro balio du.
+              - Laurehun euro daukat.
+              - Laurehun urte ditu.
+        true_false:
+          - passage: Dutxa hau berria da. Mila eta berrehun euro balio du.
+            statement: La ducha cuesta más de mil euros.
+            answer: true
+      - structures: [nahi-izan, behar-verb]
+        sentences:
+          - Zer nahi duzu? = ¿Qué quieres? | ¿Qué quiere usted?
+          - Sofa berri bat nahi dut. = Quiero un sofá nuevo.
+          - Guk etxe handi bat erosi nahi dugu. | Etxe handi bat erosi nahi dugu. = Queremos comprar una casa grande. | Nosotros queremos comprar una casa grande.
+          - Ane eta Jonek pisua trukatu nahi dute. = Ane y Jon quieren intercambiar el piso. | Ane y Jon quieren cambiar el piso.
+          - Zuek pisua alokatu nahi duzue? | Pisua alokatu nahi duzue? = ¿Vosotros queréis alquilar el piso? | ¿Queréis alquilar el piso?
+          - Nik ez dut etxea saldu nahi. | Ez dut etxea saldu nahi. = No quiero vender la casa. | Yo no quiero vender la casa.
+          - Aulki bat erosi behar dut. = Tengo que comprar una silla. | Necesito comprar una silla.
+          - Mikelek armairu bat erosi behar du. = Mikel tiene que comprar un armario. | Mikel necesita comprar un armario.
+        blanks:
+          - text: Ez dut etxea saldu ___. = No quiero vender la casa.
+            options:
+              - nahi
+              - balio
+          - text: Guk pisu bat alokatu nahi ___. = Queremos alquilar un piso.
+            options:
+              - dugu
+              - dute
+        meanings:
+          - text: Ohe bat erosi behar dut.
+            options:
+              - Tengo que comprar una cama.
+              - Quiero comprar una cama.
+              - Quiero vender una cama.
+        chats:
+          - messages:
+              - Gorka | Zuek zer nahi duzue?
+            options:
+              - Mahai bat eta lau aulki nahi ditugu.
+              - Mahai bat eta lau aulki gara.
+              - Mahai bat eta lau aulki nahi naiz.
+        true_false:
+          - passage: Irati eta Oierrek etxe bat erosi nahi dute. Etxe merke bat behar dute.
+            statement: Irati y Oier quieren alquilar una casa.
+            answer: false
+      - structures: [ago-comparison, gehiago-gutxiago]
+        sentences:
+          - Pisu hau merkeagoa da. = Este piso es más barato.
+          - Etxe hori garestiagoa da. = Esa casa es más cara.
+          - Zein da handiagoa? = ¿Cuál es más grande?
+          - Gasteizko pisua handiagoa da. = El piso de Vitoria es más grande. | El piso de Gasteiz es más grande.
+          - Etxe honek logela gehiago ditu. = Esta casa tiene más dormitorios. | Esta casa tiene más habitaciones.
+          - Pisu horrek leiho gutxiago ditu. = Ese piso tiene menos ventanas.
+          - Sofa honek gutxiago balio du. = Este sofá cuesta menos. | Este sofá vale menos.
+          - Bilboko pisuak gehiago balio du. = El piso de Bilbao cuesta más. | El piso de Bilbao vale más.
+        pairs:
+          - - merkeagoa = más barato
+            - garestiagoa = más caro
+            - handiagoa = más grande
+            - txikiagoa = más pequeño
+            - gehiago = más
+            - gutxiago = menos
+        blanks:
+          - text: Etxe honek logela ___ ditu. = Esta casa tiene más dormitorios.
+            options:
+              - gehiago
+              - gutxiago
+        meanings:
+          - text: Pisu hau txikiagoa da.
+            options:
+              - Este piso es más pequeño.
+              - Este piso es más grande.
+              - Este piso es pequeño.
+        chats:
+          - messages:
+              - Haizea | Zein sofa da merkeagoa?
+            options:
+              - Hau merkeagoa da.
+              - Hau merkeagoa naiz.
+              - Hau merkeagoa dut.
+        true_false:
+          - passage: Aneren pisuak hiru logela ditu. Jonen pisuak bi logela ditu.
+            statement: El piso de Jon tiene menos dormitorios.
+            answer: true
+  - type: lesson
+    title:
+      es: Conversaciones
+      eu: Elkarrizketak
+    lessons:
+      - structures: [nahi-izan, balio-izan]
+        sentences:
+          - Egun on! Pisu bat alokatu nahi dut. = ¡Buenos días! Quiero alquilar un piso.
+          - Zenbat logela nahi dituzu? = ¿Cuántos dormitorios quieres? | ¿Cuántas habitaciones quieres? | ¿Cuántos dormitorios quiere usted?
+          - Bi logela eta terraza bat. = Dos dormitorios y una terraza. | Dos habitaciones y una terraza.
+          - Pisu hau Iruñean dago, eta oso argitsua da. = Este piso está en Pamplona y es muy luminoso.
+          - Eta zenbat balio du? = ¿Y cuánto cuesta? | ¿Y cuánto vale?
+          - Zazpiehun euro balio du. = Cuesta setecientos euros. | Vale setecientos euros. | Cuesta 700 euros.
+        chats:
+          - messages:
+              - Miren | Egun on! Zer nahi duzu?
+              - Kepa | Etxe bat erosi nahi dut.
+              - Miren | Etxe handi bat?
+            options:
+              - Ez, etxe txiki eta merke bat.
+              - Ez, etxe txiki eta merke bat naiz.
+              - Ez, etxe handiagoa naiz.
+          - messages:
+              - Ander | Pisu horrek zenbat balio du?
+            options:
+              - Berrehun mila euro balio du.
+              - Berrehun mila euro naiz.
+              - Berrehun urte ditu.
+        true_false:
+          - passage: Pisu hau Getxon dago. Hiru logela eta bi bainugela ditu. Ehun eta laurogei mila euro balio du.
+            statement: El piso cuesta ciento ochenta mil euros.
+            answer: true
+          - passage: Nereak pisu bat alokatu nahi du. Ez du pisua erosi nahi.
+            statement: Nerea quiere comprar un piso.
+            answer: false
+        meanings:
+          - text: Pisu hau alokatu nahi dut.
+            options:
+              - Quiero alquilar este piso.
+              - Quiero comprar este piso.
+              - Tengo que vender este piso.
+      - structures: [ago-comparison, gehiago-gutxiago]
+        sentences:
+          - Bilboko pisua zaharra da, eta Getxokoa berriagoa da. = El piso de Bilbao es viejo y el de Getxo es más nuevo. | El piso de Bilbao es viejo y el de Getxo, más nuevo.
+          - Getxoko pisuak logela gehiago ditu. = El piso de Getxo tiene más dormitorios. | El piso de Getxo tiene más habitaciones.
+          - Bilboko pisuak gutxiago balio du. = El piso de Bilbao cuesta menos. | El piso de Bilbao vale menos.
+          - Zein da argitsuagoa? = ¿Cuál es más luminoso?
+          - Getxokoa eguzkitsuagoa da. = El de Getxo es más soleado.
+          - Nik Getxoko pisua nahi dut. | Getxoko pisua nahi dut. = Yo quiero el piso de Getxo. | Quiero el piso de Getxo.
+        chats:
+          - messages:
+              - Peio | Zein etxe da zabalagoa?
+              - Olatz | Zarautzekoa.
+              - Peio | Eta merkeagoa da?
+            options:
+              - Bai, eta gutxiago balio du.
+              - Bai, eta gehiago balio du.
+              - Bai, merkeagoa naiz.
+          - messages:
+              - Julen | Zein pisuk ditu logela gehiago?
+            options:
+              - Honek. Lau logela ditu.
+              - Lau logela naiz.
+              - Gehiago balio du.
+        true_false:
+          - passage: Etxe zaharrak berrehun mila euro balio du. Etxe berriak hirurehun mila euro balio du.
+            statement: La casa nueva es más barata.
+            answer: false
+          - passage: Aitorren pisua txikiagoa da. Leiho gutxiago ditu.
+            statement: El piso de Aitor tiene menos ventanas.
+            answer: true
+        blanks:
+          - text: Getxoko pisua ___ da. = El piso de Getxo es más nuevo.
+            options:
+              - berriagoa
+              - berria
+      - structures: [behar-verb, furniture]
+        sentences:
+          - Zer erosi behar dugu? = ¿Qué tenemos que comprar? | ¿Qué necesitamos comprar?
+          - Ohe bat eta armairu bat erosi behar ditugu. = Tenemos que comprar una cama y un armario. | Necesitamos comprar una cama y un armario.
+          - Sofa bat behar dugu egongelan. = Necesitamos un sofá en la sala de estar. | Necesitamos un sofá en el salón.
+          - Sukaldean ez dago hozkailurik. = En la cocina no hay frigorífico. | En la cocina no hay nevera.
+          - Hozkailu merke bat erosi nahi dut. = Quiero comprar un frigorífico barato. | Quiero comprar una nevera barata.
+          - Mahai bat eta sei aulki behar ditugu. = Necesitamos una mesa y seis sillas.
+        chats:
+          - messages:
+              - Edurne | Zer erosi behar duzu?
+              - Josu | Garbigailu bat.
+              - Edurne | Garbigailu berri bat?
+            options:
+              - Ez, garbigailu merke bat.
+              - Ez, garbigailu merke bat naiz.
+              - Ez, garbigailu bat dago.
+          - messages:
+              - Arantza | Sofa hau garestia da?
+            options:
+              - Ez, merkea da. Ehun euro balio du.
+              - Ez, merkea naiz. Ehun euro ditut.
+              - Bai, merkea da. Ehun euro balio du.
+        true_false:
+          - passage: Nire pisu berriak ohe bat eta mahai bat ditu. Sofa bat erosi behar dut.
+            statement: Quien habla ya tiene sofá.
+            answer: false
+          - passage: Uxuek armairu bat saldu nahi du. Berrehun euro balio du.
+            statement: Uxue quiere vender un armario.
+            answer: true
+        meanings:
+          - text: Mahai bat eta sei aulki behar ditugu.
+            options:
+              - Necesitamos una mesa y seis sillas.
+              - Tenemos una mesa y seis sillas.
+              - Queremos vender una mesa y seis sillas.
+  - type: story
+    title:
+      es: "Historia: cambio de piso"
+      eu: "Istorioa: pisua trukatu"
+    story:
+      title: Pisua trukatu nahi dut
+      lines:
+        - Eneko | Kaixo, June! Pisua trukatu nahi duzu? = ¡Hola, June! ¿Quieres intercambiar el piso?
+        - June | Bai! Nire pisua Donostian dago. Eta zure pisua? = ¡Sí! Mi piso está en San Sebastián. ¿Y tu piso?
+        - Eneko | Nire pisua Bilbon dago. Bi logela ditu. = Mi piso está en Bilbao. Tiene dos dormitorios.
+        - June | Nire pisua handiagoa da. Hiru logela ditu. = Mi piso es más grande. Tiene tres dormitorios.
+        - Eneko | Argitsua da? = ¿Es luminoso?
+        - June | Bai, oso argitsua eta eguzkitsua. Terraza bat dauka. = Sí, muy luminoso y soleado. Tiene una terraza.
+        - Eneko | Nire pisua txikiagoa eta ilunagoa da. = Mi piso es más pequeño y más oscuro.
+        - June | Zer dauka zure sukaldeak? = ¿Qué tiene tu cocina?
+        - Eneko | Hozkailu berri bat, labe bat eta garbigailu bat. = Un frigorífico nuevo, un horno y una lavadora.
+        - June | Oso ondo! Nire sukaldeak ez du garbigailurik. = ¡Muy bien! Mi cocina no tiene lavadora.
+        - Eneko | Trukatu nahi duzu, bai ala ez? = ¿Quieres intercambiarlo, sí o no?
+        - June | Bai! Eskerrik asko, Eneko! = ¡Sí! ¡Muchas gracias, Eneko!
+      questions:
+        - afterLine: 3
+          prompt: ¿Qué piso es más grande?
+          options:
+            - El de June
+            - El de Eneko
+            - Son iguales
+        - afterLine: 6
+          prompt: ¿Cómo es el piso de Eneko?
+          options:
+            - Más pequeño y más oscuro
+            - Más grande y más luminoso
+            - Más nuevo y más soleado
+        - afterLine: 11
+          prompt: ¿Qué no tiene la cocina de June?
+          options:
+            - Lavadora
+            - Horno
+            - Frigorífico
+  - type: review
+  - type: legendary

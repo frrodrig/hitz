@@ -1,0 +1,2678 @@
+{
+  "schemaVersion": 1,
+  "id": "u02-2",
+  "section": "s1",
+  "bookUnit": 2,
+  "title": {
+    "es": "¿Dónde está?",
+    "eu": "Non dago?"
+  },
+  "goals": [
+    {
+      "es": "Situar algo o a alguien y dar indicaciones sencillas.",
+      "eu": "Zerbait edo norbait kokatu eta argibide errazak eman."
+    },
+    {
+      "es": "Describir lugares y decir la hora.",
+      "eu": "Lekuak deskribatu eta ordua esan."
+    },
+    {
+      "es": "Hablar del tiempo que hace.",
+      "eu": "Eguraldiaz hitz egin."
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Delante, detrás, al lado…",
+          "eu": "Aurrean, atzean, ondoan…"
+        },
+        "body": {
+          "es": "El lugar de referencia lleva -aren (o -ren con nombres propios) y después la posposición: bankuaren ondoan (al lado del banco), Aneren atzean (detrás de Ane). «Artean» (entre) une dos lugares con «eta».",
+          "eu": "Erreferentziako lekuak -aren (edo -ren izen berekiekin) hartzen du, eta gero postposizioa dator: bankuaren ondoan, Aneren atzean. «Artean» bi leku lotzen ditu «eta»-rekin."
+        },
+        "examples": [
+          {
+            "eu": "Farmazia bankuaren ondoan dago.",
+            "es": "La farmacia está al lado del banco."
+          },
+          {
+            "eu": "Taberna hotelaren azpian dago.",
+            "es": "El bar está debajo del hotel."
+          },
+          {
+            "eu": "Liburutegia plazaren eta parkearen artean dago.",
+            "es": "La biblioteca está entre la plaza y el parque."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Indicar el camino",
+          "eu": "Bidea adierazi"
+        },
+        "body": {
+          "es": "«Segi zuzen» es «sigue recto»; «eskuinera» y «ezkerrera», «hacia la derecha / izquierda»; «eskuinean» y «ezkerrean», «a la derecha / izquierda» (dónde está). Los puntos cardinales llevan -aldean: iparraldean (en el norte), hegoaldean, ekialdean, mendebaldean.",
+          "eu": "«Segi zuzen», «eskuinera» eta «ezkerrera» bidea adierazteko; «eskuinean» eta «ezkerrean» zerbait non dagoen esateko. Puntu kardinalek -aldean hartzen dute: iparraldean, hegoaldean, ekialdean, mendebaldean."
+        },
+        "examples": [
+          {
+            "eu": "Segi zuzen eta eskuinera.",
+            "es": "Sigue recto y a la derecha."
+          },
+          {
+            "eu": "Baiona iparraldean dago.",
+            "es": "Bayona está en el norte."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Nombre + adjetivo",
+          "eu": "Izena + adjektiboa"
+        },
+        "body": {
+          "es": "El adjetivo va detrás del nombre y el artículo, al final del grupo: herri polita (el pueblo bonito), hiri handia (la ciudad grande). Con «bat», sin artículo: hotel handi bat (un hotel grande).",
+          "eu": "Adjektiboa izenaren atzean doa, eta artikulua taldearen amaieran: herri polita, hiri handia. «Bat»-ekin, artikulurik gabe: hotel handi bat."
+        },
+        "examples": [
+          {
+            "eu": "Tolosa herri polita da.",
+            "es": "Tolosa es un pueblo bonito."
+          },
+          {
+            "eu": "Plazan hotel handi bat dago.",
+            "es": "En la plaza hay un hotel grande."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "La hora y el tiempo",
+          "eu": "Ordua eta eguraldia"
+        },
+        "body": {
+          "es": "«Zer ordu da?»: «Ordu bata da», y desde las dos, en plural: «Hirurak dira», «Hirurak eta erdiak», «Laurak eta laurden», «Bostak laurden gutxi». Para el tiempo: «Euria ari du» (llueve), «Bero egiten du» (hace calor), «Eguzkia dago» (hace sol).",
+          "eu": "«Zer ordu da?»: «Ordu bata da», eta bietatik aurrera pluralean: «Hirurak dira», «Hirurak eta erdiak», «Laurak eta laurden», «Bostak laurden gutxi». Eguraldirako: «Euria ari du», «Bero egiten du», «Eguzkia dago»."
+        },
+        "examples": [
+          {
+            "eu": "Zer ordu da? Hirurak eta erdiak dira.",
+            "es": "¿Qué hora es? Son las tres y media."
+          },
+          {
+            "eu": "Euria ari du, eta hotz egiten du.",
+            "es": "Llueve y hace frío."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u02-2.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Situar y describir",
+        "eu": "Kokatu eta deskribatu"
+      },
+      "lessons": [
+        {
+          "id": "u02-2.l1.s1",
+          "exercises": [
+            {
+              "id": "u02-2.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La farmacia está al lado del banco."
+              },
+              "answers": [
+                "Farmazia bankuaren ondoan dago."
+              ],
+              "distractors": [
+                "aurrean",
+                "eskolaren",
+                "hotelaren"
+              ],
+              "vocabulary": [
+                "farmazia",
+                "banku",
+                "ondoan",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e02",
+              "type": "listen_tap",
+              "text": "Taberna hotelaren azpian dago.",
+              "distractors": [
+                "Geltokia",
+                "Ane",
+                "atzean"
+              ],
+              "vocabulary": [
+                "taberna",
+                "hotel",
+                "azpian",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "aurrean",
+                  "es": "delante"
+                },
+                {
+                  "eu": "atzean",
+                  "es": "detrás"
+                },
+                {
+                  "eu": "ondoan",
+                  "es": "al lado"
+                },
+                {
+                  "eu": "gainean",
+                  "es": "encima"
+                },
+                {
+                  "eu": "azpian",
+                  "es": "debajo"
+                },
+                {
+                  "eu": "artean",
+                  "es": "entre"
+                }
+              ],
+              "vocabulary": [
+                "aurrean",
+                "atzean",
+                "ondoan",
+                "gainean",
+                "azpian",
+                "artean"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "La iglesia está encima del monte."
+              },
+              "answers": [
+                "Eliza mendiaren gainean dago."
+              ],
+              "vocabulary": [
+                "eliza",
+                "mendi",
+                "gainean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Farmazia bankuaren ___ dago.",
+              "options": [
+                "ondoan",
+                "atzean",
+                "azpian"
+              ],
+              "correct": 0,
+              "translation": "La farmacia está al lado del banco.",
+              "vocabulary": [
+                "farmazia",
+                "banku",
+                "ondoan",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e06",
+              "type": "order_sentence",
+              "answer": "Parkea eskolaren atzean dago.",
+              "translation": "El parque está detrás de la escuela.",
+              "vocabulary": [
+                "parke",
+                "eskola",
+                "atzean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e07",
+              "type": "choose_meaning",
+              "text": "Parkea eskolaren atzean dago.",
+              "options": [
+                "El parque está detrás de la escuela.",
+                "El parque está delante de la escuela.",
+                "El parque está al lado de la escuela."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "parke",
+                "eskola",
+                "atzean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Udaletxea elizaren aurrean dago."
+              },
+              "answers": [
+                "El ayuntamiento está delante de la iglesia."
+              ],
+              "vocabulary": [
+                "udaletxe",
+                "eliza",
+                "aurrean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Mikel",
+                  "text": "Barkatu, non dago bankua?"
+                }
+              ],
+              "options": [
+                "Bankua farmaziaren ondoan dago.",
+                "Bankua farmaziaren ondoan da.",
+                "Bai, badago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "barkatu",
+                "non",
+                "egon",
+                "banku",
+                "farmazia",
+                "ondoan"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e10",
+              "type": "listen_type",
+              "text": "Liburutegia plazaren eta parkearen artean dago.",
+              "answers": [
+                "Liburutegia plazaren eta parkearen artean dago."
+              ],
+              "vocabulary": [
+                "liburutegi",
+                "plaza",
+                "eta",
+                "parke",
+                "artean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e11",
+              "type": "read_true_false",
+              "passage": "Hotela plazan dago. Taberna hotelaren azpian dago.",
+              "statement": "El bar está encima del hotel.",
+              "answer": false,
+              "vocabulary": [
+                "hotel",
+                "plaza",
+                "egon",
+                "taberna",
+                "azpian"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e12",
+              "type": "speak",
+              "text": "Ane Jonen ondoan dago.",
+              "translation": "Ane está al lado de Jon.",
+              "vocabulary": [
+                "ondoan",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Geltokia hotelaren aurrean dago."
+              },
+              "answers": [
+                "La estación está delante del hotel."
+              ],
+              "distractors": [
+                "escuela",
+                "biblioteca",
+                "y",
+                "iglesia"
+              ],
+              "vocabulary": [
+                "geltoki",
+                "hotel",
+                "aurrean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u02-2.l1.s2",
+          "exercises": [
+            {
+              "id": "u02-2.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Segi zuzen.",
+              "distractors": [
+                "hegoaldean",
+                "gertu"
+              ],
+              "vocabulary": [
+                "zuzen"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Sigue recto y a la derecha."
+              },
+              "answers": [
+                "Segi zuzen eta eskuinera."
+              ],
+              "vocabulary": [
+                "zuzen",
+                "eta",
+                "eskuin"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "eskuin",
+                  "es": "derecha"
+                },
+                {
+                  "eu": "ezker",
+                  "es": "izquierda"
+                },
+                {
+                  "eu": "zuzen",
+                  "es": "recto"
+                },
+                {
+                  "eu": "gertu",
+                  "es": "cerca"
+                },
+                {
+                  "eu": "urrun",
+                  "es": "lejos"
+                },
+                {
+                  "eu": "ipar",
+                  "es": "norte"
+                }
+              ],
+              "vocabulary": [
+                "eskuin",
+                "ezker",
+                "zuzen",
+                "gertu",
+                "urrun",
+                "ipar"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e04",
+              "type": "order_sentence",
+              "answer": "Farmazia ezkerrean dago.",
+              "translation": "La farmacia está a la izquierda.",
+              "vocabulary": [
+                "farmazia",
+                "ezker",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Mendia ___ dago.",
+              "options": [
+                "urrun",
+                "gertu",
+                "zuzen"
+              ],
+              "correct": 0,
+              "translation": "El monte está lejos.",
+              "vocabulary": [
+                "mendi",
+                "urrun",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hotela eskuinean dago."
+              },
+              "answers": [
+                "El hotel está a la derecha."
+              ],
+              "vocabulary": [
+                "hotel",
+                "eskuin",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e07",
+              "type": "choose_meaning",
+              "text": "Segi zuzen eta ezkerrera.",
+              "options": [
+                "Sigue recto y a la izquierda.",
+                "Sigue recto y a la derecha.",
+                "Está a la izquierda."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zuzen",
+                "eta",
+                "ezker"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e08",
+              "type": "listen_type",
+              "text": "Hondartza gertu dago.",
+              "answers": [
+                "Hondartza gertu dago."
+              ],
+              "vocabulary": [
+                "hondartza",
+                "gertu",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Irati",
+                  "text": "Barkatu, geltokia gertu dago?"
+                }
+              ],
+              "options": [
+                "Bai, segi zuzen eta eskuinera.",
+                "Bai, ni geltokian naiz.",
+                "Ez horregatik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "barkatu",
+                "geltoki",
+                "gertu",
+                "egon",
+                "bai",
+                "zuzen",
+                "eta",
+                "eskuin"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e10",
+              "type": "speak",
+              "text": "Mendia urrun dago.",
+              "translation": "El monte está lejos.",
+              "vocabulary": [
+                "mendi",
+                "urrun",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e11",
+              "type": "read_true_false",
+              "passage": "Zuberoa ekialdean dago, eta Bizkaia mendebaldean.",
+              "statement": "Bizkaia está en el oeste.",
+              "answer": true,
+              "vocabulary": [
+                "ekialde",
+                "egon",
+                "eta",
+                "mendebalde"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Baiona iparraldean dago."
+              },
+              "answers": [
+                "Bayona está en el norte.",
+                "Bayona está al norte."
+              ],
+              "distractors": [
+                "Sigue",
+                "y",
+                "izquierda"
+              ],
+              "vocabulary": [
+                "bai",
+                "ipar",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Tudela está en el sur."
+              },
+              "answers": [
+                "Tutera hegoaldean dago."
+              ],
+              "distractors": [
+                "eskuinera",
+                "Farmazia"
+              ],
+              "vocabulary": [
+                "hego",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u02-2.l1.s3",
+          "exercises": [
+            {
+              "id": "u02-2.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Tolosa es un pueblo bonito."
+              },
+              "answers": [
+                "Tolosa herri polita da."
+              ],
+              "vocabulary": [
+                "herri",
+                "polit",
+                "izan"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e02",
+              "type": "order_sentence",
+              "answer": "Bilbo hiri handia da.",
+              "translation": "Bilbao es una ciudad grande.",
+              "vocabulary": [
+                "hiri",
+                "handi",
+                "izan"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "handi",
+                  "es": "grande"
+                },
+                {
+                  "eu": "txiki",
+                  "es": "pequeño"
+                },
+                {
+                  "eu": "polit",
+                  "es": "bonito"
+                },
+                {
+                  "eu": "euri",
+                  "es": "lluvia"
+                },
+                {
+                  "eu": "elur",
+                  "es": "nieve"
+                },
+                {
+                  "eu": "eguzki",
+                  "es": "sol"
+                }
+              ],
+              "vocabulary": [
+                "handi",
+                "txiki",
+                "polit",
+                "euri",
+                "elur",
+                "eguzki"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Plaza hau txikia da."
+              },
+              "answers": [
+                "Esta plaza es pequeña."
+              ],
+              "vocabulary": [
+                "plaza",
+                "hau",
+                "txiki",
+                "izan"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Bilbo hiri ___ da.",
+              "options": [
+                "handia",
+                "txikia",
+                "polita"
+              ],
+              "correct": 0,
+              "translation": "Bilbao es una ciudad grande.",
+              "vocabulary": [
+                "hiri",
+                "handi",
+                "izan"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e06",
+              "type": "listen_type",
+              "text": "Euria ari du.",
+              "answers": [
+                "Euria ari du."
+              ],
+              "vocabulary": [
+                "euri"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e07",
+              "type": "choose_meaning",
+              "text": "Euria ari du.",
+              "options": [
+                "Llueve.",
+                "Nieva.",
+                "Hace sol."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "euri"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e08",
+              "type": "speak",
+              "text": "Elurra ari du.",
+              "translation": "Nieva.",
+              "vocabulary": [
+                "elur"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Zer eguraldi egiten du Donostian?"
+                }
+              ],
+              "options": [
+                "Euria ari du.",
+                "Euria da.",
+                "Donostiakoa naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "eguraldi",
+                "euri"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Eguzkia dago."
+              },
+              "answers": [
+                "Hace sol.",
+                "Hay sol."
+              ],
+              "distractors": [
+                "es",
+                "Esta"
+              ],
+              "vocabulary": [
+                "eguzki",
+                "egon"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e11",
+              "type": "read_true_false",
+              "passage": "Gasteizen hotz egiten du, eta elurra ari du.",
+              "statement": "En Vitoria hace calor.",
+              "answer": false,
+              "vocabulary": [
+                "hotz",
+                "eta",
+                "elur"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Hace viento."
+              },
+              "answers": [
+                "Haize egiten du."
+              ],
+              "distractors": [
+                "Euria",
+                "da"
+              ],
+              "vocabulary": [
+                "haize"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e13",
+              "type": "listen_tap",
+              "text": "Hotz egiten du.",
+              "distractors": [
+                "da",
+                "herri"
+              ],
+              "vocabulary": [
+                "hotz"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u02-2.l2",
+      "type": "lesson",
+      "title": {
+        "es": "La hora y el tiempo",
+        "eu": "Ordua eta eguraldia"
+      },
+      "lessons": [
+        {
+          "id": "u02-2.l2.s1",
+          "exercises": [
+            {
+              "id": "u02-2.l2.s1.e01",
+              "type": "order_sentence",
+              "answer": "Ni Mikelen ondoan nago.",
+              "translation": "Estoy al lado de Mikel.",
+              "vocabulary": [
+                "ni",
+                "ondoan",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zu Aneren atzean zaude."
+              },
+              "answers": [
+                "Estás detrás de Ane.",
+                "Tú estás detrás de Ane.",
+                "Usted está detrás de Ane."
+              ],
+              "vocabulary": [
+                "zu",
+                "atzean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e03",
+              "type": "fill_blank",
+              "sentence": "Gu udaletxearen aurrean ___.",
+              "options": [
+                "gaude",
+                "gara",
+                "daude"
+              ],
+              "correct": 0,
+              "translation": "Estamos delante del ayuntamiento.",
+              "vocabulary": [
+                "gu",
+                "udaletxe",
+                "aurrean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e04",
+              "type": "listen_type",
+              "text": "Gu udaletxearen aurrean gaude.",
+              "answers": [
+                "Gu udaletxearen aurrean gaude."
+              ],
+              "vocabulary": [
+                "gu",
+                "udaletxe",
+                "aurrean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Hotela geltokiaren eta bankuaren ___ dago.",
+              "options": [
+                "artean",
+                "gainean",
+                "azpian"
+              ],
+              "correct": 0,
+              "translation": "El hotel está entre la estación y el banco.",
+              "vocabulary": [
+                "hotel",
+                "geltoki",
+                "eta",
+                "banku",
+                "artean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e06",
+              "type": "speak",
+              "text": "Hotela geltokiaren eta bankuaren artean dago.",
+              "translation": "El hotel está entre la estación y el banco.",
+              "vocabulary": [
+                "hotel",
+                "geltoki",
+                "eta",
+                "banku",
+                "artean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e07",
+              "type": "choose_meaning",
+              "text": "Zu Aneren atzean zaude.",
+              "options": [
+                "Estás detrás de Ane.",
+                "Ane está detrás de ti.",
+                "Estás delante de Ane."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zu",
+                "atzean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Jatetxea tabernaren gainean dago."
+              },
+              "answers": [
+                "El restaurante está encima del bar."
+              ],
+              "distractors": [
+                "hotel",
+                "Dónde",
+                "Detrás",
+                "estudiantes"
+              ],
+              "vocabulary": [
+                "jatetxe",
+                "taberna",
+                "gainean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Unai",
+                  "text": "Kaixo! Non zaude?"
+                }
+              ],
+              "options": [
+                "Geltokiaren aurrean nago.",
+                "Geltokiaren aurrean naiz.",
+                "Geltokiaren aurrean zaude."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "non",
+                "egon",
+                "geltoki",
+                "aurrean"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La farmacia no está al lado del hospital."
+              },
+              "answers": [
+                "Farmazia ez dago ospitalearen ondoan."
+              ],
+              "distractors": [
+                "tabernaren",
+                "geltokiaren",
+                "liburutegia"
+              ],
+              "vocabulary": [
+                "farmazia",
+                "ez",
+                "egon",
+                "ospitale",
+                "ondoan"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e11",
+              "type": "read_true_false",
+              "passage": "Taberna plazan dago, elizaren ondoan. Eliza udaletxearen aurrean dago.",
+              "statement": "El bar está al lado de la iglesia.",
+              "answer": true,
+              "vocabulary": [
+                "taberna",
+                "plaza",
+                "egon",
+                "eliza",
+                "ondoan",
+                "udaletxe",
+                "aurrean"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e12",
+              "type": "listen_tap",
+              "text": "Non dago liburutegia? Eskolaren atzean.",
+              "distractors": [
+                "bankuaren",
+                "aurrean",
+                "ondoan"
+              ],
+              "vocabulary": [
+                "non",
+                "egon",
+                "liburutegi",
+                "eskola",
+                "atzean"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s1.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Los estudiantes están delante del profesor."
+              },
+              "answers": [
+                "Ikasleak irakaslearen aurrean daude."
+              ],
+              "vocabulary": [
+                "ikasle",
+                "irakasle",
+                "aurrean",
+                "egon"
+              ],
+              "structures": [
+                "postpositions-noren",
+                "egon-present"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u02-2.l2.s2",
+          "exercises": [
+            {
+              "id": "u02-2.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer ordu da?"
+              },
+              "answers": [
+                "¿Qué hora es?"
+              ],
+              "vocabulary": [
+                "zer",
+                "ordu",
+                "izan"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e02",
+              "type": "listen_type",
+              "text": "Ordu bata da.",
+              "answers": [
+                "Ordu bata da."
+              ],
+              "vocabulary": [
+                "ordu",
+                "bat",
+                "izan"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "ordu bata",
+                  "es": "la una"
+                },
+                {
+                  "eu": "ordu biak",
+                  "es": "las dos"
+                },
+                {
+                  "eu": "seiak",
+                  "es": "las seis"
+                },
+                {
+                  "eu": "zortziak",
+                  "es": "las ocho"
+                },
+                {
+                  "eu": "bederatziak",
+                  "es": "las nueve"
+                },
+                {
+                  "eu": "eta erdiak",
+                  "es": "y media"
+                }
+              ],
+              "vocabulary": [
+                "ordu",
+                "bat",
+                "bi",
+                "sei",
+                "zortzi",
+                "bederatzi",
+                "eta"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e04",
+              "type": "speak",
+              "text": "Ordu biak dira.",
+              "translation": "Son las dos.",
+              "vocabulary": [
+                "ordu",
+                "bi",
+                "izan"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Hirurak eta ___ dira.",
+              "options": [
+                "erdiak",
+                "laurden",
+                "gutxi"
+              ],
+              "correct": 0,
+              "translation": "Son las tres y media.",
+              "vocabulary": [
+                "hiru",
+                "eta",
+                "izan"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hirurak eta erdiak dira."
+              },
+              "answers": [
+                "Son las tres y media."
+              ],
+              "distractors": [
+                "siete",
+                "cinco",
+                "Es"
+              ],
+              "vocabulary": [
+                "hiru",
+                "eta",
+                "izan"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e07",
+              "type": "choose_meaning",
+              "text": "Bostak laurden gutxi dira.",
+              "options": [
+                "Son las cinco menos cuarto.",
+                "Son las cinco y cuarto.",
+                "Son las cuatro y media."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bost",
+                "lau",
+                "izan"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Son las cuatro y cuarto."
+              },
+              "answers": [
+                "Laurak eta laurden dira."
+              ],
+              "distractors": [
+                "Hirurak",
+                "biak",
+                "Hamarrak"
+              ],
+              "vocabulary": [
+                "lau",
+                "eta",
+                "izan"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nahia",
+                  "text": "Barkatu, zer ordu da?"
+                }
+              ],
+              "options": [
+                "Seiak eta laurden dira.",
+                "Seiak eta laurden dago.",
+                "Sei naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "barkatu",
+                "zer",
+                "ordu",
+                "izan",
+                "sei",
+                "eta",
+                "lau"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e10",
+              "type": "listen_tap",
+              "text": "Bostak laurden gutxi dira.",
+              "distractors": [
+                "Laurak",
+                "Ordu",
+                "biak"
+              ],
+              "vocabulary": [
+                "bost",
+                "lau",
+                "izan"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e11",
+              "type": "read_true_false",
+              "passage": "Zer ordu da? Zortziak eta erdiak dira.",
+              "statement": "Son las ocho y media.",
+              "answer": true,
+              "vocabulary": [
+                "zer",
+                "ordu",
+                "izan",
+                "zortzi",
+                "eta"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Son las siete."
+              },
+              "answers": [
+                "Zazpiak dira."
+              ],
+              "vocabulary": [
+                "zazpi",
+                "izan"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e13",
+              "type": "order_sentence",
+              "answer": "Hamarrak eta erdiak dira.",
+              "translation": "Son las diez y media.",
+              "vocabulary": [
+                "hamar",
+                "eta",
+                "izan"
+              ],
+              "structures": [
+                "time"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u02-2.l2.s3",
+          "exercises": [
+            {
+              "id": "u02-2.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Zer eguraldi egiten du?",
+              "answers": [
+                "Zer eguraldi egiten du?"
+              ],
+              "vocabulary": [
+                "zer",
+                "eguraldi"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e02",
+              "type": "speak",
+              "text": "Bero egiten du.",
+              "translation": "Hace calor.",
+              "vocabulary": [
+                "bero"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e03",
+              "type": "fill_blank",
+              "sentence": "Oso hotz egiten ___.",
+              "options": [
+                "du",
+                "da",
+                "dago"
+              ],
+              "correct": 0,
+              "translation": "Hace mucho frío.",
+              "vocabulary": [
+                "oso",
+                "hotz"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Oso hotz egiten du."
+              },
+              "answers": [
+                "Hace mucho frío."
+              ],
+              "distractors": [
+                "tiempo",
+                "una"
+              ],
+              "vocabulary": [
+                "oso",
+                "hotz"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e05",
+              "type": "choose_meaning",
+              "text": "Bero egiten du.",
+              "options": [
+                "Hace calor.",
+                "Hace frío.",
+                "Hace viento."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bero"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "En San Sebastián llueve."
+              },
+              "answers": [
+                "Donostian euria ari du."
+              ],
+              "distractors": [
+                "hotz",
+                "batean",
+                "Oso"
+              ],
+              "vocabulary": [
+                "euri"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Gorka",
+                  "text": "Kaixo! Zer eguraldi egiten du Gasteizen?"
+                }
+              ],
+              "options": [
+                "Hotz egiten du.",
+                "Hotz da.",
+                "Gasteizen nago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "zer",
+                "eguraldi",
+                "hotz"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e08",
+              "type": "listen_tap",
+              "text": "Mendian elurra ari du.",
+              "distractors": [
+                "handi",
+                "eguraldi",
+                "batean"
+              ],
+              "vocabulary": [
+                "mendi",
+                "elur"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e09",
+              "type": "read_true_false",
+              "passage": "Lekeition eguzkia dago, eta bero egiten du.",
+              "statement": "En Lekeitio hace frío.",
+              "answer": false,
+              "vocabulary": [
+                "eguzki",
+                "egon",
+                "eta",
+                "bero"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "En la playa hace sol."
+              },
+              "answers": [
+                "Hondartzan eguzkia dago."
+              ],
+              "vocabulary": [
+                "hondartza",
+                "eguzki",
+                "egon"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e11",
+              "type": "order_sentence",
+              "answer": "Kale txiki batean nago.",
+              "translation": "Estoy en una calle pequeña.",
+              "vocabulary": [
+                "kale",
+                "txiki",
+                "bat",
+                "egon"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Plazan hotel handi bat dago."
+              },
+              "answers": [
+                "En la plaza hay un hotel grande.",
+                "Hay un hotel grande en la plaza."
+              ],
+              "vocabulary": [
+                "plaza",
+                "hotel",
+                "handi",
+                "bat",
+                "egon"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u02-2.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Conversaciones",
+        "eu": "Elkarrizketak"
+      },
+      "lessons": [
+        {
+          "id": "u02-2.l3.s1",
+          "exercises": [
+            {
+              "id": "u02-2.l3.s1.e01",
+              "type": "speak",
+              "text": "Barkatu, ospitalea urrun dago?",
+              "translation": "Perdona, ¿el hospital está lejos?",
+              "vocabulary": [
+                "barkatu",
+                "ospitale",
+                "urrun",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez, gertu dago."
+              },
+              "answers": [
+                "No, está cerca."
+              ],
+              "distractors": [
+                "Perdona",
+                "El"
+              ],
+              "vocabulary": [
+                "ez",
+                "gertu",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Ez, gertu dago.",
+              "options": [
+                "No, está cerca.",
+                "No, está lejos.",
+                "Sí, está cerca."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "gertu",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Sigue recto y a la izquierda."
+              },
+              "answers": [
+                "Segi zuzen eta ezkerrera."
+              ],
+              "distractors": [
+                "horregatik",
+                "Geltokia",
+                "parkearen"
+              ],
+              "vocabulary": [
+                "zuzen",
+                "eta",
+                "ezker"
+              ],
+              "structures": [
+                "directions",
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s1.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Asier",
+                  "text": "Barkatu, non dago eskola?"
+                }
+              ],
+              "options": [
+                "Segi zuzen. Eskola plazaren ondoan dago.",
+                "Segi zuzen. Eskola plazaren ondoan da.",
+                "Ni eskolan nago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "barkatu",
+                "non",
+                "egon",
+                "eskola",
+                "zuzen",
+                "plaza",
+                "ondoan"
+              ],
+              "structures": [
+                "directions",
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Ospitalea parkearen ondoan dago.",
+              "distractors": [
+                "ezkerrera",
+                "Barkatu",
+                "horregatik"
+              ],
+              "vocabulary": [
+                "ospitale",
+                "parke",
+                "ondoan",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s1.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Olatz",
+                  "text": "Barkatu, badago farmaziarik hemen?"
+                },
+                {
+                  "speaker": "Xabier",
+                  "text": "Bai, kale honetan, bankuaren ondoan."
+                },
+                {
+                  "speaker": "Olatz",
+                  "text": "Urrun dago?"
+                }
+              ],
+              "options": [
+                "Ez, oso gertu dago.",
+                "Ez, oso gertu da.",
+                "Bai, eskerrik asko."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "barkatu",
+                "egon",
+                "farmazia",
+                "hemen",
+                "bai",
+                "kale",
+                "hau",
+                "banku",
+                "ondoan",
+                "urrun",
+                "ez",
+                "oso",
+                "gertu"
+              ],
+              "structures": [
+                "directions",
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "La estación está a la derecha, detrás del hotel."
+              },
+              "answers": [
+                "Geltokia eskuinean dago, hotelaren atzean."
+              ],
+              "vocabulary": [
+                "geltoki",
+                "eskuin",
+                "egon",
+                "hotel",
+                "atzean"
+              ],
+              "structures": [
+                "directions",
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s1.e09",
+              "type": "read_true_false",
+              "passage": "Segi zuzen eta eskuinera. Jatetxea tabernaren ondoan dago.",
+              "statement": "Hay que girar a la izquierda.",
+              "answer": false,
+              "vocabulary": [
+                "zuzen",
+                "eta",
+                "eskuin",
+                "jatetxe",
+                "taberna",
+                "ondoan",
+                "egon"
+              ],
+              "structures": [
+                "directions",
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s1.e10",
+              "type": "order_sentence",
+              "answer": "Eskerrik asko! Ez horregatik.",
+              "translation": "¡Muchas gracias! De nada.",
+              "vocabulary": [
+                "eskerrik asko",
+                "ez horregatik"
+              ],
+              "structures": [
+                "directions",
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s1.e11",
+              "type": "read_true_false",
+              "passage": "Hondartza ez dago urrun. Hotelaren atzean dago.",
+              "statement": "La playa está cerca del hotel.",
+              "answer": true,
+              "vocabulary": [
+                "hondartza",
+                "ez",
+                "egon",
+                "urrun",
+                "hotel",
+                "atzean"
+              ],
+              "structures": [
+                "directions",
+                "postpositions-noren"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u02-2.l3.s2",
+          "exercises": [
+            {
+              "id": "u02-2.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hondarribia herri polita da."
+              },
+              "answers": [
+                "Hondarribia es un pueblo bonito."
+              ],
+              "distractors": [
+                "Gipuzkoa",
+                "plaza",
+                "Euskal"
+              ],
+              "vocabulary": [
+                "herri",
+                "polit",
+                "izan"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Este pueblo está en el norte de Gipuzkoa."
+              },
+              "answers": [
+                "Herri hau Gipuzkoako iparraldean dago."
+              ],
+              "distractors": [
+                "Zuberoa",
+                "eta",
+                "Euskal"
+              ],
+              "vocabulary": [
+                "herri",
+                "hau",
+                "ipar",
+                "egon"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e03",
+              "type": "choose_meaning",
+              "text": "Plaza txikia da, eta eliza handia.",
+              "options": [
+                "La plaza es pequeña y la iglesia, grande.",
+                "La plaza es grande y la iglesia, pequeña.",
+                "La plaza y la iglesia son pequeñas."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "plaza",
+                "txiki",
+                "izan",
+                "eta",
+                "eliza",
+                "handi"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e04",
+              "type": "listen_tap",
+              "text": "Plaza txikia da, eta eliza handia.",
+              "distractors": [
+                "Hondarribia",
+                "Gipuzkoako",
+                "Gasteiz",
+                "dago"
+              ],
+              "vocabulary": [
+                "plaza",
+                "txiki",
+                "izan",
+                "eta",
+                "eliza",
+                "handi"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Alaitz",
+                  "text": "Bermeo herri handia da?"
+                }
+              ],
+              "options": [
+                "Ez, herri txikia da.",
+                "Ez, herri txikia naiz.",
+                "Bai, Bermeokoa naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "herri",
+                "handi",
+                "izan",
+                "ez",
+                "txiki"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Hay una playa grande."
+              },
+              "answers": [
+                "Hondartza handi bat dago."
+              ],
+              "vocabulary": [
+                "hondartza",
+                "handi",
+                "bat",
+                "egon"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Kepa",
+                  "text": "Kaixo, Miren! Non zaude?"
+                },
+                {
+                  "speaker": "Miren",
+                  "text": "Getxon nago, hondartzan."
+                },
+                {
+                  "speaker": "Kepa",
+                  "text": "Hondartza polita da?"
+                }
+              ],
+              "options": [
+                "Bai, oso polita da.",
+                "Bai, oso polita naiz.",
+                "Ez, Getxokoa naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "non",
+                "egon",
+                "hondartza",
+                "polit",
+                "izan",
+                "bai",
+                "oso"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e08",
+              "type": "order_sentence",
+              "answer": "Gasteiz Euskal Herriko hegoaldean dago.",
+              "translation": "Vitoria está en el sur de Euskal Herria.",
+              "vocabulary": [
+                "herri",
+                "hego",
+                "egon"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e09",
+              "type": "read_true_false",
+              "passage": "Bilbo hiri handia da, eta Euskal Herriko mendebaldean dago.",
+              "statement": "Bilbao es una ciudad pequeña.",
+              "answer": false,
+              "vocabulary": [
+                "hiri",
+                "handi",
+                "izan",
+                "eta",
+                "herri",
+                "mendebalde",
+                "egon"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zuberoa Euskal Herriko ekialdean dago."
+              },
+              "answers": [
+                "Zuberoa está en el este de Euskal Herria.",
+                "Sola está en el este de Euskal Herria.",
+                "Zuberoa está en el este del País Vasco."
+              ],
+              "vocabulary": [
+                "herri",
+                "ekialde",
+                "egon"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e11",
+              "type": "read_true_false",
+              "passage": "Elizondo herri txikia da. Nafarroako iparraldean dago.",
+              "statement": "Elizondo está en el norte de Navarra.",
+              "answer": true,
+              "vocabulary": [
+                "herri",
+                "txiki",
+                "izan",
+                "ipar",
+                "egon"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u02-2.l3.s3",
+          "exercises": [
+            {
+              "id": "u02-2.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué hora es, Peio?"
+              },
+              "answers": [
+                "Zer ordu da, Peio?"
+              ],
+              "distractors": [
+                "du",
+                "oso",
+                "dira"
+              ],
+              "vocabulary": [
+                "zer",
+                "ordu",
+                "izan"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Ordu bata eta erdiak dira.",
+              "distractors": [
+                "oso",
+                "Peio",
+                "eguraldi"
+              ],
+              "vocabulary": [
+                "ordu",
+                "bat",
+                "eta",
+                "izan"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Zer eguraldi egiten du?",
+              "options": [
+                "¿Qué tiempo hace?",
+                "¿Qué hora es?",
+                "¿Dónde está?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "eguraldi"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué tiempo hace en Bilbao?"
+              },
+              "answers": [
+                "Zer eguraldi egiten du Bilbon?"
+              ],
+              "vocabulary": [
+                "zer",
+                "eguraldi"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ander",
+                  "text": "Barkatu, zer ordu da?"
+                }
+              ],
+              "options": [
+                "Zortziak eta laurden dira.",
+                "Zortziak eta laurden dago.",
+                "Zortzi naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "barkatu",
+                "zer",
+                "ordu",
+                "izan",
+                "zortzi",
+                "eta",
+                "lau"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Bilbon euria ari du, eta haize egiten du.",
+              "translation": "En Bilbao llueve y hace viento.",
+              "vocabulary": [
+                "euri",
+                "eta",
+                "haize"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Haizea",
+                  "text": "Kaixo, Julen! Non zaude?"
+                },
+                {
+                  "speaker": "Julen",
+                  "text": "Hondartzan nago. Eguzkia dago!"
+                },
+                {
+                  "speaker": "Haizea",
+                  "text": "Bero egiten du?"
+                }
+              ],
+              "options": [
+                "Bai, oso bero egiten du.",
+                "Bai, oso bero naiz.",
+                "Ez, hondartzan nago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "non",
+                "egon",
+                "hondartza",
+                "eguzki",
+                "bero",
+                "bai",
+                "oso"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hemen eguzkia dago, eta bero egiten du."
+              },
+              "answers": [
+                "Aquí hace sol y hace calor.",
+                "Aquí hay sol y hace calor."
+              ],
+              "vocabulary": [
+                "hemen",
+                "eguzki",
+                "egon",
+                "eta",
+                "bero"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e09",
+              "type": "read_true_false",
+              "passage": "Bederatziak dira. Euria ari du, eta hotz egiten du.",
+              "statement": "Hace sol.",
+              "answer": false,
+              "vocabulary": [
+                "bederatzi",
+                "izan",
+                "euri",
+                "eta",
+                "hotz"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e10",
+              "type": "listen_type",
+              "text": "Mendian oso hotz egiten du.",
+              "answers": [
+                "Mendian oso hotz egiten du."
+              ],
+              "vocabulary": [
+                "mendi",
+                "oso",
+                "hotz"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e11",
+              "type": "read_true_false",
+              "passage": "Laurak eta erdiak dira. Mendian elurra ari du.",
+              "statement": "Nieva en el monte.",
+              "answer": true,
+              "vocabulary": [
+                "lau",
+                "eta",
+                "izan",
+                "mendi",
+                "elur"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u02-2.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: ¿sol o lluvia?",
+        "eu": "Istorioa: eguzkia ala euria?"
+      },
+      "story": {
+        "id": "u02-2.l4.story",
+        "title": "Eguzkia ala euria?",
+        "lines": [
+          {
+            "speaker": "Nerea",
+            "eu": "Kaixo, Aitor! Non zaude?",
+            "es": "¡Hola, Aitor! ¿Dónde estás?"
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Zarautzen nago, hondartzaren ondoan.",
+            "es": "Estoy en Zarautz, al lado de la playa."
+          },
+          {
+            "speaker": "Nerea",
+            "eu": "Zer eguraldi egiten du Zarautzen?",
+            "es": "¿Qué tiempo hace en Zarautz?"
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Eguzkia dago, eta oso bero egiten du! Eta Gasteizen?",
+            "es": "¡Hace sol y mucho calor! ¿Y en Vitoria?"
+          },
+          {
+            "speaker": "Nerea",
+            "eu": "Hemen euria ari du, eta hotz egiten du.",
+            "es": "Aquí llueve y hace frío."
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Zer ordu da?",
+            "es": "¿Qué hora es?"
+          },
+          {
+            "speaker": "Nerea",
+            "eu": "Hirurak eta erdiak dira.",
+            "es": "Son las tres y media."
+          },
+          {
+            "speaker": "Nerea",
+            "eu": "Zarautzen jatetxe polit bat dago, plazan. Elizaren ondoan dago.",
+            "es": "En Zarautz hay un restaurante bonito, en la plaza. Está al lado de la iglesia."
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Plaza urrun dago?",
+            "es": "¿La plaza está lejos?"
+          },
+          {
+            "speaker": "Nerea",
+            "eu": "Ez, oso gertu. Segi zuzen eta ezkerrera.",
+            "es": "No, muy cerca. Sigue recto y a la izquierda."
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Eskerrik asko! Agur!",
+            "es": "¡Muchas gracias! ¡Adiós!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 4,
+            "prompt": "¿Qué tiempo hace en Vitoria?",
+            "options": [
+              "Llueve y hace frío",
+              "Hace sol y calor",
+              "Nieva"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 6,
+            "prompt": "¿Qué hora es?",
+            "options": [
+              "Las tres y media",
+              "Las tres y cuarto",
+              "Las cuatro menos cuarto"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 10,
+            "prompt": "¿Dónde está el restaurante?",
+            "options": [
+              "Al lado de la iglesia",
+              "Detrás de la playa",
+              "Lejos de la plaza"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u02-2.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u02-2.l6",
+      "type": "legendary",
+      "title": {
+        "es": "Nivel legendario",
+        "eu": "Maila legendarioa"
+      }
+    }
+  ]
+}

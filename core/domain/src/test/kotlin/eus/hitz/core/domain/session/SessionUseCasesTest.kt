@@ -54,6 +54,14 @@ class SessionUseCasesTest {
     }
 
     @Test
+    fun `a section review draws from every unit of the section`() = runTest {
+        val session = plan("u01-2", "u01-2.l6", null, Random(1))
+        assertThat(session.sessionId).isEqualTo("u01-2.l6")
+        assertThat(session.exercises.map { it.id.substringBefore('.') }.toSet()).containsExactly("u01-1", "u01-2")
+        assertThat(session.kind).isEqualTo(ActivityKind.Review)
+    }
+
+    @Test
     fun `the legendary level plays every exercise with fewer hearts`() = runTest {
         val session = plan("u01-1", "u01-1.l5", null, Random(1))
         assertThat(session.exercises).hasSize(3)

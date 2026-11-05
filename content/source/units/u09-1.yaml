@@ -1,0 +1,440 @@
+# Unit 9.1 · Birziklatu — waste, materials (ZEREZKOA?), DAITEKE, imperative and indirect imperative.
+id: u09-1
+section: s3
+bookUnit: 9
+title:
+  es: Reciclar
+  eu: Birziklatu
+goals:
+  - es: Decir de qué material está hecho un objeto.
+    eu: Objektu bat zerezkoa den esan.
+  - es: Explicar dónde se puede echar cada tipo de residuo.
+    eu: Hondakin bakoitza non bota daitekeen azaldu.
+  - es: Dar consejos e instrucciones para cuidar el medio ambiente.
+    eu: Ingurumena zaintzeko aholkuak eta aginduak eman.
+guidebook:
+  sections:
+    - title:
+        es: ¿De qué es? -(e)zkoa
+        eu: Zerezkoa da? -(e)zkoa
+      body:
+        es: Para decir de qué material es algo, se añade -zkoa (tras vocal) o -ezkoa (tras consonante) al material. Delante de un nombre se usa -(e)zko, sin artículo. La pregunta es «Zerezkoa da?».
+        eu: Zerbait zerezkoa den esateko, materialari -zkoa (bokalaren ondoren) edo -ezkoa (kontsonantearen ondoren) gehitzen zaio. Izenaren aurrean -(e)zko erabiltzen da. Galdera «Zerezkoa da?» da.
+      examples:
+        - eu: Zerezkoa da botila hau?
+          es: ¿De qué es esta botella?
+        - eu: Beirazkoa da.
+          es: Es de vidrio.
+        - eu: Paperezko poltsa bat daukat.
+          es: Tengo una bolsa de papel.
+    - title:
+        es: "Se puede: daiteke"
+        eu: "Daiteke"
+      body:
+        es: «Daiteke» significa «se puede» y va detrás de la raíz del verbo (sar daiteke, birzikla daiteke). Con un plural se usa «daitezke». En negativo, «ez daiteke». El papel y el cartón van al contenedor azul, el plástico al amarillo y el vidrio al verde.
+        eu: «Daiteke» aditzaren erroaren ondoren doa (sar daiteke, birzikla daiteke). Pluralarekin «daitezke» erabiltzen da. Ezezkoan, «ez daiteke». Papera eta kartoia edukiontzi urdinera doaz, plastikoa horira eta beira berdera.
+      examples:
+        - eu: Papera edukiontzi urdinean sar daiteke.
+          es: El papel se puede echar en el contenedor azul.
+        - eu: Botilak birzikla daitezke.  # TODO(revisión-nativa): ¿radical «birzikla» o participio «birziklatu daitezke» para A1?
+          es: Las botellas se pueden reciclar.
+        - eu: Hemen ez daiteke igeri egin.
+          es: Aquí no se puede nadar.
+    - title:
+        es: "Dar instrucciones: ezazu, itzazu, zaitez"
+        eu: "Aginduak: ezazu, itzazu, zaitez"
+      body:
+        es: El imperativo con «tú» se forma con la raíz del verbo y «ezazu» (un objeto) o «itzazu» (varios objetos). Si el verbo no tiene objeto, como «joan», se usa «zaitez».
+        eu: Agintera emateko, aditzaren erroari «ezazu» (objektu bat) edo «itzazu» (objektu asko) gehitzen zaio. Aditzak objekturik ez badu, «joan» bezala, «zaitez» erabiltzen da.
+      examples:
+        - eu: Sar ezazu papera edukiontzi urdinean.
+          es: Echa el papel en el contenedor azul.
+        - eu: Eraman itzazu botilak edukiontzira.
+          es: Lleva las botellas al contenedor.
+        - eu: Joan zaitez basora!
+          es: ¡Ve al bosque!
+    - title:
+        es: "Lo que otros piden: eskatu dit … -tzeko"
+        eu: "Besteek eskatzen dutena: eskatu dit … -tzeko"
+      body:
+        es: Para contar lo que alguien nos ha pedido, se usa «eskatu dit» (me ha pedido) o «eskatu digu» (nos ha pedido) y el verbo con -tzeko o -teko al final.
+        eu: Norbaitek eskatu diguna kontatzeko, «eskatu dit» edo «eskatu digu» erabiltzen dugu, eta aditza -tzeko edo -teko amaierarekin.
+      examples:
+        - eu: Amak eskatu dit botilak birziklatzeko.
+          es: Mi madre me ha pedido que recicle las botellas.
+        - eu: Irakasleak eskatu digu papera edukiontzi urdinera eramateko.
+          es: La profesora nos ha pedido que llevemos el papel al contenedor azul.
+levels:
+  - type: lesson
+    title:
+      es: Naturaleza y residuos
+      eu: Natura eta hondakinak
+    lessons:
+      - structures: [egon-present, non-inessive]
+        sentences:
+          - Basoan zuhaitz asko daude. = En el bosque hay muchos árboles. | Hay muchos árboles en el bosque.
+          - Ibaia eta itsasoa gertu daude. = El río y el mar están cerca.
+          - Natura oso polita da hemen. | Hemen natura oso polita da. = Aquí la naturaleza es muy bonita. | La naturaleza es muy bonita aquí.
+          - Itsasoan kutsadura dago. = Hay contaminación en el mar. | En el mar hay contaminación.
+          - Ingurumena gure etxea da. = El medio ambiente es nuestra casa.
+          - Ibaian ez dago arrainik. = En el río no hay peces. | No hay peces en el río.
+          - Mendian baso handi bat dago. = En el monte hay un bosque grande. | Hay un bosque grande en el monte. | En la montaña hay un bosque grande.
+          - Zuhaitz hau oso zaharra da. = Este árbol es muy viejo.
+        pairs:
+          - - zuhaitz = árbol
+            - baso = bosque
+            - itsaso = mar
+            - ibai = río
+            - natura = naturaleza
+            - kutsadura = contaminación
+        meanings:
+          - text: Ibaian kutsadura dago.
+            options:
+              - Hay contaminación en el río.
+              - Hay peces en el río.
+              - El río está cerca del mar.
+        blanks:
+          - text: Basoan zuhaitz asko ___. = En el bosque hay muchos árboles.
+            options:
+              - daude
+              - dago
+        chats:
+          - messages:
+              - Ane | Non dago ibaia?
+            options:
+              - Basoaren ondoan dago.
+              - Ibaia oso zaharra naiz.
+              - Zuhaitz asko dut.
+        true_false:
+          - passage: Nire herrian baso handi bat dago. Basoan zuhaitz asko daude.
+            statement: En el pueblo no hay árboles.
+            answer: false
+      - structures: [egon-present, non-inessive]
+        sentences:
+          - Hau zakarrontzia da. = Esta es la papelera. | Esto es una papelera. | Este es el cubo de basura.
+          - Edukiontzia kalean dago. = El contenedor está en la calle.
+          - Botila zakarrontzian dago. = La botella está en la papelera. | La botella está en el cubo de basura.
+          - Poltsan hondakinak daude. = En la bolsa hay residuos. | Hay residuos en la bolsa.
+          - Plastikoa, papera eta beira birziklatu behar ditugu. = Tenemos que reciclar el plástico, el papel y el vidrio. | Debemos reciclar el plástico, el papel y el vidrio.
+          - Kartoia edukiontzi urdinean dago. = El cartón está en el contenedor azul.
+          - Etxean poltsa asko dauzkagu. = En casa tenemos muchas bolsas. | Tenemos muchas bolsas en casa.
+          - Gelan zakarrontzi bat dago. = En la habitación hay una papelera. | En el aula hay una papelera. | Hay una papelera en la habitación.
+        pairs:
+          - - edukiontzi = contenedor
+            - zakarrontzi = papelera
+            - botila = botella
+            - poltsa = bolsa
+            - hondakin = residuo
+            - birziklatu = reciclar
+        meanings:
+          - text: Botila zakarrontzian dago.
+            options:
+              - La botella está en la papelera.
+              - La bolsa está en la papelera.
+              - La botella está en el contenedor.
+        blanks:
+          - text: Edukiontzia ___ dago. = El contenedor está en la calle.
+            options:
+              - kalean
+              - kalea
+        chats:
+          - messages:
+              - Jon | Non dago zakarrontzia?
+            options:
+              - Gelan dago, atearen ondoan.
+              - Plastikozkoa naiz.
+              - Bai, birziklatu behar dugu.
+        true_false:
+          - passage: Gelan zakarrontzi bat dago. Zakarrontzian paperak eta botila bat daude.
+            statement: En la papelera hay una botella.
+            answer: true
+      - structures: [zerezkoa]
+        sentences:
+          - Mahaia egurrezkoa da. = La mesa es de madera.
+          - Aulki hau burdinazkoa da. = Esta silla es de hierro.
+          - Poltsa paperezkoa da. = La bolsa es de papel.
+          - Botila beirazkoa da. = La botella es de vidrio. | La botella es de cristal.
+          - Gela honetan argi asko dago. = En esta habitación hay mucha luz. | En esta aula hay mucha luz. | Hay mucha luz en esta habitación.
+          - Energia asko behar dugu. = Necesitamos mucha energía.
+          - Hau leku polita da. = Este es un lugar bonito. | Esto es un lugar bonito.
+          - Kartoizko poltsa bat daukat. = Tengo una bolsa de cartón.
+        pairs:
+          - - egur = madera
+            - burdina = hierro
+            - paper = papel
+            - kartoi = cartón
+            - plastiko = plástico
+            - beira = vidrio
+        meanings:
+          - text: Aulkia egurrezkoa da.
+            options:
+              - La silla es de madera.
+              - La silla es de hierro.
+              - La mesa es de madera.
+        blanks:
+          - text: Botila ___ da. = La botella es de plástico.
+            options:
+              - plastikozkoa
+              - plastikoan
+        chats:
+          - messages:
+              - Leire | Zure poltsa plastikozkoa da?
+            options:
+              - Ez, paperezkoa da.
+              - Ez, gelan dago.
+              - Bai, egurra naiz.
+  - type: lesson
+    title:
+      es: ¿De qué es? ¿Dónde va?
+      eu: Zerezkoa da? Non sar daiteke?
+    lessons:
+      - structures: [zerezkoa]
+        sentences:
+          - Zerezkoa da botila hau? = ¿De qué es esta botella?
+          - Beirazkoa da. = Es de vidrio. | Es de cristal.
+          - Zerezkoa da poltsa hori? = ¿De qué es esa bolsa?
+          - Plastikozkoa da, ez paperezkoa. = Es de plástico, no de papel.
+          - Leihoa egurrezkoa da. = La ventana es de madera.
+          - Ate hau burdinazkoa da. = Esta puerta es de hierro.
+          - Plastikozko botilak dauzkat. = Tengo botellas de plástico.
+          - Paperezko poltsa nahi dut. = Quiero una bolsa de papel.
+        blanks:
+          - text: ___ da mahai hau? = ¿De qué es esta mesa?
+            options:
+              - Zerezkoa
+              - Nor
+          - text: Botila hau ___ da. = Esta botella es de vidrio.
+            options:
+              - beirazkoa
+              - beiran
+        meanings:
+          - text: Zerezkoa da aulkia?
+            options:
+              - ¿De qué es la silla?
+              - ¿Dónde está la silla?
+              - ¿De quién es la silla?
+        chats:
+          - messages:
+              - Iker | Zerezkoa da mahai hau?
+            options:
+              - Egurrezkoa da.
+              - Gelan dago.
+              - Mahaia naiz.
+        true_false:
+          - passage: Nire gelan mahai bat dago. Mahaia egurrezkoa da, eta aulkia burdinazkoa.
+            statement: La silla es de madera.
+            answer: false
+      - structures: [daiteke]
+        sentences:
+          - Papera edukiontzi urdinean sar daiteke. = El papel se puede echar en el contenedor azul. | Se puede echar el papel en el contenedor azul. | El papel se puede tirar al contenedor azul.
+          - Beira edukiontzi berdean sar daiteke. = El vidrio se puede echar en el contenedor verde. | Se puede echar el vidrio en el contenedor verde. | El vidrio se puede tirar al contenedor verde.
+          - Plastikoa edukiontzi horian sar daiteke. = El plástico se puede echar en el contenedor amarillo. | Se puede echar el plástico en el contenedor amarillo. | El plástico se puede tirar al contenedor amarillo.
+          - Botilak birzikla daitezke. = Las botellas se pueden reciclar. | Se pueden reciclar las botellas.
+          - Kartoia birzikla daiteke. = El cartón se puede reciclar. | Se puede reciclar el cartón.
+          - Hemen ez daiteke igeri egin. = Aquí no se puede nadar. | No se puede nadar aquí.
+          - Ibaian igeri egin daiteke? = ¿Se puede nadar en el río?
+          - Bai, igeri egin daiteke. = Sí, se puede nadar.
+        blanks:
+          - text: Botilak birzikla ___. = Las botellas se pueden reciclar.
+            options:
+              - daitezke
+              - daiteke
+          - text: Papera edukiontzi ___ sar daiteke. = El papel se puede echar en el contenedor azul.
+            options:
+              - urdinean
+              - berdean
+        meanings:
+          - text: Hemen ez daiteke igeri egin.
+            options:
+              - Aquí no se puede nadar.
+              - Aquí se puede nadar.
+              - Aquí no hay río.
+        chats:
+          - messages:
+              - Mikel | Beira non sar daiteke?
+            options:
+              - Edukiontzi berdean.
+              - Beirazkoa da.
+              - Bai, birzikla daiteke.
+      - structures: [imperative, indirect-imperative]
+        sentences:
+          - Sar ezazu papera edukiontzi urdinean. = Echa el papel en el contenedor azul. | Mete el papel en el contenedor azul. | Eche el papel en el contenedor azul. | Tira el papel al contenedor azul.
+          - Eraman itzazu botilak edukiontzira. = Lleva las botellas al contenedor. | Lleve las botellas al contenedor.
+          - Birzikla ezazu plastikoa! = ¡Recicla el plástico! | ¡Recicle el plástico!
+          - Joan zaitez edukiontzira! = ¡Ve al contenedor! | ¡Vaya al contenedor!
+          - Amak eskatu dit botilak birziklatzeko. = Mi madre me ha pedido que recicle las botellas.
+          - Irakasleak eskatu digu papera edukiontzi urdinera eramateko. = La profesora nos ha pedido que llevemos el papel al contenedor azul. | El profesor nos ha pedido que llevemos el papel al contenedor azul.
+          - Har ezazu poltsa, mesedez. = Coge la bolsa, por favor. | Coja la bolsa, por favor.
+        blanks:
+          - text: Sar ___ papera hemen. = Echa el papel aquí.
+            options:
+              - ezazu
+              - itzazu
+          - text: Eraman ___ botilak edukiontzira. = Lleva las botellas al contenedor.
+            options:
+              - itzazu
+              - ezazu
+        meanings:
+          - text: Amak eskatu dit papera birziklatzeko.
+            options:
+              - Mi madre me ha pedido que recicle el papel.
+              - Mi madre ha reciclado el papel.
+              - Mi madre me ha pedido papel.
+        chats:
+          - messages:
+              - Aitor | Botila hau beirazkoa da.
+            options:
+              - Sar ezazu edukiontzi berdean.
+              - Sar ezazu edukiontzi urdinean.
+              - Beirazkoa naiz.
+        true_false:
+          - passage: Irakasleak eskatu digu paperak eta kartoiak birziklatzeko.
+            statement: La profesora quiere que reciclen el papel y el cartón.
+            answer: true
+  - type: lesson
+    title:
+      es: Consejos verdes
+      eu: Ingurumena eta gu
+    lessons:
+      - structures: [daiteke, zerezkoa]
+        sentences:
+          - Barkatu, non dago edukiontzi horia? = Perdona, ¿dónde está el contenedor amarillo? | Perdone, ¿dónde está el contenedor amarillo?
+          - Plazan dago, eskolaren ondoan. = Está en la plaza, al lado de la escuela.
+          - Poltsa hau birzikla daiteke? = ¿Esta bolsa se puede reciclar? | ¿Se puede reciclar esta bolsa?
+          - Bai, paperezkoa da. = Sí, es de papel.
+          - Gelan zakarrontzi bat behar dugu. = Necesitamos una papelera en el aula. | En el aula necesitamos una papelera. | Necesitamos una papelera en la habitación.
+          - Ingurumenean kutsadura asko dago. = En el medio ambiente hay mucha contaminación. | Hay mucha contaminación en el medio ambiente.
+        chats:
+          - messages:
+              - Nerea | Barkatu, zerezkoa da botila hau?
+              - Gorka | Plastikozkoa da.
+              - Nerea | Non sar daiteke?
+            options:
+              - Edukiontzi horian.
+              - Edukiontzi berdean.
+              - Plastikozkoa da.
+          - messages:
+              - Gorka | Ibaian igeri egin daiteke?
+            options:
+              - Ez, ibaian kutsadura dago.
+              - Bai, burdinazkoa da.
+              - Ez, egurrezkoa da.
+        true_false:
+          - passage: "Herriko plazan hiru edukiontzi daude: urdina, horia eta berdea."
+            statement: En la plaza hay cuatro contenedores.
+            answer: false
+          - passage: Ibai hau oso polita da. Hemen igeri egin daiteke.
+            statement: En este río se puede nadar.
+            answer: true
+        meanings:
+          - text: Poltsa hau birzikla daiteke?
+            options:
+              - ¿Se puede reciclar esta bolsa?
+              - ¿De qué es esta bolsa?
+              - ¿Dónde está esta bolsa?
+      - structures: [imperative, indirect-imperative]
+        sentences:
+          - Gelan argi gutxi dago. = En la habitación hay poca luz. | Hay poca luz en el aula. | En el aula hay poca luz.
+          - Eraman ezazu poltsa supermerkatura. = Lleva la bolsa al supermercado. | Lleve la bolsa al supermercado.
+          - Ez dut plastikozko poltsarik behar. = No necesito bolsas de plástico. | No necesito ninguna bolsa de plástico.
+          - Aitak eskatu dit hondakinak edukiontzira eramateko. = Mi padre me ha pedido que lleve los residuos al contenedor.
+          - Joan zaitez basora lagunekin! = ¡Ve al bosque con tus amigos! | ¡Vete al bosque con tus amigos! | ¡Vaya al bosque con sus amigos!
+          - Har itzazu botilak, mesedez. = Coge las botellas, por favor. | Coja las botellas, por favor.
+        chats:
+          - messages:
+              - Miren | Oier, eraman itzazu botilak, mesedez.
+            options:
+              - Bai, ama! Orain noa.
+              - Ez, beirazkoa da.
+              - Zorionak, ama!
+          - messages:
+              - Haizea | Zer eskatu digu irakasleak?
+            options:
+              - Papera eta kartoia birziklatzeko.
+              - Paperezkoa da.
+              - Edukiontzi berdean dago.
+        true_false:
+          - passage: Amak eskatu dit poltsa eramateko. Gaur supermerkatura noa.
+            statement: Hoy va al supermercado.
+            answer: true
+          - passage: Nire gelan zakarrontzi bat dago. Zakarrontzia burdinazkoa da.
+            statement: La papelera es de plástico.
+            answer: false
+        blanks:
+          - text: Joan ___ basora! = ¡Ve al bosque!
+            options:
+              - zaitez
+              - ezazu
+      - structures: [zerezkoa, daiteke]
+        sentences:
+          - Hondartzan plastiko asko dago. = En la playa hay mucho plástico. | Hay mucho plástico en la playa.
+          - Itsasoa ez da zakarrontzia! = ¡El mar no es una papelera! | ¡El mar no es un cubo de basura!
+          - Leku hau oso polita da. = Este lugar es muy bonito.
+          - Eguzkiaren energia behar dugu. = Necesitamos la energía del sol.
+          - Gure herrian baso eta ibai asko daude. = En nuestro pueblo hay muchos bosques y ríos.
+          - Egurrezko mahaiak eta aulkiak dauzkagu. = Tenemos mesas y sillas de madera.
+        chats:
+          - messages:
+              - Irati | Hondartzan botila asko daude!
+              - Eneko | Bai. Har itzazu, mesedez.
+            options:
+              - Bai, eta edukiontzira eramango ditut.
+              - Ez, beirazkoa naiz.
+              - Bai, basoan dago.
+          - messages:
+              - June | Zerezkoa da zure poltsa?
+            options:
+              - Paperezkoa. Birzikla daiteke.
+              - Egurrezko gela da.
+              - Ez, ibaian dago.
+        true_false:
+          - passage: Lekeitioko hondartzan kutsadura dago. Itsasoan plastiko asko dago.
+            statement: El mar está limpio.
+            answer: false
+          - passage: Basoan zuhaitz zaharrak daude. Leku oso polita da.
+            statement: En el bosque hay árboles viejos.
+            answer: true
+        meanings:
+          - text: Itsasoa ez da zakarrontzia!
+            options:
+              - ¡El mar no es una papelera!
+              - ¡El mar está en la papelera!
+              - ¡La papelera está en el mar!
+  - type: story
+    title:
+      es: "Historia: la bolsa de Peio"
+      eu: "Istorioa: Peioren poltsa"
+    story:
+      title: Peioren poltsa
+      lines:
+        - Amaia | Kaixo, Peio! Zer daukazu poltsan? = ¡Hola, Peio! ¿Qué tienes en la bolsa?
+        - "Peio | Hondakinak: botilak, papera eta kartoia. = Residuos: botellas, papel y cartón."
+        - Amaia | Eta zakarrontzira zoaz? = ¿Y vas a la papelera?
+        - Peio | Bai, kalean dago. = Sí, está en la calle.
+        - Amaia | Ez, mesedez! Hori birzikla daiteke. = ¡No, por favor! Eso se puede reciclar.
+        - Peio | Bai? Eta non sar daiteke? = ¿Sí? ¿Y dónde se puede echar?
+        - Amaia | Papera eta kartoia, edukiontzi urdinean. = El papel y el cartón, en el contenedor azul.
+        - Peio | Eta botilak? Beirazkoak dira. = ¿Y las botellas? Son de vidrio.
+        - Amaia | Eraman itzazu edukiontzi berdera. Plazan dago. = Llévalas al contenedor verde. Está en la plaza.
+        - Peio | Eskerrik asko, Amaia! Orain noa. = ¡Muchas gracias, Amaia! Voy ahora.
+      questions:
+        - afterLine: 1
+          prompt: ¿Qué lleva Peio en la bolsa?
+          options:
+            - Botellas, papel y cartón
+            - Plástico y madera
+            - Ropa vieja
+        - afterLine: 7
+          prompt: ¿De qué son las botellas?
+          options:
+            - De vidrio
+            - De plástico
+            - De cartón
+        - afterLine: 9
+          prompt: ¿Dónde está el contenedor verde?
+          options:
+            - En la plaza
+            - En la calle de Peio
+            - Al lado de la escuela
+  - type: review
+  - type: legendary

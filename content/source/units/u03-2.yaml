@@ -1,0 +1,451 @@
+# Unit 3.2 · Nolakoa da? — describing people, personal information: NOLAKOA?, NORK + UKAN,
+# numbers 10–100, ZENBAT. Source format: see docs/content-guide.md and u01-1.yaml.
+id: u03-2
+section: s1
+bookUnit: 3
+title:
+  es: ¿Cómo es?
+  eu: Nolakoa da?
+goals:
+  - es: Describir el físico y el carácter de una persona.
+    eu: Pertsona baten itxura eta izaera deskribatu.
+  - es: Pedir y dar datos personales (edad, estado civil, hijos o hermanos).
+    eu: Datu pertsonalak eskatu eta eman (adina, egoera zibila, seme-alabak edo anai-arrebak).
+guidebook:
+  sections:
+    - title:
+        es: "¿Cómo es? Nolakoa da?"
+        eu: "Nolakoa da?"
+      body:
+        es: El adjetivo va detrás del nombre y lleva el artículo -a (plural -ak). Para preguntar cómo es alguien, «Nolakoa da?»; si son varios, «Nolakoak dira?».
+        eu: Adjektiboa izenaren ondoren doa eta -a artikulua hartzen du (pluralean -ak). Galdetzeko, «Nolakoa da?» edo «Nolakoak dira?».
+      examples:
+        - eu: Nolakoa da Ane? Altua eta argala da.
+          es: ¿Cómo es Ane? Es alta y delgada.
+        - eu: Nire lehengusuak gazteak dira.
+          es: Mis primos son jóvenes.
+    - title:
+        es: "Tener: dut, duzu, du"
+        eu: "Ukan: dut, duzu, du"
+      body:
+        es: "Con el verbo «ukan» (tener) el sujeto lleva -k: nik, zuk, hark; Mikelek, amak. Formas: dut, duzu, du, dugu, duzue, dute. Si lo que se tiene es plural, ditut, dituzu, ditu."
+        eu: "Ukan aditzarekin subjektuak -k hartzen du: nik, zuk, hark; Mikelek, amak. Objektua plurala bada, ditut, dituzu, ditu."
+      examples:
+        - eu: Nik anaia bat dut.
+          es: Tengo un hermano.
+        - eu: Mikelek ile motza du.
+          es: Mikel tiene el pelo corto.
+        - eu: Zuk begi handiak dituzu.
+          es: Tienes los ojos grandes.
+    - title:
+        es: Números del 10 al 100
+        eu: Zenbakiak 10etik 100era
+      body:
+        es: El euskera cuenta de veinte en veinte. 30 es «hogeita hamar» (veinte y diez), 45 es «berrogeita bost» (cuarenta y cinco) y 72 es «hirurogeita hamabi» (sesenta y doce). La edad se dice con «urte» y el verbo «ukan».
+        eu: Euskaraz hogeika zenbatzen da. 30 «hogeita hamar» da, 45 «berrogeita bost» eta 72 «hirurogeita hamabi». Adina «urte» eta ukan aditzarekin esaten da.
+      examples:
+        - eu: Hogeita hamar urte ditut.
+          es: Tengo treinta años.
+        - eu: Nire aitonak laurogeita bost urte ditu.
+          es: Mi abuelo tiene ochenta y cinco años.
+    - title:
+        es: Datos personales
+        eu: Datu pertsonalak
+      body:
+        es: Para preguntar la edad, «Zenbat urte dituzu?». Para el estado civil, «Ezkonduta zaude?» (con el verbo «egon») o «Ezkongabea zara?». Para decir que no tienes algo, se añade -(r)ik al nombre, como en «Ez dut umerik».
+        eu: Adina galdetzeko, «Zenbat urte dituzu?». Egoera zibilerako, «Ezkonduta zaude?» edo «Ezkongabea zara?». Ezezkoan -(r)ik erabiltzen da, «Ez dut umerik».
+      examples:
+        - eu: Zenbat urte dituzu?
+          es: ¿Cuántos años tienes?
+        - eu: Ezkonduta nago, eta bi seme ditut.
+          es: Estoy casada y tengo dos hijos.
+        - eu: Ni ezkongabea naiz. Ez dut umerik.
+          es: Soy soltero. No tengo hijos.
+levels:
+  - type: lesson
+    title:
+      es: Personas
+      eu: Pertsonak
+    lessons:
+      - structures: [nolakoa]
+        sentences:
+          - Nolakoa da Mikel? = ¿Cómo es Mikel?
+          - Mikel altua da. = Mikel es alto.
+          - Ane baxua eta argala da. = Ane es baja y delgada.
+          - Nire aitona zaharra da. = Mi abuelo es mayor. | Mi abuelo es viejo.
+          - Itziar gaztea da. = Itziar es joven.
+          - Jon ez da lodia. = Jon no es gordo.
+          - Zure ama altua da? = ¿Tu madre es alta? | ¿Su madre es alta? | ¿Es alta tu madre? | ¿Es alta su madre?
+          - Gure lehengusuak gazteak dira. = Nuestros primos son jóvenes.
+        pairs:
+          - - altua = alto
+            - baxua = bajo
+            - lodia = gordo
+            - argala = delgado
+            - gaztea = joven
+            - zaharra = mayor
+        meanings:
+          - text: Nire amona baxua da.
+            options:
+              - Mi abuela es baja.
+              - Mi abuela es alta.
+              - Mi abuela es mayor.
+        blanks:
+          - text: Iker ez da baxua, ___ da. = Iker no es bajo, es alto.
+            options:
+              - altua
+              - argala
+        chats:
+          - messages:
+              - Leire | Nolakoa da zure neba?
+            options:
+              - Altua eta argala da.
+              - Altua eta argala naiz.
+              - Nire neba da.
+        true_false:
+          - passage: Hau Unai da. Unai altua eta argala da.
+            statement: Unai es bajo.
+            answer: false
+      - structures: [ukan-present, nork]
+        sentences:
+          - Anek ile luzea du. = Ane tiene el pelo largo.
+          - Mikelek ile motza du. = Mikel tiene el pelo corto.
+          - Nik begi handiak ditut. | Begi handiak ditut. = Tengo los ojos grandes. | Yo tengo los ojos grandes.
+          - Zuk ile luzea duzu? | Ile luzea duzu? = ¿Tienes el pelo largo? | ¿Tú tienes el pelo largo? | ¿Tiene usted el pelo largo?
+          - Nire amak begi txikiak ditu. = Mi madre tiene los ojos pequeños.
+          - Jonek begi politak ditu. = Jon tiene los ojos bonitos. | Jon tiene unos ojos bonitos.
+          - Nire aitonak ez du ilerik. = Mi abuelo no tiene pelo.
+          - Ikerrek ile luzea eta polita du. = Iker tiene el pelo largo y bonito.
+        pairs:
+          - - ilea = pelo
+            - begiak = ojos
+            - luzea = largo
+            - motza = corto
+        meanings:
+          - text: Mikelek ile motza du.
+            options:
+              - Mikel tiene el pelo corto.
+              - Mikel tiene el pelo largo.
+              - Mikel es bajo.
+        blanks:
+          - text: Anek ile luzea ___. = Ane tiene el pelo largo.
+            options:
+              - du
+              - da
+        chats:
+          - messages:
+              - Amaia | Zure arrebak ile luzea du?
+            options:
+              - Ez, ile motza du.
+              - Ez, ile motza da.
+              - Bai, altua naiz.
+        true_false:
+          - passage: Nire ahizpa Garazi da. Garazik ile luzea du. Begi handiak ditu.
+            statement: Garazi tiene el pelo corto.
+            answer: false
+      - structures: [nolakoa, marital-status]
+        sentences:
+          - Nire laguna oso alaia da. = Mi amiga es muy alegre. | Mi amigo es muy alegre.
+          - Zure osaba jatorra da. = Tu tío es majo. | Su tío es majo.
+          - Itziarren senarra oso atsegina da. = El marido de Itziar es muy agradable.
+          - Ni ezkongabea naiz. | Ezkongabea naiz. = Soy soltero. | Soy soltera. | Yo soy soltero. | Yo soy soltera.
+          - Mikel ezkonduta dago. = Mikel está casado.
+          - Zu ezkonduta zaude? | Ezkonduta zaude? = ¿Estás casado? | ¿Estás casada? | ¿Tú estás casado? | ¿Tú estás casada? | ¿Está usted casado? | ¿Está usted casada?
+          - Gure irakaslea gaztea eta alaia da. = Nuestra profesora es joven y alegre. | Nuestro profesor es joven y alegre.
+          - Haiek oso jatorrak dira. = Ellos son muy majos. | Ellas son muy majas. | Son muy majos.
+        pairs:
+          - - alaia = alegre
+            - jatorra = majo
+            - atsegina = agradable
+            - ezkongabea = soltero
+            - ezkonduta = casado
+        meanings:
+          - text: Ane ezkongabea da.
+            options:
+              - Ane es soltera.
+              - Ane está casada.
+              - Ane es alegre.
+        blanks:
+          - text: Jon ezkonduta ___. = Jon está casado.
+            options:
+              - dago
+              - da
+        chats:
+          - messages:
+              - Josu | Zure ahizpa ezkonduta dago?
+            options:
+              - Ez, ezkongabea da.
+              - Ez, ezkongabea naiz.
+              - Bai, oso alaia naiz.
+        true_false:
+          - passage: Hau Kepa da. Kepa ez dago ezkonduta. Oso jatorra da.
+            statement: Kepa está casado.
+            answer: false
+  - type: lesson
+    title:
+      es: Tener y cumplir años
+      eu: Ukan eta urteak
+    lessons:
+      - structures: [ukan-present, nork]
+        sentences:
+          - Nik anaia bat dut. | Anaia bat dut. = Tengo un hermano. | Yo tengo un hermano.
+          - Zuk ahizpa bat duzu? | Ahizpa bat duzu? = ¿Tienes una hermana? | ¿Tú tienes una hermana? | ¿Tiene usted una hermana?
+          - Mikelek seme bat du. = Mikel tiene un hijo.
+          - Guk alaba bat dugu. | Alaba bat dugu. = Tenemos una hija. | Nosotros tenemos una hija.
+          - Zuek lehengusu bat duzue? | Lehengusu bat duzue? = ¿Tenéis un primo? | ¿Vosotros tenéis un primo?
+          - Haiek alaba bat dute. | Alaba bat dute. = Ellos tienen una hija. | Tienen una hija.
+          - Nik ez dut anaiarik. | Ez dut anaiarik. = No tengo hermanos. | Yo no tengo hermanos.
+          - Anek bi lehengusu ditu. = Ane tiene dos primos.
+        blanks:
+          - text: Guk alaba bat ___. = Tenemos una hija.
+            options:
+              - dugu
+              - dute
+          - text: ___ seme bat duzu? = ¿Tienes un hijo?
+            options:
+              - Zuk
+              - Zu
+        meanings:
+          - text: Haiek seme bat dute.
+            options:
+              - Ellos tienen un hijo.
+              - Nosotros tenemos un hijo.
+              - Ellos son hijos.
+        chats:
+          - messages:
+              - Uxue | Anaiarik baduzu?
+            options:
+              - Bai, anaia bat dut.
+              - Bai, anaia bat da.
+              - Bai, anaia bat duzu.
+        true_false:
+          - passage: Ni Leire naiz. Hamasei urte ditut. Nik ahizpa bat eta neba bat ditut.
+            statement: Leire no tiene hermanos.
+            answer: false
+      - structures: [nork, ukan-present]
+        sentences:
+          - Aitorrek bi alaba ditu. = Aitor tiene dos hijas.
+          - Nire aitonak lau seme ditu. = Mi abuelo tiene cuatro hijos.
+          - Neskak begi handiak ditu. = La chica tiene los ojos grandes.
+          - Mutilak ile motza du. = El chico tiene el pelo corto.
+          - Irakasleak hiru seme-alaba ditu. = La profesora tiene tres hijos. | El profesor tiene tres hijos.
+          - Nik bi anaia ditut. | Bi anaia ditut. = Tengo dos hermanos. | Yo tengo dos hermanos.
+          - Zuk zenbat lehengusu dituzu? | Zenbat lehengusu dituzu? = ¿Cuántos primos tienes? | ¿Cuántos primos tiene usted?
+          - Mirenek ez du senarrik. = Miren no tiene marido.
+        blanks:
+          - text: Nik bi anaia ___. = Tengo dos hermanos.
+            options:
+              - ditut
+              - dut
+          - text: ___ ile motza du. = El chico tiene el pelo corto.
+            options:
+              - Mutilak
+              - Mutila
+        meanings:
+          - text: Aitorrek bi alaba ditu.
+            options:
+              - Aitor tiene dos hijas.
+              - Aitor tiene una hija.
+              - Aitor tiene dos hermanas.
+        chats:
+          - messages:
+              - Nerea | Zenbat seme-alaba dituzu?
+            options:
+              - Hiru seme-alaba ditut.
+              - Hiru urte ditut.
+              - Hiru seme-alaba dira.
+        true_false:
+          - passage: Hau Peio da. Hamalau urte ditu. Peiok bi anaia ditu.
+            statement: Peio tiene dos hermanos.
+            answer: true
+      - structures: [numbers, zenbat]
+        sentences:
+          - Zenbat urte dituzu? = ¿Cuántos años tienes? | ¿Cuántos años tiene usted?
+          - Hogeita bost urte ditut. = Tengo veinticinco años. | Tengo 25 años.
+          - Nire amak berrogeita hamar urte ditu. = Mi madre tiene cincuenta años. | Mi madre tiene 50 años.
+          - Aitonak laurogeita hamabi urte ditu. = El abuelo tiene noventa y dos años. | El abuelo tiene 92 años.
+          - Jonek hamazazpi urte ditu. = Jon tiene diecisiete años. | Jon tiene 17 años.
+          - Zure aitak hirurogeita hamar urte ditu? = ¿Tu padre tiene setenta años? | ¿Su padre tiene setenta años? | ¿Tu padre tiene 70 años?
+          - Gure irakasleak hogeita hamaika urte ditu. = Nuestra profesora tiene treinta y un años. | Nuestro profesor tiene treinta y un años. | Nuestra profesora tiene 31 años. | Nuestro profesor tiene 31 años.
+          - Amonak ehun urte ditu! = ¡La abuela tiene cien años! | ¡La abuela tiene 100 años!
+        pairs:
+          - - hamahiru = trece
+            - hamalau = catorce
+            - hamasei = dieciséis
+            - hemeretzi = diecinueve
+            - berrogei = cuarenta
+            - hirurogei = sesenta
+        blanks:
+          - text: Zenbat urte ___? = ¿Cuántos años tienes?
+            options:
+              - dituzu
+              - ditut
+        meanings:
+          - text: Berrogeita bost urte ditu.
+            options:
+              - Tiene cuarenta y cinco años.
+              - Tiene veinticinco años.
+              - Tiene cincuenta y cinco años.
+        chats:
+          - messages:
+              - Ibai | Zenbat urte dituzu, Izaro?
+            options:
+              - Hemezortzi urte ditut.
+              - Hemezortzi urte ditu.
+              - Ezkongabea naiz.
+        true_false:
+          - passage: Ni Markel naiz. Hogeita hiru urte ditut. Nire arrebak hemeretzi urte ditu.
+            statement: La hermana de Markel es mayor que él.
+            answer: false
+  - type: lesson
+    title:
+      es: Conversaciones
+      eu: Elkarrizketak
+    lessons:
+      - structures: [nolakoa, ukan-present]
+        sentences:
+          - Nolakoa da zure laguna? = ¿Cómo es tu amigo? | ¿Cómo es tu amiga? | ¿Cómo es su amigo? | ¿Cómo es su amiga?
+          - Oso jatorra da, eta ile luzea du. = Es muy majo y tiene el pelo largo. | Es muy maja y tiene el pelo largo.
+          - Nolakoak dira zure gurasoak? = ¿Cómo son tus padres? | ¿Cómo son sus padres?
+          - Nire aita altua da, eta nire ama baxua. = Mi padre es alto y mi madre baja. | Mi padre es alto y mi madre es baja.
+          - Biak oso alaiak dira. = Los dos son muy alegres. | Ambos son muy alegres.
+          - Zure irakaslea atsegina da? = ¿Tu profesora es agradable? | ¿Tu profesor es agradable? | ¿Es agradable tu profesora? | ¿Es agradable tu profesor?
+        chats:
+          - messages:
+              - Gorka | Nolakoa da Ane?
+              - Oier | Gaztea eta altua da.
+              - Gorka | Eta ilea?
+            options:
+              - Ile motza du.
+              - Ile motza da.
+              - Ile motza ditu.
+          - messages:
+              - Haizea | Zure neba jatorra da?
+            options:
+              - Bai, oso jatorra da.
+              - Bai, oso jatorra naiz.
+              - Bai, hogei urte du.
+        true_false:
+          - passage: Hau Amaia da. Amaia baxua eta argala da. Ile luzea du.
+            statement: Amaia es alta.
+            answer: false
+          - passage: Gure aitona oso alaia da. Laurogeita hamaika urte ditu.
+            statement: El abuelo tiene noventa y un años.
+            answer: true
+        meanings:
+          - text: Nolakoa da zure izeba?
+            options:
+              - ¿Cómo es tu tía?
+              - ¿Dónde vive tu tía?
+              - ¿Cuántos años tiene tu tía?
+      - structures: [personal-info, zenbat]
+        sentences:
+          - Zein da zure izena? = ¿Cuál es tu nombre? | ¿Cómo te llamas? | ¿Cuál es su nombre? | ¿Cómo se llama usted?
+          - Eta zenbat urte dituzu? = ¿Y cuántos años tienes? | ¿Y cuántos años tiene usted?
+          - Hogeita hemezortzi urte ditut. = Tengo treinta y ocho años. | Tengo 38 años.
+          - Ezkonduta nago, eta bi seme ditut. = Estoy casado y tengo dos hijos. | Estoy casada y tengo dos hijos.
+          - Seme-alabak dituzu? = ¿Tienes hijos? | ¿Tiene usted hijos?
+          - Ez, nik ez dut umerik. | Ez, ez dut umerik. = No, no tengo hijos. | No, yo no tengo hijos.
+        chats:
+          - messages:
+              - Miren | Zein da zure abizena?
+              - Alaitz | Zubiri.
+              - Miren | Eta zenbat urte dituzu?
+            options:
+              - Hogeita lau urte ditut.
+              - Hogeita lau urte du.
+              - Zubiri naiz.
+          - messages:
+              - Kepa | Ezkonduta zaude?
+            options:
+              - Ez, ezkongabea naiz.
+              - Ez, ezkongabea zara.
+              - Ez, ezkonduta nago.
+        true_false:
+          - passage: Ni Edurne naiz. Berrogeita hiru urte ditut. Ezkonduta nago.
+            statement: Edurne tiene cuarenta y tres años.
+            answer: true
+          - passage: Josuk hirurogeita hamabost urte ditu. Ezkongabea da.
+            statement: Josu está casado.
+            answer: false
+        blanks:
+          - text: Seme-alabak ___? = ¿Tienes hijos?
+            options:
+              - dituzu
+              - duzu
+      - structures: [nolakoa, nork]
+        sentences:
+          - Nire lehengusua Asier da. = Mi primo es Asier. | Mi primo se llama Asier.
+          - Asierrek hogeita bi urte ditu. = Asier tiene veintidós años. | Asier tiene 22 años.
+          - Altua eta argala da. = Es alto y delgado.
+          - Ile motza du. = Tiene el pelo corto.
+          - Oso alaia eta atsegina da. = Es muy alegre y agradable.
+          - Asier ezkongabea da? = ¿Asier es soltero? | ¿Es soltero Asier?
+        chats:
+          - messages:
+              - Olatz | Zure lehengusuak seme-alabak ditu?
+            options:
+              - Bai, alaba bat du.
+              - Bai, alaba bat da.
+              - Bai, alaba bat ditut.
+          - messages:
+              - Peio | Zure ama gaztea da?
+              - Ander | Bai, berrogeita bat urte ditu.
+              - Peio | Eta zure aita?
+            options:
+              - Berrogeita zortzi urte ditu.
+              - Berrogeita zortzi urte da.
+              - Nire aita naiz.
+        true_false:
+          - passage: Nahiaren amonak laurogeita hamar urte ditu. Oso alaia da.
+            statement: La abuela de Nahia tiene setenta años.
+            answer: false
+          - passage: Ibaik hamahiru urte ditu. Ile luzea du. Altua eta lodia da.
+            statement: Ibai tiene el pelo largo.
+            answer: true
+        meanings:
+          - text: Zuk zenbat anaia dituzu?
+            options:
+              - ¿Cuántos hermanos tienes?
+              - ¿Cuántos años tienes?
+              - ¿Cómo es tu hermano?
+  - type: story
+    title:
+      es: "Historia: en la estación"
+      eu: "Istorioa: geltokian"
+    story:
+      title: Geltokian
+      lines:
+        - Irati | Kaixo, Nerea! Zer moduz? = ¡Hola, Nerea! ¿Qué tal?
+        - Nerea | Ondo! Nire lehengusua, Julen, Bilbon dago. = ¡Bien! Mi primo, Julen, está en Bilbao.
+        - Irati | Nolakoa da Julen? = ¿Cómo es Julen?
+        - Nerea | Altua eta argala da. Ile luzea du. = Es alto y delgado. Tiene el pelo largo.
+        - Irati | Zenbat urte ditu? = ¿Cuántos años tiene?
+        - Nerea | Hogeita zazpi urte ditu. = Tiene veintisiete años.
+        - Irati | Ezkonduta dago? = ¿Está casado?
+        - Nerea | Ez, ezkongabea da. Oso jatorra eta alaia da! = No, está soltero. ¡Es muy majo y alegre!
+        - Irati | Hura da? Hor, geltokiaren aurrean? = ¿Es aquel? ¿Ahí, delante de la estación?
+        - Nerea | Ez, hark ile motza du. Julen han dago! = No, aquel tiene el pelo corto. ¡Julen está allí!
+        - Julen | Kaixo, Nerea! Kaixo! Ni Julen naiz. = ¡Hola, Nerea! ¡Hola! Soy Julen.
+        - Irati | Kaixo, Julen! Ni Irati naiz, Nerearen laguna. = ¡Hola, Julen! Soy Irati, la amiga de Nerea.
+      questions:
+        - afterLine: 3
+          prompt: ¿Cómo es Julen?
+          options:
+            - Alto y delgado
+            - Bajo y delgado
+            - Alto y gordo
+        - afterLine: 7
+          prompt: ¿Está casado Julen?
+          options:
+            - No, está soltero
+            - Sí, está casado
+            - No lo dice
+        - afterLine: 11
+          prompt: ¿Por qué el chico de delante de la estación no es Julen?
+          options:
+            - Porque tiene el pelo corto
+            - Porque es bajo
+            - Porque es mayor
+  - type: review
+  - type: legendary

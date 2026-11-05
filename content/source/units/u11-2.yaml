@@ -1,0 +1,454 @@
+# Unit 11.2 · Lan bila — fitting a job (languages, training, experience), past work experience,
+# indirect questions with EA …-(E)N, NORENGANDIK, -T(Z)EN with ikasi/irakatsi.
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u11-2
+section: s4
+bookUnit: 11
+title:
+  es: Buscando trabajo
+  eu: Lan bila
+goals:
+  - es: Valorar si una persona encaja en un trabajo (formación, idiomas, experiencia).
+    eu: Pertsona bat lan baterako egokia den baloratu (prestakuntza, hizkuntzak, esperientzia).
+  - es: Hablar de la experiencia laboral.
+    eu: Lan-esperientziaz hitz egin.
+  - es: Contar lo que te han preguntado o dicho.
+    eu: Zer galdetu edo esan dizuten kontatu.
+guidebook:
+  sections:
+    - title:
+        es: "Preguntas indirectas: ea … -n"
+        eu: "Zeharkako galderak: ea … -n"
+      body:
+        es: Para contar una pregunta de sí o no, se usa «ea» y el verbo lleva «-n» al final (dakidan, duen, dagoen). Con «non», «nor» o «zein» no hace falta «ea».
+        eu: Bai ala ez galdera bat kontatzeko, «ea» erabiltzen da, eta aditzak «-n» hartzen du (dakidan, duen, dagoen). «Non», «nor» edo «zein» galderekin ez da «ea» behar.
+      examples:
+        - eu: Nagusiak galdetu dit ea ingelesa dakidan.
+          es: El jefe me ha preguntado si sé inglés.
+        - eu: Ez dakit non dagoen bulegoa.
+          es: No sé dónde está la oficina.
+    - title:
+        es: "Dar, decir, enviar: dit, diot"
+        eu: "Eman, esan, bidali: dit, diot"
+      body:
+        es: Verbos como «eman», «esan», «ekarri», «erakutsi», «bidali», «galdetu» o «erantzun» suelen tener a alguien que recibe (-ri), así que llevan el auxiliar dit, diot, dizu…
+        eu: «Eman», «esan», «ekarri», «erakutsi», «bidali», «galdetu» eta «erantzun» aditzek nori osagaia izaten dute, eta dit, diot, dizu… laguntzailea hartzen dute.
+      examples:
+        - eu: Zer esan dizu Mikelek?
+          es: ¿Qué te ha dicho Mikel?
+        - eu: Nire helbidea bidali dizut.
+          es: Te he enviado mi dirección.
+    - title:
+        es: "De quién: -gandik"
+        eu: "Norengandik: -gandik"
+      body:
+        es: "Con personas, «de quién» se dice con «-gandik»: niregandik (de mí), zuregandik (de ti), amarengandik (de mi madre). Con lugares se usa «-tik»."
+        eu: Pertsonekin «-gandik» erabiltzen da (niregandik, zuregandik, amarengandik). Lekuekin, berriz, «-tik».
+      examples:
+        - eu: Zuregandik asko ikasi dut.
+          es: He aprendido mucho de ti.
+        - eu: Ingelesa amarengandik ikasi dut.
+          es: He aprendido inglés de mi madre.
+    - title:
+        es: "Aprender y enseñar a hacer algo"
+        eu: "Zerbait egiten ikasi eta irakatsi"
+      body:
+        es: Igual que con «jakin», con «ikasi» (aprender) e «irakatsi» (enseñar) el otro verbo va en -t(z)en. «Irakatsi» suele llevar a quién se enseña (dit, dizu…).
+        eu: «Jakin» aditzarekin bezala, «ikasi» eta «irakatsi» aditzekin beste aditza -t(z)en forman doa. «Irakatsi» aditzak nori osagaia izaten du.
+      examples:
+        - eu: Gidatzen ikasi dut.
+          es: He aprendido a conducir.
+        - eu: Aitak igeri egiten irakatsi dit.
+          es: Mi padre me ha enseñado a nadar.
+levels:
+  - type: lesson
+    title:
+      es: Idiomas y habilidades
+      eu: Hizkuntzak eta trebetasunak
+    lessons:
+      - structures: [hizkuntzak, jakin-present]
+        sentences:
+          - Zenbat hizkuntza dakizu? = ¿Cuántos idiomas sabes? | ¿Cuántos idiomas sabe usted? | ¿Cuántos idiomas hablas?
+          - Hiru hizkuntza dakit. = Sé tres idiomas. | Hablo tres idiomas. | Yo sé tres idiomas.
+          - Ingelesa badakizu? = ¿Sabes inglés? | ¿Sabe usted inglés? | ¿Hablas inglés?
+          - Bai, ingelesa ondo dakit. = Sí, sé bien inglés. | Sí, sé inglés bien. | Sí, hablo bien inglés.
+          - Gidabaimena daukazu? = ¿Tienes carné de conducir? | ¿Tiene usted carné de conducir? | ¿Tienes el carné de conducir?  # TODO(revisión-nativa): gidabaimen vs gidatzeko baimena (see syllabus)
+          - Ez, ez daukat gidabaimenik. = No, no tengo carné de conducir. | No, no tengo carné.
+          - Ordenagailua erabiltzen badakit. = Sé usar el ordenador. | Yo sé usar el ordenador.
+          - Lantegian ordenagailu berriak dauzkagu. = En la fábrica tenemos ordenadores nuevos. | Tenemos ordenadores nuevos en la fábrica.
+        pairs:
+          - - hizkuntza = idioma
+            - ingeles = inglés
+            - ordenagailu = ordenador
+            - gidabaimen = carné de conducir
+            - esperientzia = experiencia
+            - jakin = saber
+        meanings:
+          - text: Ez daukat gidabaimenik.
+            options:
+              - No tengo carné de conducir.
+              - No sé conducir.
+              - No tengo ordenador.
+        blanks:
+          - text: Hiru hizkuntza ___. = Sé tres idiomas.
+            options:
+              - dakit
+              - dakizu
+              - dakite
+        chats:
+          - messages:
+              - Ander | Ingelesa badakizu?
+            options:
+              - Bai, ondo dakit.
+              - Bai, ondo dakizu.
+              - Ez, ez daukat.
+        true_false:
+          - passage: Haizea idazkaria da. Bi hizkuntza daki. Gidabaimena dauka.
+            statement: Haizea no tiene carné de conducir.
+            answer: false
+      - structures: [nor-nori-nork]
+        sentences:
+          - Nagusiak kontratua eman dit. = El jefe me ha dado el contrato. | La jefa me ha dado el contrato.
+          - Zer esan dizu Mikelek? = ¿Qué te ha dicho Mikel? | ¿Qué le ha dicho Mikel?
+          - Lankideak kafe bat ekarri dit. = Mi compañero me ha traído un café. | El compañero me ha traído un café. | Mi compañera me ha traído un café.
+          - Idazkariak bulegoa erakutsi dit. = La secretaria me ha enseñado la oficina. | El secretario me ha enseñado la oficina. | La secretaria me ha mostrado la oficina.
+          - Nire helbidea bidali dizut. = Te he enviado mi dirección. | Te he mandado mi dirección. | Le he enviado mi dirección.
+          - Zuk zer eman diozu Aneri? = ¿Qué le has dado a Ane? | ¿Qué le ha dado usted a Ane? | ¿Tú qué le has dado a Ane?
+          - Guk ordenagailu bat bidali diogu. = Le hemos enviado un ordenador. | Le hemos mandado un ordenador.
+          - Ogia ekarri didazu? = ¿Me has traído el pan? | ¿Me ha traído usted el pan?
+        pairs:
+          - - eman = dar
+            - esan = decir
+            - ekarri = traer
+            - erakutsi = enseñar (mostrar)
+            - bidali = enviar
+        meanings:
+          - text: Zer esan dizu Mikelek?
+            options:
+              - ¿Qué te ha dicho Mikel?
+              - ¿Qué le has dicho a Mikel?
+              - ¿Qué te ha dado Mikel?
+        blanks:
+          - text: Lankideak kafe bat ekarri ___. = Mi compañero me ha traído un café.
+            options:
+              - dit
+              - diot
+              - dizut
+        chats:
+          - messages:
+              - Nahia | Ogia ekarri didazu?
+            options:
+              - Bai, hemen dago.
+              - Bai, ekarri dit.
+              - Ez dakit gidatzen.
+        true_false:
+          - passage: Gaur lan berri bat daukat. Idazkariak bulegoa erakutsi dit.
+            statement: La secretaria le ha enseñado la oficina.
+            answer: true
+      - structures: [nor-nori-nork, esperientzia]
+        sentences:
+          - Nagusiari galdetu diot. = Le he preguntado al jefe. | Le he preguntado a la jefa. | He preguntado al jefe.
+          - Enpresak ez dit erantzun. = La empresa no me ha respondido. | La empresa no me ha contestado.
+          - Esperientzia daukazu? = ¿Tienes experiencia? | ¿Tiene usted experiencia?
+          - Bai, bost urteko esperientzia daukat. = Sí, tengo cinco años de experiencia. | Sí, tengo una experiencia de cinco años.
+          - Amak ingelesa irakatsi dit. = Mi madre me ha enseñado inglés. | Mi madre me enseñó inglés.
+          - Gaur libre nago. = Hoy estoy libre. | Estoy libre hoy.
+          - Bihar libre zaude? = ¿Mañana estás libre? | ¿Estás libre mañana? | ¿Está usted libre mañana?
+          - Zergatik ez didazu erantzun? = ¿Por qué no me has respondido? | ¿Por qué no me has contestado? | ¿Por qué no me ha respondido usted?
+        pairs:
+          - - galdetu = preguntar
+            - erantzun = responder
+            - irakatsi = enseñar (instruir)
+            - esperientzia = experiencia
+            - libre = libre
+        meanings:
+          - text: Bost urteko esperientzia daukat.
+            options:
+              - Tengo cinco años de experiencia.
+              - Tengo cinco años.
+              - Trabajo cinco horas.
+        blanks:
+          - text: Esperientzia ___? = ¿Tienes experiencia?
+            options:
+              - daukazu
+              - daukat
+              - dauka
+        chats:
+          - messages:
+              - Irati | Bihar libre zaude?
+            options:
+              - Bai, libre nago.
+              - Bai, libre zaude.
+              - Ingelesa dakit.
+        true_false:
+          - passage: Nagusiari galdetu diot. Ez dit erantzun.
+            statement: El jefe ha respondido.
+            answer: false
+  - type: lesson
+    title:
+      es: Me ha preguntado si…
+      eu: Galdetu dit ea…
+    lessons:
+      - structures: [ea-indirect]
+        sentences:
+          - Nagusiak galdetu dit ea ingelesa dakidan. = El jefe me ha preguntado si sé inglés. | La jefa me ha preguntado si sé inglés.
+          - Galdetu diot ea gidabaimena duen. = Le he preguntado si tiene carné de conducir. | Le he preguntado si tiene el carné de conducir.
+          - Ez dakit non dagoen bulegoa. = No sé dónde está la oficina. | Yo no sé dónde está la oficina.
+          - Badakizu nor den nagusia? = ¿Sabes quién es el jefe? | ¿Sabes quién es la jefa? | ¿Sabe usted quién es el jefe?
+          - Galdetu dit ea esperientzia dudan. = Me ha preguntado si tengo experiencia.
+          - Ez dakigu zein den ordutegia. = No sabemos cuál es el horario.
+          - Anek galdetu dizu ea ordenagailua duzun. = Ane te ha preguntado si tienes ordenador. | Ane le ha preguntado si tiene ordenador.
+          - Ez dakit ea Jonek ingelesa dakien. = No sé si Jon sabe inglés.
+        meanings:
+          - text: Galdetu diot ea gidabaimena duen.
+            options:
+              - Le he preguntado si tiene carné de conducir.
+              - Me ha preguntado si tengo carné de conducir.
+              - Le he dicho que tengo carné de conducir.
+        blanks:
+          - text: Galdetu dit ea ingelesa ___. = Me ha preguntado si sé inglés.
+            options:
+              - dakidan
+              - dakit
+              - dakizun
+          - text: Ez dakit non ___ bulegoa. = No sé dónde está la oficina.
+            options:
+              - dagoen
+              - dago
+              - duen
+        chats:
+          - messages:
+              - Gorka | Zer galdetu dizu nagusiak?
+            options:
+              - Ea ingelesa dakidan.
+              - Ea ingelesa dakizu.
+              - Bai, galdetu diot.
+        true_false:
+          - passage: Nagusiak galdetu dit ea gidatzen dakidan. Badakit!
+            statement: La persona que habla sabe conducir.
+            answer: true
+      - structures: [norengandik]
+        sentences:
+          - Zuregandik asko ikasi dut. = He aprendido mucho de ti. | He aprendido mucho de usted. | Aprendo mucho de ti.
+          - Ingelesa amarengandik ikasi dut. = He aprendido inglés de mi madre. | Aprendí inglés de mi madre.
+          - Nire lana aitarengandik ikasi dut. = He aprendido mi trabajo de mi padre. | Aprendí mi oficio de mi padre.
+          - Harengandik asko ikasi dugu. = Hemos aprendido mucho de él. | Hemos aprendido mucho de ella.
+          - Ikasleek irakaslearengandik ikasi dute. = Los alumnos han aprendido del profesor. | Los alumnos han aprendido de la profesora. | Los estudiantes han aprendido del profesor.
+          - Ordenagailua erabiltzen lankidearengandik ikasi dut. = He aprendido a usar el ordenador de un compañero. | He aprendido a usar el ordenador de mi compañero. | Aprendí a usar el ordenador de una compañera.
+          - Umeek gugandik ikasi dute. = Los niños han aprendido de nosotros. | Los niños han aprendido de nosotras.
+          - Niregandik ikasi duzu? = ¿Has aprendido de mí? | ¿Lo has aprendido de mí? | ¿Ha aprendido usted de mí?
+        meanings:
+          - text: Zuregandik asko ikasi dut.
+            options:
+              - He aprendido mucho de ti.
+              - Te he enseñado mucho.
+              - Has aprendido mucho de mí.
+        blanks:
+          - text: Ingelesa ___ ikasi dut. = He aprendido inglés de mi madre.
+            options:
+              - amarengandik
+              - amari
+              - amarekin
+        pairs:
+          - - niregandik = de mí
+            - zuregandik = de ti
+            - harengandik = de él
+            - gugandik = de nosotros
+            - haiengandik = de ellos
+        chats:
+          - messages:
+              - Leire | Nork irakatsi dizu ingelesa?
+            options:
+              - Nire amak.
+              - Nire amari.
+              - Ingelesa dakit.
+        true_false:
+          - passage: Peio gidaria da. Lana aitarengandik ikasi du.
+            statement: Peio aprendió su trabajo de su madre.
+            answer: false
+      - structures: [ikasi-tzen]
+        sentences:
+          - Aitak igeri egiten irakatsi dit. = Mi padre me ha enseñado a nadar. | Mi padre me enseñó a nadar.
+          - Unaik ordenagailua erabiltzen ikasi du. = Unai ha aprendido a usar el ordenador.
+          - Ingelesa ikasten ari naiz. = Estoy aprendiendo inglés. | Estoy estudiando inglés.
+          - Nire amak ingelesa irakasten du. = Mi madre enseña inglés. | Mi madre da clases de inglés.
+          - Umeek irakurtzen ikasi dute. = Los niños han aprendido a leer.
+          - Nork irakatsi dizu gidatzen? = ¿Quién te ha enseñado a conducir? | ¿Quién te enseñó a conducir? | ¿Quién le ha enseñado a conducir?
+          - Zuk irakatsi didazu janaria prestatzen. = Tú me has enseñado a cocinar. | Tú me has enseñado a preparar la comida. | Usted me ha enseñado a cocinar.
+          - Mikelek gidatzen ikasi du. = Mikel ha aprendido a conducir.
+        meanings:
+          - text: Ingelesa ikasten ari naiz.
+            options:
+              - Estoy aprendiendo inglés.
+              - Enseño inglés.
+              - He aprendido inglés.
+        blanks:
+          - text: Gidatzen ___ dut. = He aprendido a conducir.
+            options:
+              - ikasi
+              - irakatsi
+              - erantzun
+        chats:
+          - messages:
+              - Aitor | Badakizu gidatzen?
+            options:
+              - Bai, aitak irakatsi dit.
+              - Bai, aitari irakatsi diot.
+              - Ez, gidaria da.
+        true_false:
+          - passage: Nire izena Olatz da. Amak janaria prestatzen irakatsi dit.
+            statement: La madre de Olatz le ha enseñado a cocinar.
+            answer: true
+  - type: lesson
+    title:
+      es: La entrevista
+      eu: Lan elkarrizketa
+    lessons:
+      - structures: [hizkuntzak, jakin-tzen]
+        sentences:
+          - Egun on! Iragarkiagatik nator. = ¡Buenos días! Vengo por el anuncio.
+          - Zer hizkuntza dakizu? = ¿Qué idiomas sabes? | ¿Qué idiomas sabe usted? | ¿Qué idiomas hablas?
+          - Ingelesa dakit, eta ordenagailua erabiltzen badakit. = Sé inglés y sé usar el ordenador. | Hablo inglés y sé usar el ordenador.
+          - Eta gidabaimena? = ¿Y el carné de conducir?
+          - Bai, gidabaimena daukat. = Sí, tengo carné de conducir. | Sí, tengo el carné de conducir.
+          - Zure esperientzia ona da guretzat. = Tu experiencia es buena para nosotros. | Su experiencia es buena para nosotros.
+        chats:
+          - messages:
+              - Aitor | Egun on! Iragarkiagatik nator.
+            options:
+              - Egun on! Eseri, mesedez.
+              - Ez horregatik.
+              - Bai, ingelesa dakit.
+          - messages:
+              - Amaia | Zer hizkuntza dakizu?
+              - Xabier | Ingelesa dakit.
+              - Amaia | Eta ordenagailua erabiltzen badakizu?
+            options:
+              - Bai, oso ondo.
+              - Bai, gidabaimena daukat.
+              - Ez, ez dakizu.
+        true_false:
+          - passage: Idazkari bat behar dugu. Ingelesa jakin behar du. Ordenagailua erabiltzen jakin behar du.
+            statement: La secretaria tiene que saber inglés.
+            answer: true
+          - passage: Ni Ibai naiz. Ez dakit ingelesa. Gidabaimena daukat.
+            statement: Ibai sabe inglés.
+            answer: false
+        meanings:
+          - text: Iragarkiagatik nator.
+            options:
+              - Vengo por el anuncio.
+              - Vengo de la oficina.
+              - He leído el contrato.
+      - structures: [esperientzia]
+        sentences:
+          - Non egin duzu lan? = ¿Dónde has trabajado? | ¿Dónde ha trabajado usted?
+          - Bost urtez lan egin dut Bilbon. = He trabajado cinco años en Bilbao. | He trabajado durante cinco años en Bilbao.
+          - Idazkaria izan naiz enpresa handi batean. = He sido secretaria en una empresa grande. | He sido secretario en una empresa grande.
+          - Bi urtez gidaria izan naiz. = He sido conductor durante dos años. | He sido conductora durante dos años. | He sido conductor dos años.
+          - Han ingelesa ikasi dut. = Allí he aprendido inglés. | Allí aprendí inglés.
+          - Esperientzia asko daukazu! = ¡Tienes mucha experiencia! | ¡Tiene usted mucha experiencia!
+        chats:
+          - messages:
+              - Garazi | Esperientzia daukazu?
+            options:
+              - Bai, hiru urtez sukaldaria izan naiz.
+              - Bai, hiru hizkuntza dakit.
+              - Ez, libre nago.
+          - messages:
+              - Josu | Non egin duzu lan?
+              - Uxue | Lantegi batean, Eibarren.
+              - Josu | Zenbat urtez?
+            options:
+              - Lau urtez.
+              - Lau hizkuntza.
+              - Lau euro.
+        true_false:
+          - passage: Ni Markel naiz. Sei urtez erizaina izan naiz Donostiako ospitalean.
+            statement: Markel ha trabajado en un hospital.
+            answer: true
+          - passage: Izarok ez dauka esperientziarik. Ikaslea da.
+            statement: Izaro tiene mucha experiencia.
+            answer: false
+        blanks:
+          - text: Bost ___ lan egin dut Bilbon. = He trabajado cinco años en Bilbao.
+            options:
+              - urtez
+              - urteko
+              - urtera
+      - structures: [nor-nori-nork, ea-indirect]
+        sentences:
+          - Zer galdetu dizu nagusiak? = ¿Qué te ha preguntado el jefe? | ¿Qué te ha preguntado la jefa?
+          - Galdetu dit ea gidatzen dakidan. = Me ha preguntado si sé conducir.
+          - Eta zer erantzun diozu? = ¿Y qué le has contestado? | ¿Y qué le has respondido?
+          - Ez dakidala erantzun diot. = Le he respondido que no sé. | Le he contestado que no sé.
+          - Enpresak kontratua bidali dizu? = ¿La empresa te ha enviado el contrato? | ¿La empresa le ha enviado el contrato?
+          - Bai! Nagusiak gaur bidali dit. = ¡Sí! El jefe me lo ha enviado hoy. | ¡Sí! La jefa me lo ha enviado hoy.
+        chats:
+          - messages:
+              - Edurne | Nagusiak kontratua bidali dizu?
+            options:
+              - Bai, gaur bidali dit.
+              - Bai, gaur bidali diot.
+              - Bai, gidabaimena daukat.
+          - messages:
+              - Oier | Galdetu dizu ea ingelesa dakizun?
+              - Nerea | Bai, galdetu dit.
+              - Oier | Eta zer erantzun diozu?
+            options:
+              - Ingelesa ondo dakidala.
+              - Ez dakit gidatzen.
+              - Bai, galdetu dit.
+        true_false:
+          - passage: Nagusiak galdetu dit ea esperientzia dudan. Bai, esan diot.
+            statement: La persona que habla no tiene experiencia.
+            answer: false
+          - passage: Enpresak kontratua bidali dit. Bihar lan berria daukat!
+            statement: La persona ha recibido el contrato.
+            answer: true
+        meanings:
+          - text: Ez dakidala erantzun diot.
+            options:
+              - Le he respondido que no sé.
+              - Me ha respondido que no sabe.
+              - Le he preguntado si sabe.
+  - type: story
+    title:
+      es: "Historia: la entrevista"
+      eu: "Istorioa: lan elkarrizketa"
+    story:
+      title: Gidari bila
+      lines:
+        - Leire | Egun on, Julen. Eseri, mesedez. = Buenos días, Julen. Siéntate, por favor.
+        - Julen | Eskerrik asko. Iragarkia irakurri dut. = Gracias. He leído el anuncio.
+        - Leire | Gidari bat behar dugu. Gidabaimena daukazu? = Necesitamos un conductor. ¿Tienes carné de conducir?
+        - Julen | Bai. Aitak gidatzen irakatsi dit. = Sí. Mi padre me ha enseñado a conducir.
+        - Leire | Esperientzia daukazu? = ¿Tienes experiencia?
+        - Julen | Bai, hiru urtez autobus gidaria izan naiz Donostian. = Sí, he sido conductor de autobús tres años en Donostia.
+        - Leire | Primeran. Eta ingelesa badakizu? = Estupendo. ¿Y sabes inglés?
+        - Julen | Ez oso ondo. Orain ikasten ari naiz. = No muy bien. Ahora lo estoy aprendiendo.
+        - Leire | Ondo. Gure bezero asko turistak dira. = Bien. Muchos de nuestros clientes son turistas.
+        - Julen | Ados. Ordenagailua erabiltzen badakit. = De acuerdo. Sé usar el ordenador.
+        - Leire | Oso ondo. Bihar kontratua bidaliko dizut. = Muy bien. Mañana te enviaré el contrato.
+        - Julen | Eskerrik asko! Agur! = ¡Muchas gracias! ¡Adiós!
+      questions:
+        - afterLine: 3
+          prompt: ¿Quién enseñó a conducir a Julen?
+          options:
+            - Su padre
+            - Su madre
+            - Leire
+        - afterLine: 7
+          prompt: ¿Qué tal sabe Julen inglés?
+          options:
+            - No muy bien, lo está aprendiendo
+            - Muy bien
+            - No sabe nada y no quiere aprender
+        - afterLine: 11
+          prompt: ¿Qué enviará Leire a Julen?
+          options:
+            - El contrato
+            - Un anuncio
+            - Un ordenador
+  - type: review
+  - type: legendary

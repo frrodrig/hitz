@@ -1,0 +1,2785 @@
+{
+  "schemaVersion": 1,
+  "id": "u07-1",
+  "section": "s3",
+  "bookUnit": 7,
+  "title": {
+    "es": "¿Qué has hecho?",
+    "eu": "Zer egin duzu?"
+  },
+  "goals": [
+    {
+      "es": "Contar lo que has hecho hoy y estos días.",
+      "eu": "Gaur eta egun hauetan egin duzuna kontatu."
+    },
+    {
+      "es": "Preguntar a otra persona qué ha hecho, adónde ha ido y de dónde viene.",
+      "eu": "Besteari galdetu zer egin duen, nora joan den eta nondik datorren."
+    },
+    {
+      "es": "Situar las acciones en el tiempo con los días de la semana y expresiones como «atzo» o «duela bi aste».",
+      "eu": "Ekintzak denboran kokatu asteko egunekin eta «atzo» edo «duela bi aste» bezalako esapideekin."
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Ir, venir, nacer: joan naiz",
+          "eu": "Joan, etorri, jaio: joan naiz"
+        },
+        "body": {
+          "es": "Para contar lo que ha pasado se usa el participio (joan, etorri, jaio) seguido de naiz, zara, da, gara, zarete o dira cuando el verbo no tiene objeto. El participio va delante del auxiliar.",
+          "eu": "Gertatutakoa kontatzeko partizipioa (joan, etorri, jaio) eta naiz, zara, da, gara, zarete edo dira erabiltzen dira, aditzak objekturik ez duenean. Partizipioa laguntzailearen aurretik doa."
+        },
+        "examples": [
+          {
+            "eu": "Gaur Bilbora joan naiz.",
+            "es": "Hoy he ido a Bilbao."
+          },
+          {
+            "eu": "Ane Donostian jaio da.",
+            "es": "Ane nació en San Sebastián."
+          },
+          {
+            "eu": "Ni ez naiz joan.",
+            "es": "Yo no he ido."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Ver, comprar, comer: ikusi dut",
+          "eu": "Ikusi, erosi, bazkaldu: ikusi dut"
+        },
+        "body": {
+          "es": "Los verbos con objeto (ver, comprar, comer, cenar…) usan dut, duzu, du, dugu, duzue o dute. El sujeto lleva -k (nik, zuk, Anek). Con objeto plural se dice ditut.",
+          "eu": "Objektua duten aditzek (ikusi, erosi, bazkaldu, afaldu…) dut, duzu, du, dugu, duzue edo dute erabiltzen dute. Subjektuak -k darama (nik, zuk, Anek). Objektua plurala bada, ditut."
+        },
+        "examples": [
+          {
+            "eu": "Nik Mikel ikusi dut.",
+            "es": "He visto a Mikel."
+          },
+          {
+            "eu": "Zuk zer erosi duzu?",
+            "es": "¿Qué has comprado?"
+          },
+          {
+            "eu": "Lagunak ikusi ditut.",
+            "es": "He visto a mis amigos."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "¿Cuándo?",
+          "eu": "Noiz?"
+        },
+        "body": {
+          "es": "«Gaur» es hoy, «atzo» ayer, «herenegun» anteayer e «iaz» el año pasado. Los días de la semana y las partes del día llevan -(e)an (astelehenean, goizean) y «duela» va delante de la cantidad (duela bi aste).",
+          "eu": "«Gaur», «atzo», «herenegun» eta «iaz» denbora adierazten dute. Asteko egunek eta eguneko uneek -(e)an hartzen dute (astelehenean, goizean), eta «duela» kopuruaren aurretik doa (duela bi aste)."
+        },
+        "examples": [
+          {
+            "eu": "Atzo gauean etxean afaldu dut.",
+            "es": "Anoche cené en casa."
+          },
+          {
+            "eu": "Duela bi aste Parisera joan naiz.",
+            "es": "Hace dos semanas fui a París."
+          },
+          {
+            "eu": "Joan den larunbatean mendira joan gara.",
+            "es": "El sábado pasado fuimos al monte."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Adónde, de dónde y a qué: -ra, -tik, -tzera",
+          "eu": "Nora, nondik eta zertara: -ra, -tik, -tzera"
+        },
+        "body": {
+          "es": "«Nora?» pide el destino (Bilbora, etxera) y «Nondik?» el origen (Bilbotik, etxetik). Para decir a qué vas, el verbo lleva -tzera o -tera (erostera, ikustera), y se pregunta con «Zertara?».",
+          "eu": "«Nora?» helmuga da (Bilbora, etxera) eta «Nondik?» jatorria (Bilbotik, etxetik). Zertara zoazen esateko, aditzak -tzera edo -tera hartzen du (erostera, ikustera), eta «Zertara?» galdetzen da."
+        },
+        "examples": [
+          {
+            "eu": "Nondik etorri zara? Donostiatik.",
+            "es": "¿De dónde has venido? De San Sebastián."
+          },
+          {
+            "eu": "Zertara joan zara? Arropa erostera.",
+            "es": "¿A qué has ido? A comprar ropa."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u07-1.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Ayer y hoy",
+        "eu": "Atzo eta gaur"
+      },
+      "lessons": [
+        {
+          "id": "u07-1.l1.s1",
+          "exercises": [
+            {
+              "id": "u07-1.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Esta mañana he tomado un café."
+              },
+              "answers": [
+                "Gaur goizean kafe bat hartu dut."
+              ],
+              "distractors": [
+                "etxean",
+                "egin",
+                "Atzo",
+                "afaldu"
+              ],
+              "vocabulary": [
+                "gaur",
+                "goiz",
+                "kafe",
+                "bat",
+                "hartu",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e02",
+              "type": "listen_tap",
+              "text": "Atzo Jonek etxean afaldu du.",
+              "distractors": [
+                "Gaur",
+                "egin",
+                "kafe"
+              ],
+              "vocabulary": [
+                "atzo",
+                "etxe",
+                "afaldu",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "atzo",
+                  "es": "ayer"
+                },
+                {
+                  "eu": "gaur",
+                  "es": "hoy"
+                },
+                {
+                  "eu": "herenegun",
+                  "es": "anteayer"
+                },
+                {
+                  "eu": "gaur goizean",
+                  "es": "esta mañana"
+                },
+                {
+                  "eu": "atzo gauean",
+                  "es": "anoche"
+                }
+              ],
+              "vocabulary": [
+                "atzo",
+                "gaur",
+                "herenegun",
+                "goiz",
+                "gau"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Hoy hemos comido en el restaurante."
+              },
+              "answers": [
+                "Gaur jatetxean bazkaldu dugu."
+              ],
+              "vocabulary": [
+                "gaur",
+                "jatetxe",
+                "bazkaldu",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Gaur kafe bat hartu ___.",
+              "options": [
+                "dut",
+                "naiz"
+              ],
+              "correct": 0,
+              "translation": "Hoy he tomado un café.",
+              "vocabulary": [
+                "gaur",
+                "kafe",
+                "bat",
+                "hartu",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e06",
+              "type": "order_sentence",
+              "answer": "Herenegun lagunekin afaldu dut.",
+              "translation": "Anteayer cené con mis amigos.",
+              "vocabulary": [
+                "herenegun",
+                "lagun",
+                "afaldu",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e07",
+              "type": "choose_meaning",
+              "text": "Herenegun Mikel ikusi dut.",
+              "options": [
+                "Anteayer vi a Mikel.",
+                "Ayer vi a Mikel.",
+                "Hoy he visto a Mikel."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "herenegun",
+                "ikusi",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaur arratsaldean Mikel ikusi dut."
+              },
+              "answers": [
+                "Esta tarde he visto a Mikel.",
+                "Hoy por la tarde he visto a Mikel.",
+                "Esta tarde vi a Mikel."
+              ],
+              "vocabulary": [
+                "gaur",
+                "arratsalde",
+                "ikusi",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Zer egin duzu gaur?"
+                }
+              ],
+              "options": [
+                "Jatetxean bazkaldu dut.",
+                "Jatetxean bazkaldu naiz.",
+                "Bihar arte."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "ukan",
+                "gaur",
+                "jatetxe",
+                "bazkaldu"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e10",
+              "type": "listen_type",
+              "text": "Atzo gauean ez dut afaldu.",
+              "answers": [
+                "Atzo gauean ez dut afaldu."
+              ],
+              "vocabulary": [
+                "atzo",
+                "gau",
+                "ez",
+                "ukan",
+                "afaldu"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e11",
+              "type": "read_true_false",
+              "passage": "Gaur goizean kafe bat hartu dut. Gero ogia erosi dut.",
+              "statement": "Ha comprado pan.",
+              "answer": true,
+              "vocabulary": [
+                "gaur",
+                "goiz",
+                "kafe",
+                "bat",
+                "hartu",
+                "ukan",
+                "gero",
+                "ogi",
+                "erosi"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e12",
+              "type": "speak",
+              "text": "Zer egin duzu gaur?",
+              "translation": "¿Qué has hecho hoy?",
+              "vocabulary": [
+                "zer",
+                "ukan",
+                "gaur"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaur goizean ogia erosi dut."
+              },
+              "answers": [
+                "Esta mañana he comprado pan.",
+                "Hoy por la mañana he comprado pan.",
+                "Esta mañana compré pan."
+              ],
+              "distractors": [
+                "hemos",
+                "comido",
+                "tomado"
+              ],
+              "vocabulary": [
+                "gaur",
+                "goiz",
+                "ogi",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-1.l1.s2",
+          "exercises": [
+            {
+              "id": "u07-1.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Astelehenean Bilbon lan egin dut.",
+              "distractors": [
+                "deitu",
+                "Leirerekin",
+                "etxean"
+              ],
+              "vocabulary": [
+                "lan egin",
+                "astelehen",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "El martes estudié en la biblioteca."
+              },
+              "answers": [
+                "Asteartean liburutegian ikasi dut."
+              ],
+              "vocabulary": [
+                "astearte",
+                "liburutegi",
+                "ikasi",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "astelehena",
+                  "es": "lunes"
+                },
+                {
+                  "eu": "asteartea",
+                  "es": "martes"
+                },
+                {
+                  "eu": "asteazkena",
+                  "es": "miércoles"
+                },
+                {
+                  "eu": "osteguna",
+                  "es": "jueves"
+                },
+                {
+                  "eu": "ostirala",
+                  "es": "viernes"
+                },
+                {
+                  "eu": "igandea",
+                  "es": "domingo"
+                }
+              ],
+              "vocabulary": [
+                "astelehen",
+                "astearte",
+                "asteazken",
+                "ostegun",
+                "ostiral",
+                "igande"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e04",
+              "type": "order_sentence",
+              "answer": "Asteazkenean amari deitu diot.",
+              "translation": "El miércoles llamé a mi madre.",
+              "vocabulary": [
+                "asteazken",
+                "ama",
+                "deitu",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Joan den ___ lagunak ikusi ditut.",
+              "options": [
+                "astean",
+                "atzo"
+              ],
+              "correct": 0,
+              "translation": "La semana pasada vi a mis amigos.",
+              "vocabulary": [
+                "joan den",
+                "aste",
+                "lagun",
+                "ikusi",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ostegunean lagunak ikusi ditut."
+              },
+              "answers": [
+                "El jueves vi a mis amigos.",
+                "El jueves he visto a mis amigos.",
+                "El jueves vi a mis amigas."
+              ],
+              "vocabulary": [
+                "ostegun",
+                "lagun",
+                "ikusi",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e07",
+              "type": "choose_meaning",
+              "text": "Igandean Gasteizen bazkaldu dut.",
+              "options": [
+                "El domingo comí en Vitoria.",
+                "El sábado comí en Vitoria.",
+                "El domingo cené en Vitoria."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "igande",
+                "bazkaldu",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e08",
+              "type": "listen_type",
+              "text": "Ostiralean Leirerekin afaldu dut.",
+              "answers": [
+                "Ostiralean Leirerekin afaldu dut."
+              ],
+              "vocabulary": [
+                "ostiral",
+                "afaldu",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Unai",
+                  "text": "Zer egin duzu larunbatean?"
+                }
+              ],
+              "options": [
+                "Lagunekin bazkaldu dut.",
+                "Lagunekin bazkaldu naiz.",
+                "Larunbata da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "ukan",
+                "larunbat",
+                "lagun",
+                "bazkaldu"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e10",
+              "type": "speak",
+              "text": "Larunbatean telefonoa galdu dut.",
+              "translation": "El sábado perdí el teléfono.",
+              "vocabulary": [
+                "larunbat",
+                "telefono",
+                "galdu",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e11",
+              "type": "read_true_false",
+              "passage": "Joan den astean Parisen lan egin dut. Ostiralean etxera etorri naiz.",
+              "statement": "El viernes volvió a casa.",
+              "answer": true,
+              "vocabulary": [
+                "joan den",
+                "lan egin",
+                "aste",
+                "ukan",
+                "ostiral",
+                "etxe",
+                "izan"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Igandean etxean irakurri dut."
+              },
+              "answers": [
+                "El domingo leí en casa.",
+                "El domingo he leído en casa."
+              ],
+              "distractors": [
+                "biblioteca",
+                "Bilbao",
+                "martes"
+              ],
+              "vocabulary": [
+                "igande",
+                "etxe",
+                "irakurri",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La semana pasada comimos en San Sebastián."
+              },
+              "answers": [
+                "Joan den astean Donostian bazkaldu dugu."
+              ],
+              "distractors": [
+                "Astelehenean",
+                "ikasi",
+                "Igandean",
+                "Asteazkenean"
+              ],
+              "vocabulary": [
+                "joan den",
+                "aste",
+                "bazkaldu",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "time-markers"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-1.l1.s3",
+          "exercises": [
+            {
+              "id": "u07-1.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Nací en Vitoria."
+              },
+              "answers": [
+                "Ni Gasteizen jaio naiz."
+              ],
+              "vocabulary": [
+                "ni",
+                "jaio",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e02",
+              "type": "order_sentence",
+              "answer": "Nire alaba iaz jaio da.",
+              "translation": "Mi hija nació el año pasado.",
+              "vocabulary": [
+                "ni",
+                "alaba",
+                "iaz",
+                "jaio",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "jaio",
+                  "es": "nacer"
+                },
+                {
+                  "eu": "bidaiatu",
+                  "es": "viajar"
+                },
+                {
+                  "eu": "idatzi",
+                  "es": "escribir"
+                },
+                {
+                  "eu": "entzun",
+                  "es": "escuchar"
+                },
+                {
+                  "eu": "iaz",
+                  "es": "el año pasado"
+                },
+                {
+                  "eu": "hilabete",
+                  "es": "mes"
+                }
+              ],
+              "vocabulary": [
+                "jaio",
+                "bidaiatu",
+                "idatzi",
+                "entzun",
+                "iaz",
+                "hilabete"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Iaz Frantziara bidaiatu dugu."
+              },
+              "answers": [
+                "El año pasado viajamos a Francia."
+              ],
+              "vocabulary": [
+                "iaz",
+                "bidaiatu",
+                "ukan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Ni Bilbon jaio ___.",
+              "options": [
+                "naiz",
+                "dut"
+              ],
+              "correct": 0,
+              "translation": "Nací en Bilbao.",
+              "vocabulary": [
+                "ni",
+                "jaio",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e06",
+              "type": "listen_type",
+              "text": "Duela hilabete bat Londresera joan naiz.",
+              "answers": [
+                "Duela hilabete bat Londresera joan naiz."
+              ],
+              "vocabulary": [
+                "duela",
+                "hilabete",
+                "bat",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e07",
+              "type": "fill_blank",
+              "sentence": "___ bi aste Parisera joan naiz.",
+              "options": [
+                "Duela",
+                "Iaz"
+              ],
+              "correct": 0,
+              "translation": "Hace dos semanas fui a París.",
+              "vocabulary": [
+                "duela",
+                "bi",
+                "aste",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e08",
+              "type": "speak",
+              "text": "Duela bi aste Mikeli idatzi diot.",
+              "translation": "Hace dos semanas le escribí a Mikel.",
+              "vocabulary": [
+                "duela",
+                "bi",
+                "aste",
+                "idatzi",
+                "ukan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e09",
+              "type": "choose_meaning",
+              "text": "Duela hiru hilabete Eibarrera joan gara.",
+              "options": [
+                "Hace tres meses fuimos a Eibar.",
+                "Hace tres semanas fuimos a Eibar.",
+                "Dentro de tres meses iremos a Eibar."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "duela",
+                "hiru",
+                "hilabete",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Barkatu, ez dut entzun."
+              },
+              "answers": [
+                "Perdona, no lo he oído.",
+                "Perdona, no he oído.",
+                "Perdone, no lo he oído."
+              ],
+              "distractors": [
+                "pasado",
+                "viajamos",
+                "fui"
+              ],
+              "vocabulary": [
+                "barkatu",
+                "ez",
+                "ukan",
+                "entzun"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e11",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Garazi",
+                  "text": "Non jaio zara?"
+                }
+              ],
+              "options": [
+                "Donostian jaio naiz.",
+                "Donostian jaio dut.",
+                "Donostiara joan naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "non",
+                "jaio",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Dónde naciste?"
+              },
+              "answers": [
+                "Zu non jaio zara?",
+                "Non jaio zara zu?"
+              ],
+              "distractors": [
+                "Barkatu",
+                "ezkondu",
+                "diot"
+              ],
+              "vocabulary": [
+                "zu",
+                "non",
+                "jaio",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e13",
+              "type": "read_true_false",
+              "passage": "Ni Iruñean jaio naiz. Iaz Gasteizera etorri naiz.",
+              "statement": "Nació en Pamplona.",
+              "answer": true,
+              "vocabulary": [
+                "ni",
+                "jaio",
+                "izan",
+                "iaz"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e14",
+              "type": "listen_tap",
+              "text": "Iaz Itziar eta Unai ezkondu dira.",
+              "distractors": [
+                "jaio",
+                "Mikeli",
+                "non",
+                "entzun"
+              ],
+              "vocabulary": [
+                "iaz",
+                "eta",
+                "ezkondu",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u07-1.l2",
+      "type": "lesson",
+      "title": {
+        "es": "¿Adónde has ido?",
+        "eu": "Nora joan zara?"
+      },
+      "lessons": [
+        {
+          "id": "u07-1.l2.s1",
+          "exercises": [
+            {
+              "id": "u07-1.l2.s1.e01",
+              "type": "order_sentence",
+              "answer": "Gaur goizean mendira joan naiz.",
+              "translation": "Esta mañana he ido al monte.",
+              "vocabulary": [
+                "gaur",
+                "goiz",
+                "mendi",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Atzo Ane hondartzara joan da."
+              },
+              "answers": [
+                "Ayer Ane fue a la playa."
+              ],
+              "vocabulary": [
+                "atzo",
+                "hondartza",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e03",
+              "type": "fill_blank",
+              "sentence": "Gu atzo parkera joan ___.",
+              "options": [
+                "gara",
+                "dugu"
+              ],
+              "correct": 0,
+              "translation": "Ayer fuimos al parque.",
+              "vocabulary": [
+                "gu",
+                "atzo",
+                "parke",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e04",
+              "type": "listen_type",
+              "text": "Herenegun Bilbora joan gara.",
+              "answers": [
+                "Herenegun Bilbora joan gara."
+              ],
+              "vocabulary": [
+                "herenegun",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Haiek Bilbora joan ___.",
+              "options": [
+                "dira",
+                "dute"
+              ],
+              "correct": 0,
+              "translation": "Ellos han ido a Bilbao.",
+              "vocabulary": [
+                "haiek",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e06",
+              "type": "speak",
+              "text": "Zuek nora joan zarete?",
+              "translation": "¿Adónde habéis ido?",
+              "vocabulary": [
+                "zuek",
+                "nor",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e07",
+              "type": "choose_meaning",
+              "text": "Jon ez da etorri.",
+              "options": [
+                "Jon no ha venido.",
+                "Jon no ha ido.",
+                "Jon ha venido."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gurasoak Gasteizera joan dira."
+              },
+              "answers": [
+                "Mis padres han ido a Vitoria.",
+                "Mis padres fueron a Vitoria.",
+                "Mis padres han ido a Gasteiz."
+              ],
+              "distractors": [
+                "casa",
+                "Nerea",
+                "Ane",
+                "Mikel"
+              ],
+              "vocabulary": [
+                "guraso",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Olatz",
+                  "text": "Atzo nora joan zara?"
+                }
+              ],
+              "options": [
+                "Hondartzara joan naiz.",
+                "Hondartzara joan dut.",
+                "Hondartzan bazkaldu naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "atzo",
+                "nor",
+                "izan",
+                "hondartza"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Yo no he ido."
+              },
+              "answers": [
+                "Ni ez naiz joan."
+              ],
+              "distractors": [
+                "Herenegun",
+                "Gasteizera",
+                "nora"
+              ],
+              "vocabulary": [
+                "ni",
+                "ez",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e11",
+              "type": "read_true_false",
+              "passage": "Gaur Mikel ez da etorri. Etxean dago.",
+              "statement": "Mikel está en casa.",
+              "answer": true,
+              "vocabulary": [
+                "gaur",
+                "ez",
+                "izan",
+                "etxe",
+                "egon"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e12",
+              "type": "listen_tap",
+              "text": "Mikel eta Nerea etxera etorri dira.",
+              "distractors": [
+                "da",
+                "hondartzara",
+                "zarete",
+                "Atzo"
+              ],
+              "vocabulary": [
+                "eta",
+                "etxe",
+                "izan"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s1.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Adónde has ido hoy?"
+              },
+              "answers": [
+                "Zu nora joan zara gaur?",
+                "Gaur nora joan zara?"
+              ],
+              "vocabulary": [
+                "zu",
+                "nor",
+                "izan",
+                "gaur"
+              ],
+              "structures": [
+                "nor-perfective"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-1.l2.s2",
+          "exercises": [
+            {
+              "id": "u07-1.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nik kafe bat hartu dut."
+              },
+              "answers": [
+                "Yo he tomado un café.",
+                "He tomado un café.",
+                "Tomé un café."
+              ],
+              "vocabulary": [
+                "ni",
+                "kafe",
+                "bat",
+                "hartu",
+                "ukan"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e02",
+              "type": "listen_type",
+              "text": "Zuk zer erosi duzu?",
+              "answers": [
+                "Zuk zer erosi duzu?"
+              ],
+              "vocabulary": [
+                "zu",
+                "zer",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Nik ogia erosi ___.",
+              "options": [
+                "dut",
+                "naiz"
+              ],
+              "correct": 0,
+              "translation": "He comprado pan.",
+              "vocabulary": [
+                "ni",
+                "ogi",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e04",
+              "type": "speak",
+              "text": "Anek liburutegian idatzi du.",
+              "translation": "Ane ha escrito en la biblioteca.",
+              "vocabulary": [
+                "liburutegi",
+                "idatzi",
+                "ukan"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Guk Leire ikusi ___.",
+              "options": [
+                "dugu",
+                "gara"
+              ],
+              "correct": 0,
+              "translation": "Hemos visto a Leire.",
+              "vocabulary": [
+                "gu",
+                "ikusi",
+                "ukan"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Guk jatetxean afaldu dugu."
+              },
+              "answers": [
+                "Hemos cenado en el restaurante.",
+                "Nosotros hemos cenado en el restaurante.",
+                "Cenamos en el restaurante."
+              ],
+              "distractors": [
+                "amigos",
+                "Yo",
+                "mis"
+              ],
+              "vocabulary": [
+                "gu",
+                "jatetxe",
+                "afaldu",
+                "ukan"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e07",
+              "type": "choose_meaning",
+              "text": "Ez dut telefonoa galdu.",
+              "options": [
+                "No he perdido el teléfono.",
+                "He perdido el teléfono.",
+                "No has perdido el teléfono."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "telefono",
+                "galdu"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Han perdido la tarjeta."
+              },
+              "answers": [
+                "Haiek txartela galdu dute."
+              ],
+              "distractors": [
+                "Anek",
+                "liburutegian",
+                "ez"
+              ],
+              "vocabulary": [
+                "haiek",
+                "txartel",
+                "galdu",
+                "ukan"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Josu",
+                  "text": "Zuk zer hartu duzu?"
+                }
+              ],
+              "options": [
+                "Nik te bat hartu dut.",
+                "Nik te bat hartu naiz.",
+                "Zuk te bat hartu duzu."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zu",
+                "zer",
+                "hartu",
+                "ukan",
+                "ni",
+                "te",
+                "bat"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e10",
+              "type": "listen_tap",
+              "text": "Zuek Mikel ikusi duzue?",
+              "distractors": [
+                "du",
+                "erosi",
+                "Haiek"
+              ],
+              "vocabulary": [
+                "zuek",
+                "ikusi",
+                "ukan"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e11",
+              "type": "read_true_false",
+              "passage": "Gaur Ane eta Mikelek etxean afaldu dute. Gero parkera joan dira.",
+              "statement": "Ane y Mikel han cenado en un restaurante.",
+              "answer": false,
+              "vocabulary": [
+                "gaur",
+                "eta",
+                "etxe",
+                "afaldu",
+                "ukan",
+                "gero",
+                "parke",
+                "izan"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "He visto a mis amigos."
+              },
+              "answers": [
+                "Lagunak ikusi ditut."
+              ],
+              "vocabulary": [
+                "lagun",
+                "ikusi",
+                "ukan"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s2.e13",
+              "type": "order_sentence",
+              "answer": "Iker eta Iratik ez dute bazkaldu.",
+              "translation": "Iker e Irati no han comido.",
+              "vocabulary": [
+                "eta",
+                "ez",
+                "ukan",
+                "bazkaldu"
+              ],
+              "structures": [
+                "nork-perfective"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-1.l2.s3",
+          "exercises": [
+            {
+              "id": "u07-1.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Nondik etorri zara?",
+              "answers": [
+                "Nondik etorri zara?"
+              ],
+              "vocabulary": [
+                "non",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e02",
+              "type": "speak",
+              "text": "Donostiatik etorri naiz.",
+              "translation": "He venido de San Sebastián.",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "nora",
+                  "es": "adónde"
+                },
+                {
+                  "eu": "nondik",
+                  "es": "de dónde"
+                },
+                {
+                  "eu": "Bilbora",
+                  "es": "a Bilbao"
+                },
+                {
+                  "eu": "Bilbotik",
+                  "es": "de Bilbao"
+                },
+                {
+                  "eu": "etxera",
+                  "es": "a casa"
+                },
+                {
+                  "eu": "etxetik",
+                  "es": "de casa"
+                }
+              ],
+              "vocabulary": [
+                "nor",
+                "non",
+                "etxe"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ama ospitaletik etorri da."
+              },
+              "answers": [
+                "Mi madre ha venido del hospital.",
+                "Mi madre vino del hospital."
+              ],
+              "distractors": [
+                "qué",
+                "al",
+                "Has",
+                "ropa"
+              ],
+              "vocabulary": [
+                "ama",
+                "ospitale",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e05",
+              "type": "fill_blank",
+              "sentence": "___ etorri zara?",
+              "options": [
+                "Nondik",
+                "Nora"
+              ],
+              "correct": 0,
+              "translation": "¿De dónde has venido?",
+              "vocabulary": [
+                "non",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿A qué has ido a Bilbao?"
+              },
+              "answers": [
+                "Zertara joan zara Bilbora?"
+              ],
+              "distractors": [
+                "erostera",
+                "bazkaltzera",
+                "gara"
+              ],
+              "vocabulary": [
+                "zer",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e07",
+              "type": "fill_blank",
+              "sentence": "Gasteizera ogia ___ joan naiz.",
+              "options": [
+                "erostera",
+                "erosi"
+              ],
+              "correct": 0,
+              "translation": "He ido a Vitoria a comprar pan.",
+              "vocabulary": [
+                "ogi",
+                "erosi",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e08",
+              "type": "listen_tap",
+              "text": "Arropa erostera joan naiz.",
+              "distractors": [
+                "Bilbora",
+                "dira",
+                "Jatetxera"
+              ],
+              "vocabulary": [
+                "arropa",
+                "erosi",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e09",
+              "type": "choose_meaning",
+              "text": "Etxetik etorri naiz.",
+              "options": [
+                "He venido de casa.",
+                "He ido a casa.",
+                "Estoy en casa."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "etxe",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Hemos ido a ver a los amigos."
+              },
+              "answers": [
+                "Lagunak ikustera joan gara."
+              ],
+              "vocabulary": [
+                "lagun",
+                "ikusi",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e11",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Peio",
+                  "text": "Zertara joan zara Donostiara?"
+                }
+              ],
+              "options": [
+                "Lagunak ikustera.",
+                "Lagunak ikusi.",
+                "Donostiatik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "izan",
+                "lagun",
+                "ikusi"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e12",
+              "type": "order_sentence",
+              "answer": "Jatetxera bazkaltzera joan dira.",
+              "translation": "Han ido a comer al restaurante.",
+              "vocabulary": [
+                "jatetxe",
+                "bazkaldu",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e13",
+              "type": "read_true_false",
+              "passage": "Gaur goizean Madriletik etorri naiz. Arratsaldean amari deitu diot.",
+              "statement": "Esta mañana ha venido de Madrid.",
+              "answer": true,
+              "vocabulary": [
+                "gaur",
+                "goiz",
+                "izan",
+                "arratsalde",
+                "ama",
+                "deitu",
+                "ukan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l2.s3.e14",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Liburutegira ikastera joan zara?"
+              },
+              "answers": [
+                "¿Has ido a estudiar a la biblioteca?",
+                "¿Has ido a la biblioteca a estudiar?",
+                "¿Fuiste a estudiar a la biblioteca?",
+                "¿Ha ido usted a estudiar a la biblioteca?"
+              ],
+              "vocabulary": [
+                "liburutegi",
+                "ikasi",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u07-1.l3",
+      "type": "lesson",
+      "title": {
+        "es": "¿Qué hay de nuevo?",
+        "eu": "Zer berri?"
+      },
+      "lessons": [
+        {
+          "id": "u07-1.l3.s1",
+          "exercises": [
+            {
+              "id": "u07-1.l3.s1.e01",
+              "type": "speak",
+              "text": "Kaixo, Nahia! Zer egin duzu gaur?",
+              "translation": "¡Hola, Nahia! ¿Qué has hecho hoy?",
+              "vocabulary": [
+                "kaixo",
+                "zer",
+                "ukan",
+                "gaur"
+              ],
+              "structures": [
+                "time-markers",
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Goizean eskolara joan naiz."
+              },
+              "answers": [
+                "Por la mañana he ido a la escuela.",
+                "Por la mañana fui a la escuela."
+              ],
+              "distractors": [
+                "Hoy",
+                "Qué",
+                "amigos",
+                "cenado"
+              ],
+              "vocabulary": [
+                "goiz",
+                "eskola",
+                "izan"
+              ],
+              "structures": [
+                "time-markers",
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Zer berri?",
+              "options": [
+                "¿Qué hay de nuevo?",
+                "¿Qué has comprado?",
+                "¿Quién es?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "berri"
+              ],
+              "structures": [
+                "time-markers",
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Por la tarde he estudiado en la biblioteca."
+              },
+              "answers": [
+                "Arratsaldean liburutegian ikasi dut."
+              ],
+              "distractors": [
+                "Gauean",
+                "egin",
+                "lagunekin"
+              ],
+              "vocabulary": [
+                "arratsalde",
+                "liburutegi",
+                "ikasi",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s1.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nahia",
+                  "text": "Kaixo, Ander! Zer egin duzu gaur?"
+                },
+                {
+                  "speaker": "Ander",
+                  "text": "Goizean hondartzara joan naiz."
+                },
+                {
+                  "speaker": "Nahia",
+                  "text": "Eta arratsaldean?"
+                }
+              ],
+              "options": [
+                "Etxean irakurri dut.",
+                "Etxean irakurri naiz.",
+                "Bihar arte."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "zer",
+                "ukan",
+                "gaur",
+                "goiz",
+                "hondartza",
+                "izan",
+                "eta",
+                "arratsalde",
+                "etxe",
+                "irakurri"
+              ],
+              "structures": [
+                "time-markers",
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Eta zuk? Zer egin duzu?",
+              "distractors": [
+                "eskolara",
+                "gaur",
+                "afaldu"
+              ],
+              "vocabulary": [
+                "eta",
+                "zu",
+                "zer",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s1.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ander",
+                  "text": "Zer egin duzu atzo?"
+                }
+              ],
+              "options": [
+                "Mendira joan naiz.",
+                "Mendira joan dut.",
+                "Mendira joan zara."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "ukan",
+                "atzo",
+                "mendi",
+                "izan"
+              ],
+              "structures": [
+                "time-markers",
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Hoy no he trabajado."
+              },
+              "answers": [
+                "Nik gaur ez dut lan egin.",
+                "Gaur ez dut lan egin."
+              ],
+              "vocabulary": [
+                "lan egin",
+                "ni",
+                "gaur",
+                "ez",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s1.e09",
+              "type": "read_true_false",
+              "passage": "Gaur ez dut lan egin. Amarekin bazkaldu dut.",
+              "statement": "Hoy ha trabajado.",
+              "answer": false,
+              "vocabulary": [
+                "lan egin",
+                "gaur",
+                "ez",
+                "ukan",
+                "ama",
+                "bazkaldu"
+              ],
+              "structures": [
+                "time-markers",
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s1.e10",
+              "type": "order_sentence",
+              "answer": "Gauean lagunekin afaldu dut.",
+              "translation": "Por la noche he cenado con mis amigos.",
+              "vocabulary": [
+                "gau",
+                "lagun",
+                "afaldu",
+                "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nor-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s1.e11",
+              "type": "read_true_false",
+              "passage": "Atzo Irati eta Asier Getxora joan dira. Hondartzan egon dira.",
+              "statement": "Irati y Asier estuvieron en la playa.",
+              "answer": true,
+              "vocabulary": [
+                "atzo",
+                "eta",
+                "izan",
+                "hondartza",
+                "egon"
+              ],
+              "structures": [
+                "time-markers",
+                "nor-perfective"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-1.l3.s2",
+          "exercises": [
+            {
+              "id": "u07-1.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Joan den astean Parisera joan naiz."
+              },
+              "answers": [
+                "La semana pasada fui a París."
+              ],
+              "distractors": [
+                "playa",
+                "De",
+                "Hace",
+                "venido"
+              ],
+              "vocabulary": [
+                "joan den",
+                "aste",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿A qué fuiste a París?"
+              },
+              "answers": [
+                "Zertara joan zara Parisera?"
+              ],
+              "distractors": [
+                "Lagun",
+                "Nondik",
+                "ikustera"
+              ],
+              "vocabulary": [
+                "zer",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Gaur ___ etorri naiz.",
+              "options": [
+                "Iruntik",
+                "Irunera"
+              ],
+              "correct": 0,
+              "translation": "Hoy he venido de Irun.",
+              "vocabulary": [
+                "gaur",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s2.e04",
+              "type": "listen_tap",
+              "text": "Lagun bat ikustera.",
+              "distractors": [
+                "zarete",
+                "etorri"
+              ],
+              "vocabulary": [
+                "lagun",
+                "bat",
+                "ikusi"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s2.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Edurne",
+                  "text": "Nondik etorri zara, Kepa?"
+                },
+                {
+                  "speaker": "Kepa",
+                  "text": "Bilbotik. Lagunak ikustera joan naiz."
+                },
+                {
+                  "speaker": "Edurne",
+                  "text": "Eta zer moduz?"
+                }
+              ],
+              "options": [
+                "Oso ondo, eskerrik asko.",
+                "Bilbon jaio naiz.",
+                "Ez horregatik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "non",
+                "izan",
+                "lagun",
+                "ikusi",
+                "zer moduz",
+                "eta",
+                "eskerrik asko",
+                "oso",
+                "ondo"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿De dónde habéis venido?"
+              },
+              "answers": [
+                "Nondik etorri zarete?"
+              ],
+              "vocabulary": [
+                "non",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Kepa",
+                  "text": "Zertara joan zara herrira?"
+                }
+              ],
+              "options": [
+                "Ama ikustera.",
+                "Ama ikusi naiz.",
+                "Herritik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "izan",
+                "herri",
+                "ama",
+                "ikusi"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s2.e08",
+              "type": "order_sentence",
+              "answer": "Hondartzatik etorri gara.",
+              "translation": "Hemos venido de la playa.",
+              "vocabulary": [
+                "hondartza",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s2.e09",
+              "type": "read_true_false",
+              "passage": "Joan den larunbatean Durangora joan gara. Arropa erostera joan gara.",
+              "statement": "Fueron a Durango a comprar comida.",
+              "answer": false,
+              "vocabulary": [
+                "joan den",
+                "larunbat",
+                "izan",
+                "arropa",
+                "erosi"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s2.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Duela bi aste Londresen egon naiz."
+              },
+              "answers": [
+                "Hace dos semanas estuve en Londres."
+              ],
+              "vocabulary": [
+                "duela",
+                "bi",
+                "aste",
+                "egon",
+                "izan"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s2.e11",
+              "type": "read_true_false",
+              "passage": "Herenegun Gorka Madriletik etorri da. Gaur Gasteizen dago.",
+              "statement": "Gorka llegó de Madrid anteayer.",
+              "answer": true,
+              "vocabulary": [
+                "herenegun",
+                "izan",
+                "gaur",
+                "egon"
+              ],
+              "structures": [
+                "nora-nondik",
+                "tzera-purpose"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-1.l3.s3",
+          "exercises": [
+            {
+              "id": "u07-1.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué has hecho esta semana?"
+              },
+              "answers": [
+                "Zer egin duzu aste honetan?",
+                "Aste honetan zer egin duzu?"
+              ],
+              "distractors": [
+                "naiz",
+                "ospitalera",
+                "afaldu"
+              ],
+              "vocabulary": [
+                "zer",
+                "ukan",
+                "aste",
+                "hau"
+              ],
+              "structures": [
+                "weekdays",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Astelehenean eta asteartean lan egin dut.",
+              "distractors": [
+                "Igandean",
+                "batean",
+                "joan",
+                "Mireni"
+              ],
+              "vocabulary": [
+                "lan egin",
+                "astelehen",
+                "eta",
+                "astearte",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Aste honetan ez naiz Bilbora joan.",
+              "options": [
+                "Esta semana no he ido a Bilbao.",
+                "Esta semana he ido a Bilbao.",
+                "La semana pasada no fui a Bilbao."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "aste",
+                "hau",
+                "ez",
+                "izan"
+              ],
+              "structures": [
+                "weekdays",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "El miércoles le escribí a Miren."
+              },
+              "answers": [
+                "Asteazkenean Mireni idatzi diot."
+              ],
+              "vocabulary": [
+                "asteazken",
+                "idatzi",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Miren",
+                  "text": "Zer egin duzu larunbatean?"
+                },
+                {
+                  "speaker": "Josu",
+                  "text": "Mendira joan naiz."
+                },
+                {
+                  "speaker": "Miren",
+                  "text": "Norekin?"
+                }
+              ],
+              "options": [
+                "Lagunekin.",
+                "Lagunak.",
+                "Larunbatean."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "ukan",
+                "larunbat",
+                "mendi",
+                "izan",
+                "norekin",
+                "lagun"
+              ],
+              "structures": [
+                "weekdays",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Ostegunean ospitalera joan naiz.",
+              "translation": "El jueves fui al hospital.",
+              "vocabulary": [
+                "ostegun",
+                "ospitale",
+                "izan"
+              ],
+              "structures": [
+                "weekdays",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Josu",
+                  "text": "Eta zuk? Igandean zer egin duzu?"
+                }
+              ],
+              "options": [
+                "Etxean irakurri dut.",
+                "Etxean irakurri naiz.",
+                "Igandea da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "eta",
+                "zu",
+                "igande",
+                "zer",
+                "ukan",
+                "etxe",
+                "irakurri"
+              ],
+              "structures": [
+                "weekdays",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ostiralean taberna batean afaldu dugu."
+              },
+              "answers": [
+                "El viernes cenamos en un bar.",
+                "El viernes hemos cenado en un bar."
+              ],
+              "vocabulary": [
+                "ostiral",
+                "taberna",
+                "bat",
+                "afaldu",
+                "ukan"
+              ],
+              "structures": [
+                "weekdays",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s3.e09",
+              "type": "read_true_false",
+              "passage": "Astelehenean Bergaran lan egin dut. Asteartean Oñatira joan naiz.",
+              "statement": "El martes fue a Oñati.",
+              "answer": true,
+              "vocabulary": [
+                "lan egin",
+                "astelehen",
+                "ukan",
+                "astearte",
+                "izan"
+              ],
+              "structures": [
+                "weekdays",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s3.e10",
+              "type": "listen_type",
+              "text": "Igandean hondartzara joan gara.",
+              "answers": [
+                "Igandean hondartzara joan gara."
+              ],
+              "vocabulary": [
+                "igande",
+                "hondartza",
+                "izan"
+              ],
+              "structures": [
+                "weekdays",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l3.s3.e11",
+              "type": "read_true_false",
+              "passage": "Larunbatean txartela galdu dut. Igandean eskudiruarekin ordaindu dut.",
+              "statement": "El domingo pagó con tarjeta.",
+              "answer": false,
+              "vocabulary": [
+                "larunbat",
+                "txartel",
+                "galdu",
+                "ukan",
+                "igande",
+                "eskudiru",
+                "ordaindu"
+              ],
+              "structures": [
+                "weekdays",
+                "nork-perfective"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u07-1.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: el teléfono perdido",
+        "eu": "Istorioa: telefono galdua"
+      },
+      "story": {
+        "id": "u07-1.l4.story",
+        "title": "Non dago telefonoa?",
+        "lines": [
+          {
+            "speaker": "Ane",
+            "eu": "Kaixo, Iker! Zer moduz?",
+            "es": "¡Hola, Iker! ¿Qué tal?"
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Ez oso ondo. Telefonoa galdu dut!",
+            "es": "No muy bien. ¡He perdido el teléfono!"
+          },
+          {
+            "speaker": "Ane",
+            "eu": "Nola? Non galdu duzu?",
+            "es": "¿Cómo? ¿Dónde lo has perdido?"
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Gaur goizean kafe bat hartu dut tabernan.",
+            "es": "Esta mañana he tomado un café en el bar."
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Gero liburutegira joan naiz, ikastera.",
+            "es": "Después he ido a la biblioteca, a estudiar."
+          },
+          {
+            "speaker": "Ane",
+            "eu": "Eta liburutegitik nora joan zara?",
+            "es": "¿Y de la biblioteca adónde has ido?"
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Jatetxe batera, Mikelekin bazkaltzera.",
+            "es": "A un restaurante, a comer con Mikel."
+          },
+          {
+            "speaker": "Ane",
+            "eu": "Mikeli deitu diozu?",
+            "es": "¿Has llamado a Mikel?"
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Ez! Telefonorik ez daukat!",
+            "es": "¡No! ¡No tengo teléfono!"
+          },
+          {
+            "speaker": "Ane",
+            "eu": "Hemen duzu nire telefonoa. Deitu, mesedez.",
+            "es": "Aquí tienes mi teléfono. Llama, por favor."
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Mikel? Telefonoa jatetxean dago? Eskerrik asko!",
+            "es": "¿Mikel? ¿El teléfono está en el restaurante? ¡Muchas gracias!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 1,
+            "prompt": "¿Qué le ha pasado a Iker?",
+            "options": [
+              "Ha perdido el teléfono.",
+              "Ha perdido la tarjeta.",
+              "Ha perdido el autobús."
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 6,
+            "prompt": "¿Con quién ha comido Iker?",
+            "options": [
+              "Con Mikel",
+              "Con Ane",
+              "Solo"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 10,
+            "prompt": "¿Dónde está el teléfono?",
+            "options": [
+              "En el restaurante",
+              "En la biblioteca",
+              "En el bar"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u07-1.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u07-1.l6",
+      "type": "legendary",
+      "title": {
+        "es": "Nivel legendario",
+        "eu": "Maila legendarioa"
+      }
+    }
+  ]
+}

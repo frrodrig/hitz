@@ -1,0 +1,2772 @@
+{
+  "schemaVersion": 1,
+  "id": "u10-2",
+  "section": "s4",
+  "bookUnit": 10,
+  "title": {
+    "es": "Un lugar para vivir",
+    "eu": "Bizitzeko lekua"
+  },
+  "goals": [
+    {
+      "es": "Dar tu opinión sobre la calidad de vida de un lugar.",
+      "eu": "Leku baten bizi-kalitateari buruzko iritzia eman."
+    },
+    {
+      "es": "Decir dónde te gusta pasar las vacaciones.",
+      "eu": "Oporrak non pasatzea gustatzen zaizun esan."
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Creo que…: -ela",
+          "eu": "Uste dut…: -ela"
+        },
+        "body": {
+          "es": "Tras «uste dut» (creo que) o «iruditzen zait» (me parece que), el verbo de la segunda frase lleva -ela al final (da → dela, dago → dagoela, daude → daudela).",
+          "eu": "«Uste dut» edo «iruditzen zait» esan ondoren, bigarren esaldiko aditzak -ela hartzen du (da → dela, dago → dagoela, daude → daudela)."
+        },
+        "examples": [
+          {
+            "eu": "Uste dut herria lasaiagoa dela.",
+            "es": "Creo que el pueblo es más tranquilo."
+          },
+          {
+            "eu": "Iruditzen zait auzoan trafiko asko dagoela.",
+            "es": "Me parece que en el barrio hay mucho tráfico."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "No tan … como: bezain",
+          "eu": "Ez da … bezain"
+        },
+        "body": {
+          "es": "«A ez da B bezain …» significa «A no es tan … como B»; el adjetivo va con artículo. También se puede negar la comparación con «baino», «A ez da B baino …-agoa».",
+          "eu": "«A ez da B bezain …» egiturarekin bi gauza konparatzen ditugu. «Baino» egiturarekin ere bai, «A ez da B baino …-agoa»."
+        },
+        "examples": [
+          {
+            "eu": "Herria ez da hiria bezain zaratatsua.",
+            "es": "El pueblo no es tan ruidoso como la ciudad."
+          },
+          {
+            "eu": "Trena ez da autobusa baino garestiagoa.",
+            "es": "El tren no es más caro que el autobús."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Bueno, mejor, el mejor",
+          "eu": "On, hobe, onena"
+        },
+        "body": {
+          "es": "«On» (bueno) es irregular en el comparativo, «hobea» (mejor), pero el superlativo es regular, «onena» (el mejor). «Txar» (malo) es regular, «txarragoa», «txarrena».",
+          "eu": "«On» irregularra da konparatiboan, «hobea», baina superlatiboa erregularra da, «onena». «Txar» erregularra da, «txarragoa», «txarrena»."
+        },
+        "examples": [
+          {
+            "eu": "Herrian bizi-kalitatea hobea da.",
+            "es": "En el pueblo la calidad de vida es mejor."
+          },
+          {
+            "eu": "Hau da kanpinik onena.",
+            "es": "Este es el mejor camping."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Me gusta / me ha gustado + -tzea",
+          "eu": "Gustatzen zait / gustatu zait + -tzea"
+        },
+        "body": {
+          "es": "Con «gustatu», lo que gusta puede ser un verbo con -tzea (egotea, pasatzea). Para algo que ya ha pasado, como unas vacaciones de este año, se usa «gustatu zait» (me ha gustado).",
+          "eu": "«Gustatu» aditzarekin -tzea duen aditza erabil daiteke (egotea, pasatzea). Gertatu den zerbaitentzat, «gustatu zait» erabiltzen da."
+        },
+        "examples": [
+          {
+            "eu": "Asko gustatzen zait kanpinean egotea.",
+            "es": "Me gusta mucho estar en el camping."
+          },
+          {
+            "eu": "Asko gustatu zait Lekeition oporrak pasatzea.",
+            "es": "Me ha gustado mucho pasar las vacaciones en Lekeitio."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u10-2.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Calidad de vida",
+        "eu": "Bizi-kalitatea"
+      },
+      "lessons": [
+        {
+          "id": "u10-2.l1.s1",
+          "exercises": [
+            {
+              "id": "u10-2.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "En la ciudad hay mucho tráfico."
+              },
+              "answers": [
+                "Hirian trafiko asko dago."
+              ],
+              "distractors": [
+                "auzoan",
+                "ditu",
+                "Auzo"
+              ],
+              "vocabulary": [
+                "hiri",
+                "trafiko",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e02",
+              "type": "listen_tap",
+              "text": "Nire auzoan zarata gutxi dago.",
+              "distractors": [
+                "Herriak",
+                "bizitzeko",
+                "lasaia"
+              ],
+              "vocabulary": [
+                "ni",
+                "auzo",
+                "zarata",
+                "egon"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "trafiko",
+                  "es": "tráfico"
+                },
+                {
+                  "eu": "zarata",
+                  "es": "ruido"
+                },
+                {
+                  "eu": "jende",
+                  "es": "gente"
+                },
+                {
+                  "eu": "auzo",
+                  "es": "barrio"
+                },
+                {
+                  "eu": "on",
+                  "es": "bueno"
+                },
+                {
+                  "eu": "txar",
+                  "es": "malo"
+                }
+              ],
+              "vocabulary": [
+                "trafiko",
+                "zarata",
+                "jende",
+                "auzo",
+                "on",
+                "txar"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "En la calle hay mucha gente."
+              },
+              "answers": [
+                "Kalean jende asko dago."
+              ],
+              "vocabulary": [
+                "kale",
+                "jende",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Kalean ___ asko dago.",
+              "options": [
+                "jende",
+                "txarra"
+              ],
+              "correct": 0,
+              "translation": "En la calle hay mucha gente.",
+              "vocabulary": [
+                "kale",
+                "jende",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e06",
+              "type": "order_sentence",
+              "answer": "Gure auzoa oso lasaia da.",
+              "translation": "Nuestro barrio es muy tranquilo.",
+              "vocabulary": [
+                "gu",
+                "auzo",
+                "oso",
+                "lasai",
+                "izan"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e07",
+              "type": "choose_meaning",
+              "text": "Nire auzoan zarata gutxi dago.",
+              "options": [
+                "En mi barrio hay poco ruido.",
+                "En mi barrio hay mucho ruido.",
+                "En mi barrio hay poca gente."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ni",
+                "auzo",
+                "zarata",
+                "egon"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Herrian bizi-kalitatea ona da."
+              },
+              "answers": [
+                "En el pueblo la calidad de vida es buena."
+              ],
+              "vocabulary": [
+                "herri",
+                "bizi-kalitate",
+                "on",
+                "izan"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Olatz",
+                  "text": "Nolakoa da zure auzoa?"
+                }
+              ],
+              "options": [
+                "Lasaia, eta zarata gutxi dago.",
+                "Trafikoa naiz.",
+                "Bai, jende asko naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nola",
+                "izan",
+                "zu",
+                "auzo",
+                "lasai",
+                "eta",
+                "zarata",
+                "egon"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e10",
+              "type": "listen_type",
+              "text": "Herriak sarbide onak ditu.",
+              "answers": [
+                "Herriak sarbide onak ditu."
+              ],
+              "vocabulary": [
+                "herri",
+                "sarbide",
+                "on",
+                "ukan"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e11",
+              "type": "read_true_false",
+              "passage": "Nire auzoan trafiko asko dago. Zarata handia da.",
+              "statement": "En el barrio hay poco tráfico.",
+              "answer": false,
+              "vocabulary": [
+                "ni",
+                "auzo",
+                "trafiko",
+                "asko",
+                "egon",
+                "zarata",
+                "handi",
+                "izan"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e12",
+              "type": "speak",
+              "text": "Leku hau egokia da umeentzat.",
+              "translation": "Este lugar es adecuado para los niños.",
+              "vocabulary": [
+                "leku",
+                "hau",
+                "egoki",
+                "izan",
+                "ume"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Auzo hau ez da egokia bizitzeko."
+              },
+              "answers": [
+                "Este barrio no es adecuado para vivir."
+              ],
+              "distractors": [
+                "calle",
+                "buenos",
+                "gente",
+                "buena"
+              ],
+              "vocabulary": [
+                "auzo",
+                "hau",
+                "ez",
+                "izan",
+                "egoki",
+                "bizi izan"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u10-2.l1.s2",
+          "exercises": [
+            {
+              "id": "u10-2.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Oporrak hondartzan pasatzen ditut.",
+              "distractors": [
+                "Oporretan",
+                "gara",
+                "Kanpina"
+              ],
+              "vocabulary": [
+                "opor",
+                "hondartza",
+                "pasatu",
+                "ukan"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Este año he ido al extranjero."
+              },
+              "answers": [
+                "Aurten atzerrira joan naiz."
+              ],
+              "vocabulary": [
+                "aurten",
+                "atzerri",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "opor",
+                  "es": "vacaciones"
+                },
+                {
+                  "eu": "bidaia",
+                  "es": "viaje"
+                },
+                {
+                  "eu": "kanpin",
+                  "es": "camping"
+                },
+                {
+                  "eu": "atzerri",
+                  "es": "extranjero"
+                },
+                {
+                  "eu": "pasatu",
+                  "es": "pasar"
+                },
+                {
+                  "eu": "primeran",
+                  "es": "estupendamente"
+                }
+              ],
+              "vocabulary": [
+                "opor",
+                "bidaia",
+                "kanpin",
+                "atzerri",
+                "pasatu",
+                "primeran"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e04",
+              "type": "order_sentence",
+              "answer": "Kanpinean egon gara.",
+              "translation": "Hemos estado en el camping.",
+              "vocabulary": [
+                "kanpin",
+                "egon",
+                "izan"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Aurten ___ joan naiz.",
+              "options": [
+                "atzerrira",
+                "atzerrian"
+              ],
+              "correct": 0,
+              "translation": "Este año he ido al extranjero.",
+              "vocabulary": [
+                "aurten",
+                "atzerri",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bidaia oso ona izan da."
+              },
+              "answers": [
+                "El viaje ha sido muy bueno."
+              ],
+              "vocabulary": [
+                "bidaia",
+                "oso",
+                "on",
+                "izan"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e07",
+              "type": "choose_meaning",
+              "text": "Primeran pasatu dugu!",
+              "options": [
+                "¡Lo hemos pasado estupendamente!",
+                "¡Lo hemos pasado fatal!",
+                "¡Hemos pasado por aquí!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "primeran",
+                "pasatu",
+                "ukan"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e08",
+              "type": "listen_type",
+              "text": "Donostian turista asko daude.",
+              "answers": [
+                "Donostian turista asko daude."
+              ],
+              "vocabulary": [
+                "turista",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Josu",
+                  "text": "Non pasatu dituzu oporrak?"
+                }
+              ],
+              "options": [
+                "Kanpin batean, Zarautzen.",
+                "Primeran nago.",
+                "Bai, turista naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "non",
+                "pasatu",
+                "ukan",
+                "opor",
+                "kanpin",
+                "bat"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e10",
+              "type": "speak",
+              "text": "Primeran pasatu dugu!",
+              "translation": "¡Lo hemos pasado estupendamente!",
+              "vocabulary": [
+                "primeran",
+                "pasatu",
+                "ukan"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e11",
+              "type": "read_true_false",
+              "passage": "Aurten oporrak atzerrian pasatu ditugu, Londresen. Primeran pasatu dugu.",
+              "statement": "Han pasado las vacaciones en el País Vasco.",
+              "answer": false,
+              "vocabulary": [
+                "aurten",
+                "opor",
+                "atzerri",
+                "pasatu",
+                "ukan",
+                "primeran"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Oporretan Parisera bidaiatu dut."
+              },
+              "answers": [
+                "En vacaciones he viajado a París."
+              ],
+              "distractors": [
+                "ha",
+                "viaje",
+                "año",
+                "de"
+              ],
+              "vocabulary": [
+                "opor",
+                "bidaiatu",
+                "ukan"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "El camping está al lado de la playa."
+              },
+              "answers": [
+                "Kanpina hondartzaren ondoan dago."
+              ],
+              "distractors": [
+                "Parisera",
+                "Aurten",
+                "gara"
+              ],
+              "vocabulary": [
+                "kanpin",
+                "hondartza",
+                "ondoan",
+                "egon"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u10-2.l1.s3",
+          "exercises": [
+            {
+              "id": "u10-2.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Este pueblo me parece muy bonito."
+              },
+              "answers": [
+                "Herri hau oso polita iruditzen zait."
+              ],
+              "vocabulary": [
+                "herri",
+                "hau",
+                "oso",
+                "polit",
+                "iruditu",
+                "gustatu"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e02",
+              "type": "order_sentence",
+              "answer": "Museoa interesgarria iruditzen zait.",
+              "translation": "El museo me parece interesante.",
+              "vocabulary": [
+                "museo",
+                "interesgarri",
+                "iruditu",
+                "gustatu"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "iruditu",
+                  "es": "parecer"
+                },
+                {
+                  "eu": "hobe",
+                  "es": "mejor"
+                },
+                {
+                  "eu": "egoki",
+                  "es": "adecuado"
+                },
+                {
+                  "eu": "sarbide",
+                  "es": "acceso"
+                },
+                {
+                  "eu": "turista",
+                  "es": "turista"
+                },
+                {
+                  "eu": "bizi-kalitate",
+                  "es": "calidad de vida"
+                }
+              ],
+              "vocabulary": [
+                "iruditu",
+                "hobe",
+                "egoki",
+                "sarbide",
+                "turista",
+                "bizi-kalitate"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Auzo hau egokia iruditzen zaigu."
+              },
+              "answers": [
+                "Este barrio nos parece adecuado."
+              ],
+              "vocabulary": [
+                "auzo",
+                "hau",
+                "egoki",
+                "iruditu",
+                "gustatu"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Kanpina hotela baino ___ da.",
+              "options": [
+                "hobea",
+                "ona"
+              ],
+              "correct": 0,
+              "translation": "El camping es mejor que el hotel.",
+              "vocabulary": [
+                "kanpin",
+                "hotel",
+                "baino",
+                "hobe",
+                "izan"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e06",
+              "type": "listen_type",
+              "text": "Kanpina hotela baino hobea da.",
+              "answers": [
+                "Kanpina hotela baino hobea da."
+              ],
+              "vocabulary": [
+                "kanpin",
+                "hotel",
+                "baino",
+                "hobe",
+                "izan"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e07",
+              "type": "choose_meaning",
+              "text": "Herri hau oso polita iruditzen zait.",
+              "options": [
+                "Este pueblo me parece muy bonito.",
+                "Este pueblo es muy feo.",
+                "Este pueblo me parece muy ruidoso."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "herri",
+                "hau",
+                "oso",
+                "polit",
+                "iruditu",
+                "gustatu"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e08",
+              "type": "speak",
+              "text": "Herrian bizi-kalitatea hobea da.",
+              "translation": "En el pueblo la calidad de vida es mejor.",
+              "vocabulary": [
+                "herri",
+                "bizi-kalitate",
+                "hobe",
+                "izan"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nahia",
+                  "text": "Zer iruditzen zaizu auzo hau?"
+                }
+              ],
+              "options": [
+                "Oso lasaia iruditzen zait.",
+                "Ados, kanpinean.",
+                "Turista naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "iruditu",
+                "gustatu",
+                "auzo",
+                "hau",
+                "oso",
+                "lasai"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hau da kanpinik onena."
+              },
+              "answers": [
+                "Este es el mejor camping."
+              ],
+              "distractors": [
+                "ruido",
+                "calidad",
+                "nos"
+              ],
+              "vocabulary": [
+                "hau",
+                "izan",
+                "kanpin",
+                "on"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e11",
+              "type": "read_true_false",
+              "passage": "Lekeitio oso polita iruditzen zait. Hondartza garbia eta lasaia da.",
+              "statement": "A esta persona Lekeitio le parece feo.",
+              "answer": false,
+              "vocabulary": [
+                "oso",
+                "polit",
+                "iruditu",
+                "gustatu",
+                "hondartza",
+                "garbi",
+                "eta",
+                "lasai",
+                "izan"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "El ruido de la ciudad es muy malo."
+              },
+              "answers": [
+                "Hiriko zarata oso txarra da."
+              ],
+              "distractors": [
+                "polita",
+                "onena",
+                "kanpinik"
+              ],
+              "vocabulary": [
+                "hiri",
+                "zarata",
+                "oso",
+                "txar",
+                "izan"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s3.e13",
+              "type": "listen_tap",
+              "text": "Leku egokia da oporrak pasatzeko.",
+              "distractors": [
+                "Hiriko",
+                "zarata",
+                "zait"
+              ],
+              "vocabulary": [
+                "leku",
+                "egoki",
+                "izan",
+                "opor",
+                "pasatu"
+              ],
+              "structures": [
+                "iruditu",
+                "hobe-onena"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10-2.l2",
+      "type": "lesson",
+      "title": {
+        "es": "Creo que…",
+        "eu": "Uste dut…"
+      },
+      "lessons": [
+        {
+          "id": "u10-2.l2.s1",
+          "exercises": [
+            {
+              "id": "u10-2.l2.s1.e01",
+              "type": "order_sentence",
+              "answer": "Uste dut herria lasaiagoa dela.",
+              "translation": "Creo que el pueblo es más tranquilo.",
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "herri",
+                "lasai",
+                "izan"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s1.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Uste dut hirian trafiko gehiago dagoela."
+              },
+              "answers": [
+                "Creo que en la ciudad hay más tráfico.",
+                "Creo que hay más tráfico en la ciudad."
+              ],
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "hiri",
+                "trafiko",
+                "gehiago",
+                "egon"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s1.e03",
+              "type": "fill_blank",
+              "sentence": "Uste dut herria lasaiagoa ___.",
+              "options": [
+                "dela",
+                "da"
+              ],
+              "correct": 0,
+              "translation": "Creo que el pueblo es más tranquilo.",
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "herri",
+                "lasai",
+                "izan"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s1.e04",
+              "type": "listen_type",
+              "text": "Iruditzen zait auzo hau segurua dela.",
+              "answers": [
+                "Iruditzen zait auzo hau segurua dela."
+              ],
+              "vocabulary": [
+                "iruditu",
+                "gustatu",
+                "auzo",
+                "hau",
+                "seguru",
+                "izan"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Iruditzen zait hemen jende gutxi ___.",
+              "options": [
+                "dagoela",
+                "dela"
+              ],
+              "correct": 0,
+              "translation": "Me parece que aquí hay poca gente.",
+              "vocabulary": [
+                "iruditu",
+                "gustatu",
+                "hemen",
+                "jende",
+                "egon"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s1.e06",
+              "type": "speak",
+              "text": "Uste dut Bilbo hiri interesgarria dela.",
+              "translation": "Creo que Bilbao es una ciudad interesante.",
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "hiri",
+                "interesgarri",
+                "izan"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s1.e07",
+              "type": "choose_meaning",
+              "text": "Uste dut hirian trafiko gehiago dagoela.",
+              "options": [
+                "Creo que en la ciudad hay más tráfico.",
+                "Creo que en la ciudad hay menos tráfico.",
+                "En la ciudad no hay tráfico."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "hiri",
+                "trafiko",
+                "gehiago",
+                "egon"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Iruditzen zait hemen jende gutxi dagoela."
+              },
+              "answers": [
+                "Me parece que aquí hay poca gente."
+              ],
+              "distractors": [
+                "una",
+                "pueblo",
+                "turistas",
+                "buenos"
+              ],
+              "vocabulary": [
+                "iruditu",
+                "gustatu",
+                "hemen",
+                "jende",
+                "egon"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Markel",
+                  "text": "Zer iruditzen zaizu Gasteiz?"
+                }
+              ],
+              "options": [
+                "Iruditzen zait hiri lasaia dela.",
+                "Gasteiz naiz.",
+                "Uste dut dagoela."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "iruditu",
+                "gustatu",
+                "hiri",
+                "lasai",
+                "izan"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Creo que en el barrio hay buenos servicios."
+              },
+              "answers": [
+                "Uste dut auzoan zerbitzu onak daudela."
+              ],
+              "distractors": [
+                "jende",
+                "auzo",
+                "dela",
+                "baino"
+              ],
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "auzo",
+                "zerbitzu",
+                "on",
+                "egon"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s1.e11",
+              "type": "listen_tap",
+              "text": "Uste dut kanpina hotela baino hobea dela.",
+              "distractors": [
+                "segurua",
+                "lasaiagoa",
+                "gehiago",
+                "turista"
+              ],
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "kanpin",
+                "hotel",
+                "baino",
+                "hobe",
+                "izan"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s1.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Me parece que en San Sebastián hay muchos turistas."
+              },
+              "answers": [
+                "Iruditzen zait Donostian turista asko daudela."
+              ],
+              "vocabulary": [
+                "iruditu",
+                "gustatu",
+                "turista",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "ela-completive"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u10-2.l2.s2",
+          "exercises": [
+            {
+              "id": "u10-2.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Herria ez da hiria bezain zaratatsua."
+              },
+              "answers": [
+                "El pueblo no es tan ruidoso como la ciudad."
+              ],
+              "vocabulary": [
+                "herri",
+                "ez",
+                "izan",
+                "hiri",
+                "zaratatsu"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s2.e02",
+              "type": "listen_type",
+              "text": "Tolosa ez da Donostia bezain handia.",
+              "answers": [
+                "Tolosa ez da Donostia bezain handia."
+              ],
+              "vocabulary": [
+                "ez",
+                "izan",
+                "handi"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Kanpina ez da hotela ___ erosoa.",
+              "options": [
+                "bezain",
+                "baino"
+              ],
+              "correct": 0,
+              "translation": "El camping no es tan cómodo como el hotel.",
+              "vocabulary": [
+                "kanpin",
+                "ez",
+                "izan",
+                "hotel",
+                "eroso"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s2.e04",
+              "type": "speak",
+              "text": "Kanpina ez da hotela bezain erosoa.",
+              "translation": "El camping no es tan cómodo como el hotel.",
+              "vocabulary": [
+                "kanpin",
+                "ez",
+                "izan",
+                "hotel",
+                "eroso"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Trena ez da autobusa ___ garestiagoa.",
+              "options": [
+                "baino",
+                "bezain"
+              ],
+              "correct": 0,
+              "translation": "El tren no es más caro que el autobús.",
+              "vocabulary": [
+                "tren",
+                "ez",
+                "izan",
+                "autobus",
+                "baino",
+                "garesti"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Trena ez da autobusa baino garestiagoa."
+              },
+              "answers": [
+                "El tren no es más caro que el autobús."
+              ],
+              "distractors": [
+                "como",
+                "Tolosa",
+                "tu",
+                "Bilbao"
+              ],
+              "vocabulary": [
+                "tren",
+                "ez",
+                "izan",
+                "autobus",
+                "baino",
+                "garesti"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s2.e07",
+              "type": "choose_meaning",
+              "text": "Herria ez da hiria bezain zaratatsua.",
+              "options": [
+                "El pueblo no es tan ruidoso como la ciudad.",
+                "El pueblo es más ruidoso que la ciudad.",
+                "La ciudad no es tan ruidosa como el pueblo."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "herri",
+                "ez",
+                "izan",
+                "hiri",
+                "zaratatsu"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Vitoria no es más ruidosa que Bilbao."
+              },
+              "answers": [
+                "Gasteiz ez da Bilbo baino zaratatsuagoa."
+              ],
+              "distractors": [
+                "Trena",
+                "bezain",
+                "hau",
+                "garestiagoa"
+              ],
+              "vocabulary": [
+                "ez",
+                "izan",
+                "baino",
+                "zaratatsu"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Amaia",
+                  "text": "Bilbo Donostia baino politagoa da?"
+                }
+              ],
+              "options": [
+                "Ez, ez da Donostia bezain polita.",
+                "Bai, ez da.",
+                "Ez, Bilbon naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "baino",
+                "polit",
+                "izan",
+                "ez"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s2.e10",
+              "type": "listen_tap",
+              "text": "Hondartza hau ez da hori baino garbiagoa.",
+              "distractors": [
+                "zaratatsuagoa",
+                "garestiagoa",
+                "handia",
+                "Nire"
+              ],
+              "vocabulary": [
+                "hondartza",
+                "hau",
+                "ez",
+                "izan",
+                "hori",
+                "baino",
+                "garbi"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s2.e11",
+              "type": "read_true_false",
+              "passage": "Durango ez da Bilbo bezain handia. Herri lasaia da.",
+              "statement": "Durango es más grande que Bilbao.",
+              "answer": false,
+              "vocabulary": [
+                "ez",
+                "izan",
+                "handi",
+                "herri",
+                "lasai"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s2.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Mi pueblo no es tan bonito como tu pueblo."
+              },
+              "answers": [
+                "Nire herria ez da zure herria bezain polita."
+              ],
+              "vocabulary": [
+                "ni",
+                "herri",
+                "ez",
+                "izan",
+                "zu",
+                "polit"
+              ],
+              "structures": [
+                "bezain",
+                "comparative-ago"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u10-2.l2.s3",
+          "exercises": [
+            {
+              "id": "u10-2.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Asko gustatzen zait kanpinean egotea.",
+              "answers": [
+                "Asko gustatzen zait kanpinean egotea."
+              ],
+              "vocabulary": [
+                "asko",
+                "gustatu",
+                "kanpin",
+                "egon"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s3.e02",
+              "type": "speak",
+              "text": "Gustatzen zaizu atzerrira bidaiatzea?",
+              "translation": "¿Te gusta viajar al extranjero?",
+              "vocabulary": [
+                "gustatu",
+                "atzerri",
+                "bidaia"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s3.e03",
+              "type": "fill_blank",
+              "sentence": "Asko gustatzen zait kanpinean ___.",
+              "options": [
+                "egotea",
+                "dago"
+              ],
+              "correct": 0,
+              "translation": "Me gusta mucho estar en el camping.",
+              "vocabulary": [
+                "asko",
+                "gustatu",
+                "kanpin",
+                "egon"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Asko gustatu zait Lekeition oporrak pasatzea."
+              },
+              "answers": [
+                "Me ha gustado mucho pasar las vacaciones en Lekeitio."
+              ],
+              "distractors": [
+                "gusta",
+                "estar",
+                "camping",
+                "viajar"
+              ],
+              "vocabulary": [
+                "asko",
+                "gustatu",
+                "opor",
+                "pasatu"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s3.e05",
+              "type": "choose_meaning",
+              "text": "Asko gustatu zait Lekeition oporrak pasatzea.",
+              "options": [
+                "Me ha gustado mucho pasar las vacaciones en Lekeitio.",
+                "Me gusta mucho vivir en Lekeitio.",
+                "No me ha gustado Lekeitio."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "asko",
+                "gustatu",
+                "opor",
+                "pasatu"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "No me gusta vivir en la ciudad."
+              },
+              "answers": [
+                "Ez zait gustatzen hirian bizitzea."
+              ],
+              "distractors": [
+                "Gustatu",
+                "egitea",
+                "egotea"
+              ],
+              "vocabulary": [
+                "ez",
+                "gustatu",
+                "hiri",
+                "bizi izan"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Gustatu zaizu Londresera bidaiatzea?"
+                }
+              ],
+              "options": [
+                "Bai, primeran pasatu dut!",
+                "Ez, turista naiz.",
+                "Bai, opor txarra naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gustatu",
+                "bidaia",
+                "bai",
+                "primeran",
+                "pasatu",
+                "ukan"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s3.e08",
+              "type": "listen_tap",
+              "text": "Gustatu zaizu Parisen egotea?",
+              "distractors": [
+                "Ez",
+                "Asko",
+                "kanpinean"
+              ],
+              "vocabulary": [
+                "gustatu",
+                "egon"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s3.e09",
+              "type": "read_true_false",
+              "passage": "Aurten Zarautzen pasatu ditut oporrak. Asko gustatu zait kanpinean egotea.",
+              "statement": "No le ha gustado el camping.",
+              "answer": false,
+              "vocabulary": [
+                "aurten",
+                "pasatu",
+                "ukan",
+                "opor",
+                "asko",
+                "gustatu",
+                "kanpin",
+                "egon"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Nos ha gustado mucho viajar a Londres."
+              },
+              "answers": [
+                "Asko gustatu zaigu Londresera bidaiatzea."
+              ],
+              "vocabulary": [
+                "asko",
+                "gustatu",
+                "bidaia"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s3.e11",
+              "type": "order_sentence",
+              "answer": "Gustatzen zait oporrak mendian pasatzea.",
+              "translation": "Me gusta pasar las vacaciones en el monte.",
+              "vocabulary": [
+                "gustatu",
+                "opor",
+                "mendi",
+                "pasatu"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u10-2.l2.s3.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez zait gustatu kanpinean lo egitea."
+              },
+              "answers": [
+                "No me ha gustado dormir en el camping."
+              ],
+              "vocabulary": [
+                "ez",
+                "gustatu",
+                "kanpin",
+                "lo egin",
+                "egin"
+              ],
+              "structures": [
+                "gustatu-tzea"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10-2.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Un lugar para vivir",
+        "eu": "Bizitzeko lekua"
+      },
+      "lessons": [
+        {
+          "id": "u10-2.l3.s1",
+          "exercises": [
+            {
+              "id": "u10-2.l3.s1.e01",
+              "type": "speak",
+              "text": "Zer iruditzen zaizu zure auzoa?",
+              "translation": "¿Qué te parece tu barrio?",
+              "vocabulary": [
+                "zer",
+                "iruditu",
+                "gustatu",
+                "zu",
+                "auzo"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Iruditzen zait auzoan zarata asko dagoela."
+              },
+              "answers": [
+                "Me parece que en el barrio hay mucho ruido.",
+                "Me parece que hay mucho ruido en el barrio."
+              ],
+              "distractors": [
+                "Este",
+                "opinión",
+                "peligrosa",
+                "vida"
+              ],
+              "vocabulary": [
+                "iruditu",
+                "gustatu",
+                "auzo",
+                "zarata",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Uste dut hiria ez dela hain arriskutsua.",
+              "options": [
+                "Creo que la ciudad no es tan peligrosa.",
+                "Creo que la ciudad es muy peligrosa.",
+                "La ciudad es más peligrosa que el pueblo."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "hiri",
+                "ez",
+                "izan",
+                "hain",
+                "arriskutsu"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "En mi opinión, en el pueblo la calidad de vida es mejor."
+              },
+              "answers": [
+                "Nire ustez, herrian bizi-kalitatea hobea da."
+              ],
+              "distractors": [
+                "zait",
+                "egokia",
+                "ados",
+                "zure"
+              ],
+              "vocabulary": [
+                "ni",
+                "uste izan",
+                "herri",
+                "bizi-kalitate",
+                "hobe",
+                "izan"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s1.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Unai",
+                  "text": "Zer iruditzen zaizu Bilbo?"
+                },
+                {
+                  "speaker": "Nerea",
+                  "text": "Hiri interesgarria iruditzen zait."
+                },
+                {
+                  "speaker": "Unai",
+                  "text": "Eta trafikoa?"
+                }
+              ],
+              "options": [
+                "Uste dut trafiko asko dagoela.",
+                "Ados, turista naiz.",
+                "Kanpina hobea da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "iruditu",
+                "gustatu",
+                "hiri",
+                "interesgarri",
+                "eta",
+                "trafiko",
+                "uste izan",
+                "ukan",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Uste dut hiria ez dela hain arriskutsua.",
+              "distractors": [
+                "hobea",
+                "hau",
+                "dagoela",
+                "zure"
+              ],
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "hiri",
+                "ez",
+                "izan",
+                "hain",
+                "arriskutsu"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s1.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nerea",
+                  "text": "Uste dut herrian bizi-kalitatea hobea dela."
+                }
+              ],
+              "options": [
+                "Ados nago. Herria lasaiagoa da.",
+                "Ados nago. Herria zaratatsuagoa da.",
+                "Bai, auzoa naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "herri",
+                "bizi-kalitate",
+                "hobe",
+                "izan",
+                "ados",
+                "egon",
+                "lasai"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "No estoy de acuerdo. La ciudad es más ruidosa."
+              },
+              "answers": [
+                "Ez nago ados. Hiria zaratatsuagoa da."
+              ],
+              "vocabulary": [
+                "ez",
+                "egon",
+                "ados",
+                "hiri",
+                "zaratatsu",
+                "izan"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s1.e09",
+              "type": "read_true_false",
+              "passage": "Edurnek uste du Gasteiz hiri segurua eta garbia dela.",
+              "statement": "Edurne cree que Vitoria es una ciudad sucia.",
+              "answer": false,
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "hiri",
+                "seguru",
+                "eta",
+                "garbi",
+                "izan"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s1.e10",
+              "type": "order_sentence",
+              "answer": "Auzo hau ez da egokia umeentzat.",
+              "translation": "Este barrio no es adecuado para los niños.",
+              "vocabulary": [
+                "auzo",
+                "hau",
+                "ez",
+                "izan",
+                "egoki",
+                "ume"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s1.e11",
+              "type": "read_true_false",
+              "passage": "Patxiri iruditzen zaio bere auzoan jende gutxi dagoela.",
+              "statement": "A Patxi le parece que en su barrio hay poca gente.",
+              "answer": true,
+              "vocabulary": [
+                "iruditu",
+                "gustatu",
+                "hura",
+                "auzo",
+                "jende",
+                "egon"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u10-2.l3.s2",
+          "exercises": [
+            {
+              "id": "u10-2.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Non pasatzen dituzu oporrak?"
+              },
+              "answers": [
+                "¿Dónde pasas las vacaciones?",
+                "¿Dónde pasa usted las vacaciones?"
+              ],
+              "distractors": [
+                "hay",
+                "Prefiero",
+                "En"
+              ],
+              "vocabulary": [
+                "non",
+                "pasatu",
+                "ukan",
+                "opor"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "En vacaciones me gusta estar en el pueblo."
+              },
+              "answers": [
+                "Oporretan herrian egotea gustatzen zait."
+              ],
+              "distractors": [
+                "Bartzelonara",
+                "baino",
+                "bidaiatzea"
+              ],
+              "vocabulary": [
+                "opor",
+                "herri",
+                "egon",
+                "gustatu"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Atzerrira ___ nahiago dut.",
+              "options": [
+                "bidaiatzea",
+                "bidaia"
+              ],
+              "correct": 0,
+              "translation": "Prefiero viajar al extranjero.",
+              "vocabulary": [
+                "atzerri",
+                "bidaia",
+                "nahiago izan",
+                "ukan"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s2.e04",
+              "type": "listen_tap",
+              "text": "Atzerrira bidaiatzea nahiago dut.",
+              "distractors": [
+                "pasatzen",
+                "hondartzan",
+                "Kanpina"
+              ],
+              "vocabulary": [
+                "atzerri",
+                "bidaia",
+                "nahiago izan",
+                "ukan"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s2.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ander",
+                  "text": "Non pasatu dituzu oporrak?"
+                },
+                {
+                  "speaker": "Izaro",
+                  "text": "Kanpin batean, Hondarribian."
+                },
+                {
+                  "speaker": "Ander",
+                  "text": "Gustatu zaizu?"
+                }
+              ],
+              "options": [
+                "Bai, primeran pasatu dut!",
+                "Bai, Hondarribian nago.",
+                "Ez, kanpina da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "non",
+                "pasatu",
+                "ukan",
+                "opor",
+                "kanpin",
+                "bat",
+                "gustatu",
+                "bai",
+                "primeran"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "El camping es más barato que el hotel."
+              },
+              "answers": [
+                "Kanpina hotela baino merkeagoa da."
+              ],
+              "vocabulary": [
+                "kanpin",
+                "hotel",
+                "baino",
+                "merke",
+                "izan"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Izaro",
+                  "text": "Zuk zer nahiago duzu, hondartza ala mendia?"
+                }
+              ],
+              "options": [
+                "Mendia. Lasaiagoa iruditzen zait.",
+                "Hondartzan bizi naiz.",
+                "Mendia baino."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zu",
+                "zer",
+                "nahiago izan",
+                "ukan",
+                "hondartza",
+                "mendi",
+                "lasai",
+                "iruditu",
+                "gustatu"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s2.e08",
+              "type": "order_sentence",
+              "answer": "Aurten Bartzelonara bidaiatu dugu.",
+              "translation": "Este año hemos viajado a Barcelona.",
+              "vocabulary": [
+                "aurten",
+                "bidaiatu",
+                "ukan"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s2.e09",
+              "type": "read_true_false",
+              "passage": "Oporretan Miren eta bere senarra atzerrira joaten dira. Aurten Alemaniara joan dira.",
+              "statement": "Este año han ido a Alemania.",
+              "answer": true,
+              "vocabulary": [
+                "opor",
+                "eta",
+                "hura",
+                "senar",
+                "atzerri",
+                "joan",
+                "izan",
+                "aurten"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s2.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Oporretan turista asko daude hondartzan."
+              },
+              "answers": [
+                "En vacaciones hay muchos turistas en la playa."
+              ],
+              "vocabulary": [
+                "opor",
+                "turista",
+                "asko",
+                "egon",
+                "hondartza"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s2.e11",
+              "type": "read_true_false",
+              "passage": "Gorkari ez zaio gustatzen kanpinean egotea. Hotelak nahiago ditu.",
+              "statement": "A Gorka le encanta el camping.",
+              "answer": false,
+              "vocabulary": [
+                "ez",
+                "gustatu",
+                "kanpin",
+                "egon",
+                "hotel",
+                "nahiago izan",
+                "ukan"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u10-2.l3.s3",
+          "exercises": [
+            {
+              "id": "u10-2.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "En San Sebastián hay muchos turistas en agosto."
+              },
+              "answers": [
+                "Donostian turista asko daude abuztuan."
+              ],
+              "distractors": [
+                "Getxo",
+                "Primeran",
+                "atsegina"
+              ],
+              "vocabulary": [
+                "turista",
+                "asko",
+                "egon",
+                "abuztu"
+              ],
+              "structures": [
+                "bezain",
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Uste dut Lekeitio Zarautz bezain polita dela.",
+              "distractors": [
+                "trena",
+                "Primeran",
+                "ez",
+                "sarbide"
+              ],
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "polit",
+                "izan"
+              ],
+              "structures": [
+                "bezain",
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Gure herria ez da Getxo bezain zaratatsua.",
+              "options": [
+                "Nuestro pueblo no es tan ruidoso como Getxo.",
+                "Nuestro pueblo es más ruidoso que Getxo.",
+                "Getxo no es tan ruidoso como nuestro pueblo."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gu",
+                "herri",
+                "ez",
+                "izan",
+                "zaratatsu"
+              ],
+              "structures": [
+                "bezain",
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Nuestro pueblo no es tan ruidoso como Getxo."
+              },
+              "answers": [
+                "Gure herria ez da Getxo bezain zaratatsua."
+              ],
+              "vocabulary": [
+                "gu",
+                "herri",
+                "ez",
+                "izan",
+                "zaratatsu"
+              ],
+              "structures": [
+                "bezain",
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Kepa",
+                  "text": "Zer moduz zure auzo berrian?"
+                }
+              ],
+              "options": [
+                "Primeran! Jendea oso atsegina da.",
+                "Primeran! Auzoa naiz.",
+                "Bai, opor txarrak."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer moduz",
+                "zu",
+                "auzo",
+                "berri",
+                "primeran",
+                "jende",
+                "oso",
+                "atsegin",
+                "izan"
+              ],
+              "structures": [
+                "bezain",
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Herriak sarbide onak ditu: trena eta autobusa.",
+              "translation": "El pueblo tiene buenos accesos: tren y autobús.",
+              "vocabulary": [
+                "herri",
+                "sarbide",
+                "on",
+                "ukan",
+                "tren",
+                "eta",
+                "autobus"
+              ],
+              "structures": [
+                "bezain",
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Arantza",
+                  "text": "Zure herria Bilbo bezain zaratatsua da?"
+                },
+                {
+                  "speaker": "Kepa",
+                  "text": "Ez, ez da hain zaratatsua."
+                },
+                {
+                  "speaker": "Arantza",
+                  "text": "Eta zerbitzuak?"
+                }
+              ],
+              "options": [
+                "Uste dut zerbitzu onak daudela.",
+                "Uste dut dela.",
+                "Ez, turista naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zu",
+                "herri",
+                "zaratatsu",
+                "izan",
+                "ez",
+                "hain",
+                "eta",
+                "zerbitzu",
+                "uste izan",
+                "ukan",
+                "on",
+                "egon"
+              ],
+              "structures": [
+                "bezain",
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Primeran bizi gara auzo honetan."
+              },
+              "answers": [
+                "Vivimos estupendamente en este barrio."
+              ],
+              "vocabulary": [
+                "primeran",
+                "bizi izan",
+                "izan",
+                "auzo",
+                "hau"
+              ],
+              "structures": [
+                "bezain",
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s3.e09",
+              "type": "read_true_false",
+              "passage": "Abuztuan Donostian turista asko daude. Iruditzen zait trafiko asko dagoela.",
+              "statement": "En agosto hay pocos turistas.",
+              "answer": false,
+              "vocabulary": [
+                "abuztu",
+                "turista",
+                "asko",
+                "egon",
+                "iruditu",
+                "gustatu",
+                "trafiko"
+              ],
+              "structures": [
+                "bezain",
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s3.e10",
+              "type": "listen_type",
+              "text": "Auzo honetan jendea oso atsegina da.",
+              "answers": [
+                "Auzo honetan jendea oso atsegina da."
+              ],
+              "vocabulary": [
+                "auzo",
+                "hau",
+                "jende",
+                "oso",
+                "atsegin",
+                "izan"
+              ],
+              "structures": [
+                "bezain",
+                "ela-completive"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s3.e11",
+              "type": "read_true_false",
+              "passage": "Nire auzo berria lasaia da, eta sarbide onak ditu. Primeran bizi naiz.",
+              "statement": "La persona vive bien en su barrio.",
+              "answer": true,
+              "vocabulary": [
+                "ni",
+                "auzo",
+                "berri",
+                "lasai",
+                "izan",
+                "eta",
+                "sarbide",
+                "on",
+                "ukan",
+                "primeran",
+                "bizi izan"
+              ],
+              "structures": [
+                "bezain",
+                "ela-completive"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10-2.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: vacaciones en Zarautz",
+        "eu": "Istorioa: oporrak Zarautzen"
+      },
+      "story": {
+        "id": "u10-2.l4.story",
+        "title": "Oporrak Zarautzen",
+        "lines": [
+          {
+            "speaker": "Garazi",
+            "eu": "Kaixo, Ibai! Non pasatu dituzu oporrak?",
+            "es": "¡Hola, Ibai! ¿Dónde has pasado las vacaciones?"
+          },
+          {
+            "speaker": "Ibai",
+            "eu": "Zarautzen, kanpin batean. Primeran pasatu dugu!",
+            "es": "En Zarautz, en un camping. ¡Lo hemos pasado estupendamente!"
+          },
+          {
+            "speaker": "Garazi",
+            "eu": "Kanpinean? Ez da hotela bezain erosoa.",
+            "es": "¿En un camping? No es tan cómodo como un hotel."
+          },
+          {
+            "speaker": "Ibai",
+            "eu": "Uste dut kanpina hotela baino hobea dela.",
+            "es": "Creo que el camping es mejor que el hotel."
+          },
+          {
+            "speaker": "Ibai",
+            "eu": "Asko gustatu zait hondartzaren ondoan egotea.",
+            "es": "Me ha gustado mucho estar al lado de la playa."
+          },
+          {
+            "speaker": "Garazi",
+            "eu": "Eta Zarautz? Zer iruditu zaizu?",
+            "es": "¿Y Zarautz? ¿Qué te ha parecido?"
+          },
+          {
+            "speaker": "Ibai",
+            "eu": "Herri polita da. Abuztuan turista asko daude.",
+            "es": "Es un pueblo bonito. En agosto hay muchos turistas."
+          },
+          {
+            "speaker": "Ibai",
+            "eu": "Iruditzen zait trafiko eta zarata asko dagoela.",
+            "es": "Me parece que hay mucho tráfico y ruido."
+          },
+          {
+            "speaker": "Garazi",
+            "eu": "Nik oporrak atzerrian pasatu ditut, Londresen.",
+            "es": "Yo he pasado las vacaciones en el extranjero, en Londres."
+          },
+          {
+            "speaker": "Garazi",
+            "eu": "Londres ez da Zarautz bezain lasaia!",
+            "es": "¡Londres no es tan tranquilo como Zarautz!"
+          },
+          {
+            "speaker": "Ibai",
+            "eu": "Ez, ez da hain lasaia!",
+            "es": "¡No, no es tan tranquilo!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 1,
+            "prompt": "¿Dónde ha estado Ibai de vacaciones?",
+            "options": [
+              "En un camping de Zarautz",
+              "En un hotel de Zarautz",
+              "En Londres"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 7,
+            "prompt": "¿Qué problema tiene Zarautz en agosto, según Ibai?",
+            "options": [
+              "Hay mucho tráfico y ruido",
+              "Es aburrido",
+              "No hay playa"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 10,
+            "prompt": "¿Dónde ha pasado Garazi las vacaciones?",
+            "options": [
+              "En Londres",
+              "En Zarautz",
+              "En su pueblo"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u10-2.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u10-2.l6",
+      "type": "legendary",
+      "title": {
+        "es": "Nivel legendario",
+        "eu": "Maila legendarioa"
+      }
+    }
+  ]
+}

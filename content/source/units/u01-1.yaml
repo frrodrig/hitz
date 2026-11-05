@@ -1,0 +1,436 @@
+# Unit 1.1 · Kaixo! — greetings, courtesy, "ni … naiz / zu … zara".
+# Reference example of the source format (see docs/content-guide.md):
+#   sentence:  Basque | Basque variant = Spanish | Spanish variant
+#   pair:      Basque = Spanish
+#   message:   Speaker | text
+#   story:     Speaker | Basque = Spanish
+# Quote a string when it contains ": " or " #", or starts with [ { " ' * & ! % @ `.
+id: u01-1
+section: s1
+bookUnit: 1
+title:
+  es: ¡Hola!
+  eu: Kaixo!
+goals:
+  - es: Saludar y despedirse según el momento del día.
+    eu: Eguneko unearen arabera agurtu.
+  - es: "Usar fórmulas de cortesía: dar las gracias, pedir perdón y felicitar."
+    eu: "Adeitasun-formulak erabili: eskerrak eman, barkamena eskatu eta zoriondu."
+  - es: Decir tu nombre y preguntar el de otra persona.
+    eu: Zure izena esan eta besteena galdetu.
+guidebook:
+  sections:
+    - title:
+        es: Saludar según la hora
+        eu: Orduaren arabera agurtu
+      body:
+        es: «Egun on» se dice por la mañana, «arratsalde on» por la tarde y «gabon» por la noche, también para despedirse. «Kaixo» sirve a cualquier hora.
+        eu: Goizean «egun on» esaten da, arratsaldean «arratsalde on» eta gauean «gabon», agur esateko ere bai. «Kaixo» edozein ordutan erabil daiteke.
+      examples:
+        - eu: Egun on, Mikel!
+          es: ¡Buenos días, Mikel!
+        - eu: Gabon!
+          es: ¡Buenas noches!
+    - title:
+        es: "Presentarse: ni … naiz"
+        eu: "Aurkeztu: ni … naiz"
+      body:
+        es: Para decir quién eres, «Ni» + nombre + «naiz». Para preguntar a otra persona, «Nor zara?». El verbo va al final de la frase.
+        eu: Nor zaren esateko, «Ni» + izena + «naiz». Besteari galdetzeko, «Nor zara?». Aditza esaldiaren amaieran doa.
+      examples:
+        - eu: Ni Jon naiz.
+          es: Soy Jon.
+        - eu: Nor zara?
+          es: ¿Quién eres?
+        - eu: Zu Ane zara? Bai, ni Ane naiz.
+          es: ¿Tú eres Ane? Sí, soy Ane.
+    - title:
+        es: Cortesía
+        eu: Adeitasuna
+      body:
+        es: A «eskerrik asko» se responde con «ez horregatik». «Barkatu» sirve para pedir perdón y para llamar la atención de alguien.
+        eu: «Eskerrik asko» esaten digutenean, «ez horregatik» erantzuten dugu. «Barkatu» barkamena eskatzeko eta norbaiten arreta erakartzeko erabiltzen da.
+      examples:
+        - eu: Eskerrik asko!
+          es: ¡Muchas gracias!
+        - eu: Ez horregatik.
+          es: De nada.
+levels:
+  - type: lesson
+    title:
+      es: Saludos
+      eu: Agurrak
+    lessons:
+      - structures: [greetings]
+        sentences:
+          - Egun on, Ane! = ¡Buenos días, Ane!
+          - Arratsalde on, Mikel! = ¡Buenas tardes, Mikel!
+          - Gabon, Itziar! = ¡Buenas noches, Itziar!
+          - Kaixo, Jon! = ¡Hola, Jon!
+          - Egun on, zer moduz? = Buenos días, ¿qué tal?
+          - Kaixo! Zer moduz? = ¡Hola! ¿Qué tal?
+          - Oso ondo! = ¡Muy bien!
+          - Ondo, eta zu? = Bien, ¿y tú? | Bien, ¿y usted?
+        pairs:
+          - - kaixo = hola
+            - egun on = buenos días
+            - arratsalde on = buenas tardes
+            - gabon = buenas noches
+        images:
+          - prompt: buenas noches
+            options:
+              - text: egun on
+                image: greeting_morning.webp
+              - text: arratsalde on
+                image: greeting_afternoon.webp
+              - text: gabon
+                image: greeting_night.webp
+            correct: 2
+        meanings:
+          - text: Arratsalde on!
+            options:
+              - ¡Buenas tardes!
+              - ¡Buenos días!
+              - ¡Buenas noches!
+        blanks:
+          - text: Oso ___! = ¡Muy bien!
+            options:
+              - ondo
+              - agur
+        chats:
+          - messages:
+              - Ane | Egun on, Iker!
+            options:
+              - Egun on, Ane!
+              - Gabon, Ane!
+              - Zorionak!
+        true_false:
+          - passage: Gabon, Jon! Bihar arte!
+            statement: Es de noche.
+            answer: true
+      - structures: [greetings]
+        sentences:
+          - Agur, Mikel! = ¡Adiós, Mikel!
+          - Gero arte, Ane! = ¡Hasta luego, Ane!
+          - Bihar arte! = ¡Hasta mañana!
+          - Agur eta gero arte! = ¡Adiós y hasta luego!
+          - Gabon eta bihar arte! = ¡Buenas noches y hasta mañana!
+          - Kaixo, Itziar! Zer moduz? = ¡Hola, Itziar! ¿Qué tal?
+          - Oso ondo, eta zu? = Muy bien, ¿y tú? | Muy bien, ¿y usted?
+          - Agur, Iker! Bihar arte! = ¡Adiós, Iker! ¡Hasta mañana!
+        pairs:
+          - - agur = adiós
+            - gero arte = hasta luego
+            - bihar arte = hasta mañana
+            - gabon = buenas noches
+        meanings:
+          - text: Gero arte!
+            options:
+              - ¡Hasta luego!
+              - ¡Hasta mañana!
+              - ¡Adiós!
+        blanks:
+          - text: Agur ___ gero arte! = ¡Adiós y hasta luego!
+            options:
+              - eta
+              - ez
+        chats:
+          - messages:
+              - Jon | Agur, Maialen! Bihar arte!
+            options:
+              - Bihar arte, Jon!
+              - Egun on, Jon!
+              - Ez horregatik.
+        true_false:
+          - passage: Kaixo, Ane! Zer moduz?
+            statement: Es una despedida.
+            answer: false
+      - structures: [courtesy]
+        sentences:
+          - Eskerrik asko! = ¡Muchas gracias! | ¡Gracias!
+          - Ez horregatik. = De nada.
+          - Barkatu! = ¡Perdón! | ¡Perdona! | ¡Perdone!
+          - Mesedez. = Por favor.
+          - Zorionak, Ane! = ¡Felicidades, Ane!
+          - Eskerrik asko, Jon! = ¡Muchas gracias, Jon! | ¡Gracias, Jon!
+          - text: Barkatu, zu Mikel zara? = Perdona, ¿tú eres Mikel? | Perdona, ¿eres Mikel? | Perdone, ¿es usted Mikel?
+            structures: [courtesy, izan-present]
+          - Zorionak eta eskerrik asko! = ¡Felicidades y muchas gracias! | ¡Felicidades y gracias!
+        pairs:
+          - - eskerrik asko = muchas gracias
+            - mesedez = por favor
+            - barkatu = perdón
+            - zorionak = felicidades
+            - ez horregatik = de nada
+        meanings:
+          - text: Ez horregatik.
+            options:
+              - De nada.
+              - Por favor.
+              - Perdón.
+        blanks:
+          - text: Barkatu, zu Iker ___? = Perdona, ¿tú eres Iker?
+            options:
+              - zara
+              - naiz
+            structures: [izan-present]
+        chats:
+          - messages:
+              - Maialen | Eskerrik asko!
+            options:
+              - Ez horregatik.
+              - Zorionak!
+              - Bihar arte.
+        true_false:
+          - passage: Zorionak, Itziar!
+            statement: Alguien felicita a Itziar.
+            answer: true
+  - type: lesson
+    title:
+      es: ¿Quién eres?
+      eu: Nor zara?
+    lessons:
+      - structures: [izan-present]
+        sentences:
+          - Ni Ane naiz. = Soy Ane. | Yo soy Ane.
+          - Kaixo! Ni Mikel naiz. = ¡Hola! Soy Mikel. | ¡Hola! Yo soy Mikel.
+          - Egun on! Ni Itziar naiz. = ¡Buenos días! Soy Itziar. | ¡Buenos días! Yo soy Itziar.
+          - Ni Jon naiz, eta zu? = Soy Jon, ¿y tú? | Yo soy Jon, ¿y tú? | Soy Jon, ¿y usted?
+          - Ni Maialen naiz. = Soy Maialen. | Yo soy Maialen.
+          - Kaixo, ni Iker naiz! = ¡Hola, soy Iker! | ¡Hola, yo soy Iker!
+          - Arratsalde on, ni Ane naiz. = Buenas tardes, soy Ane. | Buenas tardes, yo soy Ane.
+          - Gabon! Ni Jon naiz. = ¡Buenas noches! Soy Jon. | ¡Buenas noches! Yo soy Jon.
+        blanks:
+          - text: Ni Ane ___. = Yo soy Ane.
+            options:
+              - naiz
+              - zara
+          - text: Ni Mikel ___, eta zu? = Yo soy Mikel, ¿y tú?
+            options:
+              - naiz
+              - zara
+        meanings:
+          - text: Ni Jon naiz.
+            options:
+              - Soy Jon.
+              - Eres Jon.
+              - ¿Eres Jon?
+        chats:
+          - messages:
+              - Mikel | Kaixo! Ni Mikel naiz. Eta zu?
+            options:
+              - Ni Itziar naiz.
+              - Ez horregatik.
+              - Gabon, Mikel.
+      - structures: [izan-present, bai-ez]
+        sentences:
+          - Zu Mikel zara? = ¿Tú eres Mikel? | ¿Eres Mikel? | ¿Es usted Mikel?
+          - Bai, ni Mikel naiz. = Sí, soy Mikel. | Sí, yo soy Mikel.
+          - Ez, ni Jon naiz. = No, soy Jon. | No, yo soy Jon.
+          - Zu Ane zara? = ¿Tú eres Ane? | ¿Eres Ane? | ¿Es usted Ane?
+          - Bai, ni Ane naiz. = Sí, soy Ane. | Sí, yo soy Ane.
+          - Ez, ni Maialen naiz. = No, soy Maialen. | No, yo soy Maialen.
+          - Barkatu, zu Jon zara? = Perdona, ¿tú eres Jon? | Perdona, ¿eres Jon? | Perdone, ¿es usted Jon?
+          - Bai, eta zu? = Sí, ¿y tú? | Sí, ¿y usted?
+        blanks:
+          - text: Zu Iker ___? = ¿Tú eres Iker?
+            options:
+              - zara
+              - naiz
+          - text: ___, ni Ane naiz. = Sí, soy Ane.
+            options:
+              - Bai
+              - Ez
+        meanings:
+          - text: Ez, ni Jon naiz.
+            options:
+              - No, soy Jon.
+              - Sí, soy Jon.
+              - No, eres Jon.
+        chats:
+          - messages:
+              - Iker | Zu Ane zara?
+            options:
+              - Bai, ni Ane naiz.
+              - Bai, zu Ane zara.
+              - Gero arte.
+        true_false:
+          - passage: Kaixo! Zu Jon zara? Ez, ni Mikel naiz.
+            statement: La persona se llama Jon.
+            answer: false
+      - structures: [questions]
+        sentences:
+          - Nor zara? = ¿Quién eres? | ¿Quién es usted?
+          - Zer moduz, Ane? = ¿Qué tal, Ane?
+          - Nola? Barkatu! = ¿Cómo? ¡Perdona! | ¿Cómo? ¡Perdón! | ¿Cómo? ¡Perdone!
+          - Nor zara zu? = ¿Quién eres tú? | ¿Quién es usted?
+          - Ni Iker naiz. Eta zu, nor zara? = Soy Iker. Y tú, ¿quién eres? | Yo soy Iker. Y tú, ¿quién eres?
+          - Oso ondo, eskerrik asko. = Muy bien, gracias. | Muy bien, muchas gracias.
+          - Zer moduz, Jon? Ondo? = ¿Qué tal, Jon? ¿Bien?
+          - "Izena: Ane. Abizena: Agirre. = Nombre: Ane. Apellido: Agirre."
+        pairs:
+          - - nor = quién
+            - zer = qué
+            - zein = cuál
+            - nola = cómo
+            - izena = nombre
+            - abizena = apellido
+        meanings:
+          - text: Nor zara?
+            options:
+              - ¿Quién eres?
+              - ¿Cómo estás?
+              - ¿Qué es?
+        chats:
+          - messages:
+              - Ane | Kaixo! Nor zara?
+            options:
+              - Ni Jon naiz.
+              - Zu Jon zara.
+              - Eskerrik asko.
+        true_false:
+          - passage: "Izena: Itziar. Abizena: Agirre."
+            statement: Su apellido es Agirre.
+            answer: true
+  - type: lesson
+    title:
+      es: Conversaciones
+      eu: Elkarrizketak
+    lessons:
+      - structures: [greetings, izan-present]
+        sentences:
+          - Egun on, Ane! Zer moduz? = ¡Buenos días, Ane! ¿Qué tal?
+          - Oso ondo, eskerrik asko. Eta zu? = Muy bien, gracias. ¿Y tú? | Muy bien, gracias. ¿Y usted?
+          - Ni ondo, eskerrik asko. = Yo bien, gracias. | Yo bien, muchas gracias.
+          - Agur, Ane! Gero arte! = ¡Adiós, Ane! ¡Hasta luego!
+          - Gero arte, Mikel! = ¡Hasta luego, Mikel!
+        chats:
+          - messages:
+              - Ane | Egun on, Mikel! Zer moduz?
+            options:
+              - Oso ondo, eskerrik asko.
+              - Gabon, Ane.
+              - Ni Ane naiz.
+          - messages:
+              - Mikel | Kaixo! Ni Mikel naiz.
+              - Itziar | Kaixo, Mikel! Ni Itziar naiz.
+              - Mikel | Zer moduz, Itziar?
+            options:
+              - Ondo, eskerrik asko!
+              - Ez horregatik.
+              - Zorionak!
+        true_false:
+          - passage: Kaixo! Ni Iker naiz. Zer moduz, Ane?
+            statement: Iker saluda a Ane.
+            answer: true
+          - passage: Arratsalde on, Jon! Zorionak!
+            statement: Es por la mañana.
+            answer: false
+      - structures: [courtesy, izan-present]
+        sentences:
+          - Barkatu, zu Itziar zara? = Perdona, ¿tú eres Itziar? | Perdona, ¿eres Itziar? | Perdone, ¿es usted Itziar?
+          - Bai, ni Itziar naiz. Eta zu? = Sí, soy Itziar. ¿Y tú? | Sí, yo soy Itziar. ¿Y tú?
+          - Ni Jon naiz. Kaixo! = Soy Jon. ¡Hola! | Yo soy Jon. ¡Hola!
+          - Zorionak, Itziar! = ¡Felicidades, Itziar!
+          - Eskerrik asko, Jon! = ¡Muchas gracias, Jon! | ¡Gracias, Jon!
+        chats:
+          - messages:
+              - Jon | Barkatu, zu Ane zara?
+            options:
+              - Ez, ni Maialen naiz.
+              - Ez horregatik.
+              - Zorionak, Jon.
+          - messages:
+              - Itziar | Zorionak, Mikel!
+            options:
+              - Eskerrik asko, Itziar!
+              - Bihar arte, Mikel!
+              - Ez, ni Mikel naiz.
+        blanks:
+          - text: ___ Itziar zara? = ¿Tú eres Itziar?
+            options:
+              - Zu
+              - Ni
+        meanings:
+          - text: Zorionak!
+            options:
+              - ¡Felicidades!
+              - ¡Gracias!
+              - ¡Perdón!
+        true_false:
+          - passage: Barkatu! Zu Iker zara? Bai, ni Iker naiz.
+            statement: La persona es Iker.
+            answer: true
+      - structures: [greetings, questions]
+        sentences:
+          - Gabon, Maialen! = ¡Buenas noches, Maialen!
+          - Gabon! Bihar arte! = ¡Buenas noches! ¡Hasta mañana!
+          - Mesedez, nor zara? = Por favor, ¿quién eres? | Por favor, ¿quién es usted?
+          - Ni Ane Agirre naiz. = Soy Ane Agirre. | Yo soy Ane Agirre.
+          - Eskerrik asko, Ane. Agur! = Gracias, Ane. ¡Adiós! | Muchas gracias, Ane. ¡Adiós!
+        pairs:
+          - - egun on = buenos días
+            - arratsalde on = buenas tardes
+            - gabon = buenas noches
+            - agur = adiós
+            - bai = sí
+            - ez = no
+        chats:
+          - messages:
+              - Iker | Gabon, Ane! Bihar arte!
+            options:
+              - Bihar arte, Iker!
+              - Egun on, Iker!
+              - Ni Ane naiz.
+          - messages:
+              - Maialen | Barkatu, nor zara?
+            options:
+              - Ni Jon Etxeberria naiz.
+              - Zu Jon zara.
+              - Oso ondo.
+        meanings:
+          - text: Bihar arte!
+            options:
+              - ¡Hasta mañana!
+              - ¡Hasta luego!
+              - ¡Buenas noches!
+        true_false:
+          - passage: "Kaixo! Ni Jon naiz. Izena: Jon. Abizena: Etxeberria."
+            statement: Se apellida Jon.
+            answer: false
+  - type: story
+    title:
+      es: "Historia: el primer día"
+      eu: "Istorioa: lehen eguna"
+    story:
+      title: Lehen eguna
+      lines:
+        - Ane | Egun on! = ¡Buenos días!
+        - Iker | Kaixo! Zer moduz? = ¡Hola! ¿Qué tal?
+        - Ane | Oso ondo, eskerrik asko. Ni Ane naiz. Eta zu? = Muy bien, gracias. Soy Ane. ¿Y tú?
+        - Iker | Ni Iker naiz. Zu Ane Agirre zara? = Yo soy Iker. ¿Tú eres Ane Agirre?
+        - Ane | Bai! Eta zu Iker Etxeberria zara? = ¡Sí! ¿Y tú eres Iker Etxeberria?
+        - Iker | Ez, ni Iker Urrutia naiz. = No, yo soy Iker Urrutia.
+        - Ane | Barkatu! Agur, Iker! Bihar arte! = ¡Perdona! ¡Adiós, Iker! ¡Hasta mañana!
+        - Iker | Gero arte! = ¡Hasta luego!
+      questions:
+        - afterLine: 2
+          prompt: ¿Cómo está Ane?
+          options:
+            - Muy bien
+            - Regular
+            - No lo dice
+        - afterLine: 5
+          prompt: ¿Cuál es el apellido de Iker?
+          options:
+            - Urrutia
+            - Etxeberria
+            - Agirre
+        - afterLine: 7
+          prompt: ¿Cuándo volverán a verse, según Ane?
+          options:
+            - Mañana
+            - Esta noche
+            - No lo dice
+  - type: review
+  - type: legendary

@@ -1,0 +1,2701 @@
+{
+  "schemaVersion": 1,
+  "id": "u08-1",
+  "section": "s3",
+  "bookUnit": 8,
+  "title": {
+    "es": "Dolor de cabeza",
+    "eu": "Buruko mina"
+  },
+  "goals": [
+    {
+      "es": "Decir qué te duele y describir síntomas.",
+      "eu": "Non duzun mina esan eta sintomak azaldu."
+    },
+    {
+      "es": "Pedir hora con el médico y quedar a una hora.",
+      "eu": "Medikuarekin ordua hartu eta ordu bat adostu."
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "¿Qué te duele? Buruko mina",
+          "eu": "Non duzu mina? Buruko mina"
+        },
+        "body": {
+          "es": "Para decir qué te duele, la parte del cuerpo lleva -ko (-eko tras consonante) y luego «mina» + daukat o dut, como «tengo dolor de…». Para preguntar se dice «Non daukazu mina?».",
+          "eu": "Non duzun mina esateko, gorputz-atalak -ko hartzen du (-eko kontsonante ondoren) eta gero «mina» + daukat edo dut. Galdetzeko, «Non daukazu mina?»."
+        },
+        "examples": [
+          {
+            "eu": "Buruko mina daukat.",
+            "es": "Me duele la cabeza."
+          },
+          {
+            "eu": "Non daukazu mina? Hankan.",
+            "es": "¿Dónde te duele? En la pierna."
+          },
+          {
+            "eu": "Ez daukat sabeleko minik.",
+            "es": "No me duele la tripa."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Tener fiebre, estar cansado",
+          "eu": "Sukarra izan, nekatuta egon"
+        },
+        "body": {
+          "es": "«Sukarra», «eztula» y «hotzeria» van con daukat o dut (tener). «Gaixo» y «nekatuta» van con nago, zaude, dago (estar). En negativa, el nombre lleva -rik (ez daukat sukarrik).",
+          "eu": "«Sukarra», «eztula» eta «hotzeria» daukat edo dut aditzarekin doaz. «Gaixo» eta «nekatuta» nago, zaude, dago aditzarekin. Ezezkoan, izenak -rik hartzen du (ez daukat sukarrik)."
+        },
+        "examples": [
+          {
+            "eu": "Sukarra eta eztula dauzkat.",
+            "es": "Tengo fiebre y tos."
+          },
+          {
+            "eu": "Oso nekatuta nago.",
+            "es": "Estoy muy cansado."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "De un lugar: Bilboko ospitalea",
+          "eu": "Leku batekoa: Bilboko ospitalea"
+        },
+        "body": {
+          "es": "La misma terminación -ko sirve para decir «de» un lugar, como en Bilboko ospitalea (el hospital de Bilbao), herriko farmazia (la farmacia del pueblo). Va delante del nombre.",
+          "eu": "-ko atzizki berak leku bateko zerbait adierazten du (Bilboko ospitalea, herriko farmazia). Izenaren aurretik doa."
+        },
+        "examples": [
+          {
+            "eu": "Bilboko ospitalea handia da.",
+            "es": "El hospital de Bilbao es grande."
+          },
+          {
+            "eu": "Herriko farmazia plazan dago.",
+            "es": "La farmacia del pueblo está en la plaza."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "¿A qué hora? Zer ordutan?",
+          "eu": "Zer ordutan?"
+        },
+        "body": {
+          "es": "Para decir a qué hora pasa algo, el número lleva -(r)etan (hiruretan, bostetan); «a la una» es «ordu batean». Se puede añadir goizeko, arratsaldeko o gaueko delante.",
+          "eu": "Zerbait zer ordutan gertatzen den esateko, zenbakiak -(r)etan hartzen du (hiruretan, bostetan); «ordu batean» esaten da. Aurretik goizeko, arratsaldeko edo gaueko jar daiteke."
+        },
+        "examples": [
+          {
+            "eu": "Zer ordutan? Hiruretan.",
+            "es": "¿A qué hora? A las tres."
+          },
+          {
+            "eu": "Goizeko hamarretan etorriko naiz.",
+            "es": "Vendré a las diez de la mañana."
+          },
+          {
+            "eu": "Ordu batean bazkalduko dut.",
+            "es": "Comeré a la una."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u08-1.l1",
+      "type": "lesson",
+      "title": {
+        "es": "El cuerpo",
+        "eu": "Gorputza"
+      },
+      "lessons": [
+        {
+          "id": "u08-1.l1.s1",
+          "exercises": [
+            {
+              "id": "u08-1.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "El niño tiene las orejas grandes."
+              },
+              "answers": [
+                "Umeak belarri handiak ditu."
+              ],
+              "distractors": [
+                "Nire",
+                "du",
+                "aitak"
+              ],
+              "vocabulary": [
+                "ume",
+                "belarri",
+                "handi",
+                "ukan"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e02",
+              "type": "listen_tap",
+              "text": "Nire aitak sudur luzea dauka.",
+              "distractors": [
+                "belarri",
+                "Hortzetako",
+                "Buruko"
+              ],
+              "vocabulary": [
+                "ni",
+                "aita",
+                "sudur",
+                "luze",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "burua",
+                  "es": "la cabeza"
+                },
+                {
+                  "eu": "belarria",
+                  "es": "la oreja"
+                },
+                {
+                  "eu": "sudurra",
+                  "es": "la nariz"
+                },
+                {
+                  "eu": "ahoa",
+                  "es": "la boca"
+                },
+                {
+                  "eu": "hortza",
+                  "es": "el diente"
+                },
+                {
+                  "eu": "lepoa",
+                  "es": "el cuello"
+                }
+              ],
+              "vocabulary": [
+                "buru",
+                "belarri",
+                "sudur",
+                "aho",
+                "hortz",
+                "lepo"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Esta chica tiene el cuello largo."
+              },
+              "answers": [
+                "Neska honek lepo luzea dauka."
+              ],
+              "vocabulary": [
+                "neska",
+                "hau",
+                "lepo",
+                "luze",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e05",
+              "type": "fill_blank",
+              "sentence": "___ mina daukat.",
+              "options": [
+                "Buruko",
+                "Burua"
+              ],
+              "correct": 0,
+              "translation": "Me duele la cabeza.",
+              "vocabulary": [
+                "buru",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e06",
+              "type": "order_sentence",
+              "answer": "Umeak aho txikia du.",
+              "translation": "El niño tiene la boca pequeña.",
+              "vocabulary": [
+                "ume",
+                "aho",
+                "txiki",
+                "ukan"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e07",
+              "type": "choose_meaning",
+              "text": "Buruko mina dauka.",
+              "options": [
+                "Le duele la cabeza.",
+                "Me duele la cabeza.",
+                "Le duele el cuello."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "buru",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Buruko mina daukat."
+              },
+              "answers": [
+                "Me duele la cabeza.",
+                "Tengo dolor de cabeza."
+              ],
+              "vocabulary": [
+                "buru",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nerea",
+                  "text": "Zer daukazu, Iker?"
+                }
+              ],
+              "options": [
+                "Buruko mina daukat.",
+                "Burua mina daukat.",
+                "Bihar arte."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "eduki",
+                "buru",
+                "min"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e10",
+              "type": "listen_type",
+              "text": "Belarriko mina daukat.",
+              "answers": [
+                "Belarriko mina daukat."
+              ],
+              "vocabulary": [
+                "belarri",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e11",
+              "type": "read_true_false",
+              "passage": "Gaur hortzetako mina daukat. Ez dut bazkaldu.",
+              "statement": "Le duelen las muelas.",
+              "answer": true,
+              "vocabulary": [
+                "gaur",
+                "hortz",
+                "min",
+                "eduki",
+                "ez",
+                "ukan",
+                "bazkaldu"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e12",
+              "type": "speak",
+              "text": "Hortzetako mina dauka.",
+              "translation": "Le duelen las muelas.",
+              "vocabulary": [
+                "hortz",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lepoko mina daukazu?"
+              },
+              "answers": [
+                "¿Te duele el cuello?",
+                "¿Tienes dolor de cuello?",
+                "¿Le duele el cuello?"
+              ],
+              "distractors": [
+                "Me",
+                "chica",
+                "grandes"
+              ],
+              "vocabulary": [
+                "lepo",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u08-1.l1.s2",
+          "exercises": [
+            {
+              "id": "u08-1.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Besoko mina daukat.",
+              "distractors": [
+                "dauka",
+                "Esku"
+              ],
+              "vocabulary": [
+                "beso",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Tienes las manos pequeñas."
+              },
+              "answers": [
+                "Esku txikiak dituzu."
+              ],
+              "vocabulary": [
+                "esku",
+                "txiki",
+                "ukan"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "besoa",
+                  "es": "el brazo"
+                },
+                {
+                  "eu": "eskua",
+                  "es": "la mano"
+                },
+                {
+                  "eu": "hatza",
+                  "es": "el dedo"
+                },
+                {
+                  "eu": "sabela",
+                  "es": "la tripa"
+                },
+                {
+                  "eu": "bizkarra",
+                  "es": "la espalda"
+                },
+                {
+                  "eu": "hanka",
+                  "es": "la pierna"
+                }
+              ],
+              "vocabulary": [
+                "beso",
+                "esku",
+                "hatz",
+                "sabel",
+                "bizkar",
+                "hanka"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e04",
+              "type": "order_sentence",
+              "answer": "Hatz bat moztu dut.",
+              "translation": "Me he cortado un dedo.",
+              "vocabulary": [
+                "hatz",
+                "bat",
+                "moztu",
+                "ukan"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Aitak ___ mina dauka.",
+              "options": [
+                "bizkarreko",
+                "bizkarra"
+              ],
+              "correct": 0,
+              "translation": "A mi padre le duele la espalda.",
+              "vocabulary": [
+                "aita",
+                "bizkar",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Sabeleko mina daukat."
+              },
+              "answers": [
+                "Me duele la tripa.",
+                "Me duele el vientre.",
+                "Tengo dolor de tripa."
+              ],
+              "vocabulary": [
+                "sabel",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e07",
+              "type": "choose_meaning",
+              "text": "Anek eskuko mina dauka.",
+              "options": [
+                "A Ane le duele la mano.",
+                "A Ane le duele el pie.",
+                "Ane tiene la mano pequeña."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "esku",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e08",
+              "type": "listen_type",
+              "text": "Aitonak bizkarreko mina dauka.",
+              "answers": [
+                "Aitonak bizkarreko mina dauka."
+              ],
+              "vocabulary": [
+                "aitona",
+                "bizkar",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Jon",
+                  "text": "Non daukazu mina?"
+                }
+              ],
+              "options": [
+                "Hankan daukat.",
+                "Hankako daukat.",
+                "Hanka daukat."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "non",
+                "eduki",
+                "min",
+                "hanka"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e10",
+              "type": "speak",
+              "text": "Hankako mina daukazu?",
+              "translation": "¿Te duele la pierna?",
+              "vocabulary": [
+                "hanka",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e11",
+              "type": "read_true_false",
+              "passage": "Atzo mendira joan naiz. Gaur oineko eta belauneko mina daukat.",
+              "statement": "Le duelen los brazos.",
+              "answer": false,
+              "vocabulary": [
+                "atzo",
+                "mendi",
+                "joan",
+                "izan",
+                "gaur",
+                "oin",
+                "eta",
+                "belaun",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Oineko mina daukat."
+              },
+              "answers": [
+                "Me duele el pie.",
+                "Tengo dolor de pie."
+              ],
+              "distractors": [
+                "Te",
+                "la",
+                "Le"
+              ],
+              "vocabulary": [
+                "oin",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Le duele la rodilla."
+              },
+              "answers": [
+                "Belauneko mina dauka.",
+                "Belauneko mina du."
+              ],
+              "distractors": [
+                "Aitonak",
+                "daukazu"
+              ],
+              "vocabulary": [
+                "belaun",
+                "min",
+                "eduki",
+                "ukan"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u08-1.l1.s3",
+          "exercises": [
+            {
+              "id": "u08-1.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Estoy enfermo."
+              },
+              "answers": [
+                "Gaixo nago."
+              ],
+              "vocabulary": [
+                "gaixo",
+                "egon"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Sukarra daukat."
+              },
+              "answers": [
+                "Tengo fiebre."
+              ],
+              "vocabulary": [
+                "sukar",
+                "eduki"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "sukarra",
+                  "es": "la fiebre"
+                },
+                {
+                  "eu": "eztula",
+                  "es": "la tos"
+                },
+                {
+                  "eu": "hotzeria",
+                  "es": "el resfriado"
+                },
+                {
+                  "eu": "mina",
+                  "es": "el dolor"
+                },
+                {
+                  "eu": "gaixo",
+                  "es": "enfermo"
+                },
+                {
+                  "eu": "nekatuta",
+                  "es": "cansado"
+                }
+              ],
+              "vocabulary": [
+                "sukar",
+                "eztul",
+                "hotzeria",
+                "min",
+                "gaixo",
+                "nekatuta"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Eztula daukazu?"
+              },
+              "answers": [
+                "¿Tienes tos?",
+                "¿Tiene usted tos?"
+              ],
+              "vocabulary": [
+                "eztul",
+                "eduki"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Gaur gaixo ___.",
+              "options": [
+                "nago",
+                "daukat"
+              ],
+              "correct": 0,
+              "translation": "Hoy estoy enfermo.",
+              "vocabulary": [
+                "gaur",
+                "gaixo",
+                "egon"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e06",
+              "type": "listen_type",
+              "text": "Hotzeria daukat.",
+              "answers": [
+                "Hotzeria daukat."
+              ],
+              "vocabulary": [
+                "hotzeria",
+                "eduki"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e07",
+              "type": "choose_meaning",
+              "text": "Nekatuta nago.",
+              "options": [
+                "Estoy cansado.",
+                "Estoy enfermo.",
+                "Estoy en casa."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nekatuta",
+                "egon"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e08",
+              "type": "speak",
+              "text": "Oso nekatuta nago.",
+              "translation": "Estoy muy cansado.",
+              "vocabulary": [
+                "oso",
+                "nekatuta",
+                "egon"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Olatz",
+                  "text": "Zer moduz zaude?"
+                }
+              ],
+              "options": [
+                "Ez oso ondo. Hotzeria daukat.",
+                "Ez oso ondo. Hotzeria nago.",
+                "Bai, hotzeria."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer moduz",
+                "egon",
+                "ez",
+                "oso",
+                "ondo",
+                "hotzeria",
+                "eduki"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ane gaixo dago."
+              },
+              "answers": [
+                "Ane está enferma."
+              ],
+              "distractors": [
+                "muy",
+                "Estoy"
+              ],
+              "vocabulary": [
+                "gaixo",
+                "egon"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e11",
+              "type": "read_true_false",
+              "passage": "Gaur ez naiz eskolara joan. Sukarra eta eztula dauzkat.",
+              "statement": "Hoy ha ido a la escuela.",
+              "answer": false,
+              "vocabulary": [
+                "gaur",
+                "ez",
+                "izan",
+                "eskola",
+                "joan",
+                "sukar",
+                "eta",
+                "eztul",
+                "eduki"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué tienes?"
+              },
+              "answers": [
+                "Zer daukazu?"
+              ],
+              "distractors": [
+                "Ane",
+                "dago"
+              ],
+              "vocabulary": [
+                "zer",
+                "eduki"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e13",
+              "type": "listen_tap",
+              "text": "Ez daukat sukarrik.",
+              "distractors": [
+                "Gaixo",
+                "nago"
+              ],
+              "vocabulary": [
+                "ez",
+                "eduki",
+                "sukar"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u08-1.l2",
+      "type": "lesson",
+      "title": {
+        "es": "¿Dónde y a qué hora?",
+        "eu": "Non eta zer ordutan?"
+      },
+      "lessons": [
+        {
+          "id": "u08-1.l2.s1",
+          "exercises": [
+            {
+              "id": "u08-1.l2.s1.e01",
+              "type": "order_sentence",
+              "answer": "Non daukazu mina?",
+              "translation": "¿Dónde te duele?",
+              "vocabulary": [
+                "non",
+                "eduki",
+                "min"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hemen, buruan."
+              },
+              "answers": [
+                "Aquí, en la cabeza."
+              ],
+              "vocabulary": [
+                "hemen",
+                "buru"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e03",
+              "type": "fill_blank",
+              "sentence": "Guk hortzetako mina ___.",
+              "options": [
+                "daukagu",
+                "daukat"
+              ],
+              "correct": 0,
+              "translation": "Nos duelen las muelas.",
+              "vocabulary": [
+                "gu",
+                "hortz",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e04",
+              "type": "listen_type",
+              "text": "Amak buruko min handia dauka.",
+              "answers": [
+                "Amak buruko min handia dauka."
+              ],
+              "vocabulary": [
+                "ama",
+                "buru",
+                "min",
+                "handi",
+                "eduki"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Ez daukat sabeleko ___.",
+              "options": [
+                "minik",
+                "mina"
+              ],
+              "correct": 0,
+              "translation": "No me duele la tripa.",
+              "vocabulary": [
+                "ez",
+                "eduki",
+                "sabel",
+                "min"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e06",
+              "type": "speak",
+              "text": "Guk sabeleko mina daukagu.",
+              "translation": "Nos duele la tripa.",
+              "vocabulary": [
+                "gu",
+                "sabel",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e07",
+              "type": "choose_meaning",
+              "text": "Mikelek ez dauka bizkarreko minik.",
+              "options": [
+                "A Mikel no le duele la espalda.",
+                "A Mikel le duele la espalda.",
+                "A Mikel no le duele la pierna."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "eduki",
+                "bizkar",
+                "min"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Umeek belarriko mina daukate."
+              },
+              "answers": [
+                "A los niños les duelen los oídos.",
+                "Los niños tienen dolor de oídos."
+              ],
+              "distractors": [
+                "duele",
+                "le",
+                "No",
+                "Nos"
+              ],
+              "vocabulary": [
+                "ume",
+                "belarri",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ander",
+                  "text": "Non daukazu mina, Garazi?"
+                }
+              ],
+              "options": [
+                "Belaunean, hemen.",
+                "Belauneko, hemen.",
+                "Belauna, hemen."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "non",
+                "eduki",
+                "min",
+                "belaun",
+                "hemen"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿A ti te duele el cuello?"
+              },
+              "answers": [
+                "Zuk lepoko mina daukazu?"
+              ],
+              "distractors": [
+                "minik",
+                "Amak",
+                "min"
+              ],
+              "vocabulary": [
+                "zu",
+                "lepo",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e11",
+              "type": "read_true_false",
+              "passage": "Aitak eta amak hotzeria daukate. Ni ondo nago.",
+              "statement": "Sus padres están resfriados.",
+              "answer": true,
+              "vocabulary": [
+                "aita",
+                "eta",
+                "ama",
+                "hotzeria",
+                "eduki",
+                "ni",
+                "ondo",
+                "egon"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e12",
+              "type": "listen_tap",
+              "text": "Ez daukat buruko minik.",
+              "distractors": [
+                "Zuk",
+                "oineko",
+                "dauka"
+              ],
+              "vocabulary": [
+                "ez",
+                "eduki",
+                "buru",
+                "min"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s1.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Me duelen la pierna y el pie."
+              },
+              "answers": [
+                "Hankako eta oineko mina daukat."
+              ],
+              "vocabulary": [
+                "hanka",
+                "eta",
+                "oin",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "nongo-mina"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u08-1.l2.s2",
+          "exercises": [
+            {
+              "id": "u08-1.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bilboko ospitalean lan egiten du."
+              },
+              "answers": [
+                "Trabaja en el hospital de Bilbao."
+              ],
+              "vocabulary": [
+                "ospitale",
+                "lan egin",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s2.e02",
+              "type": "listen_type",
+              "text": "Herriko farmazia plazan dago.",
+              "answers": [
+                "Herriko farmazia plazan dago."
+              ],
+              "vocabulary": [
+                "herri",
+                "farmazia",
+                "plaza",
+                "egon"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s2.e03",
+              "type": "fill_blank",
+              "sentence": "___ farmazia plazan dago.",
+              "options": [
+                "Herriko",
+                "Herrian"
+              ],
+              "correct": 0,
+              "translation": "La farmacia del pueblo está en la plaza.",
+              "vocabulary": [
+                "herri",
+                "farmazia",
+                "plaza",
+                "egon"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s2.e04",
+              "type": "speak",
+              "text": "Ospitaleko medikua oso jatorra da.",
+              "translation": "El médico del hospital es muy majo.",
+              "vocabulary": [
+                "ospitale",
+                "mediku",
+                "oso",
+                "jator",
+                "izan"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s2.e05",
+              "type": "choose_meaning",
+              "text": "Durangoko ospitalean nago.",
+              "options": [
+                "Estoy en el hospital de Durango.",
+                "Voy al hospital de Durango.",
+                "Soy de Durango."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ospitale",
+                "egon"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Eskolako erizaina Itziar da."
+              },
+              "answers": [
+                "La enfermera de la escuela es Itziar."
+              ],
+              "distractors": [
+                "Aitor",
+                "Tolosa",
+                "médico",
+                "pedido"
+              ],
+              "vocabulary": [
+                "eskola",
+                "erizain",
+                "izan"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Non dago herriko farmazia?"
+                }
+              ],
+              "options": [
+                "Plazan, bankuaren ondoan.",
+                "Plazako, bankuaren ondoan.",
+                "Herriko farmazia."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "non",
+                "egon",
+                "herri",
+                "farmazia",
+                "plaza",
+                "banku",
+                "ondoan"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "He pedido hora con el médico de Vitoria."
+              },
+              "answers": [
+                "Gasteizko medikuarekin ordua hartu dut."
+              ],
+              "distractors": [
+                "ospitalean",
+                "erizaina",
+                "Eskolako"
+              ],
+              "vocabulary": [
+                "mediku",
+                "ordu",
+                "hartu",
+                "ukan"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s2.e09",
+              "type": "read_true_false",
+              "passage": "Ni Eibarko ospitalean erizaina naiz. Nire senarra Bergarako medikua da.",
+              "statement": "Su marido es médico en Bergara.",
+              "answer": true,
+              "vocabulary": [
+                "ni",
+                "ospitale",
+                "erizain",
+                "izan",
+                "senar",
+                "mediku"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s2.e10",
+              "type": "listen_tap",
+              "text": "Donostiako ospitalea handia da.",
+              "distractors": [
+                "Herriko",
+                "du",
+                "egiten"
+              ],
+              "vocabulary": [
+                "ospitale",
+                "handi",
+                "izan"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s2.e11",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Esta es la farmacia de Tolosa?"
+              },
+              "answers": [
+                "Hau Tolosako farmazia da?"
+              ],
+              "vocabulary": [
+                "hau",
+                "farmazia",
+                "izan"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s2.e12",
+              "type": "order_sentence",
+              "answer": "Nire herriko medikua Aitor da.",
+              "translation": "El médico de mi pueblo es Aitor.",
+              "vocabulary": [
+                "ni",
+                "herri",
+                "mediku",
+                "izan"
+              ],
+              "structures": [
+                "nongo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u08-1.l2.s3",
+          "exercises": [
+            {
+              "id": "u08-1.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Zer ordutan?",
+              "answers": [
+                "Zer ordutan?"
+              ],
+              "vocabulary": [
+                "zer",
+                "ordu"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e02",
+              "type": "speak",
+              "text": "Hiruretan.",
+              "translation": "A las tres.",
+              "vocabulary": [
+                "hiru"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "ordu batean",
+                  "es": "a la una"
+                },
+                {
+                  "eu": "biretan",
+                  "es": "a las dos"
+                },
+                {
+                  "eu": "hiruretan",
+                  "es": "a las tres"
+                },
+                {
+                  "eu": "lauretan",
+                  "es": "a las cuatro"
+                },
+                {
+                  "eu": "hamabietan",
+                  "es": "a las doce"
+                }
+              ],
+              "vocabulary": [
+                "ordu",
+                "bat",
+                "bi",
+                "hiru",
+                "lau",
+                "hamabi"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bostetan ospitalera joango naiz."
+              },
+              "answers": [
+                "A las cinco iré al hospital.",
+                "A las cinco voy a ir al hospital."
+              ],
+              "distractors": [
+                "once",
+                "la",
+                "comerás",
+                "Vendré"
+              ],
+              "vocabulary": [
+                "bost",
+                "ospitale",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Zazpietan ___ dugu.",
+              "options": [
+                "afalduko",
+                "afaltzen"
+              ],
+              "correct": 0,
+              "translation": "Cenaremos a las siete.",
+              "vocabulary": [
+                "zazpi",
+                "afaldu",
+                "ukan"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿A qué hora comerás?"
+              },
+              "answers": [
+                "Zer ordutan bazkalduko duzu?"
+              ],
+              "distractors": [
+                "hamaiketan",
+                "batean",
+                "joango"
+              ],
+              "vocabulary": [
+                "zer",
+                "ordu",
+                "bazkaldu",
+                "ukan"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e07",
+              "type": "choose_meaning",
+              "text": "Hamabietan bazkalduko dugu.",
+              "options": [
+                "Comeremos a las doce.",
+                "Comimos a las doce.",
+                "Comeremos a las dos."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hamabi",
+                "bazkaldu",
+                "ukan"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e08",
+              "type": "listen_tap",
+              "text": "Ordu batean bazkalduko dut.",
+              "distractors": [
+                "lau",
+                "Zer",
+                "etorriko"
+              ],
+              "vocabulary": [
+                "ordu",
+                "bat",
+                "bazkaldu",
+                "ukan"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Aitor",
+                  "text": "Zer ordutan etorriko zara?"
+                }
+              ],
+              "options": [
+                "Seietan etorriko naiz.",
+                "Seiak dira.",
+                "Seietan etorri naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "ordu",
+                "etorri",
+                "izan",
+                "sei"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Vendré a las diez de la mañana."
+              },
+              "answers": [
+                "Goizeko hamarretan etorriko naiz."
+              ],
+              "vocabulary": [
+                "goiz",
+                "hamar",
+                "etorri",
+                "izan"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e11",
+              "type": "read_true_false",
+              "passage": "Gaur medikuarekin ordua daukat. Bostetan joango naiz.",
+              "statement": "Irá al médico a las cinco.",
+              "answer": true,
+              "vocabulary": [
+                "gaur",
+                "mediku",
+                "ordu",
+                "eduki",
+                "bost",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e12",
+              "type": "order_sentence",
+              "answer": "Arratsaldeko lau eta erdietan.",
+              "translation": "A las cuatro y media de la tarde.",
+              "vocabulary": [
+                "arratsalde",
+                "lau",
+                "eta"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l2.s3.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaueko hamaiketan afaldu dugu."
+              },
+              "answers": [
+                "Hemos cenado a las once de la noche.",
+                "Cenamos a las once de la noche."
+              ],
+              "vocabulary": [
+                "gau",
+                "hamaika",
+                "afaldu",
+                "ukan"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u08-1.l3",
+      "type": "lesson",
+      "title": {
+        "es": "En la consulta",
+        "eu": "Medikuarekin"
+      },
+      "lessons": [
+        {
+          "id": "u08-1.l3.s1",
+          "exercises": [
+            {
+              "id": "u08-1.l3.s1.e01",
+              "type": "speak",
+              "text": "Egun on. Zer daukazu?",
+              "translation": "Buenos días. ¿Qué le pasa?",
+              "vocabulary": [
+                "egun on",
+                "zer",
+                "eduki"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Buruko mina eta sukarra dauzkat."
+              },
+              "answers": [
+                "Me duele la cabeza y tengo fiebre.",
+                "Tengo dolor de cabeza y fiebre."
+              ],
+              "distractors": [
+                "cansado",
+                "pasa",
+                "días",
+                "en"
+              ],
+              "vocabulary": [
+                "buru",
+                "min",
+                "eta",
+                "sukar",
+                "eduki"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Nekatuta zaude?",
+              "options": [
+                "¿Estás cansado?",
+                "¿Estás enfermo?",
+                "¿Estás en casa?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nekatuta",
+                "egon"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Y tos?"
+              },
+              "answers": [
+                "Eta eztula?"
+              ],
+              "distractors": [
+                "dauzkat",
+                "behar"
+              ],
+              "vocabulary": [
+                "eta",
+                "eztul"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s1.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Medikua",
+                  "text": "Egun on, Nahia. Zer daukazu?"
+                },
+                {
+                  "speaker": "Nahia",
+                  "text": "Ez nago ondo."
+                },
+                {
+                  "speaker": "Medikua",
+                  "text": "Non daukazu mina?"
+                }
+              ],
+              "options": [
+                "Sabelean, hemen.",
+                "Sabeleko, hemen.",
+                "Bihar arte."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "egun on",
+                "zer",
+                "eduki",
+                "ez",
+                "egon",
+                "ondo",
+                "non",
+                "min",
+                "sabel",
+                "hemen"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Bai, eta oso nekatuta nago.",
+              "distractors": [
+                "mina",
+                "etxean",
+                "Hotzeria"
+              ],
+              "vocabulary": [
+                "bai",
+                "eta",
+                "oso",
+                "nekatuta",
+                "egon"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s1.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nahia",
+                  "text": "Sukarra daukat?"
+                }
+              ],
+              "options": [
+                "Ez, ez daukazu sukarrik.",
+                "Ez, ez dut sukarra.",
+                "Bai, gaixo naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "sukar",
+                "eduki",
+                "ez"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Tienes un resfriado."
+              },
+              "answers": [
+                "Hotzeria daukazu."
+              ],
+              "vocabulary": [
+                "hotzeria",
+                "eduki"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s1.e09",
+              "type": "read_true_false",
+              "passage": "Gaur ez dut lan egin. Bizkarreko min handia daukat.",
+              "statement": "Hoy ha trabajado.",
+              "answer": false,
+              "vocabulary": [
+                "lan egin",
+                "gaur",
+                "ez",
+                "ukan",
+                "bizkar",
+                "min",
+                "handi",
+                "eduki"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s1.e10",
+              "type": "order_sentence",
+              "answer": "Gaur etxean geratu behar duzu.",
+              "translation": "Hoy tienes que quedarte en casa.",
+              "vocabulary": [
+                "gaur",
+                "etxe",
+                "geratu",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s1.e11",
+              "type": "read_true_false",
+              "passage": "Umeak sukarra dauka. Gaixo dago eta lo egiten ari da.",
+              "statement": "El niño está durmiendo.",
+              "answer": true,
+              "vocabulary": [
+                "ume",
+                "sukar",
+                "eduki",
+                "gaixo",
+                "egon",
+                "eta",
+                "lo egin",
+                "egin",
+                "izan"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u08-1.l3.s2",
+          "exercises": [
+            {
+              "id": "u08-1.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kaixo, egun on. Medikuarekin ordua hartu nahi dut."
+              },
+              "answers": [
+                "Hola, buenos días. Quiero pedir hora con el médico.",
+                "Hola, buenos días. Quiero pedir cita con el médico.",
+                "Hola, buenos días. Quiero pedir hora con la médica."
+              ],
+              "distractors": [
+                "de",
+                "y",
+                "Sí",
+                "trabajo"
+              ],
+              "vocabulary": [
+                "egun on",
+                "kaixo",
+                "mediku",
+                "ordu",
+                "hartu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Su nombre, por favor?"
+              },
+              "answers": [
+                "Zure izena, mesedez?"
+              ],
+              "distractors": [
+                "erdietan",
+                "Ez"
+              ],
+              "vocabulary": [
+                "zu",
+                "izen",
+                "mesedez"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Medikuarekin ordua ___ nahi dut.",
+              "options": [
+                "hartu",
+                "hartzen"
+              ],
+              "correct": 0,
+              "translation": "Quiero pedir hora con el médico.",
+              "vocabulary": [
+                "mediku",
+                "ordu",
+                "hartu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s2.e04",
+              "type": "listen_tap",
+              "text": "Bihar, goizeko bederatzietan, ondo?",
+              "distractors": [
+                "Zure",
+                "lan",
+                "nahi"
+              ],
+              "vocabulary": [
+                "bihar",
+                "goiz",
+                "bederatzi",
+                "ondo"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s2.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Erizaina",
+                  "text": "Egun on! Zer nahi duzu?"
+                },
+                {
+                  "speaker": "Kepa",
+                  "text": "Medikuarekin ordua hartu nahi dut."
+                },
+                {
+                  "speaker": "Erizaina",
+                  "text": "Zer ordutan?"
+                }
+              ],
+              "options": [
+                "Arratsaldeko bostetan.",
+                "Arratsaldeko bostak.",
+                "Arratsaldean bost."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "egun on",
+                "zer",
+                "nahi izan",
+                "ukan",
+                "mediku",
+                "ordu",
+                "hartu",
+                "arratsalde",
+                "bost"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "No, por la mañana trabajo."
+              },
+              "answers": [
+                "Ez, goizean lan egiten dut."
+              ],
+              "vocabulary": [
+                "ez",
+                "goiz",
+                "lan egin",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Erizaina",
+                  "text": "Bihar hamaiketan etorriko zara?"
+                }
+              ],
+              "options": [
+                "Bai, hamaiketan etorriko naiz.",
+                "Bai, hamaiketan etorri naiz.",
+                "Bai, hamaika urte ditut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bihar",
+                "hamaika",
+                "etorri",
+                "izan",
+                "bai"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s2.e08",
+              "type": "order_sentence",
+              "answer": "Arratsaldeko hiru eta erdietan?",
+              "translation": "¿A las tres y media de la tarde?",
+              "vocabulary": [
+                "arratsalde",
+                "hiru",
+                "eta"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s2.e09",
+              "type": "read_true_false",
+              "passage": "Ostiralean medikuarekin ordua daukat, goizeko hamarretan.",
+              "statement": "La cita es el viernes por la tarde.",
+              "answer": false,
+              "vocabulary": [
+                "ostiral",
+                "mediku",
+                "ordu",
+                "eduki",
+                "goiz",
+                "hamar"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s2.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bai, oso ondo. Eskerrik asko!"
+              },
+              "answers": [
+                "Sí, muy bien. ¡Muchas gracias!",
+                "Sí, muy bien. ¡Gracias!"
+              ],
+              "vocabulary": [
+                "eskerrik asko",
+                "bai",
+                "oso",
+                "ondo"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s2.e11",
+              "type": "read_true_false",
+              "passage": "Gaur biretan Donostiako ospitalera joango naiz. Amak sabeleko mina dauka.",
+              "statement": "Irá al hospital a las dos.",
+              "answer": true,
+              "vocabulary": [
+                "gaur",
+                "bi",
+                "ospitale",
+                "joan",
+                "izan",
+                "ama",
+                "sabel",
+                "min",
+                "eduki"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u08-1.l3.s3",
+          "exercises": [
+            {
+              "id": "u08-1.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Perdona, ¿dónde está el hospital de Getxo?"
+              },
+              "answers": [
+                "Barkatu, non dago Getxoko ospitalea?"
+              ],
+              "distractors": [
+                "Ez",
+                "ordua",
+                "Herriko"
+              ],
+              "vocabulary": [
+                "barkatu",
+                "non",
+                "egon",
+                "ospitale"
+              ],
+              "structures": [
+                "nongo",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Herriko farmazia urrun dago?",
+              "distractors": [
+                "sukarra",
+                "eskolara",
+                "dauzka"
+              ],
+              "vocabulary": [
+                "herri",
+                "farmazia",
+                "urrun",
+                "egon"
+              ],
+              "structures": [
+                "nongo",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Eskolako medikua gertu dago.",
+              "options": [
+                "El médico de la escuela está cerca.",
+                "La escuela del médico está cerca.",
+                "El médico está en la escuela."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "eskola",
+                "mediku",
+                "gertu",
+                "egon"
+              ],
+              "structures": [
+                "nongo",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "No, está cerca, al lado de la iglesia."
+              },
+              "answers": [
+                "Ez, gertu dago, elizaren ondoan."
+              ],
+              "vocabulary": [
+                "ez",
+                "gertu",
+                "egon",
+                "eliza",
+                "ondoan"
+              ],
+              "structures": [
+                "nongo",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Uxue",
+                  "text": "Kaixo, Peio! Zer moduz?"
+                },
+                {
+                  "speaker": "Peio",
+                  "text": "Gaixo nago. Hotzeria daukat."
+                },
+                {
+                  "speaker": "Uxue",
+                  "text": "Sukarra daukazu?"
+                }
+              ],
+              "options": [
+                "Ez, ez daukat sukarrik.",
+                "Ez, ez nago sukarrik.",
+                "Bai, nekatuta daukat."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer moduz",
+                "kaixo",
+                "gaixo",
+                "egon",
+                "hotzeria",
+                "eduki",
+                "sukar",
+                "ez"
+              ],
+              "structures": [
+                "nongo",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Nire semeak eztula eta sukarra dauzka.",
+              "translation": "Mi hijo tiene tos y fiebre.",
+              "vocabulary": [
+                "ni",
+                "seme",
+                "eztul",
+                "eta",
+                "sukar",
+                "eduki"
+              ],
+              "structures": [
+                "nongo",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Peio",
+                  "text": "Zer ordutan joango zara farmaziara?"
+                }
+              ],
+              "options": [
+                "Zazpietan joango naiz.",
+                "Zazpietan joan naiz.",
+                "Zazpi urte ditut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "ordu",
+                "joan",
+                "izan",
+                "farmazia",
+                "zazpi"
+              ],
+              "structures": [
+                "nongo",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaur ez da eskolara joango."
+              },
+              "answers": [
+                "Hoy no irá a la escuela.",
+                "Hoy no va a ir a la escuela."
+              ],
+              "vocabulary": [
+                "gaur",
+                "ez",
+                "izan",
+                "eskola",
+                "joan"
+              ],
+              "structures": [
+                "nongo",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s3.e09",
+              "type": "read_true_false",
+              "passage": "Ni Edurne naiz, Tolosako erizaina. Gaur gauean ospitalean lan egingo dut.",
+              "statement": "Edurne trabajará esta noche.",
+              "answer": true,
+              "vocabulary": [
+                "ni",
+                "izan",
+                "erizain",
+                "gaur",
+                "gau",
+                "ospitale",
+                "lan egin",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "nongo",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s3.e10",
+              "type": "listen_type",
+              "text": "Hamabietan medikuarekin ordua daukagu.",
+              "answers": [
+                "Hamabietan medikuarekin ordua daukagu."
+              ],
+              "vocabulary": [
+                "hamabi",
+                "mediku",
+                "ordu",
+                "eduki"
+              ],
+              "structures": [
+                "nongo",
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s3.e11",
+              "type": "read_true_false",
+              "passage": "Aitonak lepoko eta bizkarreko mina dauka. Oso nekatuta dago.",
+              "statement": "Al abuelo le duelen las rodillas.",
+              "answer": false,
+              "vocabulary": [
+                "aitona",
+                "lepo",
+                "eta",
+                "bizkar",
+                "min",
+                "eduki",
+                "oso",
+                "nekatuta",
+                "egon"
+              ],
+              "structures": [
+                "nongo",
+                "symptoms"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u08-1.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: Josu está enfermo",
+        "eu": "Istorioa: Josu gaixo dago"
+      },
+      "story": {
+        "id": "u08-1.l4.story",
+        "title": "Josu gaixo dago",
+        "lines": [
+          {
+            "speaker": "Miren",
+            "eu": "Kaixo, Josu! Zer moduz zaude?",
+            "es": "¡Hola, Josu! ¿Qué tal estás?"
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Ez oso ondo. Gaixo nago.",
+            "es": "No muy bien. Estoy enfermo."
+          },
+          {
+            "speaker": "Miren",
+            "eu": "Zer daukazu?",
+            "es": "¿Qué tienes?"
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Buruko mina eta eztula. Oso nekatuta nago.",
+            "es": "Dolor de cabeza y tos. Estoy muy cansado."
+          },
+          {
+            "speaker": "Miren",
+            "eu": "Sukarra daukazu?",
+            "es": "¿Tienes fiebre?"
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Bai, atzo gauean sukarra izan dut.",
+            "es": "Sí, anoche tuve fiebre."
+          },
+          {
+            "speaker": "Miren",
+            "eu": "Medikuarekin ordua hartu duzu?",
+            "es": "¿Has pedido hora con el médico?"
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Bai, gaur arratsaldeko lauretan.",
+            "es": "Sí, hoy a las cuatro de la tarde."
+          },
+          {
+            "speaker": "Miren",
+            "eu": "Ni Durangoko farmaziara noa. Zer behar duzu?",
+            "es": "Voy a la farmacia de Durango. ¿Qué necesitas?"
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Ura eta zukua, mesedez.",
+            "es": "Agua y zumo, por favor."
+          },
+          {
+            "speaker": "Miren",
+            "eu": "Ondo. Bostetan zure etxera etorriko naiz. Agur!",
+            "es": "Bien. A las cinco iré a tu casa. ¡Adiós!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 3,
+            "prompt": "¿Qué le pasa a Josu?",
+            "options": [
+              "Le duele la cabeza y tiene tos.",
+              "Le duele la espalda.",
+              "Le duele un pie."
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 7,
+            "prompt": "¿A qué hora tiene Josu cita con el médico?",
+            "options": [
+              "A las cuatro",
+              "A las cinco",
+              "A las tres"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 10,
+            "prompt": "¿Qué le va a llevar Miren?",
+            "options": [
+              "Agua y zumo",
+              "Leche y café",
+              "Pan y queso"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u08-1.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u08-1.l6",
+      "type": "legendary",
+      "title": {
+        "es": "Nivel legendario",
+        "eu": "Maila legendarioa"
+      }
+    }
+  ]
+}

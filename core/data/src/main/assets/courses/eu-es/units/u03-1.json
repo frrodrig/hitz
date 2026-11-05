@@ -1,0 +1,2659 @@
+{
+  "schemaVersion": 1,
+  "id": "u03-1",
+  "section": "s1",
+  "bookUnit": 3,
+  "title": {
+    "es": "Mi gente",
+    "eu": "Nire jendea"
+  },
+  "goals": [
+    {
+      "es": "Presentar a tu familia y a tus amigos y decir de quién es cada persona.",
+      "eu": "Zure familia eta lagunak aurkeztu eta nor noren den esan."
+    },
+    {
+      "es": "Decir dónde vive alguien.",
+      "eu": "Norbait non bizi den esan."
+    },
+    {
+      "es": "Decir con quién vive alguien.",
+      "eu": "Norbait norekin bizi den esan."
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Posesivos: nire, zure, gure…",
+          "eu": "Posesiboak: nire, zure, gure…"
+        },
+        "body": {
+          "es": "Los posesivos van delante del nombre, como en castellano. nire (mi), zure (tu, su de usted), haren o bere (su, de él o ella), gure (nuestro), zuen (vuestro), haien (su, de ellos).",
+          "eu": "Posesiboak izenaren aurrean doaz. nire, zure, haren edo bere, gure, zuen eta haien."
+        },
+        "examples": [
+          {
+            "eu": "Hau nire ama da.",
+            "es": "Esta es mi madre."
+          },
+          {
+            "eu": "Hauek gure gurasoak dira.",
+            "es": "Estos son nuestros padres."
+          },
+          {
+            "eu": "Zuen aita irakaslea da?",
+            "es": "¿Vuestro padre es profesor?"
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "¿De quién? Noren?",
+          "eu": "Noren?"
+        },
+        "body": {
+          "es": "Para decir «de Ane» se añade -(r)en al nombre, que va delante; los nombres comunes llevan el artículo, -aren. Esta forma también va delante de palabras como «ondoan» o «aurrean».",
+          "eu": "Izen bereziari -(r)en gehitzen zaio, eta izen arruntari -aren. Forma hori «ondoan» edo «aurrean» bezalako hitzen aurrean ere joaten da."
+        },
+        "examples": [
+          {
+            "eu": "Mikel Aneren neba da.",
+            "es": "Mikel es el hermano de Ane."
+          },
+          {
+            "eu": "Mutilaren ama medikua da.",
+            "es": "La madre del chico es médica."
+          },
+          {
+            "eu": "Ane bere amaren ondoan dago.",
+            "es": "Ane está al lado de su madre."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Hermano y hermana",
+          "eu": "Anaia, neba, arreba, ahizpa"
+        },
+        "body": {
+          "es": "En euskera la palabra depende de quién habla. Un chico dice «anaia» (hermano) y «arreba» (hermana); una chica dice «neba» (hermano) y «ahizpa» (hermana). Hoy muchas chicas también dicen «anaia».",
+          "eu": "Hitza nork esaten duen araberakoa da. Mutil batek «anaia» eta «arreba» esaten ditu; neska batek, «neba» eta «ahizpa». Gaur egun neska askok «anaia» ere esaten dute."
+        },
+        "examples": [
+          {
+            "eu": "Ane Jonen arreba da.",
+            "es": "Ane es la hermana de Jon."
+          },
+          {
+            "eu": "Ane Maialenen ahizpa da.",
+            "es": "Ane es la hermana de Maialen."
+          },
+          {
+            "eu": "Mikel eta Jon anaiak dira.",
+            "es": "Mikel y Jon son hermanos."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Vivir: bizi naiz. ¿Con quién? Norekin?",
+          "eu": "Bizi izan eta norekin"
+        },
+        "body": {
+          "es": "«Bizi» va con el verbo «izan»: bizi naiz (vivo), bizi zara (vives), bizi da (vive). «Con» se dice con -(r)ekin al final de la palabra: Anerekin, amarekin, lagunekin.",
+          "eu": "«Bizi» izan aditzarekin doa: bizi naiz, bizi zara, bizi da. «Norekin?» galderari -(r)ekin atzizkiarekin erantzuten zaio."
+        },
+        "examples": [
+          {
+            "eu": "Non bizi zara? Bilbon bizi naiz.",
+            "es": "¿Dónde vives? Vivo en Bilbao."
+          },
+          {
+            "eu": "Norekin bizi zara?",
+            "es": "¿Con quién vives?"
+          },
+          {
+            "eu": "Nire gurasoekin bizi naiz.",
+            "es": "Vivo con mis padres."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u03-1.l1",
+      "type": "lesson",
+      "title": {
+        "es": "La familia",
+        "eu": "Familia"
+      },
+      "lessons": [
+        {
+          "id": "u03-1.l1.s1",
+          "exercises": [
+            {
+              "id": "u03-1.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Esta es mi madre."
+              },
+              "answers": [
+                "Hau nire ama da."
+              ],
+              "distractors": [
+                "dira",
+                "gurasoak",
+                "ikaslea"
+              ],
+              "vocabulary": [
+                "hau",
+                "ni",
+                "ama",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e02",
+              "type": "listen_tap",
+              "text": "Hau nire aita da.",
+              "distractors": [
+                "Jon",
+                "irakaslea",
+                "gurasoak"
+              ],
+              "vocabulary": [
+                "hau",
+                "ni",
+                "aita",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "aita",
+                  "es": "padre"
+                },
+                {
+                  "eu": "ama",
+                  "es": "madre"
+                },
+                {
+                  "eu": "seme",
+                  "es": "hijo"
+                },
+                {
+                  "eu": "alaba",
+                  "es": "hija"
+                },
+                {
+                  "eu": "gurasoak",
+                  "es": "padres"
+                }
+              ],
+              "vocabulary": [
+                "aita",
+                "ama",
+                "seme",
+                "alaba",
+                "guraso"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Estos son mis padres."
+              },
+              "answers": [
+                "Hauek nire gurasoak dira."
+              ],
+              "vocabulary": [
+                "hau",
+                "ni",
+                "guraso",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Hau nire ___ da.",
+              "options": [
+                "ama",
+                "aita"
+              ],
+              "correct": 0,
+              "translation": "Esta es mi madre.",
+              "vocabulary": [
+                "hau",
+                "ni",
+                "ama",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e06",
+              "type": "order_sentence",
+              "answer": "Nire aita medikua da.",
+              "translation": "Mi padre es médico.",
+              "vocabulary": [
+                "ni",
+                "aita",
+                "mediku",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e07",
+              "type": "choose_meaning",
+              "text": "Hau nire semea da.",
+              "options": [
+                "Este es mi hijo.",
+                "Esta es mi hija.",
+                "Este es mi padre."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hau",
+                "ni",
+                "seme",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nire ama irakaslea da."
+              },
+              "answers": [
+                "Mi madre es profesora."
+              ],
+              "vocabulary": [
+                "ni",
+                "ama",
+                "irakasle",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Iker",
+                  "text": "Kaixo! Hau zure aita da?"
+                }
+              ],
+              "options": [
+                "Bai, hau nire aita da.",
+                "Bai, hau zure aita da.",
+                "Ez horregatik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "hau",
+                "zu",
+                "aita",
+                "izan",
+                "bai",
+                "ni"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e10",
+              "type": "listen_type",
+              "text": "Jon Mikelen semea da.",
+              "answers": [
+                "Jon Mikelen semea da."
+              ],
+              "vocabulary": [
+                "seme",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e11",
+              "type": "read_true_false",
+              "passage": "Ni Ane naiz. Nire ama Itziar da. Nire ama erizaina da.",
+              "statement": "La madre de Ane es enfermera.",
+              "answer": true,
+              "vocabulary": [
+                "ni",
+                "izan",
+                "ama",
+                "erizain"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e12",
+              "type": "speak",
+              "text": "Ane Itziarren alaba da.",
+              "translation": "Ane es la hija de Itziar.",
+              "vocabulary": [
+                "alaba",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zure alaba ikaslea da?"
+              },
+              "answers": [
+                "¿Tu hija es estudiante?",
+                "¿Su hija es estudiante?",
+                "¿Es estudiante tu hija?",
+                "¿Es estudiante su hija?"
+              ],
+              "distractors": [
+                "la",
+                "padres",
+                "Mi"
+              ],
+              "vocabulary": [
+                "zu",
+                "alaba",
+                "ikasle",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u03-1.l1.s2",
+          "exercises": [
+            {
+              "id": "u03-1.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Mikel Aneren neba da.",
+              "distractors": [
+                "Zu",
+                "hau",
+                "ahizpa"
+              ],
+              "vocabulary": [
+                "neba",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Jon es el hermano de Iker."
+              },
+              "answers": [
+                "Jon Ikerren anaia da."
+              ],
+              "vocabulary": [
+                "anaia",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "anaia",
+                  "es": "hermano (de un chico)"
+                },
+                {
+                  "eu": "arreba",
+                  "es": "hermana (de un chico)"
+                },
+                {
+                  "eu": "neba",
+                  "es": "hermano (de una chica)"
+                },
+                {
+                  "eu": "ahizpa",
+                  "es": "hermana (de una chica)"
+                }
+              ],
+              "vocabulary": [
+                "anaia",
+                "arreba",
+                "neba",
+                "ahizpa"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e04",
+              "type": "order_sentence",
+              "answer": "Ane Jonen arreba da.",
+              "translation": "Ane es la hermana de Jon.",
+              "vocabulary": [
+                "arreba",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Ni Ane naiz, eta Leire nire ___ da.",
+              "options": [
+                "ahizpa",
+                "arreba"
+              ],
+              "correct": 0,
+              "translation": "Soy Ane y Leire es mi hermana.",
+              "vocabulary": [
+                "ni",
+                "izan",
+                "eta",
+                "ahizpa"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Maialen Itziarren ahizpa da."
+              },
+              "answers": [
+                "Maialen es la hermana de Itziar."
+              ],
+              "vocabulary": [
+                "ahizpa",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e07",
+              "type": "choose_meaning",
+              "text": "Ane Mikelen arreba da.",
+              "options": [
+                "Ane es la hermana de Mikel.",
+                "Ane es la hija de Mikel.",
+                "Ane es la madre de Mikel."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "arreba",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e08",
+              "type": "listen_type",
+              "text": "Ni Jon naiz, eta hau nire arreba da.",
+              "answers": [
+                "Ni Jon naiz, eta hau nire arreba da."
+              ],
+              "vocabulary": [
+                "ni",
+                "izan",
+                "eta",
+                "hau",
+                "arreba"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Jon",
+                  "text": "Barkatu, Iker zure neba da?"
+                }
+              ],
+              "options": [
+                "Bai, Iker nire neba da.",
+                "Bai, Iker nire ahizpa da.",
+                "Bai, Iker zure neba da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "barkatu",
+                "zu",
+                "neba",
+                "izan",
+                "bai",
+                "ni"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e10",
+              "type": "speak",
+              "text": "Ni Maialen naiz, eta hau nire neba da.",
+              "translation": "Soy Maialen y este es mi hermano.",
+              "vocabulary": [
+                "ni",
+                "izan",
+                "eta",
+                "hau",
+                "neba"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e11",
+              "type": "read_true_false",
+              "passage": "Ni Itziar naiz. Hau Maialen da. Maialen nire ahizpa da.",
+              "statement": "Maialen es la hermana de Itziar.",
+              "answer": true,
+              "vocabulary": [
+                "ni",
+                "izan",
+                "hau",
+                "ahizpa"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mikel eta Jon anaiak dira."
+              },
+              "answers": [
+                "Mikel y Jon son hermanos."
+              ],
+              "distractors": [
+                "esta",
+                "Iker",
+                "mi"
+              ],
+              "vocabulary": [
+                "eta",
+                "anaia",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Tú eres el hermano de Iker?"
+              },
+              "answers": [
+                "Zu Ikerren anaia zara?"
+              ],
+              "distractors": [
+                "ahizpa",
+                "Maialen",
+                "Itziarren"
+              ],
+              "vocabulary": [
+                "zu",
+                "anaia",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "siblings"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u03-1.l1.s3",
+          "exercises": [
+            {
+              "id": "u03-1.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Este es mi abuelo."
+              },
+              "answers": [
+                "Hau nire aitona da."
+              ],
+              "vocabulary": [
+                "hau",
+                "ni",
+                "aitona",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e02",
+              "type": "order_sentence",
+              "answer": "Nire amona Donostiakoa da.",
+              "translation": "Mi abuela es de San Sebastián.",
+              "vocabulary": [
+                "ni",
+                "amona",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "aitona",
+                  "es": "abuelo"
+                },
+                {
+                  "eu": "amona",
+                  "es": "abuela"
+                },
+                {
+                  "eu": "osaba",
+                  "es": "tío"
+                },
+                {
+                  "eu": "izeba",
+                  "es": "tía"
+                },
+                {
+                  "eu": "lehengusua",
+                  "es": "primo"
+                },
+                {
+                  "eu": "laguna",
+                  "es": "amigo"
+                }
+              ],
+              "vocabulary": [
+                "aitona",
+                "amona",
+                "osaba",
+                "izeba",
+                "lehengusu",
+                "lagun"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mikel nire osaba da."
+              },
+              "answers": [
+                "Mikel es mi tío."
+              ],
+              "vocabulary": [
+                "ni",
+                "osaba",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Iker Maialenen ___ da.",
+              "options": [
+                "senarra",
+                "emaztea"
+              ],
+              "correct": 0,
+              "translation": "Iker es el marido de Maialen.",
+              "vocabulary": [
+                "senar",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e06",
+              "type": "listen_type",
+              "text": "Itziar nire izeba da.",
+              "answers": [
+                "Itziar nire izeba da."
+              ],
+              "vocabulary": [
+                "ni",
+                "izeba",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e07",
+              "type": "choose_meaning",
+              "text": "Hau nire izeba da.",
+              "options": [
+                "Esta es mi tía.",
+                "Este es mi tío.",
+                "Esta es mi abuela."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hau",
+                "ni",
+                "izeba",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e08",
+              "type": "speak",
+              "text": "Jon eta Ane nire lehengusuak dira.",
+              "translation": "Jon y Ane son mis primos.",
+              "vocabulary": [
+                "eta",
+                "ni",
+                "lehengusu",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ane",
+                  "text": "Kaixo, Jon! Nor da hau?"
+                }
+              ],
+              "options": [
+                "Hau nire amona da.",
+                "Ni zure amona naiz.",
+                "Zorionak, Ane."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "nor",
+                "izan",
+                "hau",
+                "ni",
+                "amona"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Iker Maialenen senarra da."
+              },
+              "answers": [
+                "Iker es el marido de Maialen."
+              ],
+              "distractors": [
+                "Leire",
+                "Mikel",
+                "abuela",
+                "amiga"
+              ],
+              "vocabulary": [
+                "senar",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e11",
+              "type": "read_true_false",
+              "passage": "Hau Unai da. Unai nire lehengusua da. Bilbokoa da.",
+              "statement": "Unai es el tío de quien habla.",
+              "answer": false,
+              "vocabulary": [
+                "hau",
+                "izan",
+                "ni",
+                "lehengusu"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Maialen es la esposa de Iker."
+              },
+              "answers": [
+                "Maialen Ikerren emaztea da."
+              ],
+              "distractors": [
+                "Jon",
+                "Mikel",
+                "Ane"
+              ],
+              "vocabulary": [
+                "emazte",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e13",
+              "type": "listen_tap",
+              "text": "Leire nire laguna da.",
+              "distractors": [
+                "Maialenen",
+                "Jon",
+                "eta"
+              ],
+              "vocabulary": [
+                "ni",
+                "lagun",
+                "izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03-1.l2",
+      "type": "lesson",
+      "title": {
+        "es": "¿De quién? ¿Con quién?",
+        "eu": "Noren? Norekin?"
+      },
+      "lessons": [
+        {
+          "id": "u03-1.l2.s1",
+          "exercises": [
+            {
+              "id": "u03-1.l2.s1.e01",
+              "type": "order_sentence",
+              "answer": "Hau zure laguna da?",
+              "translation": "¿Este es tu amigo?",
+              "vocabulary": [
+                "hau",
+                "zu",
+                "lagun",
+                "izan"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bai, hau nire laguna da."
+              },
+              "answers": [
+                "Sí, este es mi amigo.",
+                "Sí, esta es mi amiga."
+              ],
+              "vocabulary": [
+                "bai",
+                "hau",
+                "ni",
+                "lagun",
+                "izan"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e03",
+              "type": "fill_blank",
+              "sentence": "Hauek ___ gurasoak dira.",
+              "options": [
+                "gure",
+                "zuen"
+              ],
+              "correct": 0,
+              "translation": "Estos son nuestros padres.",
+              "vocabulary": [
+                "hau",
+                "gu",
+                "guraso",
+                "izan"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e04",
+              "type": "listen_type",
+              "text": "Hauek gure gurasoak dira.",
+              "answers": [
+                "Hauek gure gurasoak dira."
+              ],
+              "vocabulary": [
+                "hau",
+                "gu",
+                "guraso",
+                "izan"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Hau ___ aita da?",
+              "options": [
+                "zure",
+                "nire"
+              ],
+              "correct": 0,
+              "translation": "¿Este es tu padre?",
+              "vocabulary": [
+                "hau",
+                "zu",
+                "aita",
+                "izan"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e06",
+              "type": "speak",
+              "text": "Zuen aita irakaslea da?",
+              "translation": "¿Vuestro padre es profesor?",
+              "vocabulary": [
+                "zuek",
+                "aita",
+                "irakasle",
+                "izan"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e07",
+              "type": "choose_meaning",
+              "text": "Zuen ama medikua da?",
+              "options": [
+                "¿Vuestra madre es médica?",
+                "¿Tu madre es médica?",
+                "¿Nuestra madre es médica?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zuek",
+                "ama",
+                "mediku",
+                "izan"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Haien ama sukaldaria da."
+              },
+              "answers": [
+                "Su madre es cocinera.",
+                "La madre de ellos es cocinera."
+              ],
+              "distractors": [
+                "Sí",
+                "Estos",
+                "padre"
+              ],
+              "vocabulary": [
+                "haiek",
+                "ama",
+                "sukaldari",
+                "izan"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Hau zure lehengusua da?"
+                }
+              ],
+              "options": [
+                "Ez, hau nire laguna da.",
+                "Ez, hau zure laguna da.",
+                "Bai, ni zure lehengusua naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hau",
+                "zu",
+                "lehengusu",
+                "izan",
+                "ez",
+                "ni",
+                "lagun"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Este es Mikel. Su padre es médico."
+              },
+              "answers": [
+                "Hau Mikel da. Haren aita medikua da."
+              ],
+              "distractors": [
+                "Zuen",
+                "anaia",
+                "Nire",
+                "laguna"
+              ],
+              "vocabulary": [
+                "hau",
+                "izan",
+                "hura",
+                "aita",
+                "mediku"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e11",
+              "type": "read_true_false",
+              "passage": "Kaixo! Ni Gorka naiz. Hau Amaia da, nire emaztea. Amaia medikua da.",
+              "statement": "Amaia es la mujer de Gorka.",
+              "answer": true,
+              "vocabulary": [
+                "kaixo",
+                "ni",
+                "izan",
+                "hau",
+                "ama",
+                "emazte",
+                "mediku"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e12",
+              "type": "listen_tap",
+              "text": "Nire anaia ingeniaria da.",
+              "distractors": [
+                "medikua",
+                "Zuen",
+                "Haren"
+              ],
+              "vocabulary": [
+                "ni",
+                "anaia",
+                "ingeniari",
+                "izan"
+              ],
+              "structures": [
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s1.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Cuál es tu número de teléfono?"
+              },
+              "answers": [
+                "Zein da zure telefono zenbakia?"
+              ],
+              "vocabulary": [
+                "zein",
+                "izan",
+                "zu",
+                "telefono",
+                "zenbaki"
+              ],
+              "structures": [
+                "noren"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u03-1.l2.s2",
+          "exercises": [
+            {
+              "id": "u03-1.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hau Mikelen aita da."
+              },
+              "answers": [
+                "Este es el padre de Mikel."
+              ],
+              "vocabulary": [
+                "hau",
+                "aita",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s2.e02",
+              "type": "listen_type",
+              "text": "Aneren ama erizaina da.",
+              "answers": [
+                "Aneren ama erizaina da."
+              ],
+              "vocabulary": [
+                "ama",
+                "erizain",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Hau ___ ama da.",
+              "options": [
+                "Aneren",
+                "Anerekin"
+              ],
+              "correct": 0,
+              "translation": "Esta es la madre de Ane.",
+              "vocabulary": [
+                "hau",
+                "ama",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s2.e04",
+              "type": "speak",
+              "text": "Itziarren semea ikaslea da.",
+              "translation": "El hijo de Itziar es estudiante.",
+              "vocabulary": [
+                "seme",
+                "ikasle",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s2.e05",
+              "type": "choose_meaning",
+              "text": "Mutilaren aita irakaslea da.",
+              "options": [
+                "El padre del chico es profesor.",
+                "El chico es profesor.",
+                "El padre de la chica es profesor."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "mutil",
+                "aita",
+                "irakasle",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mutilaren ama medikua da."
+              },
+              "answers": [
+                "La madre del chico es médica."
+              ],
+              "distractors": [
+                "Iker",
+                "al",
+                "Jon",
+                "padre"
+              ],
+              "vocabulary": [
+                "mutil",
+                "ama",
+                "mediku",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Unai",
+                  "text": "Noren alaba da Leire?"
+                }
+              ],
+              "options": [
+                "Itziarren alaba da.",
+                "Itziarrekin bizi da.",
+                "Ni Itziar naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "noren",
+                "alaba",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "El padre de la chica es cocinero."
+              },
+              "answers": [
+                "Neskaren aita sukaldaria da."
+              ],
+              "distractors": [
+                "ikaslea",
+                "laguna",
+                "medikua"
+              ],
+              "vocabulary": [
+                "neska",
+                "aita",
+                "sukaldari",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s2.e09",
+              "type": "read_true_false",
+              "passage": "Ane Jonen ondoan dago. Jon Aneren neba da.",
+              "statement": "Ane y Jon son hermanos.",
+              "answer": true,
+              "vocabulary": [
+                "ondoan",
+                "egon",
+                "neba",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s2.e10",
+              "type": "listen_tap",
+              "text": "Noren semea da Jon?",
+              "distractors": [
+                "Ikerren",
+                "Neskaren",
+                "sukaldaria"
+              ],
+              "vocabulary": [
+                "noren",
+                "seme",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s2.e11",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "El amigo de Iker está a mi lado."
+              },
+              "answers": [
+                "Ikerren laguna nire ondoan dago."
+              ],
+              "vocabulary": [
+                "lagun",
+                "ni",
+                "ondoan",
+                "egon"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s2.e12",
+              "type": "order_sentence",
+              "answer": "Ane bere amaren ondoan dago.",
+              "translation": "Ane está al lado de su madre.",
+              "vocabulary": [
+                "hura",
+                "ama",
+                "ondoan",
+                "egon"
+              ],
+              "structures": [
+                "noren",
+                "noren-postposition"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u03-1.l2.s3",
+          "exercises": [
+            {
+              "id": "u03-1.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Non bizi zara?",
+              "answers": [
+                "Non bizi zara?"
+              ],
+              "vocabulary": [
+                "non",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e02",
+              "type": "speak",
+              "text": "Bilbon bizi naiz.",
+              "translation": "Vivo en Bilbao.",
+              "vocabulary": [
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e03",
+              "type": "fill_blank",
+              "sentence": "Nire amarekin bizi ___.",
+              "options": [
+                "naiz",
+                "da"
+              ],
+              "correct": 0,
+              "translation": "Vivo con mi madre.",
+              "vocabulary": [
+                "ni",
+                "ama",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Norekin bizi zara?"
+              },
+              "answers": [
+                "¿Con quién vives?",
+                "¿Con quién vive usted?"
+              ],
+              "distractors": [
+                "San",
+                "padres"
+              ],
+              "vocabulary": [
+                "norekin",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e05",
+              "type": "fill_blank",
+              "sentence": "___ bizi zara?",
+              "options": [
+                "Norekin",
+                "Noren"
+              ],
+              "correct": 0,
+              "translation": "¿Con quién vives?",
+              "vocabulary": [
+                "norekin",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Vivo con mis padres."
+              },
+              "answers": [
+                "Nire gurasoekin bizi naiz."
+              ],
+              "distractors": [
+                "Bilbon",
+                "Zuek",
+                "ahizparekin"
+              ],
+              "vocabulary": [
+                "ni",
+                "guraso",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e07",
+              "type": "choose_meaning",
+              "text": "Haiek Iruñean bizi dira.",
+              "options": [
+                "Ellos viven en Pamplona.",
+                "Ellos son de Pamplona.",
+                "Ellos están en Pamplona."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "haiek",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e08",
+              "type": "listen_tap",
+              "text": "Ane bere ahizparekin bizi da.",
+              "distractors": [
+                "lagunekin",
+                "zara",
+                "gara"
+              ],
+              "vocabulary": [
+                "hura",
+                "ahizpa",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Garazi",
+                  "text": "Norekin bizi zara, Eneko?"
+                }
+              ],
+              "options": [
+                "Nire emaztearekin bizi naiz.",
+                "Nire emaztea naiz.",
+                "Gasteizkoa naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "norekin",
+                "bizi izan",
+                "izan",
+                "ni",
+                "emazte"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Mikel vive solo."
+              },
+              "answers": [
+                "Mikel bakarrik bizi da."
+              ],
+              "vocabulary": [
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e11",
+              "type": "read_true_false",
+              "passage": "Ni Nerea naiz. Tolosan bizi naiz, nire senarrarekin eta nire alabarekin.",
+              "statement": "Nerea vive sola.",
+              "answer": false,
+              "vocabulary": [
+                "ni",
+                "izan",
+                "bizi izan",
+                "senar",
+                "eta",
+                "alaba"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e12",
+              "type": "order_sentence",
+              "answer": "Gu Donostian bizi gara.",
+              "translation": "Vivimos en San Sebastián.",
+              "vocabulary": [
+                "gu",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l2.s3.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zuek lagunekin bizi zarete?"
+              },
+              "answers": [
+                "¿Vosotros vivís con amigos?",
+                "¿Vivís con amigos?"
+              ],
+              "vocabulary": [
+                "zuek",
+                "lagun",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03-1.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Conversaciones",
+        "eu": "Elkarrizketak"
+      },
+      "lessons": [
+        {
+          "id": "u03-1.l3.s1",
+          "exercises": [
+            {
+              "id": "u03-1.l3.s1.e01",
+              "type": "speak",
+              "text": "Kaixo, Amaia! Hau nire neba da, Aitor.",
+              "translation": "¡Hola, Amaia! Este es mi hermano, Aitor.",
+              "vocabulary": [
+                "kaixo",
+                "ama",
+                "hau",
+                "ni",
+                "neba",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kaixo, Aitor! Zer moduz?"
+              },
+              "answers": [
+                "¡Hola, Aitor! ¿Qué tal?"
+              ],
+              "distractors": [
+                "Mis",
+                "madre",
+                "Tu"
+              ],
+              "vocabulary": [
+                "zer moduz",
+                "kaixo"
+              ],
+              "structures": [
+                "family",
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Hauek nire lehengusuak dira.",
+              "options": [
+                "Estos son mis primos.",
+                "Estos son mis tíos.",
+                "Estos son mis amigos."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hau",
+                "ni",
+                "lehengusu",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Tu madre es de Bilbao?"
+              },
+              "answers": [
+                "Zure ama Bilbokoa da?"
+              ],
+              "distractors": [
+                "Lekeition",
+                "Kaixo",
+                "Amaia"
+              ],
+              "vocabulary": [
+                "zu",
+                "ama",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s1.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Amaia",
+                  "text": "Kaixo! Nor da hau?"
+                },
+                {
+                  "speaker": "Aitor",
+                  "text": "Hau nire aita da."
+                },
+                {
+                  "speaker": "Amaia",
+                  "text": "Egun on! Zu medikua zara?"
+                }
+              ],
+              "options": [
+                "Ez, ni irakaslea naiz.",
+                "Ez, zu irakaslea zara.",
+                "Bai, ni Amaia naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "nor",
+                "izan",
+                "hau",
+                "ni",
+                "aita",
+                "egun on",
+                "zu",
+                "mediku",
+                "ez",
+                "irakasle"
+              ],
+              "structures": [
+                "family",
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Ez, nire ama Baionakoa da.",
+              "distractors": [
+                "Amaiaren",
+                "Lekeition",
+                "Gorka"
+              ],
+              "vocabulary": [
+                "ez",
+                "ni",
+                "ama",
+                "bai",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s1.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Zure ahizpa non bizi da?"
+                }
+              ],
+              "options": [
+                "Getxon bizi da.",
+                "Getxokoa naiz.",
+                "Nire ahizparekin."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zu",
+                "ahizpa",
+                "non",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Mis abuelos viven en Lekeitio."
+              },
+              "answers": [
+                "Nire aitona eta amona Lekeition bizi dira."
+              ],
+              "vocabulary": [
+                "ni",
+                "aitona",
+                "eta",
+                "amona",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s1.e09",
+              "type": "read_true_false",
+              "passage": "Hau Unai da. Unai nire senarra da. Gu Eibarren bizi gara.",
+              "statement": "La persona que habla vive en Eibar.",
+              "answer": true,
+              "vocabulary": [
+                "hau",
+                "izan",
+                "ni",
+                "senar",
+                "gu",
+                "bizi izan"
+              ],
+              "structures": [
+                "family",
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s1.e10",
+              "type": "order_sentence",
+              "answer": "Gorka Amaiaren lehengusua da.",
+              "translation": "Gorka es el primo de Amaia.",
+              "vocabulary": [
+                "ama",
+                "lehengusu",
+                "izan"
+              ],
+              "structures": [
+                "family",
+                "noren"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s1.e11",
+              "type": "read_true_false",
+              "passage": "Ni Ander naiz. Hau Irati da, nire arreba. Irati ikaslea da.",
+              "statement": "Irati es la prima de Ander.",
+              "answer": false,
+              "vocabulary": [
+                "ni",
+                "izan",
+                "hau",
+                "arreba",
+                "ikasle"
+              ],
+              "structures": [
+                "family",
+                "noren"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u03-1.l3.s2",
+          "exercises": [
+            {
+              "id": "u03-1.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Non bizi zara, Oier?"
+              },
+              "answers": [
+                "¿Dónde vives, Oier?"
+              ],
+              "distractors": [
+                "con",
+                "amigos"
+              ],
+              "vocabulary": [
+                "non",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Vivo en Zarautz con mis amigos."
+              },
+              "answers": [
+                "Zarautzen bizi naiz, nire lagunekin."
+              ],
+              "distractors": [
+                "Haizea",
+                "Tolosan",
+                "bere"
+              ],
+              "vocabulary": [
+                "bizi izan",
+                "izan",
+                "ni",
+                "lagun"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Asier bere ___ bizi da.",
+              "options": [
+                "anaiarekin",
+                "anaiaren"
+              ],
+              "correct": 0,
+              "translation": "Asier vive con su hermano.",
+              "vocabulary": [
+                "hura",
+                "anaia",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s2.e04",
+              "type": "listen_tap",
+              "text": "Eta zure gurasoak?",
+              "distractors": [
+                "Ez",
+                "Zarautzen"
+              ],
+              "vocabulary": [
+                "eta",
+                "zu",
+                "guraso"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s2.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Julen",
+                  "text": "Norekin bizi zara?"
+                }
+              ],
+              "options": [
+                "Nire amonarekin bizi naiz.",
+                "Nire amona naiz.",
+                "Hernanin bizi naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "norekin",
+                "bizi izan",
+                "izan",
+                "ni",
+                "amona"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Mis padres viven en Tolosa."
+              },
+              "answers": [
+                "Nire gurasoak Tolosan bizi dira."
+              ],
+              "vocabulary": [
+                "ni",
+                "guraso",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Garazi",
+                  "text": "Kaixo, Peio! Non bizi zara?"
+                },
+                {
+                  "speaker": "Peio",
+                  "text": "Irunen bizi naiz."
+                },
+                {
+                  "speaker": "Garazi",
+                  "text": "Bakarrik?"
+                }
+              ],
+              "options": [
+                "Ez, nire emaztearekin.",
+                "Ez, Irunekoa naiz.",
+                "Ez, nire emaztea naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "non",
+                "bizi izan",
+                "izan",
+                "ez",
+                "ni",
+                "emazte"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s2.e08",
+              "type": "order_sentence",
+              "answer": "Haizea bakarrik bizi da?",
+              "translation": "¿Haizea vive sola?",
+              "vocabulary": [
+                "haize",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s2.e09",
+              "type": "read_true_false",
+              "passage": "Ni Olatz naiz. Hondarribian bizi naiz, nire aitarekin.",
+              "statement": "Olatz vive con su madre.",
+              "answer": false,
+              "vocabulary": [
+                "ni",
+                "izan",
+                "bizi izan",
+                "aita"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s2.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez, bere senarrarekin bizi da."
+              },
+              "answers": [
+                "No, vive con su marido."
+              ],
+              "vocabulary": [
+                "ez",
+                "hura",
+                "senar",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s2.e11",
+              "type": "read_true_false",
+              "passage": "Xabier eta Uxue Durangon bizi dira. Xabier Uxueren senarra da.",
+              "statement": "Uxue es la mujer de Xabier.",
+              "answer": true,
+              "vocabulary": [
+                "eta",
+                "bizi izan",
+                "izan",
+                "senar"
+              ],
+              "structures": [
+                "norekin",
+                "bizi-izan"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u03-1.l3.s3",
+          "exercises": [
+            {
+              "id": "u03-1.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿De quién es amiga Nahia?"
+              },
+              "answers": [
+                "Noren laguna da Nahia?"
+              ],
+              "distractors": [
+                "non",
+                "Ibairen",
+                "eta"
+              ],
+              "vocabulary": [
+                "noren",
+                "lagun",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Nahia Markelen laguna da.",
+              "distractors": [
+                "bizi",
+                "eta",
+                "Izaro"
+              ],
+              "vocabulary": [
+                "lagun",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Norekin bizi da Eneko?",
+              "options": [
+                "¿Con quién vive Eneko?",
+                "¿Dónde vive Eneko?",
+                "¿De quién es amigo Eneko?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "norekin",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Izaro es la hermana de Ibai."
+              },
+              "answers": [
+                "Izaro Ibairen arreba da."
+              ],
+              "vocabulary": [
+                "arreba",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Alaitz",
+                  "text": "Barkatu, zu Kepa zara?"
+                },
+                {
+                  "speaker": "Kepa",
+                  "text": "Bai, ni Kepa naiz."
+                },
+                {
+                  "speaker": "Alaitz",
+                  "text": "Ni Mirenen alaba naiz!"
+                }
+              ],
+              "options": [
+                "Kaixo! Zer moduz zure ama?",
+                "Bai, ni Mirenen alaba naiz.",
+                "Ez horregatik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "barkatu",
+                "zu",
+                "izan",
+                "bai",
+                "ni",
+                "alaba",
+                "zer moduz",
+                "kaixo",
+                "ama"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Ibai bere gurasoekin bizi da.",
+              "translation": "Ibai vive con sus padres.",
+              "vocabulary": [
+                "hura",
+                "guraso",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Josu",
+                  "text": "Zure lehengusua Gasteizen bizi da?"
+                }
+              ],
+              "options": [
+                "Bai, bere gurasoekin.",
+                "Bai, Gasteizkoa naiz.",
+                "Ez, nire lehengusua naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zu",
+                "lehengusu",
+                "bizi izan",
+                "izan",
+                "bai",
+                "hura",
+                "guraso"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zure izeba eta osaba non bizi dira?"
+              },
+              "answers": [
+                "¿Dónde viven tu tía y tu tío?",
+                "¿Dónde viven tus tíos?",
+                "¿Dónde viven sus tíos?"
+              ],
+              "vocabulary": [
+                "zu",
+                "izeba",
+                "eta",
+                "osaba",
+                "non",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s3.e09",
+              "type": "read_true_false",
+              "passage": "Hau Patxi da. Patxi Edurneren aitona da. Edurne eta Patxi Oñatin bizi dira.",
+              "statement": "Edurne vive con su abuelo.",
+              "answer": true,
+              "vocabulary": [
+                "hau",
+                "izan",
+                "aitona",
+                "eta",
+                "bizi izan"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s3.e10",
+              "type": "listen_type",
+              "text": "Nire izeba eta osaba Elizondon bizi dira.",
+              "answers": [
+                "Nire izeba eta osaba Elizondon bizi dira."
+              ],
+              "vocabulary": [
+                "ni",
+                "izeba",
+                "eta",
+                "osaba",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s3.e11",
+              "type": "read_true_false",
+              "passage": "Arantza nire izeba da. Arantza erizaina da.",
+              "statement": "Arantza es médica.",
+              "answer": false,
+              "vocabulary": [
+                "ni",
+                "izeba",
+                "izan",
+                "erizain"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u03-1.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: en el parque",
+        "eu": "Istorioa: parkean"
+      },
+      "story": {
+        "id": "u03-1.l4.story",
+        "title": "Parkean",
+        "lines": [
+          {
+            "speaker": "Unai",
+            "eu": "Kaixo, Ane! Zer moduz?",
+            "es": "¡Hola, Ane! ¿Qué tal?"
+          },
+          {
+            "speaker": "Ane",
+            "eu": "Oso ondo! Unai, hau Mikel da, nire neba.",
+            "es": "¡Muy bien! Unai, este es Mikel, mi hermano."
+          },
+          {
+            "speaker": "Mikel",
+            "eu": "Kaixo, Unai! Zu Aneren laguna zara?",
+            "es": "¡Hola, Unai! ¿Tú eres el amigo de Ane?"
+          },
+          {
+            "speaker": "Unai",
+            "eu": "Bai. Eta hura nor da?",
+            "es": "Sí. ¿Y aquella quién es?"
+          },
+          {
+            "speaker": "Ane",
+            "eu": "Hura gure amona da, Miren.",
+            "es": "Aquella es nuestra abuela, Miren."
+          },
+          {
+            "speaker": "Unai",
+            "eu": "Zuen amona Bilbon bizi da?",
+            "es": "¿Vuestra abuela vive en Bilbao?"
+          },
+          {
+            "speaker": "Mikel",
+            "eu": "Ez, Bermeon bizi da, gure aitonarekin.",
+            "es": "No, vive en Bermeo, con nuestro abuelo."
+          },
+          {
+            "speaker": "Ane",
+            "eu": "Eta zu, norekin bizi zara?",
+            "es": "¿Y tú, con quién vives?"
+          },
+          {
+            "speaker": "Unai",
+            "eu": "Nire gurasoekin eta nire arrebarekin.",
+            "es": "Con mis padres y con mi hermana."
+          },
+          {
+            "speaker": "Ane",
+            "eu": "Zure arreba Leire da?",
+            "es": "¿Tu hermana es Leire?"
+          },
+          {
+            "speaker": "Unai",
+            "eu": "Bai! Leire nire arreba da. Agur, gero arte!",
+            "es": "¡Sí! Leire es mi hermana. ¡Adiós, hasta luego!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 2,
+            "prompt": "¿Quién es Mikel?",
+            "options": [
+              "El hermano de Ane",
+              "El primo de Ane",
+              "El amigo de Unai"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 6,
+            "prompt": "¿Dónde vive la abuela de Ane?",
+            "options": [
+              "En Bermeo",
+              "En Bilbao",
+              "Con Unai"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 10,
+            "prompt": "¿Con quién vive Unai?",
+            "options": [
+              "Con sus padres y su hermana",
+              "Solo",
+              "Con su abuela"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u03-1.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u03-1.l6",
+      "type": "legendary",
+      "title": {
+        "es": "Nivel legendario",
+        "eu": "Maila legendarioa"
+      }
+    }
+  ]
+}

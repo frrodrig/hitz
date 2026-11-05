@@ -1,0 +1,456 @@
+# Unit 1.2 · Nor zara? — introducing oneself and others, origin (NONGO), jobs with the article,
+# full present of IZAN, ALA questions, "neska hau", numbers 0–10 for phone numbers.
+id: u01-2
+section: s1
+bookUnit: 1
+title:
+  es: ¿Quién eres?
+  eu: Nor zara?
+goals:
+  - es: Presentarte y presentar a otras personas.
+    eu: Zure burua eta besteak aurkeztu.
+  - es: Decir de dónde es alguien y a qué se dedica.
+    eu: Norbait nongoa den eta zer den esan.
+  - es: Dar datos personales sencillos, como el número de teléfono.
+    eu: Datu pertsonal errazak eman, telefono zenbakia, adibidez.
+guidebook:
+  sections:
+    - title:
+        es: "Los pronombres y el verbo izan"
+        eu: "Izenordainak eta izan aditza"
+      body:
+        es: "Cada pronombre tiene su forma de «izan» (ser): ni naiz, zu zara, hura da, gu gara, zuek zarete, haiek dira. El verbo va al final y el pronombre se puede omitir."
+        eu: "Izenordain bakoitzak bere «izan» forma du: ni naiz, zu zara, hura da, gu gara, zuek zarete, haiek dira. Aditza amaieran doa, eta izenordaina ken daiteke."
+      examples:
+        - eu: Hura Mikel da.
+          es: Él es Mikel.
+        - eu: Gu ikasleak gara.
+          es: Somos estudiantes.
+        - eu: Haiek Bilbokoak dira.
+          es: Ellos son de Bilbao.
+    - title:
+        es: "Profesiones: el artículo -a / -ak"
+        eu: "Lanbideak: -a / -ak artikulua"
+      body:
+        es: "En el diccionario las palabras aparecen sin artículo (irakasle). En la frase llevan -a en singular y -ak en plural: «Ni irakaslea naiz», «Gu irakasleak gara». Para elegir entre dos opciones se usa «ala» (o)."
+        eu: "Hiztegian hitzak artikulurik gabe agertzen dira (irakasle). Esaldian -a dute singularrean eta -ak pluralean: «Ni irakaslea naiz», «Gu irakasleak gara». Bi aukeraren artean galdetzeko «ala» erabiltzen da."
+      examples:
+        - eu: Ni irakaslea naiz.
+          es: Soy profesor.
+        - eu: Zuek medikuak zarete?
+          es: ¿Sois médicos?
+        - eu: Zu ikaslea zara ala irakaslea?
+          es: ¿Eres estudiante o profesor?
+    - title:
+        es: "¿De dónde? Nongo"
+        eu: "Nongo?"
+      body:
+        es: "Para el origen se añade -ko al lugar y luego el artículo: Bilbo → Bilbokoa (de Bilbao). Se pregunta con «Nongoa zara?». Para presentar a alguien: «Hau Ane da» o «Neska hau Ane da» (el demostrativo va detrás del nombre)."
+        eu: "Jatorria esateko, lekuari -ko eta artikulua gehitzen zaizkio: Bilbo → Bilbokoa. «Nongoa zara?» galdetzen da. Norbait aurkezteko: «Hau Ane da» edo «Neska hau Ane da» (erakuslea izenaren atzean doa)."
+      examples:
+        - eu: Nongoa zara? Ni Donostiakoa naiz.
+          es: ¿De dónde eres? Soy de San Sebastián.
+        - eu: Neska hau Amaia da. Gasteizkoa da.
+          es: Esta chica es Amaia. Es de Vitoria.
+    - title:
+        es: "Números y pronunciación"
+        eu: "Zenbakiak eta ahoskera"
+      body:
+        es: "Los números del 0 al 10 sirven para dictar un teléfono cifra a cifra. Ojo a la pronunciación: «tx» suena como «ch» (Etxeberria), «tz» y «ts» son sonidos parecidos a «ts», y la «z» se pronuncia como una «s» suave, no como la «z» castellana (zazpi, zortzi)."
+        eu: "0tik 10era bitarteko zenbakiekin telefono bat zenbakiz zenbaki eman daiteke. Kontuz ahoskerarekin: «tx» (Etxeberria), «tz» eta «ts», eta «z» (zazpi, zortzi) ez da gaztelaniazko «z» bezala ahoskatzen."
+      examples:
+        - eu: Zortzi, bederatzi, hamar.
+          es: Ocho, nueve, diez.
+        - eu: "Telefono zenbakia: sei, bost, zero, bi."
+          es: "Número de teléfono: seis, cinco, cero, dos."
+levels:
+  - type: lesson
+    title:
+      es: Personas y profesiones
+      eu: Jendea eta lanbideak
+    lessons:
+      - structures: [izan-present, demonstrative-hau]
+        sentences:
+          - Hura Mikel da. = Él es Mikel. | Aquel es Mikel.
+          - Gu Ane eta Jon gara. = Somos Ane y Jon. | Nosotros somos Ane y Jon.
+          - Zuek Itziar eta Iker zarete? = ¿Sois Itziar e Iker? | ¿Vosotros sois Itziar e Iker? | ¿Ustedes son Itziar e Iker?
+          - Haiek Leire eta Unai dira. = Son Leire y Unai. | Ellos son Leire y Unai.
+          - Mikel gizona da. = Mikel es un hombre.
+          - Neska hau Amaia da. = Esta chica es Amaia.
+          - Mutil hau Aitor da. = Este chico es Aitor.
+          - Emakume hau Nerea da. = Esta mujer es Nerea.
+        pairs:
+          - - gizon = hombre
+            - emakume = mujer
+            - mutil = chico
+            - neska = chica
+            - ume = niño
+        blanks:
+          - text: Gu Ane eta Jon ___. = Somos Ane y Jon.
+            options:
+              - gara
+              - zarete
+              - dira
+        meanings:
+          - text: Haiek Leire eta Unai dira.
+            options:
+              - Ellos son Leire y Unai.
+              - Nosotros somos Leire y Unai.
+              - Vosotros sois Leire y Unai.
+        chats:
+          - messages:
+              - Jon | Kaixo! Zuek nor zarete?
+            options:
+              - Gu Ane eta Maialen gara.
+              - Haiek Ane eta Maialen dira.
+              - Zu Ane zara.
+        true_false:
+          - passage: Kaixo! Ni Gorka naiz. Neska hau Irati da.
+            statement: Irati es una chica.
+            answer: true
+      - structures: [article, izan-present]
+        sentences:
+          - Ni irakaslea naiz. = Soy profesor. | Soy profesora. | Yo soy profesor. | Yo soy profesora.
+          - Zu ikaslea zara? = ¿Eres estudiante? | ¿Tú eres estudiante? | ¿Es usted estudiante?
+          - Ane medikua da. = Ane es médica. | Ane es médico.
+          - Mikel erizaina da. = Mikel es enfermero.
+          - Gu sukaldariak gara. = Somos cocineros. | Somos cocineras. | Nosotros somos cocineros. | Nosotras somos cocineras.
+          - Zuek ingeniariak zarete. = Sois ingenieros. | Sois ingenieras. | Vosotros sois ingenieros. | Vosotras sois ingenieras.
+          - Haiek dendariak dira. = Son dependientes. | Ellos son dependientes. | Ellas son dependientas. | Son dependientas.
+          - Jon langabetua da. = Jon está en paro. | Jon está parado.
+        pairs:
+          - - irakasle = profesor
+            - ikasle = estudiante
+            - mediku = médico
+            - erizain = enfermero
+            - sukaldari = cocinero
+            - dendari = dependiente
+        blanks:
+          - text: Haiek dendariak ___. = Son dependientes.
+            options:
+              - dira
+              - da
+              - gara
+          - text: Gu ___ gara. = Somos cocineros.
+            options:
+              - sukaldariak
+              - sukaldaria
+        meanings:
+          - text: Ni langabetua naiz.
+            options:
+              - Estoy en paro.
+              - Soy médico.
+              - Soy estudiante.
+        chats:
+          - messages:
+              - Itziar | Zer zara zu?
+            options:
+              - Ni ingeniaria naiz.
+              - Zu ingeniaria zara.
+              - Ez horregatik.
+      - structures: [nongo, izan-present]
+        sentences:
+          - Nongoa zara? = ¿De dónde eres? | ¿De dónde es usted?
+          - Ni Bilbokoa naiz. = Soy de Bilbao. | Yo soy de Bilbao.
+          - Ane Donostiakoa da. = Ane es de San Sebastián. | Ane es de Donostia.
+          - Gu Gasteizkoak gara. = Somos de Vitoria. | Nosotros somos de Vitoria. | Nosotras somos de Vitoria.
+          - Haiek Baionakoak dira. = Son de Bayona. | Ellos son de Bayona. | Ellas son de Bayona.
+          - Zuek nongoak zarete? = ¿De dónde sois? | ¿Vosotros de dónde sois? | ¿De dónde son ustedes?
+          - Mikel Getxokoa da. = Mikel es de Getxo.
+          - Ume hau Irungoa da. = Este niño es de Irún. | Esta niña es de Irún.
+        pairs:
+          - - emakume = mujer
+            - gizon = hombre
+            - ume = niño
+            - langabetu = parado
+            - ingeniari = ingeniero
+        blanks:
+          - text: ___ zara? = ¿De dónde eres?
+            options:
+              - Nongoa
+              - Nor
+              - Zer
+        meanings:
+          - text: Gu Gasteizkoak gara.
+            options:
+              - Somos de Vitoria.
+              - Sois de Vitoria.
+              - Son de Vitoria.
+        chats:
+          - messages:
+              - Unai | Nongoa zara?
+            options:
+              - Ni Tolosakoa naiz.
+              - Ni Unai naiz.
+              - Ni irakaslea naiz.
+        true_false:
+          - passage: Ni Leire naiz. Durangokoa naiz, eta Aitor Eibarkoa da.
+            statement: Aitor es de Durango.
+            answer: false
+  - type: lesson
+    title:
+      es: ¿Quién es este?
+      eu: Nor da hau?
+    lessons:
+      - structures: [izan-present, ala-question]
+        sentences:
+          - Zu medikua zara ala erizaina? = ¿Eres médico o enfermero? | ¿Eres médica o enfermera? | ¿Es usted médico o enfermero? | ¿Es usted médica o enfermera?
+          - Ni erizaina naiz. = Soy enfermero. | Soy enfermera. | Yo soy enfermero. | Yo soy enfermera.
+          - Hura irakaslea da ala ikaslea? = ¿Él es profesor o estudiante? | ¿Ella es profesora o estudiante? | ¿Es profesor o estudiante? | ¿Es profesora o estudiante?
+          - Gu ez gara ikasleak. = No somos estudiantes. | Nosotros no somos estudiantes. | Nosotras no somos estudiantes.
+          - Zuek Bilbokoak zarete ala Donostiakoak? = ¿Sois de Bilbao o de San Sebastián? | ¿Vosotros sois de Bilbao o de San Sebastián?
+          - Haiek ez dira Gasteizkoak. = No son de Vitoria. | Ellos no son de Vitoria. | Ellas no son de Vitoria.
+          - Ni ez naiz medikua, erizaina naiz. = No soy médico, soy enfermero. | No soy médica, soy enfermera. | Yo no soy médico, soy enfermero.
+          - Leire sukaldaria da. = Leire es cocinera.
+        blanks:
+          - text: Zuek irakasleak ___. = Sois profesores.
+            options:
+              - zarete
+              - gara
+              - dira
+          - text: Ikaslea zara ___ irakaslea? = ¿Eres estudiante o profesor?
+            options:
+              - ala
+              - eta
+        meanings:
+          - text: Haiek ez dira Gasteizkoak.
+            options:
+              - No son de Vitoria.
+              - Son de Vitoria.
+              - No somos de Vitoria.
+        chats:
+          - messages:
+              - Peio | Zu ikaslea zara ala irakaslea?
+            options:
+              - Ni ikaslea naiz.
+              - Zu ikaslea zara.
+              - Bai, eta zu?
+        true_false:
+          - passage: Oier eta Garazi Irungoak dira. Oier medikua da, eta Garazi ingeniaria.
+            statement: Garazi es médica.
+            answer: false
+      - structures: [demonstrative-hau, questions]
+        sentences:
+          - Nor da hau? = ¿Quién es este? | ¿Quién es esta? | ¿Quién es?
+          - Hau Eneko da. Ikaslea da. = Este es Eneko. Es estudiante.
+          - Gizon hau sukaldaria da. = Este hombre es cocinero.
+          - Emakume hau ingeniaria da. = Esta mujer es ingeniera.
+          - Ume hauek Bermeokoak dira. = Estos niños son de Bermeo. | Estas niñas son de Bermeo.
+          - Zer da mutil hau? = ¿Qué es este chico? | ¿A qué se dedica este chico?
+          - Hauek Olatz eta Xabier dira. = Estos son Olatz y Xabier.
+          - Neska hau ez da dendaria. = Esta chica no es dependienta.
+        blanks:
+          - text: Gizon ___ medikua da. = Este hombre es médico.
+            options:
+              - hau
+              - hauek
+              - ni
+        meanings:
+          - text: Nor da hau?
+            options:
+              - ¿Quién es este?
+              - ¿Qué es esto?
+              - ¿De dónde es este?
+        chats:
+          - messages:
+              - Miren | Nor da emakume hau?
+            options:
+              - Hau Edurne da.
+              - Hau Edurne naiz.
+              - Hauek Edurne dira.
+        true_false:
+          - passage: Hau Josu da. Josu sukaldaria da, eta Bilbokoa da.
+            statement: Josu es de Bilbao.
+            answer: true
+      - structures: [numbers, questions]
+        sentences:
+          - Zein da telefono zenbakia? = ¿Cuál es el número de teléfono?
+          - Bat, bi, hiru, lau, bost. = Uno, dos, tres, cuatro, cinco.
+          - Sei, zazpi, zortzi, bederatzi, hamar. = Seis, siete, ocho, nueve, diez.
+          - "Telefono zenbakia: sei, zazpi, bi, zero. = Número de teléfono: seis, siete, dos, cero. | Teléfono: seis, siete, dos, cero."
+          - Zenbakia bost da ala sei? = ¿El número es cinco o seis? | ¿Es el cinco o el seis?
+          - Zein da helbidea? = ¿Cuál es la dirección?
+          - Helbidea eta telefono zenbakia, mesedez. = La dirección y el número de teléfono, por favor. | Dirección y número de teléfono, por favor.
+          - Zero, hiru, lau. = Cero, tres, cuatro.
+        pairs:
+          - - bat = uno
+            - bi = dos
+            - hiru = tres
+            - lau = cuatro
+            - bost = cinco
+            - hamar = diez
+        blanks:
+          - text: Bat, bi, ___, lau. = Uno, dos, tres, cuatro.
+            options:
+              - hiru
+              - hamar
+              - sei
+        meanings:
+          - text: Zortzi, bederatzi, hamar.
+            options:
+              - Ocho, nueve, diez.
+              - Siete, ocho, nueve.
+              - Seis, siete, ocho.
+        chats:
+          - messages:
+              - Ander | Barkatu, zein da telefono zenbakia?
+            options:
+              - Sei, bost, zero, zazpi.
+              - Ni Bilbokoa naiz.
+              - Ni Ander naiz.
+        true_false:
+          - passage: "Ni Haizea naiz. Telefono zenbakia: sei, lau, lau, bi."
+            statement: El número de Haizea empieza por seis.
+            answer: true
+  - type: lesson
+    title:
+      es: Conversaciones
+      eu: Elkarrizketak
+    lessons:
+      - structures: [izan-present, nongo]
+        sentences:
+          - Kaixo! Ni Nahia naiz, eta Tolosakoa naiz. = ¡Hola! Soy Nahia y soy de Tolosa. | ¡Hola! Yo soy Nahia y soy de Tolosa.
+          - Ikaslea naiz. Eta zu? = Soy estudiante. ¿Y tú? | Soy estudiante. ¿Y usted?
+          - Ni Markel naiz. Irakaslea naiz. = Soy Markel. Soy profesor. | Yo soy Markel. Soy profesor.
+          - Nongoa zara, Markel? = ¿De dónde eres, Markel?
+          - Ni Eibarkoa naiz. = Soy de Eibar. | Yo soy de Eibar.
+          - Zuek ikasleak zarete? Bai, ikasleak gara. = ¿Sois estudiantes? Sí, somos estudiantes. | ¿Vosotros sois estudiantes? Sí, somos estudiantes.
+        chats:
+          - messages:
+              - Izaro | Kaixo! Ni Izaro naiz. Nongoa zara?
+            options:
+              - Ni Hernanikoa naiz.
+              - Ni Izaro naiz.
+              - Zu Hernanikoa zara.
+          - messages:
+              - Ibai | Kaixo! Zuek ikasleak zarete?
+              - Alaitz | Ez, gu irakasleak gara.
+              - Ibai | Eta nongoak zarete?
+            options:
+              - Gu Oñatikoak gara.
+              - Haiek Oñatikoak dira.
+              - Zuek Oñatikoak zarete.
+        true_false:
+          - passage: Kaixo! Ni Kepa naiz. Sukaldaria naiz, eta Lekeitiokoa naiz.
+            statement: Kepa es cocinero.
+            answer: true
+          - passage: Gu Asier eta Uxue gara. Asier medikua da, eta Uxue erizaina.
+            statement: Uxue es médica.
+            answer: false
+        meanings:
+          - text: Haiek ez dira irakasleak.
+            options:
+              - No son profesores.
+              - Son profesores.
+              - No somos profesores.
+      - structures: [demonstrative-hau, izan-present]
+        sentences:
+          - Ane, hau Julen da. = Ane, este es Julen.
+          - Kaixo, Julen! Zer moduz? = ¡Hola, Julen! ¿Qué tal?
+          - Julen eta ni ikasleak gara. = Julen y yo somos estudiantes.
+          - Hauek June eta Patxi dira. = Estos son June y Patxi.
+          - June medikua da, eta Patxi dendaria. = June es médica y Patxi es dependiente. | June es médica y Patxi, dependiente.
+          - Patxi Bergarakoa da. = Patxi es de Bergara.
+        chats:
+          - messages:
+              - Arantza | Mikel, hau Josu da.
+            options:
+              - Kaixo, Josu! Zer moduz?
+              - Ni Josu naiz.
+              - Zorionak, Josu!
+          - messages:
+              - Edurne | Nor dira haiek?
+              - Aitor | Haiek Irati eta Gorka dira.
+              - Edurne | Irakasleak dira?
+            options:
+              - Ez, ikasleak dira.
+              - Ez, ikasleak gara.
+              - Bai, ikasleak zarete.
+        true_false:
+          - passage: Hau Garazi da. Garazi ingeniaria da. Durangokoa da.
+            statement: Garazi es de Durango.
+            answer: true
+          - passage: Hauek Ander eta Miren dira. Ander langabetua da.
+            statement: Ander trabaja de cocinero.
+            answer: false
+        blanks:
+          - text: Hauek June eta Patxi ___. = Estos son June y Patxi.
+            options:
+              - dira
+              - da
+              - gara
+      - structures: [numbers, questions]
+        sentences:
+          - Izena eta abizena, mesedez. = Nombre y apellido, por favor. | El nombre y el apellido, por favor.
+          - "Izena: Olatz. Abizena: Arana. = Nombre: Olatz. Apellido: Arana."
+          - Eta telefono zenbakia? = ¿Y el número de teléfono?
+          - Bederatzi, lau, bat, zazpi. = Nueve, cuatro, uno, siete.
+          - Eta helbidea? = ¿Y la dirección?
+          - Ni langabetua naiz, eta Getxokoa naiz. = Estoy en paro y soy de Getxo. | Estoy parado y soy de Getxo. | Estoy parada y soy de Getxo.
+        chats:
+          - messages:
+              - Peio | Barkatu, izena eta abizena, mesedez.
+            options:
+              - Olatz Arana.
+              - Ez horregatik.
+              - Ni Getxokoa naiz.
+          - messages:
+              - Peio | Eta telefono zenbakia?
+              - Olatz | Sei, bat, bost, zero, hiru.
+              - Peio | Sei, bat, bost, zero, hiru?
+            options:
+              - Bai, eskerrik asko.
+              - Ez horregatik.
+              - Ni Olatz naiz.
+        true_false:
+          - passage: "Izena: Nerea. Abizena: Goikoetxea. Ikaslea da, eta Bermeokoa da."
+            statement: Nerea es estudiante.
+            answer: true
+          - passage: "Izena: Unai. Abizena: Urrutia. Telefono zenbakia: zazpi, zero, hiru."
+            statement: El apellido de Unai es Zubiri.
+            answer: false
+        meanings:
+          - text: Eta helbidea?
+            options:
+              - ¿Y la dirección?
+              - ¿Y el número?
+              - ¿Y el nombre?
+  - type: story
+    title:
+      es: "Historia: ¿profesora o estudiante?"
+      eu: "Istorioa: irakaslea ala ikaslea?"
+    story:
+      title: Irakaslea ala ikaslea?
+      lines:
+        - Amaia | Egun on! Ni Amaia naiz, eta irakaslea naiz. = ¡Buenos días! Soy Amaia y soy profesora.
+        - Unai | Egun on! Ni Unai naiz. Hau Leire da. = ¡Buenos días! Soy Unai. Esta es Leire.
+        - Amaia | Kaixo, Leire! Zu ikaslea zara? = ¡Hola, Leire! ¿Eres estudiante?
+        - Leire | Bai, ni ikaslea naiz. Unai ez da ikaslea. = Sí, soy estudiante. Unai no es estudiante.
+        - Amaia | Ez? Zer zara, Unai? = ¿No? ¿A qué te dedicas, Unai?
+        - Unai | Ni sukaldaria naiz. = Soy cocinero.
+        - Amaia | Eta nongoak zarete? = ¿Y de dónde sois?
+        - Unai | Ni Bilbokoa naiz, eta Leire Baionakoa da. = Yo soy de Bilbao y Leire es de Bayona.
+        - Amaia | Leire, zein da telefono zenbakia? = Leire, ¿cuál es tu número de teléfono?
+        - Leire | Sei, zazpi, bi, bost, zero. = Seis, siete, dos, cinco, cero.
+        - Amaia | Eskerrik asko! Gero arte! = ¡Muchas gracias! ¡Hasta luego!
+      questions:
+        - afterLine: 3
+          prompt: ¿Quién es estudiante?
+          options:
+            - Leire
+            - Unai
+            - Los dos
+        - afterLine: 7
+          prompt: ¿De dónde es Unai?
+          options:
+            - De Bilbao
+            - De Bayona
+            - No lo dice
+        - afterLine: 10
+          prompt: ¿Qué le pide Amaia a Leire?
+          options:
+            - Su número de teléfono
+            - Su dirección
+            - Su apellido
+  - type: review
+  - type: legendary
