@@ -1,7 +1,7 @@
 package eus.hitz.app
 
 import androidx.compose.ui.test.assertIsDisplayed
-import androidx.compose.ui.test.enableAccessibilityChecks
+import androidx.compose.ui.test.junit4.accessibility.enableAccessibilityChecks
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onAllNodesWithText
