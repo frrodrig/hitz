@@ -262,6 +262,9 @@ sealed interface LessonAction {
 /** One-off events for the screen. */
 sealed interface LessonEvent {
     data object Close : LessonEvent
+
+    /** The answer was checked; the screen confirms it with haptics. */
+    data class Feedback(val correct: Boolean) : LessonEvent
 }
 
 internal fun Language.other(): Language = if (this == Language.Basque) Language.Spanish else Language.Basque
