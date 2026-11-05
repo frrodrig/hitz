@@ -406,6 +406,33 @@
             },
             {
               "id": "u09-1.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "el árbol",
+              "options": [
+                {
+                  "text": "basoa",
+                  "image": "nature_forest.webp"
+                },
+                {
+                  "text": "zuhaitza",
+                  "image": "nature_tree.webp"
+                },
+                {
+                  "text": "itsasoa",
+                  "image": "nature_sea.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "zuhaitz"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -425,6 +452,87 @@
                 "oso",
                 "zahar",
                 "izan"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "el bosque",
+              "options": [
+                {
+                  "text": "ibaia",
+                  "image": "nature_river.webp"
+                },
+                {
+                  "text": "basoa",
+                  "image": "nature_forest.webp"
+                },
+                {
+                  "text": "zuhaitza",
+                  "image": "nature_tree.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "baso"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "el mar",
+              "options": [
+                {
+                  "text": "mendia",
+                  "image": "place_mountain.webp"
+                },
+                {
+                  "text": "itsasoa",
+                  "image": "nature_sea.webp"
+                },
+                {
+                  "text": "ibaia",
+                  "image": "nature_river.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "itsaso"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s1.e17",
+              "type": "choose_image",
+              "prompt": "el río",
+              "options": [
+                {
+                  "text": "itsasoa",
+                  "image": "nature_sea.webp"
+                },
+                {
+                  "text": "ibaia",
+                  "image": "nature_river.webp"
+                },
+                {
+                  "text": "basoa",
+                  "image": "nature_forest.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "ibai"
               ],
               "structures": [
                 "egon-present",
@@ -711,6 +819,33 @@
             },
             {
               "id": "u09-1.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "el contenedor",
+              "options": [
+                {
+                  "text": "botila",
+                  "image": "object_bottle.webp"
+                },
+                {
+                  "text": "zakarrontzia",
+                  "image": "object_bin.webp"
+                },
+                {
+                  "text": "edukiontzia",
+                  "image": "object_container.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "edukiontzi"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -729,6 +864,87 @@
                 "zakarrontzi",
                 "bat",
                 "egon"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "la papelera",
+              "options": [
+                {
+                  "text": "edukiontzia",
+                  "image": "object_container.webp"
+                },
+                {
+                  "text": "zakarrontzia",
+                  "image": "object_bin.webp"
+                },
+                {
+                  "text": "poltsa",
+                  "image": "object_bag.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "zakarrontzi"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "la botella",
+              "options": [
+                {
+                  "text": "botila",
+                  "image": "object_bottle.webp"
+                },
+                {
+                  "text": "zakarrontzia",
+                  "image": "object_bin.webp"
+                },
+                {
+                  "text": "poltsa",
+                  "image": "object_bag.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "botila"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e17",
+              "type": "choose_image",
+              "prompt": "la bolsa",
+              "options": [
+                {
+                  "text": "poltsa",
+                  "image": "object_bag.webp"
+                },
+                {
+                  "text": "edukiontzia",
+                  "image": "object_container.webp"
+                },
+                {
+                  "text": "botila",
+                  "image": "object_bottle.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "poltsa"
               ],
               "structures": [
                 "egon-present",
@@ -957,6 +1173,32 @@
             },
             {
               "id": "u09-1.l1.s3.e11",
+              "type": "choose_image",
+              "prompt": "la madera",
+              "options": [
+                {
+                  "text": "egurra",
+                  "image": "nature_wood.webp"
+                },
+                {
+                  "text": "botila",
+                  "image": "object_bottle.webp"
+                },
+                {
+                  "text": "papera",
+                  "image": "object_paper.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "egur"
+              ],
+              "structures": [
+                "zerezkoa"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s3.e12",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -981,7 +1223,33 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e12",
+              "id": "u09-1.l1.s3.e13",
+              "type": "choose_image",
+              "prompt": "el papel",
+              "options": [
+                {
+                  "text": "papera",
+                  "image": "object_paper.webp"
+                },
+                {
+                  "text": "poltsa",
+                  "image": "object_bag.webp"
+                },
+                {
+                  "text": "egurra",
+                  "image": "nature_wood.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "paper"
+              ],
+              "structures": [
+                "zerezkoa"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s3.e14",
               "type": "listen_tap",
               "text": "Kartoizko poltsa bat daukat.",
               "distractors": [
@@ -2071,6 +2339,33 @@
                 "daiteke",
                 "zerezkoa"
               ]
+            },
+            {
+              "id": "u09-1.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "el bosque",
+              "options": [
+                {
+                  "text": "basoa",
+                  "image": "nature_forest.webp"
+                },
+                {
+                  "text": "zuhaitza",
+                  "image": "nature_tree.webp"
+                },
+                {
+                  "text": "ibaia",
+                  "image": "nature_river.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "baso"
+              ],
+              "structures": [
+                "daiteke",
+                "zerezkoa"
+              ]
             }
           ]
         },
@@ -2328,6 +2623,33 @@
                 "egon",
                 "burdina",
                 "izan"
+              ],
+              "structures": [
+                "imperative",
+                "indirect-imperative"
+              ]
+            },
+            {
+              "id": "u09-1.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "el contenedor",
+              "options": [
+                {
+                  "text": "edukiontzia",
+                  "image": "object_container.webp"
+                },
+                {
+                  "text": "papera",
+                  "image": "object_paper.webp"
+                },
+                {
+                  "text": "zakarrontzia",
+                  "image": "object_bin.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "edukiontzi"
               ],
               "structures": [
                 "imperative",

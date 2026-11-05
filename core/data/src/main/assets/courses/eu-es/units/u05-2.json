@@ -378,6 +378,32 @@
             },
             {
               "id": "u05-2.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "el aceite",
+              "options": [
+                {
+                  "text": "azukrea",
+                  "image": "food_sugar.webp"
+                },
+                {
+                  "text": "olioa",
+                  "image": "food_oil.webp"
+                },
+                {
+                  "text": "gatza",
+                  "image": "food_salt.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "olio"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -397,6 +423,136 @@
                 "behar izan",
                 "ukan",
                 "mesedez"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "la sal",
+              "options": [
+                {
+                  "text": "azukrea",
+                  "image": "food_sugar.webp"
+                },
+                {
+                  "text": "olioa",
+                  "image": "food_oil.webp"
+                },
+                {
+                  "text": "gatza",
+                  "image": "food_salt.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "gatz"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "el azúcar",
+              "options": [
+                {
+                  "text": "olioa",
+                  "image": "food_oil.webp"
+                },
+                {
+                  "text": "gatza",
+                  "image": "food_salt.webp"
+                },
+                {
+                  "text": "azukrea",
+                  "image": "food_sugar.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "azukre"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e17",
+              "type": "choose_image",
+              "prompt": "la olla",
+              "options": [
+                {
+                  "text": "lapikoa",
+                  "image": "kitchen_pot.webp"
+                },
+                {
+                  "text": "zartagina",
+                  "image": "kitchen_frying_pan.webp"
+                },
+                {
+                  "text": "platera",
+                  "image": "kitchen_plate.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "lapiko"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e18",
+              "type": "choose_image",
+              "prompt": "la sartén",
+              "options": [
+                {
+                  "text": "platera",
+                  "image": "kitchen_plate.webp"
+                },
+                {
+                  "text": "zartagina",
+                  "image": "kitchen_frying_pan.webp"
+                },
+                {
+                  "text": "lapikoa",
+                  "image": "kitchen_pot.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "zartagin"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e19",
+              "type": "choose_image",
+              "prompt": "el plato",
+              "options": [
+                {
+                  "text": "lapikoa",
+                  "image": "kitchen_pot.webp"
+                },
+                {
+                  "text": "zartagina",
+                  "image": "kitchen_frying_pan.webp"
+                },
+                {
+                  "text": "platera",
+                  "image": "kitchen_plate.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "plater"
               ],
               "structures": [
                 "cooking-vocab"
@@ -1251,6 +1407,33 @@
             },
             {
               "id": "u05-2.l2.s1.e13",
+              "type": "choose_image",
+              "prompt": "el aceite",
+              "options": [
+                {
+                  "text": "olioa",
+                  "image": "food_oil.webp"
+                },
+                {
+                  "text": "ura",
+                  "image": "drink_water.webp"
+                },
+                {
+                  "text": "esnea",
+                  "image": "drink_milk.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "olio"
+              ],
+              "structures": [
+                "discourse-markers",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s1.e14",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2067,6 +2250,33 @@
                 "egosi",
                 "patata",
                 "frijitu",
+                "zartagin"
+              ],
+              "structures": [
+                "imperative",
+                "discourse-markers"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "la sartén",
+              "options": [
+                {
+                  "text": "arrautza",
+                  "image": "food_egg.webp"
+                },
+                {
+                  "text": "lapikoa",
+                  "image": "kitchen_pot.webp"
+                },
+                {
+                  "text": "zartagina",
+                  "image": "kitchen_frying_pan.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
                 "zartagin"
               ],
               "structures": [

@@ -406,6 +406,33 @@
             },
             {
               "id": "u02-1.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "el pueblo",
+              "options": [
+                {
+                  "text": "parkea",
+                  "image": "place_park.webp"
+                },
+                {
+                  "text": "herria",
+                  "image": "place_town.webp"
+                },
+                {
+                  "text": "hiria",
+                  "image": "place_city.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "herri"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -424,6 +451,60 @@
                 "gaur",
                 "kale",
                 "egon"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "la iglesia",
+              "options": [
+                {
+                  "text": "hiria",
+                  "image": "place_city.webp"
+                },
+                {
+                  "text": "parkea",
+                  "image": "place_park.webp"
+                },
+                {
+                  "text": "eliza",
+                  "image": "place_church.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "eliza"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "el parque",
+              "options": [
+                {
+                  "text": "eliza",
+                  "image": "place_church.webp"
+                },
+                {
+                  "text": "parkea",
+                  "image": "place_park.webp"
+                },
+                {
+                  "text": "herria",
+                  "image": "place_town.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "parke"
               ],
               "structures": [
                 "places",
@@ -701,6 +782,33 @@
             },
             {
               "id": "u02-1.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "el banco",
+              "options": [
+                {
+                  "text": "bankua",
+                  "image": "place_bank.webp"
+                },
+                {
+                  "text": "eskola",
+                  "image": "place_school.webp"
+                },
+                {
+                  "text": "farmazia",
+                  "image": "place_pharmacy.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "banku"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -719,6 +827,87 @@
                 "ikasle",
                 "liburutegi",
                 "egon"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "el hospital",
+              "options": [
+                {
+                  "text": "bankua",
+                  "image": "place_bank.webp"
+                },
+                {
+                  "text": "ospitalea",
+                  "image": "place_hospital.webp"
+                },
+                {
+                  "text": "liburutegia",
+                  "image": "place_library.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "ospitale"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "la escuela",
+              "options": [
+                {
+                  "text": "farmazia",
+                  "image": "place_pharmacy.webp"
+                },
+                {
+                  "text": "ospitalea",
+                  "image": "place_hospital.webp"
+                },
+                {
+                  "text": "eskola",
+                  "image": "place_school.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "eskola"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s2.e17",
+              "type": "choose_image",
+              "prompt": "la biblioteca",
+              "options": [
+                {
+                  "text": "eskola",
+                  "image": "place_school.webp"
+                },
+                {
+                  "text": "ospitalea",
+                  "image": "place_hospital.webp"
+                },
+                {
+                  "text": "liburutegia",
+                  "image": "place_library.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "liburutegi"
               ],
               "structures": [
                 "places",
@@ -997,6 +1186,33 @@
             },
             {
               "id": "u02-1.l1.s3.e13",
+              "type": "choose_image",
+              "prompt": "el restaurante",
+              "options": [
+                {
+                  "text": "hotela",
+                  "image": "place_hotel.webp"
+                },
+                {
+                  "text": "jatetxea",
+                  "image": "place_restaurant.webp"
+                },
+                {
+                  "text": "taberna",
+                  "image": "place_bar.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "jatetxe"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s3.e14",
               "type": "listen_tap",
               "text": "Mikel eta Ane tabernan daude.",
               "distractors": [
@@ -1008,6 +1224,114 @@
                 "eta",
                 "taberna",
                 "egon"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s3.e15",
+              "type": "choose_image",
+              "prompt": "la estación",
+              "options": [
+                {
+                  "text": "geltokia",
+                  "image": "place_station.webp"
+                },
+                {
+                  "text": "hondartza",
+                  "image": "place_beach.webp"
+                },
+                {
+                  "text": "mendia",
+                  "image": "place_mountain.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "geltoki"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s3.e16",
+              "type": "choose_image",
+              "prompt": "la playa",
+              "options": [
+                {
+                  "text": "mendia",
+                  "image": "place_mountain.webp"
+                },
+                {
+                  "text": "hondartza",
+                  "image": "place_beach.webp"
+                },
+                {
+                  "text": "hotela",
+                  "image": "place_hotel.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "hondartza"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s3.e17",
+              "type": "choose_image",
+              "prompt": "el monte",
+              "options": [
+                {
+                  "text": "mendia",
+                  "image": "place_mountain.webp"
+                },
+                {
+                  "text": "jatetxea",
+                  "image": "place_restaurant.webp"
+                },
+                {
+                  "text": "geltokia",
+                  "image": "place_station.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "mendi"
+              ],
+              "structures": [
+                "places",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u02-1.l1.s3.e18",
+              "type": "choose_image",
+              "prompt": "el bar",
+              "options": [
+                {
+                  "text": "jatetxea",
+                  "image": "place_restaurant.webp"
+                },
+                {
+                  "text": "taberna",
+                  "image": "place_bar.webp"
+                },
+                {
+                  "text": "geltokia",
+                  "image": "place_station.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "taberna"
               ],
               "structures": [
                 "places",
@@ -2148,6 +2472,33 @@
                 "egon-present",
                 "non-inessive"
               ]
+            },
+            {
+              "id": "u02-1.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "el hotel",
+              "options": [
+                {
+                  "text": "farmazia",
+                  "image": "place_pharmacy.webp"
+                },
+                {
+                  "text": "eliza",
+                  "image": "place_church.webp"
+                },
+                {
+                  "text": "hotela",
+                  "image": "place_hotel.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "hotel"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
             }
           ]
         },
@@ -2400,6 +2751,33 @@
                 "egon",
                 "ni",
                 "hondartza"
+              ],
+              "structures": [
+                "egon-present",
+                "demonstratives"
+              ]
+            },
+            {
+              "id": "u02-1.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "la farmacia",
+              "options": [
+                {
+                  "text": "farmazia",
+                  "image": "place_pharmacy.webp"
+                },
+                {
+                  "text": "bankua",
+                  "image": "place_bank.webp"
+                },
+                {
+                  "text": "liburutegia",
+                  "image": "place_library.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "farmazia"
               ],
               "structures": [
                 "egon-present",
@@ -2664,6 +3042,33 @@
                 "parke",
                 "asko",
                 "egon"
+              ],
+              "structures": [
+                "ba-rik",
+                "places"
+              ]
+            },
+            {
+              "id": "u02-1.l3.s3.e12",
+              "type": "choose_image",
+              "prompt": "la ciudad",
+              "options": [
+                {
+                  "text": "hondartza",
+                  "image": "place_beach.webp"
+                },
+                {
+                  "text": "hiria",
+                  "image": "place_city.webp"
+                },
+                {
+                  "text": "herria",
+                  "image": "place_town.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "hiri"
               ],
               "structures": [
                 "ba-rik",

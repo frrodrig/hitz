@@ -390,6 +390,33 @@
             },
             {
               "id": "u08-1.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "la cabeza",
+              "options": [
+                {
+                  "text": "burua",
+                  "image": "body_head.webp"
+                },
+                {
+                  "text": "sudurra",
+                  "image": "body_nose.webp"
+                },
+                {
+                  "text": "belarria",
+                  "image": "body_ear.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "buru"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -409,6 +436,141 @@
                 "lepo",
                 "min",
                 "eduki"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "la oreja",
+              "options": [
+                {
+                  "text": "belarria",
+                  "image": "body_ear.webp"
+                },
+                {
+                  "text": "ahoa",
+                  "image": "body_mouth.webp"
+                },
+                {
+                  "text": "hortza",
+                  "image": "body_tooth.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "belarri"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "la nariz",
+              "options": [
+                {
+                  "text": "burua",
+                  "image": "body_head.webp"
+                },
+                {
+                  "text": "ahoa",
+                  "image": "body_mouth.webp"
+                },
+                {
+                  "text": "sudurra",
+                  "image": "body_nose.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "sudur"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e17",
+              "type": "choose_image",
+              "prompt": "la boca",
+              "options": [
+                {
+                  "text": "ahoa",
+                  "image": "body_mouth.webp"
+                },
+                {
+                  "text": "belarria",
+                  "image": "body_ear.webp"
+                },
+                {
+                  "text": "hortza",
+                  "image": "body_tooth.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "aho"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e18",
+              "type": "choose_image",
+              "prompt": "el diente",
+              "options": [
+                {
+                  "text": "hortza",
+                  "image": "body_tooth.webp"
+                },
+                {
+                  "text": "sudurra",
+                  "image": "body_nose.webp"
+                },
+                {
+                  "text": "ahoa",
+                  "image": "body_mouth.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hortz"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s1.e19",
+              "type": "choose_image",
+              "prompt": "el ojo",
+              "options": [
+                {
+                  "text": "belarria",
+                  "image": "body_ear.webp"
+                },
+                {
+                  "text": "sudurra",
+                  "image": "body_nose.webp"
+                },
+                {
+                  "text": "begia",
+                  "image": "body_eye.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "begi"
               ],
               "structures": [
                 "body-parts",
@@ -689,6 +851,33 @@
             },
             {
               "id": "u08-1.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "el brazo",
+              "options": [
+                {
+                  "text": "hanka",
+                  "image": "body_leg.webp"
+                },
+                {
+                  "text": "eskua",
+                  "image": "body_hand.webp"
+                },
+                {
+                  "text": "besoa",
+                  "image": "body_arm.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "beso"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -707,6 +896,87 @@
                 "min",
                 "eduki",
                 "ukan"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "la mano",
+              "options": [
+                {
+                  "text": "besoa",
+                  "image": "body_arm.webp"
+                },
+                {
+                  "text": "eskua",
+                  "image": "body_hand.webp"
+                },
+                {
+                  "text": "oina",
+                  "image": "body_foot.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "esku"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "la pierna",
+              "options": [
+                {
+                  "text": "besoa",
+                  "image": "body_arm.webp"
+                },
+                {
+                  "text": "oina",
+                  "image": "body_foot.webp"
+                },
+                {
+                  "text": "hanka",
+                  "image": "body_leg.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "hanka"
+              ],
+              "structures": [
+                "body-parts",
+                "nongo-mina"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s2.e17",
+              "type": "choose_image",
+              "prompt": "el pie",
+              "options": [
+                {
+                  "text": "eskua",
+                  "image": "body_hand.webp"
+                },
+                {
+                  "text": "oina",
+                  "image": "body_foot.webp"
+                },
+                {
+                  "text": "hanka",
+                  "image": "body_leg.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "oin"
               ],
               "structures": [
                 "body-parts",
@@ -980,6 +1250,32 @@
             },
             {
               "id": "u08-1.l1.s3.e13",
+              "type": "choose_image",
+              "prompt": "la fiebre",
+              "options": [
+                {
+                  "text": "nekatuta",
+                  "image": "describe_tired.webp"
+                },
+                {
+                  "text": "sukarra",
+                  "image": "health_fever.webp"
+                },
+                {
+                  "text": "eztula",
+                  "image": "health_cough.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "sukar"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e14",
               "type": "listen_tap",
               "text": "Ez daukat sukarrik, baina eztula daukat.",
               "distractors": [
@@ -993,6 +1289,58 @@
                 "sukar",
                 "baina",
                 "eztul"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e15",
+              "type": "choose_image",
+              "prompt": "la tos",
+              "options": [
+                {
+                  "text": "nekatuta",
+                  "image": "describe_tired.webp"
+                },
+                {
+                  "text": "sukarra",
+                  "image": "health_fever.webp"
+                },
+                {
+                  "text": "eztula",
+                  "image": "health_cough.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "eztul"
+              ],
+              "structures": [
+                "symptoms"
+              ]
+            },
+            {
+              "id": "u08-1.l1.s3.e16",
+              "type": "choose_image",
+              "prompt": "cansado",
+              "options": [
+                {
+                  "text": "sukarra",
+                  "image": "health_fever.webp"
+                },
+                {
+                  "text": "eztula",
+                  "image": "health_cough.webp"
+                },
+                {
+                  "text": "nekatuta",
+                  "image": "describe_tired.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "nekatuta"
               ],
               "structures": [
                 "symptoms"
@@ -2063,6 +2411,33 @@
                 "nongo-mina",
                 "symptoms"
               ]
+            },
+            {
+              "id": "u08-1.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "la cabeza",
+              "options": [
+                {
+                  "text": "oina",
+                  "image": "body_foot.webp"
+                },
+                {
+                  "text": "burua",
+                  "image": "body_head.webp"
+                },
+                {
+                  "text": "eskua",
+                  "image": "body_hand.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "buru"
+              ],
+              "structures": [
+                "nongo-mina",
+                "symptoms"
+              ]
             }
           ]
         },
@@ -2315,6 +2690,32 @@
                 "sabel",
                 "min",
                 "eduki"
+              ],
+              "structures": [
+                "zer-ordutan"
+              ]
+            },
+            {
+              "id": "u08-1.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "la fiebre",
+              "options": [
+                {
+                  "text": "eztula",
+                  "image": "health_cough.webp"
+                },
+                {
+                  "text": "sukarra",
+                  "image": "health_fever.webp"
+                },
+                {
+                  "text": "nekatuta",
+                  "image": "describe_tired.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "sukar"
               ],
               "structures": [
                 "zer-ordutan"

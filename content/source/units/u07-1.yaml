@@ -110,6 +110,10 @@ levels:
           - passage: Gaur goizean kafe bat hartu dut. Gero liburu bat ere erosi dut.
             statement: Ha comprado un libro.
             answer: true
+        images:
+          - morning, afternoon, night
+          - night, morning, afternoon
+          - afternoon, night, morning
       - structures: [weekdays, time-markers]
         sentences:
           - Astelehenean Bilbon lan egin dut. = El lunes trabajé en Bilbao. | El lunes he trabajado en Bilbao.
@@ -192,6 +196,8 @@ levels:
           - passage: Ni Iruñean jaio naiz. Iaz Gasteizera etorri naiz.
             statement: Nació en Pamplona.
             answer: true
+        images:
+          - book, card, phone
   - type: lesson
     title:
       es: ¿Adónde has ido?

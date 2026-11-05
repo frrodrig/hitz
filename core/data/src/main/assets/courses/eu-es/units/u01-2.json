@@ -404,6 +404,33 @@
             },
             {
               "id": "u01-2.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "el hombre",
+              "options": [
+                {
+                  "text": "gizona",
+                  "image": "people_man.webp"
+                },
+                {
+                  "text": "emakumea",
+                  "image": "people_woman.webp"
+                },
+                {
+                  "text": "umea",
+                  "image": "people_child.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gizon"
+              ],
+              "structures": [
+                "izan-present",
+                "demonstrative-hau"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -424,6 +451,60 @@
                 "eta",
                 "neska",
                 "ere"
+              ],
+              "structures": [
+                "izan-present",
+                "demonstrative-hau"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "la chica",
+              "options": [
+                {
+                  "text": "mutila",
+                  "image": "people_boy.webp"
+                },
+                {
+                  "text": "neska",
+                  "image": "people_girl.webp"
+                },
+                {
+                  "text": "gizona",
+                  "image": "people_man.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "neska"
+              ],
+              "structures": [
+                "izan-present",
+                "demonstrative-hau"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "la mujer",
+              "options": [
+                {
+                  "text": "emakumea",
+                  "image": "people_woman.webp"
+                },
+                {
+                  "text": "mutila",
+                  "image": "people_boy.webp"
+                },
+                {
+                  "text": "neska",
+                  "image": "people_girl.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "emakume"
               ],
               "structures": [
                 "izan-present",
@@ -734,6 +815,114 @@
               "vocabulary": [
                 "langabetu",
                 "izan"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "la profesora",
+              "options": [
+                {
+                  "text": "medikua",
+                  "image": "job_doctor.webp"
+                },
+                {
+                  "text": "sukaldaria",
+                  "image": "job_cook.webp"
+                },
+                {
+                  "text": "irakaslea",
+                  "image": "job_teacher.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "irakasle"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "la enfermera",
+              "options": [
+                {
+                  "text": "irakaslea",
+                  "image": "job_teacher.webp"
+                },
+                {
+                  "text": "dendaria",
+                  "image": "job_shop_assistant.webp"
+                },
+                {
+                  "text": "erizaina",
+                  "image": "job_nurse.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "erizain"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e17",
+              "type": "choose_image",
+              "prompt": "la dependienta",
+              "options": [
+                {
+                  "text": "dendaria",
+                  "image": "job_shop_assistant.webp"
+                },
+                {
+                  "text": "sukaldaria",
+                  "image": "job_cook.webp"
+                },
+                {
+                  "text": "erizaina",
+                  "image": "job_nurse.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "dendari"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e18",
+              "type": "choose_image",
+              "prompt": "el médico",
+              "options": [
+                {
+                  "text": "medikua",
+                  "image": "job_doctor.webp"
+                },
+                {
+                  "text": "dendaria",
+                  "image": "job_shop_assistant.webp"
+                },
+                {
+                  "text": "erizaina",
+                  "image": "job_nurse.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "mediku"
               ],
               "structures": [
                 "article",
@@ -2116,6 +2305,33 @@
                 "izan-present",
                 "nongo"
               ]
+            },
+            {
+              "id": "u01-2.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "el cocinero",
+              "options": [
+                {
+                  "text": "sukaldaria",
+                  "image": "job_cook.webp"
+                },
+                {
+                  "text": "medikua",
+                  "image": "job_doctor.webp"
+                },
+                {
+                  "text": "irakaslea",
+                  "image": "job_teacher.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "sukaldari"
+              ],
+              "structures": [
+                "izan-present",
+                "nongo"
+              ]
             }
           ]
         },
@@ -2353,6 +2569,33 @@
                 "eta",
                 "izan",
                 "langabetu"
+              ],
+              "structures": [
+                "demonstrative-hau",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "el niño",
+              "options": [
+                {
+                  "text": "gizona",
+                  "image": "people_man.webp"
+                },
+                {
+                  "text": "umea",
+                  "image": "people_child.webp"
+                },
+                {
+                  "text": "emakumea",
+                  "image": "people_woman.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "ume"
               ],
               "structures": [
                 "demonstrative-hau",
@@ -2603,6 +2846,33 @@
                 "zazpi",
                 "zero",
                 "hiru"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s3.e12",
+              "type": "choose_image",
+              "prompt": "el chico",
+              "options": [
+                {
+                  "text": "mutila",
+                  "image": "people_boy.webp"
+                },
+                {
+                  "text": "emakumea",
+                  "image": "people_woman.webp"
+                },
+                {
+                  "text": "neska",
+                  "image": "people_girl.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "mutil"
               ],
               "structures": [
                 "numbers",

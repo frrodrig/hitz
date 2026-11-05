@@ -123,6 +123,10 @@ levels:
           - passage: Kaixo! Ni Gorka naiz. Neska hau Irati da.
             statement: Irati es una chica.
             answer: true
+        images:
+          - man, woman, child
+          - girl, boy, man
+          - woman, girl, boy
       - structures: [article, izan-present]
         sentences:
           - Ni irakaslea naiz. = Soy profesor. | Soy profesora. | Yo soy profesor. | Yo soy profesora.
@@ -167,6 +171,11 @@ levels:
           - passage: Mikel ez da medikua. Erizaina edo irakaslea da.
             statement: Mikel es médico.
             answer: false
+        images:
+          - teacher, doctor, cook
+          - nurse, shop_assistant, teacher
+          - shop_assistant, cook, nurse
+          - doctor, nurse, shop_assistant
       - structures: [nongo, izan-present]
         sentences:
           - Nongoa zara? = ¿De dónde eres? | ¿De dónde es usted?
@@ -363,6 +372,8 @@ levels:
               - Hablo un poco de euskera.
               - Hablo muy bien euskera.
               - No hablo euskera.
+        images:
+          - cook, teacher, doctor
       - structures: [demonstrative-hau, izan-present]
         sentences:
           - Ane, hau Julen da. = Ane, este es Julen.
@@ -399,6 +410,8 @@ levels:
               - dira
               - da
               - gara
+        images:
+          - child, woman, man
       - structures: [numbers, questions]
         sentences:
           - Izena eta abizena, mesedez. = Nombre y apellido, por favor. | El nombre y el apellido, por favor.
@@ -435,6 +448,8 @@ levels:
               - ¿Y la dirección?
               - ¿Y el número?
               - ¿Y el nombre?
+        images:
+          - boy, girl, woman
   - type: story
     title:
       es: "Historia: ¿profesora o estudiante?"

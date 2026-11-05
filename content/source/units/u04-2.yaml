@@ -111,6 +111,11 @@ levels:
           - passage: Nire logela txikia da. Ohe bat eta armairu bat dauzka.
             statement: En el dormitorio hay una mesa.
             answer: false
+        images:
+          - bed, chair, sofa
+          - sofa, wardrobe, table
+          - wardrobe, bed, chair
+          - chair, table, bed
       - structures: [appliances, behar-verb]
         sentences:
           - Hozkailua sukaldean dago. = El frigorífico está en la cocina. | La nevera está en la cocina.
@@ -149,6 +154,11 @@ levels:
           - passage: Gure sukaldeak ez du hozkailurik. Bihar hozkailu bat erosi behar dugu.
             statement: La cocina tiene frigorífico.
             answer: false
+        images:
+          - fridge, washing_machine, oven
+          - oven, shower, fridge
+          - washing_machine, oven, shower
+          - shower, fridge, washing_machine
       - structures: [buying-renting, nahi-izan]
         sentences:
           - Pisu bat alokatu nahi dut. = Quiero alquilar un piso.
@@ -347,6 +357,8 @@ levels:
               - Quiero alquilar este piso.
               - Quiero comprar este piso.
               - Tengo que vender este piso.
+        images:
+          - table, sofa, wardrobe
       - structures: [ago-comparison, gehiago-gutxiago]
         sentences:
           - Bilboko pisua zaharra da, eta Getxokoa berriagoa da. = El piso de Bilbao es viejo y el de Getxo es más nuevo. | El piso de Bilbao es viejo y el de Getxo, más nuevo.
@@ -382,6 +394,8 @@ levels:
             options:
               - berriagoa
               - berria
+        images:
+          - fridge, bed, oven
       - structures: [behar-verb, furniture]
         sentences:
           - Zer erosi behar dugu? = ¿Qué tenemos que comprar? | ¿Qué necesitamos comprar?

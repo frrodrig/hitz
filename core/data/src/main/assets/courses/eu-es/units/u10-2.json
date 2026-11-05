@@ -688,6 +688,32 @@
             },
             {
               "id": "u10-2.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "el viaje",
+              "options": [
+                {
+                  "text": "kanpina",
+                  "image": "object_tent.webp"
+                },
+                {
+                  "text": "bidaia",
+                  "image": "object_suitcase.webp"
+                },
+                {
+                  "text": "hondartza",
+                  "image": "place_beach.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "bidaia"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -707,6 +733,32 @@
                 "hondartza",
                 "joan",
                 "izan"
+              ],
+              "structures": [
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "el camping",
+              "options": [
+                {
+                  "text": "kanpina",
+                  "image": "object_tent.webp"
+                },
+                {
+                  "text": "mendia",
+                  "image": "place_mountain.webp"
+                },
+                {
+                  "text": "bidaia",
+                  "image": "object_suitcase.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kanpin"
               ],
               "structures": [
                 "holidays"
@@ -2126,6 +2178,33 @@
                 "ela-completive",
                 "opinion"
               ]
+            },
+            {
+              "id": "u10-2.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "la ciudad",
+              "options": [
+                {
+                  "text": "herria",
+                  "image": "place_town.webp"
+                },
+                {
+                  "text": "hondartza",
+                  "image": "place_beach.webp"
+                },
+                {
+                  "text": "hiria",
+                  "image": "place_city.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "hiri"
+              ],
+              "structures": [
+                "ela-completive",
+                "opinion"
+              ]
             }
           ]
         },
@@ -2390,6 +2469,33 @@
                 "hotel",
                 "nahiago izan",
                 "ukan"
+              ],
+              "structures": [
+                "gustatu-tzea",
+                "holidays"
+              ]
+            },
+            {
+              "id": "u10-2.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "el camping",
+              "options": [
+                {
+                  "text": "hondartza",
+                  "image": "place_beach.webp"
+                },
+                {
+                  "text": "kanpina",
+                  "image": "object_tent.webp"
+                },
+                {
+                  "text": "mendia",
+                  "image": "place_mountain.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "kanpin"
               ],
               "structures": [
                 "gustatu-tzea",

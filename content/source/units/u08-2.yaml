@@ -188,6 +188,10 @@ levels:
           - passage: Gaur osasun-etxera joan naiz. Gero farmazian pilulak erosi ditut.
             statement: Ha comprado pastillas.
             answer: true
+        images:
+          - medicine, pill, medicinal_plant
+          - pill, medicinal_plant, medicine
+          - medicinal_plant, medicine, pill
   - type: lesson
     title:
       es: Si tienes fiebre…
@@ -406,6 +410,8 @@ levels:
               - Nunca me levanto tarde.
               - A menudo me levanto tarde.
               - Hoy me he levantado tarde.
+        images:
+          - pill, medicine, medicinal_plant
   - type: story
     title:
       es: "Historia: en el centro de salud"

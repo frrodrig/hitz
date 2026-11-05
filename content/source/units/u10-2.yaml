@@ -142,6 +142,9 @@ levels:
           - passage: Aurten oporrak atzerrian pasatu ditugu, Londresen. Primeran pasatu dugu.
             statement: Han pasado las vacaciones en el País Vasco.
             answer: false
+        images:
+          - trip, camping, beach
+          - camping, trip, mountain
       - structures: [iruditu, hobe-onena]
         sentences:
           - Herri hau oso polita iruditzen zait. = Este pueblo me parece muy bonito.
@@ -326,6 +329,8 @@ levels:
               - Creo que la ciudad no es tan peligrosa.
               - Creo que la ciudad es muy peligrosa.
               - La ciudad es más peligrosa que el pueblo.
+        images:
+          - city, town, beach
       - structures: [gustatu-tzea, holidays]
         sentences:
           - Non pasatzen dituzu oporrak? = ¿Dónde pasas las vacaciones? | ¿Dónde pasa usted las vacaciones?
@@ -361,6 +366,8 @@ levels:
             options:
               - bidaiatzea
               - bidaia
+        images:
+          - camping, beach, mountain
       - structures: [bezain, ela-completive]
         sentences:
           - Donostian turista asko daude abuztuan. = En San Sebastián hay muchos turistas en agosto. | En agosto hay muchos turistas en Donostia.

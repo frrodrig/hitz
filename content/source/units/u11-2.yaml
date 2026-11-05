@@ -106,6 +106,9 @@ levels:
           - passage: Haizea idazkaria da. Euskaraz eta ingelesez hitz egiten du. Gidabaimena ere badu.
             statement: Haizea no tiene carné de conducir.
             answer: false
+        images:
+          - computer, phone, book
+          - computer, card, money
       - structures: [nor-nori-nork]
         sentences:
           - Nagusiak kontratua eman dit. = El jefe me ha dado el contrato. | La jefa me ha dado el contrato.
@@ -340,6 +343,8 @@ levels:
               - Vengo por el anuncio.
               - Vengo de la oficina.
               - He leído el contrato.
+        images:
+          - phone, computer, card
       - structures: [esperientzia]
         sentences:
           - Non egin duzu lan? = ¿Dónde has trabajado? | ¿Dónde ha trabajado usted?

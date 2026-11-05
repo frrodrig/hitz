@@ -110,6 +110,9 @@ levels:
           - passage: Nik ez daukat autorik. Lanera oinez noa.
             statement: La persona que habla va a trabajar en coche.
             answer: false
+        images:
+          - plane, car, bicycle
+          - excursion, plane, car
       - structures: [gogoa, asmoa]
         sentences:
           - Mendira joateko gogoa daukat. = Tengo ganas de ir al monte.
@@ -149,6 +152,8 @@ levels:
           - passage: Nahiak ez du hondartza gustuko. Mendia gustuko du.
             statement: A Nahia le gusta la playa.
             answer: false
+        images:
+          - plane, train, bus
       - structures: [ehuneko, gustuko-izan]
         sentences:
           - Gazteen ehuneko berrogeik kirola egiten du. = El cuarenta por ciento de los jóvenes hace deporte. | Un cuarenta por ciento de los jóvenes hace deporte.  # TODO(revisión-nativa): agreement du / dute after ehuneko
@@ -338,6 +343,8 @@ levels:
               - ¿Qué planes tienes para el sábado?
               - ¿Qué hiciste el sábado?
               - ¿Dónde estás el sábado?
+        images:
+          - bicycle, plane, car
       - structures: [baldintza]
         sentences:
           - Bihar eguzkia badago, hondartzara joango gara. = Si mañana hace sol, iremos a la playa. | Si mañana hace sol, vamos a la playa.

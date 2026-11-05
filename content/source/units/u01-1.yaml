@@ -88,15 +88,7 @@ levels:
             - arratsalde on = buenas tardes
             - gabon = buenas noches
         images:
-          - prompt: buenas noches
-            options:
-              - text: egun on
-                image: greeting_morning.webp
-              - text: arratsalde on
-                image: greeting_afternoon.webp
-              - text: gabon
-                image: greeting_night.webp
-            correct: 2
+          - greet_night, greet_morning, greet_afternoon
         meanings:
           - text: Arratsalde on!
             options:
@@ -156,6 +148,8 @@ levels:
           - passage: Kaixo, Ane! Zer moduz?
             statement: Es una despedida.
             answer: false
+        images:
+          - greet_morning, greet_afternoon, greet_night
       - structures: [courtesy]
         sentences:
           - Eskerrik asko! = ¡Muchas gracias! | ¡Gracias!
@@ -421,6 +415,8 @@ levels:
           - passage: "Kaixo! Ni Jon naiz. Izena: Jon. Abizena: Etxeberria."
             statement: Se apellida Jon.
             answer: false
+        images:
+          - greet_afternoon, greet_night, greet_morning
   - type: story
     title:
       es: "Historia: el primer día"

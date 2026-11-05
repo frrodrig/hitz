@@ -73,6 +73,27 @@ class BuildContentTest(unittest.TestCase):
         self.assertIn("izan", blank["vocabulary"])
         self.assertTrue(all(e["structures"] == ["test"] for e in built["exercises"]))
 
+    def test_pictures_come_from_the_catalog_with_the_first_one_correct(self) -> None:
+        built = bc.build_lesson("u05-1.l1.s1", lesson(SENTENCES[:2], images=["bread, water, milk"]), offset=0,
+                                lemmatizer=self.lemmatizer)
+        picture = next(e for e in built["exercises"] if e["type"] == "choose_image")
+        self.assertEqual(picture["prompt"], "el pan")
+        self.assertEqual(picture["options"][picture["correct"]], {"text": "ogia", "image": "food_bread.webp"})
+        self.assertEqual(sorted(o["text"] for o in picture["options"]), ["esnea", "ogia", "ura"])
+        self.assertEqual(picture["vocabulary"], ["ogi"])
+
+    def test_unknown_or_repeated_pictures_are_errors(self) -> None:
+        images = bc.load_images()
+        rng = bc.random.Random(0)
+        for item in ("bread, unicorn, milk", "bread", "morning, greet_morning, night"):
+            with self.subTest(item=item), self.assertRaises(bc.SourceError):
+                bc.picture_exercise(item, images, rng)
+
+    def test_every_catalog_picture_has_an_image_and_every_image_is_used(self) -> None:
+        assets = bc.ROOT / "core" / "data" / "src" / "main" / "assets" / "images"
+        catalog = {row["image"] for row in bc.load_images().values()}
+        self.assertEqual(catalog, {path.stem for path in assets.glob("*.webp")})
+
     def test_the_last_unit_of_a_section_gets_a_section_review(self) -> None:
         source = {
             "id": "u01-2", "section": "s1", "bookUnit": 1, "title": {}, "goals": [], "guidebook": {"sections": []},

@@ -71,6 +71,14 @@ decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum to
 `HitzIcons`: original icons on a 24 dp grid. UI icons use 2 dp rounded strokes; counters
 (streak, gem, heart, XP, star) are solid shapes. All are tinted by the caller.
 
+## Illustrations
+
+Course pictures (165, for "choose the image") share one flat style: a rounded square with a soft
+background per family (people, places, food…), big simple shapes with no outlines, a darker shade
+for depth and no text. The palette reuses the theme's red, teal and navy plus natural colours, and
+people show a range of skin and hair colours. They are drawn as code (`tools/design/illustrations/`),
+so they stay consistent and any change is a reviewable diff; see the content guide for the workflow.
+
 ## Components
 
 | Hitz component | Built on | Purpose |

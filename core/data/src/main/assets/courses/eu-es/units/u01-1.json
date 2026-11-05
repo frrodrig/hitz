@@ -345,19 +345,19 @@
               "prompt": "buenas noches",
               "options": [
                 {
+                  "text": "gabon",
+                  "image": "greeting_night.webp"
+                },
+                {
                   "text": "egun on",
                   "image": "greeting_morning.webp"
                 },
                 {
                   "text": "arratsalde on",
                   "image": "greeting_afternoon.webp"
-                },
-                {
-                  "text": "gabon",
-                  "image": "greeting_night.webp"
                 }
               ],
-              "correct": 2,
+              "correct": 0,
               "vocabulary": [
                 "gabon"
               ],
@@ -623,6 +623,32 @@
             },
             {
               "id": "u01-1.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "buenos días",
+              "options": [
+                {
+                  "text": "arratsalde on",
+                  "image": "greeting_afternoon.webp"
+                },
+                {
+                  "text": "egun on",
+                  "image": "greeting_morning.webp"
+                },
+                {
+                  "text": "gabon",
+                  "image": "greeting_night.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "egun on"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -2367,6 +2393,33 @@
                 "izan",
                 "izen",
                 "abizen"
+              ],
+              "structures": [
+                "greetings",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-1.l3.s3.e11",
+              "type": "choose_image",
+              "prompt": "buenas tardes",
+              "options": [
+                {
+                  "text": "gabon",
+                  "image": "greeting_night.webp"
+                },
+                {
+                  "text": "egun on",
+                  "image": "greeting_morning.webp"
+                },
+                {
+                  "text": "arratsalde on",
+                  "image": "greeting_afternoon.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "arratsalde on"
               ],
               "structures": [
                 "greetings",

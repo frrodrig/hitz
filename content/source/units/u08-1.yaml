@@ -106,6 +106,13 @@ levels:
           - passage: Gaur hortzetako mina daukat. Ez dut asko jan.
             statement: Le duelen las muelas.
             answer: true
+        images:
+          - head, ear, nose
+          - ear, mouth, tooth
+          - nose, mouth, head
+          - mouth, tooth, ear
+          - tooth, nose, mouth
+          - eye, ear, nose
       - structures: [body-parts, nongo-mina]
         sentences:
           - Besoko mina daukat. | Besoko mina dut. = Me duele el brazo. | Tengo dolor en el brazo.
@@ -145,6 +152,11 @@ levels:
           - passage: Atzo mendira joan naiz. Gaur oineko eta belauneko mina daukat.
             statement: Le duelen los brazos.
             answer: false
+        images:
+          - arm, hand, leg
+          - hand, foot, arm
+          - leg, arm, foot
+          - foot, leg, hand
       - structures: [symptoms]
         sentences:
           - Gaixo nago. = Estoy enfermo. | Estoy enferma.
@@ -184,6 +196,10 @@ levels:
           - passage: Gaur ez naiz eskolara joan. Sukarra eta eztula dauzkat.
             statement: Hoy ha ido a la escuela.
             answer: false
+        images:
+          - fever, cough, tired
+          - cough, tired, fever
+          - tired, fever, cough
   - type: lesson
     title:
       es: ¿Dónde y a qué hora?
@@ -336,6 +352,8 @@ levels:
               - ¿Estás cansado?
               - ¿Estás enfermo?
               - ¿Estás en casa?
+        images:
+          - head, hand, foot
       - structures: [zer-ordutan]
         sentences:
           - Kaixo, egun on. Hitzordua hartu nahi dut. = Hola, buenos días. Quiero pedir cita. | Hola, buenos días. Quiero pedir hora.  # TODO(revisión-nativa): «hitzordua hartu» frente a «hitzordua eskatu» (8.2) para «pedir cita»
@@ -371,6 +389,8 @@ levels:
             options:
               - hartu
               - hartzen
+        images:
+          - fever, cough, tired
       - structures: [nongo, symptoms]
         sentences:
           - Barkatu, non dago Getxoko osasun-etxea? = Perdona, ¿dónde está el centro de salud de Getxo? | Perdone, ¿dónde está el centro de salud de Getxo?

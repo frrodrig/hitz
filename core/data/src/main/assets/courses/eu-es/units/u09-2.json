@@ -2096,6 +2096,33 @@
                 "opinion",
                 "tzea-nominal"
               ]
+            },
+            {
+              "id": "u09-2.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "la papelera",
+              "options": [
+                {
+                  "text": "edukiontzia",
+                  "image": "object_container.webp"
+                },
+                {
+                  "text": "zakarrontzia",
+                  "image": "object_bin.webp"
+                },
+                {
+                  "text": "botila",
+                  "image": "object_bottle.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "zakarrontzi"
+              ],
+              "structures": [
+                "opinion",
+                "tzea-nominal"
+              ]
             }
           ]
         },
@@ -2368,6 +2395,33 @@
                 "energia",
                 "aurreztu",
                 "ukan"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "el árbol",
+              "options": [
+                {
+                  "text": "itsasoa",
+                  "image": "nature_sea.webp"
+                },
+                {
+                  "text": "zuhaitza",
+                  "image": "nature_tree.webp"
+                },
+                {
+                  "text": "ibaia",
+                  "image": "nature_river.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "zuhaitz"
               ],
               "structures": [
                 "debekatuta",

@@ -355,6 +355,8 @@ levels:
               - Volveré el mes que viene.
               - Volví el mes pasado.
               - Me quedaré un mes.
+        images:
+          - hairdresser, travel_agency, bakery
       - structures: [tzen-ari, synthetic-present]
         sentences:
           - Ama, non zaude? = Mamá, ¿dónde estás?
@@ -390,6 +392,8 @@ levels:
             options:
               - dator
               - doa
+        images:
+          - travel_agency, hairdresser, bookshop
       - structures: [months, future-ko]
         sentences:
           - Egun on! Abuztuan Londresera joan nahi dut. = ¡Buenos días! En agosto quiero ir a Londres.
@@ -426,6 +430,8 @@ levels:
               - En enero trabajaré en una agencia de viajes.
               - En enero trabajé en una agencia de viajes.
               - En junio trabajaré en una agencia de viajes.
+        images:
+          - hour, book, phone
   - type: story
     title:
       es: "Historia: en diciembre, a París"

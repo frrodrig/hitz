@@ -2151,6 +2151,33 @@
                 "future-ko",
                 "time-markers"
               ]
+            },
+            {
+              "id": "u07-2.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "la peluquería",
+              "options": [
+                {
+                  "text": "okindegia",
+                  "image": "shop_bakery.webp"
+                },
+                {
+                  "text": "bidaia-agentzia",
+                  "image": "shop_travel_agency.webp"
+                },
+                {
+                  "text": "apaindegia",
+                  "image": "shop_hairdresser.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "apaindegi"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
             }
           ]
         },
@@ -2400,6 +2427,33 @@
                 "gero",
                 "bidaia-agentzia",
                 "izan"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "la agencia de viajes",
+              "options": [
+                {
+                  "text": "apaindegia",
+                  "image": "shop_hairdresser.webp"
+                },
+                {
+                  "text": "bidaia-agentzia",
+                  "image": "shop_travel_agency.webp"
+                },
+                {
+                  "text": "liburu-denda",
+                  "image": "shop_bookshop.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "bidaia-agentzia"
               ],
               "structures": [
                 "tzen-ari",
@@ -2671,6 +2725,33 @@
                 "ez",
                 "ukan",
                 "bidaiatu"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e12",
+              "type": "choose_image",
+              "prompt": "la hora",
+              "options": [
+                {
+                  "text": "ordua",
+                  "image": "object_clock.webp"
+                },
+                {
+                  "text": "telefonoa",
+                  "image": "object_phone.webp"
+                },
+                {
+                  "text": "liburua",
+                  "image": "object_book.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ordu"
               ],
               "structures": [
                 "months",

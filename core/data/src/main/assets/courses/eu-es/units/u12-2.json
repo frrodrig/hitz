@@ -395,6 +395,33 @@
             },
             {
               "id": "u12-2.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "el avión",
+              "options": [
+                {
+                  "text": "hegazkina",
+                  "image": "transport_plane.webp"
+                },
+                {
+                  "text": "autoa",
+                  "image": "transport_car.webp"
+                },
+                {
+                  "text": "bizikleta",
+                  "image": "transport_bicycle.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hegazkin"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -416,6 +443,33 @@
                 "bat",
                 "erosi",
                 "ukan"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "la excursión",
+              "options": [
+                {
+                  "text": "autoa",
+                  "image": "transport_car.webp"
+                },
+                {
+                  "text": "hegazkina",
+                  "image": "transport_plane.webp"
+                },
+                {
+                  "text": "txangoa",
+                  "image": "object_backpack.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "txango"
               ],
               "structures": [
                 "garraioa",
@@ -697,6 +751,33 @@
             },
             {
               "id": "u12-2.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "el avión",
+              "options": [
+                {
+                  "text": "trena",
+                  "image": "transport_train.webp"
+                },
+                {
+                  "text": "hegazkina",
+                  "image": "transport_plane.webp"
+                },
+                {
+                  "text": "autobusa",
+                  "image": "transport_bus.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "hegazkin"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -2157,6 +2238,33 @@
                 "zinema",
                 "nahi izan",
                 "ukan"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "la bicicleta",
+              "options": [
+                {
+                  "text": "bizikleta",
+                  "image": "transport_bicycle.webp"
+                },
+                {
+                  "text": "hegazkina",
+                  "image": "transport_plane.webp"
+                },
+                {
+                  "text": "autoa",
+                  "image": "transport_car.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bizikleta"
               ],
               "structures": [
                 "ba-gogorik",
