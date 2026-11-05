@@ -1,0 +1,445 @@
+# Unit 12.1 · Denbora librea — leisure activities and courses: when, where, at what time;
+# NOIZ = NON, ZER ORDUTATIK ZER ORDUTARA, NOLA with -Z, the indefinite, NORAINO (-raino).
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u12-1
+section: s4
+bookUnit: 12
+title:
+  es: Tiempo libre
+  eu: Denbora librea
+goals:
+  - es: Pedir y dar información sobre actividades de tiempo libre y cursos.
+    eu: Aisialdiko jarduerei eta ikastaroei buruzko informazioa eskatu eta eman.
+  - es: Decir cuándo, dónde y de qué hora a qué hora es una actividad.
+    eu: Jarduera bat noiz, non eta zer ordutatik zer ordutara den esan.
+  - es: Decir cómo vas a un sitio y hasta dónde.
+    eu: Leku batera nola eta noraino zoazen esan.
+guidebook:
+  sections:
+    - title:
+        es: "Cuándo: astelehenean, urrian"
+        eu: "Noiz: astelehenean, urrian"
+      body:
+        es: Para decir cuándo, los días, meses y partes del día llevan la misma terminación que «dónde» (-n, -ean). En plural indica costumbre, como «los lunes».
+        eu: Noiz adierazteko, egunek, hilabeteek eta eguneko uneek «non» kasuaren atzizki bera hartzen dute (-n, -ean). Pluralean ohitura adierazten du.
+      examples:
+        - eu: Kontzertua larunbatean da.
+          es: El concierto es el sábado.
+        - eu: Astelehenetan igerilekura joaten naiz.
+          es: Los lunes voy a la piscina.
+        - eu: Urrian ikastaro berri bat dago.
+          es: En octubre hay un curso nuevo.
+    - title:
+        es: "De qué hora a qué hora"
+        eu: "Zer ordutatik zer ordutara"
+      body:
+        es: "La hora de inicio lleva «-(e)tatik» y la de final «-(e)tara»: seietatik zortzietara (de seis a ocho). Para preguntar, «Zer ordutatik zer ordutara?»."
+        eu: "Hasierako orduak «-(e)tatik» hartzen du eta amaierakoak «-(e)tara»: seietatik zortzietara."
+      examples:
+        - eu: Zer ordutatik zer ordutara da ikastaroa?
+          es: ¿De qué hora a qué hora es el curso?
+        - eu: Seietatik zortzietara.
+          es: De seis a ocho.
+    - title:
+        es: "Cómo y hasta dónde: trenez, Bilboraino"
+        eu: "Nola eta noraino: trenez, Bilboraino"
+      body:
+        es: El medio de transporte lleva «-z» sin artículo (trenez, metroz, autobusez). «Hasta dónde» se dice con «-raino» (Bilboraino, hondartzaraino).
+        eu: Garraiobideak «-z» hartzen du, artikulurik gabe (trenez, metroz, autobusez). Muga adierazteko «-raino» erabiltzen da (Bilboraino).
+      examples:
+        - eu: Trenez joaten naiz.
+          es: Voy en tren.
+        - eu: Autobusa Bilboraino doa.
+          es: El autobús va hasta Bilbao.
+    - title:
+        es: Sin artículo (mugagabea)
+        eu: Mugagabea
+      body:
+        es: "Detrás de «zenbat», «zer» o «zein» en preguntas, y con números, el nombre va sin artículo: «Zenbat ikastarotan?», «hiru ikastarotan»."
+        eu: "«Zenbat», «zer» eta «zein» galdetzaileekin eta zenbakiekin, izenak mugagabean doaz: «Zenbat ikastarotan?», «hiru ikastarotan»."
+      examples:
+        - eu: Zer kirol egiten duzu?
+          es: ¿Qué deporte haces?
+        - eu: Hiru ikastarotan eman dut izena.
+          es: Me he apuntado a tres cursos.
+levels:
+  - type: lesson
+    title:
+      es: Actividades
+      eu: Jarduerak
+    lessons:
+      - structures: [aisialdia, kirolak]
+        sentences:
+          - Zer egiten duzu aisialdian? = ¿Qué haces en tu tiempo libre? | ¿Qué hace usted en su tiempo libre?
+          - Kirola egiten dut. = Hago deporte. | Yo hago deporte.
+          - Larunbatetan futbolean jolasten dut. = Los sábados juego al fútbol.  # TODO(revisión-nativa): jolastu with du (jolasten dut) or da (jolasten naiz)
+          - Anek saskibaloian jolasten du. = Ane juega al baloncesto.
+          - Igeriketa gustatzen zait. = Me gusta la natación.
+          - Mikeli txirrindularitza asko gustatzen zaio. = A Mikel le gusta mucho el ciclismo.
+          - Umeak parkean jolasten ari dira. = Los niños están jugando en el parque.
+          - Zein kirol gustatzen zaizu? = ¿Qué deporte te gusta? | ¿Qué deporte le gusta?
+        pairs:
+          - - kirol = deporte
+            - futbol = fútbol
+            - saskibaloi = baloncesto
+            - igeriketa = natación
+            - txirrindularitza = ciclismo
+            - jolastu = jugar
+        meanings:
+          - text: Anek saskibaloian jolasten du.
+            options:
+              - Ane juega al baloncesto.
+              - Ane juega al fútbol.
+              - Ane hace natación.
+        blanks:
+          - text: Larunbatetan ___ jolasten dut. = Los sábados juego al fútbol.
+            options:
+              - futbolean
+              - futbola
+              - futbolera
+        chats:
+          - messages:
+              - Unai | Zer egiten duzu aisialdian?
+            options:
+              - Kirola egiten dut.
+              - Idazkaria naiz.
+              - Trenez joaten naiz.
+        true_false:
+          - passage: Ni Garazi naiz. Igeriketa eta txirrindularitza gustatzen zaizkit.
+            statement: A Garazi le gusta el ciclismo.
+            answer: true
+      - structures: [aisialdia, kultura]
+        sentences:
+          - Musika entzuten dut. = Escucho música. | Yo escucho música.
+          - Gaur kontzertu bat dago plazan. = Hoy hay un concierto en la plaza.
+          - Antzerkia gustatzen zait. = Me gusta el teatro.
+          - Asteburuetan filmak ikusten ditugu. = Los fines de semana vemos películas.
+          - Liburu bat irakurtzen ari naiz. = Estoy leyendo un libro.
+          - Itziarrek oso ondo marrazten du. = Itziar dibuja muy bien.
+          - Jonek abesten du, eta nik dantza egiten dut. = Jon canta y yo bailo.
+          - Argazkiak egiten ditut mendian. = Hago fotos en el monte. | Saco fotos en el monte.
+        pairs:
+          - - musika = música
+            - kontzertu = concierto
+            - antzerki = teatro
+            - film = película
+            - liburu = libro
+            - dantza = baile
+        meanings:
+          - text: Itziarrek oso ondo marrazten du.
+            options:
+              - Itziar dibuja muy bien.
+              - Itziar canta muy bien.
+              - Itziar baila muy bien.
+        blanks:
+          - text: Asteburuetan filmak ___ ditugu. = Los fines de semana vemos películas.
+            options:
+              - ikusten
+              - entzuten
+              - abesten
+        chats:
+          - messages:
+              - Nerea | Gaur kontzertu bat dago plazan!
+            options:
+              - Primeran! Musika asko gustatzen zait.
+              - Ez dakit gidatzen.
+              - Liburutegia hemen dago.
+        true_false:
+          - passage: Jonek ez du abesten. Dantza egiten du.
+            statement: Jon canta.
+            answer: false
+      - structures: [ikastaroak]
+        sentences:
+          - Sukaldaritza ikastaro batean izena eman dut. = Me he apuntado a un curso de cocina. | Me he inscrito en un curso de cocina.
+          - Noiz da ikastaroa? = ¿Cuándo es el curso?
+          - Bihar jai da. = Mañana es fiesta. | Mañana es festivo.
+          - Argazki ikastaroa liburutegian da. = El curso de fotografía es en la biblioteca.
+          - Marrazten ikasi nahi dut. = Quiero aprender a dibujar.
+          - Abesten ikasten ari naiz. = Estoy aprendiendo a cantar.
+          - Zein ikastarotan eman duzu izena? = ¿En qué curso te has apuntado? | ¿A qué curso te has apuntado? | ¿En qué curso se ha apuntado usted?
+          - Asteburuan musika ikastaro bat dago. = El fin de semana hay un curso de música.
+        pairs:
+          - - ikastaro = curso
+            - sukaldaritza = cocina
+            - izena eman = apuntarse
+            - asteburu = fin de semana
+            - jai = fiesta
+            - argazki = foto
+        meanings:
+          - text: Sukaldaritza ikastaro batean izena eman dut.
+            options:
+              - Me he apuntado a un curso de cocina.
+              - Trabajo en una cocina.
+              - Quiero aprender a cocinar.
+        blanks:
+          - text: ___ da ikastaroa? = ¿Cuándo es el curso?
+            options:
+              - Noiz
+              - Nora
+              - Nork
+        chats:
+          - messages:
+              - Josu | Zein ikastarotan eman duzu izena?
+            options:
+              - Dantza ikastaro batean.
+              - Asteburuan.
+              - Trenez.
+        true_false:
+          - passage: Haizeak marrazten ikasi nahi du. Ikastaro batean izena eman du.
+            statement: Haizea quiere aprender a dibujar.
+            answer: true
+  - type: lesson
+    title:
+      es: ¿Cuándo y cómo?
+      eu: Noiz eta nola?
+    lessons:
+      - structures: [noiz-non]
+        sentences:
+          - Noiz da kontzertua? = ¿Cuándo es el concierto?
+          - Larunbatean da, gaueko hamarretan. = Es el sábado, a las diez de la noche.
+          - Ikastaroa urritik ekainera da. = El curso es de octubre a junio.
+          - Astelehenetan eta asteazkenetan igerilekura joaten naiz. = Los lunes y los miércoles voy a la piscina.
+          - Abuztuan jaiak daude herrian. = En agosto hay fiestas en el pueblo.
+          - Asteburuan antzerki bat ikusiko dugu. = El fin de semana veremos una obra de teatro.
+          - Goizean igeriketa, arratsaldean musika. = Por la mañana natación, por la tarde música.
+          - Ostiralean filma ikusiko dugu zineman. = El viernes veremos la película en el cine.
+        meanings:
+          - text: Ikastaroa urritik ekainera da.
+            options:
+              - El curso es de octubre a junio.
+              - El curso es en octubre.
+              - El curso es de junio a octubre.
+        blanks:
+          - text: Kontzertua ___ da. = El concierto es el sábado.
+            options:
+              - larunbatean
+              - larunbatera
+              - larunbata
+        chats:
+          - messages:
+              - Ane | Noiz da kontzertua?
+            options:
+              - Ostiralean, gaueko bederatzietan.
+              - Plazara.
+              - Trenez.
+        true_false:
+          - passage: Herrian jaiak daude abuztuan. Kontzertu asko daude plazan.
+            statement: Las fiestas del pueblo son en julio.
+            answer: false
+      - structures: [ordutatik-ordutara]
+        sentences:
+          - Zer ordutatik zer ordutara da ikastaroa? = ¿De qué hora a qué hora es el curso?
+          - Seietatik zortzietara. = De seis a ocho.
+          - Dantza ikastaroa bostetatik zazpietara da. = El curso de baile es de cinco a siete.
+          - Sukaldaritza ikastaroa hamarretatik ordu batera da. = El curso de cocina es de diez a una.
+          - Larunbatetan hamarretatik hamabietara jolasten dugu. = Los sábados jugamos de diez a doce.
+          - Kontzertua zortzietatik hamarretara da. = El concierto es de ocho a diez.
+          - Zer ordutan da filma? = ¿A qué hora es la película?
+          - Filma gaueko hamarretan da. = La película es a las diez de la noche.
+        meanings:
+          - text: Dantza ikastaroa bostetatik zazpietara da.
+            options:
+              - El curso de baile es de cinco a siete.
+              - El curso de baile es a las cinco.
+              - El curso de baile es de siete a cinco.
+        blanks:
+          - text: Ikastaroa seietatik ___ da. = El curso es de seis a ocho.
+            options:
+              - zortzietara
+              - zortzietatik
+              - zortzietan
+        chats:
+          - messages:
+              - Amaia | Zer ordutatik zer ordutara da igeriketa?
+            options:
+              - Zazpietatik bederatzietara.
+              - Igerilekuan.
+              - Astelehenetan.
+        true_false:
+          - passage: Argazki ikastaroa asteartetan da, arratsaldeko bostetatik zazpietara.
+            statement: El curso de fotografía dura dos horas.
+            answer: true
+      - structures: [nola-instrumental, noraino, mugagabea]
+        sentences:
+          - Nola joaten zara kontzertura? = ¿Cómo vas al concierto? | ¿Cómo va usted al concierto?
+          - Trenez joaten naiz. = Voy en tren. | Yo voy en tren.
+          - Autobusez joango gara Donostiara. = Iremos a Donostia en autobús. | Iremos en autobús a San Sebastián. | Vamos a ir a Donostia en autobús.
+          - Metroz etorri naiz. = He venido en metro.
+          - Donostiatik Zarautzeraino joan gara. = Hemos ido desde Donostia hasta Zarautz. | Hemos ido de San Sebastián hasta Zarautz.
+          - Hondartzaraino joan gara. = Hemos ido hasta la playa.
+          - Zenbat ikastarotan eman duzu izena? = ¿En cuántos cursos te has apuntado? | ¿A cuántos cursos te has apuntado? | ¿A cuántos cursos se ha apuntado usted?
+          - Hiru ikastarotan eman dut izena. = Me he apuntado a tres cursos. | Me he inscrito en tres cursos.
+        meanings:
+          - text: Hondartzaraino joan gara.
+            options:
+              - Hemos ido hasta la playa.
+              - Hemos ido a la playa en tren.
+              - Hemos venido de la playa.
+        blanks:
+          - text: ___ joaten naiz. = Voy en tren.
+            options:
+              - Trenez
+              - Trenera
+              - Trenean
+        chats:
+          - messages:
+              - Leire | Nola joango zara Bilbora?
+            options:
+              - Trenez.
+              - Bilbon.
+              - Larunbatean.
+        true_false:
+          - passage: Peio metroz joaten da lanera. Metroa Getxoraino doa.
+            statement: Peio va al trabajo en autobús.
+            answer: false
+  - type: lesson
+    title:
+      es: Planes y cursos
+      eu: Planak eta ikastaroak
+    lessons:
+      - structures: [noiz-non, ordutatik-ordutara]
+        sentences:
+          - Kaixo! Dantza ikastaro bat dago? = ¡Hola! ¿Hay un curso de baile? | ¡Hola! ¿Hay algún curso de baile?
+          - Bai, astearteetan eta ostegunetan. = Sí, los martes y los jueves.
+          - Zer ordutatik zer ordutara? = ¿De qué hora a qué hora?
+          - Arratsaldeko seietatik zortzietara. = De seis a ocho de la tarde.
+          - Non da? = ¿Dónde es?
+          - Kiroldegian. Izena eman nahi duzu? = En el polideportivo. ¿Quieres apuntarte? | En el polideportivo. ¿Quiere usted apuntarse?
+        chats:
+          - messages:
+              - Olatz | Barkatu, noiz da sukaldaritza ikastaroa?
+            options:
+              - Ostegunetan, arratsaldeko seietan.
+              - Liburutegian.
+              - Metroz.
+          - messages:
+              - Ibai | Kaixo! Argazki ikastaro bat dago?
+              - Miren | Bai, larunbatetan, hamarretatik hamabietara.
+              - Ibai | Non da?
+            options:
+              - Liburutegian.
+              - Larunbatetan.
+              - Trenez.
+        true_false:
+          - passage: Saskibaloi ikastaroa kiroldegian da, astelehenetan eta asteazkenetan.
+            statement: El curso de baloncesto es dos días a la semana.
+            answer: true
+          - passage: Musika ikastaroa ostiraletan da, arratsaldeko zazpietatik bederatzietara.
+            statement: El curso de música es por la mañana.
+            answer: false
+        meanings:
+          - text: Izena eman nahi duzu?
+            options:
+              - ¿Quieres apuntarte?
+              - ¿Cómo te llamas?
+              - ¿Quieres un libro?
+      - structures: [aisialdia, gustatu]
+        sentences:
+          - Zer egiten duzu asteburuetan? = ¿Qué haces los fines de semana? | ¿Qué hace usted los fines de semana?
+          - Larunbatetan mendira joaten naiz. = Los sábados voy al monte.
+          - Igandeetan liburuak irakurtzen ditut. = Los domingos leo libros.
+          - Musika asko gustatzen zait. = Me gusta mucho la música.
+          - Gaur kontzertura joango gara? = ¿Vamos hoy al concierto? | ¿Iremos hoy al concierto?
+          - Ez, gaur ez. Bihar libre nago. = No, hoy no. Mañana estoy libre.
+        chats:
+          - messages:
+              - Aitor | Zer egiten duzu asteburuetan?
+            options:
+              - Futbolean jolasten dut.
+              - Bulego batean.
+              - Seietatik zortzietara.
+          - messages:
+              - Irati | Gaur antzerki bat dago antzokian.
+              - Asier | Noiz?
+              - Irati | Gaueko bederatzietan. Etorri nahi duzu?
+            options:
+              - Bai, antzerkia asko gustatzen zait!
+              - Bai, trenez.
+              - Bederatzietatik.
+        true_false:
+          - passage: Igandeetan Edurnek liburuak irakurtzen ditu. Larunbatetan dantza egiten du.
+            statement: Edurne baila los domingos.
+            answer: false
+          - passage: Kepari musika asko gustatzen zaio. Asteburuetan kontzertuetara joaten da.
+            statement: Kepa va a conciertos los fines de semana.
+            answer: true
+        blanks:
+          - text: Igandeetan liburuak ___ ditut. = Los domingos leo libros.
+            options:
+              - irakurtzen
+              - entzuten
+              - jolasten
+      - structures: [nola-instrumental, noraino]
+        sentences:
+          - Kontzertua Bilbon da, larunbatean. = El concierto es en Bilbao, el sábado.
+          - Nola joango gara? Trenez? = ¿Cómo iremos? ¿En tren? | ¿Cómo vamos? ¿En tren?
+          - Ez, autobusez. Merkeagoa da. = No, en autobús. Es más barato.
+          - Autobusa Bilboraino doa? = ¿El autobús va hasta Bilbao? | ¿El autobús llega hasta Bilbao?
+          - Bai, eta geltokitik metroz joango gara. = Sí, y desde la estación iremos en metro.
+          - Kontzertua hamarretatik ordu batera da. = El concierto es de diez a una.
+        chats:
+          - messages:
+              - Markel | Nola zoaz kiroldegira?
+            options:
+              - Autobusez.
+              - Kiroldegian.
+              - Asteburuan.
+          - messages:
+              - Izaro | Autobusa hondartzaraino doa?
+              - Julen | Ez, plazaraino bakarrik.
+              - Izaro | Eta gero?
+            options:
+              - Gero metroz.
+              - Plazan.
+              - Larunbatean.
+        true_false:
+          - passage: Tren hau Donostiatik Iruneraino doa.
+            statement: El tren va hasta Irun.
+            answer: true
+          - passage: Gaur autobusez joan naiz lanera. Metroa ez dabil.
+            statement: Hoy ha ido a trabajar en metro.
+            answer: false
+        meanings:
+          - text: Autobusa Bilboraino doa?
+            options:
+              - ¿El autobús va hasta Bilbao?
+              - ¿El autobús viene de Bilbao?
+              - ¿El autobús está en Bilbao?
+  - type: story
+    title:
+      es: "Historia: un curso nuevo"
+      eu: "Istorioa: ikastaro berria"
+    story:
+      title: Ikastaro berria
+      lines:
+        - June | Eneko, zer egiten duzu asteburuetan? = Eneko, ¿qué haces los fines de semana?
+        - Eneko | Larunbatetan saskibaloian jolasten dut. Eta zuk? = Los sábados juego al baloncesto. ¿Y tú?
+        - June | Nik argazkiak egiten ditut. Argazki ikastaro batean izena eman dut. = Yo hago fotos. Me he apuntado a un curso de fotografía.
+        - Eneko | Noiz da ikastaroa? = ¿Cuándo es el curso?
+        - June | Asteazkenetan, arratsaldeko seietatik zortzietara. = Los miércoles, de seis a ocho de la tarde.
+        - Eneko | Non? = ¿Dónde?
+        - June | Gasteizen. Trenez joaten naiz. = En Gasteiz. Voy en tren.
+        - Eneko | Nik sukaldaritza ikastaro bat egin nahi dut. = Yo quiero hacer un curso de cocina.
+        - June | Liburutegian sukaldaritza ikastaro bat dago, urritik ekainera. = En la biblioteca hay un curso de cocina, de octubre a junio.
+        - Eneko | Primeran! Bihar izena emango dut. = ¡Genial! Mañana me apuntaré.
+      questions:
+        - afterLine: 2
+          prompt: ¿Qué hace Eneko los sábados?
+          options:
+            - Juega al baloncesto
+            - Juega al fútbol
+            - Hace fotos
+        - afterLine: 6
+          prompt: ¿Cómo va June al curso?
+          options:
+            - En tren
+            - En autobús
+            - En metro
+        - afterLine: 9
+          prompt: ¿Qué hará Eneko mañana?
+          options:
+            - Apuntarse a un curso de cocina
+            - Ir a Gasteiz con June
+            - Ir a jugar al baloncesto
+  - type: review
+  - type: legendary

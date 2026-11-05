@@ -1,0 +1,448 @@
+# Unit 8.1 · Buruko mina — parts of the body, NONGO MINA (buruko mina daukat), symptoms,
+# NONGO with common and proper nouns (Bilboko ospitalea) and ZER ORDUTAN? (hiruretan).
+id: u08-1
+section: s3
+bookUnit: 8
+title:
+  es: Dolor de cabeza
+  eu: Buruko mina
+goals:
+  - es: Decir qué te duele y describir síntomas.
+    eu: Non duzun mina esan eta sintomak azaldu.
+  - es: Pedir hora con el médico y quedar a una hora.
+    eu: Medikuarekin ordua hartu eta ordu bat adostu.
+guidebook:
+  sections:
+    - title:
+        es: "¿Qué te duele? Buruko mina"
+        eu: "Non duzu mina? Buruko mina"
+      body:
+        es: Para decir qué te duele, la parte del cuerpo lleva -ko (-eko tras consonante) y luego «mina» + daukat o dut, como «tengo dolor de…». Para preguntar se dice «Non daukazu mina?».
+        eu: Non duzun mina esateko, gorputz-atalak -ko hartzen du (-eko kontsonante ondoren) eta gero «mina» + daukat edo dut. Galdetzeko, «Non daukazu mina?».
+      examples:
+        - eu: Buruko mina daukat.
+          es: Me duele la cabeza.
+        - eu: Non daukazu mina? Hankan.
+          es: ¿Dónde te duele? En la pierna.
+        - eu: Ez daukat sabeleko minik.
+          es: No me duele la tripa.
+    - title:
+        es: Tener fiebre, estar cansado
+        eu: Sukarra izan, nekatuta egon
+      body:
+        es: «Sukarra», «eztula» y «hotzeria» van con daukat o dut (tener). «Gaixo» y «nekatuta» van con nago, zaude, dago (estar). En negativa, el nombre lleva -rik (ez daukat sukarrik).
+        eu: «Sukarra», «eztula» eta «hotzeria» daukat edo dut aditzarekin doaz. «Gaixo» eta «nekatuta» nago, zaude, dago aditzarekin. Ezezkoan, izenak -rik hartzen du (ez daukat sukarrik).
+      examples:
+        - eu: Sukarra eta eztula dauzkat.
+          es: Tengo fiebre y tos.
+        - eu: Oso nekatuta nago.
+          es: Estoy muy cansado.
+    - title:
+        es: "De un lugar: Bilboko ospitalea"
+        eu: "Leku batekoa: Bilboko ospitalea"
+      body:
+        es: La misma terminación -ko sirve para decir «de» un lugar, como en Bilboko ospitalea (el hospital de Bilbao), herriko farmazia (la farmacia del pueblo). Va delante del nombre.
+        eu: -ko atzizki berak leku bateko zerbait adierazten du (Bilboko ospitalea, herriko farmazia). Izenaren aurretik doa.
+      examples:
+        - eu: Bilboko ospitalea handia da.
+          es: El hospital de Bilbao es grande.
+        - eu: Herriko farmazia plazan dago.
+          es: La farmacia del pueblo está en la plaza.
+    - title:
+        es: "¿A qué hora? Zer ordutan?"
+        eu: "Zer ordutan?"
+      body:
+        es: Para decir a qué hora pasa algo, el número lleva -(r)etan (hiruretan, bostetan); «a la una» es «ordu batean». Se puede añadir goizeko, arratsaldeko o gaueko delante.
+        eu: Zerbait zer ordutan gertatzen den esateko, zenbakiak -(r)etan hartzen du (hiruretan, bostetan); «ordu batean» esaten da. Aurretik goizeko, arratsaldeko edo gaueko jar daiteke.
+      examples:
+        - eu: Zer ordutan? Hiruretan.
+          es: ¿A qué hora? A las tres.
+        - eu: Goizeko hamarretan etorriko naiz.
+          es: Vendré a las diez de la mañana.
+        - eu: Ordu batean bazkalduko dut.
+          es: Comeré a la una.
+levels:
+  - type: lesson
+    title:
+      es: El cuerpo
+      eu: Gorputza
+    lessons:
+      - structures: [body-parts, nongo-mina]
+        sentences:
+          - Umeak belarri handiak ditu. = El niño tiene las orejas grandes. | La niña tiene las orejas grandes.
+          - Nire aitak sudur luzea dauka. | Nire aitak sudur luzea du. = Mi padre tiene la nariz larga.
+          - Neska honek lepo luzea dauka. = Esta chica tiene el cuello largo.
+          - Umeak aho txikia du. | Umeak aho txikia dauka. = El niño tiene la boca pequeña. | La niña tiene la boca pequeña.
+          - Buruko mina daukat. | Buruko mina dut. = Me duele la cabeza. | Tengo dolor de cabeza.
+          - Belarriko mina daukat. | Belarriko mina dut. = Me duele el oído. | Tengo dolor de oído. | Me duele la oreja.
+          - Hortzetako mina dauka. | Hortzetako mina du. = Le duelen las muelas. | Tiene dolor de muelas. | Le duelen los dientes.
+          - Lepoko mina daukazu? | Lepoko mina duzu? = ¿Te duele el cuello? | ¿Tienes dolor de cuello? | ¿Le duele el cuello?
+        pairs:
+          - - burua = la cabeza
+            - belarria = la oreja
+            - sudurra = la nariz
+            - ahoa = la boca
+            - hortza = el diente
+            - lepoa = el cuello
+        meanings:
+          - text: Buruko mina dauka.
+            options:
+              - Le duele la cabeza.
+              - Me duele la cabeza.
+              - Le duele el cuello.
+        blanks:
+          - text: ___ mina daukat. = Me duele la cabeza.
+            options:
+              - Buruko
+              - Burua
+        chats:
+          - messages:
+              - Nerea | Zer daukazu, Iker?
+            options:
+              - Buruko mina daukat.
+              - Burua mina daukat.
+              - Bihar arte.
+        true_false:
+          - passage: Gaur hortzetako mina daukat. Ez dut bazkaldu.
+            statement: Le duelen las muelas.
+            answer: true
+      - structures: [body-parts, nongo-mina]
+        sentences:
+          - Besoko mina daukat. | Besoko mina dut. = Me duele el brazo. | Tengo dolor en el brazo.
+          - Esku txikiak dituzu. = Tienes las manos pequeñas. | Usted tiene las manos pequeñas.
+          - Hatz bat moztu dut. = Me he cortado un dedo. | Me corté un dedo.
+          - Sabeleko mina daukat. | Sabeleko mina dut. = Me duele la tripa. | Me duele el vientre. | Tengo dolor de tripa.
+          - Aitonak bizkarreko mina dauka. | Aitonak bizkarreko mina du. = Al abuelo le duele la espalda. | El abuelo tiene dolor de espalda. | A mi abuelo le duele la espalda.
+          - Hankako mina daukazu? | Hankako mina duzu? = ¿Te duele la pierna? | ¿Le duele la pierna? | ¿Tienes dolor de pierna?
+          - Oineko mina daukat. | Oineko mina dut. = Me duele el pie. | Tengo dolor de pie.
+          - Belauneko mina dauka. | Belauneko mina du. = Le duele la rodilla. | Tiene dolor de rodilla.
+        pairs:
+          - - besoa = el brazo
+            - eskua = la mano
+            - hatza = el dedo
+            - sabela = la tripa
+            - bizkarra = la espalda
+            - hanka = la pierna
+        meanings:
+          - text: Anek eskuko mina dauka.
+            options:
+              - A Ane le duele la mano.
+              - A Ane le duele el pie.
+              - Ane tiene la mano pequeña.
+        blanks:
+          - text: Aitak ___ mina dauka. = A mi padre le duele la espalda.
+            options:
+              - bizkarreko
+              - bizkarra
+        chats:
+          - messages:
+              - Jon | Non daukazu mina?
+            options:
+              - Hankan daukat.
+              - Hankako daukat.
+              - Hanka daukat.
+        true_false:
+          - passage: Atzo mendira joan naiz. Gaur oineko eta belauneko mina daukat.
+            statement: Le duelen los brazos.
+            answer: false
+      - structures: [symptoms]
+        sentences:
+          - Gaixo nago. = Estoy enfermo. | Estoy enferma.
+          - Sukarra daukat. | Sukarra dut. = Tengo fiebre.
+          - Eztula daukazu? | Eztula duzu? = ¿Tienes tos? | ¿Tiene usted tos?
+          - Hotzeria daukat. | Hotzeria dut. = Tengo un resfriado. | Estoy resfriado. | Estoy resfriada.
+          - Oso nekatuta nago. = Estoy muy cansado. | Estoy muy cansada.
+          - Ane gaixo dago. = Ane está enferma.
+          - Zer daukazu? = ¿Qué tienes? | ¿Qué te pasa? | ¿Qué tiene usted? | ¿Qué le pasa?
+          - Ez daukat sukarrik. | Ez dut sukarrik. = No tengo fiebre.
+        pairs:
+          - - sukarra = la fiebre
+            - eztula = la tos
+            - hotzeria = el resfriado
+            - mina = el dolor
+            - gaixo = enfermo
+            - nekatuta = cansado
+        meanings:
+          - text: Nekatuta nago.
+            options:
+              - Estoy cansado.
+              - Estoy enfermo.
+              - Estoy en casa.
+        blanks:
+          - text: Gaur gaixo ___. = Hoy estoy enfermo.
+            options:
+              - nago
+              - daukat
+        chats:
+          - messages:
+              - Olatz | Zer moduz zaude?
+            options:
+              - Ez oso ondo. Hotzeria daukat.
+              - Ez oso ondo. Hotzeria nago.
+              - Bai, hotzeria.
+        true_false:
+          - passage: Gaur ez naiz eskolara joan. Sukarra eta eztula dauzkat.
+            statement: Hoy ha ido a la escuela.
+            answer: false
+  - type: lesson
+    title:
+      es: ¿Dónde y a qué hora?
+      eu: Non eta zer ordutan?
+    lessons:
+      - structures: [nongo-mina]
+        sentences:
+          - Non daukazu mina? | Non duzu mina? = ¿Dónde te duele? | ¿Dónde le duele?
+          - Hemen, buruan. = Aquí, en la cabeza.
+          - Amak buruko min handia dauka. = A mi madre le duele mucho la cabeza. | Mi madre tiene un dolor de cabeza muy fuerte.
+          - Guk sabeleko mina daukagu. = Nos duele la tripa. | A nosotros nos duele la tripa. | Nos duele el vientre.
+          - Umeek belarriko mina daukate. = A los niños les duelen los oídos. | Los niños tienen dolor de oídos.
+          - Zuk lepoko mina daukazu? = ¿A ti te duele el cuello? | ¿Te duele el cuello? | ¿A usted le duele el cuello?
+          - Ez daukat buruko minik. | Ez dut buruko minik. = No me duele la cabeza. | No tengo dolor de cabeza.
+          - Hankako eta oineko mina daukat. = Me duelen la pierna y el pie.
+        blanks:
+          - text: Guk hortzetako mina ___. = Nos duelen las muelas.
+            options:
+              - daukagu
+              - daukat
+          - text: Ez daukat sabeleko ___. = No me duele la tripa.
+            options:
+              - minik
+              - mina
+        meanings:
+          - text: Mikelek ez dauka bizkarreko minik.
+            options:
+              - A Mikel no le duele la espalda.
+              - A Mikel le duele la espalda.
+              - A Mikel no le duele la pierna.
+        chats:
+          - messages:
+              - Ander | Non daukazu mina, Garazi?
+            options:
+              - Belaunean, hemen.
+              - Belauneko, hemen.
+              - Belauna, hemen.
+        true_false:
+          - passage: Aitak eta amak hotzeria daukate. Ni ondo nago.
+            statement: Sus padres están resfriados.
+            answer: true
+      - structures: [nongo]
+        sentences:
+          - Bilboko ospitalean lan egiten du. = Trabaja en el hospital de Bilbao.
+          - Herriko farmazia plazan dago. = La farmacia del pueblo está en la plaza.
+          - Ospitaleko medikua oso jatorra da. = El médico del hospital es muy majo. | La médica del hospital es muy maja.
+          - Eskolako erizaina Itziar da. = La enfermera de la escuela es Itziar.
+          - Gasteizko medikuarekin ordua hartu dut. = He pedido hora con el médico de Vitoria. | He pedido cita con el médico de Vitoria. | He pedido hora con la médica de Vitoria.
+          - Donostiako ospitalea handia da. = El hospital de San Sebastián es grande. | El hospital de Donostia es grande.
+          - Hau Tolosako farmazia da? = ¿Esta es la farmacia de Tolosa?
+          - Nire herriko medikua Aitor da. = El médico de mi pueblo es Aitor.
+        blanks:
+          - text: ___ farmazia plazan dago. = La farmacia del pueblo está en la plaza.
+            options:
+              - Herriko
+              - Herrian
+        meanings:
+          - text: Durangoko ospitalean nago.
+            options:
+              - Estoy en el hospital de Durango.
+              - Voy al hospital de Durango.
+              - Soy de Durango.
+        chats:
+          - messages:
+              - Leire | Non dago herriko farmazia?
+            options:
+              - Plazan, bankuaren ondoan.
+              - Plazako, bankuaren ondoan.
+              - Herriko farmazia.
+        true_false:
+          - passage: Ni Eibarko ospitalean erizaina naiz. Nire senarra Bergarako medikua da.
+            statement: Su marido es médico en Bergara.
+            answer: true
+      - structures: [zer-ordutan]
+        sentences:
+          - Zer ordutan? = ¿A qué hora?
+          - Hiruretan. = A las tres.
+          - Bostetan ospitalera joango naiz. = A las cinco iré al hospital. | A las cinco voy a ir al hospital.
+          - Zer ordutan bazkalduko duzu? = ¿A qué hora comerás? | ¿A qué hora vas a comer? | ¿A qué hora comerá usted?
+          - Ordu batean bazkalduko dut. = Comeré a la una. | Voy a comer a la una.
+          - Goizeko hamarretan etorriko naiz. = Vendré a las diez de la mañana. | Voy a venir a las diez de la mañana.
+          - Arratsaldeko lau eta erdietan. = A las cuatro y media de la tarde.
+          - Gaueko hamaiketan afaldu dugu. = Hemos cenado a las once de la noche. | Cenamos a las once de la noche.
+        pairs:
+          - - ordu batean = a la una
+            - biretan = a las dos
+            - hiruretan = a las tres
+            - lauretan = a las cuatro
+            - hamabietan = a las doce
+        blanks:
+          - text: Zazpietan ___ dugu. = Cenaremos a las siete.
+            options:
+              - afalduko
+              - afaltzen
+        meanings:
+          - text: Hamabietan bazkalduko dugu.
+            options:
+              - Comeremos a las doce.
+              - Comimos a las doce.
+              - Comeremos a las dos.
+        chats:
+          - messages:
+              - Aitor | Zer ordutan etorriko zara?
+            options:
+              - Seietan etorriko naiz.
+              - Seiak dira.
+              - Seietan etorri naiz.
+        true_false:
+          - passage: Gaur medikuarekin ordua daukat. Bostetan joango naiz.
+            statement: Irá al médico a las cinco.
+            answer: true
+  - type: lesson
+    title:
+      es: En la consulta
+      eu: Medikuarekin
+    lessons:
+      - structures: [nongo-mina, symptoms]
+        sentences:
+          - Egun on. Zer daukazu? = Buenos días. ¿Qué le pasa? | Buenos días. ¿Qué tienes? | Buenos días. ¿Qué te pasa?
+          - Buruko mina eta sukarra dauzkat. = Me duele la cabeza y tengo fiebre. | Tengo dolor de cabeza y fiebre.
+          - Eta eztula? = ¿Y tos?
+          - Bai, eta oso nekatuta nago. = Sí, y estoy muy cansado. | Sí, y estoy muy cansada.
+          - Hotzeria daukazu. = Tienes un resfriado. | Tiene usted un resfriado. | Estás resfriado.
+          - Gaur etxean geratu behar duzu. = Hoy tienes que quedarte en casa. | Hoy debe quedarse en casa. | Hoy te tienes que quedar en casa.
+        chats:
+          - messages:
+              - Medikua | Egun on, Nahia. Zer daukazu?
+              - Nahia | Ez nago ondo.
+              - Medikua | Non daukazu mina?
+            options:
+              - Sabelean, hemen.
+              - Sabeleko, hemen.
+              - Bihar arte.
+          - messages:
+              - Nahia | Sukarra daukat?
+            options:
+              - Ez, ez daukazu sukarrik.
+              - Ez, ez dut sukarra.
+              - Bai, gaixo naiz.
+        true_false:
+          - passage: Gaur ez dut lan egin. Bizkarreko min handia daukat.
+            statement: Hoy ha trabajado.
+            answer: false
+          - passage: Umeak sukarra dauka. Gaixo dago eta lo egiten ari da.
+            statement: El niño está durmiendo.
+            answer: true
+        meanings:
+          - text: Nekatuta zaude?
+            options:
+              - ¿Estás cansado?
+              - ¿Estás enfermo?
+              - ¿Estás en casa?
+      - structures: [zer-ordutan]
+        sentences:
+          - Kaixo, egun on. Medikuarekin ordua hartu nahi dut. = Hola, buenos días. Quiero pedir hora con el médico. | Hola, buenos días. Quiero pedir cita con el médico. | Hola, buenos días. Quiero pedir hora con la médica.
+          - Zure izena, mesedez? = ¿Su nombre, por favor? | ¿Tu nombre, por favor?
+          - Bihar, goizeko bederatzietan, ondo? = Mañana, a las nueve de la mañana, ¿bien? | Mañana, a las nueve de la mañana, ¿le va bien? | Mañana, a las nueve de la mañana, ¿te va bien?
+          - Ez, goizean lan egiten dut. = No, por la mañana trabajo.
+          - Arratsaldeko hiru eta erdietan? = ¿A las tres y media de la tarde?
+          - Bai, oso ondo. Eskerrik asko! = Sí, muy bien. ¡Muchas gracias! | Sí, muy bien. ¡Gracias!
+        chats:
+          - messages:
+              - Erizaina | Egun on! Zer nahi duzu?
+              - Kepa | Medikuarekin ordua hartu nahi dut.
+              - Erizaina | Zer ordutan?
+            options:
+              - Arratsaldeko bostetan.
+              - Arratsaldeko bostak.
+              - Arratsaldean bost.
+          - messages:
+              - Erizaina | Bihar hamaiketan etorriko zara?
+            options:
+              - Bai, hamaiketan etorriko naiz.
+              - Bai, hamaiketan etorri naiz.
+              - Bai, hamaika urte ditut.
+        true_false:
+          - passage: Ostiralean medikuarekin ordua daukat, goizeko hamarretan.
+            statement: La cita es el viernes por la tarde.
+            answer: false
+          - passage: Gaur biretan Donostiako ospitalera joango naiz. Amak sabeleko mina dauka.
+            statement: Irá al hospital a las dos.
+            answer: true
+        blanks:
+          - text: Medikuarekin ordua ___ nahi dut. = Quiero pedir hora con el médico.
+            options:
+              - hartu
+              - hartzen
+      - structures: [nongo, symptoms]
+        sentences:
+          - Barkatu, non dago Getxoko ospitalea? = Perdona, ¿dónde está el hospital de Getxo? | Perdone, ¿dónde está el hospital de Getxo?
+          - Herriko farmazia urrun dago? = ¿La farmacia del pueblo está lejos? | ¿Está lejos la farmacia del pueblo?
+          - Ez, gertu dago, elizaren ondoan. = No, está cerca, al lado de la iglesia.
+          - Nire semeak eztula eta sukarra dauzka. = Mi hijo tiene tos y fiebre.
+          - Gaur ez da eskolara joango. = Hoy no irá a la escuela. | Hoy no va a ir a la escuela.
+          - Hamabietan medikuarekin ordua daukagu. = A las doce tenemos hora con el médico. | Tenemos cita con el médico a las doce. | A las doce tenemos cita con el médico.
+        chats:
+          - messages:
+              - Uxue | Kaixo, Peio! Zer moduz?
+              - Peio | Gaixo nago. Hotzeria daukat.
+              - Uxue | Sukarra daukazu?
+            options:
+              - Ez, ez daukat sukarrik.
+              - Ez, ez nago sukarrik.
+              - Bai, nekatuta daukat.
+          - messages:
+              - Peio | Zer ordutan joango zara farmaziara?
+            options:
+              - Zazpietan joango naiz.
+              - Zazpietan joan naiz.
+              - Zazpi urte ditut.
+        true_false:
+          - passage: Ni Edurne naiz, Tolosako erizaina. Gaur gauean ospitalean lan egingo dut.
+            statement: Edurne trabajará esta noche.
+            answer: true
+          - passage: Aitonak lepoko eta bizkarreko mina dauka. Oso nekatuta dago.
+            statement: Al abuelo le duelen las rodillas.
+            answer: false
+        meanings:
+          - text: Eskolako medikua gertu dago.
+            options:
+              - El médico de la escuela está cerca.
+              - La escuela del médico está cerca.
+              - El médico está en la escuela.
+  - type: story
+    title:
+      es: "Historia: Josu está enfermo"
+      eu: "Istorioa: Josu gaixo dago"
+    story:
+      title: Josu gaixo dago
+      lines:
+        - Miren | Kaixo, Josu! Zer moduz zaude? = ¡Hola, Josu! ¿Qué tal estás?
+        - Josu | Ez oso ondo. Gaixo nago. = No muy bien. Estoy enfermo.
+        - Miren | Zer daukazu? = ¿Qué tienes?
+        - Josu | Buruko mina eta eztula. Oso nekatuta nago. = Dolor de cabeza y tos. Estoy muy cansado.
+        - Miren | Sukarra daukazu? = ¿Tienes fiebre?
+        - Josu | Bai, atzo gauean sukarra izan dut. = Sí, anoche tuve fiebre.
+        - Miren | Medikuarekin ordua hartu duzu? = ¿Has pedido hora con el médico?
+        - Josu | Bai, gaur arratsaldeko lauretan. = Sí, hoy a las cuatro de la tarde.
+        - Miren | Ni Durangoko farmaziara noa. Zer behar duzu? = Voy a la farmacia de Durango. ¿Qué necesitas?
+        - Josu | Ura eta zukua, mesedez. = Agua y zumo, por favor.
+        - Miren | Ondo. Bostetan zure etxera etorriko naiz. Agur! = Bien. A las cinco iré a tu casa. ¡Adiós!
+      questions:
+        - afterLine: 3
+          prompt: ¿Qué le pasa a Josu?
+          options:
+            - Le duele la cabeza y tiene tos.
+            - Le duele la espalda.
+            - Le duele un pie.
+        - afterLine: 7
+          prompt: ¿A qué hora tiene Josu cita con el médico?
+          options:
+            - A las cuatro
+            - A las cinco
+            - A las tres
+        - afterLine: 10
+          prompt: ¿Qué le va a llevar Miren?
+          options:
+            - Agua y zumo
+            - Leche y café
+            - Pan y queso
+  - type: review
+  - type: legendary

@@ -22,7 +22,7 @@ red-trousered helpers of Basque mythology.
 | M4 | Learning path and progress | ✅ |
 | M5 | Remaining exercise types and stories | ✅ |
 | M6 | Gamification | ✅ |
-| M7 | Full A1 content | ⏳ |
+| M7 | Full A1 content | ✅ |
 | M8 | Audio, accessibility and polish | ⏳ |
 | M9 | Release | ⏳ |
 

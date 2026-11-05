@@ -1,0 +1,447 @@
+# Unit 6.2 · Opari bat — clothes and colours, -EGI(A), NOLAKOA(K)?, NOLA DAUKAZU?, NORENTZAT,
+# -T(Z)EA with gustatu, causal -ELAKO and ZERGATIK?
+id: u06-2
+section: s2
+bookUnit: 6
+title:
+  es: Un regalo
+  eu: Opari bat
+goals:
+  - es: Hablar de ropa, describirla, opinar sobre ella y decir lo que se necesita.
+    eu: Arropaz hitz egin, deskribatu, iritzia eman eta zer behar den esan.
+  - es: Elegir y comprar un regalo según los gustos de alguien.
+    eu: Norbaiten gustuen arabera opari bat aukeratu eta erosi.
+guidebook:
+  sections:
+    - title:
+        es: "¿Cómo es? Nolakoa da?"
+        eu: "Nolakoa da?"
+      body:
+        es: "Para preguntar cómo es algo, «Nolakoa da?»; si son varias cosas, «Nolakoak dira?». El color va detrás del nombre y lleva el artículo: alkandora zuria, galtza beltzak."
+        eu: "Zerbait nolakoa den galdetzeko, «Nolakoa da?»; gauza bat baino gehiago badira, «Nolakoak dira?». Kolorea izenaren atzetik doa, eta artikulua darama: alkandora zuria, galtza beltzak."
+      examples:
+        - eu: Nolakoa da jertsea?
+          es: ¿Cómo es el jersey?
+        - eu: Jertsea urdina eta handia da.
+          es: El jersey es azul y grande.
+        - eu: Nolakoak dira zapatak?
+          es: ¿Cómo son los zapatos?
+    - title:
+        es: "Demasiado: -egi"
+        eu: "Gehiegi: -egi"
+      body:
+        es: "Para decir «demasiado», añade -egi al adjetivo, antes del artículo: handi → handiegia, garesti → garestiegia. Cuidado: «kamiseta hori» es «esa camiseta» y «kamiseta horia», «la camiseta amarilla»."
+        eu: "«Gehiegi» esateko, -egi adjektiboari, artikuluaren aurretik: handi → handiegia, garesti → garestiegia. Kontuz: «kamiseta hori» eta «kamiseta horia» ez dira gauza bera."
+      examples:
+        - eu: Beroki hau garestiegia da.
+          es: Este abrigo es demasiado caro.
+        - eu: Zapata hauek handiegiak dira.
+          es: Estos zapatos son demasiado grandes.
+    - title:
+        es: "¿Para quién? -rentzat"
+        eu: "Norentzat?"
+      body:
+        es: "«Para» se dice con -(r)entzat: amarentzat, Ikerrentzat. Con pronombres: niretzat, zuretzat, harentzat, guretzat. La pregunta es «Norentzat?»."
+        eu: "Norentzat den esateko, -(r)entzat: amarentzat, Ikerrentzat. Izenordainekin: niretzat, zuretzat, harentzat, guretzat. Galdera «Norentzat?» da."
+      examples:
+        - eu: Opari hau zuretzat da.
+          es: Este regalo es para ti.
+        - eu: Norentzat da beroki hau?
+          es: ¿Para quién es este abrigo?
+        - eu: Jertse bat erosi nahi dut amarentzat.
+          es: Quiero comprar un jersey para mi madre.
+    - title:
+        es: "¿Por qué? Zergatik? … -elako"
+        eu: "Zergatik? … -elako"
+      body:
+        es: "A «Zergatik?» se responde con el verbo + -lako, al final: merkea delako (porque es barato), politak direlako. Y para decir que te gusta hacer algo, verbo + -t(z)ea + gustatzen zait."
+        eu: "«Zergatik?» galderari aditza + -lako erantzuten diogu: merkea delako, politak direlako. Zerbait egitea gustatzen zaigula esateko: aditza + -t(z)ea + gustatzen zait."
+      examples:
+        - eu: Zergatik nahi duzu gona hau? Merkea delako.
+          es: ¿Por qué quieres esta falda? Porque es barata.
+        - eu: Arropa erostea gustatzen zait.
+          es: Me gusta comprar ropa.
+levels:
+  - type: lesson
+    title:
+      es: Ropa y colores
+      eu: Arropa eta koloreak
+    lessons:
+      - structures: [clothes-vocab]
+        sentences:
+          - Alkandora zuria nahi dut. = Quiero una camisa blanca. | Quiero la camisa blanca.
+          - Galtza beltzak behar ditut. = Necesito unos pantalones negros. | Necesito pantalones negros.
+          - Gona gorria polita da. = La falda roja es bonita.
+          - Soineko berdea armairuan dago. = El vestido verde está en el armario.
+          - Jertse urdina daukazu? = ¿Tienes un jersey azul? | ¿Tiene un jersey azul?
+          - Beroki marroia erosi nahi dut. = Quiero comprar un abrigo marrón.
+          - Kamiseta horia gustatzen zait. = Me gusta la camiseta amarilla.
+          - Zapata grisak merkeak dira. = Los zapatos grises son baratos.
+        pairs:
+          - - alkandora = camisa
+            - galtza = pantalón
+            - gona = falda
+            - soineko = vestido
+            - jertse = jersey
+            - beroki = abrigo
+        meanings:
+          - text: Gona gorria polita da.
+            options:
+              - La falda roja es bonita.
+              - La falda verde es bonita.
+              - El vestido rojo es bonito.
+        blanks:
+          - text: Galtza ___ behar ditut. = Necesito unos pantalones negros.
+            options:
+              - beltzak
+              - zuriak
+        chats:
+          - messages:
+              - Nerea | Zer behar duzu?
+            options:
+              - Jertse bat behar dut.
+              - Jertse bat behar du.
+              - Gabon, Nerea.
+        true_false:
+          - passage: Armairuan soineko bat eta bi gona daude. Soinekoa berdea da.
+            statement: El vestido es verde.
+            answer: true
+      - structures: [colors]
+        sentences:
+          - Kamiseta gorria ala urdina? = ¿La camiseta roja o la azul? | ¿Camiseta roja o azul?
+          - Zapata beltzak ala marroiak? = ¿Los zapatos negros o los marrones? | ¿Zapatos negros o marrones?
+          - Beroki grisa daukat. = Tengo un abrigo gris.
+          - Alkandora hau zuria eta urdina da. = Esta camisa es blanca y azul.
+          - Jertse berdea gustatzen zait. = Me gusta el jersey verde.
+          - Arropa beltza nahiago dut. = Prefiero la ropa negra. | Prefiero ropa negra.
+          - Soineko horia oso polita da. = El vestido amarillo es muy bonito.
+          - Kamiseta zuriak merkeak dira. = Las camisetas blancas son baratas.
+        pairs:
+          - - gorri = rojo
+            - zuri = blanco
+            - beltz = negro
+            - urdin = azul
+            - berde = verde
+            - marroi = marrón
+        meanings:
+          - text: Arropa beltza nahiago dut.
+            options:
+              - Prefiero la ropa negra.
+              - Quiero la ropa negra.
+              - Me gusta la ropa blanca.
+        blanks:
+          - text: Soineko ___ oso polita da. = El vestido amarillo es muy bonito.
+            options:
+              - horia
+              - gorria
+        chats:
+          - messages:
+              - Garazi | Gona gorria ala beltza?
+            options:
+              - Gorria, mesedez.
+              - Gona, mesedez.
+              - Bai, eskerrik asko.
+        true_false:
+          - passage: Mikelek alkandora zuria eta galtza grisak dauzka.
+            statement: Mikel tiene unos pantalones grises.
+            answer: true
+      - structures: [gifts-vocab]
+        sentences:
+          - Aneren urtebetetzea da. = Es el cumpleaños de Ane.
+          - Opari bat erosi nahi dut. = Quiero comprar un regalo.
+          - Zorionak! Hau zure oparia da. = ¡Felicidades! Este es tu regalo. | ¡Felicidades! Esto es tu regalo.
+          - Zein da zure neurria? = ¿Cuál es tu talla? | ¿Cuál es su talla?
+          - Jertse hau probatu nahi dut. = Quiero probarme este jersey.
+          - Neurri handiagoa daukazu? = ¿Tienes una talla más grande? | ¿Tiene una talla más grande?
+          - Zapatak probatu nahi dituzu? = ¿Quieres probarte los zapatos? | ¿Quiere probarse los zapatos?
+          - Opariak mahai gainean daude. = Los regalos están encima de la mesa. | Los regalos están sobre la mesa.
+        pairs:
+          - - opari = regalo
+            - urtebetetze = cumpleaños
+            - neurri = talla
+            - probatu = probar
+            - kamiseta = camiseta
+            - zapata = zapato
+        meanings:
+          - text: Zein da zure neurria?
+            options:
+              - ¿Cuál es tu talla?
+              - ¿Cuál es tu regalo?
+              - ¿Cuánto es?
+        blanks:
+          - text: Jertse hau ___ nahi dut. = Quiero probarme este jersey.
+            options:
+              - probatu
+              - ordaindu
+        chats:
+          - messages:
+              - Jon | Zorionak! Zure urtebetetzea da!
+            options:
+              - Eskerrik asko, Jon!
+              - Ez horregatik, Jon!
+              - Gero arte, Jon!
+        true_false:
+          - passage: Iratiren urtebetetzea da. Bere amak opari bat dauka.
+            statement: Es el cumpleaños de la madre de Irati.
+            answer: false
+  - type: lesson
+    title:
+      es: ¿Cómo es?
+      eu: Nolakoa da?
+    lessons:
+      - structures: [nolakoa, egi-excess]
+        sentences:
+          - Nolakoa da jertsea? = ¿Cómo es el jersey?
+          - Jertsea urdina eta handia da. = El jersey es azul y grande.
+          - Nolakoak dira zapatak? = ¿Cómo son los zapatos?
+          - Zapatak beltzak eta politak dira. = Los zapatos son negros y bonitos.
+          - Gona hau motzegia da. = Esta falda es demasiado corta.
+          - Beroki hau garestiegia da. = Este abrigo es demasiado caro.
+          - Galtza hauek luzeegiak dira. = Estos pantalones son demasiado largos.
+          - Kamiseta txikiegia da. = La camiseta es demasiado pequeña.
+        meanings:
+          - text: Gona hau motzegia da.
+            options:
+              - Esta falda es demasiado corta.
+              - Esta falda es muy corta.
+              - Esta falda es demasiado larga.
+        blanks:
+          - text: Beroki hau ___ da. = Este abrigo es demasiado caro.
+            options:
+              - garestiegia
+              - garestia
+          - text: ___ dira zapatak? = ¿Cómo son los zapatos?
+            options:
+              - Nolakoak
+              - Nolakoa
+        chats:
+          - messages:
+              - Edurne | Nolakoa da soinekoa?
+            options:
+              - Gorria eta luzea da.
+              - Gorriak eta luzeak dira.
+              - Soinekoa gustatzen zaizkit.
+        true_false:
+          - passage: Alkandora hau polita da. Garestiegia da, ehun euro.
+            statement: La camisa es barata.
+            answer: false
+      - structures: [norentzat]
+        sentences:
+          - Opari hau zuretzat da. = Este regalo es para ti. | Este regalo es para usted.
+          - Jertse bat erosi nahi dut amarentzat. | Amarentzat jertse bat erosi nahi dut. = Quiero comprar un jersey para mi madre. | Quiero comprar un jersey para mamá.
+          - Norentzat da beroki hau? = ¿Para quién es este abrigo?
+          - Aitarentzat da. = Es para mi padre. | Es para papá.
+          - Kamiseta hau niretzat da? = ¿Esta camiseta es para mí?
+          - Zapata hauek Ikerrentzat dira. = Estos zapatos son para Iker.
+          - Soineko bat nahi dut nire ahizparentzat. = Quiero un vestido para mi hermana.
+          - Opariak guretzat dira? = ¿Los regalos son para nosotros? | ¿Los regalos son para nosotras?
+        meanings:
+          - text: Aitarentzat da.
+            options:
+              - Es para mi padre.
+              - Es de mi padre.
+              - Está con mi padre.
+        blanks:
+          - text: Opari hau ___ da. = Este regalo es para ti.
+            options:
+              - zuretzat
+              - zurekin
+          - text: ___ da beroki hau? = ¿Para quién es este abrigo?
+            options:
+              - Norentzat
+              - Noren
+        chats:
+          - messages:
+              - Saltzailea | Norentzat da oparia?
+            options:
+              - Nire lagunarentzat.
+              - Nire lagunarekin.
+              - Bost euro dira.
+        true_false:
+          - passage: Amaiak bi opari erosi nahi ditu. Jertsea aitarentzat da, eta gona ahizparentzat.
+            statement: La falda es para su padre.
+            answer: false
+      - structures: [gustatu-nominalization, elako-causal]
+        sentences:
+          - Arropa erostea gustatzen zait. = Me gusta comprar ropa.
+          - Ez zait zapatak probatzea gustatzen. | Zapatak probatzea ez zait gustatzen. = No me gusta probarme zapatos.
+          - Zergatik nahi duzu gona hau? = ¿Por qué quieres esta falda? | ¿Por qué quiere esta falda?
+          - Merkea delako. = Porque es barata. | Porque es barato.
+          - Jertse hau nahi dut, urdina delako. = Quiero este jersey porque es azul. | Quiero este jersey, porque es azul.
+          - Zapata hauek nahiago ditut, politak direlako. = Prefiero estos zapatos porque son bonitos.
+          - Zergatik? Beroki hori garestiegia delako. = ¿Por qué? Porque ese abrigo es demasiado caro.
+          - Amari opariak erostea gustatzen zaio. = A mi madre le gusta comprar regalos. | A mamá le gusta comprar regalos.
+        meanings:
+          - text: Arropa erostea gustatzen zait.
+            options:
+              - Me gusta comprar ropa.
+              - Quiero comprar ropa.
+              - Me gusta la ropa.
+        blanks:
+          - text: Merkea ___. = Porque es barata.
+            options:
+              - delako
+              - direlako
+        chats:
+          - messages:
+              - Olatz | Zergatik nahi duzu soineko gorria?
+            options:
+              - Polita delako.
+              - Polita direlako.
+              - Soinekoa da.
+        true_false:
+          - passage: Ikerri ez zaio arropa erostea gustatzen. Opariak erostea nahiago du.
+            statement: A Iker le gusta comprar ropa.
+            answer: false
+  - type: lesson
+    title:
+      es: En la tienda de ropa
+      eu: Arropa-dendan
+    lessons:
+      - structures: [norentzat, nolakoa]
+        sentences:
+          - Lagun baten urtebetetzea da. = Es el cumpleaños de un amigo. | Es el cumpleaños de una amiga.
+          - Zer gustatzen zaio zure lagunari? = ¿Qué le gusta a tu amigo? | ¿Qué le gusta a tu amiga?
+          - Kamiseta bat nahi dut nire lagunarentzat. = Quiero una camiseta para mi amigo. | Quiero una camiseta para mi amiga.
+          - Nolakoa da? Berdea eta grisa. = ¿Cómo es? Verde y gris.
+          - Zein neurri? = ¿Qué talla? | ¿Cuál talla?
+          - Neurri txikia, mesedez. = Talla pequeña, por favor. | Una talla pequeña, por favor.
+        chats:
+          - messages:
+              - Saltzailea | Kaixo! Zer nahi duzu?
+              - Aitor | Opari bat erosi nahi dut.
+              - Saltzailea | Norentzat da?
+            options:
+              - Nire amarentzat. Urtebetetzea da.
+              - Nire amarekin. Urtebetetzea da.
+              - Hogei euro dira.
+          - messages:
+              - Saltzailea | Nolako jertsea nahi duzu?
+            options:
+              - Urdina, eta ez handiegia.
+              - Urdinak, eta handiegiak dira.
+              - Amarentzat gustatzen zait.
+        meanings:
+          - text: Zein neurri?
+            options:
+              - ¿Qué talla?
+              - ¿Qué color?
+              - ¿Qué precio?
+        true_false:
+          - passage: Arantzaren urtebetetzea da. Bere senarrak beroki bat erosi nahi du.
+            statement: Su marido quiere comprarle un abrigo.
+            answer: true
+          - passage: Jertse urdina handiegia da. Txikiagoa behar da.
+            statement: El jersey es demasiado pequeño.
+            answer: false
+      - structures: [egi-excess, nola-daukazu]
+        sentences:
+          - Galtza hauek probatu nahi ditut. = Quiero probarme estos pantalones.
+          - Txikiegiak dira. Neurri handiagoa daukazu? = Son demasiado pequeños. ¿Tienes una talla más grande? | Son demasiado pequeños. ¿Tiene una talla más grande?
+          - Alkandora hau nola daukazu? = ¿Cómo tienes esta camisa? | ¿En qué colores tienes esta camisa? | ¿Cómo tiene esta camisa?  # TODO(revisión-nativa): «nola daukazu?» in a shop = which colours/sizes you have it in
+          - Gorria eta beltza dauzkagu. = Tenemos la roja y la negra. | La tenemos en rojo y en negro.  # TODO(revisión-nativa): answer to «nola daukazu?»; dauzkagu vs daukagu
+          - Zapata hauek handiegiak dira. = Estos zapatos son demasiado grandes.
+          - Jertse hau ondo dago, eta ez da garestiegia. = Este jersey está bien, y no es demasiado caro.
+        chats:
+          - messages:
+              - Saltzailea | Nolakoa da gona?
+              - Gorka | Luzeegia da.
+            options:
+              - Motzagoa probatu nahi duzu?
+              - Luzeagoa probatu nahi duzu?
+              - Gona gorria gustatzen zaizkizu?
+          - messages:
+              - Uxue | Beroki hau probatu nahi dut.
+              - Saltzailea | Zein da zure neurria?
+            options:
+              - Neurri txikia, mesedez.
+              - Beroki txikia gustatzen zaizkit.
+              - Hogei euro.
+        blanks:
+          - text: Zapata hauek ___ dira. = Estos zapatos son demasiado grandes.
+            options:
+              - handiegiak
+              - handiak
+        true_false:
+          - passage: Galtza beltzak luzeegiak dira. Galtza grisak ondo daude.
+            statement: Los pantalones grises están bien.
+            answer: true
+          - passage: Zapata gorriak politak dira. Garestiegiak dira, ehun euro.
+            statement: Los zapatos rojos son baratos.
+            answer: false
+      - structures: [elako-causal, gustatu-nominalization]
+        sentences:
+          - Zergatik erosi nahi duzu jertse hau? = ¿Por qué quieres comprar este jersey? | ¿Por qué quiere comprar este jersey?
+          - Nire anaiari urdina gustatzen zaiolako. = Porque a mi hermano le gusta el azul.
+          - Soineko hau nahiago dut, merkeagoa delako. = Prefiero este vestido porque es más barato.
+          - Ez dut beroki hau nahi, garestiegia delako. = No quiero este abrigo porque es demasiado caro.
+          - Amari ez zaio arropa probatzea gustatzen. = A mi madre no le gusta probarse ropa. | A mamá no le gusta probarse ropa.
+          - Opariak erostea gustatzen zait. = Me gusta comprar regalos.
+        chats:
+          - messages:
+              - Ander | Zergatik nahi duzu kamiseta berdea?
+            options:
+              - Berdea gustatzen zaidalako.
+              - Berdea gustatzen zaizkit.
+              - Kamiseta berdeak dira.
+          - messages:
+              - Miren | Zer erosi nahi duzu Jonentzat?
+              - Patxi | Jertse bat.
+              - Miren | Zergatik?
+            options:
+              - Hotz egiten duelako.
+              - Hotz egiten delako.
+              - Jonentzat gustatzen zait.
+        meanings:
+          - text: Garestiegia delako.
+            options:
+              - Porque es demasiado caro.
+              - Porque es muy barato.
+              - Porque es caro y grande.
+        true_false:
+          - passage: Leirek gona hau nahi du, gorria delako. Gorria gustatzen zaio.
+            statement: Leire quiere la falda porque es roja.
+            answer: true
+          - passage: Kepari ez zaio arropa erostea gustatzen. Liburu-dendak nahiago ditu.
+            statement: A Kepa le gusta comprar ropa.
+            answer: false
+  - type: story
+    title:
+      es: "Historia: el cumpleaños de mamá"
+      eu: "Istorioa: amaren urtebetetzea"
+    story:
+      title: Amaren urtebetetzea
+      lines:
+        - Julen | Izaro, amaren urtebetetzea da! = Izaro, ¡es el cumpleaños de mamá!
+        - Izaro | Bai! Opari bat erosi nahi dut. = ¡Sí! Quiero comprar un regalo.
+        - Julen | Zer gustatzen zaio amari? = ¿Qué le gusta a mamá?
+        - Izaro | Arropa gustatzen zaio. Soineko bat? = Le gusta la ropa. ¿Un vestido?
+        - Saltzailea | Kaixo! Norentzat da oparia? = ¡Hola! ¿Para quién es el regalo?
+        - Julen | Gure amarentzat. Soineko urdin bat, mesedez. = Para nuestra madre. Un vestido azul, por favor.
+        - Saltzailea | Hau oso polita da. Ehun euro. = Este es muy bonito. Cien euros.
+        - Izaro | Ehun euro? Garestiegia da! = ¿Cien euros? ¡Es demasiado caro!
+        - Saltzailea | Eta jertse gris hau? Hogeita hamar euro. = ¿Y este jersey gris? Treinta euros.
+        - Julen | Grisa? Ez. Amari urdina gustatzen zaio. = ¿Gris? No. A mamá le gusta el azul.
+        - Saltzailea | Jertse urdina ere daukagu! = ¡También tenemos el jersey azul!
+        - Izaro | Ondo! Jertse urdina erosi nahi dugu, amari gustatzen zaiolako. = ¡Bien! Queremos comprar el jersey azul, porque a mamá le gusta.
+      questions:
+        - afterLine: 3
+          prompt: ¿Por qué quieren comprar un regalo?
+          options:
+            - Es el cumpleaños de su madre
+            - Es el cumpleaños de Izaro
+            - Es para un amigo
+        - afterLine: 7
+          prompt: ¿Por qué no compran el vestido?
+          options:
+            - Es demasiado caro
+            - Es demasiado grande
+            - No es azul
+        - afterLine: 11
+          prompt: ¿Qué compran al final?
+          options:
+            - Un jersey azul
+            - Un jersey gris
+            - Un vestido azul
+  - type: review
+  - type: legendary

@@ -1,0 +1,465 @@
+# Unit 7.1 · Zer egin duzu? — recent past: perfective with NOR (joan naiz) and NOR-NORK (ikusi dut),
+# time markers, days of the week, NORA / NONDIK and -T(Z)ERA purpose.
+id: u07-1
+section: s3
+bookUnit: 7
+title:
+  es: ¿Qué has hecho?
+  eu: Zer egin duzu?
+goals:
+  - es: Contar lo que has hecho hoy y estos días.
+    eu: Gaur eta egun hauetan egin duzuna kontatu.
+  - es: Preguntar a otra persona qué ha hecho, adónde ha ido y de dónde viene.
+    eu: Besteari galdetu zer egin duen, nora joan den eta nondik datorren.
+  - es: Situar las acciones en el tiempo con los días de la semana y expresiones como «atzo» o «duela bi aste».
+    eu: Ekintzak denboran kokatu asteko egunekin eta «atzo» edo «duela bi aste» bezalako esapideekin.
+guidebook:
+  sections:
+    - title:
+        es: "Ir, venir, nacer: joan naiz"
+        eu: "Joan, etorri, jaio: joan naiz"
+      body:
+        es: Para contar lo que ha pasado se usa el participio (joan, etorri, jaio) seguido de naiz, zara, da, gara, zarete o dira cuando el verbo no tiene objeto. El participio va delante del auxiliar.
+        eu: Gertatutakoa kontatzeko partizipioa (joan, etorri, jaio) eta naiz, zara, da, gara, zarete edo dira erabiltzen dira, aditzak objekturik ez duenean. Partizipioa laguntzailearen aurretik doa.
+      examples:
+        - eu: Gaur Bilbora joan naiz.
+          es: Hoy he ido a Bilbao.
+        - eu: Ane Donostian jaio da.
+          es: Ane nació en San Sebastián.
+        - eu: Ni ez naiz joan.
+          es: Yo no he ido.
+    - title:
+        es: "Ver, comprar, comer: ikusi dut"
+        eu: "Ikusi, erosi, bazkaldu: ikusi dut"
+      body:
+        es: Los verbos con objeto (ver, comprar, comer, cenar…) usan dut, duzu, du, dugu, duzue o dute. El sujeto lleva -k (nik, zuk, Anek). Con objeto plural se dice ditut.
+        eu: Objektua duten aditzek (ikusi, erosi, bazkaldu, afaldu…) dut, duzu, du, dugu, duzue edo dute erabiltzen dute. Subjektuak -k darama (nik, zuk, Anek). Objektua plurala bada, ditut.
+      examples:
+        - eu: Nik Mikel ikusi dut.
+          es: He visto a Mikel.
+        - eu: Zuk zer erosi duzu?
+          es: ¿Qué has comprado?
+        - eu: Lagunak ikusi ditut.
+          es: He visto a mis amigos.
+    - title:
+        es: ¿Cuándo?
+        eu: Noiz?
+      body:
+        es: «Gaur» es hoy, «atzo» ayer, «herenegun» anteayer e «iaz» el año pasado. Los días de la semana y las partes del día llevan -(e)an (astelehenean, goizean) y «duela» va delante de la cantidad (duela bi aste).
+        # TODO(revisión-nativa): en batua escrito, con «atzo», «iaz» o «duela…» se prefiere el pasado (joan nintzen); aquí se usa el perfecto (joan naiz), habitual en la lengua hablada y en A1.
+        eu: «Gaur», «atzo», «herenegun» eta «iaz» denbora adierazten dute. Asteko egunek eta eguneko uneek -(e)an hartzen dute (astelehenean, goizean), eta «duela» kopuruaren aurretik doa (duela bi aste).
+      examples:
+        - eu: Atzo gauean etxean afaldu dut.
+          es: Anoche cené en casa.
+        - eu: Duela bi aste Parisera joan naiz.
+          es: Hace dos semanas fui a París.
+        - eu: Joan den larunbatean mendira joan gara.
+          es: El sábado pasado fuimos al monte.
+    - title:
+        es: "Adónde, de dónde y a qué: -ra, -tik, -tzera"
+        eu: "Nora, nondik eta zertara: -ra, -tik, -tzera"
+      body:
+        es: «Nora?» pide el destino (Bilbora, etxera) y «Nondik?» el origen (Bilbotik, etxetik). Para decir a qué vas, el verbo lleva -tzera o -tera (erostera, ikustera), y se pregunta con «Zertara?».
+        eu: «Nora?» helmuga da (Bilbora, etxera) eta «Nondik?» jatorria (Bilbotik, etxetik). Zertara zoazen esateko, aditzak -tzera edo -tera hartzen du (erostera, ikustera), eta «Zertara?» galdetzen da.
+      examples:
+        - eu: Nondik etorri zara? Donostiatik.
+          es: ¿De dónde has venido? De San Sebastián.
+        - eu: Zertara joan zara? Arropa erostera.
+          es: ¿A qué has ido? A comprar ropa.
+levels:
+  - type: lesson
+    title:
+      es: Ayer y hoy
+      eu: Atzo eta gaur
+    lessons:
+      - structures: [time-markers, nork-perfective]
+        sentences:
+          - Gaur goizean kafe bat hartu dut. = Esta mañana he tomado un café. | Hoy por la mañana he tomado un café. | Esta mañana tomé un café.
+          - Atzo Jonek etxean afaldu du. = Ayer Jon cenó en casa.
+          - Gaur jatetxean bazkaldu dugu. = Hoy hemos comido en el restaurante. | Hoy comimos en el restaurante. | Hoy hemos comido en un restaurante.
+          - Herenegun lagunekin afaldu dut. = Anteayer cené con mis amigos. | Anteayer cené con amigos. | Anteayer cené con mis amigas.
+          - Gaur arratsaldean Mikel ikusi dut. = Esta tarde he visto a Mikel. | Hoy por la tarde he visto a Mikel. | Esta tarde vi a Mikel.
+          - Atzo gauean ez dut afaldu. = Anoche no cené. | Ayer por la noche no cené.
+          - Zer egin duzu gaur? | Gaur zer egin duzu? = ¿Qué has hecho hoy? | ¿Qué ha hecho usted hoy? | ¿Qué hiciste hoy?
+          - Gaur goizean ogia erosi dut. = Esta mañana he comprado pan. | Hoy por la mañana he comprado pan. | Esta mañana compré pan.
+        pairs:
+          - - atzo = ayer
+            - gaur = hoy
+            - herenegun = anteayer
+            - gaur goizean = esta mañana
+            - atzo gauean = anoche
+        meanings:
+          - text: Herenegun Mikel ikusi dut.
+            options:
+              - Anteayer vi a Mikel.
+              - Ayer vi a Mikel.
+              - Hoy he visto a Mikel.
+        blanks:
+          - text: Gaur kafe bat hartu ___. = Hoy he tomado un café.
+            options:
+              - dut
+              - naiz
+        chats:
+          - messages:
+              - Leire | Zer egin duzu gaur?
+            options:
+              - Jatetxean bazkaldu dut.
+              - Jatetxean bazkaldu naiz.
+              - Bihar arte.
+        true_false:
+          - passage: Gaur goizean kafe bat hartu dut. Gero ogia erosi dut.
+            statement: Ha comprado pan.
+            answer: true
+      - structures: [weekdays, time-markers]
+        sentences:
+          - Astelehenean Bilbon lan egin dut. = El lunes trabajé en Bilbao. | El lunes he trabajado en Bilbao.
+          - Asteartean liburutegian ikasi dut. = El martes estudié en la biblioteca. | El martes he estudiado en la biblioteca.
+          - Asteazkenean amari deitu diot. = El miércoles llamé a mi madre. | El miércoles he llamado a mi madre.
+          - Ostegunean lagunak ikusi ditut. = El jueves vi a mis amigos. | El jueves he visto a mis amigos. | El jueves vi a mis amigas.
+          - Ostiralean Leirerekin afaldu dut. = El viernes cené con Leire. | El viernes he cenado con Leire.
+          - Larunbatean telefonoa galdu dut. = El sábado perdí el teléfono. | El sábado he perdido el teléfono. | El sábado perdí el móvil.
+          - Igandean etxean irakurri dut. = El domingo leí en casa. | El domingo he leído en casa.
+          - Joan den astean Donostian bazkaldu dugu. = La semana pasada comimos en San Sebastián. | La semana pasada comimos en Donostia. | La semana pasada hemos comido en San Sebastián.
+        pairs:
+          - - astelehena = lunes
+            - asteartea = martes
+            - asteazkena = miércoles
+            - osteguna = jueves
+            - ostirala = viernes
+            - igandea = domingo
+        meanings:
+          - text: Igandean Gasteizen bazkaldu dut.
+            options:
+              - El domingo comí en Vitoria.
+              - El sábado comí en Vitoria.
+              - El domingo cené en Vitoria.
+        blanks:
+          - text: Joan den ___ lagunak ikusi ditut. = La semana pasada vi a mis amigos.
+            options:
+              - astean
+              - atzo
+        chats:
+          - messages:
+              - Unai | Zer egin duzu larunbatean?
+            options:
+              - Lagunekin bazkaldu dut.
+              - Lagunekin bazkaldu naiz.
+              - Larunbata da.
+        true_false:
+          - passage: Joan den astean Parisen lan egin dut. Ostiralean etxera etorri naiz.
+            statement: El viernes volvió a casa.
+            answer: true
+      - structures: [nor-perfective, time-markers]
+        sentences:
+          - Ni Gasteizen jaio naiz. = Nací en Vitoria. | Yo nací en Vitoria. | Nací en Gasteiz.
+          - Nire alaba iaz jaio da. = Mi hija nació el año pasado.
+          - Iaz Frantziara bidaiatu dugu. = El año pasado viajamos a Francia.  # TODO(revisión-nativa): auxiliar de «bidaiatu» (du, NOR-NORK) y régimen con -ra
+          - Duela hilabete bat Londresera joan naiz. = Hace un mes fui a Londres.
+          - Duela bi aste Mikeli idatzi diot. = Hace dos semanas le escribí a Mikel. | Hace dos semanas escribí a Mikel.
+          - Barkatu, ez dut entzun. = Perdona, no lo he oído. | Perdona, no he oído. | Perdone, no lo he oído.
+          - Zu non jaio zara? | Non jaio zara zu? = ¿Dónde naciste? | ¿Dónde naciste tú? | ¿Dónde nació usted? | ¿Dónde has nacido?
+          - Iaz Itziar eta Unai ezkondu dira. = El año pasado Itziar y Unai se casaron. | Itziar y Unai se casaron el año pasado.
+        pairs:
+          - - jaio = nacer
+            - bidaiatu = viajar
+            - idatzi = escribir
+            - entzun = escuchar
+            - iaz = el año pasado
+            - hilabete = mes
+        meanings:
+          - text: Duela hiru hilabete Eibarrera joan gara.
+            options:
+              - Hace tres meses fuimos a Eibar.
+              - Hace tres semanas fuimos a Eibar.
+              - Dentro de tres meses iremos a Eibar.
+        blanks:
+          - text: Ni Bilbon jaio ___. = Nací en Bilbao.
+            options:
+              - naiz
+              - dut
+          - text: ___ bi aste Parisera joan naiz. = Hace dos semanas fui a París.
+            options:
+              - Duela
+              - Iaz
+        chats:
+          - messages:
+              - Garazi | Non jaio zara?
+            options:
+              - Donostian jaio naiz.
+              - Donostian jaio dut.
+              - Donostiara joan naiz.
+        true_false:
+          - passage: Ni Iruñean jaio naiz. Iaz Gasteizera etorri naiz.
+            statement: Nació en Pamplona.
+            answer: true
+  - type: lesson
+    title:
+      es: ¿Adónde has ido?
+      eu: Nora joan zara?
+    lessons:
+      - structures: [nor-perfective]
+        sentences:
+          - Gaur goizean mendira joan naiz. = Esta mañana he ido al monte. | Hoy por la mañana he ido al monte. | Esta mañana fui al monte.
+          - Atzo Ane hondartzara joan da. = Ayer Ane fue a la playa.
+          - Herenegun Bilbora joan gara. = Anteayer fuimos a Bilbao.
+          - Zuek nora joan zarete? | Nora joan zarete zuek? = ¿Adónde habéis ido? | ¿A dónde habéis ido? | ¿Adónde fuisteis? | ¿Adónde han ido ustedes?
+          - Gurasoak Gasteizera joan dira. = Mis padres han ido a Vitoria. | Mis padres fueron a Vitoria. | Mis padres han ido a Gasteiz.
+          - Ni ez naiz joan. = Yo no he ido. | No he ido. | Yo no fui.
+          - Mikel eta Nerea etxera etorri dira. = Mikel y Nerea han venido a casa. | Mikel y Nerea vinieron a casa.
+          - Zu nora joan zara gaur? | Gaur nora joan zara? = ¿Adónde has ido hoy? | ¿A dónde has ido hoy? | ¿Adónde ha ido usted hoy? | ¿Adónde fuiste hoy?
+        blanks:
+          - text: Gu atzo parkera joan ___. = Ayer fuimos al parque.
+            options:
+              - gara
+              - dugu
+          - text: Haiek Bilbora joan ___. = Ellos han ido a Bilbao.
+            options:
+              - dira
+              - dute
+        meanings:
+          - text: Jon ez da etorri.
+            options:
+              - Jon no ha venido.
+              - Jon no ha ido.
+              - Jon ha venido.
+        chats:
+          - messages:
+              - Olatz | Atzo nora joan zara?
+            options:
+              - Hondartzara joan naiz.
+              - Hondartzara joan dut.
+              - Hondartzan bazkaldu naiz.
+        true_false:
+          - passage: Gaur Mikel ez da etorri. Etxean dago.
+            statement: Mikel está en casa.
+            answer: true
+      - structures: [nork-perfective]
+        sentences:
+          - Nik kafe bat hartu dut. = Yo he tomado un café. | He tomado un café. | Tomé un café.
+          - Zuk zer erosi duzu? | Zer erosi duzu zuk? = ¿Qué has comprado? | ¿Qué has comprado tú? | ¿Qué ha comprado usted?
+          - Anek liburutegian idatzi du. = Ane ha escrito en la biblioteca. | Ane escribió en la biblioteca.
+          - Guk jatetxean afaldu dugu. = Hemos cenado en el restaurante. | Nosotros hemos cenado en el restaurante. | Cenamos en el restaurante.
+          - Haiek txartela galdu dute. = Han perdido la tarjeta. | Ellos han perdido la tarjeta. | Ellas han perdido la tarjeta.
+          - Zuek Mikel ikusi duzue? = ¿Habéis visto a Mikel? | ¿Vosotros habéis visto a Mikel? | ¿Visteis a Mikel? | ¿Han visto ustedes a Mikel?
+          - Lagunak ikusi ditut. = He visto a mis amigos. | He visto a los amigos. | Vi a mis amigos.
+          - Iker eta Iratik ez dute bazkaldu. = Iker e Irati no han comido. | Iker e Irati no comieron.
+        blanks:
+          - text: Nik ogia erosi ___. = He comprado pan.
+            options:
+              - dut
+              - naiz
+          - text: Guk Leire ikusi ___. = Hemos visto a Leire.
+            options:
+              - dugu
+              - gara
+        meanings:
+          - text: Ez dut telefonoa galdu.
+            options:
+              - No he perdido el teléfono.
+              - He perdido el teléfono.
+              - No has perdido el teléfono.
+        chats:
+          - messages:
+              - Josu | Zuk zer hartu duzu?
+            options:
+              - Nik te bat hartu dut.
+              - Nik te bat hartu naiz.
+              - Zuk te bat hartu duzu.
+        true_false:
+          - passage: Gaur Ane eta Mikelek etxean afaldu dute. Gero parkera joan dira.
+            statement: Ane y Mikel han cenado en un restaurante.
+            answer: false
+      - structures: [nora-nondik, tzera-purpose]
+        sentences:
+          - Nondik etorri zara? = ¿De dónde has venido? | ¿De dónde ha venido usted? | ¿De dónde viniste?
+          - Donostiatik etorri naiz. = He venido de San Sebastián. | Vengo de San Sebastián. | He venido de Donostia. | Vine de San Sebastián.
+          - Ama ospitaletik etorri da. = Mi madre ha venido del hospital. | Mi madre vino del hospital.
+          - Zertara joan zara Bilbora? = ¿A qué has ido a Bilbao? | ¿A qué fuiste a Bilbao? | ¿A qué ha ido usted a Bilbao?
+          - Arropa erostera joan naiz. = He ido a comprar ropa. | Fui a comprar ropa.
+          - Lagunak ikustera joan gara. = Hemos ido a ver a los amigos. | Hemos ido a ver a nuestros amigos. | Fuimos a ver a los amigos.
+          - Jatetxera bazkaltzera joan dira. = Han ido a comer al restaurante. | Fueron a comer al restaurante.
+          - Liburutegira ikastera joan zara? = ¿Has ido a estudiar a la biblioteca? | ¿Has ido a la biblioteca a estudiar? | ¿Fuiste a estudiar a la biblioteca? | ¿Ha ido usted a estudiar a la biblioteca?
+        pairs:
+          - - nora = adónde
+            - nondik = de dónde
+            - Bilbora = a Bilbao
+            - Bilbotik = de Bilbao
+            - etxera = a casa
+            - etxetik = de casa
+        blanks:
+          - text: ___ etorri zara? = ¿De dónde has venido?
+            options:
+              - Nondik
+              - Nora
+          - text: Gasteizera ogia ___ joan naiz. = He ido a Vitoria a comprar pan.
+            options:
+              - erostera
+              - erosi
+        meanings:
+          - text: Etxetik etorri naiz.
+            options:
+              - He venido de casa.
+              - He ido a casa.
+              - Estoy en casa.
+        chats:
+          - messages:
+              - Peio | Zertara joan zara Donostiara?
+            options:
+              - Lagunak ikustera.
+              - Lagunak ikusi.
+              - Donostiatik.
+        true_false:
+          - passage: Gaur goizean Madriletik etorri naiz. Arratsaldean amari deitu diot.
+            statement: Esta mañana ha venido de Madrid.
+            answer: true
+  - type: lesson
+    title:
+      es: ¿Qué hay de nuevo?
+      eu: Zer berri?
+    lessons:
+      - structures: [time-markers, nor-perfective]
+        sentences:
+          - Kaixo, Nahia! Zer egin duzu gaur? = ¡Hola, Nahia! ¿Qué has hecho hoy? | ¡Hola, Nahia! ¿Qué hiciste hoy?
+          - Goizean eskolara joan naiz. = Por la mañana he ido a la escuela. | Por la mañana fui a la escuela.
+          - Arratsaldean liburutegian ikasi dut. = Por la tarde he estudiado en la biblioteca. | Por la tarde estudié en la biblioteca.
+          - Eta zuk? Zer egin duzu? = ¿Y tú? ¿Qué has hecho? | ¿Y usted? ¿Qué ha hecho? | ¿Y tú? ¿Qué hiciste?
+          - Nik gaur ez dut lan egin. | Gaur ez dut lan egin. = Hoy no he trabajado. | Yo hoy no he trabajado. | Hoy no trabajé.
+          - Gauean lagunekin afaldu dut. = Por la noche he cenado con mis amigos. | Por la noche he cenado con amigos. | Por la noche cené con mis amigos.
+        chats:
+          - messages:
+              - Nahia | Kaixo, Ander! Zer egin duzu gaur?
+              - Ander | Goizean hondartzara joan naiz.
+              - Nahia | Eta arratsaldean?
+            options:
+              - Etxean irakurri dut.
+              - Etxean irakurri naiz.
+              - Bihar arte.
+          - messages:
+              - Ander | Zer egin duzu atzo?
+            options:
+              - Mendira joan naiz.
+              - Mendira joan dut.
+              - Mendira joan zara.
+        true_false:
+          - passage: Gaur ez dut lan egin. Amarekin bazkaldu dut.
+            statement: Hoy ha trabajado.
+            answer: false
+          - passage: Atzo Irati eta Asier Getxora joan dira. Hondartzan egon dira.
+            statement: Irati y Asier estuvieron en la playa.
+            answer: true
+        meanings:
+          - text: Zer berri?
+            options:
+              - ¿Qué hay de nuevo?
+              - ¿Qué has comprado?
+              - ¿Quién es?
+      - structures: [nora-nondik, tzera-purpose]
+        sentences:
+          - Joan den astean Parisera joan naiz. = La semana pasada fui a París.
+          - Zertara joan zara Parisera? = ¿A qué fuiste a París? | ¿A qué has ido a París?
+          - Lagun bat ikustera. = A ver a un amigo. | A ver a una amiga.
+          - Nondik etorri zarete? = ¿De dónde habéis venido? | ¿De dónde vinisteis? | ¿De dónde han venido ustedes?
+          - Hondartzatik etorri gara. = Hemos venido de la playa. | Venimos de la playa. | Vinimos de la playa.
+          - Duela bi aste Londresen egon naiz. = Hace dos semanas estuve en Londres.
+        chats:
+          - messages:
+              - Edurne | Nondik etorri zara, Kepa?
+              - Kepa | Bilbotik. Lagunak ikustera joan naiz.
+              - Edurne | Eta zer moduz?
+            options:
+              - Oso ondo, eskerrik asko.
+              - Bilbon jaio naiz.
+              - Ez horregatik.
+          - messages:
+              - Kepa | Zertara joan zara herrira?
+            options:
+              - Ama ikustera.
+              - Ama ikusi naiz.
+              - Herritik.
+        true_false:
+          - passage: Joan den larunbatean Durangora joan gara. Arropa erostera joan gara.
+            statement: Fueron a Durango a comprar comida.
+            answer: false
+          - passage: Herenegun Gorka Madriletik etorri da. Gaur Gasteizen dago.
+            statement: Gorka llegó de Madrid anteayer.
+            answer: true
+        blanks:
+          - text: Gaur ___ etorri naiz. = Hoy he venido de Irun.
+            options:
+              - Iruntik
+              - Irunera
+      - structures: [weekdays, nork-perfective]
+        sentences:
+          - Zer egin duzu aste honetan? | Aste honetan zer egin duzu? = ¿Qué has hecho esta semana? | ¿Qué ha hecho usted esta semana?
+          - Astelehenean eta asteartean lan egin dut. = El lunes y el martes he trabajado. | El lunes y el martes trabajé.
+          - Asteazkenean Mireni idatzi diot. = El miércoles le escribí a Miren. | El miércoles escribí a Miren. | El miércoles le he escrito a Miren.
+          - Ostegunean ospitalera joan naiz. = El jueves fui al hospital. | El jueves he ido al hospital.
+          - Ostiralean taberna batean afaldu dugu. = El viernes cenamos en un bar. | El viernes hemos cenado en un bar.
+          - Igandean hondartzara joan gara. = El domingo fuimos a la playa. | El domingo hemos ido a la playa.
+        chats:
+          - messages:
+              - Miren | Zer egin duzu larunbatean?
+              - Josu | Mendira joan naiz.
+              - Miren | Norekin?
+            options:
+              - Lagunekin.
+              - Lagunak.
+              - Larunbatean.
+          - messages:
+              - Josu | Eta zuk? Igandean zer egin duzu?
+            options:
+              - Etxean irakurri dut.
+              - Etxean irakurri naiz.
+              - Igandea da.
+        true_false:
+          - passage: Astelehenean Bergaran lan egin dut. Asteartean Oñatira joan naiz.
+            statement: El martes fue a Oñati.
+            answer: true
+          - passage: Larunbatean txartela galdu dut. Igandean eskudiruarekin ordaindu dut.
+            statement: El domingo pagó con tarjeta.
+            answer: false
+        meanings:
+          - text: Aste honetan ez naiz Bilbora joan.
+            options:
+              - Esta semana no he ido a Bilbao.
+              - Esta semana he ido a Bilbao.
+              - La semana pasada no fui a Bilbao.
+  - type: story
+    title:
+      es: "Historia: el teléfono perdido"
+      eu: "Istorioa: telefono galdua"
+    story:
+      title: Non dago telefonoa?
+      lines:
+        - Ane | Kaixo, Iker! Zer moduz? = ¡Hola, Iker! ¿Qué tal?
+        - Iker | Ez oso ondo. Telefonoa galdu dut! = No muy bien. ¡He perdido el teléfono!
+        - Ane | Nola? Non galdu duzu? = ¿Cómo? ¿Dónde lo has perdido?
+        - Iker | Gaur goizean kafe bat hartu dut tabernan. = Esta mañana he tomado un café en el bar.
+        - Iker | Gero liburutegira joan naiz, ikastera. = Después he ido a la biblioteca, a estudiar.
+        - Ane | Eta liburutegitik nora joan zara? = ¿Y de la biblioteca adónde has ido?
+        - Iker | Jatetxe batera, Mikelekin bazkaltzera. = A un restaurante, a comer con Mikel.
+        - Ane | Mikeli deitu diozu? = ¿Has llamado a Mikel?
+        - Iker | Ez! Telefonorik ez daukat! = ¡No! ¡No tengo teléfono!
+        - Ane | Hemen duzu nire telefonoa. Deitu, mesedez. = Aquí tienes mi teléfono. Llama, por favor.
+        - Iker | Mikel? Telefonoa jatetxean dago? Eskerrik asko! = ¿Mikel? ¿El teléfono está en el restaurante? ¡Muchas gracias!
+      questions:
+        - afterLine: 1
+          prompt: ¿Qué le ha pasado a Iker?
+          options:
+            - Ha perdido el teléfono.
+            - Ha perdido la tarjeta.
+            - Ha perdido el autobús.
+        - afterLine: 6
+          prompt: ¿Con quién ha comido Iker?
+          options:
+            - Con Mikel
+            - Con Ane
+            - Solo
+        - afterLine: 10
+          prompt: ¿Dónde está el teléfono?
+          options:
+            - En el restaurante
+            - En la biblioteca
+            - En el bar
+  - type: review
+  - type: legendary

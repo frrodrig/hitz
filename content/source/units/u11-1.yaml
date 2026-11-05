@@ -1,0 +1,460 @@
+# Unit 11.1 · Lanbideak — jobs and working conditions, JAKIN, -T(Z)EN + jakin, NORAKO,
+# NOR-NORI-NORK (diot, didazu…). Source format: see u01-1.yaml and docs/content-guide.md.
+id: u11-1
+section: s4
+bookUnit: 11
+title:
+  es: Profesiones
+  eu: Lanbideak
+goals:
+  - es: Pedir y dar información sobre un trabajo (horario, sueldo y contrato).
+    eu: Lan bati buruzko informazioa eskatu eta eman (ordutegia, soldata eta kontratua).
+  - es: Decir qué sabe hacer una persona.
+    eu: Norbaitek zer egiten dakien esan.
+  - es: Decir a quién hacemos algo con «diot», «didazu»…
+    eu: Norbaiti zerbait egiten diogula esan «diot», «didazu»… erabiliz.
+guidebook:
+  sections:
+    - title:
+        es: "Saber: dakit, dakizu"
+        eu: "Jakin: dakit, dakizu"
+      body:
+        es: "«Jakin» (saber) tiene formas propias en presente: dakit, dakizu, daki, dakigu, dakizue, dakite. En respuestas afirmativas sin más palabras se usa «ba-»: «Badakit»."
+        eu: "«Jakin» aditzak orainaldiko forma trinkoak ditu: dakit, dakizu, daki, dakigu, dakizue, dakite. Baiezko erantzun laburretan «ba-» erabiltzen da: «Badakit»."
+      examples:
+        - eu: Ez dakit.
+          es: No lo sé.
+        - eu: Badakizu Mikelen helbidea?
+          es: ¿Sabes la dirección de Mikel?
+        - eu: Bai, badakit.
+          es: Sí, la sé.
+    - title:
+        es: "Saber hacer algo: gidatzen dakit"
+        eu: "Zerbait egiten jakin: gidatzen dakit"
+      body:
+        es: Para decir lo que alguien sabe hacer, el verbo va en la forma -t(z)en (gidatzen, idazten, egiten) delante de «jakin». En español usamos el infinitivo.
+        eu: Norbaitek zer egiten dakien esateko, aditza -t(z)en forman doa (gidatzen, idazten, egiten) «jakin» aditzaren aurretik.
+      examples:
+        - eu: Badakizu gidatzen?
+          es: ¿Sabes conducir?
+        - eu: Ez dakit igeri egiten.
+          es: No sé nadar.
+    - title:
+        es: "Para qué, para cuándo: -rako"
+        eu: "Norako: -rako"
+      body:
+        es: "El sufijo «-rako» indica destino o finalidad, como «para»: «lanerako» (para el trabajo), «Bilborako» (para Bilbao), «bi urterako» (para dos años)."
+        eu: "«-rako» atzizkiak helburua edo norakoa adierazten du: «lanerako», «Bilborako», «bi urterako»."
+      examples:
+        - eu: Kontratua bi urterako da.
+          es: El contrato es para dos años.
+        - eu: Hau Bilborako autobusa da.
+          es: Este es el autobús para Bilbao.
+    - title:
+        es: "Hacer algo a alguien: diot, didazu"
+        eu: "Norbaiti zerbait egin: diot, didazu"
+      body:
+        es: "Cuando hay alguien que recibe la acción (a quién, con -ri), el auxiliar cambia: diot (yo a él), diozu (tú a él), dio (él a él), dit (él a mí), didazu (tú a mí), dizut (yo a ti), diet (yo a ellos)."
+        eu: "Norbaitek zerbait jasotzen duenean (nori, -ri), laguntzailea aldatzen da: diot, diozu, dio, dit, didazu, dizut, diet."
+      examples:
+        - eu: Nagusiari deitu diot.
+          es: He llamado al jefe.
+        - eu: Zuk idatzi didazu?
+          es: ¿Me has escrito?
+        - eu: Enpresak soldata ordaindu dit.
+          es: La empresa me ha pagado el sueldo.
+levels:
+  - type: lesson
+    title:
+      es: El trabajo
+      eu: Lana
+    lessons:
+      - structures: [lanbideak, izan-present]
+        sentences:
+          - Zer da zure lanbidea? = ¿Cuál es tu profesión? | ¿Cuál es su profesión? | ¿Qué profesión tienes?
+          - Ni gidaria naiz. = Soy conductor. | Soy conductora. | Yo soy conductor. | Yo soy conductora.
+          - Ane idazkaria da. = Ane es secretaria.
+          - Mikel nire nagusia da. = Mikel es mi jefe.
+          - Itziar eta Jon nire lankideak dira. = Itziar y Jon son mis compañeros de trabajo. | Itziar y Jon son mis compañeros.
+          - Zure lana interesgarria da? = ¿Tu trabajo es interesante? | ¿Es interesante tu trabajo? | ¿Su trabajo es interesante?
+          - Aitor autobus gidaria da. = Aitor es conductor de autobús.
+          - Langileak oso jatorrak dira. = Los trabajadores son muy majos. | Los trabajadores son muy simpáticos.
+        pairs:
+          - - lan = trabajo
+            - lanbide = profesión
+            - gidari = conductor
+            - idazkari = secretario
+            - nagusi = jefe
+            - lankide = compañero de trabajo
+        meanings:
+          - text: Zer da zure lanbidea?
+            options:
+              - ¿Cuál es tu profesión?
+              - ¿Dónde está tu trabajo?
+              - ¿Quién es tu jefe?
+        blanks:
+          - text: Mikel nire ___ da. = Mikel es mi jefe.
+            options:
+              - nagusia
+              - lankidea
+              - enpresa
+        chats:
+          - messages:
+              - Ane | Kaixo! Zer da zure lanbidea?
+            options:
+              - Ni idazkaria naiz.
+              - Ni Ane naiz.
+              - Oso ondo, eskerrik asko.
+        true_false:
+          - passage: Kaixo! Ni Jon naiz. Autobus gidaria naiz.
+            statement: Jon es conductor de autobús.
+            answer: true
+      - structures: [lantokiak]
+        sentences:
+          - Nik bulego batean lan egiten dut. = Trabajo en una oficina. | Yo trabajo en una oficina.
+          - Jonek lantegi batean lan egiten du. = Jon trabaja en una fábrica.
+          - Gure enpresa Bilbon dago. = Nuestra empresa está en Bilbao.
+          - Bulegoa hirugarren solairuan dago. = La oficina está en el tercer piso.
+          - Lantegiak ehun langile ditu. = La fábrica tiene cien trabajadores.
+          - Zure enpresa handia da? = ¿Tu empresa es grande? | ¿Es grande tu empresa? | ¿Su empresa es grande?
+          - Nire lankideak bulegoan daude. = Mis compañeros están en la oficina. | Mis compañeras están en la oficina.
+          - Zertan egiten duzu lan? = ¿En qué trabajas? | ¿En qué trabaja usted? | ¿De qué trabajas?
+        pairs:
+          - - enpresa = empresa
+            - bulego = oficina
+            - lantegi = fábrica
+            - langile = trabajador
+            - lankide = compañero de trabajo
+        meanings:
+          - text: Lantegiak ehun langile ditu.
+            options:
+              - La fábrica tiene cien trabajadores.
+              - La oficina tiene cien trabajadores.
+              - La fábrica está en el piso cien.
+        blanks:
+          - text: Jonek lantegi batean lan egiten ___. = Jon trabaja en una fábrica.
+            options:
+              - du
+              - dut
+              - da
+        chats:
+          - messages:
+              - Mikel | Non egiten duzu lan?
+            options:
+              - Donostiako enpresa batean.
+              - Zortzietan.
+              - Oso ondo, eta zu?
+        true_false:
+          - passage: Ni Leire naiz. Gasteizko lantegi batean lan egiten dut.
+            statement: Leire trabaja en una oficina.
+            answer: false
+      - structures: [lan-baldintzak]
+        sentences:
+          - Zein da zure ordutegia? = ¿Cuál es tu horario? | ¿Cuál es su horario?
+          - Zortzietatik hiruetara lan egiten dut. = Trabajo de ocho a tres. | Trabajo de las ocho a las tres.
+          - Soldata ona da. = El sueldo es bueno.
+          - Soldata 1500 euro da hilabetean. = El sueldo es de 1500 euros al mes. | El sueldo son 1500 euros al mes.
+          - Kontratua sei hilabeterako da. = El contrato es para seis meses. | El contrato es de seis meses.
+          - Lanaldi osoa da. = Es jornada completa. | Es a jornada completa.
+          - Iragarki hau interesgarria da. = Este anuncio es interesante.
+          - Ordutegia goizekoa da. = El horario es de mañana. | Es un horario de mañana.
+        pairs:
+          - - soldata = sueldo
+            - ordutegi = horario
+            - kontratu = contrato
+            - lanaldi = jornada
+            - iragarki = anuncio
+        meanings:
+          - text: Kontratua sei hilabeterako da.
+            options:
+              - El contrato es para seis meses.
+              - El sueldo es de seis meses.
+              - Trabajo seis horas.
+        blanks:
+          - text: Kontratua sei ___ da. = El contrato es para seis meses.
+            options:
+              - hilabeterako
+              - hilabetean
+              - hilabetetik
+            structures: [norako]
+        chats:
+          - messages:
+              - Leire | Zein da ordutegia?
+            options:
+              - Zortzietatik hiruetara.
+              - Bulego batean.
+              - 1500 euro.
+        true_false:
+          - passage: Idazkari bat behar dugu. Lanaldi osoa. Kontratua urte baterako da.
+            statement: El trabajo es a media jornada.
+            answer: false
+  - type: lesson
+    title:
+      es: ¿Sabes conducir?
+      eu: Badakizu gidatzen?
+    lessons:
+      - structures: [jakin-present]
+        sentences:
+          - Ez dakit. = No sé. | No lo sé. | Yo no lo sé.
+          - Zuk badakizu? = ¿Tú lo sabes? | ¿Lo sabes? | ¿Usted lo sabe?
+          - Jonek ez daki. = Jon no lo sabe. | Jon no sabe.
+          - Guk badakigu. = Nosotros lo sabemos. | Nosotras lo sabemos. | Lo sabemos.
+          - Haiek badakite. = Ellos lo saben. | Ellas lo saben. | Lo saben.
+          - Nagusiak badaki. = El jefe lo sabe. | La jefa lo sabe.
+          - Badakizu Mikelen helbidea? = ¿Sabes la dirección de Mikel? | ¿Sabe usted la dirección de Mikel?
+          - Anek nagusiaren telefono zenbakia daki. = Ane sabe el número de teléfono del jefe. | Ane sabe el número de teléfono de la jefa.
+        pairs:
+          - - dakit = sé
+            - dakizu = sabes
+            - daki = sabe
+            - dakigu = sabemos
+            - dakite = saben
+        meanings:
+          - text: Lankideek ez dakite.
+            options:
+              - Los compañeros no lo saben.
+              - El compañero no lo sabe.
+              - Los compañeros lo saben.
+        blanks:
+          - text: Nik ez ___. = Yo no lo sé.
+            options:
+              - dakit
+              - dakizu
+              - daki
+        chats:
+          - messages:
+              - Jon | Badakizu Iratiren helbidea?
+            options:
+              - Ez, ez dakit.
+              - Bai, badakizu.
+              - Ez, ez dakite.
+        true_false:
+          - passage: Nik ez dakit Gorkaren telefono zenbakia. Nerea, zuk badakizu?
+            statement: La persona que habla sabe el número de Gorka.
+            answer: false
+      - structures: [jakin-tzen]
+        sentences:
+          - Badakizu gidatzen? = ¿Sabes conducir? | ¿Sabe usted conducir? | ¿Sabe conducir?
+          - Bai, gidatzen badakit. = Sí, sé conducir. | Sí, yo sé conducir.
+          - Ez dakit igeri egiten. = No sé nadar. | Yo no sé nadar.
+          - Mikelek ez daki gidatzen. = Mikel no sabe conducir.
+          - Gure umeek badakite irakurtzen. = Nuestros niños saben leer. | Nuestros hijos saben leer.
+          - Amonak ez daki idazten. = La abuela no sabe escribir.
+          - Zuek badakizue janaria prestatzen? = ¿Vosotros sabéis preparar la comida? | ¿Sabéis preparar la comida? | ¿Sabéis cocinar?
+          - Unaik ondo daki ogia egiten. = Unai sabe hacer pan muy bien. | Unai sabe hacer bien el pan. | Unai sabe hacer pan bien.
+        meanings:
+          - text: Amonak ez daki idazten.
+            options:
+              - La abuela no sabe escribir.
+              - La abuela no sabe leer.
+              - La abuela sabe escribir.
+        blanks:
+          - text: Badakizu ___? = ¿Sabes conducir?
+            options:
+              - gidatzen
+              - gidaria
+              - idazkaria
+          - text: Nik ez ___ gidatzen. = Yo no sé conducir.
+            options:
+              - dakit
+              - daki
+              - dakizu
+        chats:
+          - messages:
+              - Olatz | Badakizu igeri egiten?
+            options:
+              - Bai, badakit.
+              - Bai, badakizu.
+              - Ez, ez daki.
+      - structures: [nor-nori-nork, norako]
+        sentences:
+          - Nagusiari deitu diot. = He llamado al jefe. | He llamado a la jefa. | Llamé al jefe.
+          - Zuk idatzi didazu? = ¿Tú me has escrito? | ¿Me has escrito? | ¿Me ha escrito usted?
+          - Nik kafe bat erosi dizut. = Te he comprado un café. | Yo te he comprado un café.
+          - Anek lankideari opari bat erosi dio. = Ane le ha comprado un regalo al compañero. | Ane le ha comprado un regalo a la compañera. | Ane ha comprado un regalo para su compañero.
+          - Guk nagusiari kontratu berri bat eskatu diogu. = Le hemos pedido al jefe un contrato nuevo. | Hemos pedido un contrato nuevo a la jefa. | Le hemos pedido un contrato nuevo al jefe.
+          - Lankideek idazkariari deitu diote. = Los compañeros han llamado a la secretaria. | Los compañeros han llamado al secretario.
+          - Hau lanerako da. = Esto es para el trabajo.
+          - Bilborako autobusa hemen dago. = El autobús para Bilbao está aquí. | El autobús a Bilbao está aquí.
+        pairs:
+          - - diot = yo a él
+            - dizut = yo a ti
+            - didazu = tú a mí
+            - dit = él a mí
+            - diet = yo a ellos
+        meanings:
+          - text: Zuk idatzi didazu?
+            options:
+              - ¿Me has escrito?
+              - ¿Le has escrito?
+              - ¿Te he escrito?
+        blanks:
+          - text: Nagusiari deitu ___. = He llamado al jefe.
+            options:
+              - diot
+              - didazu
+              - dio
+        chats:
+          - messages:
+              - Ane | Mikel, nagusiari deitu diozu?
+            options:
+              - Bai, deitu diot.
+              - Bai, deitu didazu.
+              - Ez dakit gidatzen.
+        true_false:
+          - passage: Gaur Itziarren urtebetetzea da. Nik opari bat erosi diot.
+            statement: La persona que habla le ha comprado un regalo a Itziar.
+            answer: true
+  - type: lesson
+    title:
+      es: Buscando trabajo
+      eu: Lan elkarrizketak
+    lessons:
+      - structures: [lan-baldintzak, izan-present]
+        sentences:
+          - Zein da ordutegia? = ¿Cuál es el horario?
+          - Goizez lan egiten dugu, zortzietatik hiruetara. = Trabajamos por la mañana, de ocho a tres. | Trabajamos de mañana, de ocho a tres.
+          - Eta soldata? = ¿Y el sueldo?
+          - Soldata 1400 euro da hilabetean. = El sueldo es de 1400 euros al mes. | El sueldo son 1400 euros al mes.
+          - Kontratua urte baterako da. = El contrato es para un año. | El contrato es de un año.
+          - Lanaldi osoa da? = ¿Es jornada completa? | ¿Es a jornada completa?
+        chats:
+          - messages:
+              - Olatz | Kaixo! Iragarkia irakurri dut. Idazkari bat behar duzue?
+            options:
+              - Bai, idazkari bat behar dugu.
+              - Ez, ez dakit idazten.
+              - Zortzietatik hiruetara.
+          - messages:
+              - Unai | Zein da ordutegia?
+              - Edurne | Zortzietatik hiruetara.
+              - Unai | Eta soldata?
+            options:
+              - 1500 euro hilabetean.
+              - Sei hilabeterako.
+              - Bulego batean.
+        true_false:
+          - passage: Gidari bat behar dugu. Ordutegia arratsaldekoa da. Soldata ona da.
+            statement: El horario es de mañana.
+            answer: false
+          - passage: Nire lana Bilbon dago. Kontratua bi urterako da. Lanaldi osoa da.
+            statement: El contrato es para dos años.
+            answer: true
+        meanings:
+          - text: Lanaldi osoa da?
+            options:
+              - ¿Es jornada completa?
+              - ¿Es un buen sueldo?
+              - ¿Cuál es el horario?
+      - structures: [jakin-tzen]
+        sentences:
+          - Badakizu gidatzen? Gidari bat behar dugu. = ¿Sabes conducir? Necesitamos un conductor. | ¿Sabe conducir? Necesitamos un conductor. | ¿Sabe usted conducir? Necesitamos un conductor.
+          - Bai, nik autobusa gidatzen dut. = Sí, yo conduzco un autobús. | Sí, conduzco un autobús.
+          - Idazkariak ondo idazten daki. = La secretaria sabe escribir bien. | El secretario sabe escribir bien.
+          - Nire lankideak ez daki igeri egiten. = Mi compañero no sabe nadar. | Mi compañera no sabe nadar.
+          - Zuek badakizue ogia egiten? = ¿Vosotros sabéis hacer pan? | ¿Sabéis hacer pan?
+          - Bai, badakigu. Okindegian lan egiten dugu. = Sí, sabemos. Trabajamos en una panadería. | Sí, lo sabemos. Trabajamos en una panadería.
+        chats:
+          - messages:
+              - Gorka | Badakizu gidatzen?
+            options:
+              - Ez, ez dakit gidatzen.
+              - Ez, ez dakizu gidatzen.
+              - Bai, gidaria da.
+          - messages:
+              - Nerea | Sukaldari bat behar dugu. Zuk badakizu janaria prestatzen?
+              - Asier | Bai, jatetxe batean lan egiten dut.
+              - Nerea | Primeran! Eta zure lankideak?
+            options:
+              - Ez, hark ez daki.
+              - Ez, nik ez dakit.
+              - Bai, badakizue.
+        true_false:
+          - passage: Ni Amaia naiz. Badakit gidatzen. Ez dakit igeri egiten.
+            statement: Amaia sabe nadar.
+            answer: false
+          - passage: Peio idazkaria da. Oso ondo idazten daki.
+            statement: Peio escribe bien.
+            answer: true
+        blanks:
+          - text: Haiek ez ___ irakurtzen. = Ellos no saben leer.
+            options:
+              - dakite
+              - dakigu
+              - daki
+      - structures: [nor-nori-nork]
+        sentences:
+          - Barkatu, nagusiak deitu dizu. = Perdona, te ha llamado el jefe. | Perdone, le ha llamado el jefe. | Perdona, la jefa te ha llamado.
+          - Eskerrik asko. Gero deituko diot. = Gracias. Luego le llamo. | Gracias. Le llamaré luego. | Muchas gracias. Luego la llamo.
+          - Idazkariak kafe bat prestatu dit. = La secretaria me ha preparado un café. | El secretario me ha preparado un café.
+          - Zuk idatzi didazu gaur? = ¿Me has escrito hoy? | ¿Tú me has escrito hoy? | ¿Me ha escrito usted hoy?
+          - Bai, eta lankideei idatzi diet. = Sí, y les he escrito a los compañeros. | Sí, y he escrito a los compañeros.
+          - Enpresak ez dit soldata ordaindu. = La empresa no me ha pagado el sueldo.
+        chats:
+          - messages:
+              - Xabier | Nerea, zuk deitu didazu?
+            options:
+              - Bai, nik deitu dizut.
+              - Bai, zuk deitu didazu.
+              - Bai, deitu dio.
+          - messages:
+              - Miren | Enpresak soldata ordaindu dizu?
+              - Kepa | Ez, ez dit ordaindu.
+              - Miren | Nagusiari deitu diozu?
+            options:
+              - Bai, gaur deitu diot.
+              - Bai, gaur deitu dit.
+              - Ez dakit gidatzen.
+        true_false:
+          - passage: Gaur nagusiak deitu dit. Kontratu berri bat daukat!
+            statement: El jefe ha llamado a la persona que habla.
+            answer: true
+          - passage: Lankideei kafe bat erosi diet. Nagusiari ez.
+            statement: La persona que habla le ha comprado un café al jefe.
+            answer: false
+        blanks:
+          - text: Enpresak ez ___ soldata ordaindu. = La empresa no me ha pagado el sueldo.
+            options:
+              - dit
+              - diot
+              - dizut
+  - type: story
+    title:
+      es: "Historia: el trabajo nuevo"
+      eu: "Istorioa: lan berria"
+    story:
+      title: Gorkaren lan berria
+      lines:
+        - Nerea | Kaixo, Gorka! Zer moduz lan berrian? = ¡Hola, Gorka! ¿Qué tal en el trabajo nuevo?
+        - Gorka | Oso ondo! Gidaria naiz enpresa handi batean. = ¡Muy bien! Soy conductor en una empresa grande.
+        - Nerea | Zein da zure ordutegia? = ¿Cuál es tu horario?
+        - Gorka | Seietatik hiruetara lan egiten dut. = Trabajo de seis a tres.
+        - Nerea | Eta soldata ona da? = ¿Y el sueldo es bueno?
+        - Gorka | Bai, eta kontratua bi urterako da. = Sí, y el contrato es para dos años.
+        - Gorka | Nagusia oso jatorra da. Gaur kafe bat erosi dit! = El jefe es muy majo. ¡Hoy me ha comprado un café!
+        - Nerea | Zorionak! Zure enpresak gidariak behar ditu? = ¡Enhorabuena! ¿Tu empresa necesita conductores?
+        - Gorka | Bai! Badakizu autobusa gidatzen? = ¡Sí! ¿Sabes conducir un autobús?
+        - Nerea | Ez, ez dakit. Ni idazkaria naiz. = No, no sé. Yo soy secretaria.
+        - Gorka | Lasai! Gure enpresak idazkari bat behar du. = ¡Tranquila! Nuestra empresa necesita una secretaria.
+        - Nerea | Primeran! Bihar deituko dizut. = ¡Genial! Mañana te llamo.
+      questions:
+        - afterLine: 3
+          prompt: ¿Cuál es el horario de Gorka?
+          options:
+            - De seis a tres
+            - De ocho a tres
+            - Por la tarde
+        - afterLine: 6
+          prompt: ¿Qué ha hecho hoy el jefe de Gorka?
+          options:
+            - Le ha comprado un café
+            - Le ha pagado el sueldo
+            - Le ha dado un contrato nuevo
+        - afterLine: 11
+          prompt: ¿Qué hará Nerea mañana?
+          options:
+            - Llamar a Gorka
+            - Conducir un autobús
+            - Ir a la oficina de Gorka
+  - type: review
+  - type: legendary

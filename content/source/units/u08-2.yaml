@@ -1,0 +1,447 @@
+# Unit 8.2 · Medikuarengana — NORENGANA (medikuarengana), -TA/-DA (hautsita dauka),
+# BA- conditionals (sukarra baduzu…), habitual aspect (egunero jaikitzen naiz) and frequency.
+id: u08-2
+section: s3
+bookUnit: 8
+title:
+  es: Al médico
+  eu: Medikuarengana
+goals:
+  - es: Entender y dar recomendaciones para problemas de salud comunes.
+    eu: Ohiko osasun-arazoetarako gomendioak ulertu eta eman.
+  - es: Describir hábitos diarios saludables y decir con qué frecuencia haces algo.
+    eu: Eguneroko ohitura osasuntsuak azaldu eta zerbait zenbatetan egiten duzun esan.
+guidebook:
+  sections:
+    - title:
+        es: "Ir a una persona: medikuarengana"
+        eu: "Norbaitengana joan: medikuarengana"
+      body:
+        es: Para ir hacia una persona no se usa -ra sino -(r)engana (medikuarengana, amarengana, zuregana). Para un lugar se sigue usando -ra (osasun-etxera, farmaziara).
+        eu: Pertsona batengana joateko ez da -ra erabiltzen, -(r)engana baizik (medikuarengana, amarengana, zuregana). Leku baterako -ra erabiltzen da (osasun-etxera, farmaziara).
+      examples:
+        - eu: Medikuarengana joan behar duzu.
+          es: Tienes que ir al médico.
+        - eu: Bihar zuregana etorriko naiz.
+          es: Mañana vendré a verte.
+        - eu: Osasun-etxera noa.
+          es: Voy al centro de salud.
+    - title:
+        es: "Cómo está: hautsita, eserita"
+        eu: "Nola dago? Hautsita, eserita"
+      body:
+        es: Para decir cómo está algo después de una acción, el participio lleva -ta (-da tras -n o -l), como el participio español «roto» o «sentado». Va con dauka o dago.
+        eu: Ekintza baten ondoren zerbait nola dagoen esateko, partizipioak -ta hartzen du (-da -n edo -l ondoren). Dauka edo dago aditzarekin doa.
+      examples:
+        - eu: Mikelek hanka hautsi du.
+          es: Mikel se ha roto la pierna.
+        - eu: Hanka hautsita dauka.
+          es: Tiene la pierna rota.
+        - eu: Amona eserita dago.
+          es: La abuela está sentada.
+    - title:
+        es: "Si…: baduzu, bazaude"
+        eu: "Baldintza: baduzu, bazaude"
+      body:
+        es: Para decir «si…», se pone ba- delante del verbo conjugado (baduzu, badaukazu, bazaude). El consejo va después, a menudo con el participio solo, que funciona como imperativo (hartu, joan, geratu).
+        eu: Baldintza adierazteko, ba- jartzen da aditz jokatuaren aurrean (baduzu, badaukazu, bazaude). Gomendioa ondoren doa, askotan partizipioa bakarrik, agintera gisa (hartu, joan, geratu).
+      examples:
+        - eu: Sukarra baduzu, etxean geratu.
+          es: Si tienes fiebre, quédate en casa.
+        - eu: Buruko mina badaukazu, pilula bat hartu.
+          es: Si te duele la cabeza, tómate una pastilla.
+        - eu: Nekatuta bazaude, goiz oheratu.
+          es: Si estás cansado, acuéstate pronto.
+    - title:
+        es: Lo que haces normalmente
+        eu: Ohiko ekintzak
+      body:
+        es: Para los hábitos, el verbo lleva -tzen o -ten y después naiz o dut (jaikitzen naiz, gosaltzen dut), como el presente español. La frecuencia se dice con egunero, askotan, astean behin, noizean behin, gutxitan o «ez… inoiz».
+        eu: Ohiturak adierazteko, aditzak -tzen edo -ten hartzen du eta ondoren naiz edo dut (jaikitzen naiz, gosaltzen dut). Maiztasuna egunero, askotan, astean behin, noizean behin, gutxitan edo «ez… inoiz» esapideekin adierazten da.
+      examples:
+        - eu: Egunero zazpietan jaikitzen naiz.
+          es: Todos los días me levanto a las siete.
+        - eu: Astean behin igeri egiten dut.
+          es: Nado una vez a la semana.
+        - eu: Ez dut inoiz kafea hartzen.
+          es: Nunca tomo café.
+levels:
+  - type: lesson
+    title:
+      es: Mi día
+      eu: Nire eguna
+    lessons:
+      - structures: [habitual]
+        sentences:
+          - Egunero zazpietan jaikitzen naiz. = Todos los días me levanto a las siete. | Me levanto todos los días a las siete. | Me levanto a las siete todos los días.
+          - Gero dutxatzen naiz. = Después me ducho. | Luego me ducho.
+          - Etxean gosaltzen dut. = Desayuno en casa.
+          - Goizean kafea hartzen dut. = Por la mañana tomo café. | Por las mañanas tomo café.
+          - Ordu batean bazkaltzen dut. = Como a la una.
+          - Gauean bederatzietan afaltzen dugu. = Por la noche cenamos a las nueve. | Cenamos a las nueve de la noche.
+          - Hamaiketan oheratzen naiz. = Me acuesto a las once.
+          - Zer ordutan jaikitzen zara? = ¿A qué hora te levantas? | ¿A qué hora se levanta usted?
+        pairs:
+          - - jaiki = levantarse
+            - gosaldu = desayunar
+            - dutxatu = ducharse
+            - oheratu = acostarse
+            - bazkaldu = comer
+            - afaldu = cenar
+        meanings:
+          - text: Ane seietan jaikitzen da.
+            options:
+              - Ane se levanta a las seis.
+              - Ane se acuesta a las seis.
+              - Ane se levantó a las seis.
+        blanks:
+          - text: Egunero hamarretan oheratzen ___. = Me acuesto a las diez todos los días.
+            options:
+              - naiz
+              - dut
+        chats:
+          - messages:
+              - Ibai | Zer ordutan oheratzen zara?
+            options:
+              - Hamaiketan oheratzen naiz.
+              - Hamaiketan oheratzen dut.
+              - Hamaika urte ditut.
+        true_false:
+          - passage: Egunero sei eta erdietan jaikitzen naiz. Ez dut gosaltzen.
+            statement: Desayuna todos los días.
+            answer: false
+      - structures: [frequency, habitual]
+        sentences:
+          - Astean behin igeri egiten dut. = Nado una vez a la semana. | Una vez a la semana nado.
+          - Noizean behin mendira joaten naiz. = De vez en cuando voy al monte. | Voy al monte de vez en cuando.
+          - Ez dut inoiz ardoa edaten. | Inoiz ez dut ardoa edaten. = Nunca bebo vino. | No bebo vino nunca.
+          - Haragia gutxitan jaten dut. = Como carne pocas veces. | Pocas veces como carne.
+          - Mikelek asko lan egiten du. = Mikel trabaja mucho.
+          - Amonak bakarrik bazkaltzen du. = La abuela come sola. | Mi abuela come sola.
+          - Askotan igeri egiten duzu? = ¿Nadas a menudo? | ¿Nada usted a menudo?
+          - Asko lo egiten dut. = Duermo mucho.
+        pairs:
+          - - ez… inoiz = nunca
+            - noizean behin = de vez en cuando
+            - gutxitan = pocas veces
+            - askotan = a menudo
+            - egunero = todos los días
+            - astean behin = una vez a la semana
+        meanings:
+          - text: Noizean behin kafea hartzen dut.
+            options:
+              - De vez en cuando tomo café.
+              - Nunca tomo café.
+              - Tomo café todos los días.
+        blanks:
+          - text: Ez dut ___ kafea hartzen. = Nunca tomo café.
+            options:
+              - inoiz
+              - asko
+        chats:
+          - messages:
+              - Alaitz | Askotan igeri egiten duzu?
+            options:
+              - Bai, astean behin.
+              - Bai, atzo.
+              - Ez, bihar.
+        true_false:
+          - passage: Nerea egunero hondartzara joaten da. Asko igeri egiten du.
+            statement: Nerea nada poco.
+            answer: false
+      - structures: [health-centre]
+        sentences:
+          - Osasun-etxera noa. = Voy al centro de salud.
+          - Hitzordua eskatu dut. = He pedido cita. | Pedí cita.
+          - Medikuak errezeta bat idatzi du. = El médico ha escrito una receta. | La médica ha escrito una receta.
+          - Farmazian botika erosiko dut. = Compraré la medicina en la farmacia. | Voy a comprar la medicina en la farmacia. | Compraré el medicamento en la farmacia.
+          - Pilula bat hartu, mesedez. = Tómate una pastilla, por favor. | Tome una pastilla, por favor.
+          - Eseri, mesedez. = Siéntate, por favor. | Siéntese, por favor.
+          - Amonak sendabelarrak hartzen ditu. = La abuela toma plantas medicinales. | Mi abuela toma plantas medicinales.
+          - Jonek besoa hautsi du. = Jon se ha roto el brazo. | Jon se rompió el brazo.
+        pairs:
+          - - osasun-etxea = el centro de salud
+            - botika = la medicina
+            - pilula = la pastilla
+            - hitzordua = la cita
+            - errezeta = la receta
+            - sendabelarra = la planta medicinal
+        meanings:
+          - text: Hitzordua daukat osasun-etxean.
+            options:
+              - Tengo cita en el centro de salud.
+              - Tengo una receta del centro de salud.
+              - Trabajo en el centro de salud.
+        blanks:
+          - text: Osasun-etxean hitzordua ___ dut. = He pedido cita en el centro de salud.
+            options:
+              - eskatu
+              - eseri
+        chats:
+          - messages:
+              - Erizaina | Egun on! Eseri, mesedez. Zer daukazu?
+            options:
+              - Eztula daukat.
+              - Eztula nago.
+              - Eseri naiz.
+        true_false:
+          - passage: Gaur osasun-etxera joan naiz. Gero farmazian pilulak erosi ditut.
+            statement: Ha comprado pastillas.
+            answer: true
+  - type: lesson
+    title:
+      es: Si tienes fiebre…
+      eu: Sukarra baduzu…
+    lessons:
+      - structures: [norengana]
+        sentences:
+          - Medikuarengana joan behar duzu. = Tienes que ir al médico. | Debes ir al médico. | Tiene que ir al médico.
+          - Bihar zuregana etorriko naiz. = Mañana vendré a verte. | Mañana iré a verte.
+          - Ama medikuarengana doa. = Mi madre va al médico. | Mamá va al médico.
+          - Erizainarengana joango gara. = Iremos a la enfermera. | Iremos al enfermero. | Vamos a ir a la enfermera.
+          - Umea niregana etorri da. = El niño ha venido hacia mí. | La niña ha venido hacia mí. | El niño vino hacia mí.
+          - Osasun-etxera joango naiz, medikuarengana. = Iré al centro de salud, al médico. | Voy a ir al centro de salud, al médico.
+          - Nora zoaz? Medikuarengana. = ¿Adónde vas? Al médico. | ¿A dónde vas? Al médico.
+          - Amarengana noa. = Voy a ver a mi madre. | Voy a casa de mi madre.
+        blanks:
+          - text: Bihar ___ joango naiz. = Mañana iré al médico.
+            options:
+              - medikuarengana
+              - medikura
+          - text: Bihar ___ etorriko zara? = ¿Vendrás a verme mañana?
+            options:
+              - niregana
+              - nirekin
+        meanings:
+          - text: Gaur erizainarengana joan naiz.
+            options:
+              - Hoy he ido a la enfermera.
+              - Hoy he ido al hospital.
+              - Hoy ha venido la enfermera.
+        chats:
+          - messages:
+              - Josu | Hankako mina daukat.
+            options:
+              - Medikuarengana joan behar duzu.
+              - Medikura joan behar duzu.
+              - Medikuarengana nator.
+        true_false:
+          - passage: Aitona gaixo dago. Gaur bere medikuarengana joango da.
+            statement: El abuelo irá hoy al médico.
+            answer: true
+      - structures: [ta-da-participle]
+        sentences:
+          - Mikelek hanka hautsi du. = Mikel se ha roto la pierna. | Mikel se rompió la pierna.
+          - Hanka hautsita dauka. = Tiene la pierna rota.
+          - Besoa hautsita daukat. = Tengo el brazo roto.
+          - Amona eserita dago. = La abuela está sentada. | Mi abuela está sentada.
+          - Eserita zaude? = ¿Estás sentado? | ¿Estás sentada? | ¿Está usted sentado? | ¿Está usted sentada?
+          - Gosalduta nator. = Vengo desayunado. | Vengo desayunada.  # TODO(revisión-nativa): «gosalduta etorri» (venir desayunado), comprobar naturalidad
+          - Hatza moztuta daukat. = Tengo el dedo cortado.
+          - Telefonoa hautsita dago. = El teléfono está roto. | El móvil está roto.
+        blanks:
+          - text: Hanka ___ daukat. = Tengo la pierna rota.
+            options:
+              - hautsita
+              - hautsi
+        meanings:
+          - text: Umeak besoa hautsita dauka.
+            options:
+              - El niño tiene el brazo roto.
+              - El niño se romperá el brazo.
+              - El niño tiene el brazo cansado.
+        chats:
+          - messages:
+              - Leire | Zer daukazu eskuan?
+            options:
+              - Hatza moztuta daukat.
+              - Hatza moztu daukat.
+              - Hatza moztuko naiz.
+        true_false:
+          - passage: Atzo Gorkak oina hautsi du. Orain etxean dago, eserita.
+            statement: Gorka está de pie en el trabajo.
+            answer: false
+      - structures: [ba-conditional]
+        sentences:
+          - Sukarra baduzu, etxean geratu. = Si tienes fiebre, quédate en casa. | Si tiene fiebre, quédese en casa.
+          - Buruko mina badaukazu, pilula bat hartu. = Si te duele la cabeza, tómate una pastilla. | Si le duele la cabeza, tómese una pastilla.
+          - Nekatuta bazaude, goiz oheratu. = Si estás cansado, acuéstate pronto. | Si estás cansada, acuéstate pronto. | Si está cansado, acuéstese pronto.
+          - Gaixo bazaude, medikuarengana joan. = Si estás enfermo, ve al médico. | Si estás enferma, ve al médico. | Si está enfermo, vaya al médico.
+          - Eztula baduzu, ura edan. = Si tienes tos, bebe agua. | Si tiene tos, beba agua.
+          - Hotzeria badaukazu, sendabelarrak hartu. = Si tienes un resfriado, toma plantas medicinales. | Si estás resfriado, toma plantas medicinales. | Si tiene un resfriado, tome plantas medicinales.
+          - Hortzetako mina baduzu, hitzordua eskatu. = Si te duelen las muelas, pide cita. | Si le duelen las muelas, pida cita.
+          - Bizkarreko mina badaukazu, igeri egin. = Si te duele la espalda, nada. | Si le duele la espalda, nade.
+        blanks:
+          - text: Sukarra ___, medikuarengana joan. = Si tienes fiebre, ve al médico.
+            options:
+              - baduzu
+              - duzu
+        meanings:
+          - text: Nekatuta bazaude, eseri.
+            options:
+              - Si estás cansado, siéntate.
+              - Estás cansado, siéntate.
+              - Si estás cansado, acuéstate.
+        chats:
+          - messages:
+              - Unai | Sabeleko mina daukat.
+            options:
+              - Mina badaukazu, medikuarengana joan.
+              - Mina daukazu, bihar arte.
+              - Mina badaukazu, ardoa edan.
+        true_false:
+          - passage: Sukarra baduzu, etxean geratu eta ura edan. Ez joan eskolara.
+            statement: Con fiebre hay que ir a la escuela.
+            answer: false
+  - type: lesson
+    title:
+      es: Vida sana
+      eu: Bizitza osasuntsua
+    lessons:
+      - structures: [habitual, frequency]
+        sentences:
+          - Zer ordutan jaikitzen zara egunero? = ¿A qué hora te levantas todos los días? | ¿A qué hora se levanta usted todos los días?
+          - Seietan jaikitzen naiz eta dutxatzen naiz. = Me levanto a las seis y me ducho.
+          - Gosaltzen duzu? = ¿Desayunas? | ¿Desayuna usted?
+          - Bai, kafea eta ogia gosaltzen ditut. = Sí, desayuno café y pan. | Sí, desayuno café con pan.
+          - Noizean behin igeri egiten dut. = De vez en cuando nado. | Nado de vez en cuando.
+          - Gauean asko afaltzen duzu? = ¿Cenas mucho por la noche? | ¿Cena usted mucho por la noche?
+        chats:
+          - messages:
+              - Medikua | Asko lo egiten duzu?
+              - Irati | Ez, gutxi. Seietan jaikitzen naiz.
+              - Medikua | Eta zer ordutan oheratzen zara?
+            options:
+              - Gaueko ordu batean.
+              - Gaueko ordu bata.
+              - Goizeko zazpietan jaiki naiz.
+          - messages:
+              - Medikua | Ardoa edaten duzu?
+            options:
+              - Ez, ez dut inoiz ardoa edaten.
+              - Ez, ez naiz inoiz ardoa edaten.
+              - Bai, bihar edan dut.
+        true_false:
+          - passage: Peio egunero bostetan jaikitzen da. Gero dutxatzen da eta gosaltzen du.
+            statement: Peio se levanta a las cinco.
+            answer: true
+          - passage: Miren gutxitan joaten da medikuarengana. Ez du inoiz botikarik hartzen.
+            statement: Miren toma medicinas a menudo.
+            answer: false
+        meanings:
+          - text: Gutxitan oheratzen naiz berandu.
+            options:
+              - Pocas veces me acuesto tarde.
+              - Nunca me acuesto tarde.
+              - A menudo me acuesto tarde.
+      - structures: [ba-conditional, norengana]
+        sentences:
+          - Zer egin behar dut? = ¿Qué tengo que hacer? | ¿Qué debo hacer?
+          - Pilula hauek hartu, goizean eta gauean. = Toma estas pastillas, por la mañana y por la noche. | Tome estas pastillas, por la mañana y por la noche.
+          - Hemen duzu errezeta. = Aquí tiene la receta. | Aquí tienes la receta.
+          - Sukarra baduzu, deitu. = Si tienes fiebre, llama. | Si tiene fiebre, llame.
+          - Datorren astean hitzordua eskatu, mesedez. = La semana que viene pide cita, por favor. | La semana que viene pida cita, por favor.
+          - Eskerrik asko. Agur! = Gracias. ¡Adiós! | Muchas gracias. ¡Adiós!
+        chats:
+          - messages:
+              - Medikua | Eseri, mesedez. Zer daukazu?
+              - Asier | Besoko min handia daukat.
+              - Medikua | Besoa hautsita daukazu.
+            options:
+              - Eta zer egin behar dut?
+              - Eta zer egin behar duzu?
+              - Ez horregatik.
+          - messages:
+              - Asier | Bihar etorri behar dut?
+            options:
+              - Mina badaukazu, etorri.
+              - Mina daukazu, etorri naiz.
+              - Bai, atzo etorri zara.
+        true_false:
+          - passage: Buruko mina badaukazu, pilula bat hartu. Sukarra baduzu, medikuarengana joan.
+            statement: Con fiebre hay que ir al médico.
+            answer: true
+          - passage: Medikuak errezeta idatzi du. Nik farmaziara eramango dut.
+            statement: El médico llevará la receta a la farmacia.
+            answer: false
+        blanks:
+          - text: Hemen duzu ___. = Aquí tienes la receta.
+            options:
+              - errezeta
+              - hitzordua
+      - structures: [habitual, ta-da-participle]
+        sentences:
+          - Nire amonak laurogeita hamar urte ditu. = Mi abuela tiene noventa años.
+          - Egunero goiz jaikitzen da. = Se levanta pronto todos los días. | Todos los días se levanta temprano. | Se levanta temprano todos los días.
+          - Astean behin hondartzara joaten da eta igeri egiten du. = Una vez a la semana va a la playa y nada. | Va a la playa una vez a la semana y nada.
+          - Gutxitan hartzen ditu pilulak. = Pocas veces toma pastillas. | Toma pastillas pocas veces.
+          - Sendabelarrak nahiago ditu. = Prefiere las plantas medicinales.
+          - Arratsaldean eserita irakurtzen du. = Por la tarde lee sentada.
+        chats:
+          - messages:
+              - June | Zure amona oso ondo dago!
+              - Eneko | Bai, egunero ibiltzen da.
+              - June | Bakarrik?
+            options:
+              - Ez, lagunekin.
+              - Ez, lagunak.
+              - Bai, bihar.
+          - messages:
+              - Eneko | Eta zuk, igeri egiten duzu?
+            options:
+              - Bai, noizean behin.
+              - Bai, atzo egingo dut.
+              - Bai, noizean behin nago.
+        true_false:
+          - passage: Amona hamarretan oheratzen da. Ez du inoiz kafea hartzen.
+            statement: La abuela toma café por la noche.
+            answer: false
+          - passage: Nire aitonak hanka hautsita dauka. Etxean dago, eserita.
+            statement: El abuelo tiene la pierna rota.
+            answer: true
+        meanings:
+          - text: Ez naiz inoiz berandu jaikitzen.
+            options:
+              - Nunca me levanto tarde.
+              - A menudo me levanto tarde.
+              - Hoy me he levantado tarde.
+  - type: story
+    title:
+      es: "Historia: en el centro de salud"
+      eu: "Istorioa: osasun-etxean"
+    story:
+      title: Osasun-etxean
+      lines:
+        - Erizaina | Egun on! Hitzordua daukazu? = ¡Buenos días! ¿Tiene cita?
+        - Kepa | Bai, hamarretan, medikuarekin. Kepa Arana naiz. = Sí, a las diez, con el médico. Soy Kepa Arana.
+        - Erizaina | Ondo. Eseri, mesedez. = Bien. Siéntese, por favor.
+        - Medikua | Kaixo, Kepa. Zer daukazu? = Hola, Kepa. ¿Qué le pasa?
+        - Kepa | Bizkarreko mina daukat. Gauean ez dut lo egiten. = Me duele la espalda. Por la noche no duermo.
+        - Medikua | Zer egiten duzu egunero? = ¿Qué hace usted todos los días?
+        - Kepa | Zortzi orduz lan egiten dut, eserita. = Trabajo ocho horas, sentado.
+        - Medikua | Igeri egiten duzu? = ¿Nada usted?
+        - Kepa | Ez, inoiz ez. = No, nunca.
+        - Medikua | Mina baduzu, pilula bat hartu. Eta astean behin igeri egin, mesedez. = Si le duele, tómese una pastilla. Y nade una vez a la semana, por favor.
+        - Kepa | Ondo. Errezeta behar dut? = Bien. ¿Necesito receta?
+        - Medikua | Bai, hemen duzu. Datorren hilabetean hitzordua eskatu. = Sí, aquí la tiene. Pida cita para el mes que viene.
+      questions:
+        - afterLine: 2
+          prompt: ¿A qué hora tiene Kepa la cita?
+          options:
+            - A las diez
+            - A las dos
+            - A las doce
+        - afterLine: 6
+          prompt: ¿Cómo trabaja Kepa?
+          options:
+            - Sentado
+            - De pie
+            - Caminando
+        - afterLine: 11
+          prompt: ¿Qué le recomienda el médico, además de la pastilla?
+          options:
+            - Nadar una vez a la semana
+            - Dormir más horas
+            - Dejar de trabajar
+  - type: review
+  - type: legendary

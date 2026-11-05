@@ -1,0 +1,33 @@
+# Course index. Units are listed in path order; tools/build_content.py writes course.json from it
+# and adds a section review to the last unit of each section.
+id: eu-es
+learningLanguage: eu
+fromLanguage: es
+title:
+  es: Euskera para hispanohablantes
+  eu: Euskara gaztelaniaz
+sections:
+  - id: s1
+    title: {es: Primeros pasos, eu: Lehen urratsak}
+    description:
+      es: Saludar, presentarse, ubicarse en el pueblo y hablar de la familia.
+      eu: Agurtu, aurkeztu, herrian kokatu eta familiaz hitz egin.
+    units: [u01-1, u01-2, u02-1, u02-2, u03-1, u03-2]
+  - id: s2
+    title: {es: En casa y en la calle, eu: Etxean eta kalean}
+    description:
+      es: Describir la casa, hablar de comida y hacer compras.
+      eu: Etxea deskribatu, janariaz hitz egin eta erosketak egin.
+    units: [u04-1, u04-2, u05-1, u05-2, u06-1, u06-2]
+  - id: s3
+    title: {es: Día a día, eu: Egunez egun}
+    description:
+      es: Contar lo que has hecho y harás, hablar de la salud y cuidar el entorno.
+      eu: Egindakoa eta egingo duzuna kontatu, osasunaz hitz egin eta ingurumena zaindu.
+    units: [u07-1, u07-2, u08-1, u08-2, u09-1, u09-2]
+  - id: s4
+    title: {es: Mirando al mundo, eu: Mundura begira}
+    description:
+      es: Comparar lugares, hablar del trabajo y del tiempo libre.
+      eu: Lekuak alderatu, lanaz eta aisialdiaz hitz egin.
+    units: [u10-1, u10-2, u11-1, u11-2, u12-1, u12-2]

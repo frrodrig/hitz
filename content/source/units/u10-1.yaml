@@ -1,0 +1,438 @@
+# Unit 10.1 · Hiria ala herria? — comparatives (baino …-ago), gehiago/gutxiago, hain/hainbeste, superlative.
+id: u10-1
+section: s4
+bookUnit: 10
+title:
+  es: ¿Ciudad o pueblo?
+  eu: Hiria ala herria?
+goals:
+  - es: Describir una ciudad o un pueblo y sus servicios.
+    eu: Hiri edo herri bat eta bere zerbitzuak deskribatu.
+  - es: Comparar la vida en la ciudad y en el pueblo.
+    eu: Hirian eta herrian bizitzea konparatu.
+  - es: Hablar de las ventajas y desventajas de cada lugar.
+    eu: Leku bakoitzaren alde onak eta txarrak aipatu.
+guidebook:
+  sections:
+    - title:
+        es: "Comparar: A B baino …-agoa"
+        eu: "Konparatu: A B baino …-agoa"
+      body:
+        es: Para decir «A es más … que B», se dice «A B baino» + adjetivo con -ago y el artículo -a. El segundo término va antes de «baino». Ojo, «on» (bueno) es irregular, «hobea» (mejor).
+        eu: «A B baino …-agoa da» egitura erabiltzen da. Bigarren elementua «baino» hitzaren aurretik doa. Kontuz, «on» irregularra da, «hobea».
+      examples:
+        - eu: Bilbo Tolosa baino handiagoa da.
+          es: Bilbao es más grande que Tolosa.
+        - eu: Herria hiria baino lasaiagoa da.
+          es: El pueblo es más tranquilo que la ciudad.
+    - title:
+        es: Más y menos cosas
+        eu: Gehiago eta gutxiago
+      body:
+        es: Con nombres se usa «gehiago» (más) o «gutxiago» (menos) detrás del nombre. Para comparar lugares, el segundo va con -n y «baino» (herrian baino).
+        eu: Izenekin «gehiago» edo «gutxiago» erabiltzen da, izenaren atzean. Lekuak konparatzeko, bigarrena -n eta «baino» hitzarekin doa (herrian baino).
+      examples:
+        - eu: Hirian zerbitzu gehiago daude.
+          es: En la ciudad hay más servicios.
+        - eu: Bilbon herrian baino museo gehiago daude.
+          es: En Bilbao hay más museos que en el pueblo.
+    - title:
+        es: "Tan, tanto: hain, hainbeste"
+        eu: "Hain, hainbeste"
+      body:
+        es: «Hain» va delante de un adjetivo (hain handia, tan grande). «Hainbeste» va delante de un nombre (hainbeste autobus, tantos autobuses).
+        eu: «Hain» adjektiboaren aurrean doa (hain handia). «Hainbeste» izenaren aurrean doa (hainbeste autobus).
+      examples:
+        - eu: Herria ez da hain zaratatsua.
+          es: El pueblo no es tan ruidoso.
+        - eu: Hirian hainbeste autobus daude!
+          es: ¡En la ciudad hay tantos autobuses!
+    - title:
+        es: "El más …: superlativo"
+        eu: "Superlatiboa"
+      body:
+        es: «El más …» se forma con -ena (lasaiena, el más tranquilo). Delante puede ir el nombre con -rik (herririk lasaiena) y el lugar con -ko (Euskal Herriko).
+        eu: Superlatiboa -ena atzizkiarekin egiten da (lasaiena). Aurrean izena -rik atzizkiarekin joan daiteke (herririk lasaiena), eta lekua -ko atzizkiarekin.
+      examples:
+        - eu: Bilbo da Euskal Herriko hiririk handiena.
+          es: Bilbao es la ciudad más grande del País Vasco.
+        - eu: Museo hau da interesgarriena.
+          es: Este museo es el más interesante.
+levels:
+  - type: lesson
+    title:
+      es: La ciudad y el pueblo
+      eu: Hiria eta herria
+    lessons:
+      - structures: [nolakoa]
+        sentences:
+          - Nire herria oso lasaia da. = Mi pueblo es muy tranquilo.
+          - Hiria zaratatsua da. = La ciudad es ruidosa.
+          - Kale hau garbia da. = Esta calle está limpia. | Esta calle es limpia.
+          - Parke hori zikina da. = Ese parque está sucio. | Ese parque es sucio.
+          - Herria segurua da. = El pueblo es seguro.
+          - Kale hori arriskutsua da gauez. = Esa calle es peligrosa de noche. | Por la noche esa calle es peligrosa.
+          - Udaletxea itsusia da. = El ayuntamiento es feo.
+          - Museoa interesgarria da. = El museo es interesante.
+        pairs:
+          - - lasai = tranquilo
+            - zaratatsu = ruidoso
+            - garbi = limpio
+            - zikin = sucio
+            - seguru = seguro
+            - arriskutsu = peligroso
+        meanings:
+          - text: Hiria zaratatsua da.
+            options:
+              - La ciudad es ruidosa.
+              - La ciudad es tranquila.
+              - El pueblo es ruidoso.
+        blanks:
+          - text: Kale hau oso ___ da. = Esta calle es muy segura.
+            options:
+              - segurua
+              - arriskutsua
+        chats:
+          - messages:
+              - Ibai | Nolakoa da zure herria?
+            options:
+              - Oso lasaia da.
+              - Bilbo naiz.
+              - Autobusa da.
+        true_false:
+          - passage: Nire herria txikia eta lasaia da. Kaleak garbiak dira.
+            statement: El pueblo es ruidoso.
+            answer: false
+      - structures: [nolakoa, egon-present]
+        sentences:
+          - Zinema hau oso erosoa da. = Este cine es muy cómodo.
+          - Antzokia plazan dago. = El teatro está en la plaza.
+          - Museo hau aspergarria da. = Este museo es aburrido.
+          - Herrian kiroldegi bat dago. = En el pueblo hay un polideportivo. | Hay un polideportivo en el pueblo.
+          - Kiroldegian igerileku handi bat dago. = En el polideportivo hay una piscina grande. | Hay una piscina grande en el polideportivo.
+          - Antzoki hau ez da itsusia, oso polita da! = ¡Este teatro no es feo, es muy bonito!
+          - Zinema eta antzokia gustatzen zaizkit. = Me gustan el cine y el teatro.
+          - Herriko museoa oso interesgarria da. = El museo del pueblo es muy interesante.
+        pairs:
+          - - zinema = cine
+            - antzoki = teatro
+            - museo = museo
+            - kiroldegi = polideportivo
+            - igerileku = piscina
+            - eroso = cómodo
+        meanings:
+          - text: Museo hau aspergarria da.
+            options:
+              - Este museo es aburrido.
+              - Este museo es interesante.
+              - Este cine es aburrido.
+        blanks:
+          - text: Kiroldegian ___ handi bat dago. = En el polideportivo hay una piscina grande.
+            options:
+              - igerileku
+              - museo
+        chats:
+          - messages:
+              - Izaro | Antzokia interesgarria da?
+            options:
+              - Bai, oso interesgarria!
+              - Bai, kiroldegian naiz.
+              - Ez, autobusa da.
+        true_false:
+          - passage: Gure herrian zinema bat eta kiroldegi bat daude. Ez dago museorik.
+            statement: En el pueblo hay un museo.
+            answer: false
+      - structures: [egon-present]
+        sentences:
+          - Hirian garraio asko dago. = En la ciudad hay mucho transporte. | Hay mucho transporte en la ciudad.
+          - Autobusa plazan dago. = El autobús está en la plaza.
+          - Bilbon metroa dago. = En Bilbao hay metro. | Hay metro en Bilbao.
+          - Herrian ez dago metrorik. = En el pueblo no hay metro. | No hay metro en el pueblo.
+          - Trena geltokian dago. = El tren está en la estación.
+          - Aparkalekua ospitalearen ondoan dago. = El aparcamiento está al lado del hospital.
+          - Hirian zerbitzu asko daude. = En la ciudad hay muchos servicios. | Hay muchos servicios en la ciudad.
+          - Egunero autobusa hartzen dut. | Autobusa hartzen dut egunero. = Todos los días cojo el autobús. | Cojo el autobús todos los días. | Tomo el autobús todos los días.
+        pairs:
+          - - garraio = transporte
+            - autobus = autobús
+            - metro = metro
+            - tren = tren
+            - aparkaleku = aparcamiento
+            - zerbitzu = servicio
+        meanings:
+          - text: Herrian ez dago metrorik.
+            options:
+              - En el pueblo no hay metro.
+              - En el pueblo hay metro.
+              - En la ciudad no hay metro.
+        blanks:
+          - text: Bilbon ___ dago. = En Bilbao hay metro.
+            options:
+              - metroa
+              - metrorik
+        chats:
+          - messages:
+              - Kepa | Non dago aparkalekua?
+            options:
+              - Kiroldegiaren ondoan.
+              - Autobusa hartzen dut.
+              - Bai, metroa.
+        true_false:
+          - passage: Nire herrian ez dago trenik. Autobusa hartzen dut egunero.
+            statement: En su pueblo hay tren.
+            answer: false
+  - type: lesson
+    title:
+      es: Comparar
+      eu: Baino handiagoa
+    lessons:
+      - structures: [comparative-ago]
+        sentences:
+          - Hiria herria baino zaratatsuagoa da. = La ciudad es más ruidosa que el pueblo.
+          - Herria hiria baino lasaiagoa da. = El pueblo es más tranquilo que la ciudad.
+          - Bilbo Tolosa baino handiagoa da. = Bilbao es más grande que Tolosa.
+          - Metroa autobusa baino erosoagoa da. = El metro es más cómodo que el autobús.
+          - Kale hau hori baino garbiagoa da. = Esta calle está más limpia que esa. | Esta calle es más limpia que esa.
+          - Museoa zinema baino interesgarriagoa da? = ¿El museo es más interesante que el cine? | ¿Es el museo más interesante que el cine?
+          - Herria hiria baino seguruagoa da. = El pueblo es más seguro que la ciudad.
+          - Eibar Bilbo baino txikiagoa da. = Eibar es más pequeño que Bilbao.
+        blanks:
+          - text: Hiria herria ___ zaratatsuagoa da. = La ciudad es más ruidosa que el pueblo.
+            options:
+              - baino
+              - bezain
+          - text: Herria hiria baino ___ da. = El pueblo es más tranquilo que la ciudad.
+            options:
+              - lasaiagoa
+              - lasaia
+        meanings:
+          - text: Metroa autobusa baino erosoagoa da.
+            options:
+              - El metro es más cómodo que el autobús.
+              - El autobús es más cómodo que el metro.
+              - El metro es tan cómodo como el autobús.
+        chats:
+          - messages:
+              - Maialen | Zer da erosoagoa, trena ala autobusa?
+            options:
+              - Trena autobusa baino erosoagoa da.
+              - Trena geltokian dago.
+              - Bai, autobusa.
+        true_false:
+          - passage: Hondarribia Irun baino txikiagoa da. Irun handiagoa da.
+            statement: Irun es más pequeño que Hondarribia.
+            answer: false
+      - structures: [gehiago-gutxiago, hain-hainbeste]
+        sentences:
+          - Hirian zerbitzu gehiago daude. = En la ciudad hay más servicios. | Hay más servicios en la ciudad.
+          - Herrian autobus gutxiago daude. = En el pueblo hay menos autobuses. | Hay menos autobuses en el pueblo.
+          - Bilbon herrian baino museo gehiago daude. = En Bilbao hay más museos que en el pueblo.
+          - Herria ez da hain zaratatsua. = El pueblo no es tan ruidoso.
+          - Hiria hain handia da! = ¡La ciudad es tan grande!
+          - Hirian hainbeste autobus daude! = ¡En la ciudad hay tantos autobuses! | ¡Hay tantos autobuses en la ciudad!
+          - Ez dut hainbeste diru. = No tengo tanto dinero.
+          - Herrian aparkaleku gehiago behar ditugu. = En el pueblo necesitamos más aparcamientos. | Necesitamos más aparcamientos en el pueblo.
+        blanks:
+          - text: Herria ez da ___ zaratatsua. = El pueblo no es tan ruidoso.
+            options:
+              - hain
+              - hainbeste
+          - text: Hirian ___ autobus daude! = ¡En la ciudad hay tantos autobuses!
+            options:
+              - hainbeste
+              - hain
+        meanings:
+          - text: Herrian autobus gutxiago daude.
+            options:
+              - En el pueblo hay menos autobuses.
+              - En el pueblo hay más autobuses.
+              - En el pueblo no hay autobuses.
+        chats:
+          - messages:
+              - Aitor | Hirian zerbitzu asko daude?
+            options:
+              - Bai, herrian baino gehiago.
+              - Ez, hain lasaia.
+              - Bai, metroa naiz.
+      - structures: [superlative]
+        sentences:
+          - Bilbo da Euskal Herriko hiririk handiena. = Bilbao es la ciudad más grande del País Vasco. | Bilbao es la ciudad más grande de Euskal Herria.
+          - Hau da herririk lasaiena. = Este es el pueblo más tranquilo.
+          - Museo hau da interesgarriena. = Este museo es el más interesante.
+          - Zein da hiririk zaratatsuena? = ¿Cuál es la ciudad más ruidosa?
+          - Kale hau da herriko zikinena. = Esta calle es la más sucia del pueblo.
+          - Metroa da garraiorik erosoena. = El metro es el transporte más cómodo.
+          - Zinema hau da itsusiena. = Este cine es el más feo.
+          - Hondartza hau da Euskal Herriko politena? = ¿Esta playa es la más bonita del País Vasco? | ¿Es esta la playa más bonita del País Vasco?
+        blanks:
+          - text: Hau da herririk ___. = Este es el pueblo más tranquilo.
+            options:
+              - lasaiena
+              - lasaiagoa
+        meanings:
+          - text: Zein da hiririk zaratatsuena?
+            options:
+              - ¿Cuál es la ciudad más ruidosa?
+              - ¿Cuál es la ciudad más tranquila?
+              - ¿Es ruidosa la ciudad?
+        chats:
+          - messages:
+              - Eneko | Zein da Gipuzkoako hiririk handiena?
+            options:
+              - Donostia da handiena.
+              - Donostia baino handiagoa.
+              - Hain handia!
+        true_false:
+          - passage: Nire herrian hiru hondartza daude. Hondartzarik garbiena eta lasaiena elizaren ondoan dago.
+            statement: La playa más limpia está al lado de la iglesia.
+            answer: true
+  - type: lesson
+    title:
+      es: ¿Dónde se vive mejor?
+      eu: Hiria ala herria?
+    lessons:
+      - structures: [comparative-ago, gehiago-gutxiago]
+        sentences:
+          - Zer nahiago duzu, hiria ala herria? = ¿Qué prefieres, la ciudad o el pueblo? | ¿Qué prefiere usted, la ciudad o el pueblo?
+          - Nahiago dut herria, lasaiagoa delako. = Prefiero el pueblo porque es más tranquilo.
+          - Hirian zerbitzu eta garraio gehiago daude. = En la ciudad hay más servicios y transporte.
+          - Herrian ez dago zinemarik. = En el pueblo no hay cine. | No hay cine en el pueblo.
+          - Hiria interesgarriagoa da. = La ciudad es más interesante.
+          - Hirian aparkalekuak garestiak dira. = En la ciudad los aparcamientos son caros.
+        chats:
+          - messages:
+              - Uxue | Zer nahiago duzu, hiria ala herria?
+              - Asier | Hiria. Hirian zinemak eta antzokiak daude.
+              - Uxue | Eta herria?
+            options:
+              - Herria aspergarriagoa da.
+              - Herria autobusa da.
+              - Hiria hain txikia naiz.
+          - messages:
+              - Asier | Herria hiria baino seguruagoa da?
+            options:
+              - Bai, herria seguruagoa da.
+              - Bai, metroan nago.
+              - Ez, herrian naiz.
+        true_false:
+          - passage: Ane Bilbon bizi da. Bilbon metroa, museoak eta antzokiak daude.
+            statement: Ane vive en un pueblo pequeño.
+            answer: false
+          - passage: Jon herri txiki batean bizi da. Herrian ez dago kiroldegirik, eta igerilekua urrun dago.
+            statement: En el pueblo de Jon no hay polideportivo.
+            answer: true
+        meanings:
+          - text: Nahiago dut herria, lasaiagoa delako.
+            options:
+              - Prefiero el pueblo porque es más tranquilo.
+              - Prefiero la ciudad porque es más tranquila.
+              - El pueblo es menos tranquilo.
+      - structures: [hain-hainbeste, superlative]
+        sentences:
+          - Hiria ez da hain arriskutsua. = La ciudad no es tan peligrosa.
+          - Hainbeste autobus eta tren! = ¡Tantos autobuses y trenes!
+          - Donostiako hondartzarik politena hau da. = La playa más bonita de San Sebastián es esta. | La playa más bonita de Donostia es esta.
+          - Herri hau Gipuzkoako lasaiena da. = Este pueblo es el más tranquilo de Gipuzkoa. | Este pueblo es el más tranquilo de Guipúzcoa.
+          - Igerileku hau hain zikina da! = ¡Esta piscina está tan sucia! | ¡Esta piscina es tan sucia!
+          - Zein da herririk interesgarriena? = ¿Cuál es el pueblo más interesante?
+        chats:
+          - messages:
+              - Haizea | Bilbon hainbeste museo daude!
+              - Julen | Bai. Zein da interesgarriena?
+            options:
+              - Hau da interesgarriena, nire ustez.
+              - Bai, hain zaratatsua.
+              - Autobusa hartzen dut.
+          - messages:
+              - Garazi | Herria hain aspergarria da!
+            options:
+              - Ez, herrian kiroldegi bat eta igerileku bat daude.
+              - Zinema itsusiena naiz.
+              - Bai, metroan nago.
+        true_false:
+          - passage: Bilbo Euskal Herriko hiririk handiena da. Ez da hain arriskutsua.
+            statement: Bilbao es una ciudad muy peligrosa.
+            answer: false
+          - passage: Gure herrian hainbeste aparkaleku daude!
+            statement: En el pueblo hay muchos aparcamientos.
+            answer: true
+        blanks:
+          - text: Hiria ez da ___ arriskutsua. = La ciudad no es tan peligrosa.
+            options:
+              - hain
+              - hainbeste
+      - structures: [comparative-ago, nolakoa]
+        sentences:
+          - Nire herrian kaleak garbiagoak dira. = En mi pueblo las calles están más limpias. | En mi pueblo las calles son más limpias.
+          - Hirian zinemak eta antzokiak daude. = En la ciudad hay cines y teatros. | Hay cines y teatros en la ciudad.
+          - Herria lasaia da, eta hiria zaratatsua. = El pueblo es tranquilo, y la ciudad, ruidosa.
+          - Trena autobusa baino seguruagoa da. = El tren es más seguro que el autobús.
+          - Kiroldegia eskolaren ondoan dago. = El polideportivo está al lado de la escuela.
+          - Herriko igerilekua oso erosoa da. = La piscina del pueblo es muy cómoda.
+        chats:
+          - messages:
+              - Peio | Kaixo, Miren! Nolakoa da zure herria?
+              - Miren | Txikia eta lasaia.
+              - Peio | Eta zerbitzuak?
+            options:
+              - Gutxi daude, hirian gehiago daude.
+              - Autobusa geltokian dago.
+              - Hiria baino lasaiagoa naiz.
+          - messages:
+              - Miren | Eta zu? Hirian bizi zara?
+            options:
+              - Bai, Bilbon bizi naiz.
+              - Bai, metroa hain polita.
+              - Ez, kiroldegian.
+        true_false:
+          - passage: Getxon metroa dago. Metroa autobusa baino erosoagoa da.
+            statement: Para esta persona, el autobús es más cómodo.
+            answer: false
+          - passage: Elizondo herri txikia da. Oso lasaia eta segurua da.
+            statement: Elizondo es un pueblo tranquilo.
+            answer: true
+        meanings:
+          - text: Trena autobusa baino seguruagoa da.
+            options:
+              - El tren es más seguro que el autobús.
+              - El autobús es más seguro que el tren.
+              - El tren es tan seguro como el autobús.
+  - type: story
+    title:
+      es: "Historia: ¿ciudad o pueblo?"
+      eu: "Istorioa: hiria ala herria?"
+    story:
+      title: Hiria ala herria?
+      lines:
+        - Irati | Gorka, zergatik bizi zara herri txiki batean? = Gorka, ¿por qué vives en un pueblo pequeño?
+        - Gorka | Herria hiria baino lasaiagoa delako. = Porque el pueblo es más tranquilo que la ciudad.
+        - Irati | Hiria interesgarriagoa da! Zinemak, museoak, antzokiak… = ¡La ciudad es más interesante! Cines, museos, teatros…
+        - Gorka | Gure herrian zinema bat dago, eta kiroldegi bat. = En nuestro pueblo hay un cine y un polideportivo.
+        - Irati | Eta garraioa? Hirian autobus eta tren gehiago daude. = ¿Y el transporte? En la ciudad hay más autobuses y trenes.
+        - Gorka | Bai, herrian garraio gutxiago dago. = Sí, en el pueblo hay menos transporte.
+        - Gorka | Herria seguruagoa eta garbiagoa da. = El pueblo es más seguro y más limpio.
+        - Irati | Hiria ez da hain arriskutsua! = ¡La ciudad no es tan peligrosa!
+        - Gorka | Nire herria Gipuzkoako herririk politena da. = Mi pueblo es el pueblo más bonito de Gipuzkoa.
+        - Gorka | Zatoz bihar, eta ikusiko duzu! = ¡Ven mañana y lo verás!
+        - Irati | Ados, bihar arte! = ¡De acuerdo, hasta mañana!
+      questions:
+        - afterLine: 1
+          prompt: ¿Por qué vive Gorka en un pueblo?
+          options:
+            - Porque es más tranquilo
+            - Porque es más barato
+            - Porque hay metro
+        - afterLine: 5
+          prompt: ¿Dónde hay más transporte?
+          options:
+            - En la ciudad
+            - En el pueblo
+            - Igual en los dos sitios
+        - afterLine: 10
+          prompt: ¿Qué hará Irati mañana?
+          options:
+            - Ir al pueblo de Gorka
+            - Ir al cine en la ciudad
+            - Coger el metro
+  - type: review
+  - type: legendary

@@ -1,0 +1,466 @@
+# Unit 7.2 · Zer egingo duzu? — future aspect -KO/-GO, -T(Z)EN ARI IZAN, present of the synthetic
+# verbs JOAN, ETORRI, IBILI (and EGON, EDUKI), word order in questions and answers, months.
+id: u07-2
+section: s3
+bookUnit: 7
+title:
+  es: ¿Qué harás?
+  eu: Zer egingo duzu?
+goals:
+  - es: Contar tus planes y preguntar por los de otra persona.
+    eu: Zure asmoak kontatu eta besteenak galdetu.
+  - es: Decir qué está haciendo alguien en este momento.
+    eu: Norbait une honetan zer egiten ari den esan.
+  - es: Decir adónde vas y de dónde vienes, y situar los planes en los meses del año.
+    eu: Nora zoazen eta nondik zatozen esan, eta asmoak urteko hilabeteetan kokatu.
+guidebook:
+  sections:
+    - title:
+        es: "El futuro: joango naiz, egingo dut"
+        eu: "Geroa: joango naiz, egingo dut"
+      body:
+        es: Para el futuro, el participio lleva -go si acaba en -n (joan → joango, egin → egingo, jan → jango) y -ko en los demás casos (etorri → etorriko, erosi → erosiko). El auxiliar es el mismo que en el pasado (naiz, dut…).
+        eu: Geroa adierazteko, partizipioak -go hartzen du -n letraz bukatzen bada (joan → joango, egin → egingo, jan → jango) eta -ko gainerakoetan (etorri → etorriko, erosi → erosiko). Laguntzailea lehen bezalakoa da (naiz, dut…).
+      examples:
+        - eu: Bihar Bilbora joango naiz.
+          es: Mañana iré a Bilbao.
+        - eu: Datorren astean Ane etorriko da.
+          es: La semana que viene vendrá Ane.
+        - eu: Etzi zer egingo duzu?
+          es: ¿Qué harás pasado mañana?
+    - title:
+        es: Preguntar y responder
+        eu: Galdetu eta erantzun
+      body:
+        es: La palabra interrogativa va justo delante del verbo (Nora joango zara?). En la respuesta, lo nuevo va delante del verbo (Gasteizera joango naiz). En negativa, «ez» y el auxiliar pasan delante y el participio va al final.
+        eu: Galdetzailea aditzaren aurretik doa (Nora joango zara?). Erantzunean, informazio berria aditzaren aurretik doa (Gasteizera joango naiz). Ezezkoan, «ez» eta laguntzailea aurretik doaz, eta partizipioa amaieran.
+      examples:
+        - eu: Bihar etorriko zara? Bai, etorriko naiz.
+          es: ¿Vendrás mañana? Sí, vendré.
+        - eu: Ez, ez naiz etorriko.
+          es: No, no vendré.
+        - eu: Ez dut kafea hartuko.
+          es: No tomaré café.
+    - title:
+        es: "Ahora mismo: -tzen ari naiz"
+        eu: "Orain bertan: -tzen ari naiz"
+      body:
+        es: Para decir lo que estás haciendo ahora, el verbo lleva -tzen o -ten y le sigue «ari» + naiz, zara, da… Se usa siempre naiz/zara/da, aunque el verbo tenga objeto.
+        eu: Orain egiten ari zarena esateko, aditzak -tzen edo -ten hartzen du, eta ondoren «ari» + naiz, zara, da… Beti naiz/zara/da erabiltzen da, aditzak objektua izan arren.
+      examples:
+        - eu: Zer egiten ari zara?
+          es: ¿Qué estás haciendo?
+        - eu: Afaria prestatzen ari naiz.
+          es: Estoy preparando la cena.
+        - eu: Umeak lo egiten ari dira.
+          es: Los niños están durmiendo.
+    - title:
+        es: "Voy, vengo, ando: noa, nator, nabil"
+        eu: "Noa, nator, nabil"
+      body:
+        es: Algunos verbos tienen presente propio, como egon (nago) y eduki (daukat). Joan → noa, zoaz, doa; etorri → nator, zatoz, dator; ibili → nabil, zabiltza, dabil. Los meses llevan -(e)an como los días (abuztuan).
+        eu: Aditz batzuek orainaldi propioa dute, egon (nago) eta eduki (daukat) bezala. Joan → noa, zoaz, doa; etorri → nator, zatoz, dator; ibili → nabil, zabiltza, dabil. Hilabeteek -(e)an hartzen dute, egunek bezala (abuztuan).
+      examples:
+        - eu: Nora zoaz? Apaindegira noa.
+          es: ¿Adónde vas? Voy a la peluquería.
+        - eu: Nondik zatoz? Etxetik nator.
+          es: ¿De dónde vienes? Vengo de casa.
+        - eu: Abuztuan Parisera joango gara.
+          es: En agosto iremos a París.
+levels:
+  - type: lesson
+    title:
+      es: Mañana y pasado mañana
+      eu: Bihar eta etzi
+    lessons:
+      - structures: [future-ko, time-markers]
+        sentences:
+          - Bihar Bilbora joango naiz. = Mañana iré a Bilbao. | Mañana voy a ir a Bilbao. | Mañana voy a Bilbao.
+          - Etzi amarekin bazkalduko dut. = Pasado mañana comeré con mi madre. | Pasado mañana voy a comer con mi madre.
+          - Datorren astean Ane etorriko da. = La semana que viene vendrá Ane. | La próxima semana vendrá Ane. | Ane vendrá la semana que viene.
+          - Aurten Frantziara bidaiatuko dugu. = Este año viajaremos a Francia. | Este año vamos a viajar a Francia.
+          - Gaur gauean etxean afalduko dugu. = Esta noche cenaremos en casa. | Esta noche vamos a cenar en casa.
+          - Bihar goizean ogia erosiko dut. = Mañana por la mañana compraré pan. | Mañana por la mañana voy a comprar pan.
+          - Zer egingo duzu bihar? | Bihar zer egingo duzu? = ¿Qué harás mañana? | ¿Qué vas a hacer mañana? | ¿Qué hará usted mañana? | ¿Qué va a hacer usted mañana?
+          - Datorren urtean Londresen ikasiko dut. = El año que viene estudiaré en Londres. | El próximo año estudiaré en Londres. | El año que viene voy a estudiar en Londres.
+        pairs:
+          - - bihar = mañana
+            - etzi = pasado mañana
+            - datorren astean = la semana que viene
+            - aurten = este año
+            - orain = ahora
+        meanings:
+          - text: Etzi etorriko naiz.
+            options:
+              - Vendré pasado mañana.
+              - Vine anteayer.
+              - Vendré mañana.
+        blanks:
+          - text: Etzi Gasteizera joango ___. = Pasado mañana iré a Vitoria.
+            options:
+              - naiz
+              - dut
+        chats:
+          - messages:
+              - Amaia | Zer egingo duzu bihar?
+            options:
+              - Mendira joango naiz.
+              - Mendira joan naiz.
+              - Mendira joango dut.
+        true_false:
+          - passage: Bihar Donostiara joango naiz. Etzi etxera itzuliko naiz.
+            statement: Volverá a casa pasado mañana.
+            answer: true
+      - structures: [future-ko]
+        sentences:
+          - Gaur gauean arraina jango dugu. = Esta noche comeremos pescado. | Esta noche vamos a comer pescado.
+          - Zer edango duzu? = ¿Qué vas a beber? | ¿Qué beberás? | ¿Qué va a beber usted? | ¿Qué vas a tomar?
+          - Nik afaria prestatuko dut. = Yo prepararé la cena. | Prepararé la cena. | Yo voy a preparar la cena.
+          - Jonek ardoa eramango du. = Jon llevará el vino. | Jon va a llevar el vino.
+          - Zortzietan bukatuko dut. = Terminaré a las ocho. | Voy a terminar a las ocho.
+          - Bihar etxean geratuko naiz. = Mañana me quedaré en casa. | Mañana voy a quedarme en casa. | Mañana me voy a quedar en casa.
+          - Bederatzietan itzuliko gara. = Volveremos a las nueve. | Vamos a volver a las nueve.
+          - Gaur hamar orduz lo egingo dut. = Hoy dormiré diez horas. | Hoy voy a dormir diez horas.
+        pairs:
+          - - jan = comer
+            - edan = beber
+            - lo egin = dormir
+            - prestatu = preparar
+            - eraman = llevar
+            - itzuli = volver
+        meanings:
+          - text: Ni ez naiz sartuko.
+            options:
+              - Yo no voy a entrar.
+              - Yo no he entrado.
+              - Yo voy a entrar.
+        blanks:
+          - text: Zuk zer jango ___? = ¿Qué vas a comer?
+            options:
+              - duzu
+              - zara
+          - text: Haiek berandu itzuliko ___. = Ellos volverán tarde.
+            options:
+              - dira
+              - dute
+        chats:
+          - messages:
+              - Unai | Zer edango duzu?
+            options:
+              - Ura edango dut.
+              - Ura edan dut.
+              - Ura edango naiz.
+        true_false:
+          - passage: Gaur Itziarrek afaria prestatuko du. Mikelek ardoa eramango du.
+            statement: Mikel preparará la cena.
+            answer: false
+      - structures: [synthetic-present, months]
+        sentences:
+          - Orain apaindegira noa. = Ahora voy a la peluquería.
+          - Nora zoaz? | Zu nora zoaz? = ¿Adónde vas? | ¿A dónde vas? | ¿Adónde va usted?
+          - Etxetik nator. = Vengo de casa.
+          - Nondik zatoz? | Zu nondik zatoz? = ¿De dónde vienes? | ¿De dónde viene usted?
+          - Ondo nabil, eskerrik asko. = Me va bien, gracias. | Ando bien, gracias. | Voy bien, gracias.
+          - Ane eta Jon bidaia-agentziara doaz. = Ane y Jon van a la agencia de viajes.
+          - Abuztuan Parisera joango gara. = En agosto iremos a París. | En agosto vamos a ir a París.
+          - Urtarrilean Gasteizera etorriko naiz. = En enero vendré a Vitoria. | En enero voy a venir a Vitoria. | En enero vendré a Gasteiz.
+        pairs:
+          - - urtarrila = enero
+            - otsaila = febrero
+            - martxoa = marzo
+            - apirila = abril
+            - maiatza = mayo
+            - ekaina = junio
+        meanings:
+          - text: Mikel bidaia-agentziatik dator.
+            options:
+              - Mikel viene de la agencia de viajes.
+              - Mikel va a la agencia de viajes.
+              - Mikel está en la agencia de viajes.
+        blanks:
+          - text: Orain etxera ___. = Ahora voy a casa.
+            options:
+              - noa
+              - nator
+        chats:
+          - messages:
+              - Haizea | Kaixo, Oier! Nora zoaz?
+            options:
+              - Apaindegira noa.
+              - Apaindegian noa.
+              - Ondo nabil.
+        true_false:
+          - passage: Uztailean eta abuztuan Zarautzen geratuko gara. Irailean Bilbora itzuliko gara.
+            statement: En septiembre volverán a Bilbao.
+            answer: true
+  - type: lesson
+    title:
+      es: ¿Qué estás haciendo?
+      eu: Zer egiten ari zara?
+    lessons:
+      - structures: [tzen-ari]
+        sentences:
+          - Zer egiten ari zara? | Zertan ari zara? = ¿Qué estás haciendo? | ¿Qué está haciendo usted? | ¿Qué haces?
+          - Afaria prestatzen ari naiz. = Estoy preparando la cena. | Preparo la cena.
+          - Ane irakurtzen ari da. = Ane está leyendo.
+          - Umeak lo egiten ari dira. = Los niños están durmiendo. | Las niñas están durmiendo.
+          - Kafea hartzen ari gara. = Estamos tomando café. | Estamos tomando un café.
+          - Mikel liburutegian ikasten ari da. = Mikel está estudiando en la biblioteca.
+          - Zuek zer jaten ari zarete? = ¿Qué estáis comiendo? | ¿Vosotros qué estáis comiendo? | ¿Qué están comiendo ustedes?
+          - Orain amari idazten ari naiz. = Ahora le estoy escribiendo a mi madre. | Ahora estoy escribiendo a mi madre. | Ahora le escribo a mi madre.
+        blanks:
+          - text: Jon irakurtzen ___ da. = Jon está leyendo.
+            options:
+              - ari
+              - nahi
+          - text: Haiek ura edaten ari ___. = Ellos están bebiendo agua.
+            options:
+              - dira
+              - dute
+        meanings:
+          - text: Gorka telefonoz deitzen ari da.
+            options:
+              - Gorka está llamando por teléfono.
+              - Gorka ha llamado por teléfono.
+              - Gorka llamará por teléfono.
+        chats:
+          - messages:
+              - Xabier | Zer egiten ari zara, Uxue?
+            options:
+              - Afaltzen ari naiz.
+              - Afaltzen ari dut.
+              - Bihar afalduko dut.
+        true_false:
+          - passage: Orain Leire eta Ibai hondartzan daude. Ibai irakurtzen ari da.
+            statement: Ibai está nadando.
+            answer: false
+      - structures: [future-ko, word-order]
+        sentences:
+          - Bihar etorriko zara? = ¿Vendrás mañana? | ¿Vas a venir mañana? | ¿Vendrá usted mañana?
+          - Bai, etorriko naiz. = Sí, vendré. | Sí, voy a venir.
+          - Ez, ez naiz etorriko. = No, no vendré. | No, no voy a venir.
+          - Ez dut kafea hartuko. = No tomaré café. | No voy a tomar café.
+          - Nora joango zarete datorren hilabetean? = ¿Adónde iréis el mes que viene? | ¿A dónde iréis el mes que viene? | ¿Adónde vais a ir el mes que viene? | ¿Adónde irán ustedes el mes que viene?
+          - Gasteizera joango gara. = Iremos a Vitoria. | Vamos a ir a Vitoria. | Iremos a Gasteiz.
+          - Nork prestatuko du bazkaria? = ¿Quién preparará la comida? | ¿Quién va a preparar la comida?
+          - Nik prestatuko dut. = La prepararé yo. | Yo la prepararé. | Yo la voy a preparar.
+        blanks:
+          - text: Ez ___ joango. = No iré.
+            options:
+              - naiz
+              - dut
+          - text: Ez dut ardoa ___. = No beberé vino.
+            options:
+              - edango
+              - edaten
+        meanings:
+          - text: Ez naiz berandu etorriko.
+            options:
+              - No llegaré tarde.
+              - No he llegado tarde.
+              - Llegaré tarde.
+        chats:
+          - messages:
+              - Asier | Etzi bazkaltzera etorriko zara?
+            options:
+              - Bai, etorriko naiz.
+              - Bai, etorri naiz.
+              - Bai, etorriko dut.
+        true_false:
+          - passage: Datorren astean ez naiz Bilbora joango. Etxean geratuko naiz.
+            statement: La semana que viene irá a Bilbao.
+            answer: false
+      - structures: [synthetic-present]
+        sentences:
+          - Gu hondartzara goaz. = Vamos a la playa. | Nosotros vamos a la playa. | Nosotras vamos a la playa.
+          - Nondik zatozte? = ¿De dónde venís? | ¿De dónde vienen ustedes?
+          - Parketik gatoz. = Venimos del parque.
+          - Aitona eta amona ospitaletik datoz. = Los abuelos vienen del hospital. | El abuelo y la abuela vienen del hospital.
+          - Nola zabiltza? = ¿Qué tal andas? | ¿Cómo andas? | ¿Cómo te va?
+          - Umeak parkean dabiltza. = Los niños andan por el parque. | Los niños están en el parque.
+          - Mikel bidaia-agentziara doa. = Mikel va a la agencia de viajes.
+          - Orain etxean nago. = Ahora estoy en casa.
+        pairs:
+          - - noa = voy
+            - zoaz = vas
+            - nator = vengo
+            - zatoz = vienes
+            - nabil = ando
+            - nago = estoy
+        blanks:
+          - text: Gu Donostiara ___. = Vamos a San Sebastián.
+            options:
+              - goaz
+              - gatoz
+          - text: Nondik ___ zu? = ¿De dónde vienes tú?
+            options:
+              - zatoz
+              - nator
+        meanings:
+          - text: Jon eta Ane apaindegitik datoz.
+            options:
+              - Jon y Ane vienen de la peluquería.
+              - Jon y Ane van a la peluquería.
+              - Jon y Ane están en la peluquería.
+        chats:
+          - messages:
+              - Ibai | Nola zabiltza, Alaitz?
+            options:
+              - Oso ondo nabil!
+              - Oso ondo zabiltza!
+              - Etxera noa.
+        true_false:
+          - passage: Ni orain Getxora noa. Nire lagunak Getxon daude.
+            statement: Sus amigos están en Getxo.
+            answer: true
+  - type: lesson
+    title:
+      es: Planes
+      eu: Planak
+    lessons:
+      - structures: [future-ko, time-markers]
+        sentences:
+          - Kaixo, Markel! Zer egingo duzu larunbatean? = ¡Hola, Markel! ¿Qué harás el sábado? | ¡Hola, Markel! ¿Qué vas a hacer el sábado?
+          - Mendira joango naiz lagunekin. = Iré al monte con mis amigos. | Voy a ir al monte con mis amigos. | Iré al monte con amigos.
+          - Eta igandean? = ¿Y el domingo?
+          - Igandean etxean geratuko naiz. = El domingo me quedaré en casa. | El domingo voy a quedarme en casa.
+          - Bazkaltzera etorriko zara? = ¿Vendrás a comer? | ¿Vas a venir a comer? | ¿Vendrá usted a comer?
+          - Bai! Zer eramango dut? = ¡Sí! ¿Qué llevaré? | ¡Sí! ¿Qué llevo?
+        chats:
+          - messages:
+              - Izaro | Datorren larunbatean zer egingo duzu?
+              - Markel | Donostiara joango naiz.
+              - Izaro | Zertara?
+            options:
+              - Arropa erostera.
+              - Arropa erosi dut.
+              - Donostiatik.
+          - messages:
+              - Markel | Bihar zortzietan etorriko zara?
+            options:
+              - Bai, zortzietan etorriko naiz.
+              - Bai, zortzietan etorri naiz.
+              - Ez, ez dut etorriko.
+        true_false:
+          - passage: Ekainean Lekeitiora joango gara. Hondartzan egongo gara.
+            statement: En junio irán a Lekeitio.
+            answer: true
+          - passage: Aurten ez dut bidaiatuko. Etxean geratuko naiz.
+            statement: Este año va a viajar.
+            answer: false
+        meanings:
+          - text: Datorren hilabetean itzuliko naiz.
+            options:
+              - Volveré el mes que viene.
+              - Volví el mes pasado.
+              - Me quedaré un mes.
+      - structures: [tzen-ari, synthetic-present]
+        sentences:
+          - Ama, non zaude? = Mamá, ¿dónde estás?
+          - Apaindegian nago. = Estoy en la peluquería.
+          - Eta zu, zer egiten ari zara? = Y tú, ¿qué estás haciendo? | ¿Y tú qué estás haciendo? | Y usted, ¿qué está haciendo?
+          - Bazkaria prestatzen ari naiz. = Estoy preparando la comida.
+          - Aita berandu dator. = Papá viene tarde. | Mi padre viene tarde. | Mi padre llega tarde.
+          - Sartu, mesedez! = ¡Pasa, por favor! | ¡Entra, por favor! | ¡Pase, por favor!
+        chats:
+          - messages:
+              - Nerea | Kaixo, Julen! Non zabiltza?
+              - Julen | Bilbon nabil.
+              - Nerea | Zer egiten ari zara?
+            options:
+              - Arropa erosten ari naiz.
+              - Arropa erosten ari dut.
+              - Arropa erosiko dut.
+          - messages:
+              - Julen | Gaur berandu etorriko zara?
+            options:
+              - Ez, zazpietan etorriko naiz.
+              - Ez, zazpietan etorri naiz.
+              - Ez, zazpietan joan naiz.
+        true_false:
+          - passage: Orain Uxue eta Peio jatetxe batean daude. Afaltzen ari dira.
+            statement: Uxue y Peio están cenando.
+            answer: true
+          - passage: Josu apaindegira doa. Gero bidaia-agentziara joango da.
+            statement: Josu viene de la agencia de viajes.
+            answer: false
+        blanks:
+          - text: Edurne hondartzatik ___. = Edurne viene de la playa.
+            options:
+              - dator
+              - doa
+      - structures: [months, future-ko]
+        sentences:
+          - Egun on! Abuztuan Londresera joan nahi dut. = ¡Buenos días! En agosto quiero ir a Londres.
+          - Zenbat aste geratuko zara? = ¿Cuántas semanas te quedarás? | ¿Cuántas semanas te vas a quedar? | ¿Cuántas semanas se quedará usted?
+          - Bi aste geratuko naiz. = Me quedaré dos semanas. | Voy a quedarme dos semanas.
+          - Irailean itzuliko naiz. = Volveré en septiembre. | Voy a volver en septiembre.
+          - Martxoan eta apirilean ez dut bidaiatuko. = En marzo y abril no viajaré. | En marzo y en abril no viajaré. | En marzo y abril no voy a viajar.
+          - Urrian, azaroan eta abenduan Bilbon lan egingo dut. = En octubre, noviembre y diciembre trabajaré en Bilbao. | En octubre, noviembre y diciembre voy a trabajar en Bilbao.
+        chats:
+          - messages:
+              - Arantza | Egun on! Zer nahi duzu?
+              - Patxi | Uztailean Frantziara joango naiz.
+              - Arantza | Abuztuan itzuliko zara?
+            options:
+              - Ez, irailean itzuliko naiz.
+              - Ez, irailean itzuli naiz.
+              - Ez, irailean joan naiz.
+          - messages:
+              - Patxi | Eta zuk, aurten zer egingo duzu?
+            options:
+              - Etxean geratuko naiz.
+              - Etxean geratu naiz.
+              - Etxean geratuko dut.
+        true_false:
+          - passage: Otsailean Hondarribian egongo gara. Maiatzean Tuterara joango gara.
+            statement: En mayo irán a Tudela.
+            answer: true
+          - passage: Ekainean eta uztailean Getxon geratuko naiz. Abuztuan ez dut bidaiatuko.
+            statement: En agosto viajará.
+            answer: false
+        meanings:
+          - text: Urtarrilean bidaia-agentzia batean lan egingo dut.
+            options:
+              - En enero trabajaré en una agencia de viajes.
+              - En enero trabajé en una agencia de viajes.
+              - En junio trabajaré en una agencia de viajes.
+  - type: story
+    title:
+      es: "Historia: en diciembre, a París"
+      eu: "Istorioa: abenduan, Parisera"
+    story:
+      title: Abenduan, Parisera
+      lines:
+        - Maialen | Kaixo, Aitor! Nora zoaz? = ¡Hola, Aitor! ¿Adónde vas?
+        - Aitor | Bidaia-agentziara noa. Abenduan Parisera joango naiz! = Voy a la agencia de viajes. ¡En diciembre iré a París!
+        - Maialen | Bai? Norekin joango zara? = ¿Sí? ¿Con quién irás?
+        - Aitor | Nire arrebarekin. Hura Parisen bizi da. = Con mi hermana. Ella vive en París.
+        - Maialen | Eta zenbat aste geratuko zara? = ¿Y cuántas semanas te quedarás?
+        - Aitor | Bi aste. Urtarrilean itzuliko naiz. = Dos semanas. Volveré en enero.
+        - Aitor | Eta zu? Zer egingo duzu abenduan? = ¿Y tú? ¿Qué harás en diciembre?
+        - Maialen | Etxean geratuko naiz. Urrian eta azaroan bidaiatu dut. = Me quedaré en casa. En octubre y noviembre ya he viajado.
+        - Aitor | Eta orain nora zoaz? = ¿Y ahora adónde vas?
+        - Maialen | Apaindegira. Berandu da! Agur, Aitor! = A la peluquería. ¡Es tarde! ¡Adiós, Aitor!
+        - Aitor | Agur! Gero arte! = ¡Adiós! ¡Hasta luego!
+      questions:
+        - afterLine: 1
+          prompt: ¿Adónde va Aitor ahora?
+          options:
+            - A la agencia de viajes
+            - A la peluquería
+            - A París
+        - afterLine: 5
+          prompt: ¿Cuándo volverá Aitor?
+          options:
+            - En enero
+            - En diciembre
+            - En noviembre
+        - afterLine: 10
+          prompt: ¿Adónde va Maialen?
+          options:
+            - A la peluquería
+            - A la agencia de viajes
+            - A Londres
+  - type: review
+  - type: legendary

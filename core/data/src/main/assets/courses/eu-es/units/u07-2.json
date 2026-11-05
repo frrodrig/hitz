@@ -1,0 +1,2767 @@
+{
+  "schemaVersion": 1,
+  "id": "u07-2",
+  "section": "s3",
+  "bookUnit": 7,
+  "title": {
+    "es": "¿Qué harás?",
+    "eu": "Zer egingo duzu?"
+  },
+  "goals": [
+    {
+      "es": "Contar tus planes y preguntar por los de otra persona.",
+      "eu": "Zure asmoak kontatu eta besteenak galdetu."
+    },
+    {
+      "es": "Decir qué está haciendo alguien en este momento.",
+      "eu": "Norbait une honetan zer egiten ari den esan."
+    },
+    {
+      "es": "Decir adónde vas y de dónde vienes, y situar los planes en los meses del año.",
+      "eu": "Nora zoazen eta nondik zatozen esan, eta asmoak urteko hilabeteetan kokatu."
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "El futuro: joango naiz, egingo dut",
+          "eu": "Geroa: joango naiz, egingo dut"
+        },
+        "body": {
+          "es": "Para el futuro, el participio lleva -go si acaba en -n (joan → joango, egin → egingo, jan → jango) y -ko en los demás casos (etorri → etorriko, erosi → erosiko). El auxiliar es el mismo que en el pasado (naiz, dut…).",
+          "eu": "Geroa adierazteko, partizipioak -go hartzen du -n letraz bukatzen bada (joan → joango, egin → egingo, jan → jango) eta -ko gainerakoetan (etorri → etorriko, erosi → erosiko). Laguntzailea lehen bezalakoa da (naiz, dut…)."
+        },
+        "examples": [
+          {
+            "eu": "Bihar Bilbora joango naiz.",
+            "es": "Mañana iré a Bilbao."
+          },
+          {
+            "eu": "Datorren astean Ane etorriko da.",
+            "es": "La semana que viene vendrá Ane."
+          },
+          {
+            "eu": "Etzi zer egingo duzu?",
+            "es": "¿Qué harás pasado mañana?"
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Preguntar y responder",
+          "eu": "Galdetu eta erantzun"
+        },
+        "body": {
+          "es": "La palabra interrogativa va justo delante del verbo (Nora joango zara?). En la respuesta, lo nuevo va delante del verbo (Gasteizera joango naiz). En negativa, «ez» y el auxiliar pasan delante y el participio va al final.",
+          "eu": "Galdetzailea aditzaren aurretik doa (Nora joango zara?). Erantzunean, informazio berria aditzaren aurretik doa (Gasteizera joango naiz). Ezezkoan, «ez» eta laguntzailea aurretik doaz, eta partizipioa amaieran."
+        },
+        "examples": [
+          {
+            "eu": "Bihar etorriko zara? Bai, etorriko naiz.",
+            "es": "¿Vendrás mañana? Sí, vendré."
+          },
+          {
+            "eu": "Ez, ez naiz etorriko.",
+            "es": "No, no vendré."
+          },
+          {
+            "eu": "Ez dut kafea hartuko.",
+            "es": "No tomaré café."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Ahora mismo: -tzen ari naiz",
+          "eu": "Orain bertan: -tzen ari naiz"
+        },
+        "body": {
+          "es": "Para decir lo que estás haciendo ahora, el verbo lleva -tzen o -ten y le sigue «ari» + naiz, zara, da… Se usa siempre naiz/zara/da, aunque el verbo tenga objeto.",
+          "eu": "Orain egiten ari zarena esateko, aditzak -tzen edo -ten hartzen du, eta ondoren «ari» + naiz, zara, da… Beti naiz/zara/da erabiltzen da, aditzak objektua izan arren."
+        },
+        "examples": [
+          {
+            "eu": "Zer egiten ari zara?",
+            "es": "¿Qué estás haciendo?"
+          },
+          {
+            "eu": "Afaria prestatzen ari naiz.",
+            "es": "Estoy preparando la cena."
+          },
+          {
+            "eu": "Umeak lo egiten ari dira.",
+            "es": "Los niños están durmiendo."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Voy, vengo, ando: noa, nator, nabil",
+          "eu": "Noa, nator, nabil"
+        },
+        "body": {
+          "es": "Algunos verbos tienen presente propio, como egon (nago) y eduki (daukat). Joan → noa, zoaz, doa; etorri → nator, zatoz, dator; ibili → nabil, zabiltza, dabil. Los meses llevan -(e)an como los días (abuztuan).",
+          "eu": "Aditz batzuek orainaldi propioa dute, egon (nago) eta eduki (daukat) bezala. Joan → noa, zoaz, doa; etorri → nator, zatoz, dator; ibili → nabil, zabiltza, dabil. Hilabeteek -(e)an hartzen dute, egunek bezala (abuztuan)."
+        },
+        "examples": [
+          {
+            "eu": "Nora zoaz? Apaindegira noa.",
+            "es": "¿Adónde vas? Voy a la peluquería."
+          },
+          {
+            "eu": "Nondik zatoz? Etxetik nator.",
+            "es": "¿De dónde vienes? Vengo de casa."
+          },
+          {
+            "eu": "Abuztuan Parisera joango gara.",
+            "es": "En agosto iremos a París."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u07-2.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Mañana y pasado mañana",
+        "eu": "Bihar eta etzi"
+      },
+      "lessons": [
+        {
+          "id": "u07-2.l1.s1",
+          "exercises": [
+            {
+              "id": "u07-2.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Mañana iré a Bilbao."
+              },
+              "answers": [
+                "Bihar Bilbora joango naiz."
+              ],
+              "distractors": [
+                "Datorren",
+                "astean",
+                "bazkalduko"
+              ],
+              "vocabulary": [
+                "bihar",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e02",
+              "type": "listen_tap",
+              "text": "Etzi amarekin bazkalduko dut.",
+              "distractors": [
+                "afalduko",
+                "Bilbora",
+                "dugu"
+              ],
+              "vocabulary": [
+                "etzi",
+                "ama",
+                "bazkaldu",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "bihar",
+                  "es": "mañana"
+                },
+                {
+                  "eu": "etzi",
+                  "es": "pasado mañana"
+                },
+                {
+                  "eu": "datorren astean",
+                  "es": "la semana que viene"
+                },
+                {
+                  "eu": "aurten",
+                  "es": "este año"
+                },
+                {
+                  "eu": "orain",
+                  "es": "ahora"
+                }
+              ],
+              "vocabulary": [
+                "bihar",
+                "etzi",
+                "datorren",
+                "aste",
+                "aurten",
+                "orain"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "La semana que viene vendrá Ane."
+              },
+              "answers": [
+                "Datorren astean Ane etorriko da."
+              ],
+              "vocabulary": [
+                "datorren",
+                "aste",
+                "etorri",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Etzi Gasteizera joango ___.",
+              "options": [
+                "naiz",
+                "dut"
+              ],
+              "correct": 0,
+              "translation": "Pasado mañana iré a Vitoria.",
+              "vocabulary": [
+                "etzi",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e06",
+              "type": "order_sentence",
+              "answer": "Aurten Frantziara bidaiatuko dugu.",
+              "translation": "Este año viajaremos a Francia.",
+              "vocabulary": [
+                "aurten",
+                "bidaiatu",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e07",
+              "type": "choose_meaning",
+              "text": "Etzi etorriko naiz.",
+              "options": [
+                "Vendré pasado mañana.",
+                "Vine anteayer.",
+                "Vendré mañana."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "etzi",
+                "etorri",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaur gauean etxean afalduko dugu."
+              },
+              "answers": [
+                "Esta noche cenaremos en casa.",
+                "Esta noche vamos a cenar en casa."
+              ],
+              "vocabulary": [
+                "gaur",
+                "gau",
+                "etxe",
+                "afaldu",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Amaia",
+                  "text": "Zer egingo duzu bihar?"
+                }
+              ],
+              "options": [
+                "Mendira joango naiz.",
+                "Mendira joan naiz.",
+                "Mendira joango dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "egin",
+                "ukan",
+                "bihar",
+                "mendi",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e10",
+              "type": "listen_type",
+              "text": "Bihar goizean ogia erosiko dut.",
+              "answers": [
+                "Bihar goizean ogia erosiko dut."
+              ],
+              "vocabulary": [
+                "bihar",
+                "goiz",
+                "ogi",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e11",
+              "type": "read_true_false",
+              "passage": "Bihar Donostiara joango naiz. Etzi etxera itzuliko naiz.",
+              "statement": "Volverá a casa pasado mañana.",
+              "answer": true,
+              "vocabulary": [
+                "bihar",
+                "joan",
+                "izan",
+                "etzi",
+                "etxe",
+                "itzuli"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e12",
+              "type": "speak",
+              "text": "Zer egingo duzu bihar?",
+              "translation": "¿Qué harás mañana?",
+              "vocabulary": [
+                "zer",
+                "egin",
+                "ukan",
+                "bihar"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Datorren urtean Londresen ikasiko dut."
+              },
+              "answers": [
+                "El año que viene estudiaré en Londres.",
+                "El próximo año estudiaré en Londres.",
+                "El año que viene voy a estudiar en Londres."
+              ],
+              "distractors": [
+                "vendrá",
+                "Este",
+                "Francia",
+                "Qué"
+              ],
+              "vocabulary": [
+                "datorren",
+                "urte",
+                "ikasi",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-2.l1.s2",
+          "exercises": [
+            {
+              "id": "u07-2.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Gaur gauean arraina jango dugu.",
+              "distractors": [
+                "Bederatzietan",
+                "duzu",
+                "du"
+              ],
+              "vocabulary": [
+                "gaur",
+                "gau",
+                "arrain",
+                "jan",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué vas a beber?"
+              },
+              "answers": [
+                "Zer edango duzu?"
+              ],
+              "vocabulary": [
+                "zer",
+                "edan",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "jan",
+                  "es": "comer"
+                },
+                {
+                  "eu": "edan",
+                  "es": "beber"
+                },
+                {
+                  "eu": "lo egin",
+                  "es": "dormir"
+                },
+                {
+                  "eu": "prestatu",
+                  "es": "preparar"
+                },
+                {
+                  "eu": "eraman",
+                  "es": "llevar"
+                },
+                {
+                  "eu": "itzuli",
+                  "es": "volver"
+                }
+              ],
+              "vocabulary": [
+                "jan",
+                "edan",
+                "lo egin",
+                "prestatu",
+                "eraman",
+                "itzuli"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e04",
+              "type": "order_sentence",
+              "answer": "Nik afaria prestatuko dut.",
+              "translation": "Yo prepararé la cena.",
+              "vocabulary": [
+                "ni",
+                "afari",
+                "prestatu",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Zuk zer jango ___?",
+              "options": [
+                "duzu",
+                "zara"
+              ],
+              "correct": 0,
+              "translation": "¿Qué vas a comer?",
+              "vocabulary": [
+                "zu",
+                "zer",
+                "jan",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Jonek ardoa eramango du."
+              },
+              "answers": [
+                "Jon llevará el vino.",
+                "Jon va a llevar el vino."
+              ],
+              "vocabulary": [
+                "ardo",
+                "eraman",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e07",
+              "type": "fill_blank",
+              "sentence": "Haiek berandu itzuliko ___.",
+              "options": [
+                "dira",
+                "dute"
+              ],
+              "correct": 0,
+              "translation": "Ellos volverán tarde.",
+              "vocabulary": [
+                "haiek",
+                "berandu",
+                "itzuli",
+                "izan"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e08",
+              "type": "listen_type",
+              "text": "Zortzietan bukatuko dut.",
+              "answers": [
+                "Zortzietan bukatuko dut."
+              ],
+              "vocabulary": [
+                "zortzi",
+                "bukatu",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e09",
+              "type": "choose_meaning",
+              "text": "Ni ez naiz sartuko.",
+              "options": [
+                "Yo no voy a entrar.",
+                "Yo no he entrado.",
+                "Yo voy a entrar."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ni",
+                "ez",
+                "izan",
+                "sartu"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e10",
+              "type": "speak",
+              "text": "Bihar etxean geratuko naiz.",
+              "translation": "Mañana me quedaré en casa.",
+              "vocabulary": [
+                "bihar",
+                "etxe",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e11",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Unai",
+                  "text": "Zer edango duzu?"
+                }
+              ],
+              "options": [
+                "Ura edango dut.",
+                "Ura edan dut.",
+                "Ura edango naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "edan",
+                "ukan",
+                "ur"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bederatzietan itzuliko gara."
+              },
+              "answers": [
+                "Volveremos a las nueve.",
+                "Vamos a volver a las nueve."
+              ],
+              "distractors": [
+                "dormiré",
+                "vino",
+                "la"
+              ],
+              "vocabulary": [
+                "bederatzi",
+                "itzuli",
+                "izan"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e13",
+              "type": "read_true_false",
+              "passage": "Gaur Itziarrek afaria prestatuko du. Mikelek ardoa eramango du.",
+              "statement": "Mikel preparará la cena.",
+              "answer": false,
+              "vocabulary": [
+                "gaur",
+                "afari",
+                "prestatu",
+                "ukan",
+                "ardo",
+                "eraman"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Hoy dormiré diez horas."
+              },
+              "answers": [
+                "Gaur hamar orduz lo egingo dut."
+              ],
+              "distractors": [
+                "afaria",
+                "Zortzietan",
+                "dugu",
+                "etxean"
+              ],
+              "vocabulary": [
+                "gaur",
+                "hamar",
+                "ordu",
+                "lo egin",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-2.l1.s3",
+          "exercises": [
+            {
+              "id": "u07-2.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Ahora voy a la peluquería."
+              },
+              "answers": [
+                "Orain apaindegira noa."
+              ],
+              "vocabulary": [
+                "orain",
+                "apaindegi",
+                "joan"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nora zoaz?"
+              },
+              "answers": [
+                "¿Adónde vas?",
+                "¿A dónde vas?",
+                "¿Adónde va usted?"
+              ],
+              "vocabulary": [
+                "nor",
+                "joan"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "urtarrila",
+                  "es": "enero"
+                },
+                {
+                  "eu": "otsaila",
+                  "es": "febrero"
+                },
+                {
+                  "eu": "martxoa",
+                  "es": "marzo"
+                },
+                {
+                  "eu": "apirila",
+                  "es": "abril"
+                },
+                {
+                  "eu": "maiatza",
+                  "es": "mayo"
+                },
+                {
+                  "eu": "ekaina",
+                  "es": "junio"
+                }
+              ],
+              "vocabulary": [
+                "urtarril",
+                "otsail",
+                "martxo",
+                "apiril",
+                "maiatz",
+                "ekain"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Etxetik nator."
+              },
+              "answers": [
+                "Vengo de casa."
+              ],
+              "vocabulary": [
+                "etxe",
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Orain etxera ___.",
+              "options": [
+                "noa",
+                "nator"
+              ],
+              "correct": 0,
+              "translation": "Ahora voy a casa.",
+              "vocabulary": [
+                "orain",
+                "etxe",
+                "joan"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e06",
+              "type": "listen_type",
+              "text": "Nondik zatoz?",
+              "answers": [
+                "Nondik zatoz?"
+              ],
+              "vocabulary": [
+                "non",
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e07",
+              "type": "choose_meaning",
+              "text": "Mikel bidaia-agentziatik dator.",
+              "options": [
+                "Mikel viene de la agencia de viajes.",
+                "Mikel va a la agencia de viajes.",
+                "Mikel está en la agencia de viajes."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bidaia-agentzia",
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e08",
+              "type": "speak",
+              "text": "Ondo nabil, eskerrik asko.",
+              "translation": "Me va bien, gracias.",
+              "vocabulary": [
+                "eskerrik asko",
+                "ondo",
+                "ibili"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Haizea",
+                  "text": "Kaixo, Oier! Nora zoaz?"
+                }
+              ],
+              "options": [
+                "Apaindegira noa.",
+                "Apaindegian noa.",
+                "Ondo nabil."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "nor",
+                "joan",
+                "apaindegi"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ane eta Jon bidaia-agentziara doaz."
+              },
+              "answers": [
+                "Ane y Jon van a la agencia de viajes."
+              ],
+              "distractors": [
+                "bien",
+                "enero",
+                "peluquería",
+                "En"
+              ],
+              "vocabulary": [
+                "eta",
+                "bidaia-agentzia",
+                "joan"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e11",
+              "type": "read_true_false",
+              "passage": "Uztailean eta abuztuan Zarautzen geratuko gara. Irailean Bilbora itzuliko gara.",
+              "statement": "En septiembre volverán a Bilbao.",
+              "answer": true,
+              "vocabulary": [
+                "uztail",
+                "eta",
+                "abuztu",
+                "geratu",
+                "izan",
+                "irail",
+                "itzuli"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "En agosto iremos a París."
+              },
+              "answers": [
+                "Abuztuan Parisera joango gara."
+              ],
+              "distractors": [
+                "eta",
+                "Gasteizera",
+                "etorriko"
+              ],
+              "vocabulary": [
+                "abuztu",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e13",
+              "type": "listen_tap",
+              "text": "Urtarrilean Gasteizera etorriko naiz.",
+              "distractors": [
+                "Nora",
+                "apaindegira",
+                "Ane"
+              ],
+              "vocabulary": [
+                "urtarril",
+                "etorri",
+                "izan"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u07-2.l2",
+      "type": "lesson",
+      "title": {
+        "es": "¿Qué estás haciendo?",
+        "eu": "Zer egiten ari zara?"
+      },
+      "lessons": [
+        {
+          "id": "u07-2.l2.s1",
+          "exercises": [
+            {
+              "id": "u07-2.l2.s1.e01",
+              "type": "order_sentence",
+              "answer": "Zer egiten ari zara?",
+              "translation": "¿Qué estás haciendo?",
+              "vocabulary": [
+                "zer",
+                "egin",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Afaria prestatzen ari naiz."
+              },
+              "answers": [
+                "Estoy preparando la cena.",
+                "Preparo la cena."
+              ],
+              "vocabulary": [
+                "afari",
+                "prestatu",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e03",
+              "type": "fill_blank",
+              "sentence": "Jon irakurtzen ___ da.",
+              "options": [
+                "ari",
+                "nahi"
+              ],
+              "correct": 0,
+              "translation": "Jon está leyendo.",
+              "vocabulary": [
+                "irakurri",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e04",
+              "type": "listen_type",
+              "text": "Ane irakurtzen ari da.",
+              "answers": [
+                "Ane irakurtzen ari da."
+              ],
+              "vocabulary": [
+                "irakurri",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Haiek ura edaten ari ___.",
+              "options": [
+                "dira",
+                "dute"
+              ],
+              "correct": 0,
+              "translation": "Ellos están bebiendo agua.",
+              "vocabulary": [
+                "haiek",
+                "ur",
+                "edan",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e06",
+              "type": "speak",
+              "text": "Umeak lo egiten ari dira.",
+              "translation": "Los niños están durmiendo.",
+              "vocabulary": [
+                "ume",
+                "lo egin",
+                "egin",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e07",
+              "type": "choose_meaning",
+              "text": "Gorka telefonoz deitzen ari da.",
+              "options": [
+                "Gorka está llamando por teléfono.",
+                "Gorka ha llamado por teléfono.",
+                "Gorka llamará por teléfono."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "telefono",
+                "deitu",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kafea hartzen ari gara."
+              },
+              "answers": [
+                "Estamos tomando café.",
+                "Estamos tomando un café."
+              ],
+              "distractors": [
+                "Ane",
+                "Estoy"
+              ],
+              "vocabulary": [
+                "kafe",
+                "hartu",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Xabier",
+                  "text": "Zer egiten ari zara, Uxue?"
+                }
+              ],
+              "options": [
+                "Afaltzen ari naiz.",
+                "Afaltzen ari dut.",
+                "Bihar afalduko dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "egin",
+                "izan",
+                "afaldu"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Mikel está estudiando en la biblioteca."
+              },
+              "answers": [
+                "Mikel liburutegian ikasten ari da."
+              ],
+              "distractors": [
+                "Ane",
+                "naiz",
+                "prestatzen"
+              ],
+              "vocabulary": [
+                "liburutegi",
+                "ikasi",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e11",
+              "type": "read_true_false",
+              "passage": "Orain Leire eta Ibai hondartzan daude. Ibai irakurtzen ari da.",
+              "statement": "Ibai está nadando.",
+              "answer": false,
+              "vocabulary": [
+                "orain",
+                "eta",
+                "hondartza",
+                "egon",
+                "irakurri",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e12",
+              "type": "listen_tap",
+              "text": "Zuek zer jaten ari zarete?",
+              "distractors": [
+                "Mikel",
+                "Kafea",
+                "egiten"
+              ],
+              "vocabulary": [
+                "zuek",
+                "zer",
+                "jan",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Ahora le estoy escribiendo a mi madre."
+              },
+              "answers": [
+                "Orain amari idazten ari naiz."
+              ],
+              "vocabulary": [
+                "orain",
+                "ama",
+                "idatzi",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-2.l2.s2",
+          "exercises": [
+            {
+              "id": "u07-2.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bihar etorriko zara?"
+              },
+              "answers": [
+                "¿Vendrás mañana?",
+                "¿Vas a venir mañana?",
+                "¿Vendrá usted mañana?"
+              ],
+              "vocabulary": [
+                "bihar",
+                "etorri",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e02",
+              "type": "listen_type",
+              "text": "Bai, etorriko naiz.",
+              "answers": [
+                "Bai, etorriko naiz."
+              ],
+              "vocabulary": [
+                "bai",
+                "etorri",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Ez ___ joango.",
+              "options": [
+                "naiz",
+                "dut"
+              ],
+              "correct": 0,
+              "translation": "No iré.",
+              "vocabulary": [
+                "ez",
+                "izan",
+                "joan"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e04",
+              "type": "speak",
+              "text": "Ez, ez naiz etorriko.",
+              "translation": "No, no vendré.",
+              "vocabulary": [
+                "ez",
+                "izan",
+                "etorri"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Ez dut ardoa ___.",
+              "options": [
+                "edango",
+                "edaten"
+              ],
+              "correct": 0,
+              "translation": "No beberé vino.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "ardo",
+                "edan"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez dut kafea hartuko."
+              },
+              "answers": [
+                "No tomaré café.",
+                "No voy a tomar café."
+              ],
+              "distractors": [
+                "Sí",
+                "Iremos"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "kafe",
+                "hartu"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e07",
+              "type": "choose_meaning",
+              "text": "Ez naiz berandu etorriko.",
+              "options": [
+                "No llegaré tarde.",
+                "No he llegado tarde.",
+                "Llegaré tarde."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "izan",
+                "berandu",
+                "etorri"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Adónde iréis el mes que viene?"
+              },
+              "answers": [
+                "Nora joango zarete datorren hilabetean?"
+              ],
+              "distractors": [
+                "Nork",
+                "zara",
+                "kafea"
+              ],
+              "vocabulary": [
+                "nor",
+                "joan",
+                "izan",
+                "datorren",
+                "hilabete"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Asier",
+                  "text": "Etzi bazkaltzera etorriko zara?"
+                }
+              ],
+              "options": [
+                "Bai, etorriko naiz.",
+                "Bai, etorri naiz.",
+                "Bai, etorriko dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "etzi",
+                "bazkaldu",
+                "etorri",
+                "izan",
+                "bai"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e10",
+              "type": "listen_tap",
+              "text": "Gasteizera joango gara.",
+              "distractors": [
+                "Ez",
+                "Bihar"
+              ],
+              "vocabulary": [
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e11",
+              "type": "read_true_false",
+              "passage": "Datorren astean ez naiz Bilbora joango. Etxean geratuko naiz.",
+              "statement": "La semana que viene irá a Bilbao.",
+              "answer": false,
+              "vocabulary": [
+                "datorren",
+                "aste",
+                "ez",
+                "izan",
+                "joan",
+                "etxe",
+                "geratu"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Quién preparará la comida?"
+              },
+              "answers": [
+                "Nork prestatuko du bazkaria?"
+              ],
+              "vocabulary": [
+                "nor",
+                "prestatu",
+                "ukan",
+                "bazkari"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s2.e13",
+              "type": "order_sentence",
+              "answer": "Nik prestatuko dut.",
+              "translation": "La prepararé yo.",
+              "vocabulary": [
+                "ni",
+                "prestatu",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko",
+                "word-order"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-2.l2.s3",
+          "exercises": [
+            {
+              "id": "u07-2.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Gu hondartzara goaz.",
+              "answers": [
+                "Gu hondartzara goaz."
+              ],
+              "vocabulary": [
+                "gu",
+                "hondartza",
+                "joan"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e02",
+              "type": "speak",
+              "text": "Nondik zatozte?",
+              "translation": "¿De dónde venís?",
+              "vocabulary": [
+                "non",
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "noa",
+                  "es": "voy"
+                },
+                {
+                  "eu": "zoaz",
+                  "es": "vas"
+                },
+                {
+                  "eu": "nator",
+                  "es": "vengo"
+                },
+                {
+                  "eu": "zatoz",
+                  "es": "vienes"
+                },
+                {
+                  "eu": "nabil",
+                  "es": "ando"
+                },
+                {
+                  "eu": "nago",
+                  "es": "estoy"
+                }
+              ],
+              "vocabulary": [
+                "joan",
+                "etorri",
+                "ibili",
+                "egon"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Parketik gatoz."
+              },
+              "answers": [
+                "Venimos del parque."
+              ],
+              "distractors": [
+                "andan",
+                "venís"
+              ],
+              "vocabulary": [
+                "parke",
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Gu Donostiara ___.",
+              "options": [
+                "goaz",
+                "gatoz"
+              ],
+              "correct": 0,
+              "translation": "Vamos a San Sebastián.",
+              "vocabulary": [
+                "gu",
+                "joan"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Los abuelos vienen del hospital."
+              },
+              "answers": [
+                "Aitona eta amona ospitaletik datoz."
+              ],
+              "distractors": [
+                "hondartzara",
+                "zatozte",
+                "zabiltza"
+              ],
+              "vocabulary": [
+                "aitona",
+                "eta",
+                "amona",
+                "ospitale",
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e07",
+              "type": "fill_blank",
+              "sentence": "Nondik ___ zu?",
+              "options": [
+                "zatoz",
+                "nator"
+              ],
+              "correct": 0,
+              "translation": "¿De dónde vienes tú?",
+              "vocabulary": [
+                "non",
+                "etorri",
+                "zu"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e08",
+              "type": "listen_tap",
+              "text": "Nola zabiltza?",
+              "distractors": [
+                "doa",
+                "bidaia-agentziara"
+              ],
+              "vocabulary": [
+                "nola",
+                "ibili"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e09",
+              "type": "choose_meaning",
+              "text": "Jon eta Ane apaindegitik datoz.",
+              "options": [
+                "Jon y Ane vienen de la peluquería.",
+                "Jon y Ane van a la peluquería.",
+                "Jon y Ane están en la peluquería."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "eta",
+                "apaindegi",
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Los niños andan por el parque."
+              },
+              "answers": [
+                "Umeak parkean dabiltza."
+              ],
+              "vocabulary": [
+                "ume",
+                "parke",
+                "ibili"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e11",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ibai",
+                  "text": "Nola zabiltza, Alaitz?"
+                }
+              ],
+              "options": [
+                "Oso ondo nabil!",
+                "Oso ondo zabiltza!",
+                "Etxera noa."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nola",
+                "ibili",
+                "alai",
+                "oso",
+                "ondo"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e12",
+              "type": "order_sentence",
+              "answer": "Mikel bidaia-agentziara doa.",
+              "translation": "Mikel va a la agencia de viajes.",
+              "vocabulary": [
+                "bidaia-agentzia",
+                "joan"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e13",
+              "type": "read_true_false",
+              "passage": "Ni orain Getxora noa. Nire lagunak Getxon daude.",
+              "statement": "Sus amigos están en Getxo.",
+              "answer": true,
+              "vocabulary": [
+                "ni",
+                "orain",
+                "joan",
+                "lagun",
+                "egon"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e14",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Orain etxean nago."
+              },
+              "answers": [
+                "Ahora estoy en casa."
+              ],
+              "vocabulary": [
+                "orain",
+                "etxe",
+                "egon"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u07-2.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Planes",
+        "eu": "Planak"
+      },
+      "lessons": [
+        {
+          "id": "u07-2.l3.s1",
+          "exercises": [
+            {
+              "id": "u07-2.l3.s1.e01",
+              "type": "speak",
+              "text": "Kaixo, Markel! Zer egingo duzu larunbatean?",
+              "translation": "¡Hola, Markel! ¿Qué harás el sábado?",
+              "vocabulary": [
+                "kaixo",
+                "zer",
+                "egin",
+                "ukan",
+                "larunbat"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mendira joango naiz lagunekin."
+              },
+              "answers": [
+                "Iré al monte con mis amigos.",
+                "Voy a ir al monte con mis amigos.",
+                "Iré al monte con amigos."
+              ],
+              "distractors": [
+                "Sí",
+                "harás",
+                "domingo",
+                "El"
+              ],
+              "vocabulary": [
+                "mendi",
+                "joan",
+                "izan",
+                "lagun"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Datorren hilabetean itzuliko naiz.",
+              "options": [
+                "Volveré el mes que viene.",
+                "Volví el mes pasado.",
+                "Me quedaré un mes."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "datorren",
+                "hilabete",
+                "itzuli",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Y el domingo?"
+              },
+              "answers": [
+                "Eta igandean?"
+              ],
+              "distractors": [
+                "larunbatean",
+                "naiz"
+              ],
+              "vocabulary": [
+                "eta",
+                "igande"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s1.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Izaro",
+                  "text": "Datorren larunbatean zer egingo duzu?"
+                },
+                {
+                  "speaker": "Markel",
+                  "text": "Donostiara joango naiz."
+                },
+                {
+                  "speaker": "Izaro",
+                  "text": "Zertara?"
+                }
+              ],
+              "options": [
+                "Arropa erostera.",
+                "Arropa erosi dut.",
+                "Donostiatik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "datorren",
+                "larunbat",
+                "zer",
+                "egin",
+                "ukan",
+                "joan",
+                "izan",
+                "arropa",
+                "erosi"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Igandean etxean geratuko naiz.",
+              "distractors": [
+                "Eta",
+                "Markel",
+                "egingo"
+              ],
+              "vocabulary": [
+                "igande",
+                "etxe",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s1.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Markel",
+                  "text": "Bihar zortzietan etorriko zara?"
+                }
+              ],
+              "options": [
+                "Bai, zortzietan etorriko naiz.",
+                "Bai, zortzietan etorri naiz.",
+                "Ez, ez dut etorriko."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bihar",
+                "zortzi",
+                "etorri",
+                "izan",
+                "bai"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Vendrás a comer?"
+              },
+              "answers": [
+                "Bazkaltzera etorriko zara?"
+              ],
+              "vocabulary": [
+                "bazkaldu",
+                "etorri",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s1.e09",
+              "type": "read_true_false",
+              "passage": "Ekainean Lekeitiora joango gara. Hondartzan egongo gara.",
+              "statement": "En junio irán a Lekeitio.",
+              "answer": true,
+              "vocabulary": [
+                "ekain",
+                "joan",
+                "izan",
+                "hondartza",
+                "egon"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s1.e10",
+              "type": "order_sentence",
+              "answer": "Bai! Zer eramango dut?",
+              "translation": "¡Sí! ¿Qué llevaré?",
+              "vocabulary": [
+                "bai",
+                "zer",
+                "eraman",
+                "ukan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s1.e11",
+              "type": "read_true_false",
+              "passage": "Aurten ez dut bidaiatuko. Etxean geratuko naiz.",
+              "statement": "Este año va a viajar.",
+              "answer": false,
+              "vocabulary": [
+                "aurten",
+                "ez",
+                "ukan",
+                "bidaiatu",
+                "etxe",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-2.l3.s2",
+          "exercises": [
+            {
+              "id": "u07-2.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ama, non zaude?"
+              },
+              "answers": [
+                "Mamá, ¿dónde estás?"
+              ],
+              "distractors": [
+                "viene",
+                "la"
+              ],
+              "vocabulary": [
+                "ama",
+                "non",
+                "egon"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Estoy en la peluquería."
+              },
+              "answers": [
+                "Apaindegian nago."
+              ],
+              "distractors": [
+                "mesedez",
+                "prestatzen"
+              ],
+              "vocabulary": [
+                "apaindegi",
+                "egon"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Edurne hondartzatik ___.",
+              "options": [
+                "dator",
+                "doa"
+              ],
+              "correct": 0,
+              "translation": "Edurne viene de la playa.",
+              "vocabulary": [
+                "hondartza",
+                "etorri"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e04",
+              "type": "listen_tap",
+              "text": "Eta zu, zer egiten ari zara?",
+              "distractors": [
+                "Ama",
+                "zaude",
+                "Sartu",
+                "nago"
+              ],
+              "vocabulary": [
+                "eta",
+                "zu",
+                "zer",
+                "egin",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nerea",
+                  "text": "Kaixo, Julen! Non zabiltza?"
+                },
+                {
+                  "speaker": "Julen",
+                  "text": "Bilbon nabil."
+                },
+                {
+                  "speaker": "Nerea",
+                  "text": "Zer egiten ari zara?"
+                }
+              ],
+              "options": [
+                "Arropa erosten ari naiz.",
+                "Arropa erosten ari dut.",
+                "Arropa erosiko dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "non",
+                "ibili",
+                "zer",
+                "egin",
+                "izan",
+                "arropa",
+                "erosi"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Estoy preparando la comida."
+              },
+              "answers": [
+                "Bazkaria prestatzen ari naiz."
+              ],
+              "vocabulary": [
+                "bazkari",
+                "prestatu",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Julen",
+                  "text": "Gaur berandu etorriko zara?"
+                }
+              ],
+              "options": [
+                "Ez, zazpietan etorriko naiz.",
+                "Ez, zazpietan etorri naiz.",
+                "Ez, zazpietan joan naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gaur",
+                "berandu",
+                "etorri",
+                "izan",
+                "ez",
+                "zazpi"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e08",
+              "type": "order_sentence",
+              "answer": "Aita berandu dator.",
+              "translation": "Papá viene tarde.",
+              "vocabulary": [
+                "aita",
+                "berandu",
+                "etorri"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e09",
+              "type": "read_true_false",
+              "passage": "Orain Uxue eta Peio jatetxe batean daude. Afaltzen ari dira.",
+              "statement": "Uxue y Peio están cenando.",
+              "answer": true,
+              "vocabulary": [
+                "orain",
+                "eta",
+                "jatetxe",
+                "bat",
+                "egon",
+                "afaldu",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Sartu, mesedez!"
+              },
+              "answers": [
+                "¡Pasa, por favor!",
+                "¡Entra, por favor!",
+                "¡Pase, por favor!"
+              ],
+              "vocabulary": [
+                "sartu",
+                "mesedez"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e11",
+              "type": "read_true_false",
+              "passage": "Josu apaindegira doa. Gero bidaia-agentziara joango da.",
+              "statement": "Josu viene de la agencia de viajes.",
+              "answer": false,
+              "vocabulary": [
+                "apaindegi",
+                "joan",
+                "gero",
+                "bidaia-agentzia",
+                "izan"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u07-2.l3.s3",
+          "exercises": [
+            {
+              "id": "u07-2.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¡Buenos días! En agosto quiero ir a Londres."
+              },
+              "answers": [
+                "Egun on! Abuztuan Londresera joan nahi dut."
+              ],
+              "distractors": [
+                "Martxoan",
+                "itzuliko",
+                "egingo",
+                "ez"
+              ],
+              "vocabulary": [
+                "egun on",
+                "abuztu",
+                "joan",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Zenbat aste geratuko zara?",
+              "distractors": [
+                "Martxoan",
+                "dut",
+                "itzuliko"
+              ],
+              "vocabulary": [
+                "zenbat",
+                "aste",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Urtarrilean bidaia-agentzia batean lan egingo dut.",
+              "options": [
+                "En enero trabajaré en una agencia de viajes.",
+                "En enero trabajé en una agencia de viajes.",
+                "En junio trabajaré en una agencia de viajes."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "urtarril",
+                "bidaia-agentzia",
+                "bat",
+                "lan egin",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Me quedaré dos semanas."
+              },
+              "answers": [
+                "Bi aste geratuko naiz."
+              ],
+              "vocabulary": [
+                "bi",
+                "aste",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Arantza",
+                  "text": "Egun on! Zer nahi duzu?"
+                },
+                {
+                  "speaker": "Patxi",
+                  "text": "Uztailean Frantziara joango naiz."
+                },
+                {
+                  "speaker": "Arantza",
+                  "text": "Abuztuan itzuliko zara?"
+                }
+              ],
+              "options": [
+                "Ez, irailean itzuliko naiz.",
+                "Ez, irailean itzuli naiz.",
+                "Ez, irailean joan naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "egun on",
+                "zer",
+                "nahi izan",
+                "ukan",
+                "uztail",
+                "joan",
+                "izan",
+                "abuztu",
+                "itzuli",
+                "ez",
+                "irail"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Irailean itzuliko naiz.",
+              "translation": "Volveré en septiembre.",
+              "vocabulary": [
+                "irail",
+                "itzuli",
+                "izan"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Patxi",
+                  "text": "Eta zuk, aurten zer egingo duzu?"
+                }
+              ],
+              "options": [
+                "Etxean geratuko naiz.",
+                "Etxean geratu naiz.",
+                "Etxean geratuko dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "eta",
+                "zu",
+                "aurten",
+                "zer",
+                "egin",
+                "ukan",
+                "etxe",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Martxoan eta apirilean ez dut bidaiatuko."
+              },
+              "answers": [
+                "En marzo y abril no viajaré.",
+                "En marzo y en abril no viajaré.",
+                "En marzo y abril no voy a viajar."
+              ],
+              "vocabulary": [
+                "martxo",
+                "eta",
+                "apiril",
+                "ez",
+                "ukan",
+                "bidaiatu"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e09",
+              "type": "read_true_false",
+              "passage": "Otsailean Hondarribian egongo gara. Maiatzean Tuterara joango gara.",
+              "statement": "En mayo irán a Tudela.",
+              "answer": true,
+              "vocabulary": [
+                "otsail",
+                "egon",
+                "izan",
+                "maiatz",
+                "joan"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e10",
+              "type": "listen_type",
+              "text": "Urrian, azaroan eta abenduan Bilbon lan egingo dut.",
+              "answers": [
+                "Urrian, azaroan eta abenduan Bilbon lan egingo dut."
+              ],
+              "vocabulary": [
+                "urri",
+                "azaro",
+                "eta",
+                "abendu",
+                "lan egin",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e11",
+              "type": "read_true_false",
+              "passage": "Ekainean eta uztailean Getxon geratuko naiz. Abuztuan ez dut bidaiatuko.",
+              "statement": "En agosto viajará.",
+              "answer": false,
+              "vocabulary": [
+                "ekain",
+                "eta",
+                "uztail",
+                "geratu",
+                "izan",
+                "abuztu",
+                "ez",
+                "ukan",
+                "bidaiatu"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u07-2.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: en diciembre, a París",
+        "eu": "Istorioa: abenduan, Parisera"
+      },
+      "story": {
+        "id": "u07-2.l4.story",
+        "title": "Abenduan, Parisera",
+        "lines": [
+          {
+            "speaker": "Maialen",
+            "eu": "Kaixo, Aitor! Nora zoaz?",
+            "es": "¡Hola, Aitor! ¿Adónde vas?"
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Bidaia-agentziara noa. Abenduan Parisera joango naiz!",
+            "es": "Voy a la agencia de viajes. ¡En diciembre iré a París!"
+          },
+          {
+            "speaker": "Maialen",
+            "eu": "Bai? Norekin joango zara?",
+            "es": "¿Sí? ¿Con quién irás?"
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Nire arrebarekin. Hura Parisen bizi da.",
+            "es": "Con mi hermana. Ella vive en París."
+          },
+          {
+            "speaker": "Maialen",
+            "eu": "Eta zenbat aste geratuko zara?",
+            "es": "¿Y cuántas semanas te quedarás?"
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Bi aste. Urtarrilean itzuliko naiz.",
+            "es": "Dos semanas. Volveré en enero."
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Eta zu? Zer egingo duzu abenduan?",
+            "es": "¿Y tú? ¿Qué harás en diciembre?"
+          },
+          {
+            "speaker": "Maialen",
+            "eu": "Etxean geratuko naiz. Urrian eta azaroan bidaiatu dut.",
+            "es": "Me quedaré en casa. En octubre y noviembre ya he viajado."
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Eta orain nora zoaz?",
+            "es": "¿Y ahora adónde vas?"
+          },
+          {
+            "speaker": "Maialen",
+            "eu": "Apaindegira. Berandu da! Agur, Aitor!",
+            "es": "A la peluquería. ¡Es tarde! ¡Adiós, Aitor!"
+          },
+          {
+            "speaker": "Aitor",
+            "eu": "Agur! Gero arte!",
+            "es": "¡Adiós! ¡Hasta luego!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 1,
+            "prompt": "¿Adónde va Aitor ahora?",
+            "options": [
+              "A la agencia de viajes",
+              "A la peluquería",
+              "A París"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 5,
+            "prompt": "¿Cuándo volverá Aitor?",
+            "options": [
+              "En enero",
+              "En diciembre",
+              "En noviembre"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 10,
+            "prompt": "¿Adónde va Maialen?",
+            "options": [
+              "A la peluquería",
+              "A la agencia de viajes",
+              "A Londres"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u07-2.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u07-2.l6",
+      "type": "legendary",
+      "title": {
+        "es": "Nivel legendario",
+        "eu": "Maila legendarioa"
+      }
+    }
+  ]
+}

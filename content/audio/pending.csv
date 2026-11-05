@@ -3,38 +3,3959 @@ u01-1.gb0.0,"Egun on, Mikel!",1.1
 u01-1.gb0.1,Gabon!,1.1
 u01-1.gb1.0,Ni Jon naiz.,1.1
 u01-1.gb1.1,Nor zara?,1.1
+u01-1.gb1.2,"Zu Ane zara? Bai, ni Ane naiz.",1.1
 u01-1.gb2.0,Eskerrik asko!,1.1
 u01-1.gb2.1,Ez horregatik.,1.1
-u01-1.l1.s1.e01,Kaixo! Ni Ane naiz.,1.1
-u01-1.l1.s1.e02,"Egun on, zer moduz?",1.1
-u01-1.l1.s1.e03,Eskerrik asko.,1.1
-u01-1.l1.s1.e04.0,egun on,1.1
-u01-1.l1.s1.e04.1,arratsalde on,1.1
-u01-1.l1.s1.e04.2,gabon,1.1
-u01-1.l1.s1.e05.0,kaixo,1.1
-u01-1.l1.s1.e05.1,agur,1.1
-u01-1.l1.s1.e05.2,mesedez,1.1
-u01-1.l1.s1.e05.3,barkatu,1.1
-u01-1.l1.s1.e05.4,zorionak,1.1
-u01-1.l1.s1.e06,"Gero arte, Jon!",1.1
-u01-1.l1.s1.e07,Eskerrik asko!,1.1
-u01-1.l1.s1.e08,Ni Ane naiz.,1.1
-u01-1.l1.s1.e09,Barkatu!,1.1
-u01-1.l1.s1.e10.0,Kaixo! Ni Mikel naiz. Eta zu?,1.1
-u01-1.l1.s1.e10.answer,Ni Itziar naiz.,1.1
-u01-1.l1.s1.e11,"Egun on! Ni Jon naiz. Zorionak, Ane!",1.1
-u01-1.l1.s1.e12,Zu Mikel zara?,1.1
-u01-1.l1.s1.e13,"Egun on, Ane!",1.1
-u01-1.l2.s1.e01,Nor zara?,1.1
-u01-1.l2.s1.e02,"Oso ondo, eskerrik asko.",1.1
-u01-1.l2.s1.e03,Zu Iker zara?,1.1
-u01-1.l2.s1.e04.0,Eskerrik asko!,1.1
-u01-1.l2.s1.e04.answer,Ez horregatik.,1.1
-u01-1.l2.s1.e05,"Bai, ni Jon naiz.",1.1
-u01-1.l2.s1.e06,"Arratsalde on, Itziar!",1.1
-u01-1.l3.story.0,Egun on!,1.1
-u01-1.l3.story.1,Kaixo! Zer moduz?,1.1
-u01-1.l3.story.2,"Oso ondo, eskerrik asko. Ni Ane naiz. Eta zu?",1.1
-u01-1.l3.story.3,Ni Iker naiz.,1.1
-u01-1.l3.story.4,"Agur, Iker! Bihar arte!",1.1
-u01-1.l3.story.5,Gero arte!,1.1
+u01-1.l1.s1.e01,"Egun on, Ane!",1.1
+u01-1.l1.s1.e02,"Arratsalde on, Mikel!",1.1
+u01-1.l1.s1.e03.0,kaixo,1.1
+u01-1.l1.s1.e03.1,egun on,1.1
+u01-1.l1.s1.e03.2,arratsalde on,1.1
+u01-1.l1.s1.e03.3,gabon,1.1
+u01-1.l1.s1.e04,"Gabon, Itziar!",1.1
+u01-1.l1.s1.e05,Oso ondo!,1.1
+u01-1.l1.s1.e06,"Kaixo, Jon!",1.1
+u01-1.l1.s1.e07,Arratsalde on!,1.1
+u01-1.l1.s1.e08,"Egun on, zer moduz?",1.1
+u01-1.l1.s1.e09.0,"Egun on, Iker!",1.1
+u01-1.l1.s1.e09.answer,"Egun on, Ane!",1.1
+u01-1.l1.s1.e10,Kaixo! Zer moduz?,1.1
+u01-1.l1.s1.e11,"Gabon, Jon! Bihar arte!",1.1
+u01-1.l1.s1.e12,Oso ondo!,1.1
+u01-1.l1.s1.e13.0,egun on,1.1
+u01-1.l1.s1.e13.1,arratsalde on,1.1
+u01-1.l1.s1.e13.2,gabon,1.1
+u01-1.l1.s1.e14,"Ondo, eta zu?",1.1
+u01-1.l1.s2.e01,"Agur, Mikel!",1.1
+u01-1.l1.s2.e02,"Gero arte, Ane!",1.1
+u01-1.l1.s2.e03.0,agur,1.1
+u01-1.l1.s2.e03.1,gero arte,1.1
+u01-1.l1.s2.e03.2,bihar arte,1.1
+u01-1.l1.s2.e03.3,gabon,1.1
+u01-1.l1.s2.e04,Bihar arte!,1.1
+u01-1.l1.s2.e05,Agur eta gero arte!,1.1
+u01-1.l1.s2.e06,Agur eta gero arte!,1.1
+u01-1.l1.s2.e07,Gero arte!,1.1
+u01-1.l1.s2.e08,Gabon eta bihar arte!,1.1
+u01-1.l1.s2.e09.0,"Agur, Maialen! Bihar arte!",1.1
+u01-1.l1.s2.e09.answer,"Bihar arte, Jon!",1.1
+u01-1.l1.s2.e10,"Kaixo, Itziar! Zer moduz?",1.1
+u01-1.l1.s2.e11,"Kaixo, Ane! Zer moduz?",1.1
+u01-1.l1.s2.e12,"Oso ondo, eta zu?",1.1
+u01-1.l1.s2.e13,"Agur, Iker! Bihar arte!",1.1
+u01-1.l1.s3.e01,Eskerrik asko!,1.1
+u01-1.l1.s3.e02,Ez horregatik.,1.1
+u01-1.l1.s3.e03.0,eskerrik asko,1.1
+u01-1.l1.s3.e03.1,mesedez,1.1
+u01-1.l1.s3.e03.2,barkatu,1.1
+u01-1.l1.s3.e03.3,zorionak,1.1
+u01-1.l1.s3.e03.4,ez horregatik,1.1
+u01-1.l1.s3.e04,Barkatu!,1.1
+u01-1.l1.s3.e05,"Barkatu, zu Iker zara?",1.1
+u01-1.l1.s3.e06,Mesedez.,1.1
+u01-1.l1.s3.e07,Ez horregatik.,1.1
+u01-1.l1.s3.e08,"Zorionak, Ane!",1.1
+u01-1.l1.s3.e09.0,Eskerrik asko!,1.1
+u01-1.l1.s3.e09.answer,Ez horregatik.,1.1
+u01-1.l1.s3.e10,"Eskerrik asko, Jon!",1.1
+u01-1.l1.s3.e11,"Zorionak, Itziar!",1.1
+u01-1.l1.s3.e12,"Barkatu, zu Mikel zara?",1.1
+u01-1.l1.s3.e13,Zorionak eta eskerrik asko!,1.1
+u01-1.l2.s1.e01,Ni Ane naiz.,1.1
+u01-1.l2.s1.e02,Kaixo! Ni Mikel naiz.,1.1
+u01-1.l2.s1.e03,Ni Ane naiz.,1.1
+u01-1.l2.s1.e04,Egun on! Ni Itziar naiz.,1.1
+u01-1.l2.s1.e05,"Ni Mikel naiz, eta zu?",1.1
+u01-1.l2.s1.e06,"Ni Jon naiz, eta zu?",1.1
+u01-1.l2.s1.e07,Ni Jon naiz.,1.1
+u01-1.l2.s1.e08,Ni Maialen naiz.,1.1
+u01-1.l2.s1.e09.0,Kaixo! Ni Mikel naiz. Eta zu?,1.1
+u01-1.l2.s1.e09.answer,Ni Itziar naiz.,1.1
+u01-1.l2.s1.e10,"Kaixo, ni Iker naiz!",1.1
+u01-1.l2.s1.e11,"Arratsalde on, ni Ane naiz.",1.1
+u01-1.l2.s1.e12,Gabon! Ni Jon naiz.,1.1
+u01-1.l2.s2.e01,Zu Mikel zara?,1.1
+u01-1.l2.s2.e02,"Bai, ni Mikel naiz.",1.1
+u01-1.l2.s2.e03,Zu Iker zara?,1.1
+u01-1.l2.s2.e04,"Ez, ni Jon naiz.",1.1
+u01-1.l2.s2.e05,"Bai, ni Ane naiz.",1.1
+u01-1.l2.s2.e06,Zu Ane zara?,1.1
+u01-1.l2.s2.e07,"Ez, ni Jon naiz.",1.1
+u01-1.l2.s2.e08,"Bai, ni Ane naiz.",1.1
+u01-1.l2.s2.e09.0,Zu Ane zara?,1.1
+u01-1.l2.s2.e09.answer,"Bai, ni Ane naiz.",1.1
+u01-1.l2.s2.e10,"Ez, ni Maialen naiz.",1.1
+u01-1.l2.s2.e11,"Kaixo! Zu Jon zara? Ez, ni Mikel naiz.",1.1
+u01-1.l2.s2.e12,"Barkatu, zu Jon zara?",1.1
+u01-1.l2.s2.e13,"Bai, eta zu?",1.1
+u01-1.l2.s3.e01,Nor zara?,1.1
+u01-1.l2.s3.e02,"Zer moduz, Ane?",1.1
+u01-1.l2.s3.e03.0,nor,1.1
+u01-1.l2.s3.e03.1,zer,1.1
+u01-1.l2.s3.e03.2,zein,1.1
+u01-1.l2.s3.e03.3,nola,1.1
+u01-1.l2.s3.e03.4,izena,1.1
+u01-1.l2.s3.e03.5,abizena,1.1
+u01-1.l2.s3.e04,Nola? Barkatu!,1.1
+u01-1.l2.s3.e05,Nor zara?,1.1
+u01-1.l2.s3.e06,Nor zara zu?,1.1
+u01-1.l2.s3.e07.0,Kaixo! Nor zara?,1.1
+u01-1.l2.s3.e07.answer,Ni Jon naiz.,1.1
+u01-1.l2.s3.e08,"Ni Iker naiz. Eta zu, nor zara?",1.1
+u01-1.l2.s3.e09,Izena: Itziar. Abizena: Agirre.,1.1
+u01-1.l2.s3.e10,"Oso ondo, eskerrik asko.",1.1
+u01-1.l2.s3.e11,"Zer moduz, Jon? Ondo?",1.1
+u01-1.l2.s3.e12,Izena: Ane. Abizena: Agirre.,1.1
+u01-1.l3.s1.e01,"Egun on, Ane! Zer moduz?",1.1
+u01-1.l3.s1.e02,"Oso ondo, eskerrik asko. Eta zu?",1.1
+u01-1.l3.s1.e03.0,"Egun on, Mikel! Zer moduz?",1.1
+u01-1.l3.s1.e03.answer,"Oso ondo, eskerrik asko.",1.1
+u01-1.l3.s1.e04,"Ni ondo, eskerrik asko.",1.1
+u01-1.l3.s1.e05.0,Kaixo! Ni Mikel naiz.,1.1
+u01-1.l3.s1.e05.1,"Kaixo, Mikel! Ni Itziar naiz.",1.1
+u01-1.l3.s1.e05.2,"Zer moduz, Itziar?",1.1
+u01-1.l3.s1.e05.answer,"Ondo, eskerrik asko!",1.1
+u01-1.l3.s1.e06,"Agur, Ane! Gero arte!",1.1
+u01-1.l3.s1.e07,"Kaixo! Ni Iker naiz. Zer moduz, Ane?",1.1
+u01-1.l3.s1.e08,"Gero arte, Mikel!",1.1
+u01-1.l3.s1.e09,"Arratsalde on, Jon! Zorionak!",1.1
+u01-1.l3.s2.e01,"Barkatu, zu Itziar zara?",1.1
+u01-1.l3.s2.e02,"Bai, ni Itziar naiz. Eta zu?",1.1
+u01-1.l3.s2.e03,Zu Itziar zara?,1.1
+u01-1.l3.s2.e04,Ni Jon naiz. Kaixo!,1.1
+u01-1.l3.s2.e05,Zorionak!,1.1
+u01-1.l3.s2.e06,"Zorionak, Itziar!",1.1
+u01-1.l3.s2.e07.0,"Barkatu, zu Ane zara?",1.1
+u01-1.l3.s2.e07.answer,"Ez, ni Maialen naiz.",1.1
+u01-1.l3.s2.e08,"Eskerrik asko, Jon!",1.1
+u01-1.l3.s2.e09.0,"Zorionak, Mikel!",1.1
+u01-1.l3.s2.e09.answer,"Eskerrik asko, Itziar!",1.1
+u01-1.l3.s2.e10,"Barkatu! Zu Iker zara? Bai, ni Iker naiz.",1.1
+u01-1.l3.s3.e01,"Gabon, Maialen!",1.1
+u01-1.l3.s3.e02,Gabon! Bihar arte!,1.1
+u01-1.l3.s3.e03.0,egun on,1.1
+u01-1.l3.s3.e03.1,arratsalde on,1.1
+u01-1.l3.s3.e03.2,gabon,1.1
+u01-1.l3.s3.e03.3,agur,1.1
+u01-1.l3.s3.e03.4,bai,1.1
+u01-1.l3.s3.e03.5,ez,1.1
+u01-1.l3.s3.e04,"Mesedez, nor zara?",1.1
+u01-1.l3.s3.e05,Bihar arte!,1.1
+u01-1.l3.s3.e06,Ni Ane Agirre naiz.,1.1
+u01-1.l3.s3.e07.0,"Gabon, Ane! Bihar arte!",1.1
+u01-1.l3.s3.e07.answer,"Bihar arte, Iker!",1.1
+u01-1.l3.s3.e08,"Eskerrik asko, Ane. Agur!",1.1
+u01-1.l3.s3.e09.0,"Barkatu, nor zara?",1.1
+u01-1.l3.s3.e09.answer,Ni Jon Etxeberria naiz.,1.1
+u01-1.l3.s3.e10,Kaixo! Ni Jon naiz. Izena: Jon. Abizena: Etxeberria.,1.1
+u01-1.l4.story.0,Egun on!,1.1
+u01-1.l4.story.1,Kaixo! Zer moduz?,1.1
+u01-1.l4.story.2,"Oso ondo, eskerrik asko. Ni Ane naiz. Eta zu?",1.1
+u01-1.l4.story.3,Ni Iker naiz. Zu Ane Agirre zara?,1.1
+u01-1.l4.story.4,Bai! Eta zu Iker Etxeberria zara?,1.1
+u01-1.l4.story.5,"Ez, ni Iker Urrutia naiz.",1.1
+u01-1.l4.story.6,"Barkatu! Agur, Iker! Bihar arte!",1.1
+u01-1.l4.story.7,Gero arte!,1.1
+u01-2.gb0.0,Hura Mikel da.,1.2
+u01-2.gb0.1,Gu ikasleak gara.,1.2
+u01-2.gb0.2,Haiek Bilbokoak dira.,1.2
+u01-2.gb1.0,Ni irakaslea naiz.,1.2
+u01-2.gb1.1,Zuek medikuak zarete?,1.2
+u01-2.gb1.2,Zu ikaslea zara ala irakaslea?,1.2
+u01-2.gb2.0,Nongoa zara? Ni Donostiakoa naiz.,1.2
+u01-2.gb2.1,Neska hau Amaia da. Gasteizkoa da.,1.2
+u01-2.gb3.0,"Zortzi, bederatzi, hamar.",1.2
+u01-2.gb3.1,"Telefono zenbakia: sei, bost, zero, bi.",1.2
+u01-2.l1.s1.e01,Hura Mikel da.,1.2
+u01-2.l1.s1.e02,Gu Ane eta Jon gara.,1.2
+u01-2.l1.s1.e03.0,gizon,1.2
+u01-2.l1.s1.e03.1,emakume,1.2
+u01-2.l1.s1.e03.2,mutil,1.2
+u01-2.l1.s1.e03.3,neska,1.2
+u01-2.l1.s1.e03.4,ume,1.2
+u01-2.l1.s1.e04,Zuek Itziar eta Iker zarete?,1.2
+u01-2.l1.s1.e05,Gu Ane eta Jon gara.,1.2
+u01-2.l1.s1.e06,Haiek Leire eta Unai dira.,1.2
+u01-2.l1.s1.e07,Haiek Leire eta Unai dira.,1.2
+u01-2.l1.s1.e08,Mikel gizona da.,1.2
+u01-2.l1.s1.e09.0,Kaixo! Zuek nor zarete?,1.2
+u01-2.l1.s1.e09.answer,Gu Ane eta Maialen gara.,1.2
+u01-2.l1.s1.e10,Neska hau Amaia da.,1.2
+u01-2.l1.s1.e11,Kaixo! Ni Gorka naiz. Neska hau Irati da.,1.2
+u01-2.l1.s1.e12,Mutil hau Aitor da.,1.2
+u01-2.l1.s1.e13,Emakume hau Nerea da.,1.2
+u01-2.l1.s2.e01,Ni irakaslea naiz.,1.2
+u01-2.l1.s2.e02,Zu ikaslea zara?,1.2
+u01-2.l1.s2.e03.0,irakasle,1.2
+u01-2.l1.s2.e03.1,ikasle,1.2
+u01-2.l1.s2.e03.2,mediku,1.2
+u01-2.l1.s2.e03.3,erizain,1.2
+u01-2.l1.s2.e03.4,sukaldari,1.2
+u01-2.l1.s2.e03.5,dendari,1.2
+u01-2.l1.s2.e04,Ane medikua da.,1.2
+u01-2.l1.s2.e05,Haiek dendariak dira.,1.2
+u01-2.l1.s2.e06,Mikel erizaina da.,1.2
+u01-2.l1.s2.e07,Gu sukaldariak gara.,1.2
+u01-2.l1.s2.e08,Gu sukaldariak gara.,1.2
+u01-2.l1.s2.e09,Ni langabetua naiz.,1.2
+u01-2.l1.s2.e10,Zuek ingeniariak zarete.,1.2
+u01-2.l1.s2.e11.0,Zer zara zu?,1.2
+u01-2.l1.s2.e11.answer,Ni ingeniaria naiz.,1.2
+u01-2.l1.s2.e12,Haiek dendariak dira.,1.2
+u01-2.l1.s2.e13,Jon langabetua da.,1.2
+u01-2.l1.s3.e01,Nongoa zara?,1.2
+u01-2.l1.s3.e02,Ni Bilbokoa naiz.,1.2
+u01-2.l1.s3.e03.0,emakume,1.2
+u01-2.l1.s3.e03.1,gizon,1.2
+u01-2.l1.s3.e03.2,ume,1.2
+u01-2.l1.s3.e03.3,langabetu,1.2
+u01-2.l1.s3.e03.4,ingeniari,1.2
+u01-2.l1.s3.e04,Ane Donostiakoa da.,1.2
+u01-2.l1.s3.e05,Nongoa zara?,1.2
+u01-2.l1.s3.e06,Gu Gasteizkoak gara.,1.2
+u01-2.l1.s3.e07,Gu Gasteizkoak gara.,1.2
+u01-2.l1.s3.e08,Haiek Baionakoak dira.,1.2
+u01-2.l1.s3.e09.0,Nongoa zara?,1.2
+u01-2.l1.s3.e09.answer,Ni Tolosakoa naiz.,1.2
+u01-2.l1.s3.e10,Zuek nongoak zarete?,1.2
+u01-2.l1.s3.e11,"Ni Leire naiz. Durangokoa naiz, eta Aitor Eibarkoa da.",1.2
+u01-2.l1.s3.e12,Mikel Getxokoa da.,1.2
+u01-2.l1.s3.e13,Ume hau Irungoa da.,1.2
+u01-2.l2.s1.e01,Zu medikua zara ala erizaina?,1.2
+u01-2.l2.s1.e02,Ni erizaina naiz.,1.2
+u01-2.l2.s1.e03,Zuek irakasleak zarete.,1.2
+u01-2.l2.s1.e04,Hura irakaslea da ala ikaslea?,1.2
+u01-2.l2.s1.e05,Ikaslea zara ala irakaslea?,1.2
+u01-2.l2.s1.e06,Gu ez gara ikasleak.,1.2
+u01-2.l2.s1.e07,Haiek ez dira Gasteizkoak.,1.2
+u01-2.l2.s1.e08,Zuek Bilbokoak zarete ala Donostiakoak?,1.2
+u01-2.l2.s1.e09.0,Zu ikaslea zara ala irakaslea?,1.2
+u01-2.l2.s1.e09.answer,Ni ikaslea naiz.,1.2
+u01-2.l2.s1.e10,Haiek ez dira Gasteizkoak.,1.2
+u01-2.l2.s1.e11,"Oier eta Garazi Irungoak dira. Oier medikua da, eta Garazi ingeniaria.",1.2
+u01-2.l2.s1.e12,"Ni ez naiz medikua, erizaina naiz.",1.2
+u01-2.l2.s1.e13,Leire sukaldaria da.,1.2
+u01-2.l2.s2.e01,Nor da hau?,1.2
+u01-2.l2.s2.e02,Hau Eneko da. Ikaslea da.,1.2
+u01-2.l2.s2.e03,Gizon hau medikua da.,1.2
+u01-2.l2.s2.e04,Gizon hau sukaldaria da.,1.2
+u01-2.l2.s2.e05,Nor da hau?,1.2
+u01-2.l2.s2.e06,Emakume hau ingeniaria da.,1.2
+u01-2.l2.s2.e07.0,Nor da emakume hau?,1.2
+u01-2.l2.s2.e07.answer,Hau Edurne da.,1.2
+u01-2.l2.s2.e08,Ume hauek Bermeokoak dira.,1.2
+u01-2.l2.s2.e09,"Hau Josu da. Josu sukaldaria da, eta Bilbokoa da.",1.2
+u01-2.l2.s2.e10,Zer da mutil hau?,1.2
+u01-2.l2.s2.e11,Hauek Olatz eta Xabier dira.,1.2
+u01-2.l2.s2.e12,Neska hau ez da dendaria.,1.2
+u01-2.l2.s3.e01,Zein da telefono zenbakia?,1.2
+u01-2.l2.s3.e02,"Bat, bi, hiru, lau, bost.",1.2
+u01-2.l2.s3.e03.0,bat,1.2
+u01-2.l2.s3.e03.1,bi,1.2
+u01-2.l2.s3.e03.2,hiru,1.2
+u01-2.l2.s3.e03.3,lau,1.2
+u01-2.l2.s3.e03.4,bost,1.2
+u01-2.l2.s3.e03.5,hamar,1.2
+u01-2.l2.s3.e04,"Sei, zazpi, zortzi, bederatzi, hamar.",1.2
+u01-2.l2.s3.e05,"Bat, bi, hiru, lau.",1.2
+u01-2.l2.s3.e06,"Telefono zenbakia: sei, zazpi, bi, zero.",1.2
+u01-2.l2.s3.e07,"Zortzi, bederatzi, hamar.",1.2
+u01-2.l2.s3.e08,Zenbakia bost da ala sei?,1.2
+u01-2.l2.s3.e09.0,"Barkatu, zein da telefono zenbakia?",1.2
+u01-2.l2.s3.e09.answer,"Sei, bost, zero, zazpi.",1.2
+u01-2.l2.s3.e10,Zein da helbidea?,1.2
+u01-2.l2.s3.e11,"Ni Haizea naiz. Telefono zenbakia: sei, lau, lau, bi.",1.2
+u01-2.l2.s3.e12,"Helbidea eta telefono zenbakia, mesedez.",1.2
+u01-2.l2.s3.e13,"Zero, hiru, lau.",1.2
+u01-2.l3.s1.e01,"Kaixo! Ni Nahia naiz, eta Tolosakoa naiz.",1.2
+u01-2.l3.s1.e02,Ikaslea naiz. Eta zu?,1.2
+u01-2.l3.s1.e03,Haiek ez dira irakasleak.,1.2
+u01-2.l3.s1.e04,Ni Markel naiz. Irakaslea naiz.,1.2
+u01-2.l3.s1.e05.0,Kaixo! Ni Izaro naiz. Nongoa zara?,1.2
+u01-2.l3.s1.e05.answer,Ni Hernanikoa naiz.,1.2
+u01-2.l3.s1.e06,"Nongoa zara, Markel?",1.2
+u01-2.l3.s1.e07.0,Kaixo! Zuek ikasleak zarete?,1.2
+u01-2.l3.s1.e07.1,"Ez, gu irakasleak gara.",1.2
+u01-2.l3.s1.e07.2,Eta nongoak zarete?,1.2
+u01-2.l3.s1.e07.answer,Gu Oñatikoak gara.,1.2
+u01-2.l3.s1.e08,Ni Eibarkoa naiz.,1.2
+u01-2.l3.s1.e09,"Kaixo! Ni Kepa naiz. Sukaldaria naiz, eta Lekeitiokoa naiz.",1.2
+u01-2.l3.s1.e10,"Zuek ikasleak zarete? Bai, ikasleak gara.",1.2
+u01-2.l3.s1.e11,"Gu Asier eta Uxue gara. Asier medikua da, eta Uxue erizaina.",1.2
+u01-2.l3.s2.e01,"Ane, hau Julen da.",1.2
+u01-2.l3.s2.e02,"Kaixo, Julen! Zer moduz?",1.2
+u01-2.l3.s2.e03,Hauek June eta Patxi dira.,1.2
+u01-2.l3.s2.e04,Julen eta ni ikasleak gara.,1.2
+u01-2.l3.s2.e05.0,"Mikel, hau Josu da.",1.2
+u01-2.l3.s2.e05.answer,"Kaixo, Josu! Zer moduz?",1.2
+u01-2.l3.s2.e06,Hauek June eta Patxi dira.,1.2
+u01-2.l3.s2.e07.0,Nor dira haiek?,1.2
+u01-2.l3.s2.e07.1,Haiek Irati eta Gorka dira.,1.2
+u01-2.l3.s2.e07.2,Irakasleak dira?,1.2
+u01-2.l3.s2.e07.answer,"Ez, ikasleak dira.",1.2
+u01-2.l3.s2.e08,"June medikua da, eta Patxi dendaria.",1.2
+u01-2.l3.s2.e09,Hau Garazi da. Garazi ingeniaria da. Durangokoa da.,1.2
+u01-2.l3.s2.e10,Patxi Bergarakoa da.,1.2
+u01-2.l3.s2.e11,Hauek Ander eta Miren dira. Ander langabetua da.,1.2
+u01-2.l3.s3.e01,"Izena eta abizena, mesedez.",1.2
+u01-2.l3.s3.e02,Izena: Olatz. Abizena: Arana.,1.2
+u01-2.l3.s3.e03,Eta helbidea?,1.2
+u01-2.l3.s3.e04,Eta telefono zenbakia?,1.2
+u01-2.l3.s3.e05.0,"Barkatu, izena eta abizena, mesedez.",1.2
+u01-2.l3.s3.e05.answer,Olatz Arana.,1.2
+u01-2.l3.s3.e06,"Bederatzi, lau, bat, zazpi.",1.2
+u01-2.l3.s3.e07.0,Eta telefono zenbakia?,1.2
+u01-2.l3.s3.e07.1,"Sei, bat, bost, zero, hiru.",1.2
+u01-2.l3.s3.e07.2,"Sei, bat, bost, zero, hiru?",1.2
+u01-2.l3.s3.e07.answer,"Bai, eskerrik asko.",1.2
+u01-2.l3.s3.e08,Eta helbidea?,1.2
+u01-2.l3.s3.e09,"Izena: Nerea. Abizena: Goikoetxea. Ikaslea da, eta Bermeokoa da.",1.2
+u01-2.l3.s3.e10,"Ni langabetua naiz, eta Getxokoa naiz.",1.2
+u01-2.l3.s3.e11,"Izena: Unai. Abizena: Urrutia. Telefono zenbakia: zazpi, zero, hiru.",1.2
+u01-2.l4.story.0,"Egun on! Ni Amaia naiz, eta irakaslea naiz.",1.2
+u01-2.l4.story.1,Egun on! Ni Unai naiz. Hau Leire da.,1.2
+u01-2.l4.story.2,"Kaixo, Leire! Zu ikaslea zara?",1.2
+u01-2.l4.story.3,"Bai, ni ikaslea naiz. Unai ez da ikaslea.",1.2
+u01-2.l4.story.4,"Ez? Zer zara, Unai?",1.2
+u01-2.l4.story.5,Ni sukaldaria naiz.,1.2
+u01-2.l4.story.6,Eta nongoak zarete?,1.2
+u01-2.l4.story.7,"Ni Bilbokoa naiz, eta Leire Baionakoa da.",1.2
+u01-2.l4.story.8,"Leire, zein da telefono zenbakia?",1.2
+u01-2.l4.story.9,"Sei, zazpi, bi, bost, zero.",1.2
+u01-2.l4.story.10,Eskerrik asko! Gero arte!,1.2
+u02-1.gb0.0,Ane plazan dago.,2.1
+u02-1.gb0.1,Ni Bilbon nago.,2.1
+u02-1.gb1.0,Non zaude? Liburutegian nago.,2.1
+u02-1.gb1.1,Gu hondartzan gaude.,2.1
+u02-1.gb1.2,"Ni Donostiakoa naiz, eta Bilbon nago.",2.1
+u02-1.gb2.0,Badago farmaziarik hemen?,2.1
+u02-1.gb2.1,"Ez, ez dago hotelik.",2.1
+u02-1.gb2.2,Plazan taberna bat dago.,2.1
+u02-1.gb3.0,Hotela hemen dago.,2.1
+u02-1.gb3.1,Kale honetan banku bat dago.,2.1
+u02-1.l1.s1.e01,Bilbo hiria da.,2.1
+u02-1.l1.s1.e02,Tolosa herria da.,2.1
+u02-1.l1.s1.e03.0,herri,2.1
+u02-1.l1.s1.e03.1,hiri,2.1
+u02-1.l1.s1.e03.2,kale,2.1
+u02-1.l1.s1.e03.3,parke,2.1
+u02-1.l1.s1.e03.4,eliza,2.1
+u02-1.l1.s1.e03.5,udaletxe,2.1
+u02-1.l1.s1.e04,Hau plaza da.,2.1
+u02-1.l1.s1.e05,Hau udaletxea da.,2.1
+u02-1.l1.s1.e06,Hau udaletxea da.,2.1
+u02-1.l1.s1.e07,Hori eliza da.,2.1
+u02-1.l1.s1.e08,Hori eliza da.,2.1
+u02-1.l1.s1.e09.0,"Barkatu, hau udaletxea da?",2.1
+u02-1.l1.s1.e09.answer,"Bai, hau udaletxea da.",2.1
+u02-1.l1.s1.e10,Hura parkea da.,2.1
+u02-1.l1.s1.e11,Hau Oñati da. Oñati herria da.,2.1
+u02-1.l1.s1.e12,Udaletxea plazan dago.,2.1
+u02-1.l1.s1.e13,Ni kalean nago.,2.1
+u02-1.l1.s2.e01,Hau bankua da.,2.1
+u02-1.l1.s2.e02,Farmazia hemen dago.,2.1
+u02-1.l1.s2.e03.0,banku,2.1
+u02-1.l1.s2.e03.1,farmazia,2.1
+u02-1.l1.s2.e03.2,eskola,2.1
+u02-1.l1.s2.e03.3,ospitale,2.1
+u02-1.l1.s2.e03.4,liburutegi,2.1
+u02-1.l1.s2.e03.5,hemen,2.1
+u02-1.l1.s2.e04,Eskola hor dago.,2.1
+u02-1.l1.s2.e05,Ospitalea han dago.,2.1
+u02-1.l1.s2.e06,Ospitalea han dago.,2.1
+u02-1.l1.s2.e07,Farmazia hemen dago.,2.1
+u02-1.l1.s2.e08,Liburutegia plazan dago.,2.1
+u02-1.l1.s2.e09.0,"Kaixo, Itziar! Non zaude?",2.1
+u02-1.l1.s2.e09.answer,Liburutegian nago.,2.1
+u02-1.l1.s2.e10,Medikua ospitalean dago.,2.1
+u02-1.l1.s2.e11,"Ni Maialen naiz. Medikua naiz, eta ospitalean nago.",2.1
+u02-1.l1.s2.e12,Irakaslea eskolan dago.,2.1
+u02-1.l1.s2.e13,Ikasleak liburutegian daude.,2.1
+u02-1.l1.s3.e01,Jatetxea hemen dago.,2.1
+u02-1.l1.s3.e02,Taberna plazan dago.,2.1
+u02-1.l1.s3.e03.0,jatetxe,2.1
+u02-1.l1.s3.e03.1,taberna,2.1
+u02-1.l1.s3.e03.2,hotel,2.1
+u02-1.l1.s3.e03.3,geltoki,2.1
+u02-1.l1.s3.e03.4,hondartza,2.1
+u02-1.l1.s3.e03.5,mendi,2.1
+u02-1.l1.s3.e04,Hotela Donostian dago.,2.1
+u02-1.l1.s3.e05,Mikel eta Ane tabernan daude.,2.1
+u02-1.l1.s3.e06,Geltokia han dago.,2.1
+u02-1.l1.s3.e07,Geltokia han dago.,2.1
+u02-1.l1.s3.e08,Hondartza Zarautzen dago.,2.1
+u02-1.l1.s3.e09.0,"Barkatu, non dago hotela?",2.1
+u02-1.l1.s3.e09.answer,Hotela hemen dago.,2.1
+u02-1.l1.s3.e10,Mendia hor dago.,2.1
+u02-1.l1.s3.e11,Gu Zarautzen gaude. Hondartzan gaude.,2.1
+u02-1.l1.s3.e12,Sukaldaria jatetxean dago.,2.1
+u02-1.l1.s3.e13,Mikel eta Ane tabernan daude.,2.1
+u02-1.l2.s1.e01,Non zaude?,2.1
+u02-1.l2.s1.e02,Ni Bilbon nago.,2.1
+u02-1.l2.s1.e03,Gu Iruñean gaude.,2.1
+u02-1.l2.s1.e04,Ane Gasteizen dago.,2.1
+u02-1.l2.s1.e05,"Ni Bilbokoa naiz, eta Gasteizen nago.",2.1
+u02-1.l2.s1.e06,Gu Iruñean gaude.,2.1
+u02-1.l2.s1.e07,Zuek non zaudete?,2.1
+u02-1.l2.s1.e08,Zuek non zaudete?,2.1
+u02-1.l2.s1.e09.0,"Kaixo, Asier! Non zaude?",2.1
+u02-1.l2.s1.e09.answer,Geltokian nago.,2.1
+u02-1.l2.s1.e10,Haiek Baionan daude.,2.1
+u02-1.l2.s1.e11,"Ni Gorka naiz. Gasteizkoa naiz, eta Donostian nago.",2.1
+u02-1.l2.s1.e12,"Ni Donostiakoa naiz, eta Bilbon nago.",2.1
+u02-1.l2.s1.e13,Zu hotelean zaude?,2.1
+u02-1.l2.s2.e01,Badago farmaziarik hemen?,2.1
+u02-1.l2.s2.e02,"Bai, badago.",2.1
+u02-1.l2.s2.e03,"Ez, ez dago hotelik.",2.1
+u02-1.l2.s2.e04,"Ez, ez dago farmaziarik.",2.1
+u02-1.l2.s2.e05,Badago bankurik herrian?,2.1
+u02-1.l2.s2.e06,Badago bankurik herrian?,2.1
+u02-1.l2.s2.e07.0,"Barkatu, badago farmaziarik hemen?",2.1
+u02-1.l2.s2.e07.answer,"Bai, plazan farmazia bat dago.",2.1
+u02-1.l2.s2.e08,Plazan taberna bat dago.,2.1
+u02-1.l2.s2.e09,Tolosan ez dago hondartzarik.,2.1
+u02-1.l2.s2.e10,Herrian ez dago hotelik.,2.1
+u02-1.l2.s2.e11,Badago jatetxerik hor?,2.1
+u02-1.l2.s2.e12,Hirian ospitale bat dago.,2.1
+u02-1.l2.s3.e01,Kale honetan banku bat dago.,2.1
+u02-1.l2.s3.e02,Plaza horretan eliza bat dago.,2.1
+u02-1.l2.s3.e03.0,hemen,2.1
+u02-1.l2.s3.e03.1,hor,2.1
+u02-1.l2.s3.e03.2,han,2.1
+u02-1.l2.s3.e03.3,honetan,2.1
+u02-1.l2.s3.e03.4,horretan,2.1
+u02-1.l2.s3.e03.5,hartan,2.1
+u02-1.l2.s3.e04,Herri hartan ez dago eskolarik.,2.1
+u02-1.l2.s3.e05,Kale honetan farmazia bat dago.,2.1
+u02-1.l2.s3.e06,"Hau liburutegia da, eta hori eskola.",2.1
+u02-1.l2.s3.e07,Herri hartan ez dago eskolarik.,2.1
+u02-1.l2.s3.e08,Hura geltokia da?,2.1
+u02-1.l2.s3.e09.0,"Barkatu, non dago udaletxea?",2.1
+u02-1.l2.s3.e09.answer,"Han dago, plaza hartan.",2.1
+u02-1.l2.s3.e10,Hotel honetan nago.,2.1
+u02-1.l2.s3.e11,Hau Lekeitio da. Herri honetan hondartza bat dago.,2.1
+u02-1.l2.s3.e12,Jatetxe horretan daude.,2.1
+u02-1.l2.s3.e13,Parkea hor dago?,2.1
+u02-1.l3.s1.e01,"Barkatu, non dago geltokia?",2.1
+u02-1.l3.s1.e02,Geltokia han dago.,2.1
+u02-1.l3.s1.e03,Ospitalea ez dago hemen.,2.1
+u02-1.l3.s1.e04,"Mesedez, non dago liburutegia?",2.1
+u02-1.l3.s1.e05.0,"Barkatu, non dago udaletxea?",2.1
+u02-1.l3.s1.e05.answer,Udaletxea plazan dago.,2.1
+u02-1.l3.s1.e06,Liburutegia eskolan dago.,2.1
+u02-1.l3.s1.e07.0,Egun on! Badago hotelik herrian?,2.1
+u02-1.l3.s1.e07.1,"Bai, badago. Kale honetan dago.",2.1
+u02-1.l3.s1.e07.2,Eta jatetxerik?,2.1
+u02-1.l3.s1.e07.answer,"Bai, hotelean jatetxe bat dago.",2.1
+u02-1.l3.s1.e08,"Ospitalea ez dago hemen, Gasteizen dago.",2.1
+u02-1.l3.s1.e09,"Non dago farmazia? Hor dago, plazan.",2.1
+u02-1.l3.s1.e10,"Ondo, eskerrik asko! Agur!",2.1
+u02-1.l3.s1.e11,Gu Bermeon gaude. Herri honetan ez dago hotelik.,2.1
+u02-1.l3.s2.e01,"Kaixo, Oier! Non zaude?",2.1
+u02-1.l3.s2.e02,"Mendian nago, eta zu?",2.1
+u02-1.l3.s2.e03,Garazi eta Julen parkean daude.,2.1
+u02-1.l3.s2.e04,Ni hondartzan nago.,2.1
+u02-1.l3.s2.e05.0,Kaixo! Non zaudete?,2.1
+u02-1.l3.s2.e05.answer,Gu tabernan gaude.,2.1
+u02-1.l3.s2.e06,Garazi eta Julen non daude?,2.1
+u02-1.l3.s2.e07.0,"Kaixo, Amaia! Non zaude?",2.1
+u02-1.l3.s2.e07.1,Liburutegian nago. Eta zu?,2.1
+u02-1.l3.s2.e07.answer,Ni geltokian nago.,2.1
+u02-1.l3.s2.e08,Parkean daude.,2.1
+u02-1.l3.s2.e09,"Ni Miren naiz. Irakaslea naiz, eta eskolan nago.",2.1
+u02-1.l3.s2.e10,Gu jatetxe honetan gaude.,2.1
+u02-1.l3.s2.e11,Josu eta Edurne mendian daude. Ni hondartzan nago.,2.1
+u02-1.l3.s3.e01,Hau Elizondo da. Herri hau Nafarroan dago.,2.1
+u02-1.l3.s3.e02,Herri honetan eliza bat eta plaza bat daude.,2.1
+u02-1.l3.s3.e03,Herri honetan eliza bat eta plaza bat daude.,2.1
+u02-1.l3.s3.e04,"Badago bankurik? Ez, ez dago.",2.1
+u02-1.l3.s3.e05.0,"Barkatu, badago liburutegirik hiri honetan?",2.1
+u02-1.l3.s3.e05.answer,"Bai, udaletxean liburutegi bat dago.",2.1
+u02-1.l3.s3.e06,Hiri honetan ospitale bat dago.,2.1
+u02-1.l3.s3.e07.0,Zu Lizarrakoa zara?,2.1
+u02-1.l3.s3.e07.1,"Ez, ni Tuterakoa naiz.",2.1
+u02-1.l3.s3.e07.2,Eta non zaude?,2.1
+u02-1.l3.s3.e07.answer,Lizarran nago.,2.1
+u02-1.l3.s3.e08,"Hondartza ez dago hemen, Hondarribian dago.",2.1
+u02-1.l3.s3.e09,Herri hau Bizkaian dago. Herri honetan ez dago hondartzarik.,2.1
+u02-1.l3.s3.e10,Mendia han dago.,2.1
+u02-1.l3.s3.e11,Getxo herria da. Getxon hondartza bat eta parke bat daude.,2.1
+u02-1.l4.story.0,Barkatu! Zu Lekeitiokoa zara?,2.1
+u02-1.l4.story.1,"Bai, Lekeitiokoa naiz. Zer moduz?",2.1
+u02-1.l4.story.2,"Ondo, eskerrik asko. Badago hotelik herrian?",2.1
+u02-1.l4.story.3,"Bai, badago. Hotela hondartzan dago.",2.1
+u02-1.l4.story.4,Eta hondartza non dago?,2.1
+u02-1.l4.story.5,Han dago. Hura hotela da.,2.1
+u02-1.l4.story.6,Oso ondo! Eta badago farmaziarik?,2.1
+u02-1.l4.story.7,"Bai, plazan. Udaletxea eta farmazia plazan daude.",2.1
+u02-1.l4.story.8,Eta bankurik?,2.1
+u02-1.l4.story.9,"Ez, herri honetan ez dago bankurik.",2.1
+u02-1.l4.story.10,Eskerrik asko! Agur!,2.1
+u02-2.gb0.0,Farmazia bankuaren ondoan dago.,2.2
+u02-2.gb0.1,Taberna hotelaren azpian dago.,2.2
+u02-2.gb0.2,Liburutegia plazaren eta parkearen artean dago.,2.2
+u02-2.gb1.0,Segi zuzen eta eskuinera.,2.2
+u02-2.gb1.1,Baiona iparraldean dago.,2.2
+u02-2.gb2.0,Tolosa herri polita da.,2.2
+u02-2.gb2.1,Plazan hotel handi bat dago.,2.2
+u02-2.gb3.0,Zer ordu da? Hirurak eta erdiak dira.,2.2
+u02-2.gb3.1,"Euria ari du, eta hotz egiten du.",2.2
+u02-2.l1.s1.e01,Farmazia bankuaren ondoan dago.,2.2
+u02-2.l1.s1.e02,Taberna hotelaren azpian dago.,2.2
+u02-2.l1.s1.e03.0,aurrean,2.2
+u02-2.l1.s1.e03.1,atzean,2.2
+u02-2.l1.s1.e03.2,ondoan,2.2
+u02-2.l1.s1.e03.3,gainean,2.2
+u02-2.l1.s1.e03.4,azpian,2.2
+u02-2.l1.s1.e03.5,artean,2.2
+u02-2.l1.s1.e04,Eliza mendiaren gainean dago.,2.2
+u02-2.l1.s1.e05,Farmazia bankuaren ondoan dago.,2.2
+u02-2.l1.s1.e06,Parkea eskolaren atzean dago.,2.2
+u02-2.l1.s1.e07,Parkea eskolaren atzean dago.,2.2
+u02-2.l1.s1.e08,Udaletxea elizaren aurrean dago.,2.2
+u02-2.l1.s1.e09.0,"Barkatu, non dago bankua?",2.2
+u02-2.l1.s1.e09.answer,Bankua farmaziaren ondoan dago.,2.2
+u02-2.l1.s1.e10,Liburutegia plazaren eta parkearen artean dago.,2.2
+u02-2.l1.s1.e11,Hotela plazan dago. Taberna hotelaren azpian dago.,2.2
+u02-2.l1.s1.e12,Ane Jonen ondoan dago.,2.2
+u02-2.l1.s1.e13,Geltokia hotelaren aurrean dago.,2.2
+u02-2.l1.s2.e01,Segi zuzen.,2.2
+u02-2.l1.s2.e02,Segi zuzen eta eskuinera.,2.2
+u02-2.l1.s2.e03.0,eskuin,2.2
+u02-2.l1.s2.e03.1,ezker,2.2
+u02-2.l1.s2.e03.2,zuzen,2.2
+u02-2.l1.s2.e03.3,gertu,2.2
+u02-2.l1.s2.e03.4,urrun,2.2
+u02-2.l1.s2.e03.5,ipar,2.2
+u02-2.l1.s2.e04,Farmazia ezkerrean dago.,2.2
+u02-2.l1.s2.e05,Mendia urrun dago.,2.2
+u02-2.l1.s2.e06,Hotela eskuinean dago.,2.2
+u02-2.l1.s2.e07,Segi zuzen eta ezkerrera.,2.2
+u02-2.l1.s2.e08,Hondartza gertu dago.,2.2
+u02-2.l1.s2.e09.0,"Barkatu, geltokia gertu dago?",2.2
+u02-2.l1.s2.e09.answer,"Bai, segi zuzen eta eskuinera.",2.2
+u02-2.l1.s2.e10,Mendia urrun dago.,2.2
+u02-2.l1.s2.e11,"Zuberoa ekialdean dago, eta Bizkaia mendebaldean.",2.2
+u02-2.l1.s2.e12,Baiona iparraldean dago.,2.2
+u02-2.l1.s2.e13,Tutera hegoaldean dago.,2.2
+u02-2.l1.s3.e01,Tolosa herri polita da.,2.2
+u02-2.l1.s3.e02,Bilbo hiri handia da.,2.2
+u02-2.l1.s3.e03.0,handi,2.2
+u02-2.l1.s3.e03.1,txiki,2.2
+u02-2.l1.s3.e03.2,polit,2.2
+u02-2.l1.s3.e03.3,euri,2.2
+u02-2.l1.s3.e03.4,elur,2.2
+u02-2.l1.s3.e03.5,eguzki,2.2
+u02-2.l1.s3.e04,Plaza hau txikia da.,2.2
+u02-2.l1.s3.e05,Bilbo hiri handia da.,2.2
+u02-2.l1.s3.e06,Euria ari du.,2.2
+u02-2.l1.s3.e07,Euria ari du.,2.2
+u02-2.l1.s3.e08,Elurra ari du.,2.2
+u02-2.l1.s3.e09.0,Zer eguraldi egiten du Donostian?,2.2
+u02-2.l1.s3.e09.answer,Euria ari du.,2.2
+u02-2.l1.s3.e10,Eguzkia dago.,2.2
+u02-2.l1.s3.e11,"Gasteizen hotz egiten du, eta elurra ari du.",2.2
+u02-2.l1.s3.e12,Haize egiten du.,2.2
+u02-2.l1.s3.e13,Hotz egiten du.,2.2
+u02-2.l2.s1.e01,Ni Mikelen ondoan nago.,2.2
+u02-2.l2.s1.e02,Zu Aneren atzean zaude.,2.2
+u02-2.l2.s1.e03,Gu udaletxearen aurrean gaude.,2.2
+u02-2.l2.s1.e04,Gu udaletxearen aurrean gaude.,2.2
+u02-2.l2.s1.e05,Hotela geltokiaren eta bankuaren artean dago.,2.2
+u02-2.l2.s1.e06,Hotela geltokiaren eta bankuaren artean dago.,2.2
+u02-2.l2.s1.e07,Zu Aneren atzean zaude.,2.2
+u02-2.l2.s1.e08,Jatetxea tabernaren gainean dago.,2.2
+u02-2.l2.s1.e09.0,Kaixo! Non zaude?,2.2
+u02-2.l2.s1.e09.answer,Geltokiaren aurrean nago.,2.2
+u02-2.l2.s1.e10,Farmazia ez dago ospitalearen ondoan.,2.2
+u02-2.l2.s1.e11,"Taberna plazan dago, elizaren ondoan. Eliza udaletxearen aurrean dago.",2.2
+u02-2.l2.s1.e12,Non dago liburutegia? Eskolaren atzean.,2.2
+u02-2.l2.s1.e13,Ikasleak irakaslearen aurrean daude.,2.2
+u02-2.l2.s2.e01,Zer ordu da?,2.2
+u02-2.l2.s2.e02,Ordu bata da.,2.2
+u02-2.l2.s2.e03.0,ordu bata,2.2
+u02-2.l2.s2.e03.1,ordu biak,2.2
+u02-2.l2.s2.e03.2,seiak,2.2
+u02-2.l2.s2.e03.3,zortziak,2.2
+u02-2.l2.s2.e03.4,bederatziak,2.2
+u02-2.l2.s2.e03.5,eta erdiak,2.2
+u02-2.l2.s2.e04,Ordu biak dira.,2.2
+u02-2.l2.s2.e05,Hirurak eta erdiak dira.,2.2
+u02-2.l2.s2.e06,Hirurak eta erdiak dira.,2.2
+u02-2.l2.s2.e07,Bostak laurden gutxi dira.,2.2
+u02-2.l2.s2.e08,Laurak eta laurden dira.,2.2
+u02-2.l2.s2.e09.0,"Barkatu, zer ordu da?",2.2
+u02-2.l2.s2.e09.answer,Seiak eta laurden dira.,2.2
+u02-2.l2.s2.e10,Bostak laurden gutxi dira.,2.2
+u02-2.l2.s2.e11,Zer ordu da? Zortziak eta erdiak dira.,2.2
+u02-2.l2.s2.e12,Zazpiak dira.,2.2
+u02-2.l2.s2.e13,Hamarrak eta erdiak dira.,2.2
+u02-2.l2.s3.e01,Zer eguraldi egiten du?,2.2
+u02-2.l2.s3.e02,Bero egiten du.,2.2
+u02-2.l2.s3.e03,Oso hotz egiten du.,2.2
+u02-2.l2.s3.e04,Oso hotz egiten du.,2.2
+u02-2.l2.s3.e05,Bero egiten du.,2.2
+u02-2.l2.s3.e06,Donostian euria ari du.,2.2
+u02-2.l2.s3.e07.0,Kaixo! Zer eguraldi egiten du Gasteizen?,2.2
+u02-2.l2.s3.e07.answer,Hotz egiten du.,2.2
+u02-2.l2.s3.e08,Mendian elurra ari du.,2.2
+u02-2.l2.s3.e09,"Lekeition eguzkia dago, eta bero egiten du.",2.2
+u02-2.l2.s3.e10,Hondartzan eguzkia dago.,2.2
+u02-2.l2.s3.e11,Kale txiki batean nago.,2.2
+u02-2.l2.s3.e12,Plazan hotel handi bat dago.,2.2
+u02-2.l3.s1.e01,"Barkatu, ospitalea urrun dago?",2.2
+u02-2.l3.s1.e02,"Ez, gertu dago.",2.2
+u02-2.l3.s1.e03,"Ez, gertu dago.",2.2
+u02-2.l3.s1.e04,Segi zuzen eta ezkerrera.,2.2
+u02-2.l3.s1.e05.0,"Barkatu, non dago eskola?",2.2
+u02-2.l3.s1.e05.answer,Segi zuzen. Eskola plazaren ondoan dago.,2.2
+u02-2.l3.s1.e06,Ospitalea parkearen ondoan dago.,2.2
+u02-2.l3.s1.e07.0,"Barkatu, badago farmaziarik hemen?",2.2
+u02-2.l3.s1.e07.1,"Bai, kale honetan, bankuaren ondoan.",2.2
+u02-2.l3.s1.e07.2,Urrun dago?,2.2
+u02-2.l3.s1.e07.answer,"Ez, oso gertu dago.",2.2
+u02-2.l3.s1.e08,"Geltokia eskuinean dago, hotelaren atzean.",2.2
+u02-2.l3.s1.e09,Segi zuzen eta eskuinera. Jatetxea tabernaren ondoan dago.,2.2
+u02-2.l3.s1.e10,Eskerrik asko! Ez horregatik.,2.2
+u02-2.l3.s1.e11,Hondartza ez dago urrun. Hotelaren atzean dago.,2.2
+u02-2.l3.s2.e01,Hondarribia herri polita da.,2.2
+u02-2.l3.s2.e02,Herri hau Gipuzkoako iparraldean dago.,2.2
+u02-2.l3.s2.e03,"Plaza txikia da, eta eliza handia.",2.2
+u02-2.l3.s2.e04,"Plaza txikia da, eta eliza handia.",2.2
+u02-2.l3.s2.e05.0,Bermeo herri handia da?,2.2
+u02-2.l3.s2.e05.answer,"Ez, herri txikia da.",2.2
+u02-2.l3.s2.e06,Hondartza handi bat dago.,2.2
+u02-2.l3.s2.e07.0,"Kaixo, Miren! Non zaude?",2.2
+u02-2.l3.s2.e07.1,"Getxon nago, hondartzan.",2.2
+u02-2.l3.s2.e07.2,Hondartza polita da?,2.2
+u02-2.l3.s2.e07.answer,"Bai, oso polita da.",2.2
+u02-2.l3.s2.e08,Gasteiz Euskal Herriko hegoaldean dago.,2.2
+u02-2.l3.s2.e09,"Bilbo hiri handia da, eta Euskal Herriko mendebaldean dago.",2.2
+u02-2.l3.s2.e10,Zuberoa Euskal Herriko ekialdean dago.,2.2
+u02-2.l3.s2.e11,Elizondo herri txikia da. Nafarroako iparraldean dago.,2.2
+u02-2.l3.s3.e01,"Zer ordu da, Peio?",2.2
+u02-2.l3.s3.e02,Ordu bata eta erdiak dira.,2.2
+u02-2.l3.s3.e03,Zer eguraldi egiten du?,2.2
+u02-2.l3.s3.e04,Zer eguraldi egiten du Bilbon?,2.2
+u02-2.l3.s3.e05.0,"Barkatu, zer ordu da?",2.2
+u02-2.l3.s3.e05.answer,Zortziak eta laurden dira.,2.2
+u02-2.l3.s3.e06,"Bilbon euria ari du, eta haize egiten du.",2.2
+u02-2.l3.s3.e07.0,"Kaixo, Julen! Non zaude?",2.2
+u02-2.l3.s3.e07.1,Hondartzan nago. Eguzkia dago!,2.2
+u02-2.l3.s3.e07.2,Bero egiten du?,2.2
+u02-2.l3.s3.e07.answer,"Bai, oso bero egiten du.",2.2
+u02-2.l3.s3.e08,"Hemen eguzkia dago, eta bero egiten du.",2.2
+u02-2.l3.s3.e09,"Bederatziak dira. Euria ari du, eta hotz egiten du.",2.2
+u02-2.l3.s3.e10,Mendian oso hotz egiten du.,2.2
+u02-2.l3.s3.e11,Laurak eta erdiak dira. Mendian elurra ari du.,2.2
+u02-2.l4.story.0,"Kaixo, Aitor! Non zaude?",2.2
+u02-2.l4.story.1,"Zarautzen nago, hondartzaren ondoan.",2.2
+u02-2.l4.story.2,Zer eguraldi egiten du Zarautzen?,2.2
+u02-2.l4.story.3,"Eguzkia dago, eta oso bero egiten du! Eta Gasteizen?",2.2
+u02-2.l4.story.4,"Hemen euria ari du, eta hotz egiten du.",2.2
+u02-2.l4.story.5,Zer ordu da?,2.2
+u02-2.l4.story.6,Hirurak eta erdiak dira.,2.2
+u02-2.l4.story.7,"Zarautzen jatetxe polit bat dago, plazan. Elizaren ondoan dago.",2.2
+u02-2.l4.story.8,Plaza urrun dago?,2.2
+u02-2.l4.story.9,"Ez, oso gertu. Segi zuzen eta ezkerrera.",2.2
+u02-2.l4.story.10,Eskerrik asko! Agur!,2.2
+u03-1.gb0.0,Hau nire ama da.,3.1
+u03-1.gb0.1,Hauek gure gurasoak dira.,3.1
+u03-1.gb0.2,Zuen aita irakaslea da?,3.1
+u03-1.gb1.0,Mikel Aneren neba da.,3.1
+u03-1.gb1.1,Mutilaren ama medikua da.,3.1
+u03-1.gb1.2,Ane bere amaren ondoan dago.,3.1
+u03-1.gb2.0,Ane Jonen arreba da.,3.1
+u03-1.gb2.1,Ane Maialenen ahizpa da.,3.1
+u03-1.gb2.2,Mikel eta Jon anaiak dira.,3.1
+u03-1.gb3.0,Non bizi zara? Bilbon bizi naiz.,3.1
+u03-1.gb3.1,Norekin bizi zara?,3.1
+u03-1.gb3.2,Nire gurasoekin bizi naiz.,3.1
+u03-1.l1.s1.e01,Hau nire ama da.,3.1
+u03-1.l1.s1.e02,Hau nire aita da.,3.1
+u03-1.l1.s1.e03.0,aita,3.1
+u03-1.l1.s1.e03.1,ama,3.1
+u03-1.l1.s1.e03.2,seme,3.1
+u03-1.l1.s1.e03.3,alaba,3.1
+u03-1.l1.s1.e03.4,gurasoak,3.1
+u03-1.l1.s1.e04,Hauek nire gurasoak dira.,3.1
+u03-1.l1.s1.e05,Hau nire ama da.,3.1
+u03-1.l1.s1.e06,Nire aita medikua da.,3.1
+u03-1.l1.s1.e07,Hau nire semea da.,3.1
+u03-1.l1.s1.e08,Nire ama irakaslea da.,3.1
+u03-1.l1.s1.e09.0,Kaixo! Hau zure aita da?,3.1
+u03-1.l1.s1.e09.answer,"Bai, hau nire aita da.",3.1
+u03-1.l1.s1.e10,Jon Mikelen semea da.,3.1
+u03-1.l1.s1.e11,Ni Ane naiz. Nire ama Itziar da. Nire ama erizaina da.,3.1
+u03-1.l1.s1.e12,Ane Itziarren alaba da.,3.1
+u03-1.l1.s1.e13,Zure alaba ikaslea da?,3.1
+u03-1.l1.s2.e01,Mikel Aneren neba da.,3.1
+u03-1.l1.s2.e02,Jon Ikerren anaia da.,3.1
+u03-1.l1.s2.e03.0,anaia,3.1
+u03-1.l1.s2.e03.1,arreba,3.1
+u03-1.l1.s2.e03.2,neba,3.1
+u03-1.l1.s2.e03.3,ahizpa,3.1
+u03-1.l1.s2.e04,Ane Jonen arreba da.,3.1
+u03-1.l1.s2.e05,"Ni Ane naiz, eta Leire nire ahizpa da.",3.1
+u03-1.l1.s2.e06,Maialen Itziarren ahizpa da.,3.1
+u03-1.l1.s2.e07,Ane Mikelen arreba da.,3.1
+u03-1.l1.s2.e08,"Ni Jon naiz, eta hau nire arreba da.",3.1
+u03-1.l1.s2.e09.0,"Barkatu, Iker zure neba da?",3.1
+u03-1.l1.s2.e09.answer,"Bai, Iker nire neba da.",3.1
+u03-1.l1.s2.e10,"Ni Maialen naiz, eta hau nire neba da.",3.1
+u03-1.l1.s2.e11,Ni Itziar naiz. Hau Maialen da. Maialen nire ahizpa da.,3.1
+u03-1.l1.s2.e12,Mikel eta Jon anaiak dira.,3.1
+u03-1.l1.s2.e13,Zu Ikerren anaia zara?,3.1
+u03-1.l1.s3.e01,Hau nire aitona da.,3.1
+u03-1.l1.s3.e02,Nire amona Donostiakoa da.,3.1
+u03-1.l1.s3.e03.0,aitona,3.1
+u03-1.l1.s3.e03.1,amona,3.1
+u03-1.l1.s3.e03.2,osaba,3.1
+u03-1.l1.s3.e03.3,izeba,3.1
+u03-1.l1.s3.e03.4,lehengusua,3.1
+u03-1.l1.s3.e03.5,laguna,3.1
+u03-1.l1.s3.e04,Mikel nire osaba da.,3.1
+u03-1.l1.s3.e05,Iker Maialenen senarra da.,3.1
+u03-1.l1.s3.e06,Itziar nire izeba da.,3.1
+u03-1.l1.s3.e07,Hau nire izeba da.,3.1
+u03-1.l1.s3.e08,Jon eta Ane nire lehengusuak dira.,3.1
+u03-1.l1.s3.e09.0,"Kaixo, Jon! Nor da hau?",3.1
+u03-1.l1.s3.e09.answer,Hau nire amona da.,3.1
+u03-1.l1.s3.e10,Iker Maialenen senarra da.,3.1
+u03-1.l1.s3.e11,Hau Unai da. Unai nire lehengusua da. Bilbokoa da.,3.1
+u03-1.l1.s3.e12,Maialen Ikerren emaztea da.,3.1
+u03-1.l1.s3.e13,Leire nire laguna da.,3.1
+u03-1.l2.s1.e01,Hau zure laguna da?,3.1
+u03-1.l2.s1.e02,"Bai, hau nire laguna da.",3.1
+u03-1.l2.s1.e03,Hauek gure gurasoak dira.,3.1
+u03-1.l2.s1.e04,Hauek gure gurasoak dira.,3.1
+u03-1.l2.s1.e05,Hau zure aita da?,3.1
+u03-1.l2.s1.e06,Zuen aita irakaslea da?,3.1
+u03-1.l2.s1.e07,Zuen ama medikua da?,3.1
+u03-1.l2.s1.e08,Haien ama sukaldaria da.,3.1
+u03-1.l2.s1.e09.0,Hau zure lehengusua da?,3.1
+u03-1.l2.s1.e09.answer,"Ez, hau nire laguna da.",3.1
+u03-1.l2.s1.e10,Hau Mikel da. Haren aita medikua da.,3.1
+u03-1.l2.s1.e11,"Kaixo! Ni Gorka naiz. Hau Amaia da, nire emaztea. Amaia medikua da.",3.1
+u03-1.l2.s1.e12,Nire anaia ingeniaria da.,3.1
+u03-1.l2.s1.e13,Zein da zure telefono zenbakia?,3.1
+u03-1.l2.s2.e01,Hau Mikelen aita da.,3.1
+u03-1.l2.s2.e02,Aneren ama erizaina da.,3.1
+u03-1.l2.s2.e03,Hau Aneren ama da.,3.1
+u03-1.l2.s2.e04,Itziarren semea ikaslea da.,3.1
+u03-1.l2.s2.e05,Mutilaren aita irakaslea da.,3.1
+u03-1.l2.s2.e06,Mutilaren ama medikua da.,3.1
+u03-1.l2.s2.e07.0,Noren alaba da Leire?,3.1
+u03-1.l2.s2.e07.answer,Itziarren alaba da.,3.1
+u03-1.l2.s2.e08,Neskaren aita sukaldaria da.,3.1
+u03-1.l2.s2.e09,Ane Jonen ondoan dago. Jon Aneren neba da.,3.1
+u03-1.l2.s2.e10,Noren semea da Jon?,3.1
+u03-1.l2.s2.e11,Ikerren laguna nire ondoan dago.,3.1
+u03-1.l2.s2.e12,Ane bere amaren ondoan dago.,3.1
+u03-1.l2.s3.e01,Non bizi zara?,3.1
+u03-1.l2.s3.e02,Bilbon bizi naiz.,3.1
+u03-1.l2.s3.e03,Nire amarekin bizi naiz.,3.1
+u03-1.l2.s3.e04,Norekin bizi zara?,3.1
+u03-1.l2.s3.e05,Norekin bizi zara?,3.1
+u03-1.l2.s3.e06,Nire gurasoekin bizi naiz.,3.1
+u03-1.l2.s3.e07,Haiek Iruñean bizi dira.,3.1
+u03-1.l2.s3.e08,Ane bere ahizparekin bizi da.,3.1
+u03-1.l2.s3.e09.0,"Norekin bizi zara, Eneko?",3.1
+u03-1.l2.s3.e09.answer,Nire emaztearekin bizi naiz.,3.1
+u03-1.l2.s3.e10,Mikel bakarrik bizi da.,3.1
+u03-1.l2.s3.e11,"Ni Nerea naiz. Tolosan bizi naiz, nire senarrarekin eta nire alabarekin.",3.1
+u03-1.l2.s3.e12,Gu Donostian bizi gara.,3.1
+u03-1.l2.s3.e13,Zuek lagunekin bizi zarete?,3.1
+u03-1.l3.s1.e01,"Kaixo, Amaia! Hau nire neba da, Aitor.",3.1
+u03-1.l3.s1.e02,"Kaixo, Aitor! Zer moduz?",3.1
+u03-1.l3.s1.e03,Hauek nire lehengusuak dira.,3.1
+u03-1.l3.s1.e04,Zure ama Bilbokoa da?,3.1
+u03-1.l3.s1.e05.0,Kaixo! Nor da hau?,3.1
+u03-1.l3.s1.e05.1,Hau nire aita da.,3.1
+u03-1.l3.s1.e05.2,Egun on! Zu medikua zara?,3.1
+u03-1.l3.s1.e05.answer,"Ez, ni irakaslea naiz.",3.1
+u03-1.l3.s1.e06,"Ez, nire ama Baionakoa da.",3.1
+u03-1.l3.s1.e07.0,Zure ahizpa non bizi da?,3.1
+u03-1.l3.s1.e07.answer,Getxon bizi da.,3.1
+u03-1.l3.s1.e08,Nire aitona eta amona Lekeition bizi dira.,3.1
+u03-1.l3.s1.e09,Hau Unai da. Unai nire senarra da. Gu Eibarren bizi gara.,3.1
+u03-1.l3.s1.e10,Gorka Amaiaren lehengusua da.,3.1
+u03-1.l3.s1.e11,"Ni Ander naiz. Hau Irati da, nire arreba. Irati ikaslea da.",3.1
+u03-1.l3.s2.e01,"Non bizi zara, Oier?",3.1
+u03-1.l3.s2.e02,"Zarautzen bizi naiz, nire lagunekin.",3.1
+u03-1.l3.s2.e03,Asier bere anaiarekin bizi da.,3.1
+u03-1.l3.s2.e04,Eta zure gurasoak?,3.1
+u03-1.l3.s2.e05.0,Norekin bizi zara?,3.1
+u03-1.l3.s2.e05.answer,Nire amonarekin bizi naiz.,3.1
+u03-1.l3.s2.e06,Nire gurasoak Tolosan bizi dira.,3.1
+u03-1.l3.s2.e07.0,"Kaixo, Peio! Non bizi zara?",3.1
+u03-1.l3.s2.e07.1,Irunen bizi naiz.,3.1
+u03-1.l3.s2.e07.2,Bakarrik?,3.1
+u03-1.l3.s2.e07.answer,"Ez, nire emaztearekin.",3.1
+u03-1.l3.s2.e08,Haizea bakarrik bizi da?,3.1
+u03-1.l3.s2.e09,"Ni Olatz naiz. Hondarribian bizi naiz, nire aitarekin.",3.1
+u03-1.l3.s2.e10,"Ez, bere senarrarekin bizi da.",3.1
+u03-1.l3.s2.e11,Xabier eta Uxue Durangon bizi dira. Xabier Uxueren senarra da.,3.1
+u03-1.l3.s3.e01,Noren laguna da Nahia?,3.1
+u03-1.l3.s3.e02,Nahia Markelen laguna da.,3.1
+u03-1.l3.s3.e03,Norekin bizi da Eneko?,3.1
+u03-1.l3.s3.e04,Izaro Ibairen arreba da.,3.1
+u03-1.l3.s3.e05.0,"Barkatu, zu Kepa zara?",3.1
+u03-1.l3.s3.e05.1,"Bai, ni Kepa naiz.",3.1
+u03-1.l3.s3.e05.2,Ni Mirenen alaba naiz!,3.1
+u03-1.l3.s3.e05.answer,Kaixo! Zer moduz zure ama?,3.1
+u03-1.l3.s3.e06,Ibai bere gurasoekin bizi da.,3.1
+u03-1.l3.s3.e07.0,Zure lehengusua Gasteizen bizi da?,3.1
+u03-1.l3.s3.e07.answer,"Bai, bere gurasoekin.",3.1
+u03-1.l3.s3.e08,Zure izeba eta osaba non bizi dira?,3.1
+u03-1.l3.s3.e09,Hau Patxi da. Patxi Edurneren aitona da. Edurne eta Patxi Oñatin bizi dira.,3.1
+u03-1.l3.s3.e10,Nire izeba eta osaba Elizondon bizi dira.,3.1
+u03-1.l3.s3.e11,Arantza nire izeba da. Arantza erizaina da.,3.1
+u03-1.l4.story.0,"Kaixo, Ane! Zer moduz?",3.1
+u03-1.l4.story.1,"Oso ondo! Unai, hau Mikel da, nire neba.",3.1
+u03-1.l4.story.2,"Kaixo, Unai! Zu Aneren laguna zara?",3.1
+u03-1.l4.story.3,Bai. Eta hura nor da?,3.1
+u03-1.l4.story.4,"Hura gure amona da, Miren.",3.1
+u03-1.l4.story.5,Zuen amona Bilbon bizi da?,3.1
+u03-1.l4.story.6,"Ez, Bermeon bizi da, gure aitonarekin.",3.1
+u03-1.l4.story.7,"Eta zu, norekin bizi zara?",3.1
+u03-1.l4.story.8,Nire gurasoekin eta nire arrebarekin.,3.1
+u03-1.l4.story.9,Zure arreba Leire da?,3.1
+u03-1.l4.story.10,"Bai! Leire nire arreba da. Agur, gero arte!",3.1
+u03-2.gb0.0,Nolakoa da Ane? Altua eta argala da.,3.2
+u03-2.gb0.1,Nire lehengusuak gazteak dira.,3.2
+u03-2.gb1.0,Nik anaia bat dut.,3.2
+u03-2.gb1.1,Mikelek ile motza du.,3.2
+u03-2.gb1.2,Zuk begi handiak dituzu.,3.2
+u03-2.gb2.0,Hogeita hamar urte ditut.,3.2
+u03-2.gb2.1,Nire aitonak laurogeita bost urte ditu.,3.2
+u03-2.gb3.0,Zenbat urte dituzu?,3.2
+u03-2.gb3.1,"Ezkonduta nago, eta bi seme ditut.",3.2
+u03-2.gb3.2,Ni ezkongabea naiz. Ez dut umerik.,3.2
+u03-2.l1.s1.e01,Nolakoa da Mikel?,3.2
+u03-2.l1.s1.e02,Mikel altua da.,3.2
+u03-2.l1.s1.e03.0,altua,3.2
+u03-2.l1.s1.e03.1,baxua,3.2
+u03-2.l1.s1.e03.2,lodia,3.2
+u03-2.l1.s1.e03.3,argala,3.2
+u03-2.l1.s1.e03.4,gaztea,3.2
+u03-2.l1.s1.e03.5,zaharra,3.2
+u03-2.l1.s1.e04,Ane baxua eta argala da.,3.2
+u03-2.l1.s1.e05,"Iker ez da baxua, altua da.",3.2
+u03-2.l1.s1.e06,Nire aitona zaharra da.,3.2
+u03-2.l1.s1.e07,Nire amona baxua da.,3.2
+u03-2.l1.s1.e08,Itziar gaztea da.,3.2
+u03-2.l1.s1.e09.0,Nolakoa da zure neba?,3.2
+u03-2.l1.s1.e09.answer,Altua eta argala da.,3.2
+u03-2.l1.s1.e10,Jon ez da lodia.,3.2
+u03-2.l1.s1.e11,Hau Unai da. Unai altua eta argala da.,3.2
+u03-2.l1.s1.e12,Zure ama altua da?,3.2
+u03-2.l1.s1.e13,Gure lehengusuak gazteak dira.,3.2
+u03-2.l1.s2.e01,Anek ile luzea du.,3.2
+u03-2.l1.s2.e02,Mikelek ile motza du.,3.2
+u03-2.l1.s2.e03.0,ilea,3.2
+u03-2.l1.s2.e03.1,begiak,3.2
+u03-2.l1.s2.e03.2,luzea,3.2
+u03-2.l1.s2.e03.3,motza,3.2
+u03-2.l1.s2.e04,Nik begi handiak ditut.,3.2
+u03-2.l1.s2.e05,Anek ile luzea du.,3.2
+u03-2.l1.s2.e06,Zuk ile luzea duzu?,3.2
+u03-2.l1.s2.e07,Mikelek ile motza du.,3.2
+u03-2.l1.s2.e08,Nire amak begi txikiak ditu.,3.2
+u03-2.l1.s2.e09.0,Zure arrebak ile luzea du?,3.2
+u03-2.l1.s2.e09.answer,"Ez, ile motza du.",3.2
+u03-2.l1.s2.e10,Jonek begi politak ditu.,3.2
+u03-2.l1.s2.e11,Nire ahizpa Garazi da. Garazik ile luzea du. Begi handiak ditu.,3.2
+u03-2.l1.s2.e12,Nire aitonak ez du ilerik.,3.2
+u03-2.l1.s2.e13,Ikerrek ile luzea eta polita du.,3.2
+u03-2.l1.s3.e01,Nire laguna oso alaia da.,3.2
+u03-2.l1.s3.e02,Zure osaba jatorra da.,3.2
+u03-2.l1.s3.e03.0,alaia,3.2
+u03-2.l1.s3.e03.1,jatorra,3.2
+u03-2.l1.s3.e03.2,atsegina,3.2
+u03-2.l1.s3.e03.3,ezkongabea,3.2
+u03-2.l1.s3.e03.4,ezkonduta,3.2
+u03-2.l1.s3.e04,Itziarren senarra oso atsegina da.,3.2
+u03-2.l1.s3.e05,Jon ezkonduta dago.,3.2
+u03-2.l1.s3.e06,Ni ezkongabea naiz.,3.2
+u03-2.l1.s3.e07,Ane ezkongabea da.,3.2
+u03-2.l1.s3.e08,Mikel ezkonduta dago.,3.2
+u03-2.l1.s3.e09.0,Zure ahizpa ezkonduta dago?,3.2
+u03-2.l1.s3.e09.answer,"Ez, ezkongabea da.",3.2
+u03-2.l1.s3.e10,Zu ezkonduta zaude?,3.2
+u03-2.l1.s3.e11,Hau Kepa da. Kepa ez dago ezkonduta. Oso jatorra da.,3.2
+u03-2.l1.s3.e12,Gure irakaslea gaztea eta alaia da.,3.2
+u03-2.l1.s3.e13,Haiek oso jatorrak dira.,3.2
+u03-2.l2.s1.e01,Nik anaia bat dut.,3.2
+u03-2.l2.s1.e02,Zuk ahizpa bat duzu?,3.2
+u03-2.l2.s1.e03,Guk alaba bat dugu.,3.2
+u03-2.l2.s1.e04,Mikelek seme bat du.,3.2
+u03-2.l2.s1.e05,Zuk seme bat duzu?,3.2
+u03-2.l2.s1.e06,Guk alaba bat dugu.,3.2
+u03-2.l2.s1.e07,Haiek seme bat dute.,3.2
+u03-2.l2.s1.e08,Zuek lehengusu bat duzue?,3.2
+u03-2.l2.s1.e09.0,Anaiarik baduzu?,3.2
+u03-2.l2.s1.e09.answer,"Bai, anaia bat dut.",3.2
+u03-2.l2.s1.e10,Haiek alaba bat dute.,3.2
+u03-2.l2.s1.e11,Ni Leire naiz. Hamasei urte ditut. Nik ahizpa bat eta neba bat ditut.,3.2
+u03-2.l2.s1.e12,Nik ez dut anaiarik.,3.2
+u03-2.l2.s1.e13,Anek bi lehengusu ditu.,3.2
+u03-2.l2.s2.e01,Aitorrek bi alaba ditu.,3.2
+u03-2.l2.s2.e02,Nire aitonak lau seme ditu.,3.2
+u03-2.l2.s2.e03,Nik bi anaia ditut.,3.2
+u03-2.l2.s2.e04,Neskak begi handiak ditu.,3.2
+u03-2.l2.s2.e05,Mutilak ile motza du.,3.2
+u03-2.l2.s2.e06,Mutilak ile motza du.,3.2
+u03-2.l2.s2.e07,Aitorrek bi alaba ditu.,3.2
+u03-2.l2.s2.e08,Irakasleak hiru seme-alaba ditu.,3.2
+u03-2.l2.s2.e09.0,Zenbat seme-alaba dituzu?,3.2
+u03-2.l2.s2.e09.answer,Hiru seme-alaba ditut.,3.2
+u03-2.l2.s2.e10,Nik bi anaia ditut.,3.2
+u03-2.l2.s2.e11,Hau Peio da. Hamalau urte ditu. Peiok bi anaia ditu.,3.2
+u03-2.l2.s2.e12,Zuk zenbat lehengusu dituzu?,3.2
+u03-2.l2.s2.e13,Mirenek ez du senarrik.,3.2
+u03-2.l2.s3.e01,Zenbat urte dituzu?,3.2
+u03-2.l2.s3.e02,Hogeita bost urte ditut.,3.2
+u03-2.l2.s3.e03.0,hamahiru,3.2
+u03-2.l2.s3.e03.1,hamalau,3.2
+u03-2.l2.s3.e03.2,hamasei,3.2
+u03-2.l2.s3.e03.3,hemeretzi,3.2
+u03-2.l2.s3.e03.4,berrogei,3.2
+u03-2.l2.s3.e03.5,hirurogei,3.2
+u03-2.l2.s3.e04,Nire amak berrogeita hamar urte ditu.,3.2
+u03-2.l2.s3.e05,Zenbat urte dituzu?,3.2
+u03-2.l2.s3.e06,Aitonak laurogeita hamabi urte ditu.,3.2
+u03-2.l2.s3.e07,Berrogeita bost urte ditu.,3.2
+u03-2.l2.s3.e08,Jonek hamazazpi urte ditu.,3.2
+u03-2.l2.s3.e09.0,"Zenbat urte dituzu, Izaro?",3.2
+u03-2.l2.s3.e09.answer,Hemezortzi urte ditut.,3.2
+u03-2.l2.s3.e10,Zure aitak hirurogeita hamar urte ditu?,3.2
+u03-2.l2.s3.e11,Ni Markel naiz. Hogeita hiru urte ditut. Nire arrebak hemeretzi urte ditu.,3.2
+u03-2.l2.s3.e12,Gure irakasleak hogeita hamaika urte ditu.,3.2
+u03-2.l2.s3.e13,Amonak ehun urte ditu!,3.2
+u03-2.l3.s1.e01,Nolakoa da zure laguna?,3.2
+u03-2.l3.s1.e02,"Oso jatorra da, eta ile luzea du.",3.2
+u03-2.l3.s1.e03,Nolakoa da zure izeba?,3.2
+u03-2.l3.s1.e04,Nolakoak dira zure gurasoak?,3.2
+u03-2.l3.s1.e05.0,Nolakoa da Ane?,3.2
+u03-2.l3.s1.e05.1,Gaztea eta altua da.,3.2
+u03-2.l3.s1.e05.2,Eta ilea?,3.2
+u03-2.l3.s1.e05.answer,Ile motza du.,3.2
+u03-2.l3.s1.e06,"Nire aita altua da, eta nire ama baxua.",3.2
+u03-2.l3.s1.e07.0,Zure neba jatorra da?,3.2
+u03-2.l3.s1.e07.answer,"Bai, oso jatorra da.",3.2
+u03-2.l3.s1.e08,Biak oso alaiak dira.,3.2
+u03-2.l3.s1.e09,Hau Amaia da. Amaia baxua eta argala da. Ile luzea du.,3.2
+u03-2.l3.s1.e10,Zure irakaslea atsegina da?,3.2
+u03-2.l3.s1.e11,Gure aitona oso alaia da. Laurogeita hamaika urte ditu.,3.2
+u03-2.l3.s2.e01,Zein da zure izena?,3.2
+u03-2.l3.s2.e02,Eta zenbat urte dituzu?,3.2
+u03-2.l3.s2.e03,Seme-alabak dituzu?,3.2
+u03-2.l3.s2.e04,Hogeita hemezortzi urte ditut.,3.2
+u03-2.l3.s2.e05.0,Zein da zure abizena?,3.2
+u03-2.l3.s2.e05.1,Zubiri.,3.2
+u03-2.l3.s2.e05.2,Eta zenbat urte dituzu?,3.2
+u03-2.l3.s2.e05.answer,Hogeita lau urte ditut.,3.2
+u03-2.l3.s2.e06,"Ezkonduta nago, eta bi seme ditut.",3.2
+u03-2.l3.s2.e07.0,Ezkonduta zaude?,3.2
+u03-2.l3.s2.e07.answer,"Ez, ezkongabea naiz.",3.2
+u03-2.l3.s2.e08,Seme-alabak dituzu?,3.2
+u03-2.l3.s2.e09,Ni Edurne naiz. Berrogeita hiru urte ditut. Ezkonduta nago.,3.2
+u03-2.l3.s2.e10,"Ez, nik ez dut umerik.",3.2
+u03-2.l3.s2.e11,Josuk hirurogeita hamabost urte ditu. Ezkongabea da.,3.2
+u03-2.l3.s3.e01,Nire lehengusua Asier da.,3.2
+u03-2.l3.s3.e02,Asierrek hogeita bi urte ditu.,3.2
+u03-2.l3.s3.e03,Zuk zenbat anaia dituzu?,3.2
+u03-2.l3.s3.e04,Altua eta argala da.,3.2
+u03-2.l3.s3.e05.0,Zure lehengusuak seme-alabak ditu?,3.2
+u03-2.l3.s3.e05.answer,"Bai, alaba bat du.",3.2
+u03-2.l3.s3.e06,Ile motza du.,3.2
+u03-2.l3.s3.e07.0,Zure ama gaztea da?,3.2
+u03-2.l3.s3.e07.1,"Bai, berrogeita bat urte ditu.",3.2
+u03-2.l3.s3.e07.2,Eta zure aita?,3.2
+u03-2.l3.s3.e07.answer,Berrogeita zortzi urte ditu.,3.2
+u03-2.l3.s3.e08,Oso alaia eta atsegina da.,3.2
+u03-2.l3.s3.e09,Nahiaren amonak laurogeita hamar urte ditu. Oso alaia da.,3.2
+u03-2.l3.s3.e10,Asier ezkongabea da?,3.2
+u03-2.l3.s3.e11,Ibaik hamahiru urte ditu. Ile luzea du. Altua eta lodia da.,3.2
+u03-2.l4.story.0,"Kaixo, Nerea! Zer moduz?",3.2
+u03-2.l4.story.1,"Ondo! Nire lehengusua, Julen, Bilbon dago.",3.2
+u03-2.l4.story.2,Nolakoa da Julen?,3.2
+u03-2.l4.story.3,Altua eta argala da. Ile luzea du.,3.2
+u03-2.l4.story.4,Zenbat urte ditu?,3.2
+u03-2.l4.story.5,Hogeita zazpi urte ditu.,3.2
+u03-2.l4.story.6,Ezkonduta dago?,3.2
+u03-2.l4.story.7,"Ez, ezkongabea da. Oso jatorra eta alaia da!",3.2
+u03-2.l4.story.8,"Hura da? Hor, geltokiaren aurrean?",3.2
+u03-2.l4.story.9,"Ez, hark ile motza du. Julen han dago!",3.2
+u03-2.l4.story.10,"Kaixo, Nerea! Kaixo! Ni Julen naiz.",3.2
+u03-2.l4.story.11,"Kaixo, Julen! Ni Irati naiz, Nerearen laguna.",3.2
+u04-1.gb0.0,Nik pisu bat daukat Bilbon.,4.1
+u04-1.gb0.1,Zuk garajea daukazu?,4.1
+u04-1.gb0.2,Anek terraza handi bat dauka.,4.1
+u04-1.gb1.0,Etxeak hiru logela dauzka.,4.1
+u04-1.gb1.1,Pisuak bi bainugela ditu.,4.1
+u04-1.gb1.2,Guk bi garaje ditugu.,4.1
+u04-1.gb2.0,Logela bat behar dut.,4.1
+u04-1.gb2.1,Zer behar duzu?,4.1
+u04-1.gb2.2,Mikelek garaje bat behar du.,4.1
+u04-1.gb3.0,Egongela oso argitsua da.,4.1
+u04-1.gb3.1,Hirugarren solairuan bizi naiz.,4.1
+u04-1.gb3.2,Etxe honek ehun eta hogei urte ditu.,4.1
+u04-1.l1.s1.e01,Hau nire etxea da.,4.1
+u04-1.l1.s1.e02,Pisu hau txikia da.,4.1
+u04-1.l1.s1.e03.0,etxea,4.1
+u04-1.l1.s1.e03.1,logela,4.1
+u04-1.l1.s1.e03.2,sukaldea,4.1
+u04-1.l1.s1.e03.3,egongela,4.1
+u04-1.l1.s1.e03.4,bainugela,4.1
+u04-1.l1.s1.e03.5,komuna,4.1
+u04-1.l1.s1.e04,Sukaldea hemen dago.,4.1
+u04-1.l1.s1.e05,"Komuna non dago? Hemen, eskuinean.",4.1
+u04-1.l1.s1.e06,Egongela handia da.,4.1
+u04-1.l1.s1.e07,Sukaldea egongelaren ondoan dago.,4.1
+u04-1.l1.s1.e08,"Logela hor dago, bainugelaren ondoan.",4.1
+u04-1.l1.s1.e09.0,"Barkatu, non dago bainugela?",4.1
+u04-1.l1.s1.e09.answer,"Hor dago, logelaren ondoan.",4.1
+u04-1.l1.s1.e10,"Komuna non dago, mesedez?",4.1
+u04-1.l1.s1.e11,"Nire pisua txikia da. Sukaldea, egongela eta logela bat ditu.",4.1
+u04-1.l1.s1.e12,Bainugela txikia da.,4.1
+u04-1.l1.s1.e13,Nire logela sukaldearen atzean dago.,4.1
+u04-1.l1.s2.e01,Ataria handia eta polita da.,4.1
+u04-1.l1.s2.e02,Igogailua atariaren ondoan dago.,4.1
+u04-1.l1.s2.e03.0,solairua,4.1
+u04-1.l1.s2.e03.1,igogailua,4.1
+u04-1.l1.s2.e03.2,leihoa,4.1
+u04-1.l1.s2.e03.3,atea,4.1
+u04-1.l1.s2.e03.4,eskailera,4.1
+u04-1.l1.s2.e03.5,ataria,4.1
+u04-1.l1.s2.e04,Eskailera ezkerrean dago.,4.1
+u04-1.l1.s2.e05,Laugarren solairuan bizi naiz.,4.1
+u04-1.l1.s2.e06,Hirugarren solairuan bizi naiz.,4.1
+u04-1.l1.s2.e07,Igogailua ez dago atarian.,4.1
+u04-1.l1.s2.e08,Garajea etxearen azpian dago.,4.1
+u04-1.l1.s2.e09.0,"Barkatu, igogailua non dago?",4.1
+u04-1.l1.s2.e09.answer,Atariaren ezkerrean.,4.1
+u04-1.l1.s2.e10,Terraza egongelaren ondoan dago.,4.1
+u04-1.l1.s2.e11,Gure etxeak ez du igogailurik. Eskailera bakarrik dago.,4.1
+u04-1.l1.s2.e12,Logelak leiho handi bat du.,4.1
+u04-1.l1.s2.e13,"Atea ez dago hemen, han dago.",4.1
+u04-1.l1.s3.e01,Gure etxea berria da.,4.1
+u04-1.l1.s3.e02,Egongela oso argitsua da.,4.1
+u04-1.l1.s3.e03.0,berria,4.1
+u04-1.l1.s3.e03.1,argitsua,4.1
+u04-1.l1.s3.e03.2,iluna,4.1
+u04-1.l1.s3.e03.3,eguzkitsua,4.1
+u04-1.l1.s3.e03.4,zabala,4.1
+u04-1.l1.s3.e04,Bainugela iluna da.,4.1
+u04-1.l1.s3.e05,"Leiho handiak ditu, oso argitsua da.",4.1
+u04-1.l1.s3.e06,Terraza eguzkitsua da.,4.1
+u04-1.l1.s3.e07,Pisua iluna da.,4.1
+u04-1.l1.s3.e08,Sukaldea zabala da.,4.1
+u04-1.l1.s3.e09.0,Nolakoa da zure pisu berria?,4.1
+u04-1.l1.s3.e09.answer,Oso argitsua eta zabala da.,4.1
+u04-1.l1.s3.e10,Atari hau ez da berria.,4.1
+u04-1.l1.s3.e11,Ikerren etxea zaharra eta iluna da.,4.1
+u04-1.l1.s3.e12,Eskailera zabala eta argitsua da.,4.1
+u04-1.l1.s3.e13,Zure logela eguzkitsua da?,4.1
+u04-1.l2.s1.e01,Nik pisu bat daukat Bilbon.,4.1
+u04-1.l2.s1.e02,Zuk etxe bat daukazu?,4.1
+u04-1.l2.s1.e03,Guk pisu bat daukagu.,4.1
+u04-1.l2.s1.e04,Anek terraza handi bat dauka.,4.1
+u04-1.l2.s1.e05,Mikelek etxe bat dauka.,4.1
+u04-1.l2.s1.e06,Guk garaje bat daukagu.,4.1
+u04-1.l2.s1.e07,Haiek pisu bat daukate Gasteizen.,4.1
+u04-1.l2.s1.e08,Zuek etxe berri bat daukazue?,4.1
+u04-1.l2.s1.e09.0,Garajea daukazu?,4.1
+u04-1.l2.s1.e09.answer,"Ez, ez daukat garajerik.",4.1
+u04-1.l2.s1.e10,Nire gurasoek etxe bat daukate Lekeition.,4.1
+u04-1.l2.s1.e11,Unai eta Leire Getxon bizi dira. Pisu txiki bat daukate.,4.1
+u04-1.l2.s1.e12,Pisuak sukalde zabala dauka.,4.1
+u04-1.l2.s1.e13,Nik ez daukat garajerik.,4.1
+u04-1.l2.s2.e01,Etxeak hiru logela dauzka.,4.1
+u04-1.l2.s2.e02,Pisuak bi bainugela ditu.,4.1
+u04-1.l2.s2.e03,Etxeak hiru logela dauzka.,4.1
+u04-1.l2.s2.e04,Guk bi garaje ditugu.,4.1
+u04-1.l2.s2.e05,Guk bi garaje ditugu.,4.1
+u04-1.l2.s2.e06,Zuek zenbat logela dituzue?,4.1
+u04-1.l2.s2.e07,Etxeak bost leiho ditu.,4.1
+u04-1.l2.s2.e08,Haiek bi etxe dituzte.,4.1
+u04-1.l2.s2.e09.0,Zenbat logela dauzka zure etxeak?,4.1
+u04-1.l2.s2.e09.answer,Hiru logela dauzka.,4.1
+u04-1.l2.s2.e10,Egongelak lau leiho dauzka.,4.1
+u04-1.l2.s2.e11,Gure pisuak lau logela eta bi bainugela ditu.,4.1
+u04-1.l2.s2.e12,Nik bi terraza dauzkat.,4.1
+u04-1.l2.s2.e13,Zure pisuak zenbat logela dauzka?,4.1
+u04-1.l2.s3.e01,Zer behar duzu?,4.1
+u04-1.l2.s3.e02,Logela bat behar dut.,4.1
+u04-1.l2.s3.e03,Logela bat behar dut.,4.1
+u04-1.l2.s3.e04,Igogailu bat behar dugu.,4.1
+u04-1.l2.s3.e05,Zer behar dute?,4.1
+u04-1.l2.s3.e06,Mikelek garaje bat behar du.,4.1
+u04-1.l2.s3.e07.0,Zer behar duzue?,4.1
+u04-1.l2.s3.e07.answer,Etxe zabal bat behar dugu.,4.1
+u04-1.l2.s3.e08,Etxe berri bat behar dugu.,4.1
+u04-1.l2.s3.e09,Eliza hau oso zaharra da. Ehun eta laurogei urte ditu.,4.1
+u04-1.l2.s3.e10,Etxe honek ehun urte ditu.,4.1
+u04-1.l2.s3.e11,Atariak ehun eta hogei urte ditu.,4.1
+u04-1.l2.s3.e12,Ez dugu terrazarik behar.,4.1
+u04-1.l3.s1.e01,Hau zure pisu berria da?,4.1
+u04-1.l3.s1.e02,"Bai, txikia eta argitsua da.",4.1
+u04-1.l3.s1.e03,Zenbatgarren solairuan dago pisua?,4.1
+u04-1.l3.s1.e04,Zenbat logela dauzka?,4.1
+u04-1.l3.s1.e05.0,"Hau da zure etxea, Julen?",4.1
+u04-1.l3.s1.e05.1,"Bai, hau da.",4.1
+u04-1.l3.s1.e05.2,Oso polita! Nolakoa da zure logela?,4.1
+u04-1.l3.s1.e05.answer,Txikia eta eguzkitsua da.,4.1
+u04-1.l3.s1.e06,Bi logela eta bainugela bat ditu.,4.1
+u04-1.l3.s1.e07.0,Zure etxeak igogailua dauka?,4.1
+u04-1.l3.s1.e07.answer,"Ez, eskailera bakarrik.",4.1
+u04-1.l3.s1.e08,Terraza eguzkitsu bat dauka.,4.1
+u04-1.l3.s1.e09,"Gure etxea berria da. Lau solairu ditu, eta igogailua dauka.",4.1
+u04-1.l3.s1.e10,Zenbatgarren solairuan bizi zara?,4.1
+u04-1.l3.s1.e11,Nire pisua iluna da. Leiho txikiak ditu.,4.1
+u04-1.l3.s2.e01,Pisu bat behar dut Donostian.,4.1
+u04-1.l3.s2.e02,Zenbat logela behar dituzu?,4.1
+u04-1.l3.s2.e03,Bi logela behar ditut.,4.1
+u04-1.l3.s2.e04,Bi logela behar ditut.,4.1
+u04-1.l3.s2.e05.0,"Zer behar duzu, Ander?",4.1
+u04-1.l3.s2.e05.1,Pisu bat behar dut.,4.1
+u04-1.l3.s2.e05.2,Zenbat logela?,4.1
+u04-1.l3.s2.e05.answer,Hiru logela behar ditut.,4.1
+u04-1.l3.s2.e06,Garajerik ez dut behar.,4.1
+u04-1.l3.s2.e07.0,Zure pisuak terraza dauka?,4.1
+u04-1.l3.s2.e07.answer,"Bai, terraza eguzkitsu bat dauka.",4.1
+u04-1.l3.s2.e08,Pisu eguzkitsu bat behar dut.,4.1
+u04-1.l3.s2.e09,Ni Garazi naiz. Pisu bat behar dut Iruñean. Bi logela behar ditut.,4.1
+u04-1.l3.s2.e10,Nire lagunak etxe zabal bat behar du.,4.1
+u04-1.l3.s2.e11,Kepa eta Mirenek etxe zahar bat daukate. Igogailu bat behar dute.,4.1
+u04-1.l3.s3.e01,Etxe hau Zarautzen dago.,4.1
+u04-1.l3.s3.e02,Hondartzaren ondoan dago.,4.1
+u04-1.l3.s3.e03,Hondartzaren ondoan dago.,4.1
+u04-1.l3.s3.e04,Bi solairu ditu.,4.1
+u04-1.l3.s3.e05.0,Etxe hau nolakoa da?,4.1
+u04-1.l3.s3.e05.1,Handia eta zaharra da.,4.1
+u04-1.l3.s3.e05.2,Argitsua da?,4.1
+u04-1.l3.s3.e05.answer,"Ez, iluna da.",4.1
+u04-1.l3.s3.e06,Egongela oso zabala eta argitsua da.,4.1
+u04-1.l3.s3.e07.0,"Barkatu, Josu Etxeberria hemen bizi da?",4.1
+u04-1.l3.s3.e07.answer,"Bai, hirugarren solairuan.",4.1
+u04-1.l3.s3.e08,Hiru logela eta bi bainugela ditu.,4.1
+u04-1.l3.s3.e09,Nire etxeak ez du garajerik. Atariaren ondoan eskailera bat dago.,4.1
+u04-1.l3.s3.e10,Garaje handi bat dauka.,4.1
+u04-1.l3.s3.e11,Gure pisu berria laugarren solairuan dago. Oso eguzkitsua da.,4.1
+u04-1.l4.story.0,"Kaixo, Leire! Hau da zure pisu berria?",4.1
+u04-1.l4.story.1,Bai! Seigarren solairuan dago.,4.1
+u04-1.l4.story.2,Igogailua dauka?,4.1
+u04-1.l4.story.3,"Bai, atariaren ondoan.",4.1
+u04-1.l4.story.4,Oso argitsua da! Zenbat logela dauzka?,4.1
+u04-1.l4.story.5,Bi logela eta bainugela bat.,4.1
+u04-1.l4.story.6,Eta sukaldea?,4.1
+u04-1.l4.story.7,"Hor dago, egongelaren ondoan. Txikia da.",4.1
+u04-1.l4.story.8,Eta hau? Terraza bat?,4.1
+u04-1.l4.story.9,Bai! Terraza txiki eta eguzkitsu bat.,4.1
+u04-1.l4.story.10,Zer behar duzu pisuan?,4.1
+u04-1.l4.story.11,"Lagunak! Eta zu hemen zaude. Eskerrik asko, Iker!",4.1
+u04-2.gb0.0,Zenbat balio du sofa honek?,4.2
+u04-2.gb0.1,Berrehun euro balio du.,4.2
+u04-2.gb0.2,Etxe horrek hirurehun mila euro balio du.,4.2
+u04-2.gb1.0,Pisu bat alokatu nahi dut.,4.2
+u04-2.gb1.1,Zer erosi nahi duzu?,4.2
+u04-2.gb1.2,Ez dut etxea saldu nahi.,4.2
+u04-2.gb2.0,Ohe bat erosi behar dut.,4.2
+u04-2.gb2.1,Mahai bat eta sei aulki behar ditugu.,4.2
+u04-2.gb3.0,Pisu hau merkeagoa da.,4.2
+u04-2.gb3.1,Etxe honek logela gehiago ditu.,4.2
+u04-2.gb3.2,Sofa honek gutxiago balio du.,4.2
+u04-2.l1.s1.e01,Logelan ohe bat dago.,4.2
+u04-2.l1.s1.e02,Mahaia sukaldean dago.,4.2
+u04-2.l1.s1.e03.0,ohea,4.2
+u04-2.l1.s1.e03.1,mahaia,4.2
+u04-2.l1.s1.e03.2,aulkia,4.2
+u04-2.l1.s1.e03.3,sofa,4.2
+u04-2.l1.s1.e03.4,armairua,4.2
+u04-2.l1.s1.e04,Egongelan sofa handi bat dago.,4.2
+u04-2.l1.s1.e05,Aulkiak mahaiaren ondoan daude.,4.2
+u04-2.l1.s1.e06,Lau aulki ditugu.,4.2
+u04-2.l1.s1.e07,Ohea logelan dago.,4.2
+u04-2.l1.s1.e08,Armairua ohearen ondoan dago.,4.2
+u04-2.l1.s1.e09.0,Non dago sofa?,4.2
+u04-2.l1.s1.e09.answer,Egongelan dago.,4.2
+u04-2.l1.s1.e10,Aulkiak mahaiaren ondoan daude.,4.2
+u04-2.l1.s1.e11,Nire logela txikia da. Ohe bat eta armairu bat dauzka.,4.2
+u04-2.l1.s1.e12,Sofa hau oso polita da.,4.2
+u04-2.l1.s1.e13,Nire logelak armairu zabal bat dauka.,4.2
+u04-2.l1.s2.e01,Hozkailua sukaldean dago.,4.2
+u04-2.l1.s2.e02,Garbigailua bainugelan dago.,4.2
+u04-2.l1.s2.e03.0,hozkailua,4.2
+u04-2.l1.s2.e03.1,garbigailua,4.2
+u04-2.l1.s2.e03.2,labea,4.2
+u04-2.l1.s2.e03.3,dutxa,4.2
+u04-2.l1.s2.e03.4,erosi,4.2
+u04-2.l1.s2.e04,Sukaldeak labe berri bat dauka.,4.2
+u04-2.l1.s2.e05,Hozkailu bat erosi behar dut.,4.2
+u04-2.l1.s2.e06,Bainugelak dutxa bat du.,4.2
+u04-2.l1.s2.e07,Labe bat erosi behar dugu.,4.2
+u04-2.l1.s2.e08,Hozkailu bat erosi behar dut.,4.2
+u04-2.l1.s2.e09.0,Zer erosi behar duzu?,4.2
+u04-2.l1.s2.e09.answer,Garbigailu bat erosi behar dut.,4.2
+u04-2.l1.s2.e10,Garbigailu berri bat behar dugu.,4.2
+u04-2.l1.s2.e11,Gure sukaldeak ez du hozkailurik. Hozkailu bat erosi behar dugu.,4.2
+u04-2.l1.s2.e12,Ohe bat eta mahai bat erosi behar ditugu.,4.2
+u04-2.l1.s2.e13,Zer erosi behar duzu?,4.2
+u04-2.l1.s3.e01,Pisu bat alokatu nahi dut.,4.2
+u04-2.l1.s3.e02,Etxe bat erosi nahi dugu.,4.2
+u04-2.l1.s3.e03.0,alokatu,4.2
+u04-2.l1.s3.e03.1,erosi,4.2
+u04-2.l1.s3.e03.2,saldu,4.2
+u04-2.l1.s3.e03.3,trukatu,4.2
+u04-2.l1.s3.e03.4,merkea,4.2
+u04-2.l1.s3.e03.5,garestia,4.2
+u04-2.l1.s3.e04,Nire gurasoek etxea saldu nahi dute.,4.2
+u04-2.l1.s3.e05,Pisu bat alokatu nahi dut.,4.2
+u04-2.l1.s3.e06,Pisua trukatu nahi duzu?,4.2
+u04-2.l1.s3.e07,Etxea saldu nahi dute.,4.2
+u04-2.l1.s3.e08,Pisu hau merkea da.,4.2
+u04-2.l1.s3.e09.0,Pisua erosi nahi duzu?,4.2
+u04-2.l1.s3.e09.answer,"Ez, alokatu nahi dut.",4.2
+u04-2.l1.s3.e10,Etxe hori oso garestia da.,4.2
+u04-2.l1.s3.e11,Leirek pisu bat alokatu nahi du Donostian. Pisu merke bat behar du.,4.2
+u04-2.l1.s3.e12,Zein da prezioa?,4.2
+u04-2.l1.s3.e13,Prezioa berrehun mila euro da.,4.2
+u04-2.l2.s1.e01,Zenbat balio du?,4.2
+u04-2.l2.s1.e02,Sofa honek berrehun euro balio du.,4.2
+u04-2.l2.s1.e03.0,berrehun,4.2
+u04-2.l2.s1.e03.1,hirurehun,4.2
+u04-2.l2.s1.e03.2,bostehun,4.2
+u04-2.l2.s1.e03.3,mila,4.2
+u04-2.l2.s1.e03.4,bi mila,4.2
+u04-2.l2.s1.e04,Zenbat balio du mahai horrek?,4.2
+u04-2.l2.s1.e05,Zenbat balio du sofa honek?,4.2
+u04-2.l2.s1.e06,Aulki honek hogeita hamar euro balio du.,4.2
+u04-2.l2.s1.e07,Armairu honek berrehun euro balio du.,4.2
+u04-2.l2.s1.e08,Hozkailuak bostehun euro balio du.,4.2
+u04-2.l2.s1.e09.0,Zenbat balio du labe honek?,4.2
+u04-2.l2.s1.e09.answer,Laurehun euro balio du.,4.2
+u04-2.l2.s1.e10,Garbigailu honek laurehun eta berrogeita hamar euro balio du.,4.2
+u04-2.l2.s1.e11,Dutxa hau berria da. Mila eta berrehun euro balio du.,4.2
+u04-2.l2.s1.e12,Ohe honek mila euro balio du!,4.2
+u04-2.l2.s1.e13,Etxe horrek hirurehun mila euro balio du.,4.2
+u04-2.l2.s2.e01,Zer nahi duzu?,4.2
+u04-2.l2.s2.e02,Sofa berri bat nahi dut.,4.2
+u04-2.l2.s2.e03,Ez dut etxea saldu nahi.,4.2
+u04-2.l2.s2.e04,Guk etxe handi bat erosi nahi dugu.,4.2
+u04-2.l2.s2.e05,Guk pisu bat alokatu nahi dugu.,4.2
+u04-2.l2.s2.e06,Ane eta Jonek pisua trukatu nahi dute.,4.2
+u04-2.l2.s2.e07,Ohe bat erosi behar dut.,4.2
+u04-2.l2.s2.e08,Zuek pisua alokatu nahi duzue?,4.2
+u04-2.l2.s2.e09.0,Zuek zer nahi duzue?,4.2
+u04-2.l2.s2.e09.answer,Mahai bat eta lau aulki nahi ditugu.,4.2
+u04-2.l2.s2.e10,Nik ez dut etxea saldu nahi.,4.2
+u04-2.l2.s2.e11,Irati eta Oierrek etxe bat erosi nahi dute. Etxe merke bat behar dute.,4.2
+u04-2.l2.s2.e12,Aulki bat erosi behar dut.,4.2
+u04-2.l2.s2.e13,Mikelek armairu bat erosi behar du.,4.2
+u04-2.l2.s3.e01,Pisu hau merkeagoa da.,4.2
+u04-2.l2.s3.e02,Etxe hori garestiagoa da.,4.2
+u04-2.l2.s3.e03.0,merkeagoa,4.2
+u04-2.l2.s3.e03.1,garestiagoa,4.2
+u04-2.l2.s3.e03.2,handiagoa,4.2
+u04-2.l2.s3.e03.3,txikiagoa,4.2
+u04-2.l2.s3.e03.4,gehiago,4.2
+u04-2.l2.s3.e03.5,gutxiago,4.2
+u04-2.l2.s3.e04,Zein da handiagoa?,4.2
+u04-2.l2.s3.e05,Etxe honek logela gehiago ditu.,4.2
+u04-2.l2.s3.e06,Gasteizko pisua handiagoa da.,4.2
+u04-2.l2.s3.e07,Pisu hau txikiagoa da.,4.2
+u04-2.l2.s3.e08,Etxe honek logela gehiago ditu.,4.2
+u04-2.l2.s3.e09.0,Zein sofa da merkeagoa?,4.2
+u04-2.l2.s3.e09.answer,Hau merkeagoa da.,4.2
+u04-2.l2.s3.e10,Pisu horrek leiho gutxiago ditu.,4.2
+u04-2.l2.s3.e11,Aneren pisuak hiru logela ditu. Jonen pisuak bi logela ditu.,4.2
+u04-2.l2.s3.e12,Sofa honek gutxiago balio du.,4.2
+u04-2.l2.s3.e13,Bilboko pisuak gehiago balio du.,4.2
+u04-2.l3.s1.e01,Egun on! Pisu bat alokatu nahi dut.,4.2
+u04-2.l3.s1.e02,Zenbat logela nahi dituzu?,4.2
+u04-2.l3.s1.e03,Pisu hau alokatu nahi dut.,4.2
+u04-2.l3.s1.e04,Bi logela eta terraza bat.,4.2
+u04-2.l3.s1.e05.0,Egun on! Zer nahi duzu?,4.2
+u04-2.l3.s1.e05.1,Etxe bat erosi nahi dut.,4.2
+u04-2.l3.s1.e05.2,Etxe handi bat?,4.2
+u04-2.l3.s1.e05.answer,"Ez, etxe txiki eta merke bat.",4.2
+u04-2.l3.s1.e06,"Pisu hau Iruñean dago, eta oso argitsua da.",4.2
+u04-2.l3.s1.e07.0,Pisu horrek zenbat balio du?,4.2
+u04-2.l3.s1.e07.answer,Berrehun mila euro balio du.,4.2
+u04-2.l3.s1.e08,Eta zenbat balio du?,4.2
+u04-2.l3.s1.e09,Pisu hau Getxon dago. Hiru logela eta bi bainugela ditu. Ehun eta laurogei mila euro balio du.,4.2
+u04-2.l3.s1.e10,Zazpiehun euro balio du.,4.2
+u04-2.l3.s1.e11,Nereak pisu bat alokatu nahi du. Ez du pisua erosi nahi.,4.2
+u04-2.l3.s2.e01,"Bilboko pisua zaharra da, eta Getxokoa berriagoa da.",4.2
+u04-2.l3.s2.e02,Getxoko pisuak logela gehiago ditu.,4.2
+u04-2.l3.s2.e03,Getxoko pisua berriagoa da.,4.2
+u04-2.l3.s2.e04,Bilboko pisuak gutxiago balio du.,4.2
+u04-2.l3.s2.e05.0,Zein etxe da zabalagoa?,4.2
+u04-2.l3.s2.e05.1,Zarautzekoa.,4.2
+u04-2.l3.s2.e05.2,Eta merkeagoa da?,4.2
+u04-2.l3.s2.e05.answer,"Bai, eta gutxiago balio du.",4.2
+u04-2.l3.s2.e06,Zein da argitsuagoa?,4.2
+u04-2.l3.s2.e07.0,Zein pisuk ditu logela gehiago?,4.2
+u04-2.l3.s2.e07.answer,Honek. Lau logela ditu.,4.2
+u04-2.l3.s2.e08,Getxokoa eguzkitsuagoa da.,4.2
+u04-2.l3.s2.e09,Etxe zaharrak berrehun mila euro balio du. Etxe berriak hirurehun mila euro balio du.,4.2
+u04-2.l3.s2.e10,Nik Getxoko pisua nahi dut.,4.2
+u04-2.l3.s2.e11,Aitorren pisua txikiagoa da. Leiho gutxiago ditu.,4.2
+u04-2.l3.s3.e01,Zer erosi behar dugu?,4.2
+u04-2.l3.s3.e02,Ohe bat eta armairu bat erosi behar ditugu.,4.2
+u04-2.l3.s3.e03,Mahai bat eta sei aulki behar ditugu.,4.2
+u04-2.l3.s3.e04,Sofa bat behar dugu egongelan.,4.2
+u04-2.l3.s3.e05.0,Zer erosi behar duzu?,4.2
+u04-2.l3.s3.e05.1,Garbigailu bat.,4.2
+u04-2.l3.s3.e05.2,Garbigailu berri bat?,4.2
+u04-2.l3.s3.e05.answer,"Ez, garbigailu merke bat.",4.2
+u04-2.l3.s3.e06,Sukaldean ez dago hozkailurik.,4.2
+u04-2.l3.s3.e07.0,Sofa hau garestia da?,4.2
+u04-2.l3.s3.e07.answer,"Ez, merkea da. Ehun euro balio du.",4.2
+u04-2.l3.s3.e08,Hozkailu merke bat erosi nahi dut.,4.2
+u04-2.l3.s3.e09,Nire pisu berriak ohe bat eta mahai bat ditu. Sofa bat erosi behar dut.,4.2
+u04-2.l3.s3.e10,Mahai bat eta sei aulki behar ditugu.,4.2
+u04-2.l3.s3.e11,Uxuek armairu bat saldu nahi du. Berrehun euro balio du.,4.2
+u04-2.l4.story.0,"Kaixo, June! Pisua trukatu nahi duzu?",4.2
+u04-2.l4.story.1,Bai! Nire pisua Donostian dago. Eta zure pisua?,4.2
+u04-2.l4.story.2,Nire pisua Bilbon dago. Bi logela ditu.,4.2
+u04-2.l4.story.3,Nire pisua handiagoa da. Hiru logela ditu.,4.2
+u04-2.l4.story.4,Argitsua da?,4.2
+u04-2.l4.story.5,"Bai, oso argitsua eta eguzkitsua. Terraza bat dauka.",4.2
+u04-2.l4.story.6,Nire pisua txikiagoa eta ilunagoa da.,4.2
+u04-2.l4.story.7,Zer dauka zure sukaldeak?,4.2
+u04-2.l4.story.8,"Hozkailu berri bat, labe bat eta garbigailu bat.",4.2
+u04-2.l4.story.9,Oso ondo! Nire sukaldeak ez du garbigailurik.,4.2
+u04-2.l4.story.10,"Trukatu nahi duzu, bai ala ez?",4.2
+u04-2.l4.story.11,"Bai! Eskerrik asko, Eneko!",4.2
+u05-1.gb0.0,Kafea gustatzen zait.,5.1
+u05-1.gb0.1,Sagarrak gustatzen zaizkit.,5.1
+u05-1.gb0.2,Ez zait esnea gustatzen.,5.1
+u05-1.gb1.0,Aneri ardoa gustatzen zaio.,5.1
+u05-1.gb1.1,Umeari zukua gustatzen zaio.,5.1
+u05-1.gb1.2,Guri arraina gustatzen zaigu.,5.1
+u05-1.gb2.0,Kafea ala tea nahiago duzu?,5.1
+u05-1.gb2.1,Nik tea nahiago dut.,5.1
+u05-1.gb3.0,Gosarian kafea nahiago dut.,5.1
+u05-1.gb3.1,Niri ere bai.,5.1
+u05-1.l1.s1.e01,"Ura nahi dut, mesedez.",5.1
+u05-1.l1.s1.e02,Kafea ala tea?,5.1
+u05-1.l1.s1.e03.0,ur,5.1
+u05-1.l1.s1.e03.1,esne,5.1
+u05-1.l1.s1.e03.2,kafe,5.1
+u05-1.l1.s1.e03.3,ardo,5.1
+u05-1.l1.s1.e03.4,garagardo,5.1
+u05-1.l1.s1.e03.5,zuku,5.1
+u05-1.l1.s1.e04,Esnea hozkailuan dago.,5.1
+u05-1.l1.s1.e05,Kafea ala tea?,5.1
+u05-1.l1.s1.e06,Laranja zukua nahi duzu?,5.1
+u05-1.l1.s1.e07,"Garagardo bat, mesedez.",5.1
+u05-1.l1.s1.e08,Ardoa ala garagardoa?,5.1
+u05-1.l1.s1.e09.0,Kaixo! Zer nahi duzu?,5.1
+u05-1.l1.s1.e09.answer,"Kafe bat, mesedez.",5.1
+u05-1.l1.s1.e10,"Tea eta ura, mesedez.",5.1
+u05-1.l1.s1.e11,"Kaixo! Ura nahi dut, mesedez. Anek ardoa nahi du.",5.1
+u05-1.l1.s1.e12,"Garagardo bat, mesedez.",5.1
+u05-1.l1.s1.e13,Edariak mahai gainean daude.,5.1
+u05-1.l1.s2.e01,Ogia mahai gainean dago.,5.1
+u05-1.l1.s2.e02,Arraina ala haragia?,5.1
+u05-1.l1.s2.e03.0,ogi,5.1
+u05-1.l1.s2.e03.1,arrain,5.1
+u05-1.l1.s2.e03.2,haragi,5.1
+u05-1.l1.s2.e03.3,oilasko,5.1
+u05-1.l1.s2.e03.4,arrautza,5.1
+u05-1.l1.s2.e03.5,gazta,5.1
+u05-1.l1.s2.e04,Oilaskoa eta patatak nahi ditut.,5.1
+u05-1.l1.s2.e05,Bi arrautza behar ditut.,5.1
+u05-1.l1.s2.e06,Bi arrautza behar ditut.,5.1
+u05-1.l1.s2.e07,Arraina ala haragia?,5.1
+u05-1.l1.s2.e08,Gazta eta ogia daukat.,5.1
+u05-1.l1.s2.e09.0,Arraina ala haragia?,5.1
+u05-1.l1.s2.e09.answer,"Arraina, mesedez.",5.1
+u05-1.l1.s2.e10,Arrautzak hozkailuan daude.,5.1
+u05-1.l1.s2.e11,Hozkailuan esnea eta arrautzak daude. Ogia mahai gainean dago.,5.1
+u05-1.l1.s2.e12,Haragia eta arraina behar ditugu.,5.1
+u05-1.l1.s2.e13,Oilaskoa sukaldean dago.,5.1
+u05-1.l1.s3.e01,Gosarian kafea nahi dut.,5.1
+u05-1.l1.s3.e02,Bazkaria sukaldean dago.,5.1
+u05-1.l1.s3.e03.0,gosari,5.1
+u05-1.l1.s3.e03.1,bazkari,5.1
+u05-1.l1.s3.e03.2,afari,5.1
+u05-1.l1.s3.e03.3,sagar,5.1
+u05-1.l1.s3.e03.4,laranja,5.1
+u05-1.l1.s3.e03.5,letxuga,5.1
+u05-1.l1.s3.e04,Afarian arraina daukagu.,5.1
+u05-1.l1.s3.e05,Sagar bat ala laranja bat?,5.1
+u05-1.l1.s3.e06,Sagar bat ala laranja bat?,5.1
+u05-1.l1.s3.e07,Afarian arraina daukagu.,5.1
+u05-1.l1.s3.e08,Patatak eta tomateak behar ditugu.,5.1
+u05-1.l1.s3.e09.0,Gosarian kafea ala tea?,5.1
+u05-1.l1.s3.e09.answer,"Tea, mesedez.",5.1
+u05-1.l1.s3.e10,Janaria eta edaria mahai gainean daude.,5.1
+u05-1.l1.s3.e11,Gosarian esnea daukagu. Bazkarian oilaskoa eta patatak daude.,5.1
+u05-1.l1.s3.e12,Letxuga eta tomatea daukagu.,5.1
+u05-1.l1.s3.e13,Bazkarian oilaskoa nahi dut.,5.1
+u05-1.l2.s1.e01,Kafea gustatzen zait.,5.1
+u05-1.l2.s1.e02,Sagarrak gustatzen zaizkit.,5.1
+u05-1.l2.s1.e03,Sagarrak gustatzen zaizkit.,5.1
+u05-1.l2.s1.e04,Ez zait esnea gustatzen.,5.1
+u05-1.l2.s1.e05,Kafea gustatzen zait.,5.1
+u05-1.l2.s1.e06,Arraina gustatzen zaizu?,5.1
+u05-1.l2.s1.e07,Ez zait esnea gustatzen.,5.1
+u05-1.l2.s1.e08,"Bai, arraina gustatzen zait.",5.1
+u05-1.l2.s1.e09.0,Gazta gustatzen zaizu?,5.1
+u05-1.l2.s1.e09.answer,"Bai, gazta gustatzen zait.",5.1
+u05-1.l2.s1.e10,Patatak gustatzen zaizkizu?,5.1
+u05-1.l2.s1.e11,Ni Leire naiz. Arraina gustatzen zait. Ez zait haragia gustatzen.,5.1
+u05-1.l2.s1.e12,Ez zaizkit tomateak gustatzen.,5.1
+u05-1.l2.s1.e13,Zer gustatzen zaizu?,5.1
+u05-1.l2.s2.e01,Aneri ardoa gustatzen zaio.,5.1
+u05-1.l2.s2.e02,Umeari zukua gustatzen zaio.,5.1
+u05-1.l2.s2.e03,Aneri ardoa gustatzen zaio.,5.1
+u05-1.l2.s2.e04,Guri arraina gustatzen zaigu.,5.1
+u05-1.l2.s2.e05,Guri arraina gustatzen zaigu.,5.1
+u05-1.l2.s2.e06,Zuei garagardoa gustatzen zaizue?,5.1
+u05-1.l2.s2.e07,Umeari zukua gustatzen zaio.,5.1
+u05-1.l2.s2.e08,Haiei arrautzak gustatzen zaizkie.,5.1
+u05-1.l2.s2.e09.0,Zure aitari kafea gustatzen zaio?,5.1
+u05-1.l2.s2.e09.answer,"Bai, kafea gustatzen zaio.",5.1
+u05-1.l2.s2.e10,Mutil honi ez zaio esnea gustatzen.,5.1
+u05-1.l2.s2.e11,"Nire lagunari, Unairi, gazta gustatzen zaio. Ez zaizkio sagarrak gustatzen.",5.1
+u05-1.l2.s2.e12,Hari oilaskoa gustatzen zaio.,5.1
+u05-1.l2.s2.e13,Nire amari tea gustatzen zaio.,5.1
+u05-1.l2.s3.e01,Kafea ala tea nahiago duzu?,5.1
+u05-1.l2.s3.e02,Nik tea nahiago dut.,5.1
+u05-1.l2.s3.e03.0,nahiago dut,5.1
+u05-1.l2.s3.e03.1,nahi dut,5.1
+u05-1.l2.s3.e03.2,behar dut,5.1
+u05-1.l2.s3.e03.3,gustatzen zait,5.1
+u05-1.l2.s3.e04,Anek ura nahiago du.,5.1
+u05-1.l2.s3.e05,Nik tea nahiago dut.,5.1
+u05-1.l2.s3.e06,Guk arraina nahiago dugu.,5.1
+u05-1.l2.s3.e07,Guk arraina nahiago dugu.,5.1
+u05-1.l2.s3.e08,Haragia ala oilaskoa nahiago duzue?,5.1
+u05-1.l2.s3.e09.0,Ardoa ala ura nahiago duzu?,5.1
+u05-1.l2.s3.e09.answer,"Ura nahiago dut, eskerrik asko.",5.1
+u05-1.l2.s3.e10,Haiek patatak nahiago dituzte.,5.1
+u05-1.l2.s3.e11,Josuk gosarian kafea nahiago du. Bere ahizpak tea nahiago du.,5.1
+u05-1.l2.s3.e12,Gosarian zukua nahiago dut.,5.1
+u05-1.l2.s3.e13,Mikelek garagardoa nahiago du.,5.1
+u05-1.l3.s1.e01,"Zer nahi duzu, kafea ala zukua?",5.1
+u05-1.l3.s1.e02,"Zukua nahiago dut, mesedez.",5.1
+u05-1.l3.s1.e03,Niri ere bai.,5.1
+u05-1.l3.s1.e04,Niri ere kafea gustatzen zait.,5.1
+u05-1.l3.s1.e05.0,Kaixo! Zer nahi duzu?,5.1
+u05-1.l3.s1.e05.1,"Kafe bat, mesedez. Eta zuk?",5.1
+u05-1.l3.s1.e05.answer,Nik tea nahiago dut.,5.1
+u05-1.l3.s1.e06,Ez zait garagardoa gustatzen. Ura nahiago dut.,5.1
+u05-1.l3.s1.e07.0,Sagarrak gustatzen zaizkizu?,5.1
+u05-1.l3.s1.e07.answer,"Bai, eta laranjak ere bai.",5.1
+u05-1.l3.s1.e08,Tabernan ogia eta gazta daude.,5.1
+u05-1.l3.s1.e09,"Tabernan, Oierrek garagardoa nahi du. Haizeak ura nahiago du.",5.1
+u05-1.l3.s1.e10,Laranjak gustatzen zaizkizu?,5.1
+u05-1.l3.s1.e11,Niri ez zait kafea gustatzen. Tea nahiago dut.,5.1
+u05-1.l3.s2.e01,Nire aitari haragia gustatzen zaio.,5.1
+u05-1.l3.s2.e02,Nire amari ez zaio haragia gustatzen.,5.1
+u05-1.l3.s2.e03,Nire aitari haragia gustatzen zaio.,5.1
+u05-1.l3.s2.e04,Umeei patatak gustatzen zaizkie.,5.1
+u05-1.l3.s2.e05.0,Zure lagunei zer gustatzen zaie?,5.1
+u05-1.l3.s2.e05.answer,Oilaskoa eta patatak gustatzen zaizkie.,5.1
+u05-1.l3.s2.e06,Zuri zer gustatzen zaizu?,5.1
+u05-1.l3.s2.e07.0,Afarian arraina daukagu.,5.1
+u05-1.l3.s2.e07.1,Niri ez zait arraina gustatzen!,5.1
+u05-1.l3.s2.e07.2,Eta zer nahiago duzu?,5.1
+u05-1.l3.s2.e07.answer,Oilaskoa nahiago dut.,5.1
+u05-1.l3.s2.e08,Niri arraina eta oilaskoa gustatzen zaizkit.,5.1
+u05-1.l3.s2.e09,"Nire etxean, aitari kafea gustatzen zaio. Amari tea gustatzen zaio.",5.1
+u05-1.l3.s2.e10,Neska horri gazta gustatzen zaio.,5.1
+u05-1.l3.s2.e11,Umeei ez zaie esnea gustatzen. Zukua nahiago dute.,5.1
+u05-1.l3.s3.e01,Gosarian kafea nahiago dut.,5.1
+u05-1.l3.s3.e02,Bazkarian oilaskoa daukagu.,5.1
+u05-1.l3.s3.e03,Bazkarian oilaskoa daukagu.,5.1
+u05-1.l3.s3.e04,Afarian arraina nahiago dugu.,5.1
+u05-1.l3.s3.e05.0,Zer nahi duzu afarian?,5.1
+u05-1.l3.s3.e05.answer,"Arrautzak eta patatak, mesedez.",5.1
+u05-1.l3.s3.e06,Afaria sukaldean dago.,5.1
+u05-1.l3.s3.e07.0,"Gosarian zer nahiago duzu, kafea ala esnea?",5.1
+u05-1.l3.s3.e07.1,Esnea. Eta zuk?,5.1
+u05-1.l3.s3.e07.answer,Nik kafea nahiago dut.,5.1
+u05-1.l3.s3.e08,Jatetxe honetan arraina eta haragia daude.,5.1
+u05-1.l3.s3.e09,Ni Julen naiz. Gosarian zukua nahiago dut. Afarian arraina nahiago dut.,5.1
+u05-1.l3.s3.e10,Zer nahi duzu afarian?,5.1
+u05-1.l3.s3.e11,Jatetxe honetan ez dago haragirik. Arraina eta oilaskoa daude.,5.1
+u05-1.l4.story.0,"Arratsalde on, Iker! Sukaldean nago.",5.1
+u05-1.l4.story.1,Kaixo! Zer daukagu afarian?,5.1
+u05-1.l4.story.2,Arraina eta patatak. Arraina gustatzen zaizu?,5.1
+u05-1.l4.story.3,"Bai, gustatzen zait. Ardoa daukazu?",5.1
+u05-1.l4.story.4,"Ez, ez dago ardorik. Garagardoa ala ura?",5.1
+u05-1.l4.story.5,"Ura nahiago dut, eskerrik asko.",5.1
+u05-1.l4.story.6,Nire ahizpari ez zaio arraina gustatzen.,5.1
+u05-1.l4.story.7,Eta zer nahiago du?,5.1
+u05-1.l4.story.8,Arrautzak nahiago ditu. Eta gazta!,5.1
+u05-1.l4.story.9,Niri ere gazta gustatzen zait!,5.1
+u05-2.gb0.0,Moztu tomatea.,5.2
+u05-2.gb0.1,Egosi patatak.,5.2
+u05-2.gb0.2,Ez gehitu gatzik.,5.2
+u05-2.gb1.0,"Lehenengo, berotu olioa.",5.2
+u05-2.gb1.1,Moztu patatak frijitu baino lehen.,5.2
+u05-2.gb1.2,"Patatak moztuta gero, frijitu.",5.2
+u05-2.gb2.0,Olioa behar da.,5.2
+u05-2.gb2.1,Bi arrautza behar dira.,5.2
+u05-2.gb3.0,Komeni da arraina egostea.,5.2
+u05-2.gb3.1,"Arraina nahiago dut, osasuntsua da eta.",5.2
+u05-2.gb3.2,Askotan arraina daukagu.,5.2
+u05-2.l1.s1.e01,Olioa eta gatza daukagu.,5.2
+u05-2.l1.s1.e02,Azukrea mahai gainean dago.,5.2
+u05-2.l1.s1.e03.0,olio,5.2
+u05-2.l1.s1.e03.1,gatz,5.2
+u05-2.l1.s1.e03.2,azukre,5.2
+u05-2.l1.s1.e03.3,lapiko,5.2
+u05-2.l1.s1.e03.4,zartagin,5.2
+u05-2.l1.s1.e03.5,plater,5.2
+u05-2.l1.s1.e04,Lapikoa sukaldean dago.,5.2
+u05-2.l1.s1.e05,Olioa zartaginean dago.,5.2
+u05-2.l1.s1.e06,Zartagina eta lapikoa behar ditut.,5.2
+u05-2.l1.s1.e07,Gatza ala azukrea?,5.2
+u05-2.l1.s1.e08,Platerak armairuan daude.,5.2
+u05-2.l1.s1.e09.0,Non dago gatza?,5.2
+u05-2.l1.s1.e09.answer,Gatza mahai gainean dago.,5.2
+u05-2.l1.s1.e10,Gatza ala azukrea?,5.2
+u05-2.l1.s1.e11,Sukaldean lapiko bat eta zartagin bat daude. Platerak armairuan daude.,5.2
+u05-2.l1.s1.e12,Olioa zartaginean dago.,5.2
+u05-2.l1.s1.e13,"Plater bat behar dut, mesedez.",5.2
+u05-2.l1.s2.e01,"Moztu tomatea, mesedez.",5.2
+u05-2.l1.s2.e02,Egosi patatak.,5.2
+u05-2.l1.s2.e03.0,moztu,5.2
+u05-2.l1.s2.e03.1,egosi,5.2
+u05-2.l1.s2.e03.2,frijitu,5.2
+u05-2.l1.s2.e03.3,nahastu,5.2
+u05-2.l1.s2.e03.4,gehitu,5.2
+u05-2.l1.s2.e03.5,berotu,5.2
+u05-2.l1.s2.e04,Frijitu arrautzak.,5.2
+u05-2.l1.s2.e05,Berotu olioa zartaginean.,5.2
+u05-2.l1.s2.e06,Nahastu esnea eta azukrea.,5.2
+u05-2.l1.s2.e07,Frijitu arrautzak.,5.2
+u05-2.l1.s2.e08,Gehitu gatza.,5.2
+u05-2.l1.s2.e09.0,Patatak frijitu ala egosi?,5.2
+u05-2.l1.s2.e09.answer,"Egosi, mesedez.",5.2
+u05-2.l1.s2.e10,Berotu olioa zartaginean.,5.2
+u05-2.l1.s2.e11,Moztu patatak eta frijitu. Ez egosi!,5.2
+u05-2.l1.s2.e12,Berotu ura lapikoan.,5.2
+u05-2.l1.s2.e13,Moztu ogia eta gazta.,5.2
+u05-2.l1.s3.e01,"Lehenengo, moztu letxuga.",5.2
+u05-2.l1.s3.e02,"Gero, gehitu olioa.",5.2
+u05-2.l1.s3.e03.0,lehenengo,5.2
+u05-2.l1.s3.e03.1,gero,5.2
+u05-2.l1.s3.e03.2,ondoren,5.2
+u05-2.l1.s3.e03.3,azkenik,5.2
+u05-2.l1.s3.e03.4,egunero,5.2
+u05-2.l1.s3.e03.5,askotan,5.2
+u05-2.l1.s3.e04,"Ondoren, nahastu letxuga eta tomatea.",5.2
+u05-2.l1.s3.e05,Arraina osasuntsua da.,5.2
+u05-2.l1.s3.e06,"Azkenik, gehitu gatza.",5.2
+u05-2.l1.s3.e07,Azukrea kaltegarria da.,5.2
+u05-2.l1.s3.e08,Arraina osasuntsua da.,5.2
+u05-2.l1.s3.e09.0,Letxuga osasuntsua da?,5.2
+u05-2.l1.s3.e09.answer,"Bai, oso osasuntsua da.",5.2
+u05-2.l1.s3.e10,Azukrea kaltegarria da.,5.2
+u05-2.l1.s3.e11,Egunero kafea daukat gosarian. Askotan zukua ere bai.,5.2
+u05-2.l1.s3.e12,Egunero ura behar da.,5.2
+u05-2.l1.s3.e13,Askotan arraina daukagu afarian.,5.2
+u05-2.l2.s1.e01,"Lehenengo, berotu olioa.",5.2
+u05-2.l2.s1.e02,"Gero, frijitu patatak.",5.2
+u05-2.l2.s1.e03,"Ondoren, gehitu arrautzak.",5.2
+u05-2.l2.s1.e04,"Ondoren, gehitu arrautzak.",5.2
+u05-2.l2.s1.e05,"Ez frijitu arraina, egosi.",5.2
+u05-2.l2.s1.e06,"Azkenik, nahastu ondo.",5.2
+u05-2.l2.s1.e07,"Azkenik, nahastu ondo.",5.2
+u05-2.l2.s1.e08,"Ez frijitu arraina, egosi.",5.2
+u05-2.l2.s1.e09.0,"Lehenengo, moztu tomatea. Eta gero?",5.2
+u05-2.l2.s1.e09.answer,"Gero, gehitu olioa eta gatza.",5.2
+u05-2.l2.s1.e10,Ez gehitu azukrerik.,5.2
+u05-2.l2.s1.e11,"Lehenengo, egosi arrautzak. Gero, moztu. Azkenik, gehitu gatza.",5.2
+u05-2.l2.s1.e12,"Lehenengo moztu, eta gero egosi.",5.2
+u05-2.l2.s1.e13,"Ez gehitu gatzik, mesedez.",5.2
+u05-2.l2.s2.e01,Moztu patatak frijitu baino lehen.,5.2
+u05-2.l2.s2.e02,"Olioa berotu baino lehen, moztu tomatea.",5.2
+u05-2.l2.s2.e03,Moztu patatak frijitu baino lehen.,5.2
+u05-2.l2.s2.e04,"Patatak moztuta gero, frijitu.",5.2
+u05-2.l2.s2.e05,"Patatak moztuta gero, frijitu.",5.2
+u05-2.l2.s2.e06,"Arrautzak egosita gero, moztu.",5.2
+u05-2.l2.s2.e07.0,Patatak moztuta daude.,5.2
+u05-2.l2.s2.e07.answer,"Ondo! Gero, frijitu.",5.2
+u05-2.l2.s2.e08,Berotu esnea bero egon arte.,5.2
+u05-2.l2.s2.e09,Moztu tomatea olioa berotu baino lehen.,5.2
+u05-2.l2.s2.e10,"Gatza gehituta gero, nahastu.",5.2
+u05-2.l2.s2.e11,"Bazkaria baino lehen, moztu ogia.",5.2
+u05-2.l2.s2.e12,"Egosi arrautzak, eta gero moztu.",5.2
+u05-2.l2.s3.e01,Zer behar da?,5.2
+u05-2.l2.s3.e02,Olioa eta gatza behar dira.,5.2
+u05-2.l2.s3.e03,Bi arrautza behar dira.,5.2
+u05-2.l2.s3.e04,Lau patata behar dira.,5.2
+u05-2.l2.s3.e05,Komeni da arraina egostea.,5.2
+u05-2.l2.s3.e06,Lapiko handi bat behar da.,5.2
+u05-2.l2.s3.e07,Komeni da gatz gutxiago gehitzea.,5.2
+u05-2.l2.s3.e08,Komeni da arraina egostea.,5.2
+u05-2.l2.s3.e09.0,Zer behar da?,5.2
+u05-2.l2.s3.e09.answer,Bi arrautza eta patatak behar dira.,5.2
+u05-2.l2.s3.e10,Kaltegarria da patatak askotan frijitzea.,5.2
+u05-2.l2.s3.e11,Komeni da gatz gutxiago gehitzea.,5.2
+u05-2.l2.s3.e12,Arraina komeni zaizu.,5.2
+u05-2.l3.s1.e01,"Lehenengo, egosi arrautzak lapikoan.",5.2
+u05-2.l3.s1.e02,"Gero, moztu letxuga eta tomatea.",5.2
+u05-2.l3.s1.e03,"Ondoren, gehitu olioa eta gatza.",5.2
+u05-2.l3.s1.e04,"Ondoren, gehitu olioa eta gatza.",5.2
+u05-2.l3.s1.e05.0,Zer behar da?,5.2
+u05-2.l3.s1.e05.1,"Letxuga, tomatea eta bi arrautza.",5.2
+u05-2.l3.s1.e05.2,Eta gero?,5.2
+u05-2.l3.s1.e05.answer,"Gero, egosi arrautzak.",5.2
+u05-2.l3.s1.e06,"Azkenik, moztu arrautzak.",5.2
+u05-2.l3.s1.e07.0,"Olioa gehitu baino lehen, moztu tomatea.",5.2
+u05-2.l3.s1.e07.answer,"Bai, eta gero gehitu olioa.",5.2
+u05-2.l3.s1.e08,Letxuga eta tomatea osasuntsuak dira.,5.2
+u05-2.l3.s1.e09,"Lehenengo, berotu olioa. Gero, frijitu arraina. Azkenik, gehitu gatza.",5.2
+u05-2.l3.s1.e10,Arrautzak platerean daude.,5.2
+u05-2.l3.s1.e11,Ez egosi patatak. Frijitu zartaginean.,5.2
+u05-2.l3.s2.e01,"Arraina nahiago dut, osasuntsua da eta.",5.2
+u05-2.l3.s2.e02,"Ez dut azukrerik nahi, kaltegarria da eta.",5.2
+u05-2.l3.s2.e03,"Arraina nahiago dut, osasuntsua da eta.",5.2
+u05-2.l3.s2.e04,"Komeni da patatak egostea, ez frijitzea.",5.2
+u05-2.l3.s2.e05.0,Kafea azukrearekin?,5.2
+u05-2.l3.s2.e05.answer,"Ez, azukrea kaltegarria da eta.",5.2
+u05-2.l3.s2.e06,Kaltegarria da azukre gehiago gehitzea.,5.2
+u05-2.l3.s2.e07.0,Patatak frijitu ala egosi?,5.2
+u05-2.l3.s2.e07.1,Egosi. Osasuntsuagoa da.,5.2
+u05-2.l3.s2.e07.2,Eta olioa?,5.2
+u05-2.l3.s2.e07.answer,Gehitu olio gutxiago.,5.2
+u05-2.l3.s2.e08,Letxuga eta sagarrak komeni zaizkizu.,5.2
+u05-2.l3.s2.e09,Arraina eta letxuga osasuntsuak dira. Azukrea eta gatza kaltegarriak dira.,5.2
+u05-2.l3.s2.e10,"Askotan arraina daukagu, osasuntsua da eta.",5.2
+u05-2.l3.s2.e11,Komeni da arraina egostea. Ez da komeni egunero frijitzea.,5.2
+u05-2.l3.s3.e01,Egunero ogia behar dugu.,5.2
+u05-2.l3.s3.e02,Askotan oilaskoa daukagu bazkarian.,5.2
+u05-2.l3.s3.e03,Askotan arraina daukagu.,5.2
+u05-2.l3.s3.e04,Egunero kafea nahi dut gosarian.,5.2
+u05-2.l3.s3.e05.0,Egunero arraina daukazu?,5.2
+u05-2.l3.s3.e05.answer,"Ez, askotan oilaskoa daukat.",5.2
+u05-2.l3.s3.e06,Gure etxean askotan arraina dago.,5.2
+u05-2.l3.s3.e07.0,Zer behar da afarian?,5.2
+u05-2.l3.s3.e07.1,Lau arrautza eta patatak.,5.2
+u05-2.l3.s3.e07.answer,Ondo! Eta olioa ere bai.,5.2
+u05-2.l3.s3.e08,Egunero sagar bat komeni zaizu.,5.2
+u05-2.l3.s3.e09,Egunero ura behar da. Askotan kafea ere bai.,5.2
+u05-2.l3.s3.e10,Zartagin berri bat behar da.,5.2
+u05-2.l3.s3.e11,Gure etxean ez dago gatzik. Gatza behar da!,5.2
+u05-2.l4.story.0,"Kaixo, Izaro! Patatak eta arrautzak daude.",5.2
+u05-2.l4.story.1,Ondo! Zer behar da?,5.2
+u05-2.l4.story.2,"Olioa, gatza eta zartagin bat.",5.2
+u05-2.l4.story.3,"Lehenengo, moztu patatak.",5.2
+u05-2.l4.story.4,Moztuta daude! Eta gero?,5.2
+u05-2.l4.story.5,"Gero, berotu olioa zartaginean eta frijitu patatak.",5.2
+u05-2.l4.story.6,Azukrea ere gehitu?,5.2
+u05-2.l4.story.7,"Ez! Ez gehitu azukrerik! Gatza, bai.",5.2
+u05-2.l4.story.8,"Ondoren, arrautzak?",5.2
+u05-2.l4.story.9,"Bai. Azkenik, nahastu arrautzak eta patatak.",5.2
+u05-2.l4.story.10,"Amona, frijitzea kaltegarria da?",5.2
+u05-2.l4.story.11,"Egunero frijitzea, bai. Bazkari hau, ez!",5.2
+u06-1.gb0.0,Ogia erosi nahi dut.,6.1
+u06-1.gb0.1,Zer erosi nahi duzu?,6.1
+u06-1.gb0.2,Anek sagarrak erosi nahi ditu.,6.1
+u06-1.gb1.0,Harategian haragia dago.,6.1
+u06-1.gb1.1,Arrandegian arraina dago.,6.1
+u06-1.gb2.0,Zenbat da?,6.1
+u06-1.gb2.1,Hiru euro dira.,6.1
+u06-1.gb3.0,Txartelarekin ala eskudirutan?,6.1
+u06-1.gb3.1,Eskudirutan ordaindu nahi dut.,6.1
+u06-1.l1.s1.e01,Okindegian ogia dago.,6.1
+u06-1.l1.s1.e02,Harategia plazan dago.,6.1
+u06-1.l1.s1.e03.0,okindegi,6.1
+u06-1.l1.s1.e03.1,harategi,6.1
+u06-1.l1.s1.e03.2,arrandegi,6.1
+u06-1.l1.s1.e03.3,frutadenda,6.1
+u06-1.l1.s1.e03.4,supermerkatu,6.1
+u06-1.l1.s1.e03.5,liburu-denda,6.1
+u06-1.l1.s1.e04,Arrandegian arraina dago.,6.1
+u06-1.l1.s1.e05,Okindegian ogia dago.,6.1
+u06-1.l1.s1.e06,Frutadenda okindegiaren ondoan dago.,6.1
+u06-1.l1.s1.e07,Arrandegian arraina dago.,6.1
+u06-1.l1.s1.e08,Non dago supermerkatua?,6.1
+u06-1.l1.s1.e09.0,"Barkatu, non dago okindegia?",6.1
+u06-1.l1.s1.e09.answer,Okindegia plazan dago.,6.1
+u06-1.l1.s1.e10,Liburu-denda kale honetan dago.,6.1
+u06-1.l1.s1.e11,Kale honetan harategi bat eta frutadenda bat daude. Okindegia plazan dago.,6.1
+u06-1.l1.s1.e12,Harategian oilaskoa eta haragia daude.,6.1
+u06-1.l1.s1.e13,Frutadendan sagarrak eta laranjak daude.,6.1
+u06-1.l1.s2.e01,Saltzailea dendan dago.,6.1
+u06-1.l1.s2.e02,Bezeroak supermerkatuan daude.,6.1
+u06-1.l1.s2.e03.0,saltzaile,6.1
+u06-1.l1.s2.e03.1,bezero,6.1
+u06-1.l1.s2.e03.2,txartel,6.1
+u06-1.l1.s2.e03.3,eskudiru,6.1
+u06-1.l1.s2.e03.4,diru,6.1
+u06-1.l1.s2.e03.5,denda,6.1
+u06-1.l1.s2.e04,Merkataritza-gunea urrun dago.,6.1
+u06-1.l1.s2.e05,Eskudirua behar dut.,6.1
+u06-1.l1.s2.e06,Merkataritza-gunean supermerkatu bat dago.,6.1
+u06-1.l1.s2.e07,Ez daukat dirurik.,6.1
+u06-1.l1.s2.e08,Txartela daukazu?,6.1
+u06-1.l1.s2.e09.0,Txartela ala eskudirua?,6.1
+u06-1.l1.s2.e09.answer,"Txartela, mesedez.",6.1
+u06-1.l1.s2.e10,Ez daukat dirurik.,6.1
+u06-1.l1.s2.e11,Jonek ez dauka dirurik. Txartela dauka.,6.1
+u06-1.l1.s2.e12,Eskudirua behar dut.,6.1
+u06-1.l1.s2.e13,Bezeroak ogia nahi du.,6.1
+u06-1.l1.s3.e01,Zenbat da?,6.1
+u06-1.l1.s3.e02,"Ogi bat, mesedez. Zenbat da?",6.1
+u06-1.l1.s3.e03.0,merke,6.1
+u06-1.l1.s3.e03.1,garesti,6.1
+u06-1.l1.s3.e03.2,prezio,6.1
+u06-1.l1.s3.e03.3,zenbat,6.1
+u06-1.l1.s3.e03.4,ordaindu,6.1
+u06-1.l1.s3.e03.5,erosi,6.1
+u06-1.l1.s3.e04,Hiru euro dira.,6.1
+u06-1.l1.s3.e05,Zenbat da gazta hau?,6.1
+u06-1.l1.s3.e06,Sagarrak merkeak dira.,6.1
+u06-1.l1.s3.e07,Zenbat da?,6.1
+u06-1.l1.s3.e08,Arraina garestia da.,6.1
+u06-1.l1.s3.e09.0,Bost euro dira.,6.1
+u06-1.l1.s3.e09.answer,Hemen daukazu.,6.1
+u06-1.l1.s3.e10,Zenbat da gazta hau?,6.1
+u06-1.l1.s3.e11,"Ogia merkea da, euro bat. Gazta garestia da, hamar euro.",6.1
+u06-1.l1.s3.e12,Hogeita bost euro dira.,6.1
+u06-1.l1.s3.e13,Hau oso merkea da!,6.1
+u06-1.l2.s1.e01,Ogia erosi nahi dut.,6.1
+u06-1.l2.s1.e02,Zer erosi nahi duzu?,6.1
+u06-1.l2.s1.e03,Ogia erosi nahi dut.,6.1
+u06-1.l2.s1.e04,Arraina erosi nahi dugu.,6.1
+u06-1.l2.s1.e05,Txartelarekin ordaindu nahi dut.,6.1
+u06-1.l2.s1.e06,Anek sagarrak erosi nahi ditu.,6.1
+u06-1.l2.s1.e07,Arraina erosi nahi dugu.,6.1
+u06-1.l2.s1.e08,Txartelarekin ordaindu nahi dut.,6.1
+u06-1.l2.s1.e09.0,Kaixo! Zer nahi duzu?,6.1
+u06-1.l2.s1.e09.answer,Ogi bat erosi nahi dut.,6.1
+u06-1.l2.s1.e10,Eskudirutan ordaindu nahi duzu?,6.1
+u06-1.l2.s1.e11,Mikelek oilaskoa erosi nahi du. Txartelarekin ordaindu nahi du.,6.1
+u06-1.l2.s1.e12,Etxe hau saldu nahi dute.,6.1
+u06-1.l2.s1.e13,Supermerkatuan erosi nahi dut.,6.1
+u06-1.l2.s2.e01,Ez dut hemen erosi nahi.,6.1
+u06-1.l2.s2.e02,Bilbon bizi nahi dut.,6.1
+u06-1.l2.s2.e03,Ez dut hemen erosi nahi.,6.1
+u06-1.l2.s2.e04,Sukaldaria izan nahi dut.,6.1
+u06-1.l2.s2.e05,Bilbon bizi nahi dut.,6.1
+u06-1.l2.s2.e06,Pisu bat alokatu nahi dugu.,6.1
+u06-1.l2.s2.e07.0,Zer erosi nahi duzu dendan?,6.1
+u06-1.l2.s2.e07.answer,Kafea eta esnea erosi nahi ditut.,6.1
+u06-1.l2.s2.e08,Hemen egon nahi duzu?,6.1
+u06-1.l2.s2.e09,Nire ahizpak ez du supermerkatuan erosi nahi. Frutadenda nahiago du.,6.1
+u06-1.l2.s2.e10,Zure lagunak zer erosi nahi du?,6.1
+u06-1.l2.s2.e11,Haiek liburu-denda saldu nahi dute.,6.1
+u06-1.l2.s2.e12,Ez dugu eskudirutan ordaindu nahi.,6.1
+u06-1.l2.s3.e01,Zenbat da ogi bat?,6.1
+u06-1.l2.s3.e02,Zenbat dira bi kafe?,6.1
+u06-1.l2.s3.e03,Zenbat dira bi kafe?,6.1
+u06-1.l2.s3.e04,Lau euro dira.,6.1
+u06-1.l2.s3.e05,Txartelarekin ala eskudirutan?,6.1
+u06-1.l2.s3.e06,Txartelarekin ala eskudirutan?,6.1
+u06-1.l2.s3.e07.0,Zenbat da?,6.1
+u06-1.l2.s3.e07.answer,Sei euro dira.,6.1
+u06-1.l2.s3.e08,"Txartelarekin, mesedez.",6.1
+u06-1.l2.s3.e09,Bezeroak bi kafe nahi ditu. Lau euro dira. Txartelarekin ordaindu nahi du.,6.1
+u06-1.l2.s3.e10,"Hemen ordaindu, mesedez.",6.1
+u06-1.l2.s3.e11,Zenbat balio du?,6.1
+u06-1.l2.s3.e12,"Hamar euro dira, mesedez.",6.1
+u06-1.l3.s1.e01,"Egun on! Ogi bat nahi dut, mesedez.",6.1
+u06-1.l3.s1.e02,Zer gehiago?,6.1
+u06-1.l3.s1.e03,Zer gehiago?,6.1
+u06-1.l3.s1.e04,"Ez, eskerrik asko. Zenbat da?",6.1
+u06-1.l3.s1.e05.0,Egun on! Zer nahi duzu?,6.1
+u06-1.l3.s1.e05.1,"Bi ogi, mesedez.",6.1
+u06-1.l3.s1.e05.2,Zer gehiago?,6.1
+u06-1.l3.s1.e05.answer,"Ez, eskerrik asko. Zenbat da?",6.1
+u06-1.l3.s1.e06,Bi euro dira.,6.1
+u06-1.l3.s1.e07.0,Txartelarekin ala eskudirutan?,6.1
+u06-1.l3.s1.e07.answer,"Txartelarekin, mesedez.",6.1
+u06-1.l3.s1.e08,Eskudirutan ordaindu nahi dut.,6.1
+u06-1.l3.s1.e09,"Okindegian, Amaiak bi ogi erosi nahi ditu. Hiru euro dira.",6.1
+u06-1.l3.s1.e10,Eskerrik asko! Agur!,6.1
+u06-1.l3.s1.e11,Ez daukat eskudirurik. Txartelarekin ordaindu nahi dut.,6.1
+u06-1.l3.s2.e01,Haragia erosi nahi dut. Non dago harategia?,6.1
+u06-1.l3.s2.e02,Harategia arrandegiaren ondoan dago.,6.1
+u06-1.l3.s2.e03,Sagarrak frutadendan erosi nahi ditut.,6.1
+u06-1.l3.s2.e04,Merkataritza-gunean supermerkatu handi bat dago.,6.1
+u06-1.l3.s2.e05.0,"Barkatu, arraina erosi nahi dut. Badago arrandegirik?",6.1
+u06-1.l3.s2.e05.answer,"Bai, plazan dago.",6.1
+u06-1.l3.s2.e06,Sagarrak frutadendan erosi nahi ditut.,6.1
+u06-1.l3.s2.e07.0,Supermerkatuan erosi nahi duzu?,6.1
+u06-1.l3.s2.e07.1,"Ez, urrun dago.",6.1
+u06-1.l3.s2.e07.2,Eta zer nahiago duzu?,6.1
+u06-1.l3.s2.e07.answer,Plazako dendak nahiago ditut.,6.1
+u06-1.l3.s2.e08,Liburu-denda merkataritza-gunean dago.,6.1
+u06-1.l3.s2.e09,Herri honetan okindegi bat eta harategi bat daude. Ez dago arrandegirik.,6.1
+u06-1.l3.s2.e10,Okindegia eta frutadenda gertu daude.,6.1
+u06-1.l3.s2.e11,Merkataritza-gunean liburu-denda bat eta supermerkatu bat daude.,6.1
+u06-1.l3.s3.e01,"Barkatu, zenbat da arrain hau?",6.1
+u06-1.l3.s3.e02,Hamabost euro. Garestia da!,6.1
+u06-1.l3.s3.e03,Garestia da!,6.1
+u06-1.l3.s3.e04,Oilaskoa merkeagoa da.,6.1
+u06-1.l3.s3.e05.0,Zenbat da letxuga hau?,6.1
+u06-1.l3.s3.e05.1,Bi euro.,6.1
+u06-1.l3.s3.e05.answer,"Ondo, hemen daukazu.",6.1
+u06-1.l3.s3.e06,Dirua behar dut. Non dago bankua?,6.1
+u06-1.l3.s3.e07.0,Hogei euro dira.,6.1
+u06-1.l3.s3.e07.1,Txartelarekin ordaindu nahi dut.,6.1
+u06-1.l3.s3.e07.2,"Barkatu, eskudirua behar da.",6.1
+u06-1.l3.s3.e07.answer,Ez daukat eskudirurik!,6.1
+u06-1.l3.s3.e08,Bezeroak eskudirutan ordaindu nahi du.,6.1
+u06-1.l3.s3.e09,Arraina hamabost euro da. Oilaskoa zortzi euro da.,6.1
+u06-1.l3.s3.e10,Saltzailea oso jatorra da.,6.1
+u06-1.l3.s3.e11,Saltzailea jatorra da. Bezeroak eskudirutan ordaindu nahi du.,6.1
+u06-1.l4.story.0,Egun on! Zer nahi duzu?,6.1
+u06-1.l4.story.1,Egun on! Lau sagar eta bi laranja erosi nahi ditut.,6.1
+u06-1.l4.story.2,Hemen daukazu. Zer gehiago?,6.1
+u06-1.l4.story.3,Tomateak ere bai. Zenbat da?,6.1
+u06-1.l4.story.4,Sei euro dira.,6.1
+u06-1.l4.story.5,Txartelarekin ordaindu nahi dut.,6.1
+u06-1.l4.story.6,"Barkatu, hemen eskudirua behar da.",6.1
+u06-1.l4.story.7,Ez daukat dirurik! Non dago bankua?,6.1
+u06-1.l4.story.8,Bankua okindegiaren ondoan dago.,6.1
+u06-1.l4.story.9,Eskerrik asko! Gero arte!,6.1
+u06-2.gb0.0,Nolakoa da jertsea?,6.2
+u06-2.gb0.1,Jertsea urdina eta handia da.,6.2
+u06-2.gb0.2,Nolakoak dira zapatak?,6.2
+u06-2.gb1.0,Beroki hau garestiegia da.,6.2
+u06-2.gb1.1,Zapata hauek handiegiak dira.,6.2
+u06-2.gb2.0,Opari hau zuretzat da.,6.2
+u06-2.gb2.1,Norentzat da beroki hau?,6.2
+u06-2.gb2.2,Jertse bat erosi nahi dut amarentzat.,6.2
+u06-2.gb3.0,Zergatik nahi duzu gona hau? Merkea delako.,6.2
+u06-2.gb3.1,Arropa erostea gustatzen zait.,6.2
+u06-2.l1.s1.e01,Alkandora zuria nahi dut.,6.2
+u06-2.l1.s1.e02,Galtza beltzak behar ditut.,6.2
+u06-2.l1.s1.e03.0,alkandora,6.2
+u06-2.l1.s1.e03.1,galtza,6.2
+u06-2.l1.s1.e03.2,gona,6.2
+u06-2.l1.s1.e03.3,soineko,6.2
+u06-2.l1.s1.e03.4,jertse,6.2
+u06-2.l1.s1.e03.5,beroki,6.2
+u06-2.l1.s1.e04,Gona gorria polita da.,6.2
+u06-2.l1.s1.e05,Galtza beltzak behar ditut.,6.2
+u06-2.l1.s1.e06,Soineko berdea armairuan dago.,6.2
+u06-2.l1.s1.e07,Gona gorria polita da.,6.2
+u06-2.l1.s1.e08,Jertse urdina daukazu?,6.2
+u06-2.l1.s1.e09.0,Zer behar duzu?,6.2
+u06-2.l1.s1.e09.answer,Jertse bat behar dut.,6.2
+u06-2.l1.s1.e10,Beroki marroia erosi nahi dut.,6.2
+u06-2.l1.s1.e11,Armairuan soineko bat eta bi gona daude. Soinekoa berdea da.,6.2
+u06-2.l1.s1.e12,Kamiseta horia gustatzen zait.,6.2
+u06-2.l1.s1.e13,Zapata grisak merkeak dira.,6.2
+u06-2.l1.s2.e01,Kamiseta gorria ala urdina?,6.2
+u06-2.l1.s2.e02,Zapata beltzak ala marroiak?,6.2
+u06-2.l1.s2.e03.0,gorri,6.2
+u06-2.l1.s2.e03.1,zuri,6.2
+u06-2.l1.s2.e03.2,beltz,6.2
+u06-2.l1.s2.e03.3,urdin,6.2
+u06-2.l1.s2.e03.4,berde,6.2
+u06-2.l1.s2.e03.5,marroi,6.2
+u06-2.l1.s2.e04,Beroki grisa daukat.,6.2
+u06-2.l1.s2.e05,Soineko horia oso polita da.,6.2
+u06-2.l1.s2.e06,Alkandora hau zuria eta urdina da.,6.2
+u06-2.l1.s2.e07,Arropa beltza nahiago dut.,6.2
+u06-2.l1.s2.e08,Jertse berdea gustatzen zait.,6.2
+u06-2.l1.s2.e09.0,Gona gorria ala beltza?,6.2
+u06-2.l1.s2.e09.answer,"Gorria, mesedez.",6.2
+u06-2.l1.s2.e10,Arropa beltza nahiago dut.,6.2
+u06-2.l1.s2.e11,Mikelek alkandora zuria eta galtza grisak dauzka.,6.2
+u06-2.l1.s2.e12,Soineko horia oso polita da.,6.2
+u06-2.l1.s2.e13,Kamiseta zuriak merkeak dira.,6.2
+u06-2.l1.s3.e01,Aneren urtebetetzea da.,6.2
+u06-2.l1.s3.e02,Opari bat erosi nahi dut.,6.2
+u06-2.l1.s3.e03.0,opari,6.2
+u06-2.l1.s3.e03.1,urtebetetze,6.2
+u06-2.l1.s3.e03.2,neurri,6.2
+u06-2.l1.s3.e03.3,probatu,6.2
+u06-2.l1.s3.e03.4,kamiseta,6.2
+u06-2.l1.s3.e03.5,zapata,6.2
+u06-2.l1.s3.e04,Zorionak! Hau zure oparia da.,6.2
+u06-2.l1.s3.e05,Jertse hau probatu nahi dut.,6.2
+u06-2.l1.s3.e06,Zein da zure neurria?,6.2
+u06-2.l1.s3.e07,Zein da zure neurria?,6.2
+u06-2.l1.s3.e08,Jertse hau probatu nahi dut.,6.2
+u06-2.l1.s3.e09.0,Zorionak! Zure urtebetetzea da!,6.2
+u06-2.l1.s3.e09.answer,"Eskerrik asko, Jon!",6.2
+u06-2.l1.s3.e10,Neurri handiagoa daukazu?,6.2
+u06-2.l1.s3.e11,Iratiren urtebetetzea da. Bere amak opari bat dauka.,6.2
+u06-2.l1.s3.e12,Zapatak probatu nahi dituzu?,6.2
+u06-2.l1.s3.e13,Opariak mahai gainean daude.,6.2
+u06-2.l2.s1.e01,Nolakoa da jertsea?,6.2
+u06-2.l2.s1.e02,Jertsea urdina eta handia da.,6.2
+u06-2.l2.s1.e03,Beroki hau garestiegia da.,6.2
+u06-2.l2.s1.e04,Nolakoak dira zapatak?,6.2
+u06-2.l2.s1.e05,Nolakoak dira zapatak?,6.2
+u06-2.l2.s1.e06,Zapatak beltzak eta politak dira.,6.2
+u06-2.l2.s1.e07,Gona hau motzegia da.,6.2
+u06-2.l2.s1.e08,Gona hau motzegia da.,6.2
+u06-2.l2.s1.e09.0,Nolakoa da soinekoa?,6.2
+u06-2.l2.s1.e09.answer,Gorria eta luzea da.,6.2
+u06-2.l2.s1.e10,Beroki hau garestiegia da.,6.2
+u06-2.l2.s1.e11,"Alkandora hau polita da. Garestiegia da, ehun euro.",6.2
+u06-2.l2.s1.e12,Galtza hauek luzeegiak dira.,6.2
+u06-2.l2.s1.e13,Kamiseta txikiegia da.,6.2
+u06-2.l2.s2.e01,Opari hau zuretzat da.,6.2
+u06-2.l2.s2.e02,Jertse bat erosi nahi dut amarentzat.,6.2
+u06-2.l2.s2.e03,Opari hau zuretzat da.,6.2
+u06-2.l2.s2.e04,Norentzat da beroki hau?,6.2
+u06-2.l2.s2.e05,Norentzat da beroki hau?,6.2
+u06-2.l2.s2.e06,Aitarentzat da.,6.2
+u06-2.l2.s2.e07,Aitarentzat da.,6.2
+u06-2.l2.s2.e08,Kamiseta hau niretzat da?,6.2
+u06-2.l2.s2.e09.0,Norentzat da oparia?,6.2
+u06-2.l2.s2.e09.answer,Nire lagunarentzat.,6.2
+u06-2.l2.s2.e10,Zapata hauek Ikerrentzat dira.,6.2
+u06-2.l2.s2.e11,"Amaiak bi opari erosi nahi ditu. Jertsea aitarentzat da, eta gona ahizparentzat.",6.2
+u06-2.l2.s2.e12,Soineko bat nahi dut nire ahizparentzat.,6.2
+u06-2.l2.s2.e13,Opariak guretzat dira?,6.2
+u06-2.l2.s3.e01,Arropa erostea gustatzen zait.,6.2
+u06-2.l2.s3.e02,Ez zait zapatak probatzea gustatzen.,6.2
+u06-2.l2.s3.e03,Merkea delako.,6.2
+u06-2.l2.s3.e04,Zergatik nahi duzu gona hau?,6.2
+u06-2.l2.s3.e05,Arropa erostea gustatzen zait.,6.2
+u06-2.l2.s3.e06,Merkea delako.,6.2
+u06-2.l2.s3.e07.0,Zergatik nahi duzu soineko gorria?,6.2
+u06-2.l2.s3.e07.answer,Polita delako.,6.2
+u06-2.l2.s3.e08,"Jertse hau nahi dut, urdina delako.",6.2
+u06-2.l2.s3.e09,Ikerri ez zaio arropa erostea gustatzen. Opariak erostea nahiago du.,6.2
+u06-2.l2.s3.e10,"Zapata hauek nahiago ditut, politak direlako.",6.2
+u06-2.l2.s3.e11,Zergatik? Beroki hori garestiegia delako.,6.2
+u06-2.l2.s3.e12,Amari opariak erostea gustatzen zaio.,6.2
+u06-2.l3.s1.e01,Lagun baten urtebetetzea da.,6.2
+u06-2.l3.s1.e02,Zer gustatzen zaio zure lagunari?,6.2
+u06-2.l3.s1.e03,Zein neurri?,6.2
+u06-2.l3.s1.e04,Kamiseta bat nahi dut nire lagunarentzat.,6.2
+u06-2.l3.s1.e05.0,Kaixo! Zer nahi duzu?,6.2
+u06-2.l3.s1.e05.1,Opari bat erosi nahi dut.,6.2
+u06-2.l3.s1.e05.2,Norentzat da?,6.2
+u06-2.l3.s1.e05.answer,Nire amarentzat. Urtebetetzea da.,6.2
+u06-2.l3.s1.e06,Nolakoa da? Berdea eta grisa.,6.2
+u06-2.l3.s1.e07.0,Nolako jertsea nahi duzu?,6.2
+u06-2.l3.s1.e07.answer,"Urdina, eta ez handiegia.",6.2
+u06-2.l3.s1.e08,Zein neurri?,6.2
+u06-2.l3.s1.e09,Arantzaren urtebetetzea da. Bere senarrak beroki bat erosi nahi du.,6.2
+u06-2.l3.s1.e10,"Neurri txikia, mesedez.",6.2
+u06-2.l3.s1.e11,Jertse urdina handiegia da. Txikiagoa behar da.,6.2
+u06-2.l3.s2.e01,Galtza hauek probatu nahi ditut.,6.2
+u06-2.l3.s2.e02,Txikiegiak dira. Neurri handiagoa daukazu?,6.2
+u06-2.l3.s2.e03,Zapata hauek handiegiak dira.,6.2
+u06-2.l3.s2.e04,Alkandora hau nola daukazu?,6.2
+u06-2.l3.s2.e05.0,Nolakoa da gona?,6.2
+u06-2.l3.s2.e05.1,Luzeegia da.,6.2
+u06-2.l3.s2.e05.answer,Motzagoa probatu nahi duzu?,6.2
+u06-2.l3.s2.e06,Gorria eta beltza dauzkagu.,6.2
+u06-2.l3.s2.e07.0,Beroki hau probatu nahi dut.,6.2
+u06-2.l3.s2.e07.1,Zein da zure neurria?,6.2
+u06-2.l3.s2.e07.answer,"Neurri txikia, mesedez.",6.2
+u06-2.l3.s2.e08,Zapata hauek handiegiak dira.,6.2
+u06-2.l3.s2.e09,Galtza beltzak luzeegiak dira. Galtza grisak ondo daude.,6.2
+u06-2.l3.s2.e10,"Jertse hau ondo dago, eta ez da garestiegia.",6.2
+u06-2.l3.s2.e11,"Zapata gorriak politak dira. Garestiegiak dira, ehun euro.",6.2
+u06-2.l3.s3.e01,Zergatik erosi nahi duzu jertse hau?,6.2
+u06-2.l3.s3.e02,Nire anaiari urdina gustatzen zaiolako.,6.2
+u06-2.l3.s3.e03,Garestiegia delako.,6.2
+u06-2.l3.s3.e04,"Soineko hau nahiago dut, merkeagoa delako.",6.2
+u06-2.l3.s3.e05.0,Zergatik nahi duzu kamiseta berdea?,6.2
+u06-2.l3.s3.e05.answer,Berdea gustatzen zaidalako.,6.2
+u06-2.l3.s3.e06,"Ez dut beroki hau nahi, garestiegia delako.",6.2
+u06-2.l3.s3.e07.0,Zer erosi nahi duzu Jonentzat?,6.2
+u06-2.l3.s3.e07.1,Jertse bat.,6.2
+u06-2.l3.s3.e07.2,Zergatik?,6.2
+u06-2.l3.s3.e07.answer,Hotz egiten duelako.,6.2
+u06-2.l3.s3.e08,Amari ez zaio arropa probatzea gustatzen.,6.2
+u06-2.l3.s3.e09,"Leirek gona hau nahi du, gorria delako. Gorria gustatzen zaio.",6.2
+u06-2.l3.s3.e10,Opariak erostea gustatzen zait.,6.2
+u06-2.l3.s3.e11,Kepari ez zaio arropa erostea gustatzen. Liburu-dendak nahiago ditu.,6.2
+u06-2.l4.story.0,"Izaro, amaren urtebetetzea da!",6.2
+u06-2.l4.story.1,Bai! Opari bat erosi nahi dut.,6.2
+u06-2.l4.story.2,Zer gustatzen zaio amari?,6.2
+u06-2.l4.story.3,Arropa gustatzen zaio. Soineko bat?,6.2
+u06-2.l4.story.4,Kaixo! Norentzat da oparia?,6.2
+u06-2.l4.story.5,"Gure amarentzat. Soineko urdin bat, mesedez.",6.2
+u06-2.l4.story.6,Hau oso polita da. Ehun euro.,6.2
+u06-2.l4.story.7,Ehun euro? Garestiegia da!,6.2
+u06-2.l4.story.8,Eta jertse gris hau? Hogeita hamar euro.,6.2
+u06-2.l4.story.9,Grisa? Ez. Amari urdina gustatzen zaio.,6.2
+u06-2.l4.story.10,Jertse urdina ere daukagu!,6.2
+u06-2.l4.story.11,"Ondo! Jertse urdina erosi nahi dugu, amari gustatzen zaiolako.",6.2
+u07-1.gb0.0,Gaur Bilbora joan naiz.,7.1
+u07-1.gb0.1,Ane Donostian jaio da.,7.1
+u07-1.gb0.2,Ni ez naiz joan.,7.1
+u07-1.gb1.0,Nik Mikel ikusi dut.,7.1
+u07-1.gb1.1,Zuk zer erosi duzu?,7.1
+u07-1.gb1.2,Lagunak ikusi ditut.,7.1
+u07-1.gb2.0,Atzo gauean etxean afaldu dut.,7.1
+u07-1.gb2.1,Duela bi aste Parisera joan naiz.,7.1
+u07-1.gb2.2,Joan den larunbatean mendira joan gara.,7.1
+u07-1.gb3.0,Nondik etorri zara? Donostiatik.,7.1
+u07-1.gb3.1,Zertara joan zara? Arropa erostera.,7.1
+u07-1.l1.s1.e01,Gaur goizean kafe bat hartu dut.,7.1
+u07-1.l1.s1.e02,Atzo Jonek etxean afaldu du.,7.1
+u07-1.l1.s1.e03.0,atzo,7.1
+u07-1.l1.s1.e03.1,gaur,7.1
+u07-1.l1.s1.e03.2,herenegun,7.1
+u07-1.l1.s1.e03.3,gaur goizean,7.1
+u07-1.l1.s1.e03.4,atzo gauean,7.1
+u07-1.l1.s1.e04,Gaur jatetxean bazkaldu dugu.,7.1
+u07-1.l1.s1.e05,Gaur kafe bat hartu dut.,7.1
+u07-1.l1.s1.e06,Herenegun lagunekin afaldu dut.,7.1
+u07-1.l1.s1.e07,Herenegun Mikel ikusi dut.,7.1
+u07-1.l1.s1.e08,Gaur arratsaldean Mikel ikusi dut.,7.1
+u07-1.l1.s1.e09.0,Zer egin duzu gaur?,7.1
+u07-1.l1.s1.e09.answer,Jatetxean bazkaldu dut.,7.1
+u07-1.l1.s1.e10,Atzo gauean ez dut afaldu.,7.1
+u07-1.l1.s1.e11,Gaur goizean kafe bat hartu dut. Gero ogia erosi dut.,7.1
+u07-1.l1.s1.e12,Zer egin duzu gaur?,7.1
+u07-1.l1.s1.e13,Gaur goizean ogia erosi dut.,7.1
+u07-1.l1.s2.e01,Astelehenean Bilbon lan egin dut.,7.1
+u07-1.l1.s2.e02,Asteartean liburutegian ikasi dut.,7.1
+u07-1.l1.s2.e03.0,astelehena,7.1
+u07-1.l1.s2.e03.1,asteartea,7.1
+u07-1.l1.s2.e03.2,asteazkena,7.1
+u07-1.l1.s2.e03.3,osteguna,7.1
+u07-1.l1.s2.e03.4,ostirala,7.1
+u07-1.l1.s2.e03.5,igandea,7.1
+u07-1.l1.s2.e04,Asteazkenean amari deitu diot.,7.1
+u07-1.l1.s2.e05,Joan den astean lagunak ikusi ditut.,7.1
+u07-1.l1.s2.e06,Ostegunean lagunak ikusi ditut.,7.1
+u07-1.l1.s2.e07,Igandean Gasteizen bazkaldu dut.,7.1
+u07-1.l1.s2.e08,Ostiralean Leirerekin afaldu dut.,7.1
+u07-1.l1.s2.e09.0,Zer egin duzu larunbatean?,7.1
+u07-1.l1.s2.e09.answer,Lagunekin bazkaldu dut.,7.1
+u07-1.l1.s2.e10,Larunbatean telefonoa galdu dut.,7.1
+u07-1.l1.s2.e11,Joan den astean Parisen lan egin dut. Ostiralean etxera etorri naiz.,7.1
+u07-1.l1.s2.e12,Igandean etxean irakurri dut.,7.1
+u07-1.l1.s2.e13,Joan den astean Donostian bazkaldu dugu.,7.1
+u07-1.l1.s3.e01,Ni Gasteizen jaio naiz.,7.1
+u07-1.l1.s3.e02,Nire alaba iaz jaio da.,7.1
+u07-1.l1.s3.e03.0,jaio,7.1
+u07-1.l1.s3.e03.1,bidaiatu,7.1
+u07-1.l1.s3.e03.2,idatzi,7.1
+u07-1.l1.s3.e03.3,entzun,7.1
+u07-1.l1.s3.e03.4,iaz,7.1
+u07-1.l1.s3.e03.5,hilabete,7.1
+u07-1.l1.s3.e04,Iaz Frantziara bidaiatu dugu.,7.1
+u07-1.l1.s3.e05,Ni Bilbon jaio naiz.,7.1
+u07-1.l1.s3.e06,Duela hilabete bat Londresera joan naiz.,7.1
+u07-1.l1.s3.e07,Duela bi aste Parisera joan naiz.,7.1
+u07-1.l1.s3.e08,Duela bi aste Mikeli idatzi diot.,7.1
+u07-1.l1.s3.e09,Duela hiru hilabete Eibarrera joan gara.,7.1
+u07-1.l1.s3.e10,"Barkatu, ez dut entzun.",7.1
+u07-1.l1.s3.e11.0,Non jaio zara?,7.1
+u07-1.l1.s3.e11.answer,Donostian jaio naiz.,7.1
+u07-1.l1.s3.e12,Zu non jaio zara?,7.1
+u07-1.l1.s3.e13,Ni Iruñean jaio naiz. Iaz Gasteizera etorri naiz.,7.1
+u07-1.l1.s3.e14,Iaz Itziar eta Unai ezkondu dira.,7.1
+u07-1.l2.s1.e01,Gaur goizean mendira joan naiz.,7.1
+u07-1.l2.s1.e02,Atzo Ane hondartzara joan da.,7.1
+u07-1.l2.s1.e03,Gu atzo parkera joan gara.,7.1
+u07-1.l2.s1.e04,Herenegun Bilbora joan gara.,7.1
+u07-1.l2.s1.e05,Haiek Bilbora joan dira.,7.1
+u07-1.l2.s1.e06,Zuek nora joan zarete?,7.1
+u07-1.l2.s1.e07,Jon ez da etorri.,7.1
+u07-1.l2.s1.e08,Gurasoak Gasteizera joan dira.,7.1
+u07-1.l2.s1.e09.0,Atzo nora joan zara?,7.1
+u07-1.l2.s1.e09.answer,Hondartzara joan naiz.,7.1
+u07-1.l2.s1.e10,Ni ez naiz joan.,7.1
+u07-1.l2.s1.e11,Gaur Mikel ez da etorri. Etxean dago.,7.1
+u07-1.l2.s1.e12,Mikel eta Nerea etxera etorri dira.,7.1
+u07-1.l2.s1.e13,Zu nora joan zara gaur?,7.1
+u07-1.l2.s2.e01,Nik kafe bat hartu dut.,7.1
+u07-1.l2.s2.e02,Zuk zer erosi duzu?,7.1
+u07-1.l2.s2.e03,Nik ogia erosi dut.,7.1
+u07-1.l2.s2.e04,Anek liburutegian idatzi du.,7.1
+u07-1.l2.s2.e05,Guk Leire ikusi dugu.,7.1
+u07-1.l2.s2.e06,Guk jatetxean afaldu dugu.,7.1
+u07-1.l2.s2.e07,Ez dut telefonoa galdu.,7.1
+u07-1.l2.s2.e08,Haiek txartela galdu dute.,7.1
+u07-1.l2.s2.e09.0,Zuk zer hartu duzu?,7.1
+u07-1.l2.s2.e09.answer,Nik te bat hartu dut.,7.1
+u07-1.l2.s2.e10,Zuek Mikel ikusi duzue?,7.1
+u07-1.l2.s2.e11,Gaur Ane eta Mikelek etxean afaldu dute. Gero parkera joan dira.,7.1
+u07-1.l2.s2.e12,Lagunak ikusi ditut.,7.1
+u07-1.l2.s2.e13,Iker eta Iratik ez dute bazkaldu.,7.1
+u07-1.l2.s3.e01,Nondik etorri zara?,7.1
+u07-1.l2.s3.e02,Donostiatik etorri naiz.,7.1
+u07-1.l2.s3.e03.0,nora,7.1
+u07-1.l2.s3.e03.1,nondik,7.1
+u07-1.l2.s3.e03.2,Bilbora,7.1
+u07-1.l2.s3.e03.3,Bilbotik,7.1
+u07-1.l2.s3.e03.4,etxera,7.1
+u07-1.l2.s3.e03.5,etxetik,7.1
+u07-1.l2.s3.e04,Ama ospitaletik etorri da.,7.1
+u07-1.l2.s3.e05,Nondik etorri zara?,7.1
+u07-1.l2.s3.e06,Zertara joan zara Bilbora?,7.1
+u07-1.l2.s3.e07,Gasteizera ogia erostera joan naiz.,7.1
+u07-1.l2.s3.e08,Arropa erostera joan naiz.,7.1
+u07-1.l2.s3.e09,Etxetik etorri naiz.,7.1
+u07-1.l2.s3.e10,Lagunak ikustera joan gara.,7.1
+u07-1.l2.s3.e11.0,Zertara joan zara Donostiara?,7.1
+u07-1.l2.s3.e11.answer,Lagunak ikustera.,7.1
+u07-1.l2.s3.e12,Jatetxera bazkaltzera joan dira.,7.1
+u07-1.l2.s3.e13,Gaur goizean Madriletik etorri naiz. Arratsaldean amari deitu diot.,7.1
+u07-1.l2.s3.e14,Liburutegira ikastera joan zara?,7.1
+u07-1.l3.s1.e01,"Kaixo, Nahia! Zer egin duzu gaur?",7.1
+u07-1.l3.s1.e02,Goizean eskolara joan naiz.,7.1
+u07-1.l3.s1.e03,Zer berri?,7.1
+u07-1.l3.s1.e04,Arratsaldean liburutegian ikasi dut.,7.1
+u07-1.l3.s1.e05.0,"Kaixo, Ander! Zer egin duzu gaur?",7.1
+u07-1.l3.s1.e05.1,Goizean hondartzara joan naiz.,7.1
+u07-1.l3.s1.e05.2,Eta arratsaldean?,7.1
+u07-1.l3.s1.e05.answer,Etxean irakurri dut.,7.1
+u07-1.l3.s1.e06,Eta zuk? Zer egin duzu?,7.1
+u07-1.l3.s1.e07.0,Zer egin duzu atzo?,7.1
+u07-1.l3.s1.e07.answer,Mendira joan naiz.,7.1
+u07-1.l3.s1.e08,Nik gaur ez dut lan egin.,7.1
+u07-1.l3.s1.e09,Gaur ez dut lan egin. Amarekin bazkaldu dut.,7.1
+u07-1.l3.s1.e10,Gauean lagunekin afaldu dut.,7.1
+u07-1.l3.s1.e11,Atzo Irati eta Asier Getxora joan dira. Hondartzan egon dira.,7.1
+u07-1.l3.s2.e01,Joan den astean Parisera joan naiz.,7.1
+u07-1.l3.s2.e02,Zertara joan zara Parisera?,7.1
+u07-1.l3.s2.e03,Gaur Iruntik etorri naiz.,7.1
+u07-1.l3.s2.e04,Lagun bat ikustera.,7.1
+u07-1.l3.s2.e05.0,"Nondik etorri zara, Kepa?",7.1
+u07-1.l3.s2.e05.1,Bilbotik. Lagunak ikustera joan naiz.,7.1
+u07-1.l3.s2.e05.2,Eta zer moduz?,7.1
+u07-1.l3.s2.e05.answer,"Oso ondo, eskerrik asko.",7.1
+u07-1.l3.s2.e06,Nondik etorri zarete?,7.1
+u07-1.l3.s2.e07.0,Zertara joan zara herrira?,7.1
+u07-1.l3.s2.e07.answer,Ama ikustera.,7.1
+u07-1.l3.s2.e08,Hondartzatik etorri gara.,7.1
+u07-1.l3.s2.e09,Joan den larunbatean Durangora joan gara. Arropa erostera joan gara.,7.1
+u07-1.l3.s2.e10,Duela bi aste Londresen egon naiz.,7.1
+u07-1.l3.s2.e11,Herenegun Gorka Madriletik etorri da. Gaur Gasteizen dago.,7.1
+u07-1.l3.s3.e01,Zer egin duzu aste honetan?,7.1
+u07-1.l3.s3.e02,Astelehenean eta asteartean lan egin dut.,7.1
+u07-1.l3.s3.e03,Aste honetan ez naiz Bilbora joan.,7.1
+u07-1.l3.s3.e04,Asteazkenean Mireni idatzi diot.,7.1
+u07-1.l3.s3.e05.0,Zer egin duzu larunbatean?,7.1
+u07-1.l3.s3.e05.1,Mendira joan naiz.,7.1
+u07-1.l3.s3.e05.2,Norekin?,7.1
+u07-1.l3.s3.e05.answer,Lagunekin.,7.1
+u07-1.l3.s3.e06,Ostegunean ospitalera joan naiz.,7.1
+u07-1.l3.s3.e07.0,Eta zuk? Igandean zer egin duzu?,7.1
+u07-1.l3.s3.e07.answer,Etxean irakurri dut.,7.1
+u07-1.l3.s3.e08,Ostiralean taberna batean afaldu dugu.,7.1
+u07-1.l3.s3.e09,Astelehenean Bergaran lan egin dut. Asteartean Oñatira joan naiz.,7.1
+u07-1.l3.s3.e10,Igandean hondartzara joan gara.,7.1
+u07-1.l3.s3.e11,Larunbatean txartela galdu dut. Igandean eskudiruarekin ordaindu dut.,7.1
+u07-1.l4.story.0,"Kaixo, Iker! Zer moduz?",7.1
+u07-1.l4.story.1,Ez oso ondo. Telefonoa galdu dut!,7.1
+u07-1.l4.story.2,Nola? Non galdu duzu?,7.1
+u07-1.l4.story.3,Gaur goizean kafe bat hartu dut tabernan.,7.1
+u07-1.l4.story.4,"Gero liburutegira joan naiz, ikastera.",7.1
+u07-1.l4.story.5,Eta liburutegitik nora joan zara?,7.1
+u07-1.l4.story.6,"Jatetxe batera, Mikelekin bazkaltzera.",7.1
+u07-1.l4.story.7,Mikeli deitu diozu?,7.1
+u07-1.l4.story.8,Ez! Telefonorik ez daukat!,7.1
+u07-1.l4.story.9,"Hemen duzu nire telefonoa. Deitu, mesedez.",7.1
+u07-1.l4.story.10,Mikel? Telefonoa jatetxean dago? Eskerrik asko!,7.1
+u07-2.gb0.0,Bihar Bilbora joango naiz.,7.2
+u07-2.gb0.1,Datorren astean Ane etorriko da.,7.2
+u07-2.gb0.2,Etzi zer egingo duzu?,7.2
+u07-2.gb1.0,"Bihar etorriko zara? Bai, etorriko naiz.",7.2
+u07-2.gb1.1,"Ez, ez naiz etorriko.",7.2
+u07-2.gb1.2,Ez dut kafea hartuko.,7.2
+u07-2.gb2.0,Zer egiten ari zara?,7.2
+u07-2.gb2.1,Afaria prestatzen ari naiz.,7.2
+u07-2.gb2.2,Umeak lo egiten ari dira.,7.2
+u07-2.gb3.0,Nora zoaz? Apaindegira noa.,7.2
+u07-2.gb3.1,Nondik zatoz? Etxetik nator.,7.2
+u07-2.gb3.2,Abuztuan Parisera joango gara.,7.2
+u07-2.l1.s1.e01,Bihar Bilbora joango naiz.,7.2
+u07-2.l1.s1.e02,Etzi amarekin bazkalduko dut.,7.2
+u07-2.l1.s1.e03.0,bihar,7.2
+u07-2.l1.s1.e03.1,etzi,7.2
+u07-2.l1.s1.e03.2,datorren astean,7.2
+u07-2.l1.s1.e03.3,aurten,7.2
+u07-2.l1.s1.e03.4,orain,7.2
+u07-2.l1.s1.e04,Datorren astean Ane etorriko da.,7.2
+u07-2.l1.s1.e05,Etzi Gasteizera joango naiz.,7.2
+u07-2.l1.s1.e06,Aurten Frantziara bidaiatuko dugu.,7.2
+u07-2.l1.s1.e07,Etzi etorriko naiz.,7.2
+u07-2.l1.s1.e08,Gaur gauean etxean afalduko dugu.,7.2
+u07-2.l1.s1.e09.0,Zer egingo duzu bihar?,7.2
+u07-2.l1.s1.e09.answer,Mendira joango naiz.,7.2
+u07-2.l1.s1.e10,Bihar goizean ogia erosiko dut.,7.2
+u07-2.l1.s1.e11,Bihar Donostiara joango naiz. Etzi etxera itzuliko naiz.,7.2
+u07-2.l1.s1.e12,Zer egingo duzu bihar?,7.2
+u07-2.l1.s1.e13,Datorren urtean Londresen ikasiko dut.,7.2
+u07-2.l1.s2.e01,Gaur gauean arraina jango dugu.,7.2
+u07-2.l1.s2.e02,Zer edango duzu?,7.2
+u07-2.l1.s2.e03.0,jan,7.2
+u07-2.l1.s2.e03.1,edan,7.2
+u07-2.l1.s2.e03.2,lo egin,7.2
+u07-2.l1.s2.e03.3,prestatu,7.2
+u07-2.l1.s2.e03.4,eraman,7.2
+u07-2.l1.s2.e03.5,itzuli,7.2
+u07-2.l1.s2.e04,Nik afaria prestatuko dut.,7.2
+u07-2.l1.s2.e05,Zuk zer jango duzu?,7.2
+u07-2.l1.s2.e06,Jonek ardoa eramango du.,7.2
+u07-2.l1.s2.e07,Haiek berandu itzuliko dira.,7.2
+u07-2.l1.s2.e08,Zortzietan bukatuko dut.,7.2
+u07-2.l1.s2.e09,Ni ez naiz sartuko.,7.2
+u07-2.l1.s2.e10,Bihar etxean geratuko naiz.,7.2
+u07-2.l1.s2.e11.0,Zer edango duzu?,7.2
+u07-2.l1.s2.e11.answer,Ura edango dut.,7.2
+u07-2.l1.s2.e12,Bederatzietan itzuliko gara.,7.2
+u07-2.l1.s2.e13,Gaur Itziarrek afaria prestatuko du. Mikelek ardoa eramango du.,7.2
+u07-2.l1.s2.e14,Gaur hamar orduz lo egingo dut.,7.2
+u07-2.l1.s3.e01,Orain apaindegira noa.,7.2
+u07-2.l1.s3.e02,Nora zoaz?,7.2
+u07-2.l1.s3.e03.0,urtarrila,7.2
+u07-2.l1.s3.e03.1,otsaila,7.2
+u07-2.l1.s3.e03.2,martxoa,7.2
+u07-2.l1.s3.e03.3,apirila,7.2
+u07-2.l1.s3.e03.4,maiatza,7.2
+u07-2.l1.s3.e03.5,ekaina,7.2
+u07-2.l1.s3.e04,Etxetik nator.,7.2
+u07-2.l1.s3.e05,Orain etxera noa.,7.2
+u07-2.l1.s3.e06,Nondik zatoz?,7.2
+u07-2.l1.s3.e07,Mikel bidaia-agentziatik dator.,7.2
+u07-2.l1.s3.e08,"Ondo nabil, eskerrik asko.",7.2
+u07-2.l1.s3.e09.0,"Kaixo, Oier! Nora zoaz?",7.2
+u07-2.l1.s3.e09.answer,Apaindegira noa.,7.2
+u07-2.l1.s3.e10,Ane eta Jon bidaia-agentziara doaz.,7.2
+u07-2.l1.s3.e11,Uztailean eta abuztuan Zarautzen geratuko gara. Irailean Bilbora itzuliko gara.,7.2
+u07-2.l1.s3.e12,Abuztuan Parisera joango gara.,7.2
+u07-2.l1.s3.e13,Urtarrilean Gasteizera etorriko naiz.,7.2
+u07-2.l2.s1.e01,Zer egiten ari zara?,7.2
+u07-2.l2.s1.e02,Afaria prestatzen ari naiz.,7.2
+u07-2.l2.s1.e03,Jon irakurtzen ari da.,7.2
+u07-2.l2.s1.e04,Ane irakurtzen ari da.,7.2
+u07-2.l2.s1.e05,Haiek ura edaten ari dira.,7.2
+u07-2.l2.s1.e06,Umeak lo egiten ari dira.,7.2
+u07-2.l2.s1.e07,Gorka telefonoz deitzen ari da.,7.2
+u07-2.l2.s1.e08,Kafea hartzen ari gara.,7.2
+u07-2.l2.s1.e09.0,"Zer egiten ari zara, Uxue?",7.2
+u07-2.l2.s1.e09.answer,Afaltzen ari naiz.,7.2
+u07-2.l2.s1.e10,Mikel liburutegian ikasten ari da.,7.2
+u07-2.l2.s1.e11,Orain Leire eta Ibai hondartzan daude. Ibai irakurtzen ari da.,7.2
+u07-2.l2.s1.e12,Zuek zer jaten ari zarete?,7.2
+u07-2.l2.s1.e13,Orain amari idazten ari naiz.,7.2
+u07-2.l2.s2.e01,Bihar etorriko zara?,7.2
+u07-2.l2.s2.e02,"Bai, etorriko naiz.",7.2
+u07-2.l2.s2.e03,Ez naiz joango.,7.2
+u07-2.l2.s2.e04,"Ez, ez naiz etorriko.",7.2
+u07-2.l2.s2.e05,Ez dut ardoa edango.,7.2
+u07-2.l2.s2.e06,Ez dut kafea hartuko.,7.2
+u07-2.l2.s2.e07,Ez naiz berandu etorriko.,7.2
+u07-2.l2.s2.e08,Nora joango zarete datorren hilabetean?,7.2
+u07-2.l2.s2.e09.0,Etzi bazkaltzera etorriko zara?,7.2
+u07-2.l2.s2.e09.answer,"Bai, etorriko naiz.",7.2
+u07-2.l2.s2.e10,Gasteizera joango gara.,7.2
+u07-2.l2.s2.e11,Datorren astean ez naiz Bilbora joango. Etxean geratuko naiz.,7.2
+u07-2.l2.s2.e12,Nork prestatuko du bazkaria?,7.2
+u07-2.l2.s2.e13,Nik prestatuko dut.,7.2
+u07-2.l2.s3.e01,Gu hondartzara goaz.,7.2
+u07-2.l2.s3.e02,Nondik zatozte?,7.2
+u07-2.l2.s3.e03.0,noa,7.2
+u07-2.l2.s3.e03.1,zoaz,7.2
+u07-2.l2.s3.e03.2,nator,7.2
+u07-2.l2.s3.e03.3,zatoz,7.2
+u07-2.l2.s3.e03.4,nabil,7.2
+u07-2.l2.s3.e03.5,nago,7.2
+u07-2.l2.s3.e04,Parketik gatoz.,7.2
+u07-2.l2.s3.e05,Gu Donostiara goaz.,7.2
+u07-2.l2.s3.e06,Aitona eta amona ospitaletik datoz.,7.2
+u07-2.l2.s3.e07,Nondik zatoz zu?,7.2
+u07-2.l2.s3.e08,Nola zabiltza?,7.2
+u07-2.l2.s3.e09,Jon eta Ane apaindegitik datoz.,7.2
+u07-2.l2.s3.e10,Umeak parkean dabiltza.,7.2
+u07-2.l2.s3.e11.0,"Nola zabiltza, Alaitz?",7.2
+u07-2.l2.s3.e11.answer,Oso ondo nabil!,7.2
+u07-2.l2.s3.e12,Mikel bidaia-agentziara doa.,7.2
+u07-2.l2.s3.e13,Ni orain Getxora noa. Nire lagunak Getxon daude.,7.2
+u07-2.l2.s3.e14,Orain etxean nago.,7.2
+u07-2.l3.s1.e01,"Kaixo, Markel! Zer egingo duzu larunbatean?",7.2
+u07-2.l3.s1.e02,Mendira joango naiz lagunekin.,7.2
+u07-2.l3.s1.e03,Datorren hilabetean itzuliko naiz.,7.2
+u07-2.l3.s1.e04,Eta igandean?,7.2
+u07-2.l3.s1.e05.0,Datorren larunbatean zer egingo duzu?,7.2
+u07-2.l3.s1.e05.1,Donostiara joango naiz.,7.2
+u07-2.l3.s1.e05.2,Zertara?,7.2
+u07-2.l3.s1.e05.answer,Arropa erostera.,7.2
+u07-2.l3.s1.e06,Igandean etxean geratuko naiz.,7.2
+u07-2.l3.s1.e07.0,Bihar zortzietan etorriko zara?,7.2
+u07-2.l3.s1.e07.answer,"Bai, zortzietan etorriko naiz.",7.2
+u07-2.l3.s1.e08,Bazkaltzera etorriko zara?,7.2
+u07-2.l3.s1.e09,Ekainean Lekeitiora joango gara. Hondartzan egongo gara.,7.2
+u07-2.l3.s1.e10,Bai! Zer eramango dut?,7.2
+u07-2.l3.s1.e11,Aurten ez dut bidaiatuko. Etxean geratuko naiz.,7.2
+u07-2.l3.s2.e01,"Ama, non zaude?",7.2
+u07-2.l3.s2.e02,Apaindegian nago.,7.2
+u07-2.l3.s2.e03,Edurne hondartzatik dator.,7.2
+u07-2.l3.s2.e04,"Eta zu, zer egiten ari zara?",7.2
+u07-2.l3.s2.e05.0,"Kaixo, Julen! Non zabiltza?",7.2
+u07-2.l3.s2.e05.1,Bilbon nabil.,7.2
+u07-2.l3.s2.e05.2,Zer egiten ari zara?,7.2
+u07-2.l3.s2.e05.answer,Arropa erosten ari naiz.,7.2
+u07-2.l3.s2.e06,Bazkaria prestatzen ari naiz.,7.2
+u07-2.l3.s2.e07.0,Gaur berandu etorriko zara?,7.2
+u07-2.l3.s2.e07.answer,"Ez, zazpietan etorriko naiz.",7.2
+u07-2.l3.s2.e08,Aita berandu dator.,7.2
+u07-2.l3.s2.e09,Orain Uxue eta Peio jatetxe batean daude. Afaltzen ari dira.,7.2
+u07-2.l3.s2.e10,"Sartu, mesedez!",7.2
+u07-2.l3.s2.e11,Josu apaindegira doa. Gero bidaia-agentziara joango da.,7.2
+u07-2.l3.s3.e01,Egun on! Abuztuan Londresera joan nahi dut.,7.2
+u07-2.l3.s3.e02,Zenbat aste geratuko zara?,7.2
+u07-2.l3.s3.e03,Urtarrilean bidaia-agentzia batean lan egingo dut.,7.2
+u07-2.l3.s3.e04,Bi aste geratuko naiz.,7.2
+u07-2.l3.s3.e05.0,Egun on! Zer nahi duzu?,7.2
+u07-2.l3.s3.e05.1,Uztailean Frantziara joango naiz.,7.2
+u07-2.l3.s3.e05.2,Abuztuan itzuliko zara?,7.2
+u07-2.l3.s3.e05.answer,"Ez, irailean itzuliko naiz.",7.2
+u07-2.l3.s3.e06,Irailean itzuliko naiz.,7.2
+u07-2.l3.s3.e07.0,"Eta zuk, aurten zer egingo duzu?",7.2
+u07-2.l3.s3.e07.answer,Etxean geratuko naiz.,7.2
+u07-2.l3.s3.e08,Martxoan eta apirilean ez dut bidaiatuko.,7.2
+u07-2.l3.s3.e09,Otsailean Hondarribian egongo gara. Maiatzean Tuterara joango gara.,7.2
+u07-2.l3.s3.e10,"Urrian, azaroan eta abenduan Bilbon lan egingo dut.",7.2
+u07-2.l3.s3.e11,Ekainean eta uztailean Getxon geratuko naiz. Abuztuan ez dut bidaiatuko.,7.2
+u07-2.l4.story.0,"Kaixo, Aitor! Nora zoaz?",7.2
+u07-2.l4.story.1,Bidaia-agentziara noa. Abenduan Parisera joango naiz!,7.2
+u07-2.l4.story.2,Bai? Norekin joango zara?,7.2
+u07-2.l4.story.3,Nire arrebarekin. Hura Parisen bizi da.,7.2
+u07-2.l4.story.4,Eta zenbat aste geratuko zara?,7.2
+u07-2.l4.story.5,Bi aste. Urtarrilean itzuliko naiz.,7.2
+u07-2.l4.story.6,Eta zu? Zer egingo duzu abenduan?,7.2
+u07-2.l4.story.7,Etxean geratuko naiz. Urrian eta azaroan bidaiatu dut.,7.2
+u07-2.l4.story.8,Eta orain nora zoaz?,7.2
+u07-2.l4.story.9,"Apaindegira. Berandu da! Agur, Aitor!",7.2
+u07-2.l4.story.10,Agur! Gero arte!,7.2
+u08-1.gb0.0,Buruko mina daukat.,8.1
+u08-1.gb0.1,Non daukazu mina? Hankan.,8.1
+u08-1.gb0.2,Ez daukat sabeleko minik.,8.1
+u08-1.gb1.0,Sukarra eta eztula dauzkat.,8.1
+u08-1.gb1.1,Oso nekatuta nago.,8.1
+u08-1.gb2.0,Bilboko ospitalea handia da.,8.1
+u08-1.gb2.1,Herriko farmazia plazan dago.,8.1
+u08-1.gb3.0,Zer ordutan? Hiruretan.,8.1
+u08-1.gb3.1,Goizeko hamarretan etorriko naiz.,8.1
+u08-1.gb3.2,Ordu batean bazkalduko dut.,8.1
+u08-1.l1.s1.e01,Umeak belarri handiak ditu.,8.1
+u08-1.l1.s1.e02,Nire aitak sudur luzea dauka.,8.1
+u08-1.l1.s1.e03.0,burua,8.1
+u08-1.l1.s1.e03.1,belarria,8.1
+u08-1.l1.s1.e03.2,sudurra,8.1
+u08-1.l1.s1.e03.3,ahoa,8.1
+u08-1.l1.s1.e03.4,hortza,8.1
+u08-1.l1.s1.e03.5,lepoa,8.1
+u08-1.l1.s1.e04,Neska honek lepo luzea dauka.,8.1
+u08-1.l1.s1.e05,Buruko mina daukat.,8.1
+u08-1.l1.s1.e06,Umeak aho txikia du.,8.1
+u08-1.l1.s1.e07,Buruko mina dauka.,8.1
+u08-1.l1.s1.e08,Buruko mina daukat.,8.1
+u08-1.l1.s1.e09.0,"Zer daukazu, Iker?",8.1
+u08-1.l1.s1.e09.answer,Buruko mina daukat.,8.1
+u08-1.l1.s1.e10,Belarriko mina daukat.,8.1
+u08-1.l1.s1.e11,Gaur hortzetako mina daukat. Ez dut bazkaldu.,8.1
+u08-1.l1.s1.e12,Hortzetako mina dauka.,8.1
+u08-1.l1.s1.e13,Lepoko mina daukazu?,8.1
+u08-1.l1.s2.e01,Besoko mina daukat.,8.1
+u08-1.l1.s2.e02,Esku txikiak dituzu.,8.1
+u08-1.l1.s2.e03.0,besoa,8.1
+u08-1.l1.s2.e03.1,eskua,8.1
+u08-1.l1.s2.e03.2,hatza,8.1
+u08-1.l1.s2.e03.3,sabela,8.1
+u08-1.l1.s2.e03.4,bizkarra,8.1
+u08-1.l1.s2.e03.5,hanka,8.1
+u08-1.l1.s2.e04,Hatz bat moztu dut.,8.1
+u08-1.l1.s2.e05,Aitak bizkarreko mina dauka.,8.1
+u08-1.l1.s2.e06,Sabeleko mina daukat.,8.1
+u08-1.l1.s2.e07,Anek eskuko mina dauka.,8.1
+u08-1.l1.s2.e08,Aitonak bizkarreko mina dauka.,8.1
+u08-1.l1.s2.e09.0,Non daukazu mina?,8.1
+u08-1.l1.s2.e09.answer,Hankan daukat.,8.1
+u08-1.l1.s2.e10,Hankako mina daukazu?,8.1
+u08-1.l1.s2.e11,Atzo mendira joan naiz. Gaur oineko eta belauneko mina daukat.,8.1
+u08-1.l1.s2.e12,Oineko mina daukat.,8.1
+u08-1.l1.s2.e13,Belauneko mina dauka.,8.1
+u08-1.l1.s3.e01,Gaixo nago.,8.1
+u08-1.l1.s3.e02,Sukarra daukat.,8.1
+u08-1.l1.s3.e03.0,sukarra,8.1
+u08-1.l1.s3.e03.1,eztula,8.1
+u08-1.l1.s3.e03.2,hotzeria,8.1
+u08-1.l1.s3.e03.3,mina,8.1
+u08-1.l1.s3.e03.4,gaixo,8.1
+u08-1.l1.s3.e03.5,nekatuta,8.1
+u08-1.l1.s3.e04,Eztula daukazu?,8.1
+u08-1.l1.s3.e05,Gaur gaixo nago.,8.1
+u08-1.l1.s3.e06,Hotzeria daukat.,8.1
+u08-1.l1.s3.e07,Nekatuta nago.,8.1
+u08-1.l1.s3.e08,Oso nekatuta nago.,8.1
+u08-1.l1.s3.e09.0,Zer moduz zaude?,8.1
+u08-1.l1.s3.e09.answer,Ez oso ondo. Hotzeria daukat.,8.1
+u08-1.l1.s3.e10,Ane gaixo dago.,8.1
+u08-1.l1.s3.e11,Gaur ez naiz eskolara joan. Sukarra eta eztula dauzkat.,8.1
+u08-1.l1.s3.e12,Zer daukazu?,8.1
+u08-1.l1.s3.e13,Ez daukat sukarrik.,8.1
+u08-1.l2.s1.e01,Non daukazu mina?,8.1
+u08-1.l2.s1.e02,"Hemen, buruan.",8.1
+u08-1.l2.s1.e03,Guk hortzetako mina daukagu.,8.1
+u08-1.l2.s1.e04,Amak buruko min handia dauka.,8.1
+u08-1.l2.s1.e05,Ez daukat sabeleko minik.,8.1
+u08-1.l2.s1.e06,Guk sabeleko mina daukagu.,8.1
+u08-1.l2.s1.e07,Mikelek ez dauka bizkarreko minik.,8.1
+u08-1.l2.s1.e08,Umeek belarriko mina daukate.,8.1
+u08-1.l2.s1.e09.0,"Non daukazu mina, Garazi?",8.1
+u08-1.l2.s1.e09.answer,"Belaunean, hemen.",8.1
+u08-1.l2.s1.e10,Zuk lepoko mina daukazu?,8.1
+u08-1.l2.s1.e11,Aitak eta amak hotzeria daukate. Ni ondo nago.,8.1
+u08-1.l2.s1.e12,Ez daukat buruko minik.,8.1
+u08-1.l2.s1.e13,Hankako eta oineko mina daukat.,8.1
+u08-1.l2.s2.e01,Bilboko ospitalean lan egiten du.,8.1
+u08-1.l2.s2.e02,Herriko farmazia plazan dago.,8.1
+u08-1.l2.s2.e03,Herriko farmazia plazan dago.,8.1
+u08-1.l2.s2.e04,Ospitaleko medikua oso jatorra da.,8.1
+u08-1.l2.s2.e05,Durangoko ospitalean nago.,8.1
+u08-1.l2.s2.e06,Eskolako erizaina Itziar da.,8.1
+u08-1.l2.s2.e07.0,Non dago herriko farmazia?,8.1
+u08-1.l2.s2.e07.answer,"Plazan, bankuaren ondoan.",8.1
+u08-1.l2.s2.e08,Gasteizko medikuarekin ordua hartu dut.,8.1
+u08-1.l2.s2.e09,Ni Eibarko ospitalean erizaina naiz. Nire senarra Bergarako medikua da.,8.1
+u08-1.l2.s2.e10,Donostiako ospitalea handia da.,8.1
+u08-1.l2.s2.e11,Hau Tolosako farmazia da?,8.1
+u08-1.l2.s2.e12,Nire herriko medikua Aitor da.,8.1
+u08-1.l2.s3.e01,Zer ordutan?,8.1
+u08-1.l2.s3.e02,Hiruretan.,8.1
+u08-1.l2.s3.e03.0,ordu batean,8.1
+u08-1.l2.s3.e03.1,biretan,8.1
+u08-1.l2.s3.e03.2,hiruretan,8.1
+u08-1.l2.s3.e03.3,lauretan,8.1
+u08-1.l2.s3.e03.4,hamabietan,8.1
+u08-1.l2.s3.e04,Bostetan ospitalera joango naiz.,8.1
+u08-1.l2.s3.e05,Zazpietan afalduko dugu.,8.1
+u08-1.l2.s3.e06,Zer ordutan bazkalduko duzu?,8.1
+u08-1.l2.s3.e07,Hamabietan bazkalduko dugu.,8.1
+u08-1.l2.s3.e08,Ordu batean bazkalduko dut.,8.1
+u08-1.l2.s3.e09.0,Zer ordutan etorriko zara?,8.1
+u08-1.l2.s3.e09.answer,Seietan etorriko naiz.,8.1
+u08-1.l2.s3.e10,Goizeko hamarretan etorriko naiz.,8.1
+u08-1.l2.s3.e11,Gaur medikuarekin ordua daukat. Bostetan joango naiz.,8.1
+u08-1.l2.s3.e12,Arratsaldeko lau eta erdietan.,8.1
+u08-1.l2.s3.e13,Gaueko hamaiketan afaldu dugu.,8.1
+u08-1.l3.s1.e01,Egun on. Zer daukazu?,8.1
+u08-1.l3.s1.e02,Buruko mina eta sukarra dauzkat.,8.1
+u08-1.l3.s1.e03,Nekatuta zaude?,8.1
+u08-1.l3.s1.e04,Eta eztula?,8.1
+u08-1.l3.s1.e05.0,"Egun on, Nahia. Zer daukazu?",8.1
+u08-1.l3.s1.e05.1,Ez nago ondo.,8.1
+u08-1.l3.s1.e05.2,Non daukazu mina?,8.1
+u08-1.l3.s1.e05.answer,"Sabelean, hemen.",8.1
+u08-1.l3.s1.e06,"Bai, eta oso nekatuta nago.",8.1
+u08-1.l3.s1.e07.0,Sukarra daukat?,8.1
+u08-1.l3.s1.e07.answer,"Ez, ez daukazu sukarrik.",8.1
+u08-1.l3.s1.e08,Hotzeria daukazu.,8.1
+u08-1.l3.s1.e09,Gaur ez dut lan egin. Bizkarreko min handia daukat.,8.1
+u08-1.l3.s1.e10,Gaur etxean geratu behar duzu.,8.1
+u08-1.l3.s1.e11,Umeak sukarra dauka. Gaixo dago eta lo egiten ari da.,8.1
+u08-1.l3.s2.e01,"Kaixo, egun on. Medikuarekin ordua hartu nahi dut.",8.1
+u08-1.l3.s2.e02,"Zure izena, mesedez?",8.1
+u08-1.l3.s2.e03,Medikuarekin ordua hartu nahi dut.,8.1
+u08-1.l3.s2.e04,"Bihar, goizeko bederatzietan, ondo?",8.1
+u08-1.l3.s2.e05.0,Egun on! Zer nahi duzu?,8.1
+u08-1.l3.s2.e05.1,Medikuarekin ordua hartu nahi dut.,8.1
+u08-1.l3.s2.e05.2,Zer ordutan?,8.1
+u08-1.l3.s2.e05.answer,Arratsaldeko bostetan.,8.1
+u08-1.l3.s2.e06,"Ez, goizean lan egiten dut.",8.1
+u08-1.l3.s2.e07.0,Bihar hamaiketan etorriko zara?,8.1
+u08-1.l3.s2.e07.answer,"Bai, hamaiketan etorriko naiz.",8.1
+u08-1.l3.s2.e08,Arratsaldeko hiru eta erdietan?,8.1
+u08-1.l3.s2.e09,"Ostiralean medikuarekin ordua daukat, goizeko hamarretan.",8.1
+u08-1.l3.s2.e10,"Bai, oso ondo. Eskerrik asko!",8.1
+u08-1.l3.s2.e11,Gaur biretan Donostiako ospitalera joango naiz. Amak sabeleko mina dauka.,8.1
+u08-1.l3.s3.e01,"Barkatu, non dago Getxoko ospitalea?",8.1
+u08-1.l3.s3.e02,Herriko farmazia urrun dago?,8.1
+u08-1.l3.s3.e03,Eskolako medikua gertu dago.,8.1
+u08-1.l3.s3.e04,"Ez, gertu dago, elizaren ondoan.",8.1
+u08-1.l3.s3.e05.0,"Kaixo, Peio! Zer moduz?",8.1
+u08-1.l3.s3.e05.1,Gaixo nago. Hotzeria daukat.,8.1
+u08-1.l3.s3.e05.2,Sukarra daukazu?,8.1
+u08-1.l3.s3.e05.answer,"Ez, ez daukat sukarrik.",8.1
+u08-1.l3.s3.e06,Nire semeak eztula eta sukarra dauzka.,8.1
+u08-1.l3.s3.e07.0,Zer ordutan joango zara farmaziara?,8.1
+u08-1.l3.s3.e07.answer,Zazpietan joango naiz.,8.1
+u08-1.l3.s3.e08,Gaur ez da eskolara joango.,8.1
+u08-1.l3.s3.e09,"Ni Edurne naiz, Tolosako erizaina. Gaur gauean ospitalean lan egingo dut.",8.1
+u08-1.l3.s3.e10,Hamabietan medikuarekin ordua daukagu.,8.1
+u08-1.l3.s3.e11,Aitonak lepoko eta bizkarreko mina dauka. Oso nekatuta dago.,8.1
+u08-1.l4.story.0,"Kaixo, Josu! Zer moduz zaude?",8.1
+u08-1.l4.story.1,Ez oso ondo. Gaixo nago.,8.1
+u08-1.l4.story.2,Zer daukazu?,8.1
+u08-1.l4.story.3,Buruko mina eta eztula. Oso nekatuta nago.,8.1
+u08-1.l4.story.4,Sukarra daukazu?,8.1
+u08-1.l4.story.5,"Bai, atzo gauean sukarra izan dut.",8.1
+u08-1.l4.story.6,Medikuarekin ordua hartu duzu?,8.1
+u08-1.l4.story.7,"Bai, gaur arratsaldeko lauretan.",8.1
+u08-1.l4.story.8,Ni Durangoko farmaziara noa. Zer behar duzu?,8.1
+u08-1.l4.story.9,"Ura eta zukua, mesedez.",8.1
+u08-1.l4.story.10,Ondo. Bostetan zure etxera etorriko naiz. Agur!,8.1
+u08-2.gb0.0,Medikuarengana joan behar duzu.,8.2
+u08-2.gb0.1,Bihar zuregana etorriko naiz.,8.2
+u08-2.gb0.2,Osasun-etxera noa.,8.2
+u08-2.gb1.0,Mikelek hanka hautsi du.,8.2
+u08-2.gb1.1,Hanka hautsita dauka.,8.2
+u08-2.gb1.2,Amona eserita dago.,8.2
+u08-2.gb2.0,"Sukarra baduzu, etxean geratu.",8.2
+u08-2.gb2.1,"Buruko mina badaukazu, pilula bat hartu.",8.2
+u08-2.gb2.2,"Nekatuta bazaude, goiz oheratu.",8.2
+u08-2.gb3.0,Egunero zazpietan jaikitzen naiz.,8.2
+u08-2.gb3.1,Astean behin igeri egiten dut.,8.2
+u08-2.gb3.2,Ez dut inoiz kafea hartzen.,8.2
+u08-2.l1.s1.e01,Egunero zazpietan jaikitzen naiz.,8.2
+u08-2.l1.s1.e02,Gero dutxatzen naiz.,8.2
+u08-2.l1.s1.e03.0,jaiki,8.2
+u08-2.l1.s1.e03.1,gosaldu,8.2
+u08-2.l1.s1.e03.2,dutxatu,8.2
+u08-2.l1.s1.e03.3,oheratu,8.2
+u08-2.l1.s1.e03.4,bazkaldu,8.2
+u08-2.l1.s1.e03.5,afaldu,8.2
+u08-2.l1.s1.e04,Etxean gosaltzen dut.,8.2
+u08-2.l1.s1.e05,Egunero hamarretan oheratzen naiz.,8.2
+u08-2.l1.s1.e06,Goizean kafea hartzen dut.,8.2
+u08-2.l1.s1.e07,Ane seietan jaikitzen da.,8.2
+u08-2.l1.s1.e08,Ordu batean bazkaltzen dut.,8.2
+u08-2.l1.s1.e09.0,Zer ordutan oheratzen zara?,8.2
+u08-2.l1.s1.e09.answer,Hamaiketan oheratzen naiz.,8.2
+u08-2.l1.s1.e10,Gauean bederatzietan afaltzen dugu.,8.2
+u08-2.l1.s1.e11,Egunero sei eta erdietan jaikitzen naiz. Ez dut gosaltzen.,8.2
+u08-2.l1.s1.e12,Hamaiketan oheratzen naiz.,8.2
+u08-2.l1.s1.e13,Zer ordutan jaikitzen zara?,8.2
+u08-2.l1.s2.e01,Astean behin igeri egiten dut.,8.2
+u08-2.l1.s2.e02,Noizean behin mendira joaten naiz.,8.2
+u08-2.l1.s2.e03.0,ez… inoiz,8.2
+u08-2.l1.s2.e03.1,noizean behin,8.2
+u08-2.l1.s2.e03.2,gutxitan,8.2
+u08-2.l1.s2.e03.3,askotan,8.2
+u08-2.l1.s2.e03.4,egunero,8.2
+u08-2.l1.s2.e03.5,astean behin,8.2
+u08-2.l1.s2.e04,Ez dut inoiz ardoa edaten.,8.2
+u08-2.l1.s2.e05,Ez dut inoiz kafea hartzen.,8.2
+u08-2.l1.s2.e06,Haragia gutxitan jaten dut.,8.2
+u08-2.l1.s2.e07,Noizean behin kafea hartzen dut.,8.2
+u08-2.l1.s2.e08,Mikelek asko lan egiten du.,8.2
+u08-2.l1.s2.e09.0,Askotan igeri egiten duzu?,8.2
+u08-2.l1.s2.e09.answer,"Bai, astean behin.",8.2
+u08-2.l1.s2.e10,Amonak bakarrik bazkaltzen du.,8.2
+u08-2.l1.s2.e11,Nerea egunero hondartzara joaten da. Asko igeri egiten du.,8.2
+u08-2.l1.s2.e12,Askotan igeri egiten duzu?,8.2
+u08-2.l1.s2.e13,Asko lo egiten dut.,8.2
+u08-2.l1.s3.e01,Osasun-etxera noa.,8.2
+u08-2.l1.s3.e02,Hitzordua eskatu dut.,8.2
+u08-2.l1.s3.e03.0,osasun-etxea,8.2
+u08-2.l1.s3.e03.1,botika,8.2
+u08-2.l1.s3.e03.2,pilula,8.2
+u08-2.l1.s3.e03.3,hitzordua,8.2
+u08-2.l1.s3.e03.4,errezeta,8.2
+u08-2.l1.s3.e03.5,sendabelarra,8.2
+u08-2.l1.s3.e04,Medikuak errezeta bat idatzi du.,8.2
+u08-2.l1.s3.e05,Osasun-etxean hitzordua eskatu dut.,8.2
+u08-2.l1.s3.e06,Farmazian botika erosiko dut.,8.2
+u08-2.l1.s3.e07,Hitzordua daukat osasun-etxean.,8.2
+u08-2.l1.s3.e08,"Pilula bat hartu, mesedez.",8.2
+u08-2.l1.s3.e09.0,"Egun on! Eseri, mesedez. Zer daukazu?",8.2
+u08-2.l1.s3.e09.answer,Eztula daukat.,8.2
+u08-2.l1.s3.e10,"Eseri, mesedez.",8.2
+u08-2.l1.s3.e11,Gaur osasun-etxera joan naiz. Gero farmazian pilulak erosi ditut.,8.2
+u08-2.l1.s3.e12,Amonak sendabelarrak hartzen ditu.,8.2
+u08-2.l1.s3.e13,Jonek besoa hautsi du.,8.2
+u08-2.l2.s1.e01,Medikuarengana joan behar duzu.,8.2
+u08-2.l2.s1.e02,Bihar zuregana etorriko naiz.,8.2
+u08-2.l2.s1.e03,Bihar medikuarengana joango naiz.,8.2
+u08-2.l2.s1.e04,Ama medikuarengana doa.,8.2
+u08-2.l2.s1.e05,Bihar niregana etorriko zara?,8.2
+u08-2.l2.s1.e06,Erizainarengana joango gara.,8.2
+u08-2.l2.s1.e07,Gaur erizainarengana joan naiz.,8.2
+u08-2.l2.s1.e08,Umea niregana etorri da.,8.2
+u08-2.l2.s1.e09.0,Hankako mina daukat.,8.2
+u08-2.l2.s1.e09.answer,Medikuarengana joan behar duzu.,8.2
+u08-2.l2.s1.e10,"Osasun-etxera joango naiz, medikuarengana.",8.2
+u08-2.l2.s1.e11,Aitona gaixo dago. Gaur bere medikuarengana joango da.,8.2
+u08-2.l2.s1.e12,Nora zoaz? Medikuarengana.,8.2
+u08-2.l2.s1.e13,Amarengana noa.,8.2
+u08-2.l2.s2.e01,Mikelek hanka hautsi du.,8.2
+u08-2.l2.s2.e02,Hanka hautsita dauka.,8.2
+u08-2.l2.s2.e03,Hanka hautsita daukat.,8.2
+u08-2.l2.s2.e04,Besoa hautsita daukat.,8.2
+u08-2.l2.s2.e05,Umeak besoa hautsita dauka.,8.2
+u08-2.l2.s2.e06,Amona eserita dago.,8.2
+u08-2.l2.s2.e07.0,Zer daukazu eskuan?,8.2
+u08-2.l2.s2.e07.answer,Hatza moztuta daukat.,8.2
+u08-2.l2.s2.e08,Eserita zaude?,8.2
+u08-2.l2.s2.e09,"Atzo Gorkak oina hautsi du. Orain etxean dago, eserita.",8.2
+u08-2.l2.s2.e10,Gosalduta nator.,8.2
+u08-2.l2.s2.e11,Hatza moztuta daukat.,8.2
+u08-2.l2.s2.e12,Telefonoa hautsita dago.,8.2
+u08-2.l2.s3.e01,"Sukarra baduzu, etxean geratu.",8.2
+u08-2.l2.s3.e02,"Buruko mina badaukazu, pilula bat hartu.",8.2
+u08-2.l2.s3.e03,"Sukarra baduzu, medikuarengana joan.",8.2
+u08-2.l2.s3.e04,"Nekatuta bazaude, goiz oheratu.",8.2
+u08-2.l2.s3.e05,"Nekatuta bazaude, eseri.",8.2
+u08-2.l2.s3.e06,"Gaixo bazaude, medikuarengana joan.",8.2
+u08-2.l2.s3.e07.0,Sabeleko mina daukat.,8.2
+u08-2.l2.s3.e07.answer,"Mina badaukazu, medikuarengana joan.",8.2
+u08-2.l2.s3.e08,"Eztula baduzu, ura edan.",8.2
+u08-2.l2.s3.e09,"Sukarra baduzu, etxean geratu eta ura edan. Ez joan eskolara.",8.2
+u08-2.l2.s3.e10,"Hotzeria badaukazu, sendabelarrak hartu.",8.2
+u08-2.l2.s3.e11,"Hortzetako mina baduzu, hitzordua eskatu.",8.2
+u08-2.l2.s3.e12,"Bizkarreko mina badaukazu, igeri egin.",8.2
+u08-2.l3.s1.e01,Zer ordutan jaikitzen zara egunero?,8.2
+u08-2.l3.s1.e02,Seietan jaikitzen naiz eta dutxatzen naiz.,8.2
+u08-2.l3.s1.e03,Gutxitan oheratzen naiz berandu.,8.2
+u08-2.l3.s1.e04,Gosaltzen duzu?,8.2
+u08-2.l3.s1.e05.0,Asko lo egiten duzu?,8.2
+u08-2.l3.s1.e05.1,"Ez, gutxi. Seietan jaikitzen naiz.",8.2
+u08-2.l3.s1.e05.2,Eta zer ordutan oheratzen zara?,8.2
+u08-2.l3.s1.e05.answer,Gaueko ordu batean.,8.2
+u08-2.l3.s1.e06,"Bai, kafea eta ogia gosaltzen ditut.",8.2
+u08-2.l3.s1.e07.0,Ardoa edaten duzu?,8.2
+u08-2.l3.s1.e07.answer,"Ez, ez dut inoiz ardoa edaten.",8.2
+u08-2.l3.s1.e08,Noizean behin igeri egiten dut.,8.2
+u08-2.l3.s1.e09,Peio egunero bostetan jaikitzen da. Gero dutxatzen da eta gosaltzen du.,8.2
+u08-2.l3.s1.e10,Gauean asko afaltzen duzu?,8.2
+u08-2.l3.s1.e11,Miren gutxitan joaten da medikuarengana. Ez du inoiz botikarik hartzen.,8.2
+u08-2.l3.s2.e01,Zer egin behar dut?,8.2
+u08-2.l3.s2.e02,"Pilula hauek hartu, goizean eta gauean.",8.2
+u08-2.l3.s2.e03,Hemen duzu errezeta.,8.2
+u08-2.l3.s2.e04,Hemen duzu errezeta.,8.2
+u08-2.l3.s2.e05.0,"Eseri, mesedez. Zer daukazu?",8.2
+u08-2.l3.s2.e05.1,Besoko min handia daukat.,8.2
+u08-2.l3.s2.e05.2,Besoa hautsita daukazu.,8.2
+u08-2.l3.s2.e05.answer,Eta zer egin behar dut?,8.2
+u08-2.l3.s2.e06,"Sukarra baduzu, deitu.",8.2
+u08-2.l3.s2.e07.0,Bihar etorri behar dut?,8.2
+u08-2.l3.s2.e07.answer,"Mina badaukazu, etorri.",8.2
+u08-2.l3.s2.e08,"Datorren astean hitzordua eskatu, mesedez.",8.2
+u08-2.l3.s2.e09,"Buruko mina badaukazu, pilula bat hartu. Sukarra baduzu, medikuarengana joan.",8.2
+u08-2.l3.s2.e10,Eskerrik asko. Agur!,8.2
+u08-2.l3.s2.e11,Medikuak errezeta idatzi du. Nik farmaziara eramango dut.,8.2
+u08-2.l3.s3.e01,Nire amonak laurogeita hamar urte ditu.,8.2
+u08-2.l3.s3.e02,Egunero goiz jaikitzen da.,8.2
+u08-2.l3.s3.e03,Ez naiz inoiz berandu jaikitzen.,8.2
+u08-2.l3.s3.e04,Astean behin hondartzara joaten da eta igeri egiten du.,8.2
+u08-2.l3.s3.e05.0,Zure amona oso ondo dago!,8.2
+u08-2.l3.s3.e05.1,"Bai, egunero ibiltzen da.",8.2
+u08-2.l3.s3.e05.2,Bakarrik?,8.2
+u08-2.l3.s3.e05.answer,"Ez, lagunekin.",8.2
+u08-2.l3.s3.e06,Gutxitan hartzen ditu pilulak.,8.2
+u08-2.l3.s3.e07.0,"Eta zuk, igeri egiten duzu?",8.2
+u08-2.l3.s3.e07.answer,"Bai, noizean behin.",8.2
+u08-2.l3.s3.e08,Sendabelarrak nahiago ditu.,8.2
+u08-2.l3.s3.e09,Amona hamarretan oheratzen da. Ez du inoiz kafea hartzen.,8.2
+u08-2.l3.s3.e10,Arratsaldean eserita irakurtzen du.,8.2
+u08-2.l3.s3.e11,"Nire aitonak hanka hautsita dauka. Etxean dago, eserita.",8.2
+u08-2.l4.story.0,Egun on! Hitzordua daukazu?,8.2
+u08-2.l4.story.1,"Bai, hamarretan, medikuarekin. Kepa Arana naiz.",8.2
+u08-2.l4.story.2,"Ondo. Eseri, mesedez.",8.2
+u08-2.l4.story.3,"Kaixo, Kepa. Zer daukazu?",8.2
+u08-2.l4.story.4,Bizkarreko mina daukat. Gauean ez dut lo egiten.,8.2
+u08-2.l4.story.5,Zer egiten duzu egunero?,8.2
+u08-2.l4.story.6,"Zortzi orduz lan egiten dut, eserita.",8.2
+u08-2.l4.story.7,Igeri egiten duzu?,8.2
+u08-2.l4.story.8,"Ez, inoiz ez.",8.2
+u08-2.l4.story.9,"Mina baduzu, pilula bat hartu. Eta astean behin igeri egin, mesedez.",8.2
+u08-2.l4.story.10,Ondo. Errezeta behar dut?,8.2
+u08-2.l4.story.11,"Bai, hemen duzu. Datorren hilabetean hitzordua eskatu.",8.2
+u09-1.gb0.0,Zerezkoa da botila hau?,9.1
+u09-1.gb0.1,Beirazkoa da.,9.1
+u09-1.gb0.2,Paperezko poltsa bat daukat.,9.1
+u09-1.gb1.0,Papera edukiontzi urdinean sar daiteke.,9.1
+u09-1.gb1.1,Botilak birzikla daitezke.,9.1
+u09-1.gb1.2,Hemen ez daiteke igeri egin.,9.1
+u09-1.gb2.0,Sar ezazu papera edukiontzi urdinean.,9.1
+u09-1.gb2.1,Eraman itzazu botilak edukiontzira.,9.1
+u09-1.gb2.2,Joan zaitez basora!,9.1
+u09-1.gb3.0,Amak eskatu dit botilak birziklatzeko.,9.1
+u09-1.gb3.1,Irakasleak eskatu digu papera edukiontzi urdinera eramateko.,9.1
+u09-1.l1.s1.e01,Basoan zuhaitz asko daude.,9.1
+u09-1.l1.s1.e02,Ibaia eta itsasoa gertu daude.,9.1
+u09-1.l1.s1.e03.0,zuhaitz,9.1
+u09-1.l1.s1.e03.1,baso,9.1
+u09-1.l1.s1.e03.2,itsaso,9.1
+u09-1.l1.s1.e03.3,ibai,9.1
+u09-1.l1.s1.e03.4,natura,9.1
+u09-1.l1.s1.e03.5,kutsadura,9.1
+u09-1.l1.s1.e04,Natura oso polita da hemen.,9.1
+u09-1.l1.s1.e05,Basoan zuhaitz asko daude.,9.1
+u09-1.l1.s1.e06,Itsasoan kutsadura dago.,9.1
+u09-1.l1.s1.e07,Ibaian kutsadura dago.,9.1
+u09-1.l1.s1.e08,Ingurumena gure etxea da.,9.1
+u09-1.l1.s1.e09.0,Non dago ibaia?,9.1
+u09-1.l1.s1.e09.answer,Basoaren ondoan dago.,9.1
+u09-1.l1.s1.e10,Ibaian ez dago arrainik.,9.1
+u09-1.l1.s1.e11,Nire herrian baso handi bat dago. Basoan zuhaitz asko daude.,9.1
+u09-1.l1.s1.e12,Mendian baso handi bat dago.,9.1
+u09-1.l1.s1.e13,Zuhaitz hau oso zaharra da.,9.1
+u09-1.l1.s2.e01,Hau zakarrontzia da.,9.1
+u09-1.l1.s2.e02,Edukiontzia kalean dago.,9.1
+u09-1.l1.s2.e03.0,edukiontzi,9.1
+u09-1.l1.s2.e03.1,zakarrontzi,9.1
+u09-1.l1.s2.e03.2,botila,9.1
+u09-1.l1.s2.e03.3,poltsa,9.1
+u09-1.l1.s2.e03.4,hondakin,9.1
+u09-1.l1.s2.e03.5,birziklatu,9.1
+u09-1.l1.s2.e04,Botila zakarrontzian dago.,9.1
+u09-1.l1.s2.e05,Edukiontzia kalean dago.,9.1
+u09-1.l1.s2.e06,Poltsan hondakinak daude.,9.1
+u09-1.l1.s2.e07,Botila zakarrontzian dago.,9.1
+u09-1.l1.s2.e08,"Plastikoa, papera eta beira birziklatu behar ditugu.",9.1
+u09-1.l1.s2.e09.0,Non dago zakarrontzia?,9.1
+u09-1.l1.s2.e09.answer,"Gelan dago, atearen ondoan.",9.1
+u09-1.l1.s2.e10,Kartoia edukiontzi urdinean dago.,9.1
+u09-1.l1.s2.e11,Gelan zakarrontzi bat dago. Zakarrontzian paperak eta botila bat daude.,9.1
+u09-1.l1.s2.e12,Etxean poltsa asko dauzkagu.,9.1
+u09-1.l1.s2.e13,Gelan zakarrontzi bat dago.,9.1
+u09-1.l1.s3.e01,Mahaia egurrezkoa da.,9.1
+u09-1.l1.s3.e02,Aulki hau burdinazkoa da.,9.1
+u09-1.l1.s3.e03.0,egur,9.1
+u09-1.l1.s3.e03.1,burdina,9.1
+u09-1.l1.s3.e03.2,paper,9.1
+u09-1.l1.s3.e03.3,kartoi,9.1
+u09-1.l1.s3.e03.4,plastiko,9.1
+u09-1.l1.s3.e03.5,beira,9.1
+u09-1.l1.s3.e04,Poltsa paperezkoa da.,9.1
+u09-1.l1.s3.e05,Botila plastikozkoa da.,9.1
+u09-1.l1.s3.e06,Botila beirazkoa da.,9.1
+u09-1.l1.s3.e07,Aulkia egurrezkoa da.,9.1
+u09-1.l1.s3.e08,Gela honetan argi asko dago.,9.1
+u09-1.l1.s3.e09.0,Zure poltsa plastikozkoa da?,9.1
+u09-1.l1.s3.e09.answer,"Ez, paperezkoa da.",9.1
+u09-1.l1.s3.e10,Energia asko behar dugu.,9.1
+u09-1.l1.s3.e11,Hau leku polita da.,9.1
+u09-1.l1.s3.e12,Kartoizko poltsa bat daukat.,9.1
+u09-1.l2.s1.e01,Zerezkoa da botila hau?,9.1
+u09-1.l2.s1.e02,Beirazkoa da.,9.1
+u09-1.l2.s1.e03,Zerezkoa da mahai hau?,9.1
+u09-1.l2.s1.e04,Zerezkoa da poltsa hori?,9.1
+u09-1.l2.s1.e05,Botila hau beirazkoa da.,9.1
+u09-1.l2.s1.e06,"Plastikozkoa da, ez paperezkoa.",9.1
+u09-1.l2.s1.e07,Zerezkoa da aulkia?,9.1
+u09-1.l2.s1.e08,Leihoa egurrezkoa da.,9.1
+u09-1.l2.s1.e09.0,Zerezkoa da mahai hau?,9.1
+u09-1.l2.s1.e09.answer,Egurrezkoa da.,9.1
+u09-1.l2.s1.e10,Ate hau burdinazkoa da.,9.1
+u09-1.l2.s1.e11,"Nire gelan mahai bat dago. Mahaia egurrezkoa da, eta aulkia burdinazkoa.",9.1
+u09-1.l2.s1.e12,Plastikozko botilak dauzkat.,9.1
+u09-1.l2.s1.e13,Paperezko poltsa nahi dut.,9.1
+u09-1.l2.s2.e01,Papera edukiontzi urdinean sar daiteke.,9.1
+u09-1.l2.s2.e02,Beira edukiontzi berdean sar daiteke.,9.1
+u09-1.l2.s2.e03,Botilak birzikla daitezke.,9.1
+u09-1.l2.s2.e04,Plastikoa edukiontzi horian sar daiteke.,9.1
+u09-1.l2.s2.e05,Papera edukiontzi urdinean sar daiteke.,9.1
+u09-1.l2.s2.e06,Botilak birzikla daitezke.,9.1
+u09-1.l2.s2.e07,Hemen ez daiteke igeri egin.,9.1
+u09-1.l2.s2.e08,Kartoia birzikla daiteke.,9.1
+u09-1.l2.s2.e09.0,Beira non sar daiteke?,9.1
+u09-1.l2.s2.e09.answer,Edukiontzi berdean.,9.1
+u09-1.l2.s2.e10,Hemen ez daiteke igeri egin.,9.1
+u09-1.l2.s2.e11,Ibaian igeri egin daiteke?,9.1
+u09-1.l2.s2.e12,"Bai, igeri egin daiteke.",9.1
+u09-1.l2.s3.e01,Sar ezazu papera edukiontzi urdinean.,9.1
+u09-1.l2.s3.e02,Eraman itzazu botilak edukiontzira.,9.1
+u09-1.l2.s3.e03,Sar ezazu papera hemen.,9.1
+u09-1.l2.s3.e04,Birzikla ezazu plastikoa!,9.1
+u09-1.l2.s3.e05,Eraman itzazu botilak edukiontzira.,9.1
+u09-1.l2.s3.e06,Joan zaitez edukiontzira!,9.1
+u09-1.l2.s3.e07,Amak eskatu dit papera birziklatzeko.,9.1
+u09-1.l2.s3.e08,Amak eskatu dit botilak birziklatzeko.,9.1
+u09-1.l2.s3.e09.0,Botila hau beirazkoa da.,9.1
+u09-1.l2.s3.e09.answer,Sar ezazu edukiontzi berdean.,9.1
+u09-1.l2.s3.e10,Irakasleak eskatu digu papera edukiontzi urdinera eramateko.,9.1
+u09-1.l2.s3.e11,Irakasleak eskatu digu paperak eta kartoiak birziklatzeko.,9.1
+u09-1.l2.s3.e12,"Har ezazu poltsa, mesedez.",9.1
+u09-1.l3.s1.e01,"Barkatu, non dago edukiontzi horia?",9.1
+u09-1.l3.s1.e02,"Plazan dago, eskolaren ondoan.",9.1
+u09-1.l3.s1.e03,Poltsa hau birzikla daiteke?,9.1
+u09-1.l3.s1.e04,Poltsa hau birzikla daiteke?,9.1
+u09-1.l3.s1.e05.0,"Barkatu, zerezkoa da botila hau?",9.1
+u09-1.l3.s1.e05.1,Plastikozkoa da.,9.1
+u09-1.l3.s1.e05.2,Non sar daiteke?,9.1
+u09-1.l3.s1.e05.answer,Edukiontzi horian.,9.1
+u09-1.l3.s1.e06,"Bai, paperezkoa da.",9.1
+u09-1.l3.s1.e07.0,Ibaian igeri egin daiteke?,9.1
+u09-1.l3.s1.e07.answer,"Ez, ibaian kutsadura dago.",9.1
+u09-1.l3.s1.e08,Gelan zakarrontzi bat behar dugu.,9.1
+u09-1.l3.s1.e09,"Herriko plazan hiru edukiontzi daude: urdina, horia eta berdea.",9.1
+u09-1.l3.s1.e10,Ingurumenean kutsadura asko dago.,9.1
+u09-1.l3.s1.e11,Ibai hau oso polita da. Hemen igeri egin daiteke.,9.1
+u09-1.l3.s2.e01,Gelan argi gutxi dago.,9.1
+u09-1.l3.s2.e02,Eraman ezazu poltsa supermerkatura.,9.1
+u09-1.l3.s2.e03,Joan zaitez basora!,9.1
+u09-1.l3.s2.e04,Ez dut plastikozko poltsarik behar.,9.1
+u09-1.l3.s2.e05.0,"Oier, eraman itzazu botilak, mesedez.",9.1
+u09-1.l3.s2.e05.answer,"Bai, ama! Orain noa.",9.1
+u09-1.l3.s2.e06,Aitak eskatu dit hondakinak edukiontzira eramateko.,9.1
+u09-1.l3.s2.e07.0,Zer eskatu digu irakasleak?,9.1
+u09-1.l3.s2.e07.answer,Papera eta kartoia birziklatzeko.,9.1
+u09-1.l3.s2.e08,Joan zaitez basora lagunekin!,9.1
+u09-1.l3.s2.e09,Amak eskatu dit poltsa eramateko. Gaur supermerkatura noa.,9.1
+u09-1.l3.s2.e10,"Har itzazu botilak, mesedez.",9.1
+u09-1.l3.s2.e11,Nire gelan zakarrontzi bat dago. Zakarrontzia burdinazkoa da.,9.1
+u09-1.l3.s3.e01,Hondartzan plastiko asko dago.,9.1
+u09-1.l3.s3.e02,Itsasoa ez da zakarrontzia!,9.1
+u09-1.l3.s3.e03,Itsasoa ez da zakarrontzia!,9.1
+u09-1.l3.s3.e04,Leku hau oso polita da.,9.1
+u09-1.l3.s3.e05.0,Hondartzan botila asko daude!,9.1
+u09-1.l3.s3.e05.1,"Bai. Har itzazu, mesedez.",9.1
+u09-1.l3.s3.e05.answer,"Bai, eta edukiontzira eramango ditut.",9.1
+u09-1.l3.s3.e06,Eguzkiaren energia behar dugu.,9.1
+u09-1.l3.s3.e07.0,Zerezkoa da zure poltsa?,9.1
+u09-1.l3.s3.e07.answer,Paperezkoa. Birzikla daiteke.,9.1
+u09-1.l3.s3.e08,Gure herrian baso eta ibai asko daude.,9.1
+u09-1.l3.s3.e09,Lekeitioko hondartzan kutsadura dago. Itsasoan plastiko asko dago.,9.1
+u09-1.l3.s3.e10,Egurrezko mahaiak eta aulkiak dauzkagu.,9.1
+u09-1.l3.s3.e11,Basoan zuhaitz zaharrak daude. Leku oso polita da.,9.1
+u09-1.l4.story.0,"Kaixo, Peio! Zer daukazu poltsan?",9.1
+u09-1.l4.story.1,"Hondakinak: botilak, papera eta kartoia.",9.1
+u09-1.l4.story.2,Eta zakarrontzira zoaz?,9.1
+u09-1.l4.story.3,"Bai, kalean dago.",9.1
+u09-1.l4.story.4,"Ez, mesedez! Hori birzikla daiteke.",9.1
+u09-1.l4.story.5,Bai? Eta non sar daiteke?,9.1
+u09-1.l4.story.6,"Papera eta kartoia, edukiontzi urdinean.",9.1
+u09-1.l4.story.7,Eta botilak? Beirazkoak dira.,9.1
+u09-1.l4.story.8,Eraman itzazu edukiontzi berdera. Plazan dago.,9.1
+u09-1.l4.story.9,"Eskerrik asko, Amaia! Orain noa.",9.1
+u09-2.gb0.0,Komeni da energia aurreztea.,9.2
+u09-2.gb0.1,Ondo dago papera birziklatzea.,9.2
+u09-2.gb1.0,Ezin da hemen plastikoa bota.,9.2
+u09-2.gb1.1,Debekatuta dago ibaian igeri egitea.,9.2
+u09-2.gb1.2,Gaur ezin naiz etorri.,9.2
+u09-2.gb2.0,"Nire ustez, ondo dago.",9.2
+u09-2.gb2.1,Zer uste duzu?,9.2
+u09-2.gb2.2,Ez nago ados.,9.2
+u09-2.gb3.0,"Gelatik joaten naizenean, argia itzaltzen dut.",9.2
+u09-2.gb3.1,"Dutxatzen naizenean, ura aurrezten dut.",9.2
+u09-2.l1.s1.e01,Argia itzaltzen dut.,9.2
+u09-2.l1.s1.e02,Gelan argia pizten dugu.,9.2
+u09-2.l1.s1.e03.0,itzali,9.2
+u09-2.l1.s1.e03.1,piztu,9.2
+u09-2.l1.s1.e03.2,aurreztu,9.2
+u09-2.l1.s1.e03.3,erabili,9.2
+u09-2.l1.s1.e03.4,bota,9.2
+u09-2.l1.s1.e04,Energia aurreztu behar dugu.,9.2
+u09-2.l1.s1.e05,Ura aurrezten dut.,9.2
+u09-2.l1.s1.e06,Ura aurrezten dut.,9.2
+u09-2.l1.s1.e07,Argia itzaltzen dut.,9.2
+u09-2.l1.s1.e08,Paperezko poltsak erabiltzen ditugu.,9.2
+u09-2.l1.s1.e09.0,Argia piztuta dago!,9.2
+u09-2.l1.s1.e09.answer,"Bai, orain itzaltzen dut.",9.2
+u09-2.l1.s1.e10,"Itzal ezazu argia, mesedez!",9.2
+u09-2.l1.s1.e11,Etxean energia aurrezten dugu. Argiak itzaltzen ditugu.,9.2
+u09-2.l1.s1.e12,Ez piztu argia orain.,9.2
+u09-2.l1.s1.e13,Nik plastiko gutxi erabiltzen dut.,9.2
+u09-2.l1.s2.e01,Ez bota papera kalera!,9.2
+u09-2.l1.s2.e02,Bota ezazu botila edukiontzi berdera.,9.2
+u09-2.l1.s2.e03.0,debekatuta,9.2
+u09-2.l1.s2.e03.1,ezin,9.2
+u09-2.l1.s2.e03.2,ados,9.2
+u09-2.l1.s2.e03.3,iritzi,9.2
+u09-2.l1.s2.e03.4,zaindu,9.2
+u09-2.l1.s2.e04,Hemen debekatuta dago igeri egitea.,9.2
+u09-2.l1.s2.e05,Ezin da hemen sartu.,9.2
+u09-2.l1.s2.e06,Ezin da hemen sartu.,9.2
+u09-2.l1.s2.e07,Hemen debekatuta dago igeri egitea.,9.2
+u09-2.l1.s2.e08,Ibaian ezin da igeri egin.,9.2
+u09-2.l1.s2.e09.0,Botila hau ibaira bota daiteke?,9.2
+u09-2.l1.s2.e09.answer,Ez! Debekatuta dago.,9.2
+u09-2.l1.s2.e10,Debekatuta dago hondakinak ibaira botatzea.,9.2
+u09-2.l1.s2.e11,Gaur ezin naiz etorri.,9.2
+u09-2.l1.s2.e12,Zakarrontzian bota behar duzu.,9.2
+u09-2.l1.s3.e01,Natura zaindu behar dugu.,9.2
+u09-2.l1.s3.e02,Zer uste duzu?,9.2
+u09-2.l1.s3.e03.0,zaindu,9.2
+u09-2.l1.s3.e03.1,ados,9.2
+u09-2.l1.s3.e03.2,iritzi,9.2
+u09-2.l1.s3.e03.3,uste izan,9.2
+u09-2.l1.s3.e03.4,debekatuta,9.2
+u09-2.l1.s3.e04,Ados nago.,9.2
+u09-2.l1.s3.e05,Ados nago.,9.2
+u09-2.l1.s3.e06,Ez nago ados.,9.2
+u09-2.l1.s3.e07,Ez nago ados.,9.2
+u09-2.l1.s3.e08,"Nire ustez, ondo dago.",9.2
+u09-2.l1.s3.e09.0,Natura zaindu behar dugu.,9.2
+u09-2.l1.s3.e09.answer,"Bai, ados nago.",9.2
+u09-2.l1.s3.e10,Zein da zure iritzia?,9.2
+u09-2.l1.s3.e11,"Nire ustez, plastiko gutxiago erabili behar dugu.",9.2
+u09-2.l1.s3.e12,Ingurumena zaintzen dugu.,9.2
+u09-2.l1.s3.e13,Zu ados zaude?,9.2
+u09-2.l2.s1.e01,Komeni da energia aurreztea.,9.2
+u09-2.l2.s1.e02,Ondo dago papera birziklatzea.,9.2
+u09-2.l2.s1.e03,Komeni da ura aurreztea.,9.2
+u09-2.l2.s1.e04,Komeni da argiak itzaltzea.,9.2
+u09-2.l2.s1.e05,Ondo dago papera birziklatzea.,9.2
+u09-2.l2.s1.e06,Natura zaintzea komeni da.,9.2
+u09-2.l2.s1.e07,Komeni da argiak itzaltzea.,9.2
+u09-2.l2.s1.e08,Ondo dago paperezko poltsak erabiltzea.,9.2
+u09-2.l2.s1.e09.0,Zer komeni da?,9.2
+u09-2.l2.s1.e09.answer,Komeni da energia aurreztea.,9.2
+u09-2.l2.s1.e10,Komeni da ura aurreztea.,9.2
+u09-2.l2.s1.e11,Ez dago ondo ibaira hondakinak botatzea.,9.2
+u09-2.l2.s1.e12,Gustatzen zait natura zaintzea.,9.2
+u09-2.l2.s2.e01,Ezin da hemen plastikoa bota.,9.2
+u09-2.l2.s2.e02,Basoan ezin da zuhaitzik moztu.,9.2
+u09-2.l2.s2.e03,Debekatuta dago itsasora plastikoa botatzea.,9.2
+u09-2.l2.s2.e04,Liburutegian ezin da jan.,9.2
+u09-2.l2.s2.e05,Ezin dut argia piztu.,9.2
+u09-2.l2.s2.e06,Debekatuta dago itsasora plastikoa botatzea.,9.2
+u09-2.l2.s2.e07,Liburutegian ezin da jan.,9.2
+u09-2.l2.s2.e08,Debekatuta dago basoan hondakinak botatzea.,9.2
+u09-2.l2.s2.e09.0,Hemen igeri egin daiteke?,9.2
+u09-2.l2.s2.e09.answer,"Ez, debekatuta dago.",9.2
+u09-2.l2.s2.e10,Ezin dut argia piztu.,9.2
+u09-2.l2.s2.e11,Hondartza honetan debekatuta dago botilak botatzea. Zakarrontziak plazan daude.,9.2
+u09-2.l2.s2.e12,Ezin naiz gaur basora joan.,9.2
+u09-2.l2.s2.e13,Zakarrontzia non dago? Ezin dut ikusi.,9.2
+u09-2.l2.s3.e01,"Gelatik joaten naizenean, argia itzaltzen dut.",9.2
+u09-2.l2.s3.e02,"Dutxatzen naizenean, ura aurrezten dut.",9.2
+u09-2.l2.s3.e03,"Gelatik joaten naizenean, argia itzaltzen dut.",9.2
+u09-2.l2.s3.e04,"Supermerkatura joaten naizenean, poltsa eramaten dut.",9.2
+u09-2.l2.s3.e05,"Eguzkia dagoenean, ez dut argia pizten.",9.2
+u09-2.l2.s3.e06,"Etxera etortzen naizenean, argia pizten dut.",9.2
+u09-2.l2.s3.e07,"Ilun dagoenean, argia pizten dugu.",9.2
+u09-2.l2.s3.e08,"Ilun dagoenean, argia pizten dugu.",9.2
+u09-2.l2.s3.e09.0,Zer egiten duzu gelatik joaten zarenean?,9.2
+u09-2.l2.s3.e09.answer,Argia itzaltzen dut.,9.2
+u09-2.l2.s3.e10,"Eguzkia dagoenean, ez dut argia pizten.",9.2
+u09-2.l2.s3.e11,"Iker dutxatzen denean, ura aurrezten du.",9.2
+u09-2.l2.s3.e12,"Botila bat dudanean, edukiontzi berdera eramaten dut.",9.2
+u09-2.l3.s1.e01,"Nire ustez, komeni da ura aurreztea.",9.2
+u09-2.l3.s1.e02,"Ados nago, Ane.",9.2
+u09-2.l3.s1.e03,Zer uste duzu?,9.2
+u09-2.l3.s1.e04,"Ez nago ados, Mikel.",9.2
+u09-2.l3.s1.e05.0,"Nire ustez, komeni da argiak itzaltzea.",9.2
+u09-2.l3.s1.e05.1,Ados nago!,9.2
+u09-2.l3.s1.e05.2,"Eta zuk, Uxue, zer uste duzu?",9.2
+u09-2.l3.s1.e05.answer,Ados nago. Energia aurreztu behar dugu.,9.2
+u09-2.l3.s1.e06,"Zer uste duzu, Olatz?",9.2
+u09-2.l3.s1.e07.0,Plastikozko poltsak debekatuta egon behar dute.,9.2
+u09-2.l3.s1.e07.answer,"Ez nago ados. Nire ustez, birzikla daitezke.",9.2
+u09-2.l3.s1.e08,"Nire ustez, herrian edukiontzi gehiago behar ditugu.",9.2
+u09-2.l3.s1.e09,"Nire ustez, herriko ibaia zaindu behar dugu. Ibaian kutsadura asko dago.",9.2
+u09-2.l3.s1.e10,"Zein da zure iritzia, Kepa?",9.2
+u09-2.l3.s1.e11,"Zein da zure iritzia, Edurne? Ados nago, Patxi.",9.2
+u09-2.l3.s2.e01,Hondartzara ezin da beirazko botilarik eraman.,9.2
+u09-2.l3.s2.e02,Basoan ezin da egurrik hartu.,9.2
+u09-2.l3.s2.e03,Hondartzara ezin da beirazko botilarik eraman.,9.2
+u09-2.l3.s2.e04,Itsasoa zaindu behar dugu.,9.2
+u09-2.l3.s2.e05.0,"Barkatu, hemen igeri egin daiteke?",9.2
+u09-2.l3.s2.e05.1,"Ez, debekatuta dago.",9.2
+u09-2.l3.s2.e05.2,Zergatik?,9.2
+u09-2.l3.s2.e05.answer,Ibaian kutsadura dagoelako.,9.2
+u09-2.l3.s2.e06,Debekatuta dago hemen igeri egitea?,9.2
+u09-2.l3.s2.e07.0,Hondartzara beirazko botila eraman daiteke?,9.2
+u09-2.l3.s2.e07.answer,"Ez, ezin da.",9.2
+u09-2.l3.s2.e08,"Ez, hemen igeri egin daiteke.",9.2
+u09-2.l3.s2.e09,Parkean ezin da hondakinik bota. Zakarrontziak erabili behar dira.,9.2
+u09-2.l3.s2.e10,Liburutegian argia itzali behar dugu.,9.2
+u09-2.l3.s2.e11,Liburutegian argiak itzali behar dira. Energia aurreztu behar dugu.,9.2
+u09-2.l3.s3.e01,"Etxetik joaten naizenean, argiak itzaltzen ditut.",9.2
+u09-2.l3.s3.e02,Gure etxean ura eta energia aurrezten ditugu.,9.2
+u09-2.l3.s3.e03,Gaur ez dut plastikorik erabili.,9.2
+u09-2.l3.s3.e04,Eskolan papera eta plastikoa birziklatzen ditugu.,9.2
+u09-2.l3.s3.e05.0,Zer egiten duzu ingurumena zaintzeko?,9.2
+u09-2.l3.s3.e05.answer,Ura aurrezten dut eta papera birziklatzen dut.,9.2
+u09-2.l3.s3.e06,Ingurumena zaintzea komeni da.,9.2
+u09-2.l3.s3.e07.0,"Kaixo, Leire!",9.2
+u09-2.l3.s3.e07.1,"Kaixo, Unai!",9.2
+u09-2.l3.s3.e07.2,"Supermerkatura joaten zarenean, zer eramaten duzu?",9.2
+u09-2.l3.s3.e07.answer,Paperezko poltsa bat.,9.2
+u09-2.l3.s3.e08,Gaur ez dut plastikorik erabili.,9.2
+u09-2.l3.s3.e09,Gure etxean ingurumena zaintzen dugu. Argiak itzaltzen ditugu eta ura aurrezten dugu.,9.2
+u09-2.l3.s3.e10,Parkeko zuhaitzak zaindu behar ditugu.,9.2
+u09-2.l3.s3.e11,"Haizea eskolara joaten denean, ez du plastikozko botilarik eramaten.",9.2
+u09-2.l4.story.0,"Aitor, gelatik joaten zarenean, argia itzali behar duzu!",9.2
+u09-2.l4.story.1,"Barkatu, Nerea. Zergatik?",9.2
+u09-2.l4.story.2,Energia aurreztea komeni delako.,9.2
+u09-2.l4.story.3,Ados nago. Eta zer gehiago egiten duzu zuk?,9.2
+u09-2.l4.story.4,"Dutxatzen naizenean, ura aurrezten dut.",9.2
+u09-2.l4.story.5,Eta ez dut plastikozko poltsarik erabiltzen.,9.2
+u09-2.l4.story.6,"Nire ustez, plastikozko poltsak debekatuta egon behar dute.",9.2
+u09-2.l4.story.7,Ados nago! Ibaian eta itsasoan plastiko asko dago.,9.2
+u09-2.l4.story.8,Bihar ibaira joango gara eta hondakinak hartuko ditugu.,9.2
+u09-2.l4.story.9,Oso ondo! Natura zaindu behar dugu.,9.2
+u10-1.gb0.0,Bilbo Tolosa baino handiagoa da.,10.1
+u10-1.gb0.1,Herria hiria baino lasaiagoa da.,10.1
+u10-1.gb1.0,Hirian zerbitzu gehiago daude.,10.1
+u10-1.gb1.1,Bilbon herrian baino museo gehiago daude.,10.1
+u10-1.gb2.0,Herria ez da hain zaratatsua.,10.1
+u10-1.gb2.1,Hirian hainbeste autobus daude!,10.1
+u10-1.gb3.0,Bilbo da Euskal Herriko hiririk handiena.,10.1
+u10-1.gb3.1,Museo hau da interesgarriena.,10.1
+u10-1.l1.s1.e01,Nire herria oso lasaia da.,10.1
+u10-1.l1.s1.e02,Hiria zaratatsua da.,10.1
+u10-1.l1.s1.e03.0,lasai,10.1
+u10-1.l1.s1.e03.1,zaratatsu,10.1
+u10-1.l1.s1.e03.2,garbi,10.1
+u10-1.l1.s1.e03.3,zikin,10.1
+u10-1.l1.s1.e03.4,seguru,10.1
+u10-1.l1.s1.e03.5,arriskutsu,10.1
+u10-1.l1.s1.e04,Kale hau garbia da.,10.1
+u10-1.l1.s1.e05,Kale hau oso segurua da.,10.1
+u10-1.l1.s1.e06,Parke hori zikina da.,10.1
+u10-1.l1.s1.e07,Hiria zaratatsua da.,10.1
+u10-1.l1.s1.e08,Herria segurua da.,10.1
+u10-1.l1.s1.e09.0,Nolakoa da zure herria?,10.1
+u10-1.l1.s1.e09.answer,Oso lasaia da.,10.1
+u10-1.l1.s1.e10,Kale hori arriskutsua da gauez.,10.1
+u10-1.l1.s1.e11,Nire herria txikia eta lasaia da. Kaleak garbiak dira.,10.1
+u10-1.l1.s1.e12,Udaletxea itsusia da.,10.1
+u10-1.l1.s1.e13,Museoa interesgarria da.,10.1
+u10-1.l1.s2.e01,Zinema hau oso erosoa da.,10.1
+u10-1.l1.s2.e02,Antzokia plazan dago.,10.1
+u10-1.l1.s2.e03.0,zinema,10.1
+u10-1.l1.s2.e03.1,antzoki,10.1
+u10-1.l1.s2.e03.2,museo,10.1
+u10-1.l1.s2.e03.3,kiroldegi,10.1
+u10-1.l1.s2.e03.4,igerileku,10.1
+u10-1.l1.s2.e03.5,eroso,10.1
+u10-1.l1.s2.e04,Museo hau aspergarria da.,10.1
+u10-1.l1.s2.e05,Kiroldegian igerileku handi bat dago.,10.1
+u10-1.l1.s2.e06,Herrian kiroldegi bat dago.,10.1
+u10-1.l1.s2.e07,Museo hau aspergarria da.,10.1
+u10-1.l1.s2.e08,Kiroldegian igerileku handi bat dago.,10.1
+u10-1.l1.s2.e09.0,Antzokia interesgarria da?,10.1
+u10-1.l1.s2.e09.answer,"Bai, oso interesgarria!",10.1
+u10-1.l1.s2.e10,"Antzoki hau ez da itsusia, oso polita da!",10.1
+u10-1.l1.s2.e11,Gure herrian zinema bat eta kiroldegi bat daude. Ez dago museorik.,10.1
+u10-1.l1.s2.e12,Zinema eta antzokia gustatzen zaizkit.,10.1
+u10-1.l1.s2.e13,Herriko museoa oso interesgarria da.,10.1
+u10-1.l1.s3.e01,Hirian garraio asko dago.,10.1
+u10-1.l1.s3.e02,Autobusa plazan dago.,10.1
+u10-1.l1.s3.e03.0,garraio,10.1
+u10-1.l1.s3.e03.1,autobus,10.1
+u10-1.l1.s3.e03.2,metro,10.1
+u10-1.l1.s3.e03.3,tren,10.1
+u10-1.l1.s3.e03.4,aparkaleku,10.1
+u10-1.l1.s3.e03.5,zerbitzu,10.1
+u10-1.l1.s3.e04,Bilbon metroa dago.,10.1
+u10-1.l1.s3.e05,Bilbon metroa dago.,10.1
+u10-1.l1.s3.e06,Herrian ez dago metrorik.,10.1
+u10-1.l1.s3.e07,Herrian ez dago metrorik.,10.1
+u10-1.l1.s3.e08,Trena geltokian dago.,10.1
+u10-1.l1.s3.e09.0,Non dago aparkalekua?,10.1
+u10-1.l1.s3.e09.answer,Kiroldegiaren ondoan.,10.1
+u10-1.l1.s3.e10,Aparkalekua ospitalearen ondoan dago.,10.1
+u10-1.l1.s3.e11,Nire herrian ez dago trenik. Autobusa hartzen dut egunero.,10.1
+u10-1.l1.s3.e12,Hirian zerbitzu asko daude.,10.1
+u10-1.l1.s3.e13,Egunero autobusa hartzen dut.,10.1
+u10-1.l2.s1.e01,Hiria herria baino zaratatsuagoa da.,10.1
+u10-1.l2.s1.e02,Herria hiria baino lasaiagoa da.,10.1
+u10-1.l2.s1.e03,Hiria herria baino zaratatsuagoa da.,10.1
+u10-1.l2.s1.e04,Bilbo Tolosa baino handiagoa da.,10.1
+u10-1.l2.s1.e05,Herria hiria baino lasaiagoa da.,10.1
+u10-1.l2.s1.e06,Metroa autobusa baino erosoagoa da.,10.1
+u10-1.l2.s1.e07,Metroa autobusa baino erosoagoa da.,10.1
+u10-1.l2.s1.e08,Kale hau hori baino garbiagoa da.,10.1
+u10-1.l2.s1.e09.0,"Zer da erosoagoa, trena ala autobusa?",10.1
+u10-1.l2.s1.e09.answer,Trena autobusa baino erosoagoa da.,10.1
+u10-1.l2.s1.e10,Museoa zinema baino interesgarriagoa da?,10.1
+u10-1.l2.s1.e11,Hondarribia Irun baino txikiagoa da. Irun handiagoa da.,10.1
+u10-1.l2.s1.e12,Herria hiria baino seguruagoa da.,10.1
+u10-1.l2.s1.e13,Eibar Bilbo baino txikiagoa da.,10.1
+u10-1.l2.s2.e01,Hirian zerbitzu gehiago daude.,10.1
+u10-1.l2.s2.e02,Herrian autobus gutxiago daude.,10.1
+u10-1.l2.s2.e03,Herria ez da hain zaratatsua.,10.1
+u10-1.l2.s2.e04,Bilbon herrian baino museo gehiago daude.,10.1
+u10-1.l2.s2.e05,Hirian hainbeste autobus daude!,10.1
+u10-1.l2.s2.e06,Herria ez da hain zaratatsua.,10.1
+u10-1.l2.s2.e07,Herrian autobus gutxiago daude.,10.1
+u10-1.l2.s2.e08,Hiria hain handia da!,10.1
+u10-1.l2.s2.e09.0,Hirian zerbitzu asko daude?,10.1
+u10-1.l2.s2.e09.answer,"Bai, herrian baino gehiago.",10.1
+u10-1.l2.s2.e10,Hirian hainbeste autobus daude!,10.1
+u10-1.l2.s2.e11,Ez dut hainbeste diru.,10.1
+u10-1.l2.s2.e12,Herrian aparkaleku gehiago behar ditugu.,10.1
+u10-1.l2.s3.e01,Bilbo da Euskal Herriko hiririk handiena.,10.1
+u10-1.l2.s3.e02,Hau da herririk lasaiena.,10.1
+u10-1.l2.s3.e03,Hau da herririk lasaiena.,10.1
+u10-1.l2.s3.e04,Museo hau da interesgarriena.,10.1
+u10-1.l2.s3.e05,Zein da hiririk zaratatsuena?,10.1
+u10-1.l2.s3.e06,Zein da hiririk zaratatsuena?,10.1
+u10-1.l2.s3.e07.0,Zein da Gipuzkoako hiririk handiena?,10.1
+u10-1.l2.s3.e07.answer,Donostia da handiena.,10.1
+u10-1.l2.s3.e08,Kale hau da herriko zikinena.,10.1
+u10-1.l2.s3.e09,Nire herrian hiru hondartza daude. Hondartzarik garbiena eta lasaiena elizaren ondoan dago.,10.1
+u10-1.l2.s3.e10,Metroa da garraiorik erosoena.,10.1
+u10-1.l2.s3.e11,Zinema hau da itsusiena.,10.1
+u10-1.l2.s3.e12,Hondartza hau da Euskal Herriko politena?,10.1
+u10-1.l3.s1.e01,"Zer nahiago duzu, hiria ala herria?",10.1
+u10-1.l3.s1.e02,"Nahiago dut herria, lasaiagoa delako.",10.1
+u10-1.l3.s1.e03,"Nahiago dut herria, lasaiagoa delako.",10.1
+u10-1.l3.s1.e04,Hirian zerbitzu eta garraio gehiago daude.,10.1
+u10-1.l3.s1.e05.0,"Zer nahiago duzu, hiria ala herria?",10.1
+u10-1.l3.s1.e05.1,Hiria. Hirian zinemak eta antzokiak daude.,10.1
+u10-1.l3.s1.e05.2,Eta herria?,10.1
+u10-1.l3.s1.e05.answer,Herria aspergarriagoa da.,10.1
+u10-1.l3.s1.e06,Herrian ez dago zinemarik.,10.1
+u10-1.l3.s1.e07.0,Herria hiria baino seguruagoa da?,10.1
+u10-1.l3.s1.e07.answer,"Bai, herria seguruagoa da.",10.1
+u10-1.l3.s1.e08,Hiria interesgarriagoa da.,10.1
+u10-1.l3.s1.e09,"Ane Bilbon bizi da. Bilbon metroa, museoak eta antzokiak daude.",10.1
+u10-1.l3.s1.e10,Hirian aparkalekuak garestiak dira.,10.1
+u10-1.l3.s1.e11,"Jon herri txiki batean bizi da. Herrian ez dago kiroldegirik, eta igerilekua urrun dago.",10.1
+u10-1.l3.s2.e01,Hiria ez da hain arriskutsua.,10.1
+u10-1.l3.s2.e02,Hainbeste autobus eta tren!,10.1
+u10-1.l3.s2.e03,Hiria ez da hain arriskutsua.,10.1
+u10-1.l3.s2.e04,Donostiako hondartzarik politena hau da.,10.1
+u10-1.l3.s2.e05.0,Bilbon hainbeste museo daude!,10.1
+u10-1.l3.s2.e05.1,Bai. Zein da interesgarriena?,10.1
+u10-1.l3.s2.e05.answer,"Hau da interesgarriena, nire ustez.",10.1
+u10-1.l3.s2.e06,Herri hau Gipuzkoako lasaiena da.,10.1
+u10-1.l3.s2.e07.0,Herria hain aspergarria da!,10.1
+u10-1.l3.s2.e07.answer,"Ez, herrian kiroldegi bat eta igerileku bat daude.",10.1
+u10-1.l3.s2.e08,Igerileku hau hain zikina da!,10.1
+u10-1.l3.s2.e09,Bilbo Euskal Herriko hiririk handiena da. Ez da hain arriskutsua.,10.1
+u10-1.l3.s2.e10,Zein da herririk interesgarriena?,10.1
+u10-1.l3.s2.e11,Gure herrian hainbeste aparkaleku daude!,10.1
+u10-1.l3.s3.e01,Nire herrian kaleak garbiagoak dira.,10.1
+u10-1.l3.s3.e02,Hirian zinemak eta antzokiak daude.,10.1
+u10-1.l3.s3.e03,Trena autobusa baino seguruagoa da.,10.1
+u10-1.l3.s3.e04,"Herria lasaia da, eta hiria zaratatsua.",10.1
+u10-1.l3.s3.e05.0,"Kaixo, Miren! Nolakoa da zure herria?",10.1
+u10-1.l3.s3.e05.1,Txikia eta lasaia.,10.1
+u10-1.l3.s3.e05.2,Eta zerbitzuak?,10.1
+u10-1.l3.s3.e05.answer,"Gutxi daude, hirian gehiago daude.",10.1
+u10-1.l3.s3.e06,Trena autobusa baino seguruagoa da.,10.1
+u10-1.l3.s3.e07.0,Eta zu? Hirian bizi zara?,10.1
+u10-1.l3.s3.e07.answer,"Bai, Bilbon bizi naiz.",10.1
+u10-1.l3.s3.e08,Kiroldegia eskolaren ondoan dago.,10.1
+u10-1.l3.s3.e09,Getxon metroa dago. Metroa autobusa baino erosoagoa da.,10.1
+u10-1.l3.s3.e10,Herriko igerilekua oso erosoa da.,10.1
+u10-1.l3.s3.e11,Elizondo herri txikia da. Oso lasaia eta segurua da.,10.1
+u10-1.l4.story.0,"Gorka, zergatik bizi zara herri txiki batean?",10.1
+u10-1.l4.story.1,Herria hiria baino lasaiagoa delako.,10.1
+u10-1.l4.story.2,"Hiria interesgarriagoa da! Zinemak, museoak, antzokiak…",10.1
+u10-1.l4.story.3,"Gure herrian zinema bat dago, eta kiroldegi bat.",10.1
+u10-1.l4.story.4,Eta garraioa? Hirian autobus eta tren gehiago daude.,10.1
+u10-1.l4.story.5,"Bai, herrian garraio gutxiago dago.",10.1
+u10-1.l4.story.6,Herria seguruagoa eta garbiagoa da.,10.1
+u10-1.l4.story.7,Hiria ez da hain arriskutsua!,10.1
+u10-1.l4.story.8,Nire herria Gipuzkoako herririk politena da.,10.1
+u10-1.l4.story.9,"Zatoz bihar, eta ikusiko duzu!",10.1
+u10-1.l4.story.10,"Ados, bihar arte!",10.1
+u10-2.gb0.0,Uste dut herria lasaiagoa dela.,10.2
+u10-2.gb0.1,Iruditzen zait auzoan trafiko asko dagoela.,10.2
+u10-2.gb1.0,Herria ez da hiria bezain zaratatsua.,10.2
+u10-2.gb1.1,Trena ez da autobusa baino garestiagoa.,10.2
+u10-2.gb2.0,Herrian bizi-kalitatea hobea da.,10.2
+u10-2.gb2.1,Hau da kanpinik onena.,10.2
+u10-2.gb3.0,Asko gustatzen zait kanpinean egotea.,10.2
+u10-2.gb3.1,Asko gustatu zait Lekeition oporrak pasatzea.,10.2
+u10-2.l1.s1.e01,Hirian trafiko asko dago.,10.2
+u10-2.l1.s1.e02,Nire auzoan zarata gutxi dago.,10.2
+u10-2.l1.s1.e03.0,trafiko,10.2
+u10-2.l1.s1.e03.1,zarata,10.2
+u10-2.l1.s1.e03.2,jende,10.2
+u10-2.l1.s1.e03.3,auzo,10.2
+u10-2.l1.s1.e03.4,on,10.2
+u10-2.l1.s1.e03.5,txar,10.2
+u10-2.l1.s1.e04,Kalean jende asko dago.,10.2
+u10-2.l1.s1.e05,Kalean jende asko dago.,10.2
+u10-2.l1.s1.e06,Gure auzoa oso lasaia da.,10.2
+u10-2.l1.s1.e07,Nire auzoan zarata gutxi dago.,10.2
+u10-2.l1.s1.e08,Herrian bizi-kalitatea ona da.,10.2
+u10-2.l1.s1.e09.0,Nolakoa da zure auzoa?,10.2
+u10-2.l1.s1.e09.answer,"Lasaia, eta zarata gutxi dago.",10.2
+u10-2.l1.s1.e10,Herriak sarbide onak ditu.,10.2
+u10-2.l1.s1.e11,Nire auzoan trafiko asko dago. Zarata handia da.,10.2
+u10-2.l1.s1.e12,Leku hau egokia da umeentzat.,10.2
+u10-2.l1.s1.e13,Auzo hau ez da egokia bizitzeko.,10.2
+u10-2.l1.s2.e01,Oporrak hondartzan pasatzen ditut.,10.2
+u10-2.l1.s2.e02,Aurten atzerrira joan naiz.,10.2
+u10-2.l1.s2.e03.0,opor,10.2
+u10-2.l1.s2.e03.1,bidaia,10.2
+u10-2.l1.s2.e03.2,kanpin,10.2
+u10-2.l1.s2.e03.3,atzerri,10.2
+u10-2.l1.s2.e03.4,pasatu,10.2
+u10-2.l1.s2.e03.5,primeran,10.2
+u10-2.l1.s2.e04,Kanpinean egon gara.,10.2
+u10-2.l1.s2.e05,Aurten atzerrira joan naiz.,10.2
+u10-2.l1.s2.e06,Bidaia oso ona izan da.,10.2
+u10-2.l1.s2.e07,Primeran pasatu dugu!,10.2
+u10-2.l1.s2.e08,Donostian turista asko daude.,10.2
+u10-2.l1.s2.e09.0,Non pasatu dituzu oporrak?,10.2
+u10-2.l1.s2.e09.answer,"Kanpin batean, Zarautzen.",10.2
+u10-2.l1.s2.e10,Primeran pasatu dugu!,10.2
+u10-2.l1.s2.e11,"Aurten oporrak atzerrian pasatu ditugu, Londresen. Primeran pasatu dugu.",10.2
+u10-2.l1.s2.e12,Oporretan Parisera bidaiatu dut.,10.2
+u10-2.l1.s2.e13,Kanpina hondartzaren ondoan dago.,10.2
+u10-2.l1.s3.e01,Herri hau oso polita iruditzen zait.,10.2
+u10-2.l1.s3.e02,Museoa interesgarria iruditzen zait.,10.2
+u10-2.l1.s3.e03.0,iruditu,10.2
+u10-2.l1.s3.e03.1,hobe,10.2
+u10-2.l1.s3.e03.2,egoki,10.2
+u10-2.l1.s3.e03.3,sarbide,10.2
+u10-2.l1.s3.e03.4,turista,10.2
+u10-2.l1.s3.e03.5,bizi-kalitate,10.2
+u10-2.l1.s3.e04,Auzo hau egokia iruditzen zaigu.,10.2
+u10-2.l1.s3.e05,Kanpina hotela baino hobea da.,10.2
+u10-2.l1.s3.e06,Kanpina hotela baino hobea da.,10.2
+u10-2.l1.s3.e07,Herri hau oso polita iruditzen zait.,10.2
+u10-2.l1.s3.e08,Herrian bizi-kalitatea hobea da.,10.2
+u10-2.l1.s3.e09.0,Zer iruditzen zaizu auzo hau?,10.2
+u10-2.l1.s3.e09.answer,Oso lasaia iruditzen zait.,10.2
+u10-2.l1.s3.e10,Hau da kanpinik onena.,10.2
+u10-2.l1.s3.e11,Lekeitio oso polita iruditzen zait. Hondartza garbia eta lasaia da.,10.2
+u10-2.l1.s3.e12,Hiriko zarata oso txarra da.,10.2
+u10-2.l1.s3.e13,Leku egokia da oporrak pasatzeko.,10.2
+u10-2.l2.s1.e01,Uste dut herria lasaiagoa dela.,10.2
+u10-2.l2.s1.e02,Uste dut hirian trafiko gehiago dagoela.,10.2
+u10-2.l2.s1.e03,Uste dut herria lasaiagoa dela.,10.2
+u10-2.l2.s1.e04,Iruditzen zait auzo hau segurua dela.,10.2
+u10-2.l2.s1.e05,Iruditzen zait hemen jende gutxi dagoela.,10.2
+u10-2.l2.s1.e06,Uste dut Bilbo hiri interesgarria dela.,10.2
+u10-2.l2.s1.e07,Uste dut hirian trafiko gehiago dagoela.,10.2
+u10-2.l2.s1.e08,Iruditzen zait hemen jende gutxi dagoela.,10.2
+u10-2.l2.s1.e09.0,Zer iruditzen zaizu Gasteiz?,10.2
+u10-2.l2.s1.e09.answer,Iruditzen zait hiri lasaia dela.,10.2
+u10-2.l2.s1.e10,Uste dut auzoan zerbitzu onak daudela.,10.2
+u10-2.l2.s1.e11,Uste dut kanpina hotela baino hobea dela.,10.2
+u10-2.l2.s1.e12,Iruditzen zait Donostian turista asko daudela.,10.2
+u10-2.l2.s2.e01,Herria ez da hiria bezain zaratatsua.,10.2
+u10-2.l2.s2.e02,Tolosa ez da Donostia bezain handia.,10.2
+u10-2.l2.s2.e03,Kanpina ez da hotela bezain erosoa.,10.2
+u10-2.l2.s2.e04,Kanpina ez da hotela bezain erosoa.,10.2
+u10-2.l2.s2.e05,Trena ez da autobusa baino garestiagoa.,10.2
+u10-2.l2.s2.e06,Trena ez da autobusa baino garestiagoa.,10.2
+u10-2.l2.s2.e07,Herria ez da hiria bezain zaratatsua.,10.2
+u10-2.l2.s2.e08,Gasteiz ez da Bilbo baino zaratatsuagoa.,10.2
+u10-2.l2.s2.e09.0,Bilbo Donostia baino politagoa da?,10.2
+u10-2.l2.s2.e09.answer,"Ez, ez da Donostia bezain polita.",10.2
+u10-2.l2.s2.e10,Hondartza hau ez da hori baino garbiagoa.,10.2
+u10-2.l2.s2.e11,Durango ez da Bilbo bezain handia. Herri lasaia da.,10.2
+u10-2.l2.s2.e12,Nire herria ez da zure herria bezain polita.,10.2
+u10-2.l2.s3.e01,Asko gustatzen zait kanpinean egotea.,10.2
+u10-2.l2.s3.e02,Gustatzen zaizu atzerrira bidaiatzea?,10.2
+u10-2.l2.s3.e03,Asko gustatzen zait kanpinean egotea.,10.2
+u10-2.l2.s3.e04,Asko gustatu zait Lekeition oporrak pasatzea.,10.2
+u10-2.l2.s3.e05,Asko gustatu zait Lekeition oporrak pasatzea.,10.2
+u10-2.l2.s3.e06,Ez zait gustatzen hirian bizitzea.,10.2
+u10-2.l2.s3.e07.0,Gustatu zaizu Londresera bidaiatzea?,10.2
+u10-2.l2.s3.e07.answer,"Bai, primeran pasatu dut!",10.2
+u10-2.l2.s3.e08,Gustatu zaizu Parisen egotea?,10.2
+u10-2.l2.s3.e09,Aurten Zarautzen pasatu ditut oporrak. Asko gustatu zait kanpinean egotea.,10.2
+u10-2.l2.s3.e10,Asko gustatu zaigu Londresera bidaiatzea.,10.2
+u10-2.l2.s3.e11,Gustatzen zait oporrak mendian pasatzea.,10.2
+u10-2.l2.s3.e12,Ez zait gustatu kanpinean lo egitea.,10.2
+u10-2.l3.s1.e01,Zer iruditzen zaizu zure auzoa?,10.2
+u10-2.l3.s1.e02,Iruditzen zait auzoan zarata asko dagoela.,10.2
+u10-2.l3.s1.e03,Uste dut hiria ez dela hain arriskutsua.,10.2
+u10-2.l3.s1.e04,"Nire ustez, herrian bizi-kalitatea hobea da.",10.2
+u10-2.l3.s1.e05.0,Zer iruditzen zaizu Bilbo?,10.2
+u10-2.l3.s1.e05.1,Hiri interesgarria iruditzen zait.,10.2
+u10-2.l3.s1.e05.2,Eta trafikoa?,10.2
+u10-2.l3.s1.e05.answer,Uste dut trafiko asko dagoela.,10.2
+u10-2.l3.s1.e06,Uste dut hiria ez dela hain arriskutsua.,10.2
+u10-2.l3.s1.e07.0,Uste dut herrian bizi-kalitatea hobea dela.,10.2
+u10-2.l3.s1.e07.answer,Ados nago. Herria lasaiagoa da.,10.2
+u10-2.l3.s1.e08,Ez nago ados. Hiria zaratatsuagoa da.,10.2
+u10-2.l3.s1.e09,Edurnek uste du Gasteiz hiri segurua eta garbia dela.,10.2
+u10-2.l3.s1.e10,Auzo hau ez da egokia umeentzat.,10.2
+u10-2.l3.s1.e11,Patxiri iruditzen zaio bere auzoan jende gutxi dagoela.,10.2
+u10-2.l3.s2.e01,Non pasatzen dituzu oporrak?,10.2
+u10-2.l3.s2.e02,Oporretan herrian egotea gustatzen zait.,10.2
+u10-2.l3.s2.e03,Atzerrira bidaiatzea nahiago dut.,10.2
+u10-2.l3.s2.e04,Atzerrira bidaiatzea nahiago dut.,10.2
+u10-2.l3.s2.e05.0,Non pasatu dituzu oporrak?,10.2
+u10-2.l3.s2.e05.1,"Kanpin batean, Hondarribian.",10.2
+u10-2.l3.s2.e05.2,Gustatu zaizu?,10.2
+u10-2.l3.s2.e05.answer,"Bai, primeran pasatu dut!",10.2
+u10-2.l3.s2.e06,Kanpina hotela baino merkeagoa da.,10.2
+u10-2.l3.s2.e07.0,"Zuk zer nahiago duzu, hondartza ala mendia?",10.2
+u10-2.l3.s2.e07.answer,Mendia. Lasaiagoa iruditzen zait.,10.2
+u10-2.l3.s2.e08,Aurten Bartzelonara bidaiatu dugu.,10.2
+u10-2.l3.s2.e09,Oporretan Miren eta bere senarra atzerrira joaten dira. Aurten Alemaniara joan dira.,10.2
+u10-2.l3.s2.e10,Oporretan turista asko daude hondartzan.,10.2
+u10-2.l3.s2.e11,Gorkari ez zaio gustatzen kanpinean egotea. Hotelak nahiago ditu.,10.2
+u10-2.l3.s3.e01,Donostian turista asko daude abuztuan.,10.2
+u10-2.l3.s3.e02,Uste dut Lekeitio Zarautz bezain polita dela.,10.2
+u10-2.l3.s3.e03,Gure herria ez da Getxo bezain zaratatsua.,10.2
+u10-2.l3.s3.e04,Gure herria ez da Getxo bezain zaratatsua.,10.2
+u10-2.l3.s3.e05.0,Zer moduz zure auzo berrian?,10.2
+u10-2.l3.s3.e05.answer,Primeran! Jendea oso atsegina da.,10.2
+u10-2.l3.s3.e06,Herriak sarbide onak ditu: trena eta autobusa.,10.2
+u10-2.l3.s3.e07.0,Zure herria Bilbo bezain zaratatsua da?,10.2
+u10-2.l3.s3.e07.1,"Ez, ez da hain zaratatsua.",10.2
+u10-2.l3.s3.e07.2,Eta zerbitzuak?,10.2
+u10-2.l3.s3.e07.answer,Uste dut zerbitzu onak daudela.,10.2
+u10-2.l3.s3.e08,Primeran bizi gara auzo honetan.,10.2
+u10-2.l3.s3.e09,Abuztuan Donostian turista asko daude. Iruditzen zait trafiko asko dagoela.,10.2
+u10-2.l3.s3.e10,Auzo honetan jendea oso atsegina da.,10.2
+u10-2.l3.s3.e11,"Nire auzo berria lasaia da, eta sarbide onak ditu. Primeran bizi naiz.",10.2
+u10-2.l4.story.0,"Kaixo, Ibai! Non pasatu dituzu oporrak?",10.2
+u10-2.l4.story.1,"Zarautzen, kanpin batean. Primeran pasatu dugu!",10.2
+u10-2.l4.story.2,Kanpinean? Ez da hotela bezain erosoa.,10.2
+u10-2.l4.story.3,Uste dut kanpina hotela baino hobea dela.,10.2
+u10-2.l4.story.4,Asko gustatu zait hondartzaren ondoan egotea.,10.2
+u10-2.l4.story.5,Eta Zarautz? Zer iruditu zaizu?,10.2
+u10-2.l4.story.6,Herri polita da. Abuztuan turista asko daude.,10.2
+u10-2.l4.story.7,Iruditzen zait trafiko eta zarata asko dagoela.,10.2
+u10-2.l4.story.8,"Nik oporrak atzerrian pasatu ditut, Londresen.",10.2
+u10-2.l4.story.9,Londres ez da Zarautz bezain lasaia!,10.2
+u10-2.l4.story.10,"Ez, ez da hain lasaia!",10.2
+u11-1.gb0.0,Ez dakit.,11.1
+u11-1.gb0.1,Badakizu Mikelen helbidea?,11.1
+u11-1.gb0.2,"Bai, badakit.",11.1
+u11-1.gb1.0,Badakizu gidatzen?,11.1
+u11-1.gb1.1,Ez dakit igeri egiten.,11.1
+u11-1.gb2.0,Kontratua bi urterako da.,11.1
+u11-1.gb2.1,Hau Bilborako autobusa da.,11.1
+u11-1.gb3.0,Nagusiari deitu diot.,11.1
+u11-1.gb3.1,Zuk idatzi didazu?,11.1
+u11-1.gb3.2,Enpresak soldata ordaindu dit.,11.1
+u11-1.l1.s1.e01,Zer da zure lanbidea?,11.1
+u11-1.l1.s1.e02,Ni gidaria naiz.,11.1
+u11-1.l1.s1.e03.0,lan,11.1
+u11-1.l1.s1.e03.1,lanbide,11.1
+u11-1.l1.s1.e03.2,gidari,11.1
+u11-1.l1.s1.e03.3,idazkari,11.1
+u11-1.l1.s1.e03.4,nagusi,11.1
+u11-1.l1.s1.e03.5,lankide,11.1
+u11-1.l1.s1.e04,Ane idazkaria da.,11.1
+u11-1.l1.s1.e05,Mikel nire nagusia da.,11.1
+u11-1.l1.s1.e06,Mikel nire nagusia da.,11.1
+u11-1.l1.s1.e07,Zer da zure lanbidea?,11.1
+u11-1.l1.s1.e08,Itziar eta Jon nire lankideak dira.,11.1
+u11-1.l1.s1.e09.0,Kaixo! Zer da zure lanbidea?,11.1
+u11-1.l1.s1.e09.answer,Ni idazkaria naiz.,11.1
+u11-1.l1.s1.e10,Zure lana interesgarria da?,11.1
+u11-1.l1.s1.e11,Kaixo! Ni Jon naiz. Autobus gidaria naiz.,11.1
+u11-1.l1.s1.e12,Aitor autobus gidaria da.,11.1
+u11-1.l1.s1.e13,Langileak oso jatorrak dira.,11.1
+u11-1.l1.s2.e01,Nik bulego batean lan egiten dut.,11.1
+u11-1.l1.s2.e02,Jonek lantegi batean lan egiten du.,11.1
+u11-1.l1.s2.e03.0,enpresa,11.1
+u11-1.l1.s2.e03.1,bulego,11.1
+u11-1.l1.s2.e03.2,lantegi,11.1
+u11-1.l1.s2.e03.3,langile,11.1
+u11-1.l1.s2.e03.4,lankide,11.1
+u11-1.l1.s2.e04,Gure enpresa Bilbon dago.,11.1
+u11-1.l1.s2.e05,Jonek lantegi batean lan egiten du.,11.1
+u11-1.l1.s2.e06,Bulegoa hirugarren solairuan dago.,11.1
+u11-1.l1.s2.e07,Lantegiak ehun langile ditu.,11.1
+u11-1.l1.s2.e08,Lantegiak ehun langile ditu.,11.1
+u11-1.l1.s2.e09.0,Non egiten duzu lan?,11.1
+u11-1.l1.s2.e09.answer,Donostiako enpresa batean.,11.1
+u11-1.l1.s2.e10,Zure enpresa handia da?,11.1
+u11-1.l1.s2.e11,Ni Leire naiz. Gasteizko lantegi batean lan egiten dut.,11.1
+u11-1.l1.s2.e12,Nire lankideak bulegoan daude.,11.1
+u11-1.l1.s2.e13,Zertan egiten duzu lan?,11.1
+u11-1.l1.s3.e01,Zein da zure ordutegia?,11.1
+u11-1.l1.s3.e02,Zortzietatik hiruetara lan egiten dut.,11.1
+u11-1.l1.s3.e03.0,soldata,11.1
+u11-1.l1.s3.e03.1,ordutegi,11.1
+u11-1.l1.s3.e03.2,kontratu,11.1
+u11-1.l1.s3.e03.3,lanaldi,11.1
+u11-1.l1.s3.e03.4,iragarki,11.1
+u11-1.l1.s3.e04,Soldata ona da.,11.1
+u11-1.l1.s3.e05,Kontratua sei hilabeterako da.,11.1
+u11-1.l1.s3.e06,Soldata 1500 euro da hilabetean.,11.1
+u11-1.l1.s3.e07,Kontratua sei hilabeterako da.,11.1
+u11-1.l1.s3.e08,Kontratua sei hilabeterako da.,11.1
+u11-1.l1.s3.e09.0,Zein da ordutegia?,11.1
+u11-1.l1.s3.e09.answer,Zortzietatik hiruetara.,11.1
+u11-1.l1.s3.e10,Lanaldi osoa da.,11.1
+u11-1.l1.s3.e11,Idazkari bat behar dugu. Lanaldi osoa. Kontratua urte baterako da.,11.1
+u11-1.l1.s3.e12,Iragarki hau interesgarria da.,11.1
+u11-1.l1.s3.e13,Ordutegia goizekoa da.,11.1
+u11-1.l2.s1.e01,Ez dakit.,11.1
+u11-1.l2.s1.e02,Zuk badakizu?,11.1
+u11-1.l2.s1.e03.0,dakit,11.1
+u11-1.l2.s1.e03.1,dakizu,11.1
+u11-1.l2.s1.e03.2,daki,11.1
+u11-1.l2.s1.e03.3,dakigu,11.1
+u11-1.l2.s1.e03.4,dakite,11.1
+u11-1.l2.s1.e04,Jonek ez daki.,11.1
+u11-1.l2.s1.e05,Nik ez dakit.,11.1
+u11-1.l2.s1.e06,Guk badakigu.,11.1
+u11-1.l2.s1.e07,Lankideek ez dakite.,11.1
+u11-1.l2.s1.e08,Haiek badakite.,11.1
+u11-1.l2.s1.e09.0,Badakizu Iratiren helbidea?,11.1
+u11-1.l2.s1.e09.answer,"Ez, ez dakit.",11.1
+u11-1.l2.s1.e10,Nagusiak badaki.,11.1
+u11-1.l2.s1.e11,"Nik ez dakit Gorkaren telefono zenbakia. Nerea, zuk badakizu?",11.1
+u11-1.l2.s1.e12,Badakizu Mikelen helbidea?,11.1
+u11-1.l2.s1.e13,Anek nagusiaren telefono zenbakia daki.,11.1
+u11-1.l2.s2.e01,Badakizu gidatzen?,11.1
+u11-1.l2.s2.e02,"Bai, gidatzen badakit.",11.1
+u11-1.l2.s2.e03,Badakizu gidatzen?,11.1
+u11-1.l2.s2.e04,Ez dakit igeri egiten.,11.1
+u11-1.l2.s2.e05,Nik ez dakit gidatzen.,11.1
+u11-1.l2.s2.e06,Mikelek ez daki gidatzen.,11.1
+u11-1.l2.s2.e07,Amonak ez daki idazten.,11.1
+u11-1.l2.s2.e08,Gure umeek badakite irakurtzen.,11.1
+u11-1.l2.s2.e09.0,Badakizu igeri egiten?,11.1
+u11-1.l2.s2.e09.answer,"Bai, badakit.",11.1
+u11-1.l2.s2.e10,Amonak ez daki idazten.,11.1
+u11-1.l2.s2.e11,Zuek badakizue janaria prestatzen?,11.1
+u11-1.l2.s2.e12,Unaik ondo daki ogia egiten.,11.1
+u11-1.l2.s3.e01,Nagusiari deitu diot.,11.1
+u11-1.l2.s3.e02,Zuk idatzi didazu?,11.1
+u11-1.l2.s3.e03.0,diot,11.1
+u11-1.l2.s3.e03.1,dizut,11.1
+u11-1.l2.s3.e03.2,didazu,11.1
+u11-1.l2.s3.e03.3,dit,11.1
+u11-1.l2.s3.e03.4,diet,11.1
+u11-1.l2.s3.e04,Nik kafe bat erosi dizut.,11.1
+u11-1.l2.s3.e05,Nagusiari deitu diot.,11.1
+u11-1.l2.s3.e06,Anek lankideari opari bat erosi dio.,11.1
+u11-1.l2.s3.e07,Zuk idatzi didazu?,11.1
+u11-1.l2.s3.e08,Guk nagusiari kontratu berri bat eskatu diogu.,11.1
+u11-1.l2.s3.e09.0,"Mikel, nagusiari deitu diozu?",11.1
+u11-1.l2.s3.e09.answer,"Bai, deitu diot.",11.1
+u11-1.l2.s3.e10,Lankideek idazkariari deitu diote.,11.1
+u11-1.l2.s3.e11,Gaur Itziarren urtebetetzea da. Nik opari bat erosi diot.,11.1
+u11-1.l2.s3.e12,Hau lanerako da.,11.1
+u11-1.l2.s3.e13,Bilborako autobusa hemen dago.,11.1
+u11-1.l3.s1.e01,Zein da ordutegia?,11.1
+u11-1.l3.s1.e02,"Goizez lan egiten dugu, zortzietatik hiruetara.",11.1
+u11-1.l3.s1.e03,Lanaldi osoa da?,11.1
+u11-1.l3.s1.e04,Eta soldata?,11.1
+u11-1.l3.s1.e05.0,Kaixo! Iragarkia irakurri dut. Idazkari bat behar duzue?,11.1
+u11-1.l3.s1.e05.answer,"Bai, idazkari bat behar dugu.",11.1
+u11-1.l3.s1.e06,Soldata 1400 euro da hilabetean.,11.1
+u11-1.l3.s1.e07.0,Zein da ordutegia?,11.1
+u11-1.l3.s1.e07.1,Zortzietatik hiruetara.,11.1
+u11-1.l3.s1.e07.2,Eta soldata?,11.1
+u11-1.l3.s1.e07.answer,1500 euro hilabetean.,11.1
+u11-1.l3.s1.e08,Kontratua urte baterako da.,11.1
+u11-1.l3.s1.e09,Gidari bat behar dugu. Ordutegia arratsaldekoa da. Soldata ona da.,11.1
+u11-1.l3.s1.e10,Lanaldi osoa da?,11.1
+u11-1.l3.s1.e11,Nire lana Bilbon dago. Kontratua bi urterako da. Lanaldi osoa da.,11.1
+u11-1.l3.s2.e01,Badakizu gidatzen? Gidari bat behar dugu.,11.1
+u11-1.l3.s2.e02,"Bai, nik autobusa gidatzen dut.",11.1
+u11-1.l3.s2.e03,Haiek ez dakite irakurtzen.,11.1
+u11-1.l3.s2.e04,Idazkariak ondo idazten daki.,11.1
+u11-1.l3.s2.e05.0,Badakizu gidatzen?,11.1
+u11-1.l3.s2.e05.answer,"Ez, ez dakit gidatzen.",11.1
+u11-1.l3.s2.e06,Nire lankideak ez daki igeri egiten.,11.1
+u11-1.l3.s2.e07.0,Sukaldari bat behar dugu. Zuk badakizu janaria prestatzen?,11.1
+u11-1.l3.s2.e07.1,"Bai, jatetxe batean lan egiten dut.",11.1
+u11-1.l3.s2.e07.2,Primeran! Eta zure lankideak?,11.1
+u11-1.l3.s2.e07.answer,"Ez, hark ez daki.",11.1
+u11-1.l3.s2.e08,Zuek badakizue ogia egiten?,11.1
+u11-1.l3.s2.e09,Ni Amaia naiz. Badakit gidatzen. Ez dakit igeri egiten.,11.1
+u11-1.l3.s2.e10,"Bai, badakigu. Okindegian lan egiten dugu.",11.1
+u11-1.l3.s2.e11,Peio idazkaria da. Oso ondo idazten daki.,11.1
+u11-1.l3.s3.e01,"Barkatu, nagusiak deitu dizu.",11.1
+u11-1.l3.s3.e02,Eskerrik asko. Gero deituko diot.,11.1
+u11-1.l3.s3.e03,Enpresak ez dit soldata ordaindu.,11.1
+u11-1.l3.s3.e04,Idazkariak kafe bat prestatu dit.,11.1
+u11-1.l3.s3.e05.0,"Nerea, zuk deitu didazu?",11.1
+u11-1.l3.s3.e05.answer,"Bai, nik deitu dizut.",11.1
+u11-1.l3.s3.e06,Zuk idatzi didazu gaur?,11.1
+u11-1.l3.s3.e07.0,Enpresak soldata ordaindu dizu?,11.1
+u11-1.l3.s3.e07.1,"Ez, ez dit ordaindu.",11.1
+u11-1.l3.s3.e07.2,Nagusiari deitu diozu?,11.1
+u11-1.l3.s3.e07.answer,"Bai, gaur deitu diot.",11.1
+u11-1.l3.s3.e08,"Bai, eta lankideei idatzi diet.",11.1
+u11-1.l3.s3.e09,Gaur nagusiak deitu dit. Kontratu berri bat daukat!,11.1
+u11-1.l3.s3.e10,Enpresak ez dit soldata ordaindu.,11.1
+u11-1.l3.s3.e11,Lankideei kafe bat erosi diet. Nagusiari ez.,11.1
+u11-1.l4.story.0,"Kaixo, Gorka! Zer moduz lan berrian?",11.1
+u11-1.l4.story.1,Oso ondo! Gidaria naiz enpresa handi batean.,11.1
+u11-1.l4.story.2,Zein da zure ordutegia?,11.1
+u11-1.l4.story.3,Seietatik hiruetara lan egiten dut.,11.1
+u11-1.l4.story.4,Eta soldata ona da?,11.1
+u11-1.l4.story.5,"Bai, eta kontratua bi urterako da.",11.1
+u11-1.l4.story.6,Nagusia oso jatorra da. Gaur kafe bat erosi dit!,11.1
+u11-1.l4.story.7,Zorionak! Zure enpresak gidariak behar ditu?,11.1
+u11-1.l4.story.8,Bai! Badakizu autobusa gidatzen?,11.1
+u11-1.l4.story.9,"Ez, ez dakit. Ni idazkaria naiz.",11.1
+u11-1.l4.story.10,Lasai! Gure enpresak idazkari bat behar du.,11.1
+u11-1.l4.story.11,Primeran! Bihar deituko dizut.,11.1
+u11-2.gb0.0,Nagusiak galdetu dit ea ingelesa dakidan.,11.2
+u11-2.gb0.1,Ez dakit non dagoen bulegoa.,11.2
+u11-2.gb1.0,Zer esan dizu Mikelek?,11.2
+u11-2.gb1.1,Nire helbidea bidali dizut.,11.2
+u11-2.gb2.0,Zuregandik asko ikasi dut.,11.2
+u11-2.gb2.1,Ingelesa amarengandik ikasi dut.,11.2
+u11-2.gb3.0,Gidatzen ikasi dut.,11.2
+u11-2.gb3.1,Aitak igeri egiten irakatsi dit.,11.2
+u11-2.l1.s1.e01,Zenbat hizkuntza dakizu?,11.2
+u11-2.l1.s1.e02,Hiru hizkuntza dakit.,11.2
+u11-2.l1.s1.e03.0,hizkuntza,11.2
+u11-2.l1.s1.e03.1,ingeles,11.2
+u11-2.l1.s1.e03.2,ordenagailu,11.2
+u11-2.l1.s1.e03.3,gidabaimen,11.2
+u11-2.l1.s1.e03.4,esperientzia,11.2
+u11-2.l1.s1.e03.5,jakin,11.2
+u11-2.l1.s1.e04,Ingelesa badakizu?,11.2
+u11-2.l1.s1.e05,Hiru hizkuntza dakit.,11.2
+u11-2.l1.s1.e06,"Bai, ingelesa ondo dakit.",11.2
+u11-2.l1.s1.e07,Ez daukat gidabaimenik.,11.2
+u11-2.l1.s1.e08,Gidabaimena daukazu?,11.2
+u11-2.l1.s1.e09.0,Ingelesa badakizu?,11.2
+u11-2.l1.s1.e09.answer,"Bai, ondo dakit.",11.2
+u11-2.l1.s1.e10,"Ez, ez daukat gidabaimenik.",11.2
+u11-2.l1.s1.e11,Haizea idazkaria da. Bi hizkuntza daki. Gidabaimena dauka.,11.2
+u11-2.l1.s1.e12,Ordenagailua erabiltzen badakit.,11.2
+u11-2.l1.s1.e13,Lantegian ordenagailu berriak dauzkagu.,11.2
+u11-2.l1.s2.e01,Nagusiak kontratua eman dit.,11.2
+u11-2.l1.s2.e02,Zer esan dizu Mikelek?,11.2
+u11-2.l1.s2.e03.0,eman,11.2
+u11-2.l1.s2.e03.1,esan,11.2
+u11-2.l1.s2.e03.2,ekarri,11.2
+u11-2.l1.s2.e03.3,erakutsi,11.2
+u11-2.l1.s2.e03.4,bidali,11.2
+u11-2.l1.s2.e04,Lankideak kafe bat ekarri dit.,11.2
+u11-2.l1.s2.e05,Lankideak kafe bat ekarri dit.,11.2
+u11-2.l1.s2.e06,Idazkariak bulegoa erakutsi dit.,11.2
+u11-2.l1.s2.e07,Zer esan dizu Mikelek?,11.2
+u11-2.l1.s2.e08,Nire helbidea bidali dizut.,11.2
+u11-2.l1.s2.e09.0,Ogia ekarri didazu?,11.2
+u11-2.l1.s2.e09.answer,"Bai, hemen dago.",11.2
+u11-2.l1.s2.e10,Zuk zer eman diozu Aneri?,11.2
+u11-2.l1.s2.e11,Gaur lan berri bat daukat. Idazkariak bulegoa erakutsi dit.,11.2
+u11-2.l1.s2.e12,Guk ordenagailu bat bidali diogu.,11.2
+u11-2.l1.s2.e13,Ogia ekarri didazu?,11.2
+u11-2.l1.s3.e01,Nagusiari galdetu diot.,11.2
+u11-2.l1.s3.e02,Enpresak ez dit erantzun.,11.2
+u11-2.l1.s3.e03.0,galdetu,11.2
+u11-2.l1.s3.e03.1,erantzun,11.2
+u11-2.l1.s3.e03.2,irakatsi,11.2
+u11-2.l1.s3.e03.3,esperientzia,11.2
+u11-2.l1.s3.e03.4,libre,11.2
+u11-2.l1.s3.e04,Esperientzia daukazu?,11.2
+u11-2.l1.s3.e05,Esperientzia daukazu?,11.2
+u11-2.l1.s3.e06,"Bai, bost urteko esperientzia daukat.",11.2
+u11-2.l1.s3.e07,Bost urteko esperientzia daukat.,11.2
+u11-2.l1.s3.e08,Amak ingelesa irakatsi dit.,11.2
+u11-2.l1.s3.e09.0,Bihar libre zaude?,11.2
+u11-2.l1.s3.e09.answer,"Bai, libre nago.",11.2
+u11-2.l1.s3.e10,Gaur libre nago.,11.2
+u11-2.l1.s3.e11,Nagusiari galdetu diot. Ez dit erantzun.,11.2
+u11-2.l1.s3.e12,Bihar libre zaude?,11.2
+u11-2.l1.s3.e13,Zergatik ez didazu erantzun?,11.2
+u11-2.l2.s1.e01,Nagusiak galdetu dit ea ingelesa dakidan.,11.2
+u11-2.l2.s1.e02,Galdetu diot ea gidabaimena duen.,11.2
+u11-2.l2.s1.e03,Galdetu dit ea ingelesa dakidan.,11.2
+u11-2.l2.s1.e04,Ez dakit non dagoen bulegoa.,11.2
+u11-2.l2.s1.e05,Ez dakit non dagoen bulegoa.,11.2
+u11-2.l2.s1.e06,Badakizu nor den nagusia?,11.2
+u11-2.l2.s1.e07,Galdetu diot ea gidabaimena duen.,11.2
+u11-2.l2.s1.e08,Galdetu dit ea esperientzia dudan.,11.2
+u11-2.l2.s1.e09.0,Zer galdetu dizu nagusiak?,11.2
+u11-2.l2.s1.e09.answer,Ea ingelesa dakidan.,11.2
+u11-2.l2.s1.e10,Ez dakigu zein den ordutegia.,11.2
+u11-2.l2.s1.e11,Nagusiak galdetu dit ea gidatzen dakidan. Badakit!,11.2
+u11-2.l2.s1.e12,Anek galdetu dizu ea ordenagailua duzun.,11.2
+u11-2.l2.s1.e13,Ez dakit ea Jonek ingelesa dakien.,11.2
+u11-2.l2.s2.e01,Zuregandik asko ikasi dut.,11.2
+u11-2.l2.s2.e02,Ingelesa amarengandik ikasi dut.,11.2
+u11-2.l2.s2.e03.0,niregandik,11.2
+u11-2.l2.s2.e03.1,zuregandik,11.2
+u11-2.l2.s2.e03.2,harengandik,11.2
+u11-2.l2.s2.e03.3,gugandik,11.2
+u11-2.l2.s2.e03.4,haiengandik,11.2
+u11-2.l2.s2.e04,Nire lana aitarengandik ikasi dut.,11.2
+u11-2.l2.s2.e05,Ingelesa amarengandik ikasi dut.,11.2
+u11-2.l2.s2.e06,Harengandik asko ikasi dugu.,11.2
+u11-2.l2.s2.e07,Zuregandik asko ikasi dut.,11.2
+u11-2.l2.s2.e08,Ikasleek irakaslearengandik ikasi dute.,11.2
+u11-2.l2.s2.e09.0,Nork irakatsi dizu ingelesa?,11.2
+u11-2.l2.s2.e09.answer,Nire amak.,11.2
+u11-2.l2.s2.e10,Ordenagailua erabiltzen lankidearengandik ikasi dut.,11.2
+u11-2.l2.s2.e11,Peio gidaria da. Lana aitarengandik ikasi du.,11.2
+u11-2.l2.s2.e12,Umeek gugandik ikasi dute.,11.2
+u11-2.l2.s2.e13,Niregandik ikasi duzu?,11.2
+u11-2.l2.s3.e01,Aitak igeri egiten irakatsi dit.,11.2
+u11-2.l2.s3.e02,Unaik ordenagailua erabiltzen ikasi du.,11.2
+u11-2.l2.s3.e03,Gidatzen ikasi dut.,11.2
+u11-2.l2.s3.e04,Ingelesa ikasten ari naiz.,11.2
+u11-2.l2.s3.e05,Ingelesa ikasten ari naiz.,11.2
+u11-2.l2.s3.e06,Nire amak ingelesa irakasten du.,11.2
+u11-2.l2.s3.e07.0,Badakizu gidatzen?,11.2
+u11-2.l2.s3.e07.answer,"Bai, aitak irakatsi dit.",11.2
+u11-2.l2.s3.e08,Umeek irakurtzen ikasi dute.,11.2
+u11-2.l2.s3.e09,Nire izena Olatz da. Amak janaria prestatzen irakatsi dit.,11.2
+u11-2.l2.s3.e10,Nork irakatsi dizu gidatzen?,11.2
+u11-2.l2.s3.e11,Zuk irakatsi didazu janaria prestatzen.,11.2
+u11-2.l2.s3.e12,Mikelek gidatzen ikasi du.,11.2
+u11-2.l3.s1.e01,Egun on! Iragarkiagatik nator.,11.2
+u11-2.l3.s1.e02,Zer hizkuntza dakizu?,11.2
+u11-2.l3.s1.e03,Iragarkiagatik nator.,11.2
+u11-2.l3.s1.e04,"Ingelesa dakit, eta ordenagailua erabiltzen badakit.",11.2
+u11-2.l3.s1.e05.0,Egun on! Iragarkiagatik nator.,11.2
+u11-2.l3.s1.e05.answer,"Egun on! Eseri, mesedez.",11.2
+u11-2.l3.s1.e06,Eta gidabaimena?,11.2
+u11-2.l3.s1.e07.0,Zer hizkuntza dakizu?,11.2
+u11-2.l3.s1.e07.1,Ingelesa dakit.,11.2
+u11-2.l3.s1.e07.2,Eta ordenagailua erabiltzen badakizu?,11.2
+u11-2.l3.s1.e07.answer,"Bai, oso ondo.",11.2
+u11-2.l3.s1.e08,"Bai, gidabaimena daukat.",11.2
+u11-2.l3.s1.e09,Idazkari bat behar dugu. Ingelesa jakin behar du. Ordenagailua erabiltzen jakin behar du.,11.2
+u11-2.l3.s1.e10,Zure esperientzia ona da guretzat.,11.2
+u11-2.l3.s1.e11,Ni Ibai naiz. Ez dakit ingelesa. Gidabaimena daukat.,11.2
+u11-2.l3.s2.e01,Non egin duzu lan?,11.2
+u11-2.l3.s2.e02,Bost urtez lan egin dut Bilbon.,11.2
+u11-2.l3.s2.e03,Bost urtez lan egin dut Bilbon.,11.2
+u11-2.l3.s2.e04,Idazkaria izan naiz enpresa handi batean.,11.2
+u11-2.l3.s2.e05.0,Esperientzia daukazu?,11.2
+u11-2.l3.s2.e05.answer,"Bai, hiru urtez sukaldaria izan naiz.",11.2
+u11-2.l3.s2.e06,Bi urtez gidaria izan naiz.,11.2
+u11-2.l3.s2.e07.0,Non egin duzu lan?,11.2
+u11-2.l3.s2.e07.1,"Lantegi batean, Eibarren.",11.2
+u11-2.l3.s2.e07.2,Zenbat urtez?,11.2
+u11-2.l3.s2.e07.answer,Lau urtez.,11.2
+u11-2.l3.s2.e08,Han ingelesa ikasi dut.,11.2
+u11-2.l3.s2.e09,Ni Markel naiz. Sei urtez erizaina izan naiz Donostiako ospitalean.,11.2
+u11-2.l3.s2.e10,Esperientzia asko daukazu!,11.2
+u11-2.l3.s2.e11,Izarok ez dauka esperientziarik. Ikaslea da.,11.2
+u11-2.l3.s3.e01,Zer galdetu dizu nagusiak?,11.2
+u11-2.l3.s3.e02,Galdetu dit ea gidatzen dakidan.,11.2
+u11-2.l3.s3.e03,Ez dakidala erantzun diot.,11.2
+u11-2.l3.s3.e04,Eta zer erantzun diozu?,11.2
+u11-2.l3.s3.e05.0,Nagusiak kontratua bidali dizu?,11.2
+u11-2.l3.s3.e05.answer,"Bai, gaur bidali dit.",11.2
+u11-2.l3.s3.e06,Ez dakidala erantzun diot.,11.2
+u11-2.l3.s3.e07.0,Galdetu dizu ea ingelesa dakizun?,11.2
+u11-2.l3.s3.e07.1,"Bai, galdetu dit.",11.2
+u11-2.l3.s3.e07.2,Eta zer erantzun diozu?,11.2
+u11-2.l3.s3.e07.answer,Ingelesa ondo dakidala.,11.2
+u11-2.l3.s3.e08,Enpresak kontratua bidali dizu?,11.2
+u11-2.l3.s3.e09,"Nagusiak galdetu dit ea esperientzia dudan. Bai, esan diot.",11.2
+u11-2.l3.s3.e10,Bai! Nagusiak gaur bidali dit.,11.2
+u11-2.l3.s3.e11,Enpresak kontratua bidali dit. Bihar lan berria daukat!,11.2
+u11-2.l4.story.0,"Egun on, Julen. Eseri, mesedez.",11.2
+u11-2.l4.story.1,Eskerrik asko. Iragarkia irakurri dut.,11.2
+u11-2.l4.story.2,Gidari bat behar dugu. Gidabaimena daukazu?,11.2
+u11-2.l4.story.3,Bai. Aitak gidatzen irakatsi dit.,11.2
+u11-2.l4.story.4,Esperientzia daukazu?,11.2
+u11-2.l4.story.5,"Bai, hiru urtez autobus gidaria izan naiz Donostian.",11.2
+u11-2.l4.story.6,Primeran. Eta ingelesa badakizu?,11.2
+u11-2.l4.story.7,Ez oso ondo. Orain ikasten ari naiz.,11.2
+u11-2.l4.story.8,Ondo. Gure bezero asko turistak dira.,11.2
+u11-2.l4.story.9,Ados. Ordenagailua erabiltzen badakit.,11.2
+u11-2.l4.story.10,Oso ondo. Bihar kontratua bidaliko dizut.,11.2
+u11-2.l4.story.11,Eskerrik asko! Agur!,11.2
+u12-1.gb0.0,Kontzertua larunbatean da.,12.1
+u12-1.gb0.1,Astelehenetan igerilekura joaten naiz.,12.1
+u12-1.gb0.2,Urrian ikastaro berri bat dago.,12.1
+u12-1.gb1.0,Zer ordutatik zer ordutara da ikastaroa?,12.1
+u12-1.gb1.1,Seietatik zortzietara.,12.1
+u12-1.gb2.0,Trenez joaten naiz.,12.1
+u12-1.gb2.1,Autobusa Bilboraino doa.,12.1
+u12-1.gb3.0,Zer kirol egiten duzu?,12.1
+u12-1.gb3.1,Hiru ikastarotan eman dut izena.,12.1
+u12-1.l1.s1.e01,Zer egiten duzu aisialdian?,12.1
+u12-1.l1.s1.e02,Kirola egiten dut.,12.1
+u12-1.l1.s1.e03.0,kirol,12.1
+u12-1.l1.s1.e03.1,futbol,12.1
+u12-1.l1.s1.e03.2,saskibaloi,12.1
+u12-1.l1.s1.e03.3,igeriketa,12.1
+u12-1.l1.s1.e03.4,txirrindularitza,12.1
+u12-1.l1.s1.e03.5,jolastu,12.1
+u12-1.l1.s1.e04,Larunbatetan futbolean jolasten dut.,12.1
+u12-1.l1.s1.e05,Larunbatetan futbolean jolasten dut.,12.1
+u12-1.l1.s1.e06,Anek saskibaloian jolasten du.,12.1
+u12-1.l1.s1.e07,Anek saskibaloian jolasten du.,12.1
+u12-1.l1.s1.e08,Igeriketa gustatzen zait.,12.1
+u12-1.l1.s1.e09.0,Zer egiten duzu aisialdian?,12.1
+u12-1.l1.s1.e09.answer,Kirola egiten dut.,12.1
+u12-1.l1.s1.e10,Mikeli txirrindularitza asko gustatzen zaio.,12.1
+u12-1.l1.s1.e11,Ni Garazi naiz. Igeriketa eta txirrindularitza gustatzen zaizkit.,12.1
+u12-1.l1.s1.e12,Umeak parkean jolasten ari dira.,12.1
+u12-1.l1.s1.e13,Zein kirol gustatzen zaizu?,12.1
+u12-1.l1.s2.e01,Musika entzuten dut.,12.1
+u12-1.l1.s2.e02,Gaur kontzertu bat dago plazan.,12.1
+u12-1.l1.s2.e03.0,musika,12.1
+u12-1.l1.s2.e03.1,kontzertu,12.1
+u12-1.l1.s2.e03.2,antzerki,12.1
+u12-1.l1.s2.e03.3,film,12.1
+u12-1.l1.s2.e03.4,liburu,12.1
+u12-1.l1.s2.e03.5,dantza,12.1
+u12-1.l1.s2.e04,Antzerkia gustatzen zait.,12.1
+u12-1.l1.s2.e05,Asteburuetan filmak ikusten ditugu.,12.1
+u12-1.l1.s2.e06,Asteburuetan filmak ikusten ditugu.,12.1
+u12-1.l1.s2.e07,Itziarrek oso ondo marrazten du.,12.1
+u12-1.l1.s2.e08,Liburu bat irakurtzen ari naiz.,12.1
+u12-1.l1.s2.e09.0,Gaur kontzertu bat dago plazan!,12.1
+u12-1.l1.s2.e09.answer,Primeran! Musika asko gustatzen zait.,12.1
+u12-1.l1.s2.e10,Itziarrek oso ondo marrazten du.,12.1
+u12-1.l1.s2.e11,Jonek ez du abesten. Dantza egiten du.,12.1
+u12-1.l1.s2.e12,"Jonek abesten du, eta nik dantza egiten dut.",12.1
+u12-1.l1.s2.e13,Argazkiak egiten ditut mendian.,12.1
+u12-1.l1.s3.e01,Sukaldaritza ikastaro batean izena eman dut.,12.1
+u12-1.l1.s3.e02,Noiz da ikastaroa?,12.1
+u12-1.l1.s3.e03.0,ikastaro,12.1
+u12-1.l1.s3.e03.1,sukaldaritza,12.1
+u12-1.l1.s3.e03.2,izena eman,12.1
+u12-1.l1.s3.e03.3,asteburu,12.1
+u12-1.l1.s3.e03.4,jai,12.1
+u12-1.l1.s3.e03.5,argazki,12.1
+u12-1.l1.s3.e04,Bihar jai da.,12.1
+u12-1.l1.s3.e05,Noiz da ikastaroa?,12.1
+u12-1.l1.s3.e06,Argazki ikastaroa liburutegian da.,12.1
+u12-1.l1.s3.e07,Sukaldaritza ikastaro batean izena eman dut.,12.1
+u12-1.l1.s3.e08,Marrazten ikasi nahi dut.,12.1
+u12-1.l1.s3.e09.0,Zein ikastarotan eman duzu izena?,12.1
+u12-1.l1.s3.e09.answer,Dantza ikastaro batean.,12.1
+u12-1.l1.s3.e10,Abesten ikasten ari naiz.,12.1
+u12-1.l1.s3.e11,Haizeak marrazten ikasi nahi du. Ikastaro batean izena eman du.,12.1
+u12-1.l1.s3.e12,Zein ikastarotan eman duzu izena?,12.1
+u12-1.l1.s3.e13,Asteburuan musika ikastaro bat dago.,12.1
+u12-1.l2.s1.e01,Noiz da kontzertua?,12.1
+u12-1.l2.s1.e02,"Larunbatean da, gaueko hamarretan.",12.1
+u12-1.l2.s1.e03,Kontzertua larunbatean da.,12.1
+u12-1.l2.s1.e04,Ikastaroa urritik ekainera da.,12.1
+u12-1.l2.s1.e05,Ikastaroa urritik ekainera da.,12.1
+u12-1.l2.s1.e06,Astelehenetan eta asteazkenetan igerilekura joaten naiz.,12.1
+u12-1.l2.s1.e07.0,Noiz da kontzertua?,12.1
+u12-1.l2.s1.e07.answer,"Ostiralean, gaueko bederatzietan.",12.1
+u12-1.l2.s1.e08,Abuztuan jaiak daude herrian.,12.1
+u12-1.l2.s1.e09,Herrian jaiak daude abuztuan. Kontzertu asko daude plazan.,12.1
+u12-1.l2.s1.e10,Asteburuan antzerki bat ikusiko dugu.,12.1
+u12-1.l2.s1.e11,"Goizean igeriketa, arratsaldean musika.",12.1
+u12-1.l2.s1.e12,Ostiralean filma ikusiko dugu zineman.,12.1
+u12-1.l2.s2.e01,Zer ordutatik zer ordutara da ikastaroa?,12.1
+u12-1.l2.s2.e02,Seietatik zortzietara.,12.1
+u12-1.l2.s2.e03,Ikastaroa seietatik zortzietara da.,12.1
+u12-1.l2.s2.e04,Dantza ikastaroa bostetatik zazpietara da.,12.1
+u12-1.l2.s2.e05,Dantza ikastaroa bostetatik zazpietara da.,12.1
+u12-1.l2.s2.e06,Sukaldaritza ikastaroa hamarretatik ordu batera da.,12.1
+u12-1.l2.s2.e07.0,Zer ordutatik zer ordutara da igeriketa?,12.1
+u12-1.l2.s2.e07.answer,Zazpietatik bederatzietara.,12.1
+u12-1.l2.s2.e08,Larunbatetan hamarretatik hamabietara jolasten dugu.,12.1
+u12-1.l2.s2.e09,"Argazki ikastaroa asteartetan da, arratsaldeko bostetatik zazpietara.",12.1
+u12-1.l2.s2.e10,Kontzertua zortzietatik hamarretara da.,12.1
+u12-1.l2.s2.e11,Zer ordutan da filma?,12.1
+u12-1.l2.s2.e12,Filma gaueko hamarretan da.,12.1
+u12-1.l2.s3.e01,Nola joaten zara kontzertura?,12.1
+u12-1.l2.s3.e02,Trenez joaten naiz.,12.1
+u12-1.l2.s3.e03,Trenez joaten naiz.,12.1
+u12-1.l2.s3.e04,Autobusez joango gara Donostiara.,12.1
+u12-1.l2.s3.e05,Hondartzaraino joan gara.,12.1
+u12-1.l2.s3.e06,Metroz etorri naiz.,12.1
+u12-1.l2.s3.e07.0,Nola joango zara Bilbora?,12.1
+u12-1.l2.s3.e07.answer,Trenez.,12.1
+u12-1.l2.s3.e08,Donostiatik Zarautzeraino joan gara.,12.1
+u12-1.l2.s3.e09,Peio metroz joaten da lanera. Metroa Getxoraino doa.,12.1
+u12-1.l2.s3.e10,Hondartzaraino joan gara.,12.1
+u12-1.l2.s3.e11,Zenbat ikastarotan eman duzu izena?,12.1
+u12-1.l2.s3.e12,Hiru ikastarotan eman dut izena.,12.1
+u12-1.l3.s1.e01,Kaixo! Dantza ikastaro bat dago?,12.1
+u12-1.l3.s1.e02,"Bai, astearteetan eta ostegunetan.",12.1
+u12-1.l3.s1.e03,Izena eman nahi duzu?,12.1
+u12-1.l3.s1.e04,Zer ordutatik zer ordutara?,12.1
+u12-1.l3.s1.e05.0,"Barkatu, noiz da sukaldaritza ikastaroa?",12.1
+u12-1.l3.s1.e05.answer,"Ostegunetan, arratsaldeko seietan.",12.1
+u12-1.l3.s1.e06,Arratsaldeko seietatik zortzietara.,12.1
+u12-1.l3.s1.e07.0,Kaixo! Argazki ikastaro bat dago?,12.1
+u12-1.l3.s1.e07.1,"Bai, larunbatetan, hamarretatik hamabietara.",12.1
+u12-1.l3.s1.e07.2,Non da?,12.1
+u12-1.l3.s1.e07.answer,Liburutegian.,12.1
+u12-1.l3.s1.e08,Non da?,12.1
+u12-1.l3.s1.e09,"Saskibaloi ikastaroa kiroldegian da, astelehenetan eta asteazkenetan.",12.1
+u12-1.l3.s1.e10,Kiroldegian. Izena eman nahi duzu?,12.1
+u12-1.l3.s1.e11,"Musika ikastaroa ostiraletan da, arratsaldeko zazpietatik bederatzietara.",12.1
+u12-1.l3.s2.e01,Zer egiten duzu asteburuetan?,12.1
+u12-1.l3.s2.e02,Larunbatetan mendira joaten naiz.,12.1
+u12-1.l3.s2.e03,Igandeetan liburuak irakurtzen ditut.,12.1
+u12-1.l3.s2.e04,Igandeetan liburuak irakurtzen ditut.,12.1
+u12-1.l3.s2.e05.0,Zer egiten duzu asteburuetan?,12.1
+u12-1.l3.s2.e05.answer,Futbolean jolasten dut.,12.1
+u12-1.l3.s2.e06,Musika asko gustatzen zait.,12.1
+u12-1.l3.s2.e07.0,Gaur antzerki bat dago antzokian.,12.1
+u12-1.l3.s2.e07.1,Noiz?,12.1
+u12-1.l3.s2.e07.2,Gaueko bederatzietan. Etorri nahi duzu?,12.1
+u12-1.l3.s2.e07.answer,"Bai, antzerkia asko gustatzen zait!",12.1
+u12-1.l3.s2.e08,Gaur kontzertura joango gara?,12.1
+u12-1.l3.s2.e09,Igandeetan Edurnek liburuak irakurtzen ditu. Larunbatetan dantza egiten du.,12.1
+u12-1.l3.s2.e10,"Ez, gaur ez. Bihar libre nago.",12.1
+u12-1.l3.s2.e11,Kepari musika asko gustatzen zaio. Asteburuetan kontzertuetara joaten da.,12.1
+u12-1.l3.s3.e01,"Kontzertua Bilbon da, larunbatean.",12.1
+u12-1.l3.s3.e02,Nola joango gara? Trenez?,12.1
+u12-1.l3.s3.e03,Autobusa Bilboraino doa?,12.1
+u12-1.l3.s3.e04,"Ez, autobusez. Merkeagoa da.",12.1
+u12-1.l3.s3.e05.0,Nola zoaz kiroldegira?,12.1
+u12-1.l3.s3.e05.answer,Autobusez.,12.1
+u12-1.l3.s3.e06,Autobusa Bilboraino doa?,12.1
+u12-1.l3.s3.e07.0,Autobusa hondartzaraino doa?,12.1
+u12-1.l3.s3.e07.1,"Ez, plazaraino bakarrik.",12.1
+u12-1.l3.s3.e07.2,Eta gero?,12.1
+u12-1.l3.s3.e07.answer,Gero metroz.,12.1
+u12-1.l3.s3.e08,"Bai, eta geltokitik metroz joango gara.",12.1
+u12-1.l3.s3.e09,Tren hau Donostiatik Iruneraino doa.,12.1
+u12-1.l3.s3.e10,Kontzertua hamarretatik ordu batera da.,12.1
+u12-1.l3.s3.e11,Gaur autobusez joan naiz lanera. Metroa ez dabil.,12.1
+u12-1.l4.story.0,"Eneko, zer egiten duzu asteburuetan?",12.1
+u12-1.l4.story.1,Larunbatetan saskibaloian jolasten dut. Eta zuk?,12.1
+u12-1.l4.story.2,Nik argazkiak egiten ditut. Argazki ikastaro batean izena eman dut.,12.1
+u12-1.l4.story.3,Noiz da ikastaroa?,12.1
+u12-1.l4.story.4,"Asteazkenetan, arratsaldeko seietatik zortzietara.",12.1
+u12-1.l4.story.5,Non?,12.1
+u12-1.l4.story.6,Gasteizen. Trenez joaten naiz.,12.1
+u12-1.l4.story.7,Nik sukaldaritza ikastaro bat egin nahi dut.,12.1
+u12-1.l4.story.8,"Liburutegian sukaldaritza ikastaro bat dago, urritik ekainera.",12.1
+u12-1.l4.story.9,Primeran! Bihar izena emango dut.,12.1
+u12-2.gb0.0,Mendira joateko gogoa daukat.,12.2
+u12-2.gb0.1,Bihar txango bat egiteko asmoa dut.,12.2
+u12-2.gb0.2,Baduzu zinemara joateko gogorik?,12.2
+u12-2.gb1.0,"Eguraldi ona egiten badu, mendira joango gara.",12.2
+u12-2.gb1.1,"Libre bazaude, zinemara joango gara.",12.2
+u12-2.gb2.0,Atzo zinemara joan nintzen.,12.2
+u12-2.gb2.1,Txikitan bizikletaz joaten nintzen eskolara.,12.2
+u12-2.gb2.2,Gaztetan dantza asko egiten nuen.,12.2
+u12-2.gb3.0,Gazteen ehuneko berrogeik kirola egiten du.,12.2
+u12-2.gb3.1,Ehuneko hamar autoz joaten da lanera.,12.2
+u12-2.l1.s1.e01,Autoz joango gara mendira.,12.2
+u12-2.l1.s1.e02,Bizikletaz joaten naiz lanera.,12.2
+u12-2.l1.s1.e03.0,auto,12.2
+u12-2.l1.s1.e03.1,bizikleta,12.2
+u12-2.l1.s1.e03.2,hegazkin,12.2
+u12-2.l1.s1.e03.3,oinez,12.2
+u12-2.l1.s1.e03.4,txango,12.2
+u12-2.l1.s1.e03.5,noraino,12.2
+u12-2.l1.s1.e04,Hegazkinez joango gara Londresera.,12.2
+u12-2.l1.s1.e05,Hegazkinez joango gara Londresera.,12.2
+u12-2.l1.s1.e06,Etxetik eskolara oinez noa.,12.2
+u12-2.l1.s1.e07,Etxetik eskolara oinez noa.,12.2
+u12-2.l1.s1.e08,Asteburuan txango bat egingo dugu.,12.2
+u12-2.l1.s1.e09.0,Nola zoaz lanera?,12.2
+u12-2.l1.s1.e09.answer,Bizikletaz.,12.2
+u12-2.l1.s1.e10,Noraino joango gara?,12.2
+u12-2.l1.s1.e11,Nik ez daukat autorik. Lanera oinez noa.,12.2
+u12-2.l1.s1.e12,Nire autoa berria da.,12.2
+u12-2.l1.s1.e13,Bizikleta gorri bat erosi dut.,12.2
+u12-2.l1.s2.e01,Mendira joateko gogoa daukat.,12.2
+u12-2.l1.s2.e02,Ez daukat ikasteko gogorik.,12.2
+u12-2.l1.s2.e03.0,gogo,12.2
+u12-2.l1.s2.e03.1,asmo,12.2
+u12-2.l1.s2.e03.2,gustuko izan,12.2
+u12-2.l1.s2.e03.3,txango,12.2
+u12-2.l1.s2.e03.4,auto,12.2
+u12-2.l1.s2.e04,Bihar txango bat egiteko asmoa dut.,12.2
+u12-2.l1.s2.e05,Mendira joateko gogoa daukat.,12.2
+u12-2.l1.s2.e06,Zer asmo daukazu astebururako?,12.2
+u12-2.l1.s2.e07,Ez daukat ikasteko gogorik.,12.2
+u12-2.l1.s2.e08,Mendia gustuko dut.,12.2
+u12-2.l1.s2.e09.0,Zer asmo daukazu astebururako?,12.2
+u12-2.l1.s2.e09.answer,Txango bat egiteko asmoa daukat.,12.2
+u12-2.l1.s2.e10,Zer duzu gustuko?,12.2
+u12-2.l1.s2.e11,Nahiak ez du hondartza gustuko. Mendia gustuko du.,12.2
+u12-2.l1.s2.e12,Anek bizikleta gustuko du.,12.2
+u12-2.l1.s2.e13,Jonek film bat ikusteko gogoa du.,12.2
+u12-2.l1.s3.e01,Gazteen ehuneko berrogeik kirola egiten du.,12.2
+u12-2.l1.s3.e02,Ehuneko hirurogeik musika gustuko du.,12.2
+u12-2.l1.s3.e03.0,ehuneko,12.2
+u12-2.l1.s3.e03.1,berrogei,12.2
+u12-2.l1.s3.e03.2,hirurogei,12.2
+u12-2.l1.s3.e03.3,laurogei,12.2
+u12-2.l1.s3.e03.4,hamar,12.2
+u12-2.l1.s3.e04,Ikasleen ehuneko hogeita hamar oinez joaten da eskolara.,12.2
+u12-2.l1.s3.e05,Gazteen ehuneko berrogeik kirola egiten du.,12.2
+u12-2.l1.s3.e06,Ehuneko hamar autoz joaten da lanera.,12.2
+u12-2.l1.s3.e07,Ehuneko hamar autoz joaten da lanera.,12.2
+u12-2.l1.s3.e08,Ehuneko zenbat?,12.2
+u12-2.l1.s3.e09.0,Ikasleen ehuneko zenbatek egiten du kirola?,12.2
+u12-2.l1.s3.e09.answer,Ehuneko hirurogeik.,12.2
+u12-2.l1.s3.e10,Gazteen ehuneko laurogeik ordenagailua erabiltzen du egunero.,12.2
+u12-2.l1.s3.e11,"Gure herrian, ehuneko hogeik bizikleta erabiltzen du lanera joateko.",12.2
+u12-2.l1.s3.e12,Txangoak asko gustuko ditut.,12.2
+u12-2.l1.s3.e13,Ez dut autoa gustuko.,12.2
+u12-2.l2.s1.e01,Baduzu zinemara joateko gogorik?,12.2
+u12-2.l2.s1.e02,"Bai, film bat ikusteko gogoa daukat.",12.2
+u12-2.l2.s1.e03,Baduzu zinemara joateko gogorik?,12.2
+u12-2.l2.s1.e04,Badaukazu txango bat egiteko gogorik?,12.2
+u12-2.l2.s1.e05,Baduzu zinemara joateko gogorik?,12.2
+u12-2.l2.s1.e06,"Ez, gaur ez daukat gogorik.",12.2
+u12-2.l2.s1.e07.0,Baduzu hondartzara joateko gogorik?,12.2
+u12-2.l2.s1.e07.answer,"Bai, primeran!",12.2
+u12-2.l2.s1.e08,Umeek jolasteko gogoa dute.,12.2
+u12-2.l2.s1.e09,Gaur ez daukat gogorik. Etxean geratuko naiz.,12.2
+u12-2.l2.s1.e10,Hondartzara joateko gogoa dugu.,12.2
+u12-2.l2.s1.e11,Zer egiteko gogoa duzu?,12.2
+u12-2.l2.s1.e12,Kontzertu batera joateko gogoa daukat.,12.2
+u12-2.l2.s2.e01,Datorren urtean ingelesa ikasteko asmoa dut.,12.2
+u12-2.l2.s2.e02,"Eguraldi ona egiten badu, mendira joango gara.",12.2
+u12-2.l2.s2.e03,"Euria egiten badu, etxean geratuko gara.",12.2
+u12-2.l2.s2.e04,"Euria egiten badu, etxean geratuko gara.",12.2
+u12-2.l2.s2.e05,"Libre bazaude, zinemara joango gara.",12.2
+u12-2.l2.s2.e06,"Libre bazaude, zinemara joango gara.",12.2
+u12-2.l2.s2.e07.0,Zer egiteko asmoa duzu oporretan?,12.2
+u12-2.l2.s2.e07.answer,Parisera joateko asmoa dut.,12.2
+u12-2.l2.s2.e08,"Autoa badaukazu, Bilbora joango gara.",12.2
+u12-2.l2.s2.e09,"Bihar eguraldi ona egiten badu, Julen hondartzara joango da.",12.2
+u12-2.l2.s2.e10,"Gogoa baduzu, bihar txango bat egingo dugu.",12.2
+u12-2.l2.s2.e11,Zer egiteko asmoa duzu oporretan?,12.2
+u12-2.l2.s2.e12,Oporretan Parisera joateko asmoa dugu.,12.2
+u12-2.l2.s3.e01,Txikitan bizikletaz joaten nintzen eskolara.,12.2
+u12-2.l2.s3.e02,Gaztetan dantza asko egiten nuen.,12.2
+u12-2.l2.s3.e03,Atzo zinemara joan nintzen.,12.2
+u12-2.l2.s3.e04,Lehen futbolean jolasten genuen.,12.2
+u12-2.l2.s3.e05,Gaztetan dantza asko egiten nuen.,12.2
+u12-2.l2.s3.e06,Iaz mendira txango bat egin genuen.,12.2
+u12-2.l2.s3.e07,Nire amonak asko abesten zuen.,12.2
+u12-2.l2.s3.e08,Atzo zinemara joan nintzen.,12.2
+u12-2.l2.s3.e09.0,Zer egin zenuen atzo?,12.2
+u12-2.l2.s3.e09.answer,Zinemara joan nintzen.,12.2
+u12-2.l2.s3.e10,Hegazkinez joan ginen Parisera.,12.2
+u12-2.l2.s3.e11,Txikitan Unai asteburuetan hondartzara joaten zen. Orain mendia gustuko du.,12.2
+u12-2.l2.s3.e12,Nire amonak asko abesten zuen.,12.2
+u12-2.l2.s3.e13,Atzo kontzertuan izan zinen?,12.2
+u12-2.l3.s1.e01,Zer asmo duzu larunbaterako?,12.2
+u12-2.l3.s1.e02,Ez dakit. Baduzu txango bat egiteko gogorik?,12.2
+u12-2.l3.s1.e03,Zer asmo duzu larunbaterako?,12.2
+u12-2.l3.s1.e04,Bai! Noraino joango gara?,12.2
+u12-2.l3.s1.e05.0,Baduzu larunbatean mendira joateko gogorik?,12.2
+u12-2.l3.s1.e05.answer,Bai! Zer ordutan?,12.2
+u12-2.l3.s1.e06,"Lekeitioraino, bizikletaz.",12.2
+u12-2.l3.s1.e07.0,Txango bat egiteko asmoa dut.,12.2
+u12-2.l3.s1.e07.1,Nora?,12.2
+u12-2.l3.s1.e07.2,Hondarribiara. Etorri nahi duzu?,12.2
+u12-2.l3.s1.e07.answer,"Bai, gogoa daukat!",12.2
+u12-2.l3.s1.e08,Oso urrun dago! Autoz joango gara?,12.2
+u12-2.l3.s1.e09,Igandean txango bat egiteko asmoa dugu. Getxotik Bilboraino bizikletaz joango gara.,12.2
+u12-2.l3.s1.e10,"Ados, autoz.",12.2
+u12-2.l3.s1.e11,Olatzek ez dauka mendira joateko gogorik. Zinemara joan nahi du.,12.2
+u12-2.l3.s2.e01,"Bihar eguzkia badago, hondartzara joango gara.",12.2
+u12-2.l3.s2.e02,"Hotz egiten badu, museora joango gara.",12.2
+u12-2.l3.s2.e03,"Nekatuta bazaude, etxean geratuko gara.",12.2
+u12-2.l3.s2.e04,"Nekatuta bazaude, etxean geratuko gara.",12.2
+u12-2.l3.s2.e05.0,Bihar mendira goaz?,12.2
+u12-2.l3.s2.e05.answer,"Eguraldi ona egiten badu, bai.",12.2
+u12-2.l3.s2.e06,"Dirua badaukazu, kontzertura joango gara.",12.2
+u12-2.l3.s2.e07.0,Kontzertura joango gara?,12.2
+u12-2.l3.s2.e07.1,Ez daukat dirurik.,12.2
+u12-2.l3.s2.e07.2,Nik dirua daukat. Etorri nahi duzu?,12.2
+u12-2.l3.s2.e07.answer,"Ados, eskerrik asko!",12.2
+u12-2.l3.s2.e08,"Oinez joaten bazara, ordu bat behar duzu.",12.2
+u12-2.l3.s2.e09,"Euria egiten badu, Garazi eta Oier zinemara joango dira.",12.2
+u12-2.l3.s2.e10,"Gogoa badut, etorriko naiz.",12.2
+u12-2.l3.s2.e11,"Nekatuta badago, Ibai etxean geratuko da.",12.2
+u12-2.l3.s3.e01,Txikitan zer egiten zenuen asteburuetan?,12.2
+u12-2.l3.s3.e02,Aitonarekin mendira joaten nintzen.,12.2
+u12-2.l3.s3.e03,Aitonarekin mendira joaten nintzen.,12.2
+u12-2.l3.s3.e04,Igandeetan oinez joaten ginen hondartzara.,12.2
+u12-2.l3.s3.e05.0,Txikitan zer egiten zenuen oporretan?,12.2
+u12-2.l3.s3.e05.answer,Hondartzara joaten nintzen.,12.2
+u12-2.l3.s3.e06,Gaztetan saskibaloian jolasten nuen.,12.2
+u12-2.l3.s3.e07.0,Gaztetan kirola egiten zenuen?,12.2
+u12-2.l3.s3.e07.1,"Bai, futbolean jolasten nuen.",12.2
+u12-2.l3.s3.e07.2,Eta orain?,12.2
+u12-2.l3.s3.e07.answer,Orain bizikletaz joaten naiz lanera.,12.2
+u12-2.l3.s3.e08,Nire amak oso ondo abesten zuen.,12.2
+u12-2.l3.s3.e09,Txikitan Arantza aitonarekin mendira joaten zen. Aitonak asko abesten zuen.,12.2
+u12-2.l3.s3.e10,Orain ez daukat aisialdirik.,12.2
+u12-2.l3.s3.e11,Lehen Patxik asko irakurtzen zuen. Orain ez dauka aisialdirik.,12.2
+u12-2.l4.story.0,"Oier, baduzu larunbatean txango bat egiteko gogorik?",12.2
+u12-2.l4.story.1,Bai! Nora joateko asmoa duzu?,12.2
+u12-2.l4.story.2,Durangoko mendietara.,12.2
+u12-2.l4.story.3,Primeran! Txikitan aitarekin Durangora joaten nintzen.,12.2
+u12-2.l4.story.4,Nola joango gara? Autoz?,12.2
+u12-2.l4.story.5,Ez daukat autorik. Trenez joango gara?,12.2
+u12-2.l4.story.6,Ados. Eta geltokitik mendiraino oinez.,12.2
+u12-2.l4.story.7,Eta euria egiten badu?,12.2
+u12-2.l4.story.8,"Euria egiten badu, museora joango gara.",12.2
+u12-2.l4.story.9,Ondo. Zortzietan geltokian?,12.2
+u12-2.l4.story.10,"Bai, zortzietan. Gero arte!",12.2

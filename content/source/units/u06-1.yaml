@@ -1,0 +1,440 @@
+# Unit 6.1 · Dendan — everyday shopping: verb + NAHI IZAN, shop names with -tegi/-degi, ZENBAT DA?,
+# paying (txartelarekin / eskudirutan).
+id: u06-1
+section: s2
+bookUnit: 6
+title:
+  es: En la tienda
+  eu: Dendan
+goals:
+  - es: Hacer la compra diaria en tiendas y centros comerciales.
+    eu: Eguneroko erosketak egin dendetan eta merkataritza-guneetan.
+  - es: Pedir un producto, preguntar el precio y pagar.
+    eu: Produktu bat eskatu, prezioa galdetu eta ordaindu.
+guidebook:
+  sections:
+    - title:
+        es: "Quiero comprar: erosi nahi dut"
+        eu: "Erosi nahi dut"
+      body:
+        es: "Para decir lo que quieres hacer, pon el verbo y después «nahi dut / duzu / du». Con varias cosas, el auxiliar va en plural: erosi nahi ditut."
+        eu: "Zer egin nahi duzun esateko: aditza eta gero «nahi dut / duzu / du». Gauza bat baino gehiago badira, laguntzailea pluralean: erosi nahi ditut."
+      examples:
+        - eu: Ogia erosi nahi dut.
+          es: Quiero comprar pan.
+        - eu: Zer erosi nahi duzu?
+          es: ¿Qué quieres comprar?
+        - eu: Anek sagarrak erosi nahi ditu.
+          es: Ane quiere comprar manzanas.
+    - title:
+        es: "Tiendas: -tegi / -degi"
+        eu: "Dendak: -tegi / -degi"
+      body:
+        es: "Muchas tiendas se forman con el producto + -tegi o -degi: haragi → harategi, arrain → arrandegi, y también okindegi. Otras llevan «denda»: frutadenda, liburu-denda."
+        eu: "Denda askoren izena produktua + -tegi edo -degi da: haragi → harategi, arrain → arrandegi, eta okindegi ere bai. Beste batzuek «denda» dute: frutadenda, liburu-denda."
+      examples:
+        - eu: Harategian haragia dago.
+          es: En la carnicería hay carne.
+        - eu: Arrandegian arraina dago.
+          es: En la pescadería hay pescado.
+    - title:
+        es: "¿Cuánto es? Zenbat da?"
+        eu: "Zenbat da?"
+      body:
+        es: "Para el precio, «Zenbat da?» o «Zenbat balio du?». Con varias cosas, «Zenbat dira?». Después de un número, «euro» no lleva artículo: hiru euro."
+        eu: "Prezioa galdetzeko, «Zenbat da?» edo «Zenbat balio du?». Gauza bat baino gehiago badira, «Zenbat dira?». Zenbakiaren ondoren, «euro» artikulurik gabe: hiru euro."
+      examples:
+        - eu: Zenbat da?
+          es: ¿Cuánto es?
+        - eu: Hiru euro dira.
+          es: Son tres euros.
+    - title:
+        es: Pagar
+        eu: Ordaindu
+      body:
+        es: "Con tarjeta se dice «txartelarekin» y en efectivo, «eskudirutan». El dependiente suele preguntar: «Txartelarekin ala eskudirutan?»"
+        eu: "Txartelarekin edo eskudirutan ordain daiteke. Saltzaileak galdetzen du: «Txartelarekin ala eskudirutan?»"
+      examples:
+        - eu: Txartelarekin ala eskudirutan?
+          es: ¿Con tarjeta o en efectivo?
+        - eu: Eskudirutan ordaindu nahi dut.
+          es: Quiero pagar en efectivo.
+levels:
+  - type: lesson
+    title:
+      es: Tiendas
+      eu: Dendak
+    lessons:
+      - structures: [shops-tegi]
+        sentences:
+          - Okindegian ogia dago. = En la panadería hay pan.
+          - Harategia plazan dago. = La carnicería está en la plaza.
+          - Arrandegian arraina dago. = En la pescadería hay pescado.
+          - Frutadenda okindegiaren ondoan dago. = La frutería está al lado de la panadería.
+          - Non dago supermerkatua? = ¿Dónde está el supermercado?
+          - Liburu-denda kale honetan dago. = La librería está en esta calle.
+          - Harategian oilaskoa eta haragia daude. = En la carnicería hay pollo y carne.
+          - Frutadendan sagarrak eta laranjak daude. = En la frutería hay manzanas y naranjas.
+        pairs:
+          - - okindegi = panadería
+            - harategi = carnicería
+            - arrandegi = pescadería
+            - frutadenda = frutería
+            - supermerkatu = supermercado
+            - liburu-denda = librería
+        meanings:
+          - text: Arrandegian arraina dago.
+            options:
+              - En la pescadería hay pescado.
+              - En la carnicería hay pescado.
+              - En la panadería hay pan.
+        blanks:
+          - text: ___ ogia dago. = En la panadería hay pan.
+            options:
+              - Okindegian
+              - Harategian
+        chats:
+          - messages:
+              - Itziar | Barkatu, non dago okindegia?
+            options:
+              - Okindegia plazan dago.
+              - Ogia gustatzen zait.
+              - Zorionak!
+        true_false:
+          - passage: Kale honetan harategi bat eta frutadenda bat daude. Okindegia plazan dago.
+            statement: La panadería está en esta calle.
+            answer: false
+      - structures: [shops-vocab]
+        sentences:
+          - Saltzailea dendan dago. = El vendedor está en la tienda. | La vendedora está en la tienda.
+          - Bezeroak supermerkatuan daude. = Los clientes están en el supermercado.
+          - Merkataritza-gunea urrun dago. = El centro comercial está lejos.
+          - Merkataritza-gunean supermerkatu bat dago. = En el centro comercial hay un supermercado.
+          - Txartela daukazu? = ¿Tienes tarjeta? | ¿Tiene tarjeta?
+          - Ez daukat dirurik. = No tengo dinero.
+          - Eskudirua behar dut. = Necesito dinero en efectivo. | Necesito efectivo.
+          - Bezeroak ogia nahi du. = El cliente quiere pan. | La clienta quiere pan.
+        pairs:
+          - - saltzaile = vendedor
+            - bezero = cliente
+            - txartel = tarjeta
+            - eskudiru = dinero en efectivo
+            - diru = dinero
+            - denda = tienda
+        meanings:
+          - text: Ez daukat dirurik.
+            options:
+              - No tengo dinero.
+              - No tengo tarjeta.
+              - Tengo dinero.
+        blanks:
+          - text: Eskudirua ___ dut. = Necesito dinero en efectivo.
+            options:
+              - behar
+              - nahiago
+        chats:
+          - messages:
+              - Saltzailea | Txartela ala eskudirua?
+            options:
+              - Txartela, mesedez.
+              - Okindegia, mesedez.
+              - Egun on, Ane.
+        true_false:
+          - passage: Jonek ez dauka dirurik. Txartela dauka.
+            statement: Jon tiene tarjeta.
+            answer: true
+      - structures: [zenbat-da]
+        sentences:
+          - Zenbat da? = ¿Cuánto es? | ¿Cuánto cuesta?
+          - Ogi bat, mesedez. Zenbat da? = Un pan, por favor. ¿Cuánto es? | Una barra de pan, por favor. ¿Cuánto es?
+          - Hiru euro dira. = Son tres euros.
+          - Sagarrak merkeak dira. = Las manzanas son baratas.
+          - Arraina garestia da. = El pescado es caro.
+          - Zenbat da gazta hau? = ¿Cuánto es este queso? | ¿Cuánto cuesta este queso?
+          - Hogeita bost euro dira. = Son veinticinco euros.
+          - Hau oso merkea da! = ¡Esto es muy barato!
+        pairs:
+          - - merke = barato
+            - garesti = caro
+            - prezio = precio
+            - zenbat = cuánto
+            - ordaindu = pagar
+            - erosi = comprar
+        meanings:
+          - text: Zenbat da?
+            options:
+              - ¿Cuánto es?
+              - ¿Dónde está?
+              - ¿Qué es?
+        blanks:
+          - text: ___ da gazta hau? = ¿Cuánto es este queso?
+            options:
+              - Zenbat
+              - Non
+        chats:
+          - messages:
+              - Saltzailea | Bost euro dira.
+            options:
+              - Hemen daukazu.
+              - Ez horregatik.
+              - Zorionak!
+        true_false:
+          - passage: Ogia merkea da, euro bat. Gazta garestia da, hamar euro.
+            statement: El queso cuesta diez euros.
+            answer: true
+  - type: lesson
+    title:
+      es: Quiero comprar
+      eu: Erosi nahi dut
+    lessons:
+      - structures: [verb-nahi]
+        sentences:
+          - Ogia erosi nahi dut. = Quiero comprar pan.
+          - Zer erosi nahi duzu? = ¿Qué quieres comprar? | ¿Qué quiere comprar?
+          - Arraina erosi nahi dugu. = Queremos comprar pescado.
+          - Anek sagarrak erosi nahi ditu. = Ane quiere comprar manzanas.
+          - Txartelarekin ordaindu nahi dut. = Quiero pagar con tarjeta.
+          - Eskudirutan ordaindu nahi duzu? | Eskudiruz ordaindu nahi duzu? = ¿Quieres pagar en efectivo? | ¿Quiere pagar en efectivo?
+          - Etxe hau saldu nahi dute. = Quieren vender esta casa.
+          - Supermerkatuan erosi nahi dut. = Quiero comprar en el supermercado.
+        meanings:
+          - text: Arraina erosi nahi dugu.
+            options:
+              - Queremos comprar pescado.
+              - Queremos vender pescado.
+              - Necesitamos pescado.
+        blanks:
+          - text: Ogia erosi ___ dut. = Quiero comprar pan.
+            options:
+              - nahi
+              - behar
+          - text: Txartelarekin ___ nahi dut. = Quiero pagar con tarjeta.
+            options:
+              - ordaindu
+              - erosi
+        chats:
+          - messages:
+              - Saltzailea | Kaixo! Zer nahi duzu?
+            options:
+              - Ogi bat erosi nahi dut.
+              - Ogi bat erosi nahi du.
+              - Ogi bat gustatzen zait.
+        true_false:
+          - passage: Mikelek oilaskoa erosi nahi du. Txartelarekin ordaindu nahi du.
+            statement: Mikel quiere pagar en efectivo.
+            answer: false
+      - structures: [verb-nahi]
+        sentences:
+          - Ez dut hemen erosi nahi. = No quiero comprar aquí.
+          - Bilbon bizi nahi dut. = Quiero vivir en Bilbao.
+          - Sukaldaria izan nahi dut. = Quiero ser cocinero. | Quiero ser cocinera.
+          - Pisu bat alokatu nahi dugu. = Queremos alquilar un piso.
+          - Hemen egon nahi duzu? = ¿Quieres estar aquí? | ¿Quiere estar aquí?
+          - Zure lagunak zer erosi nahi du? = ¿Qué quiere comprar tu amigo? | ¿Qué quiere comprar tu amiga?
+          - Haiek liburu-denda saldu nahi dute. = Ellos quieren vender la librería. | Quieren vender la librería. | Ellas quieren vender la librería.
+          - Ez dugu eskudirutan ordaindu nahi. | Ez dugu eskudiruz ordaindu nahi. = No queremos pagar en efectivo.
+        meanings:
+          - text: Bilbon bizi nahi dut.
+            options:
+              - Quiero vivir en Bilbao.
+              - Vivo en Bilbao.
+              - Quiero comprar en Bilbao.
+        blanks:
+          - text: Ez dut hemen erosi ___. = No quiero comprar aquí.
+            options:
+              - nahi
+              - behar
+        chats:
+          - messages:
+              - Eneko | Zer erosi nahi duzu dendan?
+            options:
+              - Kafea eta esnea erosi nahi ditut.
+              - Kafea erosi nahi zait.
+              - Dendan nago.
+        true_false:
+          - passage: Nire ahizpak ez du supermerkatuan erosi nahi. Frutadenda nahiago du.
+            statement: Su hermana prefiere la frutería.
+            answer: true
+      - structures: [zenbat-da, payment]
+        sentences:
+          - Zenbat da ogi bat? = ¿Cuánto es un pan? | ¿Cuánto cuesta un pan? | ¿Cuánto cuesta una barra de pan?
+          - Zenbat dira bi kafe? = ¿Cuánto son dos cafés? | ¿Cuánto cuestan dos cafés?
+          - Lau euro dira. = Son cuatro euros.
+          - Txartelarekin ala eskudirutan? | Txartelarekin ala eskudiruz? = ¿Con tarjeta o en efectivo?
+          - Txartelarekin, mesedez. = Con tarjeta, por favor.
+          - Hemen ordaindu, mesedez. = Paga aquí, por favor. | Pague aquí, por favor.
+          - Zenbat balio du? = ¿Cuánto cuesta? | ¿Cuánto vale?
+          - Hamar euro dira, mesedez. = Son diez euros, por favor.
+        meanings:
+          - text: Txartelarekin ala eskudirutan?
+            options:
+              - ¿Con tarjeta o en efectivo?
+              - ¿Tienes tarjeta?
+              - ¿Cuánto es en efectivo?
+        blanks:
+          - text: Zenbat ___ bi kafe? = ¿Cuánto son dos cafés?
+            options:
+              - dira
+              - da
+        chats:
+          - messages:
+              - Bezeroa | Zenbat da?
+            options:
+              - Sei euro dira.
+              - Sei euro gustatzen zaizkit.
+              - Supermerkatuan.
+        true_false:
+          - passage: Bezeroak bi kafe nahi ditu. Lau euro dira. Txartelarekin ordaindu nahi du.
+            statement: El cliente quiere pagar en efectivo.
+            answer: false
+  - type: lesson
+    title:
+      es: De compras
+      eu: Erosketak
+    lessons:
+      - structures: [verb-nahi, zenbat-da]
+        sentences:
+          - Egun on! Ogi bat nahi dut, mesedez. = ¡Buenos días! Quiero un pan, por favor. | ¡Buenos días! Quiero una barra de pan, por favor.
+          - Zer gehiago? = ¿Algo más? | ¿Qué más?
+          - Ez, eskerrik asko. Zenbat da? = No, gracias. ¿Cuánto es? | No, muchas gracias. ¿Cuánto es?
+          - Bi euro dira. = Son dos euros.
+          - Eskudirutan ordaindu nahi dut. | Eskudiruz ordaindu nahi dut. = Quiero pagar en efectivo.
+          - Eskerrik asko! Agur! = ¡Gracias! ¡Adiós! | ¡Muchas gracias! ¡Adiós!
+        chats:
+          - messages:
+              - Saltzailea | Egun on! Zer nahi duzu?
+              - Bezeroa | Bi ogi, mesedez.
+              - Saltzailea | Zer gehiago?
+            options:
+              - Ez, eskerrik asko. Zenbat da?
+              - Bi ogi nahiago zait.
+              - Ez horregatik.
+          - messages:
+              - Saltzailea | Txartelarekin ala eskudirutan?
+            options:
+              - Txartelarekin, mesedez.
+              - Okindegian, mesedez.
+              - Ez, ni saltzailea naiz.
+        meanings:
+          - text: Zer gehiago?
+            options:
+              - ¿Algo más?
+              - ¿Cuánto es?
+              - ¿Qué quieres?
+        true_false:
+          - passage: Okindegian, Amaiak bi ogi erosi nahi ditu. Hiru euro dira.
+            statement: Amaia quiere comprar tres panes.
+            answer: false
+          - passage: Ez daukat eskudirurik. Txartelarekin ordaindu nahi dut.
+            statement: Quiere pagar con tarjeta.
+            answer: true
+      - structures: [shops-tegi, verb-nahi]
+        sentences:
+          - Haragia erosi nahi dut. Non dago harategia? = Quiero comprar carne. ¿Dónde está la carnicería?
+          - Harategia arrandegiaren ondoan dago. = La carnicería está al lado de la pescadería.
+          - Merkataritza-gunean supermerkatu handi bat dago. = En el centro comercial hay un supermercado grande.
+          - Sagarrak frutadendan erosi nahi ditut. = Quiero comprar las manzanas en la frutería.
+          - Liburu-denda merkataritza-gunean dago. = La librería está en el centro comercial.
+          - Okindegia eta frutadenda gertu daude. = La panadería y la frutería están cerca.
+        chats:
+          - messages:
+              - Kepa | Barkatu, arraina erosi nahi dut. Badago arrandegirik?
+            options:
+              - Bai, plazan dago.
+              - Bai, arraina gustatzen zait.
+              - Ez, ni Kepa naiz.
+          - messages:
+              - Leire | Supermerkatuan erosi nahi duzu?
+              - Gorka | Ez, urrun dago.
+              - Leire | Eta zer nahiago duzu?
+            options:
+              - Plazako dendak nahiago ditut.
+              - Plazako dendak nahiago zait.
+              - Supermerkatua urrun gustatzen zait.
+        blanks:
+          - text: Sagarrak ___ erosi nahi ditut. = Quiero comprar las manzanas en la frutería.
+            options:
+              - frutadendan
+              - harategian
+        true_false:
+          - passage: Herri honetan okindegi bat eta harategi bat daude. Ez dago arrandegirik.
+            statement: En el pueblo hay una pescadería.
+            answer: false
+          - passage: Merkataritza-gunean liburu-denda bat eta supermerkatu bat daude.
+            statement: En el centro comercial hay una librería.
+            answer: true
+      - structures: [zenbat-da, payment]
+        sentences:
+          - Barkatu, zenbat da arrain hau? = Perdone, ¿cuánto es este pescado? | Perdona, ¿cuánto es este pescado? | Perdone, ¿cuánto cuesta este pescado?
+          - Hamabost euro. Garestia da! = Quince euros. ¡Es caro!
+          - Oilaskoa merkeagoa da. = El pollo es más barato.
+          - Dirua behar dut. Non dago bankua? = Necesito dinero. ¿Dónde está el banco?
+          - Bezeroak eskudirutan ordaindu nahi du. | Bezeroak eskudiruz ordaindu nahi du. = El cliente quiere pagar en efectivo. | La clienta quiere pagar en efectivo.
+          - Saltzailea oso jatorra da. = El vendedor es muy majo. | La vendedora es muy maja.
+        chats:
+          - messages:
+              - Bezeroa | Zenbat da letxuga hau?
+              - Saltzailea | Bi euro.
+            options:
+              - Ondo, hemen daukazu.
+              - Ondo, bi letxuga gustatzen zait.
+              - Gabon, bi euro.
+          - messages:
+              - Saltzailea | Hogei euro dira.
+              - Ibai | Txartelarekin ordaindu nahi dut.
+              - Saltzailea | Barkatu, eskudirua behar da.
+            options:
+              - Ez daukat eskudirurik!
+              - Ez horregatik!
+              - Txartela gustatzen zait!
+        meanings:
+          - text: Garestia da!
+            options:
+              - ¡Es caro!
+              - ¡Es barato!
+              - ¡Es bonito!
+        true_false:
+          - passage: Arraina hamabost euro da. Oilaskoa zortzi euro da.
+            statement: El pollo es más caro que el pescado.
+            answer: false
+          - passage: Saltzailea jatorra da. Bezeroak eskudirutan ordaindu nahi du.
+            statement: El cliente quiere pagar en efectivo.
+            answer: true
+  - type: story
+    title:
+      es: "Historia: en la frutería"
+      eu: "Istorioa: frutadendan"
+    story:
+      title: Unai frutadendan
+      lines:
+        - Saltzailea | Egun on! Zer nahi duzu? = ¡Buenos días! ¿Qué quieres?
+        - Unai | Egun on! Lau sagar eta bi laranja erosi nahi ditut. = ¡Buenos días! Quiero comprar cuatro manzanas y dos naranjas.
+        - Saltzailea | Hemen daukazu. Zer gehiago? = Aquí tienes. ¿Algo más?
+        - Unai | Tomateak ere bai. Zenbat da? = También tomates. ¿Cuánto es?
+        - Saltzailea | Sei euro dira. = Son seis euros.
+        - Unai | Txartelarekin ordaindu nahi dut. = Quiero pagar con tarjeta.
+        - Saltzailea | Barkatu, hemen eskudirua behar da. = Lo siento, aquí hace falta efectivo.
+        - Unai | Ez daukat dirurik! Non dago bankua? = ¡No tengo dinero! ¿Dónde está el banco?
+        - Saltzailea | Bankua okindegiaren ondoan dago. = El banco está al lado de la panadería.
+        - Unai | Eskerrik asko! Gero arte! = ¡Muchas gracias! ¡Hasta luego!
+      questions:
+        - afterLine: 3
+          prompt: ¿Qué compra Unai?
+          options:
+            - Manzanas, naranjas y tomates
+            - Manzanas y patatas
+            - Solo naranjas
+        - afterLine: 6
+          prompt: ¿Cómo hay que pagar en la frutería?
+          options:
+            - En efectivo
+            - Con tarjeta
+            - No hay que pagar
+        - afterLine: 9
+          prompt: ¿Dónde está el banco?
+          options:
+            - Al lado de la panadería
+            - En el centro comercial
+            - Detrás de la frutería
+  - type: review
+  - type: legendary

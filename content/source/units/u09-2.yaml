@@ -1,0 +1,438 @@
+# Unit 9.2 · Ingurumena zaindu — -T(Z)EA, EZIN DA, DEBEKATUTA DAGO, opinions, -(E)NEAN.
+id: u09-2
+section: s3
+bookUnit: 9
+title:
+  es: Cuidar el medio ambiente
+  eu: Ingurumena zaindu
+goals:
+  - es: Conocer medidas para proteger el medio ambiente y dar tu opinión sobre ellas.
+    eu: Ingurumena babesteko neurriak ezagutu eta haiei buruzko iritzia eman.
+  - es: Decir qué hacemos para cuidar el medio ambiente.
+    eu: Ingurumena zaintzeko zer egiten dugun esan.
+  - es: Entender prohibiciones y normas sencillas.
+    eu: Debekuak eta arau errazak ulertu.
+guidebook:
+  sections:
+    - title:
+        es: "Conviene ahorrar: -tzea"
+        eu: "Komeni da aurreztea: -tzea"
+      body:
+        es: El verbo con -tzea o -tea funciona como un nombre, igual que el infinitivo español en «ahorrar es bueno». Se usa con «komeni da» (conviene), «ondo dago» (está bien) o «gustatzen zait».
+        eu: -tzea edo -tea duen aditza izen bat bezala erabiltzen da. «Komeni da», «ondo dago» edo «gustatzen zait» esapideekin erabiltzen da.
+      examples:
+        - eu: Komeni da energia aurreztea.
+          es: Conviene ahorrar energía.
+        - eu: Ondo dago papera birziklatzea.
+          es: Está bien reciclar el papel.
+    - title:
+        es: "No se puede, está prohibido"
+        eu: "Ezin da, debekatuta dago"
+      body:
+        es: «Ezin da» + participio significa «no se puede» (Ezin da hemen sartu). «Debekatuta dago» + verbo con -tzea significa «está prohibido». Para una persona concreta, «ezin dut», «ezin naiz»…
+        eu: «Ezin da» partizipioarekin erabiltzen da (Ezin da hemen sartu). «Debekatuta dago» -tzea duen aditzarekin doa. Pertsona batekin, «ezin dut», «ezin naiz»…
+      examples:
+        - eu: Ezin da hemen plastikoa bota.
+          es: Aquí no se puede tirar plástico.
+        - eu: Debekatuta dago ibaian igeri egitea.
+          es: Está prohibido nadar en el río.
+        - eu: Gaur ezin naiz etorri.
+          es: Hoy no puedo venir.
+    - title:
+        es: Dar tu opinión
+        eu: Iritzia eman
+      body:
+        es: «Nire ustez» significa «en mi opinión». Para preguntar, «Zer uste duzu?» o «Zein da zure iritzia?». Para responder, «ados nago» (estoy de acuerdo) o «ez nago ados».
+        eu: «Nire ustez» esaten dugu gure iritzia emateko. Galdetzeko, «Zer uste duzu?» edo «Zein da zure iritzia?». Erantzuteko, «ados nago» edo «ez nago ados».
+      examples:
+        - eu: Nire ustez, ondo dago.
+          es: En mi opinión, está bien.
+        - eu: Zer uste duzu?
+          es: ¿Qué opinas?
+        - eu: Ez nago ados.
+          es: No estoy de acuerdo.
+    - title:
+        es: "Cuando…: -(e)nean"
+        eu: "-(e)nean"
+      body:
+        es: Para decir «cuando», se añade -(e)nean al verbo auxiliar, que va al final de esa parte de la frase (naiz → naizenean, da → denean, dago → dagoenean).
+        eu: «Noiz» adierazteko, -(e)nean gehitzen zaio laguntzaileari (naiz → naizenean, da → denean, dago → dagoenean).
+      examples:
+        - eu: Gelatik joaten naizenean, argia itzaltzen dut.
+          es: Cuando salgo de la habitación, apago la luz.
+        - eu: Dutxatzen naizenean, ura aurrezten dut.
+          es: Cuando me ducho, ahorro agua.
+levels:
+  - type: lesson
+    title:
+      es: Acciones verdes
+      eu: Ingurumena zaintzen
+    lessons:
+      - structures: [habitual-present, imperative]
+        sentences:
+          - Argia itzaltzen dut. = Apago la luz. | Yo apago la luz.
+          - Gelan argia pizten dugu. = Encendemos la luz en la habitación. | En el aula encendemos la luz. | Encendemos la luz en el aula.
+          - Energia aurreztu behar dugu. = Tenemos que ahorrar energía. | Debemos ahorrar energía.
+          - Ura aurrezten dut. = Ahorro agua. | Yo ahorro agua.
+          - Paperezko poltsak erabiltzen ditugu. = Usamos bolsas de papel.
+          - Itzal ezazu argia, mesedez! = ¡Apaga la luz, por favor! | ¡Apague la luz, por favor!
+          - Ez piztu argia orain. = No enciendas la luz ahora. | No encienda la luz ahora.
+          - Nik plastiko gutxi erabiltzen dut. = Yo uso poco plástico. | Uso poco plástico.
+        pairs:
+          - - itzali = apagar
+            - piztu = encender
+            - aurreztu = ahorrar
+            - erabili = usar
+            - bota = tirar
+        meanings:
+          - text: Argia itzaltzen dut.
+            options:
+              - Apago la luz.
+              - Enciendo la luz.
+              - Ahorro agua.
+        blanks:
+          - text: Ura ___ dut. = Ahorro agua.
+            options:
+              - aurrezten
+              - pizten
+        chats:
+          - messages:
+              - Nahia | Argia piztuta dago!
+            options:
+              - Bai, orain itzaltzen dut.
+              - Bai, ura aurrezten dut.
+              - Ez, paperezkoa da.
+        true_false:
+          - passage: Etxean energia aurrezten dugu. Argiak itzaltzen ditugu.
+            statement: En esa casa ahorran energía.
+            answer: true
+      - structures: [ezin-da, debekatuta]
+        sentences:
+          - Ez bota papera kalera! = ¡No tires el papel a la calle! | ¡No tire el papel a la calle!
+          - Bota ezazu botila edukiontzi berdera. = Tira la botella al contenedor verde. | Echa la botella al contenedor verde. | Tire la botella al contenedor verde.
+          - Hemen debekatuta dago igeri egitea. | Debekatuta dago hemen igeri egitea. = Aquí está prohibido nadar. | Está prohibido nadar aquí.
+          - Ezin da hemen sartu. = No se puede entrar aquí. | Aquí no se puede entrar.
+          - Ibaian ezin da igeri egin. = En el río no se puede nadar. | No se puede nadar en el río.
+          - Debekatuta dago hondakinak ibaira botatzea. = Está prohibido tirar residuos al río.
+          - Gaur ezin naiz etorri. = Hoy no puedo venir. | No puedo venir hoy.
+          - Zakarrontzian bota behar duzu. = Tienes que tirarlo a la papelera. | Lo tienes que tirar a la papelera. | Tiene que tirarlo a la papelera.
+        pairs:
+          - - debekatuta = prohibido
+            - ezin = no poder
+            - ados = de acuerdo
+            - iritzi = opinión
+            - zaindu = cuidar
+        meanings:
+          - text: Hemen debekatuta dago igeri egitea.
+            options:
+              - Aquí está prohibido nadar.
+              - Aquí se puede nadar.
+              - Aquí hay que nadar.
+        blanks:
+          - text: Ezin ___ hemen sartu. = No se puede entrar aquí.
+            options:
+              - da
+              - du
+        chats:
+          - messages:
+              - Xabier | Botila hau ibaira bota daiteke?
+            options:
+              - Ez! Debekatuta dago.
+              - Bai, ados nago.
+              - Ez, ura aurrezten dut.
+      - structures: [opinion]
+        sentences:
+          - Natura zaindu behar dugu. = Tenemos que cuidar la naturaleza. | Debemos cuidar la naturaleza.
+          - Zer uste duzu? = ¿Qué opinas? | ¿Qué crees? | ¿Qué piensas? | ¿Qué opina usted?
+          - Ados nago. = Estoy de acuerdo.
+          - Ez nago ados. = No estoy de acuerdo.
+          - Nire ustez, ondo dago. = En mi opinión, está bien. | Creo que está bien.
+          - Zein da zure iritzia? = ¿Cuál es tu opinión? | ¿Cuál es su opinión?
+          - Ingurumena zaintzen dugu. = Cuidamos el medio ambiente.
+          - Zu ados zaude? = ¿Tú estás de acuerdo? | ¿Estás de acuerdo? | ¿Está usted de acuerdo?
+        pairs:
+          - - zaindu = cuidar
+            - ados = de acuerdo
+            - iritzi = opinión
+            - uste izan = creer
+            - debekatuta = prohibido
+        meanings:
+          - text: Ez nago ados.
+            options:
+              - No estoy de acuerdo.
+              - Estoy de acuerdo.
+              - No estoy en casa.
+        blanks:
+          - text: Ados ___. = Estoy de acuerdo.
+            options:
+              - nago
+              - naiz
+        chats:
+          - messages:
+              - Gorka | Natura zaindu behar dugu.
+            options:
+              - Bai, ados nago.
+              - Ez, ezin da.
+              - Argia itzaltzen dut.
+        true_false:
+          - passage: Nire ustez, plastiko gutxiago erabili behar dugu.
+            statement: Esta persona cree que hay que usar más plástico.
+            answer: false
+  - type: lesson
+    title:
+      es: Normas y costumbres
+      eu: Zer komeni da?
+    lessons:
+      - structures: [tzea-nominal]
+        sentences:
+          - Komeni da energia aurreztea. = Conviene ahorrar energía. | Es conveniente ahorrar energía.
+          - Ondo dago papera birziklatzea. = Está bien reciclar el papel.
+          - Komeni da argiak itzaltzea. = Conviene apagar las luces. | Es conveniente apagar las luces.
+          - Natura zaintzea komeni da. = Conviene cuidar la naturaleza. | Es conveniente cuidar la naturaleza.
+          - Ondo dago paperezko poltsak erabiltzea. = Está bien usar bolsas de papel.
+          - Komeni da ura aurreztea. = Conviene ahorrar agua. | Es conveniente ahorrar agua.
+          - Ez dago ondo ibaira hondakinak botatzea. = No está bien tirar residuos al río.
+          - Gustatzen zait natura zaintzea. = Me gusta cuidar la naturaleza.
+        blanks:
+          - text: Komeni da ura ___. = Conviene ahorrar agua.
+            options:
+              - aurreztea
+              - aurrezten
+          - text: Ondo dago papera ___. = Está bien reciclar el papel.
+            options:
+              - birziklatzea
+              - birziklatzen
+        meanings:
+          - text: Komeni da argiak itzaltzea.
+            options:
+              - Conviene apagar las luces.
+              - Conviene encender las luces.
+              - Las luces están apagadas.
+        chats:
+          - messages:
+              - Ander | Zer komeni da?
+            options:
+              - Komeni da energia aurreztea.
+              - Ados nago.
+              - Plastikozkoa da.
+      - structures: [ezin-da, debekatuta]
+        sentences:
+          - Ezin da hemen plastikoa bota. = Aquí no se puede tirar plástico. | No se puede tirar plástico aquí.
+          - Basoan ezin da zuhaitzik moztu. = En el bosque no se pueden cortar árboles. | No se pueden cortar árboles en el bosque.
+          - Liburutegian ezin da jan. = En la biblioteca no se puede comer. | No se puede comer en la biblioteca.
+          - Debekatuta dago itsasora plastikoa botatzea. = Está prohibido tirar plástico al mar.
+          - Debekatuta dago basoan hondakinak botatzea. = Está prohibido tirar residuos en el bosque.
+          - Ezin dut argia piztu. = No puedo encender la luz.
+          - Ezin naiz gaur basora joan. = Hoy no puedo ir al bosque. | No puedo ir al bosque hoy.
+          - Zakarrontzia non dago? Ezin dut ikusi. = ¿Dónde está la papelera? No la veo. | ¿Dónde está la papelera? No puedo verla.
+        blanks:
+          - text: Debekatuta ___ itsasora plastikoa botatzea. = Está prohibido tirar plástico al mar.
+            options:
+              - dago
+              - daude
+          - text: Ezin ___ argia piztu. = No puedo encender la luz.
+            options:
+              - dut
+              - naiz
+        meanings:
+          - text: Liburutegian ezin da jan.
+            options:
+              - En la biblioteca no se puede comer.
+              - En la biblioteca se puede comer.
+              - En la biblioteca no hay comida.
+        chats:
+          - messages:
+              - Asier | Hemen igeri egin daiteke?
+            options:
+              - Ez, debekatuta dago.
+              - Bai, ezin da.
+              - Ez, ados nago.
+        true_false:
+          - passage: Hondartza honetan debekatuta dago botilak botatzea. Zakarrontziak plazan daude.
+            statement: En esta playa se pueden tirar botellas.
+            answer: false
+      - structures: [enean, habitual-present]
+        sentences:
+          - Gelatik joaten naizenean, argia itzaltzen dut. = Cuando salgo de la habitación, apago la luz. | Cuando me voy de la habitación, apago la luz.
+          - Dutxatzen naizenean, ura aurrezten dut. = Cuando me ducho, ahorro agua.
+          - Supermerkatura joaten naizenean, poltsa eramaten dut. = Cuando voy al supermercado, llevo una bolsa. | Cuando voy al supermercado, llevo bolsa.
+          - Etxera etortzen naizenean, argia pizten dut. = Cuando vengo a casa, enciendo la luz. | Cuando llego a casa, enciendo la luz. | Cuando vuelvo a casa, enciendo la luz.
+          - Ilun dagoenean, argia pizten dugu. = Cuando está oscuro, encendemos la luz.
+          - Eguzkia dagoenean, ez dut argia pizten. = Cuando hace sol, no enciendo la luz. | Cuando hay sol, no enciendo la luz.
+          - Botila bat dudanean, edukiontzi berdera eramaten dut. = Cuando tengo una botella, la llevo al contenedor verde.
+        blanks:
+          - text: Gelatik joaten ___, argia itzaltzen dut. = Cuando salgo de la habitación, apago la luz.
+            options:
+              - naizenean
+              - naiz
+          - text: Eguzkia ___, ez dut argia pizten. = Cuando hace sol, no enciendo la luz.
+            options:
+              - dagoenean
+              - dago
+        meanings:
+          - text: Ilun dagoenean, argia pizten dugu.
+            options:
+              - Cuando está oscuro, encendemos la luz.
+              - Cuando hace sol, encendemos la luz.
+              - Cuando está oscuro, apagamos la luz.
+        chats:
+          - messages:
+              - Miren | Zer egiten duzu gelatik joaten zarenean?
+            options:
+              - Argia itzaltzen dut.
+              - Argia pizten dut.
+              - Ados nago.
+        true_false:
+          - passage: Iker dutxatzen denean, ura aurrezten du.
+            statement: Iker ahorra agua cuando se ducha.
+            answer: true
+  - type: lesson
+    title:
+      es: Opiniones
+      eu: Iritziak
+    lessons:
+      - structures: [opinion, tzea-nominal]
+        sentences:
+          - Nire ustez, komeni da ura aurreztea. = En mi opinión, conviene ahorrar agua. | Creo que conviene ahorrar agua.
+          - Ados nago, Ane. = Estoy de acuerdo, Ane.
+          - Ez nago ados, Mikel. = No estoy de acuerdo, Mikel.
+          - Zer uste duzu, Olatz? = ¿Qué opinas, Olatz? | ¿Qué crees, Olatz? | ¿Qué piensas, Olatz?
+          - Nire ustez, herrian edukiontzi gehiago behar ditugu. = En mi opinión, en el pueblo necesitamos más contenedores. | Creo que necesitamos más contenedores en el pueblo.
+          - Zein da zure iritzia, Kepa? = ¿Cuál es tu opinión, Kepa? | ¿Cuál es su opinión, Kepa?
+        chats:
+          - messages:
+              - Olatz | Nire ustez, komeni da argiak itzaltzea.
+              - Peio | Ados nago!
+              - Olatz | Eta zuk, Uxue, zer uste duzu?
+            options:
+              - Ados nago. Energia aurreztu behar dugu.
+              - Argia piztuta dago, eskerrik asko.
+              - Plastikozkoa da.
+          - messages:
+              - Josu | Plastikozko poltsak debekatuta egon behar dute.
+            options:
+              - Ez nago ados. Nire ustez, birzikla daitezke.
+              - Bai, poltsa hori da.
+              - Ez, gelan nago.
+        true_false:
+          - passage: Nire ustez, herriko ibaia zaindu behar dugu. Ibaian kutsadura asko dago.
+            statement: Esta persona cree que el río está limpio.
+            answer: false
+          - passage: Zein da zure iritzia, Edurne? Ados nago, Patxi.
+            statement: Edurne está de acuerdo con Patxi.
+            answer: true
+        meanings:
+          - text: Zer uste duzu?
+            options:
+              - ¿Qué opinas?
+              - ¿Qué haces?
+              - ¿Dónde estás?
+      - structures: [debekatuta, ezin-da]
+        sentences:
+          - Hondartzara ezin da beirazko botilarik eraman. = No se pueden llevar botellas de vidrio a la playa. | A la playa no se pueden llevar botellas de vidrio.
+          - Basoan ezin da egurrik hartu. = En el bosque no se puede coger madera. | No se puede coger madera en el bosque.
+          - Itsasoa zaindu behar dugu. = Tenemos que cuidar el mar. | Debemos cuidar el mar.
+          - Debekatuta dago hemen igeri egitea? = ¿Está prohibido nadar aquí?
+          - Ez, hemen igeri egin daiteke. = No, aquí se puede nadar.
+          - Liburutegian argia itzali behar dugu. = En la biblioteca tenemos que apagar la luz. | Tenemos que apagar la luz en la biblioteca.
+        chats:
+          - messages:
+              - Alaitz | Barkatu, hemen igeri egin daiteke?
+              - Markel | Ez, debekatuta dago.
+              - Alaitz | Zergatik?
+            options:
+              - Ibaian kutsadura dagoelako.
+              - Beirazkoa delako.
+              - Zakarrontzia delako.
+          - messages:
+              - Ibai | Hondartzara beirazko botila eraman daiteke?
+            options:
+              - Ez, ezin da.
+              - Bai, beirazkoa da.
+              - Ez, ados nago.
+        true_false:
+          - passage: Parkean ezin da hondakinik bota. Zakarrontziak erabili behar dira.
+            statement: En el parque hay que usar las papeleras.
+            answer: true
+          - passage: Liburutegian argiak itzali behar dira. Energia aurreztu behar dugu.
+            statement: En la biblioteca hay que dejar las luces encendidas.
+            answer: false
+        blanks:
+          - text: Hondartzara ___ da beirazko botilarik eraman. = No se pueden llevar botellas de vidrio a la playa.
+            options:
+              - ezin
+              - ados
+      - structures: [enean, habitual-present]
+        sentences:
+          - Etxetik joaten naizenean, argiak itzaltzen ditut. = Cuando me voy de casa, apago las luces. | Cuando salgo de casa, apago las luces.
+          - Gure etxean ura eta energia aurrezten ditugu. = En nuestra casa ahorramos agua y energía.
+          - Eskolan papera eta plastikoa birziklatzen ditugu. = En la escuela reciclamos el papel y el plástico. | En la escuela reciclamos papel y plástico.
+          - Ingurumena zaintzea komeni da. = Conviene cuidar el medio ambiente. | Es conveniente cuidar el medio ambiente.
+          - Gaur ez dut plastikorik erabili. = Hoy no he usado plástico. | No he usado plástico hoy.
+          - Parkeko zuhaitzak zaindu behar ditugu. = Tenemos que cuidar los árboles del parque. | Debemos cuidar los árboles del parque.
+        chats:
+          - messages:
+              - Leire | Zer egiten duzu ingurumena zaintzeko?
+            options:
+              - Ura aurrezten dut eta papera birziklatzen dut.
+              - Ez nago ados.
+              - Plastikozko poltsa da.
+          - messages:
+              - Unai | Kaixo, Leire!
+              - Leire | Kaixo, Unai!
+              - Unai | Supermerkatura joaten zarenean, zer eramaten duzu?
+            options:
+              - Paperezko poltsa bat.
+              - Gelan nago.
+              - Ez, debekatuta dago.
+        true_false:
+          - passage: Gure etxean ingurumena zaintzen dugu. Argiak itzaltzen ditugu eta ura aurrezten dugu.
+            statement: En esa casa no ahorran agua.
+            answer: false
+          - passage: Haizea eskolara joaten denean, ez du plastikozko botilarik eramaten.
+            statement: Haizea lleva una botella de plástico a la escuela.
+            answer: false
+        meanings:
+          - text: Gaur ez dut plastikorik erabili.
+            options:
+              - Hoy no he usado plástico.
+              - Hoy he usado plástico.
+              - Hoy no he reciclado plástico.
+  - type: story
+    title:
+      es: "Historia: ¡apaga la luz!"
+      eu: "Istorioa: itzal ezazu argia!"
+    story:
+      title: Itzal ezazu argia!
+      lines:
+        - Nerea | Aitor, gelatik joaten zarenean, argia itzali behar duzu! = Aitor, cuando te vas de la habitación, ¡tienes que apagar la luz!
+        - Aitor | Barkatu, Nerea. Zergatik? = Perdona, Nerea. ¿Por qué?
+        - Nerea | Energia aurreztea komeni delako. = Porque conviene ahorrar energía.
+        - Aitor | Ados nago. Eta zer gehiago egiten duzu zuk? = Estoy de acuerdo. ¿Y qué más haces tú?
+        - Nerea | Dutxatzen naizenean, ura aurrezten dut. = Cuando me ducho, ahorro agua.
+        - Nerea | Eta ez dut plastikozko poltsarik erabiltzen. = Y no uso bolsas de plástico.
+        - Aitor | Nire ustez, plastikozko poltsak debekatuta egon behar dute. = En mi opinión, las bolsas de plástico deberían estar prohibidas.
+        - Nerea | Ados nago! Ibaian eta itsasoan plastiko asko dago. = ¡Estoy de acuerdo! En el río y en el mar hay mucho plástico.
+        - Aitor | Bihar ibaira joango gara eta hondakinak hartuko ditugu. = Mañana iremos al río y recogeremos los residuos.
+        - Nerea | Oso ondo! Natura zaindu behar dugu. = ¡Muy bien! Tenemos que cuidar la naturaleza.
+      questions:
+        - afterLine: 2
+          prompt: ¿Por qué tiene que apagar la luz Aitor?
+          options:
+            - Para ahorrar energía
+            - Porque es de noche
+            - Porque Nerea quiere dormir
+        - afterLine: 6
+          prompt: ¿Qué opina Aitor de las bolsas de plástico?
+          options:
+            - Que deberían estar prohibidas
+            - Que son muy útiles
+            - Que no se pueden reciclar
+        - afterLine: 9
+          prompt: ¿Qué van a hacer mañana?
+          options:
+            - Recoger residuos en el río
+            - Nadar en el mar
+            - Comprar bolsas de papel
+  - type: review
+  - type: legendary

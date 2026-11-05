@@ -1,0 +1,452 @@
+# Unit 4.1 · Etxea — rooms and parts of a home: EDUKI, plural objects with UKAN/EDUKI,
+# BEHAR IZAN with nouns, numbers from 100. Source format: see docs/content-guide.md and u01-1.yaml.
+id: u04-1
+section: s2
+bookUnit: 4
+title:
+  es: La casa
+  eu: Etxea
+goals:
+  - es: Nombrar las habitaciones y las partes de una vivienda.
+    eu: Etxebizitza baten gelak eta atalak izendatu.
+  - es: Decir qué tiene una casa y cómo es.
+    eu: Etxe batek zer daukan eta nolakoa den esan.
+  - es: Decir qué necesita una casa.
+    eu: Etxe batek zer behar duen esan.
+guidebook:
+  sections:
+    - title:
+        es: "Tener: daukat, daukazu, dauka"
+        eu: "Eduki: daukat, daukazu, dauka"
+      body:
+        es: "«Eduki» también significa «tener» y es muy común en la lengua hablada. Como con «ukan», el sujeto lleva -k: nik daukat, zuk daukazu, hark dauka, guk daukagu, zuek daukazue, haiek daukate."
+        eu: "Eduki aditzak ere «tener» esan nahi du. Subjektuak -k hartzen du: nik daukat, zuk daukazu, hark dauka, guk daukagu, zuek daukazue, haiek daukate."
+      examples:
+        - eu: Nik pisu bat daukat Bilbon.
+          es: Tengo un piso en Bilbao.
+        - eu: Zuk garajea daukazu?
+          es: ¿Tienes garaje?
+        - eu: Anek terraza handi bat dauka.
+          es: Ane tiene una terraza grande.
+    - title:
+        es: Varias cosas
+        eu: Gauza bat baino gehiago
+      body:
+        es: Si lo que se tiene es plural, el verbo cambia. Con «eduki», dauzkat, dauzkazu, dauzka; con «ukan», ditut, ditu, ditugu, dituzue, dituzte. Detrás de un número el nombre va sin artículo, como en «hiru logela».
+        eu: Objektua plurala bada, aditza aldatzen da. Eduki aditzarekin dauzkat, dauzkazu, dauzka; ukan aditzarekin ditut, ditu, ditugu, dituzue, dituzte.
+      examples:
+        - eu: Etxeak hiru logela dauzka.
+          es: La casa tiene tres dormitorios.
+        - eu: Pisuak bi bainugela ditu.
+          es: El piso tiene dos cuartos de baño.
+        - eu: Guk bi garaje ditugu.
+          es: Tenemos dos garajes.
+    - title:
+        es: "Necesitar: behar dut"
+        eu: "Behar izan: behar dut"
+      body:
+        es: Para decir que necesitas algo, «behar» + el verbo «ukan» (dut, duzu, du…). Lo que se necesita va delante, y el sujeto lleva -k.
+        eu: Zerbait behar duzula esateko, «behar» + ukan aditza (dut, duzu, du…). Subjektuak -k hartzen du.
+      examples:
+        - eu: Logela bat behar dut.
+          es: Necesito un dormitorio.
+        - eu: Zer behar duzu?
+          es: ¿Qué necesitas?
+        - eu: Mikelek garaje bat behar du.
+          es: Mikel necesita un garaje.
+    - title:
+        es: Cómo es la casa
+        eu: Nolakoa da etxea?
+      body:
+        es: "Los adjetivos van detrás del nombre: etxe berria (la casa nueva), pisu argitsua (el piso luminoso). La planta se dice con «-garren»: hirugarren solairuan (en el tercer piso). Del 100 en adelante se dice «ehun eta…»: ehun eta hogei (120)."
+        eu: "Adjektiboa izenaren ondoren doa: etxe berria, pisu argitsua. Solairua «-garren» atzizkiarekin: hirugarren solairuan. 100etik aurrera, «ehun eta…»: ehun eta hogei."
+      examples:
+        - eu: Egongela oso argitsua da.
+          es: La sala de estar es muy luminosa.
+        - eu: Hirugarren solairuan bizi naiz.
+          es: Vivo en el tercer piso.
+        - eu: Etxe honek ehun eta hogei urte ditu.
+          es: Esta casa tiene ciento veinte años.
+levels:
+  - type: lesson
+    title:
+      es: La vivienda
+      eu: Etxebizitza
+    lessons:
+      - structures: [rooms]
+        sentences:
+          - Hau nire etxea da. = Esta es mi casa.
+          - Pisu hau txikia da. = Este piso es pequeño.
+          - Sukaldea hemen dago. = La cocina está aquí.
+          - Egongela handia da. = La sala de estar es grande. | El salón es grande.
+          - Logela hor dago, bainugelaren ondoan. = El dormitorio está ahí, al lado del cuarto de baño. | La habitación está ahí, al lado del baño.
+          - Komuna non dago, mesedez? = ¿Dónde está el aseo, por favor? | ¿Dónde está el váter, por favor? | ¿Dónde está el baño, por favor?
+          - Bainugela txikia da. = El cuarto de baño es pequeño. | El baño es pequeño.
+          - Nire logela sukaldearen atzean dago. = Mi dormitorio está detrás de la cocina. | Mi habitación está detrás de la cocina.
+        pairs:
+          - - etxea = casa
+            - logela = dormitorio
+            - sukaldea = cocina
+            - egongela = sala de estar
+            - bainugela = cuarto de baño
+            - komuna = aseo
+        meanings:
+          - text: Sukaldea egongelaren ondoan dago.
+            options:
+              - La cocina está al lado de la sala de estar.
+              - La cocina está detrás del cuarto de baño.
+              - El dormitorio está al lado de la cocina.
+        blanks:
+          - text: ___ non dago? Hemen, eskuinean. = ¿Dónde está el aseo? Aquí, a la derecha.
+            options:
+              - Komuna
+              - Sukaldea
+        chats:
+          - messages:
+              - Ane | Barkatu, non dago bainugela?
+            options:
+              - Hor dago, logelaren ondoan.
+              - Hor naiz, logelaren ondoan.
+              - Bainugela handia da.
+        true_false:
+          - passage: Nire pisua txikia da. Sukaldea, egongela eta logela bat ditu.
+            statement: El piso es grande.
+            answer: false
+      - structures: [house-parts]
+        sentences:
+          - Ataria handia eta polita da. = El portal es grande y bonito.
+          - Igogailua atariaren ondoan dago. = El ascensor está al lado del portal.
+          - Eskailera ezkerrean dago. = La escalera está a la izquierda.
+          - Hirugarren solairuan bizi naiz. = Vivo en el tercer piso. | Vivo en la tercera planta. | Vivo en el tercero.
+          - Garajea etxearen azpian dago. = El garaje está debajo de la casa.
+          - Terraza egongelaren ondoan dago. = La terraza está al lado de la sala de estar. | La terraza está al lado del salón.
+          - Logelak leiho handi bat du. = El dormitorio tiene una ventana grande. | La habitación tiene una ventana grande.
+          - Atea ez dago hemen, han dago. = La puerta no está aquí, está allí.
+        pairs:
+          - - solairua = planta
+            - igogailua = ascensor
+            - leihoa = ventana
+            - atea = puerta
+            - eskailera = escalera
+            - ataria = portal
+        meanings:
+          - text: Igogailua ez dago atarian.
+            options:
+              - El ascensor no está en el portal.
+              - La escalera no está en el portal.
+              - El ascensor está en el portal.
+        blanks:
+          - text: Laugarren ___ bizi naiz. = Vivo en la cuarta planta.
+            options:
+              - solairuan
+              - solairua
+        chats:
+          - messages:
+              - Gorka | Barkatu, igogailua non dago?
+            options:
+              - Atariaren ezkerrean.
+              - Igogailua daukat.
+              - Laugarren solairua naiz.
+        true_false:
+          - passage: Gure etxeak ez du igogailurik. Eskailera bakarrik dago.
+            statement: La casa tiene ascensor.
+            answer: false
+      - structures: [describing-home]
+        sentences:
+          - Gure etxea berria da. = Nuestra casa es nueva.
+          - Egongela oso argitsua da. = La sala de estar es muy luminosa. | El salón es muy luminoso.
+          - Bainugela iluna da. = El cuarto de baño es oscuro. | El baño es oscuro.
+          - Terraza eguzkitsua da. = La terraza es soleada.
+          - Sukaldea zabala da. = La cocina es amplia.
+          - Atari hau ez da berria. = Este portal no es nuevo.
+          - Eskailera zabala eta argitsua da. = La escalera es ancha y luminosa.
+          - Zure logela eguzkitsua da? = ¿Tu dormitorio es soleado? | ¿Tu habitación es soleada? | ¿Su dormitorio es soleado? | ¿Es soleado tu dormitorio?
+        pairs:
+          - - berria = nuevo
+            - argitsua = luminoso
+            - iluna = oscuro
+            - eguzkitsua = soleado
+            - zabala = amplio
+        meanings:
+          - text: Pisua iluna da.
+            options:
+              - El piso es oscuro.
+              - El piso es luminoso.
+              - El piso es nuevo.
+        blanks:
+          - text: Leiho handiak ditu, oso ___ da. = Tiene ventanas grandes, es muy luminoso.
+            options:
+              - argitsua
+              - iluna
+        chats:
+          - messages:
+              - Irati | Nolakoa da zure pisu berria?
+            options:
+              - Oso argitsua eta zabala da.
+              - Oso argitsua naiz.
+              - Hirugarren solairua.
+        true_false:
+          - passage: Ikerren etxea zaharra eta iluna da.
+            statement: La casa de Iker es vieja.
+            answer: true
+  - type: lesson
+    title:
+      es: Tener y necesitar
+      eu: Eduki eta behar
+    lessons:
+      - structures: [eduki-present]
+        sentences:
+          - Nik pisu bat daukat Bilbon. | Pisu bat daukat Bilbon. = Tengo un piso en Bilbao. | Yo tengo un piso en Bilbao.
+          - Zuk etxe bat daukazu? | Etxe bat daukazu? = ¿Tienes una casa? | ¿Tú tienes una casa? | ¿Tiene usted una casa?
+          - Anek terraza handi bat dauka. = Ane tiene una terraza grande.
+          - Guk garaje bat daukagu. | Garaje bat daukagu. = Tenemos un garaje. | Nosotros tenemos un garaje.
+          - Zuek etxe berri bat daukazue? | Etxe berri bat daukazue? = ¿Tenéis una casa nueva? | ¿Vosotros tenéis una casa nueva?
+          - Nire gurasoek etxe bat daukate Lekeition. = Mis padres tienen una casa en Lekeitio.
+          - Pisuak sukalde zabala dauka. = El piso tiene una cocina amplia.
+          - Nik ez daukat garajerik. | Ez daukat garajerik. = No tengo garaje. | Yo no tengo garaje.
+        blanks:
+          - text: Guk pisu bat ___. = Tenemos un piso.
+            options:
+              - daukagu
+              - daukate
+          - text: Mikelek etxe bat ___. = Mikel tiene una casa.
+            options:
+              - dauka
+              - daukat
+        meanings:
+          - text: Haiek pisu bat daukate Gasteizen.
+            options:
+              - Ellos tienen un piso en Vitoria.
+              - Nosotros tenemos un piso en Vitoria.
+              - Ellos viven en un piso en Vitoria.
+        chats:
+          - messages:
+              - Amaia | Garajea daukazu?
+            options:
+              - Ez, ez daukat garajerik.
+              - Ez, ez dauka garajerik.
+              - Bai, garajea naiz.
+        true_false:
+          - passage: Unai eta Leire Getxon bizi dira. Pisu txiki bat daukate.
+            statement: Unai y Leire tienen un piso grande.
+            answer: false
+      - structures: [eduki-plural, ukan-plural]
+        sentences:
+          - Etxeak hiru logela dauzka. = La casa tiene tres dormitorios. | La casa tiene tres habitaciones.
+          - Pisuak bi bainugela ditu. = El piso tiene dos cuartos de baño. | El piso tiene dos baños.
+          - Guk bi garaje ditugu. | Bi garaje ditugu. = Tenemos dos garajes. | Nosotros tenemos dos garajes.
+          - Zuek zenbat logela dituzue? | Zenbat logela dituzue? = ¿Cuántos dormitorios tenéis? | ¿Cuántas habitaciones tenéis?
+          - Haiek bi etxe dituzte. | Bi etxe dituzte. = Ellos tienen dos casas. | Tienen dos casas.
+          - Egongelak lau leiho dauzka. = La sala de estar tiene cuatro ventanas. | El salón tiene cuatro ventanas.
+          - Nik bi terraza dauzkat. | Bi terraza dauzkat. = Tengo dos terrazas. | Yo tengo dos terrazas.
+          - Zure pisuak zenbat logela dauzka? = ¿Cuántos dormitorios tiene tu piso? | ¿Cuántas habitaciones tiene tu piso? | ¿Cuántos dormitorios tiene su piso?
+        blanks:
+          - text: Etxeak hiru logela ___. = La casa tiene tres dormitorios.
+            options:
+              - dauzka
+              - dauka
+          - text: Guk bi garaje ___. = Tenemos dos garajes.
+            options:
+              - ditugu
+              - dugu
+        meanings:
+          - text: Etxeak bost leiho ditu.
+            options:
+              - La casa tiene cinco ventanas.
+              - La casa tiene cinco puertas.
+              - La casa tiene cinco plantas.
+        chats:
+          - messages:
+              - Nerea | Zenbat logela dauzka zure etxeak?
+            options:
+              - Hiru logela dauzka.
+              - Hiru logela daukat.
+              - Hiru logela da.
+        true_false:
+          - passage: Gure pisuak lau logela eta bi bainugela ditu.
+            statement: El piso tiene dos cuartos de baño.
+            answer: true
+      - structures: [behar, numbers-100]
+        sentences:
+          - Zer behar duzu? = ¿Qué necesitas? | ¿Qué necesita usted?
+          - Logela bat behar dut. = Necesito un dormitorio. | Necesito una habitación.
+          - Igogailu bat behar dugu. = Necesitamos un ascensor.
+          - Mikelek garaje bat behar du. = Mikel necesita un garaje.
+          - Etxe berri bat behar dugu. = Necesitamos una casa nueva.
+          - Etxe honek ehun urte ditu. = Esta casa tiene cien años. | Esta casa tiene 100 años.
+          - Atariak ehun eta hogei urte ditu. = El portal tiene ciento veinte años. | El portal tiene 120 años.
+          - Ez dugu terrazarik behar. = No necesitamos terraza.
+        blanks:
+          - text: Logela bat ___ dut. = Necesito un dormitorio.
+            options:
+              - behar
+              - bizi
+        meanings:
+          - text: Zer behar dute?
+            options:
+              - ¿Qué necesitan?
+              - ¿Qué tienen?
+              - ¿Qué son?
+        chats:
+          - messages:
+              - Aitor | Zer behar duzue?
+            options:
+              - Etxe zabal bat behar dugu.
+              - Etxe zabal bat behar naiz.
+              - Etxe zabala gara.
+        true_false:
+          - passage: Eliza hau oso zaharra da. Ehun eta laurogei urte ditu.
+            statement: La iglesia tiene más de cien años.
+            answer: true
+  - type: lesson
+    title:
+      es: Conversaciones
+      eu: Elkarrizketak
+    lessons:
+      - structures: [describing-home, eduki-present]
+        sentences:
+          - Hau zure pisu berria da? = ¿Este es tu piso nuevo? | ¿Este es su piso nuevo?
+          - Bai, txikia eta argitsua da. = Sí, es pequeño y luminoso.
+          - Zenbat logela dauzka? = ¿Cuántos dormitorios tiene? | ¿Cuántas habitaciones tiene?
+          - Bi logela eta bainugela bat ditu. = Tiene dos dormitorios y un cuarto de baño. | Tiene dos habitaciones y un baño.
+          - Terraza eguzkitsu bat dauka. = Tiene una terraza soleada.
+          - Zenbatgarren solairuan bizi zara? = ¿En qué piso vives? | ¿En qué planta vives? | ¿En qué piso vive usted?
+        chats:
+          - messages:
+              - Haizea | Hau da zure etxea, Julen?
+              - Julen | Bai, hau da.
+              - Haizea | Oso polita! Nolakoa da zure logela?
+            options:
+              - Txikia eta eguzkitsua da.
+              - Txikia eta eguzkitsua naiz.
+              - Hirugarren solairuan.
+          - messages:
+              - Xabier | Zure etxeak igogailua dauka?
+            options:
+              - Ez, eskailera bakarrik.
+              - Ez, igogailua naiz.
+              - Bai, ez dauka igogailurik.
+        true_false:
+          - passage: Gure etxea berria da. Lau solairu ditu, eta igogailua dauka.
+            statement: La casa tiene ascensor.
+            answer: true
+          - passage: Nire pisua iluna da. Leiho txikiak ditu.
+            statement: El piso de quien habla es muy luminoso.
+            answer: false
+        meanings:
+          - text: Zenbatgarren solairuan dago pisua?
+            options:
+              - ¿En qué planta está el piso?
+              - ¿Cuántos dormitorios tiene el piso?
+              - ¿Dónde está el portal?
+      - structures: [behar, eduki-present]
+        sentences:
+          - Pisu bat behar dut Donostian. = Necesito un piso en San Sebastián. | Necesito un piso en Donostia.
+          - Zenbat logela behar dituzu? = ¿Cuántos dormitorios necesitas? | ¿Cuántas habitaciones necesitas? | ¿Cuántos dormitorios necesita usted?
+          - Bi logela behar ditut. = Necesito dos dormitorios. | Necesito dos habitaciones.
+          - Garajerik ez dut behar. | Ez dut garajerik behar. = No necesito garaje.
+          - Pisu eguzkitsu bat behar dut. = Necesito un piso soleado.
+          - Nire lagunak etxe zabal bat behar du. = Mi amigo necesita una casa amplia. | Mi amiga necesita una casa amplia.
+        chats:
+          - messages:
+              - Amaia | Zer behar duzu, Ander?
+              - Ander | Pisu bat behar dut.
+              - Amaia | Zenbat logela?
+            options:
+              - Hiru logela behar ditut.
+              - Hiru urte ditut.
+              - Hiru logela dira.
+          - messages:
+              - Oier | Zure pisuak terraza dauka?
+            options:
+              - Bai, terraza eguzkitsu bat dauka.
+              - Bai, terraza eguzkitsu bat daukazu.
+              - Bai, terraza da.
+        true_false:
+          - passage: Ni Garazi naiz. Pisu bat behar dut Iruñean. Bi logela behar ditut.
+            statement: Garazi necesita un piso en Pamplona.
+            answer: true
+          - passage: Kepa eta Mirenek etxe zahar bat daukate. Igogailu bat behar dute.
+            statement: Kepa y Miren tienen una casa nueva.
+            answer: false
+        blanks:
+          - text: Bi logela behar ___. = Necesito dos dormitorios.
+            options:
+              - ditut
+              - dut
+      - structures: [rooms, describing-home]
+        sentences:
+          - Etxe hau Zarautzen dago. = Esta casa está en Zarautz.
+          - Hondartzaren ondoan dago. = Está al lado de la playa.
+          - Bi solairu ditu. = Tiene dos plantas.
+          - Egongela oso zabala eta argitsua da. = La sala de estar es muy amplia y luminosa. | El salón es muy amplio y luminoso.
+          - Hiru logela eta bi bainugela ditu. = Tiene tres dormitorios y dos cuartos de baño. | Tiene tres habitaciones y dos baños.
+          - Garaje handi bat dauka. = Tiene un garaje grande.
+        chats:
+          - messages:
+              - Edurne | Etxe hau nolakoa da?
+              - Patxi | Handia eta zaharra da.
+              - Edurne | Argitsua da?
+            options:
+              - Ez, iluna da.
+              - Ez, iluna naiz.
+              - Bai, iluna da.
+          - messages:
+              - Uxue | Barkatu, Josu Etxeberria hemen bizi da?
+            options:
+              - Bai, hirugarren solairuan.
+              - Bai, hirugarren solairua da.
+              - Bai, etxe berria da.
+        true_false:
+          - passage: Nire etxeak ez du garajerik. Atariaren ondoan eskailera bat dago.
+            statement: La casa tiene garaje.
+            answer: false
+          - passage: Gure pisu berria laugarren solairuan dago. Oso eguzkitsua da.
+            statement: El piso está en la cuarta planta.
+            answer: true
+        meanings:
+          - text: Hondartzaren ondoan dago.
+            options:
+              - Está al lado de la playa.
+              - Está delante de la playa.
+              - Está lejos de la playa.
+  - type: story
+    title:
+      es: "Historia: el piso nuevo"
+      eu: "Istorioa: pisu berria"
+    story:
+      title: Pisu berria
+      lines:
+        - Iker | Kaixo, Leire! Hau da zure pisu berria? = ¡Hola, Leire! ¿Este es tu piso nuevo?
+        - Leire | Bai! Seigarren solairuan dago. = ¡Sí! Está en la sexta planta.
+        - Iker | Igogailua dauka? = ¿Tiene ascensor?
+        - Leire | Bai, atariaren ondoan. = Sí, al lado del portal.
+        - Iker | Oso argitsua da! Zenbat logela dauzka? = ¡Es muy luminoso! ¿Cuántos dormitorios tiene?
+        - Leire | Bi logela eta bainugela bat. = Dos dormitorios y un cuarto de baño.
+        - Iker | Eta sukaldea? = ¿Y la cocina?
+        - Leire | Hor dago, egongelaren ondoan. Txikia da. = Está ahí, al lado de la sala de estar. Es pequeña.
+        - Iker | Eta hau? Terraza bat? = ¿Y esto? ¿Una terraza?
+        - Leire | Bai! Terraza txiki eta eguzkitsu bat. = ¡Sí! Una terraza pequeña y soleada.
+        - Iker | Zer behar duzu pisuan? = ¿Qué necesitas en el piso?
+        - Leire | Lagunak! Eta zu hemen zaude. Eskerrik asko, Iker! = ¡Amigos! Y tú estás aquí. ¡Gracias, Iker!
+      questions:
+        - afterLine: 3
+          prompt: ¿Dónde está el ascensor?
+          options:
+            - Al lado del portal
+            - Detrás de la escalera
+            - No hay ascensor
+        - afterLine: 7
+          prompt: ¿Cómo es la cocina?
+          options:
+            - Pequeña
+            - Grande
+            - Oscura
+        - afterLine: 11
+          prompt: ¿Qué dice Leire que necesita?
+          options:
+            - Amigos
+            - Una cocina grande
+            - Un garaje
+  - type: review
+  - type: legendary

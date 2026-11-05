@@ -1,0 +1,451 @@
+# Unit 12.2 · Asmoak — leisure plans, wishes, intentions and conditions, past leisure habits;
+# -T(Z)EKO GOGOA / ASMOA, BA… -T(Z)EKO GOGORIK?, percentages, -(T)ZEN BA…, nintzen / nuen,
+# habitual past (joaten nintzen). Source format: see u01-1.yaml and docs/content-guide.md.
+id: u12-2
+section: s4
+bookUnit: 12
+title:
+  es: Planes
+  eu: Asmoak
+goals:
+  - es: Proponer planes de tiempo libre y expresar ganas e intenciones.
+    eu: Aisialdiko planak proposatu eta gogoak eta asmoak adierazi.
+  - es: Expresar condiciones (si…).
+    eu: Baldintzak adierazi.
+  - es: Contar lo que solías hacer en tu tiempo libre.
+    eu: Aisialdian lehen zer egiten zenuen kontatu.
+guidebook:
+  sections:
+    - title:
+        es: "Ganas e intención: -t(z)eko gogoa, -t(z)eko asmoa"
+        eu: "Gogoa eta asmoa: -t(z)eko gogoa, -t(z)eko asmoa"
+      body:
+        es: «Gogoa» son las ganas y «asmoa» la intención; el verbo va en -t(z)eko delante (joateko, egiteko) y detrás «dut» o «daukat». Para proponer un plan se pregunta «Baduzu … gogorik?».
+        eu: «Gogoa» eta «asmoa» hitzen aurretik aditza -t(z)eko forman doa (joateko, egiteko), eta ondoren «dut» edo «daukat». Plan bat proposatzeko «Baduzu … gogorik?» galdetzen da.
+      examples:
+        - eu: Mendira joateko gogoa daukat.
+          es: Tengo ganas de ir al monte.
+        - eu: Bihar txango bat egiteko asmoa dut.
+          es: Mañana pienso hacer una excursión.
+        - eu: Baduzu zinemara joateko gogorik?
+          es: ¿Te apetece ir al cine?
+    - title:
+        es: "Condiciones: ba-"
+        eu: "Baldintzak: ba-"
+      body:
+        es: «Si» se expresa pegando «ba-» al verbo conjugado (badu, bazaude, bada). La consecuencia suele ir en futuro (joango gara).
+        eu: Baldintza adierazteko «ba-» jartzen zaio aditz jokatuari (badu, bazaude, bada). Ondorioa geroaldian joan ohi da.
+      examples:
+        - eu: Eguraldi ona egiten badu, mendira joango gara.
+          es: Si hace buen tiempo, iremos al monte.
+        - eu: Libre bazaude, zinemara joango gara.
+          es: Si estás libre, iremos al cine.
+    - title:
+        es: "El pasado: nintzen, nuen"
+        eu: "Iragana: nintzen, nuen"
+      body:
+        es: Pasado de «izan» (nintzen, zinen, zen, ginen…) y de «ukan» (nuen, zenuen, zuen, genuen…). Con el verbo en -t(z)en indica costumbre, como el imperfecto español (iba, jugaba).
+        eu: «Izan» (nintzen, zinen, zen, ginen…) eta «ukan» (nuen, zenuen, zuen, genuen…) aditzen iragana. Aditza -t(z)en forman badago, ohitura adierazten du.
+      examples:
+        - eu: Atzo zinemara joan nintzen.
+          es: Ayer fui al cine.
+        - eu: Txikitan bizikletaz joaten nintzen eskolara.
+          es: De pequeño iba a la escuela en bicicleta.
+        - eu: Gaztetan dantza asko egiten nuen.
+          es: De joven bailaba mucho.
+    - title:
+        es: "Porcentajes: ehuneko"
+        eu: "Ehunekoak"
+      body:
+        es: "Los porcentajes se dicen con «ehuneko» delante del número (ehuneko hogei = 20 %). Si el verbo lleva «-k», el número también: «ehuneko berrogeik»."
+        eu: Ehunekoak «ehuneko» hitzarekin esaten dira zenbakiaren aurretik. Aditza nork motakoa bada, zenbakiak «-k» hartzen du.
+      examples:
+        - eu: Gazteen ehuneko berrogeik kirola egiten du.  # TODO(revisión-nativa): verb agreement with ehuneko (du / dute)
+          es: El cuarenta por ciento de los jóvenes hace deporte.
+        - eu: Ehuneko hamar autoz joaten da lanera.
+          es: El diez por ciento va a trabajar en coche.
+levels:
+  - type: lesson
+    title:
+      es: Excursiones
+      eu: Txangoak
+    lessons:
+      - structures: [garraioa, nola-instrumental]
+        sentences:
+          - Autoz joango gara mendira. = Iremos al monte en coche. | Vamos a ir al monte en coche.
+          - Bizikletaz joaten naiz lanera. = Voy a trabajar en bicicleta. | Voy al trabajo en bici. | Voy al trabajo en bicicleta.
+          - Hegazkinez joango gara Londresera. = Iremos a Londres en avión. | Vamos a ir a Londres en avión.
+          - Etxetik eskolara oinez noa. = Voy andando de casa a la escuela. | Voy a pie de casa a la escuela. | Voy de casa a la escuela a pie.
+          - Asteburuan txango bat egingo dugu. = El fin de semana haremos una excursión. | El fin de semana vamos a hacer una excursión.
+          - Noraino joango gara? = ¿Hasta dónde iremos? | ¿Hasta dónde vamos a ir?
+          - Nire autoa berria da. = Mi coche es nuevo.
+          - Bizikleta gorri bat erosi dut. = Me he comprado una bicicleta roja. | He comprado una bicicleta roja.
+        pairs:
+          - - auto = coche
+            - bizikleta = bicicleta
+            - hegazkin = avión
+            - oinez = a pie
+            - txango = excursión
+            - noraino = hasta dónde
+        meanings:
+          - text: Etxetik eskolara oinez noa.
+            options:
+              - Voy andando de casa a la escuela.
+              - Voy en coche de casa a la escuela.
+              - Vengo andando de la escuela a casa.
+        blanks:
+          - text: ___ joango gara Londresera. = Iremos a Londres en avión.
+            options:
+              - Hegazkinez
+              - Hegazkinera
+              - Hegazkina
+        chats:
+          - messages:
+              - Uxue | Nola zoaz lanera?
+            options:
+              - Bizikletaz.
+              - Lanean.
+              - Bihar.
+        true_false:
+          - passage: Nik ez daukat autorik. Lanera oinez noa.
+            statement: La persona que habla va a trabajar en coche.
+            answer: false
+      - structures: [gogoa, asmoa]
+        sentences:
+          - Mendira joateko gogoa daukat. = Tengo ganas de ir al monte.
+          - Ez daukat ikasteko gogorik. = No tengo ganas de estudiar.
+          - Bihar txango bat egiteko asmoa dut. = Mañana tengo intención de hacer una excursión. | Mañana pienso hacer una excursión.
+          - Zer asmo daukazu astebururako? = ¿Qué planes tienes para el fin de semana? | ¿Qué plan tienes para el fin de semana? | ¿Qué planes tiene usted para el fin de semana?
+          - Mendia gustuko dut. = Me gusta el monte.
+          - Zer duzu gustuko? = ¿Qué te gusta? | ¿Qué le gusta?
+          - Anek bizikleta gustuko du. = A Ane le gusta la bici. | A Ane le gusta la bicicleta.
+          - Jonek film bat ikusteko gogoa du. = Jon tiene ganas de ver una película.
+        pairs:
+          - - gogo = ganas
+            - asmo = intención
+            - gustuko izan = gustar
+            - txango = excursión
+            - auto = coche
+        meanings:
+          - text: Ez daukat ikasteko gogorik.
+            options:
+              - No tengo ganas de estudiar.
+              - No tengo tiempo para estudiar.
+              - Tengo ganas de estudiar.
+        blanks:
+          - text: Mendira joateko ___ daukat. = Tengo ganas de ir al monte.
+            options:
+              - gogoa
+              - asmoa
+              - gustuko
+        chats:
+          - messages:
+              - Gorka | Zer asmo daukazu astebururako?
+            options:
+              - Txango bat egiteko asmoa daukat.
+              - Bizikletaz.
+              - Ez dakit gidatzen.
+        true_false:
+          - passage: Nahiak ez du hondartza gustuko. Mendia gustuko du.
+            statement: A Nahia le gusta la playa.
+            answer: false
+      - structures: [ehuneko, gustuko-izan]
+        sentences:
+          - Gazteen ehuneko berrogeik kirola egiten du. = El cuarenta por ciento de los jóvenes hace deporte. | Un cuarenta por ciento de los jóvenes hace deporte.  # TODO(revisión-nativa): agreement du / dute after ehuneko
+          - Ehuneko hirurogeik musika gustuko du. = Al sesenta por ciento le gusta la música.
+          - Ikasleen ehuneko hogeita hamar oinez joaten da eskolara. = El treinta por ciento de los alumnos va a pie a la escuela. | El treinta por ciento de los estudiantes va andando a la escuela.
+          - Ehuneko hamar autoz joaten da lanera. = El diez por ciento va a trabajar en coche. | El diez por ciento va al trabajo en coche.
+          - Ehuneko zenbat? = ¿Qué porcentaje? | ¿Cuánto por ciento?
+          - Gazteen ehuneko laurogeik ordenagailua erabiltzen du egunero. = El ochenta por ciento de los jóvenes usa el ordenador todos los días.
+          - Txangoak asko gustuko ditut. = Me gustan mucho las excursiones.
+          - Ez dut autoa gustuko. = No me gusta el coche.
+        pairs:
+          - - ehuneko = por ciento
+            - berrogei = cuarenta
+            - hirurogei = sesenta
+            - laurogei = ochenta
+            - hamar = diez
+        meanings:
+          - text: Ehuneko hamar autoz joaten da lanera.
+            options:
+              - El diez por ciento va a trabajar en coche.
+              - El cien por cien va a trabajar en coche.
+              - Diez personas van a trabajar en coche.
+        blanks:
+          - text: Gazteen ___ berrogeik kirola egiten du. = El cuarenta por ciento de los jóvenes hace deporte.
+            options:
+              - ehuneko
+              - asmo
+              - gogo
+        chats:
+          - messages:
+              - Kepa | Ikasleen ehuneko zenbatek egiten du kirola?
+            options:
+              - Ehuneko hirurogeik.
+              - Hirurogei urte.
+              - Kiroldegian.
+        true_false:
+          - passage: Gure herrian, ehuneko hogeik bizikleta erabiltzen du lanera joateko.
+            statement: El veinte por ciento usa la bicicleta para ir a trabajar.
+            answer: true
+  - type: lesson
+    title:
+      es: Si te apetece…
+      eu: Gogoa baduzu…
+    lessons:
+      - structures: [gogoa, ba-gogorik]
+        sentences:
+          - Baduzu zinemara joateko gogorik? = ¿Tienes ganas de ir al cine? | ¿Te apetece ir al cine? | ¿Le apetece ir al cine?
+          - Bai, film bat ikusteko gogoa daukat. = Sí, tengo ganas de ver una película. | Sí, me apetece ver una película.
+          - Badaukazu txango bat egiteko gogorik? = ¿Tienes ganas de hacer una excursión? | ¿Te apetece hacer una excursión?
+          - Ez, gaur ez daukat gogorik. = No, hoy no tengo ganas. | No, hoy no me apetece.
+          - Umeek jolasteko gogoa dute. = Los niños tienen ganas de jugar.
+          - Hondartzara joateko gogoa dugu. = Tenemos ganas de ir a la playa.
+          - Zer egiteko gogoa duzu? = ¿Qué tienes ganas de hacer? | ¿Qué te apetece hacer? | ¿Qué le apetece hacer?
+          - Kontzertu batera joateko gogoa daukat. = Tengo ganas de ir a un concierto. | Me apetece ir a un concierto.
+        meanings:
+          - text: Baduzu zinemara joateko gogorik?
+            options:
+              - ¿Te apetece ir al cine?
+              - ¿Has ido al cine?
+              - ¿Dónde está el cine?
+        blanks:
+          - text: Baduzu zinemara joateko ___? = ¿Tienes ganas de ir al cine?
+            options:
+              - gogorik
+              - gogoa
+              - gogoak
+        chats:
+          - messages:
+              - Ander | Baduzu hondartzara joateko gogorik?
+            options:
+              - Bai, primeran!
+              - Bai, hondartzan nago.
+              - Ehuneko hamar.
+        true_false:
+          - passage: Gaur ez daukat gogorik. Etxean geratuko naiz.
+            statement: La persona tiene ganas de salir.
+            answer: false
+      - structures: [asmoa, baldintza]
+        sentences:
+          - Datorren urtean ingelesa ikasteko asmoa dut. = El año que viene pienso estudiar inglés. | El año que viene tengo intención de aprender inglés.
+          - Eguraldi ona egiten badu, mendira joango gara. = Si hace buen tiempo, iremos al monte. | Si hace buen tiempo, vamos al monte.
+          - Euria egiten badu, etxean geratuko gara. = Si llueve, nos quedaremos en casa. | Si llueve, nos quedamos en casa.
+          - Libre bazaude, zinemara joango gara. = Si estás libre, iremos al cine. | Si está usted libre, iremos al cine.
+          - Autoa badaukazu, Bilbora joango gara. = Si tienes coche, iremos a Bilbao. | Si tiene usted coche, iremos a Bilbao.
+          - Gogoa baduzu, bihar txango bat egingo dugu. = Si tienes ganas, mañana haremos una excursión. | Si te apetece, mañana haremos una excursión.
+          - Zer egiteko asmoa duzu oporretan? = ¿Qué piensas hacer en vacaciones? | ¿Qué tienes intención de hacer en vacaciones? | ¿Qué piensa hacer usted en vacaciones?
+          - Oporretan Parisera joateko asmoa dugu. = En vacaciones tenemos intención de ir a París. | En vacaciones pensamos ir a París.
+        meanings:
+          - text: Libre bazaude, zinemara joango gara.
+            options:
+              - Si estás libre, iremos al cine.
+              - Estás libre, vamos al cine.
+              - Si estoy libre, iré al cine.
+        blanks:
+          - text: Euria egiten ___, etxean geratuko gara. = Si llueve, nos quedaremos en casa.
+            options:
+              - badu
+              - du
+              - bada
+        chats:
+          - messages:
+              - Haizea | Zer egiteko asmoa duzu oporretan?
+            options:
+              - Parisera joateko asmoa dut.
+              - Parisen nago.
+              - Ez daukat autorik.
+        true_false:
+          - passage: Bihar eguraldi ona egiten badu, Julen hondartzara joango da.
+            statement: Julen irá a la playa pase lo que pase.
+            answer: false
+      - structures: [iragana, ohitura-iragana]
+        sentences:
+          - Txikitan bizikletaz joaten nintzen eskolara. = De pequeño iba a la escuela en bicicleta. | De pequeña iba a la escuela en bicicleta. | De pequeño iba a la escuela en bici.
+          - Gaztetan dantza asko egiten nuen. = De joven bailaba mucho. | Cuando era joven bailaba mucho.
+          - Lehen futbolean jolasten genuen. = Antes jugábamos al fútbol.
+          - Iaz mendira txango bat egin genuen. = El año pasado hicimos una excursión al monte.
+          - Atzo zinemara joan nintzen. = Ayer fui al cine.
+          - Hegazkinez joan ginen Parisera. = Fuimos a París en avión.
+          - Nire amonak asko abesten zuen. = Mi abuela cantaba mucho.
+          - Atzo kontzertuan izan zinen? = ¿Ayer estuviste en el concierto? | ¿Estuviste ayer en el concierto? | ¿Estuvo usted ayer en el concierto?
+        meanings:
+          - text: Nire amonak asko abesten zuen.
+            options:
+              - Mi abuela cantaba mucho.
+              - Mi abuela canta mucho.
+              - Mi abuela bailaba mucho.
+        blanks:
+          - text: Atzo zinemara joan ___. = Ayer fui al cine.
+            options:
+              - nintzen
+              - nuen
+              - naiz
+          - text: Gaztetan dantza asko egiten ___. = De joven bailaba mucho.
+            options:
+              - nuen
+              - nintzen
+              - zuen
+        chats:
+          - messages:
+              - Alaitz | Zer egin zenuen atzo?
+            options:
+              - Zinemara joan nintzen.
+              - Zinemara joango naiz.
+              - Zinemara joan zinen.
+        true_false:
+          - passage: Txikitan Unai asteburuetan hondartzara joaten zen. Orain mendia gustuko du.
+            statement: De pequeño, Unai iba a la playa los fines de semana.
+            answer: true
+  - type: lesson
+    title:
+      es: Hacemos planes
+      eu: Planak egiten
+    lessons:
+      - structures: [ba-gogorik, asmoa]
+        sentences:
+          - Zer asmo duzu larunbaterako? = ¿Qué planes tienes para el sábado? | ¿Qué plan tienes para el sábado? | ¿Qué planes tiene usted para el sábado?
+          - Ez dakit. Baduzu txango bat egiteko gogorik? = No sé. ¿Te apetece hacer una excursión? | No lo sé. ¿Tienes ganas de hacer una excursión?
+          - Bai! Noraino joango gara? = ¡Sí! ¿Hasta dónde iremos? | ¡Sí! ¿Hasta dónde vamos a ir?
+          - Lekeitioraino, bizikletaz. = Hasta Lekeitio, en bici. | Hasta Lekeitio, en bicicleta.
+          - Oso urrun dago! Autoz joango gara? = ¡Está muy lejos! ¿Vamos en coche? | ¡Está muy lejos! ¿Iremos en coche?
+          - Ados, autoz. = Vale, en coche. | De acuerdo, en coche.
+        chats:
+          - messages:
+              - Eneko | Baduzu larunbatean mendira joateko gogorik?
+            options:
+              - Bai! Zer ordutan?
+              - Bai, mendian nago.
+              - Ez, ez dakit.
+          - messages:
+              - Amaia | Txango bat egiteko asmoa dut.
+              - Peio | Nora?
+              - Amaia | Hondarribiara. Etorri nahi duzu?
+            options:
+              - Bai, gogoa daukat!
+              - Bai, Hondarribian.
+              - Ehuneko hogei.
+        true_false:
+          - passage: Igandean txango bat egiteko asmoa dugu. Getxotik Bilboraino bizikletaz joango gara.
+            statement: Irán en bicicleta hasta Bilbao.
+            answer: true
+          - passage: Olatzek ez dauka mendira joateko gogorik. Zinemara joan nahi du.
+            statement: Olatz quiere ir al monte.
+            answer: false
+        meanings:
+          - text: Zer asmo duzu larunbaterako?
+            options:
+              - ¿Qué planes tienes para el sábado?
+              - ¿Qué hiciste el sábado?
+              - ¿Dónde estás el sábado?
+      - structures: [baldintza]
+        sentences:
+          - Bihar eguzkia badago, hondartzara joango gara. = Si mañana hace sol, iremos a la playa. | Si mañana hace sol, vamos a la playa.
+          - Hotz egiten badu, museora joango gara. = Si hace frío, iremos al museo. | Si hace frío, vamos al museo.
+          - Nekatuta bazaude, etxean geratuko gara. = Si estás cansado, nos quedaremos en casa. | Si estás cansada, nos quedaremos en casa.
+          - Dirua badaukazu, kontzertura joango gara. = Si tienes dinero, iremos al concierto.
+          - Oinez joaten bazara, ordu bat behar duzu. = Si vas a pie, necesitas una hora. | Si vas andando, necesitas una hora.
+          - Gogoa badut, etorriko naiz. = Si tengo ganas, vendré. | Si me apetece, vendré.
+        chats:
+          - messages:
+              - Xabier | Bihar mendira goaz?
+            options:
+              - Eguraldi ona egiten badu, bai.
+              - Atzo mendira joan nintzen.
+              - Mendia gustuko zuen.
+          - messages:
+              - Miren | Kontzertura joango gara?
+              - Asier | Ez daukat dirurik.
+              - Miren | Nik dirua daukat. Etorri nahi duzu?
+            options:
+              - Ados, eskerrik asko!
+              - Ez horregatik.
+              - Bai, atzo joan nintzen.
+        true_false:
+          - passage: Euria egiten badu, Garazi eta Oier zinemara joango dira.
+            statement: Si llueve, irán al cine.
+            answer: true
+          - passage: Nekatuta badago, Ibai etxean geratuko da.
+            statement: Ibai irá a la playa aunque esté cansado.
+            answer: false
+        blanks:
+          - text: Nekatuta ___, etxean geratuko gara. = Si estás cansado, nos quedaremos en casa.
+            options:
+              - bazaude
+              - zaude
+              - badago
+      - structures: [iragana, ohitura-iragana]
+        sentences:
+          - Txikitan zer egiten zenuen asteburuetan? = De pequeño, ¿qué hacías los fines de semana? | De pequeña, ¿qué hacías los fines de semana?
+          - Aitonarekin mendira joaten nintzen. = Iba al monte con mi abuelo. | Iba al monte con el abuelo.
+          - Igandeetan oinez joaten ginen hondartzara. = Los domingos íbamos a pie a la playa. | Los domingos íbamos andando a la playa.
+          - Gaztetan saskibaloian jolasten nuen. = De joven jugaba al baloncesto.
+          - Nire amak oso ondo abesten zuen. = Mi madre cantaba muy bien.
+          - Orain ez daukat aisialdirik. = Ahora no tengo tiempo libre.
+        chats:
+          - messages:
+              - Nerea | Txikitan zer egiten zenuen oporretan?
+            options:
+              - Hondartzara joaten nintzen.
+              - Hondartzara joango naiz.
+              - Hondartza gustuko dut.
+          - messages:
+              - June | Gaztetan kirola egiten zenuen?
+              - Kepa | Bai, futbolean jolasten nuen.
+              - June | Eta orain?
+            options:
+              - Orain bizikletaz joaten naiz lanera.
+              - Lehen jolasten nuen.
+              - Atzo jolastu nuen.
+        true_false:
+          - passage: Txikitan Arantza aitonarekin mendira joaten zen. Aitonak asko abesten zuen.
+            statement: El abuelo de Arantza cantaba mucho.
+            answer: true
+          - passage: Lehen Patxik asko irakurtzen zuen. Orain ez dauka aisialdirik.
+            statement: Patxi tiene ahora mucho tiempo libre.
+            answer: false
+        meanings:
+          - text: Aitonarekin mendira joaten nintzen.
+            options:
+              - Iba al monte con mi abuelo.
+              - Voy al monte con mi abuelo.
+              - Fui al monte con mi abuelo.
+  - type: story
+    title:
+      es: "Historia: la excursión"
+      eu: "Istorioa: txangoa"
+    story:
+      title: Txangoa
+      lines:
+        - Alaitz | Oier, baduzu larunbatean txango bat egiteko gogorik? = Oier, ¿te apetece hacer una excursión el sábado?
+        - Oier | Bai! Nora joateko asmoa duzu? = ¡Sí! ¿Adónde piensas ir?
+        - Alaitz | Durangoko mendietara. = A los montes de Durango.
+        - Oier | Primeran! Txikitan aitarekin Durangora joaten nintzen. = ¡Genial! De pequeño iba a Durango con mi padre.
+        - Alaitz | Nola joango gara? Autoz? = ¿Cómo iremos? ¿En coche?
+        - Oier | Ez daukat autorik. Trenez joango gara? = No tengo coche. ¿Vamos en tren?
+        - Alaitz | Ados. Eta geltokitik mendiraino oinez. = Vale. Y desde la estación hasta el monte, a pie.
+        - Oier | Eta euria egiten badu? = ¿Y si llueve?
+        - Alaitz | Euria egiten badu, museora joango gara. = Si llueve, iremos al museo.
+        - Oier | Ondo. Zortzietan geltokian? = Bien. ¿A las ocho en la estación?
+        - Alaitz | Bai, zortzietan. Gero arte! = Sí, a las ocho. ¡Hasta luego!
+      questions:
+        - afterLine: 1
+          prompt: ¿Qué propone Alaitz?
+          options:
+            - Hacer una excursión el sábado
+            - Ir al cine el sábado
+            - Ir a casa del padre de Oier
+        - afterLine: 5
+          prompt: ¿Por qué no irán en coche?
+          options:
+            - Porque Oier no tiene coche
+            - Porque es caro
+            - Porque está muy lejos
+        - afterLine: 10
+          prompt: ¿Qué harán si llueve?
+          options:
+            - Ir al museo
+            - Quedarse en casa
+            - Ir en coche
+  - type: review
+  - type: legendary

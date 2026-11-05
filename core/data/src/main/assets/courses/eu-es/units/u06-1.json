@@ -1,0 +1,2668 @@
+{
+  "schemaVersion": 1,
+  "id": "u06-1",
+  "section": "s2",
+  "bookUnit": 6,
+  "title": {
+    "es": "En la tienda",
+    "eu": "Dendan"
+  },
+  "goals": [
+    {
+      "es": "Hacer la compra diaria en tiendas y centros comerciales.",
+      "eu": "Eguneroko erosketak egin dendetan eta merkataritza-guneetan."
+    },
+    {
+      "es": "Pedir un producto, preguntar el precio y pagar.",
+      "eu": "Produktu bat eskatu, prezioa galdetu eta ordaindu."
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Quiero comprar: erosi nahi dut",
+          "eu": "Erosi nahi dut"
+        },
+        "body": {
+          "es": "Para decir lo que quieres hacer, pon el verbo y después «nahi dut / duzu / du». Con varias cosas, el auxiliar va en plural: erosi nahi ditut.",
+          "eu": "Zer egin nahi duzun esateko: aditza eta gero «nahi dut / duzu / du». Gauza bat baino gehiago badira, laguntzailea pluralean: erosi nahi ditut."
+        },
+        "examples": [
+          {
+            "eu": "Ogia erosi nahi dut.",
+            "es": "Quiero comprar pan."
+          },
+          {
+            "eu": "Zer erosi nahi duzu?",
+            "es": "¿Qué quieres comprar?"
+          },
+          {
+            "eu": "Anek sagarrak erosi nahi ditu.",
+            "es": "Ane quiere comprar manzanas."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Tiendas: -tegi / -degi",
+          "eu": "Dendak: -tegi / -degi"
+        },
+        "body": {
+          "es": "Muchas tiendas se forman con el producto + -tegi o -degi: haragi → harategi, arrain → arrandegi, y también okindegi. Otras llevan «denda»: frutadenda, liburu-denda.",
+          "eu": "Denda askoren izena produktua + -tegi edo -degi da: haragi → harategi, arrain → arrandegi, eta okindegi ere bai. Beste batzuek «denda» dute: frutadenda, liburu-denda."
+        },
+        "examples": [
+          {
+            "eu": "Harategian haragia dago.",
+            "es": "En la carnicería hay carne."
+          },
+          {
+            "eu": "Arrandegian arraina dago.",
+            "es": "En la pescadería hay pescado."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "¿Cuánto es? Zenbat da?",
+          "eu": "Zenbat da?"
+        },
+        "body": {
+          "es": "Para el precio, «Zenbat da?» o «Zenbat balio du?». Con varias cosas, «Zenbat dira?». Después de un número, «euro» no lleva artículo: hiru euro.",
+          "eu": "Prezioa galdetzeko, «Zenbat da?» edo «Zenbat balio du?». Gauza bat baino gehiago badira, «Zenbat dira?». Zenbakiaren ondoren, «euro» artikulurik gabe: hiru euro."
+        },
+        "examples": [
+          {
+            "eu": "Zenbat da?",
+            "es": "¿Cuánto es?"
+          },
+          {
+            "eu": "Hiru euro dira.",
+            "es": "Son tres euros."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Pagar",
+          "eu": "Ordaindu"
+        },
+        "body": {
+          "es": "Con tarjeta se dice «txartelarekin» y en efectivo, «eskudirutan». El dependiente suele preguntar: «Txartelarekin ala eskudirutan?»",
+          "eu": "Txartelarekin edo eskudirutan ordain daiteke. Saltzaileak galdetzen du: «Txartelarekin ala eskudirutan?»"
+        },
+        "examples": [
+          {
+            "eu": "Txartelarekin ala eskudirutan?",
+            "es": "¿Con tarjeta o en efectivo?"
+          },
+          {
+            "eu": "Eskudirutan ordaindu nahi dut.",
+            "es": "Quiero pagar en efectivo."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u06-1.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Tiendas",
+        "eu": "Dendak"
+      },
+      "lessons": [
+        {
+          "id": "u06-1.l1.s1",
+          "exercises": [
+            {
+              "id": "u06-1.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "En la panadería hay pan."
+              },
+              "answers": [
+                "Okindegian ogia dago."
+              ],
+              "distractors": [
+                "honetan",
+                "eta"
+              ],
+              "vocabulary": [
+                "okindegi",
+                "ogi",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e02",
+              "type": "listen_tap",
+              "text": "Harategia plazan dago.",
+              "distractors": [
+                "Arrandegian",
+                "supermerkatua"
+              ],
+              "vocabulary": [
+                "harategi",
+                "plaza",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "okindegi",
+                  "es": "panadería"
+                },
+                {
+                  "eu": "harategi",
+                  "es": "carnicería"
+                },
+                {
+                  "eu": "arrandegi",
+                  "es": "pescadería"
+                },
+                {
+                  "eu": "frutadenda",
+                  "es": "frutería"
+                },
+                {
+                  "eu": "supermerkatu",
+                  "es": "supermercado"
+                },
+                {
+                  "eu": "liburu-denda",
+                  "es": "librería"
+                }
+              ],
+              "vocabulary": [
+                "okindegi",
+                "harategi",
+                "arrandegi",
+                "frutadenda",
+                "supermerkatu",
+                "liburu-denda"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "En la pescadería hay pescado."
+              },
+              "answers": [
+                "Arrandegian arraina dago."
+              ],
+              "vocabulary": [
+                "arrandegi",
+                "arrain",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e05",
+              "type": "fill_blank",
+              "sentence": "___ ogia dago.",
+              "options": [
+                "Okindegian",
+                "Harategian"
+              ],
+              "correct": 0,
+              "translation": "En la panadería hay pan.",
+              "vocabulary": [
+                "okindegi",
+                "ogi",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e06",
+              "type": "order_sentence",
+              "answer": "Frutadenda okindegiaren ondoan dago.",
+              "translation": "La frutería está al lado de la panadería.",
+              "vocabulary": [
+                "frutadenda",
+                "okindegi",
+                "ondoan",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e07",
+              "type": "choose_meaning",
+              "text": "Arrandegian arraina dago.",
+              "options": [
+                "En la pescadería hay pescado.",
+                "En la carnicería hay pescado.",
+                "En la panadería hay pan."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "arrandegi",
+                "arrain",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Non dago supermerkatua?"
+              },
+              "answers": [
+                "¿Dónde está el supermercado?"
+              ],
+              "vocabulary": [
+                "non",
+                "egon",
+                "supermerkatu"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Itziar",
+                  "text": "Barkatu, non dago okindegia?"
+                }
+              ],
+              "options": [
+                "Okindegia plazan dago.",
+                "Ogia gustatzen zait.",
+                "Zorionak!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "barkatu",
+                "non",
+                "egon",
+                "okindegi",
+                "plaza"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e10",
+              "type": "listen_type",
+              "text": "Liburu-denda kale honetan dago.",
+              "answers": [
+                "Liburu-denda kale honetan dago."
+              ],
+              "vocabulary": [
+                "liburu-denda",
+                "kale",
+                "hau",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e11",
+              "type": "read_true_false",
+              "passage": "Kale honetan harategi bat eta frutadenda bat daude. Okindegia plazan dago.",
+              "statement": "La panadería está en esta calle.",
+              "answer": false,
+              "vocabulary": [
+                "kale",
+                "hau",
+                "harategi",
+                "bat",
+                "eta",
+                "frutadenda",
+                "egon",
+                "okindegi",
+                "plaza"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e12",
+              "type": "speak",
+              "text": "Harategian oilaskoa eta haragia daude.",
+              "translation": "En la carnicería hay pollo y carne.",
+              "vocabulary": [
+                "harategi",
+                "oilasko",
+                "eta",
+                "haragi",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Frutadendan sagarrak eta laranjak daude."
+              },
+              "answers": [
+                "En la frutería hay manzanas y naranjas."
+              ],
+              "distractors": [
+                "pescado",
+                "plaza",
+                "de",
+                "librería"
+              ],
+              "vocabulary": [
+                "frutadenda",
+                "sagar",
+                "eta",
+                "laranja",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u06-1.l1.s2",
+          "exercises": [
+            {
+              "id": "u06-1.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Saltzailea dendan dago.",
+              "distractors": [
+                "dirurik",
+                "Txartela"
+              ],
+              "vocabulary": [
+                "saltzaile",
+                "denda",
+                "egon"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Los clientes están en el supermercado."
+              },
+              "answers": [
+                "Bezeroak supermerkatuan daude."
+              ],
+              "vocabulary": [
+                "bezero",
+                "supermerkatu",
+                "egon"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "saltzaile",
+                  "es": "vendedor"
+                },
+                {
+                  "eu": "bezero",
+                  "es": "cliente"
+                },
+                {
+                  "eu": "txartel",
+                  "es": "tarjeta"
+                },
+                {
+                  "eu": "eskudiru",
+                  "es": "dinero en efectivo"
+                },
+                {
+                  "eu": "diru",
+                  "es": "dinero"
+                },
+                {
+                  "eu": "denda",
+                  "es": "tienda"
+                }
+              ],
+              "vocabulary": [
+                "saltzaile",
+                "bezero",
+                "txartel",
+                "eskudiru",
+                "diru",
+                "denda"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e04",
+              "type": "order_sentence",
+              "answer": "Merkataritza-gunea urrun dago.",
+              "translation": "El centro comercial está lejos.",
+              "vocabulary": [
+                "merkataritza-gune",
+                "urrun",
+                "egon"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Eskudirua ___ dut.",
+              "options": [
+                "behar",
+                "nahiago"
+              ],
+              "correct": 0,
+              "translation": "Necesito dinero en efectivo.",
+              "vocabulary": [
+                "eskudiru",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Merkataritza-gunean supermerkatu bat dago."
+              },
+              "answers": [
+                "En el centro comercial hay un supermercado."
+              ],
+              "vocabulary": [
+                "merkataritza-gune",
+                "supermerkatu",
+                "bat",
+                "egon"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e07",
+              "type": "choose_meaning",
+              "text": "Ez daukat dirurik.",
+              "options": [
+                "No tengo dinero.",
+                "No tengo tarjeta.",
+                "Tengo dinero."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "eduki",
+                "diru"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e08",
+              "type": "listen_type",
+              "text": "Txartela daukazu?",
+              "answers": [
+                "Txartela daukazu?"
+              ],
+              "vocabulary": [
+                "txartel",
+                "eduki"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Txartela ala eskudirua?"
+                }
+              ],
+              "options": [
+                "Txartela, mesedez.",
+                "Okindegia, mesedez.",
+                "Egun on, Ane."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "txartel",
+                "eskudiru",
+                "mesedez"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e10",
+              "type": "speak",
+              "text": "Ez daukat dirurik.",
+              "translation": "No tengo dinero.",
+              "vocabulary": [
+                "ez",
+                "eduki",
+                "diru"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e11",
+              "type": "read_true_false",
+              "passage": "Jonek ez dauka dirurik. Txartela dauka.",
+              "statement": "Jon tiene tarjeta.",
+              "answer": true,
+              "vocabulary": [
+                "ez",
+                "eduki",
+                "diru",
+                "txartel"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Eskudirua behar dut."
+              },
+              "answers": [
+                "Necesito dinero en efectivo.",
+                "Necesito efectivo."
+              ],
+              "distractors": [
+                "están",
+                "un",
+                "tengo"
+              ],
+              "vocabulary": [
+                "eskudiru",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "El cliente quiere pan."
+              },
+              "answers": [
+                "Bezeroak ogia nahi du."
+              ],
+              "distractors": [
+                "daukat",
+                "dendan",
+                "daukazu"
+              ],
+              "vocabulary": [
+                "bezero",
+                "ogi",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u06-1.l1.s3",
+          "exercises": [
+            {
+              "id": "u06-1.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Cuánto es?"
+              },
+              "answers": [
+                "Zenbat da?"
+              ],
+              "vocabulary": [
+                "zenbat",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e02",
+              "type": "order_sentence",
+              "answer": "Ogi bat, mesedez. Zenbat da?",
+              "translation": "Un pan, por favor. ¿Cuánto es?",
+              "vocabulary": [
+                "ogi",
+                "bat",
+                "mesedez",
+                "zenbat",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "merke",
+                  "es": "barato"
+                },
+                {
+                  "eu": "garesti",
+                  "es": "caro"
+                },
+                {
+                  "eu": "prezio",
+                  "es": "precio"
+                },
+                {
+                  "eu": "zenbat",
+                  "es": "cuánto"
+                },
+                {
+                  "eu": "ordaindu",
+                  "es": "pagar"
+                },
+                {
+                  "eu": "erosi",
+                  "es": "comprar"
+                }
+              ],
+              "vocabulary": [
+                "merke",
+                "garesti",
+                "prezio",
+                "zenbat",
+                "ordaindu",
+                "erosi"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hiru euro dira."
+              },
+              "answers": [
+                "Son tres euros."
+              ],
+              "vocabulary": [
+                "hiru",
+                "euro",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e05",
+              "type": "fill_blank",
+              "sentence": "___ da gazta hau?",
+              "options": [
+                "Zenbat",
+                "Non"
+              ],
+              "correct": 0,
+              "translation": "¿Cuánto es este queso?",
+              "vocabulary": [
+                "zenbat",
+                "izan",
+                "gazta",
+                "hau"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e06",
+              "type": "listen_type",
+              "text": "Sagarrak merkeak dira.",
+              "answers": [
+                "Sagarrak merkeak dira."
+              ],
+              "vocabulary": [
+                "sagar",
+                "merke",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e07",
+              "type": "choose_meaning",
+              "text": "Zenbat da?",
+              "options": [
+                "¿Cuánto es?",
+                "¿Dónde está?",
+                "¿Qué es?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zenbat",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e08",
+              "type": "speak",
+              "text": "Arraina garestia da.",
+              "translation": "El pescado es caro.",
+              "vocabulary": [
+                "arrain",
+                "garesti",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Bost euro dira."
+                }
+              ],
+              "options": [
+                "Hemen daukazu.",
+                "Ez horregatik.",
+                "Zorionak!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bost",
+                "euro",
+                "izan",
+                "hemen",
+                "eduki"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zenbat da gazta hau?"
+              },
+              "answers": [
+                "¿Cuánto es este queso?",
+                "¿Cuánto cuesta este queso?"
+              ],
+              "distractors": [
+                "favor",
+                "baratas",
+                "por"
+              ],
+              "vocabulary": [
+                "zenbat",
+                "izan",
+                "gazta",
+                "hau"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e11",
+              "type": "read_true_false",
+              "passage": "Ogia merkea da, euro bat. Gazta garestia da, hamar euro.",
+              "statement": "El queso cuesta diez euros.",
+              "answer": true,
+              "vocabulary": [
+                "ogi",
+                "merke",
+                "izan",
+                "euro",
+                "bat",
+                "gazta",
+                "garesti",
+                "hamar"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Son veinticinco euros."
+              },
+              "answers": [
+                "Hogeita bost euro dira."
+              ],
+              "distractors": [
+                "merkeak",
+                "Hau",
+                "Arraina"
+              ],
+              "vocabulary": [
+                "hogei",
+                "bost",
+                "euro",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e13",
+              "type": "listen_tap",
+              "text": "Hau oso merkea da!",
+              "distractors": [
+                "Hogeita",
+                "mesedez",
+                "Zenbat"
+              ],
+              "vocabulary": [
+                "hau",
+                "oso",
+                "merke",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u06-1.l2",
+      "type": "lesson",
+      "title": {
+        "es": "Quiero comprar",
+        "eu": "Erosi nahi dut"
+      },
+      "lessons": [
+        {
+          "id": "u06-1.l2.s1",
+          "exercises": [
+            {
+              "id": "u06-1.l2.s1.e01",
+              "type": "order_sentence",
+              "answer": "Ogia erosi nahi dut.",
+              "translation": "Quiero comprar pan.",
+              "vocabulary": [
+                "ogi",
+                "erosi",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer erosi nahi duzu?"
+              },
+              "answers": [
+                "¿Qué quieres comprar?",
+                "¿Qué quiere comprar?"
+              ],
+              "vocabulary": [
+                "zer",
+                "erosi",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e03",
+              "type": "fill_blank",
+              "sentence": "Ogia erosi ___ dut.",
+              "options": [
+                "nahi",
+                "behar"
+              ],
+              "correct": 0,
+              "translation": "Quiero comprar pan.",
+              "vocabulary": [
+                "ogi",
+                "erosi",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e04",
+              "type": "listen_type",
+              "text": "Arraina erosi nahi dugu.",
+              "answers": [
+                "Arraina erosi nahi dugu."
+              ],
+              "vocabulary": [
+                "arrain",
+                "erosi",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Txartelarekin ___ nahi dut.",
+              "options": [
+                "ordaindu",
+                "erosi"
+              ],
+              "correct": 0,
+              "translation": "Quiero pagar con tarjeta.",
+              "vocabulary": [
+                "txartel",
+                "ordaindu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e06",
+              "type": "speak",
+              "text": "Anek sagarrak erosi nahi ditu.",
+              "translation": "Ane quiere comprar manzanas.",
+              "vocabulary": [
+                "sagar",
+                "erosi",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e07",
+              "type": "choose_meaning",
+              "text": "Arraina erosi nahi dugu.",
+              "options": [
+                "Queremos comprar pescado.",
+                "Queremos vender pescado.",
+                "Necesitamos pescado."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "arrain",
+                "erosi",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Txartelarekin ordaindu nahi dut."
+              },
+              "answers": [
+                "Quiero pagar con tarjeta."
+              ],
+              "distractors": [
+                "casa",
+                "Queremos",
+                "en"
+              ],
+              "vocabulary": [
+                "txartel",
+                "ordaindu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Kaixo! Zer nahi duzu?"
+                }
+              ],
+              "options": [
+                "Ogi bat erosi nahi dut.",
+                "Ogi bat erosi nahi du.",
+                "Ogi bat gustatzen zait."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "zer",
+                "nahi izan",
+                "ukan",
+                "ogi",
+                "bat",
+                "erosi"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Quieres pagar en efectivo?"
+              },
+              "answers": [
+                "Eskudirutan ordaindu nahi duzu?",
+                "Eskudiruz ordaindu nahi duzu?"
+              ],
+              "distractors": [
+                "dute",
+                "Arraina",
+                "hau"
+              ],
+              "vocabulary": [
+                "eskudiru",
+                "ordaindu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e11",
+              "type": "read_true_false",
+              "passage": "Mikelek oilaskoa erosi nahi du. Txartelarekin ordaindu nahi du.",
+              "statement": "Mikel quiere pagar en efectivo.",
+              "answer": false,
+              "vocabulary": [
+                "oilasko",
+                "erosi",
+                "nahi izan",
+                "ukan",
+                "txartel",
+                "ordaindu"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e12",
+              "type": "listen_tap",
+              "text": "Etxe hau saldu nahi dute.",
+              "distractors": [
+                "ditu",
+                "Arraina",
+                "Ogia"
+              ],
+              "vocabulary": [
+                "etxe",
+                "hau",
+                "saldu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s1.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Quiero comprar en el supermercado."
+              },
+              "answers": [
+                "Supermerkatuan erosi nahi dut."
+              ],
+              "vocabulary": [
+                "supermerkatu",
+                "erosi",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u06-1.l2.s2",
+          "exercises": [
+            {
+              "id": "u06-1.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez dut hemen erosi nahi."
+              },
+              "answers": [
+                "No quiero comprar aquí."
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "hemen",
+                "erosi",
+                "nahi izan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e02",
+              "type": "listen_type",
+              "text": "Bilbon bizi nahi dut.",
+              "answers": [
+                "Bilbon bizi nahi dut."
+              ],
+              "vocabulary": [
+                "bizi izan",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Ez dut hemen erosi ___.",
+              "options": [
+                "nahi",
+                "behar"
+              ],
+              "correct": 0,
+              "translation": "No quiero comprar aquí.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "hemen",
+                "erosi",
+                "nahi izan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e04",
+              "type": "speak",
+              "text": "Sukaldaria izan nahi dut.",
+              "translation": "Quiero ser cocinero.",
+              "vocabulary": [
+                "sukaldari",
+                "izan",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e05",
+              "type": "choose_meaning",
+              "text": "Bilbon bizi nahi dut.",
+              "options": [
+                "Quiero vivir en Bilbao.",
+                "Vivo en Bilbao.",
+                "Quiero comprar en Bilbao."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bizi izan",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Pisu bat alokatu nahi dugu."
+              },
+              "answers": [
+                "Queremos alquilar un piso."
+              ],
+              "distractors": [
+                "la",
+                "librería",
+                "ser"
+              ],
+              "vocabulary": [
+                "pisu",
+                "bat",
+                "alokatu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Eneko",
+                  "text": "Zer erosi nahi duzu dendan?"
+                }
+              ],
+              "options": [
+                "Kafea eta esnea erosi nahi ditut.",
+                "Kafea erosi nahi zait.",
+                "Dendan nago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "erosi",
+                "nahi izan",
+                "ukan",
+                "denda",
+                "kafe",
+                "eta",
+                "esne"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Quieres estar aquí?"
+              },
+              "answers": [
+                "Hemen egon nahi duzu?"
+              ],
+              "distractors": [
+                "bat",
+                "dute",
+                "Haiek"
+              ],
+              "vocabulary": [
+                "hemen",
+                "egon",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e09",
+              "type": "read_true_false",
+              "passage": "Nire ahizpak ez du supermerkatuan erosi nahi. Frutadenda nahiago du.",
+              "statement": "Su hermana prefiere la frutería.",
+              "answer": true,
+              "vocabulary": [
+                "ni",
+                "ahizpa",
+                "ez",
+                "ukan",
+                "supermerkatu",
+                "erosi",
+                "nahi izan",
+                "frutadenda",
+                "nahiago izan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e10",
+              "type": "listen_tap",
+              "text": "Zure lagunak zer erosi nahi du?",
+              "distractors": [
+                "Bilbon",
+                "ordaindu",
+                "dut",
+                "eskudirutan"
+              ],
+              "vocabulary": [
+                "zu",
+                "lagun",
+                "zer",
+                "erosi",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e11",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Ellos quieren vender la librería."
+              },
+              "answers": [
+                "Haiek liburu-denda saldu nahi dute."
+              ],
+              "vocabulary": [
+                "haiek",
+                "liburu-denda",
+                "saldu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e12",
+              "type": "order_sentence",
+              "answer": "Ez dugu eskudirutan ordaindu nahi.",
+              "translation": "No queremos pagar en efectivo.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "eskudiru",
+                "ordaindu",
+                "nahi izan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u06-1.l2.s3",
+          "exercises": [
+            {
+              "id": "u06-1.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Zenbat da ogi bat?",
+              "answers": [
+                "Zenbat da ogi bat?"
+              ],
+              "vocabulary": [
+                "zenbat",
+                "izan",
+                "ogi",
+                "bat"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s3.e02",
+              "type": "speak",
+              "text": "Zenbat dira bi kafe?",
+              "translation": "¿Cuánto son dos cafés?",
+              "vocabulary": [
+                "zenbat",
+                "izan",
+                "bi",
+                "kafe"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s3.e03",
+              "type": "fill_blank",
+              "sentence": "Zenbat ___ bi kafe?",
+              "options": [
+                "dira",
+                "da"
+              ],
+              "correct": 0,
+              "translation": "¿Cuánto son dos cafés?",
+              "vocabulary": [
+                "zenbat",
+                "izan",
+                "bi",
+                "kafe"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lau euro dira."
+              },
+              "answers": [
+                "Son cuatro euros."
+              ],
+              "distractors": [
+                "un",
+                "aquí"
+              ],
+              "vocabulary": [
+                "lau",
+                "euro",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s3.e05",
+              "type": "choose_meaning",
+              "text": "Txartelarekin ala eskudirutan?",
+              "options": [
+                "¿Con tarjeta o en efectivo?",
+                "¿Tienes tarjeta?",
+                "¿Cuánto es en efectivo?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "txartel",
+                "eskudiru"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Con tarjeta o en efectivo?"
+              },
+              "answers": [
+                "Txartelarekin ala eskudirutan?",
+                "Txartelarekin ala eskudiruz?"
+              ],
+              "distractors": [
+                "dira",
+                "ordaindu"
+              ],
+              "vocabulary": [
+                "txartel",
+                "eskudiru"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Bezeroa",
+                  "text": "Zenbat da?"
+                }
+              ],
+              "options": [
+                "Sei euro dira.",
+                "Sei euro gustatzen zaizkit.",
+                "Supermerkatuan."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zenbat",
+                "izan",
+                "sei",
+                "euro"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s3.e08",
+              "type": "listen_tap",
+              "text": "Txartelarekin, mesedez.",
+              "distractors": [
+                "balio",
+                "bi"
+              ],
+              "vocabulary": [
+                "txartel",
+                "mesedez"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s3.e09",
+              "type": "read_true_false",
+              "passage": "Bezeroak bi kafe nahi ditu. Lau euro dira. Txartelarekin ordaindu nahi du.",
+              "statement": "El cliente quiere pagar en efectivo.",
+              "answer": false,
+              "vocabulary": [
+                "bezero",
+                "bi",
+                "kafe",
+                "nahi izan",
+                "ukan",
+                "lau",
+                "euro",
+                "izan",
+                "txartel",
+                "ordaindu"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Paga aquí, por favor."
+              },
+              "answers": [
+                "Hemen ordaindu, mesedez."
+              ],
+              "vocabulary": [
+                "hemen",
+                "ordaindu",
+                "mesedez"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s3.e11",
+              "type": "order_sentence",
+              "answer": "Zenbat balio du?",
+              "translation": "¿Cuánto cuesta?",
+              "vocabulary": [
+                "zenbat",
+                "balio izan",
+                "ukan"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s3.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hamar euro dira, mesedez."
+              },
+              "answers": [
+                "Son diez euros, por favor."
+              ],
+              "vocabulary": [
+                "hamar",
+                "euro",
+                "izan",
+                "mesedez"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u06-1.l3",
+      "type": "lesson",
+      "title": {
+        "es": "De compras",
+        "eu": "Erosketak"
+      },
+      "lessons": [
+        {
+          "id": "u06-1.l3.s1",
+          "exercises": [
+            {
+              "id": "u06-1.l3.s1.e01",
+              "type": "speak",
+              "text": "Egun on! Ogi bat nahi dut, mesedez.",
+              "translation": "¡Buenos días! Quiero un pan, por favor.",
+              "vocabulary": [
+                "egun on",
+                "ogi",
+                "bat",
+                "nahi izan",
+                "ukan",
+                "mesedez"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer gehiago?"
+              },
+              "answers": [
+                "¿Algo más?",
+                "¿Qué más?"
+              ],
+              "distractors": [
+                "Gracias",
+                "en"
+              ],
+              "vocabulary": [
+                "zer",
+                "gehiago"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Zer gehiago?",
+              "options": [
+                "¿Algo más?",
+                "¿Cuánto es?",
+                "¿Qué quieres?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "gehiago"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "No, gracias. ¿Cuánto es?"
+              },
+              "answers": [
+                "Ez, eskerrik asko. Zenbat da?"
+              ],
+              "distractors": [
+                "bat",
+                "Agur",
+                "euro"
+              ],
+              "vocabulary": [
+                "eskerrik asko",
+                "ez",
+                "zenbat",
+                "izan"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s1.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Egun on! Zer nahi duzu?"
+                },
+                {
+                  "speaker": "Bezeroa",
+                  "text": "Bi ogi, mesedez."
+                },
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Zer gehiago?"
+                }
+              ],
+              "options": [
+                "Ez, eskerrik asko. Zenbat da?",
+                "Bi ogi nahiago zait.",
+                "Ez horregatik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "egun on",
+                "zer",
+                "nahi izan",
+                "ukan",
+                "bi",
+                "ogi",
+                "mesedez",
+                "gehiago",
+                "eskerrik asko",
+                "ez",
+                "zenbat",
+                "izan"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Bi euro dira.",
+              "distractors": [
+                "Ez",
+                "Agur"
+              ],
+              "vocabulary": [
+                "bi",
+                "euro",
+                "izan"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s1.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Txartelarekin ala eskudirutan?"
+                }
+              ],
+              "options": [
+                "Txartelarekin, mesedez.",
+                "Okindegian, mesedez.",
+                "Ez, ni saltzailea naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "txartel",
+                "eskudiru",
+                "mesedez"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Quiero pagar en efectivo."
+              },
+              "answers": [
+                "Eskudirutan ordaindu nahi dut.",
+                "Eskudiruz ordaindu nahi dut."
+              ],
+              "vocabulary": [
+                "eskudiru",
+                "ordaindu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s1.e09",
+              "type": "read_true_false",
+              "passage": "Okindegian, Amaiak bi ogi erosi nahi ditu. Hiru euro dira.",
+              "statement": "Amaia quiere comprar tres panes.",
+              "answer": false,
+              "vocabulary": [
+                "okindegi",
+                "ama",
+                "bi",
+                "ogi",
+                "erosi",
+                "nahi izan",
+                "ukan",
+                "hiru",
+                "euro",
+                "izan"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s1.e10",
+              "type": "order_sentence",
+              "answer": "Eskerrik asko! Agur!",
+              "translation": "¡Gracias! ¡Adiós!",
+              "vocabulary": [
+                "eskerrik asko",
+                "agur"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s1.e11",
+              "type": "read_true_false",
+              "passage": "Ez daukat eskudirurik. Txartelarekin ordaindu nahi dut.",
+              "statement": "Quiere pagar con tarjeta.",
+              "answer": true,
+              "vocabulary": [
+                "ez",
+                "eduki",
+                "eskudiru",
+                "txartel",
+                "ordaindu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u06-1.l3.s2",
+          "exercises": [
+            {
+              "id": "u06-1.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Haragia erosi nahi dut. Non dago harategia?"
+              },
+              "answers": [
+                "Quiero comprar carne. ¿Dónde está la carnicería?"
+              ],
+              "distractors": [
+                "al",
+                "de",
+                "y",
+                "manzanas"
+              ],
+              "vocabulary": [
+                "haragi",
+                "erosi",
+                "nahi izan",
+                "ukan",
+                "non",
+                "egon",
+                "harategi"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La carnicería está al lado de la pescadería."
+              },
+              "answers": [
+                "Harategia arrandegiaren ondoan dago."
+              ],
+              "distractors": [
+                "Haragia",
+                "Liburu-denda",
+                "Merkataritza-gunean"
+              ],
+              "vocabulary": [
+                "harategi",
+                "arrandegi",
+                "ondoan",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Sagarrak ___ erosi nahi ditut.",
+              "options": [
+                "frutadendan",
+                "harategian"
+              ],
+              "correct": 0,
+              "translation": "Quiero comprar las manzanas en la frutería.",
+              "vocabulary": [
+                "sagar",
+                "frutadenda",
+                "erosi",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s2.e04",
+              "type": "listen_tap",
+              "text": "Merkataritza-gunean supermerkatu handi bat dago.",
+              "distractors": [
+                "Non",
+                "Okindegia",
+                "daude"
+              ],
+              "vocabulary": [
+                "merkataritza-gune",
+                "supermerkatu",
+                "handi",
+                "bat",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s2.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Kepa",
+                  "text": "Barkatu, arraina erosi nahi dut. Badago arrandegirik?"
+                }
+              ],
+              "options": [
+                "Bai, plazan dago.",
+                "Bai, arraina gustatzen zait.",
+                "Ez, ni Kepa naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "barkatu",
+                "arrain",
+                "erosi",
+                "nahi izan",
+                "ukan",
+                "egon",
+                "arrandegi",
+                "bai",
+                "plaza"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Quiero comprar las manzanas en la frutería."
+              },
+              "answers": [
+                "Sagarrak frutadendan erosi nahi ditut."
+              ],
+              "vocabulary": [
+                "sagar",
+                "frutadenda",
+                "erosi",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Supermerkatuan erosi nahi duzu?"
+                },
+                {
+                  "speaker": "Gorka",
+                  "text": "Ez, urrun dago."
+                },
+                {
+                  "speaker": "Leire",
+                  "text": "Eta zer nahiago duzu?"
+                }
+              ],
+              "options": [
+                "Plazako dendak nahiago ditut.",
+                "Plazako dendak nahiago zait.",
+                "Supermerkatua urrun gustatzen zait."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "supermerkatu",
+                "erosi",
+                "nahi izan",
+                "ukan",
+                "ez",
+                "urrun",
+                "egon",
+                "eta",
+                "zer",
+                "nahiago izan",
+                "plaza",
+                "denda"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s2.e08",
+              "type": "order_sentence",
+              "answer": "Liburu-denda merkataritza-gunean dago.",
+              "translation": "La librería está en el centro comercial.",
+              "vocabulary": [
+                "liburu-denda",
+                "merkataritza-gune",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s2.e09",
+              "type": "read_true_false",
+              "passage": "Herri honetan okindegi bat eta harategi bat daude. Ez dago arrandegirik.",
+              "statement": "En el pueblo hay una pescadería.",
+              "answer": false,
+              "vocabulary": [
+                "herri",
+                "hau",
+                "okindegi",
+                "bat",
+                "eta",
+                "harategi",
+                "egon",
+                "ez",
+                "arrandegi"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s2.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Okindegia eta frutadenda gertu daude."
+              },
+              "answers": [
+                "La panadería y la frutería están cerca."
+              ],
+              "vocabulary": [
+                "okindegi",
+                "eta",
+                "frutadenda",
+                "gertu",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s2.e11",
+              "type": "read_true_false",
+              "passage": "Merkataritza-gunean liburu-denda bat eta supermerkatu bat daude.",
+              "statement": "En el centro comercial hay una librería.",
+              "answer": true,
+              "vocabulary": [
+                "merkataritza-gune",
+                "liburu-denda",
+                "bat",
+                "eta",
+                "supermerkatu",
+                "egon"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u06-1.l3.s3",
+          "exercises": [
+            {
+              "id": "u06-1.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Perdone, ¿cuánto es este pescado?"
+              },
+              "answers": [
+                "Barkatu, zenbat da arrain hau?"
+              ],
+              "distractors": [
+                "eskudirutan",
+                "dago",
+                "ordaindu"
+              ],
+              "vocabulary": [
+                "barkatu",
+                "zenbat",
+                "izan",
+                "arrain",
+                "hau"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Hamabost euro. Garestia da!",
+              "distractors": [
+                "hau",
+                "dago",
+                "Dirua"
+              ],
+              "vocabulary": [
+                "hamabost",
+                "euro",
+                "garesti",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Garestia da!",
+              "options": [
+                "¡Es caro!",
+                "¡Es barato!",
+                "¡Es bonito!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "garesti",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "El pollo es más barato."
+              },
+              "answers": [
+                "Oilaskoa merkeagoa da."
+              ],
+              "vocabulary": [
+                "oilasko",
+                "merke",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Bezeroa",
+                  "text": "Zenbat da letxuga hau?"
+                },
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Bi euro."
+                }
+              ],
+              "options": [
+                "Ondo, hemen daukazu.",
+                "Ondo, bi letxuga gustatzen zait.",
+                "Gabon, bi euro."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zenbat",
+                "izan",
+                "letxuga",
+                "hau",
+                "bi",
+                "euro",
+                "ondo",
+                "hemen",
+                "eduki"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Dirua behar dut. Non dago bankua?",
+              "translation": "Necesito dinero. ¿Dónde está el banco?",
+              "vocabulary": [
+                "diru",
+                "behar izan",
+                "ukan",
+                "non",
+                "egon",
+                "banku"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Hogei euro dira."
+                },
+                {
+                  "speaker": "Ibai",
+                  "text": "Txartelarekin ordaindu nahi dut."
+                },
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Barkatu, eskudirua behar da."
+                }
+              ],
+              "options": [
+                "Ez daukat eskudirurik!",
+                "Ez horregatik!",
+                "Txartela gustatzen zait!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hogei",
+                "euro",
+                "izan",
+                "txartel",
+                "ordaindu",
+                "nahi izan",
+                "ukan",
+                "barkatu",
+                "eskudiru",
+                "behar izan",
+                "ez",
+                "eduki"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bezeroak eskudirutan ordaindu nahi du."
+              },
+              "answers": [
+                "El cliente quiere pagar en efectivo.",
+                "La clienta quiere pagar en efectivo."
+              ],
+              "vocabulary": [
+                "bezero",
+                "eskudiru",
+                "ordaindu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s3.e09",
+              "type": "read_true_false",
+              "passage": "Arraina hamabost euro da. Oilaskoa zortzi euro da.",
+              "statement": "El pollo es más caro que el pescado.",
+              "answer": false,
+              "vocabulary": [
+                "arrain",
+                "hamabost",
+                "euro",
+                "izan",
+                "oilasko",
+                "zortzi"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s3.e10",
+              "type": "listen_type",
+              "text": "Saltzailea oso jatorra da.",
+              "answers": [
+                "Saltzailea oso jatorra da."
+              ],
+              "vocabulary": [
+                "saltzaile",
+                "oso",
+                "jator",
+                "izan"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s3.e11",
+              "type": "read_true_false",
+              "passage": "Saltzailea jatorra da. Bezeroak eskudirutan ordaindu nahi du.",
+              "statement": "El cliente quiere pagar en efectivo.",
+              "answer": true,
+              "vocabulary": [
+                "saltzaile",
+                "jator",
+                "izan",
+                "bezero",
+                "eskudiru",
+                "ordaindu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "zenbat-da",
+                "payment"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u06-1.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: en la frutería",
+        "eu": "Istorioa: frutadendan"
+      },
+      "story": {
+        "id": "u06-1.l4.story",
+        "title": "Unai frutadendan",
+        "lines": [
+          {
+            "speaker": "Saltzailea",
+            "eu": "Egun on! Zer nahi duzu?",
+            "es": "¡Buenos días! ¿Qué quieres?"
+          },
+          {
+            "speaker": "Unai",
+            "eu": "Egun on! Lau sagar eta bi laranja erosi nahi ditut.",
+            "es": "¡Buenos días! Quiero comprar cuatro manzanas y dos naranjas."
+          },
+          {
+            "speaker": "Saltzailea",
+            "eu": "Hemen daukazu. Zer gehiago?",
+            "es": "Aquí tienes. ¿Algo más?"
+          },
+          {
+            "speaker": "Unai",
+            "eu": "Tomateak ere bai. Zenbat da?",
+            "es": "También tomates. ¿Cuánto es?"
+          },
+          {
+            "speaker": "Saltzailea",
+            "eu": "Sei euro dira.",
+            "es": "Son seis euros."
+          },
+          {
+            "speaker": "Unai",
+            "eu": "Txartelarekin ordaindu nahi dut.",
+            "es": "Quiero pagar con tarjeta."
+          },
+          {
+            "speaker": "Saltzailea",
+            "eu": "Barkatu, hemen eskudirua behar da.",
+            "es": "Lo siento, aquí hace falta efectivo."
+          },
+          {
+            "speaker": "Unai",
+            "eu": "Ez daukat dirurik! Non dago bankua?",
+            "es": "¡No tengo dinero! ¿Dónde está el banco?"
+          },
+          {
+            "speaker": "Saltzailea",
+            "eu": "Bankua okindegiaren ondoan dago.",
+            "es": "El banco está al lado de la panadería."
+          },
+          {
+            "speaker": "Unai",
+            "eu": "Eskerrik asko! Gero arte!",
+            "es": "¡Muchas gracias! ¡Hasta luego!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 3,
+            "prompt": "¿Qué compra Unai?",
+            "options": [
+              "Manzanas, naranjas y tomates",
+              "Manzanas y patatas",
+              "Solo naranjas"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 6,
+            "prompt": "¿Cómo hay que pagar en la frutería?",
+            "options": [
+              "En efectivo",
+              "Con tarjeta",
+              "No hay que pagar"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 9,
+            "prompt": "¿Dónde está el banco?",
+            "options": [
+              "Al lado de la panadería",
+              "En el centro comercial",
+              "Detrás de la frutería"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u06-1.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u06-1.l6",
+      "type": "legendary",
+      "title": {
+        "es": "Nivel legendario",
+        "eu": "Maila legendarioa"
+      }
+    }
+  ]
+}

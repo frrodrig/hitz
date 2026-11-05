@@ -14,19 +14,23 @@ How course content is structured, written and validated.
 ## Layout
 
 ```
+content/source/
+  course.yaml                        Course index (sections and their units, in path order)
+  units/<unit>.yaml                  Authoring source of each unit (see "Writing a unit")
 core/data/src/main/assets/
-  courses/eu-es/course.json          Course index: sections and their unit ids
-  courses/eu-es/units/<unit>.json    One file per unit: guidebook and levels
+  courses/eu-es/course.json          Generated from content/source by tools/build_content.py
+  courses/eu-es/units/<unit>.json    Generated: one file per unit, guidebook and levels
   images/<name>.webp                 Images for "choose the image"
   audio/<clip-id>.ogg                Pre-recorded audio (see "Audio")
 content/
   schema/course.schema.json          JSON Schema for course.json
   schema/unit.schema.json            JSON Schema for unit files
   syllabus/vocabulary.csv            Syllabus lemmas, by app unit (see docs/syllabus.md)
-  syllabus/forms.csv                 Inflected forms the vocabulary check accepts
+  syllabus/forms/<unit>.csv          Inflected forms and grammar words each unit teaches
   syllabus/proper-nouns.csv          Names of people and places allowed anywhere
   audio/pending.csv                  Generated list of clips still to be recorded
 tools/
+  build_content.py                   Builds the course JSON from content/source (CI checks it is current)
   validate_content.py                Content validator (run in CI)
   syllabus_vocab.py                  Regenerates the tables in docs/syllabus.md
 ```
@@ -95,13 +99,13 @@ examples) and accepts a word when it is:
 1. a lemma of `vocabulary.csv` taught in this unit or earlier (multi-word lemmas such as
    `eskerrik asko` are matched as a whole);
 2. that lemma plus a suffix (`etxe` → `etxea`, `etxean`), for lemmas of three letters or more;
-3. a form listed in `forms.csv` for this unit or earlier (verb forms like `naiz`, short words like
-   `nire`);
-4. a name in `proper-nouns.csv`, or a number.
+3. a form listed in `forms/<unit>.csv` for this unit or earlier (verb forms like `naiz`, short
+   words like `nire`, grammar words like `ala`);
+4. a name in `proper-nouns.csv`, also declined (`Bilbon`, `Aneren`), or a number.
 
 Anything else is an error, including a word that the syllabus teaches in a **later** unit. When a
-natural sentence needs a new inflected form, add it to `forms.csv` with the unit where its grammar
-is taught; when it needs a new word, discuss it against the syllabus first.
+natural sentence needs a new inflected form, add it to `forms/<unit>.csv` of the unit where its
+grammar is taught; when it needs a new word, discuss it against the syllabus first.
 
 ## Audio
 
@@ -125,11 +129,38 @@ fails if it is out of date.
 `choose_image` options reference `images/<name>.webp` (lower-case, underscores). Images must be
 original, simple and readable at 96 dp; the validator fails if a file is missing.
 
+## Writing a unit
+
+Units are written in YAML (`content/source/units/<unit>.yaml`; `u01-1.yaml` is the reference) and
+`tools/build_content.py` generates the JSON the app reads. Authors write *material*; the script
+decides the exercise types:
+
+- **Sentences** (`Basque | Basque variant = Spanish | Spanish variant`): each becomes one exercise.
+  The type rotates through translate with word bank (both ways), listen and tap, translate typing
+  (both ways), order the sentence, listen and type, and speak, so a lesson mixes them all.
+  Word-bank distractors come from the lesson's other sentences. A sentence can also be a mapping
+  with `text`, `structures`, `kind` (force a type) or `skip` (types to avoid).
+- **Hand-made items**, interleaved with the sentence exercises: `pairs` (4–6 `Basque = Spanish`),
+  `blanks` (`text: … ___ … = translation` plus `options`, the first one right), `meanings`
+  (`text` plus Spanish `options`, the first one right), `chats` (`Speaker | text` messages plus
+  Basque `options`, the first one right), `true_false` (`passage`, `statement`, `answer`) and
+  `images` (`choose_image`, only with existing images).
+- Option lists are shuffled by the app, so the first one can always be the right one.
+- `structures` on a lesson tags all its exercises; `vocabulary` is worked out from the syllabus.
+- Levels: three lesson levels (vocabulary, grammar, communicative use), each with three lessons of
+  10–15 exercises; then a `story` (lines as `Speaker | Basque = Spanish`, comprehension questions
+  in Spanish), a `review` and a `legendary` level. The last unit of each section also gets a
+  section review, added by the script.
+- Quote a YAML string that contains `: ` or ` #`, or starts with `[ { " ' * & ! % @`. Never put a
+  gap inside a multi-word expression (`egun ___`): the validator checks options on their own.
+
 ## Workflow
 
 ```bash
 pip install -r tools/requirements.txt
+python3 tools/build_content.py              # YAML sources → course JSON
 python3 tools/validate_content.py --write   # validate and refresh pending.csv
+python3 tools/validate_content.py --only u05-1   # check one unit while writing it
 python3 -m unittest discover -s tools/tests # validator tests
 ./gradlew :core:data:testDebugUnitTest      # decode all content with the app's model
 ```

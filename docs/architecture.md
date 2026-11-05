@@ -85,12 +85,14 @@ question. Finishing records the story level as completed.
   `mistake_tags` (`lemma` / `structure`). Room schemas are exported to `core/data/schemas/` and
   committed by the screenshot-recording workflow.
 - **Path rules** (`LearningPathBuilder`, pure Kotlin): progression is linear over the required
-  levels (lessons, stories and unit reviews); a lesson level is complete when all its lessons are;
+  levels (lessons, stories, unit and section reviews); a lesson level is complete when all its lessons are;
   legendary levels are optional and never block. Exactly one node is *current*.
 - **Sessions** (`PlanSessionUseCase`): lesson levels play the next lesson; the **review** picks the
-  10 unit exercises with the highest mistake score (3 × mistakes on the exercise + mistakes on its
-  lemmas + mistakes on its structures), so spaced repetition follows the learner's weak words and
-  grammar; the **legendary** level plays every unit exercise shuffled with 3 hearts.
+  12 exercises with the highest mistake score (3 × mistakes on the exercise + mistakes on its
+  lemmas + mistakes on its structures) from its unit, or from every unit of the section for a
+  **section review** (`scope: section`, closing each section), so spaced repetition follows the
+  learner's weak words and grammar; the **legendary** level plays every unit exercise shuffled with
+  3 hearts.
   `RecordSessionUseCase` saves mistakes always and the completion only when the session is finished.
 - `feature:path` shows sections, unit headers with the guidebook, and nodes whose Material
   expressive shape depends on the level type (lesson, story, review, legendary).

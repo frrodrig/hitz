@@ -1,0 +1,2835 @@
+{
+  "schemaVersion": 1,
+  "id": "u12-2",
+  "section": "s4",
+  "bookUnit": 12,
+  "title": {
+    "es": "Planes",
+    "eu": "Asmoak"
+  },
+  "goals": [
+    {
+      "es": "Proponer planes de tiempo libre y expresar ganas e intenciones.",
+      "eu": "Aisialdiko planak proposatu eta gogoak eta asmoak adierazi."
+    },
+    {
+      "es": "Expresar condiciones (si…).",
+      "eu": "Baldintzak adierazi."
+    },
+    {
+      "es": "Contar lo que solías hacer en tu tiempo libre.",
+      "eu": "Aisialdian lehen zer egiten zenuen kontatu."
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Ganas e intención: -t(z)eko gogoa, -t(z)eko asmoa",
+          "eu": "Gogoa eta asmoa: -t(z)eko gogoa, -t(z)eko asmoa"
+        },
+        "body": {
+          "es": "«Gogoa» son las ganas y «asmoa» la intención; el verbo va en -t(z)eko delante (joateko, egiteko) y detrás «dut» o «daukat». Para proponer un plan se pregunta «Baduzu … gogorik?».",
+          "eu": "«Gogoa» eta «asmoa» hitzen aurretik aditza -t(z)eko forman doa (joateko, egiteko), eta ondoren «dut» edo «daukat». Plan bat proposatzeko «Baduzu … gogorik?» galdetzen da."
+        },
+        "examples": [
+          {
+            "eu": "Mendira joateko gogoa daukat.",
+            "es": "Tengo ganas de ir al monte."
+          },
+          {
+            "eu": "Bihar txango bat egiteko asmoa dut.",
+            "es": "Mañana pienso hacer una excursión."
+          },
+          {
+            "eu": "Baduzu zinemara joateko gogorik?",
+            "es": "¿Te apetece ir al cine?"
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Condiciones: ba-",
+          "eu": "Baldintzak: ba-"
+        },
+        "body": {
+          "es": "«Si» se expresa pegando «ba-» al verbo conjugado (badu, bazaude, bada). La consecuencia suele ir en futuro (joango gara).",
+          "eu": "Baldintza adierazteko «ba-» jartzen zaio aditz jokatuari (badu, bazaude, bada). Ondorioa geroaldian joan ohi da."
+        },
+        "examples": [
+          {
+            "eu": "Eguraldi ona egiten badu, mendira joango gara.",
+            "es": "Si hace buen tiempo, iremos al monte."
+          },
+          {
+            "eu": "Libre bazaude, zinemara joango gara.",
+            "es": "Si estás libre, iremos al cine."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "El pasado: nintzen, nuen",
+          "eu": "Iragana: nintzen, nuen"
+        },
+        "body": {
+          "es": "Pasado de «izan» (nintzen, zinen, zen, ginen…) y de «ukan» (nuen, zenuen, zuen, genuen…). Con el verbo en -t(z)en indica costumbre, como el imperfecto español (iba, jugaba).",
+          "eu": "«Izan» (nintzen, zinen, zen, ginen…) eta «ukan» (nuen, zenuen, zuen, genuen…) aditzen iragana. Aditza -t(z)en forman badago, ohitura adierazten du."
+        },
+        "examples": [
+          {
+            "eu": "Atzo zinemara joan nintzen.",
+            "es": "Ayer fui al cine."
+          },
+          {
+            "eu": "Txikitan bizikletaz joaten nintzen eskolara.",
+            "es": "De pequeño iba a la escuela en bicicleta."
+          },
+          {
+            "eu": "Gaztetan dantza asko egiten nuen.",
+            "es": "De joven bailaba mucho."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Porcentajes: ehuneko",
+          "eu": "Ehunekoak"
+        },
+        "body": {
+          "es": "Los porcentajes se dicen con «ehuneko» delante del número (ehuneko hogei = 20 %). Si el verbo lleva «-k», el número también: «ehuneko berrogeik».",
+          "eu": "Ehunekoak «ehuneko» hitzarekin esaten dira zenbakiaren aurretik. Aditza nork motakoa bada, zenbakiak «-k» hartzen du."
+        },
+        "examples": [
+          {
+            "eu": "Gazteen ehuneko berrogeik kirola egiten du.",
+            "es": "El cuarenta por ciento de los jóvenes hace deporte."
+          },
+          {
+            "eu": "Ehuneko hamar autoz joaten da lanera.",
+            "es": "El diez por ciento va a trabajar en coche."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u12-2.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Excursiones",
+        "eu": "Txangoak"
+      },
+      "lessons": [
+        {
+          "id": "u12-2.l1.s1",
+          "exercises": [
+            {
+              "id": "u12-2.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Iremos al monte en coche."
+              },
+              "answers": [
+                "Autoz joango gara mendira."
+              ],
+              "distractors": [
+                "Nire",
+                "Londresera",
+                "lanera"
+              ],
+              "vocabulary": [
+                "auto",
+                "joan",
+                "izan",
+                "mendi"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e02",
+              "type": "listen_tap",
+              "text": "Bizikletaz joaten naiz lanera.",
+              "distractors": [
+                "dugu",
+                "da",
+                "bat"
+              ],
+              "vocabulary": [
+                "bizikleta",
+                "joan",
+                "izan",
+                "lan"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "auto",
+                  "es": "coche"
+                },
+                {
+                  "eu": "bizikleta",
+                  "es": "bicicleta"
+                },
+                {
+                  "eu": "hegazkin",
+                  "es": "avión"
+                },
+                {
+                  "eu": "oinez",
+                  "es": "a pie"
+                },
+                {
+                  "eu": "txango",
+                  "es": "excursión"
+                },
+                {
+                  "eu": "noraino",
+                  "es": "hasta dónde"
+                }
+              ],
+              "vocabulary": [
+                "auto",
+                "bizikleta",
+                "hegazkin",
+                "oinez",
+                "txango",
+                "noraino"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Iremos a Londres en avión."
+              },
+              "answers": [
+                "Hegazkinez joango gara Londresera."
+              ],
+              "vocabulary": [
+                "hegazkin",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e05",
+              "type": "fill_blank",
+              "sentence": "___ joango gara Londresera.",
+              "options": [
+                "Hegazkinez",
+                "Hegazkinera",
+                "Hegazkina"
+              ],
+              "correct": 0,
+              "translation": "Iremos a Londres en avión.",
+              "vocabulary": [
+                "hegazkin",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e06",
+              "type": "order_sentence",
+              "answer": "Etxetik eskolara oinez noa.",
+              "translation": "Voy andando de casa a la escuela.",
+              "vocabulary": [
+                "etxe",
+                "eskola",
+                "oinez",
+                "joan"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e07",
+              "type": "choose_meaning",
+              "text": "Etxetik eskolara oinez noa.",
+              "options": [
+                "Voy andando de casa a la escuela.",
+                "Voy en coche de casa a la escuela.",
+                "Vengo andando de la escuela a casa."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "etxe",
+                "eskola",
+                "oinez",
+                "joan"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Asteburuan txango bat egingo dugu."
+              },
+              "answers": [
+                "El fin de semana haremos una excursión.",
+                "El fin de semana vamos a hacer una excursión."
+              ],
+              "vocabulary": [
+                "asteburu",
+                "txango",
+                "bat",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Uxue",
+                  "text": "Nola zoaz lanera?"
+                }
+              ],
+              "options": [
+                "Bizikletaz.",
+                "Lanean.",
+                "Bihar."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nola",
+                "joan",
+                "lan",
+                "bizikleta"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e10",
+              "type": "listen_type",
+              "text": "Noraino joango gara?",
+              "answers": [
+                "Noraino joango gara?"
+              ],
+              "vocabulary": [
+                "noraino",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e11",
+              "type": "read_true_false",
+              "passage": "Nik ez daukat autorik. Lanera oinez noa.",
+              "statement": "La persona que habla va a trabajar en coche.",
+              "answer": false,
+              "vocabulary": [
+                "ni",
+                "ez",
+                "eduki",
+                "auto",
+                "lan",
+                "oinez",
+                "joan"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e12",
+              "type": "speak",
+              "text": "Nire autoa berria da.",
+              "translation": "Mi coche es nuevo.",
+              "vocabulary": [
+                "ni",
+                "auto",
+                "berri",
+                "izan"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bizikleta gorri bat erosi dut."
+              },
+              "answers": [
+                "Me he comprado una bicicleta roja.",
+                "He comprado una bicicleta roja."
+              ],
+              "distractors": [
+                "trabajar",
+                "Hasta",
+                "fin",
+                "monte"
+              ],
+              "vocabulary": [
+                "bizikleta",
+                "gorri",
+                "bat",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "garraioa",
+                "nola-instrumental"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u12-2.l1.s2",
+          "exercises": [
+            {
+              "id": "u12-2.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Mendira joateko gogoa daukat.",
+              "distractors": [
+                "txango",
+                "film",
+                "Jonek"
+              ],
+              "vocabulary": [
+                "mendi",
+                "joan",
+                "gogo",
+                "eduki"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "No tengo ganas de estudiar."
+              },
+              "answers": [
+                "Ez daukat ikasteko gogorik."
+              ],
+              "vocabulary": [
+                "ez",
+                "eduki",
+                "ikasi",
+                "gogo"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "gogo",
+                  "es": "ganas"
+                },
+                {
+                  "eu": "asmo",
+                  "es": "intención"
+                },
+                {
+                  "eu": "gustuko izan",
+                  "es": "gustar"
+                },
+                {
+                  "eu": "txango",
+                  "es": "excursión"
+                },
+                {
+                  "eu": "auto",
+                  "es": "coche"
+                }
+              ],
+              "vocabulary": [
+                "gogo",
+                "asmo",
+                "gustuko izan",
+                "txango",
+                "auto"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e04",
+              "type": "order_sentence",
+              "answer": "Bihar txango bat egiteko asmoa dut.",
+              "translation": "Mañana tengo intención de hacer una excursión.",
+              "vocabulary": [
+                "bihar",
+                "txango",
+                "bat",
+                "egin",
+                "asmo",
+                "ukan"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e05",
+              "type": "fill_blank",
+              "sentence": "Mendira joateko ___ daukat.",
+              "options": [
+                "gogoa",
+                "asmoa",
+                "gustuko"
+              ],
+              "correct": 0,
+              "translation": "Tengo ganas de ir al monte.",
+              "vocabulary": [
+                "mendi",
+                "joan",
+                "gogo",
+                "eduki"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer asmo daukazu astebururako?"
+              },
+              "answers": [
+                "¿Qué planes tienes para el fin de semana?",
+                "¿Qué plan tienes para el fin de semana?",
+                "¿Qué planes tiene usted para el fin de semana?"
+              ],
+              "vocabulary": [
+                "zer",
+                "asmo",
+                "eduki",
+                "asteburu"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e07",
+              "type": "choose_meaning",
+              "text": "Ez daukat ikasteko gogorik.",
+              "options": [
+                "No tengo ganas de estudiar.",
+                "No tengo tiempo para estudiar.",
+                "Tengo ganas de estudiar."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "eduki",
+                "ikasi",
+                "gogo"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e08",
+              "type": "listen_type",
+              "text": "Mendia gustuko dut.",
+              "answers": [
+                "Mendia gustuko dut."
+              ],
+              "vocabulary": [
+                "mendi",
+                "gustuko izan",
+                "ukan"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Gorka",
+                  "text": "Zer asmo daukazu astebururako?"
+                }
+              ],
+              "options": [
+                "Txango bat egiteko asmoa daukat.",
+                "Bizikletaz.",
+                "Ez dakit gidatzen."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "asmo",
+                "eduki",
+                "asteburu",
+                "txango",
+                "bat",
+                "egin"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e10",
+              "type": "speak",
+              "text": "Zer duzu gustuko?",
+              "translation": "¿Qué te gusta?",
+              "vocabulary": [
+                "zer",
+                "ukan",
+                "gustuko izan"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e11",
+              "type": "read_true_false",
+              "passage": "Nahiak ez du hondartza gustuko. Mendia gustuko du.",
+              "statement": "A Nahia le gusta la playa.",
+              "answer": false,
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "hondartza",
+                "gustuko izan",
+                "mendi"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Anek bizikleta gustuko du."
+              },
+              "answers": [
+                "A Ane le gusta la bici.",
+                "A Ane le gusta la bicicleta."
+              ],
+              "distractors": [
+                "planes",
+                "Jon",
+                "el",
+                "te"
+              ],
+              "vocabulary": [
+                "bizikleta",
+                "gustuko izan",
+                "ukan"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Jon tiene ganas de ver una película."
+              },
+              "answers": [
+                "Jonek film bat ikusteko gogoa du."
+              ],
+              "distractors": [
+                "gogorik",
+                "Ez",
+                "bizikleta",
+                "txango"
+              ],
+              "vocabulary": [
+                "film",
+                "bat",
+                "ikusi",
+                "gogo",
+                "ukan"
+              ],
+              "structures": [
+                "gogoa",
+                "asmoa"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u12-2.l1.s3",
+          "exercises": [
+            {
+              "id": "u12-2.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "El cuarenta por ciento de los jóvenes hace deporte."
+              },
+              "answers": [
+                "Gazteen ehuneko berrogeik kirola egiten du."
+              ],
+              "vocabulary": [
+                "gazte",
+                "ehuneko",
+                "berrogei",
+                "kirol",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e02",
+              "type": "order_sentence",
+              "answer": "Ehuneko hirurogeik musika gustuko du.",
+              "translation": "Al sesenta por ciento le gusta la música.",
+              "vocabulary": [
+                "ehuneko",
+                "hirurogei",
+                "musika",
+                "gustuko izan",
+                "ukan"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "ehuneko",
+                  "es": "por ciento"
+                },
+                {
+                  "eu": "berrogei",
+                  "es": "cuarenta"
+                },
+                {
+                  "eu": "hirurogei",
+                  "es": "sesenta"
+                },
+                {
+                  "eu": "laurogei",
+                  "es": "ochenta"
+                },
+                {
+                  "eu": "hamar",
+                  "es": "diez"
+                }
+              ],
+              "vocabulary": [
+                "ehuneko",
+                "berrogei",
+                "hirurogei",
+                "laurogei",
+                "hamar"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ikasleen ehuneko hogeita hamar oinez joaten da eskolara."
+              },
+              "answers": [
+                "El treinta por ciento de los alumnos va a pie a la escuela.",
+                "El treinta por ciento de los estudiantes va andando a la escuela."
+              ],
+              "vocabulary": [
+                "ikasle",
+                "ehuneko",
+                "hogei",
+                "hamar",
+                "oinez",
+                "joan",
+                "izan",
+                "eskola"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Gazteen ___ berrogeik kirola egiten du.",
+              "options": [
+                "ehuneko",
+                "asmo",
+                "gogo"
+              ],
+              "correct": 0,
+              "translation": "El cuarenta por ciento de los jóvenes hace deporte.",
+              "vocabulary": [
+                "gazte",
+                "ehuneko",
+                "berrogei",
+                "kirol",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e06",
+              "type": "listen_type",
+              "text": "Ehuneko hamar autoz joaten da lanera.",
+              "answers": [
+                "Ehuneko hamar autoz joaten da lanera."
+              ],
+              "vocabulary": [
+                "ehuneko",
+                "hamar",
+                "auto",
+                "joan",
+                "izan",
+                "lan"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e07",
+              "type": "choose_meaning",
+              "text": "Ehuneko hamar autoz joaten da lanera.",
+              "options": [
+                "El diez por ciento va a trabajar en coche.",
+                "El cien por cien va a trabajar en coche.",
+                "Diez personas van a trabajar en coche."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ehuneko",
+                "hamar",
+                "auto",
+                "joan",
+                "izan",
+                "lan"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e08",
+              "type": "speak",
+              "text": "Ehuneko zenbat?",
+              "translation": "¿Qué porcentaje?",
+              "vocabulary": [
+                "ehuneko",
+                "zenbat"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Kepa",
+                  "text": "Ikasleen ehuneko zenbatek egiten du kirola?"
+                }
+              ],
+              "options": [
+                "Ehuneko hirurogeik.",
+                "Hirurogei urte.",
+                "Kiroldegian."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ikasle",
+                "ehuneko",
+                "zenbat",
+                "egin",
+                "ukan",
+                "kirol",
+                "hirurogei"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gazteen ehuneko laurogeik ordenagailua erabiltzen du egunero."
+              },
+              "answers": [
+                "El ochenta por ciento de los jóvenes usa el ordenador todos los días."
+              ],
+              "distractors": [
+                "gustan",
+                "mucho",
+                "la",
+                "porcentaje"
+              ],
+              "vocabulary": [
+                "gazte",
+                "ehuneko",
+                "laurogei",
+                "ordenagailu",
+                "erabili",
+                "ukan",
+                "egunero"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e11",
+              "type": "read_true_false",
+              "passage": "Gure herrian, ehuneko hogeik bizikleta erabiltzen du lanera joateko.",
+              "statement": "El veinte por ciento usa la bicicleta para ir a trabajar.",
+              "answer": true,
+              "vocabulary": [
+                "gu",
+                "herri",
+                "ehuneko",
+                "hogei",
+                "bizikleta",
+                "erabili",
+                "ukan",
+                "lan",
+                "joan"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Me gustan mucho las excursiones."
+              },
+              "answers": [
+                "Txangoak asko gustuko ditut."
+              ],
+              "distractors": [
+                "hogeita",
+                "joaten",
+                "autoa"
+              ],
+              "vocabulary": [
+                "txango",
+                "asko",
+                "gustuko izan",
+                "ukan"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            },
+            {
+              "id": "u12-2.l1.s3.e13",
+              "type": "listen_tap",
+              "text": "Ez dut autoa gustuko.",
+              "distractors": [
+                "musika",
+                "joaten",
+                "egunero"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "auto",
+                "gustuko izan"
+              ],
+              "structures": [
+                "ehuneko",
+                "gustuko-izan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u12-2.l2",
+      "type": "lesson",
+      "title": {
+        "es": "Si te apetece…",
+        "eu": "Gogoa baduzu…"
+      },
+      "lessons": [
+        {
+          "id": "u12-2.l2.s1",
+          "exercises": [
+            {
+              "id": "u12-2.l2.s1.e01",
+              "type": "order_sentence",
+              "answer": "Baduzu zinemara joateko gogorik?",
+              "translation": "¿Tienes ganas de ir al cine?",
+              "vocabulary": [
+                "ukan",
+                "zinema",
+                "joan",
+                "gogo"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s1.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bai, film bat ikusteko gogoa daukat."
+              },
+              "answers": [
+                "Sí, tengo ganas de ver una película.",
+                "Sí, me apetece ver una película."
+              ],
+              "vocabulary": [
+                "bai",
+                "film",
+                "bat",
+                "ikusi",
+                "gogo",
+                "eduki"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s1.e03",
+              "type": "fill_blank",
+              "sentence": "Baduzu zinemara joateko ___?",
+              "options": [
+                "gogorik",
+                "gogoa",
+                "gogoak"
+              ],
+              "correct": 0,
+              "translation": "¿Tienes ganas de ir al cine?",
+              "vocabulary": [
+                "ukan",
+                "zinema",
+                "joan",
+                "gogo"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s1.e04",
+              "type": "listen_type",
+              "text": "Badaukazu txango bat egiteko gogorik?",
+              "answers": [
+                "Badaukazu txango bat egiteko gogorik?"
+              ],
+              "vocabulary": [
+                "eduki",
+                "txango",
+                "bat",
+                "egin",
+                "gogo"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s1.e05",
+              "type": "choose_meaning",
+              "text": "Baduzu zinemara joateko gogorik?",
+              "options": [
+                "¿Te apetece ir al cine?",
+                "¿Has ido al cine?",
+                "¿Dónde está el cine?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ukan",
+                "zinema",
+                "joan",
+                "gogo"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s1.e06",
+              "type": "speak",
+              "text": "Ez, gaur ez daukat gogorik.",
+              "translation": "No, hoy no tengo ganas.",
+              "vocabulary": [
+                "ez",
+                "gaur",
+                "eduki",
+                "gogo"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s1.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ander",
+                  "text": "Baduzu hondartzara joateko gogorik?"
+                }
+              ],
+              "options": [
+                "Bai, primeran!",
+                "Bai, hondartzan nago.",
+                "Ehuneko hamar."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ukan",
+                "hondartza",
+                "joan",
+                "gogo",
+                "bai",
+                "primeran"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Umeek jolasteko gogoa dute."
+              },
+              "answers": [
+                "Los niños tienen ganas de jugar."
+              ],
+              "distractors": [
+                "a",
+                "al",
+                "una",
+                "Sí"
+              ],
+              "vocabulary": [
+                "ume",
+                "jolastu",
+                "gogo",
+                "ukan"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s1.e09",
+              "type": "read_true_false",
+              "passage": "Gaur ez daukat gogorik. Etxean geratuko naiz.",
+              "statement": "La persona tiene ganas de salir.",
+              "answer": false,
+              "vocabulary": [
+                "gaur",
+                "ez",
+                "eduki",
+                "gogo",
+                "etxe",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Tenemos ganas de ir a la playa."
+              },
+              "answers": [
+                "Hondartzara joateko gogoa dugu."
+              ],
+              "distractors": [
+                "daukat",
+                "Zer",
+                "dute"
+              ],
+              "vocabulary": [
+                "hondartza",
+                "joan",
+                "gogo",
+                "ukan"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s1.e11",
+              "type": "listen_tap",
+              "text": "Zer egiteko gogoa duzu?",
+              "distractors": [
+                "jolasteko",
+                "zinemara",
+                "Hondartzara"
+              ],
+              "vocabulary": [
+                "zer",
+                "egin",
+                "gogo",
+                "ukan"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s1.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Tengo ganas de ir a un concierto."
+              },
+              "answers": [
+                "Kontzertu batera joateko gogoa daukat."
+              ],
+              "vocabulary": [
+                "kontzertu",
+                "bat",
+                "joan",
+                "gogo",
+                "eduki"
+              ],
+              "structures": [
+                "gogoa",
+                "ba-gogorik"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u12-2.l2.s2",
+          "exercises": [
+            {
+              "id": "u12-2.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Datorren urtean ingelesa ikasteko asmoa dut."
+              },
+              "answers": [
+                "El año que viene pienso estudiar inglés.",
+                "El año que viene tengo intención de aprender inglés."
+              ],
+              "vocabulary": [
+                "datorren",
+                "urte",
+                "ingeles",
+                "ikasi",
+                "asmo",
+                "ukan"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s2.e02",
+              "type": "listen_type",
+              "text": "Eguraldi ona egiten badu, mendira joango gara.",
+              "answers": [
+                "Eguraldi ona egiten badu, mendira joango gara."
+              ],
+              "vocabulary": [
+                "eguraldi",
+                "on",
+                "egin",
+                "ukan",
+                "mendi",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Euria egiten ___, etxean geratuko gara.",
+              "options": [
+                "badu",
+                "du",
+                "bada"
+              ],
+              "correct": 0,
+              "translation": "Si llueve, nos quedaremos en casa.",
+              "vocabulary": [
+                "euri",
+                "egin",
+                "ukan",
+                "etxe",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s2.e04",
+              "type": "speak",
+              "text": "Euria egiten badu, etxean geratuko gara.",
+              "translation": "Si llueve, nos quedaremos en casa.",
+              "vocabulary": [
+                "euri",
+                "egin",
+                "ukan",
+                "etxe",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s2.e05",
+              "type": "choose_meaning",
+              "text": "Libre bazaude, zinemara joango gara.",
+              "options": [
+                "Si estás libre, iremos al cine.",
+                "Estás libre, vamos al cine.",
+                "Si estoy libre, iré al cine."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "libre",
+                "egon",
+                "zinema",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Libre bazaude, zinemara joango gara."
+              },
+              "answers": [
+                "Si estás libre, iremos al cine.",
+                "Si está usted libre, iremos al cine."
+              ],
+              "distractors": [
+                "intención",
+                "En",
+                "El",
+                "pienso"
+              ],
+              "vocabulary": [
+                "libre",
+                "egon",
+                "zinema",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Haizea",
+                  "text": "Zer egiteko asmoa duzu oporretan?"
+                }
+              ],
+              "options": [
+                "Parisera joateko asmoa dut.",
+                "Parisen nago.",
+                "Ez daukat autorik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "egin",
+                "asmo",
+                "ukan",
+                "opor",
+                "joan"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Si tienes coche, iremos a Bilbao."
+              },
+              "answers": [
+                "Autoa badaukazu, Bilbora joango gara."
+              ],
+              "distractors": [
+                "Euria",
+                "Libre",
+                "Eguraldi"
+              ],
+              "vocabulary": [
+                "auto",
+                "eduki",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s2.e09",
+              "type": "read_true_false",
+              "passage": "Bihar eguraldi ona egiten badu, Julen hondartzara joango da.",
+              "statement": "Julen irá a la playa pase lo que pase.",
+              "answer": false,
+              "vocabulary": [
+                "bihar",
+                "eguraldi",
+                "on",
+                "egin",
+                "ukan",
+                "hondartza",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s2.e10",
+              "type": "listen_tap",
+              "text": "Gogoa baduzu, bihar txango bat egingo dugu.",
+              "distractors": [
+                "egiten",
+                "joango",
+                "gara",
+                "zinemara"
+              ],
+              "vocabulary": [
+                "gogo",
+                "ukan",
+                "bihar",
+                "txango",
+                "bat",
+                "egin"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s2.e11",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué piensas hacer en vacaciones?"
+              },
+              "answers": [
+                "Zer egiteko asmoa duzu oporretan?"
+              ],
+              "vocabulary": [
+                "zer",
+                "egin",
+                "asmo",
+                "ukan",
+                "opor"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s2.e12",
+              "type": "order_sentence",
+              "answer": "Oporretan Parisera joateko asmoa dugu.",
+              "translation": "En vacaciones tenemos intención de ir a París.",
+              "vocabulary": [
+                "opor",
+                "joan",
+                "asmo",
+                "ukan"
+              ],
+              "structures": [
+                "asmoa",
+                "baldintza"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u12-2.l2.s3",
+          "exercises": [
+            {
+              "id": "u12-2.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Txikitan bizikletaz joaten nintzen eskolara.",
+              "answers": [
+                "Txikitan bizikletaz joaten nintzen eskolara."
+              ],
+              "vocabulary": [
+                "txiki",
+                "bizikleta",
+                "joan",
+                "izan",
+                "eskola"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e02",
+              "type": "speak",
+              "text": "Gaztetan dantza asko egiten nuen.",
+              "translation": "De joven bailaba mucho.",
+              "vocabulary": [
+                "gazte",
+                "dantza",
+                "asko",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e03",
+              "type": "fill_blank",
+              "sentence": "Atzo zinemara joan ___.",
+              "options": [
+                "nintzen",
+                "nuen",
+                "naiz"
+              ],
+              "correct": 0,
+              "translation": "Ayer fui al cine.",
+              "vocabulary": [
+                "atzo",
+                "zinema",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lehen futbolean jolasten genuen."
+              },
+              "answers": [
+                "Antes jugábamos al fútbol."
+              ],
+              "distractors": [
+                "pasado",
+                "El",
+                "hicimos"
+              ],
+              "vocabulary": [
+                "futbol",
+                "jolastu",
+                "ukan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Gaztetan dantza asko egiten ___.",
+              "options": [
+                "nuen",
+                "nintzen",
+                "zuen"
+              ],
+              "correct": 0,
+              "translation": "De joven bailaba mucho.",
+              "vocabulary": [
+                "gazte",
+                "dantza",
+                "asko",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "El año pasado hicimos una excursión al monte."
+              },
+              "answers": [
+                "Iaz mendira txango bat egin genuen."
+              ],
+              "distractors": [
+                "Parisera",
+                "asko",
+                "zuen",
+                "izan"
+              ],
+              "vocabulary": [
+                "iaz",
+                "mendi",
+                "txango",
+                "bat",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e07",
+              "type": "choose_meaning",
+              "text": "Nire amonak asko abesten zuen.",
+              "options": [
+                "Mi abuela cantaba mucho.",
+                "Mi abuela canta mucho.",
+                "Mi abuela bailaba mucho."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ni",
+                "amona",
+                "asko",
+                "abestu",
+                "zuek"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e08",
+              "type": "listen_tap",
+              "text": "Atzo zinemara joan nintzen.",
+              "distractors": [
+                "Gaztetan",
+                "Txikitan",
+                "Hegazkinez"
+              ],
+              "vocabulary": [
+                "atzo",
+                "zinema",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Alaitz",
+                  "text": "Zer egin zenuen atzo?"
+                }
+              ],
+              "options": [
+                "Zinemara joan nintzen.",
+                "Zinemara joango naiz.",
+                "Zinemara joan zinen."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "egin",
+                "ukan",
+                "atzo",
+                "zinema",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Fuimos a París en avión."
+              },
+              "answers": [
+                "Hegazkinez joan ginen Parisera."
+              ],
+              "vocabulary": [
+                "hegazkin",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e11",
+              "type": "read_true_false",
+              "passage": "Txikitan Unai asteburuetan hondartzara joaten zen. Orain mendia gustuko du.",
+              "statement": "De pequeño, Unai iba a la playa los fines de semana.",
+              "answer": true,
+              "vocabulary": [
+                "txiki",
+                "asteburu",
+                "hondartza",
+                "joan",
+                "izan",
+                "orain",
+                "mendi",
+                "gustuko izan",
+                "ukan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e12",
+              "type": "order_sentence",
+              "answer": "Nire amonak asko abesten zuen.",
+              "translation": "Mi abuela cantaba mucho.",
+              "vocabulary": [
+                "ni",
+                "amona",
+                "asko",
+                "abestu",
+                "zuek"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l2.s3.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Atzo kontzertuan izan zinen?"
+              },
+              "answers": [
+                "¿Ayer estuviste en el concierto?",
+                "¿Estuviste ayer en el concierto?",
+                "¿Estuvo usted ayer en el concierto?"
+              ],
+              "vocabulary": [
+                "atzo",
+                "kontzertu",
+                "izan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u12-2.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Hacemos planes",
+        "eu": "Planak egiten"
+      },
+      "lessons": [
+        {
+          "id": "u12-2.l3.s1",
+          "exercises": [
+            {
+              "id": "u12-2.l3.s1.e01",
+              "type": "speak",
+              "text": "Zer asmo duzu larunbaterako?",
+              "translation": "¿Qué planes tienes para el sábado?",
+              "vocabulary": [
+                "zer",
+                "asmo",
+                "ukan",
+                "larunbat"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez dakit. Baduzu txango bat egiteko gogorik?"
+              },
+              "answers": [
+                "No sé. ¿Te apetece hacer una excursión?",
+                "No lo sé. ¿Tienes ganas de hacer una excursión?"
+              ],
+              "distractors": [
+                "dónde",
+                "lejos",
+                "Está",
+                "Vale"
+              ],
+              "vocabulary": [
+                "ez",
+                "jakin",
+                "ukan",
+                "txango",
+                "bat",
+                "egin",
+                "gogo"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Zer asmo duzu larunbaterako?",
+              "options": [
+                "¿Qué planes tienes para el sábado?",
+                "¿Qué hiciste el sábado?",
+                "¿Dónde estás el sábado?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "asmo",
+                "ukan",
+                "larunbat"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¡Sí! ¿Hasta dónde iremos?"
+              },
+              "answers": [
+                "Bai! Noraino joango gara?"
+              ],
+              "distractors": [
+                "bizikletaz",
+                "Ez",
+                "asmo"
+              ],
+              "vocabulary": [
+                "bai",
+                "noraino",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s1.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Eneko",
+                  "text": "Baduzu larunbatean mendira joateko gogorik?"
+                }
+              ],
+              "options": [
+                "Bai! Zer ordutan?",
+                "Bai, mendian nago.",
+                "Ez, ez dakit."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ukan",
+                "larunbat",
+                "mendi",
+                "joan",
+                "gogo",
+                "bai",
+                "zer",
+                "ordu"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Lekeitioraino, bizikletaz.",
+              "distractors": [
+                "asmo",
+                "Bai"
+              ],
+              "vocabulary": [
+                "bizikleta"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s1.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Amaia",
+                  "text": "Txango bat egiteko asmoa dut."
+                },
+                {
+                  "speaker": "Peio",
+                  "text": "Nora?"
+                },
+                {
+                  "speaker": "Amaia",
+                  "text": "Hondarribiara. Etorri nahi duzu?"
+                }
+              ],
+              "options": [
+                "Bai, gogoa daukat!",
+                "Bai, Hondarribian.",
+                "Ehuneko hogei."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "txango",
+                "bat",
+                "egin",
+                "asmo",
+                "ukan",
+                "nor",
+                "etorri",
+                "nahi izan",
+                "bai",
+                "gogo",
+                "eduki"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¡Está muy lejos! ¿Vamos en coche?"
+              },
+              "answers": [
+                "Oso urrun dago! Autoz joango gara?"
+              ],
+              "vocabulary": [
+                "oso",
+                "urrun",
+                "egon",
+                "auto",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s1.e09",
+              "type": "read_true_false",
+              "passage": "Igandean txango bat egiteko asmoa dugu. Getxotik Bilboraino bizikletaz joango gara.",
+              "statement": "Irán en bicicleta hasta Bilbao.",
+              "answer": true,
+              "vocabulary": [
+                "igande",
+                "txango",
+                "bat",
+                "egin",
+                "asmo",
+                "ukan",
+                "bizikleta",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s1.e10",
+              "type": "listen_type",
+              "text": "Ados, autoz.",
+              "answers": [
+                "Ados, autoz."
+              ],
+              "vocabulary": [
+                "ados",
+                "auto"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s1.e11",
+              "type": "read_true_false",
+              "passage": "Olatzek ez dauka mendira joateko gogorik. Zinemara joan nahi du.",
+              "statement": "Olatz quiere ir al monte.",
+              "answer": false,
+              "vocabulary": [
+                "ez",
+                "eduki",
+                "mendi",
+                "joan",
+                "gogo",
+                "zinema",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "ba-gogorik",
+                "asmoa"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u12-2.l3.s2",
+          "exercises": [
+            {
+              "id": "u12-2.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bihar eguzkia badago, hondartzara joango gara."
+              },
+              "answers": [
+                "Si mañana hace sol, iremos a la playa.",
+                "Si mañana hace sol, vamos a la playa."
+              ],
+              "distractors": [
+                "necesitas",
+                "museo",
+                "estás",
+                "nos"
+              ],
+              "vocabulary": [
+                "bihar",
+                "eguzki",
+                "egon",
+                "hondartza",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Si hace frío, iremos al museo."
+              },
+              "answers": [
+                "Hotz egiten badu, museora joango gara."
+              ],
+              "distractors": [
+                "bat",
+                "Dirua",
+                "kontzertura",
+                "Bihar"
+              ],
+              "vocabulary": [
+                "hotz",
+                "egin",
+                "ukan",
+                "museo",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s2.e03",
+              "type": "fill_blank",
+              "sentence": "Nekatuta ___, etxean geratuko gara.",
+              "options": [
+                "bazaude",
+                "zaude",
+                "badago"
+              ],
+              "correct": 0,
+              "translation": "Si estás cansado, nos quedaremos en casa.",
+              "vocabulary": [
+                "nekatuta",
+                "egon",
+                "etxe",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s2.e04",
+              "type": "listen_tap",
+              "text": "Nekatuta bazaude, etxean geratuko gara.",
+              "distractors": [
+                "etorriko",
+                "bazara",
+                "badu"
+              ],
+              "vocabulary": [
+                "nekatuta",
+                "egon",
+                "etxe",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s2.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Xabier",
+                  "text": "Bihar mendira goaz?"
+                }
+              ],
+              "options": [
+                "Eguraldi ona egiten badu, bai.",
+                "Atzo mendira joan nintzen.",
+                "Mendia gustuko zuen."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bihar",
+                "mendi",
+                "joan",
+                "eguraldi",
+                "on",
+                "egin",
+                "ukan",
+                "bai"
+              ],
+              "structures": [
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Si tienes dinero, iremos al concierto."
+              },
+              "answers": [
+                "Dirua badaukazu, kontzertura joango gara."
+              ],
+              "vocabulary": [
+                "diru",
+                "eduki",
+                "kontzertu",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Miren",
+                  "text": "Kontzertura joango gara?"
+                },
+                {
+                  "speaker": "Asier",
+                  "text": "Ez daukat dirurik."
+                },
+                {
+                  "speaker": "Miren",
+                  "text": "Nik dirua daukat. Etorri nahi duzu?"
+                }
+              ],
+              "options": [
+                "Ados, eskerrik asko!",
+                "Ez horregatik.",
+                "Bai, atzo joan nintzen."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kontzertu",
+                "joan",
+                "izan",
+                "ez",
+                "eduki",
+                "diru",
+                "ni",
+                "etorri",
+                "nahi izan",
+                "ukan",
+                "eskerrik asko",
+                "ados"
+              ],
+              "structures": [
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s2.e08",
+              "type": "order_sentence",
+              "answer": "Oinez joaten bazara, ordu bat behar duzu.",
+              "translation": "Si vas a pie, necesitas una hora.",
+              "vocabulary": [
+                "oinez",
+                "joan",
+                "izan",
+                "ordu",
+                "bat",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s2.e09",
+              "type": "read_true_false",
+              "passage": "Euria egiten badu, Garazi eta Oier zinemara joango dira.",
+              "statement": "Si llueve, irán al cine.",
+              "answer": true,
+              "vocabulary": [
+                "euri",
+                "egin",
+                "ukan",
+                "eta",
+                "zinema",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s2.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gogoa badut, etorriko naiz."
+              },
+              "answers": [
+                "Si tengo ganas, vendré.",
+                "Si me apetece, vendré."
+              ],
+              "vocabulary": [
+                "gogo",
+                "ukan",
+                "etorri",
+                "izan"
+              ],
+              "structures": [
+                "baldintza"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s2.e11",
+              "type": "read_true_false",
+              "passage": "Nekatuta badago, Ibai etxean geratuko da.",
+              "statement": "Ibai irá a la playa aunque esté cansado.",
+              "answer": false,
+              "vocabulary": [
+                "nekatuta",
+                "egon",
+                "ibai",
+                "etxe",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "baldintza"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u12-2.l3.s3",
+          "exercises": [
+            {
+              "id": "u12-2.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "De pequeño, ¿qué hacías los fines de semana?"
+              },
+              "answers": [
+                "Txikitan zer egiten zenuen asteburuetan?"
+              ],
+              "distractors": [
+                "nintzen",
+                "ondo",
+                "Aitonarekin"
+              ],
+              "vocabulary": [
+                "txiki",
+                "zer",
+                "egin",
+                "ukan",
+                "asteburu"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Aitonarekin mendira joaten nintzen.",
+              "distractors": [
+                "oinez",
+                "amak",
+                "jolasten"
+              ],
+              "vocabulary": [
+                "aitona",
+                "mendi",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Aitonarekin mendira joaten nintzen.",
+              "options": [
+                "Iba al monte con mi abuelo.",
+                "Voy al monte con mi abuelo.",
+                "Fui al monte con mi abuelo."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "aitona",
+                "mendi",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Los domingos íbamos a pie a la playa."
+              },
+              "answers": [
+                "Igandeetan oinez joaten ginen hondartzara."
+              ],
+              "vocabulary": [
+                "igande",
+                "oinez",
+                "joan",
+                "izan",
+                "hondartza"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nerea",
+                  "text": "Txikitan zer egiten zenuen oporretan?"
+                }
+              ],
+              "options": [
+                "Hondartzara joaten nintzen.",
+                "Hondartzara joango naiz.",
+                "Hondartza gustuko dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "txiki",
+                "zer",
+                "egin",
+                "ukan",
+                "opor",
+                "hondartza",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Gaztetan saskibaloian jolasten nuen.",
+              "translation": "De joven jugaba al baloncesto.",
+              "vocabulary": [
+                "gazte",
+                "saskibaloi",
+                "jolastu",
+                "ukan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s3.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "June",
+                  "text": "Gaztetan kirola egiten zenuen?"
+                },
+                {
+                  "speaker": "Kepa",
+                  "text": "Bai, futbolean jolasten nuen."
+                },
+                {
+                  "speaker": "June",
+                  "text": "Eta orain?"
+                }
+              ],
+              "options": [
+                "Orain bizikletaz joaten naiz lanera.",
+                "Lehen jolasten nuen.",
+                "Atzo jolastu nuen."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gazte",
+                "kirol",
+                "egin",
+                "ukan",
+                "bai",
+                "futbol",
+                "jolastu",
+                "eta",
+                "orain",
+                "bizikleta",
+                "joan",
+                "izan",
+                "lan"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nire amak oso ondo abesten zuen."
+              },
+              "answers": [
+                "Mi madre cantaba muy bien."
+              ],
+              "vocabulary": [
+                "ni",
+                "ama",
+                "oso",
+                "ondo",
+                "abestu",
+                "zuek"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s3.e09",
+              "type": "read_true_false",
+              "passage": "Txikitan Arantza aitonarekin mendira joaten zen. Aitonak asko abesten zuen.",
+              "statement": "El abuelo de Arantza cantaba mucho.",
+              "answer": true,
+              "vocabulary": [
+                "txiki",
+                "aitona",
+                "mendi",
+                "joan",
+                "izan",
+                "asko",
+                "abestu",
+                "zuek"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s3.e10",
+              "type": "listen_type",
+              "text": "Orain ez daukat aisialdirik.",
+              "answers": [
+                "Orain ez daukat aisialdirik."
+              ],
+              "vocabulary": [
+                "orain",
+                "ez",
+                "eduki",
+                "aisialdi"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            },
+            {
+              "id": "u12-2.l3.s3.e11",
+              "type": "read_true_false",
+              "passage": "Lehen Patxik asko irakurtzen zuen. Orain ez dauka aisialdirik.",
+              "statement": "Patxi tiene ahora mucho tiempo libre.",
+              "answer": false,
+              "vocabulary": [
+                "asko",
+                "irakurri",
+                "zuek",
+                "orain",
+                "ez",
+                "eduki",
+                "aisialdi"
+              ],
+              "structures": [
+                "iragana",
+                "ohitura-iragana"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u12-2.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: la excursión",
+        "eu": "Istorioa: txangoa"
+      },
+      "story": {
+        "id": "u12-2.l4.story",
+        "title": "Txangoa",
+        "lines": [
+          {
+            "speaker": "Alaitz",
+            "eu": "Oier, baduzu larunbatean txango bat egiteko gogorik?",
+            "es": "Oier, ¿te apetece hacer una excursión el sábado?"
+          },
+          {
+            "speaker": "Oier",
+            "eu": "Bai! Nora joateko asmoa duzu?",
+            "es": "¡Sí! ¿Adónde piensas ir?"
+          },
+          {
+            "speaker": "Alaitz",
+            "eu": "Durangoko mendietara.",
+            "es": "A los montes de Durango."
+          },
+          {
+            "speaker": "Oier",
+            "eu": "Primeran! Txikitan aitarekin Durangora joaten nintzen.",
+            "es": "¡Genial! De pequeño iba a Durango con mi padre."
+          },
+          {
+            "speaker": "Alaitz",
+            "eu": "Nola joango gara? Autoz?",
+            "es": "¿Cómo iremos? ¿En coche?"
+          },
+          {
+            "speaker": "Oier",
+            "eu": "Ez daukat autorik. Trenez joango gara?",
+            "es": "No tengo coche. ¿Vamos en tren?"
+          },
+          {
+            "speaker": "Alaitz",
+            "eu": "Ados. Eta geltokitik mendiraino oinez.",
+            "es": "Vale. Y desde la estación hasta el monte, a pie."
+          },
+          {
+            "speaker": "Oier",
+            "eu": "Eta euria egiten badu?",
+            "es": "¿Y si llueve?"
+          },
+          {
+            "speaker": "Alaitz",
+            "eu": "Euria egiten badu, museora joango gara.",
+            "es": "Si llueve, iremos al museo."
+          },
+          {
+            "speaker": "Oier",
+            "eu": "Ondo. Zortzietan geltokian?",
+            "es": "Bien. ¿A las ocho en la estación?"
+          },
+          {
+            "speaker": "Alaitz",
+            "eu": "Bai, zortzietan. Gero arte!",
+            "es": "Sí, a las ocho. ¡Hasta luego!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 1,
+            "prompt": "¿Qué propone Alaitz?",
+            "options": [
+              "Hacer una excursión el sábado",
+              "Ir al cine el sábado",
+              "Ir a casa del padre de Oier"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 5,
+            "prompt": "¿Por qué no irán en coche?",
+            "options": [
+              "Porque Oier no tiene coche",
+              "Porque es caro",
+              "Porque está muy lejos"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 10,
+            "prompt": "¿Qué harán si llueve?",
+            "options": [
+              "Ir al museo",
+              "Quedarse en casa",
+              "Ir en coche"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u12-2.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u12-2.l6",
+      "type": "legendary",
+      "title": {
+        "es": "Nivel legendario",
+        "eu": "Maila legendarioa"
+      }
+    },
+    {
+      "id": "u12-2.l7",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la sección",
+        "eu": "Atalaren errepasoa"
+      },
+      "scope": "section"
+    }
+  ]
+}
