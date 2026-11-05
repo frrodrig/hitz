@@ -49,24 +49,24 @@
       },
       {
         "title": {
-          "es": "Se puede: daiteke",
-          "eu": "Daiteke"
+          "es": "Se puede, no se puede: daiteke, ezin da",
+          "eu": "Daiteke, ezin da"
         },
         "body": {
-          "es": "«Daiteke» significa «se puede» y va detrás de la raíz del verbo (sar daiteke, birzikla daiteke). Con un plural se usa «daitezke». En negativo, «ez daiteke». El papel y el cartón van al contenedor azul, el plástico al amarillo y el vidrio al verde.",
-          "eu": "«Daiteke» aditzaren erroaren ondoren doa (sar daiteke, birzikla daiteke). Pluralarekin «daitezke» erabiltzen da. Ezezkoan, «ez daiteke». Papera eta kartoia edukiontzi urdinera doaz, plastikoa horira eta beira berdera."
+          "es": "«Daiteke» significa «se puede» y va detrás de la raíz del verbo (bota daiteke, birzikla daiteke). Con un plural se usa «daitezke». Para «no se puede» se dice «ezin da» + participio (ezin da bota). El papel y el cartón van al contenedor azul, el plástico al amarillo y el vidrio al verde.",
+          "eu": "«Daiteke» aditzaren erroaren ondoren doa (bota daiteke, birzikla daiteke). Pluralarekin «daitezke» erabiltzen da. Ezezkoan, «ezin da» + partizipioa (ezin da bota). Papera eta kartoia edukiontzi urdinera doaz, plastikoa horira eta beira berdera."
         },
         "examples": [
           {
-            "eu": "Papera edukiontzi urdinean sar daiteke.",
-            "es": "El papel se puede echar en el contenedor azul."
+            "eu": "Papera edukiontzi urdinera bota daiteke.",
+            "es": "El papel se puede tirar al contenedor azul."
           },
           {
             "eu": "Botilak birzikla daitezke.",
             "es": "Las botellas se pueden reciclar."
           },
           {
-            "eu": "Hemen ez daiteke igeri egin.",
+            "eu": "Hemen ezin da igeri egin.",
             "es": "Aquí no se puede nadar."
           }
         ]
@@ -82,8 +82,8 @@
         },
         "examples": [
           {
-            "eu": "Sar ezazu papera edukiontzi urdinean.",
-            "es": "Echa el papel en el contenedor azul."
+            "eu": "Bota ezazu papera edukiontzi urdinera.",
+            "es": "Tira el papel al contenedor azul."
           },
           {
             "eu": "Eraman itzazu botilak edukiontzira.",
@@ -97,21 +97,21 @@
       },
       {
         "title": {
-          "es": "Lo que otros piden: eskatu dit … -tzeko",
-          "eu": "Besteek eskatzen dutena: eskatu dit … -tzeko"
+          "es": "Lo que otros dicen: esan dit … -tzeko",
+          "eu": "Besteek esaten dutena: esan dit … -tzeko"
         },
         "body": {
-          "es": "Para contar lo que alguien nos ha pedido, se usa «eskatu dit» (me ha pedido) o «eskatu digu» (nos ha pedido) y el verbo con -tzeko o -teko al final.",
-          "eu": "Norbaitek eskatu diguna kontatzeko, «eskatu dit» edo «eskatu digu» erabiltzen dugu, eta aditza -tzeko edo -teko amaierarekin."
+          "es": "Para contar lo que alguien nos ha dicho que hagamos, se usa «esan dit» (me ha dicho) o «esan digu» (nos ha dicho) y el verbo con -tzeko o -teko al final. Con «eskatu dit» (me ha pedido) funciona igual.",
+          "eu": "Norbaitek esan diguna kontatzeko, «esan dit» edo «esan digu» erabiltzen dugu, eta aditza -tzeko edo -teko amaierarekin. «Eskatu dit» ere berdin erabiltzen da."
         },
         "examples": [
           {
-            "eu": "Amak eskatu dit botilak birziklatzeko.",
-            "es": "Mi madre me ha pedido que recicle las botellas."
+            "eu": "Amak esan dit botilak birziklatzeko.",
+            "es": "Mi madre me ha dicho que recicle las botellas."
           },
           {
-            "eu": "Irakasleak eskatu digu papera edukiontzi urdinera eramateko.",
-            "es": "La profesora nos ha pedido que llevemos el papel al contenedor azul."
+            "eu": "Irakasleak esan digu papera edukiontzi urdinera eramateko.",
+            "es": "La profesora nos ha dicho que llevemos el papel al contenedor azul."
           }
         ]
       }
@@ -140,9 +140,9 @@
                 "Basoan zuhaitz asko daude."
               ],
               "distractors": [
-                "Mendian",
-                "Itsasoan",
-                "dago"
+                "gertu",
+                "Natura",
+                "bat"
               ],
               "vocabulary": [
                 "baso",
@@ -160,9 +160,9 @@
               "type": "listen_tap",
               "text": "Ibaia eta itsasoa gertu daude.",
               "distractors": [
-                "Itsasoan",
-                "asko",
-                "bat"
+                "arrainik",
+                "hau",
+                "Itsasoan"
               ],
               "vocabulary": [
                 "ibai",
@@ -348,15 +348,18 @@
             {
               "id": "u09-1.l1.s1.e10",
               "type": "listen_type",
-              "text": "Ibaian ez dago arrainik.",
+              "text": "Ibaian ez dago arrainik, baina itsasoan bai.",
               "answers": [
-                "Ibaian ez dago arrainik."
+                "Ibaian ez dago arrainik, baina itsasoan bai."
               ],
               "vocabulary": [
                 "ibai",
                 "ez",
                 "egon",
-                "arrain"
+                "arrain",
+                "baina",
+                "itsaso",
+                "bai"
               ],
               "structures": [
                 "egon-present",
@@ -412,8 +415,8 @@
                 "Este árbol es muy viejo."
               ],
               "distractors": [
-                "están",
-                "nuestra",
+                "monte",
+                "pero",
                 "Aquí"
               ],
               "vocabulary": [
@@ -438,8 +441,8 @@
               "type": "listen_tap",
               "text": "Hau zakarrontzia da.",
               "distractors": [
-                "kalean",
-                "eta"
+                "botatzen",
+                "zakarrontzian"
               ],
               "vocabulary": [
                 "hau",
@@ -679,22 +682,27 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Etxean poltsa asko dauzkagu."
+                "text": "Etxean poltsa asko dauzkagu, baina ez ditugu botatzen."
               },
               "answers": [
-                "En casa tenemos muchas bolsas.",
-                "Tenemos muchas bolsas en casa."
+                "En casa tenemos muchas bolsas, pero no las tiramos.",
+                "Tenemos muchas bolsas en casa, pero no las tiramos."
               ],
               "distractors": [
                 "está",
                 "que",
-                "papelera"
+                "papelera",
+                "papel"
               ],
               "vocabulary": [
                 "etxe",
                 "poltsa",
                 "asko",
-                "eduki"
+                "eduki",
+                "baina",
+                "ez",
+                "ukan",
+                "bota"
               ],
               "structures": [
                 "egon-present",
@@ -712,9 +720,9 @@
                 "Gelan zakarrontzi bat dago."
               ],
               "distractors": [
-                "Poltsan",
-                "Plastikoa",
-                "edukiontzi"
+                "baina",
+                "zakarrontzian",
+                "papera"
               ],
               "vocabulary": [
                 "gela",
@@ -1275,40 +1283,42 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Papera edukiontzi urdinean sar daiteke."
+                "text": "Papera edukiontzi urdinera bota daiteke."
               },
               "answers": [
-                "El papel se puede echar en el contenedor azul.",
-                "Se puede echar el papel en el contenedor azul.",
-                "El papel se puede tirar al contenedor azul."
+                "El papel se puede tirar al contenedor azul.",
+                "Se puede tirar el papel al contenedor azul.",
+                "El papel se puede echar al contenedor azul."
               ],
               "vocabulary": [
                 "paper",
                 "edukiontzi",
                 "urdin",
-                "sartu",
+                "bota",
                 "izan"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             },
             {
               "id": "u09-1.l2.s2.e02",
               "type": "listen_type",
-              "text": "Beira edukiontzi berdean sar daiteke.",
+              "text": "Beira edukiontzi berdera bota daiteke.",
               "answers": [
-                "Beira edukiontzi berdean sar daiteke."
+                "Beira edukiontzi berdera bota daiteke."
               ],
               "vocabulary": [
                 "beira",
                 "edukiontzi",
                 "berde",
-                "sartu",
+                "bota",
                 "izan"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             },
             {
@@ -1327,7 +1337,8 @@
                 "izan"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             },
             {
@@ -1343,28 +1354,30 @@
                 "izan"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             },
             {
               "id": "u09-1.l2.s2.e05",
               "type": "fill_blank",
-              "sentence": "Papera edukiontzi ___ sar daiteke.",
+              "sentence": "Papera edukiontzi ___ bota daiteke.",
               "options": [
-                "urdinean",
-                "berdean"
+                "urdinera",
+                "berdera"
               ],
               "correct": 0,
-              "translation": "El papel se puede echar en el contenedor azul.",
+              "translation": "El papel se puede tirar al contenedor azul.",
               "vocabulary": [
                 "paper",
                 "edukiontzi",
                 "urdin",
-                "sartu",
+                "bota",
                 "izan"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             },
             {
@@ -1379,8 +1392,8 @@
                 "Se pueden reciclar las botellas."
               ],
               "distractors": [
-                "verde",
-                "puede",
+                "No",
+                "contaminación",
                 "plástico"
               ],
               "vocabulary": [
@@ -1389,13 +1402,14 @@
                 "izan"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             },
             {
               "id": "u09-1.l2.s2.e07",
               "type": "choose_meaning",
-              "text": "Hemen ez daiteke igeri egin.",
+              "text": "Hemen ezin da igeri egin.",
               "options": [
                 "Aquí no se puede nadar.",
                 "Aquí se puede nadar.",
@@ -1405,11 +1419,12 @@
               "vocabulary": [
                 "igeri egin",
                 "hemen",
-                "ez",
+                "ezin",
                 "izan"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             },
             {
@@ -1423,8 +1438,8 @@
                 "Kartoia birzikla daiteke."
               ],
               "distractors": [
-                "Plastikoa",
-                "urdinean"
+                "igeri",
+                "Botilak"
               ],
               "vocabulary": [
                 "kartoi",
@@ -1432,7 +1447,8 @@
                 "izan"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             },
             {
@@ -1441,7 +1457,7 @@
               "messages": [
                 {
                   "speaker": "Mikel",
-                  "text": "Beira non sar daiteke?"
+                  "text": "Beira non bota daiteke?"
                 }
               ],
               "options": [
@@ -1453,32 +1469,34 @@
               "vocabulary": [
                 "beira",
                 "non",
-                "sartu",
+                "bota",
                 "izan",
                 "edukiontzi",
                 "berde"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             },
             {
               "id": "u09-1.l2.s2.e10",
               "type": "listen_tap",
-              "text": "Hemen ez daiteke igeri egin.",
+              "text": "Hemen ezin da igeri egin.",
               "distractors": [
-                "edukiontzi",
-                "Botilak",
-                "birzikla"
+                "sar",
+                "daitezke",
+                "edukiontzi"
               ],
               "vocabulary": [
                 "igeri egin",
                 "hemen",
-                "ez",
+                "ezin",
                 "izan"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             },
             {
@@ -1497,21 +1515,25 @@
                 "izan"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             },
             {
               "id": "u09-1.l2.s2.e12",
               "type": "order_sentence",
-              "answer": "Bai, igeri egin daiteke.",
-              "translation": "Sí, se puede nadar.",
+              "answer": "Ez, ezin da. Kutsadura dago.",
+              "translation": "No, no se puede. Hay contaminación.",
               "vocabulary": [
-                "igeri egin",
-                "bai",
-                "izan"
+                "ez",
+                "ezin",
+                "izan",
+                "kutsadura",
+                "egon"
               ],
               "structures": [
-                "daiteke"
+                "daiteke",
+                "ezin-da"
               ]
             }
           ]
@@ -1522,12 +1544,12 @@
             {
               "id": "u09-1.l2.s3.e01",
               "type": "listen_type",
-              "text": "Sar ezazu papera edukiontzi urdinean.",
+              "text": "Bota ezazu papera edukiontzi urdinera.",
               "answers": [
-                "Sar ezazu papera edukiontzi urdinean."
+                "Bota ezazu papera edukiontzi urdinera."
               ],
               "vocabulary": [
-                "sartu",
+                "bota",
                 "ukan",
                 "paper",
                 "edukiontzi",
@@ -1557,15 +1579,15 @@
             {
               "id": "u09-1.l2.s3.e03",
               "type": "fill_blank",
-              "sentence": "Sar ___ papera hemen.",
+              "sentence": "Bota ___ papera hemen.",
               "options": [
                 "ezazu",
                 "itzazu"
               ],
               "correct": 0,
-              "translation": "Echa el papel aquí.",
+              "translation": "Tira el papel aquí.",
               "vocabulary": [
-                "sartu",
+                "bota",
                 "ukan",
                 "paper",
                 "hemen"
@@ -1588,7 +1610,7 @@
               ],
               "distractors": [
                 "botellas",
-                "ha"
+                "La"
               ],
               "vocabulary": [
                 "birziklatu",
@@ -1633,7 +1655,7 @@
               ],
               "distractors": [
                 "Birzikla",
-                "Irakasleak"
+                "esan"
               ],
               "vocabulary": [
                 "joan",
@@ -1648,16 +1670,16 @@
             {
               "id": "u09-1.l2.s3.e07",
               "type": "choose_meaning",
-              "text": "Amak eskatu dit papera birziklatzeko.",
+              "text": "Amak esan dit papera birziklatzeko.",
               "options": [
-                "Mi madre me ha pedido que recicle el papel.",
+                "Mi madre me ha dicho que recicle el papel.",
                 "Mi madre ha reciclado el papel.",
                 "Mi madre me ha pedido papel."
               ],
               "correct": 0,
               "vocabulary": [
                 "ama",
-                "eskatu",
+                "esan",
                 "ukan",
                 "paper",
                 "birziklatu"
@@ -1670,15 +1692,15 @@
             {
               "id": "u09-1.l2.s3.e08",
               "type": "listen_tap",
-              "text": "Amak eskatu dit botilak birziklatzeko.",
+              "text": "Amak esan dit botilak birziklatzeko.",
               "distractors": [
-                "zaitez",
+                "urdinera",
                 "mesedez",
-                "ezazu"
+                "Joan"
               ],
               "vocabulary": [
                 "ama",
-                "eskatu",
+                "esan",
                 "ukan",
                 "botila",
                 "birziklatu"
@@ -1698,8 +1720,8 @@
                 }
               ],
               "options": [
-                "Sar ezazu edukiontzi berdean.",
-                "Sar ezazu edukiontzi urdinean.",
+                "Bota ezazu edukiontzi berdera.",
+                "Bota ezazu edukiontzi urdinera.",
                 "Beirazkoa naiz."
               ],
               "correct": 0,
@@ -1708,7 +1730,7 @@
                 "hau",
                 "beira",
                 "izan",
-                "sartu",
+                "bota",
                 "ukan",
                 "edukiontzi",
                 "berde"
@@ -1723,14 +1745,14 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "La profesora nos ha pedido que llevemos el papel al contenedor azul."
+                "text": "La profesora nos ha dicho que llevemos el papel al contenedor azul."
               },
               "answers": [
-                "Irakasleak eskatu digu papera edukiontzi urdinera eramateko."
+                "Irakasleak esan digu papera edukiontzi urdinera eramateko."
               ],
               "vocabulary": [
                 "irakasle",
-                "eskatu",
+                "esan",
                 "ukan",
                 "paper",
                 "edukiontzi",
@@ -1745,12 +1767,12 @@
             {
               "id": "u09-1.l2.s3.e11",
               "type": "read_true_false",
-              "passage": "Irakasleak eskatu digu paperak eta kartoiak birziklatzeko.",
-              "statement": "La profesora quiere que reciclen el papel y el cartón.",
+              "passage": "Irakasleak esan digu paperak eta kartoiak birziklatzeko.",
+              "statement": "La profesora les ha dicho que reciclen el papel y el cartón.",
               "answer": true,
               "vocabulary": [
                 "irakasle",
-                "eskatu",
+                "esan",
                 "ukan",
                 "paper",
                 "eta",
@@ -1898,7 +1920,7 @@
                 },
                 {
                   "speaker": "Nerea",
-                  "text": "Non sar daiteke?"
+                  "text": "Non bota daiteke?"
                 }
               ],
               "options": [
@@ -1915,7 +1937,7 @@
                 "hau",
                 "plastiko",
                 "non",
-                "sartu",
+                "bota",
                 "edukiontzi",
                 "hori"
               ],
@@ -2209,7 +2231,7 @@
               "messages": [
                 {
                   "speaker": "Haizea",
-                  "text": "Zer eskatu digu irakasleak?"
+                  "text": "Zer esan digu irakasleak?"
                 }
               ],
               "options": [
@@ -2220,7 +2242,7 @@
               "correct": 0,
               "vocabulary": [
                 "zer",
-                "eskatu",
+                "esan",
                 "ukan",
                 "irakasle",
                 "paper",
@@ -2252,12 +2274,12 @@
             {
               "id": "u09-1.l3.s2.e09",
               "type": "read_true_false",
-              "passage": "Amak eskatu dit poltsa eramateko. Gaur supermerkatura noa.",
+              "passage": "Amak esan dit poltsa eramateko. Gaur supermerkatura noa.",
               "statement": "Hoy va al supermercado.",
               "answer": true,
               "vocabulary": [
                 "ama",
-                "eskatu",
+                "esan",
                 "ukan",
                 "poltsa",
                 "eraman",
@@ -2328,9 +2350,9 @@
                 "Hondartzan plastiko asko dago."
               ],
               "distractors": [
-                "herrian",
+                "Gure",
                 "baso",
-                "Gure"
+                "ez"
               ],
               "vocabulary": [
                 "hondartza",
@@ -2348,9 +2370,9 @@
               "type": "listen_tap",
               "text": "Itsasoa ez da zakarrontzia!",
               "distractors": [
-                "Eguzkiaren",
-                "Gure",
-                "mahaiak"
+                "Egurrezko",
+                "eta",
+                "ibai"
               ],
               "vocabulary": [
                 "itsaso",
@@ -2389,17 +2411,17 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Este lugar es muy bonito."
+                "text": "No se pueden tirar residuos al mar."
               },
               "answers": [
-                "Leku hau oso polita da."
+                "Ezin da hondakinik itsasora bota."
               ],
               "vocabulary": [
-                "leku",
-                "hau",
-                "oso",
-                "polit",
-                "izan"
+                "ezin",
+                "izan",
+                "hondakin",
+                "itsaso",
+                "bota"
               ],
               "structures": [
                 "zerezkoa",
@@ -2597,13 +2619,13 @@
           },
           {
             "speaker": "Amaia",
-            "eu": "Eta zakarrontzira zoaz?",
-            "es": "¿Y vas a la papelera?"
+            "eu": "Eta zakarrontzira botako dituzu?",
+            "es": "¿Y los vas a tirar a la papelera?"
           },
           {
             "speaker": "Peio",
-            "eu": "Bai, kalean dago.",
-            "es": "Sí, está en la calle."
+            "eu": "Bai, zakarrontzia kalean dago.",
+            "es": "Sí, la papelera está en la calle."
           },
           {
             "speaker": "Amaia",
@@ -2612,8 +2634,8 @@
           },
           {
             "speaker": "Peio",
-            "eu": "Bai? Eta non sar daiteke?",
-            "es": "¿Sí? ¿Y dónde se puede echar?"
+            "eu": "Bai? Eta non bota daiteke?",
+            "es": "¿Sí? ¿Y dónde se puede tirar?"
           },
           {
             "speaker": "Amaia",

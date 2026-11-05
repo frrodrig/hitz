@@ -132,8 +132,8 @@
                 "Nolakoa da Mikel?"
               ],
               "distractors": [
-                "Ane",
-                "baxua"
+                "eta",
+                "zaharra"
               ],
               "vocabulary": [
                 "nola",
@@ -146,14 +146,19 @@
             {
               "id": "u03-2.l1.s1.e02",
               "type": "listen_tap",
-              "text": "Mikel altua da.",
+              "text": "Mikel altua da, eta Jon ere bai.",
               "distractors": [
+                "Nolakoa",
                 "Itziar",
-                "Nolakoa"
+                "lehengusuak",
+                "gazteak"
               ],
               "vocabulary": [
                 "altu",
-                "izan"
+                "izan",
+                "eta",
+                "ere",
+                "bai"
               ],
               "structures": [
                 "nolakoa"
@@ -280,14 +285,19 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Itziar gaztea da."
+                "text": "Itziar gaztea da, baina bere senarra zaharra da."
               },
               "answers": [
-                "Itziar es joven."
+                "Itziar es joven, pero su marido es mayor.",
+                "Itziar es joven, pero su marido es viejo."
               ],
               "vocabulary": [
                 "gazte",
-                "izan"
+                "izan",
+                "baina",
+                "hura",
+                "senar",
+                "zahar"
               ],
               "structures": [
                 "nolakoa"
@@ -380,9 +390,9 @@
                 "Nuestros primos son jóvenes."
               ],
               "distractors": [
-                "joven",
-                "mayor",
-                "alto"
+                "alto",
+                "pero",
+                "Itziar"
               ],
               "vocabulary": [
                 "gu",
@@ -404,9 +414,9 @@
               "type": "listen_tap",
               "text": "Anek ile luzea du.",
               "distractors": [
-                "handiak",
-                "politak",
-                "ez"
+                "Nik",
+                "Jonek",
+                "txikiak"
               ],
               "vocabulary": [
                 "ile",
@@ -644,9 +654,9 @@
                 "Mi abuelo no tiene pelo."
               ],
               "distractors": [
-                "Tienes",
-                "ojos",
-                "el"
+                "largo",
+                "madre",
+                "pequeños"
               ],
               "vocabulary": [
                 "ni",
@@ -665,22 +675,20 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Iker tiene el pelo largo y bonito."
+                "text": "Iker ahora tiene el pelo corto."
               },
               "answers": [
-                "Ikerrek ile luzea eta polita du."
+                "Ikerrek orain ile motza du."
               ],
               "distractors": [
                 "ditu",
-                "motza",
-                "Nire",
-                "handiak"
+                "Mikelek",
+                "Nire"
               ],
               "vocabulary": [
+                "orain",
                 "ile",
-                "luze",
-                "eta",
-                "polit",
+                "motz",
                 "ukan"
               ],
               "structures": [
@@ -904,7 +912,7 @@
               ],
               "distractors": [
                 "majo",
-                "alegre"
+                "agradable"
               ],
               "vocabulary": [
                 "zu",
@@ -947,9 +955,9 @@
                 "Gure irakaslea gaztea eta alaia da."
               ],
               "distractors": [
-                "Nire",
-                "atsegina",
-                "Zure",
+                "naiz",
+                "zaude",
+                "amona",
                 "Mikel"
               ],
               "vocabulary": [
@@ -968,16 +976,19 @@
             {
               "id": "u03-2.l1.s3.e13",
               "type": "listen_tap",
-              "text": "Haiek oso jatorrak dira.",
+              "text": "Nire amona beti oso atsegina da.",
               "distractors": [
-                "zaude",
-                "atsegina",
-                "ezkonduta"
+                "dago",
+                "eta",
+                "ezkongabea",
+                "jatorra"
               ],
               "vocabulary": [
-                "haiek",
+                "ni",
+                "amona",
+                "beti",
                 "oso",
-                "jator",
+                "atsegin",
                 "izan"
               ],
               "structures": [
@@ -1261,14 +1272,14 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Ane tiene dos primos."
+                "text": "Ane tiene muchos primos."
               },
               "answers": [
-                "Anek bi lehengusu ditu."
+                "Anek lehengusu asko ditu."
               ],
               "vocabulary": [
-                "bi",
                 "lehengusu",
+                "asko",
                 "ukan"
               ],
               "structures": [
@@ -1344,12 +1355,15 @@
             {
               "id": "u03-2.l2.s2.e04",
               "type": "speak",
-              "text": "Neskak begi handiak ditu.",
-              "translation": "La chica tiene los ojos grandes.",
+              "text": "Nire amak euskaraz eta gaztelaniaz hitz egiten du.",
+              "translation": "Mi madre habla euskera y castellano.",
               "vocabulary": [
-                "neska",
-                "begi",
-                "handi",
+                "ni",
+                "ama",
+                "euskara",
+                "eta",
+                "gaztelania",
+                "hitz egin",
                 "ukan"
               ],
               "structures": [
@@ -1389,9 +1403,9 @@
                 "El chico tiene el pelo corto."
               ],
               "distractors": [
-                "ojos",
-                "tres",
-                "los"
+                "tienes",
+                "Miren",
+                "y"
               ],
               "vocabulary": [
                 "mutil",
@@ -1435,9 +1449,9 @@
                 "Irakasleak hiru seme-alaba ditu."
               ],
               "distractors": [
-                "zenbat",
-                "ditut",
-                "alaba"
+                "alaba",
+                "lau",
+                "ditut"
               ],
               "vocabulary": [
                 "irakasle",
@@ -1481,9 +1495,9 @@
               "type": "listen_tap",
               "text": "Nik bi anaia ditut.",
               "distractors": [
-                "lehengusu",
-                "Mirenek",
-                "seme-alaba"
+                "hitz",
+                "Nire",
+                "ile"
               ],
               "vocabulary": [
                 "ni",
@@ -1499,17 +1513,18 @@
             {
               "id": "u03-2.l2.s2.e11",
               "type": "read_true_false",
-              "passage": "Hau Peio da. Hamalau urte ditu. Peiok bi anaia ditu.",
-              "statement": "Peio tiene dos hermanos.",
+              "passage": "Peiok bi anaia ditu. Bata Bilbon bizi da, eta bestea Madrilen.",
+              "statement": "Un hermano de Peio vive en Madrid.",
               "answer": true,
               "vocabulary": [
-                "hau",
-                "izan",
-                "hamalau",
-                "urte",
-                "ukan",
                 "bi",
-                "anaia"
+                "anaia",
+                "ukan",
+                "bat",
+                "bizi izan",
+                "izan",
+                "eta",
+                "beste"
               ],
               "structures": [
                 "nork",
@@ -1756,6 +1771,14 @@
                 {
                   "speaker": "Ibai",
                   "text": "Zenbat urte dituzu, Izaro?"
+                },
+                {
+                  "speaker": "Izaro",
+                  "text": "Hemezortzi."
+                },
+                {
+                  "speaker": "Ibai",
+                  "text": "Barkatu? Poliki, mesedez."
                 }
               ],
               "options": [
@@ -1768,7 +1791,10 @@
                 "zenbat",
                 "urte",
                 "ukan",
-                "hemezortzi"
+                "hemezortzi",
+                "barkatu",
+                "poliki",
+                "mesedez"
               ],
               "structures": [
                 "numbers",
@@ -2036,22 +2062,38 @@
               "messages": [
                 {
                   "speaker": "Haizea",
-                  "text": "Zure neba jatorra da?"
+                  "text": "Noiz zaude zure nebarekin?"
+                },
+                {
+                  "speaker": "Nahia",
+                  "text": "Bihar. Oso jatorra da!"
+                },
+                {
+                  "speaker": "Haizea",
+                  "text": "Eta nolakoa da?"
                 }
               ],
               "options": [
-                "Bai, oso jatorra da.",
-                "Bai, oso jatorra naiz.",
-                "Bai, hogei urte du."
+                "Altua da, eta ile motza du.",
+                "Altua naiz, eta ile motza dut.",
+                "Bihar da."
               ],
               "correct": 0,
               "vocabulary": [
+                "noiz",
+                "egon",
                 "zu",
                 "neba",
+                "bihar",
+                "oso",
                 "jator",
                 "izan",
-                "bai",
-                "oso"
+                "eta",
+                "nola",
+                "altu",
+                "ile",
+                "motz",
+                "ukan"
               ],
               "structures": [
                 "nolakoa",
@@ -2149,24 +2191,22 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Zein da zure izena?"
+                "text": "Barkatu? Berriro, mesedez."
               },
               "answers": [
-                "¿Cuál es tu nombre?",
-                "¿Cómo te llamas?",
-                "¿Cuál es su nombre?",
-                "¿Cómo se llama usted?"
+                "¿Perdón? Otra vez, por favor.",
+                "¿Perdona? Otra vez, por favor.",
+                "Perdón, otra vez, por favor."
               ],
               "distractors": [
-                "dos",
-                "casado",
-                "Tengo"
+                "un",
+                "Tengo",
+                "años"
               ],
               "vocabulary": [
-                "zein",
-                "izan",
-                "zu",
-                "izen"
+                "barkatu",
+                "berriro",
+                "mesedez"
               ],
               "structures": [
                 "personal-info",
@@ -2178,20 +2218,23 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "¿Y cuántos años tienes?"
+                "text": "Hablo un poco de euskera."
               },
               "answers": [
-                "Eta zenbat urte dituzu?"
+                "Nik euskaraz pixka bat hitz egiten dut.",
+                "Euskaraz pixka bat hitz egiten dut."
               ],
               "distractors": [
-                "Zein",
-                "izena",
-                "da"
+                "umerik",
+                "hemezortzi",
+                "Berriro",
+                "ditut"
               ],
               "vocabulary": [
-                "eta",
-                "zenbat",
-                "urte",
+                "pixka bat",
+                "ni",
+                "euskara",
+                "hitz egin",
                 "ukan"
               ],
               "structures": [
@@ -2223,9 +2266,9 @@
               "type": "listen_tap",
               "text": "Hogeita hemezortzi urte ditut.",
               "distractors": [
-                "dut",
-                "zure",
-                "izena"
+                "egiten",
+                "seme",
+                "eta"
               ],
               "vocabulary": [
                 "hogei",
@@ -2307,7 +2350,15 @@
               "messages": [
                 {
                   "speaker": "Kepa",
-                  "text": "Ezkonduta zaude?"
+                  "text": "Kaixo! Euskaraz edo gaztelaniaz?"
+                },
+                {
+                  "speaker": "Uxue",
+                  "text": "Euskaraz, baina poliki, mesedez."
+                },
+                {
+                  "speaker": "Kepa",
+                  "text": "Ondo. Ezkonduta zaude?"
                 }
               ],
               "options": [
@@ -2317,6 +2368,14 @@
               ],
               "correct": 0,
               "vocabulary": [
+                "kaixo",
+                "euskara",
+                "edo",
+                "gaztelania",
+                "baina",
+                "poliki",
+                "mesedez",
+                "ondo",
                 "ezkondu",
                 "egon",
                 "ez",
@@ -2687,8 +2746,8 @@
           },
           {
             "speaker": "Nerea",
-            "eu": "Ondo! Nire lehengusua, Julen, Bilbon dago.",
-            "es": "¡Bien! Mi primo, Julen, está en Bilbao."
+            "eu": "Ondo! Nire lehengusua, Julen, gaur Bilbon dago.",
+            "es": "¡Bien! Mi primo, Julen, hoy está en Bilbao."
           },
           {
             "speaker": "Irati",
@@ -2707,8 +2766,8 @@
           },
           {
             "speaker": "Nerea",
-            "eu": "Hogeita zazpi urte ditu.",
-            "es": "Tiene veintisiete años."
+            "eu": "Ez dakit. Hogeita zazpi edo hogeita zortzi.",
+            "es": "No sé. Veintisiete o veintiocho. | No lo sé. Veintisiete o veintiocho."
           },
           {
             "speaker": "Irati",
@@ -2717,8 +2776,8 @@
           },
           {
             "speaker": "Nerea",
-            "eu": "Ez, ezkongabea da. Oso jatorra eta alaia da!",
-            "es": "No, está soltero. ¡Es muy majo y alegre!"
+            "eu": "Ez, ezkongabea da. Oso alaia da, eta lagun asko ditu!",
+            "es": "No, está soltero. ¡Es muy alegre y tiene muchos amigos!"
           },
           {
             "speaker": "Irati",

@@ -40,6 +40,10 @@
           {
             "eu": "Herria hiria baino lasaiagoa da.",
             "es": "El pueblo es más tranquilo que la ciudad."
+          },
+          {
+            "eu": "Trena autobusa baino hobea da.",
+            "es": "El tren es mejor que el autobús."
           }
         ]
       },
@@ -89,7 +93,7 @@
           "eu": "Superlatiboa"
         },
         "body": {
-          "es": "«El más …» se forma con -ena (lasaiena, el más tranquilo). Delante puede ir el nombre con -rik (herririk lasaiena) y el lugar con -ko (Euskal Herriko).",
+          "es": "«El más …» se forma con -ena (lasaiena, el más tranquilo; onena, el mejor). Delante puede ir el nombre con -rik (herririk lasaiena) y el lugar con -ko (Euskal Herriko).",
           "eu": "Superlatiboa -ena atzizkiarekin egiten da (lasaiena). Aurrean izena -rik atzizkiarekin joan daiteke (herririk lasaiena), eta lekua -ko atzizkiarekin."
         },
         "examples": [
@@ -100,6 +104,10 @@
           {
             "eu": "Museo hau da interesgarriena.",
             "es": "Este museo es el más interesante."
+          },
+          {
+            "eu": "Igerileku hau da herriko onena.",
+            "es": "Esta piscina es la mejor del pueblo."
           }
         ]
       }
@@ -128,9 +136,9 @@
                 "Nire herria oso lasaia da."
               ],
               "distractors": [
-                "Udaletxea",
-                "hau",
-                "garbia"
+                "onak",
+                "garbia",
+                "Kale"
               ],
               "vocabulary": [
                 "ni",
@@ -148,8 +156,8 @@
               "type": "listen_tap",
               "text": "Hiria zaratatsua da.",
               "distractors": [
-                "gauez",
-                "hori"
+                "Udaletxea",
+                "zikina"
               ],
               "vocabulary": [
                 "hiri",
@@ -245,13 +253,17 @@
             {
               "id": "u10-1.l1.s1.e06",
               "type": "order_sentence",
-              "answer": "Parke hori zikina da.",
-              "translation": "Ese parque está sucio.",
+              "answer": "Parke hori zikina da, baina kale hau garbia da.",
+              "translation": "Ese parque está sucio, pero esta calle está limpia.",
               "vocabulary": [
                 "parke",
                 "hori",
                 "zikin",
-                "izan"
+                "izan",
+                "baina",
+                "kale",
+                "hau",
+                "garbi"
               ],
               "structures": [
                 "nolakoa"
@@ -281,14 +293,15 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Herria segurua da."
+                "text": "Herriko zerbitzuak onak dira."
               },
               "answers": [
-                "El pueblo es seguro."
+                "Los servicios del pueblo son buenos."
               ],
               "vocabulary": [
                 "herri",
-                "seguru",
+                "zerbitzu",
+                "on",
                 "izan"
               ],
               "structures": [
@@ -385,9 +398,9 @@
                 "El museo es interesante."
               ],
               "distractors": [
-                "parque",
-                "muy",
-                "seguro"
+                "feo",
+                "servicios",
+                "Esta"
               ],
               "vocabulary": [
                 "museo",
@@ -408,9 +421,9 @@
               "type": "listen_tap",
               "text": "Zinema hau oso erosoa da.",
               "distractors": [
-                "handi",
-                "Museo",
-                "Antzoki"
+                "eta",
+                "museoa",
+                "handi"
               ],
               "vocabulary": [
                 "zinema",
@@ -659,22 +672,25 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Zinema eta antzokia gustatzen zaizkit."
+                "text": "Zinema eta antzokia gustatzen zaizkit, baina museoa ez."
               },
               "answers": [
-                "Me gustan el cine y el teatro."
+                "Me gustan el cine y el teatro, pero el museo no."
               ],
               "distractors": [
-                "la",
                 "es",
-                "no",
-                "hay"
+                "del",
+                "interesante",
+                "piscina"
               ],
               "vocabulary": [
                 "zinema",
                 "eta",
                 "antzoki",
-                "gustatu"
+                "gustatu",
+                "baina",
+                "museo",
+                "ez"
               ],
               "structures": [
                 "nolakoa",
@@ -694,7 +710,7 @@
               "distractors": [
                 "Kiroldegian",
                 "plazan",
-                "aspergarria"
+                "kiroldegi"
               ],
               "vocabulary": [
                 "herri",
@@ -736,12 +752,14 @@
             {
               "id": "u10-1.l1.s3.e02",
               "type": "order_sentence",
-              "answer": "Autobusa plazan dago.",
-              "translation": "El autobús está en la plaza.",
+              "answer": "Autobusa edo trena hartzen dut.",
+              "translation": "Cojo el autobús o el tren.",
               "vocabulary": [
                 "autobus",
-                "plaza",
-                "egon"
+                "edo",
+                "tren",
+                "hartu",
+                "ukan"
               ],
               "structures": [
                 "egon-present"
@@ -915,7 +933,7 @@
               "distractors": [
                 "ciudad",
                 "Bilbao",
-                "cojo",
+                "Cojo",
                 "mucho"
               ],
               "vocabulary": [
@@ -961,7 +979,7 @@
               ],
               "distractors": [
                 "dut",
-                "geltokian",
+                "garraio",
                 "Trena"
               ],
               "vocabulary": [
@@ -979,9 +997,9 @@
               "type": "listen_tap",
               "text": "Egunero autobusa hartzen dut.",
               "distractors": [
-                "Hirian",
-                "garraio",
-                "ez"
+                "Herrian",
+                "ez",
+                "edo"
               ],
               "vocabulary": [
                 "egunero",
@@ -1153,9 +1171,9 @@
               ],
               "distractors": [
                 "cine",
-                "interesante",
+                "pueblo",
                 "grande",
-                "tranquilo"
+                "Tolosa"
               ],
               "vocabulary": [
                 "kale",
@@ -1207,7 +1225,7 @@
                 "Museoa zinema baino interesgarriagoa da?"
               ],
               "distractors": [
-                "hori",
+                "hobea",
                 "handiagoa",
                 "Eibar"
               ],
@@ -1225,13 +1243,16 @@
             {
               "id": "u10-1.l2.s1.e11",
               "type": "read_true_false",
-              "passage": "Hondarribia Irun baino txikiagoa da. Irun handiagoa da.",
+              "passage": "Hondarribia Irun baino txikiagoa da, baina oso polita da. Irun handiagoa da.",
               "statement": "Irun es más pequeño que Hondarribia.",
               "answer": false,
               "vocabulary": [
                 "baino",
                 "txiki",
                 "izan",
+                "baina",
+                "oso",
+                "polit",
                 "handi"
               ],
               "structures": [
@@ -1241,17 +1262,17 @@
             {
               "id": "u10-1.l2.s1.e12",
               "type": "listen_tap",
-              "text": "Herria hiria baino seguruagoa da.",
+              "text": "Trena autobusa baino hobea da.",
               "distractors": [
+                "txikiagoa",
                 "zaratatsuagoa",
-                "zinema",
-                "Tolosa"
+                "Museoa"
               ],
               "vocabulary": [
-                "herri",
-                "hiri",
+                "tren",
+                "autobus",
                 "baino",
-                "seguru",
+                "hobe",
                 "izan"
               ],
               "structures": [
@@ -1442,9 +1463,9 @@
                 "Hiria hain handia da!"
               ],
               "distractors": [
-                "hainbeste",
-                "behar",
-                "gehiago"
+                "Herria",
+                "baino",
+                "Hirian"
               ],
               "vocabulary": [
                 "hiri",
@@ -1492,9 +1513,9 @@
               "type": "listen_tap",
               "text": "Hirian hainbeste autobus daude!",
               "distractors": [
+                "hain",
                 "Hiria",
-                "Herrian",
-                "ditugu"
+                "Herrian"
               ],
               "vocabulary": [
                 "hiri",
@@ -1512,16 +1533,19 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "No tengo tanto dinero."
+                "text": "En el pueblo hay un cine, pero en la ciudad hay más."
               },
               "answers": [
-                "Ez dut hainbeste diru."
+                "Herrian zinema bat dago, baina hirian gehiago daude."
               ],
               "vocabulary": [
-                "ez",
-                "ukan",
-                "hainbeste",
-                "diru"
+                "herri",
+                "zinema",
+                "bat",
+                "egon",
+                "baina",
+                "hiri",
+                "gehiago"
               ],
               "structures": [
                 "gehiago-gutxiago",
@@ -1613,10 +1637,10 @@
                 "Este museo es el más interesante."
               ],
               "distractors": [
-                "Esta",
+                "grande",
+                "metro",
                 "la",
-                "feo",
-                "País"
+                "piscina"
               ],
               "vocabulary": [
                 "museo",
@@ -1659,7 +1683,7 @@
                 "Zein da hiririk zaratatsuena?"
               ],
               "distractors": [
-                "zikinena",
+                "politena",
                 "Museo",
                 "Hondartza"
               ],
@@ -1705,7 +1729,7 @@
               "distractors": [
                 "Hondartza",
                 "Bilbo",
-                "itsusiena"
+                "interesgarriena"
               ],
               "vocabulary": [
                 "kale",
@@ -1763,13 +1787,14 @@
             {
               "id": "u10-1.l2.s3.e11",
               "type": "order_sentence",
-              "answer": "Zinema hau da itsusiena.",
-              "translation": "Este cine es el más feo.",
+              "answer": "Igerileku hau da herriko onena.",
+              "translation": "Esta piscina es la mejor del pueblo.",
               "vocabulary": [
-                "zinema",
+                "igerileku",
                 "hau",
                 "izan",
-                "itsusi"
+                "herri",
+                "on"
               ],
               "structures": [
                 "superlative"
@@ -1840,10 +1865,10 @@
                 "Prefiero el pueblo porque es más tranquilo."
               ],
               "distractors": [
-                "cine",
-                "prefieres",
-                "no",
-                "ciudad"
+                "ciudad",
+                "Para",
+                "mí",
+                "En"
               ],
               "vocabulary": [
                 "nahiago izan",
@@ -1891,7 +1916,7 @@
               ],
               "distractors": [
                 "interesgarriagoa",
-                "Herrian",
+                "Hiria",
                 "delako",
                 "duzu"
               ],
@@ -1952,17 +1977,17 @@
             {
               "id": "u10-1.l3.s1.e06",
               "type": "listen_tap",
-              "text": "Herrian ez dago zinemarik.",
+              "text": "Niretzat herria hobea da.",
               "distractors": [
-                "herria",
-                "garestiak",
-                "interesgarriagoa"
+                "duzu",
+                "garraio",
+                "Hiria"
               ],
               "vocabulary": [
+                "ni",
                 "herri",
-                "ez",
-                "egon",
-                "zinema"
+                "hobe",
+                "izan"
               ],
               "structures": [
                 "comparative-ago",
@@ -2002,15 +2027,18 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "La ciudad es más interesante."
+                "text": "La ciudad es más interesante, pero el pueblo es más tranquilo."
               },
               "answers": [
-                "Hiria interesgarriagoa da."
+                "Hiria interesgarriagoa da, baina herria lasaiagoa."
               ],
               "vocabulary": [
                 "hiri",
                 "interesgarri",
-                "izan"
+                "izan",
+                "baina",
+                "herri",
+                "lasai"
               ],
               "structures": [
                 "comparative-ago",
@@ -2020,7 +2048,7 @@
             {
               "id": "u10-1.l3.s1.e09",
               "type": "read_true_false",
-              "passage": "Ane Bilbon bizi da. Bilbon metroa, museoak eta antzokiak daude.",
+              "passage": "Ane Bilbon bizi da. Bilbon metroa, museoak eta antzokiak daude. Hiria asko gustatzen zaio.",
               "statement": "Ane vive en un pueblo pequeño.",
               "answer": false,
               "vocabulary": [
@@ -2030,7 +2058,10 @@
                 "museo",
                 "eta",
                 "antzoki",
-                "egon"
+                "egon",
+                "hiri",
+                "asko",
+                "gustatu"
               ],
               "structures": [
                 "comparative-ago",
@@ -2359,9 +2390,9 @@
                 "Nire herrian kaleak garbiagoak dira."
               ],
               "distractors": [
-                "Kiroldegia",
-                "dago",
-                "Trena"
+                "igerilekua",
+                "da",
+                "zaratatsua"
               ],
               "vocabulary": [
                 "ni",
@@ -2380,9 +2411,9 @@
               "type": "listen_tap",
               "text": "Hirian zinemak eta antzokiak daude.",
               "distractors": [
-                "baino",
-                "lasaia",
-                "dago"
+                "autobusa",
+                "herrian",
+                "da"
               ],
               "vocabulary": [
                 "hiri",
@@ -2533,16 +2564,18 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Kiroldegia eskolaren ondoan dago."
+                "text": "Zein da hobea, hiria ala herria?"
               },
               "answers": [
-                "El polideportivo está al lado de la escuela."
+                "¿Qué es mejor, la ciudad o el pueblo?",
+                "¿Cuál es mejor, la ciudad o el pueblo?"
               ],
               "vocabulary": [
-                "kiroldegi",
-                "eskola",
-                "ondoan",
-                "egon"
+                "zein",
+                "izan",
+                "hobe",
+                "hiri",
+                "herri"
               ],
               "structures": [
                 "comparative-ago",
@@ -2590,7 +2623,7 @@
             {
               "id": "u10-1.l3.s3.e11",
               "type": "read_true_false",
-              "passage": "Elizondo herri txikia da. Oso lasaia eta segurua da.",
+              "passage": "Elizondo herri txikia da. Oso lasaia eta segurua da. Zerbitzuak ere onak dira.",
               "statement": "Elizondo es un pueblo tranquilo.",
               "answer": true,
               "vocabulary": [
@@ -2600,7 +2633,10 @@
                 "oso",
                 "lasai",
                 "eta",
-                "seguru"
+                "seguru",
+                "zerbitzu",
+                "ere",
+                "on"
               ],
               "structures": [
                 "comparative-ago",
@@ -2654,13 +2690,13 @@
           },
           {
             "speaker": "Gorka",
-            "eu": "Herria seguruagoa eta garbiagoa da.",
-            "es": "El pueblo es más seguro y más limpio."
+            "eu": "Niretzat herria hobea da, seguruagoa eta garbiagoa.",
+            "es": "Para mí el pueblo es mejor, más seguro y más limpio."
           },
           {
             "speaker": "Irati",
-            "eu": "Hiria ez da hain arriskutsua!",
-            "es": "¡La ciudad no es tan peligrosa!"
+            "eu": "Hiria ez da hain arriskutsua, eta zerbitzuak onak dira!",
+            "es": "¡La ciudad no es tan peligrosa, y los servicios son buenos!"
           },
           {
             "speaker": "Gorka",

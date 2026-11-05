@@ -86,6 +86,26 @@
             "es": "De nada."
           }
         ]
+      },
+      {
+        "title": {
+          "es": "Una frase útil: Euskara ikasten ari naiz",
+          "eu": "Esaldi erabilgarria: Euskara ikasten ari naiz"
+        },
+        "body": {
+          "es": "«Euskara ikasten ari naiz» significa «estoy aprendiendo euskera». De momento apréndela como una frase hecha. «Euskaraz» quiere decir «en euskera».",
+          "eu": "Oraingoz, ikasi «Euskara ikasten ari naiz» esapide finko gisa. «Euskaraz» esateko, -z atzizkia gehitzen zaio «euskara» hitzari."
+        },
+        "examples": [
+          {
+            "eu": "Kaixo! Euskara ikasten ari naiz.",
+            "es": "¡Hola! Estoy aprendiendo euskera."
+          },
+          {
+            "eu": "Euskaraz, mesedez.",
+            "es": "En euskera, por favor."
+          }
+        ]
       }
     ]
   },
@@ -686,6 +706,10 @@
                 {
                   "eu": "ez horregatik",
                   "es": "de nada"
+                },
+                {
+                  "eu": "euskara",
+                  "es": "euskera"
                 }
               ],
               "vocabulary": [
@@ -693,7 +717,8 @@
                 "mesedez",
                 "barkatu",
                 "zorionak",
-                "ez horregatik"
+                "ez horregatik",
+                "euskara"
               ],
               "structures": [
                 "courtesy"
@@ -815,8 +840,8 @@
                 "¡Gracias, Jon!"
               ],
               "distractors": [
-                "y",
-                "eres"
+                "tú",
+                "En"
               ],
               "vocabulary": [
                 "eskerrik asko"
@@ -866,16 +891,14 @@
             {
               "id": "u01-1.l1.s3.e13",
               "type": "listen_tap",
-              "text": "Zorionak eta eskerrik asko!",
+              "text": "Euskaraz, mesedez!",
               "distractors": [
-                "zara",
-                "Ane",
-                "Ez"
+                "Zorionak",
+                "Ane"
               ],
               "vocabulary": [
-                "eskerrik asko",
-                "zorionak",
-                "eta"
+                "euskara",
+                "mesedez"
               ],
               "structures": [
                 "courtesy"
@@ -1021,19 +1044,22 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Ni Maialen naiz."
+                "text": "Ni Maialen naiz. Euskara ikasten ari naiz."
               },
               "answers": [
-                "Soy Maialen.",
-                "Yo soy Maialen."
+                "Soy Maialen. Estoy aprendiendo euskera.",
+                "Yo soy Maialen. Estoy aprendiendo euskera.",
+                "Soy Maialen. Aprendo euskera."
               ],
               "distractors": [
-                "Mikel",
+                "y",
+                "días",
                 "Buenos"
               ],
               "vocabulary": [
                 "ni",
-                "izan"
+                "izan",
+                "euskara"
               ],
               "structures": [
                 "izan-present"
@@ -1076,9 +1102,9 @@
                 "Kaixo, ni Iker naiz!"
               ],
               "distractors": [
-                "Itziar",
-                "Gabon",
-                "eta"
+                "ari",
+                "ikasten",
+                "Jon"
               ],
               "vocabulary": [
                 "kaixo",
@@ -1091,12 +1117,28 @@
             },
             {
               "id": "u01-1.l2.s1.e11",
+              "type": "read_true_false",
+              "passage": "Kaixo! Ni Jon naiz. Euskara ikasten ari naiz.",
+              "statement": "Jon está aprendiendo euskera.",
+              "answer": true,
+              "vocabulary": [
+                "kaixo",
+                "ni",
+                "izan",
+                "euskara"
+              ],
+              "structures": [
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s1.e12",
               "type": "listen_tap",
               "text": "Arratsalde on, ni Ane naiz.",
               "distractors": [
                 "eta",
-                "Maialen",
-                "Iker"
+                "Jon",
+                "ari"
               ],
               "vocabulary": [
                 "arratsalde on",
@@ -1108,18 +1150,18 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e12",
+              "id": "u01-1.l2.s1.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "¡Buenas noches! Soy Jon."
+                "text": "¡Hola! Estoy aprendiendo euskera."
               },
               "answers": [
-                "Gabon! Ni Jon naiz."
+                "Kaixo! Euskara ikasten ari naiz."
               ],
               "vocabulary": [
-                "gabon",
-                "ni",
+                "kaixo",
+                "euskara",
                 "izan"
               ],
               "structures": [
@@ -1228,19 +1270,20 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Zu Ane zara?"
+                "text": "Bai, euskara ikasten ari naiz."
               },
               "answers": [
-                "¿Tú eres Ane?",
-                "¿Eres Ane?",
-                "¿Es usted Ane?"
+                "Sí, estoy aprendiendo euskera.",
+                "Sí, aprendo euskera."
               ],
               "distractors": [
                 "y",
-                "Jon"
+                "No",
+                "Ane"
               ],
               "vocabulary": [
-                "zu",
+                "bai",
+                "euskara",
                 "izan"
               ],
               "structures": [
@@ -1279,9 +1322,9 @@
                 "Bai, ni Ane naiz."
               ],
               "distractors": [
-                "Zu",
-                "Barkatu",
-                "zara"
+                "euskara",
+                "eta",
+                "Jon"
               ],
               "vocabulary": [
                 "bai",
@@ -1322,15 +1365,15 @@
             {
               "id": "u01-1.l2.s2.e10",
               "type": "listen_tap",
-              "text": "Ez, ni Maialen naiz.",
+              "text": "Zu euskara ikasten ari zara?",
               "distractors": [
-                "eta",
-                "Barkatu",
-                "Bai"
+                "Mikel",
+                "naiz",
+                "eta"
               ],
               "vocabulary": [
-                "ez",
-                "ni",
+                "zu",
+                "euskara",
                 "izan"
               ],
               "structures": [
@@ -1680,9 +1723,9 @@
                 "Muy bien, gracias. ¿Y usted?"
               ],
               "distractors": [
-                "Yo",
-                "luego",
-                "Ane"
+                "Qué",
+                "Ane",
+                "luego"
               ],
               "vocabulary": [
                 "eskerrik asko",
@@ -1698,6 +1741,50 @@
             },
             {
               "id": "u01-1.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Euskara ikasten ari naiz.",
+              "options": [
+                "Estoy aprendiendo euskera.",
+                "Soy profesor de euskera.",
+                "¿Estás aprendiendo euskera?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "euskara",
+                "izan"
+              ],
+              "structures": [
+                "greetings",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Yo bien, gracias."
+              },
+              "answers": [
+                "Ni ondo, eskerrik asko."
+              ],
+              "distractors": [
+                "Mikel",
+                "Ane",
+                "euskara"
+              ],
+              "vocabulary": [
+                "eskerrik asko",
+                "ni",
+                "ondo"
+              ],
+              "structures": [
+                "greetings",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l3.s1.e05",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1724,24 +1811,17 @@
               ]
             },
             {
-              "id": "u01-1.l3.s1.e04",
-              "type": "translate_wordbank",
-              "prompt": {
-                "lang": "es",
-                "text": "Yo bien, gracias."
-              },
-              "answers": [
-                "Ni ondo, eskerrik asko."
-              ],
+              "id": "u01-1.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Agur, Ane! Gero arte!",
               "distractors": [
-                "Oso",
-                "Agur",
+                "ikasten",
+                "Iker",
                 "Eta"
               ],
               "vocabulary": [
-                "eskerrik asko",
-                "ni",
-                "ondo"
+                "gero arte",
+                "agur"
               ],
               "structures": [
                 "greetings",
@@ -1749,7 +1829,7 @@
               ]
             },
             {
-              "id": "u01-1.l3.s1.e05",
+              "id": "u01-1.l3.s1.e07",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1785,41 +1865,6 @@
               ]
             },
             {
-              "id": "u01-1.l3.s1.e06",
-              "type": "listen_tap",
-              "text": "Agur, Ane! Gero arte!",
-              "distractors": [
-                "Mikel",
-                "Eta",
-                "Zer"
-              ],
-              "vocabulary": [
-                "gero arte",
-                "agur"
-              ],
-              "structures": [
-                "greetings",
-                "izan-present"
-              ]
-            },
-            {
-              "id": "u01-1.l3.s1.e07",
-              "type": "read_true_false",
-              "passage": "Kaixo! Ni Iker naiz. Zer moduz, Ane?",
-              "statement": "Iker saluda a Ane.",
-              "answer": true,
-              "vocabulary": [
-                "zer moduz",
-                "kaixo",
-                "ni",
-                "izan"
-              ],
-              "structures": [
-                "greetings",
-                "izan-present"
-              ]
-            },
-            {
               "id": "u01-1.l3.s1.e08",
               "type": "translate_typing",
               "prompt": {
@@ -1839,6 +1884,40 @@
             },
             {
               "id": "u01-1.l3.s1.e09",
+              "type": "read_true_false",
+              "passage": "Kaixo! Ni Iker naiz. Zer moduz, Ane?",
+              "statement": "Iker saluda a Ane.",
+              "answer": true,
+              "vocabulary": [
+                "zer moduz",
+                "kaixo",
+                "ni",
+                "izan"
+              ],
+              "structures": [
+                "greetings",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l3.s1.e10",
+              "type": "order_sentence",
+              "answer": "Kaixo! Ni Iker naiz, eta euskara ikasten ari naiz.",
+              "translation": "¡Hola! Soy Iker y estoy aprendiendo euskera.",
+              "vocabulary": [
+                "kaixo",
+                "ni",
+                "izan",
+                "eta",
+                "euskara"
+              ],
+              "structures": [
+                "greetings",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l3.s1.e11",
               "type": "read_true_false",
               "passage": "Arratsalde on, Jon! Zorionak!",
               "statement": "Es por la mañana.",
@@ -2341,13 +2420,23 @@
           },
           {
             "speaker": "Ane",
-            "eu": "Barkatu! Agur, Iker! Bihar arte!",
-            "es": "¡Perdona! ¡Adiós, Iker! ¡Hasta mañana!"
+            "eu": "Barkatu!",
+            "es": "¡Perdona!"
           },
           {
             "speaker": "Iker",
-            "eu": "Gero arte!",
-            "es": "¡Hasta luego!"
+            "eu": "Ane, zu euskara ikasten ari zara?",
+            "es": "Ane, ¿estás aprendiendo euskera?"
+          },
+          {
+            "speaker": "Ane",
+            "eu": "Bai, euskara ikasten ari naiz! Agur, Iker! Bihar arte!",
+            "es": "¡Sí, estoy aprendiendo euskera! ¡Adiós, Iker! ¡Hasta mañana!"
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Gero arte, Ane!",
+            "es": "¡Hasta luego, Ane!"
           }
         ],
         "questions": [
@@ -2372,11 +2461,11 @@
             "correct": 0
           },
           {
-            "afterLine": 7,
-            "prompt": "¿Cuándo volverán a verse, según Ane?",
+            "afterLine": 9,
+            "prompt": "¿Qué está aprendiendo Ane?",
             "options": [
-              "Mañana",
-              "Esta noche",
+              "Euskera",
+              "Nombres y apellidos",
               "No lo dice"
             ],
             "correct": 0

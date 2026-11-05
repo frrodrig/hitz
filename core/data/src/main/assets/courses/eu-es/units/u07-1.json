@@ -66,8 +66,8 @@
             "es": "¿Qué has comprado?"
           },
           {
-            "eu": "Lagunak ikusi ditut.",
-            "es": "He visto a mis amigos."
+            "eu": "Liburu asko irakurri ditut.",
+            "es": "He leído muchos libros."
           }
         ]
       },
@@ -77,8 +77,8 @@
           "eu": "Noiz?"
         },
         "body": {
-          "es": "«Gaur» es hoy, «atzo» ayer, «herenegun» anteayer e «iaz» el año pasado. Los días de la semana y las partes del día llevan -(e)an (astelehenean, goizean) y «duela» va delante de la cantidad (duela bi aste).",
-          "eu": "«Gaur», «atzo», «herenegun» eta «iaz» denbora adierazten dute. Asteko egunek eta eguneko uneek -(e)an hartzen dute (astelehenean, goizean), eta «duela» kopuruaren aurretik doa (duela bi aste)."
+          "es": "«Gaur» es hoy, «atzo» ayer, «herenegun» anteayer e «iaz» el año pasado. Los días de la semana y las partes del día llevan -(e)an (astelehenean, goizean) y «duela» va delante de la cantidad (duela bi egun, duela bi aste).",
+          "eu": "«Gaur», «atzo», «herenegun» eta «iaz» denbora adierazten dute. Asteko egunek eta eguneko uneek -(e)an hartzen dute (astelehenean, goizean), eta «duela» kopuruaren aurretik doa (duela bi egun, duela bi aste)."
         },
         "examples": [
           {
@@ -86,8 +86,8 @@
             "es": "Anoche cené en casa."
           },
           {
-            "eu": "Duela bi aste Parisera joan naiz.",
-            "es": "Hace dos semanas fui a París."
+            "eu": "Duela bi egun Parisera joan naiz.",
+            "es": "Hace dos días fui a París."
           },
           {
             "eu": "Joan den larunbatean mendira joan gara.",
@@ -140,10 +140,10 @@
                 "Gaur goizean kafe bat hartu dut."
               ],
               "distractors": [
-                "etxean",
-                "egin",
-                "Atzo",
-                "afaldu"
+                "Zer",
+                "asko",
+                "ikusi",
+                "etxean"
               ],
               "vocabulary": [
                 "gaur",
@@ -163,9 +163,9 @@
               "type": "listen_tap",
               "text": "Atzo Jonek etxean afaldu du.",
               "distractors": [
-                "Gaur",
-                "egin",
-                "kafe"
+                "bat",
+                "arratsaldean",
+                "goizean"
               ],
               "vocabulary": [
                 "atzo",
@@ -347,16 +347,20 @@
             {
               "id": "u07-1.l1.s1.e10",
               "type": "listen_type",
-              "text": "Atzo gauean ez dut afaldu.",
+              "text": "Atzo gauean ez dut afaldu, baina gaur asko jan dut.",
               "answers": [
-                "Atzo gauean ez dut afaldu."
+                "Atzo gauean ez dut afaldu, baina gaur asko jan dut."
               ],
               "vocabulary": [
                 "atzo",
                 "gau",
                 "ez",
                 "ukan",
-                "afaldu"
+                "afaldu",
+                "baina",
+                "gaur",
+                "asko",
+                "jan"
               ],
               "structures": [
                 "time-markers",
@@ -366,8 +370,8 @@
             {
               "id": "u07-1.l1.s1.e11",
               "type": "read_true_false",
-              "passage": "Gaur goizean kafe bat hartu dut. Gero ogia erosi dut.",
-              "statement": "Ha comprado pan.",
+              "passage": "Gaur goizean kafe bat hartu dut. Gero liburu bat ere erosi dut.",
+              "statement": "Ha comprado un libro.",
               "answer": true,
               "vocabulary": [
                 "gaur",
@@ -377,7 +381,8 @@
                 "hartu",
                 "ukan",
                 "gero",
-                "ogi",
+                "liburu",
+                "ere",
                 "erosi"
               ],
               "structures": [
@@ -405,22 +410,24 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Gaur goizean ogia erosi dut."
+                "text": "Gaur goizean liburu bat erosi dut."
               },
               "answers": [
-                "Esta mañana he comprado pan.",
-                "Hoy por la mañana he comprado pan.",
-                "Esta mañana compré pan."
+                "Esta mañana he comprado un libro.",
+                "Hoy por la mañana he comprado un libro.",
+                "Esta mañana compré un libro."
               ],
               "distractors": [
-                "hemos",
+                "tarde",
                 "comido",
-                "tomado"
+                "hemos",
+                "visto"
               ],
               "vocabulary": [
                 "gaur",
                 "goiz",
-                "ogi",
+                "liburu",
+                "bat",
                 "erosi",
                 "ukan"
               ],
@@ -439,9 +446,9 @@
               "type": "listen_tap",
               "text": "Astelehenean Bilbon lan egin dut.",
               "distractors": [
-                "deitu",
-                "Leirerekin",
-                "etxean"
+                "euskara",
+                "bazkaldu",
+                "Donostian"
               ],
               "vocabulary": [
                 "lan egin",
@@ -458,14 +465,15 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "El martes estudié en la biblioteca."
+                "text": "El martes estudié euskera en la biblioteca."
               },
               "answers": [
-                "Asteartean liburutegian ikasi dut."
+                "Asteartean liburutegian euskara ikasi dut."
               ],
               "vocabulary": [
                 "astearte",
                 "liburutegi",
+                "euskara",
                 "ikasi",
                 "ukan"
               ],
@@ -682,20 +690,23 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Igandean etxean irakurri dut."
+                "text": "Igandean etxean liburu bat irakurri dut."
               },
               "answers": [
-                "El domingo leí en casa.",
-                "El domingo he leído en casa."
+                "El domingo leí un libro en casa.",
+                "El domingo he leído un libro en casa."
               ],
               "distractors": [
                 "biblioteca",
                 "Bilbao",
-                "martes"
+                "madre",
+                "teléfono"
               ],
               "vocabulary": [
                 "igande",
                 "etxe",
+                "liburu",
+                "bat",
                 "irakurri",
                 "ukan"
               ],
@@ -715,10 +726,10 @@
                 "Joan den astean Donostian bazkaldu dugu."
               ],
               "distractors": [
+                "Larunbatean",
+                "irakurri",
                 "Astelehenean",
-                "ikasi",
-                "Igandean",
-                "Asteazkenean"
+                "ikasi"
               ],
               "vocabulary": [
                 "joan den",
@@ -786,8 +797,8 @@
                   "es": "viajar"
                 },
                 {
-                  "eu": "idatzi",
-                  "es": "escribir"
+                  "eu": "liburu",
+                  "es": "libro"
                 },
                 {
                   "eu": "entzun",
@@ -805,7 +816,7 @@
               "vocabulary": [
                 "jaio",
                 "bidaiatu",
-                "idatzi",
+                "liburu",
                 "entzun",
                 "iaz",
                 "hilabete"
@@ -897,12 +908,12 @@
             {
               "id": "u07-1.l1.s3.e08",
               "type": "speak",
-              "text": "Duela bi aste Mikeli idatzi diot.",
-              "translation": "Hace dos semanas le escribí a Mikel.",
+              "text": "Duela bi egun Mikeli idatzi diot.",
+              "translation": "Hace dos días le escribí a Mikel.",
               "vocabulary": [
                 "duela",
                 "bi",
-                "aste",
+                "egun",
                 "idatzi",
                 "ukan"
               ],
@@ -937,23 +948,26 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Barkatu, ez dut entzun."
+                "text": "Barkatu, ez dut entzun. Berriro, mesedez."
               },
               "answers": [
-                "Perdona, no lo he oído.",
-                "Perdona, no he oído.",
-                "Perdone, no lo he oído."
+                "Perdona, no lo he oído. Otra vez, por favor.",
+                "Perdona, no he oído. Otra vez, por favor.",
+                "Perdone, no lo he oído. Otra vez, por favor."
               ],
               "distractors": [
-                "pasado",
+                "Nací",
                 "viajamos",
-                "fui"
+                "Francia",
+                "Mikel"
               ],
               "vocabulary": [
                 "barkatu",
                 "ez",
                 "ukan",
-                "entzun"
+                "entzun",
+                "berriro",
+                "mesedez"
               ],
               "structures": [
                 "nor-perfective",
@@ -997,8 +1011,8 @@
                 "Non jaio zara zu?"
               ],
               "distractors": [
-                "Barkatu",
-                "ezkondu",
+                "bat",
+                "bi",
                 "diot"
               ],
               "vocabulary": [
@@ -1034,10 +1048,10 @@
               "type": "listen_tap",
               "text": "Iaz Itziar eta Unai ezkondu dira.",
               "distractors": [
-                "jaio",
-                "Mikeli",
-                "non",
-                "entzun"
+                "joan",
+                "egun",
+                "Nire",
+                "Frantziara"
               ],
               "vocabulary": [
                 "iaz",
@@ -1198,9 +1212,9 @@
               ],
               "distractors": [
                 "casa",
-                "Nerea",
+                "no",
                 "Ane",
-                "Mikel"
+                "monte"
               ],
               "vocabulary": [
                 "guraso",
@@ -1240,20 +1254,22 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Yo no he ido."
+                "text": "Yo no he ido, pero Ane sí."
               },
               "answers": [
-                "Ni ez naiz joan."
+                "Ni ez naiz joan, baina Ane joan da."
               ],
               "distractors": [
-                "Herenegun",
-                "Gasteizera",
-                "nora"
+                "hondartzara",
+                "Gaur",
+                "Nerea",
+                "Bilbora"
               ],
               "vocabulary": [
                 "ni",
                 "ez",
-                "izan"
+                "izan",
+                "baina"
               ],
               "structures": [
                 "nor-perfective"
@@ -1281,8 +1297,8 @@
               "type": "listen_tap",
               "text": "Mikel eta Nerea etxera etorri dira.",
               "distractors": [
-                "da",
-                "hondartzara",
+                "Bilbora",
+                "Herenegun",
                 "zarete",
                 "Atzo"
               ],
@@ -1384,10 +1400,11 @@
             {
               "id": "u07-1.l2.s2.e04",
               "type": "speak",
-              "text": "Anek liburutegian idatzi du.",
-              "translation": "Ane ha escrito en la biblioteca.",
+              "text": "Anek liburu bat idatzi du.",
+              "translation": "Ane ha escrito un libro.",
               "vocabulary": [
-                "liburutegi",
+                "liburu",
+                "bat",
                 "idatzi",
                 "ukan"
               ],
@@ -1473,7 +1490,7 @@
               ],
               "distractors": [
                 "Anek",
-                "liburutegian",
+                "liburu",
                 "ez"
               ],
               "vocabulary": [
@@ -1671,10 +1688,10 @@
                 "Mi madre vino del hospital."
               ],
               "distractors": [
-                "qué",
+                "Hemos",
                 "al",
-                "Has",
-                "ropa"
+                "libro",
+                "San"
               ],
               "vocabulary": [
                 "ama",
@@ -1716,9 +1733,9 @@
                 "Zertara joan zara Bilbora?"
               ],
               "distractors": [
-                "erostera",
-                "bazkaltzera",
-                "gara"
+                "ikustera",
+                "ospitaletik",
+                "etorri"
               ],
               "vocabulary": [
                 "zer",
@@ -1752,14 +1769,15 @@
             {
               "id": "u07-1.l2.s3.e08",
               "type": "listen_tap",
-              "text": "Arropa erostera joan naiz.",
+              "text": "Liburu bat erostera joan naiz.",
               "distractors": [
                 "Bilbora",
                 "dira",
                 "Jatetxera"
               ],
               "vocabulary": [
-                "arropa",
+                "liburu",
+                "bat",
                 "erosi",
                 "izan"
               ],
@@ -1934,10 +1952,10 @@
                 "Por la mañana fui a la escuela."
               ],
               "distractors": [
-                "Hoy",
-                "Qué",
-                "amigos",
-                "cenado"
+                "trabajado",
+                "vino",
+                "un",
+                "has"
               ],
               "vocabulary": [
                 "goiz",
@@ -1979,9 +1997,9 @@
                 "Arratsaldean liburutegian ikasi dut."
               ],
               "distractors": [
-                "Gauean",
-                "egin",
-                "lagunekin"
+                "bat",
+                "ez",
+                "gaur"
               ],
               "vocabulary": [
                 "arratsalde",
@@ -2041,8 +2059,8 @@
               "text": "Eta zuk? Zer egin duzu?",
               "distractors": [
                 "eskolara",
-                "gaur",
-                "afaldu"
+                "Kaixo",
+                "joan"
               ],
               "vocabulary": [
                 "eta",
@@ -2127,13 +2145,17 @@
             {
               "id": "u07-1.l3.s1.e10",
               "type": "order_sentence",
-              "answer": "Gauean lagunekin afaldu dut.",
-              "translation": "Por la noche he cenado con mis amigos.",
+              "answer": "Gauean lagunekin afaldu dut eta ardo pixka bat edan dut.",
+              "translation": "Por la noche he cenado con mis amigos y he bebido un poco de vino.",
               "vocabulary": [
+                "pixka bat",
                 "gau",
                 "lagun",
                 "afaldu",
-                "ukan"
+                "ukan",
+                "eta",
+                "ardo",
+                "edan"
               ],
               "structures": [
                 "time-markers",
@@ -2352,14 +2374,14 @@
             {
               "id": "u07-1.l3.s2.e09",
               "type": "read_true_false",
-              "passage": "Joan den larunbatean Durangora joan gara. Arropa erostera joan gara.",
-              "statement": "Fueron a Durango a comprar comida.",
+              "passage": "Joan den larunbatean Durangora joan gara. Liburuak erostera joan gara.",
+              "statement": "Fueron a Durango a comprar ropa.",
               "answer": false,
               "vocabulary": [
                 "joan den",
                 "larunbat",
                 "izan",
-                "arropa",
+                "liburu",
                 "erosi"
               ],
               "structures": [
@@ -2423,9 +2445,9 @@
                 "Aste honetan zer egin duzu?"
               ],
               "distractors": [
-                "naiz",
-                "ospitalera",
-                "afaldu"
+                "afaldu",
+                "Astelehenean",
+                "batean"
               ],
               "vocabulary": [
                 "zer",
@@ -2443,10 +2465,10 @@
               "type": "listen_tap",
               "text": "Astelehenean eta asteartean lan egin dut.",
               "distractors": [
-                "Igandean",
-                "batean",
-                "joan",
-                "Mireni"
+                "taberna",
+                "aste",
+                "Asteazkenean",
+                "jan"
               ],
               "vocabulary": [
                 "lan egin",
@@ -2626,14 +2648,18 @@
             {
               "id": "u07-1.l3.s3.e10",
               "type": "listen_type",
-              "text": "Igandean hondartzara joan gara.",
+              "text": "Igandean hondartzara joan gara eta arraina jan dugu.",
               "answers": [
-                "Igandean hondartzara joan gara."
+                "Igandean hondartzara joan gara eta arraina jan dugu."
               ],
               "vocabulary": [
                 "igande",
                 "hondartza",
-                "izan"
+                "izan",
+                "eta",
+                "arrain",
+                "jan",
+                "ukan"
               ],
               "structures": [
                 "weekdays",
@@ -2692,8 +2718,8 @@
           },
           {
             "speaker": "Iker",
-            "eu": "Gaur goizean kafe bat hartu dut tabernan.",
-            "es": "Esta mañana he tomado un café en el bar."
+            "eu": "Ez dakit! Gaur goizean kafe bat hartu dut tabernan.",
+            "es": "¡No lo sé! Esta mañana he tomado un café en el bar."
           },
           {
             "speaker": "Iker",

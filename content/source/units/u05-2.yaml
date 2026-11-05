@@ -54,15 +54,15 @@ guidebook:
         es: Consejos sanos
         eu: Aholku osasuntsuak
       body:
-        es: "Para aconsejar, «komeni da» o «kaltegarria da» + verbo con -t(z)ea: egostea, frijitzea. Un «eta» al final de la frase explica el motivo («…, porque…»). Para la frecuencia: egunero, askotan."
-        eu: "Aholkuak emateko, «komeni da» edo «kaltegarria da» + -t(z)ea: egostea, frijitzea. Esaldiaren amaieran «eta» jarrita, arrazoia ematen dugu. Maiztasuna: egunero, askotan."
+        es: "Para aconsejar, «komeni da» o «kaltegarria da» + verbo con -t(z)ea: egostea, frijitzea, jatea, edatea. Un «eta» al final de la frase explica el motivo («…, porque…»). Para la frecuencia: egunero (todos los días), astero (cada semana), askotan (a menudo)."
+        eu: "Aholkuak emateko, «komeni da» edo «kaltegarria da» + -t(z)ea: egostea, frijitzea, jatea, edatea. Esaldiaren amaieran «eta» jarrita, arrazoia ematen dugu. Maiztasuna: egunero, astero, askotan."
       examples:
         - eu: Komeni da arraina egostea.
           es: Conviene cocer el pescado.
         - eu: Arraina nahiago dut, osasuntsua da eta.
           es: Prefiero pescado, porque es sano.
-        - eu: Askotan arraina daukagu.
-          es: A menudo tenemos pescado.
+        - eu: Astero arraina jaten dugu.
+          es: Comemos pescado cada semana.
 levels:
   - type: lesson
     title:
@@ -155,8 +155,8 @@ levels:
           - Azkenik, gehitu gatza. = Por último, añade la sal. | Por último, añade sal. | Por último, añada sal.
           - Arraina osasuntsua da. = El pescado es sano.
           - Azukrea kaltegarria da. = El azúcar es perjudicial.
-          - Egunero ura behar da. = Todos los días hace falta agua. | Cada día hace falta agua. | Todos los días se necesita agua.
-          - Askotan arraina daukagu afarian. = A menudo tenemos pescado para cenar. | A menudo tenemos pescado en la cena.
+          - Egunero ura edaten dut. = Bebo agua todos los días. | Todos los días bebo agua.
+          - Astero arraina jaten dugu afarian. = Cada semana comemos pescado en la cena. | Todas las semanas cenamos pescado.
         pairs:
           - - lehenengo = primero
             - gero = después
@@ -183,8 +183,8 @@ levels:
               - Bai, oso kaltegarria da.
               - Bai, gustatzen zaizkit.
         true_false:
-          - passage: Egunero kafea daukat gosarian. Askotan zukua ere bai.
-            statement: Todos los días hay café en su desayuno.
+          - passage: Gosarian egunero kafea edaten dut. Askotan zukua ere bai.
+            statement: Todos los días bebe café en el desayuno.
             answer: true
   - type: lesson
     title:
@@ -235,7 +235,7 @@ levels:
           - Arrautzak egosita gero, moztu. = Después de cocer los huevos, córtalos. | Después de cocer los huevos, córtelos.
           - Berotu esnea bero egon arte. = Calienta la leche hasta que esté caliente. | Caliente la leche hasta que esté caliente.  # TODO(revisión-nativa): «bero egon» for food (vs «beroa egon»)
           - Gatza gehituta gero, nahastu. = Después de añadir la sal, mezcla. | Después de añadir la sal, mezcle.
-          - Bazkaria baino lehen, moztu ogia. = Antes de la comida, corta el pan. | Antes de comer, corta el pan. | Antes de la comida, corte el pan.
+          - Jan baino lehen, moztu ogia. = Antes de comer, corta el pan. | Antes de comer, corte el pan.
           - Egosi arrautzak, eta gero moztu. = Cuece los huevos y después córtalos. | Cuece los huevos y luego córtalos. | Cueza los huevos y después córtelos.
         meanings:
           - text: Patatak moztuta gero, frijitu.
@@ -268,7 +268,7 @@ levels:
           - Komeni da arraina egostea. = Conviene cocer el pescado.
           - Kaltegarria da patatak askotan frijitzea. = Es perjudicial freír las patatas a menudo. | Freír las patatas a menudo es perjudicial.
           - Komeni da gatz gutxiago gehitzea. = Conviene añadir menos sal. | Conviene echar menos sal.
-          - Arraina komeni zaizu. = Te conviene el pescado. | Le conviene el pescado.
+          - Komeni da egunero ura edatea. = Conviene beber agua todos los días. | Conviene beber agua cada día.
         meanings:
           - text: Komeni da gatz gutxiago gehitzea.
             options:
@@ -338,8 +338,8 @@ levels:
           - Ez dut azukrerik nahi, kaltegarria da eta. = No quiero azúcar, porque es perjudicial. | No quiero azúcar porque es perjudicial.
           - Komeni da patatak egostea, ez frijitzea. = Conviene cocer las patatas, no freírlas.
           - Kaltegarria da azukre gehiago gehitzea. = Es perjudicial añadir más azúcar. | Añadir más azúcar es perjudicial.
-          - Letxuga eta sagarrak komeni zaizkizu. = Te convienen la lechuga y las manzanas. | Le convienen la lechuga y las manzanas.
-          - Askotan arraina daukagu, osasuntsua da eta. = A menudo tenemos pescado, porque es sano. | Tenemos pescado a menudo porque es sano.
+          - Kaltegarria da azukre asko jatea. = Es perjudicial comer mucho azúcar. | Comer mucho azúcar es perjudicial.
+          - Arraina astero jaten dugu, osasuntsua da eta. = Comemos pescado cada semana, porque es sano. | Cada semana comemos pescado porque es sano.
         chats:
           - messages:
               - Asier | Kafea azukrearekin?
@@ -370,16 +370,16 @@ levels:
       - structures: [frequency, behar-da]
         sentences:
           - Egunero ogia behar dugu. = Necesitamos pan todos los días. | Todos los días necesitamos pan.
-          - Askotan oilaskoa daukagu bazkarian. = A menudo tenemos pollo en la comida. | A menudo tenemos pollo para comer.
-          - Egunero kafea nahi dut gosarian. = Todos los días quiero café en el desayuno. | Quiero café en el desayuno todos los días.
-          - Gure etxean askotan arraina dago. = En nuestra casa a menudo hay pescado. | En nuestra casa hay pescado a menudo.
+          - Askotan oilaskoa jaten dugu bazkarian. = A menudo comemos pollo en la comida. | A menudo comemos pollo a mediodía.
+          - Egunero kafea edaten dut gosarian. = Todos los días bebo café en el desayuno. | Bebo café en el desayuno todos los días.
+          - Zuek astero arraina jaten duzue? = ¿Coméis pescado cada semana? | ¿Vosotros coméis pescado cada semana?
           - Egunero sagar bat komeni zaizu. = Te conviene una manzana cada día. | Le conviene una manzana cada día. | Te conviene una manzana todos los días.
           - Zartagin berri bat behar da. = Hace falta una sartén nueva. | Se necesita una sartén nueva.
         chats:
           - messages:
-              - Haizea | Egunero arraina daukazu?
+              - Haizea | Egunero arraina jaten duzu?
             options:
-              - Ez, askotan oilaskoa daukat.
+              - Ez, astero bakarrik.
               - Bai, egunero gatza gustatzen zait.
               - Ez horregatik.
           - messages:
@@ -390,11 +390,11 @@ levels:
               - Ondo! Eta olioa ere gustatzen.
               - Egun on, June!
         meanings:
-          - text: Askotan arraina daukagu.
+          - text: Askotan arraina jaten dugu.
             options:
-              - A menudo tenemos pescado.
-              - Todos los días tenemos pescado.
-              - Nunca tenemos pescado.
+              - A menudo comemos pescado.
+              - Todos los días comemos pescado.
+              - Cada semana bebemos agua.
         true_false:
           - passage: Egunero ura behar da. Askotan kafea ere bai.
             statement: Hace falta agua todos los días.
@@ -409,7 +409,7 @@ levels:
     story:
       title: Amonaren sukaldean
       lines:
-        - Amona | Kaixo, Izaro! Patatak eta arrautzak daude. = ¡Hola, Izaro! Hay patatas y huevos.
+        - Amona | Kaixo, Izaro! Gaur patatak eta arrautzak jaten ditugu. = ¡Hola, Izaro! Hoy comemos patatas y huevos.
         - Izaro | Ondo! Zer behar da? = ¡Bien! ¿Qué hace falta?
         - Amona | Olioa, gatza eta zartagin bat. = Aceite, sal y una sartén.
         - Amona | Lehenengo, moztu patatak. = Primero, corta las patatas.
@@ -420,7 +420,7 @@ levels:
         - Izaro | Ondoren, arrautzak? = ¿A continuación, los huevos?
         - Amona | Bai. Azkenik, nahastu arrautzak eta patatak. = Sí. Por último, mezcla los huevos y las patatas.
         - Izaro | Amona, frijitzea kaltegarria da? = Abuela, ¿freír es perjudicial?
-        - Amona | Egunero frijitzea, bai. Bazkari hau, ez! = Freír todos los días, sí. ¡Esta comida, no!
+        - Amona | Egunero frijitzea, bai. Gaur, ez! = Freír todos los días, sí. ¡Hoy, no!
       questions:
         - afterLine: 2
           prompt: ¿Qué hace falta?

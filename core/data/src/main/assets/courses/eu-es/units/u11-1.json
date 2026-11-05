@@ -29,8 +29,8 @@
           "eu": "Jakin: dakit, dakizu"
         },
         "body": {
-          "es": "«Jakin» (saber) tiene formas propias en presente: dakit, dakizu, daki, dakigu, dakizue, dakite. En respuestas afirmativas sin más palabras se usa «ba-»: «Badakit».",
-          "eu": "«Jakin» aditzak orainaldiko forma trinkoak ditu: dakit, dakizu, daki, dakigu, dakizue, dakite. Baiezko erantzun laburretan «ba-» erabiltzen da: «Badakit»."
+          "es": "«Jakin» (saber) tiene formas propias en presente: dakit, dakizu, daki, dakigu, dakizue, dakite. También se usa con idiomas (hizkuntzak): «ingelesa daki» (sabe inglés). En respuestas afirmativas sin más palabras se usa «ba-»: «Badakit».",
+          "eu": "«Jakin» aditzak orainaldiko forma trinkoak ditu: dakit, dakizu, daki, dakigu, dakizue, dakite. Hizkuntzekin ere erabiltzen da: «ingelesa daki». Baiezko erantzun laburretan «ba-» erabiltzen da: «Badakit»."
         },
         "examples": [
           {
@@ -38,12 +38,12 @@
             "es": "No lo sé."
           },
           {
-            "eu": "Badakizu Mikelen helbidea?",
-            "es": "¿Sabes la dirección de Mikel?"
+            "eu": "Badakizu ingelesa?",
+            "es": "¿Sabes inglés?"
           },
           {
             "eu": "Bai, badakit.",
-            "es": "Sí, la sé."
+            "es": "Sí, sé."
           }
         ]
       },
@@ -93,17 +93,17 @@
           "eu": "Norbaiti zerbait egin: diot, didazu"
         },
         "body": {
-          "es": "Cuando hay alguien que recibe la acción (a quién, con -ri), el auxiliar cambia: diot (yo a él), diozu (tú a él), dio (él a él), dit (él a mí), didazu (tú a mí), dizut (yo a ti), diet (yo a ellos).",
+          "es": "Cuando hay alguien que recibe la acción (a quién, con -ri), como con «eman» (dar) o «galdetu» (preguntar), el auxiliar cambia: diot (yo a él), diozu (tú a él), dio (él a él), dit (él a mí), didazu (tú a mí), dizut (yo a ti), diet (yo a ellos).",
           "eu": "Norbaitek zerbait jasotzen duenean (nori, -ri), laguntzailea aldatzen da: diot, diozu, dio, dit, didazu, dizut, diet."
         },
         "examples": [
           {
-            "eu": "Nagusiari deitu diot.",
-            "es": "He llamado al jefe."
+            "eu": "Nagusiari galdetu diot.",
+            "es": "Le he preguntado al jefe."
           },
           {
-            "eu": "Zuk idatzi didazu?",
-            "es": "¿Me has escrito?"
+            "eu": "Kontratua eman didazu?",
+            "es": "¿Me has dado el contrato?"
           },
           {
             "eu": "Enpresak soldata ordaindu dit.",
@@ -359,7 +359,7 @@
             {
               "id": "u11-1.l1.s1.e11",
               "type": "read_true_false",
-              "passage": "Kaixo! Ni Jon naiz. Autobus gidaria naiz.",
+              "passage": "Kaixo! Ni Jon naiz. Autobus gidaria naiz. Egunero autobusa gidatzen dut.",
               "statement": "Jon es conductor de autobús.",
               "answer": true,
               "vocabulary": [
@@ -367,7 +367,10 @@
                 "ni",
                 "izan",
                 "autobus",
-                "gidari"
+                "gidari",
+                "egunero",
+                "gidatu",
+                "ukan"
               ],
               "structures": [
                 "lanbideak",
@@ -426,10 +429,10 @@
               "type": "listen_tap",
               "text": "Nik bulego batean lan egiten dut.",
               "distractors": [
-                "duzu",
                 "ditu",
-                "Gure",
-                "ehun"
+                "Bulegoan",
+                "euskara",
+                "Lantegiak"
               ],
               "vocabulary": [
                 "ni",
@@ -541,16 +544,21 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Bulegoa hirugarren solairuan dago."
+                "text": "Bulegoan bi hizkuntza erabiltzen ditugu, euskara eta gaztelania."
               },
               "answers": [
-                "La oficina está en el tercer piso."
+                "En la oficina usamos dos idiomas, euskera y castellano.",
+                "En la oficina usamos dos lenguas, euskera y castellano."
               ],
               "vocabulary": [
                 "bulego",
-                "hiru",
-                "solairu",
-                "egon"
+                "bi",
+                "hizkuntza",
+                "erabili",
+                "ukan",
+                "euskara",
+                "eta",
+                "gaztelania"
               ],
               "structures": [
                 "lantokiak"
@@ -666,10 +674,10 @@
                 "Mis compañeras están en la oficina."
               ],
               "distractors": [
+                "empresa",
                 "Bilbao",
-                "es",
-                "tercer",
-                "empresa"
+                "Nuestra",
+                "Tu"
               ],
               "vocabulary": [
                 "ni",
@@ -692,8 +700,8 @@
                 "Zertan egiten duzu lan?"
               ],
               "distractors": [
-                "lantegi",
-                "bulego",
+                "Bilbon",
+                "du",
                 "batean"
               ],
               "vocabulary": [
@@ -788,15 +796,18 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Soldata ona da."
+                "text": "Soldata ona da, baina ordutegia ez."
               },
               "answers": [
-                "El sueldo es bueno."
+                "El sueldo es bueno, pero el horario no."
               ],
               "vocabulary": [
                 "soldata",
                 "on",
-                "izan"
+                "izan",
+                "baina",
+                "ordutegi",
+                "ez"
               ],
               "structures": [
                 "lan-baldintzak"
@@ -913,8 +924,8 @@
                 "Es a jornada completa."
               ],
               "distractors": [
-                "sueldo",
-                "interesante"
+                "horario",
+                "contrato"
               ],
               "vocabulary": [
                 "lanaldi",
@@ -957,8 +968,8 @@
                 "Iragarki hau interesgarria da."
               ],
               "distractors": [
-                "Zein",
-                "hilabetean",
+                "lan",
+                "ez",
                 "Zortzietatik"
               ],
               "vocabulary": [
@@ -976,8 +987,8 @@
               "type": "listen_tap",
               "text": "Ordutegia goizekoa da.",
               "distractors": [
-                "egiten",
-                "hilabetean"
+                "hilabeterako",
+                "osoa"
               ],
               "vocabulary": [
                 "ordutegi",
@@ -1016,7 +1027,7 @@
                 "Yo no lo sé."
               ],
               "vocabulary": [
-                "ez"
+                "ez dakit"
               ],
               "structures": [
                 "jakin-present"
@@ -1027,15 +1038,17 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Zuk badakizu?"
+                "text": "Zein hizkuntza dakizu?"
               },
               "answers": [
-                "¿Tú lo sabes?",
-                "¿Lo sabes?",
-                "¿Usted lo sabe?"
+                "¿Qué idioma sabes?",
+                "¿Qué idioma sabe usted?",
+                "¿Qué idiomas sabes?"
               ],
               "vocabulary": [
-                "zu"
+                "zein",
+                "hizkuntza",
+                "jakin"
               ],
               "structures": [
                 "jakin-present"
@@ -1066,6 +1079,9 @@
                   "es": "saben"
                 }
               ],
+              "vocabulary": [
+                "jakin"
+              ],
               "structures": [
                 "jakin-present"
               ]
@@ -1078,7 +1094,8 @@
                 "Jonek ez daki."
               ],
               "vocabulary": [
-                "ez"
+                "ez",
+                "jakin"
               ],
               "structures": [
                 "jakin-present"
@@ -1096,8 +1113,8 @@
               "correct": 0,
               "translation": "Yo no lo sé.",
               "vocabulary": [
-                "ni",
-                "ez"
+                "ez dakit",
+                "ni"
               ],
               "structures": [
                 "jakin-present"
@@ -1109,7 +1126,8 @@
               "text": "Guk badakigu.",
               "translation": "Nosotros lo sabemos.",
               "vocabulary": [
-                "gu"
+                "gu",
+                "jakin"
               ],
               "structures": [
                 "jakin-present"
@@ -1127,7 +1145,8 @@
               "correct": 0,
               "vocabulary": [
                 "lankide",
-                "ez"
+                "ez",
+                "jakin"
               ],
               "structures": [
                 "jakin-present"
@@ -1138,19 +1157,23 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Haiek badakite."
+                "text": "Haiek ez dakite ingelesa."
               },
               "answers": [
-                "Ellos lo saben.",
-                "Ellas lo saben.",
-                "Lo saben."
+                "Ellos no saben inglés.",
+                "Ellas no saben inglés.",
+                "No saben inglés."
               ],
               "distractors": [
-                "teléfono",
-                "sabemos"
+                "Nosotros",
+                "idioma",
+                "Qué"
               ],
               "vocabulary": [
-                "haiek"
+                "haiek",
+                "ez",
+                "jakin",
+                "ingeles"
               ],
               "structures": [
                 "jakin-present"
@@ -1172,7 +1195,9 @@
               ],
               "correct": 0,
               "vocabulary": [
+                "jakin",
                 "helbide",
+                "ez dakit",
                 "ez"
               ],
               "structures": [
@@ -1184,17 +1209,19 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "El jefe lo sabe."
+                "text": "El jefe sabe inglés."
               },
               "answers": [
-                "Nagusiak badaki."
+                "Nagusiak ingelesa daki."
               ],
               "distractors": [
-                "Guk",
-                "Jonek"
+                "helbidea",
+                "Mikelen"
               ],
               "vocabulary": [
-                "nagusi"
+                "nagusi",
+                "ingeles",
+                "jakin"
               ],
               "structures": [
                 "jakin-present"
@@ -1207,11 +1234,12 @@
               "statement": "La persona que habla sabe el número de Gorka.",
               "answer": false,
               "vocabulary": [
+                "ez dakit",
                 "ni",
-                "ez",
                 "telefono",
                 "zenbaki",
-                "zu"
+                "zu",
+                "jakin"
               ],
               "structures": [
                 "jakin-present"
@@ -1222,10 +1250,11 @@
               "type": "listen_tap",
               "text": "Badakizu Mikelen helbidea?",
               "distractors": [
-                "zenbakia",
-                "dakit"
+                "dakit",
+                "dakizu"
               ],
               "vocabulary": [
+                "jakin",
                 "helbide"
               ],
               "structures": [
@@ -1245,7 +1274,8 @@
               "vocabulary": [
                 "nagusi",
                 "telefono",
-                "zenbaki"
+                "zenbaki",
+                "jakin"
               ],
               "structures": [
                 "jakin-present"
@@ -1268,6 +1298,10 @@
                 "¿Sabe usted conducir?",
                 "¿Sabe conducir?"
               ],
+              "vocabulary": [
+                "jakin",
+                "gidatu"
+              ],
               "structures": [
                 "jakin-tzen"
               ]
@@ -1280,7 +1314,9 @@
                 "Bai, gidatzen badakit."
               ],
               "vocabulary": [
-                "bai"
+                "bai",
+                "gidatu",
+                "jakin"
               ],
               "structures": [
                 "jakin-tzen"
@@ -1297,6 +1333,10 @@
               ],
               "correct": 0,
               "translation": "¿Sabes conducir?",
+              "vocabulary": [
+                "jakin",
+                "gidatu"
+              ],
               "structures": [
                 "jakin-tzen"
               ]
@@ -1307,7 +1347,7 @@
               "text": "Ez dakit igeri egiten.",
               "translation": "No sé nadar.",
               "vocabulary": [
-                "ez",
+                "ez dakit",
                 "igeri egin",
                 "egin"
               ],
@@ -1327,8 +1367,9 @@
               "correct": 0,
               "translation": "Yo no sé conducir.",
               "vocabulary": [
+                "ez dakit",
                 "ni",
-                "ez"
+                "gidatu"
               ],
               "structures": [
                 "jakin-tzen"
@@ -1345,12 +1386,14 @@
                 "Mikel no sabe conducir."
               ],
               "distractors": [
-                "escribir",
+                "euskera",
                 "sé",
-                "Nuestros"
+                "niños"
               ],
               "vocabulary": [
-                "ez"
+                "ez",
+                "jakin",
+                "gidatu"
               ],
               "structures": [
                 "jakin-tzen"
@@ -1369,6 +1412,7 @@
               "vocabulary": [
                 "amona",
                 "ez",
+                "jakin",
                 "idatzi"
               ],
               "structures": [
@@ -1387,12 +1431,13 @@
               ],
               "distractors": [
                 "egiten",
-                "janaria",
+                "hitz",
                 "badakit"
               ],
               "vocabulary": [
                 "gu",
                 "ume",
+                "jakin",
                 "irakurri"
               ],
               "structures": [
@@ -1415,6 +1460,7 @@
               ],
               "correct": 0,
               "vocabulary": [
+                "jakin",
                 "igeri egin",
                 "egin",
                 "bai"
@@ -1428,13 +1474,14 @@
               "type": "listen_tap",
               "text": "Amonak ez daki idazten.",
               "distractors": [
-                "ondo",
-                "egiten",
-                "Badakizu"
+                "irakurtzen",
+                "badakit",
+                "ogia"
               ],
               "vocabulary": [
                 "amona",
                 "ez",
+                "jakin",
                 "idatzi"
               ],
               "structures": [
@@ -1446,15 +1493,18 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "¿Vosotros sabéis preparar la comida?"
+                "text": "¿Sabes hablar euskera? Sí, un poco."
               },
               "answers": [
-                "Zuek badakizue janaria prestatzen?"
+                "Badakizu euskaraz hitz egiten? Bai, pixka bat."
               ],
               "vocabulary": [
-                "zuek",
-                "janari",
-                "prestatu"
+                "pixka bat",
+                "jakin",
+                "euskara",
+                "hitz egin",
+                "egin",
+                "bai"
               ],
               "structures": [
                 "jakin-tzen"
@@ -1467,6 +1517,7 @@
               "translation": "Unai sabe hacer pan muy bien.",
               "vocabulary": [
                 "ondo",
+                "jakin",
                 "ogi",
                 "egin"
               ],
@@ -1556,8 +1607,8 @@
                 "Yo te he comprado un café."
               ],
               "distractors": [
-                "a",
-                "está",
+                "libro",
+                "es",
                 "Ane"
               ],
               "vocabulary": [
@@ -1598,22 +1649,22 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Ane le ha comprado un regalo al compañero."
+                "text": "Ane le ha dado un libro al compañero."
               },
               "answers": [
-                "Anek lankideari opari bat erosi dio."
+                "Anek lankideari liburu bat eman dio."
               ],
               "distractors": [
-                "eskatu",
-                "kontratu",
+                "diote",
                 "berri",
-                "kafe"
+                "lanerako",
+                "Zuk"
               ],
               "vocabulary": [
                 "lankide",
-                "opari",
+                "liburu",
                 "bat",
-                "erosi",
+                "eman",
                 "ukan"
               ],
               "structures": [
@@ -1646,9 +1697,9 @@
               "type": "listen_tap",
               "text": "Guk nagusiari kontratu berri bat eskatu diogu.",
               "distractors": [
-                "hemen",
+                "galdetu",
                 "Bilborako",
-                "lanerako",
+                "idazkariari",
                 "dago"
               ],
               "vocabulary": [
@@ -1696,15 +1747,16 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Los compañeros han llamado a la secretaria."
+                "text": "Los compañeros le han preguntado el horario a la secretaria."
               },
               "answers": [
-                "Lankideek idazkariari deitu diote."
+                "Lankideek idazkariari ordutegia galdetu diote."
               ],
               "vocabulary": [
                 "lankide",
                 "idazkari",
-                "deitu",
+                "ordutegi",
+                "galdetu",
                 "ukan"
               ],
               "structures": [
@@ -1715,8 +1767,8 @@
             {
               "id": "u11-1.l2.s3.e11",
               "type": "read_true_false",
-              "passage": "Gaur Itziarren urtebetetzea da. Nik opari bat erosi diot.",
-              "statement": "La persona que habla le ha comprado un regalo a Itziar.",
+              "passage": "Gaur Itziarren urtebetetzea da. Nik opari bat eman diot.",
+              "statement": "La persona que habla le ha dado un regalo a Itziar.",
               "answer": true,
               "vocabulary": [
                 "gaur",
@@ -1725,7 +1777,7 @@
                 "ni",
                 "opari",
                 "bat",
-                "erosi",
+                "eman",
                 "ukan"
               ],
               "structures": [
@@ -1787,12 +1839,13 @@
             {
               "id": "u11-1.l3.s1.e01",
               "type": "speak",
-              "text": "Zein da ordutegia?",
-              "translation": "¿Cuál es el horario?",
+              "text": "Nagusiari soldata galdetu diot.",
+              "translation": "Le he preguntado el sueldo al jefe.",
               "vocabulary": [
-                "zein",
-                "izan",
-                "ordutegi"
+                "nagusi",
+                "soldata",
+                "galdetu",
+                "ukan"
               ],
               "structures": [
                 "lan-baldintzak",
@@ -1811,10 +1864,10 @@
                 "Trabajamos de mañana, de ocho a tres."
               ],
               "distractors": [
-                "sueldo",
-                "horario",
-                "jornada",
-                "completa"
+                "Es",
+                "contrato",
+                "trabajo",
+                "año"
               ],
               "vocabulary": [
                 "goiz",
@@ -1854,18 +1907,24 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "¿Y el sueldo?"
+                "text": "Para el trabajo necesitas euskera e inglés."
               },
               "answers": [
-                "Eta soldata?"
+                "Lanerako euskara eta ingelesa behar dituzu."
               ],
               "distractors": [
-                "urte",
-                "hilabetean"
+                "zortzietatik",
+                "Kontratua",
+                "baterako",
+                "urte"
               ],
               "vocabulary": [
+                "lan",
+                "euskara",
                 "eta",
-                "soldata"
+                "ingeles",
+                "behar izan",
+                "ukan"
               ],
               "structures": [
                 "lan-baldintzak",
@@ -1907,9 +1966,9 @@
               "type": "listen_tap",
               "text": "Soldata 1400 euro da hilabetean.",
               "distractors": [
-                "osoa",
-                "Goizez",
-                "egiten"
+                "baterako",
+                "galdetu",
+                "dugu"
               ],
               "vocabulary": [
                 "soldata",
@@ -2059,11 +2118,13 @@
                 "¿Sabe usted conducir? Necesitamos un conductor."
               ],
               "distractors": [
-                "Mi",
-                "sabéis",
-                "hacer"
+                "inglés",
+                "yo",
+                "euskera"
               ],
               "vocabulary": [
+                "jakin",
+                "gidatu",
                 "gidari",
                 "bat",
                 "behar izan",
@@ -2084,14 +2145,15 @@
                 "Bai, nik autobusa gidatzen dut."
               ],
               "distractors": [
-                "lankideak",
-                "ogia",
-                "igeri"
+                "ingelesa",
+                "Nire",
+                "Idazkariak"
               ],
               "vocabulary": [
                 "bai",
                 "ni",
                 "autobus",
+                "gidatu",
                 "ukan"
               ],
               "structures": [
@@ -2112,6 +2174,7 @@
               "vocabulary": [
                 "haiek",
                 "ez",
+                "jakin",
                 "irakurri"
               ],
               "structures": [
@@ -2123,14 +2186,15 @@
               "type": "listen_tap",
               "text": "Idazkariak ondo idazten daki.",
               "distractors": [
-                "Bai",
-                "lankideak",
-                "Nire"
+                "Okindegian",
+                "lan",
+                "dut"
               ],
               "vocabulary": [
                 "idazkari",
                 "ondo",
-                "idatzi"
+                "idatzi",
+                "jakin"
               ],
               "structures": [
                 "jakin-tzen"
@@ -2152,6 +2216,9 @@
               ],
               "correct": 0,
               "vocabulary": [
+                "jakin",
+                "gidatu",
+                "ez dakit",
                 "ez"
               ],
               "structures": [
@@ -2163,17 +2230,19 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Mi compañero no sabe nadar."
+                "text": "Mi compañero sabe inglés, pero euskera no."
               },
               "answers": [
-                "Nire lankideak ez daki igeri egiten."
+                "Nire lankideak ingelesa daki, baina euskara ez."
               ],
               "vocabulary": [
                 "ni",
                 "lankide",
-                "ez",
-                "igeri egin",
-                "egin"
+                "ingeles",
+                "jakin",
+                "baina",
+                "euskara",
+                "ez"
               ],
               "structures": [
                 "jakin-tzen"
@@ -2208,6 +2277,7 @@
                 "behar izan",
                 "ukan",
                 "zu",
+                "jakin",
                 "janari",
                 "prestatu",
                 "bai",
@@ -2231,6 +2301,7 @@
               "translation": "¿Vosotros sabéis hacer pan?",
               "vocabulary": [
                 "zuek",
+                "jakin",
                 "ogi",
                 "egin"
               ],
@@ -2245,10 +2316,12 @@
               "statement": "Amaia sabe nadar.",
               "answer": false,
               "vocabulary": [
+                "ez dakit",
                 "ni",
                 "ama",
                 "izan",
-                "ez",
+                "jakin",
+                "gidatu",
                 "igeri egin",
                 "egin"
               ],
@@ -2269,6 +2342,7 @@
               ],
               "vocabulary": [
                 "bai",
+                "jakin",
                 "okindegi",
                 "lan",
                 "egin",
@@ -2281,15 +2355,18 @@
             {
               "id": "u11-1.l3.s2.e11",
               "type": "read_true_false",
-              "passage": "Peio idazkaria da. Oso ondo idazten daki.",
-              "statement": "Peio escribe bien.",
+              "passage": "Peio idazkaria da. Hizkuntzak gustatzen zaizkio, eta ingelesa ere badaki.",
+              "statement": "A Peio le gustan los idiomas.",
               "answer": true,
               "vocabulary": [
                 "idazkari",
                 "izan",
-                "oso",
-                "ondo",
-                "idatzi"
+                "hizkuntza",
+                "gustatu",
+                "eta",
+                "ingeles",
+                "ere",
+                "jakin"
               ],
               "structures": [
                 "jakin-tzen"
@@ -2311,7 +2388,7 @@
                 "Barkatu, nagusiak deitu dizu."
               ],
               "distractors": [
-                "kafe",
+                "kontratua",
                 "Bai",
                 "idatzi"
               ],
@@ -2330,9 +2407,9 @@
               "type": "listen_tap",
               "text": "Eskerrik asko. Gero deituko diot.",
               "distractors": [
-                "eta",
-                "Idazkariak",
-                "soldata"
+                "ordaindu",
+                "lankideei",
+                "eta"
               ],
               "vocabulary": [
                 "eskerrik asko",
@@ -2371,16 +2448,15 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "La secretaria me ha preparado un café."
+                "text": "La secretaria me ha dado el contrato."
               },
               "answers": [
-                "Idazkariak kafe bat prestatu dit."
+                "Idazkariak kontratua eman dit."
               ],
               "vocabulary": [
                 "idazkari",
-                "kafe",
-                "bat",
-                "prestatu",
+                "kontratu",
+                "eman",
                 "ukan"
               ],
               "structures": [
@@ -2442,12 +2518,12 @@
                 },
                 {
                   "speaker": "Miren",
-                  "text": "Nagusiari deitu diozu?"
+                  "text": "Nagusiari galdetu diozu?"
                 }
               ],
               "options": [
-                "Bai, gaur deitu diot.",
-                "Bai, gaur deitu dit.",
+                "Bai, gaur galdetu diot.",
+                "Bai, gaur galdetu dit.",
                 "Ez dakit gidatzen."
               ],
               "correct": 0,
@@ -2458,7 +2534,7 @@
                 "ukan",
                 "ez",
                 "nagusi",
-                "deitu",
+                "galdetu",
                 "bai",
                 "gaur"
               ],
@@ -2607,13 +2683,13 @@
           },
           {
             "speaker": "Nerea",
-            "eu": "Ez, ez dakit. Ni idazkaria naiz.",
-            "es": "No, no sé. Yo soy secretaria."
+            "eu": "Ez, ez dakit. Ni idazkaria naiz, eta ingelesa badakit.",
+            "es": "No, no sé. Yo soy secretaria, y sé inglés."
           },
           {
             "speaker": "Gorka",
-            "eu": "Lasai! Gure enpresak idazkari bat behar du.",
-            "es": "¡Tranquila! Nuestra empresa necesita una secretaria."
+            "eu": "Lasai! Gure enpresak idazkari bat behar du. Nagusiari galdetuko diot.",
+            "es": "¡Tranquila! Nuestra empresa necesita una secretaria. Le preguntaré al jefe."
           },
           {
             "speaker": "Nerea",

@@ -55,6 +55,17 @@ guidebook:
           es: ¡Muchas gracias!
         - eu: Ez horregatik.
           es: De nada.
+    - title:
+        es: "Una frase útil: Euskara ikasten ari naiz"
+        eu: "Esaldi erabilgarria: Euskara ikasten ari naiz"
+      body:
+        es: "«Euskara ikasten ari naiz» significa «estoy aprendiendo euskera». De momento apréndela como una frase hecha. «Euskaraz» quiere decir «en euskera»."
+        eu: "Oraingoz, ikasi «Euskara ikasten ari naiz» esapide finko gisa. «Euskaraz» esateko, -z atzizkia gehitzen zaio «euskara» hitzari."
+      examples:
+        - eu: Kaixo! Euskara ikasten ari naiz.
+          es: ¡Hola! Estoy aprendiendo euskera.
+        - eu: Euskaraz, mesedez.
+          es: En euskera, por favor.
 levels:
   - type: lesson
     title:
@@ -155,13 +166,14 @@ levels:
           - Eskerrik asko, Jon! = ¡Muchas gracias, Jon! | ¡Gracias, Jon!
           - text: Barkatu, zu Mikel zara? = Perdona, ¿tú eres Mikel? | Perdona, ¿eres Mikel? | Perdone, ¿es usted Mikel?
             structures: [courtesy, izan-present]
-          - Zorionak eta eskerrik asko! = ¡Felicidades y muchas gracias! | ¡Felicidades y gracias!
+          - Euskaraz, mesedez! = ¡En euskera, por favor!
         pairs:
           - - eskerrik asko = muchas gracias
             - mesedez = por favor
             - barkatu = perdón
             - zorionak = felicidades
             - ez horregatik = de nada
+            - euskara = euskera
         meanings:
           - text: Ez horregatik.
             options:
@@ -196,10 +208,10 @@ levels:
           - Kaixo! Ni Mikel naiz. = ¡Hola! Soy Mikel. | ¡Hola! Yo soy Mikel.
           - Egun on! Ni Itziar naiz. = ¡Buenos días! Soy Itziar. | ¡Buenos días! Yo soy Itziar.
           - Ni Jon naiz, eta zu? = Soy Jon, ¿y tú? | Yo soy Jon, ¿y tú? | Soy Jon, ¿y usted?
-          - Ni Maialen naiz. = Soy Maialen. | Yo soy Maialen.
+          - Ni Maialen naiz. Euskara ikasten ari naiz. = Soy Maialen. Estoy aprendiendo euskera. | Yo soy Maialen. Estoy aprendiendo euskera. | Soy Maialen. Aprendo euskera.
           - Kaixo, ni Iker naiz! = ¡Hola, soy Iker! | ¡Hola, yo soy Iker!
           - Arratsalde on, ni Ane naiz. = Buenas tardes, soy Ane. | Buenas tardes, yo soy Ane.
-          - Gabon! Ni Jon naiz. = ¡Buenas noches! Soy Jon. | ¡Buenas noches! Yo soy Jon.
+          - Kaixo! Euskara ikasten ari naiz. = ¡Hola! Estoy aprendiendo euskera. | ¡Hola! Aprendo euskera.
         blanks:
           - text: Ni Ane ___. = Yo soy Ane.
             options:
@@ -222,14 +234,18 @@ levels:
               - Ni Itziar naiz.
               - Ez horregatik.
               - Gabon, Mikel.
+        true_false:
+          - passage: Kaixo! Ni Jon naiz. Euskara ikasten ari naiz.
+            statement: Jon está aprendiendo euskera.
+            answer: true
       - structures: [izan-present, bai-ez]
         sentences:
           - Zu Mikel zara? = ¿Tú eres Mikel? | ¿Eres Mikel? | ¿Es usted Mikel?
           - Bai, ni Mikel naiz. = Sí, soy Mikel. | Sí, yo soy Mikel.
           - Ez, ni Jon naiz. = No, soy Jon. | No, yo soy Jon.
-          - Zu Ane zara? = ¿Tú eres Ane? | ¿Eres Ane? | ¿Es usted Ane?
+          - Bai, euskara ikasten ari naiz. = Sí, estoy aprendiendo euskera. | Sí, aprendo euskera.
           - Bai, ni Ane naiz. = Sí, soy Ane. | Sí, yo soy Ane.
-          - Ez, ni Maialen naiz. = No, soy Maialen. | No, yo soy Maialen.
+          - Zu euskara ikasten ari zara? = ¿Estás aprendiendo euskera? | ¿Tú estás aprendiendo euskera? | ¿Está usted aprendiendo euskera? | ¿Aprendes euskera?
           - Barkatu, zu Jon zara? = Perdona, ¿tú eres Jon? | Perdona, ¿eres Jon? | Perdone, ¿es usted Jon?
           - Bai, eta zu? = Sí, ¿y tú? | Sí, ¿y usted?
         blanks:
@@ -304,6 +320,13 @@ levels:
           - Ni ondo, eskerrik asko. = Yo bien, gracias. | Yo bien, muchas gracias.
           - Agur, Ane! Gero arte! = ¡Adiós, Ane! ¡Hasta luego!
           - Gero arte, Mikel! = ¡Hasta luego, Mikel!
+          - Kaixo! Ni Iker naiz, eta euskara ikasten ari naiz. = ¡Hola! Soy Iker y estoy aprendiendo euskera. | ¡Hola! Yo soy Iker y estoy aprendiendo euskera. | ¡Hola! Soy Iker y aprendo euskera.
+        meanings:
+          - text: Euskara ikasten ari naiz.
+            options:
+              - Estoy aprendiendo euskera.
+              - Soy profesor de euskera.
+              - ¿Estás aprendiendo euskera?
         chats:
           - messages:
               - Ane | Egun on, Mikel! Zer moduz?
@@ -411,8 +434,10 @@ levels:
         - Iker | Ni Iker naiz. Zu Ane Agirre zara? = Yo soy Iker. ¿Tú eres Ane Agirre?
         - Ane | Bai! Eta zu Iker Etxeberria zara? = ¡Sí! ¿Y tú eres Iker Etxeberria?
         - Iker | Ez, ni Iker Urrutia naiz. = No, yo soy Iker Urrutia.
-        - Ane | Barkatu! Agur, Iker! Bihar arte! = ¡Perdona! ¡Adiós, Iker! ¡Hasta mañana!
-        - Iker | Gero arte! = ¡Hasta luego!
+        - Ane | Barkatu! = ¡Perdona!
+        - Iker | Ane, zu euskara ikasten ari zara? = Ane, ¿estás aprendiendo euskera?
+        - Ane | Bai, euskara ikasten ari naiz! Agur, Iker! Bihar arte! = ¡Sí, estoy aprendiendo euskera! ¡Adiós, Iker! ¡Hasta mañana!
+        - Iker | Gero arte, Ane! = ¡Hasta luego, Ane!
       questions:
         - afterLine: 2
           prompt: ¿Cómo está Ane?
@@ -426,11 +451,11 @@ levels:
             - Urrutia
             - Etxeberria
             - Agirre
-        - afterLine: 7
-          prompt: ¿Cuándo volverán a verse, según Ane?
+        - afterLine: 9
+          prompt: ¿Qué está aprendiendo Ane?
           options:
-            - Mañana
-            - Esta noche
+            - Euskera
+            - Nombres y apellidos
             - No lo dice
   - type: review
   - type: legendary

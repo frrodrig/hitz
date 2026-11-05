@@ -106,6 +106,30 @@
             "es": "En esta calle hay un banco."
           }
         ]
+      },
+      {
+        "title": {
+          "es": "Hoy, mañana, otro, mucho",
+          "eu": "Gaur, bihar, beste, asko"
+        },
+        "body": {
+          "es": "«Gaur» (hoy) y «bihar» (mañana) suelen ir al principio de la frase. «Asko» (mucho, muchos) va detrás del nombre y sin artículo: taberna asko (muchos bares). «Beste» (otro) va delante: beste kale bat (otra calle), beste egun bat (otro día).",
+          "eu": "«Gaur» eta «bihar» esaldiaren hasieran joan ohi dira. «Asko» izenaren atzean doa, artikulurik gabe: taberna asko. «Beste» izenaren aurrean doa: beste kale bat, beste egun bat."
+        },
+        "examples": [
+          {
+            "eu": "Gaur Bilbon nago, eta bihar Gasteizen.",
+            "es": "Hoy estoy en Bilbao y mañana en Vitoria."
+          },
+          {
+            "eu": "Herri honetan taberna asko daude.",
+            "es": "En este pueblo hay muchos bares."
+          },
+          {
+            "eu": "Bihar beste egun bat da.",
+            "es": "Mañana es otro día."
+          }
+        ]
       }
     ]
   },
@@ -126,18 +150,22 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Bilbao es una ciudad."
+                "text": "Bilbao es una ciudad, pero Tolosa es un pueblo."
               },
               "answers": [
-                "Bilbo hiria da."
+                "Bilbo hiria da, baina Tolosa herria."
               ],
               "distractors": [
-                "parkea",
-                "eliza"
+                "nago",
+                "Gaur",
+                "Udaletxea",
+                "Hura"
               ],
               "vocabulary": [
                 "hiri",
-                "izan"
+                "izan",
+                "baina",
+                "herri"
               ],
               "structures": [
                 "places",
@@ -147,13 +175,14 @@
             {
               "id": "u02-1.l1.s1.e02",
               "type": "listen_tap",
-              "text": "Tolosa herria da.",
+              "text": "Hau plaza da.",
               "distractors": [
-                "hiria",
-                "Hura"
+                "Udaletxea",
+                "Bilbo"
               ],
               "vocabulary": [
-                "herri",
+                "hau",
+                "plaza",
                 "izan"
               ],
               "structures": [
@@ -208,14 +237,14 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "Esta es la plaza."
+                "text": "Este es el ayuntamiento."
               },
               "answers": [
-                "Hau plaza da."
+                "Hau udaletxea da."
               ],
               "vocabulary": [
                 "hau",
-                "plaza",
+                "udaletxe",
                 "izan"
               ],
               "structures": [
@@ -247,11 +276,11 @@
             {
               "id": "u02-1.l1.s1.e06",
               "type": "order_sentence",
-              "answer": "Hau udaletxea da.",
-              "translation": "Este es el ayuntamiento.",
+              "answer": "Hori eliza da.",
+              "translation": "Esa es la iglesia.",
               "vocabulary": [
-                "hau",
-                "udaletxe",
+                "hori",
+                "eliza",
                 "izan"
               ],
               "structures": [
@@ -284,15 +313,15 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Hori eliza da."
+                "text": "Hura parkea da."
               },
               "answers": [
-                "Esa es la iglesia.",
-                "Eso es la iglesia."
+                "Aquel es el parque.",
+                "Aquello es el parque."
               ],
               "vocabulary": [
-                "hori",
-                "eliza",
+                "hura",
+                "parke",
                 "izan"
               ],
               "structures": [
@@ -330,14 +359,14 @@
             {
               "id": "u02-1.l1.s1.e10",
               "type": "listen_type",
-              "text": "Hura parkea da.",
+              "text": "Udaletxea plazan dago.",
               "answers": [
-                "Hura parkea da."
+                "Udaletxea plazan dago."
               ],
               "vocabulary": [
-                "hura",
-                "parke",
-                "izan"
+                "udaletxe",
+                "plaza",
+                "egon"
               ],
               "structures": [
                 "places",
@@ -363,11 +392,11 @@
             {
               "id": "u02-1.l1.s1.e12",
               "type": "speak",
-              "text": "Udaletxea plazan dago.",
-              "translation": "El ayuntamiento está en la plaza.",
+              "text": "Bilbon parke asko daude.",
+              "translation": "En Bilbao hay muchos parques.",
               "vocabulary": [
-                "udaletxe",
-                "plaza",
+                "parke",
+                "asko",
                 "egon"
               ],
               "structures": [
@@ -380,19 +409,19 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Ni kalean nago."
+                "text": "Gaur kalean nago."
               },
               "answers": [
-                "Estoy en la calle.",
-                "Yo estoy en la calle."
+                "Hoy estoy en la calle.",
+                "Hoy yo estoy en la calle."
               ],
               "distractors": [
-                "iglesia",
-                "está",
-                "Este"
+                "hay",
+                "pero",
+                "Esa"
               ],
               "vocabulary": [
-                "ni",
+                "gaur",
                 "kale",
                 "egon"
               ],
@@ -411,8 +440,8 @@
               "type": "listen_tap",
               "text": "Hau bankua da.",
               "distractors": [
-                "Eskola",
-                "Farmazia"
+                "Ospitalea",
+                "Eskola"
               ],
               "vocabulary": [
                 "hau",
@@ -429,15 +458,19 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "La farmacia está aquí."
+                "text": "La farmacia está aquí, y el banco también."
               },
               "answers": [
-                "Farmazia hemen dago."
+                "Farmazia hemen dago, eta bankua ere bai."
               ],
               "vocabulary": [
                 "farmazia",
                 "hemen",
-                "egon"
+                "egon",
+                "eta",
+                "banku",
+                "ere",
+                "bai"
               ],
               "structures": [
                 "places",
@@ -651,10 +684,10 @@
                 "La profesora está en la escuela."
               ],
               "distractors": [
-                "allí",
-                "Este",
+                "aquí",
                 "están",
-                "ahí"
+                "farmacia",
+                "médico"
               ],
               "vocabulary": [
                 "irakasle",
@@ -671,16 +704,18 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Los estudiantes están en la biblioteca."
+                "text": "Hoy los estudiantes están en la biblioteca."
               },
               "answers": [
-                "Ikasleak liburutegian daude."
+                "Gaur ikasleak liburutegian daude."
               ],
               "distractors": [
-                "hor",
-                "ospitalean"
+                "Liburutegia",
+                "eta",
+                "Eskola"
               ],
               "vocabulary": [
+                "gaur",
                 "ikasle",
                 "liburutegi",
                 "egon"
@@ -700,14 +735,14 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "El restaurante está aquí."
+                "text": "En San Sebastián hay muchos restaurantes."
               },
               "answers": [
-                "Jatetxea hemen dago."
+                "Donostian jatetxe asko daude."
               ],
               "vocabulary": [
                 "jatetxe",
-                "hemen",
+                "asko",
                 "egon"
               ],
               "structures": [
@@ -718,11 +753,13 @@
             {
               "id": "u02-1.l1.s3.e02",
               "type": "order_sentence",
-              "answer": "Taberna plazan dago.",
-              "translation": "El bar está en la plaza.",
+              "answer": "Plazan beste taberna bat dago.",
+              "translation": "En la plaza hay otro bar.",
               "vocabulary": [
-                "taberna",
                 "plaza",
+                "beste",
+                "taberna",
+                "bat",
                 "egon"
               ],
               "structures": [
@@ -777,11 +814,10 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Hotela Donostian dago."
+                "text": "Hotela Getxon dago."
               },
               "answers": [
-                "El hotel está en San Sebastián.",
-                "El hotel está en Donostia."
+                "El hotel está en Getxo."
               ],
               "vocabulary": [
                 "hotel",
@@ -896,19 +932,20 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Mendia hor dago."
+                "text": "Bihar mendian gaude."
               },
               "answers": [
-                "El monte está ahí."
+                "Mañana estamos en el monte.",
+                "Mañana nosotros estamos en el monte."
               ],
               "distractors": [
-                "Ane",
-                "San",
-                "allí"
+                "otro",
+                "hay",
+                "hotel"
               ],
               "vocabulary": [
+                "bihar",
                 "mendi",
-                "hor",
                 "egon"
               ],
               "structures": [
@@ -919,13 +956,15 @@
             {
               "id": "u02-1.l1.s3.e11",
               "type": "read_true_false",
-              "passage": "Gu Zarautzen gaude. Hondartzan gaude.",
-              "statement": "Los que hablan están en el monte.",
+              "passage": "Gaur Zarautzen gaude, hondartzan. Bihar mendian gaude.",
+              "statement": "Hoy los que hablan están en el monte.",
               "answer": false,
               "vocabulary": [
-                "gu",
+                "gaur",
                 "egon",
-                "hondartza"
+                "hondartza",
+                "bihar",
+                "mendi"
               ],
               "structures": [
                 "places",
@@ -943,8 +982,8 @@
                 "Sukaldaria jatetxean dago."
               ],
               "distractors": [
-                "Hondartza",
-                "Zarautzen"
+                "eta",
+                "Plazan"
               ],
               "vocabulary": [
                 "sukaldari",
@@ -961,9 +1000,9 @@
               "type": "listen_tap",
               "text": "Mikel eta Ane tabernan daude.",
               "distractors": [
-                "Sukaldaria",
-                "Hondartza",
-                "Donostian"
+                "Bihar",
+                "Donostian",
+                "beste"
               ],
               "vocabulary": [
                 "eta",
@@ -1015,15 +1054,19 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Ni Bilbon nago."
+                "text": "Zu Bilbon zaude, baina ez zara Bilbokoa."
               },
               "answers": [
-                "Estoy en Bilbao.",
-                "Yo estoy en Bilbao."
+                "Estás en Bilbao, pero no eres de Bilbao.",
+                "Tú estás en Bilbao, pero no eres de Bilbao.",
+                "Usted está en Bilbao, pero no es de Bilbao."
               ],
               "vocabulary": [
-                "ni",
-                "egon"
+                "zu",
+                "egon",
+                "baina",
+                "ez",
+                "izan"
               ],
               "structures": [
                 "egon-present",
@@ -1053,11 +1096,12 @@
             {
               "id": "u02-1.l2.s1.e04",
               "type": "listen_type",
-              "text": "Ane Gasteizen dago.",
+              "text": "Ane gaur Gasteizen dago.",
               "answers": [
-                "Ane Gasteizen dago."
+                "Ane gaur Gasteizen dago."
               ],
               "vocabulary": [
+                "gaur",
                 "egon"
               ],
               "structures": [
@@ -1133,8 +1177,8 @@
                 "¿Dónde están ustedes?"
               ],
               "distractors": [
-                "Pamplona",
-                "San"
+                "Vitoria",
+                "en"
               ],
               "vocabulary": [
                 "zuek",
@@ -1177,17 +1221,20 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Están en Bayona."
+                "text": "Están dos días en Bayona."
               },
               "answers": [
-                "Haiek Baionan daude."
+                "Haiek bi egun Baionan daude."
               ],
               "distractors": [
-                "Donostiakoa",
-                "Ni"
+                "Ni",
+                "zaude",
+                "ez"
               ],
               "vocabulary": [
                 "haiek",
+                "bi",
+                "egun",
                 "bai",
                 "egon"
               ],
@@ -1199,14 +1246,17 @@
             {
               "id": "u02-1.l2.s1.e11",
               "type": "read_true_false",
-              "passage": "Ni Gorka naiz. Gasteizkoa naiz, eta Donostian nago.",
+              "passage": "Ni Gorka naiz. Gasteizkoa naiz, eta Donostian nago. Euskaraz pixka bat hitz egiten dut.",
               "statement": "Gorka está en Vitoria.",
               "answer": false,
               "vocabulary": [
+                "pixka bat",
                 "ni",
                 "izan",
                 "eta",
-                "egon"
+                "egon",
+                "euskara",
+                "hitz egin"
               ],
               "structures": [
                 "egon-present",
@@ -1218,10 +1268,10 @@
               "type": "listen_tap",
               "text": "Ni Donostiakoa naiz, eta Bilbon nago.",
               "distractors": [
-                "zaude",
-                "Zu",
+                "Iruñean",
+                "Bilbokoa",
                 "Non",
-                "Zuek"
+                "egun"
               ],
               "vocabulary": [
                 "ni",
@@ -1365,10 +1415,10 @@
                 "¿Hay banco en el pueblo?"
               ],
               "distractors": [
-                "bar",
-                "ciudad",
+                "la",
                 "farmacia",
-                "Sí"
+                "hotel",
+                "bar"
               ],
               "vocabulary": [
                 "egon",
@@ -1456,9 +1506,9 @@
               "type": "listen_tap",
               "text": "Herrian ez dago hotelik.",
               "distractors": [
-                "Hirian",
-                "hor",
-                "hemen"
+                "farmaziarik",
+                "hemen",
+                "edo"
               ],
               "vocabulary": [
                 "herri",
@@ -1476,15 +1526,17 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
-                "text": "¿Hay algún restaurante ahí?"
+                "text": "¿Hay algún bar o restaurante aquí?"
               },
               "answers": [
-                "Badago jatetxerik hor?"
+                "Badago tabernarik edo jatetxerik hemen?"
               ],
               "vocabulary": [
                 "egon",
+                "taberna",
+                "edo",
                 "jatetxe",
-                "hor"
+                "hemen"
               ],
               "structures": [
                 "ba-rik",
@@ -1494,13 +1546,12 @@
             {
               "id": "u02-1.l2.s2.e12",
               "type": "order_sentence",
-              "answer": "Hirian ospitale bat dago.",
-              "translation": "En la ciudad hay un hospital.",
+              "answer": "Badago beste farmaziarik?",
+              "translation": "¿Hay otra farmacia?",
               "vocabulary": [
-                "hiri",
-                "ospitale",
-                "bat",
-                "egon"
+                "egon",
+                "beste",
+                "farmazia"
               ],
               "structures": [
                 "ba-rik",
@@ -1603,10 +1654,10 @@
                 "En aquel pueblo no hay ninguna escuela."
               ],
               "distractors": [
-                "Estoy",
-                "parque",
-                "está",
-                "esa"
+                "biblioteca",
+                "una",
+                "y",
+                "Están"
               ],
               "vocabulary": [
                 "herri",
@@ -1654,10 +1705,10 @@
                 "Hau liburutegia da, eta hori eskola."
               ],
               "distractors": [
+                "Hura",
                 "Hotel",
-                "honetan",
-                "Jatetxe",
-                "dago"
+                "Kale",
+                "eskolarik"
               ],
               "vocabulary": [
                 "hau",
@@ -1700,7 +1751,7 @@
               "text": "Hura geltokia da?",
               "distractors": [
                 "bat",
-                "Hotel"
+                "hartan"
               ],
               "vocabulary": [
                 "hura",
@@ -1764,8 +1815,8 @@
             {
               "id": "u02-1.l2.s3.e11",
               "type": "read_true_false",
-              "passage": "Hau Lekeitio da. Herri honetan hondartza bat dago.",
-              "statement": "En Lekeitio hay playa.",
+              "passage": "Hau Lekeitio da. Herri honetan hondartza bat eta jatetxe asko daude.",
+              "statement": "En Lekeitio hay muchos restaurantes.",
               "answer": true,
               "vocabulary": [
                 "hau",
@@ -1773,6 +1824,9 @@
                 "herri",
                 "hondartza",
                 "bat",
+                "eta",
+                "jatetxe",
+                "asko",
                 "egon"
               ],
               "structures": [
@@ -1800,16 +1854,20 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Parkea hor dago?"
+                "text": "Farmazia ez dago kale honetan, beste kale batean dago."
               },
               "answers": [
-                "¿El parque está ahí?",
-                "¿Está ahí el parque?"
+                "La farmacia no está en esta calle, está en otra calle.",
+                "La farmacia no está en esta calle, está en otra."
               ],
               "vocabulary": [
-                "parke",
-                "hor",
-                "egon"
+                "farmazia",
+                "ez",
+                "egon",
+                "kale",
+                "hau",
+                "beste",
+                "bat"
               ],
               "structures": [
                 "demonstratives",
@@ -1852,20 +1910,26 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Geltokia han dago."
+                "text": "Barkatu, ez dakit. Ni ez naiz hemengoa."
               },
               "answers": [
-                "La estación está allí."
+                "Perdona, no lo sé. No soy de aquí.",
+                "Perdone, no lo sé. Yo no soy de aquí.",
+                "Perdona, no sé. No soy de aquí."
               ],
               "distractors": [
-                "no",
-                "Por",
-                "aquí"
+                "La",
+                "Estoy",
+                "biblioteca",
+                "Vitoria"
               ],
               "vocabulary": [
-                "geltoki",
-                "han",
-                "egon"
+                "ez dakit",
+                "barkatu",
+                "ni",
+                "ez",
+                "izan",
+                "hemen"
               ],
               "structures": [
                 "egon-present",
@@ -1904,9 +1968,9 @@
                 "Mesedez, non dago liburutegia?"
               ],
               "distractors": [
-                "han",
+                "Gasteizen",
                 "hemen",
-                "Agur"
+                "ez"
               ],
               "vocabulary": [
                 "mesedez",
@@ -1925,21 +1989,23 @@
               "messages": [
                 {
                   "speaker": "Aitor",
-                  "text": "Barkatu, non dago udaletxea?"
+                  "text": "Kaixo! Euskaraz hitz egiten duzu?"
                 }
               ],
               "options": [
-                "Udaletxea plazan dago.",
-                "Udaletxea plazan da.",
-                "Ni udaletxean nago."
+                "Bai, pixka bat. Poliki, mesedez.",
+                "Bai, euskara naiz.",
+                "Ez, Bilbon nago."
               ],
               "correct": 0,
               "vocabulary": [
-                "barkatu",
-                "non",
-                "egon",
-                "udaletxe",
-                "plaza"
+                "kaixo",
+                "euskara",
+                "hitz egin",
+                "pixka bat",
+                "bai",
+                "poliki",
+                "mesedez"
               ],
               "structures": [
                 "egon-present",
@@ -1951,8 +2017,8 @@
               "type": "listen_tap",
               "text": "Liburutegia eskolan dago.",
               "distractors": [
-                "ez",
-                "Ondo"
+                "non",
+                "ez"
               ],
               "vocabulary": [
                 "liburutegi",
@@ -2046,12 +2112,13 @@
             {
               "id": "u02-1.l3.s1.e10",
               "type": "order_sentence",
-              "answer": "Ondo, eskerrik asko! Agur!",
-              "translation": "Bien, ¡gracias! ¡Adiós!",
+              "answer": "Berriro, mesedez. Euskara ikasten ari naiz.",
+              "translation": "Otra vez, por favor. Estoy aprendiendo euskera.",
               "vocabulary": [
-                "eskerrik asko",
-                "ondo",
-                "agur"
+                "berriro",
+                "mesedez",
+                "euskara",
+                "izan"
               ],
               "structures": [
                 "egon-present",
@@ -2061,16 +2128,21 @@
             {
               "id": "u02-1.l3.s1.e11",
               "type": "read_true_false",
-              "passage": "Gu Bermeon gaude. Herri honetan ez dago hotelik.",
-              "statement": "En Bermeo hay un hotel.",
+              "passage": "Gu hiru egun Bermeon gaude. Herri honetan hotel bat dago, baina ez dago ospitalerik.",
+              "statement": "En Bermeo hay un hospital.",
               "answer": false,
               "vocabulary": [
                 "gu",
+                "hiru",
+                "egun",
                 "egon",
                 "herri",
                 "hau",
+                "hotel",
+                "bat",
+                "baina",
                 "ez",
-                "hotel"
+                "ospitale"
               ],
               "structures": [
                 "egon-present",
@@ -2093,9 +2165,9 @@
                 "¡Hola, Oier! ¿Dónde estás?"
               ],
               "distractors": [
-                "en",
-                "restaurante",
-                "Estoy"
+                "plaza",
+                "la",
+                "estamos"
               ],
               "vocabulary": [
                 "kaixo",
@@ -2118,9 +2190,9 @@
                 "Mendian nago, eta zu?"
               ],
               "distractors": [
-                "Oier",
-                "Non",
-                "honetan"
+                "ere",
+                "plazan",
+                "Oier"
               ],
               "vocabulary": [
                 "mendi",
@@ -2157,14 +2229,16 @@
             {
               "id": "u02-1.l3.s2.e04",
               "type": "listen_tap",
-              "text": "Ni hondartzan nago.",
+              "text": "Ni ere mendian nago!",
               "distractors": [
-                "eta",
-                "Mendian"
+                "Gaur",
+                "zaude",
+                "edo"
               ],
               "vocabulary": [
                 "ni",
-                "hondartza",
+                "ere",
+                "mendi",
                 "egon"
               ],
               "structures": [
@@ -2255,13 +2329,14 @@
             },
             {
               "id": "u02-1.l3.s2.e08",
-              "type": "listen_type",
-              "text": "Parkean daude.",
-              "answers": [
-                "Parkean daude."
-              ],
+              "type": "order_sentence",
+              "answer": "Ez dakit. Parkean edo plazan daude.",
+              "translation": "No lo sé. Están en el parque o en la plaza.",
               "vocabulary": [
+                "ez dakit",
                 "parke",
+                "edo",
+                "plaza",
                 "egon"
               ],
               "structures": [
@@ -2293,15 +2368,15 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Gu jatetxe honetan gaude."
+                "text": "Gaur jatetxe honetan gaude."
               },
               "answers": [
-                "Estamos en este restaurante.",
-                "Nosotros estamos en este restaurante.",
-                "Nosotras estamos en este restaurante."
+                "Hoy estamos en este restaurante.",
+                "Hoy nosotros estamos en este restaurante.",
+                "Hoy nosotras estamos en este restaurante."
               ],
               "vocabulary": [
-                "gu",
+                "gaur",
                 "jatetxe",
                 "hau",
                 "egon"
@@ -2314,11 +2389,13 @@
             {
               "id": "u02-1.l3.s2.e11",
               "type": "read_true_false",
-              "passage": "Josu eta Edurne mendian daude. Ni hondartzan nago.",
+              "passage": "Josu eta Edurne hiru egun mendian daude. Ni hondartzan nago.",
               "statement": "Josu está en la playa.",
               "answer": false,
               "vocabulary": [
                 "eta",
+                "hiru",
+                "egun",
                 "mendi",
                 "egon",
                 "ni",
@@ -2345,10 +2422,10 @@
                 "Hau Elizondo da. Herri hau Nafarroan dago."
               ],
               "distractors": [
-                "bankurik",
-                "honetan",
-                "ospitale",
-                "Hiri"
+                "batean",
+                "hotel",
+                "Hondarribian",
+                "hondartzarik"
               ],
               "vocabulary": [
                 "hau",
@@ -2366,10 +2443,10 @@
               "type": "listen_tap",
               "text": "Herri honetan eliza bat eta plaza bat daude.",
               "distractors": [
-                "han",
-                "bankurik",
-                "Hiri",
-                "Nafarroan"
+                "Hondartza",
+                "Hau",
+                "Elizondo",
+                "da"
               ],
               "vocabulary": [
                 "herri",
@@ -2388,21 +2465,19 @@
             {
               "id": "u02-1.l3.s3.e03",
               "type": "choose_meaning",
-              "text": "Herri honetan eliza bat eta plaza bat daude.",
+              "text": "Bihar beste egun bat da.",
               "options": [
-                "En este pueblo hay una iglesia y una plaza.",
-                "En aquel pueblo hay una iglesia y una plaza.",
-                "En este pueblo no hay iglesia."
+                "Mañana es otro día.",
+                "Hoy es otro día.",
+                "Mañana estamos en otro pueblo."
               ],
               "correct": 0,
               "vocabulary": [
-                "herri",
-                "hau",
-                "eliza",
+                "bihar",
+                "beste",
+                "egun",
                 "bat",
-                "eta",
-                "plaza",
-                "egon"
+                "izan"
               ],
               "structures": [
                 "ba-rik",
@@ -2462,14 +2537,17 @@
             {
               "id": "u02-1.l3.s3.e06",
               "type": "order_sentence",
-              "answer": "Hiri honetan ospitale bat dago.",
-              "translation": "En esta ciudad hay un hospital.",
+              "answer": "Hiri honetan hotel asko daude, baina ez dago hondartzarik.",
+              "translation": "En esta ciudad hay muchos hoteles, pero no hay playa.",
               "vocabulary": [
                 "hiri",
                 "hau",
-                "ospitale",
-                "bat",
-                "egon"
+                "hotel",
+                "asko",
+                "egon",
+                "baina",
+                "ez",
+                "hondartza"
               ],
               "structures": [
                 "ba-rik",
@@ -2555,13 +2633,15 @@
             {
               "id": "u02-1.l3.s3.e10",
               "type": "listen_type",
-              "text": "Mendia han dago.",
+              "text": "Bihar beste herri batean gaude.",
               "answers": [
-                "Mendia han dago."
+                "Bihar beste herri batean gaude."
               ],
               "vocabulary": [
-                "mendi",
-                "han",
+                "bihar",
+                "beste",
+                "herri",
+                "bat",
                 "egon"
               ],
               "structures": [
@@ -2572,8 +2652,8 @@
             {
               "id": "u02-1.l3.s3.e11",
               "type": "read_true_false",
-              "passage": "Getxo herria da. Getxon hondartza bat eta parke bat daude.",
-              "statement": "En Getxo hay un parque.",
+              "passage": "Getxo herria da. Getxon hondartza bat eta parke asko daude.",
+              "statement": "En Getxo hay muchos parques.",
               "answer": true,
               "vocabulary": [
                 "herri",
@@ -2582,6 +2662,7 @@
                 "bat",
                 "eta",
                 "parke",
+                "asko",
                 "egon"
               ],
               "structures": [
@@ -2606,8 +2687,8 @@
         "lines": [
           {
             "speaker": "Uxue",
-            "eu": "Barkatu! Zu Lekeitiokoa zara?",
-            "es": "¡Perdona! ¿Eres de Lekeitio?"
+            "eu": "Barkatu! Euskaraz hitz egiten duzu?",
+            "es": "¡Perdona! ¿Hablas euskera?"
           },
           {
             "speaker": "Ibai",
@@ -2616,8 +2697,8 @@
           },
           {
             "speaker": "Uxue",
-            "eu": "Ondo, eskerrik asko. Badago hotelik herrian?",
-            "es": "Bien, gracias. ¿Hay algún hotel en el pueblo?"
+            "eu": "Ondo. Euskara ikasten ari naiz. Badago hotelik herrian?",
+            "es": "Bien. Estoy aprendiendo euskera. ¿Hay algún hotel en el pueblo?"
           },
           {
             "speaker": "Ibai",
@@ -2626,13 +2707,13 @@
           },
           {
             "speaker": "Uxue",
-            "eu": "Eta hondartza non dago?",
-            "es": "¿Y dónde está la playa?"
+            "eu": "Barkatu, berriro, mesedez. Poliki!",
+            "es": "Perdona, otra vez, por favor. ¡Despacio!"
           },
           {
             "speaker": "Ibai",
-            "eu": "Han dago. Hura hotela da.",
-            "es": "Está allí. Aquel es el hotel."
+            "eu": "Hotela hondartzan dago. Han, hura hotela da.",
+            "es": "El hotel está en la playa. Allí, aquel es el hotel."
           },
           {
             "speaker": "Uxue",
@@ -2651,13 +2732,13 @@
           },
           {
             "speaker": "Ibai",
-            "eu": "Ez, herri honetan ez dago bankurik.",
-            "es": "No, en este pueblo no hay banco."
+            "eu": "Herri honetan ez dago bankurik, baina Bermeon banku asko daude.",
+            "es": "En este pueblo no hay banco, pero en Bermeo hay muchos bancos."
           },
           {
             "speaker": "Uxue",
-            "eu": "Eskerrik asko! Agur!",
-            "es": "¡Muchas gracias! ¡Adiós!"
+            "eu": "Eskerrik asko! Gaur hemen nago, eta bihar Bermeon. Agur!",
+            "es": "¡Muchas gracias! Hoy estoy aquí y mañana en Bermeo. ¡Adiós!"
           }
         ],
         "questions": [
@@ -2683,11 +2764,11 @@
           },
           {
             "afterLine": 10,
-            "prompt": "¿Hay banco en el pueblo?",
+            "prompt": "¿Dónde hay muchos bancos?",
             "options": [
-              "No",
-              "Sí, en la plaza",
-              "Sí, en la playa"
+              "En Bermeo",
+              "En Lekeitio",
+              "En la plaza"
             ],
             "correct": 0
           }

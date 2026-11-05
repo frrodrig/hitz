@@ -63,6 +63,21 @@ guidebook:
           es: Ocho, nueve, diez.
         - eu: "Telefono zenbakia: sei, bost, zero, bi."
           es: "Número de teléfono: seis, cinco, cero, dos."
+    - title:
+        es: "Ere, baina, edo y frases de supervivencia"
+        eu: "Ere, baina, edo eta biziraupen-esaldiak"
+      body:
+        es: "«Ere» (también) va detrás de la palabra: «ni ere» (yo también). «Baina» es «pero» y «edo» es «o» en frases afirmativas (para elegir en una pregunta, «ala»). Frases útiles: «Barkatu, ez dakit» (perdona, no lo sé), «Berriro, mesedez» (otra vez, por favor), «Poliki, mesedez» (despacio, por favor) y «Euskaraz pixka bat hitz egiten dut» (hablo un poco de euskera), que de momento se aprende como frase hecha."
+        eu: "«Ere» hitzaren atzean doa: «ni ere». «Baina» kontrastea adierazteko da, eta «edo» esaldi baiezkoetan (galderetan aukeratzeko, «ala»). Esaldi erabilgarriak: «Barkatu, ez dakit», «Berriro, mesedez», «Poliki, mesedez» eta «Euskaraz pixka bat hitz egiten dut», oraingoz esapide finko gisa."
+      examples:
+        - eu: Ni ere ikaslea naiz, baina Ane irakaslea da.
+          es: Yo también soy estudiante, pero Ane es profesora.
+        - eu: Mikel medikua edo erizaina da.
+          es: Mikel es médico o enfermero.
+        - eu: Barkatu, ez dakit. Berriro, mesedez.
+          es: Perdona, no lo sé. Otra vez, por favor.
+        - eu: Poliki, mesedez. Euskaraz pixka bat hitz egiten dut.
+          es: Despacio, por favor. Hablo un poco de euskera.
 levels:
   - type: lesson
     title:
@@ -78,7 +93,7 @@ levels:
           - Mikel gizona da. = Mikel es un hombre.
           - Neska hau Amaia da. = Esta chica es Amaia.
           - Mutil hau Aitor da. = Este chico es Aitor.
-          - Emakume hau Nerea da. = Esta mujer es Nerea.
+          - Emakume hau Nerea da, eta neska hau ere Nerea da. = Esta mujer es Nerea, y esta chica también es Nerea.
         pairs:
           - - gizon = hombre
             - emakume = mujer
@@ -111,9 +126,9 @@ levels:
       - structures: [article, izan-present]
         sentences:
           - Ni irakaslea naiz. = Soy profesor. | Soy profesora. | Yo soy profesor. | Yo soy profesora.
-          - Zu ikaslea zara? = ¿Eres estudiante? | ¿Tú eres estudiante? | ¿Es usted estudiante?
+          - Ni ikaslea naiz, baina Ane irakaslea da. = Soy estudiante, pero Ane es profesora. | Yo soy estudiante, pero Ane es profesora.
           - Ane medikua da. = Ane es médica. | Ane es médico.
-          - Mikel erizaina da. = Mikel es enfermero.
+          - Mikel ere medikua da. = Mikel también es médico.
           - Gu sukaldariak gara. = Somos cocineros. | Somos cocineras. | Nosotros somos cocineros. | Nosotras somos cocineras.
           - Zuek ingeniariak zarete. = Sois ingenieros. | Sois ingenieras. | Vosotros sois ingenieros. | Vosotras sois ingenieras.
           - Haiek dendariak dira. = Son dependientes. | Ellos son dependientes. | Ellas son dependientas. | Son dependientas.
@@ -148,22 +163,27 @@ levels:
               - Ni ingeniaria naiz.
               - Zu ingeniaria zara.
               - Ez horregatik.
+        true_false:
+          - passage: Mikel ez da medikua. Erizaina edo irakaslea da.
+            statement: Mikel es médico.
+            answer: false
       - structures: [nongo, izan-present]
         sentences:
           - Nongoa zara? = ¿De dónde eres? | ¿De dónde es usted?
           - Ni Bilbokoa naiz. = Soy de Bilbao. | Yo soy de Bilbao.
           - Ane Donostiakoa da. = Ane es de San Sebastián. | Ane es de Donostia.
           - Gu Gasteizkoak gara. = Somos de Vitoria. | Nosotros somos de Vitoria. | Nosotras somos de Vitoria.
-          - Haiek Baionakoak dira. = Son de Bayona. | Ellos son de Bayona. | Ellas son de Bayona.
+          - Ni Bilbokoa naiz, eta Ane ere Bilbokoa da. = Soy de Bilbao, y Ane también es de Bilbao. | Yo soy de Bilbao, y Ane también es de Bilbao.
           - Zuek nongoak zarete? = ¿De dónde sois? | ¿Vosotros de dónde sois? | ¿De dónde son ustedes?
-          - Mikel Getxokoa da. = Mikel es de Getxo.
+          - Nongoa da Mikel? Ez dakit. = ¿De dónde es Mikel? No lo sé. | ¿De dónde es Mikel? No sé.
           - Ume hau Irungoa da. = Este niño es de Irún. | Esta niña es de Irún.
         pairs:
-          - - emakume = mujer
-            - gizon = hombre
-            - ume = niño
-            - langabetu = parado
-            - ingeniari = ingeniero
+          - - ere = también
+            - baina = pero
+            - edo = o
+            - berriro = otra vez
+            - poliki = despacio
+            - hitz egin = hablar
         blanks:
           - text: ___ zara? = ¿De dónde eres?
             options:
@@ -201,7 +221,7 @@ levels:
           - Zuek Bilbokoak zarete ala Donostiakoak? = ¿Sois de Bilbao o de San Sebastián? | ¿Vosotros sois de Bilbao o de San Sebastián?
           - Haiek ez dira Gasteizkoak. = No son de Vitoria. | Ellos no son de Vitoria. | Ellas no son de Vitoria.
           - Ni ez naiz medikua, erizaina naiz. = No soy médico, soy enfermero. | No soy médica, soy enfermera. | Yo no soy médico, soy enfermero.
-          - Leire sukaldaria da. = Leire es cocinera.
+          - Leire sukaldaria edo dendaria da. = Leire es cocinera o dependienta.
         blanks:
           - text: Zuek irakasleak ___. = Sois profesores.
             options:
@@ -213,11 +233,11 @@ levels:
               - ala
               - eta
         meanings:
-          - text: Haiek ez dira Gasteizkoak.
+          - text: Hura Bilbokoa edo Getxokoa da.
             options:
-              - No son de Vitoria.
-              - Son de Vitoria.
-              - No somos de Vitoria.
+              - Es de Bilbao o de Getxo.
+              - Es de Bilbao y de Getxo.
+              - No es de Bilbao ni de Getxo.
         chats:
           - messages:
               - Peio | Zu ikaslea zara ala irakaslea?
@@ -233,12 +253,12 @@ levels:
         sentences:
           - Nor da hau? = ¿Quién es este? | ¿Quién es esta? | ¿Quién es?
           - Hau Eneko da. Ikaslea da. = Este es Eneko. Es estudiante.
-          - Gizon hau sukaldaria da. = Este hombre es cocinero.
+          - Nor da gizon hau? Ez dakit. = ¿Quién es este hombre? No lo sé. | ¿Quién es este hombre? No sé.
           - Emakume hau ingeniaria da. = Esta mujer es ingeniera.
           - Ume hauek Bermeokoak dira. = Estos niños son de Bermeo. | Estas niñas son de Bermeo.
           - Zer da mutil hau? = ¿Qué es este chico? | ¿A qué se dedica este chico?
           - Hauek Olatz eta Xabier dira. = Estos son Olatz y Xabier.
-          - Neska hau ez da dendaria. = Esta chica no es dependienta.
+          - Neska hau ez da dendaria, baina gizon hau bai. = Esta chica no es dependienta, pero este hombre sí.
         blanks:
           - text: Gizon ___ medikua da. = Este hombre es médico.
             options:
@@ -267,11 +287,11 @@ levels:
           - Zein da telefono zenbakia? = ¿Cuál es el número de teléfono?
           - Bat, bi, hiru, lau, bost. = Uno, dos, tres, cuatro, cinco.
           - Sei, zazpi, zortzi, bederatzi, hamar. = Seis, siete, ocho, nueve, diez.
-          - "Telefono zenbakia: sei, zazpi, bi, zero. = Número de teléfono: seis, siete, dos, cero. | Teléfono: seis, siete, dos, cero."
+          - "Poliki, mesedez: sei, zazpi, bi, zero. = Despacio, por favor: seis, siete, dos, cero."
           - Zenbakia bost da ala sei? = ¿El número es cinco o seis? | ¿Es el cinco o el seis?
           - Zein da helbidea? = ¿Cuál es la dirección?
           - Helbidea eta telefono zenbakia, mesedez. = La dirección y el número de teléfono, por favor. | Dirección y número de teléfono, por favor.
-          - Zero, hiru, lau. = Cero, tres, cuatro.
+          - "Berriro, mesedez: zero, hiru, lau. = Otra vez, por favor: cero, tres, cuatro."
         pairs:
           - - bat = uno
             - bi = dos
@@ -286,11 +306,11 @@ levels:
               - hamar
               - sei
         meanings:
-          - text: Zortzi, bederatzi, hamar.
+          - text: Berriro, mesedez.
             options:
-              - Ocho, nueve, diez.
-              - Siete, ocho, nueve.
-              - Seis, siete, ocho.
+              - Otra vez, por favor.
+              - Despacio, por favor.
+              - Muchas gracias.
         chats:
           - messages:
               - Ander | Barkatu, zein da telefono zenbakia?
@@ -310,18 +330,18 @@ levels:
       - structures: [izan-present, nongo]
         sentences:
           - Kaixo! Ni Nahia naiz, eta Tolosakoa naiz. = ¡Hola! Soy Nahia y soy de Tolosa. | ¡Hola! Yo soy Nahia y soy de Tolosa.
-          - Ikaslea naiz. Eta zu? = Soy estudiante. ¿Y tú? | Soy estudiante. ¿Y usted?
           - Ni Markel naiz. Irakaslea naiz. = Soy Markel. Soy profesor. | Yo soy Markel. Soy profesor.
           - Nongoa zara, Markel? = ¿De dónde eres, Markel?
-          - Ni Eibarkoa naiz. = Soy de Eibar. | Yo soy de Eibar.
-          - Zuek ikasleak zarete? Bai, ikasleak gara. = ¿Sois estudiantes? Sí, somos estudiantes. | ¿Vosotros sois estudiantes? Sí, somos estudiantes.
+          - Ni ere Tolosakoa naiz! = ¡Yo también soy de Tolosa!
+          - Euskaraz hitz egiten duzu? = ¿Hablas euskera? | ¿Tú hablas euskera? | ¿Habla usted euskera?
+          - Bai, pixka bat. Euskara ikasten ari naiz. = Sí, un poco. Estoy aprendiendo euskera. | Sí, un poco. Aprendo euskera.
         chats:
           - messages:
-              - Izaro | Kaixo! Ni Izaro naiz. Nongoa zara?
+              - Izaro | Kaixo! Ni Izaro naiz. Euskaraz hitz egiten duzu?
             options:
-              - Ni Hernanikoa naiz.
-              - Ni Izaro naiz.
-              - Zu Hernanikoa zara.
+              - Bai, pixka bat.
+              - Bai, ni Izaro naiz.
+              - Ez horregatik.
           - messages:
               - Ibai | Kaixo! Zuek ikasleak zarete?
               - Alaitz | Ez, gu irakasleak gara.
@@ -338,11 +358,11 @@ levels:
             statement: Uxue es médica.
             answer: false
         meanings:
-          - text: Haiek ez dira irakasleak.
+          - text: Euskaraz pixka bat hitz egiten dut.
             options:
-              - No son profesores.
-              - Son profesores.
-              - No somos profesores.
+              - Hablo un poco de euskera.
+              - Hablo muy bien euskera.
+              - No hablo euskera.
       - structures: [demonstrative-hau, izan-present]
         sentences:
           - Ane, hau Julen da. = Ane, este es Julen.
@@ -350,7 +370,7 @@ levels:
           - Julen eta ni ikasleak gara. = Julen y yo somos estudiantes.
           - Hauek June eta Patxi dira. = Estos son June y Patxi.
           - June medikua da, eta Patxi dendaria. = June es médica y Patxi es dependiente. | June es médica y Patxi, dependiente.
-          - Patxi Bergarakoa da. = Patxi es de Bergara.
+          - Patxi Bergarakoa da, baina June ez. = Patxi es de Bergara, pero June no.
         chats:
           - messages:
               - Arantza | Mikel, hau Josu da.
@@ -367,8 +387,8 @@ levels:
               - Ez, ikasleak gara.
               - Bai, ikasleak zarete.
         true_false:
-          - passage: Hau Garazi da. Garazi ingeniaria da. Durangokoa da.
-            statement: Garazi es de Durango.
+          - passage: Hau Garazi da. Ingeniaria da, eta Iker ere ingeniaria da.
+            statement: Iker también es ingeniero.
             answer: true
           - passage: Hauek Ander eta Miren dira. Ander langabetua da.
             statement: Ander trabaja de cocinero.
@@ -384,8 +404,8 @@ levels:
           - Izena eta abizena, mesedez. = Nombre y apellido, por favor. | El nombre y el apellido, por favor.
           - "Izena: Olatz. Abizena: Arana. = Nombre: Olatz. Apellido: Arana."
           - Eta telefono zenbakia? = ¿Y el número de teléfono?
-          - Bederatzi, lau, bat, zazpi. = Nueve, cuatro, uno, siete.
-          - Eta helbidea? = ¿Y la dirección?
+          - Barkatu, berriro, mesedez. Poliki! = Perdona, otra vez, por favor. ¡Despacio! | Perdone, otra vez, por favor. ¡Despacio!
+          - Helbidea? Barkatu, ez dakit. = ¿La dirección? Perdona, no lo sé. | ¿La dirección? Perdona, no sé. | ¿La dirección? Perdone, no lo sé.
           - Ni langabetua naiz, eta Getxokoa naiz. = Estoy en paro y soy de Getxo. | Estoy parado y soy de Getxo. | Estoy parada y soy de Getxo.
         chats:
           - messages:
@@ -397,9 +417,9 @@ levels:
           - messages:
               - Peio | Eta telefono zenbakia?
               - Olatz | Sei, bat, bost, zero, hiru.
-              - Peio | Sei, bat, bost, zero, hiru?
+              - Peio | Poliki, mesedez. Berriro?
             options:
-              - Bai, eskerrik asko.
+              - Sei, bat, bost, zero, hiru.
               - Ez horregatik.
               - Ni Olatz naiz.
         true_false:
@@ -425,14 +445,15 @@ levels:
         - Amaia | Egun on! Ni Amaia naiz, eta irakaslea naiz. = ¡Buenos días! Soy Amaia y soy profesora.
         - Unai | Egun on! Ni Unai naiz. Hau Leire da. = ¡Buenos días! Soy Unai. Esta es Leire.
         - Amaia | Kaixo, Leire! Zu ikaslea zara? = ¡Hola, Leire! ¿Eres estudiante?
-        - Leire | Bai, ni ikaslea naiz. Unai ez da ikaslea. = Sí, soy estudiante. Unai no es estudiante.
+        - Leire | Bai, ni ikaslea naiz, baina Unai ez. = Sí, soy estudiante, pero Unai no.
         - Amaia | Ez? Zer zara, Unai? = ¿No? ¿A qué te dedicas, Unai?
-        - Unai | Ni sukaldaria naiz. = Soy cocinero.
+        - Unai | Sukaldaria naiz, eta euskaraz pixka bat hitz egiten dut. = Soy cocinero y hablo un poco de euskera.
         - Amaia | Eta nongoak zarete? = ¿Y de dónde sois?
         - Unai | Ni Bilbokoa naiz, eta Leire Baionakoa da. = Yo soy de Bilbao y Leire es de Bayona.
         - Amaia | Leire, zein da telefono zenbakia? = Leire, ¿cuál es tu número de teléfono?
         - Leire | Sei, zazpi, bi, bost, zero. = Seis, siete, dos, cinco, cero.
-        - Amaia | Eskerrik asko! Gero arte! = ¡Muchas gracias! ¡Hasta luego!
+        - Amaia | Poliki, mesedez! Berriro? = ¡Despacio, por favor! ¿Otra vez?
+        - Leire | Sei, zazpi, bi, bost, zero. Gero arte! = Seis, siete, dos, cinco, cero. ¡Hasta luego!
       questions:
         - afterLine: 3
           prompt: ¿Quién es estudiante?
@@ -446,10 +467,10 @@ levels:
             - De Bilbao
             - De Bayona
             - No lo dice
-        - afterLine: 10
-          prompt: ¿Qué le pide Amaia a Leire?
+        - afterLine: 11
+          prompt: ¿Qué le pide Amaia a Leire al final?
           options:
-            - Su número de teléfono
+            - Que repita el número despacio
             - Su dirección
             - Su apellido
   - type: review

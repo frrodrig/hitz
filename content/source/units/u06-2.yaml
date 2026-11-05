@@ -76,7 +76,7 @@ levels:
           - Jertse urdina daukazu? = ¿Tienes un jersey azul? | ¿Tiene un jersey azul?
           - Beroki marroia erosi nahi dut. = Quiero comprar un abrigo marrón.
           - Kamiseta horia gustatzen zait. = Me gusta la camiseta amarilla.
-          - Zapata grisak merkeak dira. = Los zapatos grises son baratos.
+          - Zapata grisak merkeak dira, baina zaharrak. = Los zapatos grises son baratos, pero viejos.
         pairs:
           - - alkandora = camisa
             - galtza = pantalón
@@ -103,7 +103,7 @@ levels:
               - Jertse bat behar du.
               - Gabon, Nerea.
         true_false:
-          - passage: Armairuan soineko bat eta bi gona daude. Soinekoa berdea da.
+          - passage: Armairuan soineko bat eta bi gona daude. Soinekoa berdea da, eta gonak ere bai.
             statement: El vestido es verde.
             answer: true
       - structures: [colors]
@@ -113,9 +113,9 @@ levels:
           - Beroki grisa daukat. = Tengo un abrigo gris.
           - Alkandora hau zuria eta urdina da. = Esta camisa es blanca y azul.
           - Jertse berdea gustatzen zait. = Me gusta el jersey verde.
-          - Arropa beltza nahiago dut. = Prefiero la ropa negra. | Prefiero ropa negra.
+          - Beti arropa beltza nahiago dut. = Siempre prefiero la ropa negra. | Siempre prefiero ropa negra.
           - Soineko horia oso polita da. = El vestido amarillo es muy bonito.
-          - Kamiseta zuriak merkeak dira. = Las camisetas blancas son baratas.
+          - Kamiseta gorri edo urdin bat nahi dut. = Quiero una camiseta roja o azul.
         pairs:
           - - gorri = rojo
             - zuri = blanco
@@ -147,7 +147,7 @@ levels:
             answer: true
       - structures: [gifts-vocab]
         sentences:
-          - Aneren urtebetetzea da. = Es el cumpleaños de Ane.
+          - Gaur Aneren urtebetetzea da. = Hoy es el cumpleaños de Ane.
           - Opari bat erosi nahi dut. = Quiero comprar un regalo.
           - Zorionak! Hau zure oparia da. = ¡Felicidades! Este es tu regalo. | ¡Felicidades! Esto es tu regalo.
           - Zein da zure neurria? = ¿Cuál es tu talla? | ¿Cuál es su talla?
@@ -181,8 +181,8 @@ levels:
               - Ez horregatik, Jon!
               - Gero arte, Jon!
         true_false:
-          - passage: Iratiren urtebetetzea da. Bere amak opari bat dauka.
-            statement: Es el cumpleaños de la madre de Irati.
+          - passage: Bihar Iratiren urtebetetzea da. Bere amak opari bat dauka.
+            statement: Mañana es el cumpleaños de la madre de Irati.
             answer: false
   - type: lesson
     title:
@@ -198,7 +198,7 @@ levels:
           - Gona hau motzegia da. = Esta falda es demasiado corta.
           - Beroki hau garestiegia da. = Este abrigo es demasiado caro.
           - Galtza hauek luzeegiak dira. = Estos pantalones son demasiado largos.
-          - Kamiseta txikiegia da. = La camiseta es demasiado pequeña.
+          - Kamiseta hau txikiegia da. Beste bat, mesedez. = Esta camiseta es demasiado pequeña. Otra, por favor.
         meanings:
           - text: Gona hau motzegia da.
             options:
@@ -290,7 +290,7 @@ levels:
               - Polita direlako.
               - Soinekoa da.
         true_false:
-          - passage: Ikerri ez zaio arropa erostea gustatzen. Opariak erostea nahiago du.
+          - passage: Ikerri ez zaio arropa erostea gustatzen, baina opariak erostea bai.
             statement: A Iker le gusta comprar ropa.
             answer: false
   - type: lesson
@@ -300,7 +300,7 @@ levels:
     lessons:
       - structures: [norentzat, nolakoa]
         sentences:
-          - Lagun baten urtebetetzea da. = Es el cumpleaños de un amigo. | Es el cumpleaños de una amiga.
+          - Bihar lagun baten urtebetetzea da. = Mañana es el cumpleaños de un amigo. | Mañana es el cumpleaños de una amiga.
           - Zer gustatzen zaio zure lagunari? = ¿Qué le gusta a tu amigo? | ¿Qué le gusta a tu amiga?
           - Kamiseta bat nahi dut nire lagunarentzat. = Quiero una camiseta para mi amigo. | Quiero una camiseta para mi amiga.
           - Nolakoa da? Berdea eta grisa. = ¿Cómo es? Verde y gris.
@@ -341,7 +341,7 @@ levels:
           - Alkandora hau nola daukazu? = ¿Cómo tienes esta camisa? | ¿En qué colores tienes esta camisa? | ¿Cómo tiene esta camisa?  # TODO(revisión-nativa): «nola daukazu?» in a shop = which colours/sizes you have it in
           - Gorria eta beltza dauzkagu. = Tenemos la roja y la negra. | La tenemos en rojo y en negro.  # TODO(revisión-nativa): answer to «nola daukazu?»; dauzkagu vs daukagu
           - Zapata hauek handiegiak dira. = Estos zapatos son demasiado grandes.
-          - Jertse hau ondo dago, eta ez da garestiegia. = Este jersey está bien, y no es demasiado caro.
+          - Jertse hau ondo dago, baina pixka bat garestia da. = Este jersey está bien, pero es un poco caro.
         chats:
           - messages:
               - Saltzailea | Nolakoa da gona?
@@ -376,7 +376,7 @@ levels:
           - Soineko hau nahiago dut, merkeagoa delako. = Prefiero este vestido porque es más barato.
           - Ez dut beroki hau nahi, garestiegia delako. = No quiero este abrigo porque es demasiado caro.
           - Amari ez zaio arropa probatzea gustatzen. = A mi madre no le gusta probarse ropa. | A mamá no le gusta probarse ropa.
-          - Opariak erostea gustatzen zait. = Me gusta comprar regalos.
+          - Euskaraz hitz egitea gustatzen zait. = Me gusta hablar en euskera.
         chats:
           - messages:
               - Ander | Zergatik nahi duzu kamiseta berdea?
@@ -415,11 +415,11 @@ levels:
         - Julen | Izaro, amaren urtebetetzea da! = Izaro, ¡es el cumpleaños de mamá!
         - Izaro | Bai! Opari bat erosi nahi dut. = ¡Sí! Quiero comprar un regalo.
         - Julen | Zer gustatzen zaio amari? = ¿Qué le gusta a mamá?
-        - Izaro | Arropa gustatzen zaio. Soineko bat? = Le gusta la ropa. ¿Un vestido?
+        - Izaro | Arropa asko gustatzen zaio. Soineko bat edo jertse bat? = Le gusta mucho la ropa. ¿Un vestido o un jersey?  # TODO(revisión-nativa): «arropa asko gustatzen zaio» = le gusta mucho la ropa (no «mucha ropa»)
         - Saltzailea | Kaixo! Norentzat da oparia? = ¡Hola! ¿Para quién es el regalo?
         - Julen | Gure amarentzat. Soineko urdin bat, mesedez. = Para nuestra madre. Un vestido azul, por favor.
-        - Saltzailea | Hau oso polita da. Ehun euro. = Este es muy bonito. Cien euros.
-        - Izaro | Ehun euro? Garestiegia da! = ¿Cien euros? ¡Es demasiado caro!
+        - Saltzailea | Hau oso polita da. Berrehun euro. = Este es muy bonito. Doscientos euros.
+        - Izaro | Berrehun euro? Garestiegia da! = ¿Doscientos euros? ¡Es demasiado caro!
         - Saltzailea | Eta jertse gris hau? Hogeita hamar euro. = ¿Y este jersey gris? Treinta euros.
         - Julen | Grisa? Ez. Amari urdina gustatzen zaio. = ¿Gris? No. A mamá le gusta el azul.
         - Saltzailea | Jertse urdina ere daukagu! = ¡También tenemos el jersey azul!

@@ -77,8 +77,8 @@
           "eu": "Orain bertan: -tzen ari naiz"
         },
         "body": {
-          "es": "Para decir lo que estás haciendo ahora, el verbo lleva -tzen o -ten y le sigue «ari» + naiz, zara, da… Se usa siempre naiz/zara/da, aunque el verbo tenga objeto.",
-          "eu": "Orain egiten ari zarena esateko, aditzak -tzen edo -ten hartzen du, eta ondoren «ari» + naiz, zara, da… Beti naiz/zara/da erabiltzen da, aditzak objektua izan arren."
+          "es": "Para decir lo que estás haciendo ahora, el verbo lleva -tzen o -ten y le sigue «ari» + naiz, zara, da… Se usa siempre naiz/zara/da, aunque el verbo tenga objeto. Ya conoces un ejemplo, «Euskara ikasten ari naiz».",
+          "eu": "Orain egiten ari zarena esateko, aditzak -tzen edo -ten hartzen du, eta ondoren «ari» + naiz, zara, da… Beti naiz/zara/da erabiltzen da, aditzak objektua izan arren. Adibide bat ezagutzen duzu, «Euskara ikasten ari naiz»."
         },
         "examples": [
           {
@@ -90,8 +90,8 @@
             "es": "Estoy preparando la cena."
           },
           {
-            "eu": "Umeak lo egiten ari dira.",
-            "es": "Los niños están durmiendo."
+            "eu": "Euskara ikasten ari naiz.",
+            "es": "Estoy aprendiendo euskera."
           }
         ]
       },
@@ -144,9 +144,9 @@
                 "Bihar Bilbora joango naiz."
               ],
               "distractors": [
-                "Datorren",
                 "astean",
-                "bazkalduko"
+                "edo",
+                "Ane"
               ],
               "vocabulary": [
                 "bihar",
@@ -163,8 +163,8 @@
               "type": "listen_tap",
               "text": "Etzi amarekin bazkalduko dut.",
               "distractors": [
-                "afalduko",
                 "Bilbora",
+                "afalduko",
                 "dugu"
               ],
               "vocabulary": [
@@ -297,18 +297,22 @@
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
-                "text": "Gaur gauean etxean afalduko dugu."
+                "text": "Gaur gauean etxean afalduko dugu edo jatetxera joango gara."
               },
               "answers": [
-                "Esta noche cenaremos en casa.",
-                "Esta noche vamos a cenar en casa."
+                "Esta noche cenaremos en casa o iremos a un restaurante.",
+                "Esta noche vamos a cenar en casa o vamos a ir a un restaurante."
               ],
               "vocabulary": [
                 "gaur",
                 "gau",
                 "etxe",
                 "afaldu",
-                "ukan"
+                "ukan",
+                "edo",
+                "jatetxe",
+                "joan",
+                "izan"
               ],
               "structures": [
                 "future-ko",
@@ -403,22 +407,24 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Datorren urtean Londresen ikasiko dut."
+                "text": "Datorren urtean euskara ikasiko dut."
               },
               "answers": [
-                "El año que viene estudiaré en Londres.",
-                "El próximo año estudiaré en Londres.",
-                "El año que viene voy a estudiar en Londres."
+                "El año que viene aprenderé euskera.",
+                "El año que viene estudiaré euskera.",
+                "El próximo año aprenderé euskera.",
+                "El año que viene voy a aprender euskera."
               ],
               "distractors": [
+                "harás",
                 "vendrá",
-                "Este",
-                "Francia",
-                "Qué"
+                "comeré",
+                "por"
               ],
               "vocabulary": [
                 "datorren",
                 "urte",
+                "euskara",
                 "ikasi",
                 "ukan"
               ],
@@ -437,9 +443,9 @@
               "type": "listen_tap",
               "text": "Gaur gauean arraina jango dugu.",
               "distractors": [
-                "Bederatzietan",
-                "duzu",
-                "du"
+                "bukatuko",
+                "asko",
+                "naiz"
               ],
               "vocabulary": [
                 "gaur",
@@ -590,14 +596,18 @@
             {
               "id": "u07-2.l1.s2.e08",
               "type": "listen_type",
-              "text": "Zortzietan bukatuko dut.",
+              "text": "Gaur ez dut asko jango. Zortzietan bukatuko dut.",
               "answers": [
-                "Zortzietan bukatuko dut."
+                "Gaur ez dut asko jango. Zortzietan bukatuko dut."
               ],
               "vocabulary": [
+                "gaur",
+                "ez",
+                "ukan",
+                "asko",
+                "jan",
                 "zortzi",
-                "bukatu",
-                "ukan"
+                "bukatu"
               ],
               "structures": [
                 "future-ko"
@@ -675,9 +685,9 @@
                 "Vamos a volver a las nueve."
               ],
               "distractors": [
-                "dormiré",
-                "vino",
-                "la"
+                "Mañana",
+                "quedaré",
+                "horas"
               ],
               "vocabulary": [
                 "bederatzi",
@@ -691,7 +701,7 @@
             {
               "id": "u07-2.l1.s2.e13",
               "type": "read_true_false",
-              "passage": "Gaur Itziarrek afaria prestatuko du. Mikelek ardoa eramango du.",
+              "passage": "Gaur Itziarrek afaria prestatuko du. Mikelek ardoa eramango du, eta ogia ere bai.",
               "statement": "Mikel preparará la cena.",
               "answer": false,
               "vocabulary": [
@@ -700,7 +710,11 @@
                 "prestatu",
                 "ukan",
                 "ardo",
-                "eraman"
+                "eraman",
+                "eta",
+                "ogi",
+                "ere",
+                "bai"
               ],
               "structures": [
                 "future-ko"
@@ -717,10 +731,10 @@
                 "Gaur hamar orduz lo egingo dut."
               ],
               "distractors": [
+                "etxean",
+                "ez",
                 "afaria",
-                "Zortzietan",
-                "dugu",
-                "etxean"
+                "gauean"
               ],
               "vocabulary": [
                 "gaur",
@@ -994,9 +1008,9 @@
                 "Abuztuan Parisera joango gara."
               ],
               "distractors": [
-                "eta",
-                "Gasteizera",
-                "etorriko"
+                "zatoz",
+                "Jon",
+                "Orain"
               ],
               "vocabulary": [
                 "abuztu",
@@ -1013,9 +1027,9 @@
               "type": "listen_tap",
               "text": "Urtarrilean Gasteizera etorriko naiz.",
               "distractors": [
-                "Nora",
-                "apaindegira",
-                "Ane"
+                "Jon",
+                "Ane",
+                "Nora"
               ],
               "vocabulary": [
                 "urtarril",
@@ -1097,11 +1111,13 @@
             {
               "id": "u07-2.l2.s1.e04",
               "type": "listen_type",
-              "text": "Ane irakurtzen ari da.",
+              "text": "Ane liburu bat irakurtzen ari da.",
               "answers": [
-                "Ane irakurtzen ari da."
+                "Ane liburu bat irakurtzen ari da."
               ],
               "vocabulary": [
+                "liburu",
+                "bat",
                 "irakurri",
                 "izan"
               ],
@@ -1175,8 +1191,8 @@
                 "Estamos tomando un café."
               ],
               "distractors": [
-                "Ane",
-                "Estoy"
+                "euskera",
+                "un"
               ],
               "vocabulary": [
                 "kafe",
@@ -1217,18 +1233,20 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
-                "text": "Mikel está estudiando en la biblioteca."
+                "text": "Mikel está estudiando euskera en la biblioteca."
               },
               "answers": [
-                "Mikel liburutegian ikasten ari da."
+                "Mikel liburutegian euskara ikasten ari da."
               ],
               "distractors": [
-                "Ane",
+                "zarete",
                 "naiz",
-                "prestatzen"
+                "egiten",
+                "amari"
               ],
               "vocabulary": [
                 "liburutegi",
+                "euskara",
                 "ikasi",
                 "izan"
               ],
@@ -1239,7 +1257,7 @@
             {
               "id": "u07-2.l2.s1.e11",
               "type": "read_true_false",
-              "passage": "Orain Leire eta Ibai hondartzan daude. Ibai irakurtzen ari da.",
+              "passage": "Orain Leire eta Ibai hondartzan daude. Ibai liburu bat irakurtzen ari da.",
               "statement": "Ibai está nadando.",
               "answer": false,
               "vocabulary": [
@@ -1247,6 +1265,8 @@
                 "eta",
                 "hondartza",
                 "egon",
+                "liburu",
+                "bat",
                 "irakurri",
                 "izan"
               ],
@@ -1259,9 +1279,9 @@
               "type": "listen_tap",
               "text": "Zuek zer jaten ari zarete?",
               "distractors": [
-                "Mikel",
-                "Kafea",
-                "egiten"
+                "euskara",
+                "da",
+                "Umeak"
               ],
               "vocabulary": [
                 "zuek",
@@ -1398,21 +1418,26 @@
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
-                "text": "Ez dut kafea hartuko."
+                "text": "Ez dut kafea hartuko, baina tea bai."
               },
               "answers": [
-                "No tomaré café.",
-                "No voy a tomar café."
+                "No tomaré café, pero té sí.",
+                "No voy a tomar café, pero té sí."
               ],
               "distractors": [
-                "Sí",
-                "Iremos"
+                "preparará",
+                "el",
+                "comida",
+                "que"
               ],
               "vocabulary": [
                 "ez",
                 "ukan",
                 "kafe",
-                "hartu"
+                "hartu",
+                "baina",
+                "te",
+                "bai"
               ],
               "structures": [
                 "future-ko",
@@ -1451,8 +1476,8 @@
                 "Nora joango zarete datorren hilabetean?"
               ],
               "distractors": [
-                "Nork",
-                "zara",
+                "du",
+                "prestatuko",
                 "kafea"
               ],
               "vocabulary": [
@@ -1497,12 +1522,14 @@
             {
               "id": "u07-2.l2.s2.e10",
               "type": "listen_tap",
-              "text": "Gasteizera joango gara.",
+              "text": "Gasteizera edo Bilbora joango gara.",
               "distractors": [
+                "bazkaria",
                 "Ez",
-                "Bihar"
+                "hartuko"
               ],
               "vocabulary": [
+                "edo",
                 "joan",
                 "izan"
               ],
@@ -1899,10 +1926,10 @@
                 "Iré al monte con amigos."
               ],
               "distractors": [
-                "Sí",
-                "harás",
-                "domingo",
-                "El"
+                "El",
+                "Qué",
+                "Hola",
+                "un"
               ],
               "vocabulary": [
                 "mendi",
@@ -1947,8 +1974,8 @@
                 "Eta igandean?"
               ],
               "distractors": [
-                "larunbatean",
-                "naiz"
+                "etorriko",
+                "Zer"
               ],
               "vocabulary": [
                 "eta",
@@ -2001,17 +2028,23 @@
             {
               "id": "u07-2.l3.s1.e06",
               "type": "listen_tap",
-              "text": "Igandean etxean geratuko naiz.",
+              "text": "Igandean etxean geratuko naiz eta liburu bat irakurriko dut.",
               "distractors": [
-                "Eta",
-                "Markel",
-                "egingo"
+                "zara",
+                "Mendira",
+                "eramango",
+                "Markel"
               ],
               "vocabulary": [
                 "igande",
                 "etxe",
                 "geratu",
-                "izan"
+                "izan",
+                "eta",
+                "liburu",
+                "bat",
+                "irakurri",
+                "ukan"
               ],
               "structures": [
                 "future-ko",
@@ -2135,7 +2168,7 @@
                 "Mamá, ¿dónde estás?"
               ],
               "distractors": [
-                "viene",
+                "favor",
                 "la"
               ],
               "vocabulary": [
@@ -2159,8 +2192,8 @@
                 "Apaindegian nago."
               ],
               "distractors": [
-                "mesedez",
-                "prestatzen"
+                "Eta",
+                "non"
               ],
               "vocabulary": [
                 "apaindegi",
@@ -2301,10 +2334,11 @@
             {
               "id": "u07-2.l3.s2.e08",
               "type": "order_sentence",
-              "answer": "Aita berandu dator.",
-              "translation": "Papá viene tarde.",
+              "answer": "Aita beti berandu dator.",
+              "translation": "Papá siempre viene tarde.",
               "vocabulary": [
                 "aita",
+                "beti",
                 "berandu",
                 "etorri"
               ],
@@ -2388,10 +2422,10 @@
                 "Egun on! Abuztuan Londresera joan nahi dut."
               ],
               "distractors": [
+                "naiz",
+                "eta",
                 "Martxoan",
-                "itzuliko",
-                "egingo",
-                "ez"
+                "lan"
               ],
               "vocabulary": [
                 "egun on",
@@ -2410,9 +2444,9 @@
               "type": "listen_tap",
               "text": "Zenbat aste geratuko zara?",
               "distractors": [
-                "Martxoan",
-                "dut",
-                "itzuliko"
+                "Egun",
+                "nahi",
+                "Martxoan"
               ],
               "vocabulary": [
                 "zenbat",
@@ -2513,12 +2547,13 @@
             {
               "id": "u07-2.l3.s3.e06",
               "type": "order_sentence",
-              "answer": "Irailean itzuliko naiz.",
-              "translation": "Volveré en septiembre.",
+              "answer": "Noiz itzuliko zara? Irailean.",
+              "translation": "¿Cuándo volverás? En septiembre.",
               "vocabulary": [
-                "irail",
+                "noiz",
                 "itzuli",
-                "izan"
+                "izan",
+                "irail"
               ],
               "structures": [
                 "months",
@@ -2694,8 +2729,8 @@
           },
           {
             "speaker": "Maialen",
-            "eu": "Etxean geratuko naiz. Urrian eta azaroan bidaiatu dut.",
-            "es": "Me quedaré en casa. En octubre y noviembre ya he viajado."
+            "eu": "Etxean geratuko naiz. Urrian eta azaroan asko bidaiatu dut.",
+            "es": "Me quedaré en casa. En octubre y noviembre he viajado mucho."
           },
           {
             "speaker": "Aitor",
