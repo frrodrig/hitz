@@ -110,6 +110,11 @@ levels:
           - passage: Ni Garazi naiz. Igeriketa eta txirrindularitza gustatzen zaizkit.
             statement: A Garazi le gusta el ciclismo.
             answer: true
+        images:
+          - football, basketball, swimming
+          - basketball, cycling, football
+          - swimming, football, cycling
+          - cycling, swimming, basketball
       - structures: [aisialdia, kultura]
         sentences:
           - Musika entzuten dut. = Escucho música. | Yo escucho música.
@@ -150,6 +155,11 @@ levels:
           - passage: Jonek ez du abesten, baina beti dantza egiten du.
             statement: Jon canta.
             answer: false
+        images:
+          - music, concert, film
+          - concert, dance, music
+          - film, music, dance
+          - dance, film, concert
       - structures: [ikastaroak]
         sentences:
           - Sukaldaritza ikastaro batean izena eman dut. = Me he apuntado a un curso de cocina. | Me he inscrito en un curso de cocina.
@@ -190,6 +200,8 @@ levels:
           - passage: Haizeak marrazten ikasi nahi du. Ikastaro batean izena eman du.
             statement: Haizea quiere aprender a dibujar.
             answer: true
+        images:
+          - photo, book, film
   - type: lesson
     title:
       es: ¿Cuándo y cómo?
@@ -300,6 +312,9 @@ levels:
           - passage: Peio metroz joaten da lanera. Metroa Getxoraino doa.
             statement: Peio va al trabajo en autobús.
             answer: false
+        images:
+          - car, bicycle, train
+          - bicycle, car, bus
   - type: lesson
     title:
       es: Planes y cursos
@@ -341,6 +356,8 @@ levels:
               - ¿Quieres apuntarte?
               - ¿Cómo te llamas?
               - ¿Quieres un libro?
+        images:
+          - football, swimming, dance
       - structures: [aisialdia, gustatu]
         sentences:
           - Zer egiten duzu asteburuetan? = ¿Qué haces los fines de semana? | ¿Qué hace usted los fines de semana?

@@ -402,6 +402,32 @@
             },
             {
               "id": "u04-1.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "la cocina",
+              "options": [
+                {
+                  "text": "sukaldea",
+                  "image": "room_kitchen.webp"
+                },
+                {
+                  "text": "bainugela",
+                  "image": "room_bathroom.webp"
+                },
+                {
+                  "text": "logela",
+                  "image": "room_bedroom.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "sukalde"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -423,6 +449,84 @@
                 "sukalde",
                 "atzean",
                 "egon"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "el dormitorio",
+              "options": [
+                {
+                  "text": "sukaldea",
+                  "image": "room_kitchen.webp"
+                },
+                {
+                  "text": "egongela",
+                  "image": "room_living_room.webp"
+                },
+                {
+                  "text": "logela",
+                  "image": "room_bedroom.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "logela"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "la sala de estar",
+              "options": [
+                {
+                  "text": "etxea",
+                  "image": "home_house.webp"
+                },
+                {
+                  "text": "egongela",
+                  "image": "room_living_room.webp"
+                },
+                {
+                  "text": "bainugela",
+                  "image": "room_bathroom.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "egongela"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e17",
+              "type": "choose_image",
+              "prompt": "el cuarto de baño",
+              "options": [
+                {
+                  "text": "bainugela",
+                  "image": "room_bathroom.webp"
+                },
+                {
+                  "text": "egongela",
+                  "image": "room_living_room.webp"
+                },
+                {
+                  "text": "sukaldea",
+                  "image": "room_kitchen.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bainugela"
               ],
               "structures": [
                 "rooms"
@@ -702,6 +806,32 @@
             },
             {
               "id": "u04-1.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "el ascensor",
+              "options": [
+                {
+                  "text": "igogailua",
+                  "image": "home_elevator.webp"
+                },
+                {
+                  "text": "atea",
+                  "image": "home_door.webp"
+                },
+                {
+                  "text": "eskailera",
+                  "image": "home_stairs.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "igogailu"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -721,6 +851,84 @@
                 "egon",
                 "hemen",
                 "han"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "la ventana",
+              "options": [
+                {
+                  "text": "leihoa",
+                  "image": "home_window.webp"
+                },
+                {
+                  "text": "atea",
+                  "image": "home_door.webp"
+                },
+                {
+                  "text": "eskailera",
+                  "image": "home_stairs.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "leiho"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "la puerta",
+              "options": [
+                {
+                  "text": "leihoa",
+                  "image": "home_window.webp"
+                },
+                {
+                  "text": "atea",
+                  "image": "home_door.webp"
+                },
+                {
+                  "text": "igogailua",
+                  "image": "home_elevator.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "ate"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e17",
+              "type": "choose_image",
+              "prompt": "la escalera",
+              "options": [
+                {
+                  "text": "igogailua",
+                  "image": "home_elevator.webp"
+                },
+                {
+                  "text": "leihoa",
+                  "image": "home_window.webp"
+                },
+                {
+                  "text": "eskailera",
+                  "image": "home_stairs.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "eskailera"
               ],
               "structures": [
                 "house-parts"
@@ -2108,6 +2316,33 @@
                 "describing-home",
                 "eduki-present"
               ]
+            },
+            {
+              "id": "u04-1.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "la casa",
+              "options": [
+                {
+                  "text": "sukaldea",
+                  "image": "room_kitchen.webp"
+                },
+                {
+                  "text": "leihoa",
+                  "image": "home_window.webp"
+                },
+                {
+                  "text": "etxea",
+                  "image": "home_house.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "etxe"
+              ],
+              "structures": [
+                "describing-home",
+                "eduki-present"
+              ]
             }
           ]
         },
@@ -2369,6 +2604,33 @@
                 "eduki",
                 "igogailu",
                 "ukan"
+              ],
+              "structures": [
+                "behar",
+                "eduki-present"
+              ]
+            },
+            {
+              "id": "u04-1.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "la mesa",
+              "options": [
+                {
+                  "text": "igogailua",
+                  "image": "home_elevator.webp"
+                },
+                {
+                  "text": "mahaia",
+                  "image": "home_table.webp"
+                },
+                {
+                  "text": "atea",
+                  "image": "home_door.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "mahai"
               ],
               "structures": [
                 "behar",

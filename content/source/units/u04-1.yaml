@@ -112,6 +112,11 @@ levels:
           - passage: Nire pisua txikia da, baina oso polita. Sukaldea, egongela eta logela bat ditu.
             statement: El piso es grande.
             answer: false
+        images:
+          - kitchen, bathroom, bedroom
+          - bedroom, living_room, kitchen
+          - living_room, bathroom, house
+          - bathroom, kitchen, living_room
       - structures: [house-parts]
         sentences:
           - Ataria handia eta polita da. = El portal es grande y bonito.
@@ -151,6 +156,11 @@ levels:
           - passage: Gure etxeak ez du igogailurik. Eskailera bakarrik dago.
             statement: La casa tiene ascensor.
             answer: false
+        images:
+          - lift, stairs, door
+          - window, door, stairs
+          - door, window, lift
+          - stairs, lift, window
       - structures: [describing-home]
         sentences:
           - Gure etxea berria da. = Nuestra casa es nueva.
@@ -339,6 +349,8 @@ levels:
               - ¿En qué planta está el piso?
               - ¿Cuántos dormitorios tiene el piso?
               - ¿Dónde está el portal?
+        images:
+          - house, window, kitchen
       - structures: [behar, eduki-present]
         sentences:
           - Pisu bat behar dut Donostian. = Necesito un piso en San Sebastián. | Necesito un piso en Donostia.
@@ -374,6 +386,8 @@ levels:
             options:
               - ditut
               - dut
+        images:
+          - table, door, lift
       - structures: [rooms, describing-home]
         sentences:
           - Etxe hau Zarautzen dago. = Esta casa está en Zarautz.

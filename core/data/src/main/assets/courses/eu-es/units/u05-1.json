@@ -377,6 +377,32 @@
             },
             {
               "id": "u05-1.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "el agua",
+              "options": [
+                {
+                  "text": "kafea",
+                  "image": "drink_coffee.webp"
+                },
+                {
+                  "text": "ura",
+                  "image": "drink_water.webp"
+                },
+                {
+                  "text": "esnea",
+                  "image": "drink_milk.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "ur"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -397,6 +423,110 @@
                 "mahai",
                 "gainean",
                 "egon"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "el café",
+              "options": [
+                {
+                  "text": "kafea",
+                  "image": "drink_coffee.webp"
+                },
+                {
+                  "text": "tea",
+                  "image": "drink_tea.webp"
+                },
+                {
+                  "text": "zukua",
+                  "image": "drink_juice.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kafe"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "el vino",
+              "options": [
+                {
+                  "text": "ardoa",
+                  "image": "drink_wine.webp"
+                },
+                {
+                  "text": "ura",
+                  "image": "drink_water.webp"
+                },
+                {
+                  "text": "garagardoa",
+                  "image": "drink_beer.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ardo"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e17",
+              "type": "choose_image",
+              "prompt": "la cerveza",
+              "options": [
+                {
+                  "text": "garagardoa",
+                  "image": "drink_beer.webp"
+                },
+                {
+                  "text": "ardoa",
+                  "image": "drink_wine.webp"
+                },
+                {
+                  "text": "zukua",
+                  "image": "drink_juice.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "garagardo"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e18",
+              "type": "choose_image",
+              "prompt": "el zumo",
+              "options": [
+                {
+                  "text": "tea",
+                  "image": "drink_tea.webp"
+                },
+                {
+                  "text": "esnea",
+                  "image": "drink_milk.webp"
+                },
+                {
+                  "text": "zukua",
+                  "image": "drink_juice.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "zuku"
               ],
               "structures": [
                 "food-vocab"
@@ -662,6 +792,32 @@
             },
             {
               "id": "u05-1.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "el pan",
+              "options": [
+                {
+                  "text": "haragia",
+                  "image": "food_meat.webp"
+                },
+                {
+                  "text": "ogia",
+                  "image": "food_bread.webp"
+                },
+                {
+                  "text": "arraina",
+                  "image": "food_fish.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "ogi"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -681,6 +837,136 @@
                 "jan",
                 "nahi izan",
                 "ukan"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "el pescado",
+              "options": [
+                {
+                  "text": "arraina",
+                  "image": "food_fish.webp"
+                },
+                {
+                  "text": "arrautza",
+                  "image": "food_egg.webp"
+                },
+                {
+                  "text": "oilaskoa",
+                  "image": "food_chicken.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "arrain"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "la carne",
+              "options": [
+                {
+                  "text": "haragia",
+                  "image": "food_meat.webp"
+                },
+                {
+                  "text": "gazta",
+                  "image": "food_cheese.webp"
+                },
+                {
+                  "text": "ogia",
+                  "image": "food_bread.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "haragi"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e17",
+              "type": "choose_image",
+              "prompt": "el pollo",
+              "options": [
+                {
+                  "text": "haragia",
+                  "image": "food_meat.webp"
+                },
+                {
+                  "text": "oilaskoa",
+                  "image": "food_chicken.webp"
+                },
+                {
+                  "text": "arraina",
+                  "image": "food_fish.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "oilasko"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e18",
+              "type": "choose_image",
+              "prompt": "el huevo",
+              "options": [
+                {
+                  "text": "gazta",
+                  "image": "food_cheese.webp"
+                },
+                {
+                  "text": "arrautza",
+                  "image": "food_egg.webp"
+                },
+                {
+                  "text": "ogia",
+                  "image": "food_bread.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "arrautza"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e19",
+              "type": "choose_image",
+              "prompt": "el queso",
+              "options": [
+                {
+                  "text": "oilaskoa",
+                  "image": "food_chicken.webp"
+                },
+                {
+                  "text": "gazta",
+                  "image": "food_cheese.webp"
+                },
+                {
+                  "text": "arrautza",
+                  "image": "food_egg.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "gazta"
               ],
               "structures": [
                 "food-vocab"
@@ -971,6 +1257,33 @@
             },
             {
               "id": "u05-1.l1.s3.e13",
+              "type": "choose_image",
+              "prompt": "la manzana",
+              "options": [
+                {
+                  "text": "laranja",
+                  "image": "food_orange.webp"
+                },
+                {
+                  "text": "sagarra",
+                  "image": "food_apple.webp"
+                },
+                {
+                  "text": "letxuga",
+                  "image": "food_lettuce.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "sagar"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e14",
               "type": "listen_tap",
               "text": "Bazkarian oilaskoa nahi dut.",
               "distractors": [
@@ -983,6 +1296,114 @@
                 "oilasko",
                 "nahi izan",
                 "ukan"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e15",
+              "type": "choose_image",
+              "prompt": "la naranja",
+              "options": [
+                {
+                  "text": "tomatea",
+                  "image": "food_tomato.webp"
+                },
+                {
+                  "text": "laranja",
+                  "image": "food_orange.webp"
+                },
+                {
+                  "text": "patata",
+                  "image": "food_potato.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "laranja"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e16",
+              "type": "choose_image",
+              "prompt": "la lechuga",
+              "options": [
+                {
+                  "text": "letxuga",
+                  "image": "food_lettuce.webp"
+                },
+                {
+                  "text": "sagarra",
+                  "image": "food_apple.webp"
+                },
+                {
+                  "text": "tomatea",
+                  "image": "food_tomato.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "letxuga"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e17",
+              "type": "choose_image",
+              "prompt": "la patata",
+              "options": [
+                {
+                  "text": "patata",
+                  "image": "food_potato.webp"
+                },
+                {
+                  "text": "letxuga",
+                  "image": "food_lettuce.webp"
+                },
+                {
+                  "text": "laranja",
+                  "image": "food_orange.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "patata"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e18",
+              "type": "choose_image",
+              "prompt": "el tomate",
+              "options": [
+                {
+                  "text": "patata",
+                  "image": "food_potato.webp"
+                },
+                {
+                  "text": "sagarra",
+                  "image": "food_apple.webp"
+                },
+                {
+                  "text": "tomatea",
+                  "image": "food_tomato.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "tomate"
               ],
               "structures": [
                 "food-vocab",
@@ -1229,6 +1650,32 @@
             },
             {
               "id": "u05-1.l2.s1.e13",
+              "type": "choose_image",
+              "prompt": "el té",
+              "options": [
+                {
+                  "text": "tea",
+                  "image": "drink_tea.webp"
+                },
+                {
+                  "text": "esnea",
+                  "image": "drink_milk.webp"
+                },
+                {
+                  "text": "kafea",
+                  "image": "drink_coffee.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "te"
+              ],
+              "structures": [
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s1.e14",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1504,6 +1951,33 @@
             },
             {
               "id": "u05-1.l2.s2.e13",
+              "type": "choose_image",
+              "prompt": "la leche",
+              "options": [
+                {
+                  "text": "garagardoa",
+                  "image": "drink_beer.webp"
+                },
+                {
+                  "text": "esnea",
+                  "image": "drink_milk.webp"
+                },
+                {
+                  "text": "ura",
+                  "image": "drink_water.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "esne"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s2.e14",
               "type": "order_sentence",
               "answer": "Nire amari tea gustatzen zaio.",
               "translation": "A mi madre le gusta el té.",
@@ -2070,6 +2544,33 @@
                 "gustatu-present",
                 "nahiago-izan"
               ]
+            },
+            {
+              "id": "u05-1.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "el pescado",
+              "options": [
+                {
+                  "text": "arraina",
+                  "image": "food_fish.webp"
+                },
+                {
+                  "text": "haragia",
+                  "image": "food_meat.webp"
+                },
+                {
+                  "text": "oilaskoa",
+                  "image": "food_chicken.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "arrain"
+              ],
+              "structures": [
+                "gustatu-present",
+                "nahiago-izan"
+              ]
             }
           ]
         },
@@ -2333,6 +2834,33 @@
                 "zuku",
                 "nahiago izan",
                 "ukan"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "la naranja",
+              "options": [
+                {
+                  "text": "gazta",
+                  "image": "food_cheese.webp"
+                },
+                {
+                  "text": "sagarra",
+                  "image": "food_apple.webp"
+                },
+                {
+                  "text": "laranja",
+                  "image": "food_orange.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "laranja"
               ],
               "structures": [
                 "nori-dative",

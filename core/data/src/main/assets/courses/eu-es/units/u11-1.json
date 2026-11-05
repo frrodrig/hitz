@@ -394,6 +394,33 @@
             },
             {
               "id": "u11-1.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "el conductor",
+              "options": [
+                {
+                  "text": "gidaria",
+                  "image": "job_driver.webp"
+                },
+                {
+                  "text": "irakaslea",
+                  "image": "job_teacher.webp"
+                },
+                {
+                  "text": "sukaldaria",
+                  "image": "job_cook.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gidari"
+              ],
+              "structures": [
+                "lanbideak",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -413,6 +440,33 @@
                 "oso",
                 "jator",
                 "izan"
+              ],
+              "structures": [
+                "lanbideak",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "el conductor",
+              "options": [
+                {
+                  "text": "medikua",
+                  "image": "job_doctor.webp"
+                },
+                {
+                  "text": "gidaria",
+                  "image": "job_driver.webp"
+                },
+                {
+                  "text": "erizaina",
+                  "image": "job_nurse.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "gidari"
               ],
               "structures": [
                 "lanbideak",
@@ -691,6 +745,32 @@
             },
             {
               "id": "u11-1.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "la oficina",
+              "options": [
+                {
+                  "text": "lantegia",
+                  "image": "place_factory.webp"
+                },
+                {
+                  "text": "bulegoa",
+                  "image": "place_office.webp"
+                },
+                {
+                  "text": "eskola",
+                  "image": "place_school.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "bulego"
+              ],
+              "structures": [
+                "lantokiak"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -709,6 +789,32 @@
                 "egin",
                 "ukan",
                 "lan"
+              ],
+              "structures": [
+                "lantokiak"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "la fábrica",
+              "options": [
+                {
+                  "text": "lantegia",
+                  "image": "place_factory.webp"
+                },
+                {
+                  "text": "ospitalea",
+                  "image": "place_hospital.webp"
+                },
+                {
+                  "text": "bulegoa",
+                  "image": "place_office.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "lantegi"
               ],
               "structures": [
                 "lantokiak"
@@ -2094,6 +2200,33 @@
                 "izan",
                 "lanaldi",
                 "oso"
+              ],
+              "structures": [
+                "lan-baldintzak",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u11-1.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "la oficina",
+              "options": [
+                {
+                  "text": "bulegoa",
+                  "image": "place_office.webp"
+                },
+                {
+                  "text": "bankua",
+                  "image": "place_bank.webp"
+                },
+                {
+                  "text": "lantegia",
+                  "image": "place_factory.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bulego"
               ],
               "structures": [
                 "lan-baldintzak",

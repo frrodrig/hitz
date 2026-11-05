@@ -120,6 +120,10 @@ levels:
           - passage: Hau Oñati da. Oñati herria da.
             statement: Oñati es una ciudad.
             answer: false
+        images:
+          - town, city, park
+          - church, park, city
+          - park, church, town
       - structures: [places, non-inessive]
         sentences:
           - Hau bankua da. = Este es el banco. | Esto es el banco.
@@ -160,6 +164,11 @@ levels:
           - passage: Ni Maialen naiz. Medikua naiz, eta ospitalean nago.
             statement: Maialen está en el hospital.
             answer: true
+        images:
+          - bank, pharmacy, school
+          - hospital, library, bank
+          - school, hospital, pharmacy
+          - library, school, hospital
       - structures: [places, non-inessive]
         sentences:
           - Donostian jatetxe asko daude. = En San Sebastián hay muchos restaurantes. | Hay muchos restaurantes en San Sebastián.
@@ -200,6 +209,12 @@ levels:
           - passage: Gaur Zarautzen gaude, hondartzan. Bihar mendian gaude.
             statement: Hoy los que hablan están en el monte.
             answer: false
+        images:
+          - restaurant, bar, hotel
+          - station, beach, mountain
+          - beach, mountain, hotel
+          - mountain, station, restaurant
+          - bar, restaurant, station
   - type: lesson
     title:
       es: Estar y haber
@@ -356,6 +371,8 @@ levels:
               - El hospital no está aquí.
               - El hospital está aquí.
               - No hay hospital allí.
+        images:
+          - hotel, church, pharmacy
       - structures: [egon-present, demonstratives]
         sentences:
           - Kaixo, Oier! Non zaude? = ¡Hola, Oier! ¿Dónde estás?
@@ -391,6 +408,8 @@ levels:
               - daude
               - dago
               - gaude
+        images:
+          - pharmacy, bank, library
       - structures: [ba-rik, places]
         sentences:
           - Hau Elizondo da. Herri hau Nafarroan dago. = Este es Elizondo. Este pueblo está en Navarra.
@@ -427,6 +446,8 @@ levels:
               - Mañana es otro día.
               - Hoy es otro día.
               - Mañana estamos en otro pueblo.
+        images:
+          - city, town, beach
   - type: story
     title:
       es: "Historia: ¿dónde está el hotel?"

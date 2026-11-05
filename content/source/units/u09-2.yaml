@@ -329,6 +329,8 @@ levels:
               - ¿Qué opinas?
               - ¿Qué haces?
               - ¿Dónde estás?
+        images:
+          - bin, container, bottle
       - structures: [debekatuta, ezin-da]
         sentences:
           - Hondartzara ezin da beirazko botilarik eraman. = No se pueden llevar botellas de vidrio a la playa. | A la playa no se pueden llevar botellas de vidrio.
@@ -364,6 +366,8 @@ levels:
             options:
               - ezin
               - ados
+        images:
+          - tree, river, sea
       - structures: [enean, habitual-present]
         sentences:
           - Etxetik joaten naizenean, argiak itzaltzen ditut. = Cuando me voy de casa, apago las luces. | Cuando salgo de casa, apago las luces.

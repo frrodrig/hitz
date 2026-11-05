@@ -699,6 +699,33 @@
             },
             {
               "id": "u10-1.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "el cine",
+              "options": [
+                {
+                  "text": "zinema",
+                  "image": "place_cinema.webp"
+                },
+                {
+                  "text": "antzokia",
+                  "image": "place_theatre.webp"
+                },
+                {
+                  "text": "museoa",
+                  "image": "place_museum.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zinema"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -718,6 +745,114 @@
                 "oso",
                 "interesgarri",
                 "izan"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "el teatro",
+              "options": [
+                {
+                  "text": "antzokia",
+                  "image": "place_theatre.webp"
+                },
+                {
+                  "text": "museoa",
+                  "image": "place_museum.webp"
+                },
+                {
+                  "text": "igerilekua",
+                  "image": "place_pool.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "antzoki"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "el museo",
+              "options": [
+                {
+                  "text": "zinema",
+                  "image": "place_cinema.webp"
+                },
+                {
+                  "text": "museoa",
+                  "image": "place_museum.webp"
+                },
+                {
+                  "text": "kiroldegia",
+                  "image": "place_sports_centre.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "museo"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e17",
+              "type": "choose_image",
+              "prompt": "el polideportivo",
+              "options": [
+                {
+                  "text": "igerilekua",
+                  "image": "place_pool.webp"
+                },
+                {
+                  "text": "kiroldegia",
+                  "image": "place_sports_centre.webp"
+                },
+                {
+                  "text": "antzokia",
+                  "image": "place_theatre.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "kiroldegi"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e18",
+              "type": "choose_image",
+              "prompt": "la piscina",
+              "options": [
+                {
+                  "text": "zinema",
+                  "image": "place_cinema.webp"
+                },
+                {
+                  "text": "igerilekua",
+                  "image": "place_pool.webp"
+                },
+                {
+                  "text": "kiroldegia",
+                  "image": "place_sports_centre.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "igerileku"
               ],
               "structures": [
                 "nolakoa",
@@ -994,6 +1129,32 @@
             },
             {
               "id": "u10-1.l1.s3.e13",
+              "type": "choose_image",
+              "prompt": "el autobús",
+              "options": [
+                {
+                  "text": "autobusa",
+                  "image": "transport_bus.webp"
+                },
+                {
+                  "text": "trena",
+                  "image": "transport_train.webp"
+                },
+                {
+                  "text": "metroa",
+                  "image": "transport_metro.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "autobus"
+              ],
+              "structures": [
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s3.e14",
               "type": "listen_tap",
               "text": "Egunero autobusa hartzen dut.",
               "distractors": [
@@ -1006,6 +1167,84 @@
                 "autobus",
                 "hartu",
                 "ukan"
+              ],
+              "structures": [
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s3.e15",
+              "type": "choose_image",
+              "prompt": "el metro",
+              "options": [
+                {
+                  "text": "trena",
+                  "image": "transport_train.webp"
+                },
+                {
+                  "text": "aparkalekua",
+                  "image": "place_car_park.webp"
+                },
+                {
+                  "text": "metroa",
+                  "image": "transport_metro.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "metro"
+              ],
+              "structures": [
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s3.e16",
+              "type": "choose_image",
+              "prompt": "el tren",
+              "options": [
+                {
+                  "text": "metroa",
+                  "image": "transport_metro.webp"
+                },
+                {
+                  "text": "trena",
+                  "image": "transport_train.webp"
+                },
+                {
+                  "text": "autobusa",
+                  "image": "transport_bus.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "tren"
+              ],
+              "structures": [
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s3.e17",
+              "type": "choose_image",
+              "prompt": "el aparcamiento",
+              "options": [
+                {
+                  "text": "autobusa",
+                  "image": "transport_bus.webp"
+                },
+                {
+                  "text": "geltokia",
+                  "image": "place_station.webp"
+                },
+                {
+                  "text": "aparkalekua",
+                  "image": "place_car_park.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "aparkaleku"
               ],
               "structures": [
                 "egon-present"
@@ -2107,6 +2346,33 @@
                 "comparative-ago",
                 "gehiago-gutxiago"
               ]
+            },
+            {
+              "id": "u10-1.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "el museo",
+              "options": [
+                {
+                  "text": "museoa",
+                  "image": "place_museum.webp"
+                },
+                {
+                  "text": "zinema",
+                  "image": "place_cinema.webp"
+                },
+                {
+                  "text": "igerilekua",
+                  "image": "place_pool.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "museo"
+              ],
+              "structures": [
+                "comparative-ago",
+                "gehiago-gutxiago"
+              ]
             }
           ]
         },
@@ -2368,6 +2634,33 @@
                 "hainbeste",
                 "aparkaleku",
                 "egon"
+              ],
+              "structures": [
+                "hain-hainbeste",
+                "superlative"
+              ]
+            },
+            {
+              "id": "u10-1.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "el metro",
+              "options": [
+                {
+                  "text": "metroa",
+                  "image": "transport_metro.webp"
+                },
+                {
+                  "text": "aparkalekua",
+                  "image": "place_car_park.webp"
+                },
+                {
+                  "text": "autobusa",
+                  "image": "transport_bus.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "metro"
               ],
               "structures": [
                 "hain-hainbeste",

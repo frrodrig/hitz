@@ -384,6 +384,32 @@
             },
             {
               "id": "u06-2.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "la camisa",
+              "options": [
+                {
+                  "text": "gona",
+                  "image": "clothes_skirt.webp"
+                },
+                {
+                  "text": "alkandora",
+                  "image": "clothes_shirt.webp"
+                },
+                {
+                  "text": "galtzak",
+                  "image": "clothes_trousers.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "alkandora"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -405,6 +431,136 @@
                 "izan",
                 "baina",
                 "zahar"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "el pantalón",
+              "options": [
+                {
+                  "text": "jertsea",
+                  "image": "clothes_jumper.webp"
+                },
+                {
+                  "text": "soinekoa",
+                  "image": "clothes_dress.webp"
+                },
+                {
+                  "text": "galtzak",
+                  "image": "clothes_trousers.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "galtza"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "la falda",
+              "options": [
+                {
+                  "text": "berokia",
+                  "image": "clothes_coat.webp"
+                },
+                {
+                  "text": "gona",
+                  "image": "clothes_skirt.webp"
+                },
+                {
+                  "text": "alkandora",
+                  "image": "clothes_shirt.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "gona"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e17",
+              "type": "choose_image",
+              "prompt": "el vestido",
+              "options": [
+                {
+                  "text": "soinekoa",
+                  "image": "clothes_dress.webp"
+                },
+                {
+                  "text": "gona",
+                  "image": "clothes_skirt.webp"
+                },
+                {
+                  "text": "berokia",
+                  "image": "clothes_coat.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "soineko"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e18",
+              "type": "choose_image",
+              "prompt": "el jersey",
+              "options": [
+                {
+                  "text": "alkandora",
+                  "image": "clothes_shirt.webp"
+                },
+                {
+                  "text": "soinekoa",
+                  "image": "clothes_dress.webp"
+                },
+                {
+                  "text": "jertsea",
+                  "image": "clothes_jumper.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "jertse"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e19",
+              "type": "choose_image",
+              "prompt": "el abrigo",
+              "options": [
+                {
+                  "text": "galtzak",
+                  "image": "clothes_trousers.webp"
+                },
+                {
+                  "text": "jertsea",
+                  "image": "clothes_jumper.webp"
+                },
+                {
+                  "text": "berokia",
+                  "image": "clothes_coat.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "beroki"
               ],
               "structures": [
                 "clothes-vocab"
@@ -674,6 +830,32 @@
             },
             {
               "id": "u06-2.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "rojo",
+              "options": [
+                {
+                  "text": "zuria",
+                  "image": "color_white.webp"
+                },
+                {
+                  "text": "beltza",
+                  "image": "color_black.webp"
+                },
+                {
+                  "text": "gorria",
+                  "image": "color_red.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "gorri"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -696,6 +878,188 @@
                 "bat",
                 "nahi izan",
                 "ukan"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "blanco",
+              "options": [
+                {
+                  "text": "zuria",
+                  "image": "color_white.webp"
+                },
+                {
+                  "text": "urdina",
+                  "image": "color_blue.webp"
+                },
+                {
+                  "text": "berdea",
+                  "image": "color_green.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zuri"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "negro",
+              "options": [
+                {
+                  "text": "marroia",
+                  "image": "color_brown.webp"
+                },
+                {
+                  "text": "gorria",
+                  "image": "color_red.webp"
+                },
+                {
+                  "text": "beltza",
+                  "image": "color_black.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "beltz"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e17",
+              "type": "choose_image",
+              "prompt": "azul",
+              "options": [
+                {
+                  "text": "urdina",
+                  "image": "color_blue.webp"
+                },
+                {
+                  "text": "horia",
+                  "image": "color_yellow.webp"
+                },
+                {
+                  "text": "berdea",
+                  "image": "color_green.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "urdin"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e18",
+              "type": "choose_image",
+              "prompt": "verde",
+              "options": [
+                {
+                  "text": "berdea",
+                  "image": "color_green.webp"
+                },
+                {
+                  "text": "grisa",
+                  "image": "color_grey.webp"
+                },
+                {
+                  "text": "horia",
+                  "image": "color_yellow.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "berde"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e19",
+              "type": "choose_image",
+              "prompt": "amarillo",
+              "options": [
+                {
+                  "text": "marroia",
+                  "image": "color_brown.webp"
+                },
+                {
+                  "text": "gorria",
+                  "image": "color_red.webp"
+                },
+                {
+                  "text": "horia",
+                  "image": "color_yellow.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "hori"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e20",
+              "type": "choose_image",
+              "prompt": "gris",
+              "options": [
+                {
+                  "text": "zuria",
+                  "image": "color_white.webp"
+                },
+                {
+                  "text": "beltza",
+                  "image": "color_black.webp"
+                },
+                {
+                  "text": "grisa",
+                  "image": "color_grey.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "gris"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e21",
+              "type": "choose_image",
+              "prompt": "marrón",
+              "options": [
+                {
+                  "text": "marroia",
+                  "image": "color_brown.webp"
+                },
+                {
+                  "text": "urdina",
+                  "image": "color_blue.webp"
+                },
+                {
+                  "text": "grisa",
+                  "image": "color_grey.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "marroi"
               ],
               "structures": [
                 "colors"
@@ -976,6 +1340,32 @@
             },
             {
               "id": "u06-2.l1.s3.e13",
+              "type": "choose_image",
+              "prompt": "el regalo",
+              "options": [
+                {
+                  "text": "urtebetetzea",
+                  "image": "object_birthday_cake.webp"
+                },
+                {
+                  "text": "oparia",
+                  "image": "object_gift.webp"
+                },
+                {
+                  "text": "kamiseta",
+                  "image": "clothes_tshirt.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "opari"
+              ],
+              "structures": [
+                "gifts-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s3.e14",
               "type": "listen_tap",
               "text": "Opariak mahai gainean daude.",
               "distractors": [
@@ -988,6 +1378,84 @@
                 "mahai",
                 "gainean",
                 "egon"
+              ],
+              "structures": [
+                "gifts-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s3.e15",
+              "type": "choose_image",
+              "prompt": "el cumpleaños",
+              "options": [
+                {
+                  "text": "zapata",
+                  "image": "clothes_shoe.webp"
+                },
+                {
+                  "text": "oparia",
+                  "image": "object_gift.webp"
+                },
+                {
+                  "text": "urtebetetzea",
+                  "image": "object_birthday_cake.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "urtebetetze"
+              ],
+              "structures": [
+                "gifts-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s3.e16",
+              "type": "choose_image",
+              "prompt": "la camiseta",
+              "options": [
+                {
+                  "text": "kamiseta",
+                  "image": "clothes_tshirt.webp"
+                },
+                {
+                  "text": "zapata",
+                  "image": "clothes_shoe.webp"
+                },
+                {
+                  "text": "alkandora",
+                  "image": "clothes_shirt.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kamiseta"
+              ],
+              "structures": [
+                "gifts-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s3.e17",
+              "type": "choose_image",
+              "prompt": "el zapato",
+              "options": [
+                {
+                  "text": "zapata",
+                  "image": "clothes_shoe.webp"
+                },
+                {
+                  "text": "gona",
+                  "image": "clothes_skirt.webp"
+                },
+                {
+                  "text": "kamiseta",
+                  "image": "clothes_tshirt.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zapata"
               ],
               "structures": [
                 "gifts-vocab"
@@ -2093,6 +2561,33 @@
                 "norentzat",
                 "nolakoa"
               ]
+            },
+            {
+              "id": "u06-2.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "el vestido",
+              "options": [
+                {
+                  "text": "soinekoa",
+                  "image": "clothes_dress.webp"
+                },
+                {
+                  "text": "galtzak",
+                  "image": "clothes_trousers.webp"
+                },
+                {
+                  "text": "berokia",
+                  "image": "clothes_coat.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "soineko"
+              ],
+              "structures": [
+                "norentzat",
+                "nolakoa"
+              ]
             }
           ]
         },
@@ -2361,6 +2856,33 @@
                 "garesti",
                 "ehun",
                 "euro"
+              ],
+              "structures": [
+                "egi-excess",
+                "nola-daukazu"
+              ]
+            },
+            {
+              "id": "u06-2.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "azul",
+              "options": [
+                {
+                  "text": "urdina",
+                  "image": "color_blue.webp"
+                },
+                {
+                  "text": "gorria",
+                  "image": "color_red.webp"
+                },
+                {
+                  "text": "horia",
+                  "image": "color_yellow.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "urdin"
               ],
               "structures": [
                 "egi-excess",

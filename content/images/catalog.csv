@@ -1,0 +1,172 @@
+key,image,eu,es
+greet_morning,greeting_morning,egun on,buenos días
+greet_afternoon,greeting_afternoon,arratsalde on,buenas tardes
+greet_night,greeting_night,gabon,buenas noches
+man,people_man,gizona,el hombre
+woman,people_woman,emakumea,la mujer
+boy,people_boy,mutila,el chico
+girl,people_girl,neska,la chica
+child,people_child,umea,el niño
+teacher,job_teacher,irakaslea,la profesora
+doctor,job_doctor,medikua,el médico
+nurse,job_nurse,erizaina,la enfermera
+cook,job_cook,sukaldaria,el cocinero
+shop_assistant,job_shop_assistant,dendaria,la dependienta
+phone,object_phone,telefonoa,el teléfono
+beach,place_beach,hondartza,la playa
+mountain,place_mountain,mendia,el monte
+park,place_park,parkea,el parque
+church,place_church,eliza,la iglesia
+hospital,place_hospital,ospitalea,el hospital
+pharmacy,place_pharmacy,farmazia,la farmacia
+station,place_station,geltokia,la estación
+hotel,place_hotel,hotela,el hotel
+school,place_school,eskola,la escuela
+library,place_library,liburutegia,la biblioteca
+bank,place_bank,bankua,el banco
+restaurant,place_restaurant,jatetxea,el restaurante
+bar,place_bar,taberna,el bar
+city,place_city,hiria,la ciudad
+town,place_town,herria,el pueblo
+sun,weather_sun,eguzkia,el sol
+rain,weather_rain,euria,la lluvia
+snow,weather_snow,elurra,la nieve
+wind,weather_wind,haizea,el viento
+cold,weather_cold,hotza,el frío
+hot,weather_hot,beroa,el calor
+grandfather,people_grandfather,aitona,el abuelo
+grandmother,people_grandmother,amona,la abuela
+tall,describe_tall,altua,alto
+short,describe_short,baxua,bajo
+long_hair,describe_long_hair,ile luzea,el pelo largo
+short_hair,describe_short_hair,ile motza,el pelo corto
+happy,describe_happy,alaia,alegre
+eye,body_eye,begia,el ojo
+house,home_house,etxea,la casa
+window,home_window,leihoa,la ventana
+door,home_door,atea,la puerta
+stairs,home_stairs,eskailera,la escalera
+lift,home_elevator,igogailua,el ascensor
+table,home_table,mahaia,la mesa
+kitchen,room_kitchen,sukaldea,la cocina
+bathroom,room_bathroom,bainugela,el cuarto de baño
+living_room,room_living_room,egongela,la sala de estar
+bedroom,room_bedroom,logela,el dormitorio
+bed,home_bed,ohea,la cama
+chair,home_chair,aulkia,la silla
+sofa,home_sofa,sofa,el sofá
+wardrobe,home_wardrobe,armairua,el armario
+fridge,home_fridge,hozkailua,el frigorífico
+washing_machine,home_washing_machine,garbigailua,la lavadora
+oven,home_oven,labea,el horno
+shower,home_shower,dutxa,la ducha
+bread,food_bread,ogia,el pan
+water,drink_water,ura,el agua
+milk,drink_milk,esnea,la leche
+coffee,drink_coffee,kafea,el café
+tea,drink_tea,tea,el té
+wine,drink_wine,ardoa,el vino
+beer,drink_beer,garagardoa,la cerveza
+juice,drink_juice,zukua,el zumo
+meat,food_meat,haragia,la carne
+fish,food_fish,arraina,el pescado
+chicken,food_chicken,oilaskoa,el pollo
+egg,food_egg,arrautza,el huevo
+potato,food_potato,patata,la patata
+tomato,food_tomato,tomatea,el tomate
+lettuce,food_lettuce,letxuga,la lechuga
+apple,food_apple,sagarra,la manzana
+orange,food_orange,laranja,la naranja
+cheese,food_cheese,gazta,el queso
+oil,food_oil,olioa,el aceite
+salt,food_salt,gatza,la sal
+sugar,food_sugar,azukrea,el azúcar
+pot,kitchen_pot,lapikoa,la olla
+frying_pan,kitchen_frying_pan,zartagina,la sartén
+plate,kitchen_plate,platera,el plato
+bakery,shop_bakery,okindegia,la panadería
+butcher,shop_butcher,harategia,la carnicería
+fishmonger,shop_fishmonger,arrandegia,la pescadería
+greengrocer,shop_greengrocer,frutadenda,la frutería
+supermarket,shop_supermarket,supermerkatua,el supermercado
+bookshop,shop_bookshop,liburu-denda,la librería
+card,object_card,txartela,la tarjeta
+money,object_money,dirua,el dinero
+shirt,clothes_shirt,alkandora,la camisa
+tshirt,clothes_tshirt,kamiseta,la camiseta
+jumper,clothes_jumper,jertsea,el jersey
+coat,clothes_coat,berokia,el abrigo
+trousers,clothes_trousers,galtzak,el pantalón
+skirt,clothes_skirt,gona,la falda
+dress,clothes_dress,soinekoa,el vestido
+shoe,clothes_shoe,zapata,el zapato
+gift,object_gift,oparia,el regalo
+birthday,object_birthday_cake,urtebetetzea,el cumpleaños
+red,color_red,gorria,rojo
+white,color_white,zuria,blanco
+black,color_black,beltza,negro
+blue,color_blue,urdina,azul
+green,color_green,berdea,verde
+yellow,color_yellow,horia,amarillo
+grey,color_grey,grisa,gris
+brown,color_brown,marroia,marrón
+morning,greeting_morning,goiza,la mañana
+afternoon,greeting_afternoon,arratsaldea,la tarde
+night,greeting_night,gaua,la noche
+book,object_book,liburua,el libro
+hour,object_clock,ordua,la hora
+hairdresser,shop_hairdresser,apaindegia,la peluquería
+travel_agency,shop_travel_agency,bidaia-agentzia,la agencia de viajes
+head,body_head,burua,la cabeza
+ear,body_ear,belarria,la oreja
+nose,body_nose,sudurra,la nariz
+mouth,body_mouth,ahoa,la boca
+tooth,body_tooth,hortza,el diente
+hand,body_hand,eskua,la mano
+foot,body_foot,oina,el pie
+arm,body_arm,besoa,el brazo
+leg,body_leg,hanka,la pierna
+fever,health_fever,sukarra,la fiebre
+cough,health_cough,eztula,la tos
+tired,describe_tired,nekatuta,cansado
+medicine,health_medicine,botika,la medicina
+pill,health_pills,pilula,la pastilla
+medicinal_plant,health_plant,sendabelarra,la planta medicinal
+tree,nature_tree,zuhaitza,el árbol
+forest,nature_forest,basoa,el bosque
+sea,nature_sea,itsasoa,el mar
+river,nature_river,ibaia,el río
+wood,nature_wood,egurra,la madera
+bottle,object_bottle,botila,la botella
+bag,object_bag,poltsa,la bolsa
+paper,object_paper,papera,el papel
+bin,object_bin,zakarrontzia,la papelera
+container,object_container,edukiontzia,el contenedor
+bus,transport_bus,autobusa,el autobús
+train,transport_train,trena,el tren
+metro,transport_metro,metroa,el metro
+cinema,place_cinema,zinema,el cine
+theatre,place_theatre,antzokia,el teatro
+museum,place_museum,museoa,el museo
+pool,place_pool,igerilekua,la piscina
+sports_centre,place_sports_centre,kiroldegia,el polideportivo
+car_park,place_car_park,aparkalekua,el aparcamiento
+trip,object_suitcase,bidaia,el viaje
+camping,object_tent,kanpina,el camping
+office,place_office,bulegoa,la oficina
+factory,place_factory,lantegia,la fábrica
+driver,job_driver,gidaria,el conductor
+computer,object_computer,ordenagailua,el ordenador
+football,leisure_football,futbola,el fútbol
+basketball,leisure_basketball,saskibaloia,el baloncesto
+swimming,leisure_swimming,igeriketa,la natación
+cycling,leisure_cycling,txirrindularitza,el ciclismo
+dance,leisure_dance,dantza,el baile
+music,leisure_music,musika,la música
+concert,leisure_concert,kontzertua,el concierto
+film,leisure_film,filma,la película
+car,transport_car,autoa,el coche
+bicycle,transport_bicycle,bizikleta,la bicicleta
+photo,object_photo,argazkia,la foto
+plane,transport_plane,hegazkina,el avión
+excursion,object_backpack,txangoa,la excursión

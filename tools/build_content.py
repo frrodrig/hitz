@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import functools
 import json
 import random
 import re
@@ -33,6 +34,7 @@ from validate_content import (  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "content" / "source"
+IMAGES = ROOT / "content" / "images" / "catalog.csv"
 ASSETS = ROOT / "core" / "data" / "src" / "main" / "assets" / "courses" / "eu-es"
 SCHEMA_VERSION = 1
 
@@ -251,7 +253,31 @@ def allowed_kinds(item: dict) -> list[str]:
     return kinds
 
 
-def extra_exercises(lesson: dict) -> list[dict]:
+@functools.cache
+def load_images(path: Path = IMAGES) -> dict[str, dict[str, str]]:
+    """The picture catalog: key -> image id, Basque label and Spanish prompt."""
+    with path.open(encoding="utf-8") as fh:
+        return {row["key"]: row for row in csv.DictReader(fh)}
+
+
+def picture_exercise(item: str, images: dict[str, dict[str, str]], rng: random.Random) -> dict:
+    """``"bread, water, milk"``: pick the first one among pictures from the catalog, in shuffled order."""
+    keys = [key.strip() for key in item.split(",")]
+    unknown = [key for key in keys if key not in images]
+    if unknown:
+        raise SourceError(f"unknown pictures {unknown} (see content/images/catalog.csv)")
+    if not 2 <= len(keys) <= 4:
+        raise SourceError(f"a picture exercise needs 2 to 4 pictures: {item!r}")
+    if len({images[key]["image"] for key in keys}) != len(keys) or len({images[key]["eu"] for key in keys}) != len(keys):
+        raise SourceError(f"repeated picture or label in {item!r}")
+    options = [{"text": images[key]["eu"], "image": f"{images[key]['image']}.webp"} for key in keys]
+    order = list(range(len(options)))
+    rng.shuffle(order)
+    return {"type": "choose_image", "prompt": images[keys[0]]["es"], "options": [options[i] for i in order],
+            "correct": order.index(0)}
+
+
+def extra_exercises(lesson: dict, lesson_id: str = "", images: dict[str, dict[str, str]] | None = None) -> list[dict]:
     """Hand-made items, in a fixed order of kinds."""
     out: list[dict] = []
     for pairs in lesson.get("pairs", []):
@@ -274,7 +300,12 @@ def extra_exercises(lesson: dict) -> list[dict]:
     for item in lesson.get("true_false", []):
         out.append(tagged({"type": "read_true_false", "passage": item["passage"], "statement": item["statement"],
                            "answer": item["answer"]}, item))
-    for image in lesson.get("images", []):
+    for number, image in enumerate(lesson.get("images", []), start=1):
+        if isinstance(image, str):
+            if images is None:
+                images = load_images()
+            out.append(picture_exercise(image, images, random.Random(f"{lesson_id}.images.{number}")))
+            continue
         out.append(tagged({"type": "choose_image", "prompt": image["prompt"], "options": image["options"],
                            "correct": image.get("correct", 0)}, image))
     return out
@@ -296,7 +327,7 @@ def build_lesson(lesson_id: str, lesson: dict, offset: int, lemmatizer: Lemmatiz
             kind = item["kind"]
         rng = random.Random(f"{lesson_id}.{index}")
         made.append(sentence_exercise(kind, item, eu_pool, es_pool, rng))
-    extras = extra_exercises(lesson)
+    extras = extra_exercises(lesson, lesson_id)
     # Interleave: a hand-made item after every sentence exercise while there are any left.
     merged: list[dict] = []
     for index, exercise in enumerate(made):

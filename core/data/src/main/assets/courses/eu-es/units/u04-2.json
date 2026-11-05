@@ -384,6 +384,32 @@
             },
             {
               "id": "u04-2.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "la cama",
+              "options": [
+                {
+                  "text": "sofa",
+                  "image": "home_sofa.webp"
+                },
+                {
+                  "text": "ohea",
+                  "image": "home_bed.webp"
+                },
+                {
+                  "text": "aulkia",
+                  "image": "home_chair.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "ohe"
+              ],
+              "structures": [
+                "furniture"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -406,6 +432,84 @@
                 "zabal",
                 "bat",
                 "eduki"
+              ],
+              "structures": [
+                "furniture"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "el sofá",
+              "options": [
+                {
+                  "text": "mahaia",
+                  "image": "home_table.webp"
+                },
+                {
+                  "text": "sofa",
+                  "image": "home_sofa.webp"
+                },
+                {
+                  "text": "armairua",
+                  "image": "home_wardrobe.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "sofa"
+              ],
+              "structures": [
+                "furniture"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "el armario",
+              "options": [
+                {
+                  "text": "armairua",
+                  "image": "home_wardrobe.webp"
+                },
+                {
+                  "text": "ohea",
+                  "image": "home_bed.webp"
+                },
+                {
+                  "text": "aulkia",
+                  "image": "home_chair.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "armairu"
+              ],
+              "structures": [
+                "furniture"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s1.e17",
+              "type": "choose_image",
+              "prompt": "la silla",
+              "options": [
+                {
+                  "text": "aulkia",
+                  "image": "home_chair.webp"
+                },
+                {
+                  "text": "mahaia",
+                  "image": "home_table.webp"
+                },
+                {
+                  "text": "ohea",
+                  "image": "home_bed.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "aulki"
               ],
               "structures": [
                 "furniture"
@@ -695,6 +799,33 @@
             },
             {
               "id": "u04-2.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "el frigorífico",
+              "options": [
+                {
+                  "text": "labea",
+                  "image": "home_oven.webp"
+                },
+                {
+                  "text": "hozkailua",
+                  "image": "home_fridge.webp"
+                },
+                {
+                  "text": "garbigailua",
+                  "image": "home_washing_machine.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "hozkailu"
+              ],
+              "structures": [
+                "appliances",
+                "behar-verb"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -713,6 +844,87 @@
                 "erosi",
                 "behar izan",
                 "ukan"
+              ],
+              "structures": [
+                "appliances",
+                "behar-verb"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "el horno",
+              "options": [
+                {
+                  "text": "hozkailua",
+                  "image": "home_fridge.webp"
+                },
+                {
+                  "text": "labea",
+                  "image": "home_oven.webp"
+                },
+                {
+                  "text": "dutxa",
+                  "image": "home_shower.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "labe"
+              ],
+              "structures": [
+                "appliances",
+                "behar-verb"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "la lavadora",
+              "options": [
+                {
+                  "text": "garbigailua",
+                  "image": "home_washing_machine.webp"
+                },
+                {
+                  "text": "dutxa",
+                  "image": "home_shower.webp"
+                },
+                {
+                  "text": "labea",
+                  "image": "home_oven.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "garbigailu"
+              ],
+              "structures": [
+                "appliances",
+                "behar-verb"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s2.e17",
+              "type": "choose_image",
+              "prompt": "la ducha",
+              "options": [
+                {
+                  "text": "dutxa",
+                  "image": "home_shower.webp"
+                },
+                {
+                  "text": "hozkailua",
+                  "image": "home_fridge.webp"
+                },
+                {
+                  "text": "garbigailua",
+                  "image": "home_washing_machine.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "dutxa"
               ],
               "structures": [
                 "appliances",
@@ -2262,6 +2474,33 @@
                 "nahi-izan",
                 "balio-izan"
               ]
+            },
+            {
+              "id": "u04-2.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "la mesa",
+              "options": [
+                {
+                  "text": "mahaia",
+                  "image": "home_table.webp"
+                },
+                {
+                  "text": "armairua",
+                  "image": "home_wardrobe.webp"
+                },
+                {
+                  "text": "sofa",
+                  "image": "home_sofa.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "mahai"
+              ],
+              "structures": [
+                "nahi-izan",
+                "balio-izan"
+              ]
             }
           ]
         },
@@ -2527,6 +2766,33 @@
                 "leiho",
                 "gutxiago",
                 "ukan"
+              ],
+              "structures": [
+                "ago-comparison",
+                "gehiago-gutxiago"
+              ]
+            },
+            {
+              "id": "u04-2.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "el frigorífico",
+              "options": [
+                {
+                  "text": "ohea",
+                  "image": "home_bed.webp"
+                },
+                {
+                  "text": "hozkailua",
+                  "image": "home_fridge.webp"
+                },
+                {
+                  "text": "labea",
+                  "image": "home_oven.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "hozkailu"
               ],
               "structures": [
                 "ago-comparison",

@@ -994,6 +994,32 @@
             },
             {
               "id": "u08-2.l1.s3.e13",
+              "type": "choose_image",
+              "prompt": "la medicina",
+              "options": [
+                {
+                  "text": "sendabelarra",
+                  "image": "health_plant.webp"
+                },
+                {
+                  "text": "botika",
+                  "image": "health_medicine.webp"
+                },
+                {
+                  "text": "pilula",
+                  "image": "health_pills.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "botika"
+              ],
+              "structures": [
+                "health-centre"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s3.e14",
               "type": "listen_tap",
               "text": "Jonek besoa hautsi du.",
               "distractors": [
@@ -1005,6 +1031,58 @@
                 "beso",
                 "hautsi",
                 "ukan"
+              ],
+              "structures": [
+                "health-centre"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s3.e15",
+              "type": "choose_image",
+              "prompt": "la pastilla",
+              "options": [
+                {
+                  "text": "pilula",
+                  "image": "health_pills.webp"
+                },
+                {
+                  "text": "botika",
+                  "image": "health_medicine.webp"
+                },
+                {
+                  "text": "sendabelarra",
+                  "image": "health_plant.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "pilula"
+              ],
+              "structures": [
+                "health-centre"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s3.e16",
+              "type": "choose_image",
+              "prompt": "la planta medicinal",
+              "options": [
+                {
+                  "text": "botika",
+                  "image": "health_medicine.webp"
+                },
+                {
+                  "text": "sendabelarra",
+                  "image": "health_plant.webp"
+                },
+                {
+                  "text": "pilula",
+                  "image": "health_pills.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "sendabelar"
               ],
               "structures": [
                 "health-centre"
@@ -2593,6 +2671,33 @@
                 "etxe",
                 "egon",
                 "eseri"
+              ],
+              "structures": [
+                "habitual",
+                "ta-da-participle"
+              ]
+            },
+            {
+              "id": "u08-2.l3.s3.e12",
+              "type": "choose_image",
+              "prompt": "la pastilla",
+              "options": [
+                {
+                  "text": "botika",
+                  "image": "health_medicine.webp"
+                },
+                {
+                  "text": "pilula",
+                  "image": "health_pills.webp"
+                },
+                {
+                  "text": "sendabelarra",
+                  "image": "health_plant.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "pilula"
               ],
               "structures": [
                 "habitual",

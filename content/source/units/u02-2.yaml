@@ -200,6 +200,10 @@ levels:
           - passage: Gaur Gasteizen hotz egiten du, eta elurra ari du. Bihar ere bai!
             statement: En Vitoria hace calor.
             answer: false
+        images:
+          - sun, rain, snow
+          - rain, snow, sun
+          - snow, sun, rain
   - type: lesson
     title:
       es: La hora y el tiempo
@@ -321,6 +325,9 @@ levels:
           - passage: Lekeition orain eguzkia dago, eta bero egiten du.
             statement: En Lekeitio hace frío.
             answer: false
+        images:
+          - wind, rain, sun
+          - cold, hot, rain
   - type: lesson
     title:
       es: Conversaciones
@@ -433,6 +440,9 @@ levels:
               - ¿Qué tiempo hace?
               - ¿Qué hora es?
               - ¿Dónde está?
+        images:
+          - hot, cold, snow
+          - wind, snow, sun
   - type: story
     title:
       es: "Historia: ¿sol o lluvia?"

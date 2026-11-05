@@ -375,6 +375,32 @@
             },
             {
               "id": "u06-1.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "la panadería",
+              "options": [
+                {
+                  "text": "arrandegia",
+                  "image": "shop_fishmonger.webp"
+                },
+                {
+                  "text": "harategia",
+                  "image": "shop_butcher.webp"
+                },
+                {
+                  "text": "okindegia",
+                  "image": "shop_bakery.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "okindegi"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -395,6 +421,136 @@
                 "eta",
                 "laranja",
                 "egon"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "la carnicería",
+              "options": [
+                {
+                  "text": "okindegia",
+                  "image": "shop_bakery.webp"
+                },
+                {
+                  "text": "frutadenda",
+                  "image": "shop_greengrocer.webp"
+                },
+                {
+                  "text": "harategia",
+                  "image": "shop_butcher.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "harategi"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "la pescadería",
+              "options": [
+                {
+                  "text": "arrandegia",
+                  "image": "shop_fishmonger.webp"
+                },
+                {
+                  "text": "harategia",
+                  "image": "shop_butcher.webp"
+                },
+                {
+                  "text": "supermerkatua",
+                  "image": "shop_supermarket.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "arrandegi"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e17",
+              "type": "choose_image",
+              "prompt": "la frutería",
+              "options": [
+                {
+                  "text": "liburu-denda",
+                  "image": "shop_bookshop.webp"
+                },
+                {
+                  "text": "frutadenda",
+                  "image": "shop_greengrocer.webp"
+                },
+                {
+                  "text": "arrandegia",
+                  "image": "shop_fishmonger.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "frutadenda"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e18",
+              "type": "choose_image",
+              "prompt": "el supermercado",
+              "options": [
+                {
+                  "text": "supermerkatua",
+                  "image": "shop_supermarket.webp"
+                },
+                {
+                  "text": "frutadenda",
+                  "image": "shop_greengrocer.webp"
+                },
+                {
+                  "text": "liburu-denda",
+                  "image": "shop_bookshop.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "supermerkatu"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e19",
+              "type": "choose_image",
+              "prompt": "la librería",
+              "options": [
+                {
+                  "text": "supermerkatua",
+                  "image": "shop_supermarket.webp"
+                },
+                {
+                  "text": "liburu-denda",
+                  "image": "shop_bookshop.webp"
+                },
+                {
+                  "text": "okindegia",
+                  "image": "shop_bakery.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "liburu-denda"
               ],
               "structures": [
                 "shops-tegi"
@@ -651,6 +807,32 @@
             },
             {
               "id": "u06-1.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "la tarjeta",
+              "options": [
+                {
+                  "text": "telefonoa",
+                  "image": "object_phone.webp"
+                },
+                {
+                  "text": "dirua",
+                  "image": "object_money.webp"
+                },
+                {
+                  "text": "txartela",
+                  "image": "object_card.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "txartel"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -672,6 +854,32 @@
                 "bat",
                 "nahi izan",
                 "ukan"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "el dinero",
+              "options": [
+                {
+                  "text": "txartela",
+                  "image": "object_card.webp"
+                },
+                {
+                  "text": "telefonoa",
+                  "image": "object_phone.webp"
+                },
+                {
+                  "text": "dirua",
+                  "image": "object_money.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "diru"
               ],
               "structures": [
                 "shops-vocab"
@@ -2019,6 +2227,33 @@
                 "verb-nahi",
                 "zenbat-da"
               ]
+            },
+            {
+              "id": "u06-1.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "la panadería",
+              "options": [
+                {
+                  "text": "okindegia",
+                  "image": "shop_bakery.webp"
+                },
+                {
+                  "text": "frutadenda",
+                  "image": "shop_greengrocer.webp"
+                },
+                {
+                  "text": "arrandegia",
+                  "image": "shop_fishmonger.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "okindegi"
+              ],
+              "structures": [
+                "verb-nahi",
+                "zenbat-da"
+              ]
             }
           ]
         },
@@ -2293,6 +2528,33 @@
                 "eta",
                 "supermerkatu",
                 "egon"
+              ],
+              "structures": [
+                "shops-tegi",
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "la tarjeta",
+              "options": [
+                {
+                  "text": "telefonoa",
+                  "image": "object_phone.webp"
+                },
+                {
+                  "text": "txartela",
+                  "image": "object_card.webp"
+                },
+                {
+                  "text": "dirua",
+                  "image": "object_money.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "txartel"
               ],
               "structures": [
                 "shops-tegi",

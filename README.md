@@ -8,7 +8,8 @@ red-trousered helpers of Basque mythology.
 
 - 100 % offline, no paid backend. Leagues are simulated on the device.
 - UI available in Spanish and Basque.
-- All course content is original. The syllabus follows the curricular order of the *Arian A1*
+- All course content is original, illustrations included (drawn as code in
+  `tools/design/illustrations/`). The syllabus follows the curricular order of the *Arian A1*
   textbook (see [`docs/syllabus.md`](docs/syllabus.md)).
 
 ## Status
@@ -38,6 +39,7 @@ Requirements: JDK 17 and the Android SDK (API 37).
 ./gradlew recordRoborazziDebug   # re-record reference screenshots
 python3 tools/syllabus_vocab.py  # regenerate the syllabus tables
 python3 tools/validate_content.py # validate course content (pip install -r tools/requirements.txt)
+python3 tools/design/make_illustrations.py # re-render the pictures (needs rsvg-convert)
 ```
 
 Every PR produces a debug APK as an artifact of the **CI** workflow.

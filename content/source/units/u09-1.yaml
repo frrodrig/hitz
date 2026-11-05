@@ -109,6 +109,11 @@ levels:
           - passage: Nire herrian baso handi bat dago. Basoan zuhaitz asko daude.
             statement: En el pueblo no hay árboles.
             answer: false
+        images:
+          - tree, forest, sea
+          - forest, river, tree
+          - sea, river, mountain
+          - river, sea, forest
       - structures: [egon-present, non-inessive]
         sentences:
           - Hau zakarrontzia da. = Esta es la papelera. | Esto es una papelera. | Este es el cubo de basura.
@@ -148,6 +153,11 @@ levels:
           - passage: Gelan zakarrontzi bat dago. Zakarrontzian paperak eta botila bat daude.
             statement: En la papelera hay una botella.
             answer: true
+        images:
+          - container, bin, bottle
+          - bin, bag, container
+          - bottle, bag, bin
+          - bag, bottle, container
       - structures: [zerezkoa]
         sentences:
           - Mahaia egurrezkoa da. = La mesa es de madera.
@@ -183,6 +193,9 @@ levels:
               - Ez, paperezkoa da.
               - Ez, gelan dago.
               - Bai, egurra naiz.
+        images:
+          - wood, paper, bottle
+          - paper, wood, bag
   - type: lesson
     title:
       es: ¿De qué es? ¿Dónde va?
@@ -332,6 +345,8 @@ levels:
               - ¿Se puede reciclar esta bolsa?
               - ¿De qué es esta bolsa?
               - ¿Dónde está esta bolsa?
+        images:
+          - forest, tree, river
       - structures: [imperative, indirect-imperative]
         sentences:
           - Gelan argi gutxi dago. = En la habitación hay poca luz. | Hay poca luz en el aula. | En el aula hay poca luz.
@@ -365,6 +380,8 @@ levels:
             options:
               - zaitez
               - ezazu
+        images:
+          - container, paper, bin
       - structures: [zerezkoa, daiteke]
         sentences:
           - Hondartzan plastiko asko dago. = En la playa hay mucho plástico. | Hay mucho plástico en la playa.

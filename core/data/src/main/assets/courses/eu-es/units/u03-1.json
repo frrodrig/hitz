@@ -982,6 +982,32 @@
             },
             {
               "id": "u03-1.l1.s3.e13",
+              "type": "choose_image",
+              "prompt": "el abuelo",
+              "options": [
+                {
+                  "text": "aitona",
+                  "image": "people_grandfather.webp"
+                },
+                {
+                  "text": "umea",
+                  "image": "people_child.webp"
+                },
+                {
+                  "text": "amona",
+                  "image": "people_grandmother.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "aitona"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e14",
               "type": "listen_tap",
               "text": "Nire osaba Baionakoa da, baina Bilbon bizi da.",
               "distractors": [
@@ -997,6 +1023,32 @@
                 "izan",
                 "baina",
                 "bizi izan"
+              ],
+              "structures": [
+                "family"
+              ]
+            },
+            {
+              "id": "u03-1.l1.s3.e15",
+              "type": "choose_image",
+              "prompt": "la abuela",
+              "options": [
+                {
+                  "text": "amona",
+                  "image": "people_grandmother.webp"
+                },
+                {
+                  "text": "aitona",
+                  "image": "people_grandfather.webp"
+                },
+                {
+                  "text": "neska",
+                  "image": "people_girl.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "amona"
               ],
               "structures": [
                 "family"
@@ -2577,6 +2629,33 @@
                 "izeba",
                 "izan",
                 "erizain"
+              ],
+              "structures": [
+                "noren",
+                "norekin"
+              ]
+            },
+            {
+              "id": "u03-1.l3.s3.e12",
+              "type": "choose_image",
+              "prompt": "el abuelo",
+              "options": [
+                {
+                  "text": "mutila",
+                  "image": "people_boy.webp"
+                },
+                {
+                  "text": "aitona",
+                  "image": "people_grandfather.webp"
+                },
+                {
+                  "text": "amona",
+                  "image": "people_grandmother.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "aitona"
               ],
               "structures": [
                 "noren",

@@ -382,6 +382,33 @@
             },
             {
               "id": "u11-2.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "el ordenador",
+              "options": [
+                {
+                  "text": "telefonoa",
+                  "image": "object_phone.webp"
+                },
+                {
+                  "text": "liburua",
+                  "image": "object_book.webp"
+                },
+                {
+                  "text": "ordenagailua",
+                  "image": "object_computer.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "ordenagailu"
+              ],
+              "structures": [
+                "hizkuntzak",
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -407,6 +434,33 @@
                 "baina",
                 "ingeles",
                 "ez"
+              ],
+              "structures": [
+                "hizkuntzak",
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "el ordenador",
+              "options": [
+                {
+                  "text": "txartela",
+                  "image": "object_card.webp"
+                },
+                {
+                  "text": "dirua",
+                  "image": "object_money.webp"
+                },
+                {
+                  "text": "ordenagailua",
+                  "image": "object_computer.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "ordenagailu"
               ],
               "structures": [
                 "hizkuntzak",
@@ -2080,6 +2134,33 @@
                 "ukan",
                 "baina",
                 "ingeles"
+              ],
+              "structures": [
+                "hizkuntzak",
+                "jakin-tzen"
+              ]
+            },
+            {
+              "id": "u11-2.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "el teléfono",
+              "options": [
+                {
+                  "text": "ordenagailua",
+                  "image": "object_computer.webp"
+                },
+                {
+                  "text": "txartela",
+                  "image": "object_card.webp"
+                },
+                {
+                  "text": "telefonoa",
+                  "image": "object_phone.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "telefono"
               ],
               "structures": [
                 "hizkuntzak",

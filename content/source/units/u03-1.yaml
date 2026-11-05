@@ -199,6 +199,9 @@ levels:
           - passage: Hau Unai da, nire lehengusua. Bilbokoa da, baina orain Madrilen bizi da.
             statement: Unai es el tío de quien habla.
             answer: false
+        images:
+          - grandfather, grandmother, child
+          - grandmother, grandfather, girl
   - type: lesson
     title:
       es: ¿De quién? ¿Con quién?
@@ -420,6 +423,8 @@ levels:
               - ¿Con quién vive Eneko?
               - ¿Dónde vive Eneko?
               - ¿De quién es amigo Eneko?
+        images:
+          - grandfather, grandmother, boy
   - type: story
     title:
       es: "Historia: en el parque"

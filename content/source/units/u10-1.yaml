@@ -146,6 +146,12 @@ levels:
           - passage: Gure herrian zinema bat eta kiroldegi bat daude. Ez dago museorik.
             statement: En el pueblo hay un museo.
             answer: false
+        images:
+          - cinema, theatre, museum
+          - theatre, museum, pool
+          - museum, sports_centre, cinema
+          - sports_centre, pool, theatre
+          - pool, cinema, sports_centre
       - structures: [egon-present]
         sentences:
           - Hirian garraio asko dago. = En la ciudad hay mucho transporte. | Hay mucho transporte en la ciudad.
@@ -185,6 +191,11 @@ levels:
           - passage: Nire herrian ez dago trenik. Autobusa hartzen dut egunero.
             statement: En su pueblo hay tren.
             answer: false
+        images:
+          - bus, metro, train
+          - metro, train, car_park
+          - train, bus, metro
+          - car_park, bus, station
   - type: lesson
     title:
       es: Comparar
@@ -331,6 +342,8 @@ levels:
               - Prefiero el pueblo porque es más tranquilo.
               - Prefiero la ciudad porque es más tranquila.
               - El pueblo es menos tranquilo.
+        images:
+          - museum, cinema, pool
       - structures: [hain-hainbeste, superlative]
         sentences:
           - Hiria ez da hain arriskutsua. = La ciudad no es tan peligrosa.
@@ -365,6 +378,8 @@ levels:
             options:
               - hain
               - hainbeste
+        images:
+          - metro, bus, car_park
       - structures: [comparative-ago, nolakoa]
         sentences:
           - Nire herrian kaleak garbiagoak dira. = En mi pueblo las calles están más limpias. | En mi pueblo las calles son más limpias.

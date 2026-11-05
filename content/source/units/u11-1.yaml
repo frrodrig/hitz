@@ -109,6 +109,9 @@ levels:
           - passage: Kaixo! Ni Jon naiz. Autobus gidaria naiz. Egunero autobusa gidatzen dut.
             statement: Jon es conductor de autobús.
             answer: true
+        images:
+          - driver, cook, teacher
+          - driver, doctor, nurse
       - structures: [lantokiak]
         sentences:
           - Nik bulego batean lan egiten dut. = Trabajo en una oficina. | Yo trabajo en una oficina.
@@ -148,6 +151,9 @@ levels:
           - passage: Ni Leire naiz. Gasteizko lantegi batean lan egiten dut.
             statement: Leire trabaja en una oficina.
             answer: false
+        images:
+          - office, factory, school
+          - factory, office, hospital
       - structures: [lan-baldintzak]
         sentences:
           - Zein da zure ordutegia? = ¿Cuál es tu horario? | ¿Cuál es su horario?
@@ -346,6 +352,8 @@ levels:
               - ¿Es jornada completa?
               - ¿Es un buen sueldo?
               - ¿Cuál es el horario?
+        images:
+          - office, factory, bank
       - structures: [jakin-tzen]
         sentences:
           - Badakizu gidatzen? Gidari bat behar dugu. = ¿Sabes conducir? Necesitamos un conductor. | ¿Sabe conducir? Necesitamos un conductor. | ¿Sabe usted conducir? Necesitamos un conductor.

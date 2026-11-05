@@ -106,6 +106,9 @@ levels:
           - passage: Hau Unai da. Unai altua eta argala da.
             statement: Unai es bajo.
             answer: false
+        images:
+          - tall, short, happy
+          - short, tall, long_hair
       - structures: [ukan-present, nork]
         sentences:
           - Anek ile luzea du. = Ane tiene el pelo largo.
@@ -143,6 +146,10 @@ levels:
           - passage: Nire ahizpa Garazi da. Garazik ile luzea du. Begi handiak ditu.
             statement: Garazi tiene el pelo corto.
             answer: false
+        images:
+          - long_hair, short_hair, eye
+          - short_hair, long_hair, tall
+          - eye, long_hair, short_hair
       - structures: [nolakoa, marital-status]
         sentences:
           - Nire laguna oso alaia da. = Mi amiga es muy alegre. | Mi amigo es muy alegre.
@@ -181,6 +188,8 @@ levels:
           - passage: Hau Kepa da. Kepa ez dago ezkonduta. Oso jatorra da.
             statement: Kepa está casado.
             answer: false
+        images:
+          - happy, tall, short
   - type: lesson
     title:
       es: Tener y cumplir años
@@ -379,6 +388,8 @@ levels:
             options:
               - dituzu
               - duzu
+        images:
+          - tall, happy, short_hair
       - structures: [nolakoa, nork]
         sentences:
           - Nire lehengusua Asier da. = Mi primo es Asier. | Mi primo se llama Asier.

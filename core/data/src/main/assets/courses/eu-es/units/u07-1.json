@@ -407,6 +407,33 @@
             },
             {
               "id": "u07-1.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "la mañana",
+              "options": [
+                {
+                  "text": "gaua",
+                  "image": "greeting_night.webp"
+                },
+                {
+                  "text": "arratsaldea",
+                  "image": "greeting_afternoon.webp"
+                },
+                {
+                  "text": "goiza",
+                  "image": "greeting_morning.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "goiz"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -430,6 +457,60 @@
                 "bat",
                 "erosi",
                 "ukan"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "la noche",
+              "options": [
+                {
+                  "text": "gaua",
+                  "image": "greeting_night.webp"
+                },
+                {
+                  "text": "goiza",
+                  "image": "greeting_morning.webp"
+                },
+                {
+                  "text": "arratsaldea",
+                  "image": "greeting_afternoon.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gau"
+              ],
+              "structures": [
+                "time-markers",
+                "nork-perfective"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "la tarde",
+              "options": [
+                {
+                  "text": "gaua",
+                  "image": "greeting_night.webp"
+                },
+                {
+                  "text": "goiza",
+                  "image": "greeting_morning.webp"
+                },
+                {
+                  "text": "arratsaldea",
+                  "image": "greeting_afternoon.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "arratsalde"
               ],
               "structures": [
                 "time-markers",
@@ -1058,6 +1139,33 @@
                 "eta",
                 "ezkondu",
                 "izan"
+              ],
+              "structures": [
+                "nor-perfective",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-1.l1.s3.e15",
+              "type": "choose_image",
+              "prompt": "el libro",
+              "options": [
+                {
+                  "text": "telefonoa",
+                  "image": "object_phone.webp"
+                },
+                {
+                  "text": "txartela",
+                  "image": "object_card.webp"
+                },
+                {
+                  "text": "liburua",
+                  "image": "object_book.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "liburu"
               ],
               "structures": [
                 "nor-perfective",

@@ -106,6 +106,13 @@ levels:
           - passage: Armairuan soineko bat eta bi gona daude. Soinekoa berdea da, eta gonak ere bai.
             statement: El vestido es verde.
             answer: true
+        images:
+          - shirt, trousers, skirt
+          - trousers, dress, jumper
+          - skirt, coat, shirt
+          - dress, skirt, coat
+          - jumper, shirt, dress
+          - coat, jumper, trousers
       - structures: [colors]
         sentences:
           - Kamiseta gorria ala urdina? = ¿La camiseta roja o la azul? | ¿Camiseta roja o azul?
@@ -145,6 +152,15 @@ levels:
           - passage: Mikelek alkandora zuria eta galtza grisak dauzka.
             statement: Mikel tiene unos pantalones grises.
             answer: true
+        images:
+          - red, white, black
+          - white, blue, green
+          - black, brown, red
+          - blue, green, yellow
+          - green, yellow, grey
+          - yellow, red, brown
+          - grey, black, white
+          - brown, grey, blue
       - structures: [gifts-vocab]
         sentences:
           - Gaur Aneren urtebetetzea da. = Hoy es el cumpleaños de Ane.
@@ -184,6 +200,11 @@ levels:
           - passage: Bihar Iratiren urtebetetzea da. Bere amak opari bat dauka.
             statement: Mañana es el cumpleaños de la madre de Irati.
             answer: false
+        images:
+          - gift, birthday, tshirt
+          - birthday, gift, shoe
+          - tshirt, shoe, shirt
+          - shoe, tshirt, skirt
   - type: lesson
     title:
       es: ¿Cómo es?
@@ -334,6 +355,8 @@ levels:
           - passage: Jertse urdina handiegia da. Txikiagoa behar da.
             statement: El jersey es demasiado pequeño.
             answer: false
+        images:
+          - dress, coat, trousers
       - structures: [egi-excess, nola-daukazu]
         sentences:
           - Galtza hauek probatu nahi ditut. = Quiero probarme estos pantalones.
@@ -369,6 +392,8 @@ levels:
           - passage: Zapata gorriak politak dira. Garestiegiak dira, ehun euro.
             statement: Los zapatos rojos son baratos.
             answer: false
+        images:
+          - blue, red, yellow
       - structures: [elako-causal, gustatu-nominalization]
         sentences:
           - Zergatik erosi nahi duzu jertse hau? = ¿Por qué quieres comprar este jersey? | ¿Por qué quiere comprar este jersey?

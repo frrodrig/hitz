@@ -28,6 +28,7 @@ content/
   syllabus/vocabulary.csv            Syllabus lemmas, by app unit (see docs/syllabus.md)
   syllabus/forms/<unit>.csv          Inflected forms and grammar words each unit teaches
   syllabus/proper-nouns.csv          Names of people and places allowed anywhere
+  images/catalog.csv                 Picture keys, Basque labels and Spanish prompts (see "Images")
   audio/pending.csv                  Generated list of clips still to be recorded
 tools/
   build_content.py                   Builds the course JSON from content/source (CI checks it is current)
@@ -144,8 +145,27 @@ reproducible) into `core/data/src/main/res/raw/`.
 
 ## Images
 
-`choose_image` options reference `images/<name>.webp` (lower-case, underscores). Images must be
-original, simple and readable at 96 dp; the validator fails if a file is missing.
+Pictures are drawn as code, so they are original, consistent and reproducible: each one is a
+small Python function in `tools/design/illustrations/` (one module per family: people, places,
+home, food, clothes, body, weather and nature, travel and leisure) built from the shared kit in
+`kit.py`. The style is flat, with no outlines: a soft background per family, a rounded square, one
+or two big shapes and a darker shade for depth. Pictures show things, not words, so they never
+contain text.
+
+```
+python3 tools/design/make_illustrations.py                  # render all into assets/images/
+python3 tools/design/make_illustrations.py --only food_bread --no-write --sheet /tmp/sheet.png
+```
+
+Each drawing becomes `images/<id>.webp` (384 × 384, lossless; needs `rsvg-convert`). Review a
+contact sheet (`--sheet`) before committing: a picture must be readable at 96 dp and must not be
+confused with the other options it appears with.
+
+`content/images/catalog.csv` gives every picture a key, its Basque label (as the learner reads
+it, usually with the article: `ogia`) and the Spanish prompt (`el pan`). One image can have
+several keys (`greet_morning`, egun on, and `morning`, goiza). Lessons use the keys (see below).
+A test checks that the catalog and the images match one to one, and the validator checks that
+every label uses vocabulary the unit already knows.
 
 ## Writing a unit
 
@@ -162,7 +182,9 @@ decides the exercise types:
   `blanks` (`text: … ___ … = translation` plus `options`, the first one right), `meanings`
   (`text` plus Spanish `options`, the first one right), `chats` (`Speaker | text` messages plus
   Basque `options`, the first one right), `true_false` (`passage`, `statement`, `answer`) and
-  `images` (`choose_image`, only with existing images).
+  `images`: each item is a line of 2–4 catalog keys, the first one right (`bread, water, milk`
+  asks for «el pan» among the bread, the water and the milk). Put pictures that cannot be
+  confused together (not `boy` with `child`, nor `man` with `grandfather`).
 - Option lists are shuffled by the app, so the first one can always be the right one.
 - `structures` on a lesson tags all its exercises; `vocabulary` is worked out from the syllabus.
 - Levels: three lesson levels (vocabulary, grammar, communicative use), each with three lessons of

@@ -106,6 +106,13 @@ levels:
           - passage: Kale honetan harategi bat eta frutadenda bat daude, baina okindegia plazan dago.
             statement: La panadería está en esta calle.
             answer: false
+        images:
+          - bakery, butcher, fishmonger
+          - butcher, greengrocer, bakery
+          - fishmonger, supermarket, butcher
+          - greengrocer, fishmonger, bookshop
+          - supermarket, bookshop, greengrocer
+          - bookshop, bakery, supermarket
       - structures: [shops-vocab]
         sentences:
           - Saltzailea dendan dago. = El vendedor está en la tienda. | La vendedora está en la tienda.
@@ -145,6 +152,9 @@ levels:
           - passage: Jonek ez dauka eskudirurik, baina txartela dauka.
             statement: Jon tiene tarjeta.
             answer: true
+        images:
+          - card, money, phone
+          - money, card, phone
       - structures: [zenbat-da]
         sentences:
           - Zenbat da? = ¿Cuánto es? | ¿Cuánto cuesta?
@@ -330,6 +340,8 @@ levels:
           - passage: Ez daukat eskudirurik. Txartelarekin ordaindu nahi dut.
             statement: Quiere pagar con tarjeta.
             answer: true
+        images:
+          - bakery, fishmonger, greengrocer
       - structures: [shops-tegi, verb-nahi]
         sentences:
           - Haragia erosi nahi dut. Non dago harategia? = Quiero comprar carne. ¿Dónde está la carnicería?
@@ -365,6 +377,8 @@ levels:
           - passage: Merkataritza-gunean liburu-denda bat eta supermerkatu bat daude.
             statement: En el centro comercial hay una librería.
             answer: true
+        images:
+          - card, phone, money
       - structures: [zenbat-da, payment]
         sentences:
           - Barkatu, zenbat da arrain hau? = Perdone, ¿cuánto es este pescado? | Perdona, ¿cuánto es este pescado? | Perdone, ¿cuánto cuesta este pescado?

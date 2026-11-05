@@ -391,6 +391,33 @@
             },
             {
               "id": "u12-1.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "el fútbol",
+              "options": [
+                {
+                  "text": "igeriketa",
+                  "image": "leisure_swimming.webp"
+                },
+                {
+                  "text": "saskibaloia",
+                  "image": "leisure_basketball.webp"
+                },
+                {
+                  "text": "futbola",
+                  "image": "leisure_football.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "futbol"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -409,6 +436,87 @@
                 "zein",
                 "kirol",
                 "gustatu"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "el baloncesto",
+              "options": [
+                {
+                  "text": "futbola",
+                  "image": "leisure_football.webp"
+                },
+                {
+                  "text": "txirrindularitza",
+                  "image": "leisure_cycling.webp"
+                },
+                {
+                  "text": "saskibaloia",
+                  "image": "leisure_basketball.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "saskibaloi"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e16",
+              "type": "choose_image",
+              "prompt": "la natación",
+              "options": [
+                {
+                  "text": "igeriketa",
+                  "image": "leisure_swimming.webp"
+                },
+                {
+                  "text": "futbola",
+                  "image": "leisure_football.webp"
+                },
+                {
+                  "text": "txirrindularitza",
+                  "image": "leisure_cycling.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "igeriketa"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e17",
+              "type": "choose_image",
+              "prompt": "el ciclismo",
+              "options": [
+                {
+                  "text": "saskibaloia",
+                  "image": "leisure_basketball.webp"
+                },
+                {
+                  "text": "txirrindularitza",
+                  "image": "leisure_cycling.webp"
+                },
+                {
+                  "text": "igeriketa",
+                  "image": "leisure_swimming.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "txirrindularitza"
               ],
               "structures": [
                 "aisialdia",
@@ -698,6 +806,33 @@
             },
             {
               "id": "u12-1.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "la música",
+              "options": [
+                {
+                  "text": "kontzertua",
+                  "image": "leisure_concert.webp"
+                },
+                {
+                  "text": "musika",
+                  "image": "leisure_music.webp"
+                },
+                {
+                  "text": "filma",
+                  "image": "leisure_film.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "musika"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -716,6 +851,87 @@
                 "egin",
                 "ukan",
                 "mendi"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "el concierto",
+              "options": [
+                {
+                  "text": "dantza",
+                  "image": "leisure_dance.webp"
+                },
+                {
+                  "text": "musika",
+                  "image": "leisure_music.webp"
+                },
+                {
+                  "text": "kontzertua",
+                  "image": "leisure_concert.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "kontzertu"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "la película",
+              "options": [
+                {
+                  "text": "filma",
+                  "image": "leisure_film.webp"
+                },
+                {
+                  "text": "musika",
+                  "image": "leisure_music.webp"
+                },
+                {
+                  "text": "dantza",
+                  "image": "leisure_dance.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "film"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e17",
+              "type": "choose_image",
+              "prompt": "el baile",
+              "options": [
+                {
+                  "text": "dantza",
+                  "image": "leisure_dance.webp"
+                },
+                {
+                  "text": "filma",
+                  "image": "leisure_film.webp"
+                },
+                {
+                  "text": "kontzertua",
+                  "image": "leisure_concert.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "dantza"
               ],
               "structures": [
                 "aisialdia",
@@ -996,6 +1212,32 @@
             },
             {
               "id": "u12-1.l1.s3.e13",
+              "type": "choose_image",
+              "prompt": "la foto",
+              "options": [
+                {
+                  "text": "argazkia",
+                  "image": "object_photo.webp"
+                },
+                {
+                  "text": "filma",
+                  "image": "leisure_film.webp"
+                },
+                {
+                  "text": "liburua",
+                  "image": "object_book.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "argazki"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s3.e14",
               "type": "listen_tap",
               "text": "Asteburuan musika ikastaro bat dago.",
               "distractors": [
@@ -1807,6 +2049,34 @@
             },
             {
               "id": "u12-1.l2.s3.e13",
+              "type": "choose_image",
+              "prompt": "el coche",
+              "options": [
+                {
+                  "text": "autoa",
+                  "image": "transport_car.webp"
+                },
+                {
+                  "text": "trena",
+                  "image": "transport_train.webp"
+                },
+                {
+                  "text": "bizikleta",
+                  "image": "transport_bicycle.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "auto"
+              ],
+              "structures": [
+                "nola-instrumental",
+                "noraino",
+                "mugagabea"
+              ]
+            },
+            {
+              "id": "u12-1.l2.s3.e14",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1822,6 +2092,34 @@
                 "eman",
                 "ukan",
                 "izen"
+              ],
+              "structures": [
+                "nola-instrumental",
+                "noraino",
+                "mugagabea"
+              ]
+            },
+            {
+              "id": "u12-1.l2.s3.e15",
+              "type": "choose_image",
+              "prompt": "la bicicleta",
+              "options": [
+                {
+                  "text": "autoa",
+                  "image": "transport_car.webp"
+                },
+                {
+                  "text": "bizikleta",
+                  "image": "transport_bicycle.webp"
+                },
+                {
+                  "text": "autobusa",
+                  "image": "transport_bus.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "bizikleta"
               ],
               "structures": [
                 "nola-instrumental",
@@ -2091,6 +2389,33 @@
                 "arratsalde",
                 "zazpi",
                 "bederatzi"
+              ],
+              "structures": [
+                "noiz-non",
+                "ordutatik-ordutara"
+              ]
+            },
+            {
+              "id": "u12-1.l3.s1.e12",
+              "type": "choose_image",
+              "prompt": "el fútbol",
+              "options": [
+                {
+                  "text": "futbola",
+                  "image": "leisure_football.webp"
+                },
+                {
+                  "text": "igeriketa",
+                  "image": "leisure_swimming.webp"
+                },
+                {
+                  "text": "dantza",
+                  "image": "leisure_dance.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "futbol"
               ],
               "structures": [
                 "noiz-non",

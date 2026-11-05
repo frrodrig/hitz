@@ -107,6 +107,12 @@ levels:
           - passage: Kaixo! Ura nahi dut, mesedez. Anek ardoa nahi du.
             statement: Ane quiere agua.
             answer: false
+        images:
+          - water, milk, coffee
+          - coffee, tea, juice
+          - wine, beer, water
+          - beer, juice, wine
+          - juice, milk, tea
       - structures: [food-vocab]
         sentences:
           - Ogia mahai gainean dago. = El pan está encima de la mesa. | El pan está sobre la mesa.
@@ -146,6 +152,13 @@ levels:
           - passage: Hozkailuan esnea eta arrautzak daude. Ogia mahai gainean dago.
             statement: El pan está en el frigorífico.
             answer: false
+        images:
+          - bread, fish, meat
+          - fish, chicken, egg
+          - meat, cheese, bread
+          - chicken, meat, fish
+          - egg, bread, cheese
+          - cheese, egg, chicken
       - structures: [food-vocab, meals]
         sentences:
           - Gosarian kafea nahi dut. = En el desayuno quiero café. | Para desayunar quiero café.
@@ -185,6 +198,12 @@ levels:
           - passage: Gosarian esnea edaten dugu. Bazkarian oilaskoa eta patatak jaten ditugu.
             statement: En el desayuno comen pollo.
             answer: false
+        images:
+          - apple, orange, lettuce
+          - orange, tomato, potato
+          - lettuce, apple, tomato
+          - potato, lettuce, orange
+          - tomato, potato, apple
   - type: lesson
     title:
       es: Me gusta
@@ -226,6 +245,8 @@ levels:
           - passage: Ni Leire naiz. Arraina gustatzen zait, baina ez zait haragia gustatzen.
             statement: A Leire le gusta la carne.
             answer: false
+        images:
+          - tea, coffee, milk
       - structures: [nori-dative, gustatu-present]
         sentences:
           - Aneri ardoa gustatzen zaio. = A Ane le gusta el vino.
@@ -262,6 +283,8 @@ levels:
           - passage: Nire lagunari, Unairi, gazta gustatzen zaio, baina ez zaizkio sagarrak gustatzen.
             statement: A Unai le gustan las manzanas.
             answer: false
+        images:
+          - milk, water, beer
       - structures: [nahiago-izan]
         sentences:
           - Kafea ala tea nahiago duzu? = ¿Prefieres café o té? | ¿Prefiere café o té?
@@ -339,6 +362,8 @@ levels:
           - passage: Niri ez zait kafea gustatzen. Tea nahiago dut.
             statement: A esta persona le gusta el café.
             answer: false
+        images:
+          - fish, meat, chicken
       - structures: [nori-dative, gustatu-present]
         sentences:
           - Nire aitari haragia gustatzen zaio. = A mi padre le gusta la carne.
@@ -374,6 +399,8 @@ levels:
           - passage: Umeei ez zaie esnea gustatzen. Zukua nahiago dute.
             statement: Los niños prefieren leche.
             answer: false
+        images:
+          - orange, apple, cheese
       - structures: [meals, nahiago-izan]
         sentences:
           - Gosarian kafea nahiago dut. = En el desayuno prefiero café. | Para desayunar prefiero café.

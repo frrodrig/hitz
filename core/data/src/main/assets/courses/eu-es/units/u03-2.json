@@ -381,6 +381,32 @@
             },
             {
               "id": "u03-2.l1.s1.e13",
+              "type": "choose_image",
+              "prompt": "alto",
+              "options": [
+                {
+                  "text": "altua",
+                  "image": "describe_tall.webp"
+                },
+                {
+                  "text": "alaia",
+                  "image": "describe_happy.webp"
+                },
+                {
+                  "text": "baxua",
+                  "image": "describe_short.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "altu"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -399,6 +425,32 @@
                 "lehengusu",
                 "gazte",
                 "izan"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "bajo",
+              "options": [
+                {
+                  "text": "altua",
+                  "image": "describe_tall.webp"
+                },
+                {
+                  "text": "baxua",
+                  "image": "describe_short.webp"
+                },
+                {
+                  "text": "ile luzea",
+                  "image": "describe_long_hair.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "baxu"
               ],
               "structures": [
                 "nolakoa"
@@ -672,6 +724,34 @@
             },
             {
               "id": "u03-2.l1.s2.e13",
+              "type": "choose_image",
+              "prompt": "el pelo largo",
+              "options": [
+                {
+                  "text": "begia",
+                  "image": "body_eye.webp"
+                },
+                {
+                  "text": "ile luzea",
+                  "image": "describe_long_hair.webp"
+                },
+                {
+                  "text": "ile motza",
+                  "image": "describe_short_hair.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "ile",
+                "luze"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -690,6 +770,61 @@
                 "ile",
                 "motz",
                 "ukan"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s2.e15",
+              "type": "choose_image",
+              "prompt": "el pelo corto",
+              "options": [
+                {
+                  "text": "ile luzea",
+                  "image": "describe_long_hair.webp"
+                },
+                {
+                  "text": "ile motza",
+                  "image": "describe_short_hair.webp"
+                },
+                {
+                  "text": "altua",
+                  "image": "describe_tall.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "ile",
+                "motz"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "el ojo",
+              "options": [
+                {
+                  "text": "begia",
+                  "image": "body_eye.webp"
+                },
+                {
+                  "text": "ile motza",
+                  "image": "describe_short_hair.webp"
+                },
+                {
+                  "text": "ile luzea",
+                  "image": "describe_long_hair.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "begi"
               ],
               "structures": [
                 "ukan-present",
@@ -975,6 +1110,33 @@
             },
             {
               "id": "u03-2.l1.s3.e13",
+              "type": "choose_image",
+              "prompt": "alegre",
+              "options": [
+                {
+                  "text": "alaia",
+                  "image": "describe_happy.webp"
+                },
+                {
+                  "text": "altua",
+                  "image": "describe_tall.webp"
+                },
+                {
+                  "text": "baxua",
+                  "image": "describe_short.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "alai"
+              ],
+              "structures": [
+                "nolakoa",
+                "marital-status"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s3.e14",
               "type": "listen_tap",
               "text": "Nire amona beti oso atsegina da.",
               "distractors": [
@@ -2459,6 +2621,33 @@
                 "ukan",
                 "ezkongabe",
                 "izan"
+              ],
+              "structures": [
+                "personal-info",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "alto",
+              "options": [
+                {
+                  "text": "altua",
+                  "image": "describe_tall.webp"
+                },
+                {
+                  "text": "ile motza",
+                  "image": "describe_short_hair.webp"
+                },
+                {
+                  "text": "alaia",
+                  "image": "describe_happy.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "altu"
               ],
               "structures": [
                 "personal-info",
