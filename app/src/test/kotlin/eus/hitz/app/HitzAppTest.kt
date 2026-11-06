@@ -9,19 +9,35 @@ import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.core.edit
+import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
 import com.github.takahirom.roborazzi.captureRoboImage
+import dagger.hilt.EntryPoint
+import dagger.hilt.InstallIn
+import dagger.hilt.android.EntryPointAccessors
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
+import dagger.hilt.components.SingletonComponent
+import kotlinx.coroutines.runBlocking
 import org.junit.Rule
 import org.junit.Test
+import org.junit.rules.ExternalResource
 import org.junit.runner.RunWith
 import org.robolectric.annotation.Config
 import org.robolectric.annotation.GraphicsMode
 
 /** End-to-end on the JVM: real content, real database (Robolectric), real navigation. */
+@EntryPoint
+@InstallIn(SingletonComponent::class)
+interface SettingsStore {
+    fun dataStore(): DataStore<Preferences>
+}
+
 @HiltAndroidTest
 @RunWith(AndroidJUnit4::class)
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
@@ -30,7 +46,21 @@ class HitzAppTest {
     @get:Rule(order = 0)
     val hiltRule = HiltAndroidRule(this)
 
+    /**
+     * Settings live in a process-wide DataStore, so they would carry over from test to test: each
+     * test starts as a fresh install (before the activity is launched).
+     */
     @get:Rule(order = 1)
+    val freshInstall = object : ExternalResource() {
+        override fun before() {
+            val dataStore = EntryPointAccessors
+                .fromApplication(ApplicationProvider.getApplicationContext(), SettingsStore::class.java)
+                .dataStore()
+            runBlocking { dataStore.edit { it.clear() } }
+        }
+    }
+
+    @get:Rule(order = 2)
     val composeRule = createAndroidComposeRule<MainActivity>()
 
     private fun waitForText(text: String) = composeRule.waitUntil(TIMEOUT) {
