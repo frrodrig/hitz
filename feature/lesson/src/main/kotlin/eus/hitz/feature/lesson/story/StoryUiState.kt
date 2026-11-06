@@ -1,6 +1,7 @@
 package eus.hitz.feature.lesson.story
 
 import androidx.compose.runtime.Immutable
+import eus.hitz.core.model.content.Glossary
 import eus.hitz.feature.lesson.AudioClip
 import eus.hitz.feature.lesson.RewardUi
 
@@ -18,6 +19,8 @@ sealed interface StoryUiState {
         val question: StoryQuestionUi? = null,
         /** Lines whose Spanish translation is shown. */
         val translated: Set<Int> = emptySet(),
+        /** Hints shown when a Basque word is tapped. */
+        val glossary: Glossary? = null,
     ) : StoryUiState {
         /** A line can always be passed; a question only once it is answered. */
         val canContinue: Boolean get() = question == null || question.correct != null

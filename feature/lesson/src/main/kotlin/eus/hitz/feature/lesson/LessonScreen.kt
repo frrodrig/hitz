@@ -27,6 +27,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -65,6 +66,8 @@ import eus.hitz.feature.lesson.exercise.ReadTrueFalseExercise
 import eus.hitz.feature.lesson.exercise.SpeakExercise
 import eus.hitz.feature.lesson.exercise.TypingExercise
 import eus.hitz.feature.lesson.exercise.WordBankExercise
+import eus.hitz.feature.lesson.exercise.WordIntroExercise
+import eus.hitz.feature.lesson.ui.LocalGlossary
 import kotlin.math.roundToInt
 
 private const val PERCENT = 100
@@ -153,7 +156,9 @@ private fun ActiveLesson(
                 style = MaterialTheme.typography.headlineSmallEmphasized,
                 modifier = Modifier.semantics { heading() },
             )
-            ExerciseContent(state.exercise, state.feedback?.type, onAction)
+            CompositionLocalProvider(LocalGlossary provides state.glossary) {
+                ExerciseContent(state.exercise, state.feedback?.type, onAction)
+            }
         }
     }
     if (state.showQuitDialog) {
@@ -177,6 +182,7 @@ private fun ExerciseContent(exercise: ExerciseUi, feedback: FeedbackType?, onAct
         is ExerciseUi.CompleteChat -> CompleteChatExercise(exercise, feedback, onAction)
         is ExerciseUi.ReadTrueFalse -> ReadTrueFalseExercise(exercise, feedback, onAction)
         is ExerciseUi.Speak -> SpeakExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.WordIntro -> WordIntroExercise(exercise, onAction)
     }
 }
 
@@ -200,6 +206,7 @@ private fun instruction(exercise: ExerciseUi): String = when (exercise) {
     is ExerciseUi.CompleteChat -> stringResource(R.string.feature_lesson_instruction_chat)
     is ExerciseUi.ReadTrueFalse -> stringResource(R.string.feature_lesson_instruction_true_false)
     is ExerciseUi.Speak -> stringResource(R.string.feature_lesson_instruction_speak)
+    is ExerciseUi.WordIntro -> stringResource(R.string.feature_lesson_instruction_new_word)
 }
 
 @Composable
@@ -241,6 +248,14 @@ private fun LessonBottomBar(state: LessonUiState.Active, onAction: (LessonAction
             message = feedback.expected,
             continueLabel = stringResource(R.string.feature_lesson_continue),
             onContinue = { onAction(LessonAction.Continue) },
+        )
+        state.exercise is ExerciseUi.WordIntro -> HitzButton(
+            text = stringResource(R.string.feature_lesson_continue),
+            onClick = { onAction(LessonAction.Continue) },
+            modifier = Modifier
+                .fillMaxWidth()
+                .navigationBarsPadding()
+                .padding(HitzSpacing.lg),
         )
         // Pairs finish on their own and speaking has its own buttons.
         state.exercise !is ExerciseUi.MatchPairs && state.exercise !is ExerciseUi.Speak -> HitzButton(

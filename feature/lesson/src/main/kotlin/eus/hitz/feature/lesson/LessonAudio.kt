@@ -23,6 +23,7 @@ internal object ExerciseClips {
         is Exercise.ListenType -> AudioClip(exercise.id, exercise.text)
         is Exercise.ChooseMeaning -> AudioClip(exercise.id, exercise.text)
         is Exercise.Speak -> AudioClip(exercise.id, exercise.text)
+        is Exercise.WordIntro -> AudioClip(exercise.id, exercise.word)
         is Exercise.TranslateWordBank ->
             AudioClip(exercise.id, exercise.prompt.text).takeIf { exercise.prompt.lang == Language.Basque }
         is Exercise.TranslateTyping ->

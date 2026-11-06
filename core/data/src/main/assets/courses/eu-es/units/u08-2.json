@@ -131,18 +131,33 @@
           "exercises": [
             {
               "id": "u08-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "jaikitzen",
+              "translation": "levantándose (jaiki)",
+              "vocabulary": [
+                "jaiki"
+              ],
+              "structures": [
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s1.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Todos los días me levanto a las siete."
+                "lang": "eu",
+                "text": "Egunero zazpietan jaikitzen naiz."
               },
               "answers": [
-                "Egunero zazpietan jaikitzen naiz."
+                "Todos los días me levanto a las siete.",
+                "Me levanto todos los días a las siete.",
+                "Me levanto a las siete todos los días."
               ],
               "distractors": [
-                "bazkaltzen",
-                "afaltzen",
-                "zara"
+                "casa",
+                "acuesto",
+                "té",
+                "desayuno"
               ],
               "vocabulary": [
                 "egunero",
@@ -155,12 +170,31 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Gero dutxatzen naiz.",
+              "id": "u08-2.l1.s1.e03",
+              "type": "word_intro",
+              "word": "dutxatzen",
+              "translation": "duchándose (dutxatu)",
+              "vocabulary": [
+                "dutxatu"
+              ],
+              "structures": [
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gero dutxatzen naiz."
+              },
+              "answers": [
+                "Después me ducho.",
+                "Luego me ducho."
+              ],
               "distractors": [
-                "Egunero",
-                "Gauean"
+                "mañana",
+                "en"
               ],
               "vocabulary": [
                 "gero",
@@ -172,7 +206,55 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e03",
+              "id": "u08-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "jaiki",
+              "translation": "levantarse",
+              "vocabulary": [
+                "jaiki"
+              ],
+              "structures": [
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s1.e06",
+              "type": "word_intro",
+              "word": "gosaldu",
+              "translation": "desayunar",
+              "vocabulary": [
+                "gosaldu"
+              ],
+              "structures": [
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s1.e07",
+              "type": "word_intro",
+              "word": "dutxatu",
+              "translation": "ducharse",
+              "vocabulary": [
+                "dutxatu"
+              ],
+              "structures": [
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s1.e08",
+              "type": "word_intro",
+              "word": "oheratu",
+              "translation": "acostarse",
+              "vocabulary": [
+                "oheratu"
+              ],
+              "structures": [
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s1.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -213,14 +295,31 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e04",
-              "type": "translate_typing",
+              "id": "u08-2.l1.s1.e10",
+              "type": "word_intro",
+              "word": "gosaltzen",
+              "translation": "desayunando (gosaldu)",
+              "vocabulary": [
+                "gosaldu"
+              ],
+              "structures": [
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s1.e11",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Siempre desayuno en casa."
+                "lang": "eu",
+                "text": "Beti etxean gosaltzen dut."
               },
               "answers": [
-                "Beti etxean gosaltzen dut."
+                "Siempre desayuno en casa."
+              ],
+              "distractors": [
+                "café",
+                "Todos",
+                "Por"
               ],
               "vocabulary": [
                 "beti",
@@ -233,7 +332,19 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e05",
+              "id": "u08-2.l1.s1.e12",
+              "type": "word_intro",
+              "word": "oheratzen",
+              "translation": "acostándose (oheratu)",
+              "vocabulary": [
+                "oheratu"
+              ],
+              "structures": [
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s1.e13",
               "type": "fill_blank",
               "sentence": "Egunero hamarretan oheratzen ___.",
               "options": [
@@ -253,7 +364,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e06",
+              "id": "u08-2.l1.s1.e14",
               "type": "order_sentence",
               "answer": "Goizean kafea edo tea hartzen dut.",
               "translation": "Por la mañana tomo café o té.",
@@ -270,7 +381,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e07",
+              "id": "u08-2.l1.s1.e15",
               "type": "choose_meaning",
               "text": "Ane seietan jaikitzen da.",
               "options": [
@@ -289,14 +400,19 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e08",
-              "type": "translate_typing",
+              "id": "u08-2.l1.s1.e16",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Ordu batean bazkaltzen dut."
               },
               "answers": [
                 "Como a la una."
+              ],
+              "distractors": [
+                "levantas",
+                "o",
+                "noche"
               ],
               "vocabulary": [
                 "ordu",
@@ -309,7 +425,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e09",
+              "id": "u08-2.l1.s1.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -335,7 +451,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e10",
+              "id": "u08-2.l1.s1.e18",
               "type": "listen_type",
               "text": "Gauean bederatzietan afaltzen dugu.",
               "answers": [
@@ -352,7 +468,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e11",
+              "id": "u08-2.l1.s1.e19",
               "type": "read_true_false",
               "passage": "Egunero sei eta erdietan jaikitzen naiz, baina ez dut gosaltzen.",
               "statement": "Desayuna todos los días.",
@@ -373,7 +489,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e12",
+              "id": "u08-2.l1.s1.e20",
               "type": "speak",
               "text": "Hamaiketan oheratzen naiz.",
               "translation": "Me acuesto a las once.",
@@ -387,7 +503,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s1.e13",
+              "id": "u08-2.l1.s1.e21",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -419,12 +535,43 @@
           "exercises": [
             {
               "id": "u08-2.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Astean behin igeri egiten dut.",
+              "type": "word_intro",
+              "word": "behin",
+              "translation": "una vez",
+              "structures": [
+                "frequency",
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s2.e02",
+              "type": "word_intro",
+              "word": "igeri",
+              "translation": "a nado (igeri egin: nadar)",
+              "vocabulary": [
+                "igeri egin"
+              ],
+              "structures": [
+                "frequency",
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Astean behin igeri egiten dut."
+              },
+              "answers": [
+                "Nado una vez a la semana.",
+                "Una vez a la semana nado."
+              ],
               "distractors": [
-                "Askotan",
-                "du",
-                "bakarrik"
+                "come",
+                "vino",
+                "De",
+                "Mikel"
               ],
               "vocabulary": [
                 "aste",
@@ -438,14 +585,47 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u08-2.l1.s2.e04",
+              "type": "word_intro",
+              "word": "noizean behin",
+              "translation": "de vez en cuando",
+              "vocabulary": [
+                "noizean behin"
+              ],
+              "structures": [
+                "frequency",
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s2.e05",
+              "type": "word_intro",
+              "word": "joaten",
+              "translation": "yendo (joan)",
+              "vocabulary": [
+                "joan"
+              ],
+              "structures": [
+                "frequency",
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s2.e06",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "De vez en cuando voy al monte."
+                "lang": "eu",
+                "text": "Noizean behin mendira joaten naiz."
               },
               "answers": [
-                "Noizean behin mendira joaten naiz."
+                "De vez en cuando voy al monte.",
+                "Voy al monte de vez en cuando."
+              ],
+              "distractors": [
+                "nosotros",
+                "come",
+                "Nadas",
+                "pocas"
               ],
               "vocabulary": [
                 "noizean behin",
@@ -459,7 +639,33 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e03",
+              "id": "u08-2.l1.s2.e07",
+              "type": "word_intro",
+              "word": "inoiz",
+              "translation": "alguna vez; nunca (con ez)",
+              "vocabulary": [
+                "inoiz"
+              ],
+              "structures": [
+                "frequency",
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s2.e08",
+              "type": "word_intro",
+              "word": "gutxitan",
+              "translation": "pocas veces",
+              "vocabulary": [
+                "gutxitan"
+              ],
+              "structures": [
+                "frequency",
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s2.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -502,7 +708,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e04",
+              "id": "u08-2.l1.s2.e10",
               "type": "order_sentence",
               "answer": "Ez dut inoiz ardoa edaten.",
               "translation": "Nunca bebo vino.",
@@ -519,7 +725,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e05",
+              "id": "u08-2.l1.s2.e11",
               "type": "fill_blank",
               "sentence": "Ez dut ___ kafea hartzen.",
               "options": [
@@ -541,7 +747,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e06",
+              "id": "u08-2.l1.s2.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -566,7 +772,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e07",
+              "id": "u08-2.l1.s2.e13",
               "type": "choose_meaning",
               "text": "Noizean behin kafea hartzen dut.",
               "options": [
@@ -587,7 +793,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e08",
+              "id": "u08-2.l1.s2.e14",
               "type": "listen_type",
               "text": "Mikelek asko lan egiten du.",
               "answers": [
@@ -605,7 +811,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e09",
+              "id": "u08-2.l1.s2.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -633,10 +839,48 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e10",
-              "type": "speak",
-              "text": "Amonak bakarrik bazkaltzen du, baina gaur gurekin jango du.",
-              "translation": "La abuela come sola, pero hoy comerá con nosotros.",
+              "id": "u08-2.l1.s2.e16",
+              "type": "word_intro",
+              "word": "bakarrik",
+              "translation": "solo; solamente",
+              "vocabulary": [
+                "bakarrik"
+              ],
+              "structures": [
+                "frequency",
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s2.e17",
+              "type": "word_intro",
+              "word": "bazkaltzen",
+              "translation": "comiendo al mediodía (bazkaldu)",
+              "vocabulary": [
+                "bazkaldu"
+              ],
+              "structures": [
+                "frequency",
+                "habitual"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s2.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Amonak bakarrik bazkaltzen du, baina gaur gurekin jango du."
+              },
+              "answers": [
+                "La abuela come sola, pero hoy comerá con nosotros.",
+                "Mi abuela come sola, pero hoy comerá con nosotros."
+              ],
+              "distractors": [
+                "semana",
+                "Nado",
+                "pescado",
+                "monte"
+              ],
               "vocabulary": [
                 "amona",
                 "bakarrik",
@@ -653,7 +897,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e11",
+              "id": "u08-2.l1.s2.e19",
               "type": "read_true_false",
               "passage": "Nerea egunero hondartzara joaten da. Asko igeri egiten du.",
               "statement": "Nerea nada poco.",
@@ -674,7 +918,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e12",
+              "id": "u08-2.l1.s2.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -700,7 +944,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s2.e13",
+              "id": "u08-2.l1.s2.e21",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -750,9 +994,31 @@
             },
             {
               "id": "u08-2.l1.s3.e02",
-              "type": "order_sentence",
-              "answer": "Hitzordua eskatu dut.",
-              "translation": "He pedido cita.",
+              "type": "word_intro",
+              "word": "eskatu",
+              "translation": "pedir",
+              "vocabulary": [
+                "eskatu"
+              ],
+              "structures": [
+                "health-centre"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hitzordua eskatu dut."
+              },
+              "answers": [
+                "He pedido cita.",
+                "Pedí cita."
+              ],
+              "distractors": [
+                "medicinales",
+                "toma"
+              ],
               "vocabulary": [
                 "hitzordu",
                 "eskatu",
@@ -763,7 +1029,58 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e03",
+              "id": "u08-2.l1.s3.e04",
+              "type": "word_intro",
+              "word": "botika",
+              "translation": "medicina; medicamento",
+              "image": "health_medicine.webp",
+              "vocabulary": [
+                "botika"
+              ],
+              "structures": [
+                "health-centre"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "pilula",
+              "translation": "pastilla",
+              "image": "health_pills.webp",
+              "vocabulary": [
+                "pilula"
+              ],
+              "structures": [
+                "health-centre"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s3.e06",
+              "type": "word_intro",
+              "word": "errezeta",
+              "translation": "receta (médica)",
+              "vocabulary": [
+                "errezeta"
+              ],
+              "structures": [
+                "health-centre"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s3.e07",
+              "type": "word_intro",
+              "word": "sendabelar",
+              "translation": "planta medicinal",
+              "image": "health_plant.webp",
+              "vocabulary": [
+                "sendabelar"
+              ],
+              "structures": [
+                "health-centre"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s3.e08",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -804,7 +1121,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e04",
+              "id": "u08-2.l1.s3.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -826,7 +1143,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e05",
+              "id": "u08-2.l1.s3.e10",
               "type": "fill_blank",
               "sentence": "Osasun-etxean hitzordua ___ dut.",
               "options": [
@@ -846,11 +1163,19 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e06",
-              "type": "listen_type",
-              "text": "Farmazian botika erosiko dut.",
+              "id": "u08-2.l1.s3.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Compraré la medicina en la farmacia."
+              },
               "answers": [
                 "Farmazian botika erosiko dut."
+              ],
+              "distractors": [
+                "mesedez",
+                "Pilula",
+                "Eseri"
               ],
               "vocabulary": [
                 "farmazia",
@@ -863,7 +1188,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e07",
+              "id": "u08-2.l1.s3.e12",
               "type": "choose_meaning",
               "text": "Hitzordua daukat osasun-etxean.",
               "options": [
@@ -882,10 +1207,14 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e08",
-              "type": "speak",
+              "id": "u08-2.l1.s3.e13",
+              "type": "listen_tap",
               "text": "Pilula bat hartu, mesedez.",
-              "translation": "Tómate una pastilla, por favor.",
+              "distractors": [
+                "errezeta",
+                "noa",
+                "Jonek"
+              ],
               "vocabulary": [
                 "pilula",
                 "bat",
@@ -897,7 +1226,19 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e09",
+              "id": "u08-2.l1.s3.e14",
+              "type": "word_intro",
+              "word": "eseri",
+              "translation": "sentarse",
+              "vocabulary": [
+                "eseri"
+              ],
+              "structures": [
+                "health-centre"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s3.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -924,7 +1265,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e10",
+              "id": "u08-2.l1.s3.e16",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -947,7 +1288,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e11",
+              "id": "u08-2.l1.s3.e17",
               "type": "read_true_false",
               "passage": "Gaur osasun-etxera joan naiz. Gero farmazian pilulak erosi ditut.",
               "statement": "Ha comprado pastillas.",
@@ -968,7 +1309,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e12",
+              "id": "u08-2.l1.s3.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -993,7 +1334,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e13",
+              "id": "u08-2.l1.s3.e19",
               "type": "choose_image",
               "prompt": "la medicina",
               "options": [
@@ -1019,13 +1360,33 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e14",
-              "type": "listen_tap",
-              "text": "Jonek besoa hautsi du.",
+              "id": "u08-2.l1.s3.e20",
+              "type": "word_intro",
+              "word": "hautsi",
+              "translation": "romper",
+              "vocabulary": [
+                "hautsi"
+              ],
+              "structures": [
+                "health-centre"
+              ]
+            },
+            {
+              "id": "u08-2.l1.s3.e21",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Jonek besoa hautsi du."
+              },
+              "answers": [
+                "Jon se ha roto el brazo.",
+                "Jon se rompió el brazo."
+              ],
               "distractors": [
-                "hartzen",
-                "hartu",
-                "eskatu"
+                "medicinales",
+                "pastilla",
+                "plantas",
+                "farmacia"
               ],
               "vocabulary": [
                 "beso",
@@ -1037,7 +1398,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e15",
+              "id": "u08-2.l1.s3.e22",
               "type": "choose_image",
               "prompt": "la pastilla",
               "options": [
@@ -1063,7 +1424,7 @@
               ]
             },
             {
-              "id": "u08-2.l1.s3.e16",
+              "id": "u08-2.l1.s3.e23",
               "type": "choose_image",
               "prompt": "la planta medicinal",
               "options": [
@@ -1105,9 +1466,33 @@
           "exercises": [
             {
               "id": "u08-2.l2.s1.e01",
-              "type": "order_sentence",
-              "answer": "Medikuarengana joan behar duzu.",
-              "translation": "Tienes que ir al médico.",
+              "type": "word_intro",
+              "word": "medikuarengana",
+              "translation": "al médico",
+              "vocabulary": [
+                "mediku"
+              ],
+              "structures": [
+                "norengana"
+              ]
+            },
+            {
+              "id": "u08-2.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Medikuarengana joan behar duzu."
+              },
+              "answers": [
+                "Tienes que ir al médico.",
+                "Debes ir al médico.",
+                "Tiene que ir al médico."
+              ],
+              "distractors": [
+                "Iré",
+                "enfermera",
+                "Mañana"
+              ],
               "vocabulary": [
                 "mediku",
                 "joan",
@@ -1119,8 +1504,20 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e02",
-              "type": "translate_typing",
+              "id": "u08-2.l2.s1.e03",
+              "type": "word_intro",
+              "word": "zuregana",
+              "translation": "hacia ti / a verte",
+              "vocabulary": [
+                "zu"
+              ],
+              "structures": [
+                "norengana"
+              ]
+            },
+            {
+              "id": "u08-2.l2.s1.e04",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Bihar zuregana etorriko naiz."
@@ -1128,6 +1525,11 @@
               "answers": [
                 "Mañana vendré a verte.",
                 "Mañana iré a verte."
+              ],
+              "distractors": [
+                "mí",
+                "vas",
+                "El"
               ],
               "vocabulary": [
                 "bihar",
@@ -1140,7 +1542,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e03",
+              "id": "u08-2.l2.s1.e05",
               "type": "fill_blank",
               "sentence": "Bihar ___ joango naiz.",
               "options": [
@@ -1160,7 +1562,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e04",
+              "id": "u08-2.l2.s1.e06",
               "type": "listen_type",
               "text": "Ama medikuarengana doa.",
               "answers": [
@@ -1176,7 +1578,19 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e05",
+              "id": "u08-2.l2.s1.e07",
+              "type": "word_intro",
+              "word": "niregana",
+              "translation": "hacia mí / a verme",
+              "vocabulary": [
+                "ni"
+              ],
+              "structures": [
+                "norengana"
+              ]
+            },
+            {
+              "id": "u08-2.l2.s1.e08",
               "type": "fill_blank",
               "sentence": "Bihar ___ etorriko zara?",
               "options": [
@@ -1196,10 +1610,34 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e06",
-              "type": "speak",
-              "text": "Erizainarengana joango gara.",
-              "translation": "Iremos a la enfermera.",
+              "id": "u08-2.l2.s1.e09",
+              "type": "word_intro",
+              "word": "erizainarengana",
+              "translation": "a la enfermera",
+              "vocabulary": [
+                "erizain"
+              ],
+              "structures": [
+                "norengana"
+              ]
+            },
+            {
+              "id": "u08-2.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Erizainarengana joango gara."
+              },
+              "answers": [
+                "Iremos a la enfermera.",
+                "Iremos al enfermero.",
+                "Vamos a ir a la enfermera."
+              ],
+              "distractors": [
+                "madre",
+                "verte",
+                "centro"
+              ],
               "vocabulary": [
                 "erizain",
                 "joan",
@@ -1210,7 +1648,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e07",
+              "id": "u08-2.l2.s1.e11",
               "type": "choose_meaning",
               "text": "Gaur erizainarengana joan naiz.",
               "options": [
@@ -1230,7 +1668,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e08",
+              "id": "u08-2.l2.s1.e12",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1258,7 +1696,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e09",
+              "id": "u08-2.l2.s1.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1286,7 +1724,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e10",
+              "id": "u08-2.l2.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1311,7 +1749,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e11",
+              "id": "u08-2.l2.s1.e15",
               "type": "read_true_false",
               "passage": "Aitona gaixo dago. Gaur bere medikuarengana joango da.",
               "statement": "El abuelo irá hoy al médico.",
@@ -1331,7 +1769,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e12",
+              "id": "u08-2.l2.s1.e16",
               "type": "listen_tap",
               "text": "Nora zoaz? Medikuarengana.",
               "distractors": [
@@ -1348,7 +1786,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s1.e13",
+              "id": "u08-2.l2.s1.e17",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1608,10 +2046,18 @@
           "exercises": [
             {
               "id": "u08-2.l2.s3.e01",
-              "type": "listen_type",
-              "text": "Sukarra baduzu, etxean geratu.",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Si tienes fiebre, quédate en casa."
+              },
               "answers": [
                 "Sukarra baduzu, etxean geratu."
+              ],
+              "distractors": [
+                "Hotzeria",
+                "mina",
+                "bazaude"
               ],
               "vocabulary": [
                 "sukar",
@@ -1625,9 +2071,33 @@
             },
             {
               "id": "u08-2.l2.s3.e02",
-              "type": "speak",
-              "text": "Buruko mina badaukazu, pilula bat hartu.",
-              "translation": "Si te duele la cabeza, tómate una pastilla.",
+              "type": "word_intro",
+              "word": "badaukazu",
+              "translation": "si tienes / ¿tienes?",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "ba-conditional"
+              ]
+            },
+            {
+              "id": "u08-2.l2.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Buruko mina badaukazu, pilula bat hartu."
+              },
+              "answers": [
+                "Si te duele la cabeza, tómate una pastilla.",
+                "Si le duele la cabeza, tómese una pastilla."
+              ],
+              "distractors": [
+                "casa",
+                "tienes",
+                "fiebre",
+                "cita"
+              ],
               "vocabulary": [
                 "buru",
                 "min",
@@ -1641,7 +2111,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s3.e03",
+              "id": "u08-2.l2.s3.e04",
               "type": "fill_blank",
               "sentence": "Sukarra ___, medikuarengana joan.",
               "options": [
@@ -1661,7 +2131,19 @@
               ]
             },
             {
-              "id": "u08-2.l2.s3.e04",
+              "id": "u08-2.l2.s3.e05",
+              "type": "word_intro",
+              "word": "bazaude",
+              "translation": "si estás",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "ba-conditional"
+              ]
+            },
+            {
+              "id": "u08-2.l2.s3.e06",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1688,7 +2170,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s3.e05",
+              "id": "u08-2.l2.s3.e07",
               "type": "choose_meaning",
               "text": "Nekatuta bazaude, eseri.",
               "options": [
@@ -1707,7 +2189,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s3.e06",
+              "id": "u08-2.l2.s3.e08",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1732,7 +2214,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s3.e07",
+              "id": "u08-2.l2.s3.e09",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1758,7 +2240,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s3.e08",
+              "id": "u08-2.l2.s3.e10",
               "type": "listen_tap",
               "text": "Eztula baduzu, ura edan.",
               "distractors": [
@@ -1777,7 +2259,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s3.e09",
+              "id": "u08-2.l2.s3.e11",
               "type": "read_true_false",
               "passage": "Sukarra baduzu, etxean geratu eta ura edan. Ez joan eskolara.",
               "statement": "Con fiebre hay que ir a la escuela.",
@@ -1799,7 +2281,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s3.e10",
+              "id": "u08-2.l2.s3.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1819,7 +2301,7 @@
               ]
             },
             {
-              "id": "u08-2.l2.s3.e11",
+              "id": "u08-2.l2.s3.e13",
               "type": "order_sentence",
               "answer": "Hortzetako mina baduzu, hitzordua eskatu.",
               "translation": "Si te duelen las muelas, pide cita.",
@@ -1835,8 +2317,20 @@
               ]
             },
             {
-              "id": "u08-2.l2.s3.e12",
-              "type": "translate_typing",
+              "id": "u08-2.l2.s3.e14",
+              "type": "word_intro",
+              "word": "igeri egin",
+              "translation": "nadar",
+              "vocabulary": [
+                "igeri egin"
+              ],
+              "structures": [
+                "ba-conditional"
+              ]
+            },
+            {
+              "id": "u08-2.l2.s3.e15",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Bizkarreko mina badaukazu, igeri egin."
@@ -1844,6 +2338,12 @@
               "answers": [
                 "Si te duele la espalda, nada.",
                 "Si le duele la espalda, nade."
+              ],
+              "distractors": [
+                "un",
+                "las",
+                "fiebre",
+                "médico"
               ],
               "vocabulary": [
                 "igeri egin",
@@ -1961,6 +2461,16 @@
             },
             {
               "id": "u08-2.l3.s1.e05",
+              "type": "word_intro",
+              "word": "gutxi",
+              "translation": "poco (laurden gutxi: menos cuarto)",
+              "structures": [
+                "habitual",
+                "frequency"
+              ]
+            },
+            {
+              "id": "u08-2.l3.s1.e06",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2004,7 +2514,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s1.e06",
+              "id": "u08-2.l3.s1.e07",
               "type": "listen_tap",
               "text": "Bai, kafea eta ogia gosaltzen ditut.",
               "distractors": [
@@ -2027,7 +2537,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s1.e07",
+              "id": "u08-2.l3.s1.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2054,7 +2564,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s1.e08",
+              "id": "u08-2.l3.s1.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2075,7 +2585,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s1.e09",
+              "id": "u08-2.l3.s1.e10",
               "type": "read_true_false",
               "passage": "Peio egunero bostetan jaikitzen da. Gero dutxatzen da eta gosaltzen du.",
               "statement": "Peio se levanta a las cinco.",
@@ -2097,7 +2607,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s1.e10",
+              "id": "u08-2.l3.s1.e11",
               "type": "order_sentence",
               "answer": "Gauean asko jaten duzu?",
               "translation": "¿Comes mucho por la noche?",
@@ -2113,7 +2623,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s1.e11",
+              "id": "u08-2.l3.s1.e12",
               "type": "read_true_false",
               "passage": "Miren gutxitan joaten da medikuarengana. Ez du inoiz botikarik hartzen.",
               "statement": "Miren toma medicinas a menudo.",
@@ -2507,6 +3017,19 @@
             },
             {
               "id": "u08-2.l3.s3.e05",
+              "type": "word_intro",
+              "word": "ibiltzen",
+              "translation": "andando (ibili)",
+              "vocabulary": [
+                "ibili"
+              ],
+              "structures": [
+                "habitual",
+                "ta-da-participle"
+              ]
+            },
+            {
+              "id": "u08-2.l3.s3.e06",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2548,7 +3071,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s3.e06",
+              "id": "u08-2.l3.s3.e07",
               "type": "order_sentence",
               "answer": "Gutxitan hartzen ditu pilulak.",
               "translation": "Pocas veces toma pastillas.",
@@ -2564,7 +3087,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s3.e07",
+              "id": "u08-2.l3.s3.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2593,7 +3116,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s3.e08",
+              "id": "u08-2.l3.s3.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2613,7 +3136,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s3.e09",
+              "id": "u08-2.l3.s3.e10",
               "type": "read_true_false",
               "passage": "Amona hamarretan oheratzen da. Ez du inoiz kafea edaten, baina tea bai.",
               "statement": "La abuela toma café por la noche.",
@@ -2638,7 +3161,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s3.e10",
+              "id": "u08-2.l3.s3.e11",
               "type": "listen_type",
               "text": "Arratsaldean eserita liburuak irakurtzen ditu.",
               "answers": [
@@ -2657,7 +3180,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s3.e11",
+              "id": "u08-2.l3.s3.e12",
               "type": "read_true_false",
               "passage": "Nire aitonak hanka hautsita dauka. Etxean dago, eserita.",
               "statement": "El abuelo tiene la pierna rota.",
@@ -2678,7 +3201,7 @@
               ]
             },
             {
-              "id": "u08-2.l3.s3.e12",
+              "id": "u08-2.l3.s3.e13",
               "type": "choose_image",
               "prompt": "la pastilla",
               "options": [

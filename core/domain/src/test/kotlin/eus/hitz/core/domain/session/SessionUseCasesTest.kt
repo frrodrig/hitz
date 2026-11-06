@@ -11,6 +11,7 @@ import eus.hitz.core.domain.testing.FakeGamificationRepository
 import eus.hitz.core.domain.testing.FakeProgressRepository
 import eus.hitz.core.domain.testing.TestClock
 import eus.hitz.core.domain.testing.TestContent
+import eus.hitz.core.model.content.Exercise
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
 import kotlin.random.Random
@@ -51,6 +52,19 @@ class SessionUseCasesTest {
         assertThat(session.exercises.map { it.id })
             .containsExactly("u01-1.l2.s1.e01", "u01-1.l2.s2.e01", "u01-1.l1.s1.e01")
             .inOrder()
+    }
+
+    @Test
+    fun `new word cards stay in their lesson and legendary levels have no hints`() = runTest {
+        val lesson = plan("u01-1", "u01-1.l1", "u01-1.l1.s1")
+        assertThat(lesson.exercises.first()).isInstanceOf(Exercise.WordIntro::class.java)
+        assertThat(lesson.glossary).isNotNull()
+
+        val review = plan("u01-1", "u01-1.l4", null, Random(1))
+        val legendary = plan("u01-1", "u01-1.l5", null, Random(1))
+        assertThat(review.exercises.none { it is Exercise.WordIntro }).isTrue()
+        assertThat(legendary.exercises.none { it is Exercise.WordIntro }).isTrue()
+        assertThat(legendary.glossary).isNull()
     }
 
     @Test

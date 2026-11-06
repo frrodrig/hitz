@@ -135,18 +135,31 @@
           "exercises": [
             {
               "id": "u04-1.l1.s1.e01",
+              "type": "word_intro",
+              "word": "etxe",
+              "translation": "casa",
+              "image": "home_house.webp",
+              "vocabulary": [
+                "etxe"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Esta es mi casa."
+                "lang": "eu",
+                "text": "Hau nire etxea da."
               },
               "answers": [
-                "Hau nire etxea da."
+                "Esta es mi casa."
               ],
               "distractors": [
-                "dago",
-                "non",
-                "Logela"
+                "mesa",
+                "Dónde",
+                "grande"
               ],
               "vocabulary": [
                 "hau",
@@ -159,13 +172,31 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Pisu hau txikia da.",
+              "id": "u04-1.l1.s1.e03",
+              "type": "word_intro",
+              "word": "pisu",
+              "translation": "piso",
+              "vocabulary": [
+                "pisu"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Pisu hau txikia da."
+              },
+              "answers": [
+                "Este piso es pequeño."
+              ],
               "distractors": [
-                "atzean",
-                "sukaldean",
-                "Egongela"
+                "casa",
+                "El",
+                "lado"
               ],
               "vocabulary": [
                 "pisu",
@@ -178,7 +209,71 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e03",
+              "id": "u04-1.l1.s1.e05",
+              "type": "word_intro",
+              "word": "logela",
+              "translation": "dormitorio",
+              "image": "room_bedroom.webp",
+              "vocabulary": [
+                "logela"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e06",
+              "type": "word_intro",
+              "word": "sukalde",
+              "translation": "cocina",
+              "image": "room_kitchen.webp",
+              "vocabulary": [
+                "sukalde"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e07",
+              "type": "word_intro",
+              "word": "egongela",
+              "translation": "sala de estar",
+              "image": "room_living_room.webp",
+              "vocabulary": [
+                "egongela"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e08",
+              "type": "word_intro",
+              "word": "bainugela",
+              "translation": "cuarto de baño",
+              "image": "room_bathroom.webp",
+              "vocabulary": [
+                "bainugela"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e09",
+              "type": "word_intro",
+              "word": "komun",
+              "translation": "váter; aseo",
+              "vocabulary": [
+                "komun"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e10",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -219,14 +314,32 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e04",
-              "type": "translate_typing",
+              "id": "u04-1.l1.s1.e11",
+              "type": "word_intro",
+              "word": "mahai",
+              "translation": "mesa",
+              "image": "home_table.webp",
+              "vocabulary": [
+                "mahai"
+              ],
+              "structures": [
+                "rooms"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s1.e12",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "La mesa está en la cocina."
+                "lang": "eu",
+                "text": "Mahaia sukaldean dago."
               },
               "answers": [
-                "Mahaia sukaldean dago."
+                "La mesa está en la cocina."
+              ],
+              "distractors": [
+                "baño",
+                "ahí",
+                "lado"
               ],
               "vocabulary": [
                 "mahai",
@@ -238,7 +351,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e05",
+              "id": "u04-1.l1.s1.e13",
               "type": "fill_blank",
               "sentence": "___ non dago? Hemen, eskuinean.",
               "options": [
@@ -259,7 +372,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e06",
+              "id": "u04-1.l1.s1.e14",
               "type": "order_sentence",
               "answer": "Egongela handia da.",
               "translation": "La sala de estar es grande.",
@@ -273,7 +386,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e07",
+              "id": "u04-1.l1.s1.e15",
               "type": "choose_meaning",
               "text": "Sukaldea egongelaren ondoan dago.",
               "options": [
@@ -293,7 +406,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e08",
+              "id": "u04-1.l1.s1.e16",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -315,7 +428,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e09",
+              "id": "u04-1.l1.s1.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -343,7 +456,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e10",
+              "id": "u04-1.l1.s1.e18",
               "type": "listen_type",
               "text": "Komuna non dago, mesedez?",
               "answers": [
@@ -360,7 +473,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e11",
+              "id": "u04-1.l1.s1.e19",
               "type": "read_true_false",
               "passage": "Nire pisua txikia da, baina oso polita. Sukaldea, egongela eta logela bat ditu.",
               "statement": "El piso es grande.",
@@ -385,7 +498,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e12",
+              "id": "u04-1.l1.s1.e20",
               "type": "speak",
               "text": "Bainugela txikia da, baina polita.",
               "translation": "El cuarto de baño es pequeño, pero bonito.",
@@ -401,7 +514,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e13",
+              "id": "u04-1.l1.s1.e21",
               "type": "choose_image",
               "prompt": "la cocina",
               "options": [
@@ -427,7 +540,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e14",
+              "id": "u04-1.l1.s1.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -455,7 +568,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e15",
+              "id": "u04-1.l1.s1.e23",
               "type": "choose_image",
               "prompt": "el dormitorio",
               "options": [
@@ -481,7 +594,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e16",
+              "id": "u04-1.l1.s1.e24",
               "type": "choose_image",
               "prompt": "la sala de estar",
               "options": [
@@ -507,7 +620,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s1.e17",
+              "id": "u04-1.l1.s1.e25",
               "type": "choose_image",
               "prompt": "el cuarto de baño",
               "options": [
@@ -539,12 +652,31 @@
           "exercises": [
             {
               "id": "u04-1.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Ataria handia eta polita da.",
+              "type": "word_intro",
+              "word": "atari",
+              "translation": "portal",
+              "vocabulary": [
+                "atari"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ataria handia eta polita da."
+              },
+              "answers": [
+                "El portal es grande y bonito."
+              ],
               "distractors": [
-                "etxearen",
-                "azpian",
-                "du"
+                "debajo",
+                "no",
+                "aquí",
+                "casa"
               ],
               "vocabulary": [
                 "atari",
@@ -558,14 +690,33 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u04-1.l1.s2.e03",
+              "type": "word_intro",
+              "word": "igogailu",
+              "translation": "ascensor",
+              "image": "home_elevator.webp",
+              "vocabulary": [
+                "igogailu"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e04",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "El ascensor está al lado del portal."
+                "lang": "eu",
+                "text": "Igogailua atariaren ondoan dago."
               },
               "answers": [
-                "Igogailua atariaren ondoan dago."
+                "El ascensor está al lado del portal."
+              ],
+              "distractors": [
+                "aquí",
+                "sala",
+                "a",
+                "y"
               ],
               "vocabulary": [
                 "igogailu",
@@ -578,7 +729,58 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e03",
+              "id": "u04-1.l1.s2.e05",
+              "type": "word_intro",
+              "word": "solairu",
+              "translation": "planta (de un edificio)",
+              "vocabulary": [
+                "solairu"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e06",
+              "type": "word_intro",
+              "word": "leiho",
+              "translation": "ventana",
+              "image": "home_window.webp",
+              "vocabulary": [
+                "leiho"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e07",
+              "type": "word_intro",
+              "word": "ate",
+              "translation": "puerta",
+              "image": "home_door.webp",
+              "vocabulary": [
+                "ate"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e08",
+              "type": "word_intro",
+              "word": "eskailera",
+              "translation": "escalera",
+              "image": "home_stairs.webp",
+              "vocabulary": [
+                "eskailera"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -619,7 +821,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e04",
+              "id": "u04-1.l1.s2.e10",
               "type": "order_sentence",
               "answer": "Eskailera ezkerrean dago, eta igogailua ere bai.",
               "translation": "La escalera está a la izquierda, y el ascensor también.",
@@ -637,7 +839,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e05",
+              "id": "u04-1.l1.s2.e11",
               "type": "fill_blank",
               "sentence": "Laugarren ___ bizi naiz.",
               "options": [
@@ -657,7 +859,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e06",
+              "id": "u04-1.l1.s2.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -679,7 +881,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e07",
+              "id": "u04-1.l1.s2.e13",
               "type": "choose_meaning",
               "text": "Igogailua ez dago atarian.",
               "options": [
@@ -699,11 +901,32 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e08",
-              "type": "listen_type",
-              "text": "Garajea etxearen azpian dago.",
+              "id": "u04-1.l1.s2.e14",
+              "type": "word_intro",
+              "word": "garaje",
+              "translation": "garaje",
+              "vocabulary": [
+                "garaje"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Garajea etxearen azpian dago."
+              },
               "answers": [
-                "Garajea etxearen azpian dago."
+                "El garaje está debajo de la casa."
+              ],
+              "distractors": [
+                "a",
+                "del",
+                "una",
+                "estar"
               ],
               "vocabulary": [
                 "garaje",
@@ -716,7 +939,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e09",
+              "id": "u04-1.l1.s2.e16",
               "type": "complete_chat",
               "messages": [
                 {
@@ -743,10 +966,34 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e10",
-              "type": "speak",
-              "text": "Terraza egongelaren ondoan dago.",
-              "translation": "La terraza está al lado de la sala de estar.",
+              "id": "u04-1.l1.s2.e17",
+              "type": "word_intro",
+              "word": "terraza",
+              "translation": "terraza",
+              "vocabulary": [
+                "terraza"
+              ],
+              "structures": [
+                "house-parts"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s2.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Terraza egongelaren ondoan dago."
+              },
+              "answers": [
+                "La terraza está al lado de la sala de estar.",
+                "La terraza está al lado del salón."
+              ],
+              "distractors": [
+                "tercer",
+                "portal",
+                "Vivo",
+                "también"
+              ],
               "vocabulary": [
                 "terraza",
                 "egongela",
@@ -758,7 +1005,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e11",
+              "id": "u04-1.l1.s2.e19",
               "type": "read_true_false",
               "passage": "Gure etxeak ez du igogailurik. Eskailera bakarrik dago.",
               "statement": "La casa tiene ascensor.",
@@ -777,7 +1024,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e12",
+              "id": "u04-1.l1.s2.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -805,7 +1052,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e13",
+              "id": "u04-1.l1.s2.e21",
               "type": "choose_image",
               "prompt": "el ascensor",
               "options": [
@@ -831,7 +1078,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e14",
+              "id": "u04-1.l1.s2.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -857,7 +1104,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e15",
+              "id": "u04-1.l1.s2.e23",
               "type": "choose_image",
               "prompt": "la ventana",
               "options": [
@@ -883,7 +1130,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e16",
+              "id": "u04-1.l1.s2.e24",
               "type": "choose_image",
               "prompt": "la puerta",
               "options": [
@@ -909,7 +1156,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s2.e17",
+              "id": "u04-1.l1.s2.e25",
               "type": "choose_image",
               "prompt": "la escalera",
               "options": [
@@ -941,13 +1188,30 @@
           "exercises": [
             {
               "id": "u04-1.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "berri",
+              "translation": "nuevo",
+              "vocabulary": [
+                "berri"
+              ],
+              "structures": [
+                "describing-home"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s3.e02",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Nuestra casa es nueva."
+                "lang": "eu",
+                "text": "Gure etxea berria da."
               },
               "answers": [
-                "Gure etxea berria da."
+                "Nuestra casa es nueva."
+              ],
+              "distractors": [
+                "sala",
+                "baño",
+                "de"
               ],
               "vocabulary": [
                 "gu",
@@ -960,10 +1224,34 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e02",
-              "type": "order_sentence",
-              "answer": "Egongela oso argitsua da.",
-              "translation": "La sala de estar es muy luminosa.",
+              "id": "u04-1.l1.s3.e03",
+              "type": "word_intro",
+              "word": "argitsu",
+              "translation": "luminoso",
+              "vocabulary": [
+                "argitsu"
+              ],
+              "structures": [
+                "describing-home"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Egongela oso argitsua da."
+              },
+              "answers": [
+                "La sala de estar es muy luminosa.",
+                "El salón es muy luminoso."
+              ],
+              "distractors": [
+                "amplia",
+                "Tu",
+                "y",
+                "soleado"
+              ],
               "vocabulary": [
                 "egongela",
                 "oso",
@@ -975,7 +1263,43 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e03",
+              "id": "u04-1.l1.s3.e05",
+              "type": "word_intro",
+              "word": "ilun",
+              "translation": "oscuro",
+              "vocabulary": [
+                "ilun"
+              ],
+              "structures": [
+                "describing-home"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s3.e06",
+              "type": "word_intro",
+              "word": "eguzkitsu",
+              "translation": "soleado",
+              "vocabulary": [
+                "eguzkitsu"
+              ],
+              "structures": [
+                "describing-home"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s3.e07",
+              "type": "word_intro",
+              "word": "zabal",
+              "translation": "amplio; ancho",
+              "vocabulary": [
+                "zabal"
+              ],
+              "structures": [
+                "describing-home"
+              ]
+            },
+            {
+              "id": "u04-1.l1.s3.e08",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1011,7 +1335,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e04",
+              "id": "u04-1.l1.s3.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1031,7 +1355,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e05",
+              "id": "u04-1.l1.s3.e10",
               "type": "fill_blank",
               "sentence": "Leiho asko ditu, oso ___ da.",
               "options": [
@@ -1053,11 +1377,18 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e06",
-              "type": "listen_type",
-              "text": "Terraza eguzkitsua da.",
+              "id": "u04-1.l1.s3.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La terraza es soleada."
+              },
               "answers": [
                 "Terraza eguzkitsua da."
+              ],
+              "distractors": [
+                "Bainugela",
+                "eta"
               ],
               "vocabulary": [
                 "terraza",
@@ -1069,7 +1400,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e07",
+              "id": "u04-1.l1.s3.e12",
               "type": "choose_meaning",
               "text": "Pisua iluna da.",
               "options": [
@@ -1088,10 +1419,13 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e08",
-              "type": "speak",
+              "id": "u04-1.l1.s3.e13",
+              "type": "listen_tap",
               "text": "Sukaldea zabala da.",
-              "translation": "La cocina es amplia.",
+              "distractors": [
+                "eguzkitsua",
+                "iluna"
+              ],
               "vocabulary": [
                 "sukalde",
                 "zabal",
@@ -1102,7 +1436,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e09",
+              "id": "u04-1.l1.s3.e14",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1132,7 +1466,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e10",
+              "id": "u04-1.l1.s3.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1159,7 +1493,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e11",
+              "id": "u04-1.l1.s3.e16",
               "type": "read_true_false",
               "passage": "Ikerren etxea zaharra eta iluna da.",
               "statement": "La casa de Iker es vieja.",
@@ -1176,7 +1510,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e12",
+              "id": "u04-1.l1.s3.e17",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1202,7 +1536,7 @@
               ]
             },
             {
-              "id": "u04-1.l1.s3.e13",
+              "id": "u04-1.l1.s3.e18",
               "type": "listen_tap",
               "text": "Zure logela eguzkitsua da?",
               "distractors": [
@@ -1237,9 +1571,32 @@
           "exercises": [
             {
               "id": "u04-1.l2.s1.e01",
-              "type": "order_sentence",
-              "answer": "Nik pisu bat daukat Bilbon.",
-              "translation": "Tengo un piso en Bilbao.",
+              "type": "word_intro",
+              "word": "daukat",
+              "translation": "tengo",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "eduki-present"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nik pisu bat daukat Bilbon."
+              },
+              "answers": [
+                "Tengo un piso en Bilbao.",
+                "Yo tengo un piso en Bilbao."
+              ],
+              "distractors": [
+                "Lekeitio",
+                "mesa",
+                "grande"
+              ],
               "vocabulary": [
                 "ni",
                 "pisu",
@@ -1251,8 +1608,20 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e02",
-              "type": "translate_typing",
+              "id": "u04-1.l2.s1.e03",
+              "type": "word_intro",
+              "word": "daukazu",
+              "translation": "tienes",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "eduki-present"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s1.e04",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Zuk etxe bat daukazu?"
@@ -1261,6 +1630,10 @@
                 "¿Tienes una casa?",
                 "¿Tú tienes una casa?",
                 "¿Tiene usted una casa?"
+              ],
+              "distractors": [
+                "un",
+                "terraza"
               ],
               "vocabulary": [
                 "zu",
@@ -1273,7 +1646,19 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e03",
+              "id": "u04-1.l2.s1.e05",
+              "type": "word_intro",
+              "word": "daukagu",
+              "translation": "tenemos",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "eduki-present"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s1.e06",
               "type": "fill_blank",
               "sentence": "Guk pisu bat ___.",
               "options": [
@@ -1293,11 +1678,31 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e04",
-              "type": "listen_type",
-              "text": "Anek terraza handi bat dauka.",
+              "id": "u04-1.l2.s1.e07",
+              "type": "word_intro",
+              "word": "dauka",
+              "translation": "tiene",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "eduki-present"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Anek terraza handi bat dauka."
+              },
               "answers": [
-                "Anek terraza handi bat dauka."
+                "Ane tiene una terraza grande."
+              ],
+              "distractors": [
+                "Tenemos",
+                "La",
+                "No"
               ],
               "vocabulary": [
                 "terraza",
@@ -1310,7 +1715,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e05",
+              "id": "u04-1.l2.s1.e09",
               "type": "fill_blank",
               "sentence": "Mikelek etxe bat ___.",
               "options": [
@@ -1329,10 +1734,14 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e06",
-              "type": "speak",
+              "id": "u04-1.l2.s1.e10",
+              "type": "listen_tap",
               "text": "Guk garaje bat daukagu.",
-              "translation": "Tenemos un garaje.",
+              "distractors": [
+                "Nik",
+                "Zuk",
+                "Nire"
+              ],
               "vocabulary": [
                 "gu",
                 "garaje",
@@ -1344,7 +1753,19 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e07",
+              "id": "u04-1.l2.s1.e11",
+              "type": "word_intro",
+              "word": "daukate",
+              "translation": "tienen",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "eduki-present"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s1.e12",
               "type": "choose_meaning",
               "text": "Haiek pisu bat daukate Gasteizen.",
               "options": [
@@ -1364,7 +1785,19 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e08",
+              "id": "u04-1.l2.s1.e13",
+              "type": "word_intro",
+              "word": "daukazue",
+              "translation": "tenéis",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "eduki-present"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1391,7 +1824,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e09",
+              "id": "u04-1.l2.s1.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1415,7 +1848,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e10",
+              "id": "u04-1.l2.s1.e16",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1442,7 +1875,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e11",
+              "id": "u04-1.l2.s1.e17",
               "type": "read_true_false",
               "passage": "Unai eta Leire Getxon bizi dira. Pisu txiki bat daukate.",
               "statement": "Unai y Leire tienen un piso grande.",
@@ -1461,7 +1894,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e12",
+              "id": "u04-1.l2.s1.e18",
               "type": "listen_tap",
               "text": "Sukaldeak mahai handi bat dauka.",
               "distractors": [
@@ -1481,7 +1914,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s1.e13",
+              "id": "u04-1.l2.s1.e19",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1508,7 +1941,20 @@
           "exercises": [
             {
               "id": "u04-1.l2.s2.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "dauzka",
+              "translation": "tiene (varias cosas)",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "eduki-plural",
+                "ukan-plural"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s2.e02",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Etxeak hiru logela dauzka."
@@ -1516,6 +1962,11 @@
               "answers": [
                 "La casa tiene tres dormitorios.",
                 "La casa tiene tres habitaciones."
+              ],
+              "distractors": [
+                "El",
+                "cuartos",
+                "tienen"
               ],
               "vocabulary": [
                 "etxe",
@@ -1529,7 +1980,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e02",
+              "id": "u04-1.l2.s2.e03",
               "type": "listen_type",
               "text": "Pisuak bi bainugela ditu.",
               "answers": [
@@ -1547,7 +1998,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e03",
+              "id": "u04-1.l2.s2.e04",
               "type": "fill_blank",
               "sentence": "Etxeak hiru logela ___.",
               "options": [
@@ -1568,10 +2019,33 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e04",
-              "type": "speak",
-              "text": "Guk bi garaje ditugu.",
-              "translation": "Tenemos dos garajes.",
+              "id": "u04-1.l2.s2.e05",
+              "type": "word_intro",
+              "word": "ditugu",
+              "translation": "tenemos (varias cosas)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "eduki-plural",
+                "ukan-plural"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Guk bi garaje ditugu."
+              },
+              "answers": [
+                "Tenemos dos garajes.",
+                "Nosotros tenemos dos garajes."
+              ],
+              "distractors": [
+                "La",
+                "cuartos"
+              ],
               "vocabulary": [
                 "gu",
                 "bi",
@@ -1584,7 +2058,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e05",
+              "id": "u04-1.l2.s2.e07",
               "type": "fill_blank",
               "sentence": "Guk bi garaje ___.",
               "options": [
@@ -1605,7 +2079,20 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e06",
+              "id": "u04-1.l2.s2.e08",
+              "type": "word_intro",
+              "word": "dituzue",
+              "translation": "tenéis (varias cosas)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "eduki-plural",
+                "ukan-plural"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s2.e09",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1631,7 +2118,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e07",
+              "id": "u04-1.l2.s2.e10",
               "type": "choose_meaning",
               "text": "Etxeak bost leiho ditu.",
               "options": [
@@ -1652,20 +2139,33 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e08",
+              "id": "u04-1.l2.s2.e11",
+              "type": "word_intro",
+              "word": "dituzte",
+              "translation": "tienen (varias cosas)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "eduki-plural",
+                "ukan-plural"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s2.e12",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Ellos tienen dos casas."
+                "lang": "eu",
+                "text": "Haiek bi etxe dituzte."
               },
               "answers": [
-                "Haiek bi etxe dituzte.",
-                "Bi etxe dituzte."
+                "Ellos tienen dos casas.",
+                "Tienen dos casas."
               ],
               "distractors": [
-                "Zuek",
-                "Egongelak",
-                "leiho"
+                "ventanas",
+                "de",
+                "mesas"
               ],
               "vocabulary": [
                 "haiek",
@@ -1679,7 +2179,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e09",
+              "id": "u04-1.l2.s2.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1707,7 +2207,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e10",
+              "id": "u04-1.l2.s2.e14",
               "type": "listen_tap",
               "text": "Egongelak lau leiho dauzka.",
               "distractors": [
@@ -1727,7 +2227,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e11",
+              "id": "u04-1.l2.s2.e15",
               "type": "read_true_false",
               "passage": "Gure pisuak lau logela eta bi bainugela ditu.",
               "statement": "El piso tiene dos cuartos de baño.",
@@ -1748,7 +2248,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e12",
+              "id": "u04-1.l2.s2.e16",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1769,7 +2269,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s2.e13",
+              "id": "u04-1.l2.s2.e17",
               "type": "order_sentence",
               "answer": "Zure pisuak zenbat logela dauzka?",
               "translation": "¿Cuántos dormitorios tiene tu piso?",
@@ -1792,10 +2292,28 @@
           "exercises": [
             {
               "id": "u04-1.l2.s3.e01",
-              "type": "listen_type",
-              "text": "Zer behar duzu?",
+              "type": "word_intro",
+              "word": "behar",
+              "translation": "necesitar (behar dut: necesito)",
+              "structures": [
+                "behar",
+                "numbers-100"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer behar duzu?"
+              },
               "answers": [
-                "Zer behar duzu?"
+                "¿Qué necesitas?",
+                "¿Qué necesita usted?"
+              ],
+              "distractors": [
+                "dormitorio",
+                "una"
               ],
               "vocabulary": [
                 "zer",
@@ -1807,10 +2325,14 @@
               ]
             },
             {
-              "id": "u04-1.l2.s3.e02",
-              "type": "speak",
+              "id": "u04-1.l2.s3.e03",
+              "type": "listen_tap",
               "text": "Logela bat behar dut.",
-              "translation": "Necesito un dormitorio.",
+              "distractors": [
+                "garaje",
+                "terrazarik",
+                "du"
+              ],
               "vocabulary": [
                 "logela",
                 "bat",
@@ -1822,7 +2344,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s3.e03",
+              "id": "u04-1.l2.s3.e04",
               "type": "fill_blank",
               "sentence": "Mahai bat ___ dut.",
               "options": [
@@ -1842,7 +2364,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s3.e04",
+              "id": "u04-1.l2.s3.e05",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1866,7 +2388,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s3.e05",
+              "id": "u04-1.l2.s3.e06",
               "type": "choose_meaning",
               "text": "Zer behar dute?",
               "options": [
@@ -1885,7 +2407,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s3.e06",
+              "id": "u04-1.l2.s3.e07",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1910,7 +2432,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s3.e07",
+              "id": "u04-1.l2.s3.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1937,13 +2459,46 @@
               ]
             },
             {
-              "id": "u04-1.l2.s3.e08",
-              "type": "listen_tap",
-              "text": "Herri honek mila urte ditu.",
+              "id": "u04-1.l2.s3.e09",
+              "type": "word_intro",
+              "word": "honek",
+              "translation": "este / esta (sujeto)",
+              "vocabulary": [
+                "hau"
+              ],
+              "structures": [
+                "behar",
+                "numbers-100"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s3.e10",
+              "type": "word_intro",
+              "word": "mila",
+              "translation": "mil",
+              "vocabulary": [
+                "mila"
+              ],
+              "structures": [
+                "behar",
+                "numbers-100"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s3.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Herri honek mila urte ditu."
+              },
+              "answers": [
+                "Este pueblo tiene mil años.",
+                "Este pueblo tiene 1000 años."
+              ],
               "distractors": [
-                "eta",
-                "berrehun",
-                "behar"
+                "necesita",
+                "doscientos",
+                "dormitorio"
               ],
               "vocabulary": [
                 "herri",
@@ -1958,7 +2513,20 @@
               ]
             },
             {
-              "id": "u04-1.l2.s3.e09",
+              "id": "u04-1.l2.s3.e12",
+              "type": "word_intro",
+              "word": "berrehun",
+              "translation": "doscientos",
+              "vocabulary": [
+                "berrehun"
+              ],
+              "structures": [
+                "behar",
+                "numbers-100"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s3.e13",
               "type": "read_true_false",
               "passage": "Eliza hau oso zaharra da. Mila eta berrehun urte ditu.",
               "statement": "La iglesia tiene más de mil años.",
@@ -1981,14 +2549,19 @@
               ]
             },
             {
-              "id": "u04-1.l2.s3.e10",
-              "type": "translate_typing",
+              "id": "u04-1.l2.s3.e14",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "Esta casa tiene doscientos años."
               },
               "answers": [
                 "Etxe honek berrehun urte ditu."
+              ],
+              "distractors": [
+                "Logela",
+                "mila",
+                "garaje"
               ],
               "vocabulary": [
                 "etxe",
@@ -2003,10 +2576,48 @@
               ]
             },
             {
-              "id": "u04-1.l2.s3.e11",
-              "type": "order_sentence",
-              "answer": "Atariak ehun eta hogei urte ditu.",
-              "translation": "El portal tiene ciento veinte años.",
+              "id": "u04-1.l2.s3.e15",
+              "type": "word_intro",
+              "word": "ehun",
+              "translation": "cien",
+              "vocabulary": [
+                "ehun"
+              ],
+              "structures": [
+                "behar",
+                "numbers-100"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s3.e16",
+              "type": "word_intro",
+              "word": "hogei",
+              "translation": "veinte",
+              "vocabulary": [
+                "hogei"
+              ],
+              "structures": [
+                "behar",
+                "numbers-100"
+              ]
+            },
+            {
+              "id": "u04-1.l2.s3.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Atariak ehun eta hogei urte ditu."
+              },
+              "answers": [
+                "El portal tiene ciento veinte años.",
+                "El portal tiene 120 años."
+              ],
+              "distractors": [
+                "mil",
+                "garaje",
+                "terraza",
+                "Esta"
+              ],
               "vocabulary": [
                 "atari",
                 "ehun",
@@ -2021,7 +2632,7 @@
               ]
             },
             {
-              "id": "u04-1.l2.s3.e12",
+              "id": "u04-1.l2.s3.e18",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",

@@ -127,18 +127,33 @@
           "exercises": [
             {
               "id": "u11-1.l1.s1.e01",
+              "type": "word_intro",
+              "word": "lanbide",
+              "translation": "profesión",
+              "vocabulary": [
+                "lanbide"
+              ],
+              "structures": [
+                "lanbideak",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s1.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Cuál es tu profesión?"
+                "lang": "eu",
+                "text": "Zer da zure lanbidea?"
               },
               "answers": [
-                "Zer da zure lanbidea?"
+                "¿Cuál es tu profesión?",
+                "¿Cuál es su profesión?",
+                "¿Qué profesión tienes?"
               ],
               "distractors": [
-                "Ni",
+                "trabajadores",
                 "Aitor",
-                "naiz"
+                "Soy"
               ],
               "vocabulary": [
                 "zer",
@@ -152,12 +167,35 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Ni gidaria naiz.",
+              "id": "u11-1.l1.s1.e03",
+              "type": "word_intro",
+              "word": "gidari",
+              "translation": "conductor; conductora",
+              "image": "job_driver.webp",
+              "vocabulary": [
+                "gidari"
+              ],
+              "structures": [
+                "lanbideak",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ni gidaria naiz."
+              },
+              "answers": [
+                "Soy conductor.",
+                "Soy conductora.",
+                "Yo soy conductor.",
+                "Yo soy conductora."
+              ],
               "distractors": [
-                "Aitor",
-                "Mikel"
+                "Tu",
+                "mis"
               ],
               "vocabulary": [
                 "ni",
@@ -170,7 +208,59 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e03",
+              "id": "u11-1.l1.s1.e05",
+              "type": "word_intro",
+              "word": "lan",
+              "translation": "trabajo",
+              "vocabulary": [
+                "lan"
+              ],
+              "structures": [
+                "lanbideak",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s1.e06",
+              "type": "word_intro",
+              "word": "idazkari",
+              "translation": "secretario; secretaria",
+              "vocabulary": [
+                "idazkari"
+              ],
+              "structures": [
+                "lanbideak",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s1.e07",
+              "type": "word_intro",
+              "word": "nagusi",
+              "translation": "jefe; jefa",
+              "vocabulary": [
+                "nagusi"
+              ],
+              "structures": [
+                "lanbideak",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s1.e08",
+              "type": "word_intro",
+              "word": "lankide",
+              "translation": "compañero de trabajo",
+              "vocabulary": [
+                "lankide"
+              ],
+              "structures": [
+                "lanbideak",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s1.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -212,15 +302,10 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e04",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "Ane es secretaria."
-              },
-              "answers": [
-                "Ane idazkaria da."
-              ],
+              "id": "u11-1.l1.s1.e10",
+              "type": "order_sentence",
+              "answer": "Ane idazkaria da.",
+              "translation": "Ane es secretaria.",
               "vocabulary": [
                 "idazkari",
                 "izan"
@@ -231,7 +316,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e05",
+              "id": "u11-1.l1.s1.e11",
               "type": "fill_blank",
               "sentence": "Mikel nire ___ da.",
               "options": [
@@ -252,7 +337,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e06",
+              "id": "u11-1.l1.s1.e12",
               "type": "order_sentence",
               "answer": "Mikel nire nagusia da.",
               "translation": "Mikel es mi jefe.",
@@ -267,7 +352,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e07",
+              "id": "u11-1.l1.s1.e13",
               "type": "choose_meaning",
               "text": "Zer da zure lanbidea?",
               "options": [
@@ -288,7 +373,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e08",
+              "id": "u11-1.l1.s1.e14",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -310,7 +395,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e09",
+              "id": "u11-1.l1.s1.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -339,11 +424,19 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e10",
-              "type": "listen_type",
-              "text": "Zure lana interesgarria da?",
+              "id": "u11-1.l1.s1.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Tu trabajo es interesante?"
+              },
               "answers": [
                 "Zure lana interesgarria da?"
+              ],
+              "distractors": [
+                "lanbidea",
+                "nagusia",
+                "oso"
               ],
               "vocabulary": [
                 "zu",
@@ -357,7 +450,20 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e11",
+              "id": "u11-1.l1.s1.e17",
+              "type": "word_intro",
+              "word": "gidatzen",
+              "translation": "conduciendo (gidatu)",
+              "vocabulary": [
+                "gidatu"
+              ],
+              "structures": [
+                "lanbideak",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s1.e18",
               "type": "read_true_false",
               "passage": "Kaixo! Ni Jon naiz. Autobus gidaria naiz. Egunero autobusa gidatzen dut.",
               "statement": "Jon es conductor de autobús.",
@@ -378,7 +484,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e12",
+              "id": "u11-1.l1.s1.e19",
               "type": "speak",
               "text": "Aitor autobus gidaria da.",
               "translation": "Aitor es conductor de autobús.",
@@ -393,7 +499,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e13",
+              "id": "u11-1.l1.s1.e20",
               "type": "choose_image",
               "prompt": "el conductor",
               "options": [
@@ -420,7 +526,20 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e14",
+              "id": "u11-1.l1.s1.e21",
+              "type": "word_intro",
+              "word": "langile",
+              "translation": "trabajador; trabajadora",
+              "vocabulary": [
+                "langile"
+              ],
+              "structures": [
+                "lanbideak",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s1.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -447,7 +566,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s1.e15",
+              "id": "u11-1.l1.s1.e23",
               "type": "choose_image",
               "prompt": "el conductor",
               "options": [
@@ -480,13 +599,32 @@
           "exercises": [
             {
               "id": "u11-1.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Nik bulego batean lan egiten dut.",
+              "type": "word_intro",
+              "word": "bulego",
+              "translation": "oficina",
+              "image": "place_office.webp",
+              "vocabulary": [
+                "bulego"
+              ],
+              "structures": [
+                "lantokiak"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nik bulego batean lan egiten dut."
+              },
+              "answers": [
+                "Trabajo en una oficina.",
+                "Yo trabajo en una oficina."
+              ],
               "distractors": [
-                "ditu",
-                "Bulegoan",
-                "euskara",
-                "Lantegiak"
+                "están",
+                "es",
+                "usamos"
               ],
               "vocabulary": [
                 "ni",
@@ -501,14 +639,32 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u11-1.l1.s2.e03",
+              "type": "word_intro",
+              "word": "lantegi",
+              "translation": "fábrica; taller",
+              "image": "place_factory.webp",
+              "vocabulary": [
+                "lantegi"
+              ],
+              "structures": [
+                "lantokiak"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s2.e04",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Jon trabaja en una fábrica."
+                "lang": "eu",
+                "text": "Jonek lantegi batean lan egiten du."
               },
               "answers": [
-                "Jonek lantegi batean lan egiten du."
+                "Jon trabaja en una fábrica."
+              ],
+              "distractors": [
+                "oficina",
+                "Nuestra",
+                "y"
               ],
               "vocabulary": [
                 "lantegi",
@@ -522,7 +678,19 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e03",
+              "id": "u11-1.l1.s2.e05",
+              "type": "word_intro",
+              "word": "enpresa",
+              "translation": "empresa",
+              "vocabulary": [
+                "enpresa"
+              ],
+              "structures": [
+                "lantokiak"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s2.e06",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -558,7 +726,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e04",
+              "id": "u11-1.l1.s2.e07",
               "type": "order_sentence",
               "answer": "Gure enpresa Bilbon dago.",
               "translation": "Nuestra empresa está en Bilbao.",
@@ -572,7 +740,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e05",
+              "id": "u11-1.l1.s2.e08",
               "type": "fill_blank",
               "sentence": "Jonek lantegi batean lan egiten ___.",
               "options": [
@@ -594,8 +762,20 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e06",
-              "type": "translate_typing",
+              "id": "u11-1.l1.s2.e09",
+              "type": "word_intro",
+              "word": "hizkuntza",
+              "translation": "idioma",
+              "vocabulary": [
+                "hizkuntza"
+              ],
+              "structures": [
+                "lantokiak"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s2.e10",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Bulegoan bi hizkuntza erabiltzen ditugu, euskara eta gaztelania."
@@ -603,6 +783,12 @@
               "answers": [
                 "En la oficina usamos dos idiomas, euskera y castellano.",
                 "En la oficina usamos dos lenguas, euskera y castellano."
+              ],
+              "distractors": [
+                "una",
+                "compañeros",
+                "Bilbao",
+                "Nuestra"
               ],
               "vocabulary": [
                 "bulego",
@@ -619,7 +805,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e07",
+              "id": "u11-1.l1.s2.e11",
               "type": "choose_meaning",
               "text": "Lantegiak ehun langile ditu.",
               "options": [
@@ -639,7 +825,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e08",
+              "id": "u11-1.l1.s2.e12",
               "type": "listen_type",
               "text": "Lantegiak ehun langile ditu.",
               "answers": [
@@ -656,7 +842,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e09",
+              "id": "u11-1.l1.s2.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -683,7 +869,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e10",
+              "id": "u11-1.l1.s2.e14",
               "type": "speak",
               "text": "Zure enpresa handia da?",
               "translation": "¿Tu empresa es grande?",
@@ -698,7 +884,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e11",
+              "id": "u11-1.l1.s2.e15",
               "type": "read_true_false",
               "passage": "Ni Leire naiz. Gasteizko lantegi batean lan egiten dut.",
               "statement": "Leire trabaja en una oficina.",
@@ -717,7 +903,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e12",
+              "id": "u11-1.l1.s2.e16",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -744,7 +930,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e13",
+              "id": "u11-1.l1.s2.e17",
               "type": "choose_image",
               "prompt": "la oficina",
               "options": [
@@ -770,7 +956,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e14",
+              "id": "u11-1.l1.s2.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -795,7 +981,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s2.e15",
+              "id": "u11-1.l1.s2.e19",
               "type": "choose_image",
               "prompt": "la fábrica",
               "options": [
@@ -827,13 +1013,31 @@
           "exercises": [
             {
               "id": "u11-1.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "ordutegi",
+              "translation": "horario",
+              "vocabulary": [
+                "ordutegi"
+              ],
+              "structures": [
+                "lan-baldintzak"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s3.e02",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Cuál es tu horario?"
+                "lang": "eu",
+                "text": "Zein da zure ordutegia?"
               },
               "answers": [
-                "Zein da zure ordutegia?"
+                "¿Cuál es tu horario?",
+                "¿Cuál es su horario?"
+              ],
+              "distractors": [
+                "no",
+                "mes",
+                "jornada"
               ],
               "vocabulary": [
                 "zein",
@@ -846,7 +1050,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e02",
+              "id": "u11-1.l1.s3.e03",
               "type": "order_sentence",
               "answer": "Zortzietatik hiruetara lan egiten dut.",
               "translation": "Trabajo de ocho a tres.",
@@ -862,7 +1066,55 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e03",
+              "id": "u11-1.l1.s3.e04",
+              "type": "word_intro",
+              "word": "soldata",
+              "translation": "sueldo",
+              "vocabulary": [
+                "soldata"
+              ],
+              "structures": [
+                "lan-baldintzak"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s3.e05",
+              "type": "word_intro",
+              "word": "kontratu",
+              "translation": "contrato",
+              "vocabulary": [
+                "kontratu"
+              ],
+              "structures": [
+                "lan-baldintzak"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s3.e06",
+              "type": "word_intro",
+              "word": "lanaldi",
+              "translation": "jornada",
+              "vocabulary": [
+                "lanaldi"
+              ],
+              "structures": [
+                "lan-baldintzak"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s3.e07",
+              "type": "word_intro",
+              "word": "iragarki",
+              "translation": "anuncio",
+              "vocabulary": [
+                "iragarki"
+              ],
+              "structures": [
+                "lan-baldintzak"
+              ]
+            },
+            {
+              "id": "u11-1.l1.s3.e08",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -898,7 +1150,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e04",
+              "id": "u11-1.l1.s3.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -920,7 +1172,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e05",
+              "id": "u11-1.l1.s3.e10",
               "type": "fill_blank",
               "sentence": "Kontratua sei ___ da.",
               "options": [
@@ -941,7 +1193,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e06",
+              "id": "u11-1.l1.s3.e11",
               "type": "listen_type",
               "text": "Soldata 1500 euro da hilabetean.",
               "answers": [
@@ -958,7 +1210,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e07",
+              "id": "u11-1.l1.s3.e12",
               "type": "choose_meaning",
               "text": "Kontratua sei hilabeterako da.",
               "options": [
@@ -978,7 +1230,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e08",
+              "id": "u11-1.l1.s3.e13",
               "type": "speak",
               "text": "Kontratua sei hilabeterako da.",
               "translation": "El contrato es para seis meses.",
@@ -993,7 +1245,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e09",
+              "id": "u11-1.l1.s3.e14",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1019,7 +1271,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e10",
+              "id": "u11-1.l1.s3.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1043,7 +1295,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e11",
+              "id": "u11-1.l1.s3.e16",
               "type": "read_true_false",
               "passage": "Idazkari bat behar dugu. Lanaldi osoa. Kontratua urte baterako da.",
               "statement": "El trabajo es a media jornada.",
@@ -1064,7 +1316,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e12",
+              "id": "u11-1.l1.s3.e17",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1089,7 +1341,7 @@
               ]
             },
             {
-              "id": "u11-1.l1.s3.e13",
+              "id": "u11-1.l1.s3.e18",
               "type": "listen_tap",
               "text": "Ordutegia goizekoa da.",
               "distractors": [
@@ -1141,7 +1393,19 @@
             },
             {
               "id": "u11-1.l2.s1.e02",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "dakizu",
+              "translation": "sabes",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s1.e03",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Zein hizkuntza dakizu?"
@@ -1150,6 +1414,10 @@
                 "¿Qué idioma sabes?",
                 "¿Qué idioma sabe usted?",
                 "¿Qué idiomas sabes?"
+              ],
+              "distractors": [
+                "sé",
+                "lo"
               ],
               "vocabulary": [
                 "zein",
@@ -1161,7 +1429,55 @@
               ]
             },
             {
-              "id": "u11-1.l2.s1.e03",
+              "id": "u11-1.l2.s1.e04",
+              "type": "word_intro",
+              "word": "dakit",
+              "translation": "sé",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s1.e05",
+              "type": "word_intro",
+              "word": "daki",
+              "translation": "sabe",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s1.e06",
+              "type": "word_intro",
+              "word": "dakigu",
+              "translation": "sabemos",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s1.e07",
+              "type": "word_intro",
+              "word": "dakite",
+              "translation": "saben",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s1.e08",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1193,11 +1509,18 @@
               ]
             },
             {
-              "id": "u11-1.l2.s1.e04",
-              "type": "listen_type",
-              "text": "Jonek ez daki.",
+              "id": "u11-1.l2.s1.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Jon no lo sabe."
+              },
               "answers": [
                 "Jonek ez daki."
+              ],
+              "distractors": [
+                "Haiek",
+                "nagusiaren"
               ],
               "vocabulary": [
                 "ez",
@@ -1208,7 +1531,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s1.e05",
+              "id": "u11-1.l2.s1.e10",
               "type": "fill_blank",
               "sentence": "Nik ez ___.",
               "options": [
@@ -1227,10 +1550,33 @@
               ]
             },
             {
-              "id": "u11-1.l2.s1.e06",
-              "type": "speak",
-              "text": "Guk badakigu.",
-              "translation": "Nosotros lo sabemos.",
+              "id": "u11-1.l2.s1.e11",
+              "type": "word_intro",
+              "word": "badakigu",
+              "translation": "sí sabemos",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s1.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Guk badakigu."
+              },
+              "answers": [
+                "Nosotros lo sabemos.",
+                "Nosotras lo sabemos.",
+                "Lo sabemos."
+              ],
+              "distractors": [
+                "El",
+                "jefe"
+              ],
               "vocabulary": [
                 "gu",
                 "jakin"
@@ -1240,7 +1586,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s1.e07",
+              "id": "u11-1.l2.s1.e13",
               "type": "choose_meaning",
               "text": "Lankideek ez dakite.",
               "options": [
@@ -1259,7 +1605,19 @@
               ]
             },
             {
-              "id": "u11-1.l2.s1.e08",
+              "id": "u11-1.l2.s1.e14",
+              "type": "word_intro",
+              "word": "ingeles",
+              "translation": "inglés",
+              "vocabulary": [
+                "ingeles"
+              ],
+              "structures": [
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s1.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1286,7 +1644,19 @@
               ]
             },
             {
-              "id": "u11-1.l2.s1.e09",
+              "id": "u11-1.l2.s1.e16",
+              "type": "word_intro",
+              "word": "badakizu",
+              "translation": "¿sabes? / sí sabes",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s1.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1311,7 +1681,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s1.e10",
+              "id": "u11-1.l2.s1.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1334,7 +1704,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s1.e11",
+              "id": "u11-1.l2.s1.e19",
               "type": "read_true_false",
               "passage": "Nik ez dakit Gorkaren telefono zenbakia. Nerea, zuk badakizu?",
               "statement": "La persona que habla sabe el número de Gorka.",
@@ -1352,7 +1722,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s1.e12",
+              "id": "u11-1.l2.s1.e20",
               "type": "listen_tap",
               "text": "Badakizu Mikelen helbidea?",
               "distractors": [
@@ -1368,7 +1738,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s1.e13",
+              "id": "u11-1.l2.s1.e21",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1414,10 +1784,30 @@
             },
             {
               "id": "u11-1.l2.s2.e02",
-              "type": "listen_type",
-              "text": "Bai, gidatzen badakit.",
+              "type": "word_intro",
+              "word": "badakit",
+              "translation": "sí sé",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "jakin-tzen"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bai, gidatzen badakit."
+              },
               "answers": [
-                "Bai, gidatzen badakit."
+                "Sí, sé conducir.",
+                "Sí, yo sé conducir."
+              ],
+              "distractors": [
+                "Nuestros",
+                "muy"
               ],
               "vocabulary": [
                 "bai",
@@ -1429,7 +1819,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s2.e03",
+              "id": "u11-1.l2.s2.e04",
               "type": "fill_blank",
               "sentence": "Badakizu ___?",
               "options": [
@@ -1448,7 +1838,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s2.e04",
+              "id": "u11-1.l2.s2.e05",
               "type": "speak",
               "text": "Ez dakit igeri egiten.",
               "translation": "No sé nadar.",
@@ -1462,7 +1852,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s2.e05",
+              "id": "u11-1.l2.s2.e06",
               "type": "fill_blank",
               "sentence": "Nik ez ___ gidatzen.",
               "options": [
@@ -1482,7 +1872,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s2.e06",
+              "id": "u11-1.l2.s2.e07",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1506,7 +1896,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s2.e07",
+              "id": "u11-1.l2.s2.e08",
               "type": "choose_meaning",
               "text": "Amonak ez daki idazten.",
               "options": [
@@ -1526,19 +1916,32 @@
               ]
             },
             {
-              "id": "u11-1.l2.s2.e08",
+              "id": "u11-1.l2.s2.e09",
+              "type": "word_intro",
+              "word": "badakite",
+              "translation": "sí saben",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "jakin-tzen"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s2.e10",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Nuestros niños saben leer."
+                "lang": "eu",
+                "text": "Gure umeek badakite irakurtzen."
               },
               "answers": [
-                "Gure umeek badakite irakurtzen."
+                "Nuestros niños saben leer.",
+                "Nuestros hijos saben leer."
               ],
               "distractors": [
-                "egiten",
-                "hitz",
-                "badakit"
+                "pan",
+                "No",
+                "La"
               ],
               "vocabulary": [
                 "gu",
@@ -1551,7 +1954,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s2.e09",
+              "id": "u11-1.l2.s2.e11",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1576,7 +1979,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s2.e10",
+              "id": "u11-1.l2.s2.e12",
               "type": "listen_tap",
               "text": "Amonak ez daki idazten.",
               "distractors": [
@@ -1595,7 +1998,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s2.e11",
+              "id": "u11-1.l2.s2.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1617,7 +2020,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s2.e12",
+              "id": "u11-1.l2.s2.e14",
               "type": "order_sentence",
               "answer": "Unaik ondo daki ogia egiten.",
               "translation": "Unai sabe hacer pan muy bien.",
@@ -1655,9 +2058,34 @@
             },
             {
               "id": "u11-1.l2.s3.e02",
-              "type": "speak",
-              "text": "Zuk idatzi didazu?",
-              "translation": "¿Tú me has escrito?",
+              "type": "word_intro",
+              "word": "didazu",
+              "translation": "(tú) me (dices / das…)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "norako"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zuk idatzi didazu?"
+              },
+              "answers": [
+                "¿Tú me has escrito?",
+                "¿Me has escrito?",
+                "¿Me ha escrito usted?"
+              ],
+              "distractors": [
+                "llamado",
+                "preguntado",
+                "trabajo"
+              ],
               "vocabulary": [
                 "zu",
                 "idatzi",
@@ -1669,7 +2097,33 @@
               ]
             },
             {
-              "id": "u11-1.l2.s3.e03",
+              "id": "u11-1.l2.s3.e04",
+              "type": "word_intro",
+              "word": "dizut",
+              "translation": "(yo) te (digo / doy…)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "norako"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s3.e05",
+              "type": "word_intro",
+              "word": "diet",
+              "translation": "(yo) les (digo / doy…)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "norako"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s3.e06",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1702,7 +2156,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s3.e04",
+              "id": "u11-1.l2.s3.e07",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1730,7 +2184,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s3.e05",
+              "id": "u11-1.l2.s3.e08",
               "type": "fill_blank",
               "sentence": "Nagusiari deitu ___.",
               "options": [
@@ -1751,20 +2205,48 @@
               ]
             },
             {
-              "id": "u11-1.l2.s3.e06",
+              "id": "u11-1.l2.s3.e09",
+              "type": "word_intro",
+              "word": "eman",
+              "translation": "dar",
+              "vocabulary": [
+                "eman"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "norako"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s3.e10",
+              "type": "word_intro",
+              "word": "dio",
+              "translation": "(él / ella) le (dice / da…)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "norako"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s3.e11",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Ane le ha dado un libro al compañero."
+                "lang": "eu",
+                "text": "Anek lankideari liburu bat eman dio."
               },
               "answers": [
-                "Anek lankideari liburu bat eman dio."
+                "Ane le ha dado un libro al compañero.",
+                "Ane le ha dado un libro a la compañera.",
+                "Ane ha dado un libro a su compañero."
               ],
               "distractors": [
-                "diote",
-                "berri",
-                "lanerako",
-                "Zuk"
+                "autobús",
+                "han",
+                "la",
+                "He"
               ],
               "vocabulary": [
                 "lankide",
@@ -1779,7 +2261,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s3.e07",
+              "id": "u11-1.l2.s3.e12",
               "type": "choose_meaning",
               "text": "Zuk idatzi didazu?",
               "options": [
@@ -1799,14 +2281,35 @@
               ]
             },
             {
-              "id": "u11-1.l2.s3.e08",
-              "type": "listen_tap",
-              "text": "Guk nagusiari kontratu berri bat eskatu diogu.",
+              "id": "u11-1.l2.s3.e13",
+              "type": "word_intro",
+              "word": "diogu",
+              "translation": "(nosotros) le (decimos / damos…)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "norako"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s3.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Guk nagusiari kontratu berri bat eskatu diogu."
+              },
+              "answers": [
+                "Le hemos pedido al jefe un contrato nuevo.",
+                "Hemos pedido un contrato nuevo a la jefa.",
+                "Le hemos pedido un contrato nuevo al jefe."
+              ],
               "distractors": [
-                "galdetu",
-                "Bilborako",
-                "idazkariari",
-                "dago"
+                "autobús",
+                "escrito",
+                "comprado",
+                "ha"
               ],
               "vocabulary": [
                 "gu",
@@ -1823,7 +2326,20 @@
               ]
             },
             {
-              "id": "u11-1.l2.s3.e09",
+              "id": "u11-1.l2.s3.e15",
+              "type": "word_intro",
+              "word": "diozu",
+              "translation": "(tú) le (dices / das…)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "norako"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s3.e16",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1849,14 +2365,35 @@
               ]
             },
             {
-              "id": "u11-1.l2.s3.e10",
-              "type": "translate_typing",
+              "id": "u11-1.l2.s3.e17",
+              "type": "word_intro",
+              "word": "galdetu",
+              "translation": "preguntar",
+              "vocabulary": [
+                "galdetu"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "norako"
+              ]
+            },
+            {
+              "id": "u11-1.l2.s3.e18",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Los compañeros le han preguntado el horario a la secretaria."
+                "lang": "eu",
+                "text": "Lankideek idazkariari ordutegia galdetu diote."
               },
               "answers": [
-                "Lankideek idazkariari ordutegia galdetu diote."
+                "Los compañeros le han preguntado el horario a la secretaria.",
+                "Los compañeros le han preguntado el horario al secretario.",
+                "Los compañeros han preguntado el horario a la secretaria."
+              ],
+              "distractors": [
+                "comprado",
+                "al",
+                "está",
+                "un"
               ],
               "vocabulary": [
                 "lankide",
@@ -1871,7 +2408,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s3.e11",
+              "id": "u11-1.l2.s3.e19",
               "type": "read_true_false",
               "passage": "Gaur Itziarren urtebetetzea da. Nik opari bat eman diot.",
               "statement": "La persona que habla le ha dado un regalo a Itziar.",
@@ -1892,7 +2429,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s3.e12",
+              "id": "u11-1.l2.s3.e20",
               "type": "order_sentence",
               "answer": "Hau lanerako da.",
               "translation": "Esto es para el trabajo.",
@@ -1907,7 +2444,7 @@
               ]
             },
             {
-              "id": "u11-1.l2.s3.e13",
+              "id": "u11-1.l2.s3.e21",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1944,9 +2481,13 @@
           "exercises": [
             {
               "id": "u11-1.l3.s1.e01",
-              "type": "speak",
+              "type": "listen_tap",
               "text": "Nagusiari soldata galdetu diot.",
-              "translation": "Le he preguntado el sueldo al jefe.",
+              "distractors": [
+                "Kontratua",
+                "Lanaldi",
+                "euro"
+              ],
               "vocabulary": [
                 "nagusi",
                 "soldata",
@@ -2383,6 +2924,18 @@
             },
             {
               "id": "u11-1.l3.s2.e07",
+              "type": "word_intro",
+              "word": "hark",
+              "translation": "él / ella (sujeto de verbo transitivo)",
+              "vocabulary": [
+                "hura"
+              ],
+              "structures": [
+                "jakin-tzen"
+              ]
+            },
+            {
+              "id": "u11-1.l3.s2.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2428,10 +2981,33 @@
               ]
             },
             {
-              "id": "u11-1.l3.s2.e08",
-              "type": "order_sentence",
-              "answer": "Zuek badakizue ogia egiten?",
-              "translation": "¿Vosotros sabéis hacer pan?",
+              "id": "u11-1.l3.s2.e09",
+              "type": "word_intro",
+              "word": "badakizue",
+              "translation": "sí sabéis",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "jakin-tzen"
+              ]
+            },
+            {
+              "id": "u11-1.l3.s2.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zuek badakizue ogia egiten?"
+              },
+              "answers": [
+                "¿Vosotros sabéis hacer pan?",
+                "¿Sabéis hacer pan?"
+              ],
+              "distractors": [
+                "sabe",
+                "La",
+                "una"
+              ],
               "vocabulary": [
                 "zuek",
                 "jakin",
@@ -2443,7 +3019,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s2.e09",
+              "id": "u11-1.l3.s2.e11",
               "type": "read_true_false",
               "passage": "Ni Amaia naiz. Badakit gidatzen. Ez dakit igeri egiten.",
               "statement": "Amaia sabe nadar.",
@@ -2463,7 +3039,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s2.e10",
+              "id": "u11-1.l3.s2.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2486,7 +3062,31 @@
               ]
             },
             {
-              "id": "u11-1.l3.s2.e11",
+              "id": "u11-1.l3.s2.e13",
+              "type": "word_intro",
+              "word": "zaizkio",
+              "translation": "le (gustan)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "jakin-tzen"
+              ]
+            },
+            {
+              "id": "u11-1.l3.s2.e14",
+              "type": "word_intro",
+              "word": "badaki",
+              "translation": "sí sabe",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "jakin-tzen"
+              ]
+            },
+            {
+              "id": "u11-1.l3.s2.e15",
               "type": "read_true_false",
               "passage": "Peio idazkaria da. Hizkuntzak gustatzen zaizkio, eta ingelesa ere badaki.",
               "statement": "A Peio le gustan los idiomas.",
@@ -2512,18 +3112,33 @@
           "exercises": [
             {
               "id": "u11-1.l3.s3.e01",
+              "type": "word_intro",
+              "word": "dizu",
+              "translation": "(él / ella) te (dice / da…)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "nor-nori-nork"
+              ]
+            },
+            {
+              "id": "u11-1.l3.s3.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Perdona, te ha llamado el jefe."
+                "lang": "eu",
+                "text": "Barkatu, nagusiak deitu dizu."
               },
               "answers": [
-                "Barkatu, nagusiak deitu dizu."
+                "Perdona, te ha llamado el jefe.",
+                "Perdone, le ha llamado el jefe.",
+                "Perdona, la jefa te ha llamado."
               ],
               "distractors": [
-                "kontratua",
-                "Bai",
-                "idatzi"
+                "no",
+                "compañeros",
+                "empresa",
+                "Luego"
               ],
               "vocabulary": [
                 "barkatu",
@@ -2536,7 +3151,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s3.e02",
+              "id": "u11-1.l3.s3.e03",
               "type": "listen_tap",
               "text": "Eskerrik asko. Gero deituko diot.",
               "distractors": [
@@ -2555,7 +3170,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s3.e03",
+              "id": "u11-1.l3.s3.e04",
               "type": "fill_blank",
               "sentence": "Enpresak ez ___ soldata ordaindu.",
               "options": [
@@ -2577,7 +3192,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s3.e04",
+              "id": "u11-1.l3.s3.e05",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2597,7 +3212,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s3.e05",
+              "id": "u11-1.l3.s3.e06",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2623,7 +3238,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s3.e06",
+              "id": "u11-1.l3.s3.e07",
               "type": "order_sentence",
               "answer": "Zuk idatzi didazu gaur?",
               "translation": "¿Me has escrito hoy?",
@@ -2638,7 +3253,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s3.e07",
+              "id": "u11-1.l3.s3.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2676,7 +3291,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s3.e08",
+              "id": "u11-1.l3.s3.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2698,7 +3313,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s3.e09",
+              "id": "u11-1.l3.s3.e10",
               "type": "read_true_false",
               "passage": "Gaur nagusiak deitu dit. Kontratu berri bat daukat!",
               "statement": "El jefe ha llamado a la persona que habla.",
@@ -2718,7 +3333,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s3.e10",
+              "id": "u11-1.l3.s3.e11",
               "type": "listen_type",
               "text": "Enpresak ez dit soldata ordaindu.",
               "answers": [
@@ -2736,7 +3351,7 @@
               ]
             },
             {
-              "id": "u11-1.l3.s3.e11",
+              "id": "u11-1.l3.s3.e12",
               "type": "read_true_false",
               "passage": "Lankideei kafe bat erosi diet. Nagusiari ez.",
               "statement": "La persona que habla le ha comprado un café al jefe.",

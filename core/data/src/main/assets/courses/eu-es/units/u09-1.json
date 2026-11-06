@@ -131,18 +131,48 @@
           "exercises": [
             {
               "id": "u09-1.l1.s1.e01",
+              "type": "word_intro",
+              "word": "baso",
+              "translation": "bosque",
+              "image": "nature_forest.webp",
+              "vocabulary": [
+                "baso"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s1.e02",
+              "type": "word_intro",
+              "word": "zuhaitz",
+              "translation": "árbol",
+              "image": "nature_tree.webp",
+              "vocabulary": [
+                "zuhaitz"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s1.e03",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "En el bosque hay muchos árboles."
+                "lang": "eu",
+                "text": "Basoan zuhaitz asko daude."
               },
               "answers": [
-                "Basoan zuhaitz asko daude."
+                "En el bosque hay muchos árboles.",
+                "Hay muchos árboles en el bosque."
               ],
               "distractors": [
-                "gertu",
-                "Natura",
-                "bat"
+                "la",
+                "un",
+                "cerca",
+                "nuestra"
               ],
               "vocabulary": [
                 "baso",
@@ -156,13 +186,48 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Ibaia eta itsasoa gertu daude.",
+              "id": "u09-1.l1.s1.e04",
+              "type": "word_intro",
+              "word": "ibai",
+              "translation": "río",
+              "image": "nature_river.webp",
+              "vocabulary": [
+                "ibai"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s1.e05",
+              "type": "word_intro",
+              "word": "itsaso",
+              "translation": "mar",
+              "image": "nature_sea.webp",
+              "vocabulary": [
+                "itsaso"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ibaia eta itsasoa gertu daude."
+              },
+              "answers": [
+                "El río y el mar están cerca."
+              ],
               "distractors": [
-                "arrainik",
-                "hau",
-                "Itsasoan"
+                "ambiente",
+                "peces",
+                "un",
+                "naturaleza"
               ],
               "vocabulary": [
                 "ibai",
@@ -177,7 +242,33 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e03",
+              "id": "u09-1.l1.s1.e07",
+              "type": "word_intro",
+              "word": "natura",
+              "translation": "naturaleza",
+              "vocabulary": [
+                "natura"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s1.e08",
+              "type": "word_intro",
+              "word": "kutsadura",
+              "translation": "contaminación",
+              "vocabulary": [
+                "kutsadura"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s1.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -219,16 +310,10 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e04",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "Aquí la naturaleza es muy bonita."
-              },
-              "answers": [
-                "Natura oso polita da hemen.",
-                "Hemen natura oso polita da."
-              ],
+              "id": "u09-1.l1.s1.e10",
+              "type": "order_sentence",
+              "answer": "Natura oso polita da hemen.",
+              "translation": "Aquí la naturaleza es muy bonita.",
               "vocabulary": [
                 "natura",
                 "oso",
@@ -242,7 +327,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e05",
+              "id": "u09-1.l1.s1.e11",
               "type": "fill_blank",
               "sentence": "Basoan zuhaitz asko ___.",
               "options": [
@@ -263,7 +348,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e06",
+              "id": "u09-1.l1.s1.e12",
               "type": "order_sentence",
               "answer": "Itsasoan kutsadura dago.",
               "translation": "Hay contaminación en el mar.",
@@ -278,7 +363,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e07",
+              "id": "u09-1.l1.s1.e13",
               "type": "choose_meaning",
               "text": "Ibaian kutsadura dago.",
               "options": [
@@ -298,14 +383,33 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e08",
-              "type": "translate_typing",
+              "id": "u09-1.l1.s1.e14",
+              "type": "word_intro",
+              "word": "ingurumen",
+              "translation": "medio ambiente",
+              "vocabulary": [
+                "ingurumen"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s1.e15",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Ingurumena gure etxea da."
               },
               "answers": [
                 "El medio ambiente es nuestra casa."
+              ],
+              "distractors": [
+                "la",
+                "Hay",
+                "contaminación",
+                "no"
               ],
               "vocabulary": [
                 "ingurumen",
@@ -319,7 +423,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e09",
+              "id": "u09-1.l1.s1.e16",
               "type": "complete_chat",
               "messages": [
                 {
@@ -346,7 +450,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e10",
+              "id": "u09-1.l1.s1.e17",
               "type": "listen_type",
               "text": "Ibaian ez dago arrainik, baina itsasoan bai.",
               "answers": [
@@ -367,7 +471,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e11",
+              "id": "u09-1.l1.s1.e18",
               "type": "read_true_false",
               "passage": "Nire herrian baso handi bat dago. Basoan zuhaitz asko daude.",
               "statement": "En el pueblo no hay árboles.",
@@ -388,7 +492,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e12",
+              "id": "u09-1.l1.s1.e19",
               "type": "speak",
               "text": "Mendian baso handi bat dago.",
               "translation": "En el monte hay un bosque grande.",
@@ -405,7 +509,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e13",
+              "id": "u09-1.l1.s1.e20",
               "type": "choose_image",
               "prompt": "el árbol",
               "options": [
@@ -432,7 +536,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e14",
+              "id": "u09-1.l1.s1.e21",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -459,7 +563,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e15",
+              "id": "u09-1.l1.s1.e22",
               "type": "choose_image",
               "prompt": "el bosque",
               "options": [
@@ -486,7 +590,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e16",
+              "id": "u09-1.l1.s1.e23",
               "type": "choose_image",
               "prompt": "el mar",
               "options": [
@@ -513,7 +617,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s1.e17",
+              "id": "u09-1.l1.s1.e24",
               "type": "choose_image",
               "prompt": "el río",
               "options": [
@@ -546,11 +650,34 @@
           "exercises": [
             {
               "id": "u09-1.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Hau zakarrontzia da.",
+              "type": "word_intro",
+              "word": "zakarrontzi",
+              "translation": "papelera; cubo de basura",
+              "image": "object_bin.webp",
+              "vocabulary": [
+                "zakarrontzi"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hau zakarrontzia da."
+              },
+              "answers": [
+                "Esta es la papelera.",
+                "Esto es una papelera.",
+                "Este es el cubo de basura."
+              ],
               "distractors": [
-                "botatzen",
-                "zakarrontzian"
+                "casa",
+                "y",
+                "que"
               ],
               "vocabulary": [
                 "hau",
@@ -563,14 +690,34 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u09-1.l1.s2.e03",
+              "type": "word_intro",
+              "word": "edukiontzi",
+              "translation": "contenedor",
+              "image": "object_container.webp",
+              "vocabulary": [
+                "edukiontzi"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e04",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "El contenedor está en la calle."
+                "lang": "eu",
+                "text": "Edukiontzia kalean dago."
               },
               "answers": [
-                "Edukiontzia kalean dago."
+                "El contenedor está en la calle."
+              ],
+              "distractors": [
+                "Esta",
+                "casa",
+                "papel",
+                "papelera"
               ],
               "vocabulary": [
                 "edukiontzi",
@@ -583,7 +730,61 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e03",
+              "id": "u09-1.l1.s2.e05",
+              "type": "word_intro",
+              "word": "botila",
+              "translation": "botella",
+              "image": "object_bottle.webp",
+              "vocabulary": [
+                "botila"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e06",
+              "type": "word_intro",
+              "word": "poltsa",
+              "translation": "bolsa",
+              "image": "object_bag.webp",
+              "vocabulary": [
+                "poltsa"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e07",
+              "type": "word_intro",
+              "word": "hondakin",
+              "translation": "residuo",
+              "vocabulary": [
+                "hondakin"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e08",
+              "type": "word_intro",
+              "word": "birziklatu",
+              "translation": "reciclar",
+              "vocabulary": [
+                "birziklatu"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -625,7 +826,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e04",
+              "id": "u09-1.l1.s2.e10",
               "type": "order_sentence",
               "answer": "Botila zakarrontzian dago.",
               "translation": "La botella está en la papelera.",
@@ -640,7 +841,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e05",
+              "id": "u09-1.l1.s2.e11",
               "type": "fill_blank",
               "sentence": "Edukiontzia ___ dago.",
               "options": [
@@ -660,7 +861,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e06",
+              "id": "u09-1.l1.s2.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -681,7 +882,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e07",
+              "id": "u09-1.l1.s2.e13",
               "type": "choose_meaning",
               "text": "Botila zakarrontzian dago.",
               "options": [
@@ -701,11 +902,48 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e08",
-              "type": "listen_type",
-              "text": "Plastikoa, papera eta beira birziklatu behar ditugu.",
+              "id": "u09-1.l1.s2.e14",
+              "type": "word_intro",
+              "word": "plastiko",
+              "translation": "plástico",
+              "vocabulary": [
+                "plastiko"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e15",
+              "type": "word_intro",
+              "word": "paper",
+              "translation": "papel",
+              "image": "object_paper.webp",
+              "vocabulary": [
+                "paper"
+              ],
+              "structures": [
+                "egon-present",
+                "non-inessive"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s2.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Plastikoa, papera eta beira birziklatu behar ditugu."
+              },
               "answers": [
-                "Plastikoa, papera eta beira birziklatu behar ditugu."
+                "Tenemos que reciclar el plástico, el papel y el vidrio.",
+                "Debemos reciclar el plástico, el papel y el vidrio."
+              ],
+              "distractors": [
+                "bolsa",
+                "no",
+                "La",
+                "tiramos"
               ],
               "vocabulary": [
                 "plastiko",
@@ -722,7 +960,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e09",
+              "id": "u09-1.l1.s2.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -750,10 +988,21 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e10",
-              "type": "speak",
-              "text": "Kartoia edukiontzi urdinean dago.",
-              "translation": "El cartón está en el contenedor azul.",
+              "id": "u09-1.l1.s2.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kartoia edukiontzi urdinean dago."
+              },
+              "answers": [
+                "El cartón está en el contenedor azul."
+              ],
+              "distractors": [
+                "reciclar",
+                "tiramos",
+                "bolsas",
+                "muchas"
+              ],
               "vocabulary": [
                 "kartoi",
                 "edukiontzi",
@@ -766,7 +1015,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e11",
+              "id": "u09-1.l1.s2.e19",
               "type": "read_true_false",
               "passage": "Gelan zakarrontzi bat dago. Zakarrontzian paperak eta botila bat daude.",
               "statement": "En la papelera hay una botella.",
@@ -786,7 +1035,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e12",
+              "id": "u09-1.l1.s2.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -818,7 +1067,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e13",
+              "id": "u09-1.l1.s2.e21",
               "type": "choose_image",
               "prompt": "el contenedor",
               "options": [
@@ -845,7 +1094,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e14",
+              "id": "u09-1.l1.s2.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -871,7 +1120,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e15",
+              "id": "u09-1.l1.s2.e23",
               "type": "choose_image",
               "prompt": "la papelera",
               "options": [
@@ -898,7 +1147,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e16",
+              "id": "u09-1.l1.s2.e24",
               "type": "choose_image",
               "prompt": "la botella",
               "options": [
@@ -925,7 +1174,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s2.e17",
+              "id": "u09-1.l1.s2.e25",
               "type": "choose_image",
               "prompt": "la bolsa",
               "options": [
@@ -958,13 +1207,31 @@
           "exercises": [
             {
               "id": "u09-1.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "egur",
+              "translation": "madera",
+              "image": "nature_wood.webp",
+              "vocabulary": [
+                "egur"
+              ],
+              "structures": [
+                "zerezkoa"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s3.e02",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "La mesa es de madera."
+                "lang": "eu",
+                "text": "Mahaia egurrezkoa da."
               },
               "answers": [
-                "Mahaia egurrezkoa da."
+                "La mesa es de madera."
+              ],
+              "distractors": [
+                "Esta",
+                "cartón",
+                "En"
               ],
               "vocabulary": [
                 "mahai",
@@ -976,10 +1243,32 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e02",
-              "type": "order_sentence",
-              "answer": "Aulki hau burdinazkoa da.",
-              "translation": "Esta silla es de hierro.",
+              "id": "u09-1.l1.s3.e03",
+              "type": "word_intro",
+              "word": "burdina",
+              "translation": "hierro",
+              "vocabulary": [
+                "burdina"
+              ],
+              "structures": [
+                "zerezkoa"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Aulki hau burdinazkoa da."
+              },
+              "answers": [
+                "Esta silla es de hierro."
+              ],
+              "distractors": [
+                "vidrio",
+                "Tengo",
+                "cartón"
+              ],
               "vocabulary": [
                 "aulki",
                 "hau",
@@ -991,7 +1280,31 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e03",
+              "id": "u09-1.l1.s3.e05",
+              "type": "word_intro",
+              "word": "kartoi",
+              "translation": "cartón",
+              "vocabulary": [
+                "kartoi"
+              ],
+              "structures": [
+                "zerezkoa"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s3.e06",
+              "type": "word_intro",
+              "word": "beira",
+              "translation": "vidrio",
+              "vocabulary": [
+                "beira"
+              ],
+              "structures": [
+                "zerezkoa"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s3.e07",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1032,7 +1345,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e04",
+              "id": "u09-1.l1.s3.e08",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1051,7 +1364,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e05",
+              "id": "u09-1.l1.s3.e09",
               "type": "fill_blank",
               "sentence": "Botila ___ da.",
               "options": [
@@ -1070,7 +1383,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e06",
+              "id": "u09-1.l1.s3.e10",
               "type": "listen_type",
               "text": "Botila beirazkoa da.",
               "answers": [
@@ -1086,7 +1399,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e07",
+              "id": "u09-1.l1.s3.e11",
               "type": "choose_meaning",
               "text": "Aulkia egurrezkoa da.",
               "options": [
@@ -1105,10 +1418,47 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e08",
-              "type": "speak",
-              "text": "Gela honetan argi asko dago.",
-              "translation": "En esta habitación hay mucha luz.",
+              "id": "u09-1.l1.s3.e12",
+              "type": "word_intro",
+              "word": "gela",
+              "translation": "habitación; aula",
+              "vocabulary": [
+                "gela"
+              ],
+              "structures": [
+                "zerezkoa"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s3.e13",
+              "type": "word_intro",
+              "word": "argi",
+              "translation": "luz",
+              "vocabulary": [
+                "argi"
+              ],
+              "structures": [
+                "zerezkoa"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s3.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gela honetan argi asko dago."
+              },
+              "answers": [
+                "En esta habitación hay mucha luz.",
+                "En esta aula hay mucha luz.",
+                "Hay mucha luz en esta habitación."
+              ],
+              "distractors": [
+                "mesa",
+                "papel",
+                "es",
+                "energía"
+              ],
               "vocabulary": [
                 "gela",
                 "hau",
@@ -1121,7 +1471,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e09",
+              "id": "u09-1.l1.s3.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1148,7 +1498,19 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e10",
+              "id": "u09-1.l1.s3.e16",
+              "type": "word_intro",
+              "word": "energia",
+              "translation": "energía",
+              "vocabulary": [
+                "energia"
+              ],
+              "structures": [
+                "zerezkoa"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s3.e17",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1172,7 +1534,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e11",
+              "id": "u09-1.l1.s3.e18",
               "type": "choose_image",
               "prompt": "la madera",
               "options": [
@@ -1198,19 +1560,32 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e12",
+              "id": "u09-1.l1.s3.e19",
+              "type": "word_intro",
+              "word": "leku",
+              "translation": "lugar",
+              "vocabulary": [
+                "leku"
+              ],
+              "structures": [
+                "zerezkoa"
+              ]
+            },
+            {
+              "id": "u09-1.l1.s3.e20",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Este es un lugar bonito."
+                "lang": "eu",
+                "text": "Hau leku polita da."
               },
               "answers": [
-                "Hau leku polita da."
+                "Este es un lugar bonito.",
+                "Esto es un lugar bonito."
               ],
               "distractors": [
-                "Botila",
-                "behar",
-                "beirazkoa"
+                "Esta",
+                "Necesitamos",
+                "energía"
               ],
               "vocabulary": [
                 "hau",
@@ -1223,7 +1598,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e13",
+              "id": "u09-1.l1.s3.e21",
               "type": "choose_image",
               "prompt": "el papel",
               "options": [
@@ -1249,7 +1624,7 @@
               ]
             },
             {
-              "id": "u09-1.l1.s3.e14",
+              "id": "u09-1.l1.s3.e22",
               "type": "listen_tap",
               "text": "Kartoizko poltsa bat daukat.",
               "distractors": [
@@ -1548,7 +1923,33 @@
           "exercises": [
             {
               "id": "u09-1.l2.s2.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "bota",
+              "translation": "tirar",
+              "vocabulary": [
+                "bota"
+              ],
+              "structures": [
+                "daiteke",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s2.e02",
+              "type": "word_intro",
+              "word": "daiteke",
+              "translation": "se puede",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "daiteke",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s2.e03",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Papera edukiontzi urdinera bota daiteke."
@@ -1557,6 +1958,12 @@
                 "El papel se puede tirar al contenedor azul.",
                 "Se puede tirar el papel al contenedor azul.",
                 "El papel se puede echar al contenedor azul."
+              ],
+              "distractors": [
+                "Aquí",
+                "río",
+                "vidrio",
+                "echar"
               ],
               "vocabulary": [
                 "paper",
@@ -1571,11 +1978,19 @@
               ]
             },
             {
-              "id": "u09-1.l2.s2.e02",
-              "type": "listen_type",
-              "text": "Beira edukiontzi berdera bota daiteke.",
+              "id": "u09-1.l2.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "El vidrio se puede tirar al contenedor verde."
+              },
               "answers": [
                 "Beira edukiontzi berdera bota daiteke."
+              ],
+              "distractors": [
+                "birzikla",
+                "Ez",
+                "Kutsadura"
               ],
               "vocabulary": [
                 "beira",
@@ -1590,7 +2005,33 @@
               ]
             },
             {
-              "id": "u09-1.l2.s2.e03",
+              "id": "u09-1.l2.s2.e05",
+              "type": "word_intro",
+              "word": "birzikla",
+              "translation": "reciclar (birzikla daiteke: se puede reciclar)",
+              "vocabulary": [
+                "birziklatu"
+              ],
+              "structures": [
+                "daiteke",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s2.e06",
+              "type": "word_intro",
+              "word": "daitezke",
+              "translation": "se pueden",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "daiteke",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s2.e07",
               "type": "fill_blank",
               "sentence": "Botilak birzikla ___.",
               "options": [
@@ -1610,10 +2051,36 @@
               ]
             },
             {
-              "id": "u09-1.l2.s2.e04",
-              "type": "speak",
-              "text": "Plastikoa edukiontzi horian sar daiteke.",
-              "translation": "El plástico se puede echar en el contenedor amarillo.",
+              "id": "u09-1.l2.s2.e08",
+              "type": "word_intro",
+              "word": "sar",
+              "translation": "meter (sar ezazu: mételo)",
+              "vocabulary": [
+                "sartu"
+              ],
+              "structures": [
+                "daiteke",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s2.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Plastikoa edukiontzi horian sar daiteke."
+              },
+              "answers": [
+                "El plástico se puede echar en el contenedor amarillo.",
+                "Se puede echar el plástico en el contenedor amarillo.",
+                "El plástico se puede meter en el contenedor amarillo."
+              ],
+              "distractors": [
+                "Aquí",
+                "tirar",
+                "pueden",
+                "contaminación"
+              ],
               "vocabulary": [
                 "plastiko",
                 "edukiontzi",
@@ -1627,7 +2094,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s2.e05",
+              "id": "u09-1.l2.s2.e10",
               "type": "fill_blank",
               "sentence": "Papera edukiontzi ___ bota daiteke.",
               "options": [
@@ -1649,7 +2116,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s2.e06",
+              "id": "u09-1.l2.s2.e11",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1675,7 +2142,20 @@
               ]
             },
             {
-              "id": "u09-1.l2.s2.e07",
+              "id": "u09-1.l2.s2.e12",
+              "type": "word_intro",
+              "word": "ezin",
+              "translation": "no poder",
+              "vocabulary": [
+                "ezin"
+              ],
+              "structures": [
+                "daiteke",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s2.e13",
               "type": "choose_meaning",
               "text": "Hemen ezin da igeri egin.",
               "options": [
@@ -1696,7 +2176,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s2.e08",
+              "id": "u09-1.l2.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1720,7 +2200,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s2.e09",
+              "id": "u09-1.l2.s2.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1748,7 +2228,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s2.e10",
+              "id": "u09-1.l2.s2.e16",
               "type": "listen_tap",
               "text": "Hemen ezin da igeri egin.",
               "distractors": [
@@ -1768,7 +2248,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s2.e11",
+              "id": "u09-1.l2.s2.e17",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1788,7 +2268,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s2.e12",
+              "id": "u09-1.l2.s2.e18",
               "type": "order_sentence",
               "answer": "Ez, ezin da. Kutsadura dago.",
               "translation": "No, no se puede. Hay contaminación.",
@@ -1811,10 +2291,34 @@
           "exercises": [
             {
               "id": "u09-1.l2.s3.e01",
-              "type": "listen_type",
-              "text": "Bota ezazu papera edukiontzi urdinera.",
+              "type": "word_intro",
+              "word": "ezazu",
+              "translation": "(hazlo) tú",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "imperative",
+                "indirect-imperative"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bota ezazu papera edukiontzi urdinera."
+              },
               "answers": [
-                "Bota ezazu papera edukiontzi urdinera."
+                "Tira el papel al contenedor azul.",
+                "Echa el papel al contenedor azul.",
+                "Tire el papel al contenedor azul."
+              ],
+              "distractors": [
+                "plástico",
+                "por",
+                "botellas",
+                "La"
               ],
               "vocabulary": [
                 "bota",
@@ -1829,10 +2333,34 @@
               ]
             },
             {
-              "id": "u09-1.l2.s3.e02",
-              "type": "speak",
-              "text": "Eraman itzazu botilak edukiontzira.",
-              "translation": "Lleva las botellas al contenedor.",
+              "id": "u09-1.l2.s3.e03",
+              "type": "word_intro",
+              "word": "itzazu",
+              "translation": "(hazlos) tú",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "imperative",
+                "indirect-imperative"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Eraman itzazu botilak edukiontzira."
+              },
+              "answers": [
+                "Lleva las botellas al contenedor.",
+                "Lleve las botellas al contenedor."
+              ],
+              "distractors": [
+                "azul",
+                "papel",
+                "Tira"
+              ],
               "vocabulary": [
                 "eraman",
                 "ukan",
@@ -1845,7 +2373,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s3.e03",
+              "id": "u09-1.l2.s3.e05",
               "type": "fill_blank",
               "sentence": "Bota ___ papera hemen.",
               "options": [
@@ -1866,7 +2394,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s3.e04",
+              "id": "u09-1.l2.s3.e06",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1891,7 +2419,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s3.e05",
+              "id": "u09-1.l2.s3.e07",
               "type": "fill_blank",
               "sentence": "Eraman ___ botilak edukiontzira.",
               "options": [
@@ -1912,18 +2440,32 @@
               ]
             },
             {
-              "id": "u09-1.l2.s3.e06",
+              "id": "u09-1.l2.s3.e08",
+              "type": "word_intro",
+              "word": "zaitez",
+              "translation": "(sé / ponte) tú",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "imperative",
+                "indirect-imperative"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s3.e09",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¡Ve al contenedor!"
+                "lang": "eu",
+                "text": "Joan zaitez edukiontzira!"
               },
               "answers": [
-                "Joan zaitez edukiontzira!"
+                "¡Ve al contenedor!",
+                "¡Vaya al contenedor!"
               ],
               "distractors": [
-                "Birzikla",
-                "esan"
+                "por",
+                "La"
               ],
               "vocabulary": [
                 "joan",
@@ -1936,7 +2478,46 @@
               ]
             },
             {
-              "id": "u09-1.l2.s3.e07",
+              "id": "u09-1.l2.s3.e10",
+              "type": "word_intro",
+              "word": "esan",
+              "translation": "decir",
+              "vocabulary": [
+                "esan"
+              ],
+              "structures": [
+                "imperative",
+                "indirect-imperative"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s3.e11",
+              "type": "word_intro",
+              "word": "dit",
+              "translation": "(él / ella) me (dice / da…)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "imperative",
+                "indirect-imperative"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s3.e12",
+              "type": "word_intro",
+              "word": "birziklatzeko",
+              "translation": "para reciclar",
+              "vocabulary": [
+                "birziklatu"
+              ],
+              "structures": [
+                "imperative",
+                "indirect-imperative"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s3.e13",
               "type": "choose_meaning",
               "text": "Amak esan dit papera birziklatzeko.",
               "options": [
@@ -1958,7 +2539,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s3.e08",
+              "id": "u09-1.l2.s3.e14",
               "type": "listen_tap",
               "text": "Amak esan dit botilak birziklatzeko.",
               "distractors": [
@@ -1979,7 +2560,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s3.e09",
+              "id": "u09-1.l2.s3.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2009,14 +2590,47 @@
               ]
             },
             {
-              "id": "u09-1.l2.s3.e10",
-              "type": "translate_typing",
+              "id": "u09-1.l2.s3.e16",
+              "type": "word_intro",
+              "word": "digu",
+              "translation": "(él / ella) nos (dice / da…)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "imperative",
+                "indirect-imperative"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s3.e17",
+              "type": "word_intro",
+              "word": "eramateko",
+              "translation": "para llevar",
+              "vocabulary": [
+                "eraman"
+              ],
+              "structures": [
+                "imperative",
+                "indirect-imperative"
+              ]
+            },
+            {
+              "id": "u09-1.l2.s3.e18",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "La profesora nos ha dicho que llevemos el papel al contenedor azul."
+                "lang": "eu",
+                "text": "Irakasleak esan digu papera edukiontzi urdinera eramateko."
               },
               "answers": [
-                "Irakasleak esan digu papera edukiontzi urdinera eramateko."
+                "La profesora nos ha dicho que llevemos el papel al contenedor azul.",
+                "El profesor nos ha dicho que llevemos el papel al contenedor azul."
+              ],
+              "distractors": [
+                "bolsa",
+                "Coge",
+                "las",
+                "Lleva"
               ],
               "vocabulary": [
                 "irakasle",
@@ -2033,7 +2647,7 @@
               ]
             },
             {
-              "id": "u09-1.l2.s3.e11",
+              "id": "u09-1.l2.s3.e19",
               "type": "read_true_false",
               "passage": "Irakasleak esan digu paperak eta kartoiak birziklatzeko.",
               "statement": "La profesora les ha dicho que reciclen el papel y el cartón.",
@@ -2053,10 +2667,21 @@
               ]
             },
             {
-              "id": "u09-1.l2.s3.e12",
-              "type": "order_sentence",
-              "answer": "Har ezazu poltsa, mesedez.",
-              "translation": "Coge la bolsa, por favor.",
+              "id": "u09-1.l2.s3.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Har ezazu poltsa, mesedez."
+              },
+              "answers": [
+                "Coge la bolsa, por favor.",
+                "Coja la bolsa, por favor."
+              ],
+              "distractors": [
+                "Recicla",
+                "al",
+                "botellas"
+              ],
               "vocabulary": [
                 "hartu",
                 "ukan",
@@ -2499,13 +3124,19 @@
             },
             {
               "id": "u09-1.l3.s2.e06",
-              "type": "translate_typing",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "Mi padre me ha pedido que lleve los residuos al contenedor."
               },
               "answers": [
                 "Aitak eskatu dit hondakinak edukiontzira eramateko."
+              ],
+              "distractors": [
+                "behar",
+                "plastikozko",
+                "supermerkatura",
+                "itzazu"
               ],
               "vocabulary": [
                 "aita",
@@ -2589,6 +3220,19 @@
             },
             {
               "id": "u09-1.l3.s2.e10",
+              "type": "word_intro",
+              "word": "har",
+              "translation": "coger (har ezazu: cógelo)",
+              "vocabulary": [
+                "hartu"
+              ],
+              "structures": [
+                "imperative",
+                "indirect-imperative"
+              ]
+            },
+            {
+              "id": "u09-1.l3.s2.e11",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2610,7 +3254,7 @@
               ]
             },
             {
-              "id": "u09-1.l3.s2.e11",
+              "id": "u09-1.l3.s2.e12",
               "type": "read_true_false",
               "passage": "Nire gelan zakarrontzi bat dago. Zakarrontzia burdinazkoa da.",
               "statement": "La papelera es de plástico.",
@@ -2630,7 +3274,7 @@
               ]
             },
             {
-              "id": "u09-1.l3.s2.e12",
+              "id": "u09-1.l3.s2.e13",
               "type": "choose_image",
               "prompt": "el contenedor",
               "options": [

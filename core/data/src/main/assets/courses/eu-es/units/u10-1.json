@@ -127,18 +127,30 @@
           "exercises": [
             {
               "id": "u10-1.l1.s1.e01",
+              "type": "word_intro",
+              "word": "lasai",
+              "translation": "tranquilo",
+              "vocabulary": [
+                "lasai"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s1.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Mi pueblo es muy tranquilo."
+                "lang": "eu",
+                "text": "Nire herria oso lasaia da."
               },
               "answers": [
-                "Nire herria oso lasaia da."
+                "Mi pueblo es muy tranquilo."
               ],
               "distractors": [
-                "onak",
-                "garbia",
-                "Kale"
+                "peligrosa",
+                "son",
+                "ciudad"
               ],
               "vocabulary": [
                 "ni",
@@ -152,12 +164,31 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Hiria zaratatsua da.",
+              "id": "u10-1.l1.s1.e03",
+              "type": "word_intro",
+              "word": "zaratatsu",
+              "translation": "ruidoso",
+              "vocabulary": [
+                "zaratatsu"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hiria zaratatsua da."
+              },
+              "answers": [
+                "La ciudad es ruidosa."
+              ],
               "distractors": [
-                "Udaletxea",
-                "zikina"
+                "son",
+                "Esta",
+                "feo"
               ],
               "vocabulary": [
                 "hiri",
@@ -169,7 +200,55 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e03",
+              "id": "u10-1.l1.s1.e05",
+              "type": "word_intro",
+              "word": "garbi",
+              "translation": "limpio",
+              "vocabulary": [
+                "garbi"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s1.e06",
+              "type": "word_intro",
+              "word": "zikin",
+              "translation": "sucio",
+              "vocabulary": [
+                "zikin"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s1.e07",
+              "type": "word_intro",
+              "word": "seguru",
+              "translation": "seguro",
+              "vocabulary": [
+                "seguru"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s1.e08",
+              "type": "word_intro",
+              "word": "arriskutsu",
+              "translation": "peligroso",
+              "vocabulary": [
+                "arriskutsu"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s1.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -210,15 +289,10 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e04",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "Esta calle está limpia."
-              },
-              "answers": [
-                "Kale hau garbia da."
-              ],
+              "id": "u10-1.l1.s1.e10",
+              "type": "order_sentence",
+              "answer": "Kale hau garbia da.",
+              "translation": "Esta calle está limpia.",
               "vocabulary": [
                 "kale",
                 "hau",
@@ -230,7 +304,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e05",
+              "id": "u10-1.l1.s1.e11",
               "type": "fill_blank",
               "sentence": "Kale hau oso ___ da.",
               "options": [
@@ -251,7 +325,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e06",
+              "id": "u10-1.l1.s1.e12",
               "type": "order_sentence",
               "answer": "Parke hori zikina da, baina kale hau garbia da.",
               "translation": "Ese parque está sucio, pero esta calle está limpia.",
@@ -270,7 +344,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e07",
+              "id": "u10-1.l1.s1.e13",
               "type": "choose_meaning",
               "text": "Hiria zaratatsua da.",
               "options": [
@@ -289,14 +363,44 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e08",
-              "type": "translate_typing",
+              "id": "u10-1.l1.s1.e14",
+              "type": "word_intro",
+              "word": "zerbitzu",
+              "translation": "servicio",
+              "vocabulary": [
+                "zerbitzu"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s1.e15",
+              "type": "word_intro",
+              "word": "onak",
+              "translation": "buenos / buenas",
+              "vocabulary": [
+                "on"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s1.e16",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Herriko zerbitzuak onak dira."
               },
               "answers": [
                 "Los servicios del pueblo son buenos."
+              ],
+              "distractors": [
+                "sucio",
+                "Mi",
+                "parque",
+                "Esta"
               ],
               "vocabulary": [
                 "herri",
@@ -309,7 +413,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e09",
+              "id": "u10-1.l1.s1.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -336,11 +440,19 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e10",
-              "type": "listen_type",
-              "text": "Kale hori arriskutsua da gauez.",
+              "id": "u10-1.l1.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Esa calle es peligrosa de noche."
+              },
               "answers": [
                 "Kale hori arriskutsua da gauez."
+              ],
+              "distractors": [
+                "lasaia",
+                "Parke",
+                "baina"
               ],
               "vocabulary": [
                 "kale",
@@ -354,7 +466,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e11",
+              "id": "u10-1.l1.s1.e19",
               "type": "read_true_false",
               "passage": "Nire herria txikia eta lasaia da. Kaleak garbiak dira.",
               "statement": "El pueblo es ruidoso.",
@@ -374,10 +486,20 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e12",
-              "type": "speak",
-              "text": "Udaletxea itsusia da.",
-              "translation": "El ayuntamiento es feo.",
+              "id": "u10-1.l1.s1.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Udaletxea itsusia da."
+              },
+              "answers": [
+                "El ayuntamiento es feo."
+              ],
+              "distractors": [
+                "ciudad",
+                "Mi",
+                "Los"
+              ],
               "vocabulary": [
                 "udaletxe",
                 "itsusi",
@@ -388,7 +510,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s1.e13",
+              "id": "u10-1.l1.s1.e21",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -418,12 +540,45 @@
           "exercises": [
             {
               "id": "u10-1.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Zinema hau oso erosoa da.",
+              "type": "word_intro",
+              "word": "zinema",
+              "translation": "cine",
+              "image": "place_cinema.webp",
+              "vocabulary": [
+                "zinema"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e02",
+              "type": "word_intro",
+              "word": "eroso",
+              "translation": "cómodo",
+              "vocabulary": [
+                "eroso"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zinema hau oso erosoa da."
+              },
+              "answers": [
+                "Este cine es muy cómodo."
+              ],
               "distractors": [
-                "eta",
-                "museoa",
-                "handi"
+                "teatro",
+                "interesante",
+                "polideportivo"
               ],
               "vocabulary": [
                 "zinema",
@@ -438,14 +593,34 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u10-1.l1.s2.e04",
+              "type": "word_intro",
+              "word": "antzoki",
+              "translation": "teatro (edificio)",
+              "image": "place_theatre.webp",
+              "vocabulary": [
+                "antzoki"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e05",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "El teatro está en la plaza."
+                "lang": "eu",
+                "text": "Antzokia plazan dago."
               },
               "answers": [
-                "Antzokia plazan dago."
+                "El teatro está en la plaza."
+              ],
+              "distractors": [
+                "bonito",
+                "pero",
+                "y",
+                "gustan"
               ],
               "vocabulary": [
                 "antzoki",
@@ -458,7 +633,49 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e03",
+              "id": "u10-1.l1.s2.e06",
+              "type": "word_intro",
+              "word": "museo",
+              "translation": "museo",
+              "image": "place_museum.webp",
+              "vocabulary": [
+                "museo"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e07",
+              "type": "word_intro",
+              "word": "kiroldegi",
+              "translation": "polideportivo",
+              "image": "place_sports_centre.webp",
+              "vocabulary": [
+                "kiroldegi"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e08",
+              "type": "word_intro",
+              "word": "igerileku",
+              "translation": "piscina",
+              "image": "place_pool.webp",
+              "vocabulary": [
+                "igerileku"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -500,10 +717,33 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e04",
-              "type": "order_sentence",
-              "answer": "Museo hau aspergarria da.",
-              "translation": "Este museo es aburrido.",
+              "id": "u10-1.l1.s2.e10",
+              "type": "word_intro",
+              "word": "aspergarri",
+              "translation": "aburrido",
+              "vocabulary": [
+                "aspergarri"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Museo hau aspergarria da."
+              },
+              "answers": [
+                "Este museo es aburrido."
+              ],
+              "distractors": [
+                "teatro",
+                "del",
+                "muy"
+              ],
               "vocabulary": [
                 "museo",
                 "hau",
@@ -516,7 +756,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e05",
+              "id": "u10-1.l1.s2.e12",
               "type": "fill_blank",
               "sentence": "Kiroldegian ___ handi bat dago.",
               "options": [
@@ -538,7 +778,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e06",
+              "id": "u10-1.l1.s2.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -560,7 +800,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e07",
+              "id": "u10-1.l1.s2.e14",
               "type": "choose_meaning",
               "text": "Museo hau aspergarria da.",
               "options": [
@@ -581,7 +821,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e08",
+              "id": "u10-1.l1.s2.e15",
               "type": "listen_type",
               "text": "Kiroldegian igerileku handi bat dago.",
               "answers": [
@@ -600,7 +840,20 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e09",
+              "id": "u10-1.l1.s2.e16",
+              "type": "word_intro",
+              "word": "interesgarri",
+              "translation": "interesante",
+              "vocabulary": [
+                "interesgarri"
+              ],
+              "structures": [
+                "nolakoa",
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s2.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -627,10 +880,15 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e10",
-              "type": "speak",
+              "id": "u10-1.l1.s2.e18",
+              "type": "listen_tap",
               "text": "Antzoki hau ez da itsusia, oso polita da!",
-              "translation": "¡Este teatro no es feo, es muy bonito!",
+              "distractors": [
+                "Antzokia",
+                "Museo",
+                "gustatzen",
+                "museoa"
+              ],
               "vocabulary": [
                 "antzoki",
                 "hau",
@@ -646,7 +904,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e11",
+              "id": "u10-1.l1.s2.e19",
               "type": "read_true_false",
               "passage": "Gure herrian zinema bat eta kiroldegi bat daude. Ez dago museorik.",
               "statement": "En el pueblo hay un museo.",
@@ -668,7 +926,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e12",
+              "id": "u10-1.l1.s2.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -698,7 +956,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e13",
+              "id": "u10-1.l1.s2.e21",
               "type": "choose_image",
               "prompt": "el cine",
               "options": [
@@ -725,7 +983,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e14",
+              "id": "u10-1.l1.s2.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -752,7 +1010,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e15",
+              "id": "u10-1.l1.s2.e23",
               "type": "choose_image",
               "prompt": "el teatro",
               "options": [
@@ -779,7 +1037,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e16",
+              "id": "u10-1.l1.s2.e24",
               "type": "choose_image",
               "prompt": "el museo",
               "options": [
@@ -806,7 +1064,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e17",
+              "id": "u10-1.l1.s2.e25",
               "type": "choose_image",
               "prompt": "el polideportivo",
               "options": [
@@ -833,7 +1091,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s2.e18",
+              "id": "u10-1.l1.s2.e26",
               "type": "choose_image",
               "prompt": "la piscina",
               "options": [
@@ -866,13 +1124,32 @@
           "exercises": [
             {
               "id": "u10-1.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "garraio",
+              "translation": "transporte",
+              "vocabulary": [
+                "garraio"
+              ],
+              "structures": [
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s3.e02",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "En la ciudad hay mucho transporte."
+                "lang": "eu",
+                "text": "Hirian garraio asko dago."
               },
               "answers": [
-                "Hirian garraio asko dago."
+                "En la ciudad hay mucho transporte.",
+                "Hay mucho transporte en la ciudad."
+              ],
+              "distractors": [
+                "servicios",
+                "pueblo",
+                "metro",
+                "hospital"
               ],
               "vocabulary": [
                 "hiri",
@@ -885,10 +1162,47 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e02",
-              "type": "order_sentence",
-              "answer": "Autobusa edo trena hartzen dut.",
-              "translation": "Cojo el autobús o el tren.",
+              "id": "u10-1.l1.s3.e03",
+              "type": "word_intro",
+              "word": "autobus",
+              "translation": "autobús",
+              "image": "transport_bus.webp",
+              "vocabulary": [
+                "autobus"
+              ],
+              "structures": [
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s3.e04",
+              "type": "word_intro",
+              "word": "tren",
+              "translation": "tren",
+              "image": "transport_train.webp",
+              "vocabulary": [
+                "tren"
+              ],
+              "structures": [
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s3.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Autobusa edo trena hartzen dut."
+              },
+              "answers": [
+                "Cojo el autobús o el tren.",
+                "Tomo el autobús o el tren."
+              ],
+              "distractors": [
+                "metro",
+                "En",
+                "Bilbao"
+              ],
               "vocabulary": [
                 "autobus",
                 "edo",
@@ -901,7 +1215,33 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e03",
+              "id": "u10-1.l1.s3.e06",
+              "type": "word_intro",
+              "word": "metro",
+              "translation": "metro",
+              "image": "transport_metro.webp",
+              "vocabulary": [
+                "metro"
+              ],
+              "structures": [
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s3.e07",
+              "type": "word_intro",
+              "word": "aparkaleku",
+              "translation": "aparcamiento",
+              "image": "place_car_park.webp",
+              "vocabulary": [
+                "aparkaleku"
+              ],
+              "structures": [
+                "egon-present"
+              ]
+            },
+            {
+              "id": "u10-1.l1.s3.e08",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -942,7 +1282,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e04",
+              "id": "u10-1.l1.s3.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -961,7 +1301,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e05",
+              "id": "u10-1.l1.s3.e10",
               "type": "fill_blank",
               "sentence": "Bilbon ___ dago.",
               "options": [
@@ -979,7 +1319,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e06",
+              "id": "u10-1.l1.s3.e11",
               "type": "listen_type",
               "text": "Herrian ez dago metrorik.",
               "answers": [
@@ -996,7 +1336,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e07",
+              "id": "u10-1.l1.s3.e12",
               "type": "choose_meaning",
               "text": "Herrian ez dago metrorik.",
               "options": [
@@ -1016,7 +1356,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e08",
+              "id": "u10-1.l1.s3.e13",
               "type": "speak",
               "text": "Trena geltokian dago.",
               "translation": "El tren está en la estación.",
@@ -1030,7 +1370,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e09",
+              "id": "u10-1.l1.s3.e14",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1056,7 +1396,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e10",
+              "id": "u10-1.l1.s3.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1082,7 +1422,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e11",
+              "id": "u10-1.l1.s3.e16",
               "type": "read_true_false",
               "passage": "Nire herrian ez dago trenik. Autobusa hartzen dut egunero.",
               "statement": "En su pueblo hay tren.",
@@ -1103,7 +1443,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e12",
+              "id": "u10-1.l1.s3.e17",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1128,7 +1468,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e13",
+              "id": "u10-1.l1.s3.e18",
               "type": "choose_image",
               "prompt": "el autobús",
               "options": [
@@ -1154,7 +1494,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e14",
+              "id": "u10-1.l1.s3.e19",
               "type": "listen_tap",
               "text": "Egunero autobusa hartzen dut.",
               "distractors": [
@@ -1173,7 +1513,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e15",
+              "id": "u10-1.l1.s3.e20",
               "type": "choose_image",
               "prompt": "el metro",
               "options": [
@@ -1199,7 +1539,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e16",
+              "id": "u10-1.l1.s3.e21",
               "type": "choose_image",
               "prompt": "el tren",
               "options": [
@@ -1225,7 +1565,7 @@
               ]
             },
             {
-              "id": "u10-1.l1.s3.e17",
+              "id": "u10-1.l1.s3.e22",
               "type": "choose_image",
               "prompt": "el aparcamiento",
               "options": [
@@ -1267,9 +1607,32 @@
           "exercises": [
             {
               "id": "u10-1.l2.s1.e01",
-              "type": "order_sentence",
-              "answer": "Hiria herria baino zaratatsuagoa da.",
-              "translation": "La ciudad es más ruidosa que el pueblo.",
+              "type": "word_intro",
+              "word": "baino",
+              "translation": "que (comparativo)",
+              "vocabulary": [
+                "baino"
+              ],
+              "structures": [
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-1.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hiria herria baino zaratatsuagoa da."
+              },
+              "answers": [
+                "La ciudad es más ruidosa que el pueblo."
+              ],
+              "distractors": [
+                "esa",
+                "museo",
+                "cine",
+                "Eibar"
+              ],
               "vocabulary": [
                 "hiri",
                 "herri",
@@ -1282,7 +1645,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e02",
+              "id": "u10-1.l2.s1.e03",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1303,7 +1666,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e03",
+              "id": "u10-1.l2.s1.e04",
               "type": "fill_blank",
               "sentence": "Hiria herria ___ zaratatsuagoa da.",
               "options": [
@@ -1324,7 +1687,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e04",
+              "id": "u10-1.l2.s1.e05",
               "type": "listen_type",
               "text": "Bilbo Tolosa baino handiagoa da.",
               "answers": [
@@ -1340,7 +1703,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e05",
+              "id": "u10-1.l2.s1.e06",
               "type": "fill_blank",
               "sentence": "Herria hiria baino ___ da.",
               "options": [
@@ -1361,7 +1724,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e06",
+              "id": "u10-1.l2.s1.e07",
               "type": "speak",
               "text": "Metroa autobusa baino erosoagoa da.",
               "translation": "El metro es más cómodo que el autobús.",
@@ -1377,7 +1740,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e07",
+              "id": "u10-1.l2.s1.e08",
               "type": "choose_meaning",
               "text": "Metroa autobusa baino erosoagoa da.",
               "options": [
@@ -1398,7 +1761,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e08",
+              "id": "u10-1.l2.s1.e09",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1427,7 +1790,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e09",
+              "id": "u10-1.l2.s1.e10",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1454,7 +1817,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e10",
+              "id": "u10-1.l2.s1.e11",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1480,7 +1843,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e11",
+              "id": "u10-1.l2.s1.e12",
               "type": "read_true_false",
               "passage": "Hondarribia Irun baino txikiagoa da, baina oso polita da. Irun handiagoa da.",
               "statement": "Irun es más pequeño que Hondarribia.",
@@ -1499,13 +1862,32 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e12",
-              "type": "listen_tap",
-              "text": "Trena autobusa baino hobea da.",
+              "id": "u10-1.l2.s1.e13",
+              "type": "word_intro",
+              "word": "hobe",
+              "translation": "mejor",
+              "vocabulary": [
+                "hobe"
+              ],
+              "structures": [
+                "comparative-ago"
+              ]
+            },
+            {
+              "id": "u10-1.l2.s1.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Trena autobusa baino hobea da."
+              },
+              "answers": [
+                "El tren es mejor que el autobús."
+              ],
               "distractors": [
-                "txikiagoa",
-                "zaratatsuagoa",
-                "Museoa"
+                "limpia",
+                "pequeño",
+                "cine",
+                "La"
               ],
               "vocabulary": [
                 "tren",
@@ -1519,7 +1901,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s1.e13",
+              "id": "u10-1.l2.s1.e15",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1584,6 +1966,19 @@
             },
             {
               "id": "u10-1.l2.s2.e03",
+              "type": "word_intro",
+              "word": "hain",
+              "translation": "tan",
+              "vocabulary": [
+                "hain"
+              ],
+              "structures": [
+                "gehiago-gutxiago",
+                "hain-hainbeste"
+              ]
+            },
+            {
+              "id": "u10-1.l2.s2.e04",
               "type": "fill_blank",
               "sentence": "Herria ez da ___ zaratatsua.",
               "options": [
@@ -1605,7 +2000,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s2.e04",
+              "id": "u10-1.l2.s2.e05",
               "type": "speak",
               "text": "Bilbon herrian baino museo gehiago daude.",
               "translation": "En Bilbao hay más museos que en el pueblo.",
@@ -1622,7 +2017,20 @@
               ]
             },
             {
-              "id": "u10-1.l2.s2.e05",
+              "id": "u10-1.l2.s2.e06",
+              "type": "word_intro",
+              "word": "hainbeste",
+              "translation": "tanto",
+              "vocabulary": [
+                "hainbeste"
+              ],
+              "structures": [
+                "gehiago-gutxiago",
+                "hain-hainbeste"
+              ]
+            },
+            {
+              "id": "u10-1.l2.s2.e07",
               "type": "fill_blank",
               "sentence": "Hirian ___ autobus daude!",
               "options": [
@@ -1643,7 +2051,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s2.e06",
+              "id": "u10-1.l2.s2.e08",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1671,7 +2079,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s2.e07",
+              "id": "u10-1.l2.s2.e09",
               "type": "choose_meaning",
               "text": "Herrian autobus gutxiago daude.",
               "options": [
@@ -1692,7 +2100,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s2.e08",
+              "id": "u10-1.l2.s2.e10",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1718,7 +2126,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s2.e09",
+              "id": "u10-1.l2.s2.e11",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1748,7 +2156,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s2.e10",
+              "id": "u10-1.l2.s2.e12",
               "type": "listen_tap",
               "text": "Hirian hainbeste autobus daude!",
               "distractors": [
@@ -1768,7 +2176,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s2.e11",
+              "id": "u10-1.l2.s2.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1792,7 +2200,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s2.e12",
+              "id": "u10-1.l2.s2.e14",
               "type": "order_sentence",
               "answer": "Herrian aparkaleku gehiago behar ditugu.",
               "translation": "En el pueblo necesitamos más aparcamientos.",
@@ -2025,9 +2433,32 @@
             },
             {
               "id": "u10-1.l2.s3.e11",
-              "type": "order_sentence",
-              "answer": "Igerileku hau da herriko onena.",
-              "translation": "Esta piscina es la mejor del pueblo.",
+              "type": "word_intro",
+              "word": "onena",
+              "translation": "el mejor / la mejor",
+              "vocabulary": [
+                "on"
+              ],
+              "structures": [
+                "superlative"
+              ]
+            },
+            {
+              "id": "u10-1.l2.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Igerileku hau da herriko onena."
+              },
+              "answers": [
+                "Esta piscina es la mejor del pueblo."
+              ],
+              "distractors": [
+                "El",
+                "metro",
+                "playa",
+                "ruidosa"
+              ],
               "vocabulary": [
                 "igerileku",
                 "hau",
@@ -2040,7 +2471,7 @@
               ]
             },
             {
-              "id": "u10-1.l2.s3.e12",
+              "id": "u10-1.l2.s3.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",

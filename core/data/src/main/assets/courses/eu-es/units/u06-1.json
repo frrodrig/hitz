@@ -123,17 +123,31 @@
           "exercises": [
             {
               "id": "u06-1.l1.s1.e01",
+              "type": "word_intro",
+              "word": "okindegi",
+              "translation": "panadería",
+              "image": "shop_bakery.webp",
+              "vocabulary": [
+                "okindegi"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "En la panadería hay pan."
+                "lang": "eu",
+                "text": "Okindegian ogia dago."
               },
               "answers": [
-                "Okindegian ogia dago."
+                "En la panadería hay pan."
               ],
               "distractors": [
-                "Harategian",
-                "daude"
+                "frutería",
+                "carnicería",
+                "lado"
               ],
               "vocabulary": [
                 "okindegi",
@@ -145,12 +159,32 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Harategia plazan dago.",
+              "id": "u06-1.l1.s1.e03",
+              "type": "word_intro",
+              "word": "harategi",
+              "translation": "carnicería",
+              "image": "shop_butcher.webp",
+              "vocabulary": [
+                "harategi"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Harategia plazan dago."
+              },
+              "answers": [
+                "La carnicería está en la plaza."
+              ],
               "distractors": [
-                "Arrandegian",
-                "supermerkatua"
+                "calle",
+                "y",
+                "Dónde"
               ],
               "vocabulary": [
                 "harategi",
@@ -162,7 +196,59 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e03",
+              "id": "u06-1.l1.s1.e05",
+              "type": "word_intro",
+              "word": "arrandegi",
+              "translation": "pescadería",
+              "image": "shop_fishmonger.webp",
+              "vocabulary": [
+                "arrandegi"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e06",
+              "type": "word_intro",
+              "word": "frutadenda",
+              "translation": "frutería",
+              "image": "shop_greengrocer.webp",
+              "vocabulary": [
+                "frutadenda"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e07",
+              "type": "word_intro",
+              "word": "supermerkatu",
+              "translation": "supermercado",
+              "image": "shop_supermarket.webp",
+              "vocabulary": [
+                "supermerkatu"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e08",
+              "type": "word_intro",
+              "word": "liburu-denda",
+              "translation": "librería",
+              "image": "shop_bookshop.webp",
+              "vocabulary": [
+                "liburu-denda"
+              ],
+              "structures": [
+                "shops-tegi"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s1.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -203,15 +289,10 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e04",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "En la pescadería hay pescado."
-              },
-              "answers": [
-                "Arrandegian arraina dago."
-              ],
+              "id": "u06-1.l1.s1.e10",
+              "type": "order_sentence",
+              "answer": "Arrandegian arraina dago.",
+              "translation": "En la pescadería hay pescado.",
               "vocabulary": [
                 "arrandegi",
                 "arrain",
@@ -222,7 +303,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e05",
+              "id": "u06-1.l1.s1.e11",
               "type": "fill_blank",
               "sentence": "___ ogia dago.",
               "options": [
@@ -241,7 +322,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e06",
+              "id": "u06-1.l1.s1.e12",
               "type": "order_sentence",
               "answer": "Frutadenda okindegiaren ondoan dago.",
               "translation": "La frutería está al lado de la panadería.",
@@ -256,7 +337,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e07",
+              "id": "u06-1.l1.s1.e13",
               "type": "choose_meaning",
               "text": "Arrandegian arraina dago.",
               "options": [
@@ -275,7 +356,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e08",
+              "id": "u06-1.l1.s1.e14",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -294,7 +375,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e09",
+              "id": "u06-1.l1.s1.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -320,11 +401,19 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e10",
-              "type": "listen_type",
-              "text": "Liburu-denda kale honetan dago.",
+              "id": "u06-1.l1.s1.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La librería está en esta calle."
+              },
               "answers": [
                 "Liburu-denda kale honetan dago."
+              ],
+              "distractors": [
+                "haragi",
+                "asko",
+                "plazan"
               ],
               "vocabulary": [
                 "liburu-denda",
@@ -337,7 +426,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e11",
+              "id": "u06-1.l1.s1.e17",
               "type": "read_true_false",
               "passage": "Kale honetan harategi bat eta frutadenda bat daude, baina okindegia plazan dago.",
               "statement": "La panadería está en esta calle.",
@@ -359,7 +448,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e12",
+              "id": "u06-1.l1.s1.e18",
               "type": "speak",
               "text": "Harategian haragi asko dago.",
               "translation": "En la carnicería hay mucha carne.",
@@ -374,7 +463,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e13",
+              "id": "u06-1.l1.s1.e19",
               "type": "choose_image",
               "prompt": "la panadería",
               "options": [
@@ -400,7 +489,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e14",
+              "id": "u06-1.l1.s1.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -427,7 +516,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e15",
+              "id": "u06-1.l1.s1.e21",
               "type": "choose_image",
               "prompt": "la carnicería",
               "options": [
@@ -453,7 +542,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e16",
+              "id": "u06-1.l1.s1.e22",
               "type": "choose_image",
               "prompt": "la pescadería",
               "options": [
@@ -479,7 +568,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e17",
+              "id": "u06-1.l1.s1.e23",
               "type": "choose_image",
               "prompt": "la frutería",
               "options": [
@@ -505,7 +594,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e18",
+              "id": "u06-1.l1.s1.e24",
               "type": "choose_image",
               "prompt": "el supermercado",
               "options": [
@@ -531,7 +620,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s1.e19",
+              "id": "u06-1.l1.s1.e25",
               "type": "choose_image",
               "prompt": "la librería",
               "options": [
@@ -563,11 +652,44 @@
           "exercises": [
             {
               "id": "u06-1.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Saltzailea dendan dago.",
+              "type": "word_intro",
+              "word": "saltzaile",
+              "translation": "vendedor; vendedora",
+              "vocabulary": [
+                "saltzaile"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e02",
+              "type": "word_intro",
+              "word": "denda",
+              "translation": "tienda",
+              "vocabulary": [
+                "denda"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Saltzailea dendan dago."
+              },
+              "answers": [
+                "El vendedor está en la tienda.",
+                "La vendedora está en la tienda."
+              ],
               "distractors": [
-                "daukazu",
-                "Txartela"
+                "están",
+                "Tienes",
+                "quiere",
+                "tengo"
               ],
               "vocabulary": [
                 "saltzaile",
@@ -579,14 +701,32 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u06-1.l1.s2.e04",
+              "type": "word_intro",
+              "word": "bezero",
+              "translation": "cliente",
+              "vocabulary": [
+                "bezero"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e05",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Los clientes están en el supermercado."
+                "lang": "eu",
+                "text": "Bezeroak supermerkatuan daude."
               },
               "answers": [
-                "Bezeroak supermerkatuan daude."
+                "Los clientes están en el supermercado."
+              ],
+              "distractors": [
+                "centro",
+                "otro",
+                "No",
+                "un"
               ],
               "vocabulary": [
                 "bezero",
@@ -598,7 +738,45 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e03",
+              "id": "u06-1.l1.s2.e06",
+              "type": "word_intro",
+              "word": "txartel",
+              "translation": "tarjeta",
+              "image": "object_card.webp",
+              "vocabulary": [
+                "txartel"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e07",
+              "type": "word_intro",
+              "word": "eskudiru",
+              "translation": "dinero en efectivo",
+              "vocabulary": [
+                "eskudiru"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e08",
+              "type": "word_intro",
+              "word": "diru",
+              "translation": "dinero",
+              "image": "object_money.webp",
+              "vocabulary": [
+                "diru"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -639,10 +817,32 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e04",
-              "type": "order_sentence",
-              "answer": "Merkataritza-gunea urrun dago.",
-              "translation": "El centro comercial está lejos.",
+              "id": "u06-1.l1.s2.e10",
+              "type": "word_intro",
+              "word": "merkataritza-gune",
+              "translation": "centro comercial",
+              "vocabulary": [
+                "merkataritza-gune"
+              ],
+              "structures": [
+                "shops-vocab"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s2.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Merkataritza-gunea urrun dago."
+              },
+              "answers": [
+                "El centro comercial está lejos."
+              ],
+              "distractors": [
+                "quiere",
+                "un",
+                "supermercado"
+              ],
               "vocabulary": [
                 "merkataritza-gune",
                 "urrun",
@@ -653,7 +853,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e05",
+              "id": "u06-1.l1.s2.e12",
               "type": "fill_blank",
               "sentence": "Eskudirua ___ dut.",
               "options": [
@@ -672,7 +872,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e06",
+              "id": "u06-1.l1.s2.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -692,7 +892,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e07",
+              "id": "u06-1.l1.s2.e14",
               "type": "choose_meaning",
               "text": "Ez daukat dirurik.",
               "options": [
@@ -711,11 +911,12 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e08",
-              "type": "listen_type",
+              "id": "u06-1.l1.s2.e15",
+              "type": "listen_tap",
               "text": "Txartela daukazu?",
-              "answers": [
-                "Txartela daukazu?"
+              "distractors": [
+                "beste",
+                "daude"
               ],
               "vocabulary": [
                 "txartel",
@@ -726,7 +927,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e09",
+              "id": "u06-1.l1.s2.e16",
               "type": "complete_chat",
               "messages": [
                 {
@@ -750,7 +951,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e10",
+              "id": "u06-1.l1.s2.e17",
               "type": "speak",
               "text": "Ez daukat dirurik.",
               "translation": "No tengo dinero.",
@@ -764,7 +965,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e11",
+              "id": "u06-1.l1.s2.e18",
               "type": "read_true_false",
               "passage": "Jonek ez dauka eskudirurik, baina txartela dauka.",
               "statement": "Jon tiene tarjeta.",
@@ -781,7 +982,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e12",
+              "id": "u06-1.l1.s2.e19",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -806,7 +1007,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e13",
+              "id": "u06-1.l1.s2.e20",
               "type": "choose_image",
               "prompt": "la tarjeta",
               "options": [
@@ -832,7 +1033,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e14",
+              "id": "u06-1.l1.s2.e21",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -860,7 +1061,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s2.e15",
+              "id": "u06-1.l1.s2.e22",
               "type": "choose_image",
               "prompt": "el dinero",
               "options": [
@@ -926,6 +1127,18 @@
             },
             {
               "id": "u06-1.l1.s3.e03",
+              "type": "word_intro",
+              "word": "ordaindu",
+              "translation": "pagar",
+              "vocabulary": [
+                "ordaindu"
+              ],
+              "structures": [
+                "zenbat-da"
+              ]
+            },
+            {
+              "id": "u06-1.l1.s3.e04",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -966,7 +1179,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s3.e04",
+              "id": "u06-1.l1.s3.e05",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -985,7 +1198,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s3.e05",
+              "id": "u06-1.l1.s3.e06",
               "type": "fill_blank",
               "sentence": "___ da gazta hau?",
               "options": [
@@ -1005,7 +1218,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s3.e06",
+              "id": "u06-1.l1.s3.e07",
               "type": "listen_type",
               "text": "Sagarrak merkeak dira.",
               "answers": [
@@ -1021,7 +1234,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s3.e07",
+              "id": "u06-1.l1.s3.e08",
               "type": "choose_meaning",
               "text": "Zenbat da?",
               "options": [
@@ -1039,7 +1252,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s3.e08",
+              "id": "u06-1.l1.s3.e09",
               "type": "speak",
               "text": "Arraina garestia da.",
               "translation": "El pescado es caro.",
@@ -1053,7 +1266,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s3.e09",
+              "id": "u06-1.l1.s3.e10",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1079,7 +1292,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s3.e10",
+              "id": "u06-1.l1.s3.e11",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1105,7 +1318,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s3.e11",
+              "id": "u06-1.l1.s3.e12",
               "type": "read_true_false",
               "passage": "Ogia merkea da, euro bat. Gazta garestia da, hamar euro.",
               "statement": "El queso cuesta diez euros.",
@@ -1125,7 +1338,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s3.e12",
+              "id": "u06-1.l1.s3.e13",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1150,7 +1363,7 @@
               ]
             },
             {
-              "id": "u06-1.l1.s3.e13",
+              "id": "u06-1.l1.s3.e14",
               "type": "listen_tap",
               "text": "Gazta hau pixka bat garestia da.",
               "distractors": [
@@ -1516,9 +1729,31 @@
             },
             {
               "id": "u06-1.l2.s2.e04",
-              "type": "speak",
-              "text": "Sukaldaria izan nahi dut.",
-              "translation": "Quiero ser cocinero.",
+              "type": "word_intro",
+              "word": "izan",
+              "translation": "ser",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "verb-nahi"
+              ]
+            },
+            {
+              "id": "u06-1.l2.s2.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Sukaldaria izan nahi dut."
+              },
+              "answers": [
+                "Quiero ser cocinero.",
+                "Quiero ser cocinera."
+              ],
+              "distractors": [
+                "vender",
+                "pagar"
+              ],
               "vocabulary": [
                 "sukaldari",
                 "izan",
@@ -1530,7 +1765,7 @@
               ]
             },
             {
-              "id": "u06-1.l2.s2.e05",
+              "id": "u06-1.l2.s2.e06",
               "type": "choose_meaning",
               "text": "Bilbon bizi nahi dut.",
               "options": [
@@ -1549,7 +1784,7 @@
               ]
             },
             {
-              "id": "u06-1.l2.s2.e06",
+              "id": "u06-1.l2.s2.e07",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1575,7 +1810,7 @@
               ]
             },
             {
-              "id": "u06-1.l2.s2.e07",
+              "id": "u06-1.l2.s2.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1604,7 +1839,7 @@
               ]
             },
             {
-              "id": "u06-1.l2.s2.e08",
+              "id": "u06-1.l2.s2.e09",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1630,7 +1865,7 @@
               ]
             },
             {
-              "id": "u06-1.l2.s2.e09",
+              "id": "u06-1.l2.s2.e10",
               "type": "read_true_false",
               "passage": "Nire ahizpak ez du supermerkatuan erosi nahi. Frutadenda nahiago du, merkeagoa da eta.",
               "statement": "Su hermana prefiere la frutería.",
@@ -1654,7 +1889,7 @@
               ]
             },
             {
-              "id": "u06-1.l2.s2.e10",
+              "id": "u06-1.l2.s2.e11",
               "type": "listen_tap",
               "text": "Zure lagunak zer erosi nahi du?",
               "distractors": [
@@ -1676,7 +1911,7 @@
               ]
             },
             {
-              "id": "u06-1.l2.s2.e11",
+              "id": "u06-1.l2.s2.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1697,7 +1932,7 @@
               ]
             },
             {
-              "id": "u06-1.l2.s2.e12",
+              "id": "u06-1.l2.s2.e13",
               "type": "order_sentence",
               "answer": "Ez dugu eskudirutan ordaindu nahi.",
               "translation": "No queremos pagar en efectivo.",

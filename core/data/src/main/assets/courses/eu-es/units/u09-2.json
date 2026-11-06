@@ -131,17 +131,31 @@
           "exercises": [
             {
               "id": "u09-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "itzaltzen",
+              "translation": "apagando (itzali)",
+              "vocabulary": [
+                "itzali"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Apago la luz."
+                "lang": "eu",
+                "text": "Argia itzaltzen dut."
               },
               "answers": [
-                "Argia itzaltzen dut."
+                "Apago la luz.",
+                "Yo apago la luz."
               ],
               "distractors": [
-                "aurrezten",
-                "Energia"
+                "agua",
+                "casa"
               ],
               "vocabulary": [
                 "argi",
@@ -154,13 +168,34 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Gelan argia pizten dugu.",
+              "id": "u09-2.l1.s1.e03",
+              "type": "word_intro",
+              "word": "pizten",
+              "translation": "encendiendo (piztu)",
+              "vocabulary": [
+                "piztu"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gelan argia pizten dugu."
+              },
+              "answers": [
+                "Encendemos la luz en la habitación.",
+                "En el aula encendemos la luz.",
+                "Encendemos la luz en el aula."
+              ],
               "distractors": [
-                "ditugu",
-                "Nik",
-                "Paperezko"
+                "siempre",
+                "uso",
+                "Tenemos"
               ],
               "vocabulary": [
                 "gela",
@@ -174,7 +209,59 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e03",
+              "id": "u09-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "itzali",
+              "translation": "apagar",
+              "vocabulary": [
+                "itzali"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e06",
+              "type": "word_intro",
+              "word": "piztu",
+              "translation": "encender",
+              "vocabulary": [
+                "piztu"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e07",
+              "type": "word_intro",
+              "word": "aurreztu",
+              "translation": "ahorrar",
+              "vocabulary": [
+                "aurreztu"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e08",
+              "type": "word_intro",
+              "word": "erabili",
+              "translation": "usar",
+              "vocabulary": [
+                "erabili"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -211,15 +298,10 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e04",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "Tenemos que ahorrar energía."
-              },
-              "answers": [
-                "Energia aurreztu behar dugu."
-              ],
+              "id": "u09-2.l1.s1.e10",
+              "type": "order_sentence",
+              "answer": "Energia aurreztu behar dugu.",
+              "translation": "Tenemos que ahorrar energía.",
               "vocabulary": [
                 "energia",
                 "aurreztu",
@@ -232,7 +314,20 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e05",
+              "id": "u09-2.l1.s1.e11",
+              "type": "word_intro",
+              "word": "aurrezten",
+              "translation": "ahorrando (aurreztu)",
+              "vocabulary": [
+                "aurreztu"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e12",
               "type": "fill_blank",
               "sentence": "Ura ___ dut.",
               "options": [
@@ -252,7 +347,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e06",
+              "id": "u09-2.l1.s1.e13",
               "type": "order_sentence",
               "answer": "Etxean beti ura aurrezten dut.",
               "translation": "En casa siempre ahorro agua.",
@@ -269,7 +364,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e07",
+              "id": "u09-2.l1.s1.e14",
               "type": "choose_meaning",
               "text": "Argia itzaltzen dut.",
               "options": [
@@ -289,14 +384,32 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e08",
-              "type": "translate_typing",
+              "id": "u09-2.l1.s1.e15",
+              "type": "word_intro",
+              "word": "erabiltzen",
+              "translation": "usando (erabili)",
+              "vocabulary": [
+                "erabili"
+              ],
+              "structures": [
+                "habitual-present",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s1.e16",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Paperezko poltsak erabiltzen ditugu."
               },
               "answers": [
                 "Usamos bolsas de papel."
+              ],
+              "distractors": [
+                "No",
+                "luz",
+                "plástico"
               ],
               "vocabulary": [
                 "paper",
@@ -310,7 +423,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e09",
+              "id": "u09-2.l1.s1.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -339,11 +452,20 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e10",
-              "type": "listen_type",
-              "text": "Itzal ezazu argia, mesedez!",
+              "id": "u09-2.l1.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Itzal ezazu argia, mesedez!"
+              },
               "answers": [
-                "Itzal ezazu argia, mesedez!"
+                "¡Apaga la luz, por favor!",
+                "¡Apague la luz, por favor!"
+              ],
+              "distractors": [
+                "bolsas",
+                "agua",
+                "de"
               ],
               "vocabulary": [
                 "itzali",
@@ -357,7 +479,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e11",
+              "id": "u09-2.l1.s1.e19",
               "type": "read_true_false",
               "passage": "Etxean energia aurrezten dugu. Argiak itzaltzen ditugu.",
               "statement": "En esa casa ahorran energía.",
@@ -376,7 +498,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e12",
+              "id": "u09-2.l1.s1.e20",
               "type": "speak",
               "text": "Ez piztu argia orain.",
               "translation": "No enciendas la luz ahora.",
@@ -392,7 +514,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s1.e13",
+              "id": "u09-2.l1.s1.e21",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -467,6 +589,58 @@
             },
             {
               "id": "u09-2.l1.s2.e03",
+              "type": "word_intro",
+              "word": "debekatuta",
+              "translation": "prohibido",
+              "vocabulary": [
+                "debekatuta"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e04",
+              "type": "word_intro",
+              "word": "ados",
+              "translation": "de acuerdo",
+              "vocabulary": [
+                "ados"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e05",
+              "type": "word_intro",
+              "word": "iritzi",
+              "translation": "opinión",
+              "vocabulary": [
+                "iritzi"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e06",
+              "type": "word_intro",
+              "word": "zaindu",
+              "translation": "cuidar",
+              "vocabulary": [
+                "zaindu"
+              ],
+              "structures": [
+                "ezin-da",
+                "debekatuta"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s2.e07",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -503,7 +677,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s2.e04",
+              "id": "u09-2.l1.s2.e08",
               "type": "order_sentence",
               "answer": "Hemen debekatuta dago igeri egitea.",
               "translation": "Aquí está prohibido nadar.",
@@ -520,7 +694,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s2.e05",
+              "id": "u09-2.l1.s2.e09",
               "type": "fill_blank",
               "sentence": "Ezin ___ hemen sartu.",
               "options": [
@@ -541,7 +715,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s2.e06",
+              "id": "u09-2.l1.s2.e10",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -563,7 +737,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s2.e07",
+              "id": "u09-2.l1.s2.e11",
               "type": "choose_meaning",
               "text": "Hemen debekatuta dago igeri egitea.",
               "options": [
@@ -585,7 +759,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s2.e08",
+              "id": "u09-2.l1.s2.e12",
               "type": "listen_type",
               "text": "Ibaian ezin da igeri egin.",
               "answers": [
@@ -603,7 +777,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s2.e09",
+              "id": "u09-2.l1.s2.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -633,7 +807,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s2.e10",
+              "id": "u09-2.l1.s2.e14",
               "type": "speak",
               "text": "Debekatuta dago hondakinak ibaira botatzea.",
               "translation": "Está prohibido tirar residuos al río.",
@@ -650,7 +824,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s2.e11",
+              "id": "u09-2.l1.s2.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -680,7 +854,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s2.e12",
+              "id": "u09-2.l1.s2.e16",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -712,14 +886,9 @@
           "exercises": [
             {
               "id": "u09-2.l1.s3.e01",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "Tenemos que cuidar la naturaleza."
-              },
-              "answers": [
-                "Natura zaindu behar dugu."
-              ],
+              "type": "order_sentence",
+              "answer": "Natura zaindu behar dugu.",
+              "translation": "Tenemos que cuidar la naturaleza.",
               "vocabulary": [
                 "natura",
                 "zaindu",
@@ -732,9 +901,33 @@
             },
             {
               "id": "u09-2.l1.s3.e02",
-              "type": "order_sentence",
-              "answer": "Zer uste duzu?",
-              "translation": "¿Qué opinas?",
+              "type": "word_intro",
+              "word": "uste",
+              "translation": "creer (uste dut: creo)",
+              "vocabulary": [
+                "uste izan"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer uste duzu?"
+              },
+              "answers": [
+                "¿Qué opinas?",
+                "¿Qué crees?",
+                "¿Qué piensas?",
+                "¿Qué opina usted?"
+              ],
+              "distractors": [
+                "que",
+                "Cuál"
+              ],
               "vocabulary": [
                 "zer",
                 "uste izan",
@@ -745,7 +938,31 @@
               ]
             },
             {
-              "id": "u09-2.l1.s3.e03",
+              "id": "u09-2.l1.s3.e04",
+              "type": "word_intro",
+              "word": "uste izan",
+              "translation": "creer; opinar",
+              "vocabulary": [
+                "uste izan"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "garrantzitsu",
+              "translation": "importante",
+              "vocabulary": [
+                "garrantzitsu"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e06",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -781,7 +998,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s3.e04",
+              "id": "u09-2.l1.s3.e07",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -799,7 +1016,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s3.e05",
+              "id": "u09-2.l1.s3.e08",
               "type": "fill_blank",
               "sentence": "Ados ___.",
               "options": [
@@ -817,7 +1034,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s3.e06",
+              "id": "u09-2.l1.s3.e09",
               "type": "listen_type",
               "text": "Ez nago ados.",
               "answers": [
@@ -833,7 +1050,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s3.e07",
+              "id": "u09-2.l1.s3.e10",
               "type": "choose_meaning",
               "text": "Ez nago ados.",
               "options": [
@@ -852,10 +1069,33 @@
               ]
             },
             {
-              "id": "u09-2.l1.s3.e08",
-              "type": "speak",
-              "text": "Nire ustez, ondo dago.",
-              "translation": "En mi opinión, está bien.",
+              "id": "u09-2.l1.s3.e11",
+              "type": "word_intro",
+              "word": "ustez",
+              "translation": "en opinión (nire ustez: en mi opinión)",
+              "vocabulary": [
+                "uste izan"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nire ustez, ondo dago."
+              },
+              "answers": [
+                "En mi opinión, está bien.",
+                "Creo que está bien."
+              ],
+              "distractors": [
+                "Qué",
+                "Tú",
+                "naturaleza"
+              ],
               "vocabulary": [
                 "ni",
                 "uste izan",
@@ -867,7 +1107,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s3.e09",
+              "id": "u09-2.l1.s3.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -895,7 +1135,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s3.e10",
+              "id": "u09-2.l1.s3.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -921,7 +1161,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s3.e11",
+              "id": "u09-2.l1.s3.e15",
               "type": "read_true_false",
               "passage": "Nire ustez, plastiko gutxiago erabili behar dugu.",
               "statement": "Esta persona cree que hay que usar más plástico.",
@@ -940,19 +1180,34 @@
               ]
             },
             {
-              "id": "u09-2.l1.s3.e12",
+              "id": "u09-2.l1.s3.e16",
+              "type": "word_intro",
+              "word": "zaintzen",
+              "translation": "cuidando (zaindu)",
+              "vocabulary": [
+                "zaindu"
+              ],
+              "structures": [
+                "opinion"
+              ]
+            },
+            {
+              "id": "u09-2.l1.s3.e17",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Nosotros también cuidamos el medio ambiente."
+                "lang": "eu",
+                "text": "Guk ere ingurumena zaintzen dugu."
               },
               "answers": [
-                "Guk ere ingurumena zaintzen dugu."
+                "Nosotros también cuidamos el medio ambiente.",
+                "También cuidamos el medio ambiente.",
+                "Nosotras también cuidamos el medio ambiente."
               ],
               "distractors": [
-                "zaindu",
-                "duzu",
-                "Natura"
+                "estás",
+                "opinión",
+                "es",
+                "de"
               ],
               "vocabulary": [
                 "gu",
@@ -966,7 +1221,7 @@
               ]
             },
             {
-              "id": "u09-2.l1.s3.e13",
+              "id": "u09-2.l1.s3.e18",
               "type": "listen_tap",
               "text": "Zu ados zaude?",
               "distractors": [
@@ -999,9 +1254,31 @@
           "exercises": [
             {
               "id": "u09-2.l2.s1.e01",
-              "type": "order_sentence",
-              "answer": "Komeni da energia aurreztea.",
-              "translation": "Conviene ahorrar energía.",
+              "type": "word_intro",
+              "word": "aurreztea",
+              "translation": "ahorrar",
+              "vocabulary": [
+                "aurreztu"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Komeni da energia aurreztea."
+              },
+              "answers": [
+                "Conviene ahorrar energía.",
+                "Es conveniente ahorrar energía."
+              ],
+              "distractors": [
+                "apagar",
+                "bolsas"
+              ],
               "vocabulary": [
                 "komeni izan",
                 "izan",
@@ -1013,14 +1290,31 @@
               ]
             },
             {
-              "id": "u09-2.l2.s1.e02",
-              "type": "translate_typing",
+              "id": "u09-2.l2.s1.e03",
+              "type": "word_intro",
+              "word": "birziklatzea",
+              "translation": "reciclar",
+              "vocabulary": [
+                "birziklatu"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e04",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Ondo dago papera birziklatzea."
               },
               "answers": [
                 "Está bien reciclar el papel."
+              ],
+              "distractors": [
+                "al",
+                "las",
+                "No"
               ],
               "vocabulary": [
                 "ondo",
@@ -1033,7 +1327,7 @@
               ]
             },
             {
-              "id": "u09-2.l2.s1.e03",
+              "id": "u09-2.l2.s1.e05",
               "type": "fill_blank",
               "sentence": "Komeni da ura ___.",
               "options": [
@@ -1053,11 +1347,31 @@
               ]
             },
             {
-              "id": "u09-2.l2.s1.e04",
-              "type": "listen_type",
-              "text": "Garrantzitsua da argiak itzaltzea.",
+              "id": "u09-2.l2.s1.e06",
+              "type": "word_intro",
+              "word": "itzaltzea",
+              "translation": "apagar",
+              "vocabulary": [
+                "itzali"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e07",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Garrantzitsua da argiak itzaltzea."
+              },
               "answers": [
-                "Garrantzitsua da argiak itzaltzea."
+                "Es importante apagar las luces."
+              ],
+              "distractors": [
+                "tirar",
+                "Conviene",
+                "usar"
               ],
               "vocabulary": [
                 "garrantzitsu",
@@ -1070,7 +1384,7 @@
               ]
             },
             {
-              "id": "u09-2.l2.s1.e05",
+              "id": "u09-2.l2.s1.e08",
               "type": "fill_blank",
               "sentence": "Ondo dago papera ___.",
               "options": [
@@ -1090,10 +1404,33 @@
               ]
             },
             {
-              "id": "u09-2.l2.s1.e06",
-              "type": "speak",
-              "text": "Natura zaintzea garrantzitsua da.",
-              "translation": "Cuidar la naturaleza es importante.",
+              "id": "u09-2.l2.s1.e09",
+              "type": "word_intro",
+              "word": "zaintzea",
+              "translation": "cuidar",
+              "vocabulary": [
+                "zaindu"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Natura zaintzea garrantzitsua da."
+              },
+              "answers": [
+                "Cuidar la naturaleza es importante.",
+                "Es importante cuidar la naturaleza."
+              ],
+              "distractors": [
+                "río",
+                "energía",
+                "Conviene"
+              ],
               "vocabulary": [
                 "natura",
                 "zaindu",
@@ -1105,7 +1442,7 @@
               ]
             },
             {
-              "id": "u09-2.l2.s1.e07",
+              "id": "u09-2.l2.s1.e11",
               "type": "choose_meaning",
               "text": "Komeni da argiak itzaltzea.",
               "options": [
@@ -1125,7 +1462,19 @@
               ]
             },
             {
-              "id": "u09-2.l2.s1.e08",
+              "id": "u09-2.l2.s1.e12",
+              "type": "word_intro",
+              "word": "erabiltzea",
+              "translation": "usar",
+              "vocabulary": [
+                "erabili"
+              ],
+              "structures": [
+                "tzea-nominal"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s1.e13",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1152,7 +1501,7 @@
               ]
             },
             {
-              "id": "u09-2.l2.s1.e09",
+              "id": "u09-2.l2.s1.e14",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1178,7 +1527,7 @@
               ]
             },
             {
-              "id": "u09-2.l2.s1.e10",
+              "id": "u09-2.l2.s1.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1203,7 +1552,7 @@
               ]
             },
             {
-              "id": "u09-2.l2.s1.e11",
+              "id": "u09-2.l2.s1.e16",
               "type": "listen_tap",
               "text": "Ez dago ondo ibaira hondakinak botatzea.",
               "distractors": [
@@ -1225,14 +1574,19 @@
               ]
             },
             {
-              "id": "u09-2.l2.s1.e12",
-              "type": "translate_typing",
+              "id": "u09-2.l2.s1.e17",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "Me gusta cuidar la naturaleza."
               },
               "answers": [
                 "Gustatzen zait natura zaintzea."
+              ],
+              "distractors": [
+                "papera",
+                "ibaira",
+                "dago"
               ],
               "vocabulary": [
                 "gustatu",
@@ -1543,10 +1897,33 @@
           "exercises": [
             {
               "id": "u09-2.l2.s3.e01",
-              "type": "listen_type",
-              "text": "Gelatik joaten naizenean, argia itzaltzen dut.",
+              "type": "word_intro",
+              "word": "naizenean",
+              "translation": "cuando soy / cuando estoy",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gelatik joaten naizenean, argia itzaltzen dut."
+              },
               "answers": [
-                "Gelatik joaten naizenean, argia itzaltzen dut."
+                "Cuando salgo de la habitación, apago la luz.",
+                "Cuando me voy de la habitación, apago la luz."
+              ],
+              "distractors": [
+                "supermercado",
+                "al",
+                "voy",
+                "ahorro"
               ],
               "vocabulary": [
                 "gela",
@@ -1562,10 +1939,14 @@
               ]
             },
             {
-              "id": "u09-2.l2.s3.e02",
-              "type": "speak",
+              "id": "u09-2.l2.s3.e03",
+              "type": "listen_tap",
               "text": "Dutxatzen naizenean, ura aurrezten dut.",
-              "translation": "Cuando me ducho, ahorro agua.",
+              "distractors": [
+                "ez",
+                "itzaltzen",
+                "bat"
+              ],
               "vocabulary": [
                 "dutxatu",
                 "izan",
@@ -1579,7 +1960,7 @@
               ]
             },
             {
-              "id": "u09-2.l2.s3.e03",
+              "id": "u09-2.l2.s3.e04",
               "type": "fill_blank",
               "sentence": "Gelatik joaten ___, argia itzaltzen dut.",
               "options": [
@@ -1602,7 +1983,20 @@
               ]
             },
             {
-              "id": "u09-2.l2.s3.e04",
+              "id": "u09-2.l2.s3.e05",
+              "type": "word_intro",
+              "word": "eramaten",
+              "translation": "llevando (eraman)",
+              "vocabulary": [
+                "eraman"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e06",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1632,7 +2026,20 @@
               ]
             },
             {
-              "id": "u09-2.l2.s3.e05",
+              "id": "u09-2.l2.s3.e07",
+              "type": "word_intro",
+              "word": "dagoenean",
+              "translation": "cuando está",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e08",
               "type": "fill_blank",
               "sentence": "Eguzkia ___, ez dut argia pizten.",
               "options": [
@@ -1655,20 +2062,35 @@
               ]
             },
             {
-              "id": "u09-2.l2.s3.e06",
+              "id": "u09-2.l2.s3.e09",
+              "type": "word_intro",
+              "word": "etortzen",
+              "translation": "viniendo (etorri)",
+              "vocabulary": [
+                "etorri"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e10",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Cuando vengo a casa, enciendo la luz."
+                "lang": "eu",
+                "text": "Etxera etortzen naizenean, argia pizten dut."
               },
               "answers": [
-                "Etxera etortzen naizenean, argia pizten dut."
+                "Cuando vengo a casa, enciendo la luz.",
+                "Cuando llego a casa, enciendo la luz.",
+                "Cuando vuelvo a casa, enciendo la luz."
               ],
               "distractors": [
-                "poltsa",
-                "eramaten",
-                "dudanean",
-                "aurrezten"
+                "contenedor",
+                "salgo",
+                "habitación",
+                "tengo"
               ],
               "vocabulary": [
                 "etxe",
@@ -1684,7 +2106,7 @@
               ]
             },
             {
-              "id": "u09-2.l2.s3.e07",
+              "id": "u09-2.l2.s3.e11",
               "type": "choose_meaning",
               "text": "Ilun dagoenean, argia pizten dugu.",
               "options": [
@@ -1706,7 +2128,7 @@
               ]
             },
             {
-              "id": "u09-2.l2.s3.e08",
+              "id": "u09-2.l2.s3.e12",
               "type": "listen_tap",
               "text": "Ilun dagoenean, argia pizten dugu.",
               "distractors": [
@@ -1727,7 +2149,20 @@
               ]
             },
             {
-              "id": "u09-2.l2.s3.e09",
+              "id": "u09-2.l2.s3.e13",
+              "type": "word_intro",
+              "word": "zarenean",
+              "translation": "cuando eres / cuando estás",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e14",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1757,7 +2192,7 @@
               ]
             },
             {
-              "id": "u09-2.l2.s3.e10",
+              "id": "u09-2.l2.s3.e15",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1780,7 +2215,20 @@
               ]
             },
             {
-              "id": "u09-2.l2.s3.e11",
+              "id": "u09-2.l2.s3.e16",
+              "type": "word_intro",
+              "word": "denean",
+              "translation": "cuando es / cuando está",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e17",
               "type": "read_true_false",
               "passage": "Iker dutxatzen denean, ura aurrezten du.",
               "statement": "Iker ahorra agua cuando se ducha.",
@@ -1798,10 +2246,34 @@
               ]
             },
             {
-              "id": "u09-2.l2.s3.e12",
-              "type": "order_sentence",
-              "answer": "Botila bat dudanean, edukiontzi berdera eramaten dut.",
-              "translation": "Cuando tengo una botella, la llevo al contenedor verde.",
+              "id": "u09-2.l2.s3.e18",
+              "type": "word_intro",
+              "word": "dudanean",
+              "translation": "cuando tengo",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l2.s3.e19",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Botila bat dudanean, edukiontzi berdera eramaten dut."
+              },
+              "answers": [
+                "Cuando tengo una botella, la llevo al contenedor verde."
+              ],
+              "distractors": [
+                "encendemos",
+                "sol",
+                "de",
+                "no"
+              ],
               "vocabulary": [
                 "botila",
                 "bat",
@@ -2231,6 +2703,19 @@
             },
             {
               "id": "u09-2.l3.s2.e05",
+              "type": "word_intro",
+              "word": "dagoelako",
+              "translation": "porque está",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "debekatuta",
+                "ezin-da"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s2.e06",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2270,7 +2755,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s2.e06",
+              "id": "u09-2.l3.s2.e07",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2292,7 +2777,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s2.e07",
+              "id": "u09-2.l3.s2.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2321,7 +2806,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s2.e08",
+              "id": "u09-2.l3.s2.e09",
               "type": "order_sentence",
               "answer": "Ez, hemen igeri egin daiteke.",
               "translation": "No, aquí se puede nadar.",
@@ -2337,7 +2822,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s2.e09",
+              "id": "u09-2.l3.s2.e10",
               "type": "read_true_false",
               "passage": "Parkean ezin da hondakinik bota. Zakarrontziak erabili behar dira.",
               "statement": "En el parque hay que usar las papeleras.",
@@ -2358,7 +2843,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s2.e10",
+              "id": "u09-2.l3.s2.e11",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2381,7 +2866,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s2.e11",
+              "id": "u09-2.l3.s2.e12",
               "type": "read_true_false",
               "passage": "Liburutegian argiak itzali behar dira. Energia aurreztu behar dugu.",
               "statement": "En la biblioteca hay que dejar las luces encendidas.",
@@ -2402,7 +2887,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s2.e12",
+              "id": "u09-2.l3.s2.e13",
               "type": "choose_image",
               "prompt": "el árbol",
               "options": [
@@ -2510,13 +2995,33 @@
             },
             {
               "id": "u09-2.l3.s3.e04",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "birziklatzen",
+              "translation": "reciclando (birziklatu)",
+              "vocabulary": [
+                "birziklatu"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e05",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "En la escuela también reciclamos el papel y el plástico."
+                "lang": "eu",
+                "text": "Eskolan papera eta plastikoa ere birziklatzen ditugu."
               },
               "answers": [
-                "Eskolan papera eta plastikoa ere birziklatzen ditugu."
+                "En la escuela también reciclamos el papel y el plástico.",
+                "En la escuela también reciclamos papel y plástico."
+              ],
+              "distractors": [
+                "Cuidar",
+                "parque",
+                "luces",
+                "Tenemos"
               ],
               "vocabulary": [
                 "eskola",
@@ -2533,7 +3038,20 @@
               ]
             },
             {
-              "id": "u09-2.l3.s3.e05",
+              "id": "u09-2.l3.s3.e06",
+              "type": "word_intro",
+              "word": "zaintzeko",
+              "translation": "para cuidar",
+              "vocabulary": [
+                "zaindu"
+              ],
+              "structures": [
+                "enean",
+                "habitual-present"
+              ]
+            },
+            {
+              "id": "u09-2.l3.s3.e07",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2565,7 +3083,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s3.e06",
+              "id": "u09-2.l3.s3.e08",
               "type": "order_sentence",
               "answer": "Ingurumena zaintzea oso garrantzitsua da.",
               "translation": "Cuidar el medio ambiente es muy importante.",
@@ -2582,7 +3100,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s3.e07",
+              "id": "u09-2.l3.s3.e09",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2622,7 +3140,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s3.e08",
+              "id": "u09-2.l3.s3.e10",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2645,7 +3163,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s3.e09",
+              "id": "u09-2.l3.s3.e11",
               "type": "read_true_false",
               "passage": "Gure etxean ingurumena zaintzen dugu. Argiak itzaltzen ditugu eta ura aurrezten dugu.",
               "statement": "En esa casa no ahorran agua.",
@@ -2668,7 +3186,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s3.e10",
+              "id": "u09-2.l3.s3.e12",
               "type": "listen_type",
               "text": "Parkeko zuhaitzak zaindu behar ditugu.",
               "answers": [
@@ -2687,7 +3205,7 @@
               ]
             },
             {
-              "id": "u09-2.l3.s3.e11",
+              "id": "u09-2.l3.s3.e13",
               "type": "read_true_false",
               "passage": "Haizea eskolara joaten denean, ez du plastikozko botilarik eramaten.",
               "statement": "Haizea lleva una botella de plástico a la escuela.",

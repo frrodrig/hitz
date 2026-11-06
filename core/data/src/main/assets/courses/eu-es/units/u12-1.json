@@ -127,18 +127,33 @@
           "exercises": [
             {
               "id": "u12-1.l1.s1.e01",
+              "type": "word_intro",
+              "word": "aisialdi",
+              "translation": "tiempo libre",
+              "vocabulary": [
+                "aisialdi"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Qué haces en tu tiempo libre?"
+                "lang": "eu",
+                "text": "Zer egiten duzu aisialdian?"
               },
               "answers": [
-                "Zer egiten duzu aisialdian?"
+                "¿Qué haces en tu tiempo libre?",
+                "¿Qué hace usted en su tiempo libre?"
               ],
               "distractors": [
-                "asko",
-                "Umeak",
-                "Asteburuetan"
+                "fines",
+                "gusta",
+                "mucho",
+                "niños"
               ],
               "vocabulary": [
                 "zer",
@@ -152,13 +167,49 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Asteburuetan bizikletan ibiltzen naiz.",
+              "id": "u12-1.l1.s1.e03",
+              "type": "word_intro",
+              "word": "asteburu",
+              "translation": "fin de semana",
+              "vocabulary": [
+                "asteburu"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e04",
+              "type": "word_intro",
+              "word": "bizikleta",
+              "translation": "bicicleta",
+              "image": "transport_bicycle.webp",
+              "vocabulary": [
+                "bizikleta"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Asteburuetan bizikletan ibiltzen naiz."
+              },
+              "answers": [
+                "Los fines de semana monto en bicicleta.",
+                "Los fines de semana ando en bici.",
+                "Los fines de semana voy en bici."
+              ],
               "distractors": [
-                "Anek",
-                "zaizu",
-                "ari"
+                "al",
+                "tu",
+                "Ane",
+                "gusta"
               ],
               "vocabulary": [
                 "asteburu",
@@ -172,7 +223,76 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e03",
+              "id": "u12-1.l1.s1.e06",
+              "type": "word_intro",
+              "word": "kirol",
+              "translation": "deporte",
+              "vocabulary": [
+                "kirol"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e07",
+              "type": "word_intro",
+              "word": "futbol",
+              "translation": "fútbol",
+              "image": "leisure_football.webp",
+              "vocabulary": [
+                "futbol"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e08",
+              "type": "word_intro",
+              "word": "saskibaloi",
+              "translation": "baloncesto",
+              "image": "leisure_basketball.webp",
+              "vocabulary": [
+                "saskibaloi"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e09",
+              "type": "word_intro",
+              "word": "igeriketa",
+              "translation": "natación",
+              "image": "leisure_swimming.webp",
+              "vocabulary": [
+                "igeriketa"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e10",
+              "type": "word_intro",
+              "word": "txirrindularitza",
+              "translation": "ciclismo",
+              "image": "leisure_cycling.webp",
+              "vocabulary": [
+                "txirrindularitza"
+              ],
+              "structures": [
+                "aisialdia",
+                "kirolak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s1.e11",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -214,14 +334,19 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e04",
-              "type": "translate_typing",
+              "id": "u12-1.l1.s1.e12",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Los sábados juego al fútbol."
+                "lang": "eu",
+                "text": "Larunbatetan futbolean jolasten dut."
               },
               "answers": [
-                "Larunbatetan futbolean jolasten dut."
+                "Los sábados juego al fútbol."
+              ],
+              "distractors": [
+                "en",
+                "semana",
+                "de"
               ],
               "vocabulary": [
                 "larunbat",
@@ -235,7 +360,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e05",
+              "id": "u12-1.l1.s1.e13",
               "type": "fill_blank",
               "sentence": "Larunbatetan ___ jolasten dut.",
               "options": [
@@ -257,7 +382,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e06",
+              "id": "u12-1.l1.s1.e14",
               "type": "order_sentence",
               "answer": "Anek saskibaloian jolasten du.",
               "translation": "Ane juega al baloncesto.",
@@ -272,7 +397,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e07",
+              "id": "u12-1.l1.s1.e15",
               "type": "choose_meaning",
               "text": "Anek saskibaloian jolasten du.",
               "options": [
@@ -292,7 +417,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e08",
+              "id": "u12-1.l1.s1.e16",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -311,7 +436,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e09",
+              "id": "u12-1.l1.s1.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -338,11 +463,19 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e10",
-              "type": "listen_type",
-              "text": "Mikeli txirrindularitza asko gustatzen zaio.",
+              "id": "u12-1.l1.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "A Mikel le gusta mucho el ciclismo."
+              },
               "answers": [
                 "Mikeli txirrindularitza asko gustatzen zaio."
+              ],
+              "distractors": [
+                "jolasten",
+                "ari",
+                "Umeak"
               ],
               "vocabulary": [
                 "txirrindularitza",
@@ -355,7 +488,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e11",
+              "id": "u12-1.l1.s1.e19",
               "type": "read_true_false",
               "passage": "Ni Garazi naiz. Igeriketa eta txirrindularitza gustatzen zaizkit.",
               "statement": "A Garazi le gusta el ciclismo.",
@@ -374,7 +507,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e12",
+              "id": "u12-1.l1.s1.e20",
               "type": "speak",
               "text": "Umeak parkean jolasten ari dira.",
               "translation": "Los niños están jugando en el parque.",
@@ -390,7 +523,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e13",
+              "id": "u12-1.l1.s1.e21",
               "type": "choose_image",
               "prompt": "el fútbol",
               "options": [
@@ -417,7 +550,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e14",
+              "id": "u12-1.l1.s1.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -443,7 +576,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e15",
+              "id": "u12-1.l1.s1.e23",
               "type": "choose_image",
               "prompt": "el baloncesto",
               "options": [
@@ -470,7 +603,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e16",
+              "id": "u12-1.l1.s1.e24",
               "type": "choose_image",
               "prompt": "la natación",
               "options": [
@@ -497,7 +630,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s1.e17",
+              "id": "u12-1.l1.s1.e25",
               "type": "choose_image",
               "prompt": "el ciclismo",
               "options": [
@@ -530,11 +663,45 @@
           "exercises": [
             {
               "id": "u12-1.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Musika entzuten dut.",
+              "type": "word_intro",
+              "word": "musika",
+              "translation": "música",
+              "image": "leisure_music.webp",
+              "vocabulary": [
+                "musika"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e02",
+              "type": "word_intro",
+              "word": "entzuten",
+              "translation": "escuchando (entzun)",
+              "vocabulary": [
+                "entzun"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Musika entzuten dut."
+              },
+              "answers": [
+                "Escucho música.",
+                "Yo escucho música."
+              ],
               "distractors": [
-                "du",
-                "zait"
+                "pero",
+                "y"
               ],
               "vocabulary": [
                 "musika",
@@ -547,14 +714,34 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u12-1.l1.s2.e04",
+              "type": "word_intro",
+              "word": "kontzertu",
+              "translation": "concierto",
+              "image": "leisure_concert.webp",
+              "vocabulary": [
+                "kontzertu"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e05",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Hoy hay un concierto en la plaza."
+                "lang": "eu",
+                "text": "Gaur kontzertu bat dago plazan."
               },
               "answers": [
-                "Gaur kontzertu bat dago plazan."
+                "Hoy hay un concierto en la plaza."
+              ],
+              "distractors": [
+                "leyendo",
+                "pero",
+                "el",
+                "vemos"
               ],
               "vocabulary": [
                 "gaur",
@@ -569,7 +756,48 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e03",
+              "id": "u12-1.l1.s2.e06",
+              "type": "word_intro",
+              "word": "antzerki",
+              "translation": "teatro (obra)",
+              "vocabulary": [
+                "antzerki"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e07",
+              "type": "word_intro",
+              "word": "film",
+              "translation": "película",
+              "image": "leisure_film.webp",
+              "vocabulary": [
+                "film"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e08",
+              "type": "word_intro",
+              "word": "dantza",
+              "translation": "danza; baile",
+              "image": "leisure_dance.webp",
+              "vocabulary": [
+                "dantza"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -611,7 +839,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e04",
+              "id": "u12-1.l1.s2.e10",
               "type": "order_sentence",
               "answer": "Antzerkia gustatzen zait, baina zinema gehiago.",
               "translation": "Me gusta el teatro, pero el cine más.",
@@ -628,7 +856,20 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e05",
+              "id": "u12-1.l1.s2.e11",
+              "type": "word_intro",
+              "word": "ikusten",
+              "translation": "viendo (ikusi)",
+              "vocabulary": [
+                "ikusi"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e12",
               "type": "fill_blank",
               "sentence": "Asteburuetan filmak ___ ditugu.",
               "options": [
@@ -650,7 +891,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e06",
+              "id": "u12-1.l1.s2.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -671,7 +912,20 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e07",
+              "id": "u12-1.l1.s2.e14",
+              "type": "word_intro",
+              "word": "marrazten",
+              "translation": "dibujando (marraztu)",
+              "vocabulary": [
+                "marraztu"
+              ],
+              "structures": [
+                "aisialdia",
+                "kultura"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s2.e15",
               "type": "choose_meaning",
               "text": "Itziarrek oso ondo marrazten du.",
               "options": [
@@ -692,7 +946,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e08",
+              "id": "u12-1.l1.s2.e16",
               "type": "listen_type",
               "text": "Liburu bat irakurtzen ari naiz.",
               "answers": [
@@ -710,7 +964,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e09",
+              "id": "u12-1.l1.s2.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -741,10 +995,14 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e10",
-              "type": "speak",
+              "id": "u12-1.l1.s2.e18",
+              "type": "listen_tap",
               "text": "Itziarrek oso ondo marrazten du.",
-              "translation": "Itziar dibuja muy bien.",
+              "distractors": [
+                "Argazkiak",
+                "gehiago",
+                "plazan"
+              ],
               "vocabulary": [
                 "oso",
                 "ondo",
@@ -757,7 +1015,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e11",
+              "id": "u12-1.l1.s2.e19",
               "type": "read_true_false",
               "passage": "Jonek ez du abesten, baina beti dantza egiten du.",
               "statement": "Jon canta.",
@@ -777,7 +1035,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e12",
+              "id": "u12-1.l1.s2.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -805,7 +1063,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e13",
+              "id": "u12-1.l1.s2.e21",
               "type": "choose_image",
               "prompt": "la música",
               "options": [
@@ -832,19 +1090,20 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e14",
+              "id": "u12-1.l1.s2.e22",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Hago fotos en el monte."
+                "lang": "eu",
+                "text": "Argazkiak egiten ditut mendian."
               },
               "answers": [
-                "Argazkiak egiten ditut mendian."
+                "Hago fotos en el monte.",
+                "Saco fotos en el monte."
               ],
               "distractors": [
-                "zinema",
-                "gehiago",
-                "ondo"
+                "yo",
+                "la",
+                "teatro"
               ],
               "vocabulary": [
                 "argazki",
@@ -858,7 +1117,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e15",
+              "id": "u12-1.l1.s2.e23",
               "type": "choose_image",
               "prompt": "el concierto",
               "options": [
@@ -885,7 +1144,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e16",
+              "id": "u12-1.l1.s2.e24",
               "type": "choose_image",
               "prompt": "la película",
               "options": [
@@ -912,7 +1171,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s2.e17",
+              "id": "u12-1.l1.s2.e25",
               "type": "choose_image",
               "prompt": "el baile",
               "options": [
@@ -945,13 +1204,56 @@
           "exercises": [
             {
               "id": "u12-1.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "sukaldaritza",
+              "translation": "cocina (actividad)",
+              "vocabulary": [
+                "sukaldaritza"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s3.e02",
+              "type": "word_intro",
+              "word": "ikastaro",
+              "translation": "curso",
+              "vocabulary": [
+                "ikastaro"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s3.e03",
+              "type": "word_intro",
+              "word": "izena eman",
+              "translation": "apuntarse; inscribirse",
+              "vocabulary": [
+                "izena eman"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s3.e04",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Me he apuntado a un curso de cocina."
+                "lang": "eu",
+                "text": "Sukaldaritza ikastaro batean izena eman dut."
               },
               "answers": [
-                "Sukaldaritza ikastaro batean izena eman dut."
+                "Me he apuntado a un curso de cocina.",
+                "Me he inscrito en un curso de cocina."
+              ],
+              "distractors": [
+                "te",
+                "Cuándo",
+                "fotografía",
+                "fin"
               ],
               "vocabulary": [
                 "izena eman",
@@ -965,7 +1267,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e02",
+              "id": "u12-1.l1.s3.e05",
               "type": "order_sentence",
               "answer": "Noiz da ikastaroa?",
               "translation": "¿Cuándo es el curso?",
@@ -979,7 +1281,32 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e03",
+              "id": "u12-1.l1.s3.e06",
+              "type": "word_intro",
+              "word": "jai",
+              "translation": "fiesta; día festivo",
+              "vocabulary": [
+                "jai"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s3.e07",
+              "type": "word_intro",
+              "word": "argazki",
+              "translation": "foto",
+              "image": "object_photo.webp",
+              "vocabulary": [
+                "argazki"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s3.e08",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1020,7 +1347,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e04",
+              "id": "u12-1.l1.s3.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1040,7 +1367,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e05",
+              "id": "u12-1.l1.s3.e10",
               "type": "fill_blank",
               "sentence": "___ da ikastaroa?",
               "options": [
@@ -1060,7 +1387,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e06",
+              "id": "u12-1.l1.s3.e11",
               "type": "listen_type",
               "text": "Argazki ikastaroa liburutegian da.",
               "answers": [
@@ -1077,7 +1404,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e07",
+              "id": "u12-1.l1.s3.e12",
               "type": "choose_meaning",
               "text": "Sukaldaritza ikastaro batean izena eman dut.",
               "options": [
@@ -1098,7 +1425,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e08",
+              "id": "u12-1.l1.s3.e13",
               "type": "speak",
               "text": "Marrazten ikasi nahi dut.",
               "translation": "Quiero aprender a dibujar.",
@@ -1113,7 +1440,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e09",
+              "id": "u12-1.l1.s3.e14",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1141,7 +1468,19 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e10",
+              "id": "u12-1.l1.s3.e15",
+              "type": "word_intro",
+              "word": "abesten",
+              "translation": "cantando (abestu)",
+              "vocabulary": [
+                "abestu"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u12-1.l1.s3.e16",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1165,7 +1504,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e11",
+              "id": "u12-1.l1.s3.e17",
               "type": "read_true_false",
               "passage": "Haizeak marrazten ikasi nahi du. Ikastaro batean izena eman du.",
               "statement": "Haizea quiere aprender a dibujar.",
@@ -1185,7 +1524,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e12",
+              "id": "u12-1.l1.s3.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1211,7 +1550,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e13",
+              "id": "u12-1.l1.s3.e19",
               "type": "choose_image",
               "prompt": "la foto",
               "options": [
@@ -1237,7 +1576,7 @@
               ]
             },
             {
-              "id": "u12-1.l1.s3.e14",
+              "id": "u12-1.l1.s3.e20",
               "type": "listen_tap",
               "text": "Asteburuan musika ikastaro bat dago.",
               "distractors": [
@@ -1327,10 +1666,18 @@
             },
             {
               "id": "u12-1.l2.s1.e04",
-              "type": "listen_type",
-              "text": "Ikastaroa urritik ekainera da.",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "El curso es de octubre a junio."
+              },
               "answers": [
                 "Ikastaroa urritik ekainera da."
+              ],
+              "distractors": [
+                "antzerki",
+                "eta",
+                "igeriketa"
               ],
               "vocabulary": [
                 "ikastaro",
@@ -1672,6 +2019,18 @@
             },
             {
               "id": "u12-1.l2.s2.e08",
+              "type": "word_intro",
+              "word": "jolasten",
+              "translation": "jugando (jolastu)",
+              "vocabulary": [
+                "jolastu"
+              ],
+              "structures": [
+                "ordutatik-ordutara"
+              ]
+            },
+            {
+              "id": "u12-1.l2.s2.e09",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1697,7 +2056,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s2.e09",
+              "id": "u12-1.l2.s2.e10",
               "type": "read_true_false",
               "passage": "Argazki ikastaroa asteartetan da, arratsaldeko bostetatik zazpietara.",
               "statement": "El curso de fotografía dura dos horas.",
@@ -1716,7 +2075,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s2.e10",
+              "id": "u12-1.l2.s2.e11",
               "type": "listen_tap",
               "text": "Kontzertua zortzietatik hamarretara da.",
               "distractors": [
@@ -1735,7 +2094,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s2.e11",
+              "id": "u12-1.l2.s2.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1755,7 +2114,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s2.e12",
+              "id": "u12-1.l2.s2.e13",
               "type": "order_sentence",
               "answer": "Filma gaueko hamarretan da.",
               "translation": "La película es a las diez de la noche.",
@@ -1811,6 +2170,49 @@
             },
             {
               "id": "u12-1.l2.s3.e03",
+              "type": "word_intro",
+              "word": "auto",
+              "translation": "coche",
+              "image": "transport_car.webp",
+              "vocabulary": [
+                "auto"
+              ],
+              "structures": [
+                "nola-instrumental",
+                "noraino",
+                "mugagabea"
+              ]
+            },
+            {
+              "id": "u12-1.l2.s3.e04",
+              "type": "word_intro",
+              "word": "oinez",
+              "translation": "a pie",
+              "vocabulary": [
+                "oinez"
+              ],
+              "structures": [
+                "nola-instrumental",
+                "noraino",
+                "mugagabea"
+              ]
+            },
+            {
+              "id": "u12-1.l2.s3.e05",
+              "type": "word_intro",
+              "word": "noraino",
+              "translation": "hasta dónde",
+              "vocabulary": [
+                "noraino"
+              ],
+              "structures": [
+                "nola-instrumental",
+                "noraino",
+                "mugagabea"
+              ]
+            },
+            {
+              "id": "u12-1.l2.s3.e06",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1848,7 +2250,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e04",
+              "id": "u12-1.l2.s3.e07",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1876,7 +2278,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e05",
+              "id": "u12-1.l2.s3.e08",
               "type": "fill_blank",
               "sentence": "___ joaten naiz.",
               "options": [
@@ -1898,7 +2300,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e06",
+              "id": "u12-1.l2.s3.e09",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1923,7 +2325,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e07",
+              "id": "u12-1.l2.s3.e10",
               "type": "choose_meaning",
               "text": "Hondartzaraino joan gara.",
               "options": [
@@ -1944,7 +2346,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e08",
+              "id": "u12-1.l2.s3.e11",
               "type": "listen_tap",
               "text": "Noraino joan zarete? Zarautzeraino.",
               "distractors": [
@@ -1964,7 +2366,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e09",
+              "id": "u12-1.l2.s3.e12",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1991,7 +2393,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e10",
+              "id": "u12-1.l2.s3.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2012,7 +2414,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e11",
+              "id": "u12-1.l2.s3.e14",
               "type": "read_true_false",
               "passage": "Peio metroz joaten da lanera. Metroa Getxoraino doa.",
               "statement": "Peio va al trabajo en autobús.",
@@ -2030,7 +2432,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e12",
+              "id": "u12-1.l2.s3.e15",
               "type": "order_sentence",
               "answer": "Zenbat ikastarotan eman duzu izena?",
               "translation": "¿En cuántos cursos te has apuntado?",
@@ -2048,7 +2450,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e13",
+              "id": "u12-1.l2.s3.e16",
               "type": "choose_image",
               "prompt": "el coche",
               "options": [
@@ -2076,7 +2478,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e14",
+              "id": "u12-1.l2.s3.e17",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2100,7 +2502,7 @@
               ]
             },
             {
-              "id": "u12-1.l2.s3.e15",
+              "id": "u12-1.l2.s3.e18",
               "type": "choose_image",
               "prompt": "la bicicleta",
               "options": [
@@ -2320,13 +2722,18 @@
             },
             {
               "id": "u12-1.l3.s1.e08",
-              "type": "translate_typing",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "Voy al polideportivo a pie."
               },
               "answers": [
                 "Kiroldegira oinez joaten naiz."
+              ],
+              "distractors": [
+                "seietatik",
+                "eman",
+                "Zer"
               ],
               "vocabulary": [
                 "kiroldegi",
@@ -2924,6 +3331,19 @@
             },
             {
               "id": "u12-1.l3.s3.e11",
+              "type": "word_intro",
+              "word": "dabil",
+              "translation": "anda",
+              "vocabulary": [
+                "ibili"
+              ],
+              "structures": [
+                "nola-instrumental",
+                "noraino"
+              ]
+            },
+            {
+              "id": "u12-1.l3.s3.e12",
               "type": "read_true_false",
               "passage": "Gaur autobusez joan naiz lanera. Metroa ez dabil.",
               "statement": "Hoy ha ido a trabajar en metro.",

@@ -123,18 +123,45 @@
           "exercises": [
             {
               "id": "u06-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "alkandora",
+              "translation": "camisa",
+              "image": "clothes_shirt.webp",
+              "vocabulary": [
+                "alkandora"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e02",
+              "type": "word_intro",
+              "word": "zuri",
+              "translation": "blanco",
+              "image": "color_white.webp",
+              "vocabulary": [
+                "zuri"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e03",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Quiero una camisa blanca."
+                "lang": "eu",
+                "text": "Alkandora zuria nahi dut."
               },
               "answers": [
-                "Alkandora zuria nahi dut."
+                "Quiero una camisa blanca.",
+                "Quiero la camisa blanca."
               ],
               "distractors": [
-                "zait",
-                "behar",
-                "beltzak"
+                "La",
+                "unos",
+                "azul"
               ],
               "vocabulary": [
                 "alkandora",
@@ -147,13 +174,46 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Galtza beltzak behar ditut.",
+              "id": "u06-2.l1.s1.e04",
+              "type": "word_intro",
+              "word": "galtza",
+              "translation": "pantalón",
+              "image": "clothes_trousers.webp",
+              "vocabulary": [
+                "galtza"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "beltz",
+              "translation": "negro",
+              "image": "color_black.webp",
+              "vocabulary": [
+                "beltz"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Galtza beltzak behar ditut."
+              },
+              "answers": [
+                "Necesito unos pantalones negros.",
+                "Necesito pantalones negros."
+              ],
               "distractors": [
-                "baina",
-                "Beroki",
-                "Soineko"
+                "zapatos",
+                "son",
+                "baratos"
               ],
               "vocabulary": [
                 "galtza",
@@ -166,7 +226,59 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e03",
+              "id": "u06-2.l1.s1.e07",
+              "type": "word_intro",
+              "word": "gona",
+              "translation": "falda",
+              "image": "clothes_skirt.webp",
+              "vocabulary": [
+                "gona"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e08",
+              "type": "word_intro",
+              "word": "soineko",
+              "translation": "vestido",
+              "image": "clothes_dress.webp",
+              "vocabulary": [
+                "soineko"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e09",
+              "type": "word_intro",
+              "word": "jertse",
+              "translation": "jersey",
+              "image": "clothes_jumper.webp",
+              "vocabulary": [
+                "jertse"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e10",
+              "type": "word_intro",
+              "word": "beroki",
+              "translation": "abrigo",
+              "image": "clothes_coat.webp",
+              "vocabulary": [
+                "beroki"
+              ],
+              "structures": [
+                "clothes-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s1.e11",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -207,14 +319,19 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e04",
-              "type": "translate_typing",
+              "id": "u06-2.l1.s1.e12",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "La falda roja es bonita."
+                "lang": "eu",
+                "text": "Gona gorria polita da."
               },
               "answers": [
-                "Gona gorria polita da."
+                "La falda roja es bonita."
+              ],
+              "distractors": [
+                "pero",
+                "una",
+                "verde"
               ],
               "vocabulary": [
                 "gona",
@@ -227,7 +344,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e05",
+              "id": "u06-2.l1.s1.e13",
               "type": "fill_blank",
               "sentence": "Galtza ___ behar ditut.",
               "options": [
@@ -247,10 +364,21 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e06",
-              "type": "order_sentence",
-              "answer": "Soineko berdea armairuan dago.",
-              "translation": "El vestido verde está en el armario.",
+              "id": "u06-2.l1.s1.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Soineko berdea armairuan dago."
+              },
+              "answers": [
+                "El vestido verde está en el armario."
+              ],
+              "distractors": [
+                "blanca",
+                "unos",
+                "falda",
+                "gusta"
+              ],
               "vocabulary": [
                 "soineko",
                 "berde",
@@ -262,7 +390,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e07",
+              "id": "u06-2.l1.s1.e15",
               "type": "choose_meaning",
               "text": "Gona gorria polita da.",
               "options": [
@@ -282,8 +410,8 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e08",
-              "type": "translate_typing",
+              "id": "u06-2.l1.s1.e16",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Jertse urdina daukazu?"
@@ -291,6 +419,11 @@
               "answers": [
                 "¿Tienes un jersey azul?",
                 "¿Tiene un jersey azul?"
+              ],
+              "distractors": [
+                "grises",
+                "Los",
+                "en"
               ],
               "vocabulary": [
                 "jertse",
@@ -302,7 +435,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e09",
+              "id": "u06-2.l1.s1.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -328,11 +461,19 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e10",
-              "type": "listen_type",
-              "text": "Beroki marroia erosi nahi dut.",
+              "id": "u06-2.l1.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Beroki marroia erosi nahi dut."
+              },
               "answers": [
-                "Beroki marroia erosi nahi dut."
+                "Quiero comprar un abrigo marrón."
+              ],
+              "distractors": [
+                "una",
+                "viejos",
+                "jersey"
               ],
               "vocabulary": [
                 "beroki",
@@ -346,7 +487,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e11",
+              "id": "u06-2.l1.s1.e19",
               "type": "read_true_false",
               "passage": "Armairuan soineko bat eta bi gona daude. Soinekoa berdea da, eta gonak ere bai.",
               "statement": "El vestido es verde.",
@@ -369,10 +510,20 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e12",
-              "type": "speak",
-              "text": "Kamiseta horia gustatzen zait.",
-              "translation": "Me gusta la camiseta amarilla.",
+              "id": "u06-2.l1.s1.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kamiseta horia gustatzen zait."
+              },
+              "answers": [
+                "Me gusta la camiseta amarilla."
+              ],
+              "distractors": [
+                "grises",
+                "es",
+                "Tienes"
+              ],
               "vocabulary": [
                 "kamiseta",
                 "hori",
@@ -383,7 +534,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e13",
+              "id": "u06-2.l1.s1.e21",
               "type": "choose_image",
               "prompt": "la camisa",
               "options": [
@@ -409,7 +560,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e14",
+              "id": "u06-2.l1.s1.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -437,7 +588,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e15",
+              "id": "u06-2.l1.s1.e23",
               "type": "choose_image",
               "prompt": "el pantalón",
               "options": [
@@ -463,7 +614,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e16",
+              "id": "u06-2.l1.s1.e24",
               "type": "choose_image",
               "prompt": "la falda",
               "options": [
@@ -489,7 +640,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e17",
+              "id": "u06-2.l1.s1.e25",
               "type": "choose_image",
               "prompt": "el vestido",
               "options": [
@@ -515,7 +666,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e18",
+              "id": "u06-2.l1.s1.e26",
               "type": "choose_image",
               "prompt": "el jersey",
               "options": [
@@ -541,7 +692,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s1.e19",
+              "id": "u06-2.l1.s1.e27",
               "type": "choose_image",
               "prompt": "el abrigo",
               "options": [
@@ -573,6 +724,45 @@
           "exercises": [
             {
               "id": "u06-2.l1.s2.e01",
+              "type": "word_intro",
+              "word": "kamiseta",
+              "translation": "camiseta",
+              "image": "clothes_tshirt.webp",
+              "vocabulary": [
+                "kamiseta"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e02",
+              "type": "word_intro",
+              "word": "gorri",
+              "translation": "rojo",
+              "image": "color_red.webp",
+              "vocabulary": [
+                "gorri"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e03",
+              "type": "word_intro",
+              "word": "urdin",
+              "translation": "azul",
+              "image": "color_blue.webp",
+              "vocabulary": [
+                "urdin"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e04",
               "type": "listen_tap",
               "text": "Kamiseta gorria ala urdina?",
               "distractors": [
@@ -590,15 +780,36 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e02",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "¿Los zapatos negros o los marrones?"
-              },
-              "answers": [
-                "Zapata beltzak ala marroiak?"
+              "id": "u06-2.l1.s2.e05",
+              "type": "word_intro",
+              "word": "zapata",
+              "translation": "zapato",
+              "image": "clothes_shoe.webp",
+              "vocabulary": [
+                "zapata"
               ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e06",
+              "type": "word_intro",
+              "word": "marroi",
+              "translation": "marrón",
+              "image": "color_brown.webp",
+              "vocabulary": [
+                "marroi"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e07",
+              "type": "order_sentence",
+              "answer": "Zapata beltzak ala marroiak?",
+              "translation": "¿Los zapatos negros o los marrones?",
               "vocabulary": [
                 "zapata",
                 "beltz",
@@ -609,7 +820,20 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e03",
+              "id": "u06-2.l1.s2.e08",
+              "type": "word_intro",
+              "word": "berde",
+              "translation": "verde",
+              "image": "color_green.webp",
+              "vocabulary": [
+                "berde"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -650,7 +874,20 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e04",
+              "id": "u06-2.l1.s2.e10",
+              "type": "word_intro",
+              "word": "gris",
+              "translation": "gris",
+              "image": "color_grey.webp",
+              "vocabulary": [
+                "gris"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e11",
               "type": "order_sentence",
               "answer": "Beroki grisa daukat.",
               "translation": "Tengo un abrigo gris.",
@@ -664,7 +901,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e05",
+              "id": "u06-2.l1.s2.e12",
               "type": "fill_blank",
               "sentence": "Soineko ___ oso polita da.",
               "options": [
@@ -685,7 +922,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e06",
+              "id": "u06-2.l1.s2.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -707,7 +944,19 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e07",
+              "id": "u06-2.l1.s2.e14",
+              "type": "word_intro",
+              "word": "arropa",
+              "translation": "ropa",
+              "vocabulary": [
+                "arropa"
+              ],
+              "structures": [
+                "colors"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s2.e15",
               "type": "choose_meaning",
               "text": "Arropa beltza nahiago dut.",
               "options": [
@@ -727,7 +976,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e08",
+              "id": "u06-2.l1.s2.e16",
               "type": "listen_type",
               "text": "Jertse berdea gustatzen zait.",
               "answers": [
@@ -743,7 +992,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e09",
+              "id": "u06-2.l1.s2.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -768,10 +1017,14 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e10",
-              "type": "speak",
+              "id": "u06-2.l1.s2.e18",
+              "type": "listen_tap",
               "text": "Beti arropa beltza nahiago dut.",
-              "translation": "Siempre prefiero la ropa negra.",
+              "distractors": [
+                "daukat",
+                "Alkandora",
+                "gustatzen"
+              ],
               "vocabulary": [
                 "beti",
                 "arropa",
@@ -784,7 +1037,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e11",
+              "id": "u06-2.l1.s2.e19",
               "type": "read_true_false",
               "passage": "Mikelek alkandora zuria eta galtza grisak dauzka.",
               "statement": "Mikel tiene unos pantalones grises.",
@@ -802,7 +1055,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e12",
+              "id": "u06-2.l1.s2.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -829,7 +1082,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e13",
+              "id": "u06-2.l1.s2.e21",
               "type": "choose_image",
               "prompt": "rojo",
               "options": [
@@ -855,7 +1108,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e14",
+              "id": "u06-2.l1.s2.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -884,7 +1137,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e15",
+              "id": "u06-2.l1.s2.e23",
               "type": "choose_image",
               "prompt": "blanco",
               "options": [
@@ -910,7 +1163,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e16",
+              "id": "u06-2.l1.s2.e24",
               "type": "choose_image",
               "prompt": "negro",
               "options": [
@@ -936,7 +1189,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e17",
+              "id": "u06-2.l1.s2.e25",
               "type": "choose_image",
               "prompt": "azul",
               "options": [
@@ -962,7 +1215,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e18",
+              "id": "u06-2.l1.s2.e26",
               "type": "choose_image",
               "prompt": "verde",
               "options": [
@@ -988,7 +1241,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e19",
+              "id": "u06-2.l1.s2.e27",
               "type": "choose_image",
               "prompt": "amarillo",
               "options": [
@@ -1014,7 +1267,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e20",
+              "id": "u06-2.l1.s2.e28",
               "type": "choose_image",
               "prompt": "gris",
               "options": [
@@ -1040,7 +1293,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s2.e21",
+              "id": "u06-2.l1.s2.e29",
               "type": "choose_image",
               "prompt": "marrón",
               "options": [
@@ -1072,13 +1325,32 @@
           "exercises": [
             {
               "id": "u06-2.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "urtebetetze",
+              "translation": "cumpleaños",
+              "image": "object_birthday_cake.webp",
+              "vocabulary": [
+                "urtebetetze"
+              ],
+              "structures": [
+                "gifts-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s3.e02",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Hoy es el cumpleaños de Ane."
+                "lang": "eu",
+                "text": "Gaur Aneren urtebetetzea da."
               },
               "answers": [
-                "Gaur Aneren urtebetetzea da."
+                "Hoy es el cumpleaños de Ane."
+              ],
+              "distractors": [
+                "Los",
+                "comprar",
+                "la",
+                "Felicidades"
               ],
               "vocabulary": [
                 "gaur",
@@ -1090,10 +1362,33 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e02",
-              "type": "order_sentence",
-              "answer": "Opari bat erosi nahi dut.",
-              "translation": "Quiero comprar un regalo.",
+              "id": "u06-2.l1.s3.e03",
+              "type": "word_intro",
+              "word": "opari",
+              "translation": "regalo",
+              "image": "object_gift.webp",
+              "vocabulary": [
+                "opari"
+              ],
+              "structures": [
+                "gifts-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Opari bat erosi nahi dut."
+              },
+              "answers": [
+                "Quiero comprar un regalo."
+              ],
+              "distractors": [
+                "zapatos",
+                "encima",
+                "Cuál"
+              ],
               "vocabulary": [
                 "opari",
                 "bat",
@@ -1106,7 +1401,31 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e03",
+              "id": "u06-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "neurri",
+              "translation": "talla; medida",
+              "vocabulary": [
+                "neurri"
+              ],
+              "structures": [
+                "gifts-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s3.e06",
+              "type": "word_intro",
+              "word": "probatu",
+              "translation": "probar(se)",
+              "vocabulary": [
+                "probatu"
+              ],
+              "structures": [
+                "gifts-vocab"
+              ]
+            },
+            {
+              "id": "u06-2.l1.s3.e07",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1147,7 +1466,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e04",
+              "id": "u06-2.l1.s3.e08",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1169,7 +1488,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e05",
+              "id": "u06-2.l1.s3.e09",
               "type": "fill_blank",
               "sentence": "Jertse hau ___ nahi dut.",
               "options": [
@@ -1190,11 +1509,19 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e06",
-              "type": "listen_type",
-              "text": "Zein da zure neurria?",
+              "id": "u06-2.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Cuál es tu talla?"
+              },
               "answers": [
                 "Zein da zure neurria?"
+              ],
+              "distractors": [
+                "nahi",
+                "Opariak",
+                "dut"
               ],
               "vocabulary": [
                 "zein",
@@ -1207,7 +1534,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e07",
+              "id": "u06-2.l1.s3.e11",
               "type": "choose_meaning",
               "text": "Zein da zure neurria?",
               "options": [
@@ -1227,7 +1554,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e08",
+              "id": "u06-2.l1.s3.e12",
               "type": "speak",
               "text": "Jertse hau probatu nahi dut.",
               "translation": "Quiero probarme este jersey.",
@@ -1243,7 +1570,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e09",
+              "id": "u06-2.l1.s3.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1269,7 +1596,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e10",
+              "id": "u06-2.l1.s3.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1294,7 +1621,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e11",
+              "id": "u06-2.l1.s3.e15",
               "type": "read_true_false",
               "passage": "Bihar Iratiren urtebetetzea da. Bere amak opari bat dauka.",
               "statement": "Mañana es el cumpleaños de la madre de Irati.",
@@ -1314,7 +1641,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e12",
+              "id": "u06-2.l1.s3.e16",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1339,7 +1666,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e13",
+              "id": "u06-2.l1.s3.e17",
               "type": "choose_image",
               "prompt": "el regalo",
               "options": [
@@ -1365,7 +1692,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e14",
+              "id": "u06-2.l1.s3.e18",
               "type": "listen_tap",
               "text": "Opariak mahai gainean daude.",
               "distractors": [
@@ -1384,7 +1711,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e15",
+              "id": "u06-2.l1.s3.e19",
               "type": "choose_image",
               "prompt": "el cumpleaños",
               "options": [
@@ -1410,7 +1737,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e16",
+              "id": "u06-2.l1.s3.e20",
               "type": "choose_image",
               "prompt": "la camiseta",
               "options": [
@@ -1436,7 +1763,7 @@
               ]
             },
             {
-              "id": "u06-2.l1.s3.e17",
+              "id": "u06-2.l1.s3.e21",
               "type": "choose_image",
               "prompt": "el zapato",
               "options": [
@@ -1536,10 +1863,17 @@
             },
             {
               "id": "u06-2.l2.s1.e04",
-              "type": "listen_type",
-              "text": "Nolakoak dira zapatak?",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Cómo son los zapatos?"
+              },
               "answers": [
                 "Nolakoak dira zapatak?"
+              ],
+              "distractors": [
+                "Jertsea",
+                "Gona"
               ],
               "vocabulary": [
                 "nola",
@@ -1760,7 +2094,19 @@
           "exercises": [
             {
               "id": "u06-2.l2.s2.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "zuretzat",
+              "translation": "para ti",
+              "vocabulary": [
+                "zu"
+              ],
+              "structures": [
+                "norentzat"
+              ]
+            },
+            {
+              "id": "u06-2.l2.s2.e02",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Opari hau zuretzat da."
@@ -1768,6 +2114,11 @@
               "answers": [
                 "Este regalo es para ti.",
                 "Este regalo es para usted."
+              ],
+              "distractors": [
+                "Los",
+                "Iker",
+                "abrigo"
               ],
               "vocabulary": [
                 "opari",
@@ -1780,7 +2131,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e02",
+              "id": "u06-2.l2.s2.e03",
               "type": "listen_type",
               "text": "Jertse bat erosi nahi dut amarentzat.",
               "answers": [
@@ -1799,7 +2150,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e03",
+              "id": "u06-2.l2.s2.e04",
               "type": "fill_blank",
               "sentence": "Opari hau ___ da.",
               "options": [
@@ -1819,7 +2170,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e04",
+              "id": "u06-2.l2.s2.e05",
               "type": "speak",
               "text": "Norentzat da beroki hau?",
               "translation": "¿Para quién es este abrigo?",
@@ -1834,7 +2185,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e05",
+              "id": "u06-2.l2.s2.e06",
               "type": "fill_blank",
               "sentence": "___ da beroki hau?",
               "options": [
@@ -1854,7 +2205,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e06",
+              "id": "u06-2.l2.s2.e07",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1878,7 +2229,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e07",
+              "id": "u06-2.l2.s2.e08",
               "type": "choose_meaning",
               "text": "Aitarentzat da.",
               "options": [
@@ -1896,19 +2247,31 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e08",
+              "id": "u06-2.l2.s2.e09",
+              "type": "word_intro",
+              "word": "niretzat",
+              "translation": "para mí",
+              "vocabulary": [
+                "ni"
+              ],
+              "structures": [
+                "norentzat"
+              ]
+            },
+            {
+              "id": "u06-2.l2.s2.e10",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Esta camiseta es para mí?"
+                "lang": "eu",
+                "text": "Kamiseta hau niretzat da?"
               },
               "answers": [
-                "Kamiseta hau niretzat da?"
+                "¿Esta camiseta es para mí?"
               ],
               "distractors": [
-                "beroki",
-                "ahizparentzat",
-                "amarentzat"
+                "hermana",
+                "abrigo",
+                "Este"
               ],
               "vocabulary": [
                 "kamiseta",
@@ -1921,7 +2284,19 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e09",
+              "id": "u06-2.l2.s2.e11",
+              "type": "word_intro",
+              "word": "lagunarentzat",
+              "translation": "para el amigo / la amiga",
+              "vocabulary": [
+                "lagun"
+              ],
+              "structures": [
+                "norentzat"
+              ]
+            },
+            {
+              "id": "u06-2.l2.s2.e12",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1947,7 +2322,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e10",
+              "id": "u06-2.l2.s2.e13",
               "type": "listen_tap",
               "text": "Zapata hauek Ikerrentzat dira.",
               "distractors": [
@@ -1965,7 +2340,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e11",
+              "id": "u06-2.l2.s2.e14",
               "type": "read_true_false",
               "passage": "Amaiak bi opari erosi nahi ditu. Jertsea aitarentzat da, eta gona ahizparentzat.",
               "statement": "La falda es para su padre.",
@@ -1989,7 +2364,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e12",
+              "id": "u06-2.l2.s2.e15",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2011,10 +2386,33 @@
               ]
             },
             {
-              "id": "u06-2.l2.s2.e13",
-              "type": "order_sentence",
-              "answer": "Opariak guretzat dira?",
-              "translation": "¿Los regalos son para nosotros?",
+              "id": "u06-2.l2.s2.e16",
+              "type": "word_intro",
+              "word": "guretzat",
+              "translation": "para nosotros",
+              "vocabulary": [
+                "gu"
+              ],
+              "structures": [
+                "norentzat"
+              ]
+            },
+            {
+              "id": "u06-2.l2.s2.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Opariak guretzat dira?"
+              },
+              "answers": [
+                "¿Los regalos son para nosotros?",
+                "¿Los regalos son para nosotras?"
+              ],
+              "distractors": [
+                "un",
+                "Quiero",
+                "zapatos"
+              ],
               "vocabulary": [
                 "opari",
                 "gu",
@@ -2031,10 +2429,31 @@
           "exercises": [
             {
               "id": "u06-2.l2.s3.e01",
-              "type": "listen_type",
-              "text": "Arropa erostea gustatzen zait.",
+              "type": "word_intro",
+              "word": "erostea",
+              "translation": "comprar",
+              "vocabulary": [
+                "erosi"
+              ],
+              "structures": [
+                "gustatu-nominalization",
+                "elako-causal"
+              ]
+            },
+            {
+              "id": "u06-2.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Arropa erostea gustatzen zait."
+              },
               "answers": [
-                "Arropa erostea gustatzen zait."
+                "Me gusta comprar ropa."
+              ],
+              "distractors": [
+                "probarme",
+                "demasiado",
+                "A"
               ],
               "vocabulary": [
                 "arropa",
@@ -2047,10 +2466,33 @@
               ]
             },
             {
-              "id": "u06-2.l2.s3.e02",
-              "type": "speak",
-              "text": "Ez zait zapatak probatzea gustatzen.",
-              "translation": "No me gusta probarme zapatos.",
+              "id": "u06-2.l2.s3.e03",
+              "type": "word_intro",
+              "word": "probatzea",
+              "translation": "probar(se)",
+              "vocabulary": [
+                "probatu"
+              ],
+              "structures": [
+                "gustatu-nominalization",
+                "elako-causal"
+              ]
+            },
+            {
+              "id": "u06-2.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez zait zapatak probatzea gustatzen."
+              },
+              "answers": [
+                "No me gusta probarme zapatos."
+              ],
+              "distractors": [
+                "Porque",
+                "azul",
+                "es"
+              ],
               "vocabulary": [
                 "ez",
                 "gustatu",
@@ -2063,7 +2505,20 @@
               ]
             },
             {
-              "id": "u06-2.l2.s3.e03",
+              "id": "u06-2.l2.s3.e05",
+              "type": "word_intro",
+              "word": "delako",
+              "translation": "porque es",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "gustatu-nominalization",
+                "elako-causal"
+              ]
+            },
+            {
+              "id": "u06-2.l2.s3.e06",
               "type": "fill_blank",
               "sentence": "Merkea ___.",
               "options": [
@@ -2082,7 +2537,20 @@
               ]
             },
             {
-              "id": "u06-2.l2.s3.e04",
+              "id": "u06-2.l2.s3.e07",
+              "type": "word_intro",
+              "word": "zergatik",
+              "translation": "por qué",
+              "vocabulary": [
+                "zergatik"
+              ],
+              "structures": [
+                "gustatu-nominalization",
+                "elako-causal"
+              ]
+            },
+            {
+              "id": "u06-2.l2.s3.e08",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -2110,7 +2578,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s3.e05",
+              "id": "u06-2.l2.s3.e09",
               "type": "choose_meaning",
               "text": "Arropa erostea gustatzen zait.",
               "options": [
@@ -2130,7 +2598,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s3.e06",
+              "id": "u06-2.l2.s3.e10",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -2153,7 +2621,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s3.e07",
+              "id": "u06-2.l2.s3.e11",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2182,7 +2650,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s3.e08",
+              "id": "u06-2.l2.s3.e12",
               "type": "listen_tap",
               "text": "Jertse hau nahi dut, urdina delako.",
               "distractors": [
@@ -2205,7 +2673,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s3.e09",
+              "id": "u06-2.l2.s3.e13",
               "type": "read_true_false",
               "passage": "Ikerri ez zaio arropa erostea gustatzen, baina opariak erostea bai.",
               "statement": "A Iker le gusta comprar ropa.",
@@ -2225,14 +2693,33 @@
               ]
             },
             {
-              "id": "u06-2.l2.s3.e10",
-              "type": "translate_typing",
+              "id": "u06-2.l2.s3.e14",
+              "type": "word_intro",
+              "word": "direlako",
+              "translation": "porque son",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "gustatu-nominalization",
+                "elako-causal"
+              ]
+            },
+            {
+              "id": "u06-2.l2.s3.e15",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Prefiero estos zapatos porque son bonitos."
+                "lang": "eu",
+                "text": "Zapata hauek nahiago ditut, politak direlako."
               },
               "answers": [
-                "Zapata hauek nahiago ditut, politak direlako."
+                "Prefiero estos zapatos porque son bonitos."
+              ],
+              "distractors": [
+                "barata",
+                "A",
+                "Por",
+                "comprar"
               ],
               "vocabulary": [
                 "zapata",
@@ -2248,7 +2735,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s3.e11",
+              "id": "u06-2.l2.s3.e16",
               "type": "order_sentence",
               "answer": "Zergatik? Beroki hori garestiegia delako.",
               "translation": "¿Por qué? Porque ese abrigo es demasiado caro.",
@@ -2265,7 +2752,7 @@
               ]
             },
             {
-              "id": "u06-2.l2.s3.e12",
+              "id": "u06-2.l2.s3.e17",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2725,13 +3212,32 @@
             },
             {
               "id": "u06-2.l3.s2.e06",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "dauzkagu",
+              "translation": "tenemos (varias cosas)",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "egi-excess",
+                "nola-daukazu"
+              ]
+            },
+            {
+              "id": "u06-2.l3.s2.e07",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Tenemos la roja y la negra."
+                "lang": "eu",
+                "text": "Gorria eta beltza dauzkagu."
               },
               "answers": [
-                "Gorria eta beltza dauzkagu."
+                "Tenemos la roja y la negra.",
+                "La tenemos en rojo y en negro."
+              ],
+              "distractors": [
+                "pero",
+                "Este",
+                "jersey"
               ],
               "vocabulary": [
                 "gorri",
@@ -2745,7 +3251,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s2.e07",
+              "id": "u06-2.l3.s2.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2782,7 +3288,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s2.e08",
+              "id": "u06-2.l3.s2.e09",
               "type": "order_sentence",
               "answer": "Zapata hauek handiegiak dira.",
               "translation": "Estos zapatos son demasiado grandes.",
@@ -2798,7 +3304,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s2.e09",
+              "id": "u06-2.l3.s2.e10",
               "type": "read_true_false",
               "passage": "Galtza beltzak luzeegiak dira. Galtza grisak ondo daude.",
               "statement": "Los pantalones grises están bien.",
@@ -2818,7 +3324,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s2.e10",
+              "id": "u06-2.l3.s2.e11",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2843,7 +3349,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s2.e11",
+              "id": "u06-2.l3.s2.e12",
               "type": "read_true_false",
               "passage": "Zapata gorriak politak dira. Garestiegiak dira, ehun euro.",
               "statement": "Los zapatos rojos son baratos.",
@@ -2863,7 +3369,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s2.e12",
+              "id": "u06-2.l3.s2.e13",
               "type": "choose_image",
               "prompt": "azul",
               "options": [
@@ -2925,12 +3431,32 @@
             },
             {
               "id": "u06-2.l3.s3.e02",
-              "type": "listen_tap",
-              "text": "Nire anaiari urdina gustatzen zaiolako.",
+              "type": "word_intro",
+              "word": "zaiolako",
+              "translation": "porque le (gusta)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "elako-causal",
+                "gustatu-nominalization"
+              ]
+            },
+            {
+              "id": "u06-2.l3.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nire anaiari urdina gustatzen zaiolako."
+              },
+              "answers": [
+                "Porque a mi hermano le gusta el azul."
+              ],
               "distractors": [
-                "hitz",
-                "zaio",
-                "probatzea"
+                "más",
+                "qué",
+                "quieres",
+                "caro"
               ],
               "vocabulary": [
                 "ni",
@@ -2944,7 +3470,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s3.e03",
+              "id": "u06-2.l3.s3.e04",
               "type": "choose_meaning",
               "text": "Garestiegia delako.",
               "options": [
@@ -2963,7 +3489,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s3.e04",
+              "id": "u06-2.l3.s3.e05",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2986,7 +3512,20 @@
               ]
             },
             {
-              "id": "u06-2.l3.s3.e05",
+              "id": "u06-2.l3.s3.e06",
+              "type": "word_intro",
+              "word": "zaidalako",
+              "translation": "porque me (gusta)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "elako-causal",
+                "gustatu-nominalization"
+              ]
+            },
+            {
+              "id": "u06-2.l3.s3.e07",
               "type": "complete_chat",
               "messages": [
                 {
@@ -3014,7 +3553,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s3.e06",
+              "id": "u06-2.l3.s3.e08",
               "type": "order_sentence",
               "answer": "Ez dut beroki hau nahi, garestiegia delako.",
               "translation": "No quiero este abrigo porque es demasiado caro.",
@@ -3033,7 +3572,20 @@
               ]
             },
             {
-              "id": "u06-2.l3.s3.e07",
+              "id": "u06-2.l3.s3.e09",
+              "type": "word_intro",
+              "word": "duelako",
+              "translation": "porque tiene",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "elako-causal",
+                "gustatu-nominalization"
+              ]
+            },
+            {
+              "id": "u06-2.l3.s3.e10",
               "type": "complete_chat",
               "messages": [
                 {
@@ -3071,7 +3623,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s3.e08",
+              "id": "u06-2.l3.s3.e11",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -3094,7 +3646,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s3.e09",
+              "id": "u06-2.l3.s3.e12",
               "type": "read_true_false",
               "passage": "Leirek gona hau nahi du, gorria delako. Gorria gustatzen zaio.",
               "statement": "Leire quiere la falda porque es roja.",
@@ -3114,11 +3666,29 @@
               ]
             },
             {
-              "id": "u06-2.l3.s3.e10",
-              "type": "listen_type",
-              "text": "Euskaraz hitz egitea gustatzen zait.",
+              "id": "u06-2.l3.s3.e13",
+              "type": "word_intro",
+              "word": "egitea",
+              "translation": "hacer",
+              "structures": [
+                "elako-causal",
+                "gustatu-nominalization"
+              ]
+            },
+            {
+              "id": "u06-2.l3.s3.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Euskaraz hitz egitea gustatzen zait."
+              },
               "answers": [
-                "Euskaraz hitz egitea gustatzen zait."
+                "Me gusta hablar en euskera."
+              ],
+              "distractors": [
+                "jersey",
+                "Prefiero",
+                "Porque"
               ],
               "vocabulary": [
                 "euskara",
@@ -3131,7 +3701,7 @@
               ]
             },
             {
-              "id": "u06-2.l3.s3.e11",
+              "id": "u06-2.l3.s3.e15",
               "type": "read_true_false",
               "passage": "Kepari ez zaio arropa erostea gustatzen. Liburu-dendak nahiago ditu.",
               "statement": "A Kepa le gusta comprar ropa.",

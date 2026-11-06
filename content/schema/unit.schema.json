@@ -929,6 +929,51 @@
               "minLength": 1
             }
           }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "type",
+            "word",
+            "translation"
+          ],
+          "description": "A new word, shown before its first use: no answer, the learner just continues.",
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "type": {
+              "const": "word_intro"
+            },
+            "vocabulary": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "structures": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "word": {
+              "type": "string",
+              "minLength": 1
+            },
+            "translation": {
+              "type": "string",
+              "minLength": 1
+            },
+            "image": {
+              "type": "string",
+              "pattern": "^[a-z0-9_]+\\.webp$"
+            }
+          }
         }
       ]
     }

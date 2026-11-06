@@ -55,7 +55,8 @@ unit-tested without Android:
 
 `feature:lesson` maps the session to an immutable `LessonUiState` in `LessonViewModel`
 (`StateFlow` + `LessonAction`s in, one-off `LessonEvent`s out). `LessonContent` is stateless and is
-what previews, UI tests and screenshot tests render. All twelve exercise types are supported:
+what previews, UI tests and screenshot tests render. All twelve exercise types are supported, plus
+the "new word" card:
 
 - **Tiles** (`ExerciseUi.TileAnswer`): translate with a word bank, listen and tap, order the
   sentence. Answers must be exact.
@@ -63,6 +64,8 @@ what previews, UI tests and screenshot tests render. All twelve exercise types a
 - **Single choice** (`ExerciseUi.SingleChoice`): choose the image, fill the blank, choose the
   meaning, complete the chat, true or false. Text options are shuffled per exercise; `order` maps
   them back to the content index. True/false shows no correction (the other option is right).
+- **New word** (`ExerciseUi.WordIntro`): picture, word, translation and audio; *Continue* removes
+  it from the queue without counting it (`LessonSession.skip`).
 - **Match pairs** finishes by itself; **speak** uses the system speech recogniser
   (`RecognizerIntent`, `eu-ES`, no microphone permission). Recognised speech is checked tolerantly;
   a failed attempt shows the sentence but costs no heart, and *"I can't speak now"* skips the
@@ -77,6 +80,12 @@ speaking) and the Basque answer after checking (translations into Basque, orderi
 Story lines play as they appear. `SoundEffects` (`AndroidSoundEffects`, SoundPool) plays the
 correct / incorrect / finished sounds, with haptic feedback (`HapticFeedbackType.Confirm` /
 `Reject`); both can be turned off in the profile, as can listening exercises.
+
+**Hints**: `CourseRepository.getGlossary` loads `glossary.json`; `Glossary.segment` (`core:model`)
+splits a Basque text into runs, matching multi-word expressions first. `SessionPlan` carries the
+glossary (none for legendary levels) and `LessonContent` provides it through `LocalGlossary`.
+`LanguageText(hints = true)` turns hinted words into `LinkAnnotation`s with a dotted underline, so
+TalkBack exposes them as links, and shows the meaning in a bubble (a polite live region) below.
 
 **Stories** (`StoryRoute`, `StoryViewModel`, `feature:lesson`): the player shows the lines read so
 far (tap a line for its translation, or its speaker button to hear it again) and the current

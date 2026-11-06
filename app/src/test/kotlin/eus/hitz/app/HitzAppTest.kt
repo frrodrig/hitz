@@ -1,5 +1,6 @@
 package eus.hitz.app
 
+import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithContentDescription
@@ -47,6 +48,10 @@ class HitzAppTest {
             composeRule.onAllNodesWithContentDescription(current).fetchSemanticsNodes().isNotEmpty()
         }
         composeRule.onNodeWithContentDescription(current).performClick()
+        // A beginner meets each word before using it.
+        waitForText("Palabra nueva")
+        composeRule.onNodeWithText("egun on").assertIsDisplayed()
+        composeRule.onNodeWithText("Continuar").performClick()
         waitForText("Traduce esta frase")
     }
 

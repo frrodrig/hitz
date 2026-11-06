@@ -127,18 +127,42 @@
           "exercises": [
             {
               "id": "u05-1.l1.s1.e01",
+              "type": "word_intro",
+              "word": "ura",
+              "translation": "el agua",
+              "vocabulary": [
+                "ur"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e02",
+              "type": "word_intro",
+              "word": "edan",
+              "translation": "beber",
+              "vocabulary": [
+                "edan"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e03",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Quiero beber agua, por favor."
+                "lang": "eu",
+                "text": "Ura edan nahi dut, mesedez."
               },
               "answers": [
-                "Ura edan nahi dut, mesedez."
+                "Quiero beber agua, por favor."
               ],
               "distractors": [
-                "Kafea",
-                "gainean",
-                "bat"
+                "naranja",
+                "frigorífico",
+                "Las"
               ],
               "vocabulary": [
                 "ur",
@@ -152,12 +176,43 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Kafea ala tea?",
+              "id": "u05-1.l1.s1.e04",
+              "type": "word_intro",
+              "word": "kafe",
+              "translation": "café",
+              "image": "drink_coffee.webp",
+              "vocabulary": [
+                "kafe"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e05",
+              "type": "word_intro",
+              "word": "tea",
+              "translation": "el té",
+              "vocabulary": [
+                "te"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kafea ala tea?"
+              },
+              "answers": [
+                "¿Café o té?"
+              ],
               "distractors": [
-                "mesedez",
-                "hozkailuan"
+                "mesa",
+                "está"
               ],
               "vocabulary": [
                 "kafe",
@@ -168,7 +223,59 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e03",
+              "id": "u05-1.l1.s1.e07",
+              "type": "word_intro",
+              "word": "ur",
+              "translation": "agua",
+              "image": "drink_water.webp",
+              "vocabulary": [
+                "ur"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e08",
+              "type": "word_intro",
+              "word": "esne",
+              "translation": "leche",
+              "image": "drink_milk.webp",
+              "vocabulary": [
+                "esne"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e09",
+              "type": "word_intro",
+              "word": "ardo",
+              "translation": "vino",
+              "image": "drink_wine.webp",
+              "vocabulary": [
+                "ardo"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e10",
+              "type": "word_intro",
+              "word": "garagardo",
+              "translation": "cerveza",
+              "image": "drink_beer.webp",
+              "vocabulary": [
+                "garagardo"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s1.e11",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -209,15 +316,10 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e04",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "La leche está en el frigorífico."
-              },
-              "answers": [
-                "Esnea hozkailuan dago."
-              ],
+              "id": "u05-1.l1.s1.e12",
+              "type": "order_sentence",
+              "answer": "Esnea hozkailuan dago.",
+              "translation": "La leche está en el frigorífico.",
               "vocabulary": [
                 "esne",
                 "hozkailu",
@@ -228,7 +330,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e05",
+              "id": "u05-1.l1.s1.e13",
               "type": "fill_blank",
               "sentence": "Kafea ___ tea?",
               "options": [
@@ -246,10 +348,21 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e06",
-              "type": "order_sentence",
-              "answer": "Laranja zukua nahi duzu?",
-              "translation": "¿Quieres zumo de naranja?",
+              "id": "u05-1.l1.s1.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Laranja zukua nahi duzu?"
+              },
+              "answers": [
+                "¿Quieres zumo de naranja?",
+                "¿Quiere zumo de naranja?"
+              ],
+              "distractors": [
+                "bebidas",
+                "frigorífico",
+                "mesa"
+              ],
               "vocabulary": [
                 "laranja",
                 "zuku",
@@ -261,7 +374,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e07",
+              "id": "u05-1.l1.s1.e15",
               "type": "choose_meaning",
               "text": "Garagardo bat, mesedez.",
               "options": [
@@ -280,7 +393,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e08",
+              "id": "u05-1.l1.s1.e16",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -298,7 +411,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e09",
+              "id": "u05-1.l1.s1.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -327,7 +440,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e10",
+              "id": "u05-1.l1.s1.e18",
               "type": "listen_type",
               "text": "Zer edan nahi duzu?",
               "answers": [
@@ -344,7 +457,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e11",
+              "id": "u05-1.l1.s1.e19",
               "type": "read_true_false",
               "passage": "Kaixo! Ura nahi dut, mesedez. Anek ardoa nahi du.",
               "statement": "Ane quiere agua.",
@@ -362,7 +475,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e12",
+              "id": "u05-1.l1.s1.e20",
               "type": "speak",
               "text": "Garagardo bat, mesedez.",
               "translation": "Una cerveza, por favor.",
@@ -376,7 +489,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e13",
+              "id": "u05-1.l1.s1.e21",
               "type": "choose_image",
               "prompt": "el agua",
               "options": [
@@ -402,7 +515,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e14",
+              "id": "u05-1.l1.s1.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -429,7 +542,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e15",
+              "id": "u05-1.l1.s1.e23",
               "type": "choose_image",
               "prompt": "el café",
               "options": [
@@ -455,7 +568,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e16",
+              "id": "u05-1.l1.s1.e24",
               "type": "choose_image",
               "prompt": "el vino",
               "options": [
@@ -481,7 +594,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e17",
+              "id": "u05-1.l1.s1.e25",
               "type": "choose_image",
               "prompt": "la cerveza",
               "options": [
@@ -507,7 +620,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s1.e18",
+              "id": "u05-1.l1.s1.e26",
               "type": "choose_image",
               "prompt": "el zumo",
               "options": [
@@ -539,12 +652,33 @@
           "exercises": [
             {
               "id": "u05-1.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Ogia mahai gainean dago.",
+              "type": "word_intro",
+              "word": "ogi",
+              "translation": "pan",
+              "image": "food_bread.webp",
+              "vocabulary": [
+                "ogi"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ogia mahai gainean dago."
+              },
+              "answers": [
+                "El pan está encima de la mesa.",
+                "El pan está sobre la mesa."
+              ],
               "distractors": [
-                "Haragia",
-                "Gaur",
-                "Arrautzak"
+                "o",
+                "Necesito",
+                "dos",
+                "mucho"
               ],
               "vocabulary": [
                 "ogi",
@@ -557,14 +691,44 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u05-1.l1.s2.e03",
+              "type": "word_intro",
+              "word": "arrain",
+              "translation": "pescado",
+              "image": "food_fish.webp",
+              "vocabulary": [
+                "arrain"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e04",
+              "type": "word_intro",
+              "word": "haragi",
+              "translation": "carne",
+              "image": "food_meat.webp",
+              "vocabulary": [
+                "haragi"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e05",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Pescado o carne?"
+                "lang": "eu",
+                "text": "Arraina ala haragia?"
               },
               "answers": [
-                "Arraina ala haragia?"
+                "¿Pescado o carne?"
+              ],
+              "distractors": [
+                "en",
+                "mucho"
               ],
               "vocabulary": [
                 "arrain",
@@ -575,7 +739,46 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e03",
+              "id": "u05-1.l1.s2.e06",
+              "type": "word_intro",
+              "word": "oilasko",
+              "translation": "pollo",
+              "image": "food_chicken.webp",
+              "vocabulary": [
+                "oilasko"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e07",
+              "type": "word_intro",
+              "word": "arrautza",
+              "translation": "huevo",
+              "image": "food_egg.webp",
+              "vocabulary": [
+                "arrautza"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e08",
+              "type": "word_intro",
+              "word": "gazta",
+              "translation": "queso",
+              "image": "food_cheese.webp",
+              "vocabulary": [
+                "gazta"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -616,10 +819,33 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e04",
-              "type": "order_sentence",
-              "answer": "Oilaskoa eta patatak nahi ditut.",
-              "translation": "Quiero pollo y patatas.",
+              "id": "u05-1.l1.s2.e10",
+              "type": "word_intro",
+              "word": "patata",
+              "translation": "patata",
+              "image": "food_potato.webp",
+              "vocabulary": [
+                "patata"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Oilaskoa eta patatak nahi ditut."
+              },
+              "answers": [
+                "Quiero pollo y patatas."
+              ],
+              "distractors": [
+                "está",
+                "de",
+                "mucho"
+              ],
               "vocabulary": [
                 "oilasko",
                 "eta",
@@ -632,7 +858,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e05",
+              "id": "u05-1.l1.s2.e12",
               "type": "fill_blank",
               "sentence": "Bi ___ behar ditut.",
               "options": [
@@ -652,7 +878,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e06",
+              "id": "u05-1.l1.s2.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -672,7 +898,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e07",
+              "id": "u05-1.l1.s2.e14",
               "type": "choose_meaning",
               "text": "Arraina ala haragia?",
               "options": [
@@ -690,11 +916,30 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e08",
-              "type": "listen_type",
-              "text": "Ogi asko jaten dut.",
+              "id": "u05-1.l1.s2.e15",
+              "type": "word_intro",
+              "word": "jaten",
+              "translation": "comiendo (jan)",
+              "vocabulary": [
+                "jan"
+              ],
+              "structures": [
+                "food-vocab"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s2.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ogi asko jaten dut."
+              },
               "answers": [
-                "Ogi asko jaten dut."
+                "Como mucho pan."
+              ],
+              "distractors": [
+                "la",
+                "pollo"
               ],
               "vocabulary": [
                 "ogi",
@@ -707,7 +952,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e09",
+              "id": "u05-1.l1.s2.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -731,7 +976,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e10",
+              "id": "u05-1.l1.s2.e18",
               "type": "speak",
               "text": "Arrautzak hozkailuan daude.",
               "translation": "Los huevos están en el frigorífico.",
@@ -745,7 +990,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e11",
+              "id": "u05-1.l1.s2.e19",
               "type": "read_true_false",
               "passage": "Hozkailuan esnea eta arrautzak daude. Ogia mahai gainean dago.",
               "statement": "El pan está en el frigorífico.",
@@ -765,7 +1010,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e12",
+              "id": "u05-1.l1.s2.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -791,7 +1036,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e13",
+              "id": "u05-1.l1.s2.e21",
               "type": "choose_image",
               "prompt": "el pan",
               "options": [
@@ -817,19 +1062,19 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e14",
+              "id": "u05-1.l1.s2.e22",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Hoy quiero comer pollo."
+                "lang": "eu",
+                "text": "Gaur oilaskoa jan nahi dut."
               },
               "answers": [
-                "Gaur oilaskoa jan nahi dut."
+                "Hoy quiero comer pollo."
               ],
               "distractors": [
-                "daude",
-                "jaten",
-                "Arrautzak"
+                "de",
+                "están",
+                "está"
               ],
               "vocabulary": [
                 "gaur",
@@ -843,7 +1088,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e15",
+              "id": "u05-1.l1.s2.e23",
               "type": "choose_image",
               "prompt": "el pescado",
               "options": [
@@ -869,7 +1114,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e16",
+              "id": "u05-1.l1.s2.e24",
               "type": "choose_image",
               "prompt": "la carne",
               "options": [
@@ -895,7 +1140,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e17",
+              "id": "u05-1.l1.s2.e25",
               "type": "choose_image",
               "prompt": "el pollo",
               "options": [
@@ -921,7 +1166,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e18",
+              "id": "u05-1.l1.s2.e26",
               "type": "choose_image",
               "prompt": "el huevo",
               "options": [
@@ -947,7 +1192,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s2.e19",
+              "id": "u05-1.l1.s2.e27",
               "type": "choose_image",
               "prompt": "el queso",
               "options": [
@@ -979,13 +1224,32 @@
           "exercises": [
             {
               "id": "u05-1.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "gosari",
+              "translation": "desayuno",
+              "vocabulary": [
+                "gosari"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e02",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "En el desayuno quiero café."
+                "lang": "eu",
+                "text": "Gosarian kafea nahi dut."
               },
               "answers": [
-                "Gosarian kafea nahi dut."
+                "En el desayuno quiero café.",
+                "Para desayunar quiero café."
+              ],
+              "distractors": [
+                "naranja",
+                "bebida",
+                "Una"
               ],
               "vocabulary": [
                 "gosari",
@@ -999,10 +1263,34 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e02",
-              "type": "order_sentence",
-              "answer": "Bazkarian arraina jaten dugu.",
-              "translation": "En la comida comemos pescado.",
+              "id": "u05-1.l1.s3.e03",
+              "type": "word_intro",
+              "word": "bazkari",
+              "translation": "comida (del mediodía)",
+              "vocabulary": [
+                "bazkari"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bazkarian arraina jaten dugu."
+              },
+              "answers": [
+                "En la comida comemos pescado.",
+                "Para comer comemos pescado."
+              ],
+              "distractors": [
+                "Necesitamos",
+                "tomates",
+                "el"
+              ],
               "vocabulary": [
                 "bazkari",
                 "arrain",
@@ -1015,7 +1303,62 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e03",
+              "id": "u05-1.l1.s3.e05",
+              "type": "word_intro",
+              "word": "afari",
+              "translation": "cena",
+              "vocabulary": [
+                "afari"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e06",
+              "type": "word_intro",
+              "word": "sagar",
+              "translation": "manzana",
+              "image": "food_apple.webp",
+              "vocabulary": [
+                "sagar"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e07",
+              "type": "word_intro",
+              "word": "laranja",
+              "translation": "naranja",
+              "image": "food_orange.webp",
+              "vocabulary": [
+                "laranja"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e08",
+              "type": "word_intro",
+              "word": "letxuga",
+              "translation": "lechuga",
+              "image": "food_lettuce.webp",
+              "vocabulary": [
+                "letxuga"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1057,7 +1400,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e04",
+              "id": "u05-1.l1.s3.e10",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1078,7 +1421,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e05",
+              "id": "u05-1.l1.s3.e11",
               "type": "fill_blank",
               "sentence": "___ bat ala laranja bat?",
               "options": [
@@ -1098,7 +1441,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e06",
+              "id": "u05-1.l1.s3.e12",
               "type": "listen_type",
               "text": "Sagar bat ala laranja bat?",
               "answers": [
@@ -1115,7 +1458,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e07",
+              "id": "u05-1.l1.s3.e13",
               "type": "choose_meaning",
               "text": "Afarian arraina daukagu.",
               "options": [
@@ -1135,10 +1478,34 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e08",
-              "type": "speak",
-              "text": "Patatak eta tomateak behar ditugu.",
-              "translation": "Necesitamos patatas y tomates.",
+              "id": "u05-1.l1.s3.e14",
+              "type": "word_intro",
+              "word": "tomate",
+              "translation": "tomate",
+              "image": "food_tomato.webp",
+              "vocabulary": [
+                "tomate"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Patatak eta tomateak behar ditugu."
+              },
+              "answers": [
+                "Necesitamos patatas y tomates."
+              ],
+              "distractors": [
+                "comemos",
+                "cena",
+                "naranja"
+              ],
               "vocabulary": [
                 "patata",
                 "eta",
@@ -1152,7 +1519,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e09",
+              "id": "u05-1.l1.s3.e16",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1178,7 +1545,20 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e10",
+              "id": "u05-1.l1.s3.e17",
+              "type": "word_intro",
+              "word": "janari",
+              "translation": "comida",
+              "vocabulary": [
+                "janari"
+              ],
+              "structures": [
+                "food-vocab",
+                "meals"
+              ]
+            },
+            {
+              "id": "u05-1.l1.s3.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1208,7 +1588,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e11",
+              "id": "u05-1.l1.s3.e19",
               "type": "read_true_false",
               "passage": "Gosarian esnea edaten dugu. Bazkarian oilaskoa eta patatak jaten ditugu.",
               "statement": "En el desayuno comen pollo.",
@@ -1230,7 +1610,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e12",
+              "id": "u05-1.l1.s3.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1256,7 +1636,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e13",
+              "id": "u05-1.l1.s3.e21",
               "type": "choose_image",
               "prompt": "la manzana",
               "options": [
@@ -1283,7 +1663,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e14",
+              "id": "u05-1.l1.s3.e22",
               "type": "listen_tap",
               "text": "Bazkarian oilaskoa nahi dut.",
               "distractors": [
@@ -1303,7 +1683,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e15",
+              "id": "u05-1.l1.s3.e23",
               "type": "choose_image",
               "prompt": "la naranja",
               "options": [
@@ -1330,7 +1710,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e16",
+              "id": "u05-1.l1.s3.e24",
               "type": "choose_image",
               "prompt": "la lechuga",
               "options": [
@@ -1357,7 +1737,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e17",
+              "id": "u05-1.l1.s3.e25",
               "type": "choose_image",
               "prompt": "la patata",
               "options": [
@@ -1384,7 +1764,7 @@
               ]
             },
             {
-              "id": "u05-1.l1.s3.e18",
+              "id": "u05-1.l1.s3.e26",
               "type": "choose_image",
               "prompt": "el tomate",
               "options": [
@@ -1427,9 +1807,44 @@
           "exercises": [
             {
               "id": "u05-1.l2.s1.e01",
-              "type": "order_sentence",
-              "answer": "Kafea gustatzen zait.",
-              "translation": "Me gusta el café.",
+              "type": "word_intro",
+              "word": "gustatzen",
+              "translation": "gustando (gustatu: gustar)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s1.e02",
+              "type": "word_intro",
+              "word": "zait",
+              "translation": "me (gusta)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kafea gustatzen zait."
+              },
+              "answers": [
+                "Me gusta el café.",
+                "A mí me gusta el café."
+              ],
+              "distractors": [
+                "Qué",
+                "pescado",
+                "la"
+              ],
               "vocabulary": [
                 "kafe",
                 "gustatu"
@@ -1439,8 +1854,20 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e02",
-              "type": "translate_typing",
+              "id": "u05-1.l2.s1.e04",
+              "type": "word_intro",
+              "word": "zaizkit",
+              "translation": "me (gustan)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s1.e05",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Sagarrak gustatzen zaizkit."
@@ -1448,6 +1875,11 @@
               "answers": [
                 "Me gustan las manzanas.",
                 "A mí me gustan las manzanas."
+              ],
+              "distractors": [
+                "los",
+                "Sí",
+                "Te"
               ],
               "vocabulary": [
                 "sagar",
@@ -1458,7 +1890,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e03",
+              "id": "u05-1.l2.s1.e06",
               "type": "fill_blank",
               "sentence": "Sagarrak gustatzen ___.",
               "options": [
@@ -1476,11 +1908,20 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e04",
-              "type": "listen_type",
-              "text": "Ez zait esnea gustatzen.",
+              "id": "u05-1.l2.s1.e07",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "No me gusta la leche."
+              },
               "answers": [
-                "Ez zait esnea gustatzen."
+                "Ez zait esnea gustatzen.",
+                "Esnea ez zait gustatzen."
+              ],
+              "distractors": [
+                "Patatak",
+                "zaizkit",
+                "Sagarrak"
               ],
               "vocabulary": [
                 "ez",
@@ -1492,7 +1933,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e05",
+              "id": "u05-1.l2.s1.e08",
               "type": "fill_blank",
               "sentence": "Kafea gustatzen ___.",
               "options": [
@@ -1510,10 +1951,33 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e06",
-              "type": "speak",
-              "text": "Arraina gustatzen zaizu?",
-              "translation": "¿Te gusta el pescado?",
+              "id": "u05-1.l2.s1.e09",
+              "type": "word_intro",
+              "word": "zaizu",
+              "translation": "te (gusta)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Arraina gustatzen zaizu?"
+              },
+              "answers": [
+                "¿Te gusta el pescado?",
+                "¿Le gusta el pescado?"
+              ],
+              "distractors": [
+                "Qué",
+                "la",
+                "café"
+              ],
               "vocabulary": [
                 "arrain",
                 "gustatu"
@@ -1523,7 +1987,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e07",
+              "id": "u05-1.l2.s1.e11",
               "type": "choose_meaning",
               "text": "Ez zait esnea gustatzen.",
               "options": [
@@ -1542,7 +2006,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e08",
+              "id": "u05-1.l2.s1.e12",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1566,7 +2030,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e09",
+              "id": "u05-1.l2.s1.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1590,18 +2054,32 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e10",
+              "id": "u05-1.l2.s1.e14",
+              "type": "word_intro",
+              "word": "zaizkizu",
+              "translation": "te (gustan)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s1.e15",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Te gustan las patatas?"
+                "lang": "eu",
+                "text": "Patatak gustatzen zaizkizu?"
               },
               "answers": [
-                "Patatak gustatzen zaizkizu?"
+                "¿Te gustan las patatas?",
+                "¿Le gustan las patatas?"
               ],
               "distractors": [
-                "Arraina",
-                "esnea"
+                "café",
+                "Me",
+                "pescado"
               ],
               "vocabulary": [
                 "patata",
@@ -1612,7 +2090,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e11",
+              "id": "u05-1.l2.s1.e16",
               "type": "read_true_false",
               "passage": "Ni Leire naiz. Arraina gustatzen zait, baina ez zait haragia gustatzen.",
               "statement": "A Leire le gusta la carne.",
@@ -1631,7 +2109,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e12",
+              "id": "u05-1.l2.s1.e17",
               "type": "listen_tap",
               "text": "Ez zaizkit tomateak gustatzen.",
               "distractors": [
@@ -1649,7 +2127,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e13",
+              "id": "u05-1.l2.s1.e18",
               "type": "choose_image",
               "prompt": "el té",
               "options": [
@@ -1675,7 +2153,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s1.e14",
+              "id": "u05-1.l2.s1.e19",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1699,13 +2177,32 @@
           "exercises": [
             {
               "id": "u05-1.l2.s2.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "zaio",
+              "translation": "le (gusta)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s2.e02",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Aneri ardoa gustatzen zaio."
               },
               "answers": [
                 "A Ane le gusta el vino."
+              ],
+              "distractors": [
+                "Al",
+                "chico",
+                "pollo",
+                "la"
               ],
               "vocabulary": [
                 "ardo",
@@ -1717,11 +2214,33 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e02",
-              "type": "listen_type",
-              "text": "Umeari zukua gustatzen zaio.",
+              "id": "u05-1.l2.s2.e03",
+              "type": "word_intro",
+              "word": "zuku",
+              "translation": "zumo",
+              "image": "drink_juice.webp",
+              "vocabulary": [
+                "zuku"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Al niño le gusta el zumo."
+              },
               "answers": [
                 "Umeari zukua gustatzen zaio."
+              ],
+              "distractors": [
+                "ez",
+                "amari",
+                "arrautzak"
               ],
               "vocabulary": [
                 "ume",
@@ -1734,7 +2253,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e03",
+              "id": "u05-1.l2.s2.e05",
               "type": "fill_blank",
               "sentence": "Aneri ardoa gustatzen ___.",
               "options": [
@@ -1753,10 +2272,49 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e04",
-              "type": "speak",
-              "text": "Guri arraina gustatzen zaigu.",
-              "translation": "A nosotros nos gusta el pescado.",
+              "id": "u05-1.l2.s2.e06",
+              "type": "word_intro",
+              "word": "guri",
+              "translation": "a nosotros",
+              "vocabulary": [
+                "gu"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s2.e07",
+              "type": "word_intro",
+              "word": "zaigu",
+              "translation": "nos (gusta)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Guri arraina gustatzen zaigu."
+              },
+              "answers": [
+                "A nosotros nos gusta el pescado.",
+                "Nos gusta el pescado.",
+                "A nosotras nos gusta el pescado."
+              ],
+              "distractors": [
+                "zumo",
+                "chico",
+                "vino",
+                "le"
+              ],
               "vocabulary": [
                 "gu",
                 "arrain",
@@ -1768,7 +2326,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e05",
+              "id": "u05-1.l2.s2.e09",
               "type": "fill_blank",
               "sentence": "___ arraina gustatzen zaigu.",
               "options": [
@@ -1788,7 +2346,33 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e06",
+              "id": "u05-1.l2.s2.e10",
+              "type": "word_intro",
+              "word": "zuei",
+              "translation": "a vosotros",
+              "vocabulary": [
+                "zuek"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s2.e11",
+              "type": "word_intro",
+              "word": "zaizue",
+              "translation": "os (gusta)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s2.e12",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1816,7 +2400,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e07",
+              "id": "u05-1.l2.s2.e13",
               "type": "choose_meaning",
               "text": "Umeari zukua gustatzen zaio.",
               "options": [
@@ -1836,19 +2420,48 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e08",
+              "id": "u05-1.l2.s2.e14",
+              "type": "word_intro",
+              "word": "haiei",
+              "translation": "a ellos",
+              "vocabulary": [
+                "haiek"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s2.e15",
+              "type": "word_intro",
+              "word": "zaizkie",
+              "translation": "les (gustan)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s2.e16",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "A ellos les gustan los huevos."
+                "lang": "eu",
+                "text": "Haiei arrautzak gustatzen zaizkie."
               },
               "answers": [
-                "Haiei arrautzak gustatzen zaizkie."
+                "A ellos les gustan los huevos.",
+                "Les gustan los huevos.",
+                "A ellas les gustan los huevos."
               ],
               "distractors": [
-                "Umeari",
-                "zaigu",
-                "zaizue"
+                "nos",
+                "gusta",
+                "zumo",
+                "vosotros"
               ],
               "vocabulary": [
                 "haiek",
@@ -1861,7 +2474,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e09",
+              "id": "u05-1.l2.s2.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1888,14 +2501,20 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e10",
-              "type": "listen_tap",
-              "text": "Mutil honi ez zaio esnea gustatzen.",
+              "id": "u05-1.l2.s2.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mutil honi ez zaio esnea gustatzen."
+              },
+              "answers": [
+                "A este chico no le gusta la leche."
+              ],
               "distractors": [
-                "Zuei",
-                "zaigu",
-                "ardoa",
-                "arrautzak"
+                "cerveza",
+                "vosotros",
+                "mi",
+                "los"
               ],
               "vocabulary": [
                 "mutil",
@@ -1910,7 +2529,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e11",
+              "id": "u05-1.l2.s2.e19",
               "type": "read_true_false",
               "passage": "Nire lagunari, Unairi, gazta gustatzen zaio, baina ez zaizkio sagarrak gustatzen.",
               "statement": "A Unai le gustan las manzanas.",
@@ -1930,14 +2549,22 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e12",
-              "type": "translate_typing",
+              "id": "u05-1.l2.s2.e20",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "A él le gusta el pollo."
+                "lang": "eu",
+                "text": "Hari oilaskoa gustatzen zaio."
               },
               "answers": [
-                "Hari oilaskoa gustatzen zaio."
+                "A él le gusta el pollo.",
+                "A ella le gusta el pollo.",
+                "Le gusta el pollo."
+              ],
+              "distractors": [
+                "nosotros",
+                "niño",
+                "cerveza",
+                "nos"
               ],
               "vocabulary": [
                 "hura",
@@ -1950,7 +2577,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e13",
+              "id": "u05-1.l2.s2.e21",
               "type": "choose_image",
               "prompt": "la leche",
               "options": [
@@ -1977,7 +2604,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s2.e14",
+              "id": "u05-1.l2.s2.e22",
               "type": "order_sentence",
               "answer": "Nire amari tea gustatzen zaio.",
               "translation": "A mi madre le gusta el té.",
@@ -1999,10 +2626,31 @@
           "exercises": [
             {
               "id": "u05-1.l2.s3.e01",
-              "type": "listen_type",
-              "text": "Kafea ala tea nahiago duzu?",
+              "type": "word_intro",
+              "word": "nahiago",
+              "translation": "preferir (nahiago dut: prefiero)",
+              "vocabulary": [
+                "nahiago izan"
+              ],
+              "structures": [
+                "nahiago-izan"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kafea ala tea nahiago duzu?"
+              },
               "answers": [
-                "Kafea ala tea nahiago duzu?"
+                "¿Prefieres café o té?",
+                "¿Prefiere café o té?"
+              ],
+              "distractors": [
+                "prefieren",
+                "Mikel",
+                "agua"
               ],
               "vocabulary": [
                 "kafe",
@@ -2015,10 +2663,14 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e02",
-              "type": "speak",
+              "id": "u05-1.l2.s3.e03",
+              "type": "listen_tap",
               "text": "Nik tea nahiago dut.",
-              "translation": "Yo prefiero té.",
+              "distractors": [
+                "edaten",
+                "ez",
+                "Garagardoa"
+              ],
               "vocabulary": [
                 "ni",
                 "te",
@@ -2030,7 +2682,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e03",
+              "id": "u05-1.l2.s3.e04",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -2062,7 +2714,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e04",
+              "id": "u05-1.l2.s3.e05",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -2086,7 +2738,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e05",
+              "id": "u05-1.l2.s3.e06",
               "type": "fill_blank",
               "sentence": "Nik tea nahiago ___.",
               "options": [
@@ -2106,7 +2758,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e06",
+              "id": "u05-1.l2.s3.e07",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -2132,7 +2784,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e07",
+              "id": "u05-1.l2.s3.e08",
               "type": "choose_meaning",
               "text": "Guk arraina nahiago dugu.",
               "options": [
@@ -2152,7 +2804,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e08",
+              "id": "u05-1.l2.s3.e09",
               "type": "listen_tap",
               "text": "Haragia ala oilaskoa nahiago duzue?",
               "distractors": [
@@ -2171,7 +2823,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e09",
+              "id": "u05-1.l2.s3.e10",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2197,8 +2849,8 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e10",
-              "type": "translate_typing",
+              "id": "u05-1.l2.s3.e11",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "Ellos prefieren patatas."
@@ -2206,6 +2858,11 @@
               "answers": [
                 "Haiek patatak nahiago dituzte.",
                 "Patatak nahiago dituzte."
+              ],
+              "distractors": [
+                "ala",
+                "du",
+                "Haragia"
               ],
               "vocabulary": [
                 "haiek",
@@ -2218,7 +2875,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e11",
+              "id": "u05-1.l2.s3.e12",
               "type": "read_true_false",
               "passage": "Josuk gosarian kafea nahiago du. Bere ahizpak tea nahiago du.",
               "statement": "Josu prefiere té.",
@@ -2237,7 +2894,7 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e12",
+              "id": "u05-1.l2.s3.e13",
               "type": "order_sentence",
               "answer": "Gosarian zukua nahiago dut.",
               "translation": "En el desayuno prefiero zumo.",
@@ -2252,7 +2909,19 @@
               ]
             },
             {
-              "id": "u05-1.l2.s3.e13",
+              "id": "u05-1.l2.s3.e14",
+              "type": "word_intro",
+              "word": "edaten",
+              "translation": "bebiendo (edan)",
+              "vocabulary": [
+                "edan"
+              ],
+              "structures": [
+                "nahiago-izan"
+              ]
+            },
+            {
+              "id": "u05-1.l2.s3.e15",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2334,6 +3003,19 @@
             },
             {
               "id": "u05-1.l3.s1.e03",
+              "type": "word_intro",
+              "word": "niri",
+              "translation": "a mí",
+              "vocabulary": [
+                "ni"
+              ],
+              "structures": [
+                "gustatu-present",
+                "nahiago-izan"
+              ]
+            },
+            {
+              "id": "u05-1.l3.s1.e04",
               "type": "choose_meaning",
               "text": "Niri ere bai.",
               "options": [
@@ -2353,7 +3035,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s1.e04",
+              "id": "u05-1.l3.s1.e05",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -2379,7 +3061,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s1.e05",
+              "id": "u05-1.l3.s1.e06",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2417,7 +3099,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s1.e06",
+              "id": "u05-1.l3.s1.e07",
               "type": "listen_tap",
               "text": "Ez zait garagardoa gustatzen. Ura nahiago dut.",
               "distractors": [
@@ -2440,7 +3122,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s1.e07",
+              "id": "u05-1.l3.s1.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2468,14 +3150,32 @@
               ]
             },
             {
-              "id": "u05-1.l3.s1.e08",
-              "type": "translate_typing",
+              "id": "u05-1.l3.s1.e09",
+              "type": "word_intro",
+              "word": "jan",
+              "translation": "comer",
+              "vocabulary": [
+                "jan"
+              ],
+              "structures": [
+                "gustatu-present",
+                "nahiago-izan"
+              ]
+            },
+            {
+              "id": "u05-1.l3.s1.e10",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "Hoy quiero comer en el bar."
               },
               "answers": [
                 "Gaur tabernan jan nahi dut."
+              ],
+              "distractors": [
+                "gustatzen",
+                "ala",
+                "Ez"
               ],
               "vocabulary": [
                 "gaur",
@@ -2490,7 +3190,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s1.e09",
+              "id": "u05-1.l3.s1.e11",
               "type": "read_true_false",
               "passage": "Tabernan, Oierrek garagardoa edan nahi du, baina Haizeak ura nahiago du.",
               "statement": "Haizea prefiere agua.",
@@ -2512,7 +3212,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s1.e10",
+              "id": "u05-1.l3.s1.e12",
               "type": "order_sentence",
               "answer": "Laranjak gustatzen zaizkizu?",
               "translation": "¿Te gustan las naranjas?",
@@ -2526,7 +3226,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s1.e11",
+              "id": "u05-1.l3.s1.e13",
               "type": "read_true_false",
               "passage": "Niri ez zait kafea gustatzen. Tea nahiago dut.",
               "statement": "A esta persona le gusta el café.",
@@ -2546,7 +3246,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s1.e12",
+              "id": "u05-1.l3.s1.e14",
               "type": "choose_image",
               "prompt": "el pescado",
               "options": [
@@ -2674,6 +3374,19 @@
             },
             {
               "id": "u05-1.l3.s2.e05",
+              "type": "word_intro",
+              "word": "zaie",
+              "translation": "les (gusta)",
+              "vocabulary": [
+                "gustatu"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l3.s2.e06",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2702,14 +3415,34 @@
               ]
             },
             {
-              "id": "u05-1.l3.s2.e06",
-              "type": "translate_typing",
+              "id": "u05-1.l3.s2.e07",
+              "type": "word_intro",
+              "word": "zuri",
+              "translation": "a ti",
+              "vocabulary": [
+                "zu"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l3.s2.e08",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿A ti qué te gusta?"
+                "lang": "eu",
+                "text": "Zuri zer gustatzen zaizu?"
               },
               "answers": [
-                "Zuri zer gustatzen zaizu?"
+                "¿A ti qué te gusta?",
+                "¿Qué te gusta a ti?",
+                "¿A usted qué le gusta?"
+              ],
+              "distractors": [
+                "los",
+                "pescado",
+                "carne"
               ],
               "vocabulary": [
                 "zu",
@@ -2722,7 +3455,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s2.e07",
+              "id": "u05-1.l3.s2.e09",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2763,7 +3496,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s2.e08",
+              "id": "u05-1.l3.s2.e10",
               "type": "order_sentence",
               "answer": "Niri arraina eta oilaskoa gustatzen zaizkit.",
               "translation": "A mí me gustan el pescado y el pollo.",
@@ -2780,7 +3513,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s2.e09",
+              "id": "u05-1.l3.s2.e11",
               "type": "read_true_false",
               "passage": "Nire etxean, aitari kafea gustatzen zaio. Amari tea gustatzen zaio.",
               "statement": "A la madre le gusta el té.",
@@ -2800,14 +3533,33 @@
               ]
             },
             {
-              "id": "u05-1.l3.s2.e10",
-              "type": "translate_typing",
+              "id": "u05-1.l3.s2.e12",
+              "type": "word_intro",
+              "word": "horri",
+              "translation": "a ese / a esa",
+              "vocabulary": [
+                "hori"
+              ],
+              "structures": [
+                "nori-dative",
+                "gustatu-present"
+              ]
+            },
+            {
+              "id": "u05-1.l3.s2.e13",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Neska horri gazta gustatzen zaio."
               },
               "answers": [
                 "A esa chica le gusta el queso."
+              ],
+              "distractors": [
+                "mí",
+                "los",
+                "gustan",
+                "la"
               ],
               "vocabulary": [
                 "neska",
@@ -2821,7 +3573,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s2.e11",
+              "id": "u05-1.l3.s2.e14",
               "type": "read_true_false",
               "passage": "Umeei ez zaie esnea gustatzen. Zukua nahiago dute.",
               "statement": "Los niños prefieren leche.",
@@ -2841,7 +3593,7 @@
               ]
             },
             {
-              "id": "u05-1.l3.s2.e12",
+              "id": "u05-1.l3.s2.e15",
               "type": "choose_image",
               "prompt": "la naranja",
               "options": [

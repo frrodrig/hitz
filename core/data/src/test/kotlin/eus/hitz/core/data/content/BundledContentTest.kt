@@ -41,6 +41,15 @@ class BundledContentTest {
     }
 
     @Test
+    fun `the glossary decodes and covers the first lesson`() = runTest {
+        val repository = AssetCourseRepository(source, StandardTestDispatcher(testScheduler))
+        val glossary = repository.getGlossary(CourseId.BASQUE_FROM_SPANISH)
+
+        assertThat(glossary.entries["egun on"]?.es).isEqualTo("buenos días")
+        assertThat(glossary.segment("Kaixo! Ni Ane naiz.").mapNotNull { it.gloss }).hasSize(3)
+    }
+
+    @Test
     fun `repository caches parsed units`() = runTest {
         var reads = 0
         val counting = ContentSource { path ->

@@ -13,6 +13,7 @@ import eus.hitz.core.domain.settings.SettingsRepository
 import eus.hitz.core.domain.story.StorySession
 import eus.hitz.core.domain.story.StoryStep
 import eus.hitz.core.model.CourseId
+import eus.hitz.core.model.content.Glossary
 import eus.hitz.core.model.content.Level
 import eus.hitz.feature.lesson.AudioClip
 import eus.hitz.feature.lesson.LessonAudio
@@ -53,10 +54,13 @@ class StoryViewModel @Inject constructor(
     private var translated: Set<Int> = emptySet()
     private var soundEffects = true
 
+    private var glossary: Glossary? = null
+
     init {
         viewModelScope.launch {
             runCatching {
                 soundEffects = settings.settings.first().soundEffectsEnabled
+                glossary = courses.getGlossary(CourseId.BASQUE_FROM_SPANISH)
                 val unit = courses.getUnit(CourseId.BASQUE_FROM_SPANISH, unitId)
                 unit.levels.filterIsInstance<Level.StoryLevel>().first { it.id == levelId }.story
             }.onSuccess { story ->
@@ -135,7 +139,7 @@ class StoryViewModel @Inject constructor(
         val lines = story.lines.take(session.visibleLines).mapIndexed { index, line ->
             StoryLineUi(index, line.speaker, line.eu, line.es, AudioClip(clipId(index), line.eu))
         }
-        _state.value = StoryUiState.Active(story.title, session.progress, lines, question, translated)
+        _state.value = StoryUiState.Active(story.title, session.progress, lines, question, translated, glossary)
         if (readLine) (session.current as? StoryStep.Line)?.let { play(it.index) }
     }
 
