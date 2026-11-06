@@ -48,6 +48,9 @@ class HitzAppTest {
             composeRule.onAllNodesWithContentDescription(current).fetchSemanticsNodes().isNotEmpty()
         }
         composeRule.onNodeWithContentDescription(current).performClick()
+        // The unit is introduced first, once.
+        waitForText("Palabras clave")
+        composeRule.onNodeWithText("Empezar").performClick()
         // A beginner meets each word before using it.
         waitForText("Palabra nueva")
         composeRule.onNodeWithText("egun on").assertIsDisplayed()

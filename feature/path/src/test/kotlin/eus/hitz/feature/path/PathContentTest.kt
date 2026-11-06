@@ -33,17 +33,23 @@ class PathContentTest {
     private var guidebook: String? = null
     private var storyTapped = false
     private var shopOpened = false
+    private var intro: Triple<String, String, String?>? = null
 
-    private fun show(darkTheme: Boolean = false, stats: PathStats = PathStats(streak = 3, gems = 120)) {
+    private fun show(
+        darkTheme: Boolean = false,
+        stats: PathStats = PathStats(streak = 3, gems = 120),
+        seenUnitIntros: Set<String> = setOf("u01-1"),
+    ) {
         composeRule.setContent {
             HitzTheme(darkTheme = darkTheme) {
                 Surface {
                     PathContent(
-                        state = PathUiState.Ready(PathTestData.path, stats),
+                        state = PathUiState.Ready(PathTestData.path, stats, seenUnitIntros),
                         onOpenShop = { shopOpened = true },
                         onStartLevel = { u, l, s -> started = Triple(u, l, s) },
                         onOpenGuidebook = { guidebook = it },
                         onStartStory = { _, _ -> storyTapped = true },
+                        onOpenUnitIntro = { u, l, s -> intro = Triple(u, l, s) },
                     )
                 }
             }
@@ -56,6 +62,14 @@ class PathContentTest {
         composeRule.onNodeWithText("Empezar", useUnmergedTree = true).assertExists()
         composeRule.onNodeWithContentDescription("Lección: ¿Quién eres?, disponible").performClick()
         assertThat(started).isEqualTo(Triple("u01-1", "u01-1.l2", "u01-1.l2.s1"))
+    }
+
+    @Test
+    fun aUnitIsIntroducedBeforeItsFirstLesson() {
+        show(seenUnitIntros = emptySet())
+        composeRule.onNodeWithContentDescription("Lección: ¿Quién eres?, disponible").performClick()
+        assertThat(intro).isEqualTo(Triple("u01-1", "u01-1.l2", "u01-1.l2.s1"))
+        assertThat(started).isNull()
     }
 
     @Test

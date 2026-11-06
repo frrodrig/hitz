@@ -87,6 +87,11 @@ class Lemmatizer:
                 key = unit_key(row["app_unit"])
                 self.lemmas[lemma] = min(key, self.lemmas.get(lemma, key))
                 self.glosses.setdefault(lemma, row["es"].strip())
+        self.core_by_unit: dict[tuple[int, int], list[str]] = {}
+        with (content / "syllabus" / "vocabulary.csv").open(encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                if row["set"] == "core":
+                    self.core_by_unit.setdefault(unit_key(row["app_unit"]), []).append(clean_lemma(row["lemma"]))
         with (content / "syllabus" / "glosses.csv").open(encoding="utf-8") as fh:
             self.form_glosses = {row["form"].strip().lower(): row["es"].strip() for row in csv.DictReader(fh)}
         self.forms: dict[str, str] = {}
@@ -484,6 +489,23 @@ def build_lesson(
     return {"id": lesson_id, "exercises": ordered}
 
 
+# Words shown in a unit's introduction.
+KEY_WORDS = 8
+
+
+def key_words(unit_id: str, lemmatizer: Lemmatizer | None, pictures: dict[str, str] | None) -> list[dict]:
+    """The first core lemmas of the unit's syllabus, with their Spanish and picture."""
+    if lemmatizer is None:
+        return []
+    words_ = []
+    for lemma in lemmatizer.core_by_unit.get(unit_key_from_id(unit_id), [])[:KEY_WORDS]:
+        word = {"eu": lemma, "es": lemmatizer.glosses[lemma]}
+        if pictures and lemma in pictures:
+            word["image"] = pictures[lemma]
+        words_.append(word)
+    return words_
+
+
 def build_unit(
     source: dict,
     section_last: bool,
@@ -529,6 +551,7 @@ def build_unit(
         "bookUnit": source["bookUnit"],
         "title": source["title"],
         "goals": source["goals"],
+        "keyWords": key_words(unit_id, lemmatizer, pictures),
         "guidebook": source["guidebook"],
         "levels": levels,
     }

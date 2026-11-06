@@ -17,6 +17,46 @@
       "eu": "Produktu bat eskatu, prezioa galdetu eta ordaindu."
     }
   ],
+  "keyWords": [
+    {
+      "eu": "denda",
+      "es": "tienda"
+    },
+    {
+      "eu": "okindegi",
+      "es": "panadería",
+      "image": "shop_bakery.webp"
+    },
+    {
+      "eu": "harategi",
+      "es": "carnicería",
+      "image": "shop_butcher.webp"
+    },
+    {
+      "eu": "arrandegi",
+      "es": "pescadería",
+      "image": "shop_fishmonger.webp"
+    },
+    {
+      "eu": "frutadenda",
+      "es": "frutería",
+      "image": "shop_greengrocer.webp"
+    },
+    {
+      "eu": "supermerkatu",
+      "es": "supermercado",
+      "image": "shop_supermarket.webp"
+    },
+    {
+      "eu": "liburu-denda",
+      "es": "librería",
+      "image": "shop_bookshop.webp"
+    },
+    {
+      "eu": "merkataritza-gune",
+      "es": "centro comercial"
+    }
+  ],
   "guidebook": {
     "sections": [
       {

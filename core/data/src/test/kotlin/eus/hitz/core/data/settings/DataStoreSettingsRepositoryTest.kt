@@ -49,4 +49,14 @@ class DataStoreSettingsRepositoryTest {
         assertThat(changed.listeningEnabled).isFalse()
         assertThat(changed.soundEffectsEnabled).isFalse()
     }
+
+    @Test
+    fun `unit introductions are remembered once seen`() = runTest {
+        val repository = repository()
+        assertThat(repository.settings.first().seenUnitIntros).isEmpty()
+        repository.markUnitIntroSeen("u01-1")
+        repository.markUnitIntroSeen("u01-2")
+        repository.markUnitIntroSeen("u01-1")
+        assertThat(repository.settings.first().seenUnitIntros).containsExactly("u01-1", "u01-2")
+    }
 }

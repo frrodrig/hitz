@@ -97,6 +97,32 @@
       "items": {
         "$ref": "#/$defs/level"
       }
+    },
+    "keyWords": {
+      "type": "array",
+      "description": "Words shown in the unit's introduction.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "eu",
+          "es"
+        ],
+        "properties": {
+          "eu": {
+            "type": "string",
+            "minLength": 1
+          },
+          "es": {
+            "type": "string",
+            "minLength": 1
+          },
+          "image": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+\\.webp$"
+          }
+        }
+      }
     }
   },
   "$defs": {
