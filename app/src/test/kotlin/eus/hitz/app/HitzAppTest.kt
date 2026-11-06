@@ -37,8 +37,15 @@ class HitzAppTest {
         composeRule.onAllNodesWithText(text).fetchSemanticsNodes().isNotEmpty()
     }
 
+    /** A fresh install starts with the introduction. */
+    private fun skipOnboarding() {
+        waitForText("Saltar")
+        composeRule.onNodeWithText("Saltar").performClick()
+    }
+
     @Test
     fun pathShowsUnitOneAndOpensTheCurrentLesson() {
+        skipOnboarding()
         waitForText("¡Hola!")
         composeRule.onNodeWithText("Aprender").assertIsSelected()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/app_path.png")
@@ -59,8 +66,21 @@ class HitzAppTest {
     }
 
     @Test
+    fun theFirstRunIntroducesTheAppAndOffersAPlacementTest() {
+        waitForText("Kaixo! Te damos la bienvenida a Hitz")
+        composeRule.onRoot().captureRoboImage("src/test/screenshots/app_onboarding.png")
+        repeat(3) { composeRule.onNodeWithText("Siguiente").performClick() }
+        waitForText("¿Has estudiado euskera antes?")
+        composeRule.onNodeWithText("Ya sé algo de euskera").performClick()
+        composeRule.onNodeWithText("Empezar").performClick()
+        // The placement test of the first section: no hearts, a check button.
+        waitForText("Comprobar")
+    }
+
+    @Test
     @Config(qualifiers = RobolectricDeviceQualifiers.MediumTablet)
     fun wideScreensUseANavigationRail() {
+        skipOnboarding()
         waitForText("¡Hola!")
         composeRule.onNodeWithText("Aprender").assertIsSelected()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/app_path_tablet.png")
@@ -70,6 +90,7 @@ class HitzAppTest {
 
     @Test
     fun navigatesToLeagues() {
+        skipOnboarding()
         waitForText("¡Hola!")
         composeRule.onNodeWithText("Ligas").performClick()
         waitForText("Liga Jaizkibel")

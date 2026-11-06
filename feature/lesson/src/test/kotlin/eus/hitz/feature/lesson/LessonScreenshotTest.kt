@@ -110,5 +110,11 @@ class LessonScreenshotTest {
     fun finished() = capture("lesson_finished", LessonPreviewData.finished)
 
     @Test
+    fun placementPassed() = capture(
+        "lesson_placement_passed",
+        LessonUiState.PlacementFinished(sectionNumber = 1, accuracy = 0.92f, passed = true, nextSectionId = "s2"),
+    )
+
+    @Test
     fun outOfHearts() = capture("lesson_out_of_hearts", LessonUiState.OutOfHearts)
 }

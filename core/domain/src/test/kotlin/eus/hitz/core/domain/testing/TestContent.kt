@@ -21,8 +21,8 @@ import kotlinx.coroutines.flow.MutableStateFlow
 internal object TestContent {
     private val text = LocalizedText("x", "x")
 
-    fun speak(id: String, vocabulary: List<String> = emptyList(), structures: List<String> = emptyList()) =
-        Exercise.Speak(id, "Kaixo", "Hola", vocabulary, structures)
+    fun exercise(id: String, vocabulary: List<String> = emptyList(), structures: List<String> = emptyList()) =
+        Exercise.ChooseMeaning(id, "Kaixo", listOf("Hola", "Adiós"), 0, vocabulary, structures)
 
     /**
      * A unit with two lesson levels (the second with two lessons), a story, a review and a legendary
@@ -45,7 +45,7 @@ internal object TestContent {
                         "$id.l1.s1",
                         listOf(
                             Exercise.WordIntro("$id.l1.s1.e00", "kaixo", "hola"),
-                            speak("$id.l1.s1.e01", listOf("kaixo")),
+                            exercise("$id.l1.s1.e01", listOf("kaixo")),
                         ),
                     ),
                 ),
@@ -54,8 +54,8 @@ internal object TestContent {
                 "$id.l2",
                 text,
                 listOf(
-                    Lesson("$id.l2.s1", listOf(speak("$id.l2.s1.e01", structures = listOf("izan-present")))),
-                    Lesson("$id.l2.s2", listOf(speak("$id.l2.s2.e01"))),
+                    Lesson("$id.l2.s1", listOf(exercise("$id.l2.s1.e01", structures = listOf("izan-present")))),
+                    Lesson("$id.l2.s2", listOf(exercise("$id.l2.s2.e01"))),
                 ),
             ),
             Level.StoryLevel("$id.l3", text, Story("$id.l3.story", "t", emptyList(), emptyList())),

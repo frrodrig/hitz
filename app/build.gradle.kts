@@ -56,6 +56,7 @@ dependencies {
     implementation(project(":feature:profile"))
     implementation(project(":feature:leaderboard"))
     implementation(project(":feature:shop"))
+    implementation(project(":feature:onboarding"))
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.core.ktx)

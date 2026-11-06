@@ -4,8 +4,9 @@
 
 ```
 :app                       Activity, root navigation, Hilt application
-:feature:path              Learning path (nodes, sections, unit guidebook)
-:feature:lesson            Lesson engine and exercises
+:feature:onboarding        First-run introduction and starting level
+:feature:path              Learning path (nodes, sections, unit introduction and guidebook)
+:feature:lesson            Lesson engine, exercises, stories and placement tests
 :feature:profile           Stats, daily quests, achievements, settings
 :feature:leaderboard       Weekly leagues, simulated on the device
 :feature:shop              Gem shop (hearts, streak freezes)
@@ -114,6 +115,20 @@ question. Finishing records the story level as completed.
   unit JSON: the first core lemmas of the syllabus, with picture and audio `<unit>.kw<i>`) and the
   titles of its grammar notes, with a link to the guidebook. *Empezar* replaces it with the lesson.
   Seen introductions are stored in `UserSettings.seenUnitIntros` (DataStore).
+
+## First run and placement
+
+- **Introduction** (`:feature:onboarding`, `OnboardingRoute`): the start destination until
+  `UserSettings.onboardingCompleted`. Four pages in a `HorizontalPager`: welcome, what the course
+  covers (its sections), how it works (lessons, new words and hints, hearts, streak and leagues)
+  and "have you studied Basque before?". *Saltar* skips it as a beginner. `MainActivity` keeps the
+  splash screen until the setting is read, so the right start destination is chosen without a flash.
+- **Placement tests** (`PlacementUseCase`, `core:domain`; `PlacementRoute`, played by the lesson
+  screen): a learner who knows some Basque takes one test per section, in order. A test asks two
+  exercises of each unit of the section, from its later lesson levels (no new word cards, no
+  speaking), with no hearts, no hints and no second chances. 80 % right skips the section: every
+  required level of its units is recorded as completed (legendary levels stay optional), and the
+  learner can try the next section or start learning. Placement tests give no XP.
 
 ## Accessibility and adaptive layout
 

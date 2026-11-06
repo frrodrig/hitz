@@ -6,6 +6,9 @@ Android app for learning **Basque (euskara) from Spanish** at A1 level: a path o
 spaced repetition and gamification. The mascot is a **Galtzagorri**, one of the tireless little
 red-trousered helpers of Basque mythology.
 
+- Made for learning on your own from zero: a first-run introduction, an introduction to every
+  unit, a "new word" card before each word is used and tap hints on every Basque word. Learners
+  who already know some Basque can take a placement test to skip sections.
 - 100 % offline, no paid backend. Leagues are simulated on the device.
 - UI available in Spanish and Basque.
 - All course content is original, illustrations included (drawn as code in

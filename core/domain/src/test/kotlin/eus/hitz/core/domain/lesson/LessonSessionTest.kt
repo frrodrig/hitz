@@ -29,6 +29,15 @@ class LessonSessionTest {
     }
 
     @Test
+    fun `without retries a wrong answer is final`() {
+        val session = LessonSession.start("l", listOf("a", "b"), hearts = null, retries = false)
+            .answerIncorrect(mistake("a"))
+            .answerCorrect()
+        assertThat(session.isOver).isTrue()
+        assertThat(session.result().accuracy).isEqualTo(0.5f)
+    }
+
+    @Test
     fun `an exercise is asked again until it is answered correctly`() {
         val session = LessonSession.start("l", listOf("a"), hearts = null)
             .answerIncorrect(mistake("a"))

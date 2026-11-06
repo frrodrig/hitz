@@ -32,7 +32,8 @@ data class QueuedExercise(val exerciseId: String, val isRetry: Boolean)
  * * a skipped exercise (e.g. speaking when the learner cannot talk) leaves the lesson without
  *   counting towards progress or accuracy;
  * * progress only grows with correct answers;
- * * running out of hearts ends the lesson as not completed.
+ * * running out of hearts ends the lesson as not completed;
+ * * without [retries] (placement tests) a wrong answer is not asked again.
  */
 data class LessonSession(
     val lessonId: String,
@@ -43,6 +44,7 @@ data class LessonSession(
     val firstTryCorrect: Int = 0,
     val mistakes: List<Mistake> = emptyList(),
     val skipped: Set<String> = emptySet(),
+    val retries: Boolean = true,
 ) {
     private val exerciseCount: Int = queue.count { !it.isRetry && it.exerciseId !in skipped }
 
@@ -67,7 +69,7 @@ data class LessonSession(
     fun answerIncorrect(mistake: Mistake): LessonSession {
         val item = checkNotNull(current) { "the lesson is over" }
         return copy(
-            queue = queue + item.copy(isRetry = true),
+            queue = if (retries) queue + item.copy(isRetry = true) else queue,
             position = position + 1,
             hearts = hearts?.minus(1),
             mistakes = mistakes + mistake,
@@ -97,7 +99,12 @@ data class LessonSession(
     )
 
     companion object {
-        fun start(lessonId: String, exerciseIds: List<String>, hearts: Int?): LessonSession =
-            LessonSession(lessonId, exerciseIds.map { QueuedExercise(it, isRetry = false) }, hearts = hearts)
+        fun start(lessonId: String, exerciseIds: List<String>, hearts: Int?, retries: Boolean = true): LessonSession =
+            LessonSession(
+                lessonId = lessonId,
+                queue = exerciseIds.map { QueuedExercise(it, isRetry = false) },
+                hearts = hearts,
+                retries = retries,
+            )
     }
 }

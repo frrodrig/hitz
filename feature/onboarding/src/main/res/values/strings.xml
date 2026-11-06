@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_onboarding_welcome_title">Kaixo! Te damos la bienvenida a Hitz</string>
+    <string name="feature_onboarding_welcome_body">Aprende euskera desde cero, a tu ritmo y sin conexión. Te acompaña el Galtzagorri, uno de los pequeños ayudantes de la mitología vasca.</string>
+    <string name="feature_onboarding_learn_title">Qué vas a aprender</string>
+    <string name="feature_onboarding_learn_body">El nivel A1: lo necesario para saludar, presentarte y desenvolverte en el día a día.</string>
+    <string name="feature_onboarding_section">Sección %1$d · %2$s</string>
+    <plurals name="feature_onboarding_units">
+        <item quantity="one">%1$d unidad</item>
+        <item quantity="other">%1$d unidades</item>
+    </plurals>
+    <string name="feature_onboarding_how_title">Cómo funciona</string>
+    <string name="feature_onboarding_how_lessons_title">Lecciones cortas</string>
+    <string name="feature_onboarding_how_lessons_body">Avanza por la ruta con lecciones de pocos minutos. Cada unidad empieza con un resumen de lo que vas a aprender.</string>
+    <string name="feature_onboarding_how_words_title">Palabras nuevas</string>
+    <string name="feature_onboarding_how_words_body">Antes de usar una palabra la verás con su traducción y su audio. Toca una palabra subrayada para ver qué significa.</string>
+    <string name="feature_onboarding_how_hearts_title">Vidas</string>
+    <string name="feature_onboarding_how_hearts_body">Cada error en una lección cuesta una vida. Se recuperan con el tiempo y con los repasos.</string>
+    <string name="feature_onboarding_how_streak_title">Racha y ligas</string>
+    <string name="feature_onboarding_how_streak_body">Practica cada día para mantener la racha, ganar XP y subir de liga.</string>
+    <string name="feature_onboarding_level_title">¿Has estudiado euskera antes?</string>
+    <string name="feature_onboarding_level_beginner">Empiezo desde cero</string>
+    <string name="feature_onboarding_level_beginner_body">Empieza por la primera lección.</string>
+    <string name="feature_onboarding_level_some">Ya sé algo de euskera</string>
+    <string name="feature_onboarding_level_some_body">Haz una prueba corta por cada sección y sáltate lo que ya sabes.</string>
+    <string name="feature_onboarding_next">Siguiente</string>
+    <string name="feature_onboarding_skip">Saltar</string>
+    <string name="feature_onboarding_start">Empezar</string>
+    <string name="feature_onboarding_page">Página %1$d de %2$d</string>
+</resources>

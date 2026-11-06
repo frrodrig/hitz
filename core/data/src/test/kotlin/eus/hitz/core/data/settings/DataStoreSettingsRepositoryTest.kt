@@ -59,4 +59,12 @@ class DataStoreSettingsRepositoryTest {
         repository.markUnitIntroSeen("u01-1")
         assertThat(repository.settings.first().seenUnitIntros).containsExactly("u01-1", "u01-2")
     }
+
+    @Test
+    fun `onboarding is pending until completed`() = runTest {
+        val repository = repository()
+        assertThat(repository.settings.first().onboardingCompleted).isFalse()
+        repository.setOnboardingCompleted()
+        assertThat(repository.settings.first().onboardingCompleted).isTrue()
+    }
 }

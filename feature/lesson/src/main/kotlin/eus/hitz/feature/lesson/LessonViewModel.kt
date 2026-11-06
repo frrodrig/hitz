@@ -14,9 +14,12 @@ import eus.hitz.core.domain.lesson.LessonSession
 import eus.hitz.core.domain.lesson.MatchPairsState
 import eus.hitz.core.domain.lesson.Mistake
 import eus.hitz.core.domain.lesson.WordBank
+import eus.hitz.core.domain.placement.PlacementTest
+import eus.hitz.core.domain.placement.PlacementUseCase
 import eus.hitz.core.domain.session.HeartPolicy
 import eus.hitz.core.domain.session.PlanSessionUseCase
 import eus.hitz.core.domain.session.RecordSessionUseCase
+import eus.hitz.core.domain.session.SessionPlan
 import eus.hitz.core.domain.settings.SettingsRepository
 import eus.hitz.core.model.content.Exercise
 import eus.hitz.core.model.content.Glossary
@@ -40,10 +43,14 @@ class LessonViewModel @Inject constructor(
     private val settings: SettingsRepository,
     private val audio: LessonAudio,
     private val hearts: HeartsUseCase,
+    private val placement: PlacementUseCase,
 ) : ViewModel() {
-    private val unitId: String = checkNotNull(savedStateHandle["unitId"])
-    private val levelId: String = checkNotNull(savedStateHandle["levelId"])
+    /** Set for a placement test (PlacementRoute); unit and level are then unused. */
+    private val placementSection: String? = savedStateHandle["sectionId"]
+    private val unitId: String = savedStateHandle["unitId"] ?: ""
+    private val levelId: String = savedStateHandle["levelId"] ?: ""
     private val lessonId: String? = savedStateHandle["lessonId"]
+    private var placementTest: PlacementTest? = null
 
     private val checker = AnswerChecker()
 
@@ -68,7 +75,8 @@ class LessonViewModel @Inject constructor(
             runCatching {
                 val preferences = settings.settings.first()
                 soundEffects = preferences.soundEffectsEnabled
-                val plan = planSession(unitId, levelId, lessonId)
+                val plan = placementSection?.let { section -> placementPlan(section) }
+                    ?: planSession(unitId, levelId, lessonId)
                 plan to plan.exercises.filter { exercise ->
                     when (exercise) {
                         is Exercise.Speak -> preferences.speakingEnabled
@@ -86,10 +94,22 @@ class LessonViewModel @Inject constructor(
                     is HeartPolicy.Limited -> policy.hearts
                     HeartPolicy.Unlimited -> null
                 }
-                session = LessonSession.start(plan.sessionId, playable.map { it.id }, hearts = startHearts)
+                session = LessonSession.start(
+                    lessonId = plan.sessionId,
+                    exerciseIds = playable.map { it.id },
+                    hearts = startHearts,
+                    retries = placementTest == null,
+                )
                 if (session.isOutOfHearts) _state.value = LessonUiState.OutOfHearts else showCurrent()
             }.onFailure { _state.value = LessonUiState.Error }
         }
+    }
+
+    /** A placement test: no hearts, no hints, and no second chances. */
+    private suspend fun placementPlan(sectionId: String): SessionPlan {
+        val test = placement.test(sectionId)
+        placementTest = test
+        return SessionPlan("placement.$sectionId", test.exercises, HeartPolicy.Unlimited, ActivityKind.Review)
     }
 
     fun onAction(action: LessonAction) {
@@ -287,8 +307,10 @@ class LessonViewModel @Inject constructor(
             session = session.skip()
         }
         val current = session.current
+        val test = placementTest
         _state.value = when {
             session.isOutOfHearts -> LessonUiState.OutOfHearts
+            current == null && test != null -> placementResult(test, session.result())
             current == null -> LessonUiState.Finished(session.result())
             else -> LessonUiState.Active(
                 progress = session.progress,
@@ -297,12 +319,28 @@ class LessonViewModel @Inject constructor(
                 glossary = glossary,
             )
         }
-        if (session.isOver) record(session.result())
+        if (session.isOver && test == null) record(session.result())
         if (_state.value is LessonUiState.Active) {
             playCurrent()
-        } else if (_state.value is LessonUiState.Finished && soundEffects) {
+        } else if ((_state.value is LessonUiState.Finished || _state.value is LessonUiState.PlacementFinished) &&
+            soundEffects
+        ) {
             audio.effects.play(SoundEffect.Finished)
         }
+    }
+
+    /** Passing marks the whole section as done; the learner can then try the next one. */
+    private fun placementResult(test: PlacementTest, result: LessonResult): LessonUiState {
+        val passed = PlacementUseCase.passed(result.accuracy)
+        if (passed) {
+            viewModelScope.launch { placement.skipSection(test.sectionId, result.accuracy, System.currentTimeMillis()) }
+        }
+        return LessonUiState.PlacementFinished(
+            sectionNumber = test.sectionNumber,
+            accuracy = result.accuracy,
+            passed = passed,
+            nextSectionId = test.nextSectionId.takeIf { passed },
+        )
     }
 
     private fun record(result: LessonResult) {

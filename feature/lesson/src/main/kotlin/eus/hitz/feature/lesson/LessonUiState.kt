@@ -32,6 +32,17 @@ sealed interface LessonUiState {
     data class Finished(val result: LessonResult, val reward: RewardUi? = null) : LessonUiState
 
     data object OutOfHearts : LessonUiState
+
+    /**
+     * End of a placement test for section [sectionNumber]. When [passed], the section is marked
+     * as done and [nextSectionId] (if any) can be tried next.
+     */
+    data class PlacementFinished(
+        val sectionNumber: Int,
+        val accuracy: Float,
+        val passed: Boolean,
+        val nextSectionId: String?,
+    ) : LessonUiState
 }
 
 /** What a finished session earned: XP, the streak, and the gems of quests and achievements. */

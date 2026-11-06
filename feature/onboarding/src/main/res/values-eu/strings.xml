@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO(revisión-nativa): review all strings in this file -->
+    <string name="feature_onboarding_welcome_title">Kaixo! Ongi etorri Hitzera</string>
+    <string name="feature_onboarding_welcome_body">Ikasi euskara hutsetik, zure erritmoan eta konexiorik gabe. Galtzagorria izango duzu lagun, euskal mitologiako laguntzaile txiki horietako bat.</string>
+    <string name="feature_onboarding_learn_title">Zer ikasiko duzun</string>
+    <string name="feature_onboarding_learn_body">A1 maila: agurtzeko, zure burua aurkezteko eta egunerokoan moldatzeko behar duzuna.</string>
+    <string name="feature_onboarding_section">%1$d. atala · %2$s</string>
+    <plurals name="feature_onboarding_units">
+        <item quantity="one">Unitate %1$d</item>
+        <item quantity="other">%1$d unitate</item>
+    </plurals>
+    <string name="feature_onboarding_how_title">Nola dabilen</string>
+    <string name="feature_onboarding_how_lessons_title">Ikasgai laburrak</string>
+    <string name="feature_onboarding_how_lessons_body">Aurrera egin ibilbidean minutu gutxiko ikasgaiekin. Unitate bakoitza ikasiko duzunaren laburpen batekin hasten da.</string>
+    <string name="feature_onboarding_how_words_title">Hitz berriak</string>
+    <string name="feature_onboarding_how_words_body">Hitz bat erabili aurretik, bere itzulpenarekin eta audioarekin ikusiko duzu. Ukitu azpimarratutako hitz bat zer esan nahi duen ikusteko.</string>
+    <string name="feature_onboarding_how_hearts_title">Bizitzak</string>
+    <string name="feature_onboarding_how_hearts_body">Ikasgai batean egindako akats bakoitzak bizitza bat kentzen du. Denborarekin eta errepasoekin berreskuratzen dira.</string>
+    <string name="feature_onboarding_how_streak_title">Segida eta ligak</string>
+    <string name="feature_onboarding_how_streak_body">Egunero praktikatu segida mantentzeko, XP irabazteko eta ligan gora egiteko.</string>
+    <string name="feature_onboarding_level_title">Euskara ikasi duzu inoiz?</string>
+    <string name="feature_onboarding_level_beginner">Hutsetik hasten naiz</string>
+    <string name="feature_onboarding_level_beginner_body">Hasi lehen ikasgaitik.</string>
+    <string name="feature_onboarding_level_some">Badakit euskara pixka bat</string>
+    <string name="feature_onboarding_level_some_body">Egin proba labur bat atal bakoitzeko eta saltatu dagoeneko dakizuna.</string>
+    <string name="feature_onboarding_next">Hurrengoa</string>
+    <string name="feature_onboarding_skip">Saltatu</string>
+    <string name="feature_onboarding_start">Hasi</string>
+    <string name="feature_onboarding_page">%2$d orritik %1$d.a</string>
+</resources>

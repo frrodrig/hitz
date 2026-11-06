@@ -58,4 +58,11 @@
     </plurals>
     <string name="feature_lesson_listen_slow">Escuchar despacio</string>
     <string name="feature_lesson_instruction_new_word">Palabra nueva</string>
+    <string name="feature_lesson_placement_passed">¡Sección %1$d superada!</string>
+    <string name="feature_lesson_placement_start_here">Empezarás por la sección %1$d</string>
+    <string name="feature_lesson_placement_failed_body">Has acertado el %1$d %%. Esta sección te ayudará a afianzar lo que ya sabes.</string>
+    <string name="feature_lesson_placement_next_body">Has acertado el %1$d %% y la hemos marcado como completada. ¿Pruebas la siguiente?</string>
+    <string name="feature_lesson_placement_all_body">Has acertado el %1$d %%. ¡Ya conoces todo el curso! Puedes repasarlo cuando quieras.</string>
+    <string name="feature_lesson_placement_next">Probar la sección %1$d</string>
+    <string name="feature_lesson_placement_go_to_path">Empezar a aprender</string>
 </resources>

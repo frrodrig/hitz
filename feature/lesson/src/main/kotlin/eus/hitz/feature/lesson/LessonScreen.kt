@@ -75,6 +75,7 @@ private const val PERCENT = 100
 @Composable
 fun LessonScreen(
     onClose: () -> Unit,
+    onNextPlacement: (sectionId: String) -> Unit = {},
     viewModel: LessonViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -90,7 +91,7 @@ fun LessonScreen(
         }
     }
     BackHandler(enabled = state is LessonUiState.Active) { viewModel.onAction(LessonAction.RequestQuit) }
-    LessonContent(state = state, onAction = viewModel::onAction, onClose = onClose)
+    LessonContent(state = state, onAction = viewModel::onAction, onClose = onClose, onNextPlacement = onNextPlacement)
 }
 
 /** Stateless lesson UI, driven by [state]. */
@@ -100,6 +101,7 @@ internal fun LessonContent(
     onAction: (LessonAction) -> Unit,
     onClose: () -> Unit,
     modifier: Modifier = Modifier,
+    onNextPlacement: (sectionId: String) -> Unit = {},
 ) {
     when (state) {
         LessonUiState.Loading -> Box(modifier.fillMaxSize(), contentAlignment = Alignment.Center) { LoadingIndicator() }
@@ -128,8 +130,41 @@ internal fun LessonContent(
             modifier = modifier,
             reward = state.reward,
         )
+        is LessonUiState.PlacementFinished -> PlacementMessage(state, onClose, onNextPlacement, modifier)
         is LessonUiState.Active -> ActiveLesson(state, onAction, modifier)
     }
+}
+
+@Composable
+private fun PlacementMessage(
+    state: LessonUiState.PlacementFinished,
+    onClose: () -> Unit,
+    onNextPlacement: (sectionId: String) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val percent = (state.accuracy * PERCENT).roundToInt()
+    val next = state.nextSectionId
+    LessonMessage(
+        title = if (state.passed) {
+            stringResource(R.string.feature_lesson_placement_passed, state.sectionNumber)
+        } else {
+            stringResource(R.string.feature_lesson_placement_start_here, state.sectionNumber)
+        },
+        body = when {
+            !state.passed -> stringResource(R.string.feature_lesson_placement_failed_body, percent)
+            next != null -> stringResource(R.string.feature_lesson_placement_next_body, percent)
+            else -> stringResource(R.string.feature_lesson_placement_all_body, percent)
+        },
+        action = if (next != null) {
+            stringResource(R.string.feature_lesson_placement_next, state.sectionNumber + 1)
+        } else {
+            stringResource(R.string.feature_lesson_placement_go_to_path)
+        },
+        onAction = { if (next != null) onNextPlacement(next) else onClose() },
+        secondaryAction = stringResource(R.string.feature_lesson_placement_go_to_path).takeIf { next != null },
+        onSecondaryAction = onClose,
+        modifier = modifier,
+    )
 }
 
 @Composable
@@ -305,6 +340,8 @@ internal fun LessonMessage(
     onAction: () -> Unit,
     modifier: Modifier = Modifier,
     reward: RewardUi? = null,
+    secondaryAction: String? = null,
+    onSecondaryAction: () -> Unit = {},
 ) {
     // Scrolls when large fonts do not fit, and stays centred otherwise.
     BoxWithConstraints(modifier.fillMaxSize()) {
@@ -319,6 +356,9 @@ internal fun LessonMessage(
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             LessonMessageContent(title, body, action, onAction, reward)
+            if (secondaryAction != null) {
+                TextButton(onClick = onSecondaryAction) { Text(secondaryAction) }
+            }
         }
     }
 }

@@ -59,4 +59,11 @@
     </plurals>
     <string name="feature_lesson_listen_slow">Poliki entzun</string>
     <string name="feature_lesson_instruction_new_word">Hitz berria</string>
+    <string name="feature_lesson_placement_passed">%1$d. atala gaindituta!</string>
+    <string name="feature_lesson_placement_start_here">%1$d. ataletik hasiko zara</string>
+    <string name="feature_lesson_placement_failed_body">%%%1$d asmatu duzu. Atal honek dakizuna sendotzen lagunduko dizu.</string>
+    <string name="feature_lesson_placement_next_body">%%%1$d asmatu duzu, eta eginda bezala markatu dugu. Hurrengoa probatu nahi duzu?</string>
+    <string name="feature_lesson_placement_all_body">%%%1$d asmatu duzu. Ikastaro osoa ezagutzen duzu! Nahi duzunean errepasa dezakezu.</string>
+    <string name="feature_lesson_placement_next">Probatu %1$d. atala</string>
+    <string name="feature_lesson_placement_go_to_path">Ikasten hasi</string>
 </resources>

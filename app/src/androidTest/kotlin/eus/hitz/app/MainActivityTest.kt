@@ -34,8 +34,20 @@ class MainActivityTest {
         composeRule.onAllNodesWithText(text).fetchSemanticsNodes().isNotEmpty()
     }
 
+    /** A fresh install starts with the introduction (once: data persists between these tests). */
+    private fun skipOnboarding() {
+        composeRule.waitUntil(TIMEOUT) {
+            listOf("Saltar", "Aprender").any { composeRule.onAllNodesWithText(it).fetchSemanticsNodes().isNotEmpty() }
+        }
+        if (composeRule.onAllNodesWithText("Saltar").fetchSemanticsNodes().isNotEmpty()) {
+            composeRule.onRoot().tryPerformAccessibilityChecks()
+            composeRule.onNodeWithText("Saltar").performClick()
+        }
+    }
+
     @Test
     fun everyTopLevelScreenIsAccessible() {
+        skipOnboarding()
         waitForText("¡Hola!")
         composeRule.onRoot().tryPerformAccessibilityChecks()
         composeRule.onNodeWithText("Ligas").performClick()
@@ -49,6 +61,7 @@ class MainActivityTest {
 
     @Test
     fun theFirstLessonIsAccessible() {
+        skipOnboarding()
         val current = "Lección: Saludos, disponible, 0 de 3 lecciones"
         composeRule.waitUntil(TIMEOUT) {
             composeRule.onAllNodesWithContentDescription(current).fetchSemanticsNodes().isNotEmpty()

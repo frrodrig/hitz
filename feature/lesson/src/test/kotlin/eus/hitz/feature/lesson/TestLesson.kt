@@ -21,6 +21,7 @@ import eus.hitz.core.model.content.Lesson
 import eus.hitz.core.model.content.Level
 import eus.hitz.core.model.content.LocalizedText
 import eus.hitz.core.model.content.Phrase
+import eus.hitz.core.model.content.Section
 import eus.hitz.core.model.content.WordPair
 import eus.hitz.core.testing.FakeGamificationRepository
 import kotlinx.coroutines.flow.Flow
@@ -30,6 +31,7 @@ internal object TestLesson {
     const val UNIT = "u01-1"
     const val LEVEL = "u01-1.l1"
     const val LESSON = "u01-1.l1.s1"
+    const val SECTION = "s1"
 
     val wordBank = Exercise.TranslateWordBank(
         id = "$LESSON.e01",
@@ -91,7 +93,8 @@ internal object TestLesson {
             levels = listOf(Level.Lessons(LEVEL, text, listOf(Lesson(LESSON, exercises.toList())))),
         )
         return object : CourseRepository {
-            override suspend fun getCourse(courseId: CourseId): Course = error("unused")
+            override suspend fun getCourse(courseId: CourseId): Course =
+                Course(1, "eu-es", "eu", "es", text, listOf(Section(SECTION, text, text, listOf(UNIT))))
 
             override suspend fun getUnit(courseId: CourseId, unitId: String): CourseUnit = unit
 
