@@ -17,6 +17,8 @@ complexity:
     ignoreSimpleWhenEntries: true
   LongParameterList:
     functionThreshold: 8
+    # Hilt ViewModels receive one use case per responsibility.
+    constructorThreshold: 8
     ignoreDefaultParameters: true
     ignoreAnnotated: ['Composable']
   TooManyFunctions:

@@ -22,6 +22,7 @@ internal class DataStoreSettingsRepository @Inject constructor(
             listeningEnabled = preferences[LISTENING_ENABLED] ?: true,
             soundEffectsEnabled = preferences[SOUND_EFFECTS_ENABLED] ?: true,
             seenUnitIntros = preferences[SEEN_UNIT_INTROS].orEmpty(),
+            onboardingCompleted = preferences[ONBOARDING_COMPLETED] ?: false,
         )
     }
 
@@ -45,6 +46,10 @@ internal class DataStoreSettingsRepository @Inject constructor(
         dataStore.edit { it[SEEN_UNIT_INTROS] = it[SEEN_UNIT_INTROS].orEmpty() + unitId }
     }
 
+    override suspend fun setOnboardingCompleted() {
+        dataStore.edit { it[ONBOARDING_COMPLETED] = true }
+    }
+
     companion object {
         const val FILE_NAME = "settings"
         private val SPEAKING_ENABLED = booleanPreferencesKey("speaking_enabled")
@@ -52,5 +57,6 @@ internal class DataStoreSettingsRepository @Inject constructor(
         private val LISTENING_ENABLED = booleanPreferencesKey("listening_enabled")
         private val SOUND_EFFECTS_ENABLED = booleanPreferencesKey("sound_effects_enabled")
         private val SEEN_UNIT_INTROS = stringSetPreferencesKey("seen_unit_intros")
+        private val ONBOARDING_COMPLETED = booleanPreferencesKey("onboarding_completed")
     }
 }

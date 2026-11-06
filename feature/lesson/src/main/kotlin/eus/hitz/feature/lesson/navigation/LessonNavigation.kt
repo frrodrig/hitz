@@ -16,6 +16,13 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class LessonRoute(val unitId: String, val levelId: String, val lessonId: String? = null)
 
+/**
+ * A placement test for section [sectionId], played by the lesson screen. Argument name read by
+ * [eus.hitz.feature.lesson.LessonViewModel].
+ */
+@Serializable
+data class PlacementRoute(val sectionId: String)
+
 /** Full-screen story player for a story level, read by [eus.hitz.feature.lesson.story.StoryViewModel]. */
 @Serializable
 data class StoryRoute(val unitId: String, val levelId: String)
@@ -26,8 +33,16 @@ fun NavController.navigateToLesson(unitId: String, levelId: String, lessonId: St
 fun NavController.navigateToStory(unitId: String, levelId: String, navOptions: NavOptions? = null) =
     navigate(StoryRoute(unitId, levelId), navOptions)
 
+fun NavController.navigateToPlacement(sectionId: String, navOptions: NavOptions? = null) =
+    navigate(PlacementRoute(sectionId), navOptions)
+
 fun NavGraphBuilder.lessonScreen(onClose: () -> Unit) {
     composable<LessonRoute> { LessonScreen(onClose = onClose) }
+}
+
+/** [onNext] starts the test of the next section after passing one. */
+fun NavGraphBuilder.placementScreen(onClose: () -> Unit, onNext: (sectionId: String) -> Unit) {
+    composable<PlacementRoute> { LessonScreen(onClose = onClose, onNextPlacement = onNext) }
 }
 
 fun NavGraphBuilder.storyScreen(onClose: () -> Unit) {

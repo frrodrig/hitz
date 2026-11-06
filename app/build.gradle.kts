@@ -56,6 +56,7 @@ dependencies {
     implementation(project(":feature:profile"))
     implementation(project(":feature:leaderboard"))
     implementation(project(":feature:shop"))
+    implementation(project(":feature:onboarding"))
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.core.ktx)
@@ -66,6 +67,8 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
 
     testImplementation(libs.androidx.test.ext.junit)
+    testImplementation(libs.androidx.datastore.preferences)
+    testImplementation(libs.androidx.test.core)
     androidTestImplementation(libs.androidx.test.espresso.core)
     androidTestImplementation(libs.androidx.compose.ui.test.junit4.accessibility)
 }

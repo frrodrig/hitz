@@ -9,6 +9,7 @@ import eus.hitz.core.domain.gamification.PlayerData
 import eus.hitz.core.domain.gamification.Wallet
 import eus.hitz.core.domain.lesson.PairSide
 import eus.hitz.core.domain.lesson.WordBank
+import eus.hitz.core.domain.placement.PlacementUseCase
 import eus.hitz.core.domain.session.PlanSessionUseCase
 import eus.hitz.core.domain.settings.UserSettings
 import eus.hitz.core.model.content.Exercise
@@ -34,11 +35,17 @@ class LessonViewModelTest {
         vararg exercises: Exercise,
         speakingEnabled: Boolean = true,
         settings: UserSettings = UserSettings(speakingEnabled = speakingEnabled),
+        placementSection: String? = null,
     ) = LessonViewModel(
         savedStateHandle = SavedStateHandle(
-            mapOf("unitId" to TestLesson.UNIT, "levelId" to TestLesson.LEVEL, "lessonId" to TestLesson.LESSON),
+            if (placementSection != null) {
+                mapOf("sectionId" to placementSection)
+            } else {
+                mapOf("unitId" to TestLesson.UNIT, "levelId" to TestLesson.LEVEL, "lessonId" to TestLesson.LESSON)
+            },
         ),
         planSession = PlanSessionUseCase(TestLesson.repository(*exercises), progress),
+        placement = PlacementUseCase(TestLesson.repository(*exercises), progress),
         recordSession = gamification.recordSession(progress),
         settings = FakeSettingsRepository(settings),
         audio = LessonAudio(audio, effects),
@@ -94,6 +101,37 @@ class LessonViewModelTest {
         vm.onAction(LessonAction.Continue)
         val finished = vm.state.value as LessonUiState.Finished
         assertThat(finished.result.exerciseCount).isEqualTo(1)
+    }
+
+    @Test
+    fun `passing a placement test skips the section without second chances or hints`() {
+        val vm = viewModel(TestLesson.typing, TestLesson.listenType, placementSection = TestLesson.SECTION)
+        assertThat(vm.active.hearts).isNull()
+        assertThat(vm.active.glossary).isNull()
+        repeat(2) {
+            val input = if (vm.active.exercise.id == TestLesson.typing.id) "Eskerrik asko." else "Eskerrik asko"
+            vm.onAction(LessonAction.ChangeInput(input))
+            vm.onAction(LessonAction.Check)
+            vm.onAction(LessonAction.Continue)
+        }
+        val finished = vm.state.value as LessonUiState.PlacementFinished
+        assertThat(finished.passed).isTrue()
+        assertThat(finished.sectionNumber).isEqualTo(1)
+        assertThat(finished.nextSectionId).isNull()
+        assertThat(progress.completed).contains(TestLesson.LESSON)
+    }
+
+    @Test
+    fun `failing a placement test keeps the section`() {
+        val vm = viewModel(TestLesson.typing, TestLesson.listenType, placementSection = TestLesson.SECTION)
+        repeat(2) {
+            vm.onAction(LessonAction.ChangeInput("nik ez dakit"))
+            vm.onAction(LessonAction.Check)
+            vm.onAction(LessonAction.Continue)
+        }
+        val finished = vm.state.value as LessonUiState.PlacementFinished
+        assertThat(finished.passed).isFalse()
+        assertThat(progress.completed).isEmpty()
     }
 
     @Test

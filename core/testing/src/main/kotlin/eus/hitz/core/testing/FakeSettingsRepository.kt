@@ -31,6 +31,10 @@ class FakeSettingsRepository(initial: UserSettings = UserSettings()) : SettingsR
     override suspend fun markUnitIntroSeen(unitId: String) {
         settings.value = settings.value.copy(seenUnitIntros = settings.value.seenUnitIntros + unitId)
     }
+
+    override suspend fun setOnboardingCompleted() {
+        settings.value = settings.value.copy(onboardingCompleted = true)
+    }
 }
 
 /** Records what was played. */

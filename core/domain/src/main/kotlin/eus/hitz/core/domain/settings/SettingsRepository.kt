@@ -14,6 +14,8 @@ data class UserSettings(
     val soundEffectsEnabled: Boolean = true,
     /** Units whose introduction the learner has already seen. */
     val seenUnitIntros: Set<String> = emptySet(),
+    /** Whether the first-run introduction has been completed (or skipped). */
+    val onboardingCompleted: Boolean = false,
 )
 
 interface SettingsRepository {
@@ -28,6 +30,8 @@ interface SettingsRepository {
     suspend fun setSoundEffectsEnabled(enabled: Boolean)
 
     suspend fun markUnitIntroSeen(unitId: String)
+
+    suspend fun setOnboardingCompleted()
 }
 
 /** Schedules the daily streak reminder (a background job on Android). */
