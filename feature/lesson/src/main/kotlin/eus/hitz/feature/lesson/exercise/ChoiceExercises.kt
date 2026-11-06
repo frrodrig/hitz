@@ -145,6 +145,7 @@ private fun ChatBubble(speaker: String, text: String, mine: Boolean) {
                 language = Language.Basque,
                 style = MaterialTheme.typography.bodyLarge,
                 modifier = Modifier.padding(horizontal = HitzSpacing.lg, vertical = HitzSpacing.md),
+                hints = true,
             )
         }
     }

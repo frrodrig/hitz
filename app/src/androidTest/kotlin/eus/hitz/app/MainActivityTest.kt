@@ -54,6 +54,11 @@ class MainActivityTest {
             composeRule.onAllNodesWithContentDescription(current).fetchSemanticsNodes().isNotEmpty()
         }
         composeRule.onNodeWithContentDescription(current).performClick()
+        // A beginner meets each word before using it.
+        waitForText("Palabra nueva")
+        composeRule.onNodeWithText("egun on").assertIsDisplayed()
+        composeRule.onRoot().tryPerformAccessibilityChecks()
+        composeRule.onNodeWithText("Continuar").performClick()
         waitForText("Traduce esta frase")
         composeRule.onRoot().tryPerformAccessibilityChecks()
     }

@@ -6,6 +6,7 @@ import eus.hitz.core.domain.lesson.LessonResult
 import eus.hitz.core.domain.lesson.MatchPairsState
 import eus.hitz.core.domain.lesson.PairSide
 import eus.hitz.core.domain.lesson.Tile
+import eus.hitz.core.model.content.Glossary
 import eus.hitz.core.model.content.Language
 
 /** Immutable state of the lesson screen. */
@@ -21,6 +22,8 @@ sealed interface LessonUiState {
         val exercise: ExerciseUi,
         val feedback: FeedbackUi? = null,
         val showQuitDialog: Boolean = false,
+        /** Hints shown when a Basque word is tapped; null when the session has none. */
+        val glossary: Glossary? = null,
     ) : LessonUiState {
         val canCheck: Boolean get() = feedback == null && exercise.hasAnswer
     }
@@ -199,6 +202,17 @@ sealed interface ExerciseUi {
             const val TRUE = 0
             const val FALSE = 1
         }
+    }
+
+    /** A new word to learn before using it; the learner just continues. */
+    data class WordIntro(
+        override val id: String,
+        override val clip: AudioClip,
+        val translation: String,
+        val imageUri: String?,
+    ) : Audible {
+        override val hasAnswer: Boolean get() = false
+        val word: String get() = clip.text
     }
 
     /** Say a Basque sentence aloud; answered through speech recognition, not the check button. */

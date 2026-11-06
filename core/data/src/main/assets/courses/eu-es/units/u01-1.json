@@ -123,18 +123,10 @@
           "exercises": [
             {
               "id": "u01-1.l1.s1.e01",
-              "type": "translate_wordbank",
-              "prompt": {
-                "lang": "es",
-                "text": "¡Buenos días, Ane!"
-              },
-              "answers": [
-                "Egun on, Ane!"
-              ],
-              "distractors": [
-                "Zer",
-                "Oso"
-              ],
+              "type": "word_intro",
+              "word": "egun on",
+              "translation": "buenos días",
+              "image": "greeting_morning.webp",
               "vocabulary": [
                 "egun on"
               ],
@@ -144,11 +136,51 @@
             },
             {
               "id": "u01-1.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Arratsalde on, Mikel!",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Egun on, Ane!"
+              },
+              "answers": [
+                "¡Buenos días, Ane!"
+              ],
               "distractors": [
-                "zu",
-                "Ondo"
+                "Buenas",
+                "Mikel"
+              ],
+              "vocabulary": [
+                "egun on"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e03",
+              "type": "word_intro",
+              "word": "arratsalde on",
+              "translation": "buenas tardes",
+              "image": "greeting_afternoon.webp",
+              "vocabulary": [
+                "arratsalde on"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Arratsalde on, Mikel!"
+              },
+              "answers": [
+                "¡Buenas tardes, Mikel!"
+              ],
+              "distractors": [
+                "Buenos",
+                "Hola"
               ],
               "vocabulary": [
                 "arratsalde on"
@@ -158,7 +190,32 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e03",
+              "id": "u01-1.l1.s1.e05",
+              "type": "word_intro",
+              "word": "kaixo",
+              "translation": "hola",
+              "vocabulary": [
+                "kaixo"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e06",
+              "type": "word_intro",
+              "word": "gabon",
+              "translation": "buenas noches",
+              "image": "greeting_night.webp",
+              "vocabulary": [
+                "gabon"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e07",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -189,14 +246,14 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e04",
+              "id": "u01-1.l1.s1.e08",
               "type": "translate_typing",
               "prompt": {
-                "lang": "es",
-                "text": "¡Buenas noches, Itziar!"
+                "lang": "eu",
+                "text": "Gabon, Itziar!"
               },
               "answers": [
-                "Gabon, Itziar!"
+                "¡Buenas noches, Itziar!"
               ],
               "vocabulary": [
                 "gabon"
@@ -206,7 +263,31 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e05",
+              "id": "u01-1.l1.s1.e09",
+              "type": "word_intro",
+              "word": "oso",
+              "translation": "muy",
+              "vocabulary": [
+                "oso"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e10",
+              "type": "word_intro",
+              "word": "ondo",
+              "translation": "bien",
+              "vocabulary": [
+                "ondo"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e11",
               "type": "fill_blank",
               "sentence": "Oso ___!",
               "options": [
@@ -224,14 +305,18 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e06",
-              "type": "translate_typing",
+              "id": "u01-1.l1.s1.e12",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Kaixo, Jon!"
               },
               "answers": [
                 "¡Hola, Jon!"
+              ],
+              "distractors": [
+                "tardes",
+                "noches"
               ],
               "vocabulary": [
                 "kaixo"
@@ -241,7 +326,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e07",
+              "id": "u01-1.l1.s1.e13",
               "type": "choose_meaning",
               "text": "Arratsalde on!",
               "options": [
@@ -258,14 +343,31 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e08",
-              "type": "translate_typing",
+              "id": "u01-1.l1.s1.e14",
+              "type": "word_intro",
+              "word": "zer moduz",
+              "translation": "qué tal",
+              "vocabulary": [
+                "zer moduz"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e15",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Egun on, zer moduz?"
               },
               "answers": [
                 "Buenos días, ¿qué tal?"
+              ],
+              "distractors": [
+                "y",
+                "Buenas",
+                "Muy"
               ],
               "vocabulary": [
                 "zer moduz",
@@ -276,7 +378,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e09",
+              "id": "u01-1.l1.s1.e16",
               "type": "complete_chat",
               "messages": [
                 {
@@ -298,11 +400,18 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e10",
-              "type": "listen_type",
-              "text": "Kaixo! Zer moduz?",
+              "id": "u01-1.l1.s1.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¡Hola! ¿Qué tal?"
+              },
               "answers": [
                 "Kaixo! Zer moduz?"
+              ],
+              "distractors": [
+                "Gabon",
+                "Jon"
               ],
               "vocabulary": [
                 "zer moduz",
@@ -313,7 +422,19 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e11",
+              "id": "u01-1.l1.s1.e18",
+              "type": "word_intro",
+              "word": "bihar arte",
+              "translation": "hasta mañana",
+              "vocabulary": [
+                "bihar arte"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s1.e19",
               "type": "read_true_false",
               "passage": "Gabon, Jon! Bihar arte!",
               "statement": "Es de noche.",
@@ -327,10 +448,15 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e12",
-              "type": "speak",
-              "text": "Oso ondo!",
-              "translation": "¡Muy bien!",
+              "id": "u01-1.l1.s1.e20",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Oso ondo!"
+              },
+              "answers": [
+                "¡Muy bien!"
+              ],
               "vocabulary": [
                 "oso",
                 "ondo"
@@ -340,7 +466,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e13",
+              "id": "u01-1.l1.s1.e21",
               "type": "choose_image",
               "prompt": "buenas noches",
               "options": [
@@ -366,7 +492,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s1.e14",
+              "id": "u01-1.l1.s1.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -396,12 +522,9 @@
           "exercises": [
             {
               "id": "u01-1.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Agur, Mikel!",
-              "distractors": [
-                "Iker",
-                "Oso"
-              ],
+              "type": "word_intro",
+              "word": "agur",
+              "translation": "adiós",
               "vocabulary": [
                 "agur"
               ],
@@ -411,13 +534,50 @@
             },
             {
               "id": "u01-1.l1.s2.e02",
-              "type": "translate_typing",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¡Hasta luego, Ane!"
+                "lang": "eu",
+                "text": "Agur, Mikel!"
               },
               "answers": [
-                "Gero arte, Ane!"
+                "¡Adiós, Mikel!"
+              ],
+              "distractors": [
+                "luego",
+                "Qué"
+              ],
+              "vocabulary": [
+                "agur"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s2.e03",
+              "type": "word_intro",
+              "word": "gero arte",
+              "translation": "hasta luego",
+              "vocabulary": [
+                "gero arte"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gero arte, Ane!"
+              },
+              "answers": [
+                "¡Hasta luego, Ane!"
+              ],
+              "distractors": [
+                "tú",
+                "Qué"
               ],
               "vocabulary": [
                 "gero arte"
@@ -427,7 +587,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e03",
+              "id": "u01-1.l1.s2.e05",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -458,7 +618,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e04",
+              "id": "u01-1.l1.s2.e06",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -475,7 +635,19 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e05",
+              "id": "u01-1.l1.s2.e07",
+              "type": "word_intro",
+              "word": "eta",
+              "translation": "y",
+              "vocabulary": [
+                "eta"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s2.e08",
               "type": "fill_blank",
               "sentence": "Agur ___ gero arte!",
               "options": [
@@ -494,7 +666,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e06",
+              "id": "u01-1.l1.s2.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -513,7 +685,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e07",
+              "id": "u01-1.l1.s2.e10",
               "type": "choose_meaning",
               "text": "Gero arte!",
               "options": [
@@ -530,7 +702,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e08",
+              "id": "u01-1.l1.s2.e11",
               "type": "listen_type",
               "text": "Gabon eta bihar arte!",
               "answers": [
@@ -546,7 +718,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e09",
+              "id": "u01-1.l1.s2.e12",
               "type": "complete_chat",
               "messages": [
                 {
@@ -569,7 +741,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e10",
+              "id": "u01-1.l1.s2.e13",
               "type": "speak",
               "text": "Kaixo, Itziar! Zer moduz?",
               "translation": "¡Hola, Itziar! ¿Qué tal?",
@@ -582,7 +754,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e11",
+              "id": "u01-1.l1.s2.e14",
               "type": "read_true_false",
               "passage": "Kaixo, Ane! Zer moduz?",
               "statement": "Es una despedida.",
@@ -596,7 +768,19 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e12",
+              "id": "u01-1.l1.s2.e15",
+              "type": "word_intro",
+              "word": "zu",
+              "translation": "tú; usted",
+              "vocabulary": [
+                "zu"
+              ],
+              "structures": [
+                "greetings"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s2.e16",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -622,7 +806,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e13",
+              "id": "u01-1.l1.s2.e17",
               "type": "choose_image",
               "prompt": "buenos días",
               "options": [
@@ -648,7 +832,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s2.e14",
+              "id": "u01-1.l1.s2.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -677,14 +861,9 @@
           "exercises": [
             {
               "id": "u01-1.l1.s3.e01",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "¡Muchas gracias!"
-              },
-              "answers": [
-                "Eskerrik asko!"
-              ],
+              "type": "word_intro",
+              "word": "eskerrik asko",
+              "translation": "muchas gracias",
               "vocabulary": [
                 "eskerrik asko"
               ],
@@ -694,13 +873,51 @@
             },
             {
               "id": "u01-1.l1.s3.e02",
-              "type": "translate_typing",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Eskerrik asko!"
+              },
+              "answers": [
+                "¡Muchas gracias!",
+                "¡Gracias!"
+              ],
+              "distractors": [
+                "Perdón",
+                "Jon"
+              ],
+              "vocabulary": [
+                "eskerrik asko"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s3.e03",
+              "type": "word_intro",
+              "word": "ez horregatik",
+              "translation": "de nada",
+              "vocabulary": [
+                "ez horregatik"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s3.e04",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Ez horregatik."
               },
               "answers": [
                 "De nada."
+              ],
+              "distractors": [
+                "Felicidades",
+                "Ane"
               ],
               "vocabulary": [
                 "ez horregatik"
@@ -710,7 +927,55 @@
               ]
             },
             {
-              "id": "u01-1.l1.s3.e03",
+              "id": "u01-1.l1.s3.e05",
+              "type": "word_intro",
+              "word": "mesedez",
+              "translation": "por favor",
+              "vocabulary": [
+                "mesedez"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s3.e06",
+              "type": "word_intro",
+              "word": "barkatu",
+              "translation": "perdón; perdona",
+              "vocabulary": [
+                "barkatu"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s3.e07",
+              "type": "word_intro",
+              "word": "zorionak",
+              "translation": "felicidades",
+              "vocabulary": [
+                "zorionak"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s3.e08",
+              "type": "word_intro",
+              "word": "euskara",
+              "translation": "euskera",
+              "vocabulary": [
+                "euskara"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s3.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -751,7 +1016,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s3.e04",
+              "id": "u01-1.l1.s3.e10",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -770,7 +1035,19 @@
               ]
             },
             {
-              "id": "u01-1.l1.s3.e05",
+              "id": "u01-1.l1.s3.e11",
+              "type": "word_intro",
+              "word": "zara",
+              "translation": "eres / estás",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "courtesy"
+              ]
+            },
+            {
+              "id": "u01-1.l1.s3.e12",
               "type": "fill_blank",
               "sentence": "Barkatu, zu Iker ___?",
               "options": [
@@ -789,11 +1066,12 @@
               ]
             },
             {
-              "id": "u01-1.l1.s3.e06",
-              "type": "listen_type",
+              "id": "u01-1.l1.s3.e13",
+              "type": "listen_tap",
               "text": "Mesedez.",
-              "answers": [
-                "Mesedez."
+              "distractors": [
+                "Barkatu",
+                "Ane"
               ],
               "vocabulary": [
                 "mesedez"
@@ -803,7 +1081,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s3.e07",
+              "id": "u01-1.l1.s3.e14",
               "type": "choose_meaning",
               "text": "Ez horregatik.",
               "options": [
@@ -820,10 +1098,15 @@
               ]
             },
             {
-              "id": "u01-1.l1.s3.e08",
-              "type": "speak",
-              "text": "Zorionak, Ane!",
-              "translation": "¡Felicidades, Ane!",
+              "id": "u01-1.l1.s3.e15",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zorionak, Ane!"
+              },
+              "answers": [
+                "¡Felicidades, Ane!"
+              ],
               "vocabulary": [
                 "zorionak"
               ],
@@ -832,7 +1115,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s3.e09",
+              "id": "u01-1.l1.s3.e16",
               "type": "complete_chat",
               "messages": [
                 {
@@ -855,7 +1138,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s3.e10",
+              "id": "u01-1.l1.s3.e17",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -877,7 +1160,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s3.e11",
+              "id": "u01-1.l1.s3.e18",
               "type": "read_true_false",
               "passage": "Zorionak, Itziar!",
               "statement": "Alguien felicita a Itziar.",
@@ -890,7 +1173,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s3.e12",
+              "id": "u01-1.l1.s3.e19",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -915,7 +1198,7 @@
               ]
             },
             {
-              "id": "u01-1.l1.s3.e13",
+              "id": "u01-1.l1.s3.e20",
               "type": "listen_tap",
               "text": "Euskaraz, mesedez!",
               "distractors": [
@@ -947,9 +1230,43 @@
           "exercises": [
             {
               "id": "u01-1.l2.s1.e01",
-              "type": "order_sentence",
-              "answer": "Ni Ane naiz.",
-              "translation": "Soy Ane.",
+              "type": "word_intro",
+              "word": "ni",
+              "translation": "yo",
+              "vocabulary": [
+                "ni"
+              ],
+              "structures": [
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s1.e02",
+              "type": "word_intro",
+              "word": "naiz",
+              "translation": "soy / estoy",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ni Ane naiz."
+              },
+              "answers": [
+                "Soy Ane.",
+                "Yo soy Ane."
+              ],
+              "distractors": [
+                "días",
+                "Itziar"
+              ],
               "vocabulary": [
                 "ni",
                 "izan"
@@ -959,7 +1276,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e02",
+              "id": "u01-1.l2.s1.e04",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -979,7 +1296,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e03",
+              "id": "u01-1.l2.s1.e05",
               "type": "fill_blank",
               "sentence": "Ni Ane ___.",
               "options": [
@@ -997,7 +1314,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e04",
+              "id": "u01-1.l2.s1.e06",
               "type": "listen_type",
               "text": "Egun on! Ni Itziar naiz.",
               "answers": [
@@ -1013,7 +1330,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e05",
+              "id": "u01-1.l2.s1.e07",
               "type": "fill_blank",
               "sentence": "Ni Mikel ___, eta zu?",
               "options": [
@@ -1033,7 +1350,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e06",
+              "id": "u01-1.l2.s1.e08",
               "type": "speak",
               "text": "Ni Jon naiz, eta zu?",
               "translation": "Soy Jon, ¿y tú?",
@@ -1048,7 +1365,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e07",
+              "id": "u01-1.l2.s1.e09",
               "type": "choose_meaning",
               "text": "Ni Jon naiz.",
               "options": [
@@ -1066,7 +1383,25 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e08",
+              "id": "u01-1.l2.s1.e10",
+              "type": "word_intro",
+              "word": "ikasten",
+              "translation": "aprendiendo (ikasi)",
+              "structures": [
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s1.e11",
+              "type": "word_intro",
+              "word": "ari",
+              "translation": "estar (haciendo algo)",
+              "structures": [
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s1.e12",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1092,7 +1427,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e09",
+              "id": "u01-1.l2.s1.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1118,7 +1453,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e10",
+              "id": "u01-1.l2.s1.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1142,7 +1477,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e11",
+              "id": "u01-1.l2.s1.e15",
               "type": "read_true_false",
               "passage": "Kaixo! Ni Jon naiz. Euskara ikasten ari naiz.",
               "statement": "Jon está aprendiendo euskera.",
@@ -1158,7 +1493,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e12",
+              "id": "u01-1.l2.s1.e16",
               "type": "listen_tap",
               "text": "Arratsalde on, ni Ane naiz.",
               "distractors": [
@@ -1176,7 +1511,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s1.e13",
+              "id": "u01-1.l2.s1.e17",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1222,10 +1557,31 @@
             },
             {
               "id": "u01-1.l2.s2.e02",
-              "type": "listen_type",
-              "text": "Bai, ni Mikel naiz.",
+              "type": "word_intro",
+              "word": "bai",
+              "translation": "sí",
+              "vocabulary": [
+                "bai"
+              ],
+              "structures": [
+                "izan-present",
+                "bai-ez"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bai, ni Mikel naiz."
+              },
               "answers": [
-                "Bai, ni Mikel naiz."
+                "Sí, soy Mikel.",
+                "Sí, yo soy Mikel."
+              ],
+              "distractors": [
+                "Jon",
+                "euskera"
               ],
               "vocabulary": [
                 "bai",
@@ -1238,7 +1594,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s2.e03",
+              "id": "u01-1.l2.s2.e04",
               "type": "fill_blank",
               "sentence": "Zu Iker ___?",
               "options": [
@@ -1257,10 +1613,33 @@
               ]
             },
             {
-              "id": "u01-1.l2.s2.e04",
-              "type": "speak",
-              "text": "Ez, ni Jon naiz.",
-              "translation": "No, soy Jon.",
+              "id": "u01-1.l2.s2.e05",
+              "type": "word_intro",
+              "word": "ez",
+              "translation": "no",
+              "vocabulary": [
+                "ez"
+              ],
+              "structures": [
+                "izan-present",
+                "bai-ez"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez, ni Jon naiz."
+              },
+              "answers": [
+                "No, soy Jon.",
+                "No, yo soy Jon."
+              ],
+              "distractors": [
+                "estoy",
+                "y"
+              ],
               "vocabulary": [
                 "ez",
                 "ni",
@@ -1272,7 +1651,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s2.e05",
+              "id": "u01-1.l2.s2.e07",
               "type": "fill_blank",
               "sentence": "___, ni Ane naiz.",
               "options": [
@@ -1292,7 +1671,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s2.e06",
+              "id": "u01-1.l2.s2.e08",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1318,7 +1697,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s2.e07",
+              "id": "u01-1.l2.s2.e09",
               "type": "choose_meaning",
               "text": "Ez, ni Jon naiz.",
               "options": [
@@ -1338,7 +1717,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s2.e08",
+              "id": "u01-1.l2.s2.e10",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1363,7 +1742,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s2.e09",
+              "id": "u01-1.l2.s2.e11",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1389,7 +1768,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s2.e10",
+              "id": "u01-1.l2.s2.e12",
               "type": "listen_tap",
               "text": "Zu euskara ikasten ari zara?",
               "distractors": [
@@ -1408,7 +1787,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s2.e11",
+              "id": "u01-1.l2.s2.e13",
               "type": "read_true_false",
               "passage": "Kaixo! Zu Jon zara? Ez, ni Mikel naiz.",
               "statement": "La persona se llama Jon.",
@@ -1426,7 +1805,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s2.e12",
+              "id": "u01-1.l2.s2.e14",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1446,7 +1825,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s2.e13",
+              "id": "u01-1.l2.s2.e15",
               "type": "order_sentence",
               "answer": "Bai, eta zu?",
               "translation": "Sí, ¿y tú?",
@@ -1467,10 +1846,30 @@
           "exercises": [
             {
               "id": "u01-1.l2.s3.e01",
-              "type": "listen_type",
-              "text": "Nor zara?",
+              "type": "word_intro",
+              "word": "nor",
+              "translation": "quién",
+              "vocabulary": [
+                "nor"
+              ],
+              "structures": [
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nor zara?"
+              },
               "answers": [
-                "Nor zara?"
+                "¿Quién eres?",
+                "¿Quién es usted?"
+              ],
+              "distractors": [
+                "Cómo",
+                "Qué"
               ],
               "vocabulary": [
                 "nor",
@@ -1481,7 +1880,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s3.e02",
+              "id": "u01-1.l2.s3.e03",
               "type": "speak",
               "text": "Zer moduz, Ane?",
               "translation": "¿Qué tal, Ane?",
@@ -1493,7 +1892,67 @@
               ]
             },
             {
-              "id": "u01-1.l2.s3.e03",
+              "id": "u01-1.l2.s3.e04",
+              "type": "word_intro",
+              "word": "zer",
+              "translation": "qué",
+              "vocabulary": [
+                "zer"
+              ],
+              "structures": [
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s3.e05",
+              "type": "word_intro",
+              "word": "zein",
+              "translation": "cuál",
+              "vocabulary": [
+                "zein"
+              ],
+              "structures": [
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s3.e06",
+              "type": "word_intro",
+              "word": "nola",
+              "translation": "cómo",
+              "vocabulary": [
+                "nola"
+              ],
+              "structures": [
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s3.e07",
+              "type": "word_intro",
+              "word": "izen",
+              "translation": "nombre",
+              "vocabulary": [
+                "izen"
+              ],
+              "structures": [
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s3.e08",
+              "type": "word_intro",
+              "word": "abizen",
+              "translation": "apellido",
+              "vocabulary": [
+                "abizen"
+              ],
+              "structures": [
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-1.l2.s3.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1534,7 +1993,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s3.e04",
+              "id": "u01-1.l2.s3.e10",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1558,7 +2017,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s3.e05",
+              "id": "u01-1.l2.s3.e11",
               "type": "choose_meaning",
               "text": "Nor zara?",
               "options": [
@@ -1576,7 +2035,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s3.e06",
+              "id": "u01-1.l2.s3.e12",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1599,7 +2058,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s3.e07",
+              "id": "u01-1.l2.s3.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1624,7 +2083,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s3.e08",
+              "id": "u01-1.l2.s3.e14",
               "type": "listen_tap",
               "text": "Ni Iker naiz. Eta zu, nor zara?",
               "distractors": [
@@ -1645,7 +2104,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s3.e09",
+              "id": "u01-1.l2.s3.e15",
               "type": "read_true_false",
               "passage": "Izena: Itziar. Abizena: Agirre.",
               "statement": "Su apellido es Agirre.",
@@ -1659,7 +2118,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s3.e10",
+              "id": "u01-1.l2.s3.e16",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1678,7 +2137,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s3.e11",
+              "id": "u01-1.l2.s3.e17",
               "type": "order_sentence",
               "answer": "Zer moduz, Jon? Ondo?",
               "translation": "¿Qué tal, Jon? ¿Bien?",
@@ -1691,7 +2150,7 @@
               ]
             },
             {
-              "id": "u01-1.l2.s3.e12",
+              "id": "u01-1.l2.s3.e18",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",

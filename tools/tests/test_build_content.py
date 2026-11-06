@@ -73,6 +73,46 @@ class BuildContentTest(unittest.TestCase):
         self.assertIn("izan", blank["vocabulary"])
         self.assertTrue(all(e["structures"] == ["test"] for e in built["exercises"]))
 
+    def test_new_words_get_a_card_before_their_first_use(self) -> None:
+        exposure = bc.Exposure()
+        built = bc.build_lesson("u01-1.l1.s1", lesson(SENTENCES[:3]), offset=0, lemmatizer=self.lemmatizer,
+                                exposure=exposure)
+        exercises = built["exercises"]
+        self.assertEqual(exercises[0]["type"], "word_intro")
+        cards = [e["word"] for e in exercises if e["type"] == "word_intro"]
+        self.assertIn("kaixo", cards)
+        self.assertIn("naiz", cards)  # forms are learnt as such, with their own gloss
+        naiz = next(e for e in exercises if e.get("word") == "naiz")
+        self.assertEqual(naiz["translation"], "soy / estoy")
+        # Each word is introduced once in the course.
+        again = bc.build_lesson("u01-1.l1.s2", lesson(SENTENCES[:3]), offset=0, lemmatizer=self.lemmatizer,
+                                exposure=exposure)
+        self.assertFalse(any(e["type"] == "word_intro" for e in again["exercises"]))
+
+    def test_unfamiliar_words_are_recognised_before_they_are_produced(self) -> None:
+        built = bc.build_lesson("u01-1.l1.s1", lesson(SENTENCES), offset=3, lemmatizer=self.lemmatizer,
+                                exposure=bc.Exposure())
+        first = next(e for e in built["exercises"] if e["type"] != "word_intro")
+        self.assertEqual(first["type"], "translate_wordbank")
+        self.assertEqual(first["prompt"]["lang"], "eu")
+        typed = [e for e in built["exercises"] if e["type"] in ("translate_typing", "listen_type", "speak")
+                 and e.get("prompt", {}).get("lang") != "eu"]
+        self.assertEqual(typed, [])
+
+    def test_dense_lessons_introduce_a_limited_number_of_words(self) -> None:
+        pairs = [["kaixo = hola", "agur = adiós", "bai = sí", "ez = no", "eta = y", "zu = tú"]]
+        built = bc.build_lesson("u01-1.l1.s1", lesson(SENTENCES, pairs=pairs), offset=0,
+                                lemmatizer=self.lemmatizer, exposure=bc.Exposure())
+        cards = [e for e in built["exercises"] if e["type"] == "word_intro"]
+        self.assertEqual(len(cards), bc.MAX_NEW_WORDS)
+
+    def test_the_glossary_gives_lemmas_for_inflected_words(self) -> None:
+        entries = bc.glossary(["Egun on! Ogia eta ura, mesedez. Ni Ane naiz."], self.lemmatizer)["entries"]
+        self.assertEqual(entries["egun on"], {"es": "buenos días"})
+        self.assertEqual(entries["ogia"], {"es": "pan", "lemma": "ogi"})
+        self.assertEqual(entries["naiz"], {"es": "soy / estoy", "lemma": "izan"})
+        self.assertNotIn("ane", entries)
+
     def test_pictures_come_from_the_catalog_with_the_first_one_correct(self) -> None:
         built = bc.build_lesson("u05-1.l1.s1", lesson(SENTENCES[:2], images=["bread, water, milk"]), offset=0,
                                 lemmatizer=self.lemmatizer)

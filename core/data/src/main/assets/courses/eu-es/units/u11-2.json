@@ -161,6 +161,59 @@
             },
             {
               "id": "u11-2.l1.s1.e03",
+              "type": "word_intro",
+              "word": "ordenagailu",
+              "translation": "ordenador",
+              "image": "object_computer.webp",
+              "vocabulary": [
+                "ordenagailu"
+              ],
+              "structures": [
+                "hizkuntzak",
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s1.e04",
+              "type": "word_intro",
+              "word": "gidabaimen",
+              "translation": "carné de conducir",
+              "vocabulary": [
+                "gidabaimen"
+              ],
+              "structures": [
+                "hizkuntzak",
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "esperientzia",
+              "translation": "experiencia",
+              "vocabulary": [
+                "esperientzia"
+              ],
+              "structures": [
+                "hizkuntzak",
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s1.e06",
+              "type": "word_intro",
+              "word": "jakin",
+              "translation": "saber",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "hizkuntzak",
+                "jakin-present"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s1.e07",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -202,7 +255,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e04",
+              "id": "u11-2.l1.s1.e08",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -221,7 +274,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e05",
+              "id": "u11-2.l1.s1.e09",
               "type": "fill_blank",
               "sentence": "Hiru hizkuntza ___.",
               "options": [
@@ -242,7 +295,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e06",
+              "id": "u11-2.l1.s1.e10",
               "type": "order_sentence",
               "answer": "Bai, ingelesa ondo dakit.",
               "translation": "Sí, sé bien inglés.",
@@ -258,7 +311,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e07",
+              "id": "u11-2.l1.s1.e11",
               "type": "choose_meaning",
               "text": "Ez daukat gidabaimenik.",
               "options": [
@@ -278,7 +331,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e08",
+              "id": "u11-2.l1.s1.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -299,7 +352,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e09",
+              "id": "u11-2.l1.s1.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -325,7 +378,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e10",
+              "id": "u11-2.l1.s1.e14",
               "type": "listen_type",
               "text": "Ez, ez daukat gidabaimenik.",
               "answers": [
@@ -342,7 +395,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e11",
+              "id": "u11-2.l1.s1.e15",
               "type": "read_true_false",
               "passage": "Haizea idazkaria da. Euskaraz eta ingelesez hitz egiten du. Gidabaimena ere badu.",
               "statement": "Haizea no tiene carné de conducir.",
@@ -366,10 +419,13 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e12",
-              "type": "speak",
+              "id": "u11-2.l1.s1.e16",
+              "type": "listen_tap",
               "text": "Ordenagailua erabiltzen badakit.",
-              "translation": "Sé usar el ordenador.",
+              "distractors": [
+                "daukat",
+                "dut"
+              ],
               "vocabulary": [
                 "ordenagailu",
                 "erabili",
@@ -381,7 +437,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e13",
+              "id": "u11-2.l1.s1.e17",
               "type": "choose_image",
               "prompt": "el ordenador",
               "options": [
@@ -408,7 +464,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e14",
+              "id": "u11-2.l1.s1.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -441,7 +497,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s1.e15",
+              "id": "u11-2.l1.s1.e19",
               "type": "choose_image",
               "prompt": "el ordenador",
               "options": [
@@ -512,6 +568,42 @@
             },
             {
               "id": "u11-2.l1.s2.e03",
+              "type": "word_intro",
+              "word": "ekarri",
+              "translation": "traer",
+              "vocabulary": [
+                "ekarri"
+              ],
+              "structures": [
+                "nor-nori-nork"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s2.e04",
+              "type": "word_intro",
+              "word": "erakutsi",
+              "translation": "enseñar (mostrar)",
+              "vocabulary": [
+                "erakutsi"
+              ],
+              "structures": [
+                "nor-nori-nork"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s2.e05",
+              "type": "word_intro",
+              "word": "bidali",
+              "translation": "enviar",
+              "vocabulary": [
+                "bidali"
+              ],
+              "structures": [
+                "nor-nori-nork"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s2.e06",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -547,7 +639,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s2.e04",
+              "id": "u11-2.l1.s2.e07",
               "type": "order_sentence",
               "answer": "Lankideak kafe bat ekarri dit.",
               "translation": "Mi compañero me ha traído un café.",
@@ -563,7 +655,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s2.e05",
+              "id": "u11-2.l1.s2.e08",
               "type": "fill_blank",
               "sentence": "Lankideak kafe bat ekarri ___.",
               "options": [
@@ -585,7 +677,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s2.e06",
+              "id": "u11-2.l1.s2.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -607,7 +699,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s2.e07",
+              "id": "u11-2.l1.s2.e10",
               "type": "choose_meaning",
               "text": "Zer esan dizu Mikelek?",
               "options": [
@@ -626,11 +718,19 @@
               ]
             },
             {
-              "id": "u11-2.l1.s2.e08",
-              "type": "listen_type",
-              "text": "Nire helbidea bidali dizut.",
+              "id": "u11-2.l1.s2.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Te he enviado mi dirección."
+              },
               "answers": [
                 "Nire helbidea bidali dizut."
+              ],
+              "distractors": [
+                "Nagusiak",
+                "ordenagailu",
+                "beste"
               ],
               "vocabulary": [
                 "ni",
@@ -643,7 +743,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s2.e09",
+              "id": "u11-2.l1.s2.e12",
               "type": "complete_chat",
               "messages": [
                 {
@@ -670,7 +770,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s2.e10",
+              "id": "u11-2.l1.s2.e13",
               "type": "speak",
               "text": "Anek beste ordenagailu bat eman dit.",
               "translation": "Ane me ha dado otro ordenador.",
@@ -686,7 +786,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s2.e11",
+              "id": "u11-2.l1.s2.e14",
               "type": "read_true_false",
               "passage": "Gaur lan berri bat daukat. Idazkariak bulegoa erakutsi dit.",
               "statement": "La secretaria le ha enseñado la oficina.",
@@ -707,7 +807,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s2.e12",
+              "id": "u11-2.l1.s2.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -734,7 +834,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s2.e13",
+              "id": "u11-2.l1.s2.e16",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -783,9 +883,34 @@
             },
             {
               "id": "u11-2.l1.s3.e02",
-              "type": "order_sentence",
-              "answer": "Enpresak ez dit erantzun.",
-              "translation": "La empresa no me ha respondido.",
+              "type": "word_intro",
+              "word": "erantzun",
+              "translation": "responder",
+              "vocabulary": [
+                "erantzun"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "esperientzia"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Enpresak ez dit erantzun."
+              },
+              "answers": [
+                "La empresa no me ha respondido.",
+                "La empresa no me ha contestado."
+              ],
+              "distractors": [
+                "años",
+                "Tienes",
+                "experiencia",
+                "Le"
+              ],
               "vocabulary": [
                 "enpresa",
                 "ez",
@@ -798,7 +923,33 @@
               ]
             },
             {
-              "id": "u11-2.l1.s3.e03",
+              "id": "u11-2.l1.s3.e04",
+              "type": "word_intro",
+              "word": "irakatsi",
+              "translation": "enseñar (instruir)",
+              "vocabulary": [
+                "irakatsi"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "esperientzia"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "libre",
+              "translation": "libre",
+              "vocabulary": [
+                "libre"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "esperientzia"
+              ]
+            },
+            {
+              "id": "u11-2.l1.s3.e06",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -835,7 +986,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s3.e04",
+              "id": "u11-2.l1.s3.e07",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -855,7 +1006,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s3.e05",
+              "id": "u11-2.l1.s3.e08",
               "type": "fill_blank",
               "sentence": "Esperientzia ___?",
               "options": [
@@ -875,7 +1026,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s3.e06",
+              "id": "u11-2.l1.s3.e09",
               "type": "listen_type",
               "text": "Bai, bost urteko esperientzia daukat.",
               "answers": [
@@ -894,7 +1045,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s3.e07",
+              "id": "u11-2.l1.s3.e10",
               "type": "choose_meaning",
               "text": "Bost urteko esperientzia daukat.",
               "options": [
@@ -915,10 +1066,14 @@
               ]
             },
             {
-              "id": "u11-2.l1.s3.e08",
-              "type": "speak",
+              "id": "u11-2.l1.s3.e11",
+              "type": "listen_tap",
               "text": "Amak ingelesa irakatsi dit.",
-              "translation": "Mi madre me ha enseñado inglés.",
+              "distractors": [
+                "galdetu",
+                "daukat",
+                "Bai"
+              ],
               "vocabulary": [
                 "ama",
                 "ingeles",
@@ -931,7 +1086,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s3.e09",
+              "id": "u11-2.l1.s3.e12",
               "type": "complete_chat",
               "messages": [
                 {
@@ -957,7 +1112,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s3.e10",
+              "id": "u11-2.l1.s3.e13",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -987,7 +1142,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s3.e11",
+              "id": "u11-2.l1.s3.e14",
               "type": "read_true_false",
               "passage": "Nagusiari soldata galdetu diot, baina ez dit erantzun.",
               "statement": "El jefe ha respondido.",
@@ -1007,7 +1162,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s3.e12",
+              "id": "u11-2.l1.s3.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1031,7 +1186,7 @@
               ]
             },
             {
-              "id": "u11-2.l1.s3.e13",
+              "id": "u11-2.l1.s3.e16",
               "type": "listen_tap",
               "text": "Zergatik ez didazu erantzun?",
               "distractors": [
@@ -1067,9 +1222,42 @@
           "exercises": [
             {
               "id": "u11-2.l2.s1.e01",
-              "type": "order_sentence",
-              "answer": "Nagusiak galdetu dit ea ingelesa dakidan.",
-              "translation": "El jefe me ha preguntado si sé inglés.",
+              "type": "word_intro",
+              "word": "ea",
+              "translation": "si (pregunta indirecta)",
+              "structures": [
+                "ea-indirect"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s1.e02",
+              "type": "word_intro",
+              "word": "dakidan",
+              "translation": "(si) sé",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "ea-indirect"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nagusiak galdetu dit ea ingelesa dakidan."
+              },
+              "answers": [
+                "El jefe me ha preguntado si sé inglés.",
+                "La jefa me ha preguntado si sé inglés."
+              ],
+              "distractors": [
+                "Le",
+                "es",
+                "sabe",
+                "está"
+              ],
               "vocabulary": [
                 "nagusi",
                 "galdetu",
@@ -1082,8 +1270,20 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e02",
-              "type": "translate_typing",
+              "id": "u11-2.l2.s1.e04",
+              "type": "word_intro",
+              "word": "duen",
+              "translation": "que tiene / (si) tiene",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "ea-indirect"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s1.e05",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Galdetu diot ea gidabaimena duen."
@@ -1091,6 +1291,12 @@
               "answers": [
                 "Le he preguntado si tiene carné de conducir.",
                 "Le he preguntado si tiene el carné de conducir."
+              ],
+              "distractors": [
+                "tienes",
+                "cuál",
+                "dónde",
+                "cuándo"
               ],
               "vocabulary": [
                 "galdetu",
@@ -1102,7 +1308,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e03",
+              "id": "u11-2.l2.s1.e06",
               "type": "fill_blank",
               "sentence": "Galdetu dit ea ingelesa ___.",
               "options": [
@@ -1123,11 +1329,33 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e04",
-              "type": "listen_type",
-              "text": "Ez dakit non dagoen bulegoa.",
+              "id": "u11-2.l2.s1.e07",
+              "type": "word_intro",
+              "word": "dagoen",
+              "translation": "que está / (si) está",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "ea-indirect"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez dakit non dagoen bulegoa."
+              },
               "answers": [
-                "Ez dakit non dagoen bulegoa."
+                "No sé dónde está la oficina.",
+                "Yo no sé dónde está la oficina."
+              ],
+              "distractors": [
+                "inglés",
+                "carné",
+                "conducir",
+                "si"
               ],
               "vocabulary": [
                 "ez dakit",
@@ -1140,7 +1368,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e05",
+              "id": "u11-2.l2.s1.e09",
               "type": "fill_blank",
               "sentence": "Ez dakit non ___ bulegoa.",
               "options": [
@@ -1161,10 +1389,34 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e06",
-              "type": "speak",
-              "text": "Badakizu nor den nagusia?",
-              "translation": "¿Sabes quién es el jefe?",
+              "id": "u11-2.l2.s1.e10",
+              "type": "word_intro",
+              "word": "den",
+              "translation": "que es / (si) es",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "ea-indirect"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s1.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Badakizu nor den nagusia?"
+              },
+              "answers": [
+                "¿Sabes quién es el jefe?",
+                "¿Sabes quién es la jefa?",
+                "¿Sabe usted quién es el jefe?"
+              ],
+              "distractors": [
+                "No",
+                "Le",
+                "si"
+              ],
               "vocabulary": [
                 "jakin",
                 "nor",
@@ -1176,7 +1428,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e07",
+              "id": "u11-2.l2.s1.e12",
               "type": "choose_meaning",
               "text": "Galdetu diot ea gidabaimena duen.",
               "options": [
@@ -1195,7 +1447,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e08",
+              "id": "u11-2.l2.s1.e13",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1222,7 +1474,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e09",
+              "id": "u11-2.l2.s1.e14",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1249,7 +1501,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e10",
+              "id": "u11-2.l2.s1.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1275,7 +1527,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e11",
+              "id": "u11-2.l2.s1.e16",
               "type": "read_true_false",
               "passage": "Nagusiak galdetu dit ea gidatzen dakidan. Badakit!",
               "statement": "La persona que habla sabe conducir.",
@@ -1292,14 +1544,33 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e12",
-              "type": "listen_tap",
-              "text": "Anek galdetu dizu ea ordenagailua duzun.",
+              "id": "u11-2.l2.s1.e17",
+              "type": "word_intro",
+              "word": "duzun",
+              "translation": "que tienes / (si) tienes",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "ea-indirect"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Anek galdetu dizu ea ordenagailua duzun."
+              },
+              "answers": [
+                "Ane te ha preguntado si tienes ordenador.",
+                "Ane le ha preguntado si tiene ordenador."
+              ],
               "distractors": [
-                "bulegoa",
-                "zein",
-                "dakigu",
-                "non"
+                "conducir",
+                "jefe",
+                "El",
+                "sé"
               ],
               "vocabulary": [
                 "galdetu",
@@ -1311,14 +1582,32 @@
               ]
             },
             {
-              "id": "u11-2.l2.s1.e13",
-              "type": "translate_typing",
+              "id": "u11-2.l2.s1.e19",
+              "type": "word_intro",
+              "word": "dakien",
+              "translation": "(si) sabe",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "ea-indirect"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s1.e20",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "No sé si Jon sabe inglés."
+                "lang": "eu",
+                "text": "Ez dakit ea Jonek ingelesa dakien."
               },
               "answers": [
-                "Ez dakit ea Jonek ingelesa dakien."
+                "No sé si Jon sabe inglés."
+              ],
+              "distractors": [
+                "te",
+                "carné",
+                "preguntado",
+                "sabemos"
               ],
               "vocabulary": [
                 "ez dakit",
@@ -1336,7 +1625,19 @@
           "exercises": [
             {
               "id": "u11-2.l2.s2.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "zuregandik",
+              "translation": "de ti",
+              "vocabulary": [
+                "zu"
+              ],
+              "structures": [
+                "norengandik"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s2.e02",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Zuregandik asko ikasi dut."
@@ -1345,6 +1646,11 @@
                 "He aprendido mucho de ti.",
                 "He aprendido mucho de usted.",
                 "Aprendo mucho de ti."
+              ],
+              "distractors": [
+                "un",
+                "él",
+                "nosotros"
               ],
               "vocabulary": [
                 "zu",
@@ -1357,11 +1663,33 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e02",
-              "type": "listen_type",
-              "text": "Ingelesa amarengandik ikasi dut.",
+              "id": "u11-2.l2.s2.e03",
+              "type": "word_intro",
+              "word": "amarengandik",
+              "translation": "de la madre",
+              "vocabulary": [
+                "ama"
+              ],
+              "structures": [
+                "norengandik"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ingelesa amarengandik ikasi dut."
+              },
               "answers": [
-                "Ingelesa amarengandik ikasi dut."
+                "He aprendido inglés de mi madre.",
+                "Aprendí inglés de mi madre."
+              ],
+              "distractors": [
+                "profesor",
+                "usar",
+                "padre",
+                "Los"
               ],
               "vocabulary": [
                 "ingeles",
@@ -1374,7 +1702,55 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e03",
+              "id": "u11-2.l2.s2.e05",
+              "type": "word_intro",
+              "word": "niregandik",
+              "translation": "de mí",
+              "vocabulary": [
+                "ni"
+              ],
+              "structures": [
+                "norengandik"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s2.e06",
+              "type": "word_intro",
+              "word": "harengandik",
+              "translation": "de él / de ella",
+              "vocabulary": [
+                "hura"
+              ],
+              "structures": [
+                "norengandik"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s2.e07",
+              "type": "word_intro",
+              "word": "gugandik",
+              "translation": "de nosotros",
+              "vocabulary": [
+                "gu"
+              ],
+              "structures": [
+                "norengandik"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s2.e08",
+              "type": "word_intro",
+              "word": "haiengandik",
+              "translation": "de ellos",
+              "vocabulary": [
+                "haiek"
+              ],
+              "structures": [
+                "norengandik"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s2.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1410,10 +1786,34 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e04",
-              "type": "speak",
-              "text": "Nire lana aitarengandik ikasi dut.",
-              "translation": "He aprendido mi trabajo de mi padre.",
+              "id": "u11-2.l2.s2.e10",
+              "type": "word_intro",
+              "word": "aitarengandik",
+              "translation": "del padre",
+              "vocabulary": [
+                "aita"
+              ],
+              "structures": [
+                "norengandik"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s2.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nire lana aitarengandik ikasi dut."
+              },
+              "answers": [
+                "He aprendido mi trabajo de mi padre.",
+                "Aprendí mi oficio de mi padre."
+              ],
+              "distractors": [
+                "y",
+                "profesor",
+                "el",
+                "niños"
+              ],
               "vocabulary": [
                 "ni",
                 "lan",
@@ -1426,7 +1826,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e05",
+              "id": "u11-2.l2.s2.e12",
               "type": "fill_blank",
               "sentence": "Ingelesa ___ ikasi dut.",
               "options": [
@@ -1447,7 +1847,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e06",
+              "id": "u11-2.l2.s2.e13",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1473,7 +1873,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e07",
+              "id": "u11-2.l2.s2.e14",
               "type": "choose_meaning",
               "text": "Zuregandik asko ikasi dut.",
               "options": [
@@ -1493,20 +1893,33 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e08",
+              "id": "u11-2.l2.s2.e15",
+              "type": "word_intro",
+              "word": "irakaslearengandik",
+              "translation": "del profesor / de la profesora",
+              "vocabulary": [
+                "irakasle"
+              ],
+              "structures": [
+                "norengandik"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s2.e16",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "He aprendido euskera del profesor, y castellano de mi madre."
+                "lang": "eu",
+                "text": "Euskara irakaslearengandik ikasi dut, eta gaztelania amarengandik."
               },
               "answers": [
-                "Euskara irakaslearengandik ikasi dut, eta gaztelania amarengandik."
+                "He aprendido euskera del profesor, y castellano de mi madre.",
+                "He aprendido euskera de la profesora, y castellano de mi madre."
               ],
               "distractors": [
-                "lana",
-                "Niregandik",
-                "Zuregandik",
-                "gugandik"
+                "él",
+                "mí",
+                "han",
+                "ti"
               ],
               "vocabulary": [
                 "euskara",
@@ -1522,7 +1935,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e09",
+              "id": "u11-2.l2.s2.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1549,13 +1962,22 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e10",
-              "type": "listen_tap",
-              "text": "Ordenagailua erabiltzen lankidearengandik ikasi dut.",
+              "id": "u11-2.l2.s2.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ordenagailua erabiltzen lankidearengandik ikasi dut."
+              },
+              "answers": [
+                "He aprendido a usar el ordenador de un compañero.",
+                "He aprendido a usar el ordenador de mi compañero.",
+                "Aprendí a usar el ordenador de una compañera."
+              ],
               "distractors": [
-                "Niregandik",
-                "eta",
-                "duzu"
+                "trabajo",
+                "inglés",
+                "Hemos",
+                "Los"
               ],
               "vocabulary": [
                 "ordenagailu",
@@ -1569,7 +1991,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e11",
+              "id": "u11-2.l2.s2.e19",
               "type": "read_true_false",
               "passage": "Peio gidaria da. Lana aitarengandik ikasi du.",
               "statement": "Peio aprendió su trabajo de su madre.",
@@ -1587,14 +2009,19 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e12",
-              "type": "translate_typing",
+              "id": "u11-2.l2.s2.e20",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "Los niños han aprendido de nosotros."
               },
               "answers": [
                 "Umeek gugandik ikasi dute."
+              ],
+              "distractors": [
+                "irakaslearengandik",
+                "dut",
+                "lankidearengandik"
               ],
               "vocabulary": [
                 "ume",
@@ -1607,7 +2034,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s2.e13",
+              "id": "u11-2.l2.s2.e21",
               "type": "order_sentence",
               "answer": "Niregandik ikasi duzu?",
               "translation": "¿Has aprendido de mí?",
@@ -1723,18 +2150,31 @@
             },
             {
               "id": "u11-2.l2.s3.e06",
+              "type": "word_intro",
+              "word": "irakasten",
+              "translation": "enseñando (irakatsi)",
+              "vocabulary": [
+                "irakatsi"
+              ],
+              "structures": [
+                "ikasi-tzen"
+              ]
+            },
+            {
+              "id": "u11-2.l2.s3.e07",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Mi madre enseña euskera."
+                "lang": "eu",
+                "text": "Nire amak euskara irakasten du."
               },
               "answers": [
-                "Nire amak euskara irakasten du."
+                "Mi madre enseña euskera.",
+                "Mi madre da clases de euskera."
               ],
               "distractors": [
-                "Ingelesa",
-                "Umeek",
-                "gidatzen"
+                "Tú",
+                "han",
+                "Unai"
               ],
               "vocabulary": [
                 "ni",
@@ -1748,7 +2188,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s3.e07",
+              "id": "u11-2.l2.s3.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1775,7 +2215,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s3.e08",
+              "id": "u11-2.l2.s3.e09",
               "type": "listen_tap",
               "text": "Umeek irakurtzen ikasi dute.",
               "distractors": [
@@ -1794,7 +2234,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s3.e09",
+              "id": "u11-2.l2.s3.e10",
               "type": "read_true_false",
               "passage": "Nire izena Olatz da. Amak janaria prestatzen irakatsi dit.",
               "statement": "La madre de Olatz le ha enseñado a cocinar.",
@@ -1814,7 +2254,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s3.e10",
+              "id": "u11-2.l2.s3.e11",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1834,7 +2274,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s3.e11",
+              "id": "u11-2.l2.s3.e12",
               "type": "order_sentence",
               "answer": "Zuk irakatsi didazu janaria prestatzen.",
               "translation": "Tú me has enseñado a cocinar.",
@@ -1850,7 +2290,7 @@
               ]
             },
             {
-              "id": "u11-2.l2.s3.e12",
+              "id": "u11-2.l2.s3.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2478,6 +2918,19 @@
             },
             {
               "id": "u11-2.l3.s3.e03",
+              "type": "word_intro",
+              "word": "dakidala",
+              "translation": "que sé",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "ea-indirect"
+              ]
+            },
+            {
+              "id": "u11-2.l3.s3.e04",
               "type": "choose_meaning",
               "text": "Ez dakidala erantzun diot.",
               "options": [
@@ -2498,7 +2951,7 @@
               ]
             },
             {
-              "id": "u11-2.l3.s3.e04",
+              "id": "u11-2.l3.s3.e05",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2519,7 +2972,7 @@
               ]
             },
             {
-              "id": "u11-2.l3.s3.e05",
+              "id": "u11-2.l3.s3.e06",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2547,7 +3000,7 @@
               ]
             },
             {
-              "id": "u11-2.l3.s3.e06",
+              "id": "u11-2.l3.s3.e07",
               "type": "order_sentence",
               "answer": "Ez dakidala erantzun diot.",
               "translation": "Le he respondido que no sé.",
@@ -2563,7 +3016,20 @@
               ]
             },
             {
-              "id": "u11-2.l3.s3.e07",
+              "id": "u11-2.l3.s3.e08",
+              "type": "word_intro",
+              "word": "dakizun",
+              "translation": "(si) sabes",
+              "vocabulary": [
+                "jakin"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "ea-indirect"
+              ]
+            },
+            {
+              "id": "u11-2.l3.s3.e09",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2602,7 +3068,7 @@
               ]
             },
             {
-              "id": "u11-2.l3.s3.e08",
+              "id": "u11-2.l3.s3.e10",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2624,7 +3090,20 @@
               ]
             },
             {
-              "id": "u11-2.l3.s3.e09",
+              "id": "u11-2.l3.s3.e11",
+              "type": "word_intro",
+              "word": "dudan",
+              "translation": "que tengo / (si) tengo",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "nor-nori-nork",
+                "ea-indirect"
+              ]
+            },
+            {
+              "id": "u11-2.l3.s3.e12",
               "type": "read_true_false",
               "passage": "Nagusiak galdetu dit ea esperientzia dudan. Bai, esan diot.",
               "statement": "La persona que habla no tiene experiencia.",
@@ -2643,7 +3122,7 @@
               ]
             },
             {
-              "id": "u11-2.l3.s3.e10",
+              "id": "u11-2.l3.s3.e13",
               "type": "listen_type",
               "text": "Bai! Nagusiak gaur bidali dit.",
               "answers": [
@@ -2662,7 +3141,7 @@
               ]
             },
             {
-              "id": "u11-2.l3.s3.e11",
+              "id": "u11-2.l3.s3.e14",
               "type": "read_true_false",
               "passage": "Enpresak kontratua bidali dit. Bihar lan berria daukat!",
               "statement": "La persona ha recibido el contrato.",

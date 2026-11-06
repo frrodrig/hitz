@@ -131,18 +131,33 @@
           "exercises": [
             {
               "id": "u04-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "ohe",
+              "translation": "cama",
+              "image": "home_bed.webp",
+              "vocabulary": [
+                "ohe"
+              ],
+              "structures": [
+                "furniture"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s1.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "En el dormitorio hay una cama."
+                "lang": "eu",
+                "text": "Logelan ohe bat dago."
               },
               "answers": [
-                "Logelan ohe bat dago."
+                "En el dormitorio hay una cama.",
+                "En la habitación hay una cama."
               ],
               "distractors": [
-                "Sofa",
-                "Armairua",
-                "da"
+                "Mi",
+                "mesa",
+                "amplio",
+                "Las"
               ],
               "vocabulary": [
                 "logela",
@@ -155,7 +170,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e02",
+              "id": "u04-2.l1.s1.e03",
               "type": "listen_tap",
               "text": "Mahaia sukaldean dago.",
               "distractors": [
@@ -172,7 +187,46 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e03",
+              "id": "u04-2.l1.s1.e04",
+              "type": "word_intro",
+              "word": "aulki",
+              "translation": "silla",
+              "image": "home_chair.webp",
+              "vocabulary": [
+                "aulki"
+              ],
+              "structures": [
+                "furniture"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "sofa",
+              "translation": "sofá",
+              "image": "home_sofa.webp",
+              "vocabulary": [
+                "sofa"
+              ],
+              "structures": [
+                "furniture"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s1.e06",
+              "type": "word_intro",
+              "word": "armairu",
+              "translation": "armario",
+              "image": "home_wardrobe.webp",
+              "vocabulary": [
+                "armairu"
+              ],
+              "structures": [
+                "furniture"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s1.e07",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -208,15 +262,10 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e04",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "En la sala de estar hay un sofá grande."
-              },
-              "answers": [
-                "Egongelan sofa handi bat dago."
-              ],
+              "id": "u04-2.l1.s1.e08",
+              "type": "order_sentence",
+              "answer": "Egongelan sofa handi bat dago.",
+              "translation": "En la sala de estar hay un sofá grande.",
               "vocabulary": [
                 "egongela",
                 "sofa",
@@ -229,7 +278,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e05",
+              "id": "u04-2.l1.s1.e09",
               "type": "fill_blank",
               "sentence": "Aulkiak mahaiaren ondoan ___.",
               "options": [
@@ -249,7 +298,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e06",
+              "id": "u04-2.l1.s1.e10",
               "type": "order_sentence",
               "answer": "Lau aulki ditugu.",
               "translation": "Tenemos cuatro sillas.",
@@ -263,7 +312,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e07",
+              "id": "u04-2.l1.s1.e11",
               "type": "choose_meaning",
               "text": "Ohea logelan dago.",
               "options": [
@@ -282,7 +331,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e08",
+              "id": "u04-2.l1.s1.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -302,7 +351,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e09",
+              "id": "u04-2.l1.s1.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -327,7 +376,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e10",
+              "id": "u04-2.l1.s1.e14",
               "type": "listen_type",
               "text": "Aulkiak mahaiaren ondoan daude.",
               "answers": [
@@ -344,7 +393,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e11",
+              "id": "u04-2.l1.s1.e15",
               "type": "read_true_false",
               "passage": "Nire logela txikia da. Ohe bat eta armairu bat dauzka.",
               "statement": "En el dormitorio hay una mesa.",
@@ -365,10 +414,33 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e12",
-              "type": "speak",
-              "text": "Sofa hau oso polita da, baina garestia.",
-              "translation": "Este sofá es muy bonito, pero caro.",
+              "id": "u04-2.l1.s1.e16",
+              "type": "word_intro",
+              "word": "garesti",
+              "translation": "caro",
+              "vocabulary": [
+                "garesti"
+              ],
+              "structures": [
+                "furniture"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s1.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Sofa hau oso polita da, baina garestia."
+              },
+              "answers": [
+                "Este sofá es muy bonito, pero caro."
+              ],
+              "distractors": [
+                "están",
+                "un",
+                "mesa",
+                "amplio"
+              ],
               "vocabulary": [
                 "sofa",
                 "hau",
@@ -383,7 +455,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e13",
+              "id": "u04-2.l1.s1.e18",
               "type": "choose_image",
               "prompt": "la cama",
               "options": [
@@ -409,7 +481,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e14",
+              "id": "u04-2.l1.s1.e19",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -438,7 +510,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e15",
+              "id": "u04-2.l1.s1.e20",
               "type": "choose_image",
               "prompt": "el sofá",
               "options": [
@@ -464,7 +536,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e16",
+              "id": "u04-2.l1.s1.e21",
               "type": "choose_image",
               "prompt": "el armario",
               "options": [
@@ -490,7 +562,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s1.e17",
+              "id": "u04-2.l1.s1.e22",
               "type": "choose_image",
               "prompt": "la silla",
               "options": [
@@ -522,11 +594,34 @@
           "exercises": [
             {
               "id": "u04-2.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Hozkailua sukaldean dago.",
+              "type": "word_intro",
+              "word": "hozkailu",
+              "translation": "frigorífico",
+              "image": "home_fridge.webp",
+              "vocabulary": [
+                "hozkailu"
+              ],
+              "structures": [
+                "appliances",
+                "behar-verb"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hozkailua sukaldean dago."
+              },
+              "answers": [
+                "El frigorífico está en la cocina.",
+                "La nevera está en la cocina."
+              ],
               "distractors": [
-                "Bainugelak",
-                "berri"
+                "baño",
+                "de",
+                "nueva",
+                "un"
               ],
               "vocabulary": [
                 "hozkailu",
@@ -539,14 +634,35 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u04-2.l1.s2.e03",
+              "type": "word_intro",
+              "word": "garbigailu",
+              "translation": "lavadora",
+              "image": "home_washing_machine.webp",
+              "vocabulary": [
+                "garbigailu"
+              ],
+              "structures": [
+                "appliances",
+                "behar-verb"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s2.e04",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "La lavadora está en el cuarto de baño."
+                "lang": "eu",
+                "text": "Garbigailua bainugelan dago."
               },
               "answers": [
-                "Garbigailua bainugelan dago."
+                "La lavadora está en el cuarto de baño.",
+                "La lavadora está en el baño."
+              ],
+              "distractors": [
+                "Tengo",
+                "horno",
+                "y",
+                "tienes"
               ],
               "vocabulary": [
                 "garbigailu",
@@ -559,7 +675,48 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e03",
+              "id": "u04-2.l1.s2.e05",
+              "type": "word_intro",
+              "word": "labe",
+              "translation": "horno",
+              "image": "home_oven.webp",
+              "vocabulary": [
+                "labe"
+              ],
+              "structures": [
+                "appliances",
+                "behar-verb"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s2.e06",
+              "type": "word_intro",
+              "word": "dutxa",
+              "translation": "ducha",
+              "image": "home_shower.webp",
+              "vocabulary": [
+                "dutxa"
+              ],
+              "structures": [
+                "appliances",
+                "behar-verb"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s2.e07",
+              "type": "word_intro",
+              "word": "erosi",
+              "translation": "comprar",
+              "vocabulary": [
+                "erosi"
+              ],
+              "structures": [
+                "appliances",
+                "behar-verb"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s2.e08",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -596,7 +753,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e04",
+              "id": "u04-2.l1.s2.e09",
               "type": "order_sentence",
               "answer": "Sukaldeak labe berri bat dauka.",
               "translation": "La cocina tiene un horno nuevo.",
@@ -613,7 +770,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e05",
+              "id": "u04-2.l1.s2.e10",
               "type": "fill_blank",
               "sentence": "Hozkailu bat ___ behar dut.",
               "options": [
@@ -635,7 +792,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e06",
+              "id": "u04-2.l1.s2.e11",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -657,7 +814,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e07",
+              "id": "u04-2.l1.s2.e12",
               "type": "choose_meaning",
               "text": "Labe bat erosi behar dugu.",
               "options": [
@@ -679,7 +836,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e08",
+              "id": "u04-2.l1.s2.e13",
               "type": "listen_type",
               "text": "Hozkailu bat erosi behar dut.",
               "answers": [
@@ -698,7 +855,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e09",
+              "id": "u04-2.l1.s2.e14",
               "type": "complete_chat",
               "messages": [
                 {
@@ -726,7 +883,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e10",
+              "id": "u04-2.l1.s2.e15",
               "type": "speak",
               "text": "Gaur garbigailu berri bat erosi behar dugu.",
               "translation": "Hoy tenemos que comprar una lavadora nueva.",
@@ -745,7 +902,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e11",
+              "id": "u04-2.l1.s2.e16",
               "type": "read_true_false",
               "passage": "Gure sukaldeak ez du hozkailurik. Bihar hozkailu bat erosi behar dugu.",
               "statement": "La cocina tiene frigorífico.",
@@ -767,7 +924,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e12",
+              "id": "u04-2.l1.s2.e17",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -798,7 +955,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e13",
+              "id": "u04-2.l1.s2.e18",
               "type": "choose_image",
               "prompt": "el frigorífico",
               "options": [
@@ -825,7 +982,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e14",
+              "id": "u04-2.l1.s2.e19",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -851,7 +1008,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e15",
+              "id": "u04-2.l1.s2.e20",
               "type": "choose_image",
               "prompt": "el horno",
               "options": [
@@ -878,7 +1035,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e16",
+              "id": "u04-2.l1.s2.e21",
               "type": "choose_image",
               "prompt": "la lavadora",
               "options": [
@@ -905,7 +1062,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s2.e17",
+              "id": "u04-2.l1.s2.e22",
               "type": "choose_image",
               "prompt": "la ducha",
               "options": [
@@ -938,13 +1095,44 @@
           "exercises": [
             {
               "id": "u04-2.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "alokatu",
+              "translation": "alquilar",
+              "vocabulary": [
+                "alokatu"
+              ],
+              "structures": [
+                "buying-renting",
+                "nahi-izan"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s3.e02",
+              "type": "word_intro",
+              "word": "nahi",
+              "translation": "querer (nahi dut: quiero)",
+              "vocabulary": [
+                "nahi izan"
+              ],
+              "structures": [
+                "buying-renting",
+                "nahi-izan"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s3.e03",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Quiero alquilar un piso."
+                "lang": "eu",
+                "text": "Pisu bat alokatu nahi dut."
               },
               "answers": [
-                "Pisu bat alokatu nahi dut."
+                "Quiero alquilar un piso."
+              ],
+              "distractors": [
+                "Quieres",
+                "Esa",
+                "mil"
               ],
               "vocabulary": [
                 "pisu",
@@ -959,7 +1147,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e02",
+              "id": "u04-2.l1.s3.e04",
               "type": "order_sentence",
               "answer": "Etxe bat erosi nahi dugu.",
               "translation": "Queremos comprar una casa.",
@@ -976,7 +1164,46 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e03",
+              "id": "u04-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "saldu",
+              "translation": "vender",
+              "vocabulary": [
+                "saldu"
+              ],
+              "structures": [
+                "buying-renting",
+                "nahi-izan"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s3.e06",
+              "type": "word_intro",
+              "word": "trukatu",
+              "translation": "intercambiar",
+              "vocabulary": [
+                "trukatu"
+              ],
+              "structures": [
+                "buying-renting",
+                "nahi-izan"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s3.e07",
+              "type": "word_intro",
+              "word": "merke",
+              "translation": "barato",
+              "vocabulary": [
+                "merke"
+              ],
+              "structures": [
+                "buying-renting",
+                "nahi-izan"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s3.e08",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1018,7 +1245,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e04",
+              "id": "u04-2.l1.s3.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1041,7 +1268,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e05",
+              "id": "u04-2.l1.s3.e10",
               "type": "fill_blank",
               "sentence": "Pisu bat alokatu ___ dut.",
               "options": [
@@ -1063,11 +1290,19 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e06",
-              "type": "listen_type",
-              "text": "Pisua trukatu nahi duzu?",
+              "id": "u04-2.l1.s3.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Quieres intercambiar el piso?"
+              },
               "answers": [
                 "Pisua trukatu nahi duzu?"
+              ],
+              "distractors": [
+                "bat",
+                "erosi",
+                "oso"
               ],
               "vocabulary": [
                 "pisu",
@@ -1081,7 +1316,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e07",
+              "id": "u04-2.l1.s3.e12",
               "type": "choose_meaning",
               "text": "Etxea saldu nahi dute.",
               "options": [
@@ -1102,10 +1337,15 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e08",
-              "type": "speak",
+              "id": "u04-2.l1.s3.e13",
+              "type": "listen_tap",
               "text": "Pisu hau merkea da, baina txikia.",
-              "translation": "Este piso es barato, pero pequeño.",
+              "distractors": [
+                "euro",
+                "Etxe",
+                "Zein",
+                "Nire"
+              ],
               "vocabulary": [
                 "pisu",
                 "hau",
@@ -1120,7 +1360,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e09",
+              "id": "u04-2.l1.s3.e14",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1148,7 +1388,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e10",
+              "id": "u04-2.l1.s3.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1175,7 +1415,7 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e11",
+              "id": "u04-2.l1.s3.e16",
               "type": "read_true_false",
               "passage": "Leirek pisu bat alokatu nahi du Donostian. Pisu merke bat behar du.",
               "statement": "Leire quiere comprar un piso.",
@@ -1195,18 +1435,32 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e12",
+              "id": "u04-2.l1.s3.e17",
+              "type": "word_intro",
+              "word": "prezio",
+              "translation": "precio",
+              "vocabulary": [
+                "prezio"
+              ],
+              "structures": [
+                "buying-renting",
+                "nahi-izan"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s3.e18",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Cuál es el precio?"
+                "lang": "eu",
+                "text": "Zein da prezioa?"
               },
               "answers": [
-                "Zein da prezioa?"
+                "¿Cuál es el precio?"
               ],
               "distractors": [
-                "etxea",
-                "Pisua"
+                "intercambiar",
+                "Quiero",
+                "padres"
               ],
               "vocabulary": [
                 "zein",
@@ -1219,13 +1473,34 @@
               ]
             },
             {
-              "id": "u04-2.l1.s3.e13",
-              "type": "listen_tap",
-              "text": "Prezioa berrehun mila euro da.",
+              "id": "u04-2.l1.s3.e19",
+              "type": "word_intro",
+              "word": "euro",
+              "translation": "euro",
+              "vocabulary": [
+                "euro"
+              ],
+              "structures": [
+                "buying-renting",
+                "nahi-izan"
+              ]
+            },
+            {
+              "id": "u04-2.l1.s3.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Prezioa berrehun mila euro da."
+              },
+              "answers": [
+                "El precio es de doscientos mil euros.",
+                "El precio es doscientos mil euros."
+              ],
               "distractors": [
-                "nahi",
-                "dut",
-                "trukatu"
+                "piso",
+                "comprar",
+                "una",
+                "Quiero"
               ],
               "vocabulary": [
                 "prezio",
@@ -1256,9 +1531,32 @@
           "exercises": [
             {
               "id": "u04-2.l2.s1.e01",
-              "type": "order_sentence",
-              "answer": "Zenbat balio du?",
-              "translation": "¿Cuánto cuesta?",
+              "type": "word_intro",
+              "word": "balio",
+              "translation": "valer (zenbat balio du?: ¿cuánto vale?)",
+              "vocabulary": [
+                "balio izan"
+              ],
+              "structures": [
+                "balio-izan",
+                "numbers-1000"
+              ]
+            },
+            {
+              "id": "u04-2.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zenbat balio du?"
+              },
+              "answers": [
+                "¿Cuánto cuesta?",
+                "¿Cuánto vale?"
+              ],
+              "distractors": [
+                "trescientos",
+                "silla"
+              ],
               "vocabulary": [
                 "zenbat",
                 "balio izan",
@@ -1270,7 +1568,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e02",
+              "id": "u04-2.l2.s1.e03",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1295,7 +1593,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e03",
+              "id": "u04-2.l2.s1.e04",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1332,11 +1630,33 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e04",
-              "type": "listen_type",
-              "text": "Zenbat balio du mahai horrek?",
+              "id": "u04-2.l2.s1.e05",
+              "type": "word_intro",
+              "word": "horrek",
+              "translation": "ese / esa (sujeto)",
+              "vocabulary": [
+                "hori"
+              ],
+              "structures": [
+                "balio-izan",
+                "numbers-1000"
+              ]
+            },
+            {
+              "id": "u04-2.l2.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zenbat balio du mahai horrek?"
+              },
               "answers": [
-                "Zenbat balio du mahai horrek?"
+                "¿Cuánto cuesta esa mesa?",
+                "¿Cuánto vale esa mesa?"
+              ],
+              "distractors": [
+                "sofá",
+                "El",
+                "doscientos"
               ],
               "vocabulary": [
                 "zenbat",
@@ -1351,7 +1671,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e05",
+              "id": "u04-2.l2.s1.e07",
               "type": "fill_blank",
               "sentence": "Zenbat ___ du sofa honek?",
               "options": [
@@ -1373,7 +1693,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e06",
+              "id": "u04-2.l2.s1.e08",
               "type": "speak",
               "text": "Aulki honek hogeita hamar euro balio du.",
               "translation": "Esta silla cuesta treinta euros.",
@@ -1392,7 +1712,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e07",
+              "id": "u04-2.l2.s1.e09",
               "type": "choose_meaning",
               "text": "Armairu honek berrehun euro balio du.",
               "options": [
@@ -1415,7 +1735,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e08",
+              "id": "u04-2.l2.s1.e10",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1445,7 +1765,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e09",
+              "id": "u04-2.l2.s1.e11",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1474,7 +1794,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e10",
+              "id": "u04-2.l2.s1.e12",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1506,7 +1826,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e11",
+              "id": "u04-2.l2.s1.e13",
               "type": "read_true_false",
               "passage": "Dutxa hau berria da. Mila eta berrehun euro balio du.",
               "statement": "La ducha cuesta más de mil euros.",
@@ -1529,7 +1849,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e12",
+              "id": "u04-2.l2.s1.e14",
               "type": "listen_tap",
               "text": "Ohe honek mila euro balio du!",
               "distractors": [
@@ -1552,14 +1872,20 @@
               ]
             },
             {
-              "id": "u04-2.l2.s1.e13",
-              "type": "translate_typing",
+              "id": "u04-2.l2.s1.e15",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "Esa casa cuesta trescientos mil euros."
               },
               "answers": [
                 "Etxe horrek hirurehun mila euro balio du."
+              ],
+              "distractors": [
+                "berrehun",
+                "Sofa",
+                "mahai",
+                "hamar"
               ],
               "vocabulary": [
                 "etxe",
@@ -1919,6 +2245,32 @@
             },
             {
               "id": "u04-2.l2.s3.e03",
+              "type": "word_intro",
+              "word": "gehiago",
+              "translation": "más",
+              "vocabulary": [
+                "gehiago"
+              ],
+              "structures": [
+                "ago-comparison",
+                "gehiago-gutxiago"
+              ]
+            },
+            {
+              "id": "u04-2.l2.s3.e04",
+              "type": "word_intro",
+              "word": "gutxiago",
+              "translation": "menos",
+              "vocabulary": [
+                "gutxiago"
+              ],
+              "structures": [
+                "ago-comparison",
+                "gehiago-gutxiago"
+              ]
+            },
+            {
+              "id": "u04-2.l2.s3.e05",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1960,7 +2312,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s3.e04",
+              "id": "u04-2.l2.s3.e06",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1985,7 +2337,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s3.e05",
+              "id": "u04-2.l2.s3.e07",
               "type": "fill_blank",
               "sentence": "Etxe honek logela ___ ditu.",
               "options": [
@@ -2007,7 +2359,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s3.e06",
+              "id": "u04-2.l2.s3.e08",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -2032,7 +2384,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s3.e07",
+              "id": "u04-2.l2.s3.e09",
               "type": "choose_meaning",
               "text": "Pisu hau txikiagoa da.",
               "options": [
@@ -2053,7 +2405,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s3.e08",
+              "id": "u04-2.l2.s3.e10",
               "type": "listen_tap",
               "text": "Etxe honek logela gehiago ditu.",
               "distractors": [
@@ -2074,7 +2426,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s3.e09",
+              "id": "u04-2.l2.s3.e11",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2101,14 +2453,19 @@
               ]
             },
             {
-              "id": "u04-2.l2.s3.e10",
-              "type": "translate_typing",
+              "id": "u04-2.l2.s3.e12",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "Ese piso tiene menos ventanas."
               },
               "answers": [
                 "Pisu horrek leiho gutxiago ditu."
+              ],
+              "distractors": [
+                "da",
+                "Zein",
+                "Gasteizko"
               ],
               "vocabulary": [
                 "pisu",
@@ -2123,7 +2480,20 @@
               ]
             },
             {
-              "id": "u04-2.l2.s3.e11",
+              "id": "u04-2.l2.s3.e13",
+              "type": "word_intro",
+              "word": "badu",
+              "translation": "¿tiene? / sí tiene",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "ago-comparison",
+                "gehiago-gutxiago"
+              ]
+            },
+            {
+              "id": "u04-2.l2.s3.e14",
               "type": "read_true_false",
               "passage": "Aneren pisuak hiru logela ditu. Jonen pisuak bi logela ditu, baina terraza ere badu.",
               "statement": "El piso de Jon tiene menos dormitorios.",
@@ -2144,7 +2514,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s3.e12",
+              "id": "u04-2.l2.s3.e15",
               "type": "order_sentence",
               "answer": "Sofa honek gutxiago balio du.",
               "translation": "Este sofá cuesta menos.",
@@ -2161,7 +2531,7 @@
               ]
             },
             {
-              "id": "u04-2.l2.s3.e13",
+              "id": "u04-2.l2.s3.e16",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2413,6 +2783,19 @@
             },
             {
               "id": "u04-2.l3.s1.e09",
+              "type": "word_intro",
+              "word": "laurogei",
+              "translation": "ochenta",
+              "vocabulary": [
+                "laurogei"
+              ],
+              "structures": [
+                "nahi-izan",
+                "balio-izan"
+              ]
+            },
+            {
+              "id": "u04-2.l3.s1.e10",
               "type": "read_true_false",
               "passage": "Pisu hau Getxon dago. Hiru logela eta bi bainugela ditu. Ehun eta laurogei mila euro balio du.",
               "statement": "El piso cuesta ciento ochenta mil euros.",
@@ -2439,7 +2822,7 @@
               ]
             },
             {
-              "id": "u04-2.l3.s1.e10",
+              "id": "u04-2.l3.s1.e11",
               "type": "order_sentence",
               "answer": "Zazpiehun euro balio du.",
               "translation": "Cuesta setecientos euros.",
@@ -2455,7 +2838,7 @@
               ]
             },
             {
-              "id": "u04-2.l3.s1.e11",
+              "id": "u04-2.l3.s1.e12",
               "type": "read_true_false",
               "passage": "Nereak pisu bat alokatu nahi du, baina ez du erosi nahi.",
               "statement": "Nerea quiere comprar un piso.",
@@ -2476,7 +2859,7 @@
               ]
             },
             {
-              "id": "u04-2.l3.s1.e12",
+              "id": "u04-2.l3.s1.e13",
               "type": "choose_image",
               "prompt": "la mesa",
               "options": [

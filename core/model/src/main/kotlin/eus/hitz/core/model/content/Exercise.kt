@@ -176,6 +176,22 @@ sealed interface Exercise {
         override val structures: List<String> = emptyList(),
     ) : Exercise
 
+    /**
+     * A new word, shown before its first use: the word with its audio, its Spanish translation and
+     * an [image] when there is one. There is nothing to answer; the learner continues.
+     */
+    @Serializable
+    @SerialName("word_intro")
+    data class WordIntro(
+        override val id: String,
+        val word: String,
+        val translation: String,
+        /** File name in `assets/images/`. */
+        val image: String? = null,
+        override val vocabulary: List<String> = emptyList(),
+        override val structures: List<String> = emptyList(),
+    ) : Exercise
+
     /** Say a sentence aloud (optional; the learner can turn speaking exercises off). */
     @Serializable
     @SerialName("speak")

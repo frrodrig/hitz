@@ -76,6 +76,33 @@ class LessonViewModelTest {
     }
 
     @Test
+    fun `a new word card plays the word and continues without counting as an exercise`() {
+        val vm = viewModel(TestLesson.wordIntro, TestLesson.wordBank)
+        val card = vm.active.exercise as ExerciseUi.WordIntro
+        assertThat(card.word).isEqualTo("kaixo")
+        assertThat(card.translation).isEqualTo("hola")
+        assertThat(card.imageUri).isEqualTo("file:///android_asset/images/greeting.webp")
+        assertThat(vm.active.canCheck).isFalse()
+        assertThat(audio.played).containsExactly(TestLesson.wordIntro.id)
+
+        vm.onAction(LessonAction.Continue)
+
+        assertThat(vm.active.exercise.id).isEqualTo(TestLesson.wordBank.id)
+        assertThat(vm.active.progress).isEqualTo(0f)
+        vm.tap("¡Hola! Soy Ane.")
+        vm.onAction(LessonAction.Check)
+        vm.onAction(LessonAction.Continue)
+        val finished = vm.state.value as LessonUiState.Finished
+        assertThat(finished.result.exerciseCount).isEqualTo(1)
+    }
+
+    @Test
+    fun `lessons have word hints`() {
+        val vm = viewModel(TestLesson.wordBank)
+        assertThat(vm.active.glossary).isEqualTo(TestLesson.glossary)
+    }
+
+    @Test
     fun `listening exercises play their clip when shown and on demand`() {
         val vm = viewModel(TestLesson.listenTap)
         assertThat(audio.played).containsExactly(TestLesson.listenTap.id)

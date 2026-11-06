@@ -20,6 +20,7 @@ content/source/
 core/data/src/main/assets/
   courses/eu-es/course.json          Generated from content/source by tools/build_content.py
   courses/eu-es/units/<unit>.json    Generated: one file per unit, guidebook and levels
+  courses/eu-es/glossary.json        Generated: Spanish hints for every Basque word of the course
   images/<name>.webp                 Images for "choose the image"
   audio/<clip-id>.ogg                Pre-recorded audio (see "Audio")
 content/
@@ -27,6 +28,7 @@ content/
   schema/unit.schema.json            JSON Schema for unit files
   syllabus/vocabulary.csv            Syllabus lemmas, by app unit (see docs/syllabus.md)
   syllabus/forms/<unit>.csv          Inflected forms and grammar words each unit teaches
+  syllabus/glosses.csv               Learner-facing Spanish of each form (naiz = soy / estoy)
   syllabus/proper-nouns.csv          Names of people and places allowed anywhere
   images/catalog.csv                 Picture keys, Basque labels and Spanish prompts (see "Images")
   audio/pending.csv                  Generated list of clips still to be recorded
@@ -82,6 +84,7 @@ tags such as `izan-present`). Both feed spaced repetition, so declare them caref
 | `read_true_false` | `passage` (eu), `statement` (es), `answer` | passage |
 | `order_sentence` | `answer` (eu), `translation` | answer |
 | `speak` | `text` (eu), `translation` | text |
+| `word_intro` | `word` (eu), `translation`, `image?` | word |
 
 Options of `fill_blank`, `choose_meaning` and `complete_chat` are shuffled in the app, so their
 order in the JSON does not matter. `speak` exercises can be turned off by the learner, so a lesson
@@ -91,6 +94,31 @@ Accepted answers are lists: the **first** one is canonical (it is shown as the c
 used to build word-bank tiles). Add every natural variant, e.g. with and without the subject
 pronoun (`¡Hola! Soy Ane.` / `¡Hola! Yo soy Ane.`). Case, accents and punctuation are normalized
 when checking answers, so do not add variants that only differ in those.
+
+## New words and hints
+
+A learner starting from zero must never be asked to use a word they have not met. The builder
+walks the whole course in path order and keeps track of every *learning item*: a syllabus lemma
+(inflections such as `ogia` or `etxean` count as their lemma), a multi-word lemma (`egun on`), or a
+form of the forms tables, which is learnt as such (`naiz` = "soy / estoy", not `izan`). Then:
+
+- **New word cards.** Before the first exercise that uses an item, the lesson gets a
+  `word_intro` card: the word, its Spanish (`vocabulary.csv`, or `glosses.csv` for forms), its
+  picture when the image catalog has one, and its audio. Cards have nothing to answer, do not count
+  for progress or accuracy and never appear in reviews. A lesson shows at most `MAX_NEW_WORDS` (8)
+  cards; the rest wait for the next lesson that uses them.
+- **Recognise, then produce.** The type of each sentence exercise follows the rotation, limited by
+  how many times the learner has practised the sentence's least familiar item: never before →
+  only recognition (Basque prompt, Spanish tiles); once → tiles in either direction, listen and
+  tap, ordering or typing Spanish; twice or more → any type, including typing Basque, listening
+  and typing, and speaking (`STAGES` in `build_content.py`).
+- **Hints.** `glossary.json` maps every word and multi-word lemma of the course to its Spanish
+  (and its lemma when inflected). In the app, Basque prompts, chat messages and story lines
+  underline the words with a hint; tapping one shows its meaning. Legendary levels have no hints.
+
+So adding a sentence can change the exercise types (and ids) of later lessons: that is expected,
+and `tools/build_content.py --check` keeps the JSON current. Every form added to
+`syllabus/forms/` needs its Spanish in `syllabus/glosses.csv`.
 
 ## Vocabulary check
 

@@ -147,18 +147,31 @@
           "exercises": [
             {
               "id": "u02-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "ondoan",
+              "translation": "al lado",
+              "vocabulary": [
+                "ondoan"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "La farmacia está al lado del banco."
+                "lang": "eu",
+                "text": "Farmazia bankuaren ondoan dago."
               },
               "answers": [
-                "Farmazia bankuaren ondoan dago."
+                "La farmacia está al lado del banco."
               ],
               "distractors": [
-                "atzean",
-                "eskolaren",
-                "Ane"
+                "Jon",
+                "encima",
+                "debajo",
+                "hotel"
               ],
               "vocabulary": [
                 "farmazia",
@@ -171,13 +184,32 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Taberna hotelaren azpian dago.",
+              "id": "u02-2.l1.s1.e03",
+              "type": "word_intro",
+              "word": "azpian",
+              "translation": "debajo",
+              "vocabulary": [
+                "azpian"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Taberna hotelaren azpian dago."
+              },
+              "answers": [
+                "El bar está debajo del hotel."
+              ],
               "distractors": [
-                "gainean",
+                "entre",
+                "Ahora",
                 "Ane",
-                "asko"
+                "farmacia"
               ],
               "vocabulary": [
                 "taberna",
@@ -190,7 +222,55 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e03",
+              "id": "u02-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "aurrean",
+              "translation": "delante",
+              "vocabulary": [
+                "aurrean"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e06",
+              "type": "word_intro",
+              "word": "atzean",
+              "translation": "detrás",
+              "vocabulary": [
+                "atzean"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e07",
+              "type": "word_intro",
+              "word": "gainean",
+              "translation": "encima",
+              "vocabulary": [
+                "gainean"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e08",
+              "type": "word_intro",
+              "word": "artean",
+              "translation": "entre",
+              "vocabulary": [
+                "artean"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -231,15 +311,10 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e04",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "La iglesia está encima del monte."
-              },
-              "answers": [
-                "Eliza mendiaren gainean dago."
-              ],
+              "id": "u02-2.l1.s1.e10",
+              "type": "order_sentence",
+              "answer": "Eliza mendiaren gainean dago.",
+              "translation": "La iglesia está encima del monte.",
               "vocabulary": [
                 "eliza",
                 "mendi",
@@ -251,7 +326,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e05",
+              "id": "u02-2.l1.s1.e11",
               "type": "fill_blank",
               "sentence": "Farmazia bankuaren ___ dago.",
               "options": [
@@ -272,7 +347,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e06",
+              "id": "u02-2.l1.s1.e12",
               "type": "order_sentence",
               "answer": "Parkea eskolaren atzean dago.",
               "translation": "El parque está detrás de la escuela.",
@@ -287,7 +362,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e07",
+              "id": "u02-2.l1.s1.e13",
               "type": "choose_meaning",
               "text": "Parkea eskolaren atzean dago.",
               "options": [
@@ -307,7 +382,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e08",
+              "id": "u02-2.l1.s1.e14",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -327,7 +402,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e09",
+              "id": "u02-2.l1.s1.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -354,11 +429,20 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e10",
-              "type": "listen_type",
-              "text": "Liburutegia plazaren eta parkearen artean dago.",
+              "id": "u02-2.l1.s1.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La biblioteca está entre la plaza y el parque."
+              },
               "answers": [
                 "Liburutegia plazaren eta parkearen artean dago."
+              ],
+              "distractors": [
+                "daude",
+                "Eliza",
+                "Hotelaren",
+                "Farmazia"
               ],
               "vocabulary": [
                 "liburutegi",
@@ -373,7 +457,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e11",
+              "id": "u02-2.l1.s1.e17",
               "type": "read_true_false",
               "passage": "Hotela plazan dago. Taberna hotelaren azpian dago, eta jatetxea ere bai.",
               "statement": "El bar está encima del hotel.",
@@ -394,10 +478,33 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e12",
-              "type": "speak",
-              "text": "Orain Ane Jonen ondoan dago.",
-              "translation": "Ahora Ane está al lado de Jon.",
+              "id": "u02-2.l1.s1.e18",
+              "type": "word_intro",
+              "word": "orain",
+              "translation": "ahora",
+              "vocabulary": [
+                "orain"
+              ],
+              "structures": [
+                "postpositions-noren"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s1.e19",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Orain Ane Jonen ondoan dago."
+              },
+              "answers": [
+                "Ahora Ane está al lado de Jon."
+              ],
+              "distractors": [
+                "El",
+                "y",
+                "parque",
+                "muchos"
+              ],
               "vocabulary": [
                 "orain",
                 "ondoan",
@@ -408,7 +515,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s1.e13",
+              "id": "u02-2.l1.s1.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -442,11 +549,42 @@
           "exercises": [
             {
               "id": "u02-2.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Segi zuzen.",
+              "type": "word_intro",
+              "word": "segi",
+              "translation": "sigue (segi zuzen: sigue recto)",
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e02",
+              "type": "word_intro",
+              "word": "zuzen",
+              "translation": "recto",
+              "vocabulary": [
+                "zuzen"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Segi zuzen."
+              },
+              "answers": [
+                "Sigue recto.",
+                "Siga recto.",
+                "Todo recto."
+              ],
               "distractors": [
-                "ezkerrean",
-                "Baiona"
+                "La",
+                "derecha"
               ],
               "vocabulary": [
                 "zuzen"
@@ -457,14 +595,35 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u02-2.l1.s2.e04",
+              "type": "word_intro",
+              "word": "eskuin",
+              "translation": "derecha",
+              "vocabulary": [
+                "eskuin"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e05",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Sigue recto y a la derecha."
+                "lang": "eu",
+                "text": "Segi zuzen eta eskuinera."
               },
               "answers": [
-                "Segi zuzen eta eskuinera."
+                "Sigue recto y a la derecha.",
+                "Siga recto y a la derecha.",
+                "Todo recto y a la derecha."
+              ],
+              "distractors": [
+                "está",
+                "poco",
+                "sur",
+                "El"
               ],
               "vocabulary": [
                 "zuzen",
@@ -477,7 +636,59 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e03",
+              "id": "u02-2.l1.s2.e06",
+              "type": "word_intro",
+              "word": "ezker",
+              "translation": "izquierda",
+              "vocabulary": [
+                "ezker"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e07",
+              "type": "word_intro",
+              "word": "gertu",
+              "translation": "cerca",
+              "vocabulary": [
+                "gertu"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e08",
+              "type": "word_intro",
+              "word": "urrun",
+              "translation": "lejos",
+              "vocabulary": [
+                "urrun"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e09",
+              "type": "word_intro",
+              "word": "ipar",
+              "translation": "norte",
+              "vocabulary": [
+                "ipar"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e10",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -519,7 +730,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e04",
+              "id": "u02-2.l1.s2.e11",
               "type": "order_sentence",
               "answer": "Farmazia ezkerrean dago.",
               "translation": "La farmacia está a la izquierda.",
@@ -534,7 +745,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e05",
+              "id": "u02-2.l1.s2.e12",
               "type": "fill_blank",
               "sentence": "Mendia ___ dago.",
               "options": [
@@ -555,7 +766,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e06",
+              "id": "u02-2.l1.s2.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -575,7 +786,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e07",
+              "id": "u02-2.l1.s2.e14",
               "type": "choose_meaning",
               "text": "Segi zuzen eta ezkerrera.",
               "options": [
@@ -595,11 +806,20 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e08",
-              "type": "listen_type",
-              "text": "Hondartza gertu dago, baina mendia urrun.",
+              "id": "u02-2.l1.s2.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La playa está cerca, pero el monte está lejos."
+              },
               "answers": [
                 "Hondartza gertu dago, baina mendia urrun."
+              ],
+              "distractors": [
+                "hegoaldean",
+                "Farmazia",
+                "Geltokia",
+                "Hotela"
               ],
               "vocabulary": [
                 "hondartza",
@@ -615,7 +835,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e09",
+              "id": "u02-2.l1.s2.e16",
               "type": "complete_chat",
               "messages": [
                 {
@@ -645,7 +865,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e10",
+              "id": "u02-2.l1.s2.e17",
               "type": "speak",
               "text": "Geltokia pixka bat urrun dago.",
               "translation": "La estación está un poco lejos.",
@@ -661,7 +881,20 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e11",
+              "id": "u02-2.l1.s2.e18",
+              "type": "word_intro",
+              "word": "ekialde",
+              "translation": "este (punto cardinal)",
+              "vocabulary": [
+                "ekialde"
+              ],
+              "structures": [
+                "directions",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s2.e19",
               "type": "read_true_false",
               "passage": "Zuberoa ekialdean dago, eta Bizkaia mendebaldean.",
               "statement": "Bizkaia está en el oeste.",
@@ -678,7 +911,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e12",
+              "id": "u02-2.l1.s2.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -704,18 +937,20 @@
               ]
             },
             {
-              "id": "u02-2.l1.s2.e13",
+              "id": "u02-2.l1.s2.e21",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Tudela está en el sur."
+                "lang": "eu",
+                "text": "Tutera hegoaldean dago."
               },
               "answers": [
-                "Tutera hegoaldean dago."
+                "Tudela está en el sur.",
+                "Tudela está al sur."
               ],
               "distractors": [
-                "eskuinera",
-                "bat"
+                "estación",
+                "cerca",
+                "poco"
               ],
               "vocabulary": [
                 "hego",
@@ -733,13 +968,31 @@
           "exercises": [
             {
               "id": "u02-2.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "polit",
+              "translation": "bonito",
+              "vocabulary": [
+                "polit"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e02",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Tolosa es un pueblo bonito."
+                "lang": "eu",
+                "text": "Tolosa herri polita da."
               },
               "answers": [
-                "Tolosa herri polita da."
+                "Tolosa es un pueblo bonito."
+              ],
+              "distractors": [
+                "monte",
+                "Esta",
+                "viento"
               ],
               "vocabulary": [
                 "herri",
@@ -752,10 +1005,33 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e02",
-              "type": "order_sentence",
-              "answer": "Bilbo hiri handia da.",
-              "translation": "Bilbao es una ciudad grande.",
+              "id": "u02-2.l1.s3.e03",
+              "type": "word_intro",
+              "word": "handi",
+              "translation": "grande",
+              "vocabulary": [
+                "handi"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bilbo hiri handia da."
+              },
+              "answers": [
+                "Bilbao es una ciudad grande."
+              ],
+              "distractors": [
+                "Tolosa",
+                "Hace",
+                "Llueve"
+              ],
               "vocabulary": [
                 "hiri",
                 "handi",
@@ -767,7 +1043,62 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e03",
+              "id": "u02-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "txiki",
+              "translation": "pequeño",
+              "vocabulary": [
+                "txiki"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e06",
+              "type": "word_intro",
+              "word": "euri",
+              "translation": "lluvia",
+              "image": "weather_rain.webp",
+              "vocabulary": [
+                "euri"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e07",
+              "type": "word_intro",
+              "word": "elur",
+              "translation": "nieve",
+              "image": "weather_snow.webp",
+              "vocabulary": [
+                "elur"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e08",
+              "type": "word_intro",
+              "word": "eguzki",
+              "translation": "sol",
+              "image": "weather_sun.webp",
+              "vocabulary": [
+                "eguzki"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -809,7 +1140,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e04",
+              "id": "u02-2.l1.s3.e10",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -830,7 +1161,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e05",
+              "id": "u02-2.l1.s3.e11",
               "type": "fill_blank",
               "sentence": "Bilbo hiri ___ da.",
               "options": [
@@ -851,11 +1182,29 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e06",
-              "type": "listen_type",
-              "text": "Euria ari du.",
+              "id": "u02-2.l1.s3.e12",
+              "type": "word_intro",
+              "word": "du",
+              "translation": "tiene · auxiliar (él / ella)",
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Euria ari du."
+              },
               "answers": [
-                "Euria ari du."
+                "Llueve.",
+                "Está lloviendo."
+              ],
+              "distractors": [
+                "pequeña",
+                "el"
               ],
               "vocabulary": [
                 "euri"
@@ -866,7 +1215,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e07",
+              "id": "u02-2.l1.s3.e14",
               "type": "choose_meaning",
               "text": "Euria ari du.",
               "options": [
@@ -884,10 +1233,13 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e08",
-              "type": "speak",
+              "id": "u02-2.l1.s3.e15",
+              "type": "listen_tap",
               "text": "Elurra ari du.",
-              "translation": "Nieva.",
+              "distractors": [
+                "dago",
+                "hiri"
+              ],
               "vocabulary": [
                 "elur"
               ],
@@ -897,7 +1249,20 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e09",
+              "id": "u02-2.l1.s3.e16",
+              "type": "word_intro",
+              "word": "eguraldi",
+              "translation": "tiempo (meteorológico)",
+              "vocabulary": [
+                "eguraldi"
+              ],
+              "structures": [
+                "noun-adjective",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l1.s3.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -922,7 +1287,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e10",
+              "id": "u02-2.l1.s3.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -947,7 +1312,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e11",
+              "id": "u02-2.l1.s3.e19",
               "type": "read_true_false",
               "passage": "Gaur Gasteizen hotz egiten du, eta elurra ari du. Bihar ere bai!",
               "statement": "En Vitoria hace calor.",
@@ -967,18 +1332,18 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e12",
+              "id": "u02-2.l1.s3.e20",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Hace viento."
+                "lang": "eu",
+                "text": "Haize egiten du."
               },
               "answers": [
-                "Haize egiten du."
+                "Hace viento."
               ],
               "distractors": [
-                "Plaza",
-                "Bilbo"
+                "siempre",
+                "Bilbao"
               ],
               "vocabulary": [
                 "haize"
@@ -989,7 +1354,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e13",
+              "id": "u02-2.l1.s3.e21",
               "type": "choose_image",
               "prompt": "el sol",
               "options": [
@@ -1016,13 +1381,21 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e14",
-              "type": "listen_tap",
-              "text": "Mendian beti hotz egiten du.",
+              "id": "u02-2.l1.s3.e22",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mendian beti hotz egiten du."
+              },
+              "answers": [
+                "En el monte siempre hace frío.",
+                "Siempre hace frío en el monte."
+              ],
               "distractors": [
-                "da",
-                "herri",
-                "eguzkia"
+                "bonito",
+                "plaza",
+                "es",
+                "Ahora"
               ],
               "vocabulary": [
                 "mendi",
@@ -1035,7 +1408,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e15",
+              "id": "u02-2.l1.s3.e23",
               "type": "choose_image",
               "prompt": "la lluvia",
               "options": [
@@ -1062,7 +1435,7 @@
               ]
             },
             {
-              "id": "u02-2.l1.s3.e16",
+              "id": "u02-2.l1.s3.e24",
               "type": "choose_image",
               "prompt": "la nieve",
               "options": [
@@ -1398,7 +1771,20 @@
           "exercises": [
             {
               "id": "u02-2.l2.s2.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "ordu",
+              "translation": "hora",
+              "image": "object_clock.webp",
+              "vocabulary": [
+                "ordu"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e02",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Barkatu, zer ordu da orain?"
@@ -1406,6 +1792,11 @@
               "answers": [
                 "Perdona, ¿qué hora es ahora?",
                 "Perdone, ¿qué hora es ahora?"
+              ],
+              "distractors": [
+                "cinco",
+                "las",
+                "una"
               ],
               "vocabulary": [
                 "barkatu",
@@ -1419,11 +1810,30 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e02",
-              "type": "listen_type",
-              "text": "Ordu bata da.",
+              "id": "u02-2.l2.s2.e03",
+              "type": "word_intro",
+              "word": "bata",
+              "translation": "la una (ordu bata)",
+              "vocabulary": [
+                "bat"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ordu bata da."
+              },
               "answers": [
-                "Ordu bata da."
+                "Es la una."
+              ],
+              "distractors": [
+                "lo",
+                "media"
               ],
               "vocabulary": [
                 "ordu",
@@ -1435,7 +1845,64 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e03",
+              "id": "u02-2.l2.s2.e05",
+              "type": "word_intro",
+              "word": "biak",
+              "translation": "las dos",
+              "vocabulary": [
+                "bi"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e06",
+              "type": "word_intro",
+              "word": "seiak",
+              "translation": "las seis",
+              "vocabulary": [
+                "sei"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e07",
+              "type": "word_intro",
+              "word": "zortziak",
+              "translation": "las ocho",
+              "vocabulary": [
+                "zortzi"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e08",
+              "type": "word_intro",
+              "word": "bederatziak",
+              "translation": "las nueve",
+              "vocabulary": [
+                "bederatzi"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e09",
+              "type": "word_intro",
+              "word": "erdiak",
+              "translation": "y media (eta erdiak)",
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e10",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1477,10 +1944,13 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e04",
-              "type": "speak",
+              "id": "u02-2.l2.s2.e11",
+              "type": "listen_tap",
               "text": "Ordu biak dira.",
-              "translation": "Son las dos.",
+              "distractors": [
+                "Barkatu",
+                "edo"
+              ],
               "vocabulary": [
                 "ordu",
                 "bi",
@@ -1491,7 +1961,19 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e05",
+              "id": "u02-2.l2.s2.e12",
+              "type": "word_intro",
+              "word": "hirurak",
+              "translation": "las tres",
+              "vocabulary": [
+                "hiru"
+              ],
+              "structures": [
+                "time"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s2.e13",
               "type": "fill_blank",
               "sentence": "Hirurak eta ___ dira.",
               "options": [
@@ -1511,7 +1993,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e06",
+              "id": "u02-2.l2.s2.e14",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1535,7 +2017,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e07",
+              "id": "u02-2.l2.s2.e15",
               "type": "choose_meaning",
               "text": "Bostak laurden gutxi dira.",
               "options": [
@@ -1554,19 +2036,19 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e08",
+              "id": "u02-2.l2.s2.e16",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Son las cuatro y cuarto."
+                "lang": "eu",
+                "text": "Laurak eta laurden dira."
               },
               "answers": [
-                "Laurak eta laurden dira."
+                "Son las cuatro y cuarto."
               ],
               "distractors": [
-                "Ordu",
-                "biak",
-                "Bostak"
+                "hora",
+                "una",
+                "media"
               ],
               "vocabulary": [
                 "lau",
@@ -1578,7 +2060,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e09",
+              "id": "u02-2.l2.s2.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1606,7 +2088,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e10",
+              "id": "u02-2.l2.s2.e18",
               "type": "listen_tap",
               "text": "Bostak laurden gutxi dira.",
               "distractors": [
@@ -1624,7 +2106,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e11",
+              "id": "u02-2.l2.s2.e19",
               "type": "read_true_false",
               "passage": "Zer ordu da? Zortziak eta erdiak dira.",
               "statement": "Son las ocho y media.",
@@ -1641,14 +2123,21 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e12",
-              "type": "translate_typing",
+              "id": "u02-2.l2.s2.e20",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "No lo sé. Son las siete o las ocho."
+                "lang": "eu",
+                "text": "Ez dakit. Zazpiak edo zortziak dira."
               },
               "answers": [
-                "Ez dakit. Zazpiak edo zortziak dira."
+                "No lo sé. Son las siete o las ocho.",
+                "No sé. Son las siete o las ocho."
+              ],
+              "distractors": [
+                "tres",
+                "y",
+                "la",
+                "Es"
               ],
               "vocabulary": [
                 "ez dakit",
@@ -1662,10 +2151,20 @@
               ]
             },
             {
-              "id": "u02-2.l2.s2.e13",
-              "type": "order_sentence",
-              "answer": "Hamarrak eta erdiak dira.",
-              "translation": "Son las diez y media.",
+              "id": "u02-2.l2.s2.e21",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hamarrak eta erdiak dira."
+              },
+              "answers": [
+                "Son las diez y media."
+              ],
+              "distractors": [
+                "tres",
+                "No",
+                "o"
+              ],
               "vocabulary": [
                 "hamar",
                 "eta",
@@ -1682,10 +2181,18 @@
           "exercises": [
             {
               "id": "u02-2.l2.s3.e01",
-              "type": "listen_type",
-              "text": "Zer eguraldi egiten du?",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué tiempo hace?"
+              },
               "answers": [
                 "Zer eguraldi egiten du?"
+              ],
+              "distractors": [
+                "euria",
+                "elurra",
+                "hondartzan"
               ],
               "vocabulary": [
                 "zer",
@@ -1698,9 +2205,10 @@
             },
             {
               "id": "u02-2.l2.s3.e02",
-              "type": "speak",
-              "text": "Bero egiten du.",
-              "translation": "Hace calor.",
+              "type": "word_intro",
+              "word": "bero",
+              "translation": "calor",
+              "image": "weather_hot.webp",
               "vocabulary": [
                 "bero"
               ],
@@ -1711,6 +2219,42 @@
             },
             {
               "id": "u02-2.l2.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bero egiten du."
+              },
+              "answers": [
+                "Hace calor."
+              ],
+              "distractors": [
+                "Bilbao",
+                "Hoy"
+              ],
+              "vocabulary": [
+                "bero"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e04",
+              "type": "word_intro",
+              "word": "hotz",
+              "translation": "frío",
+              "image": "weather_cold.webp",
+              "vocabulary": [
+                "hotz"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e05",
               "type": "fill_blank",
               "sentence": "Oso hotz egiten ___.",
               "options": [
@@ -1730,7 +2274,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e04",
+              "id": "u02-2.l2.s3.e06",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1753,7 +2297,33 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e05",
+              "id": "u02-2.l2.s3.e07",
+              "type": "word_intro",
+              "word": "noiz",
+              "translation": "cuándo",
+              "vocabulary": [
+                "noiz"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e08",
+              "type": "word_intro",
+              "word": "beti",
+              "translation": "siempre",
+              "vocabulary": [
+                "beti"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e09",
               "type": "fill_blank",
               "sentence": "___ egiten du hotz Gasteizen? Beti!",
               "options": [
@@ -1774,7 +2344,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e06",
+              "id": "u02-2.l2.s3.e10",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1798,7 +2368,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e07",
+              "id": "u02-2.l2.s3.e11",
               "type": "choose_meaning",
               "text": "Bero egiten du.",
               "options": [
@@ -1816,7 +2386,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e08",
+              "id": "u02-2.l2.s3.e12",
               "type": "listen_tap",
               "text": "Mendian elurra ari du.",
               "distractors": [
@@ -1834,7 +2404,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e09",
+              "id": "u02-2.l2.s3.e13",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1860,7 +2430,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e10",
+              "id": "u02-2.l2.s3.e14",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1881,7 +2451,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e11",
+              "id": "u02-2.l2.s3.e15",
               "type": "read_true_false",
               "passage": "Lekeition orain eguzkia dago, eta bero egiten du.",
               "statement": "En Lekeitio hace frío.",
@@ -1899,7 +2469,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e12",
+              "id": "u02-2.l2.s3.e16",
               "type": "order_sentence",
               "answer": "Noiz egiten du bero Gasteizen?",
               "translation": "¿Cuándo hace calor en Vitoria?",
@@ -1913,7 +2483,21 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e13",
+              "id": "u02-2.l2.s3.e17",
+              "type": "word_intro",
+              "word": "haize",
+              "translation": "viento",
+              "image": "weather_wind.webp",
+              "vocabulary": [
+                "haize"
+              ],
+              "structures": [
+                "weather",
+                "noun-adjective"
+              ]
+            },
+            {
+              "id": "u02-2.l2.s3.e18",
               "type": "choose_image",
               "prompt": "el viento",
               "options": [
@@ -1940,7 +2524,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e14",
+              "id": "u02-2.l2.s3.e19",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1964,7 +2548,7 @@
               ]
             },
             {
-              "id": "u02-2.l2.s3.e15",
+              "id": "u02-2.l2.s3.e20",
               "type": "choose_image",
               "prompt": "el frío",
               "options": [
@@ -2461,6 +3045,19 @@
             },
             {
               "id": "u02-2.l3.s2.e08",
+              "type": "word_intro",
+              "word": "hego",
+              "translation": "sur",
+              "vocabulary": [
+                "hego"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e09",
               "type": "order_sentence",
               "answer": "Gasteiz Euskal Herriko hegoaldean dago.",
               "translation": "Vitoria está en el sur de Euskal Herria.",
@@ -2475,7 +3072,20 @@
               ]
             },
             {
-              "id": "u02-2.l3.s2.e09",
+              "id": "u02-2.l3.s2.e10",
+              "type": "word_intro",
+              "word": "mendebalde",
+              "translation": "oeste",
+              "vocabulary": [
+                "mendebalde"
+              ],
+              "structures": [
+                "noun-adjective",
+                "compass"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s2.e11",
               "type": "read_true_false",
               "passage": "Bilbo hiri handia da, eta Euskal Herriko mendebaldean dago.",
               "statement": "Bilbao es una ciudad pequeña.",
@@ -2495,7 +3105,7 @@
               ]
             },
             {
-              "id": "u02-2.l3.s2.e10",
+              "id": "u02-2.l3.s2.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2517,7 +3127,7 @@
               ]
             },
             {
-              "id": "u02-2.l3.s2.e11",
+              "id": "u02-2.l3.s2.e13",
               "type": "read_true_false",
               "passage": "Ni Elizondon nago. Herri txikia da, baina oso polita. Hemen euskaraz hitz egiten dut.",
               "statement": "Elizondo es un pueblo pequeño, pero bonito.",
@@ -2630,6 +3240,19 @@
             },
             {
               "id": "u02-2.l3.s3.e05",
+              "type": "word_intro",
+              "word": "laurden",
+              "translation": "cuarto (eta laurden: y cuarto)",
+              "vocabulary": [
+                "lau"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e06",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2659,7 +3282,7 @@
               ]
             },
             {
-              "id": "u02-2.l3.s3.e06",
+              "id": "u02-2.l3.s3.e07",
               "type": "order_sentence",
               "answer": "Bilbon euria ari du, eta haize egiten du.",
               "translation": "En Bilbao llueve y hace viento.",
@@ -2674,7 +3297,7 @@
               ]
             },
             {
-              "id": "u02-2.l3.s3.e07",
+              "id": "u02-2.l3.s3.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2710,7 +3333,7 @@
               ]
             },
             {
-              "id": "u02-2.l3.s3.e08",
+              "id": "u02-2.l3.s3.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2735,7 +3358,20 @@
               ]
             },
             {
-              "id": "u02-2.l3.s3.e09",
+              "id": "u02-2.l3.s3.e10",
+              "type": "word_intro",
+              "word": "hamarrak",
+              "translation": "las diez",
+              "vocabulary": [
+                "hamar"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e11",
               "type": "read_true_false",
               "passage": "Bederatziak edo hamarrak dira. Euria ari du, eta hotz egiten du.",
               "statement": "Hace sol.",
@@ -2755,7 +3391,7 @@
               ]
             },
             {
-              "id": "u02-2.l3.s3.e10",
+              "id": "u02-2.l3.s3.e12",
               "type": "listen_type",
               "text": "Hemen beti haize egiten du.",
               "answers": [
@@ -2772,7 +3408,20 @@
               ]
             },
             {
-              "id": "u02-2.l3.s3.e11",
+              "id": "u02-2.l3.s3.e13",
+              "type": "word_intro",
+              "word": "laurak",
+              "translation": "las cuatro",
+              "vocabulary": [
+                "lau"
+              ],
+              "structures": [
+                "time",
+                "weather"
+              ]
+            },
+            {
+              "id": "u02-2.l3.s3.e14",
               "type": "read_true_false",
               "passage": "Laurak eta erdiak dira. Orain mendian elurra ari du.",
               "statement": "Nieva en el monte.",
@@ -2791,7 +3440,7 @@
               ]
             },
             {
-              "id": "u02-2.l3.s3.e12",
+              "id": "u02-2.l3.s3.e15",
               "type": "choose_image",
               "prompt": "el calor",
               "options": [
@@ -2818,7 +3467,7 @@
               ]
             },
             {
-              "id": "u02-2.l3.s3.e13",
+              "id": "u02-2.l3.s3.e16",
               "type": "choose_image",
               "prompt": "el viento",
               "options": [

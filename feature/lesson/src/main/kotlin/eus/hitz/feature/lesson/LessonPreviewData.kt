@@ -7,6 +7,8 @@ import eus.hitz.core.domain.lesson.LessonResult
 import eus.hitz.core.domain.lesson.MatchPairsState
 import eus.hitz.core.domain.lesson.PairSide
 import eus.hitz.core.domain.lesson.Tile
+import eus.hitz.core.model.content.Gloss
+import eus.hitz.core.model.content.Glossary
 import eus.hitz.core.model.content.Language
 import kotlin.random.Random
 
@@ -75,7 +77,13 @@ internal object LessonPreviewData {
 
     val speak = ExerciseUi.Speak("preview-speak", AudioClip("preview-speak", "Egun on, Ane!"), "¡Buenos días, Ane!")
 
-    val active = LessonUiState.Active(progress = 0.4f, hearts = 4, exercise = wordBank)
+    val wordIntro = ExerciseUi.WordIntro("preview-word", AudioClip("preview-word", "gabon"), "buenas noches", null)
+
+    val glossary = Glossary(
+        entries = mapOf("kaixo" to Gloss("hola"), "ni" to Gloss("yo"), "naiz" to Gloss("soy / estoy", "izan")),
+    )
+
+    val active = LessonUiState.Active(progress = 0.4f, hearts = 4, exercise = wordBank, glossary = glossary)
     val typingAlmost = active.copy(
         exercise = typing,
         feedback = FeedbackUi(FeedbackType.AlmostCorrect, "Eskerrik asko.")

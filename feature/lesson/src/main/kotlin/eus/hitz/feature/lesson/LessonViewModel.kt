@@ -19,6 +19,7 @@ import eus.hitz.core.domain.session.PlanSessionUseCase
 import eus.hitz.core.domain.session.RecordSessionUseCase
 import eus.hitz.core.domain.settings.SettingsRepository
 import eus.hitz.core.model.content.Exercise
+import eus.hitz.core.model.content.Glossary
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -56,6 +57,7 @@ class LessonViewModel @Inject constructor(
     private lateinit var session: LessonSession
     private var heartPolicy: HeartPolicy = HeartPolicy.Unlimited
     private var kind: ActivityKind = ActivityKind.Lesson
+    private var glossary: Glossary? = null
 
     /** Set by "I can't speak now": the remaining speaking exercises are skipped. */
     private var skipSpeaking = false
@@ -78,6 +80,7 @@ class LessonViewModel @Inject constructor(
                 exercises = playable.associateBy { it.id }
                 heartPolicy = plan.hearts
                 kind = plan.kind
+                glossary = plan.glossary
                 val startHearts = when (val policy = plan.hearts) {
                     HeartPolicy.Shared -> hearts.current()
                     is HeartPolicy.Limited -> policy.hearts
@@ -190,7 +193,8 @@ class LessonViewModel @Inject constructor(
         is Exercise.ChooseMeaning -> choice(ui, exercise.correct, exercise.options)
         is Exercise.CompleteChat -> choice(ui, exercise.correct, exercise.options)
         is Exercise.ReadTrueFalse -> trueFalse(ui, exercise.answer)
-        is Exercise.MatchPairs, is Exercise.Speak -> error("exercise ${exercise.id} is not answered with Check")
+        is Exercise.MatchPairs, is Exercise.Speak, is Exercise.WordIntro ->
+            error("exercise ${exercise.id} is not answered with Check")
     }
 
     /** Tiles leave no room for typos: an "almost" answer built from tiles is a wrong order. */
@@ -268,8 +272,14 @@ class LessonViewModel @Inject constructor(
 
     private fun next() {
         val active = _state.value as? LessonUiState.Active ?: return
-        if (active.feedback == null) return
-        showCurrent()
+        when {
+            active.feedback != null -> showCurrent()
+            // A new word card has nothing to answer: it leaves the queue without counting.
+            active.exercise is ExerciseUi.WordIntro -> {
+                session = session.skip()
+                showCurrent()
+            }
+        }
     }
 
     private fun showCurrent() {
@@ -284,6 +294,7 @@ class LessonViewModel @Inject constructor(
                 progress = session.progress,
                 hearts = session.hearts,
                 exercise = exercises.getValue(current.exerciseId).toUi(randomFor(current.exerciseId, current.isRetry)),
+                glossary = glossary,
             )
         }
         if (session.isOver) record(session.result())
@@ -376,4 +387,10 @@ internal fun Exercise.toUi(random: Random): ExerciseUi = when (this) {
     }
     is Exercise.ReadTrueFalse -> ExerciseUi.ReadTrueFalse(id, passage, statement)
     is Exercise.Speak -> ExerciseUi.Speak(id, AudioClip(id, text), translation)
+    is Exercise.WordIntro -> ExerciseUi.WordIntro(
+        id = id,
+        clip = AudioClip(id, word),
+        translation = translation,
+        imageUri = image?.let { "file:///android_asset/images/$it" },
+    )
 }

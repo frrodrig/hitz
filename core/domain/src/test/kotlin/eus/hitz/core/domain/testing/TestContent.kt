@@ -37,7 +37,19 @@ internal object TestContent {
         goals = listOf(text),
         guidebook = Guidebook(emptyList()),
         levels = listOfNotNull(
-            Level.Lessons("$id.l1", text, listOf(Lesson("$id.l1.s1", listOf(speak("$id.l1.s1.e01", listOf("kaixo")))))),
+            Level.Lessons(
+                "$id.l1",
+                text,
+                listOf(
+                    Lesson(
+                        "$id.l1.s1",
+                        listOf(
+                            Exercise.WordIntro("$id.l1.s1.e00", "kaixo", "hola"),
+                            speak("$id.l1.s1.e01", listOf("kaixo")),
+                        ),
+                    ),
+                ),
+            ),
             Level.Lessons(
                 "$id.l2",
                 text,

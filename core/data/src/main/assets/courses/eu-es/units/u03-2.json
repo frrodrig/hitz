@@ -123,17 +123,29 @@
           "exercises": [
             {
               "id": "u03-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "nolakoa",
+              "translation": "¿cómo es?",
+              "vocabulary": [
+                "nola"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s1.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Cómo es Mikel?"
+                "lang": "eu",
+                "text": "Nolakoa da Mikel?"
               },
               "answers": [
-                "Nolakoa da Mikel?"
+                "¿Cómo es Mikel?"
               ],
               "distractors": [
-                "eta",
-                "zaharra"
+                "madre",
+                "Tu"
               ],
               "vocabulary": [
                 "nola",
@@ -144,14 +156,33 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Mikel altua da, eta Jon ere bai.",
+              "id": "u03-2.l1.s1.e03",
+              "type": "word_intro",
+              "word": "altu",
+              "translation": "alto",
+              "image": "describe_tall.webp",
+              "vocabulary": [
+                "altu"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mikel altua da, eta Jon ere bai."
+              },
+              "answers": [
+                "Mikel es alto y Jon también."
+              ],
               "distractors": [
-                "Nolakoa",
-                "Itziar",
-                "lehengusuak",
-                "gazteak"
+                "pero",
+                "mayor",
+                "Mi",
+                "madre"
               ],
               "vocabulary": [
                 "altu",
@@ -165,7 +196,68 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e03",
+              "id": "u03-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "baxu",
+              "translation": "bajo",
+              "image": "describe_short.webp",
+              "vocabulary": [
+                "baxu"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s1.e06",
+              "type": "word_intro",
+              "word": "lodi",
+              "translation": "gordo; grueso",
+              "vocabulary": [
+                "lodi"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s1.e07",
+              "type": "word_intro",
+              "word": "argal",
+              "translation": "delgado",
+              "vocabulary": [
+                "argal"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s1.e08",
+              "type": "word_intro",
+              "word": "gazte",
+              "translation": "joven",
+              "vocabulary": [
+                "gazte"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s1.e09",
+              "type": "word_intro",
+              "word": "zahar",
+              "translation": "viejo; mayor",
+              "vocabulary": [
+                "zahar"
+              ],
+              "structures": [
+                "nolakoa"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s1.e10",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -206,15 +298,10 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e04",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "Ane es baja y delgada."
-              },
-              "answers": [
-                "Ane baxua eta argala da."
-              ],
+              "id": "u03-2.l1.s1.e11",
+              "type": "order_sentence",
+              "answer": "Ane baxua eta argala da.",
+              "translation": "Ane es baja y delgada.",
               "vocabulary": [
                 "baxu",
                 "eta",
@@ -226,7 +313,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e05",
+              "id": "u03-2.l1.s1.e12",
               "type": "fill_blank",
               "sentence": "Iker ez da baxua, ___ da.",
               "options": [
@@ -246,7 +333,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e06",
+              "id": "u03-2.l1.s1.e13",
               "type": "order_sentence",
               "answer": "Nire aitona zaharra da.",
               "translation": "Mi abuelo es mayor.",
@@ -261,7 +348,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e07",
+              "id": "u03-2.l1.s1.e14",
               "type": "choose_meaning",
               "text": "Nire amona baxua da.",
               "options": [
@@ -281,7 +368,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e08",
+              "id": "u03-2.l1.s1.e15",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -304,7 +391,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e09",
+              "id": "u03-2.l1.s1.e16",
               "type": "complete_chat",
               "messages": [
                 {
@@ -332,11 +419,19 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e10",
-              "type": "listen_type",
-              "text": "Jon ez da lodia.",
+              "id": "u03-2.l1.s1.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Jon no es gordo."
+              },
               "answers": [
                 "Jon ez da lodia."
+              ],
+              "distractors": [
+                "eta",
+                "gazteak",
+                "Ane"
               ],
               "vocabulary": [
                 "ez",
@@ -348,7 +443,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e11",
+              "id": "u03-2.l1.s1.e18",
               "type": "read_true_false",
               "passage": "Hau Unai da. Unai altua eta argala da.",
               "statement": "Unai es bajo.",
@@ -365,7 +460,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e12",
+              "id": "u03-2.l1.s1.e19",
               "type": "speak",
               "text": "Zure ama altua da?",
               "translation": "¿Tu madre es alta?",
@@ -380,7 +475,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e13",
+              "id": "u03-2.l1.s1.e20",
               "type": "choose_image",
               "prompt": "alto",
               "options": [
@@ -406,7 +501,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e14",
+              "id": "u03-2.l1.s1.e21",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -431,7 +526,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s1.e15",
+              "id": "u03-2.l1.s1.e22",
               "type": "choose_image",
               "prompt": "bajo",
               "options": [
@@ -463,12 +558,44 @@
           "exercises": [
             {
               "id": "u03-2.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Anek ile luzea du.",
+              "type": "word_intro",
+              "word": "ile",
+              "translation": "pelo",
+              "vocabulary": [
+                "ile"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s2.e02",
+              "type": "word_intro",
+              "word": "luze",
+              "translation": "largo",
+              "vocabulary": [
+                "luze"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Anek ile luzea du."
+              },
+              "answers": [
+                "Ane tiene el pelo largo."
+              ],
               "distractors": [
-                "Nik",
-                "Jonek",
-                "txikiak"
+                "pequeños",
+                "grandes",
+                "ojos"
               ],
               "vocabulary": [
                 "ile",
@@ -481,14 +608,32 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u03-2.l1.s2.e04",
+              "type": "word_intro",
+              "word": "motz",
+              "translation": "corto",
+              "vocabulary": [
+                "motz"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s2.e05",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Mikel tiene el pelo corto."
+                "lang": "eu",
+                "text": "Mikelek ile motza du."
               },
               "answers": [
-                "Mikelek ile motza du."
+                "Mikel tiene el pelo corto."
+              ],
+              "distractors": [
+                "los",
+                "madre",
+                "no"
               ],
               "vocabulary": [
                 "ile",
@@ -501,7 +646,21 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e03",
+              "id": "u03-2.l1.s2.e06",
+              "type": "word_intro",
+              "word": "begi",
+              "translation": "ojo",
+              "image": "body_eye.webp",
+              "vocabulary": [
+                "begi"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s2.e07",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -533,10 +692,47 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e04",
-              "type": "order_sentence",
-              "answer": "Nik begi handiak ditut.",
-              "translation": "Tengo los ojos grandes.",
+              "id": "u03-2.l1.s2.e08",
+              "type": "word_intro",
+              "word": "nik",
+              "translation": "yo (sujeto de verbo transitivo)",
+              "vocabulary": [
+                "ni"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s2.e09",
+              "type": "word_intro",
+              "word": "ditut",
+              "translation": "(yo) tengo (varias cosas)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s2.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nik begi handiak ditut."
+              },
+              "answers": [
+                "Tengo los ojos grandes.",
+                "Yo tengo los ojos grandes."
+              ],
+              "distractors": [
+                "ahora",
+                "no",
+                "largo"
+              ],
               "vocabulary": [
                 "ni",
                 "begi",
@@ -549,7 +745,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e05",
+              "id": "u03-2.l1.s2.e11",
               "type": "fill_blank",
               "sentence": "Anek ile luzea ___.",
               "options": [
@@ -569,8 +765,21 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e06",
-              "type": "translate_typing",
+              "id": "u03-2.l1.s2.e12",
+              "type": "word_intro",
+              "word": "zuk",
+              "translation": "tú (sujeto de verbo transitivo)",
+              "vocabulary": [
+                "zu"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s2.e13",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Zuk ile luzea duzu?"
@@ -579,6 +788,11 @@
                 "¿Tienes el pelo largo?",
                 "¿Tú tienes el pelo largo?",
                 "¿Tiene usted el pelo largo?"
+              ],
+              "distractors": [
+                "los",
+                "pequeños",
+                "corto"
               ],
               "vocabulary": [
                 "zu",
@@ -592,7 +806,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e07",
+              "id": "u03-2.l1.s2.e14",
               "type": "choose_meaning",
               "text": "Mikelek ile motza du.",
               "options": [
@@ -612,11 +826,33 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e08",
-              "type": "listen_type",
-              "text": "Nire amak begi txikiak ditu.",
+              "id": "u03-2.l1.s2.e15",
+              "type": "word_intro",
+              "word": "ditu",
+              "translation": "tiene (varias cosas)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s2.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nire amak begi txikiak ditu."
+              },
               "answers": [
-                "Nire amak begi txikiak ditu."
+                "Mi madre tiene los ojos pequeños."
+              ],
+              "distractors": [
+                "el",
+                "Ane",
+                "bonitos",
+                "Tengo"
               ],
               "vocabulary": [
                 "ni",
@@ -631,7 +867,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e09",
+              "id": "u03-2.l1.s2.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -660,10 +896,14 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e10",
-              "type": "speak",
+              "id": "u03-2.l1.s2.e18",
+              "type": "listen_tap",
               "text": "Jonek begi politak ditu.",
-              "translation": "Jon tiene los ojos bonitos.",
+              "distractors": [
+                "motza",
+                "amak",
+                "Mikelek"
+              ],
               "vocabulary": [
                 "begi",
                 "polit",
@@ -675,7 +915,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e11",
+              "id": "u03-2.l1.s2.e19",
               "type": "read_true_false",
               "passage": "Nire ahizpa Garazi da. Garazik ile luzea du. Begi handiak ditu.",
               "statement": "Garazi tiene el pelo corto.",
@@ -696,7 +936,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e12",
+              "id": "u03-2.l1.s2.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -723,7 +963,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e13",
+              "id": "u03-2.l1.s2.e21",
               "type": "choose_image",
               "prompt": "el pelo largo",
               "options": [
@@ -751,7 +991,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e14",
+              "id": "u03-2.l1.s2.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -777,7 +1017,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e15",
+              "id": "u03-2.l1.s2.e23",
               "type": "choose_image",
               "prompt": "el pelo corto",
               "options": [
@@ -805,7 +1045,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s2.e16",
+              "id": "u03-2.l1.s2.e24",
               "type": "choose_image",
               "prompt": "el ojo",
               "options": [
@@ -838,13 +1078,33 @@
           "exercises": [
             {
               "id": "u03-2.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "alai",
+              "translation": "alegre",
+              "image": "describe_happy.webp",
+              "vocabulary": [
+                "alai"
+              ],
+              "structures": [
+                "nolakoa",
+                "marital-status"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s3.e02",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Mi amiga es muy alegre."
+                "lang": "eu",
+                "text": "Nire laguna oso alaia da."
               },
               "answers": [
-                "Nire laguna oso alaia da."
+                "Mi amiga es muy alegre.",
+                "Mi amigo es muy alegre."
+              ],
+              "distractors": [
+                "soltero",
+                "casado",
+                "Estás"
               ],
               "vocabulary": [
                 "ni",
@@ -859,10 +1119,34 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e02",
-              "type": "order_sentence",
-              "answer": "Zure osaba jatorra da.",
-              "translation": "Tu tío es majo.",
+              "id": "u03-2.l1.s3.e03",
+              "type": "word_intro",
+              "word": "jator",
+              "translation": "majo; maja",
+              "vocabulary": [
+                "jator"
+              ],
+              "structures": [
+                "nolakoa",
+                "marital-status"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zure osaba jatorra da."
+              },
+              "answers": [
+                "Tu tío es majo.",
+                "Su tío es majo."
+              ],
+              "distractors": [
+                "abuela",
+                "soltero",
+                "joven"
+              ],
               "vocabulary": [
                 "zu",
                 "osaba",
@@ -875,7 +1159,46 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e03",
+              "id": "u03-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "atsegin",
+              "translation": "agradable",
+              "vocabulary": [
+                "atsegin"
+              ],
+              "structures": [
+                "nolakoa",
+                "marital-status"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s3.e06",
+              "type": "word_intro",
+              "word": "ezkongabe",
+              "translation": "soltero; soltera",
+              "vocabulary": [
+                "ezkongabe"
+              ],
+              "structures": [
+                "nolakoa",
+                "marital-status"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s3.e07",
+              "type": "word_intro",
+              "word": "ezkondu",
+              "translation": "casado; casarse",
+              "vocabulary": [
+                "ezkondu"
+              ],
+              "structures": [
+                "nolakoa",
+                "marital-status"
+              ]
+            },
+            {
+              "id": "u03-2.l1.s3.e08",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -912,7 +1235,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e04",
+              "id": "u03-2.l1.s3.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -933,7 +1256,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e05",
+              "id": "u03-2.l1.s3.e10",
               "type": "fill_blank",
               "sentence": "Jon ezkonduta ___.",
               "options": [
@@ -952,11 +1275,19 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e06",
-              "type": "listen_type",
-              "text": "Ni ezkongabea naiz.",
+              "id": "u03-2.l1.s3.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Soy soltero."
+              },
               "answers": [
-                "Ni ezkongabea naiz."
+                "Ni ezkongabea naiz.",
+                "Ezkongabea naiz."
+              ],
+              "distractors": [
+                "Zu",
+                "eta"
               ],
               "vocabulary": [
                 "ni",
@@ -969,7 +1300,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e07",
+              "id": "u03-2.l1.s3.e12",
               "type": "choose_meaning",
               "text": "Ane ezkongabea da.",
               "options": [
@@ -988,7 +1319,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e08",
+              "id": "u03-2.l1.s3.e13",
               "type": "speak",
               "text": "Mikel ezkonduta dago.",
               "translation": "Mikel está casado.",
@@ -1002,7 +1333,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e09",
+              "id": "u03-2.l1.s3.e14",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1031,7 +1362,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e10",
+              "id": "u03-2.l1.s3.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1060,7 +1391,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e11",
+              "id": "u03-2.l1.s3.e16",
               "type": "read_true_false",
               "passage": "Hau Kepa da. Kepa ez dago ezkonduta. Oso jatorra da.",
               "statement": "Kepa está casado.",
@@ -1080,7 +1411,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e12",
+              "id": "u03-2.l1.s3.e17",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1109,7 +1440,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e13",
+              "id": "u03-2.l1.s3.e18",
               "type": "choose_image",
               "prompt": "alegre",
               "options": [
@@ -1136,7 +1467,7 @@
               ]
             },
             {
-              "id": "u03-2.l1.s3.e14",
+              "id": "u03-2.l1.s3.e19",
               "type": "listen_tap",
               "text": "Nire amona beti oso atsegina da.",
               "distractors": [
@@ -1214,6 +1545,32 @@
             },
             {
               "id": "u03-2.l2.s1.e03",
+              "type": "word_intro",
+              "word": "guk",
+              "translation": "nosotros (sujeto de verbo transitivo)",
+              "vocabulary": [
+                "gu"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s1.e04",
+              "type": "word_intro",
+              "word": "dugu",
+              "translation": "tenemos · auxiliar (nosotros)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s1.e05",
               "type": "fill_blank",
               "sentence": "Guk alaba bat ___.",
               "options": [
@@ -1234,7 +1591,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s1.e04",
+              "id": "u03-2.l2.s1.e06",
               "type": "listen_type",
               "text": "Mikelek seme bat du.",
               "answers": [
@@ -1251,7 +1608,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s1.e05",
+              "id": "u03-2.l2.s1.e07",
               "type": "fill_blank",
               "sentence": "___ seme bat duzu?",
               "options": [
@@ -1272,10 +1629,14 @@
               ]
             },
             {
-              "id": "u03-2.l2.s1.e06",
-              "type": "speak",
+              "id": "u03-2.l2.s1.e08",
+              "type": "listen_tap",
               "text": "Guk alaba bat dugu.",
-              "translation": "Tenemos una hija.",
+              "distractors": [
+                "Zuek",
+                "Haiek",
+                "lehengusu"
+              ],
               "vocabulary": [
                 "gu",
                 "alaba",
@@ -1288,7 +1649,20 @@
               ]
             },
             {
-              "id": "u03-2.l2.s1.e07",
+              "id": "u03-2.l2.s1.e09",
+              "type": "word_intro",
+              "word": "dute",
+              "translation": "tienen · auxiliar (ellos)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s1.e10",
               "type": "choose_meaning",
               "text": "Haiek seme bat dute.",
               "options": [
@@ -1309,7 +1683,20 @@
               ]
             },
             {
-              "id": "u03-2.l2.s1.e08",
+              "id": "u03-2.l2.s1.e11",
+              "type": "word_intro",
+              "word": "duzue",
+              "translation": "tenéis · auxiliar (vosotros)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s1.e12",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1335,7 +1722,20 @@
               ]
             },
             {
-              "id": "u03-2.l2.s1.e09",
+              "id": "u03-2.l2.s1.e13",
+              "type": "word_intro",
+              "word": "baduzu",
+              "translation": "¿tienes? / si tienes",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s1.e14",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1361,7 +1761,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s1.e10",
+              "id": "u03-2.l2.s1.e15",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1388,7 +1788,33 @@
               ]
             },
             {
-              "id": "u03-2.l2.s1.e11",
+              "id": "u03-2.l2.s1.e16",
+              "type": "word_intro",
+              "word": "hamasei",
+              "translation": "dieciséis",
+              "vocabulary": [
+                "hamasei"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s1.e17",
+              "type": "word_intro",
+              "word": "urte",
+              "translation": "año",
+              "vocabulary": [
+                "urte"
+              ],
+              "structures": [
+                "ukan-present",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s1.e18",
               "type": "read_true_false",
               "passage": "Ni Leire naiz. Hamasei urte ditut. Nik ahizpa bat eta neba bat ditut.",
               "statement": "Leire no tiene hermanos.",
@@ -1410,7 +1836,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s1.e12",
+              "id": "u03-2.l2.s1.e19",
               "type": "listen_tap",
               "text": "Nik ez dut anaiarik.",
               "distractors": [
@@ -1430,7 +1856,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s1.e13",
+              "id": "u03-2.l2.s1.e20",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1628,6 +2054,32 @@
             },
             {
               "id": "u03-2.l2.s2.e09",
+              "type": "word_intro",
+              "word": "zenbat",
+              "translation": "cuánto",
+              "vocabulary": [
+                "zenbat"
+              ],
+              "structures": [
+                "nork",
+                "ukan-present"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s2.e10",
+              "type": "word_intro",
+              "word": "dituzu",
+              "translation": "(tú) tienes (varias cosas)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "nork",
+                "ukan-present"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s2.e11",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1653,7 +2105,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s2.e10",
+              "id": "u03-2.l2.s2.e12",
               "type": "listen_tap",
               "text": "Nik bi anaia ditut.",
               "distractors": [
@@ -1673,7 +2125,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s2.e11",
+              "id": "u03-2.l2.s2.e13",
               "type": "read_true_false",
               "passage": "Peiok bi anaia ditu. Bata Bilbon bizi da, eta bestea Madrilen.",
               "statement": "Un hermano de Peio vive en Madrid.",
@@ -1694,8 +2146,8 @@
               ]
             },
             {
-              "id": "u03-2.l2.s2.e12",
-              "type": "translate_typing",
+              "id": "u03-2.l2.s2.e14",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "¿Cuántos primos tienes?"
@@ -1703,6 +2155,11 @@
               "answers": [
                 "Zuk zenbat lehengusu dituzu?",
                 "Zenbat lehengusu dituzu?"
+              ],
+              "distractors": [
+                "ile",
+                "ez",
+                "anaia"
               ],
               "vocabulary": [
                 "zu",
@@ -1716,7 +2173,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s2.e13",
+              "id": "u03-2.l2.s2.e15",
               "type": "order_sentence",
               "answer": "Mirenek ez du senarrik.",
               "translation": "Miren no tiene marido.",
@@ -1737,10 +2194,17 @@
           "exercises": [
             {
               "id": "u03-2.l2.s3.e01",
-              "type": "listen_type",
-              "text": "Zenbat urte dituzu?",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Cuántos años tienes?"
+              },
               "answers": [
                 "Zenbat urte dituzu?"
+              ],
+              "distractors": [
+                "hirurogeita",
+                "hamabi"
               ],
               "vocabulary": [
                 "zenbat",
@@ -1754,9 +2218,32 @@
             },
             {
               "id": "u03-2.l2.s3.e02",
-              "type": "speak",
-              "text": "Hogeita bost urte ditut.",
-              "translation": "Tengo veinticinco años.",
+              "type": "word_intro",
+              "word": "hogeita",
+              "translation": "veinti… (hogeita bat: veintiuno)",
+              "vocabulary": [
+                "hogei"
+              ],
+              "structures": [
+                "numbers",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hogeita bost urte ditut."
+              },
+              "answers": [
+                "Tengo veinticinco años.",
+                "Tengo 25 años."
+              ],
+              "distractors": [
+                "noventa",
+                "Nuestra"
+              ],
               "vocabulary": [
                 "hogei",
                 "bost",
@@ -1769,7 +2256,72 @@
               ]
             },
             {
-              "id": "u03-2.l2.s3.e03",
+              "id": "u03-2.l2.s3.e04",
+              "type": "word_intro",
+              "word": "hamahiru",
+              "translation": "trece",
+              "vocabulary": [
+                "hamahiru"
+              ],
+              "structures": [
+                "numbers",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s3.e05",
+              "type": "word_intro",
+              "word": "hamalau",
+              "translation": "catorce",
+              "vocabulary": [
+                "hamalau"
+              ],
+              "structures": [
+                "numbers",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s3.e06",
+              "type": "word_intro",
+              "word": "hemeretzi",
+              "translation": "diecinueve",
+              "vocabulary": [
+                "hemeretzi"
+              ],
+              "structures": [
+                "numbers",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s3.e07",
+              "type": "word_intro",
+              "word": "berrogei",
+              "translation": "cuarenta",
+              "vocabulary": [
+                "berrogei"
+              ],
+              "structures": [
+                "numbers",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s3.e08",
+              "type": "word_intro",
+              "word": "hirurogei",
+              "translation": "sesenta",
+              "vocabulary": [
+                "hirurogei"
+              ],
+              "structures": [
+                "numbers",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s3.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1811,7 +2363,20 @@
               ]
             },
             {
-              "id": "u03-2.l2.s3.e04",
+              "id": "u03-2.l2.s3.e10",
+              "type": "word_intro",
+              "word": "berrogeita",
+              "translation": "cuarenta y… (berrogeita bat: cuarenta y uno)",
+              "vocabulary": [
+                "berrogei"
+              ],
+              "structures": [
+                "numbers",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s3.e11",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1840,7 +2405,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s3.e05",
+              "id": "u03-2.l2.s3.e12",
               "type": "fill_blank",
               "sentence": "Zenbat urte ___?",
               "options": [
@@ -1860,19 +2425,34 @@
               ]
             },
             {
-              "id": "u03-2.l2.s3.e06",
+              "id": "u03-2.l2.s3.e13",
+              "type": "word_intro",
+              "word": "laurogeita",
+              "translation": "ochenta y…",
+              "vocabulary": [
+                "laurogei"
+              ],
+              "structures": [
+                "numbers",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l2.s3.e14",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "El abuelo tiene noventa y dos años."
+                "lang": "eu",
+                "text": "Aitonak laurogeita hamabi urte ditu."
               },
               "answers": [
-                "Aitonak laurogeita hamabi urte ditu."
+                "El abuelo tiene noventa y dos años.",
+                "El abuelo tiene 92 años."
               ],
               "distractors": [
-                "dituzu",
-                "irakasleak",
-                "aitak"
+                "La",
+                "tienes",
+                "abuela",
+                "Nuestra"
               ],
               "vocabulary": [
                 "aitona",
@@ -1887,7 +2467,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s3.e07",
+              "id": "u03-2.l2.s3.e15",
               "type": "choose_meaning",
               "text": "Berrogeita bost urte ditu.",
               "options": [
@@ -1908,13 +2488,20 @@
               ]
             },
             {
-              "id": "u03-2.l2.s3.e08",
-              "type": "listen_tap",
-              "text": "Jonek hamazazpi urte ditu.",
+              "id": "u03-2.l2.s3.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Jonek hamazazpi urte ditu."
+              },
+              "answers": [
+                "Jon tiene diecisiete años.",
+                "Jon tiene 17 años."
+              ],
               "distractors": [
-                "berrogeita",
-                "Zure",
-                "hamabi"
+                "padre",
+                "madre",
+                "Cuántos"
               ],
               "vocabulary": [
                 "hamazazpi",
@@ -1927,7 +2514,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s3.e09",
+              "id": "u03-2.l2.s3.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1964,14 +2551,21 @@
               ]
             },
             {
-              "id": "u03-2.l2.s3.e10",
-              "type": "translate_typing",
+              "id": "u03-2.l2.s3.e18",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Tu padre tiene setenta años?"
+                "lang": "eu",
+                "text": "Zure aitak hirurogeita hamar urte ditu?"
               },
               "answers": [
-                "Zure aitak hirurogeita hamar urte ditu?"
+                "¿Tu padre tiene setenta años?",
+                "¿Su padre tiene setenta años?",
+                "¿Tu padre tiene 70 años?"
+              ],
+              "distractors": [
+                "diecisiete",
+                "Cuántos",
+                "madre"
               ],
               "vocabulary": [
                 "zu",
@@ -1987,7 +2581,7 @@
               ]
             },
             {
-              "id": "u03-2.l2.s3.e11",
+              "id": "u03-2.l2.s3.e19",
               "type": "read_true_false",
               "passage": "Ni Markel naiz. Hogeita hiru urte ditut. Nire arrebak hemeretzi urte ditu.",
               "statement": "La hermana de Markel es mayor que él.",
@@ -2008,10 +2602,24 @@
               ]
             },
             {
-              "id": "u03-2.l2.s3.e12",
-              "type": "order_sentence",
-              "answer": "Gure irakasleak hogeita hamaika urte ditu.",
-              "translation": "Nuestra profesora tiene treinta y un años.",
+              "id": "u03-2.l2.s3.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gure irakasleak hogeita hamaika urte ditu."
+              },
+              "answers": [
+                "Nuestra profesora tiene treinta y un años.",
+                "Nuestro profesor tiene treinta y un años.",
+                "Nuestra profesora tiene 31 años.",
+                "Nuestro profesor tiene 31 años."
+              ],
+              "distractors": [
+                "abuelo",
+                "La",
+                "Tengo",
+                "Mi"
+              ],
               "vocabulary": [
                 "gu",
                 "irakasle",
@@ -2026,8 +2634,8 @@
               ]
             },
             {
-              "id": "u03-2.l2.s3.e13",
-              "type": "translate_typing",
+              "id": "u03-2.l2.s3.e21",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Amonak ehun urte ditu!"
@@ -2035,6 +2643,11 @@
               "answers": [
                 "¡La abuela tiene cien años!",
                 "¡La abuela tiene 100 años!"
+              ],
+              "distractors": [
+                "madre",
+                "Nuestra",
+                "abuelo"
               ],
               "vocabulary": [
                 "amona",
@@ -2132,18 +2745,32 @@
             },
             {
               "id": "u03-2.l3.s1.e04",
+              "type": "word_intro",
+              "word": "nolakoak",
+              "translation": "¿cómo son?",
+              "vocabulary": [
+                "nola"
+              ],
+              "structures": [
+                "nolakoa",
+                "ukan-present"
+              ]
+            },
+            {
+              "id": "u03-2.l3.s1.e05",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Cómo son tus padres?"
+                "lang": "eu",
+                "text": "Nolakoak dira zure gurasoak?"
               },
               "answers": [
-                "Nolakoak dira zure gurasoak?"
+                "¿Cómo son tus padres?",
+                "¿Cómo son sus padres?"
               ],
               "distractors": [
-                "irakaslea",
-                "Biak",
-                "eta"
+                "alegres",
+                "baja",
+                "padre"
               ],
               "vocabulary": [
                 "nola",
@@ -2157,7 +2784,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s1.e05",
+              "id": "u03-2.l3.s1.e06",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2195,7 +2822,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s1.e06",
+              "id": "u03-2.l3.s1.e07",
               "type": "listen_tap",
               "text": "Nire aita altua da, eta nire ama baxua.",
               "distractors": [
@@ -2219,7 +2846,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s1.e07",
+              "id": "u03-2.l3.s1.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2263,7 +2890,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s1.e08",
+              "id": "u03-2.l3.s1.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2284,7 +2911,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s1.e09",
+              "id": "u03-2.l3.s1.e10",
               "type": "read_true_false",
               "passage": "Hau Amaia da. Amaia baxua eta argala da. Ile luzea du.",
               "statement": "Amaia es alta.",
@@ -2306,7 +2933,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s1.e10",
+              "id": "u03-2.l3.s1.e11",
               "type": "order_sentence",
               "answer": "Zure irakaslea atsegina da?",
               "translation": "¿Tu profesora es agradable?",
@@ -2322,7 +2949,20 @@
               ]
             },
             {
-              "id": "u03-2.l3.s1.e11",
+              "id": "u03-2.l3.s1.e12",
+              "type": "word_intro",
+              "word": "hamaika",
+              "translation": "once",
+              "vocabulary": [
+                "hamaika"
+              ],
+              "structures": [
+                "nolakoa",
+                "ukan-present"
+              ]
+            },
+            {
+              "id": "u03-2.l3.s1.e13",
               "type": "read_true_false",
               "passage": "Gure aitona oso alaia da. Laurogeita hamaika urte ditu.",
               "statement": "El abuelo tiene noventa y un años.",
@@ -2425,6 +3065,19 @@
             },
             {
               "id": "u03-2.l3.s2.e04",
+              "type": "word_intro",
+              "word": "hemezortzi",
+              "translation": "dieciocho",
+              "vocabulary": [
+                "hemezortzi"
+              ],
+              "structures": [
+                "personal-info",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l3.s2.e05",
               "type": "listen_tap",
               "text": "Hogeita hemezortzi urte ditut.",
               "distractors": [
@@ -2444,7 +3097,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s2.e05",
+              "id": "u03-2.l3.s2.e06",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2484,7 +3137,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s2.e06",
+              "id": "u03-2.l3.s2.e07",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2507,7 +3160,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s2.e07",
+              "id": "u03-2.l3.s2.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2550,7 +3203,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s2.e08",
+              "id": "u03-2.l3.s2.e09",
               "type": "listen_type",
               "text": "Seme-alabak dituzu?",
               "answers": [
@@ -2566,7 +3219,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s2.e09",
+              "id": "u03-2.l3.s2.e10",
               "type": "read_true_false",
               "passage": "Ni Edurne naiz. Berrogeita hiru urte ditut. Ezkonduta nago.",
               "statement": "Edurne tiene cuarenta y tres años.",
@@ -2587,7 +3240,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s2.e10",
+              "id": "u03-2.l3.s2.e11",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2609,7 +3262,33 @@
               ]
             },
             {
-              "id": "u03-2.l3.s2.e11",
+              "id": "u03-2.l3.s2.e12",
+              "type": "word_intro",
+              "word": "hirurogeita",
+              "translation": "sesenta y…",
+              "vocabulary": [
+                "hirurogei"
+              ],
+              "structures": [
+                "personal-info",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l3.s2.e13",
+              "type": "word_intro",
+              "word": "hamabost",
+              "translation": "quince",
+              "vocabulary": [
+                "hamabost"
+              ],
+              "structures": [
+                "personal-info",
+                "zenbat"
+              ]
+            },
+            {
+              "id": "u03-2.l3.s2.e14",
               "type": "read_true_false",
               "passage": "Josuk hirurogeita hamabost urte ditu. Ezkongabea da.",
               "statement": "Josu está casado.",
@@ -2628,7 +3307,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s2.e12",
+              "id": "u03-2.l3.s2.e15",
               "type": "choose_image",
               "prompt": "alto",
               "options": [
@@ -2792,6 +3471,19 @@
             },
             {
               "id": "u03-2.l3.s3.e07",
+              "type": "word_intro",
+              "word": "zortzi",
+              "translation": "ocho",
+              "vocabulary": [
+                "zortzi"
+              ],
+              "structures": [
+                "nolakoa",
+                "nork"
+              ]
+            },
+            {
+              "id": "u03-2.l3.s3.e08",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2833,7 +3525,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s3.e08",
+              "id": "u03-2.l3.s3.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2855,7 +3547,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s3.e09",
+              "id": "u03-2.l3.s3.e10",
               "type": "read_true_false",
               "passage": "Nahiaren amonak laurogeita hamar urte ditu. Oso alaia da.",
               "statement": "La abuela de Nahia tiene setenta años.",
@@ -2876,7 +3568,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s3.e10",
+              "id": "u03-2.l3.s3.e11",
               "type": "listen_type",
               "text": "Asier ezkongabea da?",
               "answers": [
@@ -2892,7 +3584,7 @@
               ]
             },
             {
-              "id": "u03-2.l3.s3.e11",
+              "id": "u03-2.l3.s3.e12",
               "type": "read_true_false",
               "passage": "Ibaik hamahiru urte ditu. Ile luzea du. Altua eta lodia da.",
               "statement": "Ibai tiene el pelo largo.",

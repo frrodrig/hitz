@@ -7,6 +7,7 @@ import eus.hitz.core.domain.progress.ProgressRepository
 import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.CourseUnit
 import eus.hitz.core.model.content.Exercise
+import eus.hitz.core.model.content.Glossary
 import eus.hitz.core.model.content.Level
 import eus.hitz.core.model.content.ReviewScope
 import javax.inject.Inject
@@ -33,6 +34,8 @@ data class SessionPlan(
     val exercises: List<Exercise>,
     val hearts: HeartPolicy,
     val kind: ActivityKind,
+    /** Word hints for the session; none in legendary levels, which are played without help. */
+    val glossary: Glossary? = null,
 )
 
 /**
@@ -58,7 +61,8 @@ class PlanSessionUseCase @Inject constructor(
         val level = unit.levels.firstOrNull { it.id == levelId }
             ?: throw NoSuchElementException("level $levelId not found in unit $unitId")
         val unitExercises = unit.lessonExercises()
-        return when (level) {
+        val glossary = courses.getGlossary(courseId)
+        val plan = when (level) {
             is Level.Lessons -> {
                 val lesson = level.lessons.firstOrNull { it.id == lessonId } ?: level.lessons.first()
                 SessionPlan(lesson.id, lesson.exercises, HeartPolicy.Shared, ActivityKind.Lesson)
@@ -91,10 +95,14 @@ class PlanSessionUseCase @Inject constructor(
             )
             is Level.StoryLevel -> throw UnsupportedOperationException("stories are played by the story player")
         }
+        return if (plan.kind == ActivityKind.Legendary) plan else plan.copy(glossary = glossary)
     }
 
+    /** Exercises to practise: "new word" cards only make sense in their lesson. */
     private fun CourseUnit.lessonExercises(): List<Exercise> =
-        levels.filterIsInstance<Level.Lessons>().flatMap { lessonLevel -> lessonLevel.lessons.flatMap { it.exercises } }
+        levels.filterIsInstance<Level.Lessons>()
+            .flatMap { lessonLevel -> lessonLevel.lessons.flatMap { it.exercises } }
+            .filterNot { it is Exercise.WordIntro }
 
     companion object {
         const val LEGENDARY_HEARTS = 3

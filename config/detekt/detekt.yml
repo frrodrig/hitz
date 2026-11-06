@@ -12,6 +12,9 @@ naming:
     constantPattern: '[A-Z][A-Za-z0-9_]*'
 
 complexity:
+  # Exhaustive `when`s over sealed exercise types are one branch per type, not complex logic.
+  CyclomaticComplexMethod:
+    ignoreSimpleWhenEntries: true
   LongParameterList:
     functionThreshold: 8
     ignoreDefaultParameters: true

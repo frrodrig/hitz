@@ -12,6 +12,8 @@ import eus.hitz.core.model.content.ChatMessage
 import eus.hitz.core.model.content.Course
 import eus.hitz.core.model.content.CourseUnit
 import eus.hitz.core.model.content.Exercise
+import eus.hitz.core.model.content.Gloss
+import eus.hitz.core.model.content.Glossary
 import eus.hitz.core.model.content.Guidebook
 import eus.hitz.core.model.content.ImageOption
 import eus.hitz.core.model.content.Language
@@ -73,6 +75,8 @@ internal object TestLesson {
     )
     val trueFalse = Exercise.ReadTrueFalse("$LESSON.e11", "Egun on! Ni Jon naiz.", "Jon saluda.", answer = true)
     val order = Exercise.OrderSentence("$LESSON.e12", "Zu Mikel zara?", "¿Tú eres Mikel?")
+    val wordIntro = Exercise.WordIntro("$LESSON.e13", "kaixo", "hola", image = "greeting.webp")
+    val glossary = Glossary(entries = mapOf("kaixo" to Gloss("hola")))
 
     fun repository(vararg exercises: Exercise): CourseRepository {
         val text = LocalizedText("x", "x")
@@ -90,6 +94,8 @@ internal object TestLesson {
             override suspend fun getCourse(courseId: CourseId): Course = error("unused")
 
             override suspend fun getUnit(courseId: CourseId, unitId: String): CourseUnit = unit
+
+            override suspend fun getGlossary(courseId: CourseId): Glossary = glossary
         }
     }
 }

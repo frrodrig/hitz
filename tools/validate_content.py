@@ -155,6 +155,8 @@ def basque_texts(exercise: dict) -> list[str]:
         texts.append(exercise["answer"])
     elif t == "speak":
         texts.append(exercise["text"])
+    elif t == "word_intro":
+        texts.append(exercise["word"])
     return texts
 
 
@@ -180,6 +182,8 @@ def audio_clips(exercise: dict) -> list[tuple[str, str]]:
         return [(ex_id, exercise["passage"])]
     if t == "order_sentence":
         return [(ex_id, exercise["answer"])]
+    if t == "word_intro":
+        return [(ex_id, exercise["word"])]
     return []
 
 
@@ -248,6 +252,8 @@ def check_exercise(where: str, exercise: dict, assets: Path, report: Report) -> 
             values = [pair[side].lower() for pair in exercise["pairs"]]
             if len(set(values)) != len(values):
                 report.error(where, f"duplicated '{side}' items in pairs")
+    if t == "word_intro" and "image" in exercise and not (assets / "images" / exercise["image"]).exists():
+        report.error(where, f"missing image images/{exercise['image']}")
     if t == "choose_image":
         if exercise["correct"] >= len(exercise["options"]):
             report.error(where, f"'correct' ({exercise['correct']}) is out of range")

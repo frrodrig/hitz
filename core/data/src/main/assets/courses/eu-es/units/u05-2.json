@@ -127,18 +127,44 @@
           "exercises": [
             {
               "id": "u05-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "olio",
+              "translation": "aceite",
+              "image": "food_oil.webp",
+              "vocabulary": [
+                "olio"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e02",
+              "type": "word_intro",
+              "word": "gatz",
+              "translation": "sal",
+              "image": "food_salt.webp",
+              "vocabulary": [
+                "gatz"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e03",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Tenemos aceite y sal."
+                "lang": "eu",
+                "text": "Olioa eta gatza daukagu."
               },
               "answers": [
-                "Olioa eta gatza daukagu."
+                "Tenemos aceite y sal."
               ],
               "distractors": [
-                "sukaldean",
-                "dut",
-                "behar"
+                "mesa",
+                "El",
+                "platos"
               ],
               "vocabulary": [
                 "olio",
@@ -151,13 +177,34 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Azukrea mahai gainean dago.",
+              "id": "u05-2.l1.s1.e04",
+              "type": "word_intro",
+              "word": "azukre",
+              "translation": "azúcar",
+              "image": "food_sugar.webp",
+              "vocabulary": [
+                "azukre"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Azukrea mahai gainean dago."
+              },
+              "answers": [
+                "El azúcar está encima de la mesa.",
+                "El azúcar está sobre la mesa."
+              ],
               "distractors": [
-                "dut",
-                "behar",
-                "eta"
+                "Necesito",
+                "en",
+                "o",
+                "un"
               ],
               "vocabulary": [
                 "azukre",
@@ -170,7 +217,46 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e03",
+              "id": "u05-2.l1.s1.e06",
+              "type": "word_intro",
+              "word": "lapiko",
+              "translation": "olla",
+              "image": "kitchen_pot.webp",
+              "vocabulary": [
+                "lapiko"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e07",
+              "type": "word_intro",
+              "word": "zartagin",
+              "translation": "sartén",
+              "image": "kitchen_frying_pan.webp",
+              "vocabulary": [
+                "zartagin"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e08",
+              "type": "word_intro",
+              "word": "plater",
+              "translation": "plato",
+              "image": "kitchen_plate.webp",
+              "vocabulary": [
+                "plater"
+              ],
+              "structures": [
+                "cooking-vocab"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s1.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -211,15 +297,10 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e04",
-              "type": "translate_typing",
-              "prompt": {
-                "lang": "es",
-                "text": "La olla está en la cocina."
-              },
-              "answers": [
-                "Lapikoa sukaldean dago."
-              ],
+              "id": "u05-2.l1.s1.e10",
+              "type": "order_sentence",
+              "answer": "Lapikoa sukaldean dago.",
+              "translation": "La olla está en la cocina.",
               "vocabulary": [
                 "lapiko",
                 "sukalde",
@@ -230,7 +311,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e05",
+              "id": "u05-2.l1.s1.e11",
               "type": "fill_blank",
               "sentence": "Olioa ___ dago.",
               "options": [
@@ -249,7 +330,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e06",
+              "id": "u05-2.l1.s1.e12",
               "type": "order_sentence",
               "answer": "Zartagina eta lapikoa behar ditut.",
               "translation": "Necesito la sartén y la olla.",
@@ -265,7 +346,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e07",
+              "id": "u05-2.l1.s1.e13",
               "type": "choose_meaning",
               "text": "Gatza ala azukrea?",
               "options": [
@@ -283,7 +364,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e08",
+              "id": "u05-2.l1.s1.e14",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -302,7 +383,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e09",
+              "id": "u05-2.l1.s1.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -328,7 +409,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e10",
+              "id": "u05-2.l1.s1.e16",
               "type": "listen_type",
               "text": "Gatza ala azukrea?",
               "answers": [
@@ -343,7 +424,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e11",
+              "id": "u05-2.l1.s1.e17",
               "type": "read_true_false",
               "passage": "Sukaldean lapiko bat eta zartagin bat daude. Platerak armairuan daude.",
               "statement": "Los platos están en la mesa.",
@@ -363,7 +444,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e12",
+              "id": "u05-2.l1.s1.e18",
               "type": "speak",
               "text": "Olioa zartaginean dago.",
               "translation": "El aceite está en la sartén.",
@@ -377,7 +458,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e13",
+              "id": "u05-2.l1.s1.e19",
               "type": "choose_image",
               "prompt": "el aceite",
               "options": [
@@ -403,7 +484,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e14",
+              "id": "u05-2.l1.s1.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -429,7 +510,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e15",
+              "id": "u05-2.l1.s1.e21",
               "type": "choose_image",
               "prompt": "la sal",
               "options": [
@@ -455,7 +536,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e16",
+              "id": "u05-2.l1.s1.e22",
               "type": "choose_image",
               "prompt": "el azúcar",
               "options": [
@@ -481,7 +562,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e17",
+              "id": "u05-2.l1.s1.e23",
               "type": "choose_image",
               "prompt": "la olla",
               "options": [
@@ -507,7 +588,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e18",
+              "id": "u05-2.l1.s1.e24",
               "type": "choose_image",
               "prompt": "la sartén",
               "options": [
@@ -533,7 +614,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s1.e19",
+              "id": "u05-2.l1.s1.e25",
               "type": "choose_image",
               "prompt": "el plato",
               "options": [
@@ -565,11 +646,31 @@
           "exercises": [
             {
               "id": "u05-2.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Moztu tomatea, mesedez.",
+              "type": "word_intro",
+              "word": "moztu",
+              "translation": "cortar",
+              "vocabulary": [
+                "moztu"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Moztu tomatea, mesedez."
+              },
+              "answers": [
+                "Corta el tomate, por favor.",
+                "Corte el tomate, por favor."
+              ],
               "distractors": [
-                "ura",
-                "arrautzak"
+                "queso",
+                "en",
+                "aceite"
               ],
               "vocabulary": [
                 "moztu",
@@ -581,14 +682,31 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u05-2.l1.s2.e03",
+              "type": "word_intro",
+              "word": "egosi",
+              "translation": "cocer",
+              "vocabulary": [
+                "egosi"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e04",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Cuece las patatas."
+                "lang": "eu",
+                "text": "Egosi patatak."
               },
               "answers": [
-                "Egosi patatak."
+                "Cuece las patatas.",
+                "Cueza las patatas."
+              ],
+              "distractors": [
+                "huevos",
+                "por"
               ],
               "vocabulary": [
                 "egosi",
@@ -599,7 +717,55 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e03",
+              "id": "u05-2.l1.s2.e05",
+              "type": "word_intro",
+              "word": "frijitu",
+              "translation": "freír",
+              "vocabulary": [
+                "frijitu"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e06",
+              "type": "word_intro",
+              "word": "nahastu",
+              "translation": "mezclar",
+              "vocabulary": [
+                "nahastu"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e07",
+              "type": "word_intro",
+              "word": "gehitu",
+              "translation": "añadir",
+              "vocabulary": [
+                "gehitu"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e08",
+              "type": "word_intro",
+              "word": "berotu",
+              "translation": "calentar",
+              "vocabulary": [
+                "berotu"
+              ],
+              "structures": [
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s2.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -640,8 +806,8 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e04",
-              "type": "translate_typing",
+              "id": "u05-2.l1.s2.e10",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Frijitu arrautzak."
@@ -649,6 +815,10 @@
               "answers": [
                 "Fríe los huevos.",
                 "Fría los huevos."
+              ],
+              "distractors": [
+                "queso",
+                "Añade"
               ],
               "vocabulary": [
                 "frijitu",
@@ -659,7 +829,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e05",
+              "id": "u05-2.l1.s2.e11",
               "type": "fill_blank",
               "sentence": "___ olioa zartaginean.",
               "options": [
@@ -678,7 +848,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e06",
+              "id": "u05-2.l1.s2.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -699,7 +869,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e07",
+              "id": "u05-2.l1.s2.e13",
               "type": "choose_meaning",
               "text": "Frijitu arrautzak.",
               "options": [
@@ -717,11 +887,12 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e08",
-              "type": "listen_type",
+              "id": "u05-2.l1.s2.e14",
+              "type": "listen_tap",
               "text": "Gehitu gatza.",
-              "answers": [
-                "Gehitu gatza."
+              "distractors": [
+                "Frijitu",
+                "patatak"
               ],
               "vocabulary": [
                 "gehitu",
@@ -732,7 +903,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e09",
+              "id": "u05-2.l1.s2.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -757,7 +928,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e10",
+              "id": "u05-2.l1.s2.e16",
               "type": "speak",
               "text": "Berotu olioa zartaginean.",
               "translation": "Calienta el aceite en la sartén.",
@@ -771,7 +942,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e11",
+              "id": "u05-2.l1.s2.e17",
               "type": "read_true_false",
               "passage": "Moztu patatak eta frijitu. Ez egosi!",
               "statement": "Hay que cocer las patatas.",
@@ -789,7 +960,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e12",
+              "id": "u05-2.l1.s2.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -815,7 +986,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s2.e13",
+              "id": "u05-2.l1.s2.e19",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -846,13 +1017,32 @@
           "exercises": [
             {
               "id": "u05-2.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "lehenengo",
+              "translation": "primero",
+              "vocabulary": [
+                "lehenengo"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e02",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Primero, corta la lechuga."
+                "lang": "eu",
+                "text": "Lehenengo, moztu letxuga."
               },
               "answers": [
-                "Lehenengo, moztu letxuga."
+                "Primero, corta la lechuga.",
+                "Primero, corte la lechuga."
+              ],
+              "distractors": [
+                "azúcar",
+                "A",
+                "agua"
               ],
               "vocabulary": [
                 "lehenengo",
@@ -865,10 +1055,35 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e02",
-              "type": "order_sentence",
-              "answer": "Gero, gehitu olioa.",
-              "translation": "Después, añade el aceite.",
+              "id": "u05-2.l1.s3.e03",
+              "type": "word_intro",
+              "word": "gero",
+              "translation": "después",
+              "vocabulary": [
+                "gero"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gero, gehitu olioa."
+              },
+              "answers": [
+                "Después, añade el aceite.",
+                "Luego, añade el aceite.",
+                "Después, añada el aceite."
+              ],
+              "distractors": [
+                "pescado",
+                "continuación",
+                "sal"
+              ],
               "vocabulary": [
                 "gero",
                 "gehitu",
@@ -880,7 +1095,59 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e03",
+              "id": "u05-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "ondoren",
+              "translation": "a continuación",
+              "vocabulary": [
+                "ondoren"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e06",
+              "type": "word_intro",
+              "word": "azkenik",
+              "translation": "por último",
+              "vocabulary": [
+                "azkenik"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e07",
+              "type": "word_intro",
+              "word": "egunero",
+              "translation": "todos los días",
+              "vocabulary": [
+                "egunero"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e08",
+              "type": "word_intro",
+              "word": "askotan",
+              "translation": "a menudo",
+              "vocabulary": [
+                "askotan"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -922,7 +1189,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e04",
+              "id": "u05-2.l1.s3.e10",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -945,7 +1212,20 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e05",
+              "id": "u05-2.l1.s3.e11",
+              "type": "word_intro",
+              "word": "osasuntsu",
+              "translation": "sano",
+              "vocabulary": [
+                "osasuntsu"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e12",
               "type": "fill_blank",
               "sentence": "Arraina ___ da.",
               "options": [
@@ -965,11 +1245,18 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e06",
-              "type": "listen_type",
-              "text": "Azkenik, gehitu gatza.",
+              "id": "u05-2.l1.s3.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Por último, añade la sal."
+              },
               "answers": [
                 "Azkenik, gehitu gatza."
+              ],
+              "distractors": [
+                "eta",
+                "Azukrea"
               ],
               "vocabulary": [
                 "azkenik",
@@ -982,7 +1269,20 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e07",
+              "id": "u05-2.l1.s3.e14",
+              "type": "word_intro",
+              "word": "kaltegarri",
+              "translation": "perjudicial",
+              "vocabulary": [
+                "kaltegarri"
+              ],
+              "structures": [
+                "discourse-markers",
+                "healthy-food"
+              ]
+            },
+            {
+              "id": "u05-2.l1.s3.e15",
               "type": "choose_meaning",
               "text": "Azukrea kaltegarria da.",
               "options": [
@@ -1002,10 +1302,13 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e08",
-              "type": "speak",
+              "id": "u05-2.l1.s3.e16",
+              "type": "listen_tap",
               "text": "Arraina osasuntsua da.",
-              "translation": "El pescado es sano.",
+              "distractors": [
+                "gehitu",
+                "Astero"
+              ],
               "vocabulary": [
                 "arrain",
                 "osasuntsu",
@@ -1017,7 +1320,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e09",
+              "id": "u05-2.l1.s3.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1044,7 +1347,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e10",
+              "id": "u05-2.l1.s3.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1069,7 +1372,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e11",
+              "id": "u05-2.l1.s3.e19",
               "type": "read_true_false",
               "passage": "Gosarian egunero kafea edaten dut. Askotan zukua ere bai.",
               "statement": "Todos los días bebe café en el desayuno.",
@@ -1091,7 +1394,7 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e12",
+              "id": "u05-2.l1.s3.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1117,13 +1420,21 @@
               ]
             },
             {
-              "id": "u05-2.l1.s3.e13",
-              "type": "listen_tap",
-              "text": "Astero arraina jaten dugu afarian.",
+              "id": "u05-2.l1.s3.e21",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Astero arraina jaten dugu afarian."
+              },
+              "answers": [
+                "Cada semana comemos pescado en la cena.",
+                "Todas las semanas cenamos pescado."
+              ],
               "distractors": [
-                "Egunero",
-                "moztu",
-                "edaten"
+                "es",
+                "sal",
+                "añade",
+                "Por"
               ],
               "vocabulary": [
                 "astero",
@@ -1460,7 +1771,30 @@
           "exercises": [
             {
               "id": "u05-2.l2.s2.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "baino",
+              "translation": "que (más … que)",
+              "vocabulary": [
+                "bai"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e02",
+              "type": "word_intro",
+              "word": "lehen",
+              "translation": "antes",
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e03",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Moztu patatak frijitu baino lehen."
@@ -1468,6 +1802,12 @@
               "answers": [
                 "Corta las patatas antes de freírlas.",
                 "Corte las patatas antes de freírlas."
+              ],
+              "distractors": [
+                "la",
+                "el",
+                "córtalos",
+                "y"
               ],
               "vocabulary": [
                 "moztu",
@@ -1481,11 +1821,20 @@
               ]
             },
             {
-              "id": "u05-2.l2.s2.e02",
-              "type": "listen_type",
-              "text": "Olioa berotu baino lehen, moztu tomatea.",
+              "id": "u05-2.l2.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Antes de calentar el aceite, corta el tomate."
+              },
               "answers": [
                 "Olioa berotu baino lehen, moztu tomatea."
+              ],
+              "distractors": [
+                "moztuta",
+                "Arrautzak",
+                "gero",
+                "gehituta"
               ],
               "vocabulary": [
                 "olio",
@@ -1500,7 +1849,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s2.e03",
+              "id": "u05-2.l2.s2.e05",
               "type": "fill_blank",
               "sentence": "___ patatak frijitu baino lehen.",
               "options": [
@@ -1521,7 +1870,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s2.e04",
+              "id": "u05-2.l2.s2.e06",
               "type": "speak",
               "text": "Patatak moztuta gero, frijitu.",
               "translation": "Después de cortar las patatas, fríelas.",
@@ -1537,7 +1886,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s2.e05",
+              "id": "u05-2.l2.s2.e07",
               "type": "choose_meaning",
               "text": "Patatak moztuta gero, frijitu.",
               "options": [
@@ -1558,7 +1907,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s2.e06",
+              "id": "u05-2.l2.s2.e08",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1586,7 +1935,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s2.e07",
+              "id": "u05-2.l2.s2.e09",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1614,19 +1963,44 @@
               ]
             },
             {
-              "id": "u05-2.l2.s2.e08",
+              "id": "u05-2.l2.s2.e10",
+              "type": "word_intro",
+              "word": "egon",
+              "translation": "estar",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e11",
+              "type": "word_intro",
+              "word": "arte",
+              "translation": "hasta",
+              "structures": [
+                "time-clauses",
+                "imperative"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s2.e12",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Calienta la leche hasta que esté caliente."
+                "lang": "eu",
+                "text": "Berotu esnea bero egon arte."
               },
               "answers": [
-                "Berotu esnea bero egon arte."
+                "Calienta la leche hasta que esté caliente.",
+                "Caliente la leche hasta que esté caliente."
               ],
               "distractors": [
-                "frijitu",
-                "moztuta",
-                "Gatza"
+                "patatas",
+                "Corta",
+                "huevos",
+                "Después"
               ],
               "vocabulary": [
                 "berotu",
@@ -1640,7 +2014,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s2.e09",
+              "id": "u05-2.l2.s2.e13",
               "type": "read_true_false",
               "passage": "Moztu tomatea olioa berotu baino lehen.",
               "statement": "Primero se calienta el aceite y después se corta el tomate.",
@@ -1658,7 +2032,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s2.e10",
+              "id": "u05-2.l2.s2.e14",
               "type": "listen_tap",
               "text": "Gatza gehituta gero, nahastu.",
               "distractors": [
@@ -1678,7 +2052,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s2.e11",
+              "id": "u05-2.l2.s2.e15",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1699,7 +2073,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s2.e12",
+              "id": "u05-2.l2.s2.e16",
               "type": "order_sentence",
               "answer": "Egosi arrautzak, eta gero moztu.",
               "translation": "Cuece los huevos y después córtalos.",
@@ -1804,6 +2178,32 @@
             },
             {
               "id": "u05-2.l2.s3.e05",
+              "type": "word_intro",
+              "word": "komeni",
+              "translation": "convenir (komeni da: conviene)",
+              "vocabulary": [
+                "komeni izan"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e06",
+              "type": "word_intro",
+              "word": "egostea",
+              "translation": "cocer",
+              "vocabulary": [
+                "egosi"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e07",
               "type": "fill_blank",
               "sentence": "Komeni da arraina ___.",
               "options": [
@@ -1824,7 +2224,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s3.e06",
+              "id": "u05-2.l2.s3.e08",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1851,7 +2251,20 @@
               ]
             },
             {
-              "id": "u05-2.l2.s3.e07",
+              "id": "u05-2.l2.s3.e09",
+              "type": "word_intro",
+              "word": "gehitzea",
+              "translation": "añadir",
+              "vocabulary": [
+                "gehitu"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e10",
               "type": "choose_meaning",
               "text": "Komeni da gatz gutxiago gehitzea.",
               "options": [
@@ -1873,7 +2286,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s3.e08",
+              "id": "u05-2.l2.s3.e11",
               "type": "listen_tap",
               "text": "Komeni da arraina egostea.",
               "distractors": [
@@ -1893,7 +2306,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s3.e09",
+              "id": "u05-2.l2.s3.e12",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1922,14 +2335,34 @@
               ]
             },
             {
-              "id": "u05-2.l2.s3.e10",
-              "type": "translate_typing",
+              "id": "u05-2.l2.s3.e13",
+              "type": "word_intro",
+              "word": "frijitzea",
+              "translation": "freír",
+              "vocabulary": [
+                "frijitu"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e14",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Es perjudicial freír las patatas a menudo."
+                "lang": "eu",
+                "text": "Kaltegarria da patatak askotan frijitzea."
               },
               "answers": [
-                "Kaltegarria da patatak askotan frijitzea."
+                "Es perjudicial freír las patatas a menudo.",
+                "Freír las patatas a menudo es perjudicial."
+              ],
+              "distractors": [
+                "Hacen",
+                "falta",
+                "Qué",
+                "aceite"
               ],
               "vocabulary": [
                 "kaltegarri",
@@ -1944,7 +2377,7 @@
               ]
             },
             {
-              "id": "u05-2.l2.s3.e11",
+              "id": "u05-2.l2.s3.e15",
               "type": "order_sentence",
               "answer": "Komeni da gatz gutxiago gehitzea.",
               "translation": "Conviene añadir menos sal.",
@@ -1961,8 +2394,21 @@
               ]
             },
             {
-              "id": "u05-2.l2.s3.e12",
-              "type": "translate_typing",
+              "id": "u05-2.l2.s3.e16",
+              "type": "word_intro",
+              "word": "edatea",
+              "translation": "beber",
+              "vocabulary": [
+                "edan"
+              ],
+              "structures": [
+                "behar-da",
+                "nominalization"
+              ]
+            },
+            {
+              "id": "u05-2.l2.s3.e17",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Komeni da egunero ura edatea."
@@ -1970,6 +2416,12 @@
               "answers": [
                 "Conviene beber agua todos los días.",
                 "Conviene beber agua cada día."
+              ],
+              "distractors": [
+                "grande",
+                "Hace",
+                "perjudicial",
+                "cuatro"
               ],
               "vocabulary": [
                 "komeni izan",
@@ -2485,9 +2937,33 @@
             },
             {
               "id": "u05-2.l3.s2.e08",
-              "type": "order_sentence",
-              "answer": "Kaltegarria da azukre asko jatea.",
-              "translation": "Es perjudicial comer mucho azúcar.",
+              "type": "word_intro",
+              "word": "jatea",
+              "translation": "comer",
+              "vocabulary": [
+                "jan"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kaltegarria da azukre asko jatea."
+              },
+              "answers": [
+                "Es perjudicial comer mucho azúcar.",
+                "Comer mucho azúcar es perjudicial."
+              ],
+              "distractors": [
+                "sano",
+                "Comemos",
+                "semana"
+              ],
               "vocabulary": [
                 "kaltegarri",
                 "izan",
@@ -2501,7 +2977,7 @@
               ]
             },
             {
-              "id": "u05-2.l3.s2.e09",
+              "id": "u05-2.l3.s2.e10",
               "type": "read_true_false",
               "passage": "Arraina eta letxuga osasuntsuak dira. Azukrea eta gatza kaltegarriak dira.",
               "statement": "La sal es sana.",
@@ -2522,7 +2998,20 @@
               ]
             },
             {
-              "id": "u05-2.l3.s2.e10",
+              "id": "u05-2.l3.s2.e11",
+              "type": "word_intro",
+              "word": "astero",
+              "translation": "cada semana",
+              "vocabulary": [
+                "astero"
+              ],
+              "structures": [
+                "nominalization",
+                "causal-eta"
+              ]
+            },
+            {
+              "id": "u05-2.l3.s2.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2547,7 +3036,7 @@
               ]
             },
             {
-              "id": "u05-2.l3.s2.e11",
+              "id": "u05-2.l3.s2.e13",
               "type": "read_true_false",
               "passage": "Komeni da arraina egostea. Ez da komeni egunero frijitzea.",
               "statement": "Conviene cocer el pescado.",

@@ -24,6 +24,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -49,6 +50,7 @@ import eus.hitz.feature.lesson.LessonMessage
 import eus.hitz.feature.lesson.LessonTopBar
 import eus.hitz.feature.lesson.R
 import eus.hitz.feature.lesson.ui.LanguageText
+import eus.hitz.feature.lesson.ui.LocalGlossary
 import kotlin.math.roundToInt
 
 private const val PERCENT = 100
@@ -97,7 +99,9 @@ internal fun StoryContent(
             modifier = modifier,
             reward = state.reward,
         )
-        is StoryUiState.Active -> ActiveStory(state, onAction, modifier)
+        is StoryUiState.Active -> CompositionLocalProvider(LocalGlossary provides state.glossary) {
+            ActiveStory(state, onAction, modifier)
+        }
     }
 }
 
@@ -168,7 +172,7 @@ private fun StoryLine(line: StoryLineUi, translated: Boolean, onAction: (StoryAc
             verticalArrangement = Arrangement.spacedBy(HitzSpacing.xs),
         ) {
             Text(line.speaker, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
-            LanguageText(line.text, Language.Basque, style = MaterialTheme.typography.titleLarge)
+            LanguageText(line.text, Language.Basque, style = MaterialTheme.typography.titleLarge, hints = true)
             if (translated) {
                 LanguageText(
                     text = line.translation,

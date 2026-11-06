@@ -1,7 +1,12 @@
 package eus.hitz.feature.lesson
 
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.click
 import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
+import androidx.compose.ui.test.performTouchInput
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
 import com.github.takahirom.roborazzi.captureRoboImage
@@ -77,6 +82,23 @@ class LessonScreenshotTest {
 
     @Test
     fun speak() = capture("lesson_speak", LessonPreviewData.active.copy(exercise = LessonPreviewData.speak))
+
+    @Test
+    fun hintShowsTheMeaningOfATappedWord() {
+        composeRule.setContent {
+            HitzTheme { LessonContent(LessonPreviewData.active, onAction = {}, onClose = {}) }
+        }
+        // The first word of the prompt ("Kaixo") is a hint link.
+        composeRule.onNodeWithText("Kaixo! Ni Ane naiz.").performTouchInput { click(Offset(8f, centerY)) }
+        composeRule.onNodeWithText("hola", substring = true).assertIsDisplayed()
+        composeRule.onRoot().captureRoboImage("src/test/screenshots/lesson_hint.png")
+    }
+
+    @Test
+    fun wordIntro() = capture(
+        "lesson_word_intro",
+        LessonPreviewData.active.copy(exercise = LessonPreviewData.wordIntro)
+    )
 
     @Test
     fun activeFontScale200() = capture("lesson_active_font_200", LessonPreviewData.active, fontScale = 2f)

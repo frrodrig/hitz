@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import dataclasses
 import functools
 import json
 import random
@@ -49,6 +50,16 @@ ROTATION = [
     "listen_type",
     "speak",
 ]
+# Which sentence exercises a lesson may use, by how many times the learner has already practised
+# the sentence's least familiar word: a word met for the first time is only recognised (Basque
+# prompt), then built with tiles, and only typed or said once it has been practised twice.
+STAGES = [
+    ["translate_wordbank_eu"],
+    ["translate_wordbank_eu", "translate_wordbank_es", "listen_tap", "order_sentence", "translate_typing_eu"],
+]
+# "New word" cards per lesson at most; the other new words of a dense lesson wait for their next
+# lesson (until then they still have tap hints and are only recognised).
+MAX_NEW_WORDS = 8
 MIN_DISTRACTORS = 2
 MAX_DISTRACTORS = 4
 EDGE_PUNCTUATION = re.compile(r"^[¡¿!?.,;:«»\"“”()…—–-]+|[¡¿!?.,;:«»\"“”()…—–-]+$")
@@ -69,11 +80,15 @@ class Lemmatizer:
 
     def __init__(self, content: Path = ROOT / "content") -> None:
         self.lemmas: dict[str, tuple[int, int]] = {}
+        self.glosses: dict[str, str] = {}
         with (content / "syllabus" / "vocabulary.csv").open(encoding="utf-8") as fh:
             for row in csv.DictReader(fh):
                 lemma = clean_lemma(row["lemma"])
                 key = unit_key(row["app_unit"])
                 self.lemmas[lemma] = min(key, self.lemmas.get(lemma, key))
+                self.glosses.setdefault(lemma, row["es"].strip())
+        with (content / "syllabus" / "glosses.csv").open(encoding="utf-8") as fh:
+            self.form_glosses = {row["form"].strip().lower(): row["es"].strip() for row in csv.DictReader(fh)}
         self.forms: dict[str, str] = {}
         self.form_units: dict[str, tuple[int, int]] = {}
         for forms_file in sorted((content / "syllabus" / "forms").glob("u*.csv")):
@@ -96,6 +111,60 @@ class Lemmatizer:
             return True
         stems = [s for s in known if len(s) >= MIN_STEM] + [n for n in self.proper_nouns if len(n) >= MIN_STEM]
         return any(token.startswith(s) and len(token) - len(s) <= MAX_SUFFIX for s in stems)
+
+    @functools.cache
+    def _known(self, unit: tuple[int, int]) -> tuple[frozenset[str], tuple[str, ...]]:
+        known = frozenset(lemma for lemma, key in self.lemmas.items() if key <= unit)
+        stems = tuple(sorted((lemma for lemma in known if " " not in lemma and len(lemma) >= MIN_STEM),
+                             key=lambda x: (-len(x), x)))
+        return known, stems
+
+    def items_in(self, text: str, unit: tuple[int, int]) -> list[tuple[str, str, str, str]]:
+        """Words to learn in a Basque text, in reading order: (key, word, Spanish, lemma).
+
+        A multi-word lemma is one item; a form of the forms tables is an item of its own (``naiz`` is
+        learnt as "soy", not as ``izan``); any other inflection counts as its lemma. Proper nouns and
+        numbers are not items.
+        """
+        known, stems = self._known(unit)
+        words_ = tokens(text)
+        found: list[tuple[str, str, str, str]] = []
+        i = 0
+        while i < len(words_):
+            phrase = next((" ".join(words_[i:i + n]) for n in (4, 3, 2)
+                           if i + n <= len(words_) and " ".join(words_[i:i + n]) in known), None)
+            if phrase:
+                found.append((phrase, phrase, self.glosses.get(phrase, ""), phrase))
+                i += len(phrase.split())
+                continue
+            token = words_[i]
+            i += 1
+            if token in known:
+                found.append((token, token, self.glosses.get(token, ""), token))
+            elif token in self.forms and self.form_units[token] <= unit:
+                lemma = self.forms[token]
+                gloss = self.form_glosses.get(token) or self.glosses.get(lemma, "")
+                found.append((f"form:{token}", token, gloss, lemma))
+            else:
+                stem = next((s for s in stems if token.startswith(s) and len(token) - len(s) <= MAX_SUFFIX), None)
+                if stem:
+                    found.append((stem, stem, self.glosses.get(stem, ""), stem))
+        return list({item[0]: item for item in found}.values())
+
+    def gloss(self, token: str) -> dict[str, str] | None:
+        """What the app shows when a word is tapped: its Spanish and, for inflections, the lemma."""
+        if token in self.lemmas:
+            return {"es": self.glosses[token]}
+        if token in self.form_glosses:
+            lemma = self.forms.get(token, token)
+            return {"es": self.form_glosses[token], **({"lemma": lemma} if lemma != token else {})}
+        if token in self.forms and self.forms[token] in self.glosses:
+            return {"es": self.glosses[self.forms[token]], "lemma": self.forms[token]}
+        if token in self.proper_nouns or token.isdigit():
+            return None
+        _, stems = self._known((99, 9))
+        stem = next((s for s in stems if token.startswith(s) and len(token) - len(s) <= MAX_SUFFIX), None)
+        return {"es": self.glosses[stem], "lemma": stem} if stem else None
 
     def lemmas_in(self, texts: list[str], unit: tuple[int, int]) -> list[str]:
         known = {lemma for lemma, key in self.lemmas.items() if key <= unit}
@@ -311,36 +380,100 @@ def extra_exercises(lesson: dict, lesson_id: str = "", images: dict[str, dict[st
     return out
 
 
-def build_lesson(lesson_id: str, lesson: dict, offset: int, lemmatizer: Lemmatizer | None = None) -> dict:
+@dataclasses.dataclass
+class Exposure:
+    """What the learner has met so far, in course order: practice count per word, and the words
+    that already had their "new word" card."""
+    counts: dict[str, int] = dataclasses.field(default_factory=dict)
+    introduced: set[str] = dataclasses.field(default_factory=set)
+
+
+def choose_kind(item: dict, index: int, offset: int, familiarity: int | None, lesson_id: str) -> str:
+    """The rotation's type for this slot, limited to the stage the sentence's words have reached."""
+    kinds = allowed_kinds(item)
+    if not kinds:
+        raise SourceError(f"{lesson_id}: sentence {item['eu']!r} allows no exercise kind")
+    if "kind" in item:
+        return item["kind"]
+    if familiarity is not None and familiarity < len(STAGES):
+        kinds = [k for k in kinds if k in STAGES[familiarity]] or kinds
+    wanted = ROTATION[(index + offset) % len(ROTATION)]
+    return wanted if wanted in kinds else kinds[(index + offset) % len(kinds)]
+
+
+def word_intro(item: tuple[str, str, str, str], pictures: dict[str, str], declare: bool) -> dict:
+    """A "new word" card. [declare]: whether its lemma is a syllabus lemma of the unit (forms of a
+    later lemma, such as ``joan`` in 7.1, are taught as chunks before the lemma)."""
+    _, word, translation, lemma = item
+    card = {"type": "word_intro", "word": word, "translation": translation}
+    if lemma in pictures and not item[0].startswith("form:"):
+        card["image"] = pictures[lemma]
+    if declare:
+        card["vocabulary"] = [lemma]
+    return card
+
+
+def build_lesson(
+    lesson_id: str,
+    lesson: dict,
+    offset: int,
+    lemmatizer: Lemmatizer | None = None,
+    exposure: Exposure | None = None,
+    pictures: dict[str, str] | None = None,
+) -> dict:
+    """One lesson. With [exposure] (what the learner has practised so far in the course, updated
+    here) words get a "new word" card before their first use and sentence exercises follow the
+    learner's familiarity with their words (see STAGES)."""
     sentences = [parse_sentence(item) for item in lesson.get("sentences", [])]
     unit = unit_key_from_id(lesson_id.split(".")[0])
     eu_pool = [w for s in sentences for w in words(s["eu"]) if lemmatizer is None or lemmatizer.accepts(w, unit)]
     es_pool = [w for s in sentences for w in words(as_list(s["es"])[0])]
-    made: list[dict] = []
-    for index, item in enumerate(sentences):
-        kinds = allowed_kinds(item)
-        if not kinds:
-            raise SourceError(f"{lesson_id}: sentence {item['eu']!r} allows no exercise kind")
-        wanted = ROTATION[(index + offset) % len(ROTATION)]
-        kind = wanted if wanted in kinds else kinds[(index + offset) % len(kinds)]
-        if "kind" in item:
-            kind = item["kind"]
-        rng = random.Random(f"{lesson_id}.{index}")
-        made.append(sentence_exercise(kind, item, eu_pool, es_pool, rng))
     extras = extra_exercises(lesson, lesson_id)
-    # Interleave: a hand-made item after every sentence exercise while there are any left.
+    # Interleave: a hand-made item after every sentence exercise (from the second on) while there are any left.
+    slots: list[tuple[str, int]] = []
+    left = iter(range(len(extras)))
+    for index in range(len(sentences)):
+        slots.append(("sentence", index))
+        if index >= 1:
+            extra = next(left, None)
+            if extra is not None:
+                slots.append(("extra", extra))
+    slots += [("extra", extra) for extra in left]
+    tracking = exposure is not None and lemmatizer is not None
+
     merged: list[dict] = []
-    for index, exercise in enumerate(made):
+    cards = 0
+    for slot, index in slots:
+        if slot == "sentence":
+            item = sentences[index]
+            texts = [item["eu"]]
+        else:
+            exercise = extras[index]
+            texts = tagging_texts(exercise)
+        items = [i for text in texts for i in lemmatizer.items_in(text, unit)] if tracking else []
+        items = list({i[0]: i for i in items}.values())
+        if tracking:
+            for new in (i for i in items if i[0] not in exposure.introduced and i[2]):
+                if cards < MAX_NEW_WORDS:
+                    exposure.introduced.add(new[0])
+                    declare = lemmatizer.lemmas.get(new[3], (99, 9)) <= unit
+                    merged.append(word_intro(new, pictures or {}, declare))
+                    cards += 1
+        if slot == "sentence":
+            familiarity = min((exposure.counts.get(i[0], 0) for i in items), default=None) if tracking else None
+            kind = choose_kind(item, index, offset, familiarity, lesson_id)
+            exercise = sentence_exercise(kind, item, eu_pool, es_pool, random.Random(f"{lesson_id}.{index}"))
         merged.append(exercise)
-        if index >= 1 and extras:
-            merged.append(extras.pop(0))
-    merged += extras
+        if tracking:
+            for i in items:
+                exposure.counts[i[0]] = exposure.counts.get(i[0], 0) + 1
+
     for number, exercise in enumerate(merged, start=1):
         exercise["id"] = f"{lesson_id}.e{number:02d}"
         if "structures" not in exercise and lesson.get("structures"):
             exercise["structures"] = list(lesson["structures"])
         if "vocabulary" not in exercise and lemmatizer is not None:
-            found = lemmatizer.lemmas_in(tagging_texts(exercise), unit_key_from_id(lesson_id.split(".")[0]))
+            found = lemmatizer.lemmas_in(tagging_texts(exercise), unit)
             if found:
                 exercise["vocabulary"] = found
     ordered = []
@@ -351,7 +484,13 @@ def build_lesson(lesson_id: str, lesson: dict, offset: int, lemmatizer: Lemmatiz
     return {"id": lesson_id, "exercises": ordered}
 
 
-def build_unit(source: dict, section_last: bool, lemmatizer: Lemmatizer | None = None) -> dict:
+def build_unit(
+    source: dict,
+    section_last: bool,
+    lemmatizer: Lemmatizer | None = None,
+    exposure: Exposure | None = None,
+    pictures: dict[str, str] | None = None,
+) -> dict:
     unit_id = source["id"]
     levels = []
     lesson_levels = 0
@@ -363,7 +502,8 @@ def build_unit(source: dict, section_last: bool, lemmatizer: Lemmatizer | None =
             raise SourceError(f"{level_id}: a {kind} level needs a title")
         if kind == "lesson":
             lessons = [
-                build_lesson(f"{level_id}.s{n}", lesson, offset=lesson_levels * 3 + n, lemmatizer=lemmatizer)
+                build_lesson(f"{level_id}.s{n}", lesson, offset=lesson_levels * 3 + n, lemmatizer=lemmatizer,
+                             exposure=exposure, pictures=pictures)
                 for n, lesson in enumerate(level["lessons"], start=1)
             ]
             lesson_levels += 1
@@ -398,23 +538,67 @@ def dump(data: dict) -> str:
     return json.dumps(data, ensure_ascii=False, indent=2) + "\n"
 
 
+def pictures_by_lemma(lemmatizer: Lemmatizer) -> dict[str, str]:
+    """Image of each lemma that has one (catalog labels made of a single lemma)."""
+    pictures: dict[str, str] = {}
+    for row in load_images().values():
+        lemmas = lemmatizer.lemmas_in([row["eu"]], (99, 9))
+        if len(lemmas) == 1:
+            pictures.setdefault(lemmas[0], f"{row['image']}.webp")
+    return pictures
+
+
+def unit_texts(unit: dict) -> list[str]:
+    """Every Basque text a learner reads in a unit (for the glossary)."""
+    texts = [e["eu"] for gb in unit["guidebook"]["sections"] for e in gb.get("examples", [])]
+    for level in unit["levels"]:
+        for lesson in level.get("lessons", []):
+            for exercise in lesson["exercises"]:
+                texts += basque_texts(exercise)
+        if level["type"] == "story":
+            texts += [line["eu"] for line in level["story"]["lines"]]
+    return texts
+
+
+def glossary(texts: list[str], lemmatizer: Lemmatizer) -> dict:
+    """Spanish hints for the words of the course, keyed by lower-case word or multi-word lemma."""
+    phrases = sorted((lemma for lemma in lemmatizer.lemmas if " " in lemma), key=lambda x: (-len(x), x))
+    entries: dict[str, dict[str, str]] = {}
+    for text in texts:
+        normalized = " " + " ".join(tokens(text)) + " "
+        for phrase in phrases:
+            if f" {phrase} " in normalized:
+                entries[phrase] = {"es": lemmatizer.glosses[phrase]}
+        for token in normalized.split():
+            hint = lemmatizer.gloss(token)
+            if hint:
+                entries[token] = hint
+    return {"schemaVersion": SCHEMA_VERSION, "entries": dict(sorted(entries.items()))}
+
+
 def build(only: set[str] | None = None) -> dict[Path, str]:
-    """Returns the files to write: path → content."""
+    """Returns the files to write: path → content. Every unit is built, in course order, because
+    a unit's lessons depend on the words of the units before it; [only] limits what is returned."""
     course = yaml.safe_load((SOURCE / "course.yaml").read_text(encoding="utf-8"))
     outputs: dict[Path, str] = {}
     lemmatizer = Lemmatizer()
+    exposure = Exposure()
+    pictures = pictures_by_lemma(lemmatizer)
+    texts: list[str] = []
     last_units = {section["units"][-1] for section in course["sections"] if section["units"]}
     listed = [unit for section in course["sections"] for unit in section["units"]]
     for unit_id in listed:
-        if only is not None and unit_id not in only:
-            continue
         path = SOURCE / "units" / f"{unit_id}.yaml"
         if not path.exists():
             continue  # not written yet: the validator reports listed units without a file
         source = yaml.safe_load(path.read_text(encoding="utf-8"))
         if source["id"] != unit_id:
             raise SourceError(f"{path.name}: id {source['id']!r} does not match the file name")
-        outputs[ASSETS / "units" / f"{unit_id}.json"] = dump(build_unit(source, unit_id in last_units, lemmatizer))
+        unit = build_unit(source, unit_id in last_units, lemmatizer, exposure, pictures)
+        texts += unit_texts(unit)
+        if only is None or unit_id in only:
+            outputs[ASSETS / "units" / f"{unit_id}.json"] = dump(unit)
+    outputs[ASSETS / "glossary.json"] = dump(glossary(texts, lemmatizer))
     if only is None:
         written = [u for u in listed if (SOURCE / "units" / f"{u}.yaml").exists()]
         sections = []

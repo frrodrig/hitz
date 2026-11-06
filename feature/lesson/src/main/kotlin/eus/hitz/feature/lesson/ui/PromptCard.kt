@@ -38,6 +38,7 @@ internal fun PromptCard(
                 language = language,
                 style = MaterialTheme.typography.headlineSmall,
                 modifier = Modifier.weight(1f),
+                hints = true,
             )
             if (onPlay != null) {
                 IconButton(onClick = onPlay) {

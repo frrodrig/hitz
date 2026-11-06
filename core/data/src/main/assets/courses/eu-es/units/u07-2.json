@@ -135,18 +135,33 @@
           "exercises": [
             {
               "id": "u07-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "joan",
+              "translation": "ir",
+              "vocabulary": [
+                "joan"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e02",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Mañana iré a Bilbao."
+                "lang": "eu",
+                "text": "Bihar Bilbora joango naiz."
               },
               "answers": [
-                "Bihar Bilbora joango naiz."
+                "Mañana iré a Bilbao.",
+                "Mañana voy a ir a Bilbao.",
+                "Mañana voy a Bilbao."
               ],
               "distractors": [
-                "astean",
-                "edo",
-                "Ane"
+                "noche",
+                "que",
+                "Esta"
               ],
               "vocabulary": [
                 "bihar",
@@ -159,13 +174,34 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Etzi amarekin bazkalduko dut.",
+              "id": "u07-2.l1.s1.e03",
+              "type": "word_intro",
+              "word": "etzi",
+              "translation": "pasado mañana",
+              "vocabulary": [
+                "etzi"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Etzi amarekin bazkalduko dut."
+              },
+              "answers": [
+                "Pasado mañana comeré con mi madre.",
+                "Pasado mañana voy a comer con mi madre."
+              ],
               "distractors": [
-                "Bilbora",
-                "afalduko",
-                "dugu"
+                "cenaremos",
+                "a",
+                "en",
+                "El"
               ],
               "vocabulary": [
                 "etzi",
@@ -179,7 +215,33 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e03",
+              "id": "u07-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "datorren",
+              "translation": "próximo; que viene",
+              "vocabulary": [
+                "datorren"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e06",
+              "type": "word_intro",
+              "word": "aurten",
+              "translation": "este año",
+              "vocabulary": [
+                "aurten"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e07",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -217,14 +279,35 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e04",
-              "type": "translate_typing",
+              "id": "u07-2.l1.s1.e08",
+              "type": "word_intro",
+              "word": "etorri",
+              "translation": "venir",
+              "vocabulary": [
+                "etorri"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e09",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "La semana que viene vendrá Ane."
+                "lang": "eu",
+                "text": "Datorren astean Ane etorriko da."
               },
               "answers": [
-                "Datorren astean Ane etorriko da."
+                "La semana que viene vendrá Ane.",
+                "La próxima semana vendrá Ane.",
+                "Ane vendrá la semana que viene."
+              ],
+              "distractors": [
+                "año",
+                "con",
+                "cenaremos",
+                "iremos"
               ],
               "vocabulary": [
                 "datorren",
@@ -238,7 +321,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e05",
+              "id": "u07-2.l1.s1.e10",
               "type": "fill_blank",
               "sentence": "Etzi Gasteizera joango ___.",
               "options": [
@@ -258,7 +341,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e06",
+              "id": "u07-2.l1.s1.e11",
               "type": "order_sentence",
               "answer": "Aurten Frantziara bidaiatuko dugu.",
               "translation": "Este año viajaremos a Francia.",
@@ -273,7 +356,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e07",
+              "id": "u07-2.l1.s1.e12",
               "type": "choose_meaning",
               "text": "Etzi etorriko naiz.",
               "options": [
@@ -293,7 +376,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e08",
+              "id": "u07-2.l1.s1.e13",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -320,7 +403,20 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e09",
+              "id": "u07-2.l1.s1.e14",
+              "type": "word_intro",
+              "word": "egin",
+              "translation": "hacer",
+              "vocabulary": [
+                "egin"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -349,7 +445,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e10",
+              "id": "u07-2.l1.s1.e16",
               "type": "listen_type",
               "text": "Bihar goizean ogia erosiko dut.",
               "answers": [
@@ -368,7 +464,20 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e11",
+              "id": "u07-2.l1.s1.e17",
+              "type": "word_intro",
+              "word": "itzuli",
+              "translation": "volver; devolver",
+              "vocabulary": [
+                "itzuli"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s1.e18",
               "type": "read_true_false",
               "passage": "Bihar Donostiara joango naiz. Etzi etxera itzuliko naiz.",
               "statement": "Volverá a casa pasado mañana.",
@@ -387,10 +496,14 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e12",
-              "type": "speak",
+              "id": "u07-2.l1.s1.e19",
+              "type": "listen_tap",
               "text": "Zer egingo duzu bihar?",
-              "translation": "¿Qué harás mañana?",
+              "distractors": [
+                "etxean",
+                "ikasiko",
+                "naiz"
+              ],
               "vocabulary": [
                 "zer",
                 "egin",
@@ -403,7 +516,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s1.e13",
+              "id": "u07-2.l1.s1.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -479,6 +592,42 @@
             },
             {
               "id": "u07-2.l1.s2.e03",
+              "type": "word_intro",
+              "word": "lo egin",
+              "translation": "dormir",
+              "vocabulary": [
+                "lo egin"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e04",
+              "type": "word_intro",
+              "word": "prestatu",
+              "translation": "preparar",
+              "vocabulary": [
+                "prestatu"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e05",
+              "type": "word_intro",
+              "word": "eraman",
+              "translation": "llevar",
+              "vocabulary": [
+                "eraman"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e06",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -519,7 +668,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s2.e04",
+              "id": "u07-2.l1.s2.e07",
               "type": "order_sentence",
               "answer": "Nik afaria prestatuko dut.",
               "translation": "Yo prepararé la cena.",
@@ -534,7 +683,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s2.e05",
+              "id": "u07-2.l1.s2.e08",
               "type": "fill_blank",
               "sentence": "Zuk zer jango ___?",
               "options": [
@@ -554,7 +703,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s2.e06",
+              "id": "u07-2.l1.s2.e09",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -574,7 +723,19 @@
               ]
             },
             {
-              "id": "u07-2.l1.s2.e07",
+              "id": "u07-2.l1.s2.e10",
+              "type": "word_intro",
+              "word": "berandu",
+              "translation": "tarde (con retraso)",
+              "vocabulary": [
+                "berandu"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e11",
               "type": "fill_blank",
               "sentence": "Haiek berandu itzuliko ___.",
               "options": [
@@ -594,11 +755,33 @@
               ]
             },
             {
-              "id": "u07-2.l1.s2.e08",
-              "type": "listen_type",
-              "text": "Gaur ez dut asko jango. Zortzietan bukatuko dut.",
+              "id": "u07-2.l1.s2.e12",
+              "type": "word_intro",
+              "word": "bukatu",
+              "translation": "terminar",
+              "vocabulary": [
+                "bukatu"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaur ez dut asko jango. Zortzietan bukatuko dut."
+              },
               "answers": [
-                "Gaur ez dut asko jango. Zortzietan bukatuko dut."
+                "Hoy no comeré mucho. Terminaré a las ocho.",
+                "Hoy no voy a comer mucho. Voy a terminar a las ocho."
+              ],
+              "distractors": [
+                "noche",
+                "beber",
+                "pescado",
+                "la"
               ],
               "vocabulary": [
                 "gaur",
@@ -614,7 +797,19 @@
               ]
             },
             {
-              "id": "u07-2.l1.s2.e09",
+              "id": "u07-2.l1.s2.e14",
+              "type": "word_intro",
+              "word": "sartu",
+              "translation": "entrar; meter",
+              "vocabulary": [
+                "sartu"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e15",
               "type": "choose_meaning",
               "text": "Ni ez naiz sartuko.",
               "options": [
@@ -634,10 +829,34 @@
               ]
             },
             {
-              "id": "u07-2.l1.s2.e10",
-              "type": "speak",
-              "text": "Bihar etxean geratuko naiz.",
-              "translation": "Mañana me quedaré en casa.",
+              "id": "u07-2.l1.s2.e16",
+              "type": "word_intro",
+              "word": "geratu",
+              "translation": "quedar(se)",
+              "vocabulary": [
+                "geratu"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bihar etxean geratuko naiz."
+              },
+              "answers": [
+                "Mañana me quedaré en casa.",
+                "Mañana voy a quedarme en casa.",
+                "Mañana me voy a quedar en casa."
+              ],
+              "distractors": [
+                "Qué",
+                "beber",
+                "la"
+              ],
               "vocabulary": [
                 "bihar",
                 "etxe",
@@ -649,7 +868,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s2.e11",
+              "id": "u07-2.l1.s2.e18",
               "type": "complete_chat",
               "messages": [
                 {
@@ -674,7 +893,19 @@
               ]
             },
             {
-              "id": "u07-2.l1.s2.e12",
+              "id": "u07-2.l1.s2.e19",
+              "type": "word_intro",
+              "word": "bederatzi",
+              "translation": "nueve",
+              "vocabulary": [
+                "bederatzi"
+              ],
+              "structures": [
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s2.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -699,7 +930,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s2.e13",
+              "id": "u07-2.l1.s2.e21",
               "type": "read_true_false",
               "passage": "Gaur Itziarrek afaria prestatuko du. Mikelek ardoa eramango du, eta ogia ere bai.",
               "statement": "Mikel preparará la cena.",
@@ -721,20 +952,20 @@
               ]
             },
             {
-              "id": "u07-2.l1.s2.e14",
+              "id": "u07-2.l1.s2.e22",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Hoy dormiré diez horas."
+                "lang": "eu",
+                "text": "Gaur hamar orduz lo egingo dut."
               },
               "answers": [
-                "Gaur hamar orduz lo egingo dut."
+                "Hoy dormiré diez horas.",
+                "Hoy voy a dormir diez horas."
               ],
               "distractors": [
-                "etxean",
-                "ez",
-                "afaria",
-                "gauean"
+                "prepararé",
+                "en",
+                "mucho"
               ],
               "vocabulary": [
                 "gaur",
@@ -755,13 +986,45 @@
           "exercises": [
             {
               "id": "u07-2.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "apaindegi",
+              "translation": "peluquería",
+              "image": "shop_hairdresser.webp",
+              "vocabulary": [
+                "apaindegi"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e02",
+              "type": "word_intro",
+              "word": "noa",
+              "translation": "voy",
+              "vocabulary": [
+                "joan"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e03",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Ahora voy a la peluquería."
+                "lang": "eu",
+                "text": "Orain apaindegira noa."
               },
               "answers": [
-                "Orain apaindegira noa."
+                "Ahora voy a la peluquería."
+              ],
+              "distractors": [
+                "gracias",
+                "agencia",
+                "Adónde"
               ],
               "vocabulary": [
                 "orain",
@@ -774,8 +1037,21 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e02",
-              "type": "translate_typing",
+              "id": "u07-2.l1.s3.e04",
+              "type": "word_intro",
+              "word": "zoaz",
+              "translation": "vas",
+              "vocabulary": [
+                "joan"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e05",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Nora zoaz?"
@@ -784,6 +1060,10 @@
                 "¿Adónde vas?",
                 "¿A dónde vas?",
                 "¿Adónde va usted?"
+              ],
+              "distractors": [
+                "va",
+                "voy"
               ],
               "vocabulary": [
                 "nor",
@@ -795,7 +1075,72 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e03",
+              "id": "u07-2.l1.s3.e06",
+              "type": "word_intro",
+              "word": "urtarril",
+              "translation": "enero",
+              "vocabulary": [
+                "urtarril"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e07",
+              "type": "word_intro",
+              "word": "otsail",
+              "translation": "febrero",
+              "vocabulary": [
+                "otsail"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e08",
+              "type": "word_intro",
+              "word": "martxo",
+              "translation": "marzo",
+              "vocabulary": [
+                "martxo"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e09",
+              "type": "word_intro",
+              "word": "apiril",
+              "translation": "abril",
+              "vocabulary": [
+                "apiril"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e10",
+              "type": "word_intro",
+              "word": "maiatz",
+              "translation": "mayo",
+              "vocabulary": [
+                "maiatz"
+              ],
+              "structures": [
+                "synthetic-present",
+                "months"
+              ]
+            },
+            {
+              "id": "u07-2.l1.s3.e11",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -837,14 +1182,18 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e04",
-              "type": "translate_typing",
+              "id": "u07-2.l1.s3.e12",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Etxetik nator."
               },
               "answers": [
                 "Vengo de casa."
+              ],
+              "distractors": [
+                "En",
+                "vas"
               ],
               "vocabulary": [
                 "etxe",
@@ -856,7 +1205,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e05",
+              "id": "u07-2.l1.s3.e13",
               "type": "fill_blank",
               "sentence": "Orain etxera ___.",
               "options": [
@@ -876,11 +1225,19 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e06",
-              "type": "listen_type",
-              "text": "Nondik zatoz?",
+              "id": "u07-2.l1.s3.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nondik zatoz?"
+              },
               "answers": [
-                "Nondik zatoz?"
+                "¿De dónde vienes?",
+                "¿De dónde viene usted?"
+              ],
+              "distractors": [
+                "y",
+                "vendré"
               ],
               "vocabulary": [
                 "non",
@@ -892,7 +1249,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e07",
+              "id": "u07-2.l1.s3.e15",
               "type": "choose_meaning",
               "text": "Mikel bidaia-agentziatik dator.",
               "options": [
@@ -911,10 +1268,22 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e08",
-              "type": "speak",
-              "text": "Ondo nabil, eskerrik asko.",
-              "translation": "Me va bien, gracias.",
+              "id": "u07-2.l1.s3.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ondo nabil, eskerrik asko."
+              },
+              "answers": [
+                "Me va bien, gracias.",
+                "Ando bien, gracias.",
+                "Voy bien, gracias."
+              ],
+              "distractors": [
+                "viajes",
+                "dónde",
+                "iremos"
+              ],
               "vocabulary": [
                 "eskerrik asko",
                 "ondo",
@@ -926,7 +1295,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e09",
+              "id": "u07-2.l1.s3.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -952,7 +1321,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e10",
+              "id": "u07-2.l1.s3.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -978,7 +1347,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e11",
+              "id": "u07-2.l1.s3.e19",
               "type": "read_true_false",
               "passage": "Uztailean eta abuztuan Zarautzen geratuko gara. Irailean Bilbora itzuliko gara.",
               "statement": "En septiembre volverán a Bilbao.",
@@ -998,7 +1367,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e12",
+              "id": "u07-2.l1.s3.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1023,7 +1392,7 @@
               ]
             },
             {
-              "id": "u07-2.l1.s3.e13",
+              "id": "u07-2.l1.s3.e21",
               "type": "listen_tap",
               "text": "Urtarrilean Gasteizera etorriko naiz.",
               "distractors": [
@@ -1072,7 +1441,19 @@
             },
             {
               "id": "u07-2.l2.s1.e02",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "prestatzen",
+              "translation": "preparando (prestatu)",
+              "vocabulary": [
+                "prestatu"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e03",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
                 "text": "Afaria prestatzen ari naiz."
@@ -1080,6 +1461,11 @@
               "answers": [
                 "Estoy preparando la cena.",
                 "Preparo la cena."
+              ],
+              "distractors": [
+                "Estamos",
+                "euskera",
+                "Ahora"
               ],
               "vocabulary": [
                 "afari",
@@ -1091,7 +1477,19 @@
               ]
             },
             {
-              "id": "u07-2.l2.s1.e03",
+              "id": "u07-2.l2.s1.e04",
+              "type": "word_intro",
+              "word": "irakurtzen",
+              "translation": "leyendo (irakurri)",
+              "vocabulary": [
+                "irakurri"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e05",
               "type": "fill_blank",
               "sentence": "Jon irakurtzen ___ da.",
               "options": [
@@ -1109,11 +1507,20 @@
               ]
             },
             {
-              "id": "u07-2.l2.s1.e04",
-              "type": "listen_type",
-              "text": "Ane liburu bat irakurtzen ari da.",
+              "id": "u07-2.l2.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Ane está leyendo un libro."
+              },
               "answers": [
                 "Ane liburu bat irakurtzen ari da."
+              ],
+              "distractors": [
+                "Zuek",
+                "liburutegian",
+                "naiz",
+                "Umeak"
               ],
               "vocabulary": [
                 "liburu",
@@ -1126,7 +1533,7 @@
               ]
             },
             {
-              "id": "u07-2.l2.s1.e05",
+              "id": "u07-2.l2.s1.e07",
               "type": "fill_blank",
               "sentence": "Haiek ura edaten ari ___.",
               "options": [
@@ -1146,10 +1553,26 @@
               ]
             },
             {
-              "id": "u07-2.l2.s1.e06",
-              "type": "speak",
+              "id": "u07-2.l2.s1.e08",
+              "type": "word_intro",
+              "word": "lo",
+              "translation": "sueño (lo egin: dormir)",
+              "vocabulary": [
+                "lo egin"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e09",
+              "type": "listen_tap",
               "text": "Umeak lo egiten ari dira.",
-              "translation": "Los niños están durmiendo.",
+              "distractors": [
+                "euskara",
+                "bat",
+                "zara"
+              ],
               "vocabulary": [
                 "ume",
                 "lo egin",
@@ -1161,7 +1584,19 @@
               ]
             },
             {
-              "id": "u07-2.l2.s1.e07",
+              "id": "u07-2.l2.s1.e10",
+              "type": "word_intro",
+              "word": "deitzen",
+              "translation": "llamando (deitu)",
+              "vocabulary": [
+                "deitu"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e11",
               "type": "choose_meaning",
               "text": "Gorka telefonoz deitzen ari da.",
               "options": [
@@ -1180,7 +1615,19 @@
               ]
             },
             {
-              "id": "u07-2.l2.s1.e08",
+              "id": "u07-2.l2.s1.e12",
+              "type": "word_intro",
+              "word": "hartzen",
+              "translation": "cogiendo / tomando (hartu)",
+              "vocabulary": [
+                "hartu"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e13",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1204,7 +1651,19 @@
               ]
             },
             {
-              "id": "u07-2.l2.s1.e09",
+              "id": "u07-2.l2.s1.e14",
+              "type": "word_intro",
+              "word": "afaltzen",
+              "translation": "cenando (afaldu)",
+              "vocabulary": [
+                "afaldu"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1229,7 +1688,7 @@
               ]
             },
             {
-              "id": "u07-2.l2.s1.e10",
+              "id": "u07-2.l2.s1.e16",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1255,7 +1714,7 @@
               ]
             },
             {
-              "id": "u07-2.l2.s1.e11",
+              "id": "u07-2.l2.s1.e17",
               "type": "read_true_false",
               "passage": "Orain Leire eta Ibai hondartzan daude. Ibai liburu bat irakurtzen ari da.",
               "statement": "Ibai está nadando.",
@@ -1275,7 +1734,7 @@
               ]
             },
             {
-              "id": "u07-2.l2.s1.e12",
+              "id": "u07-2.l2.s1.e18",
               "type": "listen_tap",
               "text": "Zuek zer jaten ari zarete?",
               "distractors": [
@@ -1294,14 +1753,34 @@
               ]
             },
             {
-              "id": "u07-2.l2.s1.e13",
-              "type": "translate_typing",
+              "id": "u07-2.l2.s1.e19",
+              "type": "word_intro",
+              "word": "idazten",
+              "translation": "escribiendo (idatzi)",
+              "vocabulary": [
+                "idatzi"
+              ],
+              "structures": [
+                "tzen-ari"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s1.e20",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Ahora le estoy escribiendo a mi madre."
+                "lang": "eu",
+                "text": "Orain amari idazten ari naiz."
               },
               "answers": [
-                "Orain amari idazten ari naiz."
+                "Ahora le estoy escribiendo a mi madre.",
+                "Ahora estoy escribiendo a mi madre.",
+                "Ahora le escribo a mi madre."
+              ],
+              "distractors": [
+                "leyendo",
+                "estás",
+                "euskera",
+                "Los"
               ],
               "vocabulary": [
                 "orain",
@@ -1601,10 +2080,32 @@
           "exercises": [
             {
               "id": "u07-2.l2.s3.e01",
-              "type": "listen_type",
-              "text": "Gu hondartzara goaz.",
+              "type": "word_intro",
+              "word": "goaz",
+              "translation": "vamos",
+              "vocabulary": [
+                "joan"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gu hondartzara goaz."
+              },
               "answers": [
-                "Gu hondartzara goaz."
+                "Vamos a la playa.",
+                "Nosotros vamos a la playa.",
+                "Nosotras vamos a la playa."
+              ],
+              "distractors": [
+                "el",
+                "casa",
+                "Qué"
               ],
               "vocabulary": [
                 "gu",
@@ -1616,10 +2117,32 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e02",
-              "type": "speak",
-              "text": "Nondik zatozte?",
-              "translation": "¿De dónde venís?",
+              "id": "u07-2.l2.s3.e03",
+              "type": "word_intro",
+              "word": "zatozte",
+              "translation": "venís",
+              "vocabulary": [
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nondik zatozte?"
+              },
+              "answers": [
+                "¿De dónde venís?",
+                "¿De dónde vienen ustedes?"
+              ],
+              "distractors": [
+                "Venimos",
+                "abuelos"
+              ],
               "vocabulary": [
                 "non",
                 "etorri"
@@ -1629,7 +2152,43 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e03",
+              "id": "u07-2.l2.s3.e05",
+              "type": "word_intro",
+              "word": "nator",
+              "translation": "vengo",
+              "vocabulary": [
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e06",
+              "type": "word_intro",
+              "word": "zatoz",
+              "translation": "vienes",
+              "vocabulary": [
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e07",
+              "type": "word_intro",
+              "word": "nabil",
+              "translation": "ando / estoy (haciendo)",
+              "vocabulary": [
+                "ibili"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e08",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1668,7 +2227,19 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e04",
+              "id": "u07-2.l2.s3.e09",
+              "type": "word_intro",
+              "word": "gatoz",
+              "translation": "venimos",
+              "vocabulary": [
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e10",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1690,7 +2261,7 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e05",
+              "id": "u07-2.l2.s3.e11",
               "type": "fill_blank",
               "sentence": "Gu Donostiara ___.",
               "options": [
@@ -1708,19 +2279,32 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e06",
+              "id": "u07-2.l2.s3.e12",
+              "type": "word_intro",
+              "word": "datoz",
+              "translation": "vienen",
+              "vocabulary": [
+                "etorri"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e13",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Los abuelos vienen del hospital."
+                "lang": "eu",
+                "text": "Aitona eta amona ospitaletik datoz."
               },
               "answers": [
-                "Aitona eta amona ospitaletik datoz."
+                "Los abuelos vienen del hospital.",
+                "El abuelo y la abuela vienen del hospital."
               ],
               "distractors": [
-                "hondartzara",
-                "zatozte",
-                "zabiltza"
+                "playa",
+                "agencia",
+                "tal"
               ],
               "vocabulary": [
                 "aitona",
@@ -1734,7 +2318,7 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e07",
+              "id": "u07-2.l2.s3.e14",
               "type": "fill_blank",
               "sentence": "Nondik ___ zu?",
               "options": [
@@ -1753,12 +2337,32 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e08",
-              "type": "listen_tap",
-              "text": "Nola zabiltza?",
+              "id": "u07-2.l2.s3.e15",
+              "type": "word_intro",
+              "word": "zabiltza",
+              "translation": "andas",
+              "vocabulary": [
+                "ibili"
+              ],
+              "structures": [
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l2.s3.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nola zabiltza?"
+              },
+              "answers": [
+                "¿Qué tal andas?",
+                "¿Cómo andas?",
+                "¿Cómo te va?"
+              ],
               "distractors": [
-                "doa",
-                "bidaia-agentziara"
+                "la",
+                "Vamos"
               ],
               "vocabulary": [
                 "nola",
@@ -1769,7 +2373,7 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e09",
+              "id": "u07-2.l2.s3.e17",
               "type": "choose_meaning",
               "text": "Jon eta Ane apaindegitik datoz.",
               "options": [
@@ -1788,14 +2392,21 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e10",
-              "type": "translate_typing",
+              "id": "u07-2.l2.s3.e18",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Los niños andan por el parque."
+                "lang": "eu",
+                "text": "Umeak parkean dabiltza."
               },
               "answers": [
-                "Umeak parkean dabiltza."
+                "Los niños andan por el parque.",
+                "Los niños están en el parque."
+              ],
+              "distractors": [
+                "Ahora",
+                "casa",
+                "en",
+                "vienen"
               ],
               "vocabulary": [
                 "ume",
@@ -1807,7 +2418,7 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e11",
+              "id": "u07-2.l2.s3.e19",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1833,10 +2444,21 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e12",
-              "type": "order_sentence",
-              "answer": "Mikel bidaia-agentziara doa.",
-              "translation": "Mikel va a la agencia de viajes.",
+              "id": "u07-2.l2.s3.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mikel bidaia-agentziara doa."
+              },
+              "answers": [
+                "Mikel va a la agencia de viajes."
+              ],
+              "distractors": [
+                "el",
+                "venís",
+                "estoy",
+                "por"
+              ],
               "vocabulary": [
                 "bidaia-agentzia",
                 "joan"
@@ -1846,7 +2468,7 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e13",
+              "id": "u07-2.l2.s3.e21",
               "type": "read_true_false",
               "passage": "Ni orain Getxora noa. Nire lagunak Getxon daude.",
               "statement": "Sus amigos están en Getxo.",
@@ -1863,7 +2485,7 @@
               ]
             },
             {
-              "id": "u07-2.l2.s3.e14",
+              "id": "u07-2.l2.s3.e22",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2100,6 +2722,19 @@
             },
             {
               "id": "u07-2.l3.s1.e09",
+              "type": "word_intro",
+              "word": "ekain",
+              "translation": "junio",
+              "vocabulary": [
+                "ekain"
+              ],
+              "structures": [
+                "future-ko",
+                "time-markers"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s1.e10",
               "type": "read_true_false",
               "passage": "Ekainean Lekeitiora joango gara. Hondartzan egongo gara.",
               "statement": "En junio irán a Lekeitio.",
@@ -2117,7 +2752,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s1.e10",
+              "id": "u07-2.l3.s1.e11",
               "type": "order_sentence",
               "answer": "Bai! Zer eramango dut?",
               "translation": "¡Sí! ¿Qué llevaré?",
@@ -2133,7 +2768,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s1.e11",
+              "id": "u07-2.l3.s1.e12",
               "type": "read_true_false",
               "passage": "Aurten ez dut bidaiatuko. Etxean geratuko naiz.",
               "statement": "Este año va a viajar.",
@@ -2153,7 +2788,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s1.e12",
+              "id": "u07-2.l3.s1.e13",
               "type": "choose_image",
               "prompt": "la peluquería",
               "options": [
@@ -2233,6 +2868,19 @@
             },
             {
               "id": "u07-2.l3.s2.e03",
+              "type": "word_intro",
+              "word": "dator",
+              "translation": "viene",
+              "vocabulary": [
+                "etorri"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e04",
               "type": "fill_blank",
               "sentence": "Edurne hondartzatik ___.",
               "options": [
@@ -2251,7 +2899,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s2.e04",
+              "id": "u07-2.l3.s2.e05",
               "type": "listen_tap",
               "text": "Eta zu, zer egiten ari zara?",
               "distractors": [
@@ -2273,7 +2921,20 @@
               ]
             },
             {
-              "id": "u07-2.l3.s2.e05",
+              "id": "u07-2.l3.s2.e06",
+              "type": "word_intro",
+              "word": "erosten",
+              "translation": "comprando (erosi)",
+              "vocabulary": [
+                "erosi"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e07",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2311,14 +2972,19 @@
               ]
             },
             {
-              "id": "u07-2.l3.s2.e06",
-              "type": "translate_typing",
+              "id": "u07-2.l3.s2.e08",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "Estoy preparando la comida."
               },
               "answers": [
                 "Bazkaria prestatzen ari naiz."
+              ],
+              "distractors": [
+                "Eta",
+                "Ama",
+                "berandu"
               ],
               "vocabulary": [
                 "bazkari",
@@ -2331,7 +2997,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s2.e07",
+              "id": "u07-2.l3.s2.e09",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2359,7 +3025,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s2.e08",
+              "id": "u07-2.l3.s2.e10",
               "type": "order_sentence",
               "answer": "Aita beti berandu dator.",
               "translation": "Papá siempre viene tarde.",
@@ -2375,7 +3041,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s2.e09",
+              "id": "u07-2.l3.s2.e11",
               "type": "read_true_false",
               "passage": "Orain Uxue eta Peio jatetxe batean daude. Afaltzen ari dira.",
               "statement": "Uxue y Peio están cenando.",
@@ -2395,7 +3061,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s2.e10",
+              "id": "u07-2.l3.s2.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2416,7 +3082,34 @@
               ]
             },
             {
-              "id": "u07-2.l3.s2.e11",
+              "id": "u07-2.l3.s2.e13",
+              "type": "word_intro",
+              "word": "doa",
+              "translation": "va",
+              "vocabulary": [
+                "joan"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e14",
+              "type": "word_intro",
+              "word": "bidaia-agentzia",
+              "translation": "agencia de viajes",
+              "image": "shop_travel_agency.webp",
+              "vocabulary": [
+                "bidaia-agentzia"
+              ],
+              "structures": [
+                "tzen-ari",
+                "synthetic-present"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s2.e15",
               "type": "read_true_false",
               "passage": "Josu apaindegira doa. Gero bidaia-agentziara joango da.",
               "statement": "Josu viene de la agencia de viajes.",
@@ -2434,7 +3127,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s2.e12",
+              "id": "u07-2.l3.s2.e16",
               "type": "choose_image",
               "prompt": "la agencia de viajes",
               "options": [
@@ -2467,6 +3160,19 @@
           "exercises": [
             {
               "id": "u07-2.l3.s3.e01",
+              "type": "word_intro",
+              "word": "abuztu",
+              "translation": "agosto",
+              "vocabulary": [
+                "abuztu"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e02",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -2494,7 +3200,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s3.e02",
+              "id": "u07-2.l3.s3.e03",
               "type": "listen_tap",
               "text": "Zenbat aste geratuko zara?",
               "distractors": [
@@ -2514,7 +3220,20 @@
               ]
             },
             {
-              "id": "u07-2.l3.s3.e03",
+              "id": "u07-2.l3.s3.e04",
+              "type": "word_intro",
+              "word": "lan",
+              "translation": "trabajo (lan egin: trabajar)",
+              "vocabulary": [
+                "lan egin"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e05",
               "type": "choose_meaning",
               "text": "Urtarrilean bidaia-agentzia batean lan egingo dut.",
               "options": [
@@ -2537,7 +3256,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s3.e04",
+              "id": "u07-2.l3.s3.e06",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2558,7 +3277,33 @@
               ]
             },
             {
-              "id": "u07-2.l3.s3.e05",
+              "id": "u07-2.l3.s3.e07",
+              "type": "word_intro",
+              "word": "uztail",
+              "translation": "julio",
+              "vocabulary": [
+                "uztail"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e08",
+              "type": "word_intro",
+              "word": "irail",
+              "translation": "septiembre",
+              "vocabulary": [
+                "irail"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e09",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2599,7 +3344,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s3.e06",
+              "id": "u07-2.l3.s3.e10",
               "type": "order_sentence",
               "answer": "Noiz itzuliko zara? Irailean.",
               "translation": "¿Cuándo volverás? En septiembre.",
@@ -2615,7 +3360,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s3.e07",
+              "id": "u07-2.l3.s3.e11",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2646,7 +3391,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s3.e08",
+              "id": "u07-2.l3.s3.e12",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2671,7 +3416,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s3.e09",
+              "id": "u07-2.l3.s3.e13",
               "type": "read_true_false",
               "passage": "Otsailean Hondarribian egongo gara. Maiatzean Tuterara joango gara.",
               "statement": "En mayo irán a Tudela.",
@@ -2689,11 +3434,60 @@
               ]
             },
             {
-              "id": "u07-2.l3.s3.e10",
-              "type": "listen_type",
-              "text": "Urrian, azaroan eta abenduan Bilbon lan egingo dut.",
+              "id": "u07-2.l3.s3.e14",
+              "type": "word_intro",
+              "word": "urri",
+              "translation": "octubre",
+              "vocabulary": [
+                "urri"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e15",
+              "type": "word_intro",
+              "word": "azaro",
+              "translation": "noviembre",
+              "vocabulary": [
+                "azaro"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e16",
+              "type": "word_intro",
+              "word": "abendu",
+              "translation": "diciembre",
+              "vocabulary": [
+                "abendu"
+              ],
+              "structures": [
+                "months",
+                "future-ko"
+              ]
+            },
+            {
+              "id": "u07-2.l3.s3.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Urrian, azaroan eta abenduan Bilbon lan egingo dut."
+              },
               "answers": [
-                "Urrian, azaroan eta abenduan Bilbon lan egingo dut."
+                "En octubre, noviembre y diciembre trabajaré en Bilbao.",
+                "En octubre, noviembre y diciembre voy a trabajar en Bilbao."
+              ],
+              "distractors": [
+                "Cuándo",
+                "Londres",
+                "quedarás",
+                "viajaré"
               ],
               "vocabulary": [
                 "urri",
@@ -2710,7 +3504,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s3.e11",
+              "id": "u07-2.l3.s3.e18",
               "type": "read_true_false",
               "passage": "Ekainean eta uztailean Getxon geratuko naiz. Abuztuan ez dut bidaiatuko.",
               "statement": "En agosto viajará.",
@@ -2732,7 +3526,7 @@
               ]
             },
             {
-              "id": "u07-2.l3.s3.e12",
+              "id": "u07-2.l3.s3.e19",
               "type": "choose_image",
               "prompt": "la hora",
               "options": [

@@ -155,16 +155,43 @@
           "exercises": [
             {
               "id": "u01-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "hura",
+              "translation": "él; ella; aquel",
+              "vocabulary": [
+                "hura"
+              ],
+              "structures": [
+                "izan-present",
+                "demonstrative-hau"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s1.e02",
+              "type": "word_intro",
+              "word": "da",
+              "translation": "es / está",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "izan-present",
+                "demonstrative-hau"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s1.e03",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Él es Mikel."
+                "lang": "eu",
+                "text": "Hura Mikel da."
               },
               "answers": [
-                "Hura Mikel da."
+                "Él es Mikel.",
+                "Aquel es Mikel."
               ],
               "distractors": [
-                "eta",
+                "Esta",
                 "Ane"
               ],
               "vocabulary": [
@@ -177,13 +204,46 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e02",
-              "type": "listen_tap",
-              "text": "Gu Ane eta Jon gara.",
+              "id": "u01-2.l1.s1.e04",
+              "type": "word_intro",
+              "word": "gu",
+              "translation": "nosotros",
+              "vocabulary": [
+                "gu"
+              ],
+              "structures": [
+                "izan-present",
+                "demonstrative-hau"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "gara",
+              "translation": "somos",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "izan-present",
+                "demonstrative-hau"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gu Ane eta Jon gara."
+              },
+              "answers": [
+                "Somos Ane y Jon.",
+                "Nosotros somos Ane y Jon."
+              ],
               "distractors": [
-                "zarete",
-                "Neska",
-                "Haiek"
+                "Son",
+                "Nerea",
+                "Este"
               ],
               "vocabulary": [
                 "gu",
@@ -196,7 +256,63 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e03",
+              "id": "u01-2.l1.s1.e07",
+              "type": "word_intro",
+              "word": "gizon",
+              "translation": "hombre",
+              "image": "people_man.webp",
+              "vocabulary": [
+                "gizon"
+              ],
+              "structures": [
+                "izan-present",
+                "demonstrative-hau"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s1.e08",
+              "type": "word_intro",
+              "word": "emakume",
+              "translation": "mujer",
+              "image": "people_woman.webp",
+              "vocabulary": [
+                "emakume"
+              ],
+              "structures": [
+                "izan-present",
+                "demonstrative-hau"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s1.e09",
+              "type": "word_intro",
+              "word": "mutil",
+              "translation": "chico",
+              "image": "people_boy.webp",
+              "vocabulary": [
+                "mutil"
+              ],
+              "structures": [
+                "izan-present",
+                "demonstrative-hau"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s1.e10",
+              "type": "word_intro",
+              "word": "neska",
+              "translation": "chica",
+              "image": "people_girl.webp",
+              "vocabulary": [
+                "neska"
+              ],
+              "structures": [
+                "izan-present",
+                "demonstrative-hau"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s1.e11",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -233,14 +349,21 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e04",
-              "type": "translate_typing",
+              "id": "u01-2.l1.s1.e12",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Sois Itziar e Iker?"
+                "lang": "eu",
+                "text": "Zuek Itziar eta Iker zarete?"
               },
               "answers": [
-                "Zuek Itziar eta Iker zarete?"
+                "¿Sois Itziar e Iker?",
+                "¿Vosotros sois Itziar e Iker?",
+                "¿Ustedes son Itziar e Iker?"
+              ],
+              "distractors": [
+                "Él",
+                "Este",
+                "Leire"
               ],
               "vocabulary": [
                 "zuek",
@@ -253,7 +376,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e05",
+              "id": "u01-2.l1.s1.e13",
               "type": "fill_blank",
               "sentence": "Gu Ane eta Jon ___.",
               "options": [
@@ -274,10 +397,21 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e06",
-              "type": "order_sentence",
-              "answer": "Haiek Leire eta Unai dira.",
-              "translation": "Son Leire y Unai.",
+              "id": "u01-2.l1.s1.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Haiek Leire eta Unai dira."
+              },
+              "answers": [
+                "Son Leire y Unai.",
+                "Ellos son Leire y Unai."
+              ],
+              "distractors": [
+                "chica",
+                "Amaia",
+                "e"
+              ],
               "vocabulary": [
                 "haiek",
                 "eta",
@@ -289,7 +423,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e07",
+              "id": "u01-2.l1.s1.e15",
               "type": "choose_meaning",
               "text": "Haiek Leire eta Unai dira.",
               "options": [
@@ -309,7 +443,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e08",
+              "id": "u01-2.l1.s1.e16",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -328,7 +462,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e09",
+              "id": "u01-2.l1.s1.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -356,11 +490,19 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e10",
-              "type": "listen_type",
-              "text": "Neska hau Amaia da.",
+              "id": "u01-2.l1.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Neska hau Amaia da."
+              },
               "answers": [
-                "Neska hau Amaia da."
+                "Esta chica es Amaia."
+              ],
+              "distractors": [
+                "Unai",
+                "un",
+                "Iker"
               ],
               "vocabulary": [
                 "neska",
@@ -372,7 +514,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e11",
+              "id": "u01-2.l1.s1.e19",
               "type": "read_true_false",
               "passage": "Kaixo! Ni Gorka naiz. Neska hau Irati da.",
               "statement": "Irati es una chica.",
@@ -389,10 +531,14 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e12",
-              "type": "speak",
+              "id": "u01-2.l1.s1.e20",
+              "type": "listen_tap",
               "text": "Mutil hau Aitor da.",
-              "translation": "Este chico es Aitor.",
+              "distractors": [
+                "gara",
+                "Emakume",
+                "zarete"
+              ],
               "vocabulary": [
                 "mutil",
                 "izan"
@@ -403,7 +549,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e13",
+              "id": "u01-2.l1.s1.e21",
               "type": "choose_image",
               "prompt": "el hombre",
               "options": [
@@ -430,7 +576,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e14",
+              "id": "u01-2.l1.s1.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -458,7 +604,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e15",
+              "id": "u01-2.l1.s1.e23",
               "type": "choose_image",
               "prompt": "la chica",
               "options": [
@@ -485,7 +631,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s1.e16",
+              "id": "u01-2.l1.s1.e24",
               "type": "choose_image",
               "prompt": "la mujer",
               "options": [
@@ -518,11 +664,34 @@
           "exercises": [
             {
               "id": "u01-2.l1.s2.e01",
-              "type": "listen_tap",
-              "text": "Ni irakaslea naiz.",
+              "type": "word_intro",
+              "word": "irakasle",
+              "translation": "profesor; profesora",
+              "image": "job_teacher.webp",
+              "vocabulary": [
+                "irakasle"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ni irakaslea naiz."
+              },
+              "answers": [
+                "Soy profesor.",
+                "Soy profesora.",
+                "Yo soy profesor.",
+                "Yo soy profesora."
+              ],
               "distractors": [
-                "medikua",
-                "ingeniariak"
+                "también",
+                "Son"
               ],
               "vocabulary": [
                 "ni",
@@ -535,14 +704,47 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e02",
-              "type": "translate_typing",
+              "id": "u01-2.l1.s2.e03",
+              "type": "word_intro",
+              "word": "ikasle",
+              "translation": "estudiante",
+              "vocabulary": [
+                "ikasle"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e04",
+              "type": "word_intro",
+              "word": "baina",
+              "translation": "pero",
+              "vocabulary": [
+                "baina"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e05",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Soy estudiante, pero Ane es profesora."
+                "lang": "eu",
+                "text": "Ni ikaslea naiz, baina Ane irakaslea da."
               },
               "answers": [
-                "Ni ikaslea naiz, baina Ane irakaslea da."
+                "Soy estudiante, pero Ane es profesora.",
+                "Yo soy estudiante, pero Ane es profesora."
+              ],
+              "distractors": [
+                "Sois",
+                "dependientes",
+                "cocineros",
+                "Son"
               ],
               "vocabulary": [
                 "ni",
@@ -557,7 +759,63 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e03",
+              "id": "u01-2.l1.s2.e06",
+              "type": "word_intro",
+              "word": "mediku",
+              "translation": "médico; médica",
+              "image": "job_doctor.webp",
+              "vocabulary": [
+                "mediku"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e07",
+              "type": "word_intro",
+              "word": "erizain",
+              "translation": "enfermero; enfermera",
+              "image": "job_nurse.webp",
+              "vocabulary": [
+                "erizain"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e08",
+              "type": "word_intro",
+              "word": "sukaldari",
+              "translation": "cocinero; cocinera",
+              "image": "job_cook.webp",
+              "vocabulary": [
+                "sukaldari"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e09",
+              "type": "word_intro",
+              "word": "dendari",
+              "translation": "dependiente; dependienta",
+              "image": "job_shop_assistant.webp",
+              "vocabulary": [
+                "dendari"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e10",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -599,7 +857,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e04",
+              "id": "u01-2.l1.s2.e11",
               "type": "order_sentence",
               "answer": "Ane medikua da.",
               "translation": "Ane es médica.",
@@ -613,7 +871,20 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e05",
+              "id": "u01-2.l1.s2.e12",
+              "type": "word_intro",
+              "word": "haiek",
+              "translation": "ellos; ellas",
+              "vocabulary": [
+                "haiek"
+              ],
+              "structures": [
+                "article",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s2.e13",
               "type": "fill_blank",
               "sentence": "Haiek dendariak ___.",
               "options": [
@@ -634,7 +905,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e06",
+              "id": "u01-2.l1.s2.e14",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -654,7 +925,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e07",
+              "id": "u01-2.l1.s2.e15",
               "type": "fill_blank",
               "sentence": "Gu ___ gara.",
               "options": [
@@ -674,7 +945,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e08",
+              "id": "u01-2.l1.s2.e16",
               "type": "listen_type",
               "text": "Gu sukaldariak gara.",
               "answers": [
@@ -691,7 +962,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e09",
+              "id": "u01-2.l1.s2.e17",
               "type": "choose_meaning",
               "text": "Ni langabetua naiz.",
               "options": [
@@ -711,10 +982,22 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e10",
-              "type": "speak",
-              "text": "Zuek ingeniariak zarete.",
-              "translation": "Sois ingenieros.",
+              "id": "u01-2.l1.s2.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zuek ingeniariak zarete."
+              },
+              "answers": [
+                "Sois ingenieros.",
+                "Sois ingenieras.",
+                "Vosotros sois ingenieros.",
+                "Vosotras sois ingenieras."
+              ],
+              "distractors": [
+                "cocineros",
+                "es"
+              ],
               "vocabulary": [
                 "zuek",
                 "ingeniari",
@@ -726,7 +1009,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e11",
+              "id": "u01-2.l1.s2.e19",
               "type": "complete_chat",
               "messages": [
                 {
@@ -753,7 +1036,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e12",
+              "id": "u01-2.l1.s2.e20",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -780,7 +1063,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e13",
+              "id": "u01-2.l1.s2.e21",
               "type": "read_true_false",
               "passage": "Mikel ez da medikua. Erizaina edo irakaslea da.",
               "statement": "Mikel es médico.",
@@ -799,7 +1082,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e14",
+              "id": "u01-2.l1.s2.e22",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -822,7 +1105,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e15",
+              "id": "u01-2.l1.s2.e23",
               "type": "choose_image",
               "prompt": "la profesora",
               "options": [
@@ -849,7 +1132,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e16",
+              "id": "u01-2.l1.s2.e24",
               "type": "choose_image",
               "prompt": "la enfermera",
               "options": [
@@ -876,7 +1159,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e17",
+              "id": "u01-2.l1.s2.e25",
               "type": "choose_image",
               "prompt": "la dependienta",
               "options": [
@@ -903,7 +1186,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s2.e18",
+              "id": "u01-2.l1.s2.e26",
               "type": "choose_image",
               "prompt": "el médico",
               "options": [
@@ -936,13 +1219,31 @@
           "exercises": [
             {
               "id": "u01-2.l1.s3.e01",
-              "type": "translate_typing",
+              "type": "word_intro",
+              "word": "nongoa",
+              "translation": "¿de dónde (es)?",
+              "vocabulary": [
+                "nongo"
+              ],
+              "structures": [
+                "nongo",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s3.e02",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿De dónde eres?"
+                "lang": "eu",
+                "text": "Nongoa zara?"
               },
               "answers": [
-                "Nongoa zara?"
+                "¿De dónde eres?",
+                "¿De dónde es usted?"
+              ],
+              "distractors": [
+                "lo",
+                "Ane"
               ],
               "vocabulary": [
                 "nongo",
@@ -954,7 +1255,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e02",
+              "id": "u01-2.l1.s3.e03",
               "type": "order_sentence",
               "answer": "Ni Bilbokoa naiz.",
               "translation": "Soy de Bilbao.",
@@ -968,7 +1269,72 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e03",
+              "id": "u01-2.l1.s3.e04",
+              "type": "word_intro",
+              "word": "ere",
+              "translation": "también",
+              "vocabulary": [
+                "ere"
+              ],
+              "structures": [
+                "nongo",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "edo",
+              "translation": "o",
+              "vocabulary": [
+                "edo"
+              ],
+              "structures": [
+                "nongo",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s3.e06",
+              "type": "word_intro",
+              "word": "berriro",
+              "translation": "otra vez",
+              "vocabulary": [
+                "berriro"
+              ],
+              "structures": [
+                "nongo",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s3.e07",
+              "type": "word_intro",
+              "word": "poliki",
+              "translation": "despacio",
+              "vocabulary": [
+                "poliki"
+              ],
+              "structures": [
+                "nongo",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s3.e08",
+              "type": "word_intro",
+              "word": "hitz egin",
+              "translation": "hablar",
+              "vocabulary": [
+                "hitz egin"
+              ],
+              "structures": [
+                "nongo",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s3.e09",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1010,7 +1376,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e04",
+              "id": "u01-2.l1.s3.e10",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1029,7 +1395,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e05",
+              "id": "u01-2.l1.s3.e11",
               "type": "fill_blank",
               "sentence": "___ zara?",
               "options": [
@@ -1049,7 +1415,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e06",
+              "id": "u01-2.l1.s3.e12",
               "type": "listen_type",
               "text": "Gu Gasteizkoak gara.",
               "answers": [
@@ -1065,7 +1431,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e07",
+              "id": "u01-2.l1.s3.e13",
               "type": "choose_meaning",
               "text": "Gu Gasteizkoak gara.",
               "options": [
@@ -1084,7 +1450,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e08",
+              "id": "u01-2.l1.s3.e14",
               "type": "speak",
               "text": "Ni Bilbokoa naiz, eta Ane ere Bilbokoa da.",
               "translation": "Soy de Bilbao, y Ane también es de Bilbao.",
@@ -1100,7 +1466,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e09",
+              "id": "u01-2.l1.s3.e15",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1125,7 +1491,33 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e10",
+              "id": "u01-2.l1.s3.e16",
+              "type": "word_intro",
+              "word": "zuek",
+              "translation": "vosotros",
+              "vocabulary": [
+                "zuek"
+              ],
+              "structures": [
+                "nongo",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s3.e17",
+              "type": "word_intro",
+              "word": "nongoak",
+              "translation": "¿de dónde (son)?",
+              "vocabulary": [
+                "nongo"
+              ],
+              "structures": [
+                "nongo",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l1.s3.e18",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1151,7 +1543,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e11",
+              "id": "u01-2.l1.s3.e19",
               "type": "read_true_false",
               "passage": "Ni Leire naiz. Durangokoa naiz, eta Aitor Eibarkoa da.",
               "statement": "Aitor es de Durango.",
@@ -1167,19 +1559,21 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e12",
+              "id": "u01-2.l1.s3.e20",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿De dónde es Mikel? No lo sé."
+                "lang": "eu",
+                "text": "Nongoa da Mikel? Ez dakit."
               },
               "answers": [
-                "Nongoa da Mikel? Ez dakit."
+                "¿De dónde es Mikel? No lo sé.",
+                "¿De dónde es Mikel? No sé."
               ],
               "distractors": [
-                "Ume",
-                "hau",
-                "zarete"
+                "Irún",
+                "Este",
+                "también",
+                "sois"
               ],
               "vocabulary": [
                 "ez dakit",
@@ -1192,7 +1586,7 @@
               ]
             },
             {
-              "id": "u01-2.l1.s3.e13",
+              "id": "u01-2.l1.s3.e21",
               "type": "listen_tap",
               "text": "Ume hau Irungoa da.",
               "distractors": [
@@ -1226,9 +1620,32 @@
           "exercises": [
             {
               "id": "u01-2.l2.s1.e01",
-              "type": "order_sentence",
-              "answer": "Zu medikua zara ala erizaina?",
-              "translation": "¿Eres médico o enfermero?",
+              "type": "word_intro",
+              "word": "ala",
+              "translation": "o (en preguntas)",
+              "structures": [
+                "izan-present",
+                "ala-question"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zu medikua zara ala erizaina?"
+              },
+              "answers": [
+                "¿Eres médico o enfermero?",
+                "¿Eres médica o enfermera?",
+                "¿Es usted médico o enfermero?",
+                "¿Es usted médica o enfermera?"
+              ],
+              "distractors": [
+                "Sebastián",
+                "profesor",
+                "estudiante"
+              ],
               "vocabulary": [
                 "zu",
                 "mediku",
@@ -1241,7 +1658,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e02",
+              "id": "u01-2.l2.s1.e03",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1264,7 +1681,20 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e03",
+              "id": "u01-2.l2.s1.e04",
+              "type": "word_intro",
+              "word": "zarete",
+              "translation": "sois",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "izan-present",
+                "ala-question"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s1.e05",
               "type": "fill_blank",
               "sentence": "Zuek irakasleak ___.",
               "options": [
@@ -1285,11 +1715,19 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e04",
-              "type": "listen_type",
-              "text": "Hura irakaslea da ala ikaslea?",
+              "id": "u01-2.l2.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Él es profesor o estudiante?"
+              },
               "answers": [
                 "Hura irakaslea da ala ikaslea?"
+              ],
+              "distractors": [
+                "dira",
+                "Gu",
+                "gara"
               ],
               "vocabulary": [
                 "hura",
@@ -1303,7 +1741,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e05",
+              "id": "u01-2.l2.s1.e07",
               "type": "fill_blank",
               "sentence": "Ikaslea zara ___ irakaslea?",
               "options": [
@@ -1323,7 +1761,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e06",
+              "id": "u01-2.l2.s1.e08",
               "type": "speak",
               "text": "Gu ez gara ikasleak.",
               "translation": "No somos estudiantes.",
@@ -1339,7 +1777,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e07",
+              "id": "u01-2.l2.s1.e09",
               "type": "choose_meaning",
               "text": "Hura Bilbokoa edo Getxokoa da.",
               "options": [
@@ -1359,7 +1797,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e08",
+              "id": "u01-2.l2.s1.e10",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1385,7 +1823,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e09",
+              "id": "u01-2.l2.s1.e11",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1412,7 +1850,20 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e10",
+              "id": "u01-2.l2.s1.e12",
+              "type": "word_intro",
+              "word": "dira",
+              "translation": "son",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "izan-present",
+                "ala-question"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s1.e13",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -1437,7 +1888,20 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e11",
+              "id": "u01-2.l2.s1.e14",
+              "type": "word_intro",
+              "word": "ingeniari",
+              "translation": "ingeniero; ingeniera",
+              "vocabulary": [
+                "ingeniari"
+              ],
+              "structures": [
+                "izan-present",
+                "ala-question"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s1.e15",
               "type": "read_true_false",
               "passage": "Oier eta Garazi Irungoak dira. Oier medikua da, eta Garazi ingeniaria.",
               "statement": "Garazi es médica.",
@@ -1454,7 +1918,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e12",
+              "id": "u01-2.l2.s1.e16",
               "type": "listen_tap",
               "text": "Ni ez naiz medikua, erizaina naiz.",
               "distractors": [
@@ -1475,7 +1939,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s1.e13",
+              "id": "u01-2.l2.s1.e17",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -1502,6 +1966,16 @@
           "exercises": [
             {
               "id": "u01-2.l2.s2.e01",
+              "type": "word_intro",
+              "word": "hau",
+              "translation": "este / esta",
+              "structures": [
+                "demonstrative-hau",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s2.e02",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -1522,7 +1996,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s2.e02",
+              "id": "u01-2.l2.s2.e03",
               "type": "listen_type",
               "text": "Hau Eneko da. Ikaslea da.",
               "answers": [
@@ -1538,7 +2012,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s2.e03",
+              "id": "u01-2.l2.s2.e04",
               "type": "fill_blank",
               "sentence": "Gizon ___ medikua da.",
               "options": [
@@ -1559,10 +2033,28 @@
               ]
             },
             {
-              "id": "u01-2.l2.s2.e04",
-              "type": "speak",
+              "id": "u01-2.l2.s2.e05",
+              "type": "word_intro",
+              "word": "ez dakit",
+              "translation": "no sé",
+              "vocabulary": [
+                "ez dakit"
+              ],
+              "structures": [
+                "demonstrative-hau",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s2.e06",
+              "type": "listen_tap",
               "text": "Nor da gizon hau? Ez dakit.",
-              "translation": "¿Quién es este hombre? No lo sé.",
+              "distractors": [
+                "dira",
+                "Olatz",
+                "Bermeokoak",
+                "Neska"
+              ],
               "vocabulary": [
                 "ez dakit",
                 "nor",
@@ -1575,7 +2067,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s2.e05",
+              "id": "u01-2.l2.s2.e07",
               "type": "choose_meaning",
               "text": "Nor da hau?",
               "options": [
@@ -1594,7 +2086,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s2.e06",
+              "id": "u01-2.l2.s2.e08",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1619,7 +2111,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s2.e07",
+              "id": "u01-2.l2.s2.e09",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1644,19 +2136,44 @@
               ]
             },
             {
-              "id": "u01-2.l2.s2.e08",
+              "id": "u01-2.l2.s2.e10",
+              "type": "word_intro",
+              "word": "ume",
+              "translation": "niño; niña",
+              "image": "people_child.webp",
+              "vocabulary": [
+                "ume"
+              ],
+              "structures": [
+                "demonstrative-hau",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s2.e11",
+              "type": "word_intro",
+              "word": "hauek",
+              "translation": "estos / estas",
+              "structures": [
+                "demonstrative-hau",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s2.e12",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Estos niños son de Bermeo."
+                "lang": "eu",
+                "text": "Ume hauek Bermeokoak dira."
               },
               "answers": [
-                "Ume hauek Bermeokoak dira."
+                "Estos niños son de Bermeo.",
+                "Estas niñas son de Bermeo."
               ],
               "distractors": [
-                "bai",
-                "Emakume",
-                "Olatz"
+                "chica",
+                "Olatz",
+                "Quién"
               ],
               "vocabulary": [
                 "ume",
@@ -1668,7 +2185,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s2.e09",
+              "id": "u01-2.l2.s2.e13",
               "type": "read_true_false",
               "passage": "Hau Josu da. Josu sukaldaria da, eta Bilbokoa da.",
               "statement": "Josu es de Bilbao.",
@@ -1684,7 +2201,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s2.e10",
+              "id": "u01-2.l2.s2.e14",
               "type": "listen_tap",
               "text": "Zer da mutil hau?",
               "distractors": [
@@ -1703,14 +2220,19 @@
               ]
             },
             {
-              "id": "u01-2.l2.s2.e11",
-              "type": "translate_typing",
+              "id": "u01-2.l2.s2.e15",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "Estos son Olatz y Xabier."
               },
               "answers": [
                 "Hauek Olatz eta Xabier dira."
+              ],
+              "distractors": [
+                "baina",
+                "gizon",
+                "Emakume"
               ],
               "vocabulary": [
                 "eta",
@@ -1722,7 +2244,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s2.e12",
+              "id": "u01-2.l2.s2.e16",
               "type": "order_sentence",
               "answer": "Neska hau ez da dendaria, baina gizon hau bai.",
               "translation": "Esta chica no es dependienta, pero este hombre sí.",
@@ -1747,10 +2269,46 @@
           "exercises": [
             {
               "id": "u01-2.l2.s3.e01",
-              "type": "listen_type",
-              "text": "Zein da telefono zenbakia?",
+              "type": "word_intro",
+              "word": "telefono",
+              "translation": "teléfono",
+              "image": "object_phone.webp",
+              "vocabulary": [
+                "telefono"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s3.e02",
+              "type": "word_intro",
+              "word": "zenbaki",
+              "translation": "número",
+              "vocabulary": [
+                "zenbaki"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zein da telefono zenbakia?"
+              },
               "answers": [
-                "Zein da telefono zenbakia?"
+                "¿Cuál es el número de teléfono?"
+              ],
+              "distractors": [
+                "Seis",
+                "cuatro",
+                "La",
+                "vez"
               ],
               "vocabulary": [
                 "zein",
@@ -1764,10 +2322,85 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e02",
-              "type": "speak",
-              "text": "Bat, bi, hiru, lau, bost.",
-              "translation": "Uno, dos, tres, cuatro, cinco.",
+              "id": "u01-2.l2.s3.e04",
+              "type": "word_intro",
+              "word": "bat",
+              "translation": "uno",
+              "vocabulary": [
+                "bat"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s3.e05",
+              "type": "word_intro",
+              "word": "bi",
+              "translation": "dos",
+              "vocabulary": [
+                "bi"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s3.e06",
+              "type": "word_intro",
+              "word": "hiru",
+              "translation": "tres",
+              "vocabulary": [
+                "hiru"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s3.e07",
+              "type": "word_intro",
+              "word": "lau",
+              "translation": "cuatro",
+              "vocabulary": [
+                "lau"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s3.e08",
+              "type": "word_intro",
+              "word": "bost",
+              "translation": "cinco",
+              "vocabulary": [
+                "bost"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s3.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bat, bi, hiru, lau, bost."
+              },
+              "answers": [
+                "Uno, dos, tres, cuatro, cinco."
+              ],
+              "distractors": [
+                "o",
+                "teléfono",
+                "diez"
+              ],
               "vocabulary": [
                 "bat",
                 "bi",
@@ -1781,7 +2414,20 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e03",
+              "id": "u01-2.l2.s3.e10",
+              "type": "word_intro",
+              "word": "hamar",
+              "translation": "diez",
+              "vocabulary": [
+                "hamar"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l2.s3.e11",
               "type": "match_pairs",
               "pairs": [
                 {
@@ -1823,7 +2469,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e04",
+              "id": "u01-2.l2.s3.e12",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "eu",
@@ -1850,7 +2496,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e05",
+              "id": "u01-2.l2.s3.e13",
               "type": "fill_blank",
               "sentence": "Bat, bi, ___, lau.",
               "options": [
@@ -1872,20 +2518,20 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e06",
+              "id": "u01-2.l2.s3.e14",
               "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "Despacio, por favor: seis, siete, dos, cero."
+                "lang": "eu",
+                "text": "Poliki, mesedez: sei, zazpi, bi, zero."
               },
               "answers": [
-                "Poliki, mesedez: sei, zazpi, bi, zero."
+                "Despacio, por favor: seis, siete, dos, cero."
               ],
               "distractors": [
-                "ala",
-                "Zenbakia",
-                "Berriro",
-                "Helbidea"
+                "número",
+                "cuatro",
+                "o",
+                "El"
               ],
               "vocabulary": [
                 "poliki",
@@ -1901,7 +2547,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e07",
+              "id": "u01-2.l2.s3.e15",
               "type": "choose_meaning",
               "text": "Berriro, mesedez.",
               "options": [
@@ -1920,7 +2566,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e08",
+              "id": "u01-2.l2.s3.e16",
               "type": "listen_tap",
               "text": "Zenbakia bost da ala sei?",
               "distractors": [
@@ -1940,7 +2586,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e09",
+              "id": "u01-2.l2.s3.e17",
               "type": "complete_chat",
               "messages": [
                 {
@@ -1971,14 +2617,19 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e10",
-              "type": "translate_typing",
+              "id": "u01-2.l2.s3.e18",
+              "type": "translate_wordbank",
               "prompt": {
-                "lang": "es",
-                "text": "¿Cuál es la dirección?"
+                "lang": "eu",
+                "text": "Zein da helbidea?"
               },
               "answers": [
-                "Zein da helbidea?"
+                "¿Cuál es la dirección?"
+              ],
+              "distractors": [
+                "ocho",
+                "vez",
+                "dos"
               ],
               "vocabulary": [
                 "zein",
@@ -1991,7 +2642,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e11",
+              "id": "u01-2.l2.s3.e19",
               "type": "read_true_false",
               "passage": "Ni Haizea naiz. Telefono zenbakia: sei, lau, lau, bi.",
               "statement": "El número de Haizea empieza por seis.",
@@ -2011,7 +2662,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e12",
+              "id": "u01-2.l2.s3.e20",
               "type": "order_sentence",
               "answer": "Helbidea eta telefono zenbakia, mesedez.",
               "translation": "La dirección y el número de teléfono, por favor.",
@@ -2028,7 +2679,7 @@
               ]
             },
             {
-              "id": "u01-2.l2.s3.e13",
+              "id": "u01-2.l2.s3.e21",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2107,6 +2758,52 @@
             },
             {
               "id": "u01-2.l3.s1.e03",
+              "type": "word_intro",
+              "word": "pixka bat",
+              "translation": "un poco",
+              "vocabulary": [
+                "pixka bat"
+              ],
+              "structures": [
+                "izan-present",
+                "nongo"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s1.e04",
+              "type": "word_intro",
+              "word": "hitz",
+              "translation": "palabra (hitz egin: hablar)",
+              "vocabulary": [
+                "hitz egin"
+              ],
+              "structures": [
+                "izan-present",
+                "nongo"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s1.e05",
+              "type": "word_intro",
+              "word": "egiten",
+              "translation": "haciendo (egin)",
+              "structures": [
+                "izan-present",
+                "nongo"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s1.e06",
+              "type": "word_intro",
+              "word": "dut",
+              "translation": "(yo) tengo · auxiliar (yo)",
+              "structures": [
+                "izan-present",
+                "nongo"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s1.e07",
               "type": "choose_meaning",
               "text": "Euskaraz pixka bat hitz egiten dut.",
               "options": [
@@ -2126,7 +2823,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s1.e04",
+              "id": "u01-2.l3.s1.e08",
               "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
@@ -2149,7 +2846,17 @@
               ]
             },
             {
-              "id": "u01-2.l3.s1.e05",
+              "id": "u01-2.l3.s1.e09",
+              "type": "word_intro",
+              "word": "duzu",
+              "translation": "(tú) tienes · auxiliar (tú)",
+              "structures": [
+                "izan-present",
+                "nongo"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s1.e10",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2178,7 +2885,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s1.e06",
+              "id": "u01-2.l3.s1.e11",
               "type": "listen_tap",
               "text": "Ni ere Tolosakoa naiz!",
               "distractors": [
@@ -2197,7 +2904,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s1.e07",
+              "id": "u01-2.l3.s1.e12",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2236,14 +2943,19 @@
               ]
             },
             {
-              "id": "u01-2.l3.s1.e08",
-              "type": "translate_typing",
+              "id": "u01-2.l3.s1.e13",
+              "type": "translate_wordbank",
               "prompt": {
                 "lang": "es",
                 "text": "¿Hablas euskera?"
               },
               "answers": [
                 "Euskaraz hitz egiten duzu?"
+              ],
+              "distractors": [
+                "ikasten",
+                "bat",
+                "ari"
               ],
               "vocabulary": [
                 "euskara",
@@ -2255,7 +2967,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s1.e09",
+              "id": "u01-2.l3.s1.e14",
               "type": "read_true_false",
               "passage": "Kaixo! Ni Kepa naiz. Sukaldaria naiz, eta Lekeitiokoa naiz.",
               "statement": "Kepa es cocinero.",
@@ -2273,7 +2985,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s1.e10",
+              "id": "u01-2.l3.s1.e15",
               "type": "order_sentence",
               "answer": "Bai, pixka bat. Euskara ikasten ari naiz.",
               "translation": "Sí, un poco. Estoy aprendiendo euskera.",
@@ -2289,7 +3001,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s1.e11",
+              "id": "u01-2.l3.s1.e16",
               "type": "read_true_false",
               "passage": "Gu Asier eta Uxue gara. Asier medikua da, eta Uxue erizaina.",
               "statement": "Uxue es médica.",
@@ -2307,7 +3019,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s1.e12",
+              "id": "u01-2.l3.s1.e17",
               "type": "choose_image",
               "prompt": "el cocinero",
               "options": [
@@ -2561,6 +3273,19 @@
             },
             {
               "id": "u01-2.l3.s2.e11",
+              "type": "word_intro",
+              "word": "langabetu",
+              "translation": "parado; parada",
+              "vocabulary": [
+                "langabetu"
+              ],
+              "structures": [
+                "demonstrative-hau",
+                "izan-present"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s2.e12",
               "type": "read_true_false",
               "passage": "Hauek Ander eta Miren dira. Ander langabetua da.",
               "statement": "Ander trabaja de cocinero.",
@@ -2576,7 +3301,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s2.e12",
+              "id": "u01-2.l3.s2.e13",
               "type": "choose_image",
               "prompt": "el niño",
               "options": [
@@ -2653,6 +3378,19 @@
             },
             {
               "id": "u01-2.l3.s3.e03",
+              "type": "word_intro",
+              "word": "helbide",
+              "translation": "dirección",
+              "vocabulary": [
+                "helbide"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s3.e04",
               "type": "choose_meaning",
               "text": "Eta helbidea?",
               "options": [
@@ -2671,7 +3409,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s3.e04",
+              "id": "u01-2.l3.s3.e05",
               "type": "translate_typing",
               "prompt": {
                 "lang": "es",
@@ -2691,7 +3429,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s3.e05",
+              "id": "u01-2.l3.s3.e06",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2718,7 +3456,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s3.e06",
+              "id": "u01-2.l3.s3.e07",
               "type": "order_sentence",
               "answer": "Barkatu, berriro, mesedez. Poliki!",
               "translation": "Perdona, otra vez, por favor. ¡Despacio!",
@@ -2734,7 +3472,33 @@
               ]
             },
             {
-              "id": "u01-2.l3.s3.e07",
+              "id": "u01-2.l3.s3.e08",
+              "type": "word_intro",
+              "word": "sei",
+              "translation": "seis",
+              "vocabulary": [
+                "sei"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s3.e09",
+              "type": "word_intro",
+              "word": "zero",
+              "translation": "cero",
+              "vocabulary": [
+                "zero"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s3.e10",
               "type": "complete_chat",
               "messages": [
                 {
@@ -2775,7 +3539,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s3.e08",
+              "id": "u01-2.l3.s3.e11",
               "type": "translate_typing",
               "prompt": {
                 "lang": "eu",
@@ -2797,7 +3561,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s3.e09",
+              "id": "u01-2.l3.s3.e12",
               "type": "read_true_false",
               "passage": "Izena: Nerea. Abizena: Goikoetxea. Ikaslea da, eta Bermeokoa da.",
               "statement": "Nerea es estudiante.",
@@ -2815,7 +3579,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s3.e10",
+              "id": "u01-2.l3.s3.e13",
               "type": "listen_type",
               "text": "Ni langabetua naiz, eta Getxokoa naiz.",
               "answers": [
@@ -2833,7 +3597,20 @@
               ]
             },
             {
-              "id": "u01-2.l3.s3.e11",
+              "id": "u01-2.l3.s3.e14",
+              "type": "word_intro",
+              "word": "zazpi",
+              "translation": "siete",
+              "vocabulary": [
+                "zazpi"
+              ],
+              "structures": [
+                "numbers",
+                "questions"
+              ]
+            },
+            {
+              "id": "u01-2.l3.s3.e15",
               "type": "read_true_false",
               "passage": "Izena: Unai. Abizena: Urrutia. Telefono zenbakia: zazpi, zero, hiru.",
               "statement": "El apellido de Unai es Zubiri.",
@@ -2853,7 +3630,7 @@
               ]
             },
             {
-              "id": "u01-2.l3.s3.e12",
+              "id": "u01-2.l3.s3.e16",
               "type": "choose_image",
               "prompt": "el chico",
               "options": [
