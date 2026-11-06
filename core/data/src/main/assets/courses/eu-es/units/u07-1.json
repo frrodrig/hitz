@@ -21,6 +21,43 @@
       "eu": "Ekintzak denboran kokatu asteko egunekin eta «atzo» edo «duela bi aste» bezalako esapideekin."
     }
   ],
+  "keyWords": [
+    {
+      "eu": "atzo",
+      "es": "ayer"
+    },
+    {
+      "eu": "herenegun",
+      "es": "anteayer"
+    },
+    {
+      "eu": "goiz",
+      "es": "mañana (parte del día)",
+      "image": "greeting_morning.webp"
+    },
+    {
+      "eu": "arratsalde",
+      "es": "tarde",
+      "image": "greeting_afternoon.webp"
+    },
+    {
+      "eu": "gau",
+      "es": "noche",
+      "image": "greeting_night.webp"
+    },
+    {
+      "eu": "aste",
+      "es": "semana"
+    },
+    {
+      "eu": "hilabete",
+      "es": "mes"
+    },
+    {
+      "eu": "duela",
+      "es": "hace (tiempo)"
+    }
+  ],
   "guidebook": {
     "sections": [
       {

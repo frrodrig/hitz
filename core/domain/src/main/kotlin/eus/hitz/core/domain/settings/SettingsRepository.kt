@@ -12,6 +12,8 @@ data class UserSettings(
     val listeningEnabled: Boolean = true,
     /** Whether answers play a sound effect (and a vibration). */
     val soundEffectsEnabled: Boolean = true,
+    /** Units whose introduction the learner has already seen. */
+    val seenUnitIntros: Set<String> = emptySet(),
 )
 
 interface SettingsRepository {
@@ -24,6 +26,8 @@ interface SettingsRepository {
     suspend fun setListeningEnabled(enabled: Boolean)
 
     suspend fun setSoundEffectsEnabled(enabled: Boolean)
+
+    suspend fun markUnitIntroSeen(unitId: String)
 }
 
 /** Schedules the daily streak reminder (a background job on Android). */

@@ -13,8 +13,19 @@ data class CourseUnit(
     val bookUnit: Int,
     val title: LocalizedText,
     val goals: List<LocalizedText>,
+    /** Words shown in the unit's introduction, before its first lesson. */
+    val keyWords: List<KeyWord> = emptyList(),
     val guidebook: Guidebook,
     val levels: List<Level>,
+)
+
+/** A key word of a unit; its clip is `<unit id>.kw<index>`. */
+@Serializable
+data class KeyWord(
+    val eu: String,
+    val es: String,
+    /** File name in `assets/images/`. */
+    val image: String? = null,
 )
 
 /** Short grammar and usage notes shown before or during the unit. */

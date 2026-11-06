@@ -43,9 +43,12 @@ import eus.hitz.feature.lesson.navigation.navigateToStory
 import eus.hitz.feature.lesson.navigation.storyScreen
 import eus.hitz.feature.path.navigation.GuidebookRoute
 import eus.hitz.feature.path.navigation.PathRoute
+import eus.hitz.feature.path.navigation.UnitIntroRoute
 import eus.hitz.feature.path.navigation.guidebookScreen
 import eus.hitz.feature.path.navigation.navigateToGuidebook
+import eus.hitz.feature.path.navigation.navigateToUnitIntro
 import eus.hitz.feature.path.navigation.pathScreen
+import eus.hitz.feature.path.navigation.unitIntroScreen
 import eus.hitz.feature.profile.navigation.profileScreen
 import eus.hitz.feature.shop.navigation.shopScreen
 
@@ -59,7 +62,8 @@ fun HitzApp(
 
     // Lessons, stories and guidebooks are full screen: no bottom navigation.
     val showNavigationBar = currentDestination?.let {
-        it.hasRoute(LessonRoute::class) || it.hasRoute(StoryRoute::class) || it.hasRoute(GuidebookRoute::class)
+        it.hasRoute(LessonRoute::class) || it.hasRoute(StoryRoute::class) || it.hasRoute(GuidebookRoute::class) ||
+            it.hasRoute(UnitIntroRoute::class)
     } != true
 
     // Wide windows (tablets, foldables, landscape) use a navigation rail instead of the bottom bar.
@@ -108,8 +112,24 @@ private fun HitzScaffold(
                 onStartStory = { unitId, levelId -> navController.navigateToStory(unitId, levelId) },
                 onOpenShop = { navController.navigateToTopLevel(TopLevelDestination.SHOP) },
                 onOpenProfile = { navController.navigateToTopLevel(TopLevelDestination.PROFILE) },
+                onOpenUnitIntro = { unitId, levelId, lessonId ->
+                    navController.navigateToUnitIntro(unitId, levelId, lessonId)
+                },
             )
             guidebookScreen(onBack = { navController.popBackStack() })
+            unitIntroScreen(
+                onStart = { unitId, levelId, lessonId ->
+                    // The lesson replaces the introduction: closing it goes back to the path.
+                    navController.navigateToLesson(
+                        unitId,
+                        levelId,
+                        lessonId,
+                        navOptions { popUpTo<UnitIntroRoute> { inclusive = true } },
+                    )
+                },
+                onOpenGuidebook = { unitId -> navController.navigateToGuidebook(unitId) },
+                onBack = { navController.popBackStack() },
+            )
             lessonScreen(onClose = { navController.popBackStack() })
             storyScreen(onClose = { navController.popBackStack() })
             leaderboardScreen()

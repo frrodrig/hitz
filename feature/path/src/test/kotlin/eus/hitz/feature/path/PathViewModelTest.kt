@@ -18,6 +18,7 @@ import eus.hitz.core.model.content.Level
 import eus.hitz.core.model.content.LocalizedText
 import eus.hitz.core.model.content.Section
 import eus.hitz.core.testing.FakeGamificationRepository
+import eus.hitz.core.testing.FakeSettingsRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -74,9 +75,11 @@ class PathViewModelTest {
     @Test
     fun `the path updates when a lesson is completed`() = runTest {
         val gamification = FakeGamificationRepository()
+        val settings = FakeSettingsRepository()
         val vm = PathViewModel(
             ObserveLearningPathUseCase(courses, progress),
             ObservePlayerUseCase(gamification, gamification.clock),
+            settings,
         )
         vm.state.test {
             var state = awaitItem()
@@ -84,6 +87,9 @@ class PathViewModelTest {
             val ready = state as PathUiState.Ready
             assertThat(ready.path.currentNode?.levelId).isEqualTo("u01-1.l1")
             assertThat(ready.stats).isEqualTo(PathStats(streak = 0, practicedToday = false, gems = 20, hearts = 5))
+            assertThat(ready.seenUnitIntros).isEmpty()
+            settings.markUnitIntroSeen("u01-1")
+            assertThat((awaitItem() as PathUiState.Ready).seenUnitIntros).containsExactly("u01-1")
             completed.value = setOf("u01-1.l1.s1")
             assertThat((awaitItem() as PathUiState.Ready).path.currentNode).isNull()
         }

@@ -55,6 +55,7 @@ private val Winding = listOf(0.dp, 44.dp, 64.dp, 44.dp, 0.dp, (-44).dp, (-64).dp
 @Composable
 fun PathScreen(
     onStartLevel: (unitId: String, levelId: String, lessonId: String?) -> Unit,
+    onOpenUnitIntro: (unitId: String, levelId: String, lessonId: String?) -> Unit,
     onOpenGuidebook: (unitId: String) -> Unit,
     onStartStory: (unitId: String, levelId: String) -> Unit,
     onOpenShop: () -> Unit,
@@ -65,6 +66,7 @@ fun PathScreen(
     PathContent(
         state = state,
         onStartLevel = onStartLevel,
+        onOpenUnitIntro = onOpenUnitIntro,
         onOpenGuidebook = onOpenGuidebook,
         onStartStory = onStartStory,
         onOpenShop = onOpenShop,
@@ -81,6 +83,7 @@ internal fun PathContent(
     onStartStory: (unitId: String, levelId: String) -> Unit = { _, _ -> },
     onOpenShop: () -> Unit = {},
     onOpenProfile: () -> Unit = {},
+    onOpenUnitIntro: (unitId: String, levelId: String, lessonId: String?) -> Unit = onStartLevel,
     listState: LazyListState = rememberLazyListState(),
 ) {
     var showNoHearts by rememberSaveable { mutableStateOf(false) }
@@ -98,6 +101,9 @@ internal fun PathContent(
                         node.type == NodeType.Story -> onStartStory(node.unitId, node.levelId)
                         // Lessons need hearts; reviews are free practice and legendary levels bring their own.
                         node.type == NodeType.Lesson && state.stats.hearts == 0 -> showNoHearts = true
+                        // A unit is introduced before its first lesson.
+                        node.type == NodeType.Lesson && node.unitId !in state.seenUnitIntros ->
+                            onOpenUnitIntro(node.unitId, node.levelId, node.nextLessonId)
                         else -> onStartLevel(node.unitId, node.levelId, node.nextLessonId)
                     }
                 },

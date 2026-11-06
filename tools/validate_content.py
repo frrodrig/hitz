@@ -400,6 +400,12 @@ def validate(
             app_unit = f"{key[0]}.{key[1]}"
 
             clips: list[tuple[str, str]] = []
+            key_words = unit.get("keyWords", [])
+            check_vocabulary(f"{where} keyWords", [w["eu"] for w in key_words], key, syllabus, report)
+            clips += [(f"{unit_id}.kw{i}", w["eu"]) for i, w in enumerate(key_words)]
+            for word in key_words:
+                if "image" in word and not (assets / "images" / word["image"]).exists():
+                    report.error(where, f"missing image images/{word['image']}")
             for si, gb in enumerate(unit["guidebook"]["sections"]):
                 examples = gb.get("examples", [])
                 check_vocabulary(f"{where} guidebook {si}", [e["eu"] for e in examples], key, syllabus, report)

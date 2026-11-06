@@ -109,6 +109,11 @@ question. Finishing records the story level as completed.
   `RecordSessionUseCase` saves mistakes always and the completion only when the session is finished.
 - `feature:path` shows sections, unit headers with the guidebook, and nodes whose Material
   expressive shape depends on the level type (lesson, story, review, legendary).
+- **Unit introduction** (`UnitIntroRoute`, `feature:path`): the first time a learner opens a lesson
+  of a unit, the path shows what the unit teaches first: its goals, its key words (`keyWords` in the
+  unit JSON: the first core lemmas of the syllabus, with picture and audio `<unit>.kw<i>`) and the
+  titles of its grammar notes, with a link to the guidebook. *Empezar* replaces it with the lesson.
+  Seen introductions are stored in `UserSettings.seenUnitIntros` (DataStore).
 
 ## Accessibility and adaptive layout
 

@@ -27,6 +27,10 @@ class FakeSettingsRepository(initial: UserSettings = UserSettings()) : SettingsR
     override suspend fun setSoundEffectsEnabled(enabled: Boolean) {
         settings.value = settings.value.copy(soundEffectsEnabled = enabled)
     }
+
+    override suspend fun markUnitIntroSeen(unitId: String) {
+        settings.value = settings.value.copy(seenUnitIntros = settings.value.seenUnitIntros + unitId)
+    }
 }
 
 /** Records what was played. */

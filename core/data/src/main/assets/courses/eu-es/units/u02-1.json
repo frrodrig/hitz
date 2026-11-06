@@ -17,6 +17,45 @@
       "eu": "Leku bat badagoen eta non dagoen galdetu."
     }
   ],
+  "keyWords": [
+    {
+      "eu": "herri",
+      "es": "pueblo",
+      "image": "place_town.webp"
+    },
+    {
+      "eu": "hiri",
+      "es": "ciudad",
+      "image": "place_city.webp"
+    },
+    {
+      "eu": "kale",
+      "es": "calle"
+    },
+    {
+      "eu": "plaza",
+      "es": "plaza"
+    },
+    {
+      "eu": "parke",
+      "es": "parque",
+      "image": "place_park.webp"
+    },
+    {
+      "eu": "eliza",
+      "es": "iglesia",
+      "image": "place_church.webp"
+    },
+    {
+      "eu": "udaletxe",
+      "es": "ayuntamiento"
+    },
+    {
+      "eu": "banku",
+      "es": "banco",
+      "image": "place_bank.webp"
+    }
+  ],
   "guidebook": {
     "sections": [
       {

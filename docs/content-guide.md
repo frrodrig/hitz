@@ -116,6 +116,10 @@ form of the forms tables, which is learnt as such (`naiz` = "soy / estoy", not `
   (and its lemma when inflected). In the app, Basque prompts, chat messages and story lines
   underline the words with a hint; tapping one shows its meaning. Legendary levels have no hints.
 
+- **Unit introduction.** Each unit JSON has `keyWords`: the first eight `core` lemmas of its
+  syllabus (`vocabulary.csv` order), with their Spanish and picture. The app shows them, with the
+  unit's goals and grammar titles, before the unit's first lesson; their clips are `<unit>.kw<i>`.
+
 So adding a sentence can change the exercise types (and ids) of later lessons: that is expected,
 and `tools/build_content.py --check` keeps the JSON current. Every form added to
 `syllabus/forms/` needs its Spanish in `syllabus/glosses.csv`.
