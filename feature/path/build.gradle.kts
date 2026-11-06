@@ -5,3 +5,7 @@ plugins {
 android {
     namespace = "eus.hitz.feature.path"
 }
+
+dependencies {
+    implementation(libs.coil.compose)
+}

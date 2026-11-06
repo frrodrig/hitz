@@ -13,10 +13,10 @@ data class CourseUnit(
     val bookUnit: Int,
     val title: LocalizedText,
     val goals: List<LocalizedText>,
-    /** Words shown in the unit's introduction, before its first lesson. */
-    val keyWords: List<KeyWord> = emptyList(),
     val guidebook: Guidebook,
     val levels: List<Level>,
+    /** Words shown in the unit's introduction, before its first lesson. */
+    val keyWords: List<KeyWord> = emptyList(),
 )
 
 /** A key word of a unit; its clip is `<unit id>.kw<index>`. */
