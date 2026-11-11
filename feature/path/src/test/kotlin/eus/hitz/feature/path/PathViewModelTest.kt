@@ -78,7 +78,7 @@ class PathViewModelTest {
         val settings = FakeSettingsRepository()
         val vm = PathViewModel(
             ObserveLearningPathUseCase(courses, progress),
-            ObservePlayerUseCase(gamification, gamification.clock),
+            ObservePlayerUseCase(gamification, settings, gamification.clock),
             settings,
         )
         vm.state.test {
@@ -86,7 +86,7 @@ class PathViewModelTest {
             if (state is PathUiState.Loading) state = awaitItem()
             val ready = state as PathUiState.Ready
             assertThat(ready.path.currentNode?.levelId).isEqualTo("u01-1.l1")
-            assertThat(ready.stats).isEqualTo(PathStats(streak = 0, practicedToday = false, gems = 20, hearts = 5))
+            assertThat(ready.dailyGoal).isEqualTo(0f)
             assertThat(ready.seenUnitIntros).isEmpty()
             settings.markUnitIntroSeen("u01-1")
             assertThat((awaitItem() as PathUiState.Ready).seenUnitIntros).containsExactly("u01-1")

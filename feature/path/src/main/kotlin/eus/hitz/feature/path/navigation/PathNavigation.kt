@@ -32,7 +32,6 @@ fun NavGraphBuilder.pathScreen(
     onStartLevel: (unitId: String, levelId: String, lessonId: String?) -> Unit,
     onOpenGuidebook: (unitId: String) -> Unit,
     onStartStory: (unitId: String, levelId: String) -> Unit,
-    onOpenShop: () -> Unit,
     onOpenProfile: () -> Unit,
     onOpenUnitIntro: (unitId: String, levelId: String, lessonId: String?) -> Unit,
 ) {
@@ -42,7 +41,6 @@ fun NavGraphBuilder.pathScreen(
             onOpenUnitIntro = onOpenUnitIntro,
             onOpenGuidebook = onOpenGuidebook,
             onStartStory = onStartStory,
-            onOpenShop = onOpenShop,
             onOpenProfile = onOpenProfile,
         )
     }

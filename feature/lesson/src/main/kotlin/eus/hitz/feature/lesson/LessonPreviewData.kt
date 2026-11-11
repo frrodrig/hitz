@@ -83,7 +83,7 @@ internal object LessonPreviewData {
         entries = mapOf("kaixo" to Gloss("hola"), "ni" to Gloss("yo"), "naiz" to Gloss("soy / estoy", "izan")),
     )
 
-    val active = LessonUiState.Active(progress = 0.4f, hearts = 4, exercise = wordBank, glossary = glossary)
+    val active = LessonUiState.Active(progress = 0.4f, mistakesLeft = null, exercise = wordBank, glossary = glossary)
     val typingAlmost = active.copy(
         exercise = typing,
         feedback = FeedbackUi(FeedbackType.AlmostCorrect, "Eskerrik asko.")
@@ -95,8 +95,13 @@ internal object LessonPreviewData {
         feedback = FeedbackUi(FeedbackType.Incorrect),
     )
     val finished = LessonUiState.Finished(
-        result = LessonResult("preview", true, 5, 4, 4, emptyList()),
-        reward = RewardUi(xp = 10, streak = 4, streakExtended = true, gems = 15),
+        result = LessonResult("preview", true, 5, 4, null, emptyList()),
+        reward = RewardUi(before = 70, after = 105, goalReached = true, minutesLeft = 0, newAchievements = 1),
+    )
+
+    /** A finished lesson that leaves part of the daily goal for later. */
+    val finishedOnTheWay = finished.copy(
+        reward = RewardUi(before = 20, after = 45, goalReached = false, minutesLeft = 6),
     )
 }
 

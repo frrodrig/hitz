@@ -2,7 +2,6 @@ package eus.hitz.core.data.database
 
 import androidx.room.Dao
 import androidx.room.Insert
-import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Upsert
 import kotlinx.coroutines.flow.Flow
@@ -15,25 +14,12 @@ interface GamificationDao {
     @Insert
     suspend fun insertActivity(activity: ActivityEntity)
 
-    @Query("SELECT * FROM streak_days")
-    fun observeStreakDays(): Flow<List<StreakDayEntity>>
+    @Query("SELECT * FROM study_days")
+    fun observeStudyDays(): Flow<List<StudyDayEntity>>
+
+    @Query("SELECT * FROM study_days WHERE epochDay = :epochDay")
+    suspend fun studyDay(epochDay: Long): StudyDayEntity?
 
     @Upsert
-    suspend fun upsertStreakDays(days: List<StreakDayEntity>)
-
-    @Query("SELECT * FROM player WHERE id = ${PlayerEntity.ID}")
-    fun observePlayer(): Flow<PlayerEntity?>
-
-    @Query("SELECT * FROM player WHERE id = ${PlayerEntity.ID}")
-    suspend fun player(): PlayerEntity?
-
-    @Upsert
-    suspend fun upsertPlayer(player: PlayerEntity)
-
-    @Query("SELECT id FROM claimed_rewards")
-    fun observeClaimedIds(): Flow<List<String>>
-
-    /** Returns -1 when the reward was already claimed. */
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertClaimed(reward: ClaimedRewardEntity): Long
+    suspend fun upsertStudyDay(day: StudyDayEntity)
 }

@@ -12,7 +12,7 @@ sealed interface StoryStep {
 /**
  * Story flow, independent of the UI. Lines are revealed one by one; a question appears after the
  * line it refers to. A wrong option is marked and the learner tries again until the right one is
- * chosen: stories cost no hearts. Accuracy counts questions answered right at the first try.
+ * chosen. Accuracy counts questions answered right at the first try.
  */
 data class StorySession(
     val story: Story,

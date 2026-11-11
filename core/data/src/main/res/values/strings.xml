@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="core_data_reminder_channel">Recordatorios de racha</string>
+    <string name="core_data_reminder_channel">Recordatorio del objetivo diario</string>
     <string name="core_data_reminder_title">Hitz te espera</string>
-    <string name="core_data_reminder_start">Dedica cinco minutos al euskera hoy.</string>
-    <plurals name="core_data_reminder_streak">
-        <item quantity="one">Llevas %d día de racha. Haz una lección para no perderla.</item>
-        <item quantity="other">Llevas %d días de racha. Haz una lección para no perderla.</item>
+    <plurals name="core_data_reminder_start">
+        <item quantity="one">Tu objetivo de hoy es de %d minuto de euskera. ¿Empezamos?</item>
+        <item quantity="other">Tu objetivo de hoy es de %d minutos de euskera. ¿Empezamos?</item>
+    </plurals>
+    <plurals name="core_data_reminder_left">
+        <item quantity="one">Te falta %d minuto para tu objetivo de hoy.</item>
+        <item quantity="other">Te faltan %d minutos para tu objetivo de hoy.</item>
     </plurals>
 </resources>

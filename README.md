@@ -9,7 +9,7 @@ red-trousered helpers of Basque mythology.
 - Made for learning on your own from zero: a first-run introduction, an introduction to every
   unit, a "new word" card before each word is used and tap hints on every Basque word. Learners
   who already know some Basque can take a placement test to skip sections.
-- 100 % offline, no paid backend. Leagues are simulated on the device.
+- 100 % offline, no paid backend.
 - UI available in Spanish and Basque.
 - All course content is original, illustrations included (drawn as code in
   `tools/design/illustrations/`). The syllabus follows the curricular order of the *Arian A1*

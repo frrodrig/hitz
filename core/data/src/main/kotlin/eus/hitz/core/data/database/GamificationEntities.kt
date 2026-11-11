@@ -1,10 +1,11 @@
 package eus.hitz.core.data.database
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
 
-/** A finished session and the XP it earned. */
+/** A finished session and its active study time. */
 @Entity(tableName = "activities", indices = [Index("epochDay")])
 data class ActivityEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
@@ -12,40 +13,15 @@ data class ActivityEntity(
     val kind: String,
     val accuracy: Float,
     val perfect: Boolean,
-    val xp: Int,
+    @ColumnInfo(defaultValue = "0") val activeMillis: Long,
     val completedAt: Long,
     val epochDay: Long,
 )
 
-/** A day that counts for the streak: practiced or covered by a freeze. */
-@Entity(tableName = "streak_days")
-data class StreakDayEntity(
+/** Study time of a local day and the daily goal it had. */
+@Entity(tableName = "study_days")
+data class StudyDayEntity(
     @PrimaryKey val epochDay: Long,
-    val kind: String,
-)
-
-/** The single row of wallet and league state. */
-@Entity(tableName = "player")
-data class PlayerEntity(
-    @PrimaryKey val id: Int = ID,
-    val gems: Int,
-    val hearts: Int,
-    val heartsUpdatedAt: Long,
-    val streakFreezes: Int,
-    val leagueTier: Int,
-    val leagueWeekStart: Long,
-    val leagueLastRank: Int?,
-    val leagueLastOutcome: String?,
-) {
-    companion object {
-        const val ID = 0
-    }
-}
-
-/** A reward already granted (quest, achievement tier or league week), so it is granted once. */
-@Entity(tableName = "claimed_rewards")
-data class ClaimedRewardEntity(
-    @PrimaryKey val id: String,
-    val gems: Int,
-    val claimedAt: Long,
+    val activeMillis: Long,
+    val goalMillis: Long,
 )

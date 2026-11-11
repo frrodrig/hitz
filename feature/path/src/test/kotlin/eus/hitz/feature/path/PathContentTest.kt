@@ -32,20 +32,20 @@ class PathContentTest {
     private var started: Triple<String, String, String?>? = null
     private var guidebook: String? = null
     private var storyTapped = false
-    private var shopOpened = false
+    private var profileOpened = false
     private var intro: Triple<String, String, String?>? = null
 
     private fun show(
         darkTheme: Boolean = false,
-        stats: PathStats = PathStats(streak = 3, gems = 120),
+        dailyGoal: Float = 0.6f,
         seenUnitIntros: Set<String> = setOf("u01-1"),
     ) {
         composeRule.setContent {
             HitzTheme(darkTheme = darkTheme) {
                 Surface {
                     PathContent(
-                        state = PathUiState.Ready(PathTestData.path, stats, seenUnitIntros),
-                        onOpenShop = { shopOpened = true },
+                        state = PathUiState.Ready(PathTestData.path, dailyGoal, seenUnitIntros),
+                        onOpenProfile = { profileOpened = true },
                         onStartLevel = { u, l, s -> started = Triple(u, l, s) },
                         onOpenGuidebook = { guidebook = it },
                         onStartStory = { _, _ -> storyTapped = true },
@@ -73,13 +73,10 @@ class PathContentTest {
     }
 
     @Test
-    fun withoutHeartsALessonOffersTheShop() {
-        show(stats = PathStats(hearts = 0))
-        composeRule.onNodeWithContentDescription("Lección: ¿Quién eres?, disponible").performClick()
-        assertThat(started).isNull()
-        composeRule.onNodeWithText("Te has quedado sin vidas").assertExists()
-        composeRule.onNodeWithText("Ir a la tienda").performClick()
-        assertThat(shopOpened).isTrue()
+    fun theDailyGoalShowsTodayAndOpensTheProfile() {
+        show(dailyGoal = 0.6f)
+        composeRule.onNodeWithContentDescription("Objetivo diario: 60 %").performClick()
+        assertThat(profileOpened).isTrue()
     }
 
     @Test

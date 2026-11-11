@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import eus.hitz.core.domain.audio.SoundEffect
 import eus.hitz.core.domain.gamification.ActivityKind
-import eus.hitz.core.domain.gamification.HeartsUseCase
+import eus.hitz.core.domain.gamification.DailyGoalRules
 import eus.hitz.core.domain.lesson.AnswerChecker
 import eus.hitz.core.domain.lesson.AnswerResult
 import eus.hitz.core.domain.lesson.LessonResult
@@ -16,13 +16,14 @@ import eus.hitz.core.domain.lesson.Mistake
 import eus.hitz.core.domain.lesson.WordBank
 import eus.hitz.core.domain.placement.PlacementTest
 import eus.hitz.core.domain.placement.PlacementUseCase
-import eus.hitz.core.domain.session.HeartPolicy
 import eus.hitz.core.domain.session.PlanSessionUseCase
 import eus.hitz.core.domain.session.RecordSessionUseCase
 import eus.hitz.core.domain.session.SessionPlan
 import eus.hitz.core.domain.settings.SettingsRepository
+import eus.hitz.core.domain.time.EpochClock
 import eus.hitz.core.model.content.Exercise
 import eus.hitz.core.model.content.Glossary
+import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -42,8 +43,8 @@ class LessonViewModel @Inject constructor(
     private val recordSession: RecordSessionUseCase,
     private val settings: SettingsRepository,
     private val audio: LessonAudio,
-    private val hearts: HeartsUseCase,
     private val placement: PlacementUseCase,
+    private val clock: EpochClock,
 ) : ViewModel() {
     /** Set for a placement test (PlacementRoute); unit and level are then unused. */
     private val placementSection: String? = savedStateHandle["sectionId"]
@@ -62,7 +63,10 @@ class LessonViewModel @Inject constructor(
 
     private var exercises: Map<String, Exercise> = emptyMap()
     private lateinit var session: LessonSession
-    private var heartPolicy: HeartPolicy = HeartPolicy.Unlimited
+
+    /** Active study time of this session, for the daily goal (see [DailyGoalRules]). */
+    private var activeMillis = 0L
+    private var lastStepAt = 0L
     private var kind: ActivityKind = ActivityKind.Lesson
     private var glossary: Glossary? = null
 
@@ -86,33 +90,29 @@ class LessonViewModel @Inject constructor(
                 }
             }.onSuccess { (plan, playable) ->
                 exercises = playable.associateBy { it.id }
-                heartPolicy = plan.hearts
                 kind = plan.kind
                 glossary = plan.glossary
-                val startHearts = when (val policy = plan.hearts) {
-                    HeartPolicy.Shared -> hearts.current()
-                    is HeartPolicy.Limited -> policy.hearts
-                    HeartPolicy.Unlimited -> null
-                }
                 session = LessonSession.start(
                     lessonId = plan.sessionId,
                     exerciseIds = playable.map { it.id },
-                    hearts = startHearts,
+                    mistakesAllowed = plan.mistakesAllowed,
                     retries = placementTest == null,
                 )
-                if (session.isOutOfHearts) _state.value = LessonUiState.OutOfHearts else showCurrent()
+                lastStepAt = clock.now()
+                showCurrent()
             }.onFailure { _state.value = LessonUiState.Error }
         }
     }
 
-    /** A placement test: no hearts, no hints, and no second chances. */
+    /** A placement test: no mistake limit, no hints, and no second chances. */
     private suspend fun placementPlan(sectionId: String): SessionPlan {
         val test = placement.test(sectionId)
         placementTest = test
-        return SessionPlan("placement.$sectionId", test.exercises, HeartPolicy.Unlimited, ActivityKind.Review)
+        return SessionPlan("placement.$sectionId", test.exercises, ActivityKind.Review)
     }
 
     fun onAction(action: LessonAction) {
+        countStep()
         when (action) {
             is LessonAction.SelectTile -> updateExercise<ExerciseUi.TileAnswer> {
                 if (action.tileId in it.selected) it else it.withSelected(it.selected + action.tileId)
@@ -130,6 +130,14 @@ class LessonViewModel @Inject constructor(
             LessonAction.Continue -> next()
             LessonAction.RequestQuit, LessonAction.DismissQuit, LessonAction.ConfirmQuit -> quit(action)
         }
+    }
+
+    /** Adds the time since the previous step, up to a minute, so idle time does not count. */
+    private fun countStep() {
+        if (lastStepAt == 0L) return
+        val now = clock.now()
+        activeMillis += DailyGoalRules.step(now - lastStepAt)
+        lastStepAt = now
     }
 
     private fun quit(action: LessonAction) {
@@ -163,7 +171,7 @@ class LessonViewModel @Inject constructor(
                 ),
             )
         }
-        // Mismatches are practice: they are counted but cost no heart.
+        // Mismatches are practice: they are counted but do not use up allowed mistakes.
         if (pairs.state.isComplete && active.feedback == null) {
             session = session.answerCorrect()
             _state.value = active.copy(progress = session.progress, feedback = FeedbackUi(FeedbackType.Correct))
@@ -182,7 +190,6 @@ class LessonViewModel @Inject constructor(
         } else {
             val mistake =
                 Mistake(exercise.id, exercise.vocabulary, exercise.structures, evaluation.given, result.expected)
-            if (heartPolicy == HeartPolicy.Shared) viewModelScope.launch { hearts.lose() }
             session.answerIncorrect(mistake)
         }
         val expected = result.expected.takeIf { evaluation.showExpected }
@@ -191,7 +198,11 @@ class LessonViewModel @Inject constructor(
             is AnswerResult.AlmostCorrect -> FeedbackUi(FeedbackType.AlmostCorrect, expected)
             is AnswerResult.Incorrect -> FeedbackUi(FeedbackType.Incorrect, expected)
         }
-        _state.value = active.copy(progress = session.progress, hearts = session.hearts, feedback = feedback)
+        _state.value = active.copy(
+            progress = session.progress,
+            mistakesLeft = session.mistakesLeft,
+            feedback = feedback,
+        )
         announce(feedback.type)
     }
 
@@ -252,7 +263,7 @@ class LessonViewModel @Inject constructor(
 
     /**
      * Speech is checked like typing, against the best candidate. Recognition of Basque is often
-     * imperfect, so a failed attempt costs no heart: the exercise is skipped and the sentence shown.
+     * imperfect, so a failed attempt is not a mistake: the exercise is skipped and the sentence shown.
      */
     private fun speech(candidates: List<String>) {
         val active = _state.value as? LessonUiState.Active ?: return
@@ -309,12 +320,12 @@ class LessonViewModel @Inject constructor(
         val current = session.current
         val test = placementTest
         _state.value = when {
-            session.isOutOfHearts -> LessonUiState.OutOfHearts
+            session.isOutOfMistakes -> LessonUiState.OutOfMistakes
             current == null && test != null -> placementResult(test, session.result())
             current == null -> LessonUiState.Finished(session.result())
             else -> LessonUiState.Active(
                 progress = session.progress,
-                hearts = session.hearts,
+                mistakesLeft = session.mistakesLeft,
                 exercise = exercises.getValue(current.exerciseId).toUi(randomFor(current.exerciseId, current.isRetry)),
                 glossary = glossary,
             )
@@ -333,7 +344,7 @@ class LessonViewModel @Inject constructor(
     private fun placementResult(test: PlacementTest, result: LessonResult): LessonUiState {
         val passed = PlacementUseCase.passed(result.accuracy)
         if (passed) {
-            viewModelScope.launch { placement.skipSection(test.sectionId, result.accuracy, System.currentTimeMillis()) }
+            viewModelScope.launch { placement.skipSection(test.sectionId, result.accuracy, clock.now()) }
         }
         return LessonUiState.PlacementFinished(
             sectionNumber = test.sectionNumber,
@@ -344,13 +355,23 @@ class LessonViewModel @Inject constructor(
     }
 
     private fun record(result: LessonResult) {
+        val time = activeMillis
         viewModelScope.launch {
-            val reward = recordSession(unitId, result.lessonId, result, kind) ?: return@launch
+            val reward = recordSession(unitId, result.lessonId, result, kind, time) ?: return@launch
             _state.update { if (it is LessonUiState.Finished) it.copy(reward = RewardUi.of(reward)) else it }
         }
     }
 
+    /**
+     * Leaving before the end still saves the mistakes and the study time (placement tests save
+     * nothing). It must finish even though the screen, and this ViewModel, are going away.
+     */
     private fun close() {
+        if (::session.isInitialized && !session.isOver && placementTest == null) {
+            val result = session.result()
+            val time = activeMillis
+            viewModelScope.launch(NonCancellable) { recordSession(unitId, result.lessonId, result, kind, time) }
+        }
         viewModelScope.launch { _events.send(LessonEvent.Close) }
     }
 

@@ -33,6 +33,10 @@ class ProfileViewModel @Inject constructor(
         ProfileUiState.Ready(player, settings) as ProfileUiState
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MILLIS), ProfileUiState.Loading)
 
+    fun setDailyGoal(minutes: Int) {
+        viewModelScope.launch { settingsRepository.setDailyGoalMinutes(minutes) }
+    }
+
     fun setSpeakingEnabled(enabled: Boolean) {
         viewModelScope.launch { settingsRepository.setSpeakingEnabled(enabled) }
     }

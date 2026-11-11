@@ -1,6 +1,7 @@
 package eus.hitz.feature.onboarding
 
 import androidx.compose.ui.test.assertIsNotEnabled
+import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
@@ -23,10 +24,12 @@ class OnboardingContentTest {
     @get:Rule
     val composeRule = createComposeRule()
 
-    private var finished: StartingLevel? = null
+    private var finished: Pair<StartingLevel, Int>? = null
 
     private fun show() = composeRule.setContent {
-        HitzTheme { OnboardingContent(OnboardingPreviewData.sections, onFinish = { finished = it }) }
+        HitzTheme {
+            OnboardingContent(OnboardingPreviewData.sections, onFinish = { level, goal -> finished = level to goal })
+        }
     }
 
     @Test
@@ -41,17 +44,22 @@ class OnboardingContentTest {
         composeRule.onRoot().captureRoboImage("src/test/screenshots/onboarding_how.png")
         composeRule.onNodeWithText("Siguiente").performClick()
 
+        composeRule.onNodeWithText("10 minutos al día").assertIsSelected()
+        composeRule.onNodeWithText("15 minutos al día").performClick()
+        composeRule.onRoot().captureRoboImage("src/test/screenshots/onboarding_goal.png")
+        composeRule.onNodeWithText("Siguiente").performClick()
+
         composeRule.onNodeWithText("Empezar").assertIsNotEnabled()
         composeRule.onNodeWithText("Ya sé algo de euskera").performClick()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/onboarding_level.png")
         composeRule.onNodeWithText("Empezar").performClick()
-        assertThat(finished).isEqualTo(StartingLevel.SomeBasque)
+        assertThat(finished).isEqualTo(StartingLevel.SomeBasque to 15)
     }
 
     @Test
     fun skippingStartsFromScratch() {
         show()
         composeRule.onNodeWithText("Saltar").performClick()
-        assertThat(finished).isEqualTo(StartingLevel.Beginner)
+        assertThat(finished).isEqualTo(StartingLevel.Beginner to 10)
     }
 }

@@ -50,12 +50,8 @@ class MainActivityTest {
         skipOnboarding()
         waitForText("¡Hola!")
         composeRule.onRoot().tryPerformAccessibilityChecks()
-        composeRule.onNodeWithText("Ligas").performClick()
-        waitForText("Liga Jaizkibel")
         composeRule.onNodeWithText("Perfil").performClick()
-        waitForText("Mejor racha")
-        composeRule.onNodeWithText("Tienda").performClick()
-        composeRule.onNodeWithText("Recargar vidas").assertIsDisplayed()
+        waitForText("Minutos al día")
         composeRule.onRoot().tryPerformAccessibilityChecks()
     }
 

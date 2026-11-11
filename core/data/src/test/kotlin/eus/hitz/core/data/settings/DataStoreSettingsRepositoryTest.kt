@@ -67,4 +67,12 @@ class DataStoreSettingsRepositoryTest {
         repository.setOnboardingCompleted()
         assertThat(repository.settings.first().onboardingCompleted).isTrue()
     }
+
+    @Test
+    fun `the daily goal is ten minutes until changed`() = runTest {
+        val repository = repository()
+        assertThat(repository.settings.first().dailyGoalMinutes).isEqualTo(10)
+        repository.setDailyGoalMinutes(15)
+        assertThat(repository.settings.first().dailyGoalMinutes).isEqualTo(15)
+    }
 }

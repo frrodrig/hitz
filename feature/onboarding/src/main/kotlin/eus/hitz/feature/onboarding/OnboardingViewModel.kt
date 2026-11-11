@@ -16,7 +16,10 @@ import javax.inject.Inject
 /** A section of the course, as presented in "what you will learn". */
 data class SectionUi(val title: LocalizedText, val description: LocalizedText, val units: Int)
 
-/** The first-run introduction: what Hitz is, what the course covers, how it works and your level. */
+/**
+ * The first-run introduction: what Hitz is, what the course covers, how it works, your daily goal
+ * and your level.
+ */
 @HiltViewModel
 class OnboardingViewModel @Inject constructor(
     courses: CourseRepository,
@@ -34,7 +37,10 @@ class OnboardingViewModel @Inject constructor(
     }
 
     /** The introduction is shown once, whether finished or skipped. */
-    fun complete() {
-        viewModelScope.launch { settings.setOnboardingCompleted() }
+    fun complete(goalMinutes: Int) {
+        viewModelScope.launch {
+            settings.setDailyGoalMinutes(goalMinutes)
+            settings.setOnboardingCompleted()
+        }
     }
 }

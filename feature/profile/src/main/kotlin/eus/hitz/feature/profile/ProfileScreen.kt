@@ -27,6 +27,9 @@ import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.LoadingIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedCard
+import androidx.compose.material3.SegmentedButton
+import androidx.compose.material3.SegmentedButtonDefaults
+import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
@@ -35,16 +38,21 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import eus.hitz.core.designsystem.component.HitzDailyGoalRing
 import eus.hitz.core.designsystem.component.HitzMascot
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.preview.HitzPreviews
@@ -52,12 +60,17 @@ import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.designsystem.theme.HitzTheme
 import eus.hitz.core.domain.gamification.AchievementProgress
 import eus.hitz.core.domain.gamification.AchievementType
-import eus.hitz.core.domain.gamification.LeagueState
+import eus.hitz.core.domain.gamification.DailyGoalRules
+import eus.hitz.core.domain.gamification.DailyProgress
 import eus.hitz.core.domain.gamification.PlayerSummary
-import eus.hitz.core.domain.gamification.Quest
-import eus.hitz.core.domain.gamification.QuestProgress
-import eus.hitz.core.domain.gamification.QuestType
+import eus.hitz.core.domain.gamification.WeekDay
 import eus.hitz.core.domain.settings.UserSettings
+import java.time.LocalDate
+import java.time.format.TextStyle
+
+private const val PERCENT = 100
+private val TODAY_RING = 72.dp
+private val DAY_RING = 32.dp
 
 @Composable
 fun ProfileScreen(
@@ -76,6 +89,7 @@ fun ProfileScreen(
                 Setting.Reminder -> onReminderChange(enabled)
             }
         },
+        onGoalChange = viewModel::setDailyGoal,
         modifier = modifier,
     )
 }
@@ -101,11 +115,12 @@ private fun rememberReminderToggle(viewModel: ProfileViewModel): (Boolean) -> Un
     }
 }
 
-/** Stats, today's quests, achievements and settings. */
+/** The daily goal and this week, achievements and settings. */
 @Composable
 internal fun ProfileContent(
     state: ProfileUiState,
     onSettingChange: (Setting, Boolean) -> Unit,
+    onGoalChange: (minutes: Int) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Surface(modifier.fillMaxSize()) {
@@ -115,9 +130,10 @@ internal fun ProfileContent(
                 contentPadding = PaddingValues(vertical = HitzSpacing.xl),
                 verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
             ) {
-                item(key = "header") { Header(state) }
-                sectionTitle(R.string.feature_profile_quests)
-                items(state.player.quests, key = { "quest-${it.quest.id}" }) { QuestRow(it) }
+                item(key = "header") { Header() }
+                sectionTitle(R.string.feature_profile_daily_goal)
+                item(key = "daily-goal") { DailyGoalCard(state.player) }
+                item(key = "goal-choice") { GoalChoice(state.settings.dailyGoalMinutes, onGoalChange) }
                 sectionTitle(R.string.feature_profile_achievements)
                 items(state.player.achievements, key = { "achievement-${it.type}" }) { AchievementRow(it) }
                 sectionTitle(R.string.feature_profile_settings)
@@ -164,57 +180,112 @@ private fun settingRows(settings: UserSettings) = listOf(
 )
 
 @Composable
-private fun Header(state: ProfileUiState.Ready) {
-    val player = state.player
-    Column(
+private fun Header() {
+    Row(
         modifier = Modifier.padding(horizontal = HitzSpacing.xl),
-        verticalArrangement = Arrangement.spacedBy(HitzSpacing.md),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(HitzSpacing.lg),
     ) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(HitzSpacing.lg)
+        HitzMascot(contentDescription = null)
+        Text(
+            text = stringResource(R.string.feature_profile_title),
+            style = MaterialTheme.typography.headlineMediumEmphasized,
+            modifier = Modifier.semantics { heading() },
+        )
+    }
+}
+
+@Composable
+private fun DailyGoalCard(player: PlayerSummary) {
+    OutlinedCard(Modifier.fillMaxWidth().padding(horizontal = HitzSpacing.xl)) {
+        Column(
+            modifier = Modifier.padding(HitzSpacing.lg),
+            verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg),
         ) {
-            HitzMascot(contentDescription = null)
+            Today(player.today)
             Text(
-                text = stringResource(R.string.feature_profile_title),
-                style = MaterialTheme.typography.headlineMediumEmphasized,
-                modifier = Modifier.semantics { heading() },
+                text = stringResource(R.string.feature_profile_week),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
+            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                player.week.forEach { WeekDayItem(it) }
+            }
+            Row(horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
+                StatCard(
+                    icon = HitzIcons.Star,
+                    value = player.goalDays.toString(),
+                    label = stringResource(R.string.feature_profile_goal_days),
+                    modifier = Modifier.weight(1f),
+                )
+                StatCard(
+                    icon = HitzIcons.Book,
+                    value = player.totalMinutes.toString(),
+                    label = stringResource(R.string.feature_profile_study_minutes),
+                    modifier = Modifier.weight(1f),
+                )
+            }
         }
-        Row(horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
-            StatCard(
-                icon = HitzIcons.Streak,
-                value = player.streak.toString(),
-                label = stringResource(R.string.feature_profile_stat_streak),
-                modifier = Modifier.weight(1f),
+    }
+}
+
+@Composable
+private fun Today(today: DailyProgress) {
+    Row(
+        modifier = Modifier.semantics(mergeDescendants = true) {},
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(HitzSpacing.lg),
+    ) {
+        HitzDailyGoalRing(today.progress, size = TODAY_RING)
+        Column(verticalArrangement = Arrangement.spacedBy(HitzSpacing.xs)) {
+            Text(
+                text = stringResource(R.string.feature_profile_today, today.minutesDone, today.goalMinutes),
+                style = MaterialTheme.typography.titleLargeEmphasized,
             )
-            StatCard(
-                icon = HitzIcons.Star,
-                value = player.longestStreak.toString(),
-                label = stringResource(R.string.feature_profile_stat_longest),
-                modifier = Modifier.weight(1f),
-            )
-        }
-        Row(horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
-            StatCard(
-                icon = HitzIcons.Xp,
-                value = player.totalXp.toString(),
-                label = stringResource(R.string.feature_profile_stat_xp),
-                modifier = Modifier.weight(1f),
-            )
-            StatCard(
-                icon = HitzIcons.Gem,
-                value = player.gems.toString(),
-                label = stringResource(R.string.feature_profile_stat_gems),
-                modifier = Modifier.weight(1f),
+            Text(
+                text = if (today.goalMet) {
+                    stringResource(R.string.feature_profile_goal_met)
+                } else {
+                    pluralStringResource(R.plurals.feature_profile_goal_left, today.minutesLeft, today.minutesLeft)
+                },
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
     }
 }
 
 @Composable
+private fun WeekDayItem(day: WeekDay) {
+    val locale = LocalConfiguration.current.locales[0]
+    val dayOfWeek = LocalDate.ofEpochDay(day.epochDay).dayOfWeek
+    val percent = (day.progress * PERCENT).toInt()
+    val description = stringResource(
+        R.string.feature_profile_week_day,
+        dayOfWeek.getDisplayName(TextStyle.FULL, locale),
+        percent,
+    )
+    Column(
+        modifier = Modifier.clearAndSetSemantics { contentDescription = description },
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(HitzSpacing.xs),
+    ) {
+        HitzDailyGoalRing(if (day.isFuture) 0f else day.progress, size = DAY_RING)
+        Text(
+            text = dayOfWeek.getDisplayName(TextStyle.NARROW, locale),
+            style = with(MaterialTheme.typography) { if (day.isToday) labelLargeEmphasized else labelLarge },
+            color = if (day.isToday) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+    }
+}
+
+@Composable
 private fun StatCard(icon: Int, value: String, label: String, modifier: Modifier = Modifier) {
-    OutlinedCard(modifier.semantics(mergeDescendants = true) {}) {
+    Surface(
+        modifier = modifier.semantics(mergeDescendants = true) {},
+        shape = MaterialTheme.shapes.medium,
+        color = MaterialTheme.colorScheme.surfaceContainerHigh,
+    ) {
         Row(
             modifier = Modifier.padding(HitzSpacing.md),
             verticalAlignment = Alignment.CenterVertically,
@@ -226,6 +297,33 @@ private fun StatCard(icon: Int, value: String, label: String, modifier: Modifier
                 Text(label, style = MaterialTheme.typography.bodySmall)
             }
         }
+    }
+}
+
+/** How many minutes a day count as the goal. */
+@Composable
+private fun GoalChoice(selected: Int, onGoalChange: (Int) -> Unit) {
+    Column(
+        modifier = Modifier.padding(horizontal = HitzSpacing.xl, vertical = HitzSpacing.sm),
+        verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
+    ) {
+        Text(stringResource(R.string.feature_profile_goal_choose), style = MaterialTheme.typography.titleMedium)
+        SingleChoiceSegmentedButtonRow(Modifier.fillMaxWidth()) {
+            DailyGoalRules.GOAL_OPTIONS.forEachIndexed { index, minutes ->
+                SegmentedButton(
+                    selected = minutes == selected,
+                    onClick = { onGoalChange(minutes) },
+                    shape = SegmentedButtonDefaults.itemShape(index, DailyGoalRules.GOAL_OPTIONS.size),
+                ) {
+                    Text(stringResource(R.string.feature_profile_goal_option, minutes))
+                }
+            }
+        }
+        Text(
+            text = stringResource(R.string.feature_profile_goal_hint),
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
     }
 }
 
@@ -243,37 +341,11 @@ private fun LazyListScope.sectionTitle(title: Int) {
 }
 
 @Composable
-private fun QuestRow(progress: QuestProgress) {
-    val quest = progress.quest
-    val title = when (quest.type) {
-        QuestType.EarnXp -> stringResource(R.string.feature_profile_quest_xp, quest.target)
-        QuestType.CompleteSessions -> pluralStringResource(
-            R.plurals.feature_profile_quest_sessions,
-            quest.target,
-            quest.target
-        )
-        QuestType.PerfectSessions -> pluralStringResource(
-            R.plurals.feature_profile_quest_perfect,
-            quest.target,
-            quest.target
-        )
-        QuestType.CompleteStory -> stringResource(R.string.feature_profile_quest_story)
-        QuestType.CompleteReview -> stringResource(R.string.feature_profile_quest_review)
-    }
-    val supporting = if (progress.isDone) {
-        stringResource(R.string.feature_profile_quest_done, quest.gems)
-    } else {
-        stringResource(R.string.feature_profile_quest_progress, progress.progress, quest.target, quest.gems)
-    }
-    ProgressRow(title, supporting, progress.progress.toFloat() / quest.target, done = progress.isDone)
-}
-
-@Composable
 private fun AchievementRow(progress: AchievementProgress) {
     val name = stringResource(
         when (progress.type) {
-            AchievementType.Streak -> R.string.feature_profile_achievement_streak
-            AchievementType.Xp -> R.string.feature_profile_achievement_xp
+            AchievementType.GoalDays -> R.string.feature_profile_achievement_goal_days
+            AchievementType.StudyMinutes -> R.string.feature_profile_achievement_study_minutes
             AchievementType.Lessons -> R.string.feature_profile_achievement_lessons
             AchievementType.Perfect -> R.string.feature_profile_achievement_perfect
             AchievementType.Stories -> R.string.feature_profile_achievement_stories
@@ -338,48 +410,33 @@ private fun ProfileContentPreview() {
         ProfileContent(
             state = ProfilePreviewData.ready,
             onSettingChange = { _, _ -> },
+            onGoalChange = {},
         )
     }
 }
 
 internal object ProfilePreviewData {
+    /** Wednesday 2026-11-04. */
+    private const val TODAY = 20_761L
+    private const val MONDAY = TODAY - 2
+
     val ready = ProfileUiState.Ready(
         player = PlayerSummary(
-            streak = 4,
-            practicedToday = true,
-            longestStreak = 9,
-            totalXp = 640,
-            weeklyXp = 85,
-            gems = 75,
-            hearts = 5,
-            nextHeartAt = null,
-            streakFreezes = 1,
-            league = LeagueState(tier = 1),
-            quests = listOf(
-                QuestProgress(
-                    Quest(QuestType.EarnXp, 30, 10),
-                    progress = 30,
-                    claimed = true
-                ),
-                QuestProgress(
-                    Quest(QuestType.PerfectSessions, 2, 10),
-                    progress = 1,
-                    claimed = false
-                ),
-                QuestProgress(
-                    Quest(QuestType.CompleteStory, 1, 10),
-                    progress = 0,
-                    claimed = false
-                ),
-            ),
+            today = DailyProgress(activeMillis = 6 * 60_000L, goalMinutes = 10),
+            week = listOf(1.2f, 0.4f, 0.6f, 0f, 0f, 0f, 0f).mapIndexed { index, progress ->
+                val day = MONDAY + index
+                WeekDay(day, progress, isToday = day == TODAY, isFuture = day > TODAY)
+            },
+            goalDays = 12,
+            totalMinutes = 184,
             achievements = listOf(
-                AchievementProgress(AchievementType.Streak, 9),
-                AchievementProgress(AchievementType.Xp, 640),
+                AchievementProgress(AchievementType.GoalDays, 12),
+                AchievementProgress(AchievementType.StudyMinutes, 184),
                 AchievementProgress(AchievementType.Lessons, 31),
                 AchievementProgress(AchievementType.Perfect, 12),
                 AchievementProgress(AchievementType.Stories, 3),
             ),
         ),
-        settings = UserSettings(speakingEnabled = true, reminderEnabled = false),
+        settings = UserSettings(speakingEnabled = true, reminderEnabled = false, dailyGoalMinutes = 10),
     )
 }

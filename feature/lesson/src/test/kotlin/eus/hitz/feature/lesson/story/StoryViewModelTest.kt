@@ -34,6 +34,7 @@ class StoryViewModelTest {
     private val audio = FakeAudioProvider()
     private val effects = FakeSoundEffects()
     private val gamification = FakeGamificationRepository()
+    private var now = FakeGamificationRepository.NOW
 
     private val story = Story(
         id = "u01-1.l3.story",
@@ -69,6 +70,7 @@ class StoryViewModelTest {
         recordSession = gamification.recordSession(progress),
         audio = LessonAudio(audio, effects),
         settings = FakeSettingsRepository(),
+        clock = { now },
     )
 
     private val StoryViewModel.active get() = state.value as StoryUiState.Active
@@ -102,15 +104,27 @@ class StoryViewModelTest {
     @Test
     fun `finishing records the level with the first-try accuracy`() {
         val vm = viewModel()
+        now += 30_000
         vm.onAction(StoryAction.Continue)
+        now += 30_000
         vm.onAction(StoryAction.Continue)
         vm.onAction(StoryAction.Answer(1))
         vm.onAction(StoryAction.Continue)
         val finished = vm.state.value as StoryUiState.Finished
         assertThat(finished.accuracy).isEqualTo(1f)
-        assertThat(finished.reward?.xp).isEqualTo(20)
+        assertThat(finished.reward?.after).isEqualTo(10)
         assertThat(effects.played).containsExactly(SoundEffect.Correct, SoundEffect.Finished).inOrder()
         assertThat(progress.completed).containsExactly(LEVEL)
+    }
+
+    @Test
+    fun `leaving a story early still counts its study time`() {
+        val vm = viewModel()
+        now += 45_000
+        vm.onAction(StoryAction.Continue)
+        vm.onAction(StoryAction.Close)
+        assertThat(gamification.data.value.studyDays.values.single().activeMillis).isEqualTo(45_000)
+        assertThat(progress.completed).isEmpty()
     }
 
     @Test

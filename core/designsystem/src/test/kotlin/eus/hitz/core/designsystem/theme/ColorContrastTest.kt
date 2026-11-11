@@ -30,7 +30,7 @@ class ColorContrastTest {
         "surfaceContainerHighest" to (surfaceContainerHighest to onSurface),
     )
 
-    private fun HitzExtendedColors.pairs() = listOf(success, xp, streak, gem, heart)
+    private fun HitzExtendedColors.pairs() = listOf(success, warning)
         .flatMapIndexed { index, family ->
             listOf(
                 "family$index" to (family.color to family.onColor),

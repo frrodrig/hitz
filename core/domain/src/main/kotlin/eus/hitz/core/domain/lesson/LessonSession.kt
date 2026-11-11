@@ -15,7 +15,8 @@ data class LessonResult(
     val completed: Boolean,
     val exerciseCount: Int,
     val firstTryCorrect: Int,
-    val heartsLeft: Int?,
+    /** Wrong answers still allowed when the session had a limit (legendary levels). */
+    val mistakesLeft: Int?,
     val mistakes: List<Mistake>,
 ) {
     val accuracy: Float get() = if (exerciseCount == 0) 1f else firstTryCorrect.toFloat() / exerciseCount
@@ -27,19 +28,20 @@ data class QueuedExercise(val exerciseId: String, val isRetry: Boolean)
 /**
  * Lesson flow, independent of the UI:
  *
- * * exercises are asked in order; a wrong answer costs a heart (when hearts are on) and the
- *   exercise is asked again at the end of the lesson, until it is answered correctly;
+ * * exercises are asked in order; a wrong answer uses up one of the allowed mistakes (when
+ *   there is a limit) and the exercise is asked again at the end of the lesson, until it is
+ *   answered correctly;
  * * a skipped exercise (e.g. speaking when the learner cannot talk) leaves the lesson without
  *   counting towards progress or accuracy;
  * * progress only grows with correct answers;
- * * running out of hearts ends the lesson as not completed;
+ * * going over the mistakes allowed ends the lesson as not completed;
  * * without [retries] (placement tests) a wrong answer is not asked again.
  */
 data class LessonSession(
     val lessonId: String,
     val queue: List<QueuedExercise>,
     val position: Int = 0,
-    val hearts: Int?,
+    val mistakesLeft: Int?,
     val solved: Set<String> = emptySet(),
     val firstTryCorrect: Int = 0,
     val mistakes: List<Mistake> = emptyList(),
@@ -50,9 +52,10 @@ data class LessonSession(
 
     val current: QueuedExercise? get() = queue.getOrNull(position).takeIf { !isOver }
 
-    val isOutOfHearts: Boolean get() = hearts != null && hearts <= 0
+    /** One mistake more than allowed ends the session. */
+    val isOutOfMistakes: Boolean get() = mistakesLeft != null && mistakesLeft < 0
 
-    val isOver: Boolean get() = isOutOfHearts || position >= queue.size
+    val isOver: Boolean get() = isOutOfMistakes || position >= queue.size
 
     /** From 0 to 1: share of exercises solved. */
     val progress: Float get() = if (exerciseCount == 0) 1f else solved.size.toFloat() / exerciseCount
@@ -71,7 +74,7 @@ data class LessonSession(
         return copy(
             queue = if (retries) queue + item.copy(isRetry = true) else queue,
             position = position + 1,
-            hearts = hearts?.minus(1),
+            mistakesLeft = mistakesLeft?.minus(1),
             mistakes = mistakes + mistake,
         )
     }
@@ -86,24 +89,29 @@ data class LessonSession(
         )
     }
 
-    /** Records a mistake that costs no heart and is not asked again (e.g. a wrong pair). */
+    /** Records a mistake that uses up no allowed mistake and is not asked again (e.g. a wrong pair). */
     fun recordMistake(mistake: Mistake): LessonSession = copy(mistakes = mistakes + mistake)
 
     fun result(): LessonResult = LessonResult(
         lessonId = lessonId,
-        completed = isOver && !isOutOfHearts,
+        completed = isOver && !isOutOfMistakes,
         exerciseCount = exerciseCount,
         firstTryCorrect = firstTryCorrect,
-        heartsLeft = hearts,
+        mistakesLeft = mistakesLeft,
         mistakes = mistakes,
     )
 
     companion object {
-        fun start(lessonId: String, exerciseIds: List<String>, hearts: Int?, retries: Boolean = true): LessonSession =
+        fun start(
+            lessonId: String,
+            exerciseIds: List<String>,
+            mistakesAllowed: Int?,
+            retries: Boolean = true,
+        ): LessonSession =
             LessonSession(
                 lessonId = lessonId,
                 queue = exerciseIds.map { QueuedExercise(it, isRetry = false) },
-                hearts = hearts,
+                mistakesLeft = mistakesAllowed,
                 retries = retries,
             )
     }

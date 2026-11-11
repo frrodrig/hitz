@@ -13,18 +13,6 @@ import eus.hitz.core.model.content.ReviewScope
 import javax.inject.Inject
 import kotlin.random.Random
 
-/** How wrong answers are paid for in a session. */
-sealed interface HeartPolicy {
-    /** The learner's shared hearts (lessons). */
-    data object Shared : HeartPolicy
-
-    /** A fixed number of hearts for this session only (legendary levels). */
-    data class Limited(val hearts: Int) : HeartPolicy
-
-    /** No hearts: practice (unit reviews). */
-    data object Unlimited : HeartPolicy
-}
-
 /**
  * What to play: [sessionId] is recorded as completed when the learner finishes (a lesson id, or the
  * level id of a generated review or legendary level).
@@ -32,8 +20,9 @@ sealed interface HeartPolicy {
 data class SessionPlan(
     val sessionId: String,
     val exercises: List<Exercise>,
-    val hearts: HeartPolicy,
     val kind: ActivityKind,
+    /** Wrong answers allowed before the session ends unfinished; null for no limit. */
+    val mistakesAllowed: Int? = null,
     /** Word hints for the session; none in legendary levels, which are played without help. */
     val glossary: Glossary? = null,
 )
@@ -41,10 +30,11 @@ data class SessionPlan(
 /**
  * Plans a session for a level of the path.
  *
- * * Lesson levels play the requested lesson with the learner's shared hearts.
- * * Reviews (practice, no hearts) pick the unit exercises the learner struggles with most (spaced repetition by
+ * * Lesson levels play the requested lesson.
+ * * Reviews pick the unit exercises the learner struggles with most (spaced repetition by
  *   exercise, word and grammar structure), topped up with the rest.
- * * Legendary levels play every exercise of the unit, shuffled, with fewer hearts.
+ * * Legendary levels play every exercise of the unit, shuffled, allowing only
+ *   [LEGENDARY_MISTAKES] wrong answers.
  */
 class PlanSessionUseCase @Inject constructor(
     private val courses: CourseRepository,
@@ -65,7 +55,7 @@ class PlanSessionUseCase @Inject constructor(
         val plan = when (level) {
             is Level.Lessons -> {
                 val lesson = level.lessons.firstOrNull { it.id == lessonId } ?: level.lessons.first()
-                SessionPlan(lesson.id, lesson.exercises, HeartPolicy.Shared, ActivityKind.Lesson)
+                SessionPlan(lesson.id, lesson.exercises, ActivityKind.Lesson)
             }
             is Level.Review -> {
                 val unitIds = when (level.scope) {
@@ -83,15 +73,14 @@ class PlanSessionUseCase @Inject constructor(
                 SessionPlan(
                     level.id,
                     reviewSelection(exercises, stats, random),
-                    HeartPolicy.Unlimited,
-                    ActivityKind.Review
+                    ActivityKind.Review,
                 )
             }
             is Level.Legendary -> SessionPlan(
                 level.id,
                 unitExercises.shuffled(random),
-                HeartPolicy.Limited(LEGENDARY_HEARTS),
                 ActivityKind.Legendary,
+                mistakesAllowed = LEGENDARY_MISTAKES,
             )
             is Level.StoryLevel -> throw UnsupportedOperationException("stories are played by the story player")
         }
@@ -105,7 +94,7 @@ class PlanSessionUseCase @Inject constructor(
             .filterNot { it is Exercise.WordIntro }
 
     companion object {
-        const val LEGENDARY_HEARTS = 3
+        const val LEGENDARY_MISTAKES = 3
 
         /** Exercises in a review (unit or section). */
         const val REVIEW_SIZE = 12

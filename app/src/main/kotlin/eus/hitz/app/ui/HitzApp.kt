@@ -35,7 +35,6 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navOptions
 import eus.hitz.app.navigation.TopLevelDestination
 import eus.hitz.core.designsystem.theme.HitzTheme
-import eus.hitz.feature.leaderboard.navigation.leaderboardScreen
 import eus.hitz.feature.lesson.navigation.LessonRoute
 import eus.hitz.feature.lesson.navigation.PlacementRoute
 import eus.hitz.feature.lesson.navigation.StoryRoute
@@ -57,7 +56,6 @@ import eus.hitz.feature.path.navigation.navigateToUnitIntro
 import eus.hitz.feature.path.navigation.pathScreen
 import eus.hitz.feature.path.navigation.unitIntroScreen
 import eus.hitz.feature.profile.navigation.profileScreen
-import eus.hitz.feature.shop.navigation.shopScreen
 
 /** Destinations shown full screen, without the top-level navigation. */
 private val fullScreenRoutes = listOf(
@@ -116,7 +114,6 @@ private fun NavGraphBuilder.hitzGraph(navController: NavHostController) {
         },
         onOpenGuidebook = { unitId -> navController.navigateToGuidebook(unitId) },
         onStartStory = { unitId, levelId -> navController.navigateToStory(unitId, levelId) },
-        onOpenShop = { navController.navigateToTopLevel(TopLevelDestination.SHOP) },
         onOpenProfile = { navController.navigateToTopLevel(TopLevelDestination.PROFILE) },
         onOpenUnitIntro = { unitId, levelId, lessonId ->
             navController.navigateToUnitIntro(unitId, levelId, lessonId)
@@ -153,9 +150,7 @@ private fun NavGraphBuilder.hitzGraph(navController: NavHostController) {
     )
     lessonScreen(onClose = { navController.popBackStack() })
     storyScreen(onClose = { navController.popBackStack() })
-    leaderboardScreen()
     profileScreen()
-    shopScreen()
 }
 
 @Composable

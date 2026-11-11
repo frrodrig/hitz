@@ -4,7 +4,7 @@ import androidx.annotation.DrawableRes
 import eus.hitz.core.designsystem.R
 
 /**
- * Hitz icon set: 24 dp grid, 2 dp rounded strokes for UI icons and solid shapes for counters.
+ * Hitz icon set: 24 dp grid, 2 dp rounded strokes for UI icons and solid shapes for path nodes.
  * All icons are original and tinted by the caller.
  */
 object HitzIcons {
@@ -13,8 +13,6 @@ object HitzIcons {
     @DrawableRes val Trophy = R.drawable.core_designsystem_ic_trophy
 
     @DrawableRes val Profile = R.drawable.core_designsystem_ic_profile
-
-    @DrawableRes val Shop = R.drawable.core_designsystem_ic_shop
 
     @DrawableRes val Check = R.drawable.core_designsystem_ic_check
 
@@ -32,13 +30,7 @@ object HitzIcons {
 
     @DrawableRes val Settings = R.drawable.core_designsystem_ic_settings
 
-    @DrawableRes val Streak = R.drawable.core_designsystem_ic_streak
-
-    @DrawableRes val Gem = R.drawable.core_designsystem_ic_gem
-
-    @DrawableRes val Heart = R.drawable.core_designsystem_ic_heart
-
-    @DrawableRes val Xp = R.drawable.core_designsystem_ic_xp
+    @DrawableRes val Bolt = R.drawable.core_designsystem_ic_bolt
 
     @DrawableRes val Star = R.drawable.core_designsystem_ic_star
 

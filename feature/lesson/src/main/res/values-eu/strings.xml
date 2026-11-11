@@ -23,8 +23,8 @@
     <string name="feature_lesson_quit_dismiss">Ikasten jarraitu</string>
     <string name="feature_lesson_finished_title">Ikasgaia osatuta!</string>
     <string name="feature_lesson_finished_accuracy">Lehen saiakeran %%%1$d asmatu duzu.</string>
-    <string name="feature_lesson_out_of_hearts_title">Bizitzarik gabe geratu zara</string>
-    <string name="feature_lesson_out_of_hearts_body">Bizitza bat berreskuratzen duzu 4 orduro. Egin errepaso bat bizitza bat irabazteko, edo bete itzazu dendan.</string>
+    <string name="feature_lesson_out_of_mistakes_title">Akats-mugara iritsi zara</string>
+    <string name="feature_lesson_out_of_mistakes_body">Maila legendarioetan 3 akats bakarrik onartzen dira. Errepasatu unitatea eta saiatu berriro nahi duzunean.</string>
     <string name="feature_lesson_error">Ezin izan da ikasgaia kargatu.</string>
     <string name="feature_lesson_instruction_listen_tap">Ukitu entzuten duzuna</string>
     <string name="feature_lesson_instruction_listen_type">Idatzi entzuten duzuna</string>
@@ -49,13 +49,17 @@
     <string name="feature_lesson_story_finished_title">Istorioa osatuta!</string>
     <string name="feature_lesson_story_finished_accuracy">Lehen saiakeran galderen %%%1$d asmatu duzu.</string>
     <string name="feature_lesson_story_error">Ezin izan da istorioa kargatu.</string>
-    <plurals name="feature_lesson_streak_extended">
-        <item quantity="one">%d eguneko segida!</item>
-        <item quantity="other">%d eguneko segida!</item>
+    <plurals name="feature_lesson_mistakes_left">
+        <item quantity="one">Akats %d egin dezakezu oraindik</item>
+        <item quantity="other">%d akats egin ditzakezu oraindik</item>
     </plurals>
-    <plurals name="feature_lesson_gems_earned">
-        <item quantity="one">Harribitxi %d irabazi duzu erronka eta lorpenekin.</item>
-        <item quantity="other">%d harribitxi irabazi dituzu erronka eta lorpenekin.</item>
+    <plurals name="feature_lesson_goal_left">
+        <item quantity="one">Minutu %d falta zaizu gaurko helburura iristeko.</item>
+        <item quantity="other">%d minutu falta zaizkizu gaurko helburura iristeko.</item>
+    </plurals>
+    <plurals name="feature_lesson_new_achievements">
+        <item quantity="one">Lorpen berri %d lortu duzu.</item>
+        <item quantity="other">%d lorpen berri lortu dituzu.</item>
     </plurals>
     <string name="feature_lesson_listen_slow">Poliki entzun</string>
     <string name="feature_lesson_instruction_new_word">Hitz berria</string>
@@ -66,4 +70,8 @@
     <string name="feature_lesson_placement_all_body">%%%1$d asmatu duzu. Ikastaro osoa ezagutzen duzu! Nahi duzunean errepasa dezakezu.</string>
     <string name="feature_lesson_placement_next">Probatu %1$d. atala</string>
     <string name="feature_lesson_placement_go_to_path">Ikasten hasi</string>
+    <string name="feature_lesson_daily_goal">Eguneko helburua</string>
+    <string name="feature_lesson_daily_goal_change">%%%1$d → %%%2$d</string>
+    <string name="feature_lesson_goal_reached">Gaurko beharrezkoa egin duzu. Oso ondo!</string>
+    <string name="feature_lesson_goal_already_met">Helburua beteta. Orain praktikatzen duzun guztia gehigarria da.</string>
 </resources>

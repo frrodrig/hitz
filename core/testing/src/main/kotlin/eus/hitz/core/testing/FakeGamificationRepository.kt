@@ -3,15 +3,13 @@ package eus.hitz.core.testing
 import eus.hitz.core.domain.gamification.Activity
 import eus.hitz.core.domain.gamification.GameClock
 import eus.hitz.core.domain.gamification.GamificationRepository
-import eus.hitz.core.domain.gamification.LeagueState
 import eus.hitz.core.domain.gamification.PlayerData
-import eus.hitz.core.domain.gamification.StreakDayKind
-import eus.hitz.core.domain.gamification.Wallet
+import eus.hitz.core.domain.gamification.StudyDay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import java.time.ZoneOffset
 
-/** In-memory gamification store with a fixed clock ([NOW], UTC). */
+/** In-memory store of sessions and study time, with a fixed clock ([NOW], UTC). */
 class FakeGamificationRepository(initial: PlayerData = PlayerData()) : GamificationRepository {
     val data = MutableStateFlow(initial)
     val clock = GameClock({ NOW }, { ZoneOffset.UTC })
@@ -22,23 +20,11 @@ class FakeGamificationRepository(initial: PlayerData = PlayerData()) : Gamificat
         data.value = data.value.copy(activities = data.value.activities + activity)
     }
 
-    override suspend fun addStreakDays(days: Map<Long, StreakDayKind>) {
-        data.value = data.value.copy(streakDays = data.value.streakDays + days)
-    }
-
-    override suspend fun updateWallet(transform: (Wallet) -> Wallet): Wallet =
-        transform(data.value.wallet).also { data.value = data.value.copy(wallet = it) }
-
-    override suspend fun updateLeague(transform: (LeagueState) -> LeagueState): LeagueState =
-        transform(data.value.league).also { data.value = data.value.copy(league = it) }
-
-    override suspend fun claim(rewardId: String, gems: Int, claimedAt: Long): Boolean {
-        if (rewardId in data.value.claimed) return false
-        data.value = data.value.copy(
-            claimed = data.value.claimed + rewardId,
-            wallet = data.value.wallet.copy(gems = data.value.wallet.gems + gems),
-        )
-        return true
+    override suspend fun addStudyTime(epochDay: Long, millis: Long, goalMillis: Long): StudyDay {
+        val stored = data.value.studyDays[epochDay] ?: StudyDay(epochDay, 0, goalMillis)
+        val day = stored.copy(activeMillis = stored.activeMillis + millis, goalMillis = goalMillis)
+        data.value = data.value.copy(studyDays = data.value.studyDays + (epochDay to day))
+        return day
     }
 
     companion object {

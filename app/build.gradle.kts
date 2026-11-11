@@ -54,8 +54,6 @@ dependencies {
     implementation(project(":feature:path"))
     implementation(project(":feature:lesson"))
     implementation(project(":feature:profile"))
-    implementation(project(":feature:leaderboard"))
-    implementation(project(":feature:shop"))
     implementation(project(":feature:onboarding"))
 
     implementation(libs.androidx.activity.compose)

@@ -4,7 +4,9 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringSetPreferencesKey
+import eus.hitz.core.domain.gamification.DailyGoalRules
 import eus.hitz.core.domain.settings.SettingsRepository
 import eus.hitz.core.domain.settings.UserSettings
 import kotlinx.coroutines.flow.Flow
@@ -23,6 +25,7 @@ internal class DataStoreSettingsRepository @Inject constructor(
             soundEffectsEnabled = preferences[SOUND_EFFECTS_ENABLED] ?: true,
             seenUnitIntros = preferences[SEEN_UNIT_INTROS].orEmpty(),
             onboardingCompleted = preferences[ONBOARDING_COMPLETED] ?: false,
+            dailyGoalMinutes = preferences[DAILY_GOAL_MINUTES] ?: DailyGoalRules.DEFAULT_GOAL_MINUTES,
         )
     }
 
@@ -50,6 +53,11 @@ internal class DataStoreSettingsRepository @Inject constructor(
         dataStore.edit { it[ONBOARDING_COMPLETED] = true }
     }
 
+    override suspend fun setDailyGoalMinutes(minutes: Int) {
+        require(minutes in DailyGoalRules.GOAL_OPTIONS) { "unsupported daily goal $minutes" }
+        dataStore.edit { it[DAILY_GOAL_MINUTES] = minutes }
+    }
+
     companion object {
         const val FILE_NAME = "settings"
         private val SPEAKING_ENABLED = booleanPreferencesKey("speaking_enabled")
@@ -58,5 +66,6 @@ internal class DataStoreSettingsRepository @Inject constructor(
         private val SOUND_EFFECTS_ENABLED = booleanPreferencesKey("sound_effects_enabled")
         private val SEEN_UNIT_INTROS = stringSetPreferencesKey("seen_unit_intros")
         private val ONBOARDING_COMPLETED = booleanPreferencesKey("onboarding_completed")
+        private val DAILY_GOAL_MINUTES = intPreferencesKey("daily_goal_minutes")
     }
 }

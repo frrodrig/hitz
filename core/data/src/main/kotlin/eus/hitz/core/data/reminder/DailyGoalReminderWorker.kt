@@ -17,14 +17,15 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.EntryPointAccessors
 import dagger.hilt.components.SingletonComponent
 import eus.hitz.core.data.R
+import eus.hitz.core.domain.gamification.DailyProgress
 import eus.hitz.core.domain.gamification.ObservePlayerUseCase
 import kotlinx.coroutines.flow.first
 
 /**
- * Daily check: if the learner has not practiced today, a notification invites them to keep the
- * streak. It does nothing when notifications are not allowed.
+ * Daily check: while today's goal is not met, a notification says how many minutes are left.
+ * It does nothing when the goal is met or notifications are not allowed.
  */
-internal class StreakReminderWorker(
+internal class DailyGoalReminderWorker(
     context: Context,
     params: WorkerParameters,
 ) : CoroutineWorker(context, params) {
@@ -35,14 +36,15 @@ internal class StreakReminderWorker(
     }
 
     override suspend fun doWork(): Result {
-        val player = EntryPointAccessors.fromApplication(applicationContext, Dependencies::class.java)
+        val today = EntryPointAccessors.fromApplication(applicationContext, Dependencies::class.java)
             .observePlayer()()
             .first()
-        if (!player.practicedToday) notify(player.streak)
+            .today
+        if (!today.goalMet) notify(today)
         return Result.success()
     }
 
-    private fun notify(streak: Int) {
+    private fun notify(today: DailyProgress) {
         val context = applicationContext
         val allowed = Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU ||
             ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) ==
@@ -53,10 +55,11 @@ internal class StreakReminderWorker(
         val tap = launch?.let {
             PendingIntent.getActivity(context, 0, it, PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT)
         }
-        val text = if (streak > 0) {
-            context.resources.getQuantityString(R.plurals.core_data_reminder_streak, streak, streak)
+        val left = today.minutesLeft
+        val text = if (today.activeMillis > 0) {
+            context.resources.getQuantityString(R.plurals.core_data_reminder_left, left, left)
         } else {
-            context.getString(R.string.core_data_reminder_start)
+            context.resources.getQuantityString(R.plurals.core_data_reminder_start, left, left)
         }
         val notification = NotificationCompat.Builder(context, CHANNEL_ID)
             .setSmallIcon(R.drawable.core_data_ic_notification)
@@ -79,8 +82,11 @@ internal class StreakReminderWorker(
     }
 
     companion object {
-        const val CHANNEL_ID = "streak_reminder"
-        const val WORK_NAME = "streak_reminder"
+        const val CHANNEL_ID = "daily_goal_reminder"
+        const val WORK_NAME = "daily_goal_reminder"
+
+        /** Work and channel of the streak reminder this one replaces. */
+        const val LEGACY_NAME = "streak_reminder"
         private const val NOTIFICATION_ID = 1
     }
 }

@@ -37,7 +37,8 @@ class OnboardingViewModelTest {
         val vm = OnboardingViewModel(courses, settings)
         assertThat(vm.sections.value).containsExactly(SectionUi(text, text, units = 2))
         assertThat(settings.settings.value.onboardingCompleted).isFalse()
-        vm.complete()
+        vm.complete(goalMinutes = 15)
         assertThat(settings.settings.value.onboardingCompleted).isTrue()
+        assertThat(settings.settings.value.dailyGoalMinutes).isEqualTo(15)
     }
 }
