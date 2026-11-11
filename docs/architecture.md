@@ -7,7 +7,7 @@
 :feature:onboarding        First-run introduction and starting level
 :feature:path              Learning path (nodes, sections, unit introduction and guidebook)
 :feature:lesson            Lesson engine, exercises, stories and placement tests
-:feature:profile           Daily goal and week, achievements, settings
+:feature:profile           Score, daily goal and week, achievements, settings
 :core:designsystem         Material 3 theme, components and previews (see design-system.md)
 :core:data                 Repositories, Room, DataStore, bundled course content (assets/)
 :core:domain               Use cases and repository interfaces (pure Kotlin)
@@ -118,10 +118,10 @@ question. Finishing records the story level as completed.
 
 - **Introduction** (`:feature:onboarding`, `OnboardingRoute`): the start destination until
   `UserSettings.onboardingCompleted`. Five pages in a `HorizontalPager`: welcome, what the course
-  covers (its sections), how it works (lessons, new words and hints, the daily goal, reviews), the
-  daily goal in minutes and "have you studied Basque before?". *Saltar* skips it as a beginner
-  with the default goal. `MainActivity` keeps the
-  splash screen until the setting is read, so the right start destination is chosen without a flash.
+  covers (its sections), how it works (lessons, new words and hints, the daily goal, reviews, the
+  score), the daily goal in minutes and "have you studied Basque before?". *Saltar* skips it as a
+  beginner with the default goal. `MainActivity` keeps the splash screen until the setting is
+  read, so the right start destination is chosen without a flash.
 - **Placement tests** (`PlacementUseCase`, `core:domain`; `PlacementRoute`, played by the lesson
   screen): a learner who knows some Basque takes one test per section, in order. A test asks two
   exercises of each unit of the section, from its later lesson levels (no new word cards, no
@@ -165,6 +165,22 @@ tables for XP, streaks, hearts, gems and leagues). Days follow the learner's loc
   Android 13+). `WorkManagerReminderScheduler` runs `DailyGoalReminderWorker` daily around 19:00;
   it notifies only if today's goal is not met yet ("X minutes left"). It replaces the old streak
   reminder, which is cancelled.
+
+## Score
+
+The profile shows a score on a CEFR-aligned scale: 0 to 29 covers A1, so finishing the course
+gives 29 (`ScoreRules`, `ObserveScoreUseCase`, `eus.hitz.core.domain.score`).
+
+- Every *required* step counts the same: each lesson of a lesson level, each story and each review
+  (legendary levels are optional practice). Score = ⌊29 × steps done / steps⌋; the bar shows the
+  way to the next point.
+- Bands: 0–9 first steps, 10–19 solid basics, 20–29 A1 within reach, each with a short
+  description.
+- The history is rebuilt from the first completion time of each step
+  (`ProgressRepository.observeCompletions`), so it needs no storage of its own and includes
+  sections skipped with a placement test. The score page (`ScoreRoute`) draws it as a line, with
+  the points gained this week.
+- "What you can already do" lists the goals of every finished unit.
 
 ## Build
 

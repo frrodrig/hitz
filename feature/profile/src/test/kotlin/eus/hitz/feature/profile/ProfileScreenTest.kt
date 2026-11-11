@@ -33,6 +33,7 @@ class ProfileScreenTest {
 
     private val changes = mutableListOf<Pair<Setting, Boolean>>()
     private var goal: Int? = null
+    private var scoreOpened = false
 
     private fun show(darkTheme: Boolean = false) {
         composeRule.setContent {
@@ -41,6 +42,7 @@ class ProfileScreenTest {
                     state = ProfilePreviewData.ready,
                     onSettingChange = { setting, enabled -> changes += setting to enabled },
                     onGoalChange = { goal = it },
+                    onOpenScore = { scoreOpened = true },
                 )
             }
         }
@@ -54,10 +56,20 @@ class ProfileScreenTest {
     fun showsTodayAndTheWeek() {
         show()
         composeRule.onNodeWithText("Perfil").assertIsDisplayed()
+        scrollTo("Hoy: 6 de 10 min")
         composeRule.onNodeWithText("Hoy: 6 de 10 min").assertIsDisplayed()
         composeRule.onNodeWithText("Te faltan 4 minutos.").assertIsDisplayed()
-        composeRule.onNodeWithContentDescription(": 120 %", substring = true).assertIsDisplayed()
-        composeRule.onNodeWithContentDescription(": 60 %", substring = true).assertIsDisplayed()
+        composeRule.onNodeWithContentDescription("lunes: 120 %").assertIsDisplayed()
+        composeRule.onNodeWithContentDescription("miércoles: 60 %").assertIsDisplayed()
+    }
+
+    @Test
+    fun theScoreOpensItsDetails() {
+        show()
+        composeRule.onNodeWithContentDescription("Puntuación: 7 de 29").assertIsDisplayed()
+        composeRule.onNodeWithText("Hacia el 8: 40 %").assertIsDisplayed()
+        composeRule.onNodeWithText("Ver tu evolución").performClick()
+        assertThat(scoreOpened).isTrue()
     }
 
     @Test

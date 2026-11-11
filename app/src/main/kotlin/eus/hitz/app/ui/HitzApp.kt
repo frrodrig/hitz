@@ -55,7 +55,10 @@ import eus.hitz.feature.path.navigation.navigateToGuidebook
 import eus.hitz.feature.path.navigation.navigateToUnitIntro
 import eus.hitz.feature.path.navigation.pathScreen
 import eus.hitz.feature.path.navigation.unitIntroScreen
+import eus.hitz.feature.profile.navigation.ScoreRoute
+import eus.hitz.feature.profile.navigation.navigateToScore
 import eus.hitz.feature.profile.navigation.profileScreen
+import eus.hitz.feature.profile.navigation.scoreScreen
 
 /** Destinations shown full screen, without the top-level navigation. */
 private val fullScreenRoutes = listOf(
@@ -65,6 +68,7 @@ private val fullScreenRoutes = listOf(
     GuidebookRoute::class,
     UnitIntroRoute::class,
     OnboardingRoute::class,
+    ScoreRoute::class,
 )
 
 /** The course starts at its first section; placement tests go through the sections from there. */
@@ -150,7 +154,8 @@ private fun NavGraphBuilder.hitzGraph(navController: NavHostController) {
     )
     lessonScreen(onClose = { navController.popBackStack() })
     storyScreen(onClose = { navController.popBackStack() })
-    profileScreen()
+    profileScreen(onOpenScore = { navController.navigateToScore() })
+    scoreScreen(onBack = { navController.popBackStack() })
 }
 
 @Composable

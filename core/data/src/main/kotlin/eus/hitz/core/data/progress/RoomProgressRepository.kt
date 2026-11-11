@@ -18,6 +18,9 @@ internal class RoomProgressRepository @Inject constructor(
     override fun observeCompleted(): Flow<Set<String>> =
         dao.observeCompletionIds().map { it.toSet() }.distinctUntilChanged()
 
+    override fun observeCompletions(): Flow<Map<String, Long>> =
+        dao.observeCompletionTimes().map { rows -> rows.associate { it.key to it.time } }.distinctUntilChanged()
+
     override suspend fun recordCompletion(unitId: String, completionId: String, accuracy: Float, completedAt: Long) =
         dao.recordCompletion(completionId, unitId, accuracy, completedAt)
 

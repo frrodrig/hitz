@@ -3,8 +3,8 @@
 [![CI](https://github.com/frrodrig/hitz/actions/workflows/ci.yml/badge.svg)](https://github.com/frrodrig/hitz/actions/workflows/ci.yml)
 
 Android app for learning **Basque (euskara) from Spanish** at A1 level: a path of short lessons,
-spaced repetition and gamification. The mascot is a **Galtzagorri**, one of the tireless little
-red-trousered helpers of Basque mythology.
+spaced repetition, a daily goal in minutes and a score on the CEFR A1 scale (0–29). The mascot
+is a **Galtzagorri**, one of the tireless little red-trousered helpers of Basque mythology.
 
 - Made for learning on your own from zero: a first-run introduction, an introduction to every
   unit, a "new word" card before each word is used and tap hints on every Basque word. Learners

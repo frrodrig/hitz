@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="feature_profile_title">Perfil</string>
+    <string name="feature_profile_back">Volver</string>
+    <string name="feature_profile_score_title">Tu puntuación</string>
+    <string name="feature_profile_score_spoken">Puntuación: %1$d de %2$d</string>
+    <string name="feature_profile_score_scale">de %1$d · nivel A1</string>
+    <string name="feature_profile_score_band_first_steps">Primeros pasos</string>
+    <string name="feature_profile_score_band_first_steps_body">Reconoces palabras y frases muy básicas: saludar, presentarte y decir algunas cosas sobre ti.</string>
+    <string name="feature_profile_score_band_basics">Base sólida</string>
+    <string name="feature_profile_score_band_basics_body">Te comunicas con frases sencillas sobre temas cotidianos, como tu familia, tu casa o tus horarios.</string>
+    <string name="feature_profile_score_band_confident">A1 a tu alcance</string>
+    <string name="feature_profile_score_band_confident_body">Te desenvuelves en situaciones cotidianas sencillas, como hacer la compra, quedar con alguien o hablar de tus planes.</string>
+    <string name="feature_profile_score_top">¡Has completado el nivel A1!</string>
+    <string name="feature_profile_score_next">Hacia el %1$d: %2$d %%</string>
+    <plurals name="feature_profile_score_week">
+        <item quantity="one">+%d punto esta semana</item>
+        <item quantity="other">+%d puntos esta semana</item>
+    </plurals>
+    <string name="feature_profile_score_chart_spoken">Tu puntuación ha pasado de %1$d a %2$d.</string>
+    <string name="feature_profile_score_history">Tu evolución</string>
+    <string name="feature_profile_score_can_do">Lo que ya puedes hacer</string>
+    <string name="feature_profile_score_can_do_empty">Termina tu primera unidad y aquí verás lo que ya sabes hacer en euskera.</string>
+    <string name="feature_profile_score_how">Cómo se calcula</string>
+    <string name="feature_profile_score_how_body">La puntuación va de 0 a %1$d en el nivel A1 del Marco Común Europeo de Referencia (MCER). Sube con cada lección, historia y repaso que completas; los niveles legendarios son práctica extra. Al terminar el curso llegarás a %1$d.</string>
+    <string name="feature_profile_score_open">Ver tu evolución</string>
     <string name="feature_profile_daily_goal">Objetivo diario</string>
     <string name="feature_profile_today">Hoy: %1$d de %2$d min</string>
     <string name="feature_profile_goal_met">¡Objetivo de hoy cumplido!</string>

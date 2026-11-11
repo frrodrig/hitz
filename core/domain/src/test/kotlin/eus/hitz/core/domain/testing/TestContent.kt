@@ -81,10 +81,15 @@ internal class FakeProgressRepository(var stats: MistakeStats = MistakeStats()) 
     val recordedMistakes = mutableListOf<Mistake>()
     val accuracies = mutableMapOf<String, Float>()
 
+    val completions = MutableStateFlow<Map<String, Long>>(emptyMap())
+
     override fun observeCompleted(): Flow<Set<String>> = completed
+
+    override fun observeCompletions(): Flow<Map<String, Long>> = completions
 
     override suspend fun recordCompletion(unitId: String, completionId: String, accuracy: Float, completedAt: Long) {
         completed.value = completed.value + completionId
+        if (completionId !in completions.value) completions.value += completionId to completedAt
         accuracies[completionId] = accuracy
     }
 

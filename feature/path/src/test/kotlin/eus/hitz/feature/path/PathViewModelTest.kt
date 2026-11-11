@@ -22,6 +22,7 @@ import eus.hitz.core.testing.FakeSettingsRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.runTest
@@ -53,6 +54,8 @@ class PathViewModelTest {
     private val completed = MutableStateFlow<Set<String>>(emptySet())
     private val progress = object : ProgressRepository {
         override fun observeCompleted(): Flow<Set<String>> = completed
+
+        override fun observeCompletions(): Flow<Map<String, Long>> = completed.map { ids -> ids.associateWith { 0L } }
 
         override suspend fun recordCompletion(
             unitId: String,

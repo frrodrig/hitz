@@ -228,6 +228,7 @@ private val features = listOf(
         R.string.feature_onboarding_how_review_title,
         R.string.feature_onboarding_how_review_body
     ),
+    Feature(HitzIcons.Bolt, R.string.feature_onboarding_how_score_title, R.string.feature_onboarding_how_score_body),
 )
 
 @Composable

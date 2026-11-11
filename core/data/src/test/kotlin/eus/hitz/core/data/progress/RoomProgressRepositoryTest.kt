@@ -48,6 +48,16 @@ class RoomProgressRepositoryTest {
     }
 
     @Test
+    fun completionsKeepTheirFirstTime() = runTest {
+        repository.recordCompletion("u01-1", "u01-1.l1.s1", accuracy = 0.8f, completedAt = 10)
+        repository.recordCompletion("u01-1", "u01-1.l1.s1", accuracy = 1f, completedAt = 30)
+        repository.recordCompletion("u01-1", "u01-1.l1.s2", accuracy = 1f, completedAt = 20)
+        repository.observeCompletions().test {
+            assertThat(awaitItem()).containsExactly("u01-1.l1.s1", 10L, "u01-1.l1.s2", 20L)
+        }
+    }
+
+    @Test
     fun mistakesAreCountedByExerciseWordAndStructure() = runTest {
         val greeting = Mistake("u01-1.l1.s1.e01", listOf("kaixo", "ni"), listOf("izan-present"), "x", "y")
         val thanks = Mistake("u01-1.l1.s1.e03", listOf("eskerrik asko"), listOf("courtesy"), "x", "y")

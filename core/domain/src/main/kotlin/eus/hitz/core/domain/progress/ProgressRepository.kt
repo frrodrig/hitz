@@ -27,6 +27,9 @@ data class MistakeStats(
 interface ProgressRepository {
     fun observeCompleted(): Flow<Set<String>>
 
+    /** Every completion id with the time it was first completed. */
+    fun observeCompletions(): Flow<Map<String, Long>>
+
     suspend fun recordCompletion(unitId: String, completionId: String, accuracy: Float, completedAt: Long)
 
     suspend fun recordMistakes(unitId: String, mistakes: List<Mistake>, recordedAt: Long)
