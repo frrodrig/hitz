@@ -2,11 +2,12 @@ package eus.hitz.feature.lesson
 
 import eus.hitz.core.domain.content.CourseRepository
 import eus.hitz.core.domain.gamification.CompleteSessionUseCase
-import eus.hitz.core.domain.gamification.GrantRewardsUseCase
+import eus.hitz.core.domain.gamification.RecordStudyTimeUseCase
 import eus.hitz.core.domain.lesson.Mistake
 import eus.hitz.core.domain.progress.MistakeStats
 import eus.hitz.core.domain.progress.ProgressRepository
 import eus.hitz.core.domain.session.RecordSessionUseCase
+import eus.hitz.core.domain.settings.SettingsRepository
 import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.ChatMessage
 import eus.hitz.core.model.content.Course
@@ -24,6 +25,7 @@ import eus.hitz.core.model.content.Phrase
 import eus.hitz.core.model.content.Section
 import eus.hitz.core.model.content.WordPair
 import eus.hitz.core.testing.FakeGamificationRepository
+import eus.hitz.core.testing.FakeSettingsRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 
@@ -31,6 +33,7 @@ internal object TestLesson {
     const val UNIT = "u01-1"
     const val LEVEL = "u01-1.l1"
     const val LESSON = "u01-1.l1.s1"
+    const val LEGENDARY = "u01-1.l9"
     const val SECTION = "s1"
 
     val wordBank = Exercise.TranslateWordBank(
@@ -90,7 +93,10 @@ internal object TestLesson {
             title = text,
             goals = listOf(text),
             guidebook = Guidebook(emptyList()),
-            levels = listOf(Level.Lessons(LEVEL, text, listOf(Lesson(LESSON, exercises.toList())))),
+            levels = listOf(
+                Level.Lessons(LEVEL, text, listOf(Lesson(LESSON, exercises.toList()))),
+                Level.Legendary(LEGENDARY, text),
+            ),
         )
         return object : CourseRepository {
             override suspend fun getCourse(courseId: CourseId): Course =
@@ -120,8 +126,15 @@ internal class FakeProgressRepository : ProgressRepository {
     override suspend fun mistakeStats(unitId: String): MistakeStats = MistakeStats()
 }
 
-internal fun FakeGamificationRepository.recordSession(progress: ProgressRepository) = RecordSessionUseCase(
-    progress = progress,
-    clock = { FakeGamificationRepository.NOW },
-    completeSession = CompleteSessionUseCase(this, clock, GrantRewardsUseCase(this, clock)),
-)
+internal fun FakeGamificationRepository.recordSession(
+    progress: ProgressRepository,
+    settings: SettingsRepository = FakeSettingsRepository(),
+): RecordSessionUseCase {
+    val recordStudyTime = RecordStudyTimeUseCase(this, settings, clock)
+    return RecordSessionUseCase(
+        progress = progress,
+        clock = { FakeGamificationRepository.NOW },
+        completeSession = CompleteSessionUseCase(this, clock, recordStudyTime),
+        recordStudyTime = recordStudyTime,
+    )
+}

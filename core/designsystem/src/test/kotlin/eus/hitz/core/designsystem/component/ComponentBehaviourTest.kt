@@ -59,9 +59,11 @@ class ComponentBehaviourTest {
     }
 
     @Test
-    fun statCounterHasSpokenDescription() {
-        composeRule.setContent { HitzTheme { HitzStatCounter(StatKind.Streak, 3) } }
-        composeRule.onNodeWithContentDescription("Racha de 3 días").assertExists()
+    fun dailyGoalChipHasSpokenDescription() {
+        var clicked = false
+        composeRule.setContent { HitzTheme { HitzDailyGoalChip(0.6f, onClick = { clicked = true }) } }
+        composeRule.onNodeWithContentDescription("Objetivo diario: 60 %").assertHasClickAction().performClick()
+        assertThat(clicked).isTrue()
     }
 
     @Test

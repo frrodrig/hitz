@@ -22,8 +22,8 @@
     <string name="feature_lesson_quit_dismiss">Seguir aprendiendo</string>
     <string name="feature_lesson_finished_title">¡Lección completada!</string>
     <string name="feature_lesson_finished_accuracy">Has acertado el %1$d %% a la primera.</string>
-    <string name="feature_lesson_out_of_hearts_title">Te has quedado sin vidas</string>
-    <string name="feature_lesson_out_of_hearts_body">Recuperas una vida cada 4 horas. Haz un repaso para ganar una, o recárgalas en la tienda.</string>
+    <string name="feature_lesson_out_of_mistakes_title">Has llegado al límite de fallos</string>
+    <string name="feature_lesson_out_of_mistakes_body">En los niveles legendarios solo se permiten 3 fallos. Repasa la unidad y vuelve a intentarlo cuando quieras.</string>
     <string name="feature_lesson_error">No se ha podido cargar la lección.</string>
     <string name="feature_lesson_instruction_listen_tap">Toca lo que oyes</string>
     <string name="feature_lesson_instruction_listen_type">Escribe lo que oyes</string>
@@ -48,13 +48,17 @@
     <string name="feature_lesson_story_finished_title">¡Historia completada!</string>
     <string name="feature_lesson_story_finished_accuracy">Has acertado el %1$d %% de las preguntas a la primera.</string>
     <string name="feature_lesson_story_error">No se ha podido cargar la historia.</string>
-    <plurals name="feature_lesson_streak_extended">
-        <item quantity="one">¡Racha de %d día!</item>
-        <item quantity="other">¡Racha de %d días!</item>
+    <plurals name="feature_lesson_mistakes_left">
+        <item quantity="one">Te queda %d fallo permitido</item>
+        <item quantity="other">Te quedan %d fallos permitidos</item>
     </plurals>
-    <plurals name="feature_lesson_gems_earned">
-        <item quantity="one">Has ganado %d gema con misiones y logros.</item>
-        <item quantity="other">Has ganado %d gemas con misiones y logros.</item>
+    <plurals name="feature_lesson_goal_left">
+        <item quantity="one">Te falta %d minuto para tu objetivo de hoy.</item>
+        <item quantity="other">Te faltan %d minutos para tu objetivo de hoy.</item>
+    </plurals>
+    <plurals name="feature_lesson_new_achievements">
+        <item quantity="one">Has conseguido %d logro nuevo.</item>
+        <item quantity="other">Has conseguido %d logros nuevos.</item>
     </plurals>
     <string name="feature_lesson_listen_slow">Escuchar despacio</string>
     <string name="feature_lesson_instruction_new_word">Palabra nueva</string>
@@ -65,4 +69,8 @@
     <string name="feature_lesson_placement_all_body">Has acertado el %1$d %%. ¡Ya conoces todo el curso! Puedes repasarlo cuando quieras.</string>
     <string name="feature_lesson_placement_next">Probar la sección %1$d</string>
     <string name="feature_lesson_placement_go_to_path">Empezar a aprender</string>
+    <string name="feature_lesson_daily_goal">Objetivo diario</string>
+    <string name="feature_lesson_daily_goal_change">%1$d %% → %2$d %%</string>
+    <string name="feature_lesson_goal_reached">Has hecho lo necesario por hoy. ¡Bien hecho!</string>
+    <string name="feature_lesson_goal_already_met">Objetivo cumplido. Todo lo que practiques ahora suma.</string>
 </resources>

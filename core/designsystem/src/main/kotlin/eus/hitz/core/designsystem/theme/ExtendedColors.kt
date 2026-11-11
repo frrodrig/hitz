@@ -14,17 +14,15 @@ data class ColorFamily(
 )
 
 /**
- * Colours that Material 3 does not define: answer feedback and gamification.
+ * Colours that Material 3 does not define: answer feedback (right, almost right) and the
+ * daily goal once met.
  *
  * Read them with `HitzTheme.extendedColors`.
  */
 @Immutable
 data class HitzExtendedColors(
     val success: ColorFamily,
-    val xp: ColorFamily,
-    val streak: ColorFamily,
-    val gem: ColorFamily,
-    val heart: ColorFamily,
+    val warning: ColorFamily,
 )
 
 internal val LocalHitzExtendedColors = staticCompositionLocalOf { LightExtendedColors }

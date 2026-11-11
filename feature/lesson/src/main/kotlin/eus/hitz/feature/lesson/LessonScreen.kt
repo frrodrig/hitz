@@ -37,20 +37,21 @@ import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import eus.hitz.core.designsystem.component.FeedbackKind
 import eus.hitz.core.designsystem.component.HitzButton
 import eus.hitz.core.designsystem.component.HitzCelebration
+import eus.hitz.core.designsystem.component.HitzDailyGoalRing
 import eus.hitz.core.designsystem.component.HitzFeedbackPanel
 import eus.hitz.core.designsystem.component.HitzLessonProgressBar
 import eus.hitz.core.designsystem.component.HitzMascot
-import eus.hitz.core.designsystem.component.HitzStatBar
-import eus.hitz.core.designsystem.component.HitzStatCounter
-import eus.hitz.core.designsystem.component.StatKind
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.model.content.Language
@@ -112,9 +113,9 @@ internal fun LessonContent(
             onAction = onClose,
             modifier = modifier,
         )
-        LessonUiState.OutOfHearts -> LessonMessage(
-            title = stringResource(R.string.feature_lesson_out_of_hearts_title),
-            body = stringResource(R.string.feature_lesson_out_of_hearts_body),
+        LessonUiState.OutOfMistakes -> LessonMessage(
+            title = stringResource(R.string.feature_lesson_out_of_mistakes_title),
+            body = stringResource(R.string.feature_lesson_out_of_mistakes_body),
             action = stringResource(R.string.feature_lesson_finish),
             onAction = onClose,
             modifier = modifier,
@@ -175,7 +176,9 @@ private fun ActiveLesson(
 ) {
     Scaffold(
         modifier = modifier,
-        topBar = { LessonTopBar(state.progress, state.hearts, onClose = { onAction(LessonAction.RequestQuit) }) },
+        topBar = {
+            LessonTopBar(state.progress, state.mistakesLeft, onClose = { onAction(LessonAction.RequestQuit) })
+        },
         bottomBar = { LessonBottomBar(state, onAction) },
     ) { padding ->
         Column(
@@ -247,7 +250,7 @@ private fun instruction(exercise: ExerciseUi): String = when (exercise) {
 @Composable
 internal fun LessonTopBar(
     progress: Float,
-    hearts: Int?,
+    mistakesLeft: Int?,
     onClose: () -> Unit,
     closeLabel: String = stringResource(R.string.feature_lesson_close),
 ) {
@@ -263,9 +266,7 @@ internal fun LessonTopBar(
             Icon(painterResource(HitzIcons.Close), contentDescription = closeLabel)
         }
         HitzLessonProgressBar(progress, Modifier.weight(1f))
-        if (hearts != null) {
-            HitzStatCounter(StatKind.Hearts, hearts)
-        }
+        if (mistakesLeft != null) MistakesLeft(mistakesLeft)
     }
 }
 
@@ -373,8 +374,8 @@ private fun LessonMessageContent(
 ) {
     Box(contentAlignment = Alignment.Center) {
         HitzMascot(contentDescription = null)
-        // Drawn around the mascot without taking layout space.
-        if (reward != null) HitzCelebration(Modifier.matchParentSize().wrapContentSize(unbounded = true))
+        // Completing the daily goal is celebrated around the mascot, without taking layout space.
+        if (reward?.goalReached == true) HitzCelebration(Modifier.matchParentSize().wrapContentSize(unbounded = true))
     }
     Text(
         text = title,
@@ -391,34 +392,63 @@ private fun LessonMessageContent(
     HitzButton(text = action, onClick = onAction, modifier = Modifier.fillMaxWidth())
 }
 
-/** XP, streak and gems earned by the session. */
+/** Wrong answers still allowed in a legendary level: a small cross and the number. */
+@Composable
+private fun MistakesLeft(count: Int) {
+    val description = pluralStringResource(R.plurals.feature_lesson_mistakes_left, count, count)
+    Row(
+        modifier = Modifier
+            .padding(horizontal = HitzSpacing.sm)
+            .clearAndSetSemantics { contentDescription = description },
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(HitzSpacing.xs),
+    ) {
+        Icon(
+            painter = painterResource(HitzIcons.Close),
+            contentDescription = null,
+            tint = MaterialTheme.colorScheme.error,
+        )
+        Text(count.toString(), style = MaterialTheme.typography.titleMediumEmphasized)
+    }
+}
+
+/** What the session added to today's goal, and any achievement it unlocked. */
 @Composable
 private fun RewardSummary(reward: RewardUi) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
+        verticalArrangement = Arrangement.spacedBy(HitzSpacing.md),
     ) {
-        HitzStatBar(
-            stats = buildList {
-                add(StatKind.Xp to reward.xp)
-                add(StatKind.Streak to reward.streak)
-                if (reward.gems > 0) add(StatKind.Gems to reward.gems)
-            },
-        )
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(HitzSpacing.md),
+        ) {
+            HitzDailyGoalRing(reward.after / PERCENT.toFloat(), size = 56.dp)
+            Column {
+                Text(
+                    text = stringResource(R.string.feature_lesson_daily_goal),
+                    style = MaterialTheme.typography.labelLarge,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                Text(
+                    text = stringResource(R.string.feature_lesson_daily_goal_change, reward.before, reward.after),
+                    style = MaterialTheme.typography.titleLargeEmphasized,
+                )
+            }
+        }
         val message = when {
-            reward.streakExtended -> pluralStringResource(
-                R.plurals.feature_lesson_streak_extended,
-                reward.streak,
-                reward.streak
-            )
-            else -> null
+            reward.goalReached -> stringResource(R.string.feature_lesson_goal_reached)
+            reward.after >= PERCENT -> stringResource(R.string.feature_lesson_goal_already_met)
+            else -> pluralStringResource(R.plurals.feature_lesson_goal_left, reward.minutesLeft, reward.minutesLeft)
         }
-        if (message != null) {
-            Text(message, style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
-        }
-        if (reward.gems > 0) {
+        Text(message, style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
+        if (reward.newAchievements > 0) {
             Text(
-                text = pluralStringResource(R.plurals.feature_lesson_gems_earned, reward.gems, reward.gems),
+                text = pluralStringResource(
+                    R.plurals.feature_lesson_new_achievements,
+                    reward.newAchievements,
+                    reward.newAchievements,
+                ),
                 style = MaterialTheme.typography.bodyMedium,
                 textAlign = TextAlign.Center,
             )

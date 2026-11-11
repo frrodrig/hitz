@@ -165,16 +165,10 @@ internal val DarkHighContrastColorScheme = darkColorScheme(
 
 internal val LightExtendedColors = HitzExtendedColors(
     success = ColorFamily(Color(0xFF396849), Color(0xFFFFFFFF), Color(0xFFBBEFC8), Color(0xFF00210F)),
-    xp = ColorFamily(Color(0xFF7C5800), Color(0xFFFFFFFF), Color(0xFFFFDEA8), Color(0xFF271900)),
-    streak = ColorFamily(Color(0xFFA14000), Color(0xFFFFFFFF), Color(0xFFFFDBCC), Color(0xFF351000)),
-    gem = ColorFamily(Color(0xFF0060A8), Color(0xFFFFFFFF), Color(0xFFD3E4FF), Color(0xFF001C38)),
-    heart = ColorFamily(Color(0xFFB31F56), Color(0xFFFFFFFF), Color(0xFFFFD9DF), Color(0xFF3F0018)),
+    warning = ColorFamily(Color(0xFF7C5800), Color(0xFFFFFFFF), Color(0xFFFFDEA8), Color(0xFF271900)),
 )
 
 internal val DarkExtendedColors = HitzExtendedColors(
     success = ColorFamily(Color(0xFFA0D2AD), Color(0xFF05381E), Color(0xFF215033), Color(0xFFBBEFC8)),
-    xp = ColorFamily(Color(0xFFFEBB2A), Color(0xFF422D00), Color(0xFF5E4200), Color(0xFFFFDEA8)),
-    streak = ColorFamily(Color(0xFFFFB694), Color(0xFF571F00), Color(0xFF7B2F00), Color(0xFFFFDBCC)),
-    gem = ColorFamily(Color(0xFFA2C9FF), Color(0xFF00315B), Color(0xFF004881), Color(0xFFD3E4FF)),
-    heart = ColorFamily(Color(0xFFFFB1C2), Color(0xFF66002B), Color(0xFF8F003F), Color(0xFFFFD9DF)),
+    warning = ColorFamily(Color(0xFFFEBB2A), Color(0xFF422D00), Color(0xFF5E4200), Color(0xFFFFDEA8)),
 )

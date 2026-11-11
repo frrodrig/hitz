@@ -3,9 +3,11 @@ package eus.hitz.feature.profile
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsOff
 import androidx.compose.ui.test.assertIsOn
+import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.hasScrollAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
@@ -30,6 +32,7 @@ class ProfileScreenTest {
     val composeRule = createComposeRule()
 
     private val changes = mutableListOf<Pair<Setting, Boolean>>()
+    private var goal: Int? = null
 
     private fun show(darkTheme: Boolean = false) {
         composeRule.setContent {
@@ -37,6 +40,7 @@ class ProfileScreenTest {
                 ProfileContent(
                     state = ProfilePreviewData.ready,
                     onSettingChange = { setting, enabled -> changes += setting to enabled },
+                    onGoalChange = { goal = it },
                 )
             }
         }
@@ -47,12 +51,22 @@ class ProfileScreenTest {
     }
 
     @Test
-    fun showsStatsAndQuests() {
+    fun showsTodayAndTheWeek() {
         show()
         composeRule.onNodeWithText("Perfil").assertIsDisplayed()
-        composeRule.onNodeWithText("Mejor racha").assertIsDisplayed()
-        scrollTo("Gana 30 XP")
-        composeRule.onNodeWithText("¡Hecho! +10 gemas").assertIsDisplayed()
+        composeRule.onNodeWithText("Hoy: 6 de 10 min").assertIsDisplayed()
+        composeRule.onNodeWithText("Te faltan 4 minutos.").assertIsDisplayed()
+        composeRule.onNodeWithContentDescription(": 120 %", substring = true).assertIsDisplayed()
+        composeRule.onNodeWithContentDescription(": 60 %", substring = true).assertIsDisplayed()
+    }
+
+    @Test
+    fun theDailyGoalCanBeChanged() {
+        show()
+        scrollTo("15 min")
+        composeRule.onNodeWithText("10 min").assertIsSelected()
+        composeRule.onNodeWithText("15 min").performClick()
+        assertThat(goal).isEqualTo(15)
     }
 
     @Test

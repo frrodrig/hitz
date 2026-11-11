@@ -43,7 +43,7 @@ private fun feedbackColors(kind: FeedbackKind): ColorFamily {
     val scheme = MaterialTheme.colorScheme
     return when (kind) {
         FeedbackKind.Correct -> HitzTheme.extendedColors.success
-        FeedbackKind.AlmostCorrect -> HitzTheme.extendedColors.xp
+        FeedbackKind.AlmostCorrect -> HitzTheme.extendedColors.warning
         FeedbackKind.Incorrect ->
             ColorFamily(scheme.error, scheme.onError, scheme.errorContainer, scheme.onErrorContainer)
     }

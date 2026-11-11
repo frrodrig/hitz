@@ -99,11 +99,11 @@ class HitzAppTest {
     fun theFirstRunIntroducesTheAppAndOffersAPlacementTest() {
         waitForText("Kaixo! Te damos la bienvenida a Hitz")
         composeRule.onRoot().captureRoboImage("src/test/screenshots/app_onboarding.png")
-        repeat(3) { composeRule.onNodeWithText("Siguiente").performClick() }
+        repeat(4) { composeRule.onNodeWithText("Siguiente").performClick() }
         waitForText("¿Has estudiado euskera antes?")
         composeRule.onNodeWithText("Ya sé algo de euskera").performClick()
         composeRule.onNodeWithText("Empezar").performClick()
-        // The placement test of the first section: no hearts, a check button.
+        // The placement test of the first section: a check button.
         waitForText("Comprobar")
     }
 
@@ -114,16 +114,16 @@ class HitzAppTest {
         waitForText("¡Hola!")
         composeRule.onNodeWithText("Aprender").assertIsSelected()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/app_path_tablet.png")
-        composeRule.onNodeWithText("Ligas").performClick()
-        waitForText("Liga Jaizkibel")
+        composeRule.onNodeWithText("Perfil").performClick()
+        waitForText("Hoy: 0 de 10 min")
     }
 
     @Test
-    fun navigatesToLeagues() {
+    fun theDailyGoalOpensTheProfile() {
         skipOnboarding()
         waitForText("¡Hola!")
-        composeRule.onNodeWithText("Ligas").performClick()
-        waitForText("Liga Jaizkibel")
+        composeRule.onNodeWithContentDescription("Objetivo diario: 0 %").performClick()
+        waitForText("Hoy: 0 de 10 min")
     }
 
     private companion object {

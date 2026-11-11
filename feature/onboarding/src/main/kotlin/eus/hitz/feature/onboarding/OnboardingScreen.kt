@@ -35,6 +35,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -60,10 +61,12 @@ import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.designsystem.theme.HitzTheme
+import eus.hitz.core.domain.gamification.DailyGoalRules
 import eus.hitz.core.model.content.LocalizedText
 import kotlinx.coroutines.launch
 
-private const val PAGES = 4
+private const val PAGES = 5
+private const val GOAL_PAGE = 3
 private const val LEVEL_PAGE = PAGES - 1
 
 /** The learner's answer to "have you studied Basque before?". */
@@ -81,22 +84,24 @@ fun OnboardingScreen(
     val sections by viewModel.sections.collectAsStateWithLifecycle()
     OnboardingContent(
         sections = sections,
-        onFinish = { level ->
-            viewModel.complete()
+        onFinish = { level, goalMinutes ->
+            viewModel.complete(goalMinutes)
             onFinish(level)
         },
     )
 }
 
+/** [onFinish] gets the level and the daily goal in minutes (the default one when skipped). */
 @Composable
 internal fun OnboardingContent(
     sections: List<SectionUi>,
-    onFinish: (StartingLevel) -> Unit,
+    onFinish: (StartingLevel, goalMinutes: Int) -> Unit,
     modifier: Modifier = Modifier,
     pagerState: PagerState = rememberPagerState { PAGES },
 ) {
     val scope = rememberCoroutineScope()
     var level by rememberSaveable { mutableStateOf<StartingLevel?>(null) }
+    var goal by rememberSaveable { mutableIntStateOf(DailyGoalRules.DEFAULT_GOAL_MINUTES) }
     Column(
         modifier
             .fillMaxSize()
@@ -116,6 +121,7 @@ internal fun OnboardingContent(
                     0 -> WelcomePage()
                     1 -> LearnPage(sections)
                     2 -> HowPage()
+                    GOAL_PAGE -> GoalPage(goal, onSelect = { goal = it })
                     else -> LevelPage(level, onSelect = { level = it })
                 }
             }
@@ -129,7 +135,7 @@ internal fun OnboardingContent(
             verticalAlignment = Alignment.CenterVertically,
         ) {
             if (pagerState.currentPage < LEVEL_PAGE) {
-                TextButton(onClick = { onFinish(StartingLevel.Beginner) }) {
+                TextButton(onClick = { onFinish(StartingLevel.Beginner, goal) }) {
                     Text(stringResource(R.string.feature_onboarding_skip))
                 }
                 HitzButton(
@@ -140,7 +146,7 @@ internal fun OnboardingContent(
             } else {
                 HitzButton(
                     text = stringResource(R.string.feature_onboarding_start),
-                    onClick = { level?.let(onFinish) },
+                    onClick = { level?.let { onFinish(it, goal) } },
                     enabled = level != null,
                     modifier = Modifier.weight(1f),
                 )
@@ -216,11 +222,11 @@ private val features = listOf(
         R.string.feature_onboarding_how_lessons_body
     ),
     Feature(HitzIcons.Book, R.string.feature_onboarding_how_words_title, R.string.feature_onboarding_how_words_body),
-    Feature(HitzIcons.Heart, R.string.feature_onboarding_how_hearts_title, R.string.feature_onboarding_how_hearts_body),
+    Feature(HitzIcons.Star, R.string.feature_onboarding_how_goal_title, R.string.feature_onboarding_how_goal_body),
     Feature(
-        HitzIcons.Streak,
-        R.string.feature_onboarding_how_streak_title,
-        R.string.feature_onboarding_how_streak_body
+        HitzIcons.Trophy,
+        R.string.feature_onboarding_how_review_title,
+        R.string.feature_onboarding_how_review_body
     ),
 )
 
@@ -246,19 +252,42 @@ private fun HowPage() {
     }
 }
 
+private val goalLabels = mapOf(
+    5 to R.string.feature_onboarding_goal_5,
+    10 to R.string.feature_onboarding_goal_10,
+    15 to R.string.feature_onboarding_goal_15,
+    20 to R.string.feature_onboarding_goal_20,
+)
+
+@Composable
+private fun GoalPage(selected: Int, onSelect: (Int) -> Unit) {
+    PageTitle(R.string.feature_onboarding_goal_title)
+    Text(stringResource(R.string.feature_onboarding_goal_body), style = MaterialTheme.typography.bodyLarge)
+    Column(Modifier.selectableGroup(), verticalArrangement = Arrangement.spacedBy(HitzSpacing.md)) {
+        DailyGoalRules.GOAL_OPTIONS.forEach { minutes ->
+            ChoiceCard(
+                title = stringResource(R.string.feature_onboarding_goal_minutes, minutes),
+                body = stringResource(goalLabels.getValue(minutes)),
+                selected = minutes == selected,
+                onClick = { onSelect(minutes) },
+            )
+        }
+    }
+}
+
 @Composable
 private fun LevelPage(selected: StartingLevel?, onSelect: (StartingLevel) -> Unit) {
     PageTitle(R.string.feature_onboarding_level_title)
     Column(Modifier.selectableGroup(), verticalArrangement = Arrangement.spacedBy(HitzSpacing.md)) {
-        LevelOption(
-            title = R.string.feature_onboarding_level_beginner,
-            body = R.string.feature_onboarding_level_beginner_body,
+        ChoiceCard(
+            title = stringResource(R.string.feature_onboarding_level_beginner),
+            body = stringResource(R.string.feature_onboarding_level_beginner_body),
             selected = selected == StartingLevel.Beginner,
             onClick = { onSelect(StartingLevel.Beginner) },
         )
-        LevelOption(
-            title = R.string.feature_onboarding_level_some,
-            body = R.string.feature_onboarding_level_some_body,
+        ChoiceCard(
+            title = stringResource(R.string.feature_onboarding_level_some),
+            body = stringResource(R.string.feature_onboarding_level_some_body),
             selected = selected == StartingLevel.SomeBasque,
             onClick = { onSelect(StartingLevel.SomeBasque) },
         )
@@ -266,7 +295,7 @@ private fun LevelPage(selected: StartingLevel?, onSelect: (StartingLevel) -> Uni
 }
 
 @Composable
-private fun LevelOption(@StringRes title: Int, @StringRes body: Int, selected: Boolean, onClick: () -> Unit) {
+private fun ChoiceCard(title: String, body: String, selected: Boolean, onClick: () -> Unit) {
     OutlinedCard(
         modifier = Modifier
             .fillMaxWidth()
@@ -291,8 +320,8 @@ private fun LevelOption(@StringRes title: Int, @StringRes body: Int, selected: B
         ) {
             RadioButton(selected = selected, onClick = null)
             Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(HitzSpacing.xs)) {
-                Text(stringResource(title), style = MaterialTheme.typography.titleMedium)
-                Text(stringResource(body), style = MaterialTheme.typography.bodyMedium)
+                Text(title, style = MaterialTheme.typography.titleMedium)
+                Text(body, style = MaterialTheme.typography.bodyMedium)
             }
         }
     }
@@ -341,5 +370,5 @@ internal object OnboardingPreviewData {
 @HitzPreviews
 @Composable
 private fun OnboardingPreview() {
-    HitzTheme { OnboardingContent(OnboardingPreviewData.sections, onFinish = {}) }
+    HitzTheme { OnboardingContent(OnboardingPreviewData.sections, onFinish = { _, _ -> }) }
 }

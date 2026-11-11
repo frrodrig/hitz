@@ -7,9 +7,7 @@ import com.google.common.truth.Truth.assertThat
 import eus.hitz.core.data.database.HitzDatabase
 import eus.hitz.core.domain.gamification.Activity
 import eus.hitz.core.domain.gamification.ActivityKind
-import eus.hitz.core.domain.gamification.LeagueOutcome
-import eus.hitz.core.domain.gamification.StreakDayKind
-import eus.hitz.core.domain.gamification.Wallet
+import eus.hitz.core.domain.gamification.StudyDay
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.After
@@ -36,41 +34,27 @@ class RoomGamificationRepositoryTest {
     fun tearDown() = database.close()
 
     @Test
-    fun aNewPlayerStartsWithTheDefaultWallet() = runTest {
+    fun aNewLearnerHasNothingYet() = runTest {
         val data = repository.observe().first()
-        assertThat(data.wallet).isEqualTo(Wallet())
         assertThat(data.activities).isEmpty()
+        assertThat(data.studyDays).isEmpty()
     }
 
     @Test
-    fun activitiesAndStreakDaysAreStored() = runTest {
-        val activity = Activity("u01-1.l1.s1", ActivityKind.Lesson, 1f, true, 15, completedAt = 10, epochDay = 20_000)
+    fun activitiesAreStored() = runTest {
+        val activity =
+            Activity("u01-1.l1.s1", ActivityKind.Lesson, 1f, true, 90_000, completedAt = 10, epochDay = 20_000)
         repository.recordActivity(activity)
-        repository.addStreakDays(mapOf(20_000L to StreakDayKind.Practiced, 19_999L to StreakDayKind.Frozen))
-        val data = repository.observe().first()
-        assertThat(data.activities).containsExactly(activity)
-        assertThat(data.streakDays).containsExactly(20_000L, StreakDayKind.Practiced, 19_999L, StreakDayKind.Frozen)
+        assertThat(repository.observe().first().activities).containsExactly(activity)
     }
 
     @Test
-    fun walletAndLeagueUpdatesArePersisted() = runTest {
-        repository.updateWallet { it.copy(gems = 99, streakFreezes = 1) }
-        repository.updateLeague {
-            it.copy(tier = 3, weekStart = 20_000, lastRank = 2, lastOutcome = LeagueOutcome.Promoted)
-        }
-        val data = repository.observe().first()
-        assertThat(data.wallet.gems).isEqualTo(99)
-        assertThat(data.wallet.streakFreezes).isEqualTo(1)
-        assertThat(data.league.tier).isEqualTo(3)
-        assertThat(data.league.lastOutcome).isEqualTo(LeagueOutcome.Promoted)
-    }
-
-    @Test
-    fun aRewardIsClaimedOnce() = runTest {
-        assertThat(repository.claim("quest:1:a", gems = 10, claimedAt = 0)).isTrue()
-        assertThat(repository.claim("quest:1:a", gems = 10, claimedAt = 1)).isFalse()
-        val data = repository.observe().first()
-        assertThat(data.wallet.gems).isEqualTo(Wallet.INITIAL_GEMS + 10)
-        assertThat(data.claimed).containsExactly("quest:1:a")
+    fun studyTimeAddsUpAndADayTakesTheLatestGoal() = runTest {
+        repository.addStudyTime(20_000, 120_000, goalMillis = 600_000)
+        val day = repository.addStudyTime(20_000, 60_000, goalMillis = 300_000)
+        assertThat(day).isEqualTo(StudyDay(20_000, 180_000, 300_000))
+        repository.addStudyTime(20_001, 30_000, goalMillis = 900_000)
+        assertThat(repository.observe().first().studyDays.values)
+            .containsExactly(StudyDay(20_000, 180_000, 300_000), StudyDay(20_001, 30_000, 900_000))
     }
 }

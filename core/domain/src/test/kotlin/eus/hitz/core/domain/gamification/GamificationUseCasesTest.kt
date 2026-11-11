@@ -1,7 +1,9 @@
 package eus.hitz.core.domain.gamification
 
 import com.google.common.truth.Truth.assertThat
+import eus.hitz.core.domain.settings.UserSettings
 import eus.hitz.core.domain.testing.FakeGamificationRepository
+import eus.hitz.core.domain.testing.FakeSettingsRepository
 import eus.hitz.core.domain.testing.TestClock
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
@@ -9,108 +11,61 @@ import org.junit.Test
 
 class GamificationUseCasesTest {
     private val repository = FakeGamificationRepository()
+    private val settings = FakeSettingsRepository(UserSettings(dailyGoalMinutes = 10))
     private val clock = TestClock()
-    private val grant = GrantRewardsUseCase(repository, clock.gameClock)
-    private val complete = CompleteSessionUseCase(repository, clock.gameClock, grant)
-    private val refresh = RefreshPlayerUseCase(repository, clock.gameClock, grant)
-    private val hearts = HeartsUseCase(repository, clock.gameClock)
-    private val buy = BuyItemUseCase(repository, clock.gameClock)
-    private val summary get() = repository.data.value.summary(clock.now, clock.today)
+    private val studyTime = RecordStudyTimeUseCase(repository, settings, clock.gameClock)
+    private val complete = CompleteSessionUseCase(repository, clock.gameClock, studyTime)
+    private val observe = ObservePlayerUseCase(repository, settings, clock.gameClock)
 
     @Test
-    fun `a first session earns XP and starts the streak`() = runTest {
-        val reward = complete("l1", ActivityKind.Lesson, accuracy = 1f, perfect = true)
-        assertThat(reward.xp).isEqualTo(15)
-        assertThat(reward.streak).isEqualTo(1)
-        assertThat(reward.streakExtended).isTrue()
-        assertThat(summary.totalXp).isEqualTo(15)
-        assertThat(summary.practicedToday).isTrue()
+    fun `sessions add up to the daily goal and the one that completes it is marked`() = runTest {
+        val first = complete("a", ActivityKind.Lesson, 1f, true, activeMillis = 6 * 60_000)
+        assertThat(first.after.percent).isEqualTo(60)
+        assertThat(first.goalReached).isFalse()
 
-        val second = complete("l2", ActivityKind.Lesson, accuracy = 0.5f, perfect = false)
-        assertThat(second.streakExtended).isFalse()
-        assertThat(second.streak).isEqualTo(1)
+        val second = complete("b", ActivityKind.Lesson, 1f, false, activeMillis = 5 * 60_000)
+        assertThat(second.before.percent).isEqualTo(60)
+        assertThat(second.after.percent).isEqualTo(110)
+        assertThat(second.goalReached).isTrue()
+
+        val third = complete("c", ActivityKind.Story, 1f, false, activeMillis = 60_000)
+        assertThat(third.goalReached).isFalse()
     }
 
     @Test
-    fun `quests and achievements grant their gems once`() = runTest {
-        val reward = complete("l1", ActivityKind.Lesson, accuracy = 1f, perfect = true)
-        // The first perfect session reaches the first "perfect" achievement tier.
-        assertThat(reward.rewards).contains(Reward.AchievementTier(AchievementType.Perfect, 1))
-        val gems = repository.data.value.wallet.gems
-        assertThat(gems).isEqualTo(Wallet.INITIAL_GEMS + reward.rewards.sumOf { it.gems })
-        assertThat(grant()).isEmpty()
-        assertThat(repository.data.value.wallet.gems).isEqualTo(gems)
+    fun `a session reports the achievement tiers it reached`() = runTest {
+        val reward = complete("a", ActivityKind.Story, 1f, true, activeMillis = 60_000)
+        assertThat(reward.achievements).containsExactly(
+            AchievementTier(AchievementType.Perfect, 1),
+            AchievementTier(AchievementType.Stories, 1),
+        )
     }
 
     @Test
-    fun `daily quests are granted when done`() = runTest {
-        repeat(4) { complete("l$it", ActivityKind.Lesson, accuracy = 1f, perfect = true) }
-        complete("story", ActivityKind.Story, accuracy = 1f, perfect = true)
-        complete("review", ActivityKind.Review, accuracy = 1f, perfect = true)
-        assertThat(summary.quests.all { it.isDone && it.claimed }).isTrue()
-    }
-
-    @Test
-    fun `reviews give a heart back`() = runTest {
-        hearts.lose()
-        hearts.lose()
-        assertThat(hearts.current()).isEqualTo(3)
-        complete("review", ActivityKind.Review, accuracy = 1f, perfect = false)
-        assertThat(hearts.current()).isEqualTo(4)
-    }
-
-    @Test
-    fun `hearts regenerate with time`() = runTest {
-        hearts.lose()
-        clock.advanceHours(4)
-        assertThat(hearts.current()).isEqualTo(5)
-    }
-
-    @Test
-    fun `a freeze saves the streak over a missed day`() = runTest {
-        repository.updateWallet { it.copy(streakFreezes = 1) }
-        complete("l1", ActivityKind.Lesson, accuracy = 1f, perfect = false)
-        clock.advanceDays(2)
-        refresh()
-        assertThat(summary.streak).isEqualTo(1)
-        assertThat(summary.streakFreezes).isEqualTo(0)
+    fun `the summary shows today and the current week`() = runTest {
+        studyTime(10 * 60_000)
         clock.advanceDays(1)
-        refresh()
-        assertThat(summary.streak).isEqualTo(0)
+        studyTime(3 * 60_000)
+        val summary = observe().first()
+        assertThat(summary.today.percent).isEqualTo(30)
+        assertThat(summary.today.minutesLeft).isEqualTo(7)
+        assertThat(summary.goalDays).isEqualTo(1)
+        assertThat(summary.totalMinutes).isEqualTo(13)
+        // Thursday 2026-11-05: Monday to Wednesday before, Friday to Sunday ahead.
+        assertThat(summary.week.map { it.goalMet }).containsExactly(false, false, true, false, false, false, false)
+            .inOrder()
+        assertThat(summary.week.single { it.isToday }.progress).isEqualTo(0.3f)
+        assertThat(summary.week.count { it.isFuture }).isEqualTo(3)
     }
 
     @Test
-    fun `shop items cost gems and are refused when not needed`() = runTest {
-        assertThat(buy(ShopItem.HeartRefill)).isEqualTo(PurchaseResult.NotNeeded)
-        hearts.lose()
-        assertThat(buy(ShopItem.HeartRefill)).isEqualTo(PurchaseResult.NotEnoughGems)
-        assertThat(buy(ShopItem.StreakFreeze)).isEqualTo(PurchaseResult.Bought)
-        assertThat(repository.data.value.wallet.gems).isEqualTo(Wallet.INITIAL_GEMS - ShopItem.StreakFreeze.price)
-        assertThat(repository.data.value.wallet.streakFreezes).isEqualTo(1)
-    }
-
-    @Test
-    fun `the league week closes with promotion and rank gems`() = runTest {
-        refresh()
-        val joined = repository.data.value.league
-        assertThat(joined.weekStart).isEqualTo(Leagues.weekStart(clock.today))
-        repeat(20) { complete("legendary$it", ActivityKind.Legendary, accuracy = 1f, perfect = true) }
-        val gemsBefore = repository.data.value.wallet.gems
-        clock.advanceDays(7)
-        refresh()
-        val league = repository.data.value.league
-        assertThat(league.tier).isEqualTo(1)
-        assertThat(league.lastRank).isEqualTo(1)
-        assertThat(league.lastOutcome).isEqualTo(LeagueOutcome.Promoted)
-        assertThat(repository.data.value.wallet.gems - gemsBefore).isAtLeast(Leagues.gemsForRank(1))
-    }
-
-    @Test
-    fun `the league view ranks the learner with this week's XP`() = runTest {
-        refresh()
-        complete("l1", ActivityKind.Lesson, accuracy = 1f, perfect = false)
-        val view = ObserveLeagueUseCase(repository, clock.gameClock)().first()
-        assertThat(view.standings.single { it.isLearner }.xp).isEqualTo(10)
-        assertThat(view.daysLeft).isEqualTo(5)
+    fun `changing the goal applies to today but not to past days`() = runTest {
+        repository.addStudyTime(clock.today - 1, 6 * 60_000, goalMillis = 600_000)
+        studyTime(6 * 60_000)
+        settings.setDailyGoalMinutes(5)
+        val summary = observe().first()
+        assertThat(summary.today.goalMet).isTrue()
+        assertThat(summary.goalDays).isEqualTo(1)
+        assertThat(summary.achievements.first { it.type == AchievementType.GoalDays }.value).isEqualTo(1)
     }
 }

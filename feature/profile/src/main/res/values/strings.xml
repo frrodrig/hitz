@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="feature_profile_title">Perfil</string>
-    <string name="feature_profile_stat_streak">Días de racha</string>
-    <string name="feature_profile_stat_longest">Mejor racha</string>
-    <string name="feature_profile_stat_xp">XP en total</string>
-    <string name="feature_profile_stat_gems">Gemas</string>
-    <string name="feature_profile_quests">Misiones del día</string>
-    <string name="feature_profile_quest_xp">Gana %1$d XP</string>
-    <plurals name="feature_profile_quest_sessions">
-        <item quantity="one">Completa %d lección, historia o repaso</item>
-        <item quantity="other">Completa %d lecciones, historias o repasos</item>
+    <string name="feature_profile_daily_goal">Objetivo diario</string>
+    <string name="feature_profile_today">Hoy: %1$d de %2$d min</string>
+    <string name="feature_profile_goal_met">¡Objetivo de hoy cumplido!</string>
+    <plurals name="feature_profile_goal_left">
+        <item quantity="one">Te falta %d minuto.</item>
+        <item quantity="other">Te faltan %d minutos.</item>
     </plurals>
-    <plurals name="feature_profile_quest_perfect">
-        <item quantity="one">Termina %d sesión sin fallos</item>
-        <item quantity="other">Termina %d sesiones sin fallos</item>
-    </plurals>
-    <string name="feature_profile_quest_story">Completa una historia</string>
-    <string name="feature_profile_quest_review">Haz un repaso</string>
-    <string name="feature_profile_quest_progress">%1$d de %2$d · %3$d gemas</string>
-    <string name="feature_profile_quest_done">¡Hecho! +%1$d gemas</string>
+    <string name="feature_profile_week">Esta semana</string>
+    <string name="feature_profile_week_day">%1$s: %2$d %%</string>
+    <string name="feature_profile_goal_days">Días con el objetivo cumplido</string>
+    <string name="feature_profile_study_minutes">Minutos de estudio</string>
+    <string name="feature_profile_goal_choose">Minutos al día</string>
+    <string name="feature_profile_goal_option">%1$d min</string>
+    <string name="feature_profile_goal_hint">Unos minutos cada día bastan para avanzar. Si un día no llegas, no pierdes nada.</string>
     <string name="feature_profile_achievements">Logros</string>
-    <string name="feature_profile_achievement_streak">Constancia: días seguidos</string>
-    <string name="feature_profile_achievement_xp">Experiencia: XP ganada</string>
+    <string name="feature_profile_achievement_goal_days">Constancia: días con el objetivo cumplido</string>
+    <string name="feature_profile_achievement_study_minutes">Dedicación: minutos de estudio</string>
     <string name="feature_profile_achievement_lessons">Estudio: lecciones completadas</string>
     <string name="feature_profile_achievement_perfect">Precisión: sesiones sin fallos</string>
     <string name="feature_profile_achievement_stories">Lectura: historias completadas</string>
@@ -31,7 +27,7 @@
     <string name="feature_profile_speaking">Ejercicios de hablar</string>
     <string name="feature_profile_speaking_description">Lecciones con frases que repites en voz alta.</string>
     <string name="feature_profile_reminder">Recordatorio diario</string>
-    <string name="feature_profile_reminder_description">Un aviso por la tarde si aún no has practicado.</string>
+    <string name="feature_profile_reminder_description">Un aviso por la tarde si aún no has llegado a tu objetivo.</string>
     <string name="feature_profile_listening">Ejercicios de escuchar</string>
     <string name="feature_profile_listening_description">Lecciones en las que escuchas frases y las escribes o las montas.</string>
     <string name="feature_profile_sound_effects">Efectos de sonido</string>

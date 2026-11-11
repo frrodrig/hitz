@@ -119,7 +119,7 @@ private fun ActiveStory(
         topBar = {
             LessonTopBar(
                 progress = state.progress,
-                hearts = null,
+                mistakesLeft = null,
                 onClose = { onAction(StoryAction.Close) },
                 closeLabel = stringResource(R.string.feature_lesson_story_close),
             )

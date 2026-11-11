@@ -18,7 +18,8 @@ sealed interface LessonUiState {
     @Immutable
     data class Active(
         val progress: Float,
-        val hearts: Int?,
+        /** Wrong answers still allowed (legendary levels); null when there is no limit. */
+        val mistakesLeft: Int?,
         val exercise: ExerciseUi,
         val feedback: FeedbackUi? = null,
         val showQuitDialog: Boolean = false,
@@ -31,7 +32,8 @@ sealed interface LessonUiState {
     /** [reward] arrives once the session is saved. */
     data class Finished(val result: LessonResult, val reward: RewardUi? = null) : LessonUiState
 
-    data object OutOfHearts : LessonUiState
+    /** A legendary level ended by going over the mistakes allowed. */
+    data object OutOfMistakes : LessonUiState
 
     /**
      * End of a placement test for section [sectionNumber]. When [passed], the section is marked
@@ -45,11 +47,25 @@ sealed interface LessonUiState {
     ) : LessonUiState
 }
 
-/** What a finished session earned: XP, the streak, and the gems of quests and achievements. */
-data class RewardUi(val xp: Int, val streak: Int, val streakExtended: Boolean, val gems: Int) {
+/**
+ * What a finished session added to today's goal (percentages, from [before] to [after]), whether it
+ * completed the goal, the minutes still missing, and how many achievement tiers it reached.
+ */
+data class RewardUi(
+    val before: Int,
+    val after: Int,
+    val goalReached: Boolean,
+    val minutesLeft: Int,
+    val newAchievements: Int = 0,
+) {
     companion object {
-        fun of(reward: SessionReward) =
-            RewardUi(reward.xp, reward.streak, reward.streakExtended, reward.rewards.sumOf { it.gems })
+        fun of(reward: SessionReward) = RewardUi(
+            before = reward.before.percent,
+            after = reward.after.percent,
+            goalReached = reward.goalReached,
+            minutesLeft = reward.after.minutesLeft,
+            newAchievements = reward.achievements.size,
+        )
     }
 }
 

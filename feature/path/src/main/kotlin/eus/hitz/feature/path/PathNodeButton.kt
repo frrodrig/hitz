@@ -56,7 +56,7 @@ private val NodeType.icon: Int
     get() = when (this) {
         NodeType.Lesson -> HitzIcons.Star
         NodeType.Story -> HitzIcons.Book
-        NodeType.Review -> HitzIcons.Xp
+        NodeType.Review -> HitzIcons.Bolt
         NodeType.Legendary -> HitzIcons.Trophy
     }
 

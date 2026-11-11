@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- TODO(revisión-nativa): review all strings in this file; confirm "segida" as the term for a streak -->
+    <!-- TODO(revisión-nativa): review all strings in this file -->
     <string name="feature_profile_title">Profila</string>
-    <string name="feature_profile_stat_streak">Segidako egunak</string>
-    <string name="feature_profile_stat_longest">Segidarik onena</string>
-    <string name="feature_profile_stat_xp">XP guztira</string>
-    <string name="feature_profile_stat_gems">Harribitxiak</string>
-    <string name="feature_profile_quests">Eguneko erronkak</string>
-    <string name="feature_profile_quest_xp">Irabazi %1$d XP</string>
-    <plurals name="feature_profile_quest_sessions">
-        <item quantity="one">Osatu ikasgai, istorio edo errepaso %d</item>
-        <item quantity="other">Osatu %d ikasgai, istorio edo errepaso</item>
+    <string name="feature_profile_daily_goal">Eguneko helburua</string>
+    <string name="feature_profile_today">Gaur: %2$d minututik %1$d</string>
+    <string name="feature_profile_goal_met">Gaurko helburua beteta!</string>
+    <plurals name="feature_profile_goal_left">
+        <item quantity="one">Minutu %d falta zaizu.</item>
+        <item quantity="other">%d minutu falta zaizkizu.</item>
     </plurals>
-    <plurals name="feature_profile_quest_perfect">
-        <item quantity="one">Amaitu saio %d akatsik gabe</item>
-        <item quantity="other">Amaitu %d saio akatsik gabe</item>
-    </plurals>
-    <string name="feature_profile_quest_story">Osatu istorio bat</string>
-    <string name="feature_profile_quest_review">Egin errepaso bat</string>
-    <string name="feature_profile_quest_progress">%2$d-tik %1$d · %3$d harribitxi</string>
-    <string name="feature_profile_quest_done">Eginda! +%1$d harribitxi</string>
+    <string name="feature_profile_week">Aste honetan</string>
+    <string name="feature_profile_week_day">%1$s: %%%2$d</string>
+    <string name="feature_profile_goal_days">Helburua betetako egunak</string>
+    <string name="feature_profile_study_minutes">Ikasketa-minutuak</string>
+    <string name="feature_profile_goal_choose">Minutu egunean</string>
+    <string name="feature_profile_goal_option">%1$d min</string>
+    <string name="feature_profile_goal_hint">Egunero minutu batzuk nahikoak dira aurrera egiteko. Egun batean iristen ez bazara, ez duzu ezer galtzen.</string>
     <string name="feature_profile_achievements">Lorpenak</string>
-    <string name="feature_profile_achievement_streak">Iraunkortasuna: egunak jarraian</string>
-    <string name="feature_profile_achievement_xp">Esperientzia: irabazitako XP</string>
+    <string name="feature_profile_achievement_goal_days">Iraunkortasuna: helburua betetako egunak</string>
+    <string name="feature_profile_achievement_study_minutes">Dedikazioa: ikasketa-minutuak</string>
     <string name="feature_profile_achievement_lessons">Ikasketa: osatutako ikasgaiak</string>
     <string name="feature_profile_achievement_perfect">Zehaztasuna: akatsik gabeko saioak</string>
     <string name="feature_profile_achievement_stories">Irakurketa: osatutako istorioak</string>
@@ -32,7 +28,7 @@
     <string name="feature_profile_speaking">Hitz egiteko ariketak</string>
     <string name="feature_profile_speaking_description">Esaldiak ozen errepikatzeko ariketak dituzten ikasgaiak.</string>
     <string name="feature_profile_reminder">Eguneko gogorarazlea</string>
-    <string name="feature_profile_reminder_description">Abisu bat arratsaldean, oraindik praktikatu ez baduzu.</string>
+    <string name="feature_profile_reminder_description">Abisu bat arratsaldean, oraindik zure helburura iritsi ez bazara.</string>
     <string name="feature_profile_listening">Entzuteko ariketak</string>
     <string name="feature_profile_listening_description">Esaldiak entzun eta idazten edo osatzen dituzun ikasgaiak.</string>
     <string name="feature_profile_sound_effects">Soinu-efektuak</string>

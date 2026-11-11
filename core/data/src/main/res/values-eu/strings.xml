@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- TODO(revisión-nativa): review all strings in this file -->
-    <string name="core_data_reminder_channel">Segidaren gogorarazleak</string>
+    <string name="core_data_reminder_channel">Eguneko helburuaren gogorarazlea</string>
     <string name="core_data_reminder_title">Hitz zure zain dago</string>
-    <string name="core_data_reminder_start">Eman bost minutu euskarari gaur.</string>
-    <plurals name="core_data_reminder_streak">
-        <item quantity="one">Egun %d daramazu segidan. Egin ikasgai bat ez galtzeko.</item>
-        <item quantity="other">%d egun daramatzazu segidan. Egin ikasgai bat ez galtzeko.</item>
+    <plurals name="core_data_reminder_start">
+        <item quantity="one">Gaurko helburua euskarazko minutu %d da. Hasiko gara?</item>
+        <item quantity="other">Gaurko helburua euskarazko %d minutu da. Hasiko gara?</item>
+    </plurals>
+    <plurals name="core_data_reminder_left">
+        <item quantity="one">Minutu %d falta zaizu gaurko helbururako.</item>
+        <item quantity="other">%d minutu falta zaizkizu gaurko helbururako.</item>
     </plurals>
 </resources>

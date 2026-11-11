@@ -4,9 +4,7 @@ import androidx.lifecycle.SavedStateHandle
 import app.cash.turbine.test
 import com.google.common.truth.Truth.assertThat
 import eus.hitz.core.domain.audio.SoundEffect
-import eus.hitz.core.domain.gamification.HeartsUseCase
-import eus.hitz.core.domain.gamification.PlayerData
-import eus.hitz.core.domain.gamification.Wallet
+import eus.hitz.core.domain.gamification.ActivityKind
 import eus.hitz.core.domain.lesson.PairSide
 import eus.hitz.core.domain.lesson.WordBank
 import eus.hitz.core.domain.placement.PlacementUseCase
@@ -31,17 +29,25 @@ class LessonViewModelTest {
     private val effects = FakeSoundEffects()
     private val gamification = FakeGamificationRepository()
 
+    /** The time the view model sees; tests move it forward to simulate study time. */
+    private var now = NOW
+
     private fun viewModel(
         vararg exercises: Exercise,
         speakingEnabled: Boolean = true,
         settings: UserSettings = UserSettings(speakingEnabled = speakingEnabled),
         placementSection: String? = null,
+        levelId: String = TestLesson.LEVEL,
     ) = LessonViewModel(
         savedStateHandle = SavedStateHandle(
             if (placementSection != null) {
                 mapOf("sectionId" to placementSection)
             } else {
-                mapOf("unitId" to TestLesson.UNIT, "levelId" to TestLesson.LEVEL, "lessonId" to TestLesson.LESSON)
+                mapOf(
+                    "unitId" to TestLesson.UNIT,
+                    "levelId" to levelId,
+                    "lessonId" to TestLesson.LESSON.takeIf { levelId == TestLesson.LEVEL },
+                )
             },
         ),
         planSession = PlanSessionUseCase(TestLesson.repository(*exercises), progress),
@@ -49,7 +55,7 @@ class LessonViewModelTest {
         recordSession = gamification.recordSession(progress),
         settings = FakeSettingsRepository(settings),
         audio = LessonAudio(audio, effects),
-        hearts = HeartsUseCase(gamification, gamification.clock),
+        clock = { now },
     )
 
     private val LessonViewModel.active get() = state.value as LessonUiState.Active
@@ -78,7 +84,7 @@ class LessonViewModelTest {
     fun `starts with the first exercise`() {
         val vm = viewModel(TestLesson.wordBank, TestLesson.typing)
         assertThat(vm.active.exercise.id).isEqualTo(TestLesson.wordBank.id)
-        assertThat(vm.active.hearts).isEqualTo(5)
+        assertThat(vm.active.mistakesLeft).isNull()
         assertThat(vm.active.canCheck).isFalse()
     }
 
@@ -106,7 +112,7 @@ class LessonViewModelTest {
     @Test
     fun `passing a placement test skips the section without second chances or hints`() {
         val vm = viewModel(TestLesson.typing, TestLesson.listenType, placementSection = TestLesson.SECTION)
-        assertThat(vm.active.hearts).isNull()
+        assertThat(vm.active.mistakesLeft).isNull()
         assertThat(vm.active.glossary).isNull()
         repeat(2) {
             val input = if (vm.active.exercise.id == TestLesson.typing.id) "Eskerrik asko." else "Eskerrik asko"
@@ -171,7 +177,7 @@ class LessonViewModelTest {
         vm.tap("Mikel Zu zara")
         vm.onAction(LessonAction.Check)
         assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.Incorrect, "Zu Mikel zara?"))
-        assertThat(vm.active.hearts).isEqualTo(4)
+        assertThat(vm.active.mistakesLeft).isNull()
     }
 
     @Test
@@ -220,11 +226,11 @@ class LessonViewModelTest {
     }
 
     @Test
-    fun `unrecognized speech shows the sentence and costs no heart`() {
+    fun `unrecognized speech shows the sentence and does not count as a mistake`() {
         val vm = viewModel(TestLesson.speak, TestLesson.typing)
         vm.onAction(LessonAction.SpeechResult(listOf("kaixo zer moduz")))
         assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.Incorrect, "Egun on!"))
-        assertThat(vm.active.hearts).isEqualTo(5)
+        assertThat(vm.active.mistakesLeft).isNull()
         vm.onAction(LessonAction.Continue)
         assertThat(vm.active.exercise.id).isEqualTo(TestLesson.typing.id)
     }
@@ -272,11 +278,11 @@ class LessonViewModelTest {
     }
 
     @Test
-    fun `wrong answer costs a heart, shows the answer and is asked again`() {
+    fun `a wrong answer shows the answer and is asked again`() {
         val vm = viewModel(TestLesson.wordBank)
         vm.tap("adiós eres Ane")
         vm.onAction(LessonAction.Check)
-        assertThat(vm.active.hearts).isEqualTo(4)
+        assertThat(vm.active.mistakesLeft).isNull()
         assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.Incorrect, "¡Hola! Soy Ane."))
         vm.onAction(LessonAction.Continue)
         assertThat(vm.active.exercise.id).isEqualTo(TestLesson.wordBank.id)
@@ -289,7 +295,7 @@ class LessonViewModelTest {
         vm.onAction(LessonAction.ChangeInput("eskerik asko"))
         vm.onAction(LessonAction.Check)
         assertThat(vm.active.feedback).isEqualTo(FeedbackUi(FeedbackType.AlmostCorrect, "Eskerrik asko."))
-        assertThat(vm.active.hearts).isEqualTo(5)
+        assertThat(vm.active.mistakesLeft).isNull()
     }
 
     @Test
@@ -314,7 +320,7 @@ class LessonViewModelTest {
         vm.onAction(LessonAction.Continue)
         val finished = vm.state.value as LessonUiState.Finished
         assertThat(finished.result.mistakes.single().given).isEqualTo("kaixo = adiós")
-        assertThat(finished.result.heartsLeft).isEqualTo(5)
+        assertThat(finished.result.mistakesLeft).isNull()
     }
 
     @Test
@@ -330,16 +336,32 @@ class LessonViewModelTest {
     }
 
     @Test
-    fun `losing every heart ends the lesson`() {
+    fun `lessons allow as many mistakes as needed`() {
         val vm = viewModel(TestLesson.image)
         repeat(5) {
             vm.onAction(LessonAction.SelectOption(0))
             vm.onAction(LessonAction.Check)
             vm.onAction(LessonAction.Continue)
         }
-        assertThat(vm.state.value).isEqualTo(LessonUiState.OutOfHearts)
+        assertThat(vm.active.exercise.id).isEqualTo(TestLesson.image.id)
+        assertThat(vm.active.mistakesLeft).isNull()
+    }
+
+    @Test
+    fun `a legendary level allows three mistakes`() {
+        val vm = viewModel(TestLesson.image, levelId = TestLesson.LEGENDARY)
+        assertThat(vm.active.mistakesLeft).isEqualTo(3)
+        repeat(3) {
+            vm.onAction(LessonAction.SelectOption(0))
+            vm.onAction(LessonAction.Check)
+            vm.onAction(LessonAction.Continue)
+        }
+        assertThat(vm.active.mistakesLeft).isEqualTo(0)
+        vm.onAction(LessonAction.SelectOption(0))
+        vm.onAction(LessonAction.Check)
+        vm.onAction(LessonAction.Continue)
+        assertThat(vm.state.value).isEqualTo(LessonUiState.OutOfMistakes)
         assertThat(progress.completed).isEmpty()
-        assertThat(progress.mistakes).hasSize(5)
     }
 
     @Test
@@ -363,32 +385,42 @@ class LessonViewModelTest {
     }
 
     @Test
-    fun `lessons use and spend the shared hearts`() {
-        gamification.data.value = PlayerData(wallet = Wallet(hearts = 2, heartsUpdatedAt = NOW))
+    fun `a finished lesson adds its active time to the daily goal`() {
         val vm = viewModel(TestLesson.image)
-        assertThat(vm.active.hearts).isEqualTo(2)
-        vm.onAction(LessonAction.SelectOption(0))
+        now += 30_000
+        vm.onAction(LessonAction.SelectOption(1))
+        now += 30_000
         vm.onAction(LessonAction.Check)
-        assertThat(gamification.data.value.wallet.hearts).isEqualTo(1)
+        now += 60_000
+        vm.onAction(LessonAction.Continue)
+        val reward = (vm.state.value as LessonUiState.Finished).reward
+        assertThat(reward?.before).isEqualTo(0)
+        assertThat(reward?.after).isEqualTo(20)
+        assertThat(reward?.goalReached).isFalse()
+        assertThat(reward?.minutesLeft).isEqualTo(8)
+        assertThat(gamification.data.value.activities.single().kind).isEqualTo(ActivityKind.Lesson)
     }
 
     @Test
-    fun `without hearts a lesson cannot start`() {
-        gamification.data.value = PlayerData(wallet = Wallet(hearts = 0, heartsUpdatedAt = NOW))
+    fun `long pauses count as one minute at most`() {
         val vm = viewModel(TestLesson.image)
-        assertThat(vm.state.value).isEqualTo(LessonUiState.OutOfHearts)
-    }
-
-    @Test
-    fun `a finished lesson shows its XP and streak`() {
-        val vm = viewModel(TestLesson.image)
+        now += 3_600_000
         vm.onAction(LessonAction.SelectOption(1))
         vm.onAction(LessonAction.Check)
         vm.onAction(LessonAction.Continue)
-        val reward = (vm.state.value as LessonUiState.Finished).reward
-        assertThat(reward?.xp).isEqualTo(15)
-        assertThat(reward?.streak).isEqualTo(1)
-        assertThat(reward?.streakExtended).isTrue()
+        assertThat(gamification.data.value.studyDays.values.single().activeMillis).isEqualTo(60_000)
+    }
+
+    @Test
+    fun `leaving a lesson early still counts its study time`() {
+        val vm = viewModel(TestLesson.image, TestLesson.typing)
+        now += 40_000
+        vm.onAction(LessonAction.SelectOption(1))
+        vm.onAction(LessonAction.RequestQuit)
+        vm.onAction(LessonAction.ConfirmQuit)
+        assertThat(gamification.data.value.studyDays.values.single().activeMillis).isEqualTo(40_000)
+        assertThat(gamification.data.value.activities).isEmpty()
+        assertThat(progress.completed).isEmpty()
     }
 
     @Test

@@ -34,11 +34,8 @@ Extended colour families (`ColorFamily`: `color`, `onColor`, `container`, `onCon
 
 | Family | Use |
 |---|---|
-| `success` | Correct answers, lesson progress |
-| `xp` | XP and "almost correct" feedback |
-| `streak` | Streak counter |
-| `gem` | Gems |
-| `heart` | Hearts |
+| `success` | Correct answers, lesson progress, daily goal met |
+| `warning` | "Almost correct" feedback |
 
 `ColorContrastTest` checks that every text/background pair in every scheme meets WCAG AA (4.5:1).
 Never use colour alone to convey meaning: correct and incorrect also show an icon and a spoken state.
@@ -59,7 +56,7 @@ decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum to
 
 | Tactic | Where |
 |---|---|
-| **Containment and grouping** | Answer options form a segmented group (2 dp gaps, large outer and small inner corners); counters share one tonal container (`HitzStatBar`). |
+| **Containment and grouping** | Answer options form a segmented group (2 dp gaps, large outer and small inner corners); the daily goal sits in one tonal container (`HitzDailyGoalChip`). |
 | **Shape morphing** | Buttons morph on press (`ButtonDefaults.shapes()`); the active option morphs to fully rounded corners. |
 | **Shape variety** | `MaterialShapes` containers for the mascot (`Sunny`) and the feedback badge (`Cookie9Sided` / `Cookie4Sided`). |
 | **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour). |
@@ -69,7 +66,7 @@ decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum to
 ## Icons
 
 `HitzIcons`: original icons on a 24 dp grid. UI icons use 2 dp rounded strokes; counters
-(streak, gem, heart, XP, star) are solid shapes. All are tinted by the caller.
+(bolt, trophy, star) are solid shapes. All are tinted by the caller.
 
 ## Illustrations
 
@@ -88,7 +85,7 @@ so they stay consistent and any change is a reviewable diff; see the content gui
 | `HitzWordChip` / `HitzWordBank` | `FilledTonalButton` in a `FlowRow` | Word bank; used words keep an empty slot |
 | `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel, announced as a live region |
 | `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress |
-| `HitzStatCounter` / `HitzStatBar` | `AssistChip`s in one tonal container | Streak, gems, hearts and XP with spoken plurals |
+| `HitzDailyGoalRing` / `HitzDailyGoalChip` | `CircularWavyProgressIndicator` (flat with a check mark when met), in a tonal container | Today's share of the daily goal, spoken as a percentage |
 | `HitzMascot` | Image on a `MaterialShapes.Sunny` container | The Galtzagorri |
 | `PlaceholderScreen` | — | Temporary screen for unfinished features |
 

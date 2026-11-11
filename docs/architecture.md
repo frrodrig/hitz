@@ -7,9 +7,7 @@
 :feature:onboarding        First-run introduction and starting level
 :feature:path              Learning path (nodes, sections, unit introduction and guidebook)
 :feature:lesson            Lesson engine, exercises, stories and placement tests
-:feature:profile           Stats, daily quests, achievements, settings
-:feature:leaderboard       Weekly leagues, simulated on the device
-:feature:shop              Gem shop (hearts, streak freezes)
+:feature:profile           Daily goal and week, achievements, settings
 :core:designsystem         Material 3 theme, components and previews (see design-system.md)
 :core:data                 Repositories, Room, DataStore, bundled course content (assets/)
 :core:domain               Use cases and repository interfaces (pure Kotlin)
@@ -50,9 +48,9 @@ unit-tested without Android:
 | `AnswerNormalizer` | Lower case, no vowel accents, no punctuation, single spaces (`ñ` is kept). |
 | `AnswerChecker` | Any accepted answer is correct; a small typo (optimal string alignment distance ≤ 1, or ≤ 2 from 12 letters; none under 4 letters; same number of words) is *almost correct* and shows the right spelling. |
 | `WordBank` | Tiles = canonical answer words + distractors, shuffled with a per-exercise seed. Tile answers must be exact (an "almost" tile answer is a wrong order). |
-| `MatchPairsState` | Pair selection; wrong pairs are counted and recorded as mistakes but cost no heart. |
-| `LessonSession` | Queue: a wrong answer costs a heart and the exercise is asked again at the end until it is right; progress only grows with correct answers; no hearts left ends the lesson; a skipped exercise (speaking) leaves without counting. Produces a `LessonResult` with first-try accuracy and the `Mistake`s (by word and structure) for spaced repetition. |
-| `StorySession` | Story flow: lines revealed one by one, each question after the line it refers to; a wrong option is marked and the learner tries again (no hearts). Accuracy = questions right at the first try. |
+| `MatchPairsState` | Pair selection; wrong pairs are counted and recorded as mistakes but do not count against a mistake limit. |
+| `LessonSession` | Queue: a wrong answer is asked again at the end until it is right (and uses up one of the allowed mistakes when there is a limit); progress only grows with correct answers; one mistake more than allowed ends the session; a skipped exercise (speaking) leaves without counting. Produces a `LessonResult` with first-try accuracy and the `Mistake`s (by word and structure) for spaced repetition. |
+| `StorySession` | Story flow: lines revealed one by one, each question after the line it refers to; a wrong option is marked and the learner tries again (no mistake limit). Accuracy = questions right at the first try. |
 
 `feature:lesson` maps the session to an immutable `LessonUiState` in `LessonViewModel`
 (`StateFlow` + `LessonAction`s in, one-off `LessonEvent`s out). `LessonContent` is stateless and is
@@ -69,7 +67,7 @@ the "new word" card:
   it from the queue without counting it (`LessonSession.skip`).
 - **Match pairs** finishes by itself; **speak** uses the system speech recogniser
   (`RecognizerIntent`, `eu-ES`, no microphone permission). Recognised speech is checked tolerantly;
-  a failed attempt shows the sentence but costs no heart, and *"I can't speak now"* skips the
+  a failed attempt shows the sentence but is not a mistake, and *"I can't speak now"* skips the
   remaining speaking exercises of the session. Speaking can be turned off in the profile
   (`SettingsRepository`, Preferences DataStore), which leaves them out of every session.
 
@@ -105,8 +103,8 @@ question. Finishing records the story level as completed.
   12 exercises with the highest mistake score (3 × mistakes on the exercise + mistakes on its
   lemmas + mistakes on its structures) from its unit, or from every unit of the section for a
   **section review** (`scope: section`, closing each section), so spaced repetition follows the
-  learner's weak words and grammar; the **legendary** level plays every unit exercise shuffled with
-  3 hearts.
+  learner's weak words and grammar; the **legendary** level plays every unit exercise shuffled,
+  allowing 3 mistakes.
   `RecordSessionUseCase` saves mistakes always and the completion only when the session is finished.
 - `feature:path` shows sections, unit headers with the guidebook, and nodes whose Material
   expressive shape depends on the level type (lesson, story, review, legendary).
@@ -119,16 +117,17 @@ question. Finishing records the story level as completed.
 ## First run and placement
 
 - **Introduction** (`:feature:onboarding`, `OnboardingRoute`): the start destination until
-  `UserSettings.onboardingCompleted`. Four pages in a `HorizontalPager`: welcome, what the course
-  covers (its sections), how it works (lessons, new words and hints, hearts, streak and leagues)
-  and "have you studied Basque before?". *Saltar* skips it as a beginner. `MainActivity` keeps the
+  `UserSettings.onboardingCompleted`. Five pages in a `HorizontalPager`: welcome, what the course
+  covers (its sections), how it works (lessons, new words and hints, the daily goal, reviews), the
+  daily goal in minutes and "have you studied Basque before?". *Saltar* skips it as a beginner
+  with the default goal. `MainActivity` keeps the
   splash screen until the setting is read, so the right start destination is chosen without a flash.
 - **Placement tests** (`PlacementUseCase`, `core:domain`; `PlacementRoute`, played by the lesson
   screen): a learner who knows some Basque takes one test per section, in order. A test asks two
   exercises of each unit of the section, from its later lesson levels (no new word cards, no
-  speaking), with no hearts, no hints and no second chances. 80 % right skips the section: every
+  speaking), with no hints and no second chances. 80 % right skips the section: every
   required level of its units is recorded as completed (legendary levels stay optional), and the
-  learner can try the next section or start learning. Placement tests give no XP.
+  learner can try the next section or start learning. Placement tests do not count towards the daily goal.
 
 ## Accessibility and adaptive layout
 
@@ -143,29 +142,29 @@ question. Finishing records the story level as completed.
 - Windows 600 dp wide or more (tablets, foldables, landscape) use a Material 3 Expressive
   `WideNavigationRail` instead of the bottom `ShortNavigationBar`.
 
-## Gamification
+## Daily goal and achievements
 
 Rules are pure Kotlin in `core:domain` (`eus.hitz.core.domain.gamification`); state lives in Room
-(`activities`, `streak_days`, `player`, `claimed_rewards`, schema version 2 via auto-migration).
-Days follow the learner's local midnight (`ZoneProvider`).
+(`activities`, `study_days`; schema version 3 via auto-migration, which drops the version 2
+tables for XP, streaks, hearts, gems and leagues). Days follow the learner's local midnight
+(`ZoneProvider`). There is no currency, no lives and no streak: nothing is lost on a missed day.
 
 | Piece | Rules |
 |---|---|
-| XP (`XpRules`) | Lesson 10, story 15, review 10, legendary 20; +5 for a perfect session. |
-| Streak (`StreakRules`) | Practiced days in a row up to today or yesterday. A streak freeze (shop, up to 2) is spent automatically on a missed day: it keeps the streak but does not add to it. |
-| Hearts (`HeartRules`) | 5 shared hearts for lessons; a wrong answer costs one; one comes back every 4 h; a finished review gives one. Reviews are free practice; legendary levels bring 3 hearts of their own. |
-| Gems | Start with 20. Earned with daily quests, achievement tiers and the league's top 3 (20/15/10); spent in the shop (refill hearts 30, streak freeze 20). Every reward is granted once (`claimed_rewards`). |
-| Daily quests (`DailyQuests`) | 3 a day, the same all day (seeded by the date): an XP goal plus two of sessions, perfect sessions, a story, a review. |
-| Achievements (`Achievements`) | Streak, XP, lessons, perfect sessions, stories; 4 tiers each (5/10/20/40 gems). |
-| Leagues (`Leagues`) | Weekly (Monday to Sunday), 6 tiers named after Basque mountains, groups of 15. Rivals are generated from the week and tier (stable names, XP growing along a personal curve). Top 5 go up, bottom 3 go down. |
+| Daily goal (`DailyGoalRules`) | Active minutes a day: 5, 10 (default), 15 or 20, chosen in the introduction and the profile. Each step of a lesson or story (answer, continue, tap) adds the time since the previous one, up to 1 minute, so idle time does not count. Unfinished sessions count too. Practice can go over 100 %. Changing the goal applies to today, not to past days. |
+| Mistakes | Lessons and reviews allow any number of mistakes (they come back at the end). Legendary levels allow 3: the 4th ends the level, not completed. |
+| Achievements (`Achievements`) | Days with the goal met (3/7/30/100, not necessarily in a row), study minutes, lessons, perfect sessions, stories; 4 tiers each, shown as badges in the profile. |
 
-- `RecordSessionUseCase` → `CompleteSessionUseCase` saves XP and the streak day and grants
-  rewards; the lesson and story end screens show the `SessionReward`.
-- `RefreshPlayerUseCase` runs whenever the app comes to the foreground (`MainViewModel`):
-  regenerates hearts, spends freezes, and closes the past league week.
-- **Streak reminder**: opt-in from the profile (asks for the notification permission on
-  Android 13+). `WorkManagerReminderScheduler` runs `StreakReminderWorker` daily around 19:00;
-  it notifies only if the learner has not practiced today.
+- `RecordSessionUseCase` saves mistakes, the completion and the study time
+  (`RecordStudyTimeUseCase`); `CompleteSessionUseCase` also records the activity and returns a
+  `SessionReward` (daily goal before and after, new achievement tiers). The end screens show it;
+  the session that reaches 100 % gets the celebration ("you've done what you need for today").
+- `ObservePlayerUseCase` gives the `PlayerSummary`: today, the week (Monday first), days with the
+  goal met, total minutes and achievements. The path shows today's ring; it opens the profile.
+- **Daily goal reminder**: opt-in from the profile (asks for the notification permission on
+  Android 13+). `WorkManagerReminderScheduler` runs `DailyGoalReminderWorker` daily around 19:00;
+  it notifies only if today's goal is not met yet ("X minutes left"). It replaces the old streak
+  reminder, which is cancelled.
 
 ## Build
 

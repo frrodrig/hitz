@@ -116,5 +116,11 @@ class LessonScreenshotTest {
     )
 
     @Test
-    fun outOfHearts() = capture("lesson_out_of_hearts", LessonUiState.OutOfHearts)
+    fun finishedOnTheWay() = capture("lesson_finished_on_the_way", LessonPreviewData.finishedOnTheWay)
+
+    @Test
+    fun legendary() = capture("lesson_legendary", LessonPreviewData.active.copy(mistakesLeft = 2))
+
+    @Test
+    fun outOfMistakes() = capture("lesson_out_of_mistakes", LessonUiState.OutOfMistakes)
 }

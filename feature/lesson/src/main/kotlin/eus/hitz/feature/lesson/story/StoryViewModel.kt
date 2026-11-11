@@ -7,17 +7,20 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import eus.hitz.core.domain.audio.SoundEffect
 import eus.hitz.core.domain.content.CourseRepository
 import eus.hitz.core.domain.gamification.ActivityKind
+import eus.hitz.core.domain.gamification.DailyGoalRules
 import eus.hitz.core.domain.lesson.LessonResult
 import eus.hitz.core.domain.session.RecordSessionUseCase
 import eus.hitz.core.domain.settings.SettingsRepository
 import eus.hitz.core.domain.story.StorySession
 import eus.hitz.core.domain.story.StoryStep
+import eus.hitz.core.domain.time.EpochClock
 import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.Glossary
 import eus.hitz.core.model.content.Level
 import eus.hitz.feature.lesson.AudioClip
 import eus.hitz.feature.lesson.LessonAudio
 import eus.hitz.feature.lesson.RewardUi
+import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -40,6 +43,7 @@ class StoryViewModel @Inject constructor(
     private val recordSession: RecordSessionUseCase,
     private val audio: LessonAudio,
     private val settings: SettingsRepository,
+    private val clock: EpochClock,
 ) : ViewModel() {
     private val unitId: String = checkNotNull(savedStateHandle["unitId"])
     private val levelId: String = checkNotNull(savedStateHandle["levelId"])
@@ -56,6 +60,10 @@ class StoryViewModel @Inject constructor(
 
     private var glossary: Glossary? = null
 
+    /** Active study time of this story, for the daily goal (see [DailyGoalRules]). */
+    private var activeMillis = 0L
+    private var lastStepAt = 0L
+
     init {
         viewModelScope.launch {
             runCatching {
@@ -65,6 +73,7 @@ class StoryViewModel @Inject constructor(
                 unit.levels.filterIsInstance<Level.StoryLevel>().first { it.id == levelId }.story
             }.onSuccess { story ->
                 session = StorySession.start(story)
+                lastStepAt = clock.now()
                 show(readLine = true)
             }.onFailure { _state.value = StoryUiState.Error }
         }
@@ -75,6 +84,7 @@ class StoryViewModel @Inject constructor(
             if (action == StoryAction.Close) close()
             return
         }
+        countStep()
         when (action) {
             StoryAction.Continue -> advance()
             is StoryAction.Answer -> answer(action.option)
@@ -85,6 +95,13 @@ class StoryViewModel @Inject constructor(
             is StoryAction.PlayLine -> play(action.line)
             StoryAction.Close -> close()
         }
+    }
+
+    private fun countStep() {
+        if (lastStepAt == 0L) return
+        val now = clock.now()
+        activeMillis += DailyGoalRules.step(now - lastStepAt)
+        lastStepAt = now
     }
 
     override fun onCleared() {
@@ -107,17 +124,11 @@ class StoryViewModel @Inject constructor(
         if (session.isOver) {
             audio.voice.stop()
             if (soundEffects) audio.effects.play(SoundEffect.Finished)
-            val result = LessonResult(
-                lessonId = levelId,
-                completed = true,
-                exerciseCount = session.questionCount,
-                firstTryCorrect = session.firstTryCorrect,
-                heartsLeft = null,
-                mistakes = emptyList(),
-            )
+            val result = result(completed = true)
+            val time = activeMillis
             _state.value = StoryUiState.Finished(session.accuracy)
             viewModelScope.launch {
-                val reward = recordSession(unitId, levelId, result, ActivityKind.Story) ?: return@launch
+                val reward = recordSession(unitId, levelId, result, ActivityKind.Story, time) ?: return@launch
                 _state.update { if (it is StoryUiState.Finished) it.copy(reward = RewardUi.of(reward)) else it }
             }
         } else {
@@ -151,7 +162,24 @@ class StoryViewModel @Inject constructor(
     /** Clip ids of story lines: `<story id>.<line index>` (see docs/content-guide.md). */
     private fun clipId(line: Int) = "${session.story.id}.$line"
 
+    private fun result(completed: Boolean) = LessonResult(
+        lessonId = levelId,
+        completed = completed,
+        exerciseCount = session.questionCount,
+        firstTryCorrect = session.firstTryCorrect,
+        mistakesLeft = null,
+        mistakes = emptyList(),
+    )
+
+    /** Leaving before the end still counts the study time towards the daily goal. */
     private fun close() {
+        if (::session.isInitialized && !session.isOver && activeMillis > 0) {
+            val result = result(completed = false)
+            val time = activeMillis
+            viewModelScope.launch(NonCancellable) {
+                recordSession(unitId, levelId, result, ActivityKind.Story, time)
+            }
+        }
         viewModelScope.launch { _events.send(StoryEvent.Close) }
     }
 }

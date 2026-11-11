@@ -1,52 +1,36 @@
 package eus.hitz.core.domain.gamification
 
-/** What kind of session earned XP. */
+/** What kind of session was played. */
 enum class ActivityKind { Lesson, Story, Review, Legendary }
 
-/** A finished session. [epochDay] is the learner's local day. */
+/** A finished session. [epochDay] is the learner's local day; [activeMillis] its study time. */
 data class Activity(
     val sessionId: String,
     val kind: ActivityKind,
     val accuracy: Float,
     val perfect: Boolean,
-    val xp: Int,
+    val activeMillis: Long,
     val completedAt: Long,
     val epochDay: Long,
 )
 
-enum class StreakDayKind { Practiced, Frozen }
-
-/** Spendable and regenerating resources. Hearts are stored as of [heartsUpdatedAt]. */
-data class Wallet(
-    val gems: Int = INITIAL_GEMS,
-    val hearts: Int = HeartRules.MAX_HEARTS,
-    val heartsUpdatedAt: Long = 0,
-    val streakFreezes: Int = 0,
+/**
+ * Study time of a day, and the daily goal in force that day (so changing the goal does not
+ * rewrite the past).
+ */
+data class StudyDay(
+    val epochDay: Long,
+    val activeMillis: Long,
+    val goalMillis: Long,
 ) {
-    companion object {
-        const val INITIAL_GEMS = 20
-    }
+    /** From 0 up (above 1 when the learner did more than the goal). */
+    val progress: Float get() = if (goalMillis <= 0) 0f else activeMillis.toFloat() / goalMillis
+
+    val goalMet: Boolean get() = activeMillis >= goalMillis
 }
 
-enum class LeagueOutcome { Promoted, Stayed, Demoted }
-
-/** The learner's league: [tier] (0 = lowest) for the week starting on [weekStart] (epoch day). */
-data class LeagueState(
-    val tier: Int = 0,
-    val weekStart: Long = NOT_JOINED,
-    val lastRank: Int? = null,
-    val lastOutcome: LeagueOutcome? = null,
-) {
-    companion object {
-        const val NOT_JOINED = -1L
-    }
-}
-
-/** Everything gamification is computed from. */
+/** Everything the daily goal and achievements are computed from. */
 data class PlayerData(
-    val wallet: Wallet = Wallet(),
-    val league: LeagueState = LeagueState(),
     val activities: List<Activity> = emptyList(),
-    val streakDays: Map<Long, StreakDayKind> = emptyMap(),
-    val claimed: Set<String> = emptySet(),
+    val studyDays: Map<Long, StudyDay> = emptyMap(),
 )

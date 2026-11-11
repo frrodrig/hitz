@@ -23,13 +23,12 @@ import eus.hitz.core.designsystem.component.HitzButton
 import eus.hitz.core.designsystem.component.HitzButtonStyle
 import eus.hitz.core.designsystem.component.HitzChoiceCard
 import eus.hitz.core.designsystem.component.HitzChoiceGroup
+import eus.hitz.core.designsystem.component.HitzDailyGoalChip
 import eus.hitz.core.designsystem.component.HitzFeedbackPanel
 import eus.hitz.core.designsystem.component.HitzLessonProgressBar
 import eus.hitz.core.designsystem.component.HitzMascot
-import eus.hitz.core.designsystem.component.HitzStatBar
 import eus.hitz.core.designsystem.component.HitzWordBank
 import eus.hitz.core.designsystem.component.HitzWordChip
-import eus.hitz.core.designsystem.component.StatKind
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
@@ -60,10 +59,7 @@ fun ComponentCatalog(modifier: Modifier = Modifier, scrollable: Boolean = true) 
                     Text("Euskara pausoz pauso", style = MaterialTheme.typography.bodyLarge)
                 }
             }
-            HitzStatBar(
-                stats = listOf(StatKind.Streak to 12, StatKind.Gems to 340, StatKind.Hearts to 5, StatKind.Xp to 90),
-                modifier = Modifier.padding(horizontal = HitzSpacing.lg),
-            )
+            HitzDailyGoalChip(0.6f, Modifier.padding(horizontal = HitzSpacing.lg))
             HitzLessonProgressBar(0.6f, Modifier.padding(horizontal = HitzSpacing.lg))
             Column(
                 modifier = Modifier.padding(horizontal = HitzSpacing.lg),
