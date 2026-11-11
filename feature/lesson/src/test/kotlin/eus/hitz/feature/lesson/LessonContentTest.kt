@@ -65,8 +65,22 @@ class LessonContentTest {
         show(LessonPreviewData.finished)
         composeRule.onNodeWithText("¡Lección completada!").assertIsDisplayed()
         composeRule.onNodeWithText("Has acertado el 80 % a la primera.").assertIsDisplayed()
-        composeRule.onNodeWithText("¡Racha de 4 días!").assertIsDisplayed()
-        composeRule.onNodeWithText("Has ganado 15 gemas con misiones y logros.").assertIsDisplayed()
+        composeRule.onNodeWithText("70 % → 105 %").assertIsDisplayed()
+        composeRule.onNodeWithText("Has hecho lo necesario por hoy. ¡Bien hecho!").assertIsDisplayed()
+        composeRule.onNodeWithText("Has conseguido 1 logro nuevo.").assertIsDisplayed()
+    }
+
+    @Test
+    fun finishedOnTheWayShowsTheMinutesLeft() {
+        show(LessonPreviewData.finishedOnTheWay)
+        composeRule.onNodeWithText("20 % → 45 %").assertIsDisplayed()
+        composeRule.onNodeWithText("Te faltan 6 minutos para tu objetivo de hoy.").assertIsDisplayed()
+    }
+
+    @Test
+    fun legendaryLevelsShowTheMistakesLeft() {
+        show(LessonPreviewData.active.copy(mistakesLeft = 2))
+        composeRule.onNodeWithContentDescription("Te quedan 2 fallos permitidos").assertIsDisplayed()
     }
 
     @Test

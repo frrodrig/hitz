@@ -344,7 +344,7 @@ class LessonViewModelTest {
             vm.onAction(LessonAction.Continue)
         }
         assertThat(vm.active.exercise.id).isEqualTo(TestLesson.image.id)
-        assertThat(progress.mistakes).hasSize(5)
+        assertThat(vm.active.mistakesLeft).isNull()
     }
 
     @Test
