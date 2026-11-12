@@ -6,6 +6,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import eus.hitz.core.domain.gamification.ObservePlayerUseCase
 import eus.hitz.core.domain.path.LearningPath
 import eus.hitz.core.domain.path.ObserveLearningPathUseCase
+import eus.hitz.core.domain.score.ObserveScoreUseCase
 import eus.hitz.core.domain.settings.SettingsRepository
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -21,12 +22,14 @@ sealed interface PathUiState {
 
     /**
      * [dailyGoal]: today's progress towards the daily goal (can go over 1). [seenUnitIntros]: units
-     * whose introduction was already shown before their first lesson.
+     * whose introduction was already shown before their first lesson. [score]: the learner's score,
+     * out of [eus.hitz.core.domain.score.ScoreRules.MAX].
      */
     data class Ready(
         val path: LearningPath,
         val dailyGoal: Float = 0f,
         val seenUnitIntros: Set<String> = emptySet(),
+        val score: Int = 0,
     ) : PathUiState
 }
 
@@ -34,14 +37,16 @@ sealed interface PathUiState {
 class PathViewModel @Inject constructor(
     observeLearningPath: ObserveLearningPathUseCase,
     observePlayer: ObservePlayerUseCase,
+    observeScore: ObserveScoreUseCase,
     settings: SettingsRepository,
 ) : ViewModel() {
     val state: StateFlow<PathUiState> = combine(
         observeLearningPath(),
         observePlayer(),
         settings.settings,
-    ) { path, player, preferences ->
-        PathUiState.Ready(path, player.today.progress, preferences.seenUnitIntros) as PathUiState
+        observeScore(),
+    ) { path, player, preferences, score ->
+        PathUiState.Ready(path, player.today.progress, preferences.seenUnitIntros, score.value) as PathUiState
     }
         .catch { emit(PathUiState.Error) }
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MILLIS), PathUiState.Loading)

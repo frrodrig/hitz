@@ -75,7 +75,7 @@ internal fun GuidebookContent(
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(
-                            painter = painterResource(HitzIcons.Close),
+                            painter = painterResource(HitzIcons.Back),
                             contentDescription = stringResource(R.string.feature_path_back),
                         )
                     }

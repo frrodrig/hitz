@@ -74,7 +74,7 @@ internal fun ScoreContent(score: Score?, onBack: () -> Unit, modifier: Modifier 
                 title = { Text(stringResource(R.string.feature_profile_score_title)) },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
-                        Icon(painterResource(HitzIcons.Close), stringResource(R.string.feature_profile_back))
+                        Icon(painterResource(HitzIcons.Back), stringResource(R.string.feature_profile_back))
                     }
                 },
             )

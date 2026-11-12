@@ -93,7 +93,7 @@ internal fun UnitIntroContent(
                 },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
-                        Icon(painterResource(HitzIcons.Close), stringResource(R.string.feature_path_back))
+                        Icon(painterResource(HitzIcons.Back), stringResource(R.string.feature_path_back))
                     }
                 },
             )
