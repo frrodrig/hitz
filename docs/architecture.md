@@ -6,7 +6,8 @@
 :app                       Activity, root navigation, Hilt application
 :feature:onboarding        First-run introduction and starting level
 :feature:path              Learning path (nodes, sections, unit introduction and guidebook)
-:feature:lesson            Lesson engine, exercises, stories and placement tests
+:feature:lesson            Lesson engine, exercises, stories, placement tests and practice sessions
+:feature:practice          Practice hub and unit review (words, guide, phrases, story)
 :feature:profile           Score, daily goal and week, achievements, settings
 :core:designsystem         Material 3 theme, components and previews (see design-system.md)
 :core:data                 Repositories, Room, DataStore, bundled course content (assets/)
@@ -113,6 +114,22 @@ question. Finishing records the story level as completed.
   unit JSON: the first core lemmas of the syllabus, with picture and audio `<unit>.kw<i>`) and the
   titles of its grammar notes, with a link to the guidebook. *Empezar* replaces it with the lesson.
   Seen introductions are stored in `UserSettings.seenUnitIntros` (DataStore).
+
+## Practice
+
+- **Practice hub** (`PracticeRoute`, `:feature:practice`, the second top-level destination):
+  `ObservePracticeHubUseCase` lists the units the learner has started, with the words, guides and
+  story seen so far, and counts what each `PracticeMode` can offer. The hero starts the
+  **personal review** (`Mistakes`): the exercises of completed lessons with the highest mistake
+  score, across every started unit. Quick tiles start **listening** and **speaking** practice
+  when there are such exercises and they are turned on in the settings.
+- **Unit review** (`UnitReviewRoute`, `GetUnitReviewUseCase`): tabs with the unit's seen words
+  (strength from the mistakes on their lemma: 3+ weak, 1+ medium; audio by clip id), its
+  guidebook, its example phrases and its story, once reached on the path. *Practicar esta unidad*
+  starts a personal review limited to that unit.
+- **Practice sessions** (`PracticeSessionRoute`, played by the lesson screen):
+  `PlanSessionUseCase.practice` builds them; `RecordSessionUseCase.practice` saves mistakes and
+  score as a review but records no completion, so practice never moves the path.
 
 ## First run and placement
 

@@ -128,6 +128,16 @@ class HitzAppTest {
         waitForText("Cómo se calcula")
     }
 
+    @Test
+    fun practiceIsATopLevelDestination() {
+        skipOnboarding()
+        waitForText("¡Hola!")
+        composeRule.onNodeWithText("Practicar").performClick()
+        // Nothing learned yet on a fresh install.
+        waitForText("Aún no hay nada que repasar")
+        composeRule.onRoot().captureRoboImage("src/test/screenshots/app_practice.png")
+    }
+
     private companion object {
         const val TIMEOUT = 5_000L
     }

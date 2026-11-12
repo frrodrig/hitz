@@ -16,6 +16,7 @@ import eus.hitz.core.domain.lesson.Mistake
 import eus.hitz.core.domain.lesson.WordBank
 import eus.hitz.core.domain.placement.PlacementTest
 import eus.hitz.core.domain.placement.PlacementUseCase
+import eus.hitz.core.domain.practice.PracticeMode
 import eus.hitz.core.domain.session.PlanSessionUseCase
 import eus.hitz.core.domain.session.RecordSessionUseCase
 import eus.hitz.core.domain.session.SessionPlan
@@ -51,6 +52,10 @@ class LessonViewModel @Inject constructor(
     private val unitId: String = savedStateHandle["unitId"] ?: ""
     private val levelId: String = savedStateHandle["levelId"] ?: ""
     private val lessonId: String? = savedStateHandle["lessonId"]
+
+    /** Set for a practice session (PracticeSessionRoute); its exercises may come from several units. */
+    private val practiceMode: PracticeMode? = savedStateHandle.get<String>("mode")?.let(PracticeMode::valueOf)
+    private val practiceUnit: String? = savedStateHandle["practiceUnit"]
     private var placementTest: PlacementTest? = null
 
     private val checker = AnswerChecker()
@@ -79,8 +84,11 @@ class LessonViewModel @Inject constructor(
             runCatching {
                 val preferences = settings.settings.first()
                 soundEffects = preferences.soundEffectsEnabled
-                val plan = placementSection?.let { section -> placementPlan(section) }
-                    ?: planSession(unitId, levelId, lessonId)
+                val plan = when {
+                    placementSection != null -> placementPlan(placementSection)
+                    practiceMode != null -> planSession.practice(practiceMode, practiceUnit)
+                    else -> planSession(unitId, levelId, lessonId)
+                }
                 plan to plan.exercises.filter { exercise ->
                     when (exercise) {
                         is Exercise.Speak -> preferences.speakingEnabled
@@ -357,9 +365,16 @@ class LessonViewModel @Inject constructor(
     private fun record(result: LessonResult) {
         val time = activeMillis
         viewModelScope.launch {
-            val reward = recordSession(unitId, result.lessonId, result, kind, time) ?: return@launch
+            val reward = save(result, time) ?: return@launch
             _state.update { if (it is LessonUiState.Finished) it.copy(reward = RewardUi.of(reward)) else it }
         }
+    }
+
+    /** Practice is saved without completing a step of the path. */
+    private suspend fun save(result: LessonResult, time: Long) = if (practiceMode != null) {
+        recordSession.practice(result.lessonId, result, time)
+    } else {
+        recordSession(unitId, result.lessonId, result, kind, time)
     }
 
     /**
@@ -370,7 +385,7 @@ class LessonViewModel @Inject constructor(
         if (::session.isInitialized && !session.isOver && placementTest == null) {
             val result = session.result()
             val time = activeMillis
-            viewModelScope.launch(NonCancellable) { recordSession(unitId, result.lessonId, result, kind, time) }
+            viewModelScope.launch(NonCancellable) { save(result, time) }
         }
         viewModelScope.launch { _events.send(LessonEvent.Close) }
     }

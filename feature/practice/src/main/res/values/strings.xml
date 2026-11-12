@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_practice_title">Practicar</string>
+    <string name="feature_practice_subtitle">Repasa lo que ya has visto, a tu ritmo</string>
+    <string name="feature_practice_personal">Repaso personalizado</string>
+    <plurals name="feature_practice_personal_weak">
+        <item quantity="one">%d palabra o estructura que te cuesta</item>
+        <item quantity="other">%d palabras y estructuras que te cuestan</item>
+    </plurals>
+    <string name="feature_practice_personal_none">Un poco de todo lo que has visto</string>
+    <string name="feature_practice_start">Empezar</string>
+    <string name="feature_practice_listening">Escuchar</string>
+    <string name="feature_practice_speaking">Hablar</string>
+    <string name="feature_practice_units">Lo que has aprendido</string>
+    <string name="feature_practice_unit">Unidad %1$s</string>
+    <string name="feature_practice_mastered">Completada</string>
+    <string name="feature_practice_percent">%1$d %%</string>
+    <plurals name="feature_practice_words">
+        <item quantity="one">%d palabra</item>
+        <item quantity="other">%d palabras</item>
+    </plurals>
+    <plurals name="feature_practice_guides">
+        <item quantity="one">%d guía</item>
+        <item quantity="other">%d guías</item>
+    </plurals>
+    <string name="feature_practice_with_story">historia</string>
+    <string name="feature_practice_separator">"\u0020·\u0020"</string>
+    <string name="feature_practice_library">Biblioteca</string>
+    <string name="feature_practice_library_words">Palabras</string>
+    <string name="feature_practice_library_guides">Guías</string>
+    <string name="feature_practice_library_stories">Historias</string>
+    <string name="feature_practice_empty_title">Aún no hay nada que repasar</string>
+    <string name="feature_practice_empty_body">Completa tu primera lección y aquí podrás repasar sus palabras, su guía y su historia.</string>
+    <string name="feature_practice_back">Atrás</string>
+    <string name="feature_practice_tab_words">Palabras</string>
+    <string name="feature_practice_tab_guide">Guía</string>
+    <string name="feature_practice_tab_phrases">Frases</string>
+    <string name="feature_practice_tab_story">Historia</string>
+    <string name="feature_practice_practice_unit">Practicar esta unidad</string>
+    <string name="feature_practice_listen">Escuchar «%1$s»</string>
+    <string name="feature_practice_strength_weak">Te cuesta</string>
+    <string name="feature_practice_strength_medium">Casi la dominas</string>
+    <string name="feature_practice_strength_strong">La dominas</string>
+    <string name="feature_practice_no_words">Aún no has visto palabras de esta unidad.</string>
+    <string name="feature_practice_story_read">Leer la historia</string>
+    <string name="feature_practice_story_locked">La historia se desbloquea en la ruta, al llegar a ella.</string>
+    <string name="feature_practice_unit_progress">%1$d %% de la unidad</string>
+    <string name="feature_practice_error">No se ha podido cargar.</string>
+</resources>

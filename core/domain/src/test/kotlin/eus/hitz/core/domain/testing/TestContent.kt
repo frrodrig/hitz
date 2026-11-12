@@ -79,6 +79,7 @@ internal object TestContent {
 internal class FakeProgressRepository(var stats: MistakeStats = MistakeStats()) : ProgressRepository {
     val completed = MutableStateFlow<Set<String>>(emptySet())
     val recordedMistakes = mutableListOf<Mistake>()
+    val mistakesByUnit = mutableMapOf<String, List<Mistake>>()
     val accuracies = mutableMapOf<String, Float>()
 
     val completions = MutableStateFlow<Map<String, Long>>(emptyMap())
@@ -95,6 +96,7 @@ internal class FakeProgressRepository(var stats: MistakeStats = MistakeStats()) 
 
     override suspend fun recordMistakes(unitId: String, mistakes: List<Mistake>, recordedAt: Long) {
         recordedMistakes += mistakes
+        mistakesByUnit[unitId] = mistakesByUnit[unitId].orEmpty() + mistakes
     }
 
     override suspend fun mistakeStats(unitId: String): MistakeStats = stats
