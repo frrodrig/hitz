@@ -5,6 +5,8 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import eus.hitz.core.domain.gamification.ObservePlayerUseCase
 import eus.hitz.core.domain.gamification.PlayerSummary
+import eus.hitz.core.domain.score.ObserveScoreUseCase
+import eus.hitz.core.domain.score.Score
 import eus.hitz.core.domain.settings.ReminderScheduler
 import eus.hitz.core.domain.settings.SettingsRepository
 import eus.hitz.core.domain.settings.UserSettings
@@ -20,17 +22,22 @@ private const val STOP_TIMEOUT_MILLIS = 5_000L
 sealed interface ProfileUiState {
     data object Loading : ProfileUiState
 
-    data class Ready(val player: PlayerSummary, val settings: UserSettings) : ProfileUiState
+    data class Ready(val player: PlayerSummary, val settings: UserSettings, val score: Score) : ProfileUiState
 }
 
 @HiltViewModel
 class ProfileViewModel @Inject constructor(
     observePlayer: ObservePlayerUseCase,
+    observeScore: ObserveScoreUseCase,
     private val settingsRepository: SettingsRepository,
     private val reminders: ReminderScheduler,
 ) : ViewModel() {
-    val state: StateFlow<ProfileUiState> = combine(observePlayer(), settingsRepository.settings) { player, settings ->
-        ProfileUiState.Ready(player, settings) as ProfileUiState
+    val state: StateFlow<ProfileUiState> = combine(
+        observePlayer(),
+        settingsRepository.settings,
+        observeScore(),
+    ) { player, settings, score ->
+        ProfileUiState.Ready(player, settings, score) as ProfileUiState
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MILLIS), ProfileUiState.Loading)
 
     fun setDailyGoal(minutes: Int) {

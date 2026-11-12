@@ -2,6 +2,29 @@
 <resources>
     <!-- TODO(revisión-nativa): review all strings in this file -->
     <string name="feature_profile_title">Profila</string>
+    <string name="feature_profile_back">Itzuli</string>
+    <string name="feature_profile_score_title">Zure puntuazioa</string>
+    <string name="feature_profile_score_spoken">Puntuazioa: %2$d-tik %1$d</string>
+    <string name="feature_profile_score_scale">%1$d-tik · A1 maila</string>
+    <string name="feature_profile_score_band_first_steps">Lehen urratsak</string>
+    <string name="feature_profile_score_band_first_steps_body">Oso oinarrizko hitzak eta esaldiak ezagutzen dituzu: agurtu, zure burua aurkeztu eta zeure buruaz gauza batzuk esan.</string>
+    <string name="feature_profile_score_band_basics">Oinarri sendoa</string>
+    <string name="feature_profile_score_band_basics_body">Esaldi errazekin komunikatzen zara eguneroko gaiez: familia, etxea edo ordutegiak.</string>
+    <string name="feature_profile_score_band_confident">A1 eskura</string>
+    <string name="feature_profile_score_band_confident_body">Eguneroko egoera errazetan moldatzen zara: erosketak egin, norbaitekin geratu edo zure planez hitz egin.</string>
+    <string name="feature_profile_score_top">A1 maila osatu duzu!</string>
+    <string name="feature_profile_score_next">%1$d-rantz: %%%2$d</string>
+    <plurals name="feature_profile_score_week">
+        <item quantity="one">+%d puntu aste honetan</item>
+        <item quantity="other">+%d puntu aste honetan</item>
+    </plurals>
+    <string name="feature_profile_score_chart_spoken">Zure puntuazioa %1$d-tik %2$d-ra igo da.</string>
+    <string name="feature_profile_score_history">Zure bilakaera</string>
+    <string name="feature_profile_score_can_do">Dagoeneko egin dezakezuna</string>
+    <string name="feature_profile_score_can_do_empty">Amaitu zure lehen unitatea, eta hemen ikusiko duzu euskaraz zer egiten dakizun.</string>
+    <string name="feature_profile_score_how">Nola kalkulatzen den</string>
+    <string name="feature_profile_score_how_body">Puntuazioa 0tik %1$d-ra doa Erreferentzia Esparru Bateratuko (EEBE) A1 mailan. Osatzen duzun ikasgai, istorio eta errepaso bakoitzarekin igotzen da; maila legendarioak praktika gehigarria dira. Ikastaroa amaitzean %1$d-ra iritsiko zara.</string>
+    <string name="feature_profile_score_open">Ikusi zure bilakaera</string>
     <string name="feature_profile_daily_goal">Eguneko helburua</string>
     <string name="feature_profile_today">Gaur: %2$d minututik %1$d</string>
     <string name="feature_profile_goal_met">Gaurko helburua beteta!</string>

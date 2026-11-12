@@ -115,15 +115,17 @@ class HitzAppTest {
         composeRule.onNodeWithText("Aprender").assertIsSelected()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/app_path_tablet.png")
         composeRule.onNodeWithText("Perfil").performClick()
-        waitForText("Hoy: 0 de 10 min")
+        waitForText("Ver tu evolución")
     }
 
     @Test
-    fun theDailyGoalOpensTheProfile() {
+    fun theDailyGoalOpensTheProfileAndItsScore() {
         skipOnboarding()
         waitForText("¡Hola!")
         composeRule.onNodeWithContentDescription("Objetivo diario: 0 %").performClick()
-        waitForText("Hoy: 0 de 10 min")
+        waitForText("Ver tu evolución")
+        composeRule.onNodeWithText("Ver tu evolución").performClick()
+        waitForText("Cómo se calcula")
     }
 
     private companion object {

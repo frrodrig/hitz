@@ -64,9 +64,13 @@ import eus.hitz.core.domain.gamification.DailyGoalRules
 import eus.hitz.core.domain.gamification.DailyProgress
 import eus.hitz.core.domain.gamification.PlayerSummary
 import eus.hitz.core.domain.gamification.WeekDay
+import eus.hitz.core.domain.score.Score
 import eus.hitz.core.domain.settings.UserSettings
+import eus.hitz.feature.profile.score.ScorePreviewData
+import eus.hitz.feature.profile.score.ScoreSummary
 import java.time.LocalDate
 import java.time.format.TextStyle
+import java.util.Locale
 
 private const val PERCENT = 100
 private val TODAY_RING = 72.dp
@@ -74,6 +78,7 @@ private val DAY_RING = 32.dp
 
 @Composable
 fun ProfileScreen(
+    onOpenScore: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: ProfileViewModel = hiltViewModel(),
 ) {
@@ -90,6 +95,7 @@ fun ProfileScreen(
             }
         },
         onGoalChange = viewModel::setDailyGoal,
+        onOpenScore = onOpenScore,
         modifier = modifier,
     )
 }
@@ -115,12 +121,13 @@ private fun rememberReminderToggle(viewModel: ProfileViewModel): (Boolean) -> Un
     }
 }
 
-/** The daily goal and this week, achievements and settings. */
+/** The score, the daily goal and this week, achievements and settings. */
 @Composable
 internal fun ProfileContent(
     state: ProfileUiState,
     onSettingChange: (Setting, Boolean) -> Unit,
     onGoalChange: (minutes: Int) -> Unit,
+    onOpenScore: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Surface(modifier.fillMaxSize()) {
@@ -131,6 +138,8 @@ internal fun ProfileContent(
                 verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
             ) {
                 item(key = "header") { Header() }
+                sectionTitle(R.string.feature_profile_score_title)
+                item(key = "score") { ScoreCard(state.score, onOpenScore) }
                 sectionTitle(R.string.feature_profile_daily_goal)
                 item(key = "daily-goal") { DailyGoalCard(state.player) }
                 item(key = "goal-choice") { GoalChoice(state.settings.dailyGoalMinutes, onGoalChange) }
@@ -196,6 +205,23 @@ private fun Header() {
 }
 
 @Composable
+private fun ScoreCard(score: Score, onOpenScore: () -> Unit) {
+    OutlinedCard(
+        onClick = onOpenScore,
+        modifier = Modifier.fillMaxWidth().padding(horizontal = HitzSpacing.xl),
+    ) {
+        Column(Modifier.padding(HitzSpacing.lg), verticalArrangement = Arrangement.spacedBy(HitzSpacing.md)) {
+            ScoreSummary(score)
+            Text(
+                text = stringResource(R.string.feature_profile_score_open),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.primary,
+            )
+        }
+    }
+}
+
+@Composable
 private fun DailyGoalCard(player: PlayerSummary) {
     OutlinedCard(Modifier.fillMaxWidth().padding(horizontal = HitzSpacing.xl)) {
         Column(
@@ -257,7 +283,8 @@ private fun Today(today: DailyProgress) {
 
 @Composable
 private fun WeekDayItem(day: WeekDay) {
-    val locale = LocalConfiguration.current.locales[0]
+    // Day names in the app's language (Basque or Spanish), not the device's.
+    val locale = Locale.forLanguageTag(if (LocalConfiguration.current.locales[0].language == "eu") "eu" else "es")
     val dayOfWeek = LocalDate.ofEpochDay(day.epochDay).dayOfWeek
     val percent = (day.progress * PERCENT).toInt()
     val description = stringResource(
@@ -411,6 +438,7 @@ private fun ProfileContentPreview() {
             state = ProfilePreviewData.ready,
             onSettingChange = { _, _ -> },
             onGoalChange = {},
+            onOpenScore = {},
         )
     }
 }
@@ -438,5 +466,6 @@ internal object ProfilePreviewData {
             ),
         ),
         settings = UserSettings(speakingEnabled = true, reminderEnabled = false, dailyGoalMinutes = 10),
+        score = ScorePreviewData.score,
     )
 }

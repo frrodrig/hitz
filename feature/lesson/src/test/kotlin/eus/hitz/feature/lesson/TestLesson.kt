@@ -115,6 +115,8 @@ internal class FakeProgressRepository : ProgressRepository {
 
     override fun observeCompleted(): Flow<Set<String>> = flowOf(completed)
 
+    override fun observeCompletions(): Flow<Map<String, Long>> = flowOf(completed.associateWith { 0L })
+
     override suspend fun recordCompletion(unitId: String, completionId: String, accuracy: Float, completedAt: Long) {
         completed += completionId
     }
