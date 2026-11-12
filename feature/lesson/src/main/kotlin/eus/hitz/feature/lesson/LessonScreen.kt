@@ -123,18 +123,7 @@ internal fun LessonContent(
             modifier = modifier,
             pose = MascotPose.Ups,
         )
-        is LessonUiState.Finished -> LessonMessage(
-            title = stringResource(R.string.feature_lesson_finished_title),
-            body = stringResource(
-                R.string.feature_lesson_finished_accuracy,
-                (state.result.accuracy * PERCENT).roundToInt(),
-            ),
-            action = stringResource(R.string.feature_lesson_continue),
-            onAction = onClose,
-            modifier = modifier,
-            reward = state.reward,
-            pose = MascotPose.Bien,
-        )
+        is LessonUiState.Finished -> LessonFinished(state, onContinue = onClose, modifier = modifier)
         is LessonUiState.PlacementFinished -> PlacementMessage(state, onClose, onNextPlacement, modifier)
         is LessonUiState.Active -> ActiveLesson(state, onAction, modifier)
     }

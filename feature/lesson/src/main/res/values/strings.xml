@@ -71,6 +71,11 @@
     <string name="feature_lesson_placement_go_to_path">Empezar a aprender</string>
     <string name="feature_lesson_daily_goal">Objetivo diario</string>
     <string name="feature_lesson_daily_goal_change">%1$d %% → %2$d %%</string>
+    <string name="feature_lesson_stat_first_try">A la primera</string>
+    <string name="feature_lesson_stat_time">Tiempo activo</string>
+    <string name="feature_lesson_stat_goal">Objetivo de hoy</string>
+    <string name="feature_lesson_stat_percent">%1$d %%</string>
+    <string name="feature_lesson_stat_minutes">%1$d min</string>
     <string name="feature_lesson_goal_reached">Has hecho lo necesario por hoy. ¡Bien hecho!</string>
     <string name="feature_lesson_goal_already_met">Objetivo cumplido. Todo lo que practiques ahora suma.</string>
 </resources>

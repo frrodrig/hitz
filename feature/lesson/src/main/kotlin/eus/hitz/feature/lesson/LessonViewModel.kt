@@ -330,7 +330,7 @@ class LessonViewModel @Inject constructor(
         _state.value = when {
             session.isOutOfMistakes -> LessonUiState.OutOfMistakes
             current == null && test != null -> placementResult(test, session.result())
-            current == null -> LessonUiState.Finished(session.result())
+            current == null -> LessonUiState.Finished(session.result(), activeMinutes = activeMinutes())
             else -> LessonUiState.Active(
                 progress = session.progress,
                 mistakesLeft = session.mistakesLeft,
@@ -347,6 +347,9 @@ class LessonViewModel @Inject constructor(
             audio.effects.play(SoundEffect.Finished)
         }
     }
+
+    /** Whole minutes, rounded, and at least one: a finished session always took some time. */
+    private fun activeMinutes(): Int = ((activeMillis + MINUTE / 2) / MINUTE).toInt().coerceAtLeast(1)
 
     /** Passing marks the whole section as done; the learner can then try the next one. */
     private fun placementResult(test: PlacementTest, result: LessonResult): LessonUiState {
@@ -406,6 +409,8 @@ class LessonViewModel @Inject constructor(
 
 /** The gap marker of fill-in-the-blank sentences. */
 internal const val BLANK = "___"
+
+private const val MINUTE = 60_000L
 
 /** Content index of the option shown at [shown]. */
 private fun ExerciseUi.SingleChoice.contentIndex(shown: Int): Int = when (this) {
