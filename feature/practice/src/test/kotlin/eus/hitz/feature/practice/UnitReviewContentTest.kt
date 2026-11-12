@@ -1,10 +1,12 @@
 package eus.hitz.feature.practice
 
+import androidx.compose.ui.semantics.SemanticsActions
+import androidx.compose.ui.test.SemanticsNodeInteraction
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
-import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performSemanticsAction
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
 import com.github.takahirom.roborazzi.captureRoboImage
@@ -23,6 +25,9 @@ import org.robolectric.annotation.GraphicsMode
 class UnitReviewContentTest {
     @get:Rule
     val composeRule = createComposeRule()
+
+    /** Semantic clicks: the list scrolls under the FAB, so a touch could land outside a row. */
+    private fun SemanticsNodeInteraction.click() = performSemanticsAction(SemanticsActions.OnClick)
 
     @Test
     fun aUnitShowsItsWordsGuidePhrasesAndStory() {
@@ -45,20 +50,20 @@ class UnitReviewContentTest {
         composeRule.onNodeWithText("arratsalde on").assertExists()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/unit_review_words.png")
 
-        composeRule.onNodeWithContentDescription("Escuchar «gabon»").performClick()
+        composeRule.onNodeWithContentDescription("Escuchar «gabon»").click()
         assertThat(played.map { it.clipId }).containsExactly("u01-1.l1.s1.e06")
 
-        composeRule.onNodeWithText("Guía").performClick()
+        composeRule.onNodeWithText("Guía").click()
         composeRule.onNodeWithText("Saludar según la hora").assertExists()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/unit_review_guide.png")
 
-        composeRule.onNodeWithText("Historia").performClick()
-        composeRule.onNodeWithText("Leer la historia").performClick()
+        composeRule.onNodeWithText("Historia").click()
+        composeRule.onNodeWithText("Leer la historia").click()
         assertThat(story).isEqualTo("u01-1" to "u01-1.l4")
 
-        composeRule.onNodeWithText("Practicar esta unidad").performClick()
+        composeRule.onNodeWithText("Practicar esta unidad").click()
         assertThat(practised).isEqualTo("u01-1")
-        composeRule.onNodeWithContentDescription("Atrás").performClick()
+        composeRule.onNodeWithContentDescription("Atrás").click()
         assertThat(back).isTrue()
     }
 }
