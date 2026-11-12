@@ -7,16 +7,19 @@ import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import eus.hitz.core.designsystem.component.HitzWordBank
 import eus.hitz.core.designsystem.component.HitzWordChip
+import eus.hitz.core.designsystem.component.HitzWordTileHeight
 import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.designsystem.theme.HitzTheme
@@ -74,21 +77,11 @@ internal fun TileAnswerArea(
 ) {
     val answerDescription = stringResource(R.string.feature_lesson_answer_area)
     Column(modifier, verticalArrangement = Arrangement.spacedBy(HitzSpacing.xl)) {
-        Column(verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
-            FlowRow(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .heightIn(min = 112.dp)
-                    .semantics { contentDescription = answerDescription },
-                horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
-                verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
-            ) {
-                exercise.selected.forEach { id ->
-                    val tile = exercise.tiles.first { it.id == id }
-                    HitzWordChip(tile.text, onClick = { if (enabled) onAction(LessonAction.RemoveTile(id)) })
-                }
+        AnswerTray(Modifier.semantics { contentDescription = answerDescription }) {
+            exercise.selected.forEach { id ->
+                val tile = exercise.tiles.first { it.id == id }
+                HitzWordChip(tile.text, onClick = { if (enabled) onAction(LessonAction.RemoveTile(id)) })
             }
-            HorizontalDivider()
         }
         HitzWordBank(Modifier.fillMaxWidth()) {
             exercise.tiles.forEach { tile ->
@@ -99,6 +92,43 @@ internal fun TileAnswerArea(
                 )
             }
         }
+    }
+}
+
+private val TRAY_PADDING = 14.dp
+private val TRAY_LINE = 2.dp
+private const val TRAY_ROWS = 2
+
+/**
+ * Where the answer is built: a tonal tray ruled like a notebook, one line under each row of
+ * tiles, two rows tall at least.
+ */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun AnswerTray(modifier: Modifier = Modifier, content: @Composable () -> Unit) {
+    val line = MaterialTheme.colorScheme.outlineVariant
+    val rowHeight = HitzWordTileHeight + HitzSpacing.sm
+    Surface(
+        modifier = modifier.fillMaxWidth(),
+        shape = MaterialTheme.shapes.large,
+        color = MaterialTheme.colorScheme.surfaceContainerLow,
+    ) {
+        FlowRow(
+            modifier = Modifier
+                .heightIn(min = rowHeight * TRAY_ROWS - HitzSpacing.sm + TRAY_PADDING * 2)
+                .drawBehind {
+                    val step = rowHeight.toPx()
+                    val inset = TRAY_PADDING.toPx()
+                    var y = inset + HitzWordTileHeight.toPx() + (HitzSpacing.sm.toPx() - TRAY_LINE.toPx()) / 2
+                    while (y < size.height - inset / 2) {
+                        drawLine(line, Offset(inset, y), Offset(size.width - inset, y), TRAY_LINE.toPx())
+                        y += step
+                    }
+                }
+                .padding(TRAY_PADDING),
+            horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
+            verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
+        ) { content() }
     }
 }
 

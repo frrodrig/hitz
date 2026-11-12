@@ -30,7 +30,12 @@ sealed interface LessonUiState {
     }
 
     /** [reward] arrives once the session is saved. */
-    data class Finished(val result: LessonResult, val reward: RewardUi? = null) : LessonUiState
+    /** [activeMinutes]: time spent on the session, as counted for the daily goal. */
+    data class Finished(
+        val result: LessonResult,
+        val reward: RewardUi? = null,
+        val activeMinutes: Int = 0,
+    ) : LessonUiState
 
     /** A legendary level ended by going over the mistakes allowed. */
     data object OutOfMistakes : LessonUiState

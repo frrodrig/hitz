@@ -107,6 +107,7 @@ class LessonViewModelTest {
         vm.onAction(LessonAction.Continue)
         val finished = vm.state.value as LessonUiState.Finished
         assertThat(finished.result.exerciseCount).isEqualTo(1)
+        assertThat(finished.activeMinutes).isAtLeast(1)
     }
 
     @Test

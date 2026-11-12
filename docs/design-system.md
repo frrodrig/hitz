@@ -79,6 +79,7 @@ decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum to
 | **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour). |
 | **Emphasized type** | Screen and question titles, feedback result and counter values. |
 | **Tonal colour** | Tonal containers carry state; bold colour is reserved for the primary action and the hero of each screen (current unit, personal review). The profile's score card sits on `primaryContainer`; cards are tonal (`surfaceContainer`), not outlined. |
+| **Lessons** | The prompt is said by the Galtzagorri in a speech bubble (its small corner points at the mascot; with fonts over 150 % the mascot steps aside). The end of a lesson is a hero on `tertiaryContainer` with the mascot, then three result tiles (first-try accuracy, active time, today's goal on the success container when met), each with one small corner towards the next. |
 | **Navigation** | Detail screens (guide, unit introduction, score, unit review) go back with a Back arrow; only full-screen sessions (lessons, stories) close with an X. |
 
 ## Icons
@@ -100,7 +101,7 @@ so they stay consistent and any change is a reviewable diff; see the content gui
 |---|---|---|
 | `HitzButton` | `Button`, `FilledTonalButton`, `OutlinedButton`, `TextButton` with `ButtonDefaults.shapes()` (shape morph) and expressive sizes | Actions |
 | `HitzChoiceCard` / `HitzChoiceGroup` | `ListItem` + `RadioButton` on tonal surfaces, grouped as a segmented list | Answer option: default, selected, correct, incorrect, disabled |
-| `HitzWordChip` / `HitzWordBank` | `FilledTonalButton` in a `FlowRow` | Word bank; used words keep an empty slot |
+| `HitzWordChip` / `HitzWordBank` | 48 dp `Button` tile (lightest container, 2 dp outline, 16 dp corners) in a `FlowRow` | Word bank; used words keep an empty slot. In lessons the answer is built in a tonal tray ruled under each row of tiles |
 | `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel, announced as a live region |
 | `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress |
 | `HitzDailyGoalRing` / `HitzDailyGoalChip` | `CircularWavyProgressIndicator` (flat with a check mark when met), in a tonal container | Today's share of the daily goal, spoken as a percentage |
