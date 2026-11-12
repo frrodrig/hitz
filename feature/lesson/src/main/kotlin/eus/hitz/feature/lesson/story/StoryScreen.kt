@@ -40,6 +40,7 @@ import eus.hitz.core.designsystem.component.GroupPosition
 import eus.hitz.core.designsystem.component.HitzButton
 import eus.hitz.core.designsystem.component.HitzChoiceCard
 import eus.hitz.core.designsystem.component.HitzChoiceGroup
+import eus.hitz.core.designsystem.component.MascotPose
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
@@ -87,6 +88,7 @@ internal fun StoryContent(
             action = stringResource(R.string.feature_lesson_finish),
             onAction = onClose,
             modifier = modifier,
+            pose = MascotPose.Ups,
         )
         is StoryUiState.Finished -> LessonMessage(
             title = stringResource(R.string.feature_lesson_story_finished_title),
@@ -98,6 +100,7 @@ internal fun StoryContent(
             onAction = onClose,
             modifier = modifier,
             reward = state.reward,
+            pose = MascotPose.Bien,
         )
         is StoryUiState.Active -> CompositionLocalProvider(LocalGlossary provides state.glossary) {
             ActiveStory(state, onAction, modifier)

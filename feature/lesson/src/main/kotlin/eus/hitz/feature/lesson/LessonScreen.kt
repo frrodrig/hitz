@@ -52,6 +52,7 @@ import eus.hitz.core.designsystem.component.HitzDailyGoalRing
 import eus.hitz.core.designsystem.component.HitzFeedbackPanel
 import eus.hitz.core.designsystem.component.HitzLessonProgressBar
 import eus.hitz.core.designsystem.component.HitzMascot
+import eus.hitz.core.designsystem.component.MascotPose
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.model.content.Language
@@ -112,6 +113,7 @@ internal fun LessonContent(
             action = stringResource(R.string.feature_lesson_finish),
             onAction = onClose,
             modifier = modifier,
+            pose = MascotPose.Ups,
         )
         LessonUiState.OutOfMistakes -> LessonMessage(
             title = stringResource(R.string.feature_lesson_out_of_mistakes_title),
@@ -119,6 +121,7 @@ internal fun LessonContent(
             action = stringResource(R.string.feature_lesson_finish),
             onAction = onClose,
             modifier = modifier,
+            pose = MascotPose.Ups,
         )
         is LessonUiState.Finished -> LessonMessage(
             title = stringResource(R.string.feature_lesson_finished_title),
@@ -130,6 +133,7 @@ internal fun LessonContent(
             onAction = onClose,
             modifier = modifier,
             reward = state.reward,
+            pose = MascotPose.Bien,
         )
         is LessonUiState.PlacementFinished -> PlacementMessage(state, onClose, onNextPlacement, modifier)
         is LessonUiState.Active -> ActiveLesson(state, onAction, modifier)
@@ -162,6 +166,7 @@ private fun PlacementMessage(
             stringResource(R.string.feature_lesson_placement_go_to_path)
         },
         onAction = { if (next != null) onNextPlacement(next) else onClose() },
+        pose = if (state.passed) MascotPose.Bien else MascotPose.Piensa,
         secondaryAction = stringResource(R.string.feature_lesson_placement_go_to_path).takeIf { next != null },
         onSecondaryAction = onClose,
         modifier = modifier,
@@ -343,6 +348,7 @@ internal fun LessonMessage(
     reward: RewardUi? = null,
     secondaryAction: String? = null,
     onSecondaryAction: () -> Unit = {},
+    pose: MascotPose = MascotPose.Hola,
 ) {
     // Scrolls when large fonts do not fit, and stays centred otherwise.
     BoxWithConstraints(modifier.fillMaxSize()) {
@@ -356,7 +362,7 @@ internal fun LessonMessage(
             verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg, Alignment.CenterVertically),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            LessonMessageContent(title, body, action, onAction, reward)
+            LessonMessageContent(title, body, action, onAction, reward, pose)
             if (secondaryAction != null) {
                 TextButton(onClick = onSecondaryAction) { Text(secondaryAction) }
             }
@@ -371,9 +377,10 @@ private fun LessonMessageContent(
     action: String,
     onAction: () -> Unit,
     reward: RewardUi?,
+    pose: MascotPose,
 ) {
     Box(contentAlignment = Alignment.Center) {
-        HitzMascot(contentDescription = null)
+        HitzMascot(pose = pose, size = 168.dp, contentDescription = null)
         // Completing the daily goal is celebrated around the mascot, without taking layout space.
         if (reward?.goalReached == true) HitzCelebration(Modifier.matchParentSize().wrapContentSize(unbounded = true))
     }

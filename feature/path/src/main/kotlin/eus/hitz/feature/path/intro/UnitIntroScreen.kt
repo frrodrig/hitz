@@ -146,7 +146,7 @@ private fun UnitIntroBody(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(HitzSpacing.lg)
         ) {
-            HitzMascot(size = 72.dp, contentDescription = null)
+            HitzMascot(size = 72.dp, framed = true, contentDescription = null)
             Text(
                 text = state.title.resolve(),
                 style = MaterialTheme.typography.headlineMediumEmphasized,

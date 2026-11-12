@@ -13,9 +13,18 @@ one exists; Hitz wrappers only fix sizes, colours and accessibility semantics.
 
 ## Identity
 
-- **Mascot:** a *Galtzagorri*, one of the tiny red-trousered helpers of Basque mythology, wearing a
-  *txapela* (beret). Drawn in-house as a vector (`core_designsystem_mascot`); the launcher icon is
-  its head on the brand red.
+- **Mascot:** a *Galtzagorri*, one of the tiny red-trousered helpers of Basque mythology, drawn
+  as a flat, geometric character: a one-piece capsule body (face above, the red *galtzak* below),
+  thin stroke limbs, a small *txapela*, a bushy beard with sideburns, wild eyebrows, a *makila*
+  (walking stick) with a red tassel and *abarkak*. Four poses (`MascotPose`: hola, bien, ups,
+  piensa) are generated from one SVG template (`tools/design/art/galtzagorri.svg.template`) by
+  `tools/design/mascot_to_vector.py`, which writes the vector drawables and the reviewed SVGs in
+  `docs/art/`.
+- **App icon:** a *lauburu* of four arms (red, blue, ochre, sea green) on cream. Adaptive icon with
+  vector background, foreground and monochrome (themed icon, Android 13+) layers of 108 dp; the
+  arms reach a 32 dp radius, inside the 66 dp safe zone, and each one is shrunk around its own
+  centre to leave a gap between them. `docs/store/icon-512.png` is the Google Play icon, rendered
+  from the same geometry. The splash screen uses the cream background and the foreground layer.
 - **Brand seeds:** itsaso blue `#385F97` (primary), Cantabrian-sea teal `#1F6F78` (secondary)
   and ochre `#B7791F` (tertiary), with warm cream neutrals. These are three of the four colours
   of the lauburu icon; the fourth, red `#D7263D`, is kept for illustration (icon, mascot) and is
@@ -64,7 +73,7 @@ decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum to
 |---|---|
 | **Containment and grouping** | Answer options form a segmented group (2 dp gaps, large outer and small inner corners); the daily goal sits in one tonal container (`HitzDailyGoalChip`). |
 | **Shape morphing** | Buttons morph on press (`ButtonDefaults.shapes()`); the active option morphs to fully rounded corners. |
-| **Shape variety** | `MaterialShapes` containers for the mascot (`Sunny`) and the feedback badge (`Cookie9Sided` / `Cookie4Sided`). |
+| **Shape variety** | `MaterialShapes` containers for the framed mascot (`Sunny`) and the feedback badge (`Cookie9Sided` / `Cookie4Sided`). |
 | **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour). |
 | **Emphasized type** | Screen and question titles, feedback result and counter values. |
 | **Tonal colour** | Tonal containers carry state; bold colour is reserved for the primary action. |
@@ -92,7 +101,7 @@ so they stay consistent and any change is a reviewable diff; see the content gui
 | `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel, announced as a live region |
 | `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress |
 | `HitzDailyGoalRing` / `HitzDailyGoalChip` | `CircularWavyProgressIndicator` (flat with a check mark when met), in a tonal container | Today's share of the daily goal, spoken as a percentage |
-| `HitzMascot` | Image on a `MaterialShapes.Sunny` container | The Galtzagorri |
+| `HitzMascot` | `Image` of a `MascotPose`, optionally framed on a `MaterialShapes.Sunny` container | The Galtzagorri: intro, lesson end, errors, avatar |
 | `PlaceholderScreen` | — | Temporary screen for unfinished features |
 
 The app uses `ShortNavigationBar` for top-level navigation. Every component has `@HitzPreviews`
