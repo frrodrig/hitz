@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CornerSize
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ListItem
@@ -50,9 +51,11 @@ private fun feedbackColors(kind: FeedbackKind): ColorFamily {
 }
 
 /**
- * Bottom panel shown after checking an answer: a surface-container sheet with a Material 3
- * [ListItem] whose icon sits in an expressive shape, and an expressive button. It is a polite live
- * region, so TalkBack reads the result and the correct answer without moving focus.
+ * Bottom panel shown after checking an answer. The sheet, the icon badge and the button all take
+ * the result's colour family (success, warning or error), so the brand colour never sits next to a
+ * wrong answer and the result is clear before reading it; the icon and the title say it too, for
+ * people who cannot tell the colours apart. It is a polite live region, so TalkBack reads the
+ * result and the correct answer without moving focus.
  */
 @Composable
 fun HitzFeedbackPanel(
@@ -67,7 +70,8 @@ fun HitzFeedbackPanel(
     val badgeShape = if (kind == FeedbackKind.Incorrect) MaterialShapes.Cookie4Sided else MaterialShapes.Cookie9Sided
     Surface(
         modifier = modifier.fillMaxWidth(),
-        color = MaterialTheme.colorScheme.surfaceContainerHigh,
+        color = colors.container,
+        contentColor = colors.onContainer,
         shape = MaterialTheme.shapes.extraLarge.copy(bottomStart = CornerSize(0.dp), bottomEnd = CornerSize(0.dp)),
     ) {
         Column(
@@ -79,14 +83,14 @@ fun HitzFeedbackPanel(
             ListItem(
                 modifier = Modifier.semantics(mergeDescendants = true) { liveRegion = LiveRegionMode.Polite },
                 leadingContent = {
-                    Surface(shape = badgeShape.toShape(), color = colors.container, modifier = Modifier.size(48.dp)) {
+                    Surface(shape = badgeShape.toShape(), color = colors.color, modifier = Modifier.size(48.dp)) {
                         Box(contentAlignment = Alignment.Center) {
                             Icon(
                                 painter = painterResource(
                                     if (kind == FeedbackKind.Incorrect) HitzIcons.Close else HitzIcons.Check,
                                 ),
                                 contentDescription = null,
-                                tint = colors.onContainer,
+                                tint = colors.onColor,
                             )
                         }
                     }
@@ -99,13 +103,18 @@ fun HitzFeedbackPanel(
                     )
                 },
                 supportingContent = message?.let { { Text(it, style = MaterialTheme.typography.bodyLarge) } },
-                colors = ListItemDefaults.colors(containerColor = Color.Transparent),
+                colors = ListItemDefaults.colors(
+                    containerColor = Color.Transparent,
+                    headlineColor = colors.onContainer,
+                    supportingColor = colors.onContainer,
+                ),
             )
             HitzButton(
                 text = continueLabel,
                 onClick = onContinue,
                 modifier = Modifier.fillMaxWidth(),
                 size = HitzButtonSize.Medium,
+                colors = ButtonDefaults.buttonColors(containerColor = colors.color, contentColor = colors.onColor),
             )
         }
     }

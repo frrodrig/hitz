@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.FilledTonalButton
@@ -38,7 +39,8 @@ enum class HitzButtonSize(val height: Dp) {
 
 /**
  * Material 3 Expressive buttons: they morph their shape when pressed (`ButtonDefaults.shapes()`)
- * and use the expressive size tokens.
+ * and use the expressive size tokens. [colors] overrides the primary style's colours, e.g. for a
+ * button that belongs to a feedback family.
  */
 @Composable
 fun HitzButton(
@@ -49,6 +51,7 @@ fun HitzButton(
     size: HitzButtonSize = HitzButtonSize.Medium,
     enabled: Boolean = true,
     @DrawableRes icon: Int? = null,
+    colors: ButtonColors? = null,
 ) {
     val sized = modifier.heightIn(min = size.height)
     val padding = ButtonDefaults.contentPaddingFor(size.height)
@@ -66,7 +69,14 @@ fun HitzButton(
     }
     when (style) {
         HitzButtonStyle.Primary ->
-            Button(onClick = onClick, shapes = shapes, modifier = sized, enabled = enabled, contentPadding = padding) {
+            Button(
+                onClick = onClick,
+                shapes = shapes,
+                modifier = sized,
+                enabled = enabled,
+                colors = colors ?: ButtonDefaults.buttonColors(),
+                contentPadding = padding,
+            ) {
                 content()
             }
         HitzButtonStyle.Tonal ->

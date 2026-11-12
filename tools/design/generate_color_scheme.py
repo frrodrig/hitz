@@ -22,20 +22,18 @@ OUT = ROOT / "core/designsystem/src/main/kotlin/eus/hitz/core/designsystem/theme
 
 # Brand seeds
 SEEDS = {
-    "primary": 0xFFC8102E,    # Galtzagorri red (the mascot's trousers)
+    "primary": 0xFF385F97,    # Itsaso blue (the sea, the txapela)
     "secondary": 0xFF1F6F78,  # Cantabrian sea teal
     "tertiary": 0xFFB7791F,   # Ochre, like late-summer fields
 }
-NEUTRAL = (25.0, 6.0)          # warm neutral (hue, chroma)
-NEUTRAL_VARIANT = (25.0, 10.0)
+# Red (#D7263D) is kept for illustration (icon, mascot) and errors only, never for UI roles.
+NEUTRAL = (60.0, 5.0)          # warm cream neutral (hue, chroma)
+NEUTRAL_VARIANT = (60.0, 9.0)
 
-# Extended (gamification and feedback) seeds
+# Extended (answer feedback) seeds
 EXTENDED = {
     "success": 0xFF2E8B57,
-    "xp": 0xFFE0A100,
-    "streak": 0xFFF26B1D,
-    "gem": 0xFF1E88E5,
-    "heart": 0xFFE5487A,
+    "warning": 0xFFE0A100,
 }
 
 # Calmer chroma where the default (48) is too loud for large containers.
@@ -62,11 +60,11 @@ def palette(argb: int, chroma: float | None = None) -> TonalPalette:
 def scheme(dark: bool, contrast: float) -> DynamicScheme:
     return DynamicScheme(
         source_color_hct=Hct.from_int(SEEDS["primary"]),
-        variant=Variant.FIDELITY,
+        variant=Variant.TONAL_SPOT,
         contrast_level=contrast,
         is_dark=dark,
-        primary_palette=palette(SEEDS["primary"]),
-        secondary_palette=palette(SEEDS["secondary"], chroma=16.0),
+        primary_palette=palette(SEEDS["primary"], chroma=40.0),
+        secondary_palette=palette(SEEDS["secondary"], chroma=18.0),
         tertiary_palette=palette(SEEDS["tertiary"], chroma=40.0),
         neutral_palette=TonalPalette.from_hue_and_chroma(*NEUTRAL),
         neutral_variant_palette=TonalPalette.from_hue_and_chroma(*NEUTRAL_VARIANT),
