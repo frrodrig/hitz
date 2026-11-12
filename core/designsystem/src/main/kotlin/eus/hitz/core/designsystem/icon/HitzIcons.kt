@@ -33,7 +33,4 @@ object HitzIcons {
     @DrawableRes val Bolt = R.drawable.core_designsystem_ic_bolt
 
     @DrawableRes val Star = R.drawable.core_designsystem_ic_star
-
-    /** The Galtzagorri mascot, full body. */
-    @DrawableRes val Mascot = R.drawable.core_designsystem_mascot
 }

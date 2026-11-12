@@ -166,7 +166,7 @@ private fun PageTitle(@StringRes title: Int) {
 
 @Composable
 private fun WelcomePage() {
-    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) { HitzMascot(size = 160.dp) }
+    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) { HitzMascot(size = 200.dp) }
     Text(
         text = stringResource(R.string.feature_onboarding_welcome_title),
         style = MaterialTheme.typography.headlineMediumEmphasized,

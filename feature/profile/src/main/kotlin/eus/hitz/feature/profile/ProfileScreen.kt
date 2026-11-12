@@ -195,7 +195,7 @@ private fun Header() {
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(HitzSpacing.lg),
     ) {
-        HitzMascot(contentDescription = null)
+        HitzMascot(size = 80.dp, framed = true, contentDescription = null)
         Text(
             text = stringResource(R.string.feature_profile_title),
             style = MaterialTheme.typography.headlineMediumEmphasized,
