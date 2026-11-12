@@ -97,6 +97,7 @@ internal object LessonPreviewData {
     val finished = LessonUiState.Finished(
         result = LessonResult("preview", true, 5, 4, null, emptyList()),
         reward = RewardUi(before = 70, after = 105, goalReached = true, minutesLeft = 0, newAchievements = 1),
+        activeMinutes = 4,
     )
 
     /** A finished lesson that leaves part of the daily goal for later. */

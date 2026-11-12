@@ -64,8 +64,10 @@ class LessonContentTest {
     fun finishedShowsAccuracy() {
         show(LessonPreviewData.finished)
         composeRule.onNodeWithText("¡Lección completada!").assertIsDisplayed()
-        composeRule.onNodeWithText("Has acertado el 80 % a la primera.").assertIsDisplayed()
-        composeRule.onNodeWithText("70 % → 105 %").assertIsDisplayed()
+        composeRule.onNodeWithText("A la primera").assertIsDisplayed()
+        composeRule.onNodeWithText("80 %").assertIsDisplayed()
+        composeRule.onNodeWithText("4 min").assertIsDisplayed()
+        composeRule.onNodeWithText("105 %").assertIsDisplayed()
         composeRule.onNodeWithText("Has hecho lo necesario por hoy. ¡Bien hecho!").assertIsDisplayed()
         composeRule.onNodeWithText("Has conseguido 1 logro nuevo.").assertIsDisplayed()
     }
@@ -73,7 +75,7 @@ class LessonContentTest {
     @Test
     fun finishedOnTheWayShowsTheMinutesLeft() {
         show(LessonPreviewData.finishedOnTheWay)
-        composeRule.onNodeWithText("20 % → 45 %").assertIsDisplayed()
+        composeRule.onNodeWithText("45 %").assertIsDisplayed()
         composeRule.onNodeWithText("Te faltan 6 minutos para tu objetivo de hoy.").assertIsDisplayed()
     }
 

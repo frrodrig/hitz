@@ -17,8 +17,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListScope
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.selection.toggleable
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.ButtonGroupDefaults
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LinearWavyProgressIndicator
@@ -26,18 +27,16 @@ import androidx.compose.material3.ListItem
 import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.LoadingIndicator
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedCard
-import androidx.compose.material3.SegmentedButton
-import androidx.compose.material3.SegmentedButtonDefaults
-import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
+import androidx.compose.material3.ToggleButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
@@ -47,6 +46,8 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.role
+import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
@@ -75,6 +76,9 @@ import java.util.Locale
 private const val PERCENT = 100
 private val TODAY_RING = 72.dp
 private val DAY_RING = 32.dp
+private val GROUP_GAP = 2.dp
+private val GROUP_OUTER = 24.dp
+private val GROUP_INNER = 6.dp
 
 @Composable
 fun ProfileScreen(
@@ -144,15 +148,20 @@ internal fun ProfileContent(
                 item(key = "daily-goal") { DailyGoalCard(state.player) }
                 item(key = "goal-choice") { GoalChoice(state.settings.dailyGoalMinutes, onGoalChange) }
                 sectionTitle(R.string.feature_profile_achievements)
-                items(state.player.achievements, key = { "achievement-${it.type}" }) { AchievementRow(it) }
+                item(key = "achievements") {
+                    Group(state.player.achievements) { achievement, shape -> AchievementRow(achievement, shape) }
+                }
                 sectionTitle(R.string.feature_profile_settings)
-                items(settingRows(state.settings), key = { "setting-${it.setting}" }) { row ->
-                    SettingRow(
-                        title = stringResource(row.title),
-                        description = stringResource(row.description),
-                        checked = row.checked,
-                        onChange = { onSettingChange(row.setting, it) },
-                    )
+                item(key = "settings") {
+                    Group(settingRows(state.settings)) { row, shape ->
+                        SettingRow(
+                            title = stringResource(row.title),
+                            description = stringResource(row.description),
+                            checked = row.checked,
+                            onChange = { onSettingChange(row.setting, it) },
+                            shape = shape,
+                        )
+                    }
                 }
             }
         }
@@ -204,13 +213,35 @@ private fun Header() {
     }
 }
 
+/** Rows of a group: tonal, 2 dp apart, large outer corners and small inner ones. */
+@Composable
+private fun <T> Group(items: List<T>, row: @Composable (T, Shape) -> Unit) {
+    Column(
+        modifier = Modifier.padding(horizontal = HitzSpacing.lg),
+        verticalArrangement = Arrangement.spacedBy(GROUP_GAP),
+    ) {
+        items.forEachIndexed { index, item -> row(item, groupShape(index, items.size)) }
+    }
+}
+
+private fun groupShape(index: Int, count: Int) = RoundedCornerShape(
+    topStart = if (index == 0) GROUP_OUTER else GROUP_INNER,
+    topEnd = if (index == 0) GROUP_OUTER else GROUP_INNER,
+    bottomStart = if (index == count - 1) GROUP_OUTER else GROUP_INNER,
+    bottomEnd = if (index == count - 1) GROUP_OUTER else GROUP_INNER,
+)
+
+/** The hero of the profile: where the learner stands, on the brand's tonal container. */
 @Composable
 private fun ScoreCard(score: Score, onOpenScore: () -> Unit) {
-    OutlinedCard(
+    Surface(
         onClick = onOpenScore,
-        modifier = Modifier.fillMaxWidth().padding(horizontal = HitzSpacing.xl),
+        shape = MaterialTheme.shapes.extraLarge,
+        color = MaterialTheme.colorScheme.primaryContainer,
+        contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
+        modifier = Modifier.fillMaxWidth().padding(horizontal = HitzSpacing.lg),
     ) {
-        Column(Modifier.padding(HitzSpacing.lg), verticalArrangement = Arrangement.spacedBy(HitzSpacing.md)) {
+        Column(Modifier.padding(HitzSpacing.xl), verticalArrangement = Arrangement.spacedBy(HitzSpacing.md)) {
             ScoreSummary(score)
             Text(
                 text = stringResource(R.string.feature_profile_score_open),
@@ -223,9 +254,13 @@ private fun ScoreCard(score: Score, onOpenScore: () -> Unit) {
 
 @Composable
 private fun DailyGoalCard(player: PlayerSummary) {
-    OutlinedCard(Modifier.fillMaxWidth().padding(horizontal = HitzSpacing.xl)) {
+    Surface(
+        shape = MaterialTheme.shapes.extraLarge,
+        color = MaterialTheme.colorScheme.surfaceContainer,
+        modifier = Modifier.fillMaxWidth().padding(horizontal = HitzSpacing.lg),
+    ) {
         Column(
-            modifier = Modifier.padding(HitzSpacing.lg),
+            modifier = Modifier.padding(HitzSpacing.xl),
             verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg),
         ) {
             Today(player.today)
@@ -310,8 +345,8 @@ private fun WeekDayItem(day: WeekDay) {
 private fun StatCard(icon: Int, value: String, label: String, modifier: Modifier = Modifier) {
     Surface(
         modifier = modifier.semantics(mergeDescendants = true) {},
-        shape = MaterialTheme.shapes.medium,
-        color = MaterialTheme.colorScheme.surfaceContainerHigh,
+        shape = MaterialTheme.shapes.large,
+        color = MaterialTheme.colorScheme.surfaceContainerHighest,
     ) {
         Row(
             modifier = Modifier.padding(HitzSpacing.md),
@@ -335,14 +370,30 @@ private fun GoalChoice(selected: Int, onGoalChange: (Int) -> Unit) {
         verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
     ) {
         Text(stringResource(R.string.feature_profile_goal_choose), style = MaterialTheme.typography.titleMedium)
-        SingleChoiceSegmentedButtonRow(Modifier.fillMaxWidth()) {
-            DailyGoalRules.GOAL_OPTIONS.forEachIndexed { index, minutes ->
-                SegmentedButton(
-                    selected = minutes == selected,
-                    onClick = { onGoalChange(minutes) },
-                    shape = SegmentedButtonDefaults.itemShape(index, DailyGoalRules.GOAL_OPTIONS.size),
+        // A connected button group: M3 Expressive's replacement for segmented buttons.
+        val options = DailyGoalRules.GOAL_OPTIONS
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(ButtonGroupDefaults.ConnectedSpaceBetween),
+        ) {
+            options.forEachIndexed { index, minutes ->
+                val checked = minutes == selected
+                ToggleButton(
+                    checked = checked,
+                    onCheckedChange = { onGoalChange(minutes) },
+                    shapes = when (index) {
+                        0 -> ButtonGroupDefaults.connectedLeadingButtonShapes()
+                        options.lastIndex -> ButtonGroupDefaults.connectedTrailingButtonShapes()
+                        else -> ButtonGroupDefaults.connectedMiddleButtonShapes()
+                    },
+                    modifier = Modifier
+                        .weight(1f)
+                        .semantics {
+                            role = Role.RadioButton
+                            this.selected = checked
+                        },
                 ) {
-                    Text(stringResource(R.string.feature_profile_goal_option, minutes))
+                    Text(stringResource(R.string.feature_profile_goal_option, minutes), maxLines = 1)
                 }
             }
         }
@@ -368,7 +419,7 @@ private fun LazyListScope.sectionTitle(title: Int) {
 }
 
 @Composable
-private fun AchievementRow(progress: AchievementProgress) {
+private fun AchievementRow(progress: AchievementProgress, shape: Shape) {
     val name = stringResource(
         when (progress.type) {
             AchievementType.GoalDays -> R.string.feature_profile_achievement_goal_days
@@ -385,11 +436,11 @@ private fun AchievementRow(progress: AchievementProgress) {
     } else {
         stringResource(R.string.feature_profile_achievement_next, progress.tier, tiers, progress.value, next)
     }
-    ProgressRow(name, supporting, if (next == null) 1f else progress.value.toFloat() / next, done = next == null)
+    ProgressRow(name, supporting, if (next == null) 1f else progress.value.toFloat() / next, next == null, shape)
 }
 
 @Composable
-private fun ProgressRow(title: String, supporting: String, fraction: Float, done: Boolean) {
+private fun ProgressRow(title: String, supporting: String, fraction: Float, done: Boolean, shape: Shape) {
     ListItem(
         headlineContent = { Text(title) },
         supportingContent = {
@@ -412,21 +463,27 @@ private fun ProgressRow(title: String, supporting: String, fraction: Float, done
         } else {
             null
         },
-        colors = ListItemDefaults.colors(containerColor = Color.Transparent),
-        modifier = Modifier.padding(horizontal = HitzSpacing.sm),
+        colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surfaceContainer),
+        modifier = Modifier.clip(shape),
     )
 }
 
 @Composable
-private fun SettingRow(title: String, description: String, checked: Boolean, onChange: (Boolean) -> Unit) {
+private fun SettingRow(
+    title: String,
+    description: String,
+    checked: Boolean,
+    onChange: (Boolean) -> Unit,
+    shape: Shape,
+) {
     ListItem(
         modifier = Modifier
-            .padding(horizontal = HitzSpacing.sm)
+            .clip(shape)
             .toggleable(value = checked, role = Role.Switch, onValueChange = onChange),
         headlineContent = { Text(title) },
         supportingContent = { Text(description) },
         trailingContent = { Switch(checked = checked, onCheckedChange = null) },
-        colors = ListItemDefaults.colors(containerColor = Color.Transparent),
+        colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surfaceContainer),
     )
 }
 

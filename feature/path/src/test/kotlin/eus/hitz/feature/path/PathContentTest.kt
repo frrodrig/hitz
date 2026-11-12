@@ -3,13 +3,10 @@ package eus.hitz.feature.path
 import androidx.compose.material3.Surface
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.junit4.createComposeRule
-import androidx.compose.ui.test.onAllNodesWithText
-import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
-import androidx.compose.ui.test.performScrollTo
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
 import com.github.takahirom.roborazzi.captureRoboImage
@@ -44,7 +41,7 @@ class PathContentTest {
             HitzTheme(darkTheme = darkTheme) {
                 Surface {
                     PathContent(
-                        state = PathUiState.Ready(PathTestData.path, dailyGoal, seenUnitIntros),
+                        state = PathUiState.Ready(PathTestData.path, dailyGoal, seenUnitIntros, score = 7),
                         onOpenProfile = { profileOpened = true },
                         onStartLevel = { u, l, s -> started = Triple(u, l, s) },
                         onOpenGuidebook = { guidebook = it },
@@ -80,6 +77,13 @@ class PathContentTest {
     }
 
     @Test
+    fun theScoreOpensTheProfile() {
+        show()
+        composeRule.onNodeWithContentDescription("Puntuación: 7 de 29").performClick()
+        assertThat(profileOpened).isTrue()
+    }
+
+    @Test
     fun lockedNodesAreDisabled() {
         show()
         composeRule.onNodeWithContentDescription("Repaso: Repaso, bloqueado").assertIsNotEnabled()
@@ -88,8 +92,8 @@ class PathContentTest {
     @Test
     fun unitHeaderOpensTheGuidebook() {
         show()
-        composeRule.onNodeWithText("Unidad 1.1").assertExists()
-        composeRule.onAllNodesWithText("Guía").onFirst().performScrollTo().performClick()
+        composeRule.onNodeWithText("Unidad 1.1 · ", substring = true).assertExists()
+        composeRule.onNodeWithContentDescription("Guía de la unidad 1.1").performClick()
         assertThat(guidebook).isEqualTo("u01-1")
     }
 

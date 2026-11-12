@@ -8,6 +8,7 @@ import eus.hitz.core.domain.lesson.Mistake
 import eus.hitz.core.domain.path.ObserveLearningPathUseCase
 import eus.hitz.core.domain.progress.MistakeStats
 import eus.hitz.core.domain.progress.ProgressRepository
+import eus.hitz.core.domain.score.ObserveScoreUseCase
 import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.Course
 import eus.hitz.core.model.content.CourseUnit
@@ -30,6 +31,7 @@ import kotlinx.coroutines.test.setMain
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
+import java.time.ZoneOffset
 
 class PathViewModelTest {
     private val text = LocalizedText("x", "x")
@@ -82,6 +84,7 @@ class PathViewModelTest {
         val vm = PathViewModel(
             ObserveLearningPathUseCase(courses, progress),
             ObservePlayerUseCase(gamification, settings, gamification.clock),
+            ObserveScoreUseCase(courses, progress, { 0L }, { ZoneOffset.UTC }),
             settings,
         )
         vm.state.test {
@@ -91,10 +94,15 @@ class PathViewModelTest {
             assertThat(ready.path.currentNode?.levelId).isEqualTo("u01-1.l1")
             assertThat(ready.dailyGoal).isEqualTo(0f)
             assertThat(ready.seenUnitIntros).isEmpty()
+            assertThat(ready.score).isEqualTo(0)
             settings.markUnitIntroSeen("u01-1")
             assertThat((awaitItem() as PathUiState.Ready).seenUnitIntros).containsExactly("u01-1")
             completed.value = setOf("u01-1.l1.s1")
-            assertThat((awaitItem() as PathUiState.Ready).path.currentNode).isNull()
+            // The path and the score both change: wait for the path.
+            var next = awaitItem() as PathUiState.Ready
+            while (next.path.currentNode != null) next = awaitItem() as PathUiState.Ready
+            assertThat(next.path.currentNode).isNull()
+            cancelAndIgnoreRemainingEvents()
         }
     }
 }
