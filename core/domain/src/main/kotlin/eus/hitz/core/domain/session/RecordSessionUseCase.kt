@@ -36,7 +36,26 @@ class RecordSessionUseCase @Inject constructor(
             return null
         }
         progress.recordCompletion(unitId, sessionId, result.accuracy, now)
-        val perfect = result.exerciseCount > 0 && result.firstTryCorrect == result.exerciseCount
-        return completeSession(sessionId, kind, result.accuracy, perfect, activeMillis)
+        return completeSession(sessionId, kind, result.accuracy, result.isPerfect, activeMillis)
     }
+
+    /**
+     * Saves a practice session from the practice hub. Its exercises may come from several units,
+     * so each mistake is saved under its own unit (exercise ids start with the unit id). Practice
+     * is not a step of the path: no completion is recorded, but it counts as a review for the
+     * daily goal and the achievements.
+     */
+    suspend fun practice(sessionId: String, result: LessonResult, activeMillis: Long): SessionReward? {
+        val now = clock.now()
+        result.mistakes.groupBy { it.exerciseId.substringBefore('.') }.forEach { (unitId, mistakes) ->
+            progress.recordMistakes(unitId, mistakes, now)
+        }
+        if (!result.completed) {
+            if (activeMillis > 0) recordStudyTime(activeMillis)
+            return null
+        }
+        return completeSession(sessionId, ActivityKind.Review, result.accuracy, result.isPerfect, activeMillis)
+    }
+
+    private val LessonResult.isPerfect: Boolean get() = exerciseCount > 0 && firstTryCorrect == exerciseCount
 }

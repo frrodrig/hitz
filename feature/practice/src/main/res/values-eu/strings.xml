@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO(revisión-nativa): review all strings in this file -->
+    <string name="feature_practice_title">Praktikatu</string>
+    <string name="feature_practice_subtitle">Errepasatu ikusi duzuna, zure erritmoan</string>
+    <string name="feature_practice_personal">Zuretzako errepasoa</string>
+    <plurals name="feature_practice_personal_weak">
+        <item quantity="one">Kostatzen zaizun hitz edo egitura %d</item>
+        <item quantity="other">Kostatzen zaizkizun %d hitz eta egitura</item>
+    </plurals>
+    <string name="feature_practice_personal_none">Ikusi duzun guztiaren pixka bat</string>
+    <string name="feature_practice_start">Hasi</string>
+    <string name="feature_practice_listening">Entzun</string>
+    <string name="feature_practice_speaking">Hitz egin</string>
+    <string name="feature_practice_units">Ikasi duzuna</string>
+    <string name="feature_practice_unit">%1$s. unitatea</string>
+    <string name="feature_practice_mastered">Osatuta</string>
+    <string name="feature_practice_percent">%%%1$d</string>
+    <plurals name="feature_practice_words">
+        <item quantity="one">Hitz %d</item>
+        <item quantity="other">%d hitz</item>
+    </plurals>
+    <plurals name="feature_practice_guides">
+        <item quantity="one">Gida %d</item>
+        <item quantity="other">%d gida</item>
+    </plurals>
+    <string name="feature_practice_with_story">istorioa</string>
+    <string name="feature_practice_separator"> · </string>
+    <string name="feature_practice_library">Liburutegia</string>
+    <string name="feature_practice_library_words">Hitzak</string>
+    <string name="feature_practice_library_guides">Gidak</string>
+    <string name="feature_practice_library_stories">Istorioak</string>
+    <string name="feature_practice_empty_title">Oraindik ez dago errepasatzeko ezer</string>
+    <string name="feature_practice_empty_body">Osatu zure lehen ikasgaia, eta hemen haren hitzak, gida eta istorioa errepasatu ahal izango dituzu.</string>
+    <string name="feature_practice_back">Atzera</string>
+    <string name="feature_practice_tab_words">Hitzak</string>
+    <string name="feature_practice_tab_guide">Gida</string>
+    <string name="feature_practice_tab_phrases">Esaldiak</string>
+    <string name="feature_practice_tab_story">Istorioa</string>
+    <string name="feature_practice_practice_unit">Praktikatu unitate hau</string>
+    <string name="feature_practice_listen">Entzun «%1$s»</string>
+    <string name="feature_practice_strength_weak">Kostatzen zaizu</string>
+    <string name="feature_practice_strength_medium">Ia menderatzen duzu</string>
+    <string name="feature_practice_strength_strong">Menderatzen duzu</string>
+    <string name="feature_practice_no_words">Oraindik ez duzu unitate honetako hitzik ikusi.</string>
+    <string name="feature_practice_story_read">Irakurri istorioa</string>
+    <string name="feature_practice_story_locked">Istorioa ibilbidean desblokeatzen da, bertara iristean.</string>
+    <string name="feature_practice_unit_progress">Unitatearen %%%1$d</string>
+    <string name="feature_practice_error">Ezin izan da kargatu.</string>
+</resources>

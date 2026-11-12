@@ -104,6 +104,7 @@ so they stay consistent and any change is a reviewable diff; see the content gui
 | `HitzMascot` | `Image` of a `MascotPose`, optionally framed on a `MaterialShapes.Sunny` container | The Galtzagorri: intro, lesson end, errors, avatar |
 | `PlaceholderScreen` | — | Temporary screen for unfinished features |
 
-The app uses `ShortNavigationBar` for top-level navigation. Every component has `@HitzPreviews`
+The app uses `ShortNavigationBar` (or `WideNavigationRail` on wide windows) for its three top-level
+destinations, Aprender, Practicar and Perfil, with a filled icon for the selected one. Every component has `@HitzPreviews`
 (light, dark, 200 % font and Basque). `ComponentCatalog` shows them all and is captured by
 `ComponentCatalogScreenshotTest` (light, dark, high contrast, 200 % font).

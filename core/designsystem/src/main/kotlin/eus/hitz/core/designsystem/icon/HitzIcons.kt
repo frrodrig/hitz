@@ -10,13 +10,23 @@ import eus.hitz.core.designsystem.R
 object HitzIcons {
     @DrawableRes val Path = R.drawable.core_designsystem_ic_path
 
+    @DrawableRes val PathFilled = R.drawable.core_designsystem_ic_path_filled
+
+    @DrawableRes val Practice = R.drawable.core_designsystem_ic_practice
+
+    @DrawableRes val PracticeFilled = R.drawable.core_designsystem_ic_practice_filled
+
     @DrawableRes val Trophy = R.drawable.core_designsystem_ic_trophy
 
     @DrawableRes val Profile = R.drawable.core_designsystem_ic_profile
 
+    @DrawableRes val ProfileFilled = R.drawable.core_designsystem_ic_profile_filled
+
     @DrawableRes val Check = R.drawable.core_designsystem_ic_check
 
     @DrawableRes val Close = R.drawable.core_designsystem_ic_close
+
+    @DrawableRes val Back = R.drawable.core_designsystem_ic_back
 
     @DrawableRes val Speaker = R.drawable.core_designsystem_ic_speaker
 

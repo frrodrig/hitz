@@ -35,14 +35,18 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navOptions
 import eus.hitz.app.navigation.TopLevelDestination
 import eus.hitz.core.designsystem.theme.HitzTheme
+import eus.hitz.core.domain.practice.PracticeMode
 import eus.hitz.feature.lesson.navigation.LessonRoute
 import eus.hitz.feature.lesson.navigation.PlacementRoute
+import eus.hitz.feature.lesson.navigation.PracticeSessionRoute
 import eus.hitz.feature.lesson.navigation.StoryRoute
 import eus.hitz.feature.lesson.navigation.lessonScreen
 import eus.hitz.feature.lesson.navigation.navigateToLesson
 import eus.hitz.feature.lesson.navigation.navigateToPlacement
+import eus.hitz.feature.lesson.navigation.navigateToPractice
 import eus.hitz.feature.lesson.navigation.navigateToStory
 import eus.hitz.feature.lesson.navigation.placementScreen
+import eus.hitz.feature.lesson.navigation.practiceSessionScreen
 import eus.hitz.feature.lesson.navigation.storyScreen
 import eus.hitz.feature.onboarding.StartingLevel
 import eus.hitz.feature.onboarding.navigation.OnboardingRoute
@@ -55,6 +59,10 @@ import eus.hitz.feature.path.navigation.navigateToGuidebook
 import eus.hitz.feature.path.navigation.navigateToUnitIntro
 import eus.hitz.feature.path.navigation.pathScreen
 import eus.hitz.feature.path.navigation.unitIntroScreen
+import eus.hitz.feature.practice.navigation.UnitReviewRoute
+import eus.hitz.feature.practice.navigation.navigateToUnitReview
+import eus.hitz.feature.practice.navigation.practiceScreen
+import eus.hitz.feature.practice.navigation.unitReviewScreen
 import eus.hitz.feature.profile.navigation.ScoreRoute
 import eus.hitz.feature.profile.navigation.navigateToScore
 import eus.hitz.feature.profile.navigation.profileScreen
@@ -64,9 +72,11 @@ import eus.hitz.feature.profile.navigation.scoreScreen
 private val fullScreenRoutes = listOf(
     LessonRoute::class,
     PlacementRoute::class,
+    PracticeSessionRoute::class,
     StoryRoute::class,
     GuidebookRoute::class,
     UnitIntroRoute::class,
+    UnitReviewRoute::class,
     OnboardingRoute::class,
     ScoreRoute::class,
 )
@@ -154,6 +164,16 @@ private fun NavGraphBuilder.hitzGraph(navController: NavHostController) {
     )
     lessonScreen(onClose = { navController.popBackStack() })
     storyScreen(onClose = { navController.popBackStack() })
+    practiceScreen(
+        onPractice = { mode -> navController.navigateToPractice(mode) },
+        onOpenUnit = { unitId -> navController.navigateToUnitReview(unitId) },
+    )
+    unitReviewScreen(
+        onBack = { navController.popBackStack() },
+        onPractice = { unitId -> navController.navigateToPractice(PracticeMode.Mistakes, unitId) },
+        onReadStory = { unitId, levelId -> navController.navigateToStory(unitId, levelId) },
+    )
+    practiceSessionScreen(onClose = { navController.popBackStack() })
     profileScreen(onOpenScore = { navController.navigateToScore() })
     scoreScreen(onBack = { navController.popBackStack() })
 }
@@ -190,7 +210,12 @@ private fun TopLevelNavigationRail(currentDestination: NavDestination?, navContr
             WideNavigationRailItem(
                 selected = selected,
                 onClick = { navController.navigateToTopLevel(destination) },
-                icon = { Icon(painterResource(destination.icon), contentDescription = null) },
+                icon = {
+                    Icon(
+                        painterResource(if (selected) destination.selectedIcon else destination.icon),
+                        contentDescription = null,
+                    )
+                },
                 label = { Text(stringResource(destination.label)) },
                 railExpanded = false,
             )
@@ -207,7 +232,12 @@ private fun TopLevelNavigationBar(currentDestination: NavDestination?, navContro
             ShortNavigationBarItem(
                 selected = selected,
                 onClick = { navController.navigateToTopLevel(destination) },
-                icon = { Icon(painterResource(destination.icon), contentDescription = null) },
+                icon = {
+                    Icon(
+                        painterResource(if (selected) destination.selectedIcon else destination.icon),
+                        contentDescription = null,
+                    )
+                },
                 label = { Text(stringResource(destination.label)) },
             )
         }
