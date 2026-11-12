@@ -71,12 +71,15 @@ decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum to
 
 | Tactic | Where |
 |---|---|
-| **Containment and grouping** | Answer options form a segmented group (2 dp gaps, large outer and small inner corners); the daily goal sits in one tonal container (`HitzDailyGoalChip`). |
+| **Containment and grouping** | Answer options, practice units, achievements and settings form groups (2 dp gaps, large outer and small inner corners); the daily goal and the score sit in tonal chips; the daily-goal choice is a connected button group (`ToggleButton` + `ButtonGroupDefaults.connected*ButtonShapes`), which replaces segmented buttons. |
 | **Shape morphing** | Buttons morph on press (`ButtonDefaults.shapes()`); the active option morphs to fully rounded corners. |
-| **Shape variety** | `MaterialShapes` containers for the framed mascot (`Sunny`) and the feedback badge (`Cookie9Sided` / `Cookie4Sided`). |
+| **Shape variety** | `MaterialShapes` containers for the framed mascot (`Sunny`), the feedback badge (`Cookie9Sided` / `Cookie4Sided`), path nodes (one shape per level type) and unit badges. |
+| **Motion of the current step** | The current path node is 96 dp and its shape turns slowly (16 s a turn), like the expressive loading indicator; the icon stays upright. |
+| **Sticky context** | On the path, the unit header stays on top while its levels scroll, coloured by unit (primary, secondary, tertiary in turn) with its progress as a wavy bar. |
 | **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour). |
 | **Emphasized type** | Screen and question titles, feedback result and counter values. |
-| **Tonal colour** | Tonal containers carry state; bold colour is reserved for the primary action. |
+| **Tonal colour** | Tonal containers carry state; bold colour is reserved for the primary action and the hero of each screen (current unit, personal review). The profile's score card sits on `primaryContainer`; cards are tonal (`surfaceContainer`), not outlined. |
+| **Navigation** | Detail screens (guide, unit introduction, score, unit review) go back with a Back arrow; only full-screen sessions (lessons, stories) close with an X. |
 
 ## Icons
 

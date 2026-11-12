@@ -2,6 +2,11 @@
 
 package eus.hitz.feature.path
 
+import androidx.compose.animation.core.LinearEasing
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -17,9 +22,11 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.toShape
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.State
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
@@ -39,9 +46,13 @@ import eus.hitz.core.domain.path.NodeType
 import eus.hitz.core.domain.path.PathNode
 import eus.hitz.core.model.content.LocalizedText
 
-private val NodeSize = 76.dp
-private val CurrentNodeSize = 88.dp
+private val NodeSize = 72.dp
+private val CurrentNodeSize = 96.dp
 private const val IconScale = 0.38f
+private const val FULL_TURN = 360f
+
+/** One slow turn of the current node's shape, like the expressive loading indicator. */
+private const val TURN_MILLIS = 16_000
 
 /** Each level type has its own expressive shape, so the path reads at a glance. */
 private val NodeType.shape
@@ -149,22 +160,23 @@ internal fun PathNodeButton(
                     trackColor = MaterialTheme.colorScheme.surfaceContainerHighest,
                 )
             }
+            val turn = if (node.isCurrent) currentNodeTurn() else null
+            // The shape turns, the icon stays upright on top of it.
             Surface(
                 onClick = onClick,
                 enabled = enabled,
                 shape = node.type.shape.toShape(),
                 color = container,
-                contentColor = content,
-                modifier = Modifier.size(size),
-            ) {
-                Box(contentAlignment = Alignment.Center) {
-                    Icon(
-                        painter = painterResource(nodeIcon(node)),
-                        contentDescription = null,
-                        modifier = Modifier.size(size * IconScale),
-                    )
-                }
-            }
+                modifier = Modifier
+                    .size(size)
+                    .graphicsLayer { rotationZ = turn?.value ?: 0f },
+            ) {}
+            Icon(
+                painter = painterResource(nodeIcon(node)),
+                contentDescription = null,
+                tint = content,
+                modifier = Modifier.size(size * IconScale),
+            )
         }
         Text(
             text = title,
@@ -175,8 +187,16 @@ internal fun PathNodeButton(
 }
 
 @Composable
+private fun currentNodeTurn(): State<Float> = rememberInfiniteTransition(label = "current node").animateFloat(
+    initialValue = 0f,
+    targetValue = FULL_TURN,
+    animationSpec = infiniteRepeatable(tween(TURN_MILLIS, easing = LinearEasing)),
+    label = "turn",
+)
+
+@Composable
 private fun StartLabel() {
-    Surface(shape = MaterialTheme.shapes.small, color = MaterialTheme.colorScheme.inverseSurface) {
+    Surface(shape = MaterialTheme.shapes.extraLarge, color = MaterialTheme.colorScheme.inverseSurface) {
         Text(
             text = stringResource(R.string.feature_path_start),
             style = MaterialTheme.typography.labelLargeEmphasized,
