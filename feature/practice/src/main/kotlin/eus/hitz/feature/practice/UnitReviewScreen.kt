@@ -114,10 +114,13 @@ internal fun UnitReviewContent(
         },
         floatingActionButton = {
             if (review != null && review.progress > 0f) {
+                val label = stringResource(R.string.feature_practice_practice_unit)
                 ExtendedFloatingActionButton(
                     onClick = { onPractice(review.unitId) },
+                    // The label sits in an animated slot outside the merged tree: name the button.
+                    modifier = Modifier.semantics { contentDescription = label },
                     icon = { Icon(painterResource(HitzIcons.Bolt), contentDescription = null) },
-                    text = { Text(stringResource(R.string.feature_practice_practice_unit)) },
+                    text = { Text(label) },
                 )
             }
         },

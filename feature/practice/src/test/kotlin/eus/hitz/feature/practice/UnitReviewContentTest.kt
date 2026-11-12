@@ -61,7 +61,7 @@ class UnitReviewContentTest {
         composeRule.onNodeWithText("Leer la historia").click()
         assertThat(story).isEqualTo("u01-1" to "u01-1.l4")
 
-        composeRule.onNodeWithText("Practicar esta unidad").click()
+        composeRule.onNodeWithContentDescription("Practicar esta unidad").click()
         assertThat(practised).isEqualTo("u01-1")
         composeRule.onNodeWithContentDescription("Atrás").click()
         assertThat(back).isTrue()
