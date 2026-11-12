@@ -16,13 +16,15 @@ one exists; Hitz wrappers only fix sizes, colours and accessibility semantics.
 - **Mascot:** a *Galtzagorri*, one of the tiny red-trousered helpers of Basque mythology, wearing a
   *txapela* (beret). Drawn in-house as a vector (`core_designsystem_mascot`); the launcher icon is
   its head on the brand red.
-- **Brand seeds:** Galtzagorri red `#C8102E` (primary), Cantabrian-sea teal `#1F6F78`
-  (secondary) and ochre `#B7791F` (tertiary), with warm neutrals.
+- **Brand seeds:** itsaso blue `#385F97` (primary), Cantabrian-sea teal `#1F6F78` (secondary)
+  and ochre `#B7791F` (tertiary), with warm cream neutrals. These are three of the four colours
+  of the lauburu icon; the fourth, red `#D7263D`, is kept for illustration (icon, mascot) and is
+  never a UI role, so in the interface red only ever means an error.
 
 ## Colour
 
 `theme/Color.kt` is **generated** by `tools/design/generate_color_scheme.py` with the Material
-Color Utilities algorithm (`pip install materialyoucolor`). It produces:
+Color Utilities algorithm (`pip install materialyoucolor`, tonal-spot variant). It produces:
 
 | Scheme | Used when |
 |---|---|
@@ -36,6 +38,10 @@ Extended colour families (`ColorFamily`: `color`, `onColor`, `container`, `onCon
 |---|---|
 | `success` | Correct answers, lesson progress, daily goal met |
 | `warning` | "Almost correct" feedback |
+
+**Feedback families.** After *Check*, `HitzFeedbackPanel` takes the result's family for the sheet
+(`container`), the icon badge and the button (`color`): green when right, ochre when almost, error
+red when wrong. The primary blue is only used before checking.
 
 `ColorContrastTest` checks that every text/background pair in every scheme meets WCAG AA (4.5:1).
 Never use colour alone to convey meaning: correct and incorrect also show an icon and a spoken state.
