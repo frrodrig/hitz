@@ -38,6 +38,7 @@ import androidx.compose.ui.semantics.role
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import eus.hitz.core.designsystem.icon.HitzIcons
+import eus.hitz.core.designsystem.motion.rememberReducedMotion
 import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.designsystem.theme.HitzTheme
@@ -160,7 +161,7 @@ internal fun PathNodeButton(
                     trackColor = MaterialTheme.colorScheme.surfaceContainerHighest,
                 )
             }
-            val turn = if (node.isCurrent) currentNodeTurn() else null
+            val turn = if (node.isCurrent && !rememberReducedMotion()) currentNodeTurn() else null
             // The shape turns, the icon stays upright on top of it.
             Surface(
                 onClick = onClick,

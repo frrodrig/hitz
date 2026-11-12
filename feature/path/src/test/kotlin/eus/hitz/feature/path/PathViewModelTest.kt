@@ -98,7 +98,11 @@ class PathViewModelTest {
             settings.markUnitIntroSeen("u01-1")
             assertThat((awaitItem() as PathUiState.Ready).seenUnitIntros).containsExactly("u01-1")
             completed.value = setOf("u01-1.l1.s1")
-            assertThat((awaitItem() as PathUiState.Ready).path.currentNode).isNull()
+            // The path and the score both change: wait for the path.
+            var next = awaitItem() as PathUiState.Ready
+            while (next.path.currentNode != null) next = awaitItem() as PathUiState.Ready
+            assertThat(next.path.currentNode).isNull()
+            cancelAndIgnoreRemainingEvents()
         }
     }
 }

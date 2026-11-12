@@ -2,6 +2,8 @@ package eus.hitz.app
 
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsSelected
+import androidx.compose.ui.test.hasText
+import androidx.compose.ui.test.isSelectable
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onAllNodesWithText
@@ -77,7 +79,7 @@ class HitzAppTest {
     fun pathShowsUnitOneAndOpensTheCurrentLesson() {
         skipOnboarding()
         waitForText("¡Hola!")
-        composeRule.onNodeWithText("Aprender").assertIsSelected()
+        composeRule.onNode(hasText("Aprender") and isSelectable()).assertIsSelected()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/app_path.png")
 
         val current = "Lección: Saludos, disponible, 0 de 3 lecciones"
@@ -112,7 +114,7 @@ class HitzAppTest {
     fun wideScreensUseANavigationRail() {
         skipOnboarding()
         waitForText("¡Hola!")
-        composeRule.onNodeWithText("Aprender").assertIsSelected()
+        composeRule.onNode(hasText("Aprender") and isSelectable()).assertIsSelected()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/app_path_tablet.png")
         composeRule.onNodeWithText("Perfil").performClick()
         waitForText("Ver tu evolución")
