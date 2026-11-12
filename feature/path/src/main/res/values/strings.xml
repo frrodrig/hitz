@@ -17,7 +17,10 @@
     <string name="feature_path_state_completed">completado</string>
     <string name="feature_path_lessons_done">%1$d de %2$d lecciones</string>
     <string name="feature_path_learn">Aprender</string>
-    <string name="feature_path_unit_levels">Unidad %1$s · %2$d de %3$d niveles</string>
+    <plurals name="feature_path_unit_levels">
+        <item quantity="one">Unidad %1$s · %2$d de %3$d nivel</item>
+        <item quantity="other">Unidad %1$s · %2$d de %3$d niveles</item>
+    </plurals>
     <string name="feature_path_score">Puntuación: %1$d de %2$d</string>
     <string name="feature_path_error">No se ha podido cargar el curso.</string>
     <string name="feature_path_intro_words">Palabras clave</string>

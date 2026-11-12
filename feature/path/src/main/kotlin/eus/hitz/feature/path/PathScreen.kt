@@ -36,6 +36,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.clearAndSetSemantics
@@ -330,7 +331,13 @@ private fun UnitHeader(unit: PathUnit, index: Int, onOpenGuidebook: () -> Unit) 
             ) {
                 Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(HitzSpacing.xs)) {
                     Text(
-                        text = stringResource(R.string.feature_path_unit_levels, number, done, unit.nodes.size),
+                        text = pluralStringResource(
+                            R.plurals.feature_path_unit_levels,
+                            unit.nodes.size,
+                            number,
+                            done,
+                            unit.nodes.size
+                        ),
                         style = MaterialTheme.typography.labelLarge,
                         color = content.copy(alpha = SECONDARY_ALPHA),
                     )
@@ -348,22 +355,28 @@ private fun UnitHeader(unit: PathUnit, index: Int, onOpenGuidebook: () -> Unit) 
                         )
                     }
                 }
-                FilledTonalIconButton(
-                    onClick = onOpenGuidebook,
-                    shape = MaterialTheme.shapes.large,
-                    colors = IconButtonDefaults.filledTonalIconButtonColors(
-                        containerColor = button,
-                        contentColor = contentColorFor(button),
-                    ),
-                    modifier = Modifier.size(GUIDE_BUTTON),
-                ) {
-                    Icon(
-                        painterResource(HitzIcons.Book),
-                        contentDescription = stringResource(R.string.feature_path_guidebook_title, number),
-                    )
-                }
+                GuideButton(number, button, onOpenGuidebook)
             }
         }
+    }
+}
+
+/** The unit's guide: a large tonal icon button in the unit's container colour. */
+@Composable
+private fun GuideButton(number: String, container: Color, onClick: () -> Unit) {
+    FilledTonalIconButton(
+        onClick = onClick,
+        shape = MaterialTheme.shapes.large,
+        colors = IconButtonDefaults.filledTonalIconButtonColors(
+            containerColor = container,
+            contentColor = contentColorFor(container),
+        ),
+        modifier = Modifier.size(GUIDE_BUTTON),
+    ) {
+        Icon(
+            painterResource(HitzIcons.Book),
+            contentDescription = stringResource(R.string.feature_path_guidebook_title, number),
+        )
     }
 }
 
