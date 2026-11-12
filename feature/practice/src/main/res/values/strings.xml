@@ -24,7 +24,7 @@
         <item quantity="other">%d guías</item>
     </plurals>
     <string name="feature_practice_with_story">historia</string>
-    <string name="feature_practice_separator"> · </string>
+    <string name="feature_practice_separator">"\u0020·\u0020"</string>
     <string name="feature_practice_library">Biblioteca</string>
     <string name="feature_practice_library_words">Palabras</string>
     <string name="feature_practice_library_guides">Guías</string>
