@@ -1,8 +1,11 @@
 package eus.hitz.core.designsystem.component
 
+import androidx.compose.foundation.layout.Column
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.test.SemanticsMatcher
 import androidx.compose.ui.test.assert
+import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.assertHasClickAction
 import androidx.compose.ui.test.assertHasNoClickAction
 import androidx.compose.ui.test.assertIsNotEnabled
@@ -24,6 +27,25 @@ import org.robolectric.annotation.Config
 class ComponentBehaviourTest {
     @get:Rule
     val composeRule = createComposeRule()
+
+    @Test
+    fun theAnimatedMascotIsOneImageForAccessibility() {
+        composeRule.setContent {
+            HitzTheme {
+                Column {
+                    HitzMascot(pose = MascotPose.Bien, contentDescription = "Galtzagorri")
+                    HitzMascot(pose = MascotPose.Piensa, contentDescription = "Quieto", animated = false)
+                    HitzMascot(pose = MascotPose.Hola, contentDescription = null)
+                }
+            }
+        }
+        // Six stacked layers, announced once, as an image.
+        composeRule.onNodeWithContentDescription("Galtzagorri")
+            .assert(SemanticsMatcher.expectValue(SemanticsProperties.Role, Role.Image))
+        composeRule.onNodeWithContentDescription("Quieto").assertExists()
+        composeRule.onAllNodes(SemanticsMatcher.keyIsDefined(SemanticsProperties.ContentDescription))
+            .assertCountEquals(2)
+    }
 
     @Test
     fun choiceCardReportsSelectionAndState() {
