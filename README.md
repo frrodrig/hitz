@@ -28,7 +28,7 @@ is a **Galtzagorri**, one of the tireless little red-trousered helpers of Basque
 | M6 | Gamification | ✅ |
 | M7 | Full A1 content | ✅ |
 | M8 | Audio, accessibility and polish | ✅ |
-| M9 | Release | ⏳ |
+| M9 | Release | ✅ |
 
 ## Install
 
