@@ -229,7 +229,7 @@ gives 29 (`ScoreRules`, `ObserveScoreUseCase`, `eus.hitz.core.domain.score`).
 |---|---|---|
 | `ci.yml` | PRs and pushes to `main` | Syllabus check, content validator and its tests, detekt, Lint, unit tests, debug build, APK artifact |
 | `ui-tests.yml` | Manual and nightly | Roborazzi (verify, or record and open a PR) and instrumented tests on an emulator |
-| `release.yml` | `v*` tag | Signed AAB and APK, GitHub Release with generated changelog |
+| `release.yml` | `v*` tag | Signed AAB and APK, smoke test of the minified APK on an emulator (install, launch, seeded monkey), GitHub Release with the R8 mapping and a changelog grouped by commit type |
 | `pr-title.yml` | PRs | Conventional Commits title |
 
 Gradle failures are re-published as check annotations by `.github/scripts/gradlew-annotated.sh`,

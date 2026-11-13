@@ -30,6 +30,13 @@ is a **Galtzagorri**, one of the tireless little red-trousered helpers of Basque
 | M8 | Audio, accessibility and polish | ✅ |
 | M9 | Release | ⏳ |
 
+## Install
+
+Download `hitz-<version>.apk` from [Releases](https://github.com/frrodrig/hitz/releases) and open
+it on an Android 8.0+ phone (allow installing from that source when asked). Each release also
+carries the `.aab` bundle for app stores. See [`CONTRIBUTING.md`](CONTRIBUTING.md#releases) for how
+releases are made.
+
 ## Building
 
 Requirements: JDK 17 and the Android SDK (API 37).

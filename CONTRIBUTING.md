@@ -18,15 +18,29 @@ strings live in `values/` (Spanish, the default) and `values-eu/` (Basque).
 ## Releases
 
 1. Update `README.md` if the milestone status changed.
-2. Tag `main` with `vMAJOR.MINOR.PATCH` and push the tag: `git tag v0.1.0 && git push origin v0.1.0`.
-3. The **Release** workflow builds the signed AAB and APK and publishes a GitHub Release with a
-   generated changelog.
+2. Tag `main` with `vMAJOR.MINOR.PATCH` and push the tag: `git tag v0.1.0 && git push origin v0.1.0`
+   (or, without git push, create the tag with the API:
+   `gh api repos/frrodrig/hitz/git/refs -f ref=refs/tags/v0.1.0 -f sha=$(git rev-parse origin/main)`).
+3. The **Release** workflow (`release.yml`) runs three jobs:
+   - **build**: the signed AAB and APK, with `versionName` from the tag and
+     `versionCode = MAJOR × 10000 + MINOR × 100 + PATCH`. It is the only job that sees the
+     keystore, and it deletes it right after building and checks the APK signature.
+   - **smoke**: installs the signed, minified APK on an emulator, launches it and runs a seeded
+     3 000-event monkey session (`.github/scripts/smoke-test.sh`). A crash or ANR, for example
+     from a missing R8 rule, stops the release.
+   - **publish**: a GitHub Release with the APK, the AAB, the R8 `mapping.txt` (to read crash
+     stack traces) and a changelog grouped by Conventional Commit type since the previous tag
+     (`.github/scripts/changelog.py`). `0.x` versions are published as pre-releases.
+
+To check a release without publishing it, run **Release** by hand (Actions → Release → Run
+workflow, or `gh workflow run release.yml --ref <branch>`): it builds, signs and smoke-tests, and
+skips **publish**.
 
 ### Required secrets (Settings → Secrets and variables → Actions)
 
 | Secret | Value |
 |---|---|
-| `HITZ_KEYSTORE_BASE64` | The keystore encoded in base64 (`base64 -w0 release.jks`) |
+| `HITZ_KEYSTORE_BASE64` | The keystore encoded in base64 (Linux `base64 -w0 release.jks`, macOS `base64 -i release.jks`) |
 | `HITZ_KEYSTORE_PASSWORD` | Keystore password |
 | `HITZ_KEY_ALIAS` | Key alias |
 | `HITZ_KEY_PASSWORD` | Key password |

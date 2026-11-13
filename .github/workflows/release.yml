@@ -1,20 +1,34 @@
 name: Release
 
+# Push a vMAJOR.MINOR.PATCH tag to publish a release. Three jobs, so that nothing is published
+# unless the signed, minified app installs and survives a smoke test on an emulator:
+#   build   → signed AAB and APK (the only job that sees the keystore) + R8 mapping
+#   smoke   → installs the APK on an emulator and runs a monkey session against it
+#   publish → GitHub Release with the files and a changelog grouped by Conventional Commit type
+# Run it by hand (workflow_dispatch) for a dry run: build and smoke test, nothing published.
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version for the dry run (nothing is published)"
+        default: "0.0.0"
 
 concurrency:
   group: release-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    outputs:
+      name: ${{ steps.version.outputs.name }}
+      code: ${{ steps.version.outputs.code }}
     env:
       HITZ_KEYSTORE_PATH: ${{ github.workspace }}/release.jks
       HITZ_KEYSTORE_PASSWORD: ${{ secrets.HITZ_KEYSTORE_PASSWORD }}
@@ -22,8 +36,6 @@ jobs:
       HITZ_KEY_PASSWORD: ${{ secrets.HITZ_KEY_PASSWORD }}
     steps:
       - uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
       - uses: actions/setup-java@v6
         with:
           distribution: temurin
@@ -33,10 +45,12 @@ jobs:
           cache-read-only: true
       - name: Derive version from tag
         id: version
+        env:
+          TAG: ${{ github.ref_type == 'tag' && github.ref_name || format('v{0}', inputs.version) }}
         run: |
-          name="${GITHUB_REF_NAME#v}"
+          name="${TAG#v}"
           if ! [[ "$name" =~ ^([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
-            echo "::error::Tag must look like vMAJOR.MINOR.PATCH (got: $GITHUB_REF_NAME)"; exit 1
+            echo "::error::Tag must look like vMAJOR.MINOR.PATCH (got: $TAG)"; exit 1
           fi
           code=$(( BASH_REMATCH[1] * 10000 + BASH_REMATCH[2] * 100 + BASH_REMATCH[3] ))
           echo "name=$name" >> "$GITHUB_OUTPUT"
@@ -51,18 +65,86 @@ jobs:
           echo "$KEYSTORE_BASE64" | base64 --decode > "$HITZ_KEYSTORE_PATH"
       - name: Build signed AAB and APK
         run: >
-          ./gradlew bundleRelease assembleRelease
+          .github/scripts/gradlew-annotated.sh bundleRelease assembleRelease
           -Phitz.versionName=${{ steps.version.outputs.name }}
           -Phitz.versionCode=${{ steps.version.outputs.code }}
-      - name: Collect release files
-        run: |
-          mkdir -p dist
-          cp app/build/outputs/bundle/release/app-release.aab "dist/hitz-${{ steps.version.outputs.name }}.aab"
-          cp app/build/outputs/apk/release/app-release.apk "dist/hitz-${{ steps.version.outputs.name }}.apk"
-      - name: Create GitHub Release with generated changelog
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" dist/* --title "Hitz ${{ steps.version.outputs.name }}" --generate-notes
       - name: Delete keystore
         if: always()
         run: rm -f "$HITZ_KEYSTORE_PATH"
+      - name: Check the APK signature
+        run: |
+          apksigner="$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)apksigner"
+          "$apksigner" verify --print-certs app/build/outputs/apk/release/app-release.apk | grep -m1 "certificate DN"
+      - name: Collect release files
+        run: |
+          name=${{ steps.version.outputs.name }}
+          mkdir -p dist
+          cp app/build/outputs/bundle/release/app-release.aab "dist/hitz-$name.aab"
+          cp app/build/outputs/apk/release/app-release.apk "dist/hitz-$name.apk"
+          cp app/build/outputs/mapping/release/mapping.txt "dist/hitz-$name-mapping.txt"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: release-files
+          path: dist/
+          retention-days: 7
+
+  smoke:
+    name: Smoke test of the release APK
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v7
+        with:
+          name: release-files
+          path: dist
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Install and exercise the app on an emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          script: .github/scripts/smoke-test.sh dist/hitz-${{ needs.build.outputs.name }}.apk smoke
+      - name: Upload smoke test logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: smoke-test
+          path: smoke/
+          retention-days: 7
+
+  publish:
+    needs: [build, smoke]
+    if: github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@v7
+        with:
+          name: release-files
+          path: dist
+      - name: Write the changelog
+        run: python3 .github/scripts/changelog.py "$GITHUB_REF_NAME" > notes.md && cat notes.md
+      - name: Create the GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # 0.x versions are previews: published as pre-releases.
+          prerelease=""
+          case "${{ needs.build.outputs.name }}" in 0.*) prerelease="--prerelease" ;; esac
+          gh release create "$GITHUB_REF_NAME" dist/* $prerelease \
+            --title "Hitz ${{ needs.build.outputs.name }}" --notes-file notes.md
