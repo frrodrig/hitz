@@ -19,7 +19,14 @@ one exists; Hitz wrappers only fix sizes, colours and accessibility semantics.
   (walking stick) with a red tassel and *abarkak*. Four poses (`MascotPose`: hola, bien, ups,
   piensa) are generated from one SVG template (`tools/design/art/galtzagorri.svg.template`) by
   `tools/design/mascot_to_vector.py`, which writes the vector drawables and the reviewed SVGs in
-  `docs/art/`.
+  `docs/art/`. The script also splits each pose into layers (`data-layer` in the template: shadow,
+  sparkles, back, arm, body, eyes, front, thought) that share the canvas, and `HitzMascot` animates
+  them with `graphicsLayer` around real pivots (feet, shoulders, eyes): he breathes and blinks in
+  every pose; *Hola* waves every 5 s; *Bien* jumps when he appears and wiggles both arms while the
+  sparkles twinkle; *Ups* shakes his head once; *Piensa* sways while his thought bubbles float.
+  Values are read in the draw phase only (no recomposition per frame), every animation starts at
+  rest (screenshots show the static pose), and with reduced motion or `animated = false` the whole
+  drawable is shown instead.
 - **App icon:** a *lauburu* of four arms (red, blue, ochre, sea green) on cream. Adaptive icon with
   vector background, foreground and monochrome (themed icon, Android 13+) layers of 108 dp; the
   arms reach a 32 dp radius, inside the 66 dp safe zone, and each one is shrunk around its own
@@ -105,7 +112,7 @@ so they stay consistent and any change is a reviewable diff; see the content gui
 | `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel, announced as a live region |
 | `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress |
 | `HitzDailyGoalRing` / `HitzDailyGoalChip` | `CircularWavyProgressIndicator` (flat with a check mark when met), in a tonal container | Today's share of the daily goal, spoken as a percentage |
-| `HitzMascot` | `Image` of a `MascotPose`, optionally framed on a `MaterialShapes.Sunny` container | The Galtzagorri: intro, lesson end, errors, avatar |
+| `HitzMascot` | Animated stack of a `MascotPose`'s layers (or its single `Image` with reduced motion), optionally framed on a `MaterialShapes.Sunny` container | The Galtzagorri: intro, lesson end, errors, avatar |
 | `PlaceholderScreen` | — | Temporary screen for unfinished features |
 
 The app uses `ShortNavigationBar` (or `WideNavigationRail` on wide windows) for its three top-level
