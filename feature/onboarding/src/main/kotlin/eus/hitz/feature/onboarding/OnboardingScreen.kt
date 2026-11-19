@@ -56,6 +56,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import eus.hitz.core.designsystem.component.HitzButton
+import eus.hitz.core.designsystem.component.CastMember
 import eus.hitz.core.designsystem.component.HitzMascot
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.preview.HitzPreviews
@@ -166,7 +167,14 @@ private fun PageTitle(@StringRes title: Int) {
 
 @Composable
 private fun WelcomePage() {
-    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) { HitzMascot(size = 200.dp) }
+    // The whole cast says hello; the text below names them, so the drawings stay decorative.
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.Bottom,
+    ) {
+        CastMember.entries.forEach { HitzMascot(member = it, size = 88.dp, contentDescription = null) }
+    }
     Text(
         text = stringResource(R.string.feature_onboarding_welcome_title),
         style = MaterialTheme.typography.headlineMediumEmphasized,

@@ -1,0 +1,52 @@
+<!-- Unai celebrando (bien). Source of truth for tools/design/cast_to_vector.py: data-motion names a Motion in
+     CastMotion.kt and data-pivot its pivot, in this 240 x 280 viewBox. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" role="img" aria-label="Unai celebrando" width="240" height="280">
+  <g data-motion="JumpShadow" data-pivot="120 268">
+    <ellipse cx="120" cy="268" rx="56" ry="7" fill="#211A15" opacity="0.1" />
+  </g>
+  <g data-motion="Jump" data-pivot="120 264">
+    <rect x="92" y="230" width="22" height="30" rx="8" fill="#FFFFFF" stroke="#144A50" stroke-width="2.5" />
+    <rect x="126" y="230" width="22" height="30" rx="8" fill="#FFFFFF" stroke="#144A50" stroke-width="2.5" />
+    <ellipse cx="101" cy="262" rx="14" ry="6" fill="#144A50" />
+    <ellipse cx="139" cy="262" rx="14" ry="6" fill="#144A50" />
+    <g>
+      <rect x="74" y="134" width="92" height="104" rx="32" fill="#1F6F78" />
+      <rect x="74" y="214" width="92" height="12" fill="#D7263D" />
+      <path d="M82 166 L158 166" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+      <path d="M178 108 C172 64 192 30 222 20 C216 48 208 82 196 112 Z" fill="#D9B27A" stroke="#8A5A2B" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M186 96 C184 70 196 46 214 32 M192 100 C192 76 202 52 216 40" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+      <path d="M160 150 Q184 132 186 108" fill="none" stroke="#FFFFFF" stroke-width="21" stroke-linecap="round" />
+      <path d="M160 150 Q184 132 186 108" fill="none" stroke="#1F6F78" stroke-width="15" stroke-linecap="round" />
+      <rect x="176" y="98" width="20" height="14" rx="4" fill="#8A5A2B" />
+      <circle cx="186" cy="104" r="9" fill="#C68A5E" />
+      <g>
+        <circle cx="120" cy="98" r="46" fill="#C68A5E" />
+        <path d="M74 98 C70 62 96 46 120 48 C150 46 172 64 166 98 L158 84 L150 92 L142 80 L132 90 L122 78 L112 90 L100 80 L92 92 L82 84 Z" fill="#1E1612" />
+        <path d="M79 74 Q120 52 161 74 L164 84 Q120 62 76 84 Z" fill="#1F6F78" />
+        <path d="M78 79 Q120 57 162 79" fill="none" stroke="#FFFFFF" stroke-width="1.8" />
+        <path d="M98 108 Q104 99 110 108 M130 108 Q136 99 142 108" fill="none" stroke="#211A15" stroke-width="3.5" stroke-linecap="round" />
+        <path d="M108 117 Q120 135 132 117 Z" fill="#7A1E1E" stroke="#211A15" stroke-width="3" stroke-linejoin="round" />
+        <path d="M114 125 Q120 121 126 125 Q120 128 114 125 Z" fill="#E8857C" />
+      </g>
+      <g data-motion="Wiggle" data-pivot="80 152">
+        <path d="M80 152 Q54 130 50 86" fill="none" stroke="#FFFFFF" stroke-width="21" stroke-linecap="round" />
+        <path d="M80 152 Q54 130 50 86" fill="none" stroke="#1F6F78" stroke-width="15" stroke-linecap="round" />
+        <circle cx="50" cy="82" r="9" fill="#C68A5E" />
+        <circle cx="48" cy="68" r="10" fill="#FFFFFF" stroke="#144A50" stroke-width="2.5" />
+        <path d="M41 62 Q48 68 41 75 M55 62 Q48 68 55 75" fill="none" stroke="#144A50" stroke-width="1.6" />
+      </g>
+    </g>
+  </g>
+  <g data-motion="Twinkle" data-pivot="30 70">
+    <path d="M30 61 L32.7 67.3 L39 70 L32.7 72.7 L30 79 L27.3 72.7 L21 70 L27.3 67.3 Z" fill="#D7263D" />
+  </g>
+  <g data-motion="TwinkleLate" data-pivot="210 60">
+    <path d="M210 52 L212.4 57.6 L218 60 L212.4 62.4 L210 68 L207.6 62.4 L202 60 L207.6 57.6 Z" fill="#385F97" />
+  </g>
+  <g data-motion="TwinkleLate" data-pivot="22 150">
+    <path d="M22 144 L23.8 148.2 L28 150 L23.8 151.8 L22 156 L20.2 151.8 L16 150 L20.2 148.2 Z" fill="#B7791F" />
+  </g>
+  <g data-motion="Twinkle" data-pivot="222 150">
+    <path d="M222 144 L223.8 148.2 L228 150 L223.8 151.8 L222 156 L220.2 151.8 L216 150 L220.2 148.2 Z" fill="#1F6F78" />
+  </g>
+</svg>
