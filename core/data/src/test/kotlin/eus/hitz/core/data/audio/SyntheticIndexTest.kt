@@ -13,9 +13,8 @@ class SyntheticIndexTest {
     fun theIndexMapsClipIdsToFiles() {
         val index = parseSyntheticIndex("""{"u01-1.kw0": "3f2a9c0d1e4b", "u01-1.l1.s1.e16.answer": "a1b2c3d4e5f6"}""")
 
-        assertThat(index).containsExactly(
-            "u01-1.kw0", "3f2a9c0d1e4b",
-            "u01-1.l1.s1.e16.answer", "a1b2c3d4e5f6",
+        assertThat(index).isEqualTo(
+            mapOf("u01-1.kw0" to "3f2a9c0d1e4b", "u01-1.l1.s1.e16.answer" to "a1b2c3d4e5f6"),
         )
     }
 

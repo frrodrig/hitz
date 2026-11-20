@@ -9,8 +9,8 @@ import android.speech.tts.TextToSpeech
 import android.util.Log
 import dagger.hilt.android.qualifiers.ApplicationContext
 import eus.hitz.core.domain.audio.AudioProvider
-import java.io.IOException
 import org.json.JSONObject
+import java.io.IOException
 import java.util.Locale
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -60,8 +60,17 @@ internal class AndroidAudioProvider @Inject constructor(
         player?.start()
         true
     } catch (e: IOException) {
-        Log.w(TAG, "Cannot play $path", e)
-        false
+        cannotPlay(path, e)
+    } catch (e: IllegalArgumentException) {
+        cannotPlay(path, e)
+    } catch (e: IllegalStateException) {
+        cannotPlay(path, e)
+    }
+
+    /** A clip that cannot be played is not fatal: the caller falls back to the next source. */
+    private fun cannotPlay(path: String, error: Exception): Boolean {
+        Log.w(TAG, "Cannot play $path", error)
+        return false
     }
 
     private fun readSyntheticIndex(): Map<String, String> = try {
@@ -72,11 +81,20 @@ internal class AndroidAudioProvider @Inject constructor(
         emptyMap()
     }
 
-    private fun preparedPlayer(fd: AssetFileDescriptor): MediaPlayer = MediaPlayer().apply {
-        setAudioAttributes(SPEECH)
-        setDataSource(fd.fileDescriptor, fd.startOffset, fd.length)
-        setOnCompletionListener(::release)
-        prepare()
+    /** A prepared player for [fd]; released here if it cannot be prepared, so nothing leaks. */
+    private fun preparedPlayer(fd: AssetFileDescriptor): MediaPlayer {
+        val created = MediaPlayer()
+        var prepared = false
+        try {
+            created.setAudioAttributes(SPEECH)
+            created.setDataSource(fd.fileDescriptor, fd.startOffset, fd.length)
+            created.setOnCompletionListener(::release)
+            created.prepare()
+            prepared = true
+        } finally {
+            if (!prepared) created.release()
+        }
+        return created
     }
 
     private fun release(finished: MediaPlayer) {
