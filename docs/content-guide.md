@@ -142,8 +142,8 @@ grammar is taught; when it needs a new word, discuss it against the syllabus fir
 
 ## Audio
 
-Android's TTS has little Basque support, so clips are pre-recorded and the app falls back to TTS
-only when a clip is missing. Clip ids are derived from the content, so they stay stable:
+Android's text-to-speech rarely has Basque (and its Spanish fallback mispronounces *tx*, *tz*, *z*,
+*x* and *j*), so every clip is bundled. Clip ids are derived from the content, so they stay stable:
 
 | Source | Clip id | Text |
 |---|---|---|
@@ -152,8 +152,34 @@ only when a clip is missing. Clip ids are derived from the content, so they stay
 | `complete_chat` | `<exercise id>.<message index>`, `<exercise id>.answer` | each message and the right reply |
 | Story | `<story id>.<line index>` | each line |
 | Guidebook example | `<unit id>.gb<section>.<example>` | each example |
+| Unit key word | `<unit id>.kw<index>` | each key word |
+
+The app plays, in this order: a human recording, the synthetic clip, and only then the device's
+text-to-speech.
+
+### Synthetic voices
+
+`tools/audio/cast_voices.py` synthesises every clip with [Piper](https://github.com/OHF-Voice/piper1-gpl)
+and the two Basque voices of HiTZ – Aholab (EHU): **Maider** and **Antton** (Apache-2.0; voice data
+CC BY 4.0, credited in the README). The cast keeps their natural voices: Ane and Maite speak with
+Maider, Mikel and Unai with Antton.
+
+- **Dialogues** (`complete_chat` messages, story lines) use the speaker's voice from
+  `content/audio/speakers.json`; a new speaker name must be added there (CI fails otherwise).
+  Roles (`Saltzailea`, `Medikua`…) take the voice opposite to the person they talk to, and a chat
+  answer is said by the person the last message names.
+- **Everything else** is said by Ane (Maider), the guide in the prompt bubble.
+- Each distinct (voice, text) is one file, `core/data/src/main/assets/audio/tts/<hash>.ogg` (mono
+  Opus, 24 kb/s, −18 LUFS), and `audio/tts/index.json` maps clip ids to files.
+- The **Voices** workflow regenerates what changed and opens a PR with it. It runs by itself when a
+  branch changes the course, and CI (`cast_voices.py check`) fails until that PR is merged.
+
+Synthetic speech can still slip on a word: lines a native speaker should check get
+`TODO(revisión-nativa)` like any other doubt.
 
 ### Recording
+
+Human recordings replace the synthetic clip of the same id.
 
 1. Take the lines to record from `content/audio/pending.csv` (`id,text,unit`; sorted by unit, so a
    speaker can record one unit at a time). Record in a quiet room, one file per line, and name each
@@ -166,11 +192,11 @@ only when a clip is missing. Clip ids are derived from the content, so they stay
    ```
    The script trims silence, normalises loudness (−18 LUFS) and encodes mono Opus at 32 kb/s into
    `core/data/src/main/assets/audio/<clip id>.ogg`; unknown names are skipped.
-3. CI fails if `pending.csv` is out of date, so commit it with the clips.
+3. CI fails if `pending.csv` is out of date, so commit it with the clips. The Voices workflow then
+   drops the synthetic clips that are no longer needed.
 
-Until a clip is recorded the app speaks the text with the device's text-to-speech (Basque when
-the engine has it, otherwise a Spanish voice). Learners can play any clip slowly (snail button) and
-can turn listening exercises off in the profile.
+Learners can play any clip slowly (snail button) and can turn listening exercises off in the
+profile.
 
 Sound effects are not recordings: `tools/audio/make_sound_effects.py` synthesises them (original,
 reproducible) into `core/data/src/main/res/raw/`.

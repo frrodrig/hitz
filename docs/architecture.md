@@ -199,6 +199,21 @@ gives 29 (`ScoreRules`, `ObserveScoreUseCase`, `eus.hitz.core.domain.score`).
   the points gained this week.
 - "What you can already do" lists the goals of every finished unit.
 
+## Updates
+
+The app is offline except for one request: once a day, when it comes to the foreground after the
+introduction, `CheckForUpdateUseCase` asks GitHub Releases for the latest release
+(`GET api.github.com/repos/frrodrig/hitz/releases/latest`, public, no key) through
+`GitHubReleaseRepository`. If its tag is a newer `MAJOR.MINOR.PATCH` than the installed
+`versionName` and it has an APK, `MainActivity` shows `UpdateDialog`: *Descargar* opens the APK link
+in the browser (Android then installs it as an update, since it is signed with the same key), *Ahora
+no* waits for the next day's check.
+
+- Debug builds never check; learners can turn checks off in the profile (*Buscar actualizaciones*).
+- Offline or on any error nothing happens and the next launch tries again; the last successful
+  check is kept in DataStore.
+- This is why the app has the `INTERNET` permission (declared in `:core:data`, with a comment).
+
 ## Build
 
 - Version catalog in `gradle/libs.versions.toml`.
@@ -229,6 +244,7 @@ gives 29 (`ScoreRules`, `ObserveScoreUseCase`, `eus.hitz.core.domain.score`).
 |---|---|---|
 | `ci.yml` | PRs and pushes to `main` | Syllabus check, content validator and its tests, detekt, Lint, unit tests, debug build, APK artifact |
 | `ui-tests.yml` | Manual and nightly | Roborazzi (verify, or record and open a PR) and instrumented tests on an emulator |
+| `voices.yml` | Branches that change the course or the voice generator; by hand | Synthesises the changed course audio with Piper (Basque voices of HiTZ – Aholab) and opens a PR with it against that branch |
 | `release.yml` | `v*` tag | Signed AAB and APK, smoke test of the minified APK on an emulator (install, launch, seeded monkey), GitHub Release with the R8 mapping and a changelog grouped by commit type |
 | `pr-title.yml` | PRs | Conventional Commits title |
 

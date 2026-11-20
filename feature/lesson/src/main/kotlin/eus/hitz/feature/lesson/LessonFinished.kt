@@ -56,7 +56,7 @@ private val BADGE_SIZE = 28.dp
 private val BADGE_ICON = 16.dp
 
 /**
- * The end of a lesson: a hero with the Galtzagorri on the tertiary container, three result tiles
+ * The end of a lesson: a hero with Mikel celebrating on the tertiary container, three result tiles
  * (first-try accuracy, active time and today's goal) and what the session added.
  */
 @Composable

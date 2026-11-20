@@ -1,0 +1,62 @@
+<!-- Ane tocando la trikitixa (hola). Source of truth for tools/design/cast_to_vector.py: data-motion names a Motion in
+     CastMotion.kt and data-pivot its pivot, in this 240 x 280 viewBox. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" role="img" aria-label="Ane tocando la trikitixa" width="240" height="280">
+  <ellipse cx="120" cy="268" rx="56" ry="7" fill="#211A15" opacity="0.1" />
+  <g data-motion="TailSwing" data-pivot="150 58">
+    <path d="M150 52 C186 46 196 86 182 118 C176 96 166 78 148 70 Z" fill="#2B1D16" />
+  </g>
+  <rect x="94" y="236" width="20" height="28" rx="8" fill="#2B1D16" />
+  <rect x="126" y="236" width="20" height="28" rx="8" fill="#2B1D16" />
+  <g data-motion="Bob" data-pivot="120 250">
+    <rect x="72" y="132" width="96" height="114" rx="36" fill="#D7263D" />
+    <path d="M80 228 Q120 238 160 228" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+    <path d="M80 150 Q60 172 70 196" fill="none" stroke="#D7263D" stroke-width="15" stroke-linecap="round" />
+    <path d="M160 150 Q182 170 176 194" fill="none" stroke="#D7263D" stroke-width="15" stroke-linecap="round" />
+    <g data-motion="Tilt" data-pivot="120 140">
+      <path d="M146 50 L160 38 L162 56 Z M150 58 L170 56 L160 70 Z" fill="#D7263D" />
+      <circle cx="120" cy="96" r="46" fill="#F2C6A0" />
+      <path d="M71 102 C62 24 178 24 169 102 C158 84 140 74 118 76 C100 78 84 88 71 102 Z" fill="#2B1D16" />
+      <g data-motion="Blink" data-pivot="120 104">
+        <circle cx="104" cy="104" r="4.8" fill="#211A15" />
+        <circle cx="136" cy="104" r="4.8" fill="#211A15" />
+      </g>
+      <circle cx="93" cy="116" r="6.5" fill="#E8857C" opacity="0.55" />
+      <circle cx="147" cy="116" r="6.5" fill="#E8857C" opacity="0.55" />
+      <path d="M108 118 Q120 128 132 118" fill="none" stroke="#211A15" stroke-width="3.5" stroke-linecap="round" />
+    </g>
+    <path d="M98 140 L142 140 L120 160 Z" fill="#FFFFFF" />
+    <circle cx="120" cy="142" r="5" fill="#FFFFFF" />
+    <g data-motion="Squeeze" data-pivot="120 196">
+      <rect x="96" y="176" width="48" height="40" fill="#2B1D16" />
+      <path d="M104 178 V214 M112 178 V214 M120 178 V214 M128 178 V214 M136 178 V214" stroke="#FFFFFF" stroke-width="2" />
+    </g>
+    <g data-motion="PushRight" data-pivot="81 196">
+      <rect x="66" y="170" width="30" height="52" rx="6" fill="#FFF4E8" stroke="#2B1D16" stroke-width="2.5" />
+      <circle cx="81" cy="186" r="3.5" fill="#D7263D" />
+      <circle cx="81" cy="206" r="3.5" fill="#D7263D" />
+      <circle cx="68" cy="196" r="8.5" fill="#F2C6A0" />
+    </g>
+    <g data-motion="PushLeft" data-pivot="161 196">
+      <rect x="144" y="168" width="34" height="56" rx="6" fill="#FFF4E8" stroke="#2B1D16" stroke-width="2.5" />
+      <g fill="#D7263D">
+        <circle cx="154" cy="180" r="3" />
+        <circle cx="168" cy="180" r="3" />
+        <circle cx="154" cy="192" r="3" />
+        <circle cx="168" cy="192" r="3" />
+        <circle cx="154" cy="204" r="3" />
+        <circle cx="168" cy="204" r="3" />
+        <circle cx="154" cy="216" r="3" />
+        <circle cx="168" cy="216" r="3" />
+      </g>
+      <circle cx="178" cy="194" r="8.5" fill="#F2C6A0" />
+    </g>
+  </g>
+  <g fill="#D7263D" data-motion="NoteRise" data-pivot="200 160">
+    <ellipse cx="196" cy="168" rx="6" ry="4.5" transform="rotate(-20 196 168)" />
+    <path d="M201 166 V144 L210 148" fill="none" stroke="#D7263D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g fill="#B7791F" data-motion="NoteRiseLate" data-pivot="42 150">
+    <ellipse cx="40" cy="160" rx="5.5" ry="4" transform="rotate(-20 40 160)" />
+    <path d="M45 158 V138" fill="none" stroke="#B7791F" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+</svg>
