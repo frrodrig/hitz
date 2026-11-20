@@ -1,0 +1,62 @@
+<!-- Ane pensando (piensa). Source of truth for tools/design/cast_to_vector.py: data-motion names a Motion in
+     CastMotion.kt and data-pivot its pivot, in this 240 x 280 viewBox. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" role="img" aria-label="Ane pensando" width="240" height="280">
+  <ellipse cx="120" cy="268" rx="56" ry="7" fill="#211A15" opacity="0.1" />
+  <g data-motion="Sway" data-pivot="120 264">
+    <g>
+      <path d="M150 52 C186 46 196 86 182 118 C176 96 166 78 148 70 Z" fill="#2B1D16" />
+    </g>
+    <rect x="94" y="236" width="20" height="28" rx="8" fill="#2B1D16" />
+    <rect x="126" y="236" width="20" height="28" rx="8" fill="#2B1D16" />
+    <g>
+      <rect x="72" y="132" width="96" height="114" rx="36" fill="#D7263D" />
+      <path d="M80 228 Q120 238 160 228" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+      <path d="M98 140 L142 140 L120 160 Z" fill="#FFFFFF" />
+      <circle cx="120" cy="142" r="5" fill="#FFFFFF" />
+      <path d="M160 150 Q182 172 172 194" fill="none" stroke="#FFFFFF" stroke-width="21" stroke-linecap="round" />
+      <path d="M160 150 Q182 172 172 194" fill="none" stroke="#D7263D" stroke-width="15" stroke-linecap="round" />
+      <rect x="160" y="194" width="30" height="44" rx="6" fill="#FFF4E8" stroke="#2B1D16" stroke-width="2.5" />
+      <rect x="156" y="198" width="4" height="36" fill="#2B1D16" />
+      <g fill="#D7263D">
+        <circle cx="170" cy="206" r="2.8" />
+        <circle cx="180" cy="206" r="2.8" />
+        <circle cx="170" cy="216" r="2.8" />
+        <circle cx="180" cy="216" r="2.8" />
+        <circle cx="170" cy="226" r="2.8" />
+        <circle cx="180" cy="226" r="2.8" />
+      </g>
+      <circle cx="172" cy="196" r="9" fill="#F2C6A0" />
+      <g>
+        <path d="M146 50 L160 38 L162 56 Z M150 58 L170 56 L160 70 Z" fill="#D7263D" />
+        <circle cx="120" cy="96" r="46" fill="#F2C6A0" />
+        <path d="M71 102 C62 24 178 24 169 102 C158 84 140 74 118 76 C100 78 84 88 71 102 Z" fill="#2B1D16" />
+        <g data-motion="Look" data-pivot="120 104">
+          <circle cx="107" cy="101" r="4.8" fill="#211A15" />
+          <circle cx="139" cy="101" r="4.8" fill="#211A15" />
+        </g>
+        <path d="M97 91 L111 91 M129 88 Q136 82 143 88" fill="none" stroke="#211A15" stroke-width="3" stroke-linecap="round" />
+        <path d="M113 121 L128 118" stroke="#211A15" stroke-width="3" stroke-linecap="round" />
+        <circle cx="93" cy="116" r="6.5" fill="#E8857C" opacity="0.55" />
+        <circle cx="147" cy="116" r="6.5" fill="#E8857C" opacity="0.55" />
+      </g>
+      <g>
+        <path d="M80 150 Q88 184 108 148" fill="none" stroke="#FFFFFF" stroke-width="21" stroke-linecap="round" />
+        <path d="M80 150 Q88 184 108 148" fill="none" stroke="#D7263D" stroke-width="15" stroke-linecap="round" />
+        <circle cx="108" cy="144" r="9" fill="#F2C6A0" />
+      </g>
+    </g>
+  </g>
+  <g data-motion="Bubble" data-pivot="176 52">
+    <circle cx="176" cy="52" r="4" fill="#FFFFFF" stroke="#D7C3B4" stroke-width="2" />
+  </g>
+  <g data-motion="Bubble2" data-pivot="190 38">
+    <circle cx="190" cy="38" r="7" fill="#FFFFFF" stroke="#D7C3B4" stroke-width="2" />
+  </g>
+  <g data-motion="Bubble3" data-pivot="206 18">
+    <circle cx="206" cy="18" r="14" fill="#FFFFFF" stroke="#D7C3B4" stroke-width="2" />
+  </g>
+  <g data-motion="Bubble3" data-pivot="206 18">
+    <path d="M202.0 15.0 Q202.0 10.0 207.0 10.0 Q212.0 10.0 211.0 15.0 Q210.0 18.0 207.0 19.0 L207.0 21.0" fill="none" stroke="#D7263D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="207.0" cy="26.0" r="1.9" fill="#D7263D" />
+  </g>
+</svg>

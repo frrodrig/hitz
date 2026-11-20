@@ -33,14 +33,19 @@ class ComponentBehaviourTest {
         composeRule.setContent {
             HitzTheme {
                 Column {
-                    HitzMascot(pose = MascotPose.Bien, contentDescription = "Galtzagorri")
-                    HitzMascot(pose = MascotPose.Piensa, contentDescription = "Quieto", animated = false)
+                    HitzMascot(pose = MascotPose.Bien, contentDescription = "Mikel")
+                    HitzMascot(
+                        pose = MascotPose.Piensa,
+                        member = CastMember.Unai,
+                        contentDescription = "Quieto",
+                        animated = false,
+                    )
                     HitzMascot(pose = MascotPose.Hola, contentDescription = null)
                 }
             }
         }
-        // Six stacked layers, announced once, as an image.
-        composeRule.onNodeWithContentDescription("Galtzagorri")
+        // Many stacked layers, announced once, as an image.
+        composeRule.onNodeWithContentDescription("Mikel")
             .assert(SemanticsMatcher.expectValue(SemanticsProperties.Role, Role.Image))
         composeRule.onNodeWithContentDescription("Quieto").assertExists()
         composeRule.onAllNodes(SemanticsMatcher.keyIsDefined(SemanticsProperties.ContentDescription))
