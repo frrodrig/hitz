@@ -38,6 +38,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import eus.hitz.core.designsystem.component.CastMember
 import eus.hitz.core.designsystem.component.HitzButton
 import eus.hitz.core.designsystem.component.HitzMascot
 import eus.hitz.core.designsystem.component.MascotPose
@@ -143,7 +144,7 @@ private fun EmptyHub() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(HitzSpacing.md),
     ) {
-        HitzMascot(pose = MascotPose.Piensa, size = 160.dp, contentDescription = null)
+        HitzMascot(pose = MascotPose.Piensa, member = CastMember.Unai, size = 160.dp, contentDescription = null)
         Text(
             text = stringResource(R.string.feature_practice_empty_title),
             style = MaterialTheme.typography.titleLargeEmphasized,

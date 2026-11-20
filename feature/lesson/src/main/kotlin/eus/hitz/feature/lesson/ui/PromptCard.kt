@@ -34,8 +34,8 @@ private val BUBBLE_TAIL = 8.dp
 private const val MASCOT_MAX_FONT_SCALE = 1.5f
 
 /**
- * The sentence to work on, said by the Galtzagorri in a speech bubble, with an optional button to
- * hear it. The bubble's small corner points at the mascot.
+ * The sentence to work on, said by Ane in a speech bubble, with an optional button to hear it.
+ * The bubble's small corner points at her.
  */
 @Composable
 internal fun PromptCard(

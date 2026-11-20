@@ -248,7 +248,7 @@ private fun LearningPathList(
     }
 }
 
-/** A node on its winding offset; the Galtzagorri waits beside the current one. */
+/** A node on its winding offset; Ane waits beside the current one, playing the trikitixa. */
 @Composable
 private fun NodeRow(node: PathNode, offset: Dp, onClick: () -> Unit) {
     Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
