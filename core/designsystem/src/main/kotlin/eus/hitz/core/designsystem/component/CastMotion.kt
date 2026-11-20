@@ -379,7 +379,7 @@ internal enum class Motion(val periodMillis: Int, val delayMillis: Int, val trac
                 0.24f to -5f,
                 0.32f to 3f,
                 0.4f to 0f,
-                1f to 0f),
+                1f to 0f,
             ),
         ),
     ),
