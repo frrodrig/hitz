@@ -1,0 +1,43 @@
+name: Voices
+
+# Synthesises Basque audio with Piper (tools/audio/cast_voices.py) on a runner, which can reach
+# Hugging Face for the voice models, and commits the result back to the branch it ran on.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["voices/**"]
+    paths: ["tools/audio/cast_voices.py", ".github/workflows/voices.yml"]
+
+concurrency:
+  group: voices-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Install Piper and ffmpeg
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install --quiet piper-tts
+          ffmpeg -hide_banner -filters | grep -E "rubberband|loudnorm"
+      - name: Download the Basque voices
+        run: python3 tools/audio/cast_voices.py download models
+      - name: Synthesise the samples
+        run: python3 tools/audio/cast_voices.py samples models content/audio/samples
+      - name: Commit the samples to this branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/audio/samples
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: voice samples from run ${{ github.run_id }}"
+          git push
