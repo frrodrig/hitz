@@ -3,8 +3,9 @@
 [![CI](https://github.com/frrodrig/hitz/actions/workflows/ci.yml/badge.svg)](https://github.com/frrodrig/hitz/actions/workflows/ci.yml)
 
 Android app for learning **Basque (euskara) from Spanish** at A1 level: a path of short lessons,
-spaced repetition, a daily goal in minutes and a score on the CEFR A1 scale (0–29). The mascot
-is a **Galtzagorri**, one of the tireless little red-trousered helpers of Basque mythology.
+spaced repetition, a daily goal in minutes and a score on the CEFR A1 scale (0–29). Four Basque
+friends talk to you along the way: **Ane** the trikitilari, **Mikel** the aizkolari, **Maite** the
+amona and **Unai** the pelotari.
 
 - Made for learning on your own from zero: a first-run introduction, an introduction to every
   unit, a "new word" card before each word is used and tap hints on every Basque word. Learners
@@ -37,6 +38,9 @@ it on an Android 8.0+ phone (allow installing from that source when asked). Each
 carries the `.aab` bundle for app stores. See [`CONTRIBUTING.md`](CONTRIBUTING.md#releases) for how
 releases are made.
 
+Once installed, the app checks GitHub Releases once a day and offers to download a newer version
+(it can be turned off in the profile).
+
 ## Building
 
 Requirements: JDK 17 and the Android SDK (API 37).
@@ -65,3 +69,12 @@ Every PR produces a debug APK as an artifact of the **CI** workflow.
 ## License
 
 [Apache License 2.0](LICENSE), for both code and course content.
+
+### Credits
+
+The Basque voices (Maider and Antton) are by the **HiTZ Basque Center for Language Technology –
+Aholab Signal Processing Laboratory, University of the Basque Country (EHU)**, developed with
+funding from Project ILENIA (models Apache-2.0, voice data
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)), in the Piper versions published by
+[itzune](https://huggingface.co/itzune). The course audio is synthesised with them by
+`tools/audio/cast_voices.py`.

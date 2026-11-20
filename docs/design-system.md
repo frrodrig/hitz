@@ -13,20 +13,33 @@ one exists; Hitz wrappers only fix sizes, colours and accessibility semantics.
 
 ## Identity
 
-- **Mascot:** a *Galtzagorri*, one of the tiny red-trousered helpers of Basque mythology, drawn
-  as a flat, geometric character: a one-piece capsule body (face above, the red *galtzak* below),
-  thin stroke limbs, a small *txapela*, a bushy beard with sideburns, wild eyebrows, a *makila*
-  (walking stick) with a red tassel and *abarkak*. Four poses (`MascotPose`: hola, bien, ups,
-  piensa) are generated from one SVG template (`tools/design/art/galtzagorri.svg.template`) by
-  `tools/design/mascot_to_vector.py`, which writes the vector drawables and the reviewed SVGs in
-  `docs/art/`. The script also splits each pose into layers (`data-layer` in the template: shadow,
-  sparkles, back, arm, body, eyes, front, thought) that share the canvas, and `HitzMascot` animates
-  them with `graphicsLayer` around real pivots (feet, shoulders, eyes): he breathes and blinks in
-  every pose; *Hola* waves every 5 s; *Bien* jumps when he appears and wiggles both arms while the
-  sparkles twinkle; *Ups* shakes his head once; *Piensa* sways while his thought bubbles float.
-  Values are read in the draw phase only (no recomposition per frame), every animation starts at
-  rest (screenshots show the static pose), and with reduced motion or `animated = false` the whole
-  drawable is shown instead.
+- **Cast:** instead of one mascot, four Basque friends talk to the learner, one per arm of the
+  lauburu in the icon (`CastMember`). Each has a colour and a role, so the same person always
+  appears in the same kind of moment (`CastMember.speakerFor` picks them from the pose):
+
+  | Member | Colour | Who | Appears in |
+  |---|---|---|---|
+  | **Ane** | red | young *trikitilari* with a ponytail, a white *zapia* and a trikitixa | lesson prompts, unit introductions, the path, onboarding |
+  | **Mikel** | blue | *aizkolari* with a beard, a *txapela* and an axe on his shoulder | the end of a lesson, stories finished, placement passed |
+  | **Maite** | ochre | *amona* with a bun, round glasses and a book | mistakes, errors, hints |
+  | **Unai** | sea green | teenage *pelotari* with a headband, a pelota and a txistera | practice and, later, leagues and quests |
+
+  They share one construction (round head over a capsule body, flat shapes with white cut-out
+  lines, 240 × 280 canvas) and four poses (`MascotPose`): *Hola* is each one's own loop (Ane
+  plays the trikitixa, Mikel waves, Maite turns a page, Unai bounces the pelota); *Bien* jumps
+  with an arm up among sparkles; *Ups* puts a hand to the head, shakes it and sweats; *Piensa*
+  holds the chin, sways and thinks in bubbles. Everyone keeps their own object and gestures with
+  the free hand, with a white outline so a sleeve reads over a shirt of the same colour.
+- **Cast art pipeline:** the 16 drawings are SVGs in `tools/design/art/cast/<member>-<pose>.svg`.
+  A group with `data-motion` moves on its own: the value names a `Motion` in `CastMotion.kt`
+  (keyframes for translation, rotation, scale and alpha, a period and a delay) and `data-pivot`
+  is the point it turns around. `tools/design/cast_to_vector.py` writes one vector for the whole
+  drawing (shown with reduced motion or `animated = false`), one vector per layer (still shapes
+  merged, each animated group its own layer) and `CastArt.kt`, the layer tree with motions and
+  pivots; `--check` (run by the tools tests in CI) fails when they are out of date.
+  `HitzMascot` stacks the layers and moves each with `graphicsLayer` from one frame clock read in
+  the draw phase, so nothing recomposes per frame and a paused clock draws the pose at rest. The
+  design canvas plays the same keyframes as CSS.
 - **App icon:** a *lauburu* of four arms (red, blue, ochre, sea green) on cream. Adaptive icon with
   vector background, foreground and monochrome (themed icon, Android 13+) layers of 108 dp; the
   arms reach a 32 dp radius, inside the 66 dp safe zone, and each one is shrunk around its own
@@ -86,7 +99,7 @@ decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum to
 | **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour). |
 | **Emphasized type** | Screen and question titles, feedback result and counter values. |
 | **Tonal colour** | Tonal containers carry state; bold colour is reserved for the primary action and the hero of each screen (current unit, personal review). The profile's score card sits on `primaryContainer`; cards are tonal (`surfaceContainer`), not outlined. |
-| **Lessons** | The prompt is said by the Galtzagorri in a speech bubble (its small corner points at the mascot; with fonts over 150 % the mascot steps aside). The end of a lesson is a hero on `tertiaryContainer` with the mascot, then three result tiles (first-try accuracy, active time, today's goal on the success container when met), each with one small corner towards the next. |
+| **Lessons** | The prompt is said by Ane in a speech bubble (its small corner points at her; with fonts over 150 % she steps aside). Mistakes are met by Maite. The end of a lesson is a hero on `tertiaryContainer` with Mikel celebrating, then three result tiles (first-try accuracy, active time, today's goal on the success container when met), each with one small corner towards the next. |
 | **Navigation** | Detail screens (guide, unit introduction, score, unit review) go back with a Back arrow; only full-screen sessions (lessons, stories) close with an X. |
 
 ## Icons
@@ -112,7 +125,7 @@ so they stay consistent and any change is a reviewable diff; see the content gui
 | `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel, announced as a live region |
 | `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress |
 | `HitzDailyGoalRing` / `HitzDailyGoalChip` | `CircularWavyProgressIndicator` (flat with a check mark when met), in a tonal container | Today's share of the daily goal, spoken as a percentage |
-| `HitzMascot` | Animated stack of a `MascotPose`'s layers (or its single `Image` with reduced motion), optionally framed on a `MaterialShapes.Sunny` container | The Galtzagorri: intro, lesson end, errors, avatar |
+| `HitzMascot` | Animated stack of a `CastMember`'s layers in a `MascotPose` (or its single `Image` with reduced motion), optionally framed on a `MaterialShapes.Sunny` container | The cast: prompts, lesson end, errors, empty states, avatar |
 | `PlaceholderScreen` | — | Temporary screen for unfinished features |
 
 The app uses `ShortNavigationBar` (or `WideNavigationRail` on wide windows) for its three top-level
