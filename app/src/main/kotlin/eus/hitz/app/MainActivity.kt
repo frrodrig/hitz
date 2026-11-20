@@ -7,10 +7,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import dagger.hilt.android.AndroidEntryPoint
 import eus.hitz.app.ui.HitzApp
+import eus.hitz.app.ui.UpdateDialog
 import eus.hitz.core.designsystem.theme.HitzTheme
 
 @AndroidEntryPoint
@@ -26,8 +28,22 @@ class MainActivity : ComponentActivity() {
             // Read once: finishing the introduction must not rebuild the navigation graph.
             val startWithOnboarding by viewModel.startWithOnboarding.collectAsStateWithLifecycle()
             val start = remember(startWithOnboarding == null) { startWithOnboarding }
+            val update by viewModel.update.collectAsStateWithLifecycle()
+            val uriHandler = LocalUriHandler.current
             HitzTheme {
                 if (start != null) HitzApp(startWithOnboarding = start)
+                update?.let { release ->
+                    UpdateDialog(
+                        release = release,
+                        onDownload = {
+                            // The browser downloads the APK; opening it installs the update.
+                            runCatching { uriHandler.openUri(release.apkUrl) }
+                                .onFailure { runCatching { uriHandler.openUri(release.pageUrl) } }
+                            viewModel.dismissUpdate()
+                        },
+                        onDismiss = viewModel::dismissUpdate,
+                    )
+                }
             }
         }
     }

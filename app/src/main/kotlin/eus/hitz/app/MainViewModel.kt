@@ -5,8 +5,12 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import eus.hitz.core.domain.settings.ReminderScheduler
 import eus.hitz.core.domain.settings.SettingsRepository
+import eus.hitz.core.domain.update.AppRelease
+import eus.hitz.core.domain.update.CheckForUpdateUseCase
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
@@ -18,7 +22,13 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(
     private val settings: SettingsRepository,
     private val reminders: ReminderScheduler,
+    private val checkForUpdate: CheckForUpdateUseCase,
 ) : ViewModel() {
+    private val _update = MutableStateFlow<AppRelease?>(null)
+
+    /** A newer version to offer, if the daily check found one. */
+    val update: StateFlow<AppRelease?> = _update.asStateFlow()
+
     /** Whether to start with the first-run introduction; null until the settings are read. */
     val startWithOnboarding: StateFlow<Boolean?> = settings.settings
         .map { !it.onboardingCompleted }
@@ -27,7 +37,15 @@ class MainViewModel @Inject constructor(
     /** Keeps the daily goal reminder scheduled (WorkManager may have dropped it after an update). */
     fun onForeground() {
         viewModelScope.launch {
-            if (settings.settings.first().reminderEnabled) reminders.schedule()
+            val preferences = settings.settings.first()
+            if (preferences.reminderEnabled) reminders.schedule()
+            // Not during the first-run introduction; the check itself runs at most once a day.
+            if (preferences.onboardingCompleted && _update.value == null) _update.value = checkForUpdate()
         }
+    }
+
+    /** Download chosen or postponed: the next offer comes with tomorrow's check. */
+    fun dismissUpdate() {
+        _update.value = null
     }
 }
