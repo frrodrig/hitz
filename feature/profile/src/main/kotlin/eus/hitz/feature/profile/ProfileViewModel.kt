@@ -56,6 +56,10 @@ class ProfileViewModel @Inject constructor(
         viewModelScope.launch { settingsRepository.setSoundEffectsEnabled(enabled) }
     }
 
+    fun setUpdateChecksEnabled(enabled: Boolean) {
+        viewModelScope.launch { settingsRepository.setUpdateChecksEnabled(enabled) }
+    }
+
     /** Call with true only once notifications are allowed. */
     fun setReminderEnabled(enabled: Boolean) {
         viewModelScope.launch {

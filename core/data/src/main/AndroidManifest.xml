@@ -2,4 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Daily streak reminder (asked at run time from the profile on Android 13+). -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Only to ask GitHub Releases, once a day, whether there is a newer version (can be turned off). -->
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

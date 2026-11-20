@@ -97,10 +97,13 @@ class ProfileScreenTest {
         composeRule.onNodeWithText("Efectos de sonido").assertIsOn().performClick()
         scrollTo("Recordatorio diario")
         composeRule.onNodeWithText("Recordatorio diario").assertIsOff().performClick()
+        scrollTo("Buscar actualizaciones")
+        composeRule.onNodeWithText("Buscar actualizaciones").assertIsOn().performClick()
         assertThat(changes).containsExactly(
             Setting.Speaking to false,
             Setting.SoundEffects to false,
             Setting.Reminder to true,
+            Setting.UpdateChecks to false,
         ).inOrder()
     }
 

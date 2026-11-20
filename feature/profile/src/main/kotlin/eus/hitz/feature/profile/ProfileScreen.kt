@@ -96,6 +96,7 @@ fun ProfileScreen(
                 Setting.Listening -> viewModel.setListeningEnabled(enabled)
                 Setting.SoundEffects -> viewModel.setSoundEffectsEnabled(enabled)
                 Setting.Reminder -> onReminderChange(enabled)
+                Setting.UpdateChecks -> viewModel.setUpdateChecksEnabled(enabled)
             }
         },
         onGoalChange = viewModel::setDailyGoal,
@@ -105,7 +106,7 @@ fun ProfileScreen(
 }
 
 /** The learner's switches in the profile. */
-internal enum class Setting { Speaking, Listening, SoundEffects, Reminder }
+internal enum class Setting { Speaking, Listening, SoundEffects, Reminder, UpdateChecks }
 
 @Composable
 private fun rememberReminderToggle(viewModel: ProfileViewModel): (Boolean) -> Unit {
@@ -194,6 +195,12 @@ private fun settingRows(settings: UserSettings) = listOf(
         R.string.feature_profile_reminder,
         R.string.feature_profile_reminder_description,
         settings.reminderEnabled,
+    ),
+    SettingRowUi(
+        Setting.UpdateChecks,
+        R.string.feature_profile_update_checks,
+        R.string.feature_profile_update_checks_description,
+        settings.updateChecksEnabled,
     ),
 )
 
