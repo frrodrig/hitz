@@ -229,6 +229,7 @@ gives 29 (`ScoreRules`, `ObserveScoreUseCase`, `eus.hitz.core.domain.score`).
 |---|---|---|
 | `ci.yml` | PRs and pushes to `main` | Syllabus check, content validator and its tests, detekt, Lint, unit tests, debug build, APK artifact |
 | `ui-tests.yml` | Manual and nightly | Roborazzi (verify, or record and open a PR) and instrumented tests on an emulator |
+| `voices.yml` | Branches that change the course or the voice generator; by hand | Synthesises the changed course audio with Piper (Basque voices of HiTZ – Aholab) and opens a PR with it against that branch |
 | `release.yml` | `v*` tag | Signed AAB and APK, smoke test of the minified APK on an emulator (install, launch, seeded monkey), GitHub Release with the R8 mapping and a changelog grouped by commit type |
 | `pr-title.yml` | PRs | Conventional Commits title |
 

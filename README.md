@@ -66,3 +66,12 @@ Every PR produces a debug APK as an artifact of the **CI** workflow.
 ## License
 
 [Apache License 2.0](LICENSE), for both code and course content.
+
+### Credits
+
+The Basque voices (Maider and Antton) are by the **HiTZ Basque Center for Language Technology –
+Aholab Signal Processing Laboratory, University of the Basque Country (EHU)**, developed with
+funding from Project ILENIA (models Apache-2.0, voice data
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)), in the Piper versions published by
+[itzune](https://huggingface.co/itzune). The course audio is synthesised with them by
+`tools/audio/cast_voices.py`.
