@@ -1,0 +1,56 @@
+<!-- Unai pensando (piensa). Source of truth for tools/design/cast_to_vector.py: data-motion names a Motion in
+     CastMotion.kt and data-pivot its pivot, in this 240 x 280 viewBox. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" role="img" aria-label="Unai pensando" width="240" height="280">
+  <ellipse cx="120" cy="268" rx="56" ry="7" fill="#211A15" opacity="0.1" />
+  <g>
+    <circle cx="46" cy="254" r="10" fill="#FFFFFF" stroke="#144A50" stroke-width="2.5" />
+    <path d="M39 248 Q46 254 39 261 M53 248 Q46 254 53 261" fill="none" stroke="#144A50" stroke-width="1.6" />
+  </g>
+  <g data-motion="Sway" data-pivot="120 264">
+    <rect x="92" y="230" width="22" height="30" rx="8" fill="#FFFFFF" stroke="#144A50" stroke-width="2.5" />
+    <rect x="126" y="230" width="22" height="30" rx="8" fill="#FFFFFF" stroke="#144A50" stroke-width="2.5" />
+    <ellipse cx="101" cy="262" rx="14" ry="6" fill="#144A50" />
+    <ellipse cx="139" cy="262" rx="14" ry="6" fill="#144A50" />
+    <g>
+      <rect x="74" y="134" width="92" height="104" rx="32" fill="#1F6F78" />
+      <rect x="74" y="214" width="92" height="12" fill="#D7263D" />
+      <path d="M82 166 L158 166" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+      <path d="M178 108 C172 64 192 30 222 20 C216 48 208 82 196 112 Z" fill="#D9B27A" stroke="#8A5A2B" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M186 96 C184 70 196 46 214 32 M192 100 C192 76 202 52 216 40" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+      <path d="M160 150 Q184 132 186 108" fill="none" stroke="#FFFFFF" stroke-width="21" stroke-linecap="round" />
+      <path d="M160 150 Q184 132 186 108" fill="none" stroke="#1F6F78" stroke-width="15" stroke-linecap="round" />
+      <rect x="176" y="98" width="20" height="14" rx="4" fill="#8A5A2B" />
+      <circle cx="186" cy="104" r="9" fill="#C68A5E" />
+      <g>
+        <circle cx="120" cy="98" r="46" fill="#C68A5E" />
+        <path d="M74 98 C70 62 96 46 120 48 C150 46 172 64 166 98 L158 84 L150 92 L142 80 L132 90 L122 78 L112 90 L100 80 L92 92 L82 84 Z" fill="#1E1612" />
+        <path d="M79 74 Q120 52 161 74 L164 84 Q120 62 76 84 Z" fill="#1F6F78" />
+        <path d="M78 79 Q120 57 162 79" fill="none" stroke="#FFFFFF" stroke-width="1.8" />
+        <g data-motion="Look" data-pivot="120 106">
+          <circle cx="107" cy="103" r="4.8" fill="#211A15" />
+          <circle cx="139" cy="103" r="4.8" fill="#211A15" />
+        </g>
+        <path d="M97 93 L111 93 M129 90 Q136 84 143 90" fill="none" stroke="#1E1612" stroke-width="3" stroke-linecap="round" />
+        <path d="M113 121 L128 118" stroke="#211A15" stroke-width="3" stroke-linecap="round" />
+      </g>
+      <g>
+        <path d="M80 152 Q88 186 108 150" fill="none" stroke="#FFFFFF" stroke-width="21" stroke-linecap="round" />
+        <path d="M80 152 Q88 186 108 150" fill="none" stroke="#1F6F78" stroke-width="15" stroke-linecap="round" />
+        <circle cx="108" cy="144" r="9" fill="#C68A5E" />
+      </g>
+    </g>
+  </g>
+  <g data-motion="Bubble" data-pivot="64 52">
+    <circle cx="64" cy="52" r="4" fill="#FFFFFF" stroke="#D7C3B4" stroke-width="2" />
+  </g>
+  <g data-motion="Bubble2" data-pivot="50 38">
+    <circle cx="50" cy="38" r="7" fill="#FFFFFF" stroke="#D7C3B4" stroke-width="2" />
+  </g>
+  <g data-motion="Bubble3" data-pivot="34 18">
+    <circle cx="34" cy="18" r="14" fill="#FFFFFF" stroke="#D7C3B4" stroke-width="2" />
+  </g>
+  <g data-motion="Bubble3" data-pivot="34 18">
+    <path d="M30.0 15.0 Q30.0 10.0 35.0 10.0 Q40.0 10.0 39.0 15.0 Q38.0 18.0 35.0 19.0 L35.0 21.0" fill="none" stroke="#1F6F78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="35.0" cy="26.0" r="1.9" fill="#1F6F78" />
+  </g>
+</svg>
