@@ -26,6 +26,7 @@ internal class DataStoreSettingsRepository @Inject constructor(
             seenUnitIntros = preferences[SEEN_UNIT_INTROS].orEmpty(),
             onboardingCompleted = preferences[ONBOARDING_COMPLETED] ?: false,
             dailyGoalMinutes = preferences[DAILY_GOAL_MINUTES] ?: DailyGoalRules.DEFAULT_GOAL_MINUTES,
+            updateChecksEnabled = preferences[UPDATE_CHECKS_ENABLED] ?: true,
         )
     }
 
@@ -58,6 +59,10 @@ internal class DataStoreSettingsRepository @Inject constructor(
         dataStore.edit { it[DAILY_GOAL_MINUTES] = minutes }
     }
 
+    override suspend fun setUpdateChecksEnabled(enabled: Boolean) {
+        dataStore.edit { it[UPDATE_CHECKS_ENABLED] = enabled }
+    }
+
     companion object {
         const val FILE_NAME = "settings"
         private val SPEAKING_ENABLED = booleanPreferencesKey("speaking_enabled")
@@ -67,5 +72,6 @@ internal class DataStoreSettingsRepository @Inject constructor(
         private val SEEN_UNIT_INTROS = stringSetPreferencesKey("seen_unit_intros")
         private val ONBOARDING_COMPLETED = booleanPreferencesKey("onboarding_completed")
         private val DAILY_GOAL_MINUTES = intPreferencesKey("daily_goal_minutes")
+        private val UPDATE_CHECKS_ENABLED = booleanPreferencesKey("update_checks_enabled")
     }
 }

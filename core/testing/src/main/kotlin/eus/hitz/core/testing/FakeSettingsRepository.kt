@@ -39,6 +39,10 @@ class FakeSettingsRepository(initial: UserSettings = UserSettings()) : SettingsR
     override suspend fun setDailyGoalMinutes(minutes: Int) {
         settings.value = settings.value.copy(dailyGoalMinutes = minutes)
     }
+
+    override suspend fun setUpdateChecksEnabled(enabled: Boolean) {
+        settings.value = settings.value.copy(updateChecksEnabled = enabled)
+    }
 }
 
 /** Records what was played. */

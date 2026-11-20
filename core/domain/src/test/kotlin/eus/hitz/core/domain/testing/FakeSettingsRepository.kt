@@ -26,4 +26,6 @@ internal class FakeSettingsRepository(initial: UserSettings = UserSettings()) : 
     override suspend fun setOnboardingCompleted() = update { it.copy(onboardingCompleted = true) }
 
     override suspend fun setDailyGoalMinutes(minutes: Int) = update { it.copy(dailyGoalMinutes = minutes) }
+
+    override suspend fun setUpdateChecksEnabled(enabled: Boolean) = update { it.copy(updateChecksEnabled = enabled) }
 }

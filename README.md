@@ -38,6 +38,9 @@ it on an Android 8.0+ phone (allow installing from that source when asked). Each
 carries the `.aab` bundle for app stores. See [`CONTRIBUTING.md`](CONTRIBUTING.md#releases) for how
 releases are made.
 
+Once installed, the app checks GitHub Releases once a day and offers to download a newer version
+(it can be turned off in the profile).
+
 ## Building
 
 Requirements: JDK 17 and the Android SDK (API 37).
