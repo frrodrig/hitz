@@ -8,7 +8,7 @@ name: Voices
 on:
   workflow_dispatch:
   push:
-    branches-ignore: [main, "audio/**", "test/**"]
+    branches-ignore: [main, "audio/**", "test/**", "dependabot/**"]
     paths:
       - "content/**"
       - "core/data/src/main/assets/courses/**"

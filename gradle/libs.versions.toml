@@ -10,7 +10,7 @@ kotlin = "2.4.21"
 ksp = "2.3.13"
 detekt = "1.23.8"
 detektKotlin = "2.0.21"
-roborazzi = "1.77.0"
+roborazzi = "1.79.0"
 
 # AndroidX
 androidxActivity = "1.9.3"
@@ -33,7 +33,7 @@ room = "2.8.5"
 # Third party
 hilt = "2.60.1"
 kotlinxCoroutines = "1.11.0"
-kotlinxSerializationJson = "1.12.0"
+kotlinxSerializationJson = "1.13.0"
 coil = "3.6.3"
 lottie = "6.7.1"
 
