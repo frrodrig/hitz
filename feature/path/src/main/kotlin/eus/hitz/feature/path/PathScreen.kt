@@ -34,7 +34,6 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.BiasAlignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
@@ -68,6 +67,9 @@ import eus.hitz.core.domain.score.ScoreRules
 /** Horizontal offsets that make the path wind gently down the screen. */
 private val Winding = listOf(0.dp, 44.dp, 64.dp, 44.dp, 0.dp, (-44).dp, (-64).dp, (-44).dp)
 private val MASCOT_SIZE = 96.dp
+
+/** Ane beside a node next to a star challenge, where the path leaves less room. */
+private val MASCOT_SIZE_TIGHT = 72.dp
 private val GUIDE_BUTTON = 56.dp
 private val CHIP_ICON = 18.dp
 private const val UNIT_COLORS = 3
@@ -288,19 +290,23 @@ private fun LearningPathList(
     }
 }
 
-/** A node on its winding offset; Ane waits beside the current one, playing the trikitixa. */
+/**
+ * A node on its winding offset; Ane waits beside the current one, playing the trikitixa, on the
+ * side the path leaves free, or on [companionAtStart]'s side when something else is there.
+ */
 @Composable
-private fun NodeRow(node: PathNode, offset: Dp, onClick: () -> Unit) {
+private fun NodeRow(node: PathNode, offset: Dp, companionAtStart: Boolean? = null, onClick: () -> Unit) {
     Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
         PathNodeButton(node = node, onClick = onClick, modifier = Modifier.offset(x = offset))
         if (node.isCurrent) {
+            val atStart = companionAtStart ?: (offset > 0.dp)
             HitzMascot(
                 pose = MascotPose.Hola,
-                size = MASCOT_SIZE,
+                size = if (companionAtStart == null) MASCOT_SIZE else MASCOT_SIZE_TIGHT,
                 contentDescription = null,
                 modifier = Modifier
-                    .align(if (offset > 0.dp) Alignment.CenterStart else Alignment.CenterEnd)
-                    .padding(horizontal = HitzSpacing.xl),
+                    .align(if (atStart) Alignment.CenterStart else Alignment.CenterEnd)
+                    .padding(horizontal = if (companionAtStart == null) HitzSpacing.xl else HitzSpacing.sm),
             )
         }
     }
@@ -308,22 +314,16 @@ private fun NodeRow(node: PathNode, offset: Dp, onClick: () -> Unit) {
 
 /**
  * The nodes beside a star challenge, spaced like the rest of the path, with the challenge in the
- * gap the path leaves. It stands by the middle, or by the node that is not current, so it never
- * covers Ane.
+ * gap the path leaves. Ane, beside a current node here, moves to the other side, a little smaller.
  */
 @Composable
 private fun ChallengeRows(row: PathRow.Challenge, onChallengeClick: () -> Unit, onNodeClick: (PathNode) -> Unit) {
-    val current = row.nodes.indexOfFirst { it.node.isCurrent }
-    val vertical = when {
-        row.nodes.size < 2 || current < 0 -> 0f
-        current == 0 -> 1f
-        else -> -1f
-    }
-    val alignment = BiasAlignment(horizontalBias = if (row.alignStart) -1f else 1f, verticalBias = vertical)
     Box(Modifier.fillMaxWidth()) {
         Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg)) {
             row.nodes.forEach { node ->
-                NodeRow(node.node, Winding[node.index % Winding.size]) { onNodeClick(node.node) }
+                NodeRow(node.node, Winding[node.index % Winding.size], companionAtStart = !row.alignStart) {
+                    onNodeClick(node.node)
+                }
             }
         }
         PathChallengeItem(
@@ -331,7 +331,7 @@ private fun ChallengeRows(row: PathRow.Challenge, onChallengeClick: () -> Unit, 
             onClick = onChallengeClick,
             modifier = Modifier
                 .matchParentSize()
-                .wrapContentSize(alignment)
+                .wrapContentSize(if (row.alignStart) Alignment.CenterStart else Alignment.CenterEnd)
                 .padding(horizontal = HitzSpacing.xl),
         )
     }
