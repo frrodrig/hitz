@@ -3,6 +3,7 @@ package eus.hitz.feature.path
 import eus.hitz.core.domain.path.LearningPath
 import eus.hitz.core.domain.path.NodeState
 import eus.hitz.core.domain.path.NodeType
+import eus.hitz.core.domain.path.PathChallenge
 import eus.hitz.core.domain.path.PathNode
 import eus.hitz.core.domain.path.PathSection
 import eus.hitz.core.domain.path.PathUnit
@@ -56,7 +57,14 @@ internal object PathTestData {
                             ),
                             node("u01-1", 3, NodeType.Story, t("Historia", "Istorioa"), NodeState.Locked),
                             node("u01-1", 4, NodeType.Review, t("Repaso", "Errepasoa"), NodeState.Locked),
-                            node("u01-1", 5, NodeType.Legendary, t("Legendario", "Legendarioa"), NodeState.Locked),
+                        ),
+                        challenge = PathChallenge(
+                            unitId = "u01-1",
+                            levelId = "u01-1.l5",
+                            title = t("Reto de estrellas", "Izarren erronka"),
+                            host = "ane",
+                            isAvailable = false,
+                            stars = 0,
                         ),
                     ),
                     PathUnit(

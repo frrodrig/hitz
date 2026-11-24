@@ -1,7 +1,19 @@
 package eus.hitz.core.domain.gamification
 
 /** What kind of session was played. */
-enum class ActivityKind { Lesson, Story, Review, Legendary }
+enum class ActivityKind {
+    Lesson,
+    Story,
+    Review,
+    Challenge,
+    ;
+
+    companion object {
+        /** A stored kind; the star challenge replaced the legendary level. */
+        fun fromStored(name: String): ActivityKind =
+            entries.firstOrNull { it.name == name } ?: if (name == "Legendary") Challenge else Review
+    }
+}
 
 /** A finished session. [epochDay] is the learner's local day; [activeMillis] its study time. */
 data class Activity(

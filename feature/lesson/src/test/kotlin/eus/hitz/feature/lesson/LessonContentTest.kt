@@ -80,9 +80,23 @@ class LessonContentTest {
     }
 
     @Test
-    fun legendaryLevelsShowTheMistakesLeft() {
+    fun starChallengesShowTheMistakesLeft() {
         show(LessonPreviewData.active.copy(mistakesLeft = 2))
         composeRule.onNodeWithContentDescription("Te quedan 2 fallos permitidos").assertIsDisplayed()
+    }
+
+    @Test
+    fun aFailedChallengeCanBeTriedAgain() {
+        show(LessonUiState.OutOfMistakes)
+        composeRule.onNodeWithText("Intentar otra vez").performClick()
+        assertThat(actions).containsExactly(LessonAction.Retry)
+    }
+
+    @Test
+    fun aFinishedChallengeShowsItsStars() {
+        show(LessonPreviewData.finished.copy(stars = 2))
+        composeRule.onNodeWithText("¡2 estrellas!").assertIsDisplayed()
+        composeRule.onNodeWithContentDescription("2 de 3 estrellas").assertIsDisplayed()
     }
 
     @Test

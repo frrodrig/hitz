@@ -59,6 +59,8 @@ class PathViewModelTest {
 
         override fun observeCompletions(): Flow<Map<String, Long>> = completed.map { ids -> ids.associateWith { 0L } }
 
+        override fun observeBestAccuracy(): Flow<Map<String, Float>> = completed.map { ids -> ids.associateWith { 1f } }
+
         override suspend fun recordCompletion(
             unitId: String,
             completionId: String,

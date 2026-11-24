@@ -230,13 +230,13 @@ private val features = listOf(
         R.string.feature_onboarding_how_lessons_body
     ),
     Feature(HitzIcons.Book, R.string.feature_onboarding_how_words_title, R.string.feature_onboarding_how_words_body),
-    Feature(HitzIcons.Star, R.string.feature_onboarding_how_goal_title, R.string.feature_onboarding_how_goal_body),
+    Feature(HitzIcons.Check, R.string.feature_onboarding_how_goal_title, R.string.feature_onboarding_how_goal_body),
     Feature(
-        HitzIcons.Trophy,
+        HitzIcons.Star,
         R.string.feature_onboarding_how_review_title,
         R.string.feature_onboarding_how_review_body
     ),
-    Feature(HitzIcons.Bolt, R.string.feature_onboarding_how_score_title, R.string.feature_onboarding_how_score_body),
+    Feature(HitzIcons.Level, R.string.feature_onboarding_how_score_title, R.string.feature_onboarding_how_score_body),
 )
 
 @Composable

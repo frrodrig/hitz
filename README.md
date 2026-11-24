@@ -54,8 +54,9 @@ trikitilari, **Mikel** the aizkolari, **Maite** the amona and **Unai** the pelot
   Basque voices of HiTZ – Aholab (EHU); playable slowly too.
 - **Practice**: a personal review of the words and structures you get wrong (spaced repetition),
   listening and speaking practice, and a review of every unit you have started.
-- **Motivation without pressure**: a daily goal in minutes, achievements and a score on the CEFR
-  A1 scale (0–29). No lives, no streaks to lose, no ads, no account.
+- **Motivation without pressure**: a daily goal in minutes, achievements, a score on the CEFR
+  A1 scale (0–29) and a star challenge in every unit: 30 hard questions, one to three stars. No
+  lives, no streaks to lose, no ads, no account.
 - **Built with care**: Material 3 Expressive, light and dark themes, TalkBack, large fonts and
   tablets; interface in Spanish and Basque.
 - **Private**: everything stays on the phone. The only network request is a daily check for a new

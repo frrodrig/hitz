@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import eus.hitz.core.domain.audio.SoundEffect
+import eus.hitz.core.domain.challenge.ChallengeRules
 import eus.hitz.core.domain.gamification.ActivityKind
 import eus.hitz.core.domain.gamification.DailyGoalRules
 import eus.hitz.core.domain.lesson.AnswerChecker
@@ -80,6 +81,11 @@ class LessonViewModel @Inject constructor(
     private var soundEffects = true
 
     init {
+        load()
+    }
+
+    /** Plans the session and shows its first exercise. */
+    private fun load() {
         viewModelScope.launch {
             runCatching {
                 val preferences = settings.settings.first()
@@ -104,7 +110,7 @@ class LessonViewModel @Inject constructor(
                     lessonId = plan.sessionId,
                     exerciseIds = playable.map { it.id },
                     mistakesAllowed = plan.mistakesAllowed,
-                    retries = placementTest == null,
+                    retries = placementTest == null && plan.retries,
                 )
                 lastStepAt = clock.now()
                 showCurrent()
@@ -137,6 +143,7 @@ class LessonViewModel @Inject constructor(
             LessonAction.Check -> check()
             LessonAction.Continue -> next()
             LessonAction.RequestQuit, LessonAction.DismissQuit, LessonAction.ConfirmQuit -> quit(action)
+            LessonAction.Retry -> retry()
         }
     }
 
@@ -154,6 +161,15 @@ class LessonViewModel @Inject constructor(
             LessonAction.DismissQuit -> updateActive { it.copy(showQuitDialog = false) }
             else -> close()
         }
+    }
+
+    /** A failed star challenge, already saved, starts again with a new draw of exercises. */
+    private fun retry() {
+        if (_state.value != LessonUiState.OutOfMistakes) return
+        _state.value = LessonUiState.Loading
+        activeMillis = 0L
+        skipSpeaking = false
+        load()
     }
 
     override fun onCleared() {
@@ -330,7 +346,11 @@ class LessonViewModel @Inject constructor(
         _state.value = when {
             session.isOutOfMistakes -> LessonUiState.OutOfMistakes
             current == null && test != null -> placementResult(test, session.result())
-            current == null -> LessonUiState.Finished(session.result(), activeMinutes = activeMinutes())
+            current == null -> LessonUiState.Finished(
+                result = session.result(),
+                activeMinutes = activeMinutes(),
+                stars = if (kind == ActivityKind.Challenge) ChallengeRules.stars(session.mistakes.size) else null,
+            )
             else -> LessonUiState.Active(
                 progress = session.progress,
                 mistakesLeft = session.mistakesLeft,

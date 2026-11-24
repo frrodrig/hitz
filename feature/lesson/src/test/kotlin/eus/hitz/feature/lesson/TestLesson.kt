@@ -33,7 +33,7 @@ internal object TestLesson {
     const val UNIT = "u01-1"
     const val LEVEL = "u01-1.l1"
     const val LESSON = "u01-1.l1.s1"
-    const val LEGENDARY = "u01-1.l9"
+    const val CHALLENGE = "u01-1.l9"
     const val SECTION = "s1"
 
     val wordBank = Exercise.TranslateWordBank(
@@ -79,6 +79,9 @@ internal object TestLesson {
         correct = 0,
     )
     val trueFalse = Exercise.ReadTrueFalse("$LESSON.e11", "Egun on! Ni Jon naiz.", "Jon saluda.", answer = true)
+
+    /** Three true statements, for star challenges. */
+    val statements = (1..3).map { trueFalse.copy(id = "$LESSON.t$it") }
     val order = Exercise.OrderSentence("$LESSON.e12", "Zu Mikel zara?", "¿Tú eres Mikel?")
     val wordIntro = Exercise.WordIntro("$LESSON.e13", "kaixo", "hola", image = "greeting.webp")
     val glossary = Glossary(entries = mapOf("kaixo" to Gloss("hola")))
@@ -95,7 +98,7 @@ internal object TestLesson {
             guidebook = Guidebook(emptyList()),
             levels = listOf(
                 Level.Lessons(LEVEL, text, listOf(Lesson(LESSON, exercises.toList()))),
-                Level.Legendary(LEGENDARY, text),
+                Level.Challenge(CHALLENGE, text, host = "unai"),
             ),
         )
         return object : CourseRepository {
@@ -116,6 +119,8 @@ internal class FakeProgressRepository : ProgressRepository {
     override fun observeCompleted(): Flow<Set<String>> = flowOf(completed)
 
     override fun observeCompletions(): Flow<Map<String, Long>> = flowOf(completed.associateWith { 0L })
+
+    override fun observeBestAccuracy(): Flow<Map<String, Float>> = flowOf(completed.associateWith { 1f })
 
     override suspend fun recordCompletion(unitId: String, completionId: String, accuracy: Float, completedAt: Long) {
         completed += completionId

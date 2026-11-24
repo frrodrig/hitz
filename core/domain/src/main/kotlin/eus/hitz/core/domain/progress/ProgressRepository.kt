@@ -22,13 +22,19 @@ data class MistakeStats(
 
 /**
  * Local learning progress. A *completion id* is a lesson id for authored lessons, or a level id for
- * generated levels (review, legendary) and stories.
+ * generated levels (review, star challenge) and stories.
  */
 interface ProgressRepository {
     fun observeCompleted(): Flow<Set<String>>
 
     /** Every completion id with the time it was first completed. */
     fun observeCompletions(): Flow<Map<String, Long>>
+
+    /**
+     * Every completion id with its best accuracy, from 0 to 1. A star challenge stores its stars
+     * there (see [eus.hitz.core.domain.challenge.ChallengeRules.storedAccuracy]).
+     */
+    fun observeBestAccuracy(): Flow<Map<String, Float>>
 
     suspend fun recordCompletion(unitId: String, completionId: String, accuracy: Float, completedAt: Long)
 

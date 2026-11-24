@@ -18,7 +18,7 @@ sealed interface LessonUiState {
     @Immutable
     data class Active(
         val progress: Float,
-        /** Wrong answers still allowed (legendary levels); null when there is no limit. */
+        /** Wrong answers still allowed (star challenges); null when there is no limit. */
         val mistakesLeft: Int?,
         val exercise: ExerciseUi,
         val feedback: FeedbackUi? = null,
@@ -29,15 +29,18 @@ sealed interface LessonUiState {
         val canCheck: Boolean get() = feedback == null && exercise.hasAnswer
     }
 
-    /** [reward] arrives once the session is saved. */
-    /** [activeMinutes]: time spent on the session, as counted for the daily goal. */
+    /**
+     * [reward] arrives once the session is saved. [activeMinutes]: time spent on the session, as
+     * counted for the daily goal. [stars]: what a star challenge earned; null for other sessions.
+     */
     data class Finished(
         val result: LessonResult,
         val reward: RewardUi? = null,
         val activeMinutes: Int = 0,
+        val stars: Int? = null,
     ) : LessonUiState
 
-    /** A legendary level ended by going over the mistakes allowed. */
+    /** A star challenge ended by its third mistake: it can be tried again. */
     data object OutOfMistakes : LessonUiState
 
     /**
@@ -303,6 +306,9 @@ sealed interface LessonAction {
     data object DismissQuit : LessonAction
 
     data object ConfirmQuit : LessonAction
+
+    /** Starts a failed star challenge again, with a new set of exercises. */
+    data object Retry : LessonAction
 }
 
 /** One-off events for the screen. */

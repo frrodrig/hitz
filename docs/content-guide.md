@@ -54,14 +54,15 @@ Course ─ Section ─ Unit (guidebook) ─ Level ─ Lesson ─ Exercise
 |---|---|---|
 | Section | `s1` | Groups three textbook units. |
 | Unit | `u01-1` | `u<textbook unit>-<half>`; file `units/u01-1.json`. `bookUnit` must match. |
-| Level | `u01-1.l1` | `lesson`, `story`, `review` or `legendary`. |
+| Level | `u01-1.l1` | `lesson`, `story`, `review` or `challenge`. |
 | Lesson | `u01-1.l1.s1` | 10–15 exercises in real content. |
 | Exercise | `u01-1.l1.s1.e01` | Ids are unique and always nested in their parent's id. |
 | Story | `u01-1.l3.story` | Inside a `story` level. |
 
-`review` and `legendary` levels carry no exercises: the app builds them at run time from the
+`review` and `challenge` levels carry no exercises: the app builds them at run time from the
 unit's exercises and the learner's mistakes (spaced repetition). Stories are required to move on
-along the path; legendary levels are optional.
+along the path; star challenges are optional. A `challenge` names its `host`, the cast member who
+presents it beside the path (`ane`, `mikel`, `maite` or `unai`, chosen by the unit's theme).
 
 A story is a short dialogue: `lines[{speaker, eu, es}]` and `questions[{afterLine, prompt,
 options, correct}]`, where `afterLine` is the 0-based line after which the question appears.
@@ -116,7 +117,7 @@ form of the forms tables, which is learnt as such (`naiz` = "soy / estoy", not `
   and typing, and speaking (`STAGES` in `build_content.py`).
 - **Hints.** `glossary.json` maps every word and multi-word lemma of the course to its Spanish
   (and its lemma when inflected). In the app, Basque prompts, chat messages and story lines
-  underline the words with a hint; tapping one shows its meaning. Legendary levels have no hints.
+  underline the words with a hint; tapping one shows its meaning. Star challenges have no hints.
 
 - **Unit introduction.** Each unit JSON has `keyWords`: the first eight `core` lemmas of its
   syllabus (`vocabulary.csv` order), with their Spanish and picture. The app shows them, with the
@@ -249,7 +250,7 @@ decides the exercise types:
 - `structures` on a lesson tags all its exercises; `vocabulary` is worked out from the syllabus.
 - Levels: three lesson levels (vocabulary, grammar, communicative use), each with three lessons of
   10–15 exercises; then a `story` (lines as `Speaker | Basque = Spanish`, comprehension questions
-  in Spanish), a `review` and a `legendary` level. The last unit of each section also gets a
+  in Spanish), a `review` and a `challenge` (`- type: challenge` with `host: <member>`). The last unit of each section also gets a
   section review, added by the script.
 - Quote a YAML string that contains `: ` or ` #`, or starts with `[ { " ' * & ! % @`. Never put a
   gap inside a multi-word expression (`egun ___`): the validator checks options on their own.

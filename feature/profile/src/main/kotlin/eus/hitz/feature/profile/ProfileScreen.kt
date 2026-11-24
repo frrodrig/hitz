@@ -149,6 +149,16 @@ internal fun ProfileContent(
                 item(key = "daily-goal") { DailyGoalCard(state.player) }
                 item(key = "goal-choice") { GoalChoice(state.settings.dailyGoalMinutes, onGoalChange) }
                 sectionTitle(R.string.feature_profile_achievements)
+                item(key = "stars") {
+                    StatCard(
+                        icon = HitzIcons.Star,
+                        value = stringResource(R.string.feature_profile_stars_value, state.stars, state.maxStars),
+                        label = stringResource(R.string.feature_profile_stars),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = HitzSpacing.lg),
+                    )
+                }
                 item(key = "achievements") {
                     Group(state.player.achievements) { achievement, shape -> AchievementRow(achievement, shape) }
                 }
@@ -281,7 +291,7 @@ private fun DailyGoalCard(player: PlayerSummary) {
             }
             Row(horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
                 StatCard(
-                    icon = HitzIcons.Star,
+                    icon = HitzIcons.Check,
                     value = player.goalDays.toString(),
                     label = stringResource(R.string.feature_profile_goal_days),
                     modifier = Modifier.weight(1f),
@@ -434,6 +444,7 @@ private fun AchievementRow(progress: AchievementProgress, shape: Shape) {
             AchievementType.Lessons -> R.string.feature_profile_achievement_lessons
             AchievementType.Perfect -> R.string.feature_profile_achievement_perfect
             AchievementType.Stories -> R.string.feature_profile_achievement_stories
+            AchievementType.ThreeStars -> R.string.feature_profile_achievement_three_stars
         },
     )
     val next = progress.nextTarget
@@ -527,9 +538,12 @@ internal object ProfilePreviewData {
                 AchievementProgress(AchievementType.Lessons, 31),
                 AchievementProgress(AchievementType.Perfect, 12),
                 AchievementProgress(AchievementType.Stories, 3),
+                AchievementProgress(AchievementType.ThreeStars, 2),
             ),
         ),
         settings = UserSettings(speakingEnabled = true, reminderEnabled = false, dailyGoalMinutes = 10),
         score = ScorePreviewData.score,
+        stars = 11,
+        maxStars = 72,
     )
 }

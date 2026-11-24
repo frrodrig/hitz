@@ -137,13 +137,25 @@ class BuildContentTest(unittest.TestCase):
     def test_the_last_unit_of_a_section_gets_a_section_review(self) -> None:
         source = {
             "id": "u01-2", "section": "s1", "bookUnit": 1, "title": {}, "goals": [], "guidebook": {"sections": []},
-            "levels": [{"type": "review"}, {"type": "legendary"}],
+            "levels": [{"type": "review"}, {"type": "challenge", "host": "ane"}],
         }
         built = bc.build_unit(source, section_last=True)
         self.assertEqual(built["levels"][-1], {
             "id": "u01-2.l3", "type": "review", "title": bc.DEFAULT_TITLES["section_review"], "scope": "section",
         })
         self.assertEqual(len(bc.build_unit(source, section_last=False)["levels"]), 2)
+
+    def test_a_star_challenge_needs_a_host_from_the_cast(self) -> None:
+        source = {
+            "id": "u01-1", "section": "s1", "bookUnit": 1, "title": {}, "goals": [], "guidebook": {"sections": []},
+            "levels": [{"type": "challenge", "host": "mikel"}],
+        }
+        self.assertEqual(bc.build_unit(source, section_last=False)["levels"], [{
+            "id": "u01-1.l1", "type": "challenge", "title": bc.DEFAULT_TITLES["challenge"], "host": "mikel",
+        }])
+        source["levels"] = [{"type": "challenge", "host": "iker"}]
+        with self.assertRaises(bc.SourceError):
+            bc.build_unit(source, section_last=False)
 
     def test_the_build_is_deterministic_and_current(self) -> None:
         first = bc.build()

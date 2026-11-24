@@ -86,7 +86,7 @@ correct / incorrect / finished sounds, with haptic feedback (`HapticFeedbackType
 
 **Hints**: `CourseRepository.getGlossary` loads `glossary.json`; `Glossary.segment` (`core:model`)
 splits a Basque text into runs, matching multi-word expressions first. `SessionPlan` carries the
-glossary (none for legendary levels) and `LessonContent` provides it through `LocalGlossary`.
+glossary (none for star challenges) and `LessonContent` provides it through `LocalGlossary`.
 `LanguageText(hints = true)` turns hinted words into `LinkAnnotation`s with a dotted underline, so
 TalkBack exposes them as links, and shows the meaning in a bubble (a polite live region) below.
 
@@ -97,21 +97,29 @@ question. Finishing records the story level as completed.
 ## Learning path and progress
 
 - **Progress** is stored in Room (`HitzDatabase`, `core:data`): `completions` (a lesson id, or the
-  level id of a story, review or legendary level, with best first-try accuracy) and `mistakes` with
+  level id of a story, review or star challenge, with best first-try accuracy, or a challenge's best
+  stars as a share of 3) and `mistakes` with
   `mistake_tags` (`lemma` / `structure`). Room schemas are exported to `core/data/schemas/` and
   committed by the screenshot-recording workflow.
 - **Path rules** (`LearningPathBuilder`, pure Kotlin): progression is linear over the required
   levels (lessons, stories, unit and section reviews); a lesson level is complete when all its lessons are;
-  legendary levels are optional and never block. Exactly one node is *current*.
+  star challenges are not nodes and never block. Exactly one node is *current*.
+- **Star challenges** (`ChallengeRules`, `core:domain`): each unit has one (`challenge` level, with
+  a `host` from the cast), shown beside the path halfway through the unit (`PathChallengeItem`) and
+  available once the unit's levels are completed (a section review closing the unit aside). It
+  plays 30 exercises once each, with no hints: up to 10 the learner has got wrong most, then the
+  hardest kinds (typing and listening first, at most 8 of a type; no match pairs, speaking or new
+  word cards). No mistakes give 3 stars, one 2, two 1; the third ends it, to try again with a new
+  draw. The completion keeps the best stars (stored accuracy = stars / 3); a unit's former
+  legendary level had the same level id and reads as 3 stars.
 - **Sessions** (`PlanSessionUseCase`): lesson levels play the next lesson; the **review** picks the
   12 exercises with the highest mistake score (3 × mistakes on the exercise + mistakes on its
   lemmas + mistakes on its structures) from its unit, or from every unit of the section for a
   **section review** (`scope: section`, closing each section), so spaced repetition follows the
-  learner's weak words and grammar; the **legendary** level plays every unit exercise shuffled,
-  allowing 3 mistakes.
+  learner's weak words and grammar; the **star challenge** is described above.
   `RecordSessionUseCase` saves mistakes always and the completion only when the session is finished.
 - `feature:path` shows sections, unit headers with the guidebook, and nodes whose Material
-  expressive shape depends on the level type (lesson, story, review, legendary).
+  expressive shape depends on the level type (lesson, story, review), and each unit's star challenge.
 - **Unit introduction** (`UnitIntroRoute`, `feature:path`): the first time a learner opens a lesson
   of a unit, the path shows what the unit teaches first: its goals, its key words (`keyWords` in the
   unit JSON: the first core lemmas of the syllabus, with picture and audio `<unit>.kw<i>`) and the
@@ -146,7 +154,7 @@ question. Finishing records the story level as completed.
   screen): a learner who knows some Basque takes one test per section, in order. A test asks two
   exercises of each unit of the section, from its later lesson levels (no new word cards, no
   speaking), with no hints and no second chances. 80 % right skips the section: every
-  required level of its units is recorded as completed (legendary levels stay optional), and the
+  required level of its units is recorded as completed (star challenges stay optional), and the
   learner can try the next section or start learning. Placement tests do not count towards the daily goal.
 
 ## Accessibility and adaptive layout
@@ -172,8 +180,8 @@ tables for XP, streaks, hearts, gems and leagues). Days follow the learner's loc
 | Piece | Rules |
 |---|---|
 | Daily goal (`DailyGoalRules`) | Active minutes a day: 5, 10 (default), 15 or 20, chosen in the introduction and the profile. Each step of a lesson or story (answer, continue, tap) adds the time since the previous one, up to 1 minute, so idle time does not count. Unfinished sessions count too. Practice can go over 100 %. Changing the goal applies to today, not to past days. |
-| Mistakes | Lessons and reviews allow any number of mistakes (they come back at the end). Legendary levels allow 3: the 4th ends the level, not completed. |
-| Achievements (`Achievements`) | Days with the goal met (3/7/30/100, not necessarily in a row), study minutes, lessons, perfect sessions, stories; 4 tiers each, shown as badges in the profile. |
+| Mistakes | Lessons and reviews allow any number of mistakes (they come back at the end). Star challenges allow 2: the 3rd ends the challenge, not completed. |
+| Achievements (`Achievements`) | Days with the goal met (3/7/30/100, not necessarily in a row), study minutes, lessons, perfect sessions, stories, star challenges with three stars; 4 tiers each, shown as badges in the profile, which also shows the stars earned. |
 
 - `RecordSessionUseCase` saves mistakes, the completion and the study time
   (`RecordStudyTimeUseCase`); `CompleteSessionUseCase` also records the activity and returns a
@@ -192,7 +200,7 @@ The profile shows a score on a CEFR-aligned scale: 0 to 29 covers A1, so finishi
 gives 29 (`ScoreRules`, `ObserveScoreUseCase`, `eus.hitz.core.domain.score`).
 
 - Every *required* step counts the same: each lesson of a lesson level, each story and each review
-  (legendary levels are optional practice). Score = ⌊29 × steps done / steps⌋; the bar shows the
+  (star challenges are optional practice). Score = ⌊29 × steps done / steps⌋; the bar shows the
   way to the next point.
 - Bands: 0–9 first steps, 10–19 solid basics, 20–29 A1 within reach, each with a short
   description.

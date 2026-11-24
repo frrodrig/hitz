@@ -1,5 +1,6 @@
 package eus.hitz.core.domain.session
 
+import eus.hitz.core.domain.challenge.ChallengeRules
 import eus.hitz.core.domain.content.CourseRepository
 import eus.hitz.core.domain.gamification.ActivityKind
 import eus.hitz.core.domain.practice.PracticeMode
@@ -20,7 +21,7 @@ import kotlin.random.Random
 
 /**
  * What to play: [sessionId] is recorded as completed when the learner finishes (a lesson id, or the
- * level id of a generated review or legendary level).
+ * level id of a generated review or star challenge).
  */
 data class SessionPlan(
     val sessionId: String,
@@ -28,8 +29,10 @@ data class SessionPlan(
     val kind: ActivityKind,
     /** Wrong answers allowed before the session ends unfinished; null for no limit. */
     val mistakesAllowed: Int? = null,
-    /** Word hints for the session; none in legendary levels, which are played without help. */
+    /** Word hints for the session; none in star challenges, which are played without help. */
     val glossary: Glossary? = null,
+    /** Whether a wrong answer is asked again at the end; star challenges ask each exercise once. */
+    val retries: Boolean = true,
 )
 
 /**
@@ -38,8 +41,8 @@ data class SessionPlan(
  * * Lesson levels play the requested lesson.
  * * Reviews pick the unit exercises the learner struggles with most (spaced repetition by
  *   exercise, word and grammar structure), topped up with the rest.
- * * Legendary levels play every exercise of the unit, shuffled, allowing only
- *   [LEGENDARY_MISTAKES] wrong answers.
+ * * Star challenges play the unit's hardest exercises once each, with no hints, allowing
+ *   [ChallengeRules.MISTAKES_ALLOWED] wrong answers (see [ChallengeRules]).
  */
 class PlanSessionUseCase @Inject constructor(
     private val courses: CourseRepository,
@@ -81,15 +84,16 @@ class PlanSessionUseCase @Inject constructor(
                     ActivityKind.Review,
                 )
             }
-            is Level.Legendary -> SessionPlan(
+            is Level.Challenge -> SessionPlan(
                 level.id,
-                unitExercises.shuffled(random),
-                ActivityKind.Legendary,
-                mistakesAllowed = LEGENDARY_MISTAKES,
+                ChallengeRules.select(unitExercises, progress.mistakeStats(unitId), random),
+                ActivityKind.Challenge,
+                mistakesAllowed = ChallengeRules.MISTAKES_ALLOWED,
+                retries = false,
             )
             is Level.StoryLevel -> throw UnsupportedOperationException("stories are played by the story player")
         }
-        return if (plan.kind == ActivityKind.Legendary) plan else plan.copy(glossary = glossary)
+        return if (plan.kind == ActivityKind.Challenge) plan else plan.copy(glossary = glossary)
     }
 
     /**
@@ -138,8 +142,6 @@ class PlanSessionUseCase @Inject constructor(
             .filterNot { it is Exercise.WordIntro }
 
     companion object {
-        const val LEGENDARY_MISTAKES = 3
-
         /** Session ids of practice sessions start with this; they are not steps of the path. */
         const val PRACTICE_PREFIX = "practice"
 

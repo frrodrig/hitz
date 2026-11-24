@@ -61,7 +61,6 @@ private val NodeType.shape
         NodeType.Lesson -> MaterialShapes.Cookie9Sided
         NodeType.Story -> MaterialShapes.Flower
         NodeType.Review -> MaterialShapes.Clover4Leaf
-        NodeType.Legendary -> MaterialShapes.SoftBurst
     }
 
 private val NodeType.icon: Int
@@ -69,7 +68,6 @@ private val NodeType.icon: Int
         NodeType.Lesson -> HitzIcons.Star
         NodeType.Story -> HitzIcons.Book
         NodeType.Review -> HitzIcons.Bolt
-        NodeType.Legendary -> HitzIcons.Trophy
     }
 
 @Composable
@@ -78,7 +76,6 @@ private fun NodeType.label(): String = stringResource(
         NodeType.Lesson -> R.string.feature_path_node_lesson
         NodeType.Story -> R.string.feature_path_node_story
         NodeType.Review -> R.string.feature_path_node_review
-        NodeType.Legendary -> R.string.feature_path_node_legendary
     },
 )
 
@@ -97,7 +94,7 @@ private fun nodeColors(node: PathNode): Pair<Color, Color> {
     return when {
         node.state == NodeState.Locked -> scheme.surfaceContainerHighest to scheme.onSurfaceVariant
         node.state == NodeState.Completed -> scheme.secondaryContainer to scheme.onSecondaryContainer
-        node.type == NodeType.Legendary || node.type == NodeType.Story -> scheme.tertiary to scheme.onTertiary
+        node.type == NodeType.Story -> scheme.tertiary to scheme.onTertiary
         else -> scheme.primary to scheme.onPrimary
     }
 }

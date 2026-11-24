@@ -6,7 +6,7 @@ import eus.hitz.core.model.content.Level
 
 /**
  * The score grows with the *required* steps of the course: every lesson of a lesson level, every
- * story and every review. Legendary levels are optional practice and add nothing. Points are
+ * story and every review. Star challenges are optional practice and add nothing. Points are
  * spread evenly, so each step is worth the same share of [MAX].
  */
 object ScoreRules {
@@ -21,7 +21,7 @@ object ScoreRules {
         when (level) {
             is Level.Lessons -> level.lessons.map { it.id }
             is Level.StoryLevel, is Level.Review -> listOf(level.id)
-            is Level.Legendary -> emptyList()
+            is Level.Challenge -> emptyList()
         }
     }
 

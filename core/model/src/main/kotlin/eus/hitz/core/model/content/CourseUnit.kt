@@ -83,12 +83,17 @@ sealed interface Level {
         val scope: ReviewScope = ReviewScope.Unit,
     ) : Level
 
-    /** Optional legendary level: a harder generated review with no hints. */
+    /**
+     * Optional star challenge, generated at run time: the unit's hardest exercises, with no hints.
+     * It sits beside the path, halfway through the unit, and unlocks when the unit is completed.
+     * [host] is the cast member who presents it (`ane`, `mikel`, `maite` or `unai`).
+     */
     @Serializable
-    @SerialName("legendary")
-    data class Legendary(
+    @SerialName("challenge")
+    data class Challenge(
         override val id: String,
         override val title: LocalizedText,
+        val host: String,
     ) : Level
 }
 

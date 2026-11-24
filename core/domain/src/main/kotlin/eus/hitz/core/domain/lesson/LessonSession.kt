@@ -15,7 +15,7 @@ data class LessonResult(
     val completed: Boolean,
     val exerciseCount: Int,
     val firstTryCorrect: Int,
-    /** Wrong answers still allowed when the session had a limit (legendary levels). */
+    /** Wrong answers still allowed when the session had a limit (star challenges). */
     val mistakesLeft: Int?,
     val mistakes: List<Mistake>,
 ) {

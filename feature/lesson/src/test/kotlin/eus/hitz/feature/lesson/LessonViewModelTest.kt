@@ -348,21 +348,47 @@ class LessonViewModelTest {
         assertThat(vm.active.mistakesLeft).isNull()
     }
 
+    /** Answers the current true-or-false statement, rightly or not. */
+    private fun LessonViewModel.answerStatement(right: Boolean) {
+        val choice = if (right) ExerciseUi.ReadTrueFalse.TRUE else ExerciseUi.ReadTrueFalse.FALSE
+        onAction(LessonAction.SelectOption(choice))
+        onAction(LessonAction.Check)
+        onAction(LessonAction.Continue)
+    }
+
     @Test
-    fun `a legendary level allows three mistakes`() {
-        val vm = viewModel(TestLesson.image, levelId = TestLesson.LEGENDARY)
-        assertThat(vm.active.mistakesLeft).isEqualTo(3)
-        repeat(3) {
-            vm.onAction(LessonAction.SelectOption(0))
-            vm.onAction(LessonAction.Check)
-            vm.onAction(LessonAction.Continue)
-        }
-        assertThat(vm.active.mistakesLeft).isEqualTo(0)
-        vm.onAction(LessonAction.SelectOption(0))
-        vm.onAction(LessonAction.Check)
-        vm.onAction(LessonAction.Continue)
+    fun `a star challenge asks each exercise once and earns a star per mistake avoided`() {
+        val vm = viewModel(*TestLesson.statements.toTypedArray(), levelId = TestLesson.CHALLENGE)
+        assertThat(vm.active.mistakesLeft).isEqualTo(2)
+        assertThat(vm.active.glossary).isNull()
+        vm.answerStatement(right = false)
+        assertThat(vm.active.mistakesLeft).isEqualTo(1)
+        vm.answerStatement(right = true)
+        vm.answerStatement(right = true)
+        val finished = vm.state.value as LessonUiState.Finished
+        assertThat(finished.stars).isEqualTo(2)
+        assertThat(progress.completed).containsExactly(TestLesson.CHALLENGE)
+    }
+
+    @Test
+    fun `the third mistake ends a star challenge, which can be tried again`() {
+        val vm = viewModel(*TestLesson.statements.toTypedArray(), levelId = TestLesson.CHALLENGE)
+        repeat(3) { vm.answerStatement(right = false) }
         assertThat(vm.state.value).isEqualTo(LessonUiState.OutOfMistakes)
         assertThat(progress.completed).isEmpty()
+        assertThat(progress.mistakes).hasSize(3)
+
+        vm.onAction(LessonAction.Retry)
+        assertThat(vm.active.mistakesLeft).isEqualTo(2)
+        repeat(3) { vm.answerStatement(right = true) }
+        assertThat((vm.state.value as LessonUiState.Finished).stars).isEqualTo(3)
+    }
+
+    @Test
+    fun `other sessions earn no stars`() {
+        val vm = viewModel(TestLesson.trueFalse)
+        vm.answerStatement(right = true)
+        assertThat((vm.state.value as LessonUiState.Finished).stars).isNull()
     }
 
     @Test

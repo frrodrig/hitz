@@ -54,6 +54,6 @@ internal class RoomGamificationRepository @Inject constructor(
 
     private companion object {
         fun ActivityEntity.toDomain() =
-            Activity(sessionId, ActivityKind.valueOf(kind), accuracy, perfect, activeMillis, completedAt, epochDay)
+            Activity(sessionId, ActivityKind.fromStored(kind), accuracy, perfect, activeMillis, completedAt, epochDay)
     }
 }

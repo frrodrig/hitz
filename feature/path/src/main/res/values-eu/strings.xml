@@ -12,7 +12,6 @@
     <string name="feature_path_node_lesson">Ikasgaia</string>
     <string name="feature_path_node_story">Istorioa</string>
     <string name="feature_path_node_review">Errepasoa</string>
-    <string name="feature_path_node_legendary">Maila legendarioa</string>
     <string name="feature_path_state_locked">blokeatuta</string>
     <string name="feature_path_state_available">eskuragarri</string>
     <string name="feature_path_state_completed">osatuta</string>
@@ -26,4 +25,7 @@
     <string name="feature_path_error">Ezin izan da ikastaroa kargatu.</string>
     <string name="feature_path_intro_words">Hitz nagusiak</string>
     <string name="feature_path_intro_grammar">Gramatika</string>
+    <string name="feature_path_challenge">Izarren erronka</string>
+    <string name="feature_path_challenge_locked">Osatu unitatea desblokeatzeko</string>
+    <string name="feature_path_challenge_description">%1$s unitateko izarren erronka: %3$d izarretatik %2$d</string>
 </resources>

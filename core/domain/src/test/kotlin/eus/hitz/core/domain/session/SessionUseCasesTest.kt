@@ -1,6 +1,7 @@
 package eus.hitz.core.domain.session
 
 import com.google.common.truth.Truth.assertThat
+import eus.hitz.core.domain.challenge.ChallengeRules
 import eus.hitz.core.domain.gamification.ActivityKind
 import eus.hitz.core.domain.gamification.CompleteSessionUseCase
 import eus.hitz.core.domain.gamification.RecordStudyTimeUseCase
@@ -54,16 +55,16 @@ class SessionUseCasesTest {
     }
 
     @Test
-    fun `new word cards stay in their lesson and legendary levels have no hints`() = runTest {
+    fun `new word cards stay in their lesson and star challenges have no hints`() = runTest {
         val lesson = plan("u01-1", "u01-1.l1", "u01-1.l1.s1")
         assertThat(lesson.exercises.first()).isInstanceOf(Exercise.WordIntro::class.java)
         assertThat(lesson.glossary).isNotNull()
 
         val review = plan("u01-1", "u01-1.l4", null, Random(1))
-        val legendary = plan("u01-1", "u01-1.l5", null, Random(1))
+        val challenge = plan("u01-1", "u01-1.l5", null, Random(1))
         assertThat(review.exercises.none { it is Exercise.WordIntro }).isTrue()
-        assertThat(legendary.exercises.none { it is Exercise.WordIntro }).isTrue()
-        assertThat(legendary.glossary).isNull()
+        assertThat(challenge.exercises.none { it is Exercise.WordIntro }).isTrue()
+        assertThat(challenge.glossary).isNull()
     }
 
     @Test
@@ -75,10 +76,33 @@ class SessionUseCasesTest {
     }
 
     @Test
-    fun `the legendary level plays every exercise allowing three mistakes`() = runTest {
+    fun `a star challenge asks each exercise once, allowing two mistakes`() = runTest {
         val session = plan("u01-1", "u01-1.l5", null, Random(1))
+        assertThat(session.kind).isEqualTo(ActivityKind.Challenge)
         assertThat(session.exercises).hasSize(3)
-        assertThat(session.mistakesAllowed).isEqualTo(PlanSessionUseCase.LEGENDARY_MISTAKES)
+        assertThat(session.mistakesAllowed).isEqualTo(ChallengeRules.MISTAKES_ALLOWED)
+        assertThat(session.retries).isFalse()
+    }
+
+    @Test
+    fun `a star challenge keeps its stars as the completion`() = runTest {
+        val mistake = Mistake("u01-1.l1.s1.e01", listOf("kaixo"), emptyList(), "a", "b")
+        record(42L)(
+            "u01-1",
+            "u01-1.l5",
+            LessonResult("u01-1.l5", true, 30, 29, 1, listOf(mistake)),
+            ActivityKind.Challenge,
+            activeMillis = 60_000,
+        )
+        assertThat(progress.accuracies["u01-1.l5"]).isEqualTo(2f / 3)
+        record(43L)(
+            "u01-1",
+            "u01-1.l5",
+            LessonResult("u01-1.l5", true, 30, 28, 0, listOf(mistake, mistake)),
+            ActivityKind.Challenge,
+            activeMillis = 60_000,
+        )
+        assertThat(progress.accuracies["u01-1.l5"]).isEqualTo(2f / 3)
     }
 
     @Test

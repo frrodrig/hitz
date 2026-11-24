@@ -9,11 +9,11 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 abstract class ProgressDao {
-    @Query("SELECT id FROM completions")
-    abstract fun observeCompletionIds(): Flow<List<String>>
-
     @Query("SELECT id AS `key`, firstCompletedAt AS time FROM completions")
     abstract fun observeCompletionTimes(): Flow<List<KeyTime>>
+
+    @Query("SELECT id AS `key`, bestAccuracy AS value FROM completions")
+    abstract fun observeBestAccuracy(): Flow<List<KeyValue>>
 
     @Query("SELECT * FROM completions WHERE id = :id")
     abstract suspend fun completion(id: String): CompletionEntity?

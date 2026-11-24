@@ -43,7 +43,7 @@ class PlacementUseCase @Inject constructor(
         return PlacementTest(sectionId, index + 1, exercises, sections.getOrNull(index + 1)?.id)
     }
 
-    /** Marks every required level of the section as completed (legendary levels stay optional). */
+    /** Marks every required level of the section as completed (star challenges stay optional). */
     suspend fun skipSection(
         sectionId: String,
         accuracy: Float,
@@ -70,7 +70,7 @@ class PlacementUseCase @Inject constructor(
         when (level) {
             is Level.Lessons -> level.lessons.map { it.id }
             is Level.StoryLevel, is Level.Review -> listOf(level.id)
-            is Level.Legendary -> emptyList()
+            is Level.Challenge -> emptyList()
         }
     }
 

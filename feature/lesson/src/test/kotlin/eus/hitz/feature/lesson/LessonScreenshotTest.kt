@@ -119,7 +119,10 @@ class LessonScreenshotTest {
     fun finishedOnTheWay() = capture("lesson_finished_on_the_way", LessonPreviewData.finishedOnTheWay)
 
     @Test
-    fun legendary() = capture("lesson_legendary", LessonPreviewData.active.copy(mistakesLeft = 2))
+    fun challenge() = capture("lesson_challenge", LessonPreviewData.active.copy(mistakesLeft = 1))
+
+    @Test
+    fun challengeFinished() = capture("lesson_challenge_finished", LessonPreviewData.finished.copy(stars = 3))
 
     @Test
     fun outOfMistakes() = capture("lesson_out_of_mistakes", LessonUiState.OutOfMistakes)
