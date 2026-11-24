@@ -117,9 +117,10 @@ failure.
   a branch changes the course, the **Voices** workflow regenerates the changed clips and opens a
   PR against that branch; merge it, or CI's audio check fails. Human recordings
   (`tools/audio/import_recordings.py`) take precedence over synthetic clips.
-- **Cast art** lives in `tools/design/art/cast/*.svg`; `data-motion` / `data-pivot` drive the
-  animation. Regenerate with `tools/design/cast_to_vector.py`, never edit the generated vectors or
-  `CastArt.kt`.
+- **Cast art** lives in `tools/design/art/cast/*.svg` and the star challenges' scenes in
+  `tools/design/art/scenes/<unit>.svg`; `data-motion` / `data-pivot` drive the animation. After
+  editing, run `tools/design/add_depth.py` (shading) and then `tools/design/cast_to_vector.py`;
+  never edit the generated vectors, `CastArt.kt` or `SceneArt.kt`.
 - **Exercise pictures** are drawn as code in `tools/design/illustrations/`
   (`make_illustrations.py`, needs `rsvg-convert`).
 
