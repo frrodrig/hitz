@@ -1,76 +1,102 @@
-# Hitz
+<p align="center">
+  <img src="docs/store/icon-512.png" alt="" width="112" height="112">
+</p>
 
-[![CI](https://github.com/frrodrig/hitz/actions/workflows/ci.yml/badge.svg)](https://github.com/frrodrig/hitz/actions/workflows/ci.yml)
+<h1 align="center">Hitz</h1>
 
-Android app for learning **Basque (euskara) from Spanish** at A1 level: a path of short lessons,
-spaced repetition, a daily goal in minutes and a score on the CEFR A1 scale (0–29). Four Basque
-friends talk to you along the way: **Ane** the trikitilari, **Mikel** the aizkolari, **Maite** the
-amona and **Unai** the pelotari.
+<p align="center">
+  <b>Learn Basque (euskara batua) from Spanish, from zero to A1.</b><br>
+  Short lessons, real Basque voices, no account and no ads. Works offline.
+</p>
 
-- Made for learning on your own from zero: a first-run introduction, an introduction to every
-  unit, a "new word" card before each word is used and tap hints on every Basque word. Learners
-  who already know some Basque can take a placement test to skip sections.
-- 100 % offline, no paid backend.
-- UI available in Spanish and Basque.
-- All course content is original, illustrations included (drawn as code in
-  `tools/design/illustrations/`). The syllabus follows the curricular order of the *Arian A1*
-  textbook (see [`docs/syllabus.md`](docs/syllabus.md)).
+<p align="center">
+  <a href="https://github.com/frrodrig/hitz/releases/latest"><img src="https://img.shields.io/github/v/release/frrodrig/hitz?label=download&color=385F97" alt="Latest release"></a>
+  <a href="https://github.com/frrodrig/hitz/actions/workflows/ci.yml"><img src="https://github.com/frrodrig/hitz/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <img src="https://img.shields.io/badge/Android-8.0%2B-2E7D6F" alt="Android 8.0+">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-B7791F" alt="Apache-2.0"></a>
+</p>
 
-## Status
+<p align="center">
+  <img src="docs/images/cast.png" alt="Ane with a trikitixa, Mikel with an axe, Maite with a book and Unai with a pelota and a txistera" width="640">
+</p>
 
-| Milestone | Scope | Status |
-|---|---|---|
-| M0 | Repo, build-logic and CI | ✅ |
-| M1 | Design system and theme | ✅ |
-| M2 | Content model and validator | ✅ |
-| M3 | Lesson engine and 4 exercise types | ✅ |
-| M4 | Learning path and progress | ✅ |
-| M5 | Remaining exercise types and stories | ✅ |
-| M6 | Gamification | ✅ |
-| M7 | Full A1 content | ✅ |
-| M8 | Audio, accessibility and polish | ✅ |
-| M9 | Release | ✅ |
+*Hitz* means "word" in Basque. Four Basque friends take you through the course: **Ane** the
+trikitilari, **Mikel** the aizkolari, **Maite** the amona and **Unai** the pelotari.
+
+## Screenshots
+
+<p align="center">
+  <img src="docs/images/screenshots/onboarding.png" alt="Welcome screen with the four friends" width="200">
+  <img src="docs/images/screenshots/path.png" alt="Learning path of unit 1.1" width="200">
+  <img src="docs/images/screenshots/lesson.png" alt="Translate a sentence with a word bank" width="200">
+  <img src="docs/images/screenshots/chat.png" alt="Complete a chat" width="200">
+</p>
+<p align="center">
+  <img src="docs/images/screenshots/finished.png" alt="Lesson finished, with first-try accuracy, time and daily goal" width="200">
+  <img src="docs/images/screenshots/practice.png" alt="Practice hub" width="200">
+  <img src="docs/images/screenshots/profile.png" alt="Profile with score and daily goal" width="200">
+  <img src="docs/images/screenshots/path-dark.png" alt="Learning path in dark theme" width="200">
+</p>
+
+## What's inside
+
+- **A full A1 course**: 4 sections, 24 units, 216 lessons, a story per unit and about 550 words,
+  in the curricular order of the *Arian A1* textbook (see [`docs/syllabus.md`](docs/syllabus.md)).
+  All texts, dialogues, exercises and illustrations are original.
+- **13 kinds of exercise**: translate with a word bank or by typing, choose the picture or the
+  meaning, match pairs, listen and tap, listen and type, fill the gap, complete a chat, read and
+  answer true or false, order the sentence, speak (optional) and "new word" cards. Answers are
+  checked tolerantly (capitals, accents, punctuation, small typos).
+- **Made for learning alone**: a first-run introduction, an introduction and a guide for every
+  unit, tap hints on every Basque word, and a placement test for those who already know some
+  Basque.
+- **Real Basque pronunciation**: every sentence of the course is bundled as audio, with the
+  Basque voices of HiTZ – Aholab (EHU); playable slowly too.
+- **Practice**: a personal review of the words and structures you get wrong (spaced repetition),
+  listening and speaking practice, and a review of every unit you have started.
+- **Motivation without pressure**: a daily goal in minutes, achievements and a score on the CEFR
+  A1 scale (0–29). No lives, no streaks to lose, no ads, no account.
+- **Built with care**: Material 3 Expressive, light and dark themes, TalkBack, large fonts and
+  tablets; interface in Spanish and Basque.
+- **Private**: everything stays on the phone. The only network request is a daily check for a new
+  version, which can be turned off.
 
 ## Install
 
-Download `hitz-<version>.apk` from [Releases](https://github.com/frrodrig/hitz/releases) and open
-it on an Android 8.0+ phone (allow installing from that source when asked). Each release also
-carries the `.aab` bundle for app stores. See [`CONTRIBUTING.md`](CONTRIBUTING.md#releases) for how
-releases are made.
+Download `hitz-<version>.apk` from the [latest release](https://github.com/frrodrig/hitz/releases/latest)
+and open it on an Android 8.0+ phone (allow installing from that source when asked). Once
+installed, the app tells you when a new version is out and downloads it for you.
 
-Once installed, the app checks GitHub Releases once a day and offers to download a newer version
-(it can be turned off in the profile).
+## Development
 
-## Building
-
-Requirements: JDK 17 and the Android SDK (API 37).
+Kotlin and Jetpack Compose (Material 3 Expressive), Clean Architecture with Hilt, Room, DataStore,
+type-safe Navigation and WorkManager. Course content is JSON validated by a schema; CI/CD runs on
+GitHub Actions. Requirements: JDK 17 and the Android SDK (API 37).
 
 ```bash
-./gradlew assembleDebug          # debug APK
-./gradlew detekt                 # style (detekt + ktlint rules)
-./gradlew lintDebug              # Android Lint
-./gradlew testDebugUnitTest      # unit tests
-./gradlew recordRoborazziDebug   # re-record reference screenshots
-python3 tools/syllabus_vocab.py  # regenerate the syllabus tables
-python3 tools/validate_content.py # validate course content (pip install -r tools/requirements.txt)
-python3 tools/design/make_illustrations.py # re-render the pictures (needs rsvg-convert)
+./gradlew assembleDebug           # debug APK
+./gradlew detekt                  # style (detekt + ktlint rules)
+./gradlew lintDebug               # Android Lint
+./gradlew testDebugUnitTest       # unit and screenshot tests
+pip install -r tools/requirements.txt
+python3 tools/validate_content.py # validate the course content
 ```
 
-Every PR produces a debug APK as an artifact of the **CI** workflow.
+Every PR gets a debug APK as an artifact of its **CI** run.
 
-## Documentation
+| Document | What it covers |
+|---|---|
+| [`docs/architecture.md`](docs/architecture.md) | Modules, layers, the lesson engine, progress, audio, updates, build and CI/CD |
+| [`docs/design-system.md`](docs/design-system.md) | Theme, cast, icons and components |
+| [`docs/content-guide.md`](docs/content-guide.md) | How course content and audio are written, validated and generated |
+| [`docs/syllabus.md`](docs/syllabus.md) | Units, goals, grammar and vocabulary |
+| [`docs/design/`](docs/design/README.md) | Design work: the Material 3 Expressive redesign boards |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Branches, commits, screenshots, audio and releases |
+| [`AGENTS.md`](AGENTS.md) | Guide for AI coding agents working on the repository |
 
-- [`docs/architecture.md`](docs/architecture.md): modules, layers and technical decisions.
-- [`docs/design-system.md`](docs/design-system.md): colours, type, icons and components.
-- [`docs/content-guide.md`](docs/content-guide.md): how content is written and validated.
-- [`docs/syllabus.md`](docs/syllabus.md): syllabus (units, goals, grammar and vocabulary).
-- [`CONTRIBUTING.md`](CONTRIBUTING.md): branches, commits and releases.
-
-## License
+## License and credits
 
 [Apache License 2.0](LICENSE), for both code and course content.
-
-### Credits
 
 The Basque voices (Maider and Antton) are by the **HiTZ Basque Center for Language Technology –
 Aholab Signal Processing Laboratory, University of the Basque Country (EHU)**, developed with

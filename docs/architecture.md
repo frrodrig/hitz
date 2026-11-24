@@ -72,9 +72,12 @@ the "new word" card:
   remaining speaking exercises of the session. Speaking can be turned off in the profile
   (`SettingsRepository`, Preferences DataStore), which leaves them out of every session.
 
-**Audio**: `AudioProvider` (`core:domain`) plays `assets/audio/<clip id>.ogg` and falls back to the
-system TTS (Basque if the engine has it, else a Spanish voice) when a clip is not recorded yet
-(`AndroidAudioProvider`, `core:data`); `slow = true` plays at 0.7×. `ExerciseClips` decides what
+**Audio**: `AudioProvider` (`core:domain`, `AndroidAudioProvider` in `core:data`) plays, in this
+order, a human recording (`assets/audio/<clip id>.ogg`), the bundled synthetic clip
+(`assets/audio/tts/<hash>.ogg`, looked up in `audio/tts/index.json`; Piper with the HiTZ – Aholab
+Basque voices, see `docs/content-guide.md`) and, only as a last resort, the system TTS (Basque if
+the engine has it, else a Spanish voice). A clip that cannot be played falls back to the next
+source instead of failing; `slow = true` plays at 0.7×. `ExerciseClips` decides what
 each exercise plays: the Basque prompt when it appears (listening, Basque prompts, meanings,
 speaking) and the Basque answer after checking (translations into Basque, ordering, gaps, chats).
 Story lines play as they appear. `SoundEffects` (`AndroidSoundEffects`, SoundPool) plays the

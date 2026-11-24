@@ -1,5 +1,8 @@
 # Contributing
 
+Coding agents (Claude Code, Codex, Copilot, Cursor…) read [`AGENTS.md`](AGENTS.md), which also
+works as a quick start for people: rules, repository map, commands and conventions.
+
 ## Branches and pull requests
 
 - `main` is protected: every change goes through a PR with green checks.
@@ -17,7 +20,8 @@ strings live in `values/` (Spanish, the default) and `values-eu/` (Basque).
 
 ## Releases
 
-1. Update `README.md` if the milestone status changed.
+1. Make sure `main` is green and the README screenshots are current
+   (`python3 tools/readme_images.py`).
 2. Tag `main` with `vMAJOR.MINOR.PATCH` and push the tag: `git tag v0.1.0 && git push origin v0.1.0`
    (or, without git push, create the tag with the API:
    `gh api repos/frrodrig/hitz/git/refs -f ref=refs/tags/v0.1.0 -f sha=$(git rev-parse origin/main)`).
@@ -50,8 +54,18 @@ Keystores are never committed (`*.jks` and `*.keystore` are git-ignored).
 ## Screenshot tests
 
 `ui-tests.yml` verifies the Roborazzi screenshots every night. When a UI change is intentional,
-run the workflow manually with **record_screenshots** enabled: it re-records the references
-and opens a PR with them.
+run the workflow manually on your branch with **record_screenshots** enabled: it re-records the
+references and opens a PR with them against your branch. Review the images, merge that PR, then
+yours. The README shows a selection of these references; refresh it with
+`python3 tools/readme_images.py`.
+
+## Course audio
+
+The course audio is synthesised with Piper and the HiTZ – Aholab Basque voices. When a branch
+changes the course (`content/`, the course assets) or the voice generator, the **Voices** workflow
+regenerates only the clips that changed and opens a PR with them against that branch; CI's
+*Course audio up to date* step fails until it is merged. See
+[`docs/content-guide.md`](docs/content-guide.md#audio).
 
 ## Content
 
