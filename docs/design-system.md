@@ -19,24 +19,36 @@ one exists; Hitz wrappers only fix sizes, colours and accessibility semantics.
 
   | Member | Colour | Who | Appears in |
   |---|---|---|---|
-  | **Ane** | red | young *trikitilari* with a ponytail, a white *zapia* and a trikitixa | lesson prompts, unit introductions, the path, onboarding |
+  | **Ane** | red | young *trikitilari* with a ponytail, a white *zapia* and a trikitixa | lesson prompts, unit introductions, onboarding |
   | **Mikel** | blue | *aizkolari* with a beard, a *txapela* and an axe on his shoulder | the end of a lesson, stories finished, placement passed |
   | **Maite** | ochre | *amona* with a bun, round glasses and a book | mistakes, errors, hints |
   | **Unai** | sea green | teenage *pelotari* with a headband, a pelota and a txistera | practice and, later, leagues and quests |
 
   They share one construction (round head over a capsule body, flat shapes with white cut-out
-  lines, 240 × 280 canvas) and four poses (`MascotPose`): *Hola* is each one's own loop (Ane
+  lines and a little volume, 240 × 280 canvas) and four poses (`MascotPose`): *Hola* is each one's own loop (Ane
   plays the trikitixa, Mikel waves, Maite turns a page, Unai bounces the pelota); *Bien* jumps
   with an arm up among sparkles; *Ups* puts a hand to the head, shakes it and sweats; *Piensa*
   holds the chin, sways and thinks in bubbles. Everyone keeps their own object and gestures with
   the free hand, with a white outline so a sleeve reads over a shirt of the same colour.
+- **Flat with depth:** every large shape has a shade (the shape minus a copy moved up and left,
+  in its colour mixed with a warm dark brown) and a faint rim light, as if lit from the upper
+  left. `tools/design/add_depth.py` adds them to the drawings as clip groups after each shape and
+  rebuilds them on every run, so the flat shapes stay the ones to edit (`data-depth="none"` opts
+  a shape out, `data-depth="dx dy"` sets its offset); its `--check` runs in the tools tests.
+- **Star challenge scenes:** each unit's challenge shows a scene of its theme in a circle
+  (`HitzScene`): a place, the unit's host and a prop with its own loop (steam from a pot, a
+  bottle into the bin, a pelota on the frontón…). They are SVGs in
+  `tools/design/art/scenes/<unit>.svg`, 200 × 200, with the same motions; `<g data-host="x y
+  height" />` marks where the host stands, so shapes before it are drawn behind them and the rest
+  in front. Locked, the scene is grey and still.
 - **Cast art pipeline:** the 16 drawings are SVGs in `tools/design/art/cast/<member>-<pose>.svg`.
   A group with `data-motion` moves on its own: the value names a `Motion` in `CastMotion.kt`
   (keyframes for translation, rotation, scale and alpha, a period and a delay) and `data-pivot`
   is the point it turns around. `tools/design/cast_to_vector.py` writes one vector for the whole
   drawing (shown with reduced motion or `animated = false`), one vector per layer (still shapes
   merged, each animated group its own layer) and `CastArt.kt`, the layer tree with motions and
-  pivots; `--check` (run by the tools tests in CI) fails when they are out of date.
+  pivots; it does the same for the scenes (`SceneArt.kt`); `--check` (run by the tools tests in
+  CI) fails when they are out of date.
   `HitzMascot` stacks the layers and moves each with `graphicsLayer` from one frame clock read in
   the draw phase, so nothing recomposes per frame and a paused clock draws the pose at rest. The
   design canvas plays the same keyframes as CSS.

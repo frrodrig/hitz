@@ -1,0 +1,57 @@
+<!-- Maite en casa, junto a la ventana. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u10-2, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Maite en casa, junto a la ventana" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#F7E2C6" />
+  <g data-depth-generated="">
+    <clipPath id="u10-2-4">
+      <path d="M0,0 h200 v200 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u10-2-4)">
+      <path d="M-40 -40 H240 V240 H-40 Z M-10 -9 h200 v200 h-200 Z" fill-rule="evenodd" fill="#D3BEA6" />
+      <path d="M-40 -40 H240 V240 H-40 Z M2 3 h200 v200 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="164" width="200" height="36" fill="#B98552" />
+  <g data-depth-generated="">
+    <clipPath id="u10-2-3">
+      <path d="M0,164 h200 v36 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u10-2-3)">
+      <path d="M-40 124 H240 V240 H-40 Z M-4.32 160.11 h200 v36 h-200 Z" fill-rule="evenodd" fill="#996D43" />
+      <path d="M-40 124 H240 V240 H-40 Z M2 167 h200 v36 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="160" width="200" height="6" fill="#8A5A30" />
+  <rect x="118" y="40" width="70" height="80" fill="#DDEFF5" stroke="#FFFFFF" stroke-width="5" />
+  <path d="M153 40 V120 M118 80 H188" stroke="#FFFFFF" stroke-width="4" />
+  <g data-motion="Flutter" data-pivot="126 40">
+    <path d="M114 38 H138 Q132 80 140 122 H114 Z" fill="#D7263D" />
+    <g data-depth-generated="">
+      <clipPath id="u10-2-2">
+        <path d="M114 38 H138 Q132 80 140 122 H114 Z" />
+      </clipPath>
+      <g clip-path="url(#u10-2-2)">
+        <path d="M74 -2 H180 V162 H74 Z M110 34.4 H134 Q128 76.4 136 118.4 H110 Z" fill-rule="evenodd" fill="#AF2333" />
+        <path d="M74 -2 H180 V162 H74 Z M116 41 H140 Q134 83 142 125 H116 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+      </g>
+    </g>
+  </g>
+  <g data-motion="Flutter" data-pivot="180 40">
+    <path d="M192 38 H168 Q174 80 166 122 H192 Z" fill="#D7263D" />
+    <g data-depth-generated="">
+      <clipPath id="u10-2-1">
+        <path d="M192 38 H168 Q174 80 166 122 H192 Z" />
+      </clipPath>
+      <g clip-path="url(#u10-2-1)">
+        <path d="M126 -2 H232 V162 H126 Z M188 34.4 H164 Q170 76.4 162 118.4 H188 Z" fill-rule="evenodd" fill="#AF2333" />
+        <path d="M126 -2 H232 V162 H126 Z M194 41 H170 Q176 83 168 125 H194 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+      </g>
+    </g>
+  </g>
+  <g data-host="2 50 132" />
+  <rect x="120" y="120" width="66" height="14" rx="3" fill="#A0462F" />
+  <circle cx="132" cy="116" r="6" fill="#D7263D" />
+  <circle cx="153" cy="114" r="7" fill="#E9A21E" />
+  <circle cx="174" cy="116" r="6" fill="#D7263D" />
+</svg>

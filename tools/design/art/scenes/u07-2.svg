@@ -1,0 +1,54 @@
+<!-- Ane con el calendario de la semana. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u07-2, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ane con el calendario de la semana" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#F7E2C6" />
+  <g data-depth-generated="">
+    <clipPath id="u07-2-3">
+      <path d="M0,0 h200 v200 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u07-2-3)">
+      <path d="M-40 -40 H240 V240 H-40 Z M-10 -9 h200 v200 h-200 Z" fill-rule="evenodd" fill="#D3BEA6" />
+      <path d="M-40 -40 H240 V240 H-40 Z M2 3 h200 v200 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="164" width="200" height="36" fill="#B98552" />
+  <g data-depth-generated="">
+    <clipPath id="u07-2-2">
+      <path d="M0,164 h200 v36 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u07-2-2)">
+      <path d="M-40 124 H240 V240 H-40 Z M-4.32 160.11 h200 v36 h-200 Z" fill-rule="evenodd" fill="#996D43" />
+      <path d="M-40 124 H240 V240 H-40 Z M2 167 h200 v36 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="160" width="200" height="6" fill="#8A5A30" />
+  <rect x="116" y="44" width="72" height="84" rx="6" fill="#FFFFFF" stroke="#8A5A30" stroke-width="2" />
+  <rect x="116" y="44" width="72" height="18" rx="6" fill="#D7263D" />
+  <g data-depth-generated="">
+    <clipPath id="u07-2-1">
+      <path d="M122,44 h60 a6,6 0 0,1 6,6 v6 a6,6 0 0,1 -6,6 h-60 a6,6 0 0,1 -6,-6 v-6 a6,6 0 0,1 6,-6 Z" />
+    </clipPath>
+    <g clip-path="url(#u07-2-1)">
+      <path d="M70 -2 H234 V108 H70 Z M118 40.4 h60 a6 6 0 0 1 6 6 v6 a6 6 0 0 1 -6 6 h-60 a6 6 0 0 1 -6 -6 v-6 a6 6 0 0 1 6 -6 Z" fill-rule="evenodd" fill="#AF2333" />
+      <path d="M70 -2 H234 V108 H70 Z M124 47 h60 a6 6 0 0 1 6 6 v6 a6 6 0 0 1 -6 6 h-60 a6 6 0 0 1 -6 -6 v-6 a6 6 0 0 1 6 -6 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="122" y="70" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="122" y="86" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="122" y="102" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="138" y="70" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="138" y="86" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="138" y="102" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="154" y="70" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="154" y="86" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="154" y="102" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="170" y="70" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="170" y="86" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="170" y="102" width="12" height="10" rx="2" fill="#F3E3C8" />
+  <rect x="154" y="86" width="12" height="10" rx="2" fill="#1F6F78" />
+  <g data-host="2 50 132" />
+  <g data-motion="PageLift" data-pivot="152 62">
+    <rect x="116" y="62" width="72" height="22" fill="#FFF8F0" stroke="#D9C9B0" stroke-width="1.5" />
+  </g>
+</svg>

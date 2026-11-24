@@ -1,0 +1,46 @@
+<!-- Mikel buscando casa, con un cartel y una llave. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u04-2, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Mikel buscando casa, con un cartel y una llave" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#E8EEF5" />
+  <rect x="114" y="30" width="80" height="130" fill="#E9C9A3" />
+  <g data-depth-generated="">
+    <clipPath id="u04-2-2">
+      <path d="M114,30 h80 v130 h-80 Z" />
+    </clipPath>
+    <g clip-path="url(#u04-2-2)">
+      <path d="M74 -10 H234 V200 H74 Z M104.4 21.36 h80 v130 h-80 Z" fill-rule="evenodd" fill="#C4A887" />
+      <path d="M74 -10 H234 V200 H74 Z M116 33 h80 v130 h-80 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="124" y="42" width="16" height="18" fill="#385F97" />
+  <rect x="124" y="72" width="16" height="18" fill="#385F97" />
+  <rect x="124" y="102" width="16" height="18" fill="#385F97" />
+  <rect x="152" y="42" width="16" height="18" fill="#385F97" />
+  <rect x="152" y="72" width="16" height="18" fill="#385F97" />
+  <rect x="152" y="102" width="16" height="18" fill="#385F97" />
+  <rect x="178" y="42" width="16" height="18" fill="#385F97" />
+  <rect x="178" y="72" width="16" height="18" fill="#385F97" />
+  <rect x="178" y="102" width="16" height="18" fill="#385F97" />
+  <rect x="0" y="160" width="200" height="40" fill="#C9B79A" />
+  <g data-depth-generated="">
+    <clipPath id="u04-2-1">
+      <path d="M0,160 h200 v40 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u04-2-1)">
+      <path d="M-40 120 H240 V240 H-40 Z M-4.8 155.68 h200 v40 h-200 Z" fill-rule="evenodd" fill="#A9977E" />
+      <path d="M-40 120 H240 V240 H-40 Z M2 163 h200 v40 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <path d="M118 120 H150" stroke="#2B1D16" stroke-width="3" />
+  <g data-host="2 50 132" />
+  <g data-motion="Pendulum" data-pivot="134 120">
+    <path d="M126 120 V128 M142 120 V128" stroke="#2B1D16" stroke-width="2" />
+    <rect x="118" y="128" width="32" height="20" rx="3" fill="#FFFFFF" stroke="#D7263D" stroke-width="2.5" />
+    <path d="M124 134 H144 M124 141 H138" stroke="#D7263D" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+  <g data-motion="Drift" data-pivot="176 150">
+    <circle cx="168" cy="152" r="9" fill="none" stroke="#E9A21E" stroke-width="5" />
+    <path d="M177 152 H196 M188 152 V160 M194 152 V158" stroke="#E9A21E" stroke-width="5" stroke-linecap="round" />
+  </g>
+</svg>

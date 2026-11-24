@@ -1,0 +1,51 @@
+<!-- Ane riega un brote. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u09-2, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ane riega un brote" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#DDEFF5" />
+  <path d="M0 150 Q50 118 110 140 T200 132 V200 H0 Z" fill="#8BC48A" />
+  <g data-depth-generated="">
+    <clipPath id="u09-2-3">
+      <path d="M0 150 Q50 118 110 140 T200 132 V200 H0 Z" />
+    </clipPath>
+    <g clip-path="url(#u09-2-3)">
+      <path d="M-40 78 H240 V240 H-40 Z M-9.84 141.14 Q40.16 109.14 100.16 131.14 T190.16 123.14 V191.14 H-9.84 Z" fill-rule="evenodd" fill="#77A171" />
+      <path d="M-40 78 H240 V240 H-40 Z M2 153 Q52 121 112 143 T202 135 V203 H2 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <path d="M0 166 Q60 146 120 164 T200 160 V200 H0 Z" fill="#5FA463" />
+  <g data-depth-generated="">
+    <clipPath id="u09-2-2">
+      <path d="M0 166 Q60 146 120 164 T200 160 V200 H0 Z" />
+    </clipPath>
+    <g clip-path="url(#u09-2-2)">
+      <path d="M-40 106 H240 V240 H-40 Z M-6.48 160.17 Q53.52 140.17 113.52 158.17 T193.52 154.17 V194.17 H-6.48 Z" fill-rule="evenodd" fill="#538450" />
+      <path d="M-40 106 H240 V240 H-40 Z M2 169 Q62 149 122 167 T202 163 V203 H2 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <g data-host="2 50 132" />
+  <path d="M156 160 Q150 150 156 144 Q162 150 156 160 Z" fill="#6B4A36" />
+  <g data-motion="Grow" data-pivot="156 150">
+    <path d="M156 150 V126" stroke="#3F8A5A" stroke-width="3" />
+    <path d="M156 134 Q142 128 140 118 Q152 118 156 134 Z" fill="#5FA463" />
+    <path d="M156 128 Q170 120 172 110 Q160 112 156 128 Z" fill="#5FA463" />
+  </g>
+  <path d="M122 90 H150 L156 74 L148 72 L144 82 H122 Z" fill="#1F6F78" />
+  <rect x="118" y="86" width="34" height="26" rx="6" fill="#1F6F78" />
+  <g data-depth-generated="">
+    <clipPath id="u09-2-1">
+      <path d="M124,86 h22 a6,6 0 0,1 6,6 v14 a6,6 0 0,1 -6,6 h-22 a6,6 0 0,1 -6,-6 v-14 a6,6 0 0,1 6,-6 Z" />
+    </clipPath>
+    <g clip-path="url(#u09-2-1)">
+      <path d="M72 40 H198 V158 H72 Z M119.44 81.9 h22 a6 6 0 0 1 6 6 v14 a6 6 0 0 1 -6 6 h-22 a6 6 0 0 1 -6 -6 v-14 a6 6 0 0 1 6 -6 Z" fill-rule="evenodd" fill="#22595E" />
+      <path d="M72 40 H198 V158 H72 Z M126 89 h22 a6 6 0 0 1 6 6 v14 a6 6 0 0 1 -6 6 h-22 a6 6 0 0 1 -6 -6 v-14 a6 6 0 0 1 6 -6 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <path d="M118 92 Q108 98 118 106" fill="none" stroke="#1F6F78" stroke-width="4" />
+  <g data-motion="Drip" data-pivot="156 82">
+    <path d="M156 84 Q153 90 156 92 Q159 90 156 84 Z" fill="#4FA3C7" />
+  </g>
+  <g data-motion="DripLate" data-pivot="160 82">
+    <path d="M161 86 Q158 92 161 94 Q164 92 161 86 Z" fill="#4FA3C7" />
+  </g>
+</svg>

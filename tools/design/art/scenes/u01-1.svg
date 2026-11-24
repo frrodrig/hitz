@@ -1,0 +1,42 @@
+<!-- Ane en la plaza del pueblo, con banderines. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u01-1, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ane en la plaza del pueblo, con banderines" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#DDEFF5" />
+  <circle cx="40" cy="34" r="14" fill="#FFE29A" />
+  <g data-depth-generated="">
+    <clipPath id="u01-1-2">
+      <path d="M26,34 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0 Z" />
+    </clipPath>
+    <g clip-path="url(#u01-1-2)">
+      <path d="M-28 -20 H108 V88 H-28 Z M22 30.4 a14 14 0 1 0 28 0 a14 14 0 1 0 -28 0 Z" fill-rule="evenodd" fill="#D7BC80" />
+      <path d="M-28 -20 H108 V88 H-28 Z M28 37 a14 14 0 1 0 28 0 a14 14 0 1 0 -28 0 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="150" width="200" height="50" fill="#C9B79A" />
+  <g data-depth-generated="">
+    <clipPath id="u01-1-1">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u01-1-1)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#A9977E" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <path d="M96 70 V150 M196 64 V150" stroke="#8A5A30" stroke-width="4" />
+  <g data-motion="Flutter" data-pivot="146 66">
+    <path d="M96 70 Q146 92 196 64" fill="none" stroke="#2B1D16" stroke-width="1.5" />
+    <path d="M104 74 L118 79 L109 92 Z" fill="#D7263D" />
+    <path d="M124 81 L138 84 L130 98 Z" fill="#FFFFFF" />
+    <path d="M144 84 L158 83 L152 98 Z" fill="#1F6F78" />
+    <path d="M164 81 L178 77 L174 92 Z" fill="#D7263D" />
+    <path d="M182 74 L194 68 L192 82 Z" fill="#FFFFFF" />
+  </g>
+  <g data-host="2 50 132" />
+  <g data-motion="Pop" data-pivot="160 128">
+    <path d="M136 112 H184 Q192 112 192 120 V138 Q192 146 184 146 H158 L150 154 L150 146 H136 Q128 146 128 138 V120 Q128 112 136 112 Z" fill="#FFFFFF" stroke="#2B1D16" stroke-width="2" />
+    <circle cx="146" cy="129" r="3.5" fill="#D7263D" />
+    <circle cx="160" cy="129" r="3.5" fill="#D7263D" />
+    <circle cx="174" cy="129" r="3.5" fill="#D7263D" />
+  </g>
+</svg>

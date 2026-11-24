@@ -1,0 +1,46 @@
+<!-- Unai ante el espejo. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u03-2, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Unai ante el espejo" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#E3EEF1" />
+  <rect x="0" y="164" width="200" height="36" fill="#B98552" />
+  <g data-depth-generated="">
+    <clipPath id="u03-2-3">
+      <path d="M0,164 h200 v36 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u03-2-3)">
+      <path d="M-40 124 H240 V240 H-40 Z M-4.32 160.11 h200 v36 h-200 Z" fill-rule="evenodd" fill="#996D43" />
+      <path d="M-40 124 H240 V240 H-40 Z M2 167 h200 v36 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="160" width="200" height="6" fill="#8A5A30" />
+  <rect x="152" y="140" width="8" height="24" fill="#8A5A30" />
+  <ellipse cx="156" cy="96" rx="34" ry="48" fill="#8A5A30" />
+  <g data-depth-generated="">
+    <clipPath id="u03-2-2">
+      <path d="M122,96 a34,48 0 1,0 68,0 a34,48 0 1,0 -68,0 Z" />
+    </clipPath>
+    <g clip-path="url(#u03-2-2)">
+      <path d="M48 8 H264 V184 H48 Z M112 87 a34 48 0 1 0 68 0 a34 48 0 1 0 -68 0 Z" fill-rule="evenodd" fill="#724A29" />
+      <path d="M48 8 H264 V184 H48 Z M124 99 a34 48 0 1 0 68 0 a34 48 0 1 0 -68 0 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <ellipse cx="156" cy="96" rx="28" ry="42" fill="#CFE7EE" />
+  <g data-depth-generated="">
+    <clipPath id="u03-2-1">
+      <path d="M128,96 a28,42 0 1,0 56,0 a28,42 0 1,0 -56,0 Z" />
+    </clipPath>
+    <g clip-path="url(#u03-2-1)">
+      <path d="M60 14 H252 V178 H60 Z M118 87 a28 42 0 1 0 56 0 a28 42 0 1 0 -56 0 Z" fill-rule="evenodd" fill="#B2C3C7" />
+      <path d="M60 14 H252 V178 H60 Z M130 99 a28 42 0 1 0 56 0 a28 42 0 1 0 -56 0 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <g data-motion="Drift" data-pivot="156 100">
+    <circle cx="156" cy="88" r="13" fill="#C68A5E" opacity="0.6" />
+    <path d="M140 126 Q156 104 172 126 V138 H140 Z" fill="#1F6F78" opacity="0.6" />
+  </g>
+  <g data-host="2 50 132" />
+  <g data-motion="Twinkle" data-pivot="176 64">
+    <path d="M176 56 L179 61 L184 64 L179 67 L176 72 L173 67 L168 64 L173 61 Z" fill="#FFFFFF" />
+  </g>
+</svg>
