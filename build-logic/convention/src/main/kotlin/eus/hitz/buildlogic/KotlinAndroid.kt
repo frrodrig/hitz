@@ -19,7 +19,11 @@ private val JAVA_VERSION = JavaVersion.VERSION_17
 /** Shared Kotlin and Android configuration for application and library modules. */
 internal fun Project.configureKotlinAndroid(commonExtension: CommonExtension) {
     commonExtension.apply {
-        compileSdk = libs.versionInt("compileSdk")
+        compileSdk {
+            version = release(libs.versionInt("compileSdk")) {
+                minorApiLevel = libs.versionInt("compileSdkMinor")
+            }
+        }
         defaultConfig.apply {
             minSdk = libs.versionInt("minSdk")
             testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

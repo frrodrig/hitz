@@ -71,7 +71,7 @@ installed, the app tells you when a new version is out and downloads it for you.
 
 Kotlin and Jetpack Compose (Material 3 Expressive), Clean Architecture with Hilt, Room, DataStore,
 type-safe Navigation and WorkManager. Course content is JSON validated by a schema; CI/CD runs on
-GitHub Actions. Requirements: JDK 17 and the Android SDK (API 37).
+GitHub Actions. Requirements: JDK 17 and the Android SDK (API 37.1).
 
 ```bash
 ./gradlew assembleDebug           # debug APK

@@ -8,8 +8,8 @@ expressive motion scheme, and components are standard Material 3 / Expressive co
 one exists; Hitz wrappers only fix sizes, colours and accessibility semantics.
 
 > Expressive APIs are public from `androidx.compose.material3:material3` **1.5.0** (the 1.4.x
-> version in the Compose BOM keeps them internal), so the catalog pins material3 to the latest
-> 1.5.0 pre-release. Move back to the BOM version once 1.5.0 is stable.
+> versions keep them internal), so the catalog pins material3 to the stable 1.5.0. The project
+> only uses stable library versions.
 
 ## Identity
 
