@@ -234,7 +234,7 @@ no* waits for the next day's check.
 | `hitz.jvm.library` | Pure Kotlin JVM |
 
 - AGP 9 with built-in Kotlin: `org.jetbrains.kotlin.android` is not applied.
-- UI: Material 3 Expressive (`material3` 1.5.0 pre-release pinned in the catalog; see
+- UI: Material 3 Expressive (`material3` 1.5.0 pinned in the catalog; see
   `docs/design-system.md`).
 - Project dependencies use `project(":…")`: type-safe project accessors break on a module
   named `path` (it clashes with `ProjectDependency.getPath()`).

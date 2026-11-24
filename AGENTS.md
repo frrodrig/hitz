@@ -100,8 +100,11 @@ failure.
   (`src/test/screenshots/`). Infinite animations are paused in Compose tests, so animated
   composables must look right at rest.
 - **Build quirks**: AGP 9 with built-in Kotlin (do not apply `org.jetbrains.kotlin.android`);
-  depend on modules with `project(":…")`, not type-safe accessors; `material3` is pinned to a
-  1.5.0 pre-release for the Expressive APIs.
+  depend on modules with `project(":…")`, not type-safe accessors; `material3` is pinned to
+  1.5.0 in the catalog for the Expressive APIs.
+- **Dependencies**: stable versions only (no alpha, beta or RC) unless a feature cannot be built
+  without one; then pin it, say why in the PR and in the docs, and move back to stable as soon
+  as it ships.
 
 ## Content, audio and art
 
