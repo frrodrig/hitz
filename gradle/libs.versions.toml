@@ -1,6 +1,8 @@
 [versions]
 # SDK
 compileSdk = "37"
+# Compose 1.13 needs the 37.1 SDK to compile against; targetSdk stays 37.
+compileSdkMinor = "1"
 targetSdk = "37"
 minSdk = "26"
 
