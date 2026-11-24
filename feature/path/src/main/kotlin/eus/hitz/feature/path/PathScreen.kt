@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.rememberLazyListState
@@ -33,6 +34,7 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.BiasAlignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
@@ -202,12 +204,17 @@ private sealed interface PathRow {
 
     data class Node(val node: PathNode, val index: Int, override val sectionNumber: Int) : PathRow
 
-    /** A unit's star challenge, beside the path: on the side the path bends away from. */
+    /**
+     * A unit's star challenge and the [nodes] beside it, with their indexes: the nodes keep their
+     * place on the path and the challenge fills the gap on the side the path bends away from.
+     */
     data class Challenge(
         val challenge: PathChallenge,
-        val alignStart: Boolean,
+        val nodes: List<Node>,
         override val sectionNumber: Int,
-    ) : PathRow
+    ) : PathRow {
+        val alignStart: Boolean get() = nodes.sumOf { Winding[it.index % Winding.size].value.toDouble() } >= 0
+    }
 }
 
 private fun LearningPath.rows(): List<PathRow> = buildList {
@@ -217,13 +224,15 @@ private fun LearningPath.rows(): List<PathRow> = buildList {
         add(PathRow.SectionHeader(section, number))
         section.units.forEach { unit ->
             add(PathRow.UnitHeader(unit, unitIndex++, number))
-            // The challenge goes halfway through the unit: after its last lesson level.
-            val challengeAfter = unit.nodes.indexOfLast { it.type == NodeType.Lesson }.coerceAtLeast(0)
-            unit.nodes.forEachIndexed { index, node ->
-                add(PathRow.Node(node, index, number))
+            // The challenge goes halfway through the unit, beside its last lesson level and the next.
+            val nodes = unit.nodes.mapIndexed { index, node -> PathRow.Node(node, index, number) }
+            val first = unit.nodes.indexOfLast { it.type == NodeType.Lesson }.coerceAtLeast(0)
+            val beside = if (unit.challenge == null) IntRange.EMPTY else first..minOf(first + 1, nodes.lastIndex)
+            nodes.forEachIndexed { index, node ->
                 val challenge = unit.challenge
-                if (challenge != null && index == challengeAfter) {
-                    add(PathRow.Challenge(challenge, Winding[index % Winding.size] > 0.dp, number))
+                when {
+                    challenge == null || index !in beside -> add(node)
+                    index == beside.first -> add(PathRow.Challenge(challenge, nodes.slice(beside), number))
                 }
             }
         }
@@ -240,7 +249,13 @@ private fun LearningPathList(
     listState: LazyListState,
     modifier: Modifier = Modifier,
 ) {
-    val currentIndex = rows.indexOfFirst { it is PathRow.Node && it.node.isCurrent }
+    val currentIndex = rows.indexOfFirst { row ->
+        when (row) {
+            is PathRow.Node -> row.node.isCurrent
+            is PathRow.Challenge -> row.nodes.any { it.node.isCurrent }
+            else -> false
+        }
+    }
     LaunchedEffect(currentIndex) {
         if (currentIndex > 0) listState.scrollToItem((currentIndex - 2).coerceAtLeast(0))
     }
@@ -262,15 +277,11 @@ private fun LearningPathList(
                     NodeRow(row.node, Winding[row.index % Winding.size]) { onNodeClick(row.node) }
                 }
                 is PathRow.Challenge -> item(key = row.key) {
-                    Box(Modifier.fillMaxWidth().padding(horizontal = HitzSpacing.xl)) {
-                        PathChallengeItem(
-                            challenge = row.challenge,
-                            onClick = { onChallengeClick(row.challenge) },
-                            modifier = Modifier.align(
-                                if (row.alignStart) Alignment.CenterStart else Alignment.CenterEnd,
-                            ),
-                        )
-                    }
+                    ChallengeRows(
+                        row = row,
+                        onChallengeClick = { onChallengeClick(row.challenge) },
+                        onNodeClick = onNodeClick,
+                    )
                 }
             }
         }
@@ -292,6 +303,37 @@ private fun NodeRow(node: PathNode, offset: Dp, onClick: () -> Unit) {
                     .padding(horizontal = HitzSpacing.xl),
             )
         }
+    }
+}
+
+/**
+ * The nodes beside a star challenge, spaced like the rest of the path, with the challenge in the
+ * gap the path leaves. It stands by the middle, or by the node that is not current, so it never
+ * covers Ane.
+ */
+@Composable
+private fun ChallengeRows(row: PathRow.Challenge, onChallengeClick: () -> Unit, onNodeClick: (PathNode) -> Unit) {
+    val current = row.nodes.indexOfFirst { it.node.isCurrent }
+    val vertical = when {
+        row.nodes.size < 2 || current < 0 -> 0f
+        current == 0 -> 1f
+        else -> -1f
+    }
+    val alignment = BiasAlignment(horizontalBias = if (row.alignStart) -1f else 1f, verticalBias = vertical)
+    Box(Modifier.fillMaxWidth()) {
+        Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg)) {
+            row.nodes.forEach { node ->
+                NodeRow(node.node, Winding[node.index % Winding.size]) { onNodeClick(node.node) }
+            }
+        }
+        PathChallengeItem(
+            challenge = row.challenge,
+            onClick = onChallengeClick,
+            modifier = Modifier
+                .matchParentSize()
+                .wrapContentSize(alignment)
+                .padding(horizontal = HitzSpacing.xl),
+        )
     }
 }
 
