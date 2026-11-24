@@ -48,6 +48,16 @@ class RoomProgressRepositoryTest {
     }
 
     @Test
+    fun theBestAccuracyOfEachCompletionIsObserved() = runTest {
+        repository.recordCompletion("u01-1", "u01-1.l6", accuracy = 2f / 3, completedAt = 10)
+        repository.recordCompletion("u01-1", "u01-1.l6", accuracy = 1f / 3, completedAt = 20)
+        repository.recordCompletion("u01-1", "u01-1.l1.s1", accuracy = 0.9f, completedAt = 30)
+        repository.observeBestAccuracy().test {
+            assertThat(awaitItem()).containsExactly("u01-1.l6", 2f / 3, "u01-1.l1.s1", 0.9f)
+        }
+    }
+
+    @Test
     fun completionsKeepTheirFirstTime() = runTest {
         repository.recordCompletion("u01-1", "u01-1.l1.s1", accuracy = 0.8f, completedAt = 10)
         repository.recordCompletion("u01-1", "u01-1.l1.s1", accuracy = 1f, completedAt = 30)

@@ -22,7 +22,7 @@
     <string name="feature_profile_score_can_do">Lo que ya puedes hacer</string>
     <string name="feature_profile_score_can_do_empty">Termina tu primera unidad y aquí verás lo que ya sabes hacer en euskera.</string>
     <string name="feature_profile_score_how">Cómo se calcula</string>
-    <string name="feature_profile_score_how_body">La puntuación va de 0 a %1$d en el nivel A1 del Marco Común Europeo de Referencia (MCER). Sube con cada lección, historia y repaso que completas; los niveles legendarios son práctica extra. Al terminar el curso llegarás a %1$d.</string>
+    <string name="feature_profile_score_how_body">La puntuación va de 0 a %1$d en el nivel A1 del Marco Común Europeo de Referencia (MCER). Sube con cada lección, historia y repaso que completas; los retos de estrellas son práctica extra. Al terminar el curso llegarás a %1$d.</string>
     <string name="feature_profile_score_open">Ver tu evolución</string>
     <string name="feature_profile_daily_goal">Objetivo diario</string>
     <string name="feature_profile_today">Hoy: %1$d de %2$d min</string>
@@ -44,6 +44,9 @@
     <string name="feature_profile_achievement_lessons">Estudio: lecciones completadas</string>
     <string name="feature_profile_achievement_perfect">Precisión: sesiones sin fallos</string>
     <string name="feature_profile_achievement_stories">Lectura: historias completadas</string>
+    <string name="feature_profile_achievement_three_stars">Maestría: retos con tres estrellas</string>
+    <string name="feature_profile_stars">Estrellas de los retos</string>
+    <string name="feature_profile_stars_value">%1$d de %2$d</string>
     <string name="feature_profile_achievement_next">Nivel %1$d de %2$d · %3$d de %4$d</string>
     <string name="feature_profile_achievement_complete">¡Los %1$d niveles conseguidos!</string>
     <string name="feature_profile_settings">Ajustes</string>

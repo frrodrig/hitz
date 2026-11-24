@@ -105,7 +105,9 @@ decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum to
 ## Icons
 
 `HitzIcons`: original icons on a 24 dp grid. UI icons use 2 dp rounded strokes; counters
-(bolt, trophy, star) are solid shapes. All are tinted by the caller.
+(bolt, trophy, star, level) are solid shapes. All are tinted by the caller. The star belongs to
+the star challenges (`HitzStars`: earned stars in `tertiary`, the rest in `outlineVariant`); the
+score uses the level icon, three rising bars.
 
 ## Illustrations
 

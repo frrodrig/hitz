@@ -66,9 +66,14 @@ EDGE_PUNCTUATION = re.compile(r"^[¡¿!?.,;:«»\"“”()…—–-]+|[¡¿!?.,
 
 DEFAULT_TITLES = {
     "review": {"es": "Repaso de la unidad", "eu": "Unitatearen errepasoa"},
-    "legendary": {"es": "Nivel legendario", "eu": "Maila legendarioa"},
+    # TODO(revisión-nativa): "Izarren erronka".
+    "challenge": {"es": "Reto de estrellas", "eu": "Izarren erronka"},
     "section_review": {"es": "Repaso de la sección", "eu": "Atalaren errepasoa"},
 }
+
+
+# Who can present a star challenge: the cast, by their names in content.
+CAST = ("ane", "mikel", "maite", "unai")
 
 
 class SourceError(Exception):
@@ -533,8 +538,13 @@ def build_unit(
         elif kind == "story":
             story = {"id": f"{level_id}.story", **parse_story(level["story"])}
             levels.append({"id": level_id, "type": "story", "title": title, "story": story})
-        elif kind in ("review", "legendary"):
+        elif kind == "review":
             levels.append({"id": level_id, "type": kind, "title": title})
+        elif kind == "challenge":
+            host = level.get("host")
+            if host not in CAST:
+                raise SourceError(f"{level_id}: a challenge needs a host, one of {', '.join(CAST)}")
+            levels.append({"id": level_id, "type": kind, "title": title, "host": host})
         else:
             raise SourceError(f"{level_id}: unknown level type {kind}")
     if section_last:

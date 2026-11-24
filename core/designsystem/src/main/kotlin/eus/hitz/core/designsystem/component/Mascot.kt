@@ -59,6 +59,9 @@ enum class CastMember(@param:StringRes val description: Int) {
     ;
 
     companion object {
+        /** The member named in course content (`ane`, `mikel`…); Ane when the name is unknown. */
+        fun fromName(name: String): CastMember = entries.firstOrNull { it.name.equals(name, ignoreCase = true) } ?: Ane
+
         /** Who says what by default: Ane greets, Mikel celebrates, Maite corrects and explains. */
         fun speakerFor(pose: MascotPose): CastMember = when (pose) {
             MascotPose.Hola -> Ane

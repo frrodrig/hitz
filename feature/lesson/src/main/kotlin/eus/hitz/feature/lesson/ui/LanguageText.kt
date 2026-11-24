@@ -48,7 +48,7 @@ internal val Language.localeList: LocaleList
         Language.Spanish -> LocaleList("es")
     }
 
-/** Word hints for Basque text below this point; null turns them off (legendary levels). */
+/** Word hints for Basque text below this point; null turns them off (star challenges). */
 internal val LocalGlossary = staticCompositionLocalOf<Glossary?> { null }
 
 /**

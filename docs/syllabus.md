@@ -15,7 +15,7 @@ or image from them goes into the app: all content is written from scratch for ea
 | Course | The whole of Arian A1 | 1 |
 | Section | 3 textbook units | 4 |
 | Unit (with guidebook) | Half a textbook unit | 24 |
-| Level | One step on the path | 5 per unit + 1 legendary |
+| Level | One step on the path | 5 per unit + 1 star challenge |
 | Lesson | A 10–15 exercise session | 3–5 per level |
 
 How each textbook unit is split:
@@ -23,7 +23,7 @@ How each textbook unit is split:
 - **Unit x.1** covers the textbook's *Atarian* and *A* parts (core vocabulary and first goal).
 - **Unit x.2** covers parts *B* and *C* (second and third goals).
 - *Erabili* and *Badakizu?* (assessment and self-assessment) become the **unit review**, the
-  unit's **story** and the **legendary level**.
+  unit's **story** and the **star challenge**.
 
 Levels inside each app unit, in order:
 
@@ -32,7 +32,7 @@ Levels inside each app unit, in order:
 3. Communicative-use lesson (chat, true/false, listening)
 4. Short interactive story
 5. Unit review (fed by the mistakes stored for spaced repetition)
-6. Legendary (optional): review with no hints and limited hearts
+6. Star challenge (optional, beside the path): 30 of the hardest exercises, no hints, 1–3 stars
 
 Each section ends with a **section review** that mixes its 6 units.
 

@@ -57,6 +57,7 @@ import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.domain.path.LearningPath
 import eus.hitz.core.domain.path.NodeState
 import eus.hitz.core.domain.path.NodeType
+import eus.hitz.core.domain.path.PathChallenge
 import eus.hitz.core.domain.path.PathNode
 import eus.hitz.core.domain.path.PathSection
 import eus.hitz.core.domain.path.PathUnit
@@ -117,6 +118,7 @@ internal fun PathContent(
                 PathTopBar(section, state.score, state.dailyGoal, onOpenProfile = onOpenProfile)
                 LearningPathList(
                     rows = rows,
+                    onChallengeClick = { onStartLevel(it.unitId, it.levelId, null) },
                     onNodeClick = { node ->
                         when {
                             node.type == NodeType.Story -> onStartStory(node.unitId, node.levelId)
@@ -184,7 +186,7 @@ private fun ScoreChip(score: Int, onClick: () -> Unit) {
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(HitzSpacing.xs),
         ) {
-            Icon(painterResource(HitzIcons.Star), contentDescription = null, modifier = Modifier.size(CHIP_ICON))
+            Icon(painterResource(HitzIcons.Level), contentDescription = null, modifier = Modifier.size(CHIP_ICON))
             Text(score.toString(), style = MaterialTheme.typography.labelLargeEmphasized)
         }
     }
@@ -199,6 +201,13 @@ private sealed interface PathRow {
     data class UnitHeader(val unit: PathUnit, val index: Int, override val sectionNumber: Int) : PathRow
 
     data class Node(val node: PathNode, val index: Int, override val sectionNumber: Int) : PathRow
+
+    /** A unit's star challenge, beside the path: on the side the path bends away from. */
+    data class Challenge(
+        val challenge: PathChallenge,
+        val alignStart: Boolean,
+        override val sectionNumber: Int,
+    ) : PathRow
 }
 
 private fun LearningPath.rows(): List<PathRow> = buildList {
@@ -208,7 +217,15 @@ private fun LearningPath.rows(): List<PathRow> = buildList {
         add(PathRow.SectionHeader(section, number))
         section.units.forEach { unit ->
             add(PathRow.UnitHeader(unit, unitIndex++, number))
-            unit.nodes.forEachIndexed { index, node -> add(PathRow.Node(node, index, number)) }
+            // The challenge goes halfway through the unit: after its last lesson level.
+            val challengeAfter = unit.nodes.indexOfLast { it.type == NodeType.Lesson }.coerceAtLeast(0)
+            unit.nodes.forEachIndexed { index, node ->
+                add(PathRow.Node(node, index, number))
+                val challenge = unit.challenge
+                if (challenge != null && index == challengeAfter) {
+                    add(PathRow.Challenge(challenge, Winding[index % Winding.size] > 0.dp, number))
+                }
+            }
         }
     }
 }
@@ -217,6 +234,7 @@ private fun LearningPath.rows(): List<PathRow> = buildList {
 @Composable
 private fun LearningPathList(
     rows: List<PathRow>,
+    onChallengeClick: (PathChallenge) -> Unit,
     onNodeClick: (PathNode) -> Unit,
     onOpenGuidebook: (unitId: String) -> Unit,
     listState: LazyListState,
@@ -242,6 +260,17 @@ private fun LearningPathList(
                 }
                 is PathRow.Node -> item(key = row.key) {
                     NodeRow(row.node, Winding[row.index % Winding.size]) { onNodeClick(row.node) }
+                }
+                is PathRow.Challenge -> item(key = row.key) {
+                    Box(Modifier.fillMaxWidth().padding(horizontal = HitzSpacing.xl)) {
+                        PathChallengeItem(
+                            challenge = row.challenge,
+                            onClick = { onChallengeClick(row.challenge) },
+                            modifier = Modifier.align(
+                                if (row.alignStart) Alignment.CenterStart else Alignment.CenterEnd,
+                            ),
+                        )
+                    }
                 }
             }
         }
@@ -271,6 +300,7 @@ private val PathRow.key: String
         is PathRow.SectionHeader -> "section-${section.id}"
         is PathRow.UnitHeader -> "unit-${unit.id}"
         is PathRow.Node -> "node-${node.levelId}"
+        is PathRow.Challenge -> "challenge-${challenge.levelId}"
     }
 
 @Composable

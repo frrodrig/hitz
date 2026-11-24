@@ -55,5 +55,8 @@ data class MistakeTagEntity(
 /** Result row for COUNT … GROUP BY queries. */
 data class KeyCount(val key: String, val count: Int)
 
+/** Result row for an id and a number. */
+data class KeyValue(val key: String, val value: Float)
+
 /** Result row for an id and a time. */
 data class KeyTime(val key: String, val time: Long)

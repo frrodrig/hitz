@@ -39,6 +39,7 @@ import androidx.compose.ui.unit.dp
 import eus.hitz.core.designsystem.component.HitzButton
 import eus.hitz.core.designsystem.component.HitzCelebration
 import eus.hitz.core.designsystem.component.HitzMascot
+import eus.hitz.core.designsystem.component.HitzStars
 import eus.hitz.core.designsystem.component.MascotPose
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.preview.HitzPreviews
@@ -54,10 +55,12 @@ private val TILE_OUTER = 28.dp
 private val TILE_INNER = 12.dp
 private val BADGE_SIZE = 28.dp
 private val BADGE_ICON = 16.dp
+private val STAR_SIZE = 44.dp
 
 /**
- * The end of a lesson: a hero with Mikel celebrating on the tertiary container, three result tiles
- * (first-try accuracy, active time and today's goal) and what the session added.
+ * The end of a lesson: a hero with Mikel celebrating on the tertiary container (with the stars of
+ * a star challenge), three result tiles (first-try accuracy, active time and today's goal) and
+ * what the session added.
  */
 @Composable
 internal fun LessonFinished(state: LessonUiState.Finished, onContinue: () -> Unit, modifier: Modifier = Modifier) {
@@ -69,7 +72,7 @@ internal fun LessonFinished(state: LessonUiState.Finished, onContinue: () -> Uni
                 .verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.spacedBy(HitzSpacing.xl),
         ) {
-            Hero(goalReached = reward?.goalReached == true)
+            Hero(goalReached = reward?.goalReached == true, stars = state.stars)
             Column(
                 modifier = Modifier.padding(horizontal = HitzSpacing.lg),
                 verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg),
@@ -91,7 +94,7 @@ internal fun LessonFinished(state: LessonUiState.Finished, onContinue: () -> Uni
 }
 
 @Composable
-private fun Hero(goalReached: Boolean) {
+private fun Hero(goalReached: Boolean, stars: Int?) {
     Surface(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(bottomStart = HERO_CORNER, bottomEnd = HERO_CORNER),
@@ -110,8 +113,13 @@ private fun Hero(goalReached: Boolean) {
                 // Completing the daily goal is celebrated around the mascot, without taking layout space.
                 if (goalReached) HitzCelebration(Modifier.matchParentSize().wrapContentSize(unbounded = true))
             }
+            if (stars != null) HitzStars(earned = stars, size = STAR_SIZE)
             Text(
-                text = stringResource(R.string.feature_lesson_finished_title),
+                text = if (stars != null) {
+                    pluralStringResource(R.plurals.feature_lesson_challenge_stars, stars, stars)
+                } else {
+                    stringResource(R.string.feature_lesson_finished_title)
+                },
                 style = MaterialTheme.typography.headlineLargeEmphasized,
                 textAlign = TextAlign.Center,
                 modifier = Modifier.semantics { heading() },
@@ -254,4 +262,10 @@ private fun RewardMessage(reward: RewardUi) {
 @Composable
 private fun LessonFinishedPreview() {
     HitzTheme { LessonFinished(LessonPreviewData.finished, onContinue = {}) }
+}
+
+@HitzPreviews
+@Composable
+private fun ChallengeFinishedPreview() {
+    HitzTheme { LessonFinished(LessonPreviewData.finished.copy(stars = 2), onContinue = {}) }
 }

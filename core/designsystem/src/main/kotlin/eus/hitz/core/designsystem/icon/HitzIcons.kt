@@ -42,5 +42,9 @@ object HitzIcons {
 
     @DrawableRes val Bolt = R.drawable.core_designsystem_ic_bolt
 
+    /** The star challenges' stars, and lesson nodes. */
     @DrawableRes val Star = R.drawable.core_designsystem_ic_star
+
+    /** The score on the A1 scale. */
+    @DrawableRes val Level = R.drawable.core_designsystem_ic_level
 }

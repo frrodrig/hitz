@@ -16,10 +16,13 @@ internal class RoomProgressRepository @Inject constructor(
     private val dao: ProgressDao,
 ) : ProgressRepository {
     override fun observeCompleted(): Flow<Set<String>> =
-        dao.observeCompletionIds().map { it.toSet() }.distinctUntilChanged()
+        dao.observeBestAccuracy().map { rows -> rows.mapTo(mutableSetOf()) { it.key } }.distinctUntilChanged()
 
     override fun observeCompletions(): Flow<Map<String, Long>> =
         dao.observeCompletionTimes().map { rows -> rows.associate { it.key to it.time } }.distinctUntilChanged()
+
+    override fun observeBestAccuracy(): Flow<Map<String, Float>> =
+        dao.observeBestAccuracy().map { rows -> rows.associate { it.key to it.value } }.distinctUntilChanged()
 
     override suspend fun recordCompletion(unitId: String, completionId: String, accuracy: Float, completedAt: Long) =
         dao.recordCompletion(completionId, unitId, accuracy, completedAt)

@@ -52,6 +52,7 @@ import eus.hitz.core.designsystem.component.HitzDailyGoalRing
 import eus.hitz.core.designsystem.component.HitzFeedbackPanel
 import eus.hitz.core.designsystem.component.HitzLessonProgressBar
 import eus.hitz.core.designsystem.component.HitzMascot
+import eus.hitz.core.designsystem.component.HitzStars
 import eus.hitz.core.designsystem.component.MascotPose
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.theme.HitzSpacing
@@ -118,9 +119,11 @@ internal fun LessonContent(
         LessonUiState.OutOfMistakes -> LessonMessage(
             title = stringResource(R.string.feature_lesson_out_of_mistakes_title),
             body = stringResource(R.string.feature_lesson_out_of_mistakes_body),
-            action = stringResource(R.string.feature_lesson_finish),
-            onAction = onClose,
+            action = stringResource(R.string.feature_lesson_try_again),
+            onAction = { onAction(LessonAction.Retry) },
             modifier = modifier,
+            secondaryAction = stringResource(R.string.feature_lesson_not_now),
+            onSecondaryAction = onClose,
             pose = MascotPose.Ups,
         )
         is LessonUiState.Finished -> LessonFinished(state, onContinue = onClose, modifier = modifier)
@@ -388,23 +391,16 @@ private fun LessonMessageContent(
     HitzButton(text = action, onClick = onAction, modifier = Modifier.fillMaxWidth())
 }
 
-/** Wrong answers still allowed in a legendary level: a small cross and the number. */
+/** The stars still within reach in a star challenge: each wrong answer puts one out. */
 @Composable
 private fun MistakesLeft(count: Int) {
     val description = pluralStringResource(R.plurals.feature_lesson_mistakes_left, count, count)
-    Row(
+    Box(
         modifier = Modifier
             .padding(horizontal = HitzSpacing.sm)
             .clearAndSetSemantics { contentDescription = description },
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(HitzSpacing.xs),
     ) {
-        Icon(
-            painter = painterResource(HitzIcons.Close),
-            contentDescription = null,
-            tint = MaterialTheme.colorScheme.error,
-        )
-        Text(count.toString(), style = MaterialTheme.typography.titleMediumEmphasized)
+        HitzStars(earned = count + 1)
     }
 }
 

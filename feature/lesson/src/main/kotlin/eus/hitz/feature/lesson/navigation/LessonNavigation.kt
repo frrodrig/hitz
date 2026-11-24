@@ -11,7 +11,7 @@ import kotlinx.serialization.Serializable
 
 /**
  * Full-screen session for a level of the path. [lessonId] is set for lesson levels and null for
- * generated levels (review, legendary). Argument names are read by
+ * generated levels (review, star challenge). Argument names are read by
  * [eus.hitz.feature.lesson.LessonViewModel].
  */
 @Serializable

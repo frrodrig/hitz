@@ -13,6 +13,9 @@ enum class AchievementType(val thresholds: List<Int>) {
     Lessons(listOf(5, 25, 50, 100)),
     Perfect(listOf(1, 10, 25, 50)),
     Stories(listOf(1, 5, 10, 24)),
+
+    /** Star challenges passed with all three stars. */
+    ThreeStars(listOf(1, 6, 12, 24)),
 }
 
 data class AchievementProgress(val type: AchievementType, val value: Int) {
@@ -36,6 +39,11 @@ object Achievements {
                 AchievementType.Lessons -> activities.count { it.kind == ActivityKind.Lesson }
                 AchievementType.Perfect -> activities.count { it.perfect }
                 AchievementType.Stories -> activities.count { it.kind == ActivityKind.Story }
+                AchievementType.ThreeStars ->
+                    activities
+                        .filter { it.kind == ActivityKind.Challenge && it.perfect }
+                        .distinctBy { it.sessionId }
+                        .size
             }
             AchievementProgress(type, value)
         }

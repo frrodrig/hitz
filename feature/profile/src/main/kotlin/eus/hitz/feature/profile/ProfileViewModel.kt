@@ -3,8 +3,10 @@ package eus.hitz.feature.profile
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
+import eus.hitz.core.domain.challenge.ChallengeRules
 import eus.hitz.core.domain.gamification.ObservePlayerUseCase
 import eus.hitz.core.domain.gamification.PlayerSummary
+import eus.hitz.core.domain.path.ObserveLearningPathUseCase
 import eus.hitz.core.domain.score.ObserveScoreUseCase
 import eus.hitz.core.domain.score.Score
 import eus.hitz.core.domain.settings.ReminderScheduler
@@ -22,13 +24,21 @@ private const val STOP_TIMEOUT_MILLIS = 5_000L
 sealed interface ProfileUiState {
     data object Loading : ProfileUiState
 
-    data class Ready(val player: PlayerSummary, val settings: UserSettings, val score: Score) : ProfileUiState
+    /** [stars]: stars earned in the star challenges, out of [maxStars]. */
+    data class Ready(
+        val player: PlayerSummary,
+        val settings: UserSettings,
+        val score: Score,
+        val stars: Int = 0,
+        val maxStars: Int = 0,
+    ) : ProfileUiState
 }
 
 @HiltViewModel
 class ProfileViewModel @Inject constructor(
     observePlayer: ObservePlayerUseCase,
     observeScore: ObserveScoreUseCase,
+    observeLearningPath: ObserveLearningPathUseCase,
     private val settingsRepository: SettingsRepository,
     private val reminders: ReminderScheduler,
 ) : ViewModel() {
@@ -36,8 +46,16 @@ class ProfileViewModel @Inject constructor(
         observePlayer(),
         settingsRepository.settings,
         observeScore(),
-    ) { player, settings, score ->
-        ProfileUiState.Ready(player, settings, score) as ProfileUiState
+        observeLearningPath(),
+    ) { player, settings, score, path ->
+        val challenges = path.challenges
+        ProfileUiState.Ready(
+            player = player,
+            settings = settings,
+            score = score,
+            stars = challenges.sumOf { it.stars },
+            maxStars = challenges.size * ChallengeRules.MAX_STARS,
+        ) as ProfileUiState
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MILLIS), ProfileUiState.Loading)
 
     fun setDailyGoal(minutes: Int) {

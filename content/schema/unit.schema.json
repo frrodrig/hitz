@@ -307,10 +307,7 @@
           ],
           "properties": {
             "type": {
-              "enum": [
-                "review",
-                "legendary"
-              ]
+              "const": "review"
             },
             "id": {
               "$ref": "#/$defs/id"
@@ -323,6 +320,36 @@
               "enum": [
                 "unit",
                 "section"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "id",
+            "title",
+            "host"
+          ],
+          "properties": {
+            "type": {
+              "const": "challenge"
+            },
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "title": {
+              "$ref": "#/$defs/localized"
+            },
+            "host": {
+              "description": "The cast member who presents the star challenge.",
+              "enum": [
+                "ane",
+                "mikel",
+                "maite",
+                "unai"
               ]
             }
           }

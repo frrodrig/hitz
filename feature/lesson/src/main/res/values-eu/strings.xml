@@ -23,8 +23,10 @@
     <string name="feature_lesson_quit_dismiss">Ikasten jarraitu</string>
     <string name="feature_lesson_finished_title">Ikasgaia osatuta!</string>
     <string name="feature_lesson_finished_accuracy">Lehen saiakeran %%%1$d asmatu duzu.</string>
-    <string name="feature_lesson_out_of_mistakes_title">Akats-mugara iritsi zara</string>
-    <string name="feature_lesson_out_of_mistakes_body">Maila legendarioetan 3 akats bakarrik onartzen dira. Errepasatu unitatea eta saiatu berriro nahi duzunean.</string>
+    <string name="feature_lesson_out_of_mistakes_title">Hiru akats: saiatu berriro</string>
+    <string name="feature_lesson_out_of_mistakes_body">Izarren erronkan, hirugarren akatsarekin amaitzen da. Huts egindakoa errepasoetan agertuko zaizu, eta saiakera bakoitzean galdera desberdinak izango dituzu.</string>
+    <string name="feature_lesson_try_again">Saiatu berriro</string>
+    <string name="feature_lesson_not_now">Orain ez</string>
     <string name="feature_lesson_error">Ezin izan da ikasgaia kargatu.</string>
     <string name="feature_lesson_instruction_listen_tap">Ukitu entzuten duzuna</string>
     <string name="feature_lesson_instruction_listen_type">Idatzi entzuten duzuna</string>
@@ -52,6 +54,10 @@
     <plurals name="feature_lesson_mistakes_left">
         <item quantity="one">Akats %d egin dezakezu oraindik</item>
         <item quantity="other">%d akats egin ditzakezu oraindik</item>
+    </plurals>
+    <plurals name="feature_lesson_challenge_stars">
+        <item quantity="one">Izar %d!</item>
+        <item quantity="other">%d izar!</item>
     </plurals>
     <plurals name="feature_lesson_goal_left">
         <item quantity="one">Minutu %d falta zaizu gaurko helburura iristeko.</item>

@@ -26,7 +26,7 @@ class PlacementUseCaseTest {
     }
 
     @Test
-    fun `passing skips the whole section but legendary levels`() = runTest {
+    fun `passing skips the whole section but star challenges`() = runTest {
         placement.skipSection("s1", accuracy = 0.9f, now = 0L)
         val path = LearningPathBuilder.build(TestContent.course, TestContent.units, progress.completed.value)
         assertThat(path.currentNode).isNull()

@@ -22,8 +22,10 @@
     <string name="feature_lesson_quit_dismiss">Seguir aprendiendo</string>
     <string name="feature_lesson_finished_title">¡Lección completada!</string>
     <string name="feature_lesson_finished_accuracy">Has acertado el %1$d %% a la primera.</string>
-    <string name="feature_lesson_out_of_mistakes_title">Has llegado al límite de fallos</string>
-    <string name="feature_lesson_out_of_mistakes_body">En los niveles legendarios solo se permiten 3 fallos. Repasa la unidad y vuelve a intentarlo cuando quieras.</string>
+    <string name="feature_lesson_out_of_mistakes_title">Tres fallos: vuelve a intentarlo</string>
+    <string name="feature_lesson_out_of_mistakes_body">En el reto de estrellas, el tercer fallo lo termina. Lo que has fallado vuelve en tus repasos, y cada intento trae preguntas distintas.</string>
+    <string name="feature_lesson_try_again">Intentar otra vez</string>
+    <string name="feature_lesson_not_now">Ahora no</string>
     <string name="feature_lesson_error">No se ha podido cargar la lección.</string>
     <string name="feature_lesson_instruction_listen_tap">Toca lo que oyes</string>
     <string name="feature_lesson_instruction_listen_type">Escribe lo que oyes</string>
@@ -51,6 +53,10 @@
     <plurals name="feature_lesson_mistakes_left">
         <item quantity="one">Te queda %d fallo permitido</item>
         <item quantity="other">Te quedan %d fallos permitidos</item>
+    </plurals>
+    <plurals name="feature_lesson_challenge_stars">
+        <item quantity="one">¡%d estrella!</item>
+        <item quantity="other">¡%d estrellas!</item>
     </plurals>
     <plurals name="feature_lesson_goal_left">
         <item quantity="one">Te falta %d minuto para tu objetivo de hoy.</item>

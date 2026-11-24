@@ -19,8 +19,8 @@ class ObserveLearningPathUseCase @Inject constructor(
             val units = course.sections.flatMap { it.units }.associateWith { courses.getUnit(courseId, it) }
             emit(course to units)
         }
-        return combine(content, progress.observeCompleted()) { (course, units), completed ->
-            LearningPathBuilder.build(course, units, completed)
+        return combine(content, progress.observeBestAccuracy()) { (course, units), best ->
+            LearningPathBuilder.build(course, units, best.keys, best)
         }
     }
 }

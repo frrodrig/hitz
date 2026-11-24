@@ -1,5 +1,6 @@
 package eus.hitz.core.domain.session
 
+import eus.hitz.core.domain.challenge.ChallengeRules
 import eus.hitz.core.domain.gamification.ActivityKind
 import eus.hitz.core.domain.gamification.CompleteSessionUseCase
 import eus.hitz.core.domain.gamification.RecordStudyTimeUseCase
@@ -11,7 +12,8 @@ import javax.inject.Inject
 
 /**
  * Saves the outcome of a session: every mistake and its study time, and when it is finished, the
- * completion. Returns what a finished session added to the daily goal, or null when unfinished.
+ * completion (a star challenge keeps its stars there, see [ChallengeRules]). Returns what a
+ * finished session added to the daily goal, or null when unfinished.
  */
 class RecordSessionUseCase @Inject constructor(
     private val progress: ProgressRepository,
@@ -35,7 +37,12 @@ class RecordSessionUseCase @Inject constructor(
             if (activeMillis > 0) recordStudyTime(activeMillis)
             return null
         }
-        progress.recordCompletion(unitId, sessionId, result.accuracy, now)
+        val stored = if (kind == ActivityKind.Challenge) {
+            ChallengeRules.storedAccuracy(ChallengeRules.stars(result.mistakes.size))
+        } else {
+            result.accuracy
+        }
+        progress.recordCompletion(unitId, sessionId, stored, now)
         return completeSession(sessionId, kind, result.accuracy, result.isPerfect, activeMillis)
     }
 

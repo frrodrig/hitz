@@ -12,6 +12,7 @@ import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
 import com.github.takahirom.roborazzi.captureRoboImage
 import com.google.common.truth.Truth.assertThat
 import eus.hitz.core.designsystem.theme.HitzTheme
+import eus.hitz.core.domain.path.LearningPath
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -36,12 +37,13 @@ class PathContentTest {
         darkTheme: Boolean = false,
         dailyGoal: Float = 0.6f,
         seenUnitIntros: Set<String> = setOf("u01-1"),
+        path: LearningPath = PathTestData.path,
     ) {
         composeRule.setContent {
             HitzTheme(darkTheme = darkTheme) {
                 Surface {
                     PathContent(
-                        state = PathUiState.Ready(PathTestData.path, dailyGoal, seenUnitIntros, score = 7),
+                        state = PathUiState.Ready(path, dailyGoal, seenUnitIntros, score = 7),
                         onOpenProfile = { profileOpened = true },
                         onStartLevel = { u, l, s -> started = Triple(u, l, s) },
                         onOpenGuidebook = { guidebook = it },
@@ -87,6 +89,24 @@ class PathContentTest {
     fun lockedNodesAreDisabled() {
         show()
         composeRule.onNodeWithContentDescription("Repaso: Repaso, bloqueado").assertIsNotEnabled()
+    }
+
+    @Test
+    fun aLockedChallengeWaitsForTheUnit() {
+        show()
+        composeRule.onNodeWithContentDescription("Reto de estrellas de la unidad 1.1", substring = true)
+            .assertIsNotEnabled()
+    }
+
+    @Test
+    fun anAvailableChallengeShowsItsStarsAndStarts() {
+        val unit = PathTestData.path.sections.single().units.first()
+        val challenge = checkNotNull(unit.challenge).copy(isAvailable = true, stars = 2)
+        val section = PathTestData.path.sections.single()
+        val units = listOf(unit.copy(challenge = challenge)) + section.units.drop(1)
+        show(path = LearningPath(listOf(section.copy(units = units))))
+        composeRule.onNodeWithContentDescription("Reto de estrellas de la unidad 1.1: 2 de 3 estrellas").performClick()
+        assertThat(started).isEqualTo(Triple("u01-1", "u01-1.l5", null))
     }
 
     @Test

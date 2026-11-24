@@ -17,6 +17,7 @@ import eus.hitz.core.model.content.Section
 import eus.hitz.core.model.content.Story
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.map
 
 internal object TestContent {
     private val text = LocalizedText("x", "x")
@@ -25,8 +26,8 @@ internal object TestContent {
         Exercise.ChooseMeaning(id, "Kaixo", listOf("Hola", "Adiós"), 0, vocabulary, structures)
 
     /**
-     * A unit with two lesson levels (the second with two lessons), a story, a review and a legendary
-     * level; the last unit of the section also closes it with a section review.
+     * A unit with two lesson levels (the second with two lessons), a story, a review and a star
+     * challenge; the last unit of the section also closes it with a section review.
      */
     fun unit(id: String, sectionReview: Boolean = false) = CourseUnit(
         schemaVersion = 1,
@@ -60,7 +61,7 @@ internal object TestContent {
             ),
             Level.StoryLevel("$id.l3", text, Story("$id.l3.story", "t", emptyList(), emptyList())),
             Level.Review("$id.l4", text),
-            Level.Legendary("$id.l5", text),
+            Level.Challenge("$id.l5", text, host = "ane"),
             Level.Review("$id.l6", text, ReviewScope.Section).takeIf { sectionReview },
         ),
     )
@@ -88,10 +89,13 @@ internal class FakeProgressRepository(var stats: MistakeStats = MistakeStats()) 
 
     override fun observeCompletions(): Flow<Map<String, Long>> = completions
 
+    override fun observeBestAccuracy(): Flow<Map<String, Float>> =
+        completed.map { ids -> ids.associateWith { accuracies[it] ?: 1f } }
+
     override suspend fun recordCompletion(unitId: String, completionId: String, accuracy: Float, completedAt: Long) {
+        accuracies[completionId] = maxOf(accuracy, accuracies[completionId] ?: 0f)
         completed.value = completed.value + completionId
         if (completionId !in completions.value) completions.value += completionId to completedAt
-        accuracies[completionId] = accuracy
     }
 
     override suspend fun recordMistakes(unitId: String, mistakes: List<Mistake>, recordedAt: Long) {
