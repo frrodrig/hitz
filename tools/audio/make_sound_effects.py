@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Synthesises the app's sound effects (original, no samples) into core/data/src/main/res/raw.
 
-Soft sine tones with harmonics and a fast attack / exponential decay. Needs numpy and ffmpeg
-(libopus). Run: python3 tools/audio/make_sound_effects.py
+Soft sine tones with harmonics and a fast attack / exponential decay; the right-answer sound is a
+two-note marimba, quieter than the others. Needs numpy and ffmpeg (libopus).
+Run: python3 tools/audio/make_sound_effects.py
 """
 from __future__ import annotations
 
@@ -25,6 +26,28 @@ def tone(freq: float, seconds: float, decay: float = 6.0, harmonics: tuple[float
     return wave_ * attack * np.exp(-decay * t)
 
 
+def marimba(freq: float, seconds: float) -> np.ndarray:
+    """A wooden bar: the fundamental plus the bright 4th and 10th partials, which die out fast."""
+    t = np.arange(int(RATE * seconds)) / RATE
+
+    def partial(ratio: float, amp: float, attack: float, decay: float) -> np.ndarray:
+        return amp * np.sin(2 * np.pi * freq * ratio * t) * np.minimum(1.0, t / attack) * np.exp(-decay * t)
+
+    return partial(1, 1.0, 0.002, 7) + partial(4, 0.25, 0.001, 40) + partial(10, 0.05, 0.001, 90)
+
+
+def mix(parts: list[tuple[float, np.ndarray]], seconds: float, peak: float) -> np.ndarray:
+    """parts: (start seconds, samples); normalised to [peak] with a 10 ms fade-out."""
+    out = np.zeros(int(RATE * seconds))
+    for start, sound in parts:
+        begin = int(RATE * start)
+        out[begin:begin + len(sound)] += sound[: len(out) - begin]
+    out = out / np.max(np.abs(out)) * peak
+    fade = int(0.01 * RATE)
+    out[-fade:] *= np.linspace(1.0, 0.0, fade)
+    return out
+
+
 def sequence(notes: list[tuple[float, float, float]], tail: float = 0.4) -> np.ndarray:
     """notes: (start seconds, frequency, length seconds)."""
     total = max(start + length for start, _, length in notes) + tail
@@ -37,8 +60,8 @@ def sequence(notes: list[tuple[float, float, float]], tail: float = 0.4) -> np.n
 
 
 EFFECTS = {
-    # Rising major sixth: E5 → C#6.
-    "correct": sequence([(0.0, 659.25, 0.12), (0.09, 1108.73, 0.25)]),
+    # Marimba, rising fourth: G5 → C6.
+    "correct": mix([(0.0, marimba(783.99, 0.6)), (0.085, marimba(1046.5, 0.7))], seconds=0.8, peak=0.6),
     # Soft falling minor second, low: A3 → G#3.
     "incorrect": sequence([(0.0, 220.0, 0.14), (0.12, 207.65, 0.3)], tail=0.2),
     # Arpeggio C5 E5 G5 C6.
