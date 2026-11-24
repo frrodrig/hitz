@@ -10,10 +10,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/frrodrig/hitz/releases/latest"><img src="https://img.shields.io/github/v/release/frrodrig/hitz?label=download&color=385F97" alt="Latest release"></a>
+  <a href="https://github.com/frrodrig/hitz/releases/latest"><img src="docs/images/badges/download.svg" alt="Download the latest release"></a>
   <a href="https://github.com/frrodrig/hitz/actions/workflows/ci.yml"><img src="https://github.com/frrodrig/hitz/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <img src="https://img.shields.io/badge/Android-8.0%2B-2E7D6F" alt="Android 8.0+">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-B7791F" alt="Apache-2.0"></a>
+  <img src="docs/images/badges/android.svg" alt="Android 8.0+">
+  <a href="LICENSE"><img src="docs/images/badges/license.svg" alt="License: Apache-2.0"></a>
 </p>
 
 <p align="center">
