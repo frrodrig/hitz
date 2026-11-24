@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.rememberLazyListState
@@ -66,6 +67,9 @@ import eus.hitz.core.domain.score.ScoreRules
 /** Horizontal offsets that make the path wind gently down the screen. */
 private val Winding = listOf(0.dp, 44.dp, 64.dp, 44.dp, 0.dp, (-44).dp, (-64).dp, (-44).dp)
 private val MASCOT_SIZE = 96.dp
+
+/** Ane beside a node next to a star challenge, where the path leaves less room. */
+private val MASCOT_SIZE_TIGHT = 72.dp
 private val GUIDE_BUTTON = 56.dp
 private val CHIP_ICON = 18.dp
 private const val UNIT_COLORS = 3
@@ -202,12 +206,17 @@ private sealed interface PathRow {
 
     data class Node(val node: PathNode, val index: Int, override val sectionNumber: Int) : PathRow
 
-    /** A unit's star challenge, beside the path: on the side the path bends away from. */
+    /**
+     * A unit's star challenge and the [nodes] beside it, with their indexes: the nodes keep their
+     * place on the path and the challenge fills the gap on the side the path bends away from.
+     */
     data class Challenge(
         val challenge: PathChallenge,
-        val alignStart: Boolean,
+        val nodes: List<Node>,
         override val sectionNumber: Int,
-    ) : PathRow
+    ) : PathRow {
+        val alignStart: Boolean get() = nodes.sumOf { Winding[it.index % Winding.size].value.toDouble() } >= 0
+    }
 }
 
 private fun LearningPath.rows(): List<PathRow> = buildList {
@@ -217,13 +226,15 @@ private fun LearningPath.rows(): List<PathRow> = buildList {
         add(PathRow.SectionHeader(section, number))
         section.units.forEach { unit ->
             add(PathRow.UnitHeader(unit, unitIndex++, number))
-            // The challenge goes halfway through the unit: after its last lesson level.
-            val challengeAfter = unit.nodes.indexOfLast { it.type == NodeType.Lesson }.coerceAtLeast(0)
-            unit.nodes.forEachIndexed { index, node ->
-                add(PathRow.Node(node, index, number))
+            // The challenge goes halfway through the unit, beside its last lesson level and the next.
+            val nodes = unit.nodes.mapIndexed { index, node -> PathRow.Node(node, index, number) }
+            val first = unit.nodes.indexOfLast { it.type == NodeType.Lesson }.coerceAtLeast(0)
+            val beside = if (unit.challenge == null) IntRange.EMPTY else first..minOf(first + 1, nodes.lastIndex)
+            nodes.forEachIndexed { index, node ->
                 val challenge = unit.challenge
-                if (challenge != null && index == challengeAfter) {
-                    add(PathRow.Challenge(challenge, Winding[index % Winding.size] > 0.dp, number))
+                when {
+                    challenge == null || index !in beside -> add(node)
+                    index == beside.first -> add(PathRow.Challenge(challenge, nodes.slice(beside), number))
                 }
             }
         }
@@ -240,7 +251,13 @@ private fun LearningPathList(
     listState: LazyListState,
     modifier: Modifier = Modifier,
 ) {
-    val currentIndex = rows.indexOfFirst { it is PathRow.Node && it.node.isCurrent }
+    val currentIndex = rows.indexOfFirst { row ->
+        when (row) {
+            is PathRow.Node -> row.node.isCurrent
+            is PathRow.Challenge -> row.nodes.any { it.node.isCurrent }
+            else -> false
+        }
+    }
     LaunchedEffect(currentIndex) {
         if (currentIndex > 0) listState.scrollToItem((currentIndex - 2).coerceAtLeast(0))
     }
@@ -262,36 +279,61 @@ private fun LearningPathList(
                     NodeRow(row.node, Winding[row.index % Winding.size]) { onNodeClick(row.node) }
                 }
                 is PathRow.Challenge -> item(key = row.key) {
-                    Box(Modifier.fillMaxWidth().padding(horizontal = HitzSpacing.xl)) {
-                        PathChallengeItem(
-                            challenge = row.challenge,
-                            onClick = { onChallengeClick(row.challenge) },
-                            modifier = Modifier.align(
-                                if (row.alignStart) Alignment.CenterStart else Alignment.CenterEnd,
-                            ),
-                        )
-                    }
+                    ChallengeRows(
+                        row = row,
+                        onChallengeClick = { onChallengeClick(row.challenge) },
+                        onNodeClick = onNodeClick,
+                    )
                 }
             }
         }
     }
 }
 
-/** A node on its winding offset; Ane waits beside the current one, playing the trikitixa. */
+/**
+ * A node on its winding offset; Ane waits beside the current one, playing the trikitixa, on the
+ * side the path leaves free, or on [companionAtStart]'s side when something else is there.
+ */
 @Composable
-private fun NodeRow(node: PathNode, offset: Dp, onClick: () -> Unit) {
+private fun NodeRow(node: PathNode, offset: Dp, companionAtStart: Boolean? = null, onClick: () -> Unit) {
     Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
         PathNodeButton(node = node, onClick = onClick, modifier = Modifier.offset(x = offset))
         if (node.isCurrent) {
+            val atStart = companionAtStart ?: (offset > 0.dp)
             HitzMascot(
                 pose = MascotPose.Hola,
-                size = MASCOT_SIZE,
+                size = if (companionAtStart == null) MASCOT_SIZE else MASCOT_SIZE_TIGHT,
                 contentDescription = null,
                 modifier = Modifier
-                    .align(if (offset > 0.dp) Alignment.CenterStart else Alignment.CenterEnd)
-                    .padding(horizontal = HitzSpacing.xl),
+                    .align(if (atStart) Alignment.CenterStart else Alignment.CenterEnd)
+                    .padding(horizontal = if (companionAtStart == null) HitzSpacing.xl else HitzSpacing.sm),
             )
         }
+    }
+}
+
+/**
+ * The nodes beside a star challenge, spaced like the rest of the path, with the challenge in the
+ * gap the path leaves. Ane, beside a current node here, moves to the other side, a little smaller.
+ */
+@Composable
+private fun ChallengeRows(row: PathRow.Challenge, onChallengeClick: () -> Unit, onNodeClick: (PathNode) -> Unit) {
+    Box(Modifier.fillMaxWidth()) {
+        Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg)) {
+            row.nodes.forEach { node ->
+                NodeRow(node.node, Winding[node.index % Winding.size], companionAtStart = !row.alignStart) {
+                    onNodeClick(node.node)
+                }
+            }
+        }
+        PathChallengeItem(
+            challenge = row.challenge,
+            onClick = onChallengeClick,
+            modifier = Modifier
+                .matchParentSize()
+                .wrapContentSize(if (row.alignStart) Alignment.CenterStart else Alignment.CenterEnd)
+                .padding(horizontal = HitzSpacing.xl),
+        )
     }
 }
 
