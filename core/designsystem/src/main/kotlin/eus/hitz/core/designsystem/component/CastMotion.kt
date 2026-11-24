@@ -540,13 +540,40 @@ internal enum class Motion(val periodMillis: Int, val delayMillis: Int, val trac
         2_600,
         0,
         listOf(
-            track(Prop.X, 0f to 0f, 0.15f to 0f, 0.7f to 74f, 1f to 74f, easing = LinearEasing),
+            // Hidden once in the bin, it goes back to the hand and shows again.
+            track(
+                Prop.X,
+                0f to 0f,
+                0.15f to 0f,
+                0.7f to 74f,
+                0.74f to 74f,
+                0.75f to 0f,
+                1f to 0f,
+                easing = LinearEasing,
+            ),
             Track(
                 Prop.Y,
-                listOf(key(0f, 0f), key(0.15f, 0f), key(0.42f, -50f, EaseOut), key(0.7f, -18f, EaseIn), key(1f, -18f)),
+                listOf(
+                    key(0f, 0f),
+                    key(0.15f, 0f),
+                    key(0.42f, -50f, EaseOut),
+                    key(0.7f, -18f, EaseIn),
+                    key(0.74f, -18f),
+                    key(0.75f, 0f, LinearEasing),
+                    key(1f, 0f),
+                ),
             ),
-            track(Prop.Rotation, 0f to 0f, 0.15f to 0f, 0.7f to 200f, 1f to 200f, easing = LinearEasing),
-            track(Prop.Alpha, 0f to 1f, 0.7f to 1f, 0.72f to 0f, 0.95f to 0f, 1f to 1f, easing = LinearEasing),
+            track(
+                Prop.Rotation,
+                0f to 0f,
+                0.15f to 0f,
+                0.7f to 200f,
+                0.74f to 200f,
+                0.75f to 0f,
+                1f to 0f,
+                easing = LinearEasing,
+            ),
+            track(Prop.Alpha, 0f to 1f, 0.7f to 1f, 0.72f to 0f, 0.85f to 0f, 1f to 1f, easing = LinearEasing),
         ),
     ),
 
@@ -628,7 +655,7 @@ private fun orbit() = listOf(
 
 private fun drip() = listOf(
     track(Prop.Y, 0f to 0f, 0.8f to 26f, 1f to 26f, easing = EaseIn),
-    track(Prop.Alpha, 0f to 1f, 0.7f to 1f, 0.8f to 0f, 1f to 0f, easing = LinearEasing),
+    track(Prop.Alpha, 0f to 0f, 0.1f to 1f, 0.7f to 1f, 0.8f to 0f, 1f to 0f, easing = LinearEasing),
 )
 
 private fun bubble() = listOf(
