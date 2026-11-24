@@ -1,0 +1,28 @@
+<!-- Unai con dolor de cabeza, y estrellitas que giran. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u08-1, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Unai con dolor de cabeza, y estrellitas que giran" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#E3EEF1" />
+  <rect x="0" y="164" width="200" height="36" fill="#B98552" />
+  <g data-depth-generated="">
+    <clipPath id="u08-1-1">
+      <path d="M0,164 h200 v36 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u08-1-1)">
+      <path d="M-40 124 H240 V240 H-40 Z M-4.32 160.11 h200 v36 h-200 Z" fill-rule="evenodd" fill="#996D43" />
+      <path d="M-40 124 H240 V240 H-40 Z M2 167 h200 v36 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="160" width="200" height="6" fill="#8A5A30" />
+  <rect x="132" y="96" width="56" height="68" rx="6" fill="#FFFFFF" stroke="#1F6F78" stroke-width="2" />
+  <rect x="152" y="110" width="16" height="40" rx="2" fill="#D7263D" />
+  <rect x="140" y="122" width="40" height="16" rx="2" fill="#D7263D" />
+  <g data-host="2 50 132" />
+  <ellipse cx="60" cy="68" rx="30" ry="8" fill="none" stroke="#E9A21E" stroke-width="1.5" opacity="0.5" />
+  <g data-motion="Orbit" data-pivot="60 68">
+    <path d="M60 62 L62 66 L66 67 L63 70 L64 74 L60 72 L56 74 L57 70 L54 67 L58 66 Z" fill="#E9A21E" />
+  </g>
+  <g data-motion="OrbitLate" data-pivot="60 68">
+    <path d="M60 62 L62 66 L66 67 L63 70 L64 74 L60 72 L56 74 L57 70 L54 67 L58 66 Z" fill="#E9A21E" />
+  </g>
+</svg>

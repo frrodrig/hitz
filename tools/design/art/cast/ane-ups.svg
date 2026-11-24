@@ -5,11 +5,47 @@
   <g>
     <g>
       <path d="M150 52 C186 46 196 86 182 118 C176 96 166 78 148 70 Z" fill="#2B1D16" />
+      <g data-depth-generated="">
+        <clipPath id="ane-ups-7">
+          <path d="M150 52 C186 46 196 86 182 118 C176 96 166 78 148 70 Z" />
+        </clipPath>
+        <g clip-path="url(#ane-ups-7)">
+          <path d="M108 6 H236 V158 H108 Z M144.24 46.82 C180.24 40.82 190.24 80.82 176.24 112.82 C170.24 90.82 160.24 72.82 142.24 64.82 Z" fill-rule="evenodd" fill="#2B1C15" />
+          <path d="M108 6 H236 V158 H108 Z M152 55 C188 49 198 89 184 121 C178 99 168 81 150 73 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+        </g>
+      </g>
     </g>
     <rect x="94" y="236" width="20" height="28" rx="8" fill="#2B1D16" />
+    <g data-depth-generated="">
+      <clipPath id="ane-ups-6">
+        <path d="M102,236 h4 a8,8 0 0,1 8,8 v12 a8,8 0 0,1 -8,8 h-4 a8,8 0 0,1 -8,-8 v-12 a8,8 0 0,1 8,-8 Z" />
+      </clipPath>
+      <g clip-path="url(#ane-ups-6)">
+        <path d="M46 188 H162 V312 H46 Z M97.68 232.11 h4 a8 8 0 0 1 8 8 v12 a8 8 0 0 1 -8 8 h-4 a8 8 0 0 1 -8 -8 v-12 a8 8 0 0 1 8 -8 Z" fill-rule="evenodd" fill="#2B1C15" />
+        <path d="M46 188 H162 V312 H46 Z M104 239 h4 a8 8 0 0 1 8 8 v12 a8 8 0 0 1 -8 8 h-4 a8 8 0 0 1 -8 -8 v-12 a8 8 0 0 1 8 -8 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+      </g>
+    </g>
     <rect x="126" y="236" width="20" height="28" rx="8" fill="#2B1D16" />
+    <g data-depth-generated="">
+      <clipPath id="ane-ups-5">
+        <path d="M134,236 h4 a8,8 0 0,1 8,8 v12 a8,8 0 0,1 -8,8 h-4 a8,8 0 0,1 -8,-8 v-12 a8,8 0 0,1 8,-8 Z" />
+      </clipPath>
+      <g clip-path="url(#ane-ups-5)">
+        <path d="M78 188 H194 V312 H78 Z M129.68 232.11 h4 a8 8 0 0 1 8 8 v12 a8 8 0 0 1 -8 8 h-4 a8 8 0 0 1 -8 -8 v-12 a8 8 0 0 1 8 -8 Z" fill-rule="evenodd" fill="#2B1C15" />
+        <path d="M78 188 H194 V312 H78 Z M136 239 h4 a8 8 0 0 1 8 8 v12 a8 8 0 0 1 -8 8 h-4 a8 8 0 0 1 -8 -8 v-12 a8 8 0 0 1 8 -8 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+      </g>
+    </g>
     <g data-motion="Flinch" data-pivot="120 250">
       <rect x="72" y="132" width="96" height="114" rx="36" fill="#D7263D" />
+      <g data-depth-generated="">
+        <clipPath id="ane-ups-4">
+          <path d="M108,132 h24 a36,36 0 0,1 36,36 v42 a36,36 0 0,1 -36,36 h-24 a36,36 0 0,1 -36,-36 v-42 a36,36 0 0,1 36,-36 Z" />
+        </clipPath>
+        <g clip-path="url(#ane-ups-4)">
+          <path d="M-4 56 H244 V322 H-4 Z M98 123 h24 a36 36 0 0 1 36 36 v42 a36 36 0 0 1 -36 36 h-24 a36 36 0 0 1 -36 -36 v-42 a36 36 0 0 1 36 -36 Z" fill-rule="evenodd" fill="#AF2333" />
+          <path d="M-4 56 H244 V322 H-4 Z M110 135 h24 a36 36 0 0 1 36 36 v42 a36 36 0 0 1 -36 36 h-24 a36 36 0 0 1 -36 -36 v-42 a36 36 0 0 1 36 -36 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+        </g>
+      </g>
       <path d="M80 228 Q120 238 160 228" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
       <path d="M98 140 L142 140 L120 160 Z" fill="#FFFFFF" />
       <circle cx="120" cy="142" r="5" fill="#FFFFFF" />
@@ -28,8 +64,35 @@
       <circle cx="172" cy="196" r="9" fill="#F2C6A0" />
       <g data-motion="Shake" data-pivot="120 140">
         <path d="M146 50 L160 38 L162 56 Z M150 58 L170 56 L160 70 Z" fill="#D7263D" />
+        <g data-depth-generated="">
+          <clipPath id="ane-ups-3">
+            <path d="M146 50 L160 38 L162 56 Z M150 58 L170 56 L160 70 Z" />
+          </clipPath>
+          <g clip-path="url(#ane-ups-3)">
+            <path d="M106 -2 H210 V110 H106 Z M142 46.4 L156 34.4 L158 52.4 Z M146 54.4 L166 52.4 L156 66.4 Z" fill-rule="evenodd" fill="#AF2333" />
+            <path d="M106 -2 H210 V110 H106 Z M148 53 L162 41 L164 59 Z M152 61 L172 59 L162 73 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+          </g>
+        </g>
         <circle cx="120" cy="96" r="46" fill="#F2C6A0" />
+        <g data-depth-generated="">
+          <clipPath id="ane-ups-2">
+            <path d="M74,96 a46,46 0 1,0 92,0 a46,46 0 1,0 -92,0 Z" />
+          </clipPath>
+          <g clip-path="url(#ane-ups-2)">
+            <path d="M-12 10 H252 V182 H-12 Z M64 87 a46 46 0 1 0 92 0 a46 46 0 1 0 -92 0 Z" fill-rule="evenodd" fill="#CCA585" />
+            <path d="M-12 10 H252 V182 H-12 Z M76 99 a46 46 0 1 0 92 0 a46 46 0 1 0 -92 0 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+          </g>
+        </g>
         <path d="M71 102 C62 24 178 24 169 102 C158 84 140 74 118 76 C100 78 84 88 71 102 Z" fill="#2B1D16" />
+        <g data-depth-generated="">
+          <clipPath id="ane-ups-1">
+            <path d="M71 102 C62 24 178 24 169 102 C158 84 140 74 118 76 C100 78 84 88 71 102 Z" />
+          </clipPath>
+          <g clip-path="url(#ane-ups-1)">
+            <path d="M22 -16 H218 V142 H22 Z M61.64 93.58 C52.64 15.58 168.64 15.58 159.64 93.58 C148.64 75.58 130.64 65.58 108.64 67.58 C90.64 69.58 74.64 79.58 61.64 93.58 Z" fill-rule="evenodd" fill="#2B1C15" />
+            <path d="M22 -16 H218 V142 H22 Z M73 105 C64 27 180 27 171 105 C160 87 142 77 120 79 C102 81 86 91 73 105 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+          </g>
+        </g>
         <g data-motion="Blink" data-pivot="120 104">
           <circle cx="104" cy="104" r="5.6" fill="#211A15" />
           <circle cx="136" cy="104" r="5.6" fill="#211A15" />

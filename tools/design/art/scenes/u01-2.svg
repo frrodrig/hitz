@@ -1,0 +1,35 @@
+<!-- Unai y su carné, con un sello. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u01-2, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Unai y su carné, con un sello" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#E3EEF1" />
+  <rect x="0" y="150" width="200" height="50" fill="#B98552" />
+  <g data-depth-generated="">
+    <clipPath id="u01-2-2">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u01-2-2)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#996D43" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="146" width="200" height="6" fill="#8A5A30" />
+  <rect x="118" y="112" width="70" height="44" rx="6" fill="#FFF4E8" stroke="#1F6F78" stroke-width="2.5" />
+  <circle cx="134" cy="128" r="8" fill="#C68A5E" />
+  <path d="M126 146 Q134 136 142 146 Z" fill="#1F6F78" />
+  <path d="M150 124 H178 M150 134 H172 M150 144 H176" stroke="#1F6F78" stroke-width="3" stroke-linecap="round" />
+  <g data-host="2 50 132" />
+  <g data-motion="Stamp" data-pivot="166 96">
+    <rect x="154" y="58" width="24" height="30" rx="6" fill="#8A5A30" />
+    <g data-depth-generated="">
+      <clipPath id="u01-2-1">
+        <path d="M160,58 h12 a6,6 0 0,1 6,6 v18 a6,6 0 0,1 -6,6 h-12 a6,6 0 0,1 -6,-6 v-18 a6,6 0 0,1 6,-6 Z" />
+      </clipPath>
+      <g clip-path="url(#u01-2-1)">
+        <path d="M108 12 H224 V134 H108 Z M155.68 54.11 h12 a6 6 0 0 1 6 6 v18 a6 6 0 0 1 -6 6 h-12 a6 6 0 0 1 -6 -6 v-18 a6 6 0 0 1 6 -6 Z" fill-rule="evenodd" fill="#724A29" />
+        <path d="M108 12 H224 V134 H108 Z M162 61 h12 a6 6 0 0 1 6 6 v18 a6 6 0 0 1 -6 6 h-12 a6 6 0 0 1 -6 -6 v-18 a6 6 0 0 1 6 -6 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+      </g>
+    </g>
+    <rect x="150" y="86" width="32" height="10" rx="3" fill="#D7263D" />
+  </g>
+</svg>

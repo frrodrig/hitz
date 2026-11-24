@@ -1,0 +1,57 @@
+<!-- Mikel después de cortar un tronco. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u07-1, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Mikel después de cortar un tronco" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#E8F1E4" />
+  <path d="M0 150 Q50 118 110 140 T200 132 V200 H0 Z" fill="#8BC48A" />
+  <g data-depth-generated="">
+    <clipPath id="u07-1-4">
+      <path d="M0 150 Q50 118 110 140 T200 132 V200 H0 Z" />
+    </clipPath>
+    <g clip-path="url(#u07-1-4)">
+      <path d="M-40 78 H240 V240 H-40 Z M-9.84 141.14 Q40.16 109.14 100.16 131.14 T190.16 123.14 V191.14 H-9.84 Z" fill-rule="evenodd" fill="#77A171" />
+      <path d="M-40 78 H240 V240 H-40 Z M2 153 Q52 121 112 143 T202 135 V203 H2 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <path d="M0 166 Q60 146 120 164 T200 160 V200 H0 Z" fill="#5FA463" />
+  <g data-depth-generated="">
+    <clipPath id="u07-1-3">
+      <path d="M0 166 Q60 146 120 164 T200 160 V200 H0 Z" />
+    </clipPath>
+    <g clip-path="url(#u07-1-3)">
+      <path d="M-40 106 H240 V240 H-40 Z M-6.48 160.17 Q53.52 140.17 113.52 158.17 T193.52 154.17 V194.17 H-6.48 Z" fill-rule="evenodd" fill="#538450" />
+      <path d="M-40 106 H240 V240 H-40 Z M2 169 Q62 149 122 167 T202 163 V203 H2 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <path d="M140 64 L130 100 H150 Z" fill="#3F7D4A" />
+  <path d="M140 50 L126 84 H154 Z" fill="#4E9258" />
+  <g data-depth-generated="">
+    <clipPath id="u07-1-2">
+      <path d="M140 50 L126 84 H154 Z" />
+    </clipPath>
+    <g clip-path="url(#u07-1-2)">
+      <path d="M86 10 H194 V124 H86 Z M136 46.4 L122 80.4 H150 Z" fill-rule="evenodd" fill="#457547" />
+      <path d="M86 10 H194 V124 H86 Z M142 53 L128 87 H156 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="137" y="100" width="6" height="10" fill="#6B4A36" />
+  <g data-host="2 50 132" />
+  <rect x="130" y="138" width="50" height="22" rx="4" fill="#8A5A30" />
+  <g data-depth-generated="">
+    <clipPath id="u07-1-1">
+      <path d="M134,138 h42 a4,4 0 0,1 4,4 v14 a4,4 0 0,1 -4,4 h-42 a4,4 0 0,1 -4,-4 v-14 a4,4 0 0,1 4,-4 Z" />
+    </clipPath>
+    <g clip-path="url(#u07-1-1)">
+      <path d="M86 94 H224 V204 H86 Z M130 134.4 h42 a4 4 0 0 1 4 4 v14 a4 4 0 0 1 -4 4 h-42 a4 4 0 0 1 -4 -4 v-14 a4 4 0 0 1 4 -4 Z" fill-rule="evenodd" fill="#724A29" />
+      <path d="M86 94 H224 V204 H86 Z M136 141 h42 a4 4 0 0 1 4 4 v14 a4 4 0 0 1 -4 4 h-42 a4 4 0 0 1 -4 -4 v-14 a4 4 0 0 1 4 -4 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <ellipse cx="155" cy="138" rx="25" ry="7" fill="#D9B27A" />
+  <ellipse cx="155" cy="138" rx="14" ry="4" fill="none" stroke="#B98552" stroke-width="1.5" />
+  <g data-motion="Pop" data-pivot="140 120">
+    <path d="M136 118 L146 112 L148 116 L138 122 Z" fill="#D9B27A" />
+  </g>
+  <g data-motion="PopLate" data-pivot="172 116">
+    <path d="M168 114 L178 118 L176 122 L166 118 Z" fill="#D9B27A" />
+  </g>
+</svg>

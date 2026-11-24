@@ -51,8 +51,6 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import eus.hitz.core.designsystem.component.HitzDailyGoalChip
-import eus.hitz.core.designsystem.component.HitzMascot
-import eus.hitz.core.designsystem.component.MascotPose
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.domain.path.LearningPath
@@ -66,10 +64,9 @@ import eus.hitz.core.domain.score.ScoreRules
 
 /** Horizontal offsets that make the path wind gently down the screen. */
 private val Winding = listOf(0.dp, 44.dp, 64.dp, 44.dp, 0.dp, (-44).dp, (-64).dp, (-44).dp)
-private val MASCOT_SIZE = 96.dp
 
-/** Ane beside a node next to a star challenge, where the path leaves less room. */
-private val MASCOT_SIZE_TIGHT = 72.dp
+/** How far from the centre the path runs beside a star challenge's scene. */
+private val BESIDE_CHALLENGE = 60.dp
 private val GUIDE_BUTTON = 56.dp
 private val CHIP_ICON = 18.dp
 private const val UNIT_COLORS = 3
@@ -290,40 +287,30 @@ private fun LearningPathList(
     }
 }
 
-/**
- * A node on its winding offset; Ane waits beside the current one, playing the trikitixa, on the
- * side the path leaves free, or on [companionAtStart]'s side when something else is there.
- */
+/** A node on its winding offset. */
 @Composable
-private fun NodeRow(node: PathNode, offset: Dp, companionAtStart: Boolean? = null, onClick: () -> Unit) {
+private fun NodeRow(node: PathNode, offset: Dp, onClick: () -> Unit) {
     Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
         PathNodeButton(node = node, onClick = onClick, modifier = Modifier.offset(x = offset))
-        if (node.isCurrent) {
-            val atStart = companionAtStart ?: (offset > 0.dp)
-            HitzMascot(
-                pose = MascotPose.Hola,
-                size = if (companionAtStart == null) MASCOT_SIZE else MASCOT_SIZE_TIGHT,
-                contentDescription = null,
-                modifier = Modifier
-                    .align(if (atStart) Alignment.CenterStart else Alignment.CenterEnd)
-                    .padding(horizontal = if (companionAtStart == null) HitzSpacing.xl else HitzSpacing.sm),
-            )
-        }
     }
 }
 
 /**
- * The nodes beside a star challenge, spaced like the rest of the path, with the challenge in the
- * gap the path leaves. Ane, beside a current node here, moves to the other side, a little smaller.
+ * The nodes beside a star challenge, spaced like the rest of the path, with the challenge's scene
+ * in the gap the path leaves. The path bends a little further out here, to make room for it.
  */
 @Composable
 private fun ChallengeRows(row: PathRow.Challenge, onChallengeClick: () -> Unit, onNodeClick: (PathNode) -> Unit) {
     Box(Modifier.fillMaxWidth()) {
         Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg)) {
             row.nodes.forEach { node ->
-                NodeRow(node.node, Winding[node.index % Winding.size], companionAtStart = !row.alignStart) {
-                    onNodeClick(node.node)
+                val winding = Winding[node.index % Winding.size]
+                val offset = if (row.alignStart) {
+                    maxOf(winding, BESIDE_CHALLENGE)
+                } else {
+                    minOf(winding, -BESIDE_CHALLENGE)
                 }
+                NodeRow(node.node, offset) { onNodeClick(node.node) }
             }
         }
         PathChallengeItem(

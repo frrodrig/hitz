@@ -3,6 +3,21 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="120dp" android:height="140dp" android:viewportWidth="240" android:viewportHeight="280">
     <path android:pathData="M64,268 a56,7 0 1,0 112,0 a56,7 0 1,0 -112,0 Z" android:fillColor="#FF211A15" android:fillAlpha="0.1" />
     <path android:pathData="M150 52 C186 46 196 86 182 118 C176 96 166 78 148 70 Z" android:fillColor="#FF2B1D16" />
+    <group>
+        <clip-path android:pathData="M150 52 C186 46 196 86 182 118 C176 96 166 78 148 70 Z" />
+        <path android:pathData="M108 6 H236 V158 H108 Z M144.24 46.82 C180.24 40.82 190.24 80.82 176.24 112.82 C170.24 90.82 160.24 72.82 142.24 64.82 Z" android:fillColor="#FF2B1C15" android:fillType="evenOdd" />
+        <path android:pathData="M108 6 H236 V158 H108 Z M152 55 C188 49 198 89 184 121 C178 99 168 81 150 73 Z" android:fillColor="#FFFFFFFF" android:fillAlpha="0.14" android:fillType="evenOdd" />
+    </group>
     <path android:pathData="M102,236 h4 a8,8 0 0,1 8,8 v12 a8,8 0 0,1 -8,8 h-4 a8,8 0 0,1 -8,-8 v-12 a8,8 0 0,1 8,-8 Z" android:fillColor="#FF2B1D16" />
+    <group>
+        <clip-path android:pathData="M102,236 h4 a8,8 0 0,1 8,8 v12 a8,8 0 0,1 -8,8 h-4 a8,8 0 0,1 -8,-8 v-12 a8,8 0 0,1 8,-8 Z" />
+        <path android:pathData="M46 188 H162 V312 H46 Z M97.68 232.11 h4 a8 8 0 0 1 8 8 v12 a8 8 0 0 1 -8 8 h-4 a8 8 0 0 1 -8 -8 v-12 a8 8 0 0 1 8 -8 Z" android:fillColor="#FF2B1C15" android:fillType="evenOdd" />
+        <path android:pathData="M46 188 H162 V312 H46 Z M104 239 h4 a8 8 0 0 1 8 8 v12 a8 8 0 0 1 -8 8 h-4 a8 8 0 0 1 -8 -8 v-12 a8 8 0 0 1 8 -8 Z" android:fillColor="#FFFFFFFF" android:fillAlpha="0.14" android:fillType="evenOdd" />
+    </group>
     <path android:pathData="M134,236 h4 a8,8 0 0,1 8,8 v12 a8,8 0 0,1 -8,8 h-4 a8,8 0 0,1 -8,-8 v-12 a8,8 0 0,1 8,-8 Z" android:fillColor="#FF2B1D16" />
+    <group>
+        <clip-path android:pathData="M134,236 h4 a8,8 0 0,1 8,8 v12 a8,8 0 0,1 -8,8 h-4 a8,8 0 0,1 -8,-8 v-12 a8,8 0 0,1 8,-8 Z" />
+        <path android:pathData="M78 188 H194 V312 H78 Z M129.68 232.11 h4 a8 8 0 0 1 8 8 v12 a8 8 0 0 1 -8 8 h-4 a8 8 0 0 1 -8 -8 v-12 a8 8 0 0 1 8 -8 Z" android:fillColor="#FF2B1C15" android:fillType="evenOdd" />
+        <path android:pathData="M78 188 H194 V312 H78 Z M136 239 h4 a8 8 0 0 1 8 8 v12 a8 8 0 0 1 -8 8 h-4 a8 8 0 0 1 -8 -8 v-12 a8 8 0 0 1 8 -8 Z" android:fillColor="#FFFFFFFF" android:fillAlpha="0.14" android:fillType="evenOdd" />
+    </group>
 </vector>

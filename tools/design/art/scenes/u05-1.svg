@@ -1,0 +1,71 @@
+<!-- Maite y una cazuela de marmitako. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u05-1, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Maite y una cazuela de marmitako" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#F7E2C6" />
+  <g data-depth-generated="">
+    <clipPath id="u05-1-3">
+      <path d="M0,0 h200 v200 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u05-1-3)">
+      <path d="M-40 -40 H240 V240 H-40 Z M-10 -9 h200 v200 h-200 Z" fill-rule="evenodd" fill="#D3BEA6" />
+      <path d="M-40 -40 H240 V240 H-40 Z M2 3 h200 v200 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="4" y="36" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="26" y="36" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="48" y="36" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="70" y="36" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="92" y="36" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="114" y="36" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="136" y="36" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="158" y="36" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="180" y="36" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="4" y="58" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="26" y="58" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="48" y="58" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="70" y="58" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="92" y="58" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="114" y="58" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="136" y="58" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="158" y="58" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <rect x="180" y="58" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.55" />
+  <path d="M0 84 H200" stroke="#2F6F8A" stroke-width="3" />
+  <rect x="0" y="150" width="200" height="50" fill="#B98552" />
+  <g data-depth-generated="">
+    <clipPath id="u05-1-2">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u05-1-2)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#996D43" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="146" width="200" height="6" fill="#8A5A30" />
+  <g data-host="2 50 132" />
+  <path d="M114 112 H182 L178 146 Q148 154 118 146 Z" fill="#2E3F5C" />
+  <g data-depth-generated="">
+    <clipPath id="u05-1-1">
+      <path d="M114 112 H182 L178 146 Q148 154 118 146 Z" />
+    </clipPath>
+    <g clip-path="url(#u05-1-1)">
+      <path d="M74 72 H222 V194 H74 Z M108.96 107.46 H176.96 L172.96 141.46 Q142.96 149.46 112.96 141.46 Z" fill-rule="evenodd" fill="#2D3549" />
+      <path d="M74 72 H222 V194 H74 Z M116 115 H184 L180 149 Q150 157 120 149 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="106" y="116" width="10" height="6" rx="3" fill="#D7263D" />
+  <rect x="180" y="116" width="10" height="6" rx="3" fill="#D7263D" />
+  <g data-motion="Rattle" data-pivot="148 112">
+    <ellipse cx="148" cy="111" rx="36" ry="6" fill="#3D5275" />
+    <rect x="143" y="101" width="10" height="7" rx="3" fill="#D7263D" />
+  </g>
+  <g data-motion="Steam" data-pivot="136 92">
+    <path d="M136 96 q-6 -8 0 -16 q6 -8 0 -16" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+  </g>
+  <g data-motion="SteamLate" data-pivot="150 92">
+    <path d="M150 94 q-6 -8 0 -16 q6 -8 0 -16" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+  </g>
+  <g data-motion="SteamLater" data-pivot="164 92">
+    <path d="M164 96 q-6 -8 0 -16 q6 -8 0 -16" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+  </g>
+</svg>

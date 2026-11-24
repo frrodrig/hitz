@@ -19,15 +19,23 @@ import androidx.compose.ui.graphics.TransformOrigin
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 
-/** One drawing of a member in a pose: the whole [still] drawable and its animated layer tree. */
-internal class CastArt(@param:DrawableRes val still: Int, val nodes: List<CastNode>)
+/**
+ * One drawing (a member in a pose, or part of a scene): the whole [still] drawable and its animated
+ * layer tree, on a [width] × [height] canvas.
+ */
+internal class CastArt(
+    @param:DrawableRes val still: Int,
+    val nodes: List<CastNode>,
+    val width: Float = CAST_WIDTH,
+    val height: Float = CAST_HEIGHT,
+)
 
 /** A node of the layer tree that `tools/design/cast_to_vector.py` writes in `CastArt.kt`. */
 internal sealed interface CastNode
 
 /**
- * One vector covering the whole 240 × 280 canvas. With a [motion], it moves around
- * ([pivotX], [pivotY]), in the drawing's coordinates.
+ * One vector covering the whole canvas. With a [motion], it moves around ([pivotX], [pivotY]), in
+ * the drawing's coordinates.
  */
 internal class CastLayer(
     @param:DrawableRes val drawable: Int,
@@ -44,8 +52,8 @@ internal class CastGroup(
     val children: List<CastNode>,
 ) : CastNode
 
-private const val VIEW_WIDTH = 240f
-private const val VIEW_HEIGHT = 280f
+private const val CAST_WIDTH = 240f
+private const val CAST_HEIGHT = 280f
 
 /**
  * A member alive: the layers stacked in order, each moved by its motion around its pivot. Every
@@ -56,7 +64,7 @@ private const val VIEW_HEIGHT = 280f
 internal fun AnimatedCast(art: CastArt, modifier: Modifier = Modifier) {
     val clock = rememberCastClock()
     Box(modifier) {
-        art.nodes.forEach { CastNodeView(it, clock) }
+        art.nodes.forEach { CastNodeView(it, art, clock) }
     }
 }
 
@@ -74,7 +82,7 @@ private fun rememberCastClock(): LongState {
 }
 
 @Composable
-private fun BoxScope.CastNodeView(node: CastNode, clock: LongState) {
+private fun BoxScope.CastNodeView(node: CastNode, art: CastArt, clock: LongState) {
     when (node) {
         is CastLayer -> {
             val motion = node.motion
@@ -86,24 +94,24 @@ private fun BoxScope.CastNodeView(node: CastNode, clock: LongState) {
                 } else {
                     Modifier
                         .matchParentSize()
-                        .graphicsLayer { move(motion, node.pivotX, node.pivotY, clock.longValue) }
+                        .graphicsLayer { move(motion, node.pivotX, node.pivotY, art, clock.longValue) }
                 },
             )
         }
         is CastGroup -> Box(
             Modifier
                 .matchParentSize()
-                .graphicsLayer { move(node.motion, node.pivotX, node.pivotY, clock.longValue) },
+                .graphicsLayer { move(node.motion, node.pivotX, node.pivotY, art, clock.longValue) },
         ) {
-            node.children.forEach { CastNodeView(it, clock) }
+            node.children.forEach { CastNodeView(it, art, clock) }
         }
     }
 }
 
-private fun GraphicsLayerScope.move(motion: Motion, pivotX: Float, pivotY: Float, timeMillis: Long) {
-    val unit = size.width / VIEW_WIDTH
+private fun GraphicsLayerScope.move(motion: Motion, pivotX: Float, pivotY: Float, art: CastArt, timeMillis: Long) {
+    val unit = size.width / art.width
     val fraction = motion.fractionAt(timeMillis)
-    transformOrigin = TransformOrigin(pivotX / VIEW_WIDTH, pivotY / VIEW_HEIGHT)
+    transformOrigin = TransformOrigin(pivotX / art.width, pivotY / art.height)
     motion.tracks.forEach { track ->
         val value = track.valueAt(fraction)
         when (track.prop) {
@@ -121,7 +129,7 @@ private fun GraphicsLayerScope.move(motion: Motion, pivotX: Float, pivotY: Float
     }
 }
 
-/** What a [Track] animates. Translations are in the drawing's units (the canvas is 240 wide). */
+/** What a [Track] animates. Translations are in the drawing's units (a member's canvas is 240 wide). */
 internal enum class Prop { X, Y, Rotation, ScaleX, ScaleY, Scale, Alpha }
 
 /** [value] at [at] (0–1 of the loop), reached from the previous key with [easing]. */
@@ -429,12 +437,226 @@ internal enum class Motion(val periodMillis: Int, val delayMillis: Int, val trac
 
     /** …and the big one, with the question mark. */
     Bubble3(4_000, 500, bubble()),
+
+    // ----- Scenes of the star challenges (tools/design/art/scenes/)
+    /** Bunting or curtains stirring in the breeze. */
+    Flutter(2_400, 0, listOf(track(Prop.Rotation, 0f to 0f, 0.25f to 3f, 0.75f to -3f, 1f to 0f))),
+
+    /** Something hanging (a bell, a sign, a frame) swings. */
+    Pendulum(2_000, 0, listOf(track(Prop.Rotation, 0f to 0f, 0.25f to 10f, 0.75f to -10f, 1f to 0f))),
+
+    /** Something floats gently up and down. */
+    Drift(2_400, 0, listOf(track(Prop.Y, 0f to 0f, 0.5f to -5f, 1f to 0f))),
+
+    /** A sign beats like a heart. */
+    Pulse(1_600, 0, listOf(track(Prop.Scale, 0f to 1f, 0.2f to 1.12f, 0.4f to 1f, 1f to 1f))),
+
+    /** A speech bubble, a heart or confetti pops in, stays and goes. */
+    Pop(2_400, 0, pop()),
+
+    /** The same, half a loop later. */
+    PopLate(2_400, 1_200, pop()),
+
+    /** A rubber stamp lifts and comes down on the card. */
+    Stamp(
+        2_000,
+        0,
+        listOf(track(Prop.Y, 0f to 0f, 0.3f to -12f, 0.45f to 4f, 0.55f to 4f, 0.8f to 0f, 1f to 0f)),
+    ),
+
+    /** A pin or an apple hops and lands with a squash. */
+    Bounce(
+        1_400,
+        0,
+        listOf(
+            Track(Prop.Y, listOf(key(0f, 0f), key(0.35f, -16f, EaseOut), key(0.7f, 0f, EaseIn), key(1f, 0f))),
+            track(Prop.ScaleY, 0f to 1f, 0.7f to 1f, 0.76f to 0.86f, 0.84f to 1f, 1f to 1f, easing = LinearEasing),
+        ),
+    ),
+
+    /** Smoke from a chimney rises, grows and fades. */
+    Smoke(3_000, 0, rise(24f, grow = true)),
+
+    /** A second puff, half a loop later. */
+    SmokeLate(3_000, 1_500, rise(24f, grow = true)),
+
+    /** Steam from a pot curls up and fades. */
+    Steam(2_400, 0, rise(18f)),
+
+    /** More steam, a third of a loop later… */
+    SteamLate(2_400, 800, rise(18f)),
+
+    /** …and the last wisp. */
+    SteamLater(2_400, 1_600, rise(18f)),
+
+    /** A pot lid rattles now and then. */
+    Rattle(
+        1_600,
+        0,
+        listOf(
+            track(Prop.Rotation, 0f to 0f, 0.6f to 0f, 0.7f to -4f, 0.8f to 3f, 0.9f to -2f, 1f to 0f),
+            track(Prop.Y, 0f to 0f, 0.6f to 0f, 0.7f to -2f, 0.9f to 0f, 1f to 0f),
+        ),
+    ),
+
+    /** A tortilla flies up from the pan, turns over and lands. */
+    Flip(
+        1_800,
+        0,
+        listOf(
+            Track(
+                Prop.Y,
+                listOf(key(0f, 0f), key(0.15f, 0f), key(0.4f, -34f, EaseOut), key(0.65f, 0f, EaseIn), key(1f, 0f))
+            ),
+            track(Prop.ScaleY, 0f to 1f, 0.15f to 1f, 0.4f to -1f, 0.65f to 1f, 1f to 1f, easing = LinearEasing),
+        ),
+    ),
+
+    /** A gift's lid hops off and drops back. */
+    Hop(
+        2_400,
+        0,
+        listOf(
+            track(Prop.Y, 0f to 0f, 0.2f to -14f, 0.6f to -14f, 0.75f to 0f, 1f to 0f),
+            track(Prop.Rotation, 0f to 0f, 0.2f to -8f, 0.6f to -8f, 0.75f to 0f, 1f to 0f),
+        ),
+    ),
+
+    /** A calendar page lifts and falls back. */
+    PageLift(
+        2_400,
+        0,
+        listOf(track(Prop.ScaleY, 0f to 1f, 0.3f to 1f, 0.5f to -1f, 0.7f to -1f, 0.9f to 1f, 1f to 1f)),
+    ),
+
+    /** A star circles a sore head: right, front, left, behind. */
+    Orbit(2_000, 0, orbit()),
+
+    /** A second star, opposite the first. */
+    OrbitLate(2_000, 1_000, orbit()),
+
+    /** A bottle flies in an arc into the bin and is gone. */
+    Toss(
+        2_600,
+        0,
+        listOf(
+            // Hidden once in the bin, it goes back to the hand and shows again.
+            track(
+                Prop.X,
+                0f to 0f,
+                0.15f to 0f,
+                0.7f to 74f,
+                0.74f to 74f,
+                0.75f to 0f,
+                1f to 0f,
+                easing = LinearEasing,
+            ),
+            Track(
+                Prop.Y,
+                listOf(
+                    key(0f, 0f),
+                    key(0.15f, 0f),
+                    key(0.42f, -50f, EaseOut),
+                    key(0.7f, -18f, EaseIn),
+                    key(0.74f, -18f),
+                    key(0.75f, 0f, LinearEasing),
+                    key(1f, 0f),
+                ),
+            ),
+            track(
+                Prop.Rotation,
+                0f to 0f,
+                0.15f to 0f,
+                0.7f to 200f,
+                0.74f to 200f,
+                0.75f to 0f,
+                1f to 0f,
+                easing = LinearEasing,
+            ),
+            track(Prop.Alpha, 0f to 1f, 0.7f to 1f, 0.72f to 0f, 0.85f to 0f, 1f to 1f, easing = LinearEasing),
+        ),
+    ),
+
+    /** A sprout grows and rests. */
+    Grow(2_400, 0, listOf(track(Prop.Scale, 0f to 0.75f, 0.5f to 1f, 0.85f to 1f, 1f to 0.75f))),
+
+    /** A drop falls from the watering can. */
+    Drip(1_200, 0, drip()),
+
+    /** Another drop, half a loop later. */
+    DripLate(1_200, 600, drip()),
+
+    /** A bus drives across the scene. */
+    Drive(5_000, 0, listOf(track(Prop.X, 0f to 0f, 0.5f to 110f, 0.5001f to -220f, 1f to 0f, easing = LinearEasing))),
+
+    /** A paper plane glides across, rising and dipping. */
+    Glide(
+        5_000,
+        0,
+        listOf(
+            track(Prop.X, 0f to 0f, 0.4f to 120f, 0.4001f to -120f, 1f to 0f, easing = LinearEasing),
+            track(Prop.Y, 0f to 0f, 0.2f to -8f, 0.4f to 0f, 0.7f to 6f, 1f to 0f),
+        ),
+    ),
+
+    /** A hammer swings up and strikes. */
+    Hammer(
+        1_200,
+        0,
+        listOf(track(Prop.Rotation, 0f to 0f, 0.4f to -32f, 0.5f to 6f, 0.6f to 0f, 1f to 0f)),
+    ),
+
+    /** A magnifying glass looks over the page. */
+    Search(
+        4_000,
+        0,
+        listOf(
+            track(Prop.X, 0f to 0f, 0.3f to -14f, 0.6f to 4f, 1f to 0f),
+            track(Prop.Y, 0f to 0f, 0.3f to 8f, 0.6f to 18f, 1f to 0f),
+        ),
+    ),
+
+    /** A pelota flies to the frontón's wall, hits the floor and comes back. */
+    Rally(
+        1_800,
+        0,
+        listOf(
+            track(Prop.X, 0f to 0f, 0.33f to 60f, 0.66f to 30f, 1f to 0f, easing = LinearEasing),
+            Track(
+                Prop.Y,
+                listOf(key(0f, 0f), key(0.33f, -14f, EaseOut), key(0.66f, 84f, EaseIn), key(1f, 0f, EaseOut))
+            ),
+        ),
+    ),
     ;
 
     /** How far into its loop (0–1) the motion is at [timeMillis]. */
     fun fractionAt(timeMillis: Long): Float =
         Math.floorMod(timeMillis - delayMillis, periodMillis.toLong()).toFloat() / periodMillis
 }
+
+private fun pop() = listOf(
+    track(Prop.Scale, 0f to 0.4f, 0.15f to 1.1f, 0.25f to 1f, 0.8f to 1f, 1f to 0.4f),
+    track(Prop.Alpha, 0f to 0f, 0.12f to 1f, 0.8f to 1f, 1f to 0f),
+)
+
+/** Rises [height] and fades; with [grow], it swells as it goes. */
+private fun rise(height: Float, grow: Boolean = false) = listOfNotNull(
+    track(Prop.Alpha, 0f to 0f, 0.25f to 0.9f, 1f to 0f),
+    track(Prop.Y, 0f to 6f, 1f to -height, easing = EaseOut),
+    if (grow) track(Prop.Scale, 0f to 0.6f, 1f to 1.4f) else null,
+)
+
+private fun orbit() = listOf(
+    track(Prop.X, 0f to 30f, 0.25f to 0f, 0.5f to -30f, 0.75f to 0f, 1f to 30f),
+    track(Prop.Y, 0f to 0f, 0.25f to 7f, 0.5f to 0f, 0.75f to -7f, 1f to 0f),
+    track(Prop.Scale, 0f to 1f, 0.25f to 1.25f, 0.5f to 1f, 0.75f to 0.7f, 1f to 1f),
+)
+
+private fun drip() = listOf(
+    track(Prop.Y, 0f to 0f, 0.8f to 26f, 1f to 26f, easing = EaseIn),
+    track(Prop.Alpha, 0f to 0f, 0.1f to 1f, 0.7f to 1f, 0.8f to 0f, 1f to 0f, easing = LinearEasing),
+)
 
 private fun bubble() = listOf(
     track(Prop.Alpha, 0f to 0f, 0.08f to 0f, 0.22f to 1f, 0.78f to 1f, 0.92f to 0f, 1f to 0f),

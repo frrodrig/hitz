@@ -62,7 +62,8 @@ Course ─ Section ─ Unit (guidebook) ─ Level ─ Lesson ─ Exercise
 `review` and `challenge` levels carry no exercises: the app builds them at run time from the
 unit's exercises and the learner's mistakes (spaced repetition). Stories are required to move on
 along the path; star challenges are optional. A `challenge` names its `host`, the cast member who
-presents it beside the path (`ane`, `mikel`, `maite` or `unai`, chosen by the unit's theme).
+presents it beside the path (`ane`, `mikel`, `maite` or `unai`, chosen by the unit's theme); a new
+unit also needs its scene in `tools/design/art/scenes/<unit>.svg` (see `docs/design-system.md`).
 
 A story is a short dialogue: `lines[{speaker, eu, es}]` and `questions[{afterLine, prompt,
 options, correct}]`, where `afterLine` is the 0-based line after which the question appears.
