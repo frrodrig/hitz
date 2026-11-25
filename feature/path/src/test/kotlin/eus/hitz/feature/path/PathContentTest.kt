@@ -132,7 +132,7 @@ class PathContentTest {
     fun theSectionIsNamedOnceAtTheTop() {
         show()
         composeRule.onNodeWithText("Primeros pasos").assertExists()
-        composeRule.onNodeWithText("7 pts").assertExists()
+        composeRule.onNodeWithText("7 pts", useUnmergedTree = true).assertExists()
     }
 
     @Test

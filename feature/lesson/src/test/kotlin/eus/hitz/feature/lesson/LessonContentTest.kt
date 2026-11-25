@@ -34,7 +34,8 @@ class LessonContentTest {
     fun tappingAWordSelectsIt() {
         show(LessonPreviewData.active.copy(exercise = LessonPreviewData.wordBank.copy(selected = emptyList())))
         composeRule.onNodeWithText("Traduce esta frase").assertIsDisplayed()
-        composeRule.onNodeWithText("Hola").performScrollTo().performClick()
+        // The word bank is docked above Check, outside the scrolling content.
+        composeRule.onNodeWithText("Hola").performClick()
         assertThat(actions).containsExactly(LessonAction.SelectTile(2))
     }
 
