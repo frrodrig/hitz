@@ -2,6 +2,7 @@
 
 package eus.hitz.app.ui
 
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
@@ -34,6 +35,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navOptions
 import eus.hitz.app.navigation.TopLevelDestination
+import eus.hitz.core.designsystem.motion.HitzTransitions
 import eus.hitz.core.designsystem.theme.HitzTheme
 import eus.hitz.core.domain.practice.PracticeMode
 import eus.hitz.feature.lesson.navigation.LessonRoute
@@ -81,6 +83,30 @@ private val fullScreenRoutes = listOf(
     ScoreRoute::class,
 )
 
+/** Sessions rise over the path; details move forward along the horizontal axis. */
+private val sessionRoutes = listOf(
+    LessonRoute::class,
+    PlacementRoute::class,
+    PracticeSessionRoute::class,
+    StoryRoute::class,
+)
+private val detailRoutes = listOf(
+    GuidebookRoute::class,
+    UnitIntroRoute::class,
+    UnitReviewRoute::class,
+    ScoreRoute::class,
+)
+
+/** How a destination moves in and out; see [HitzTransitions]. */
+private enum class DestinationKind { TopLevel, Detail, Session }
+
+private val NavDestination.kind: DestinationKind
+    get() = when {
+        sessionRoutes.any { hasRoute(it) } -> DestinationKind.Session
+        detailRoutes.any { hasRoute(it) } -> DestinationKind.Detail
+        else -> DestinationKind.TopLevel
+    }
+
 /** The course starts at its first section; placement tests go through the sections from there. */
 private const val FIRST_SECTION = "s1"
 
@@ -102,14 +128,22 @@ fun HitzApp(
     val wide = with(LocalDensity.current) { LocalWindowInfo.current.containerSize.width.toDp() } >= RAIL_MIN_WIDTH
 
     Row(modifier.fillMaxSize()) {
-        if (wide && showNavigationBar) {
+        AnimatedVisibility(
+            visible = wide && showNavigationBar,
+            enter = HitzTransitions.navigationRailEnter,
+            exit = HitzTransitions.navigationRailExit,
+        ) {
             TopLevelNavigationRail(currentDestination, navController)
         }
         HitzScaffold(
             navController = navController,
             startWithOnboarding = startWithOnboarding,
             bottomBar = {
-                if (!wide && showNavigationBar) {
+                AnimatedVisibility(
+                    visible = !wide && showNavigationBar,
+                    enter = HitzTransitions.navigationBarEnter,
+                    exit = HitzTransitions.navigationBarExit,
+                ) {
                     TopLevelNavigationBar(currentDestination, navController)
                 }
             },
@@ -195,6 +229,34 @@ private fun HitzScaffold(
             modifier = Modifier
                 .padding(padding)
                 .consumeWindowInsets(padding),
+            enterTransition = {
+                when (targetState.destination.kind) {
+                    DestinationKind.Session -> HitzTransitions.sessionEnter
+                    DestinationKind.Detail -> HitzTransitions.forwardEnter
+                    DestinationKind.TopLevel -> HitzTransitions.topLevelEnter
+                }
+            },
+            exitTransition = {
+                when (targetState.destination.kind) {
+                    DestinationKind.Session -> HitzTransitions.underSessionExit
+                    DestinationKind.Detail -> HitzTransitions.forwardExit
+                    DestinationKind.TopLevel -> HitzTransitions.topLevelExit
+                }
+            },
+            popEnterTransition = {
+                when (initialState.destination.kind) {
+                    DestinationKind.Session -> HitzTransitions.underSessionEnter
+                    DestinationKind.Detail -> HitzTransitions.backwardEnter
+                    DestinationKind.TopLevel -> HitzTransitions.topLevelEnter
+                }
+            },
+            popExitTransition = {
+                when (initialState.destination.kind) {
+                    DestinationKind.Session -> HitzTransitions.sessionExit
+                    DestinationKind.Detail -> HitzTransitions.backwardExit
+                    DestinationKind.TopLevel -> HitzTransitions.topLevelExit
+                }
+            },
         ) {
             hitzGraph(navController)
         }
