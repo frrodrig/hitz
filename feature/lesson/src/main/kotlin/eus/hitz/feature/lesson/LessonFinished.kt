@@ -208,12 +208,10 @@ private fun ResultTiles(state: LessonUiState.Finished) {
                 content = if (met) success.onContainer else scheme.onSecondaryContainer,
                 modifier = Modifier.weight(1f),
             ) {
-                // Over 100 % reads as a mistake: a met goal is simply met.
+                // Over 100 % reads as a mistake: a met goal is simply met. The check goes above the
+                // word, so that at large font sizes the word keeps the tile's whole width.
                 if (met) {
-                    Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.spacedBy(HitzSpacing.xs),
-                    ) {
+                    Column(verticalArrangement = Arrangement.spacedBy(HitzSpacing.xxs)) {
                         Icon(painterResource(HitzIcons.Check), contentDescription = null, Modifier.size(GOAL_ICON))
                         Text(
                             text = stringResource(R.string.feature_lesson_stat_goal_met),
