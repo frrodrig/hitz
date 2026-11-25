@@ -26,6 +26,9 @@ object HitzIcons {
 
     @DrawableRes val Close = R.drawable.core_designsystem_ic_close
 
+    /** An answer that is almost right: a small correction, not a mistake. */
+    @DrawableRes val Almost = R.drawable.core_designsystem_ic_almost
+
     @DrawableRes val Back = R.drawable.core_designsystem_ic_back
 
     @DrawableRes val Speaker = R.drawable.core_designsystem_ic_speaker

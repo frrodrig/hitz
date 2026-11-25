@@ -22,6 +22,7 @@ import eus.hitz.core.designsystem.component.MascotPose
 import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
+import eus.hitz.core.designsystem.theme.HitzTextStyles
 import eus.hitz.core.designsystem.theme.HitzTheme
 import eus.hitz.core.model.content.Language
 import eus.hitz.feature.lesson.R
@@ -29,13 +30,15 @@ import eus.hitz.feature.lesson.R
 private val MASCOT_SIZE = 96.dp
 private val BUBBLE_CORNER = 24.dp
 private val BUBBLE_TAIL = 8.dp
+private val BUBBLE_ELEVATION = 1.dp
 
 /** With large fonts the sentence needs the whole width, so the mascot steps aside. */
 private const val MASCOT_MAX_FONT_SCALE = 1.5f
 
 /**
  * The sentence to work on, said by Ane in a speech bubble, with an optional button to hear it.
- * The bubble's small corner points at her.
+ * The sentence is the hero of the exercise: large (`lessonPhrase`), on the lightest surface of
+ * the screen. The bubble's small corner points at her.
  */
 @Composable
 internal fun PromptCard(
@@ -59,21 +62,22 @@ internal fun PromptCard(
                 bottomEnd = BUBBLE_CORNER,
                 bottomStart = if (showMascot) BUBBLE_TAIL else BUBBLE_CORNER,
             ),
-            color = MaterialTheme.colorScheme.surfaceContainerHigh,
+            color = MaterialTheme.colorScheme.surfaceContainerLowest,
+            shadowElevation = BUBBLE_ELEVATION,
         ) {
             Column(
                 modifier = Modifier.padding(
                     start = HitzSpacing.lg,
                     end = HitzSpacing.lg,
                     top = HitzSpacing.lg,
-                    bottom = HitzSpacing.md
+                    bottom = HitzSpacing.md,
                 ),
                 verticalArrangement = Arrangement.spacedBy(HitzSpacing.md),
             ) {
                 LanguageText(
                     text = text,
                     language = language,
-                    style = MaterialTheme.typography.headlineSmall,
+                    style = HitzTextStyles.lessonPhrase,
                     hints = true,
                 )
                 if (onPlay != null) {

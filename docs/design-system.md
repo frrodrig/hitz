@@ -161,7 +161,7 @@ Rules:
 | **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour); see [Motion](#motion). |
 | **Emphasized type** | Screen and question titles, feedback result and counter values, set bold and wide (see [Typography](#typography)). |
 | **Tonal colour** | Tonal containers carry state; bold colour is reserved for the primary action and the hero of each screen (current unit, personal review). The profile's score card sits on `primaryContainer`; cards are tonal (`surfaceContainer`), not outlined. |
-| **Lessons** | The prompt is said by Ane in a speech bubble (its small corner points at her; with fonts over 150 % she steps aside). Mistakes are met by Maite. The end of a lesson is a hero on `tertiaryContainer` with Mikel celebrating, then three result tiles (first-try accuracy, active time, today's goal on the success container when met), each with one small corner towards the next. |
+| **Lessons** | The instruction is a small label in primary; the sentence is the hero, said by Ane in a white speech bubble in `lessonPhrase` (its small corner points at her; with fonts over 150 % she steps aside). The answer is built on ruled lines with no container, and the word bank is docked above Check, where the thumb is. Each exercise moves in from the right; the feedback sheet rises with a spatial spring. A wrong answer says "No es correcto" and then "Solución: …"; an almost-right one has its own pencil icon. Mistakes are met by Maite. The end of a lesson is a hero on `tertiaryContainer` with Mikel celebrating, then three result tiles (first-try accuracy, active time, today's goal on the success container when met), each with one small corner towards the next. |
 | **Navigation** | Detail screens (guide, unit introduction, score, unit review) go back with a Back arrow; only full-screen sessions (lessons, stories) close with an X. |
 
 ## Icons
@@ -185,8 +185,8 @@ so they stay consistent and any change is a reviewable diff; see the content gui
 |---|---|---|
 | `HitzButton` | `Button`, `FilledTonalButton`, `OutlinedButton`, `TextButton` with `ButtonDefaults.shapes()` (shape morph) and expressive sizes | Actions |
 | `HitzChoiceCard` / `HitzChoiceGroup` | `ListItem` + `RadioButton` on tonal surfaces, grouped as a segmented list | Answer option: default, selected, correct, incorrect, disabled |
-| `HitzWordChip` / `HitzWordBank` | 48 dp `Button` tile (lightest container, 2 dp outline, 16 dp corners) in a `FlowRow` | Word bank; used words keep an empty slot. In lessons the answer is built in a tonal tray ruled under each row of tiles |
-| `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel, announced as a live region |
+| `HitzWordChip` / `HitzWordBank` | 48 dp `Button` key (lightest container, 1 dp outline, 14 dp corners) on a 3 dp base, in a `FlowRow` | Word bank; keys sink onto their base when pressed and spring in when they appear; used words leave a dashed slot. In lessons the answer is built on lines ruled under each row of tiles |
+| `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel: check, pencil (almost) or cross; announced as a live region |
 | `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress |
 | `HitzDailyGoalRing` / `HitzDailyGoalChip` | `CircularWavyProgressIndicator` (flat with a check mark when met), in a tonal container | Today's share of the daily goal, spoken as a percentage |
 | `HitzMascot` | Animated stack of a `CastMember`'s layers in a `MascotPose` (or its single `Image` with reduced motion), optionally framed on a `MaterialShapes.Sunny` container | The cast: prompts, lesson end, errors, empty states, avatar |

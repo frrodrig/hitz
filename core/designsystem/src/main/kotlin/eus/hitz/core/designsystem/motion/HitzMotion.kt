@@ -157,3 +157,37 @@ fun HitzReveal(order: Int, modifier: Modifier = Modifier, content: @Composable (
         content()
     }
 }
+
+private const val POP_IN_SCALE = 0.85f
+
+/**
+ * Shows [content] with a small spring, growing from slightly smaller and fading in: for pieces
+ * that appear where the learner put them (a word tile landing in the answer, a tile coming back
+ * to the bank). Fast spatial spring for the size, fast effects for the opacity. With animations
+ * removed, and in previews, the content is simply there.
+ */
+@Composable
+fun HitzPopIn(modifier: Modifier = Modifier, content: @Composable () -> Unit) {
+    val still = rememberReducedMotion() || LocalInspectionMode.current
+    val scale = remember { Animatable(if (still) 1f else POP_IN_SCALE) }
+    val opacity = remember { Animatable(if (still) 1f else 0f) }
+    val scaleSpec = MaterialTheme.motionScheme.fastSpatialSpec<Float>()
+    val opacitySpec = MaterialTheme.motionScheme.fastEffectsSpec<Float>()
+    LaunchedEffect(Unit) {
+        if (opacity.value < 1f) {
+            coroutineScope {
+                launch { scale.animateTo(1f, scaleSpec) }
+                launch { opacity.animateTo(1f, opacitySpec) }
+            }
+        }
+    }
+    Box(
+        modifier.graphicsLayer {
+            scaleX = scale.value
+            scaleY = scale.value
+            alpha = opacity.value
+        },
+    ) {
+        content()
+    }
+}

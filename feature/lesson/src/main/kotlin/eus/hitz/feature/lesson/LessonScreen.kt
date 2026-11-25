@@ -3,6 +3,13 @@
 package eus.hitz.feature.lesson
 
 import androidx.activity.compose.BackHandler
+import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.SizeTransform
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
+import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -42,6 +49,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -55,6 +63,7 @@ import eus.hitz.core.designsystem.component.HitzMascot
 import eus.hitz.core.designsystem.component.HitzStars
 import eus.hitz.core.designsystem.component.MascotPose
 import eus.hitz.core.designsystem.icon.HitzIcons
+import eus.hitz.core.designsystem.motion.HitzTransitions
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.model.content.Language
 import eus.hitz.feature.lesson.exercise.ChooseImageExercise
@@ -68,6 +77,7 @@ import eus.hitz.feature.lesson.exercise.OrderSentenceExercise
 import eus.hitz.feature.lesson.exercise.ReadTrueFalseExercise
 import eus.hitz.feature.lesson.exercise.SpeakExercise
 import eus.hitz.feature.lesson.exercise.TypingExercise
+import eus.hitz.feature.lesson.exercise.WordBankDock
 import eus.hitz.feature.lesson.exercise.WordBankExercise
 import eus.hitz.feature.lesson.exercise.WordIntroExercise
 import eus.hitz.feature.lesson.ui.LocalGlossary
@@ -179,20 +189,49 @@ private fun ActiveLesson(
         bottomBar = { LessonBottomBar(state, onAction) },
     ) { padding ->
         Column(
-            modifier = Modifier
+            Modifier
                 .padding(padding)
-                .fillMaxSize()
-                .verticalScroll(rememberScrollState())
-                .padding(HitzSpacing.lg),
-            verticalArrangement = Arrangement.spacedBy(HitzSpacing.xl),
+                .fillMaxSize(),
         ) {
-            Text(
-                text = instruction(state.exercise),
-                style = MaterialTheme.typography.headlineSmallEmphasized,
-                modifier = Modifier.semantics { heading() },
-            )
-            CompositionLocalProvider(LocalGlossary provides state.glossary) {
-                ExerciseContent(state.exercise, state.feedback?.type, onAction)
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .verticalScroll(rememberScrollState())
+                    .padding(HitzSpacing.lg),
+                verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg),
+            ) {
+                // Each exercise moves in from the right as the previous one moves out.
+                AnimatedContent(
+                    targetState = state.exercise,
+                    contentKey = { it.id },
+                    transitionSpec = {
+                        (HitzTransitions.forwardEnter togetherWith HitzTransitions.forwardExit) using
+                            SizeTransform(clip = false)
+                    },
+                    label = "exercise",
+                ) { exercise ->
+                    Column(verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg)) {
+                        // The instruction is a label; the sentence below is what to look at.
+                        Text(
+                            text = instruction(exercise),
+                            style = MaterialTheme.typography.titleMedium,
+                            color = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.semantics { heading() },
+                        )
+                        CompositionLocalProvider(LocalGlossary provides state.glossary) {
+                            ExerciseContent(exercise, state.feedback?.type, onAction)
+                        }
+                    }
+                }
+            }
+            val exercise = state.exercise
+            if (exercise is ExerciseUi.TileAnswer) {
+                WordBankDock(
+                    exercise = exercise,
+                    onAction = onAction,
+                    enabled = state.feedback == null,
+                    modifier = Modifier.padding(start = HitzSpacing.lg, end = HitzSpacing.lg, top = HitzSpacing.sm),
+                )
             }
         }
     }
@@ -205,13 +244,13 @@ private fun ActiveLesson(
 private fun ExerciseContent(exercise: ExerciseUi, feedback: FeedbackType?, onAction: (LessonAction) -> Unit) {
     val enabled = feedback == null
     when (exercise) {
-        is ExerciseUi.WordBank -> WordBankExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.WordBank -> WordBankExercise(exercise, onAction, enabled = enabled, bankDocked = true)
         is ExerciseUi.Typing -> TypingExercise(exercise, onAction, enabled = enabled)
         is ExerciseUi.ChooseImage -> ChooseImageExercise(exercise, onAction, enabled = enabled)
         is ExerciseUi.MatchPairs -> MatchPairsExercise(exercise, onAction, enabled = enabled)
-        is ExerciseUi.ListenTap -> ListenTapExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.ListenTap -> ListenTapExercise(exercise, onAction, enabled = enabled, bankDocked = true)
         is ExerciseUi.ListenType -> ListenTypeExercise(exercise, onAction, enabled = enabled)
-        is ExerciseUi.OrderSentence -> OrderSentenceExercise(exercise, onAction, enabled = enabled)
+        is ExerciseUi.OrderSentence -> OrderSentenceExercise(exercise, onAction, enabled = enabled, bankDocked = true)
         is ExerciseUi.FillBlank -> FillBlankExercise(exercise, onAction, enabled = enabled)
         is ExerciseUi.ChooseMeaning -> ChooseMeaningExercise(exercise, feedback, onAction)
         is ExerciseUi.CompleteChat -> CompleteChatExercise(exercise, feedback, onAction)
@@ -267,21 +306,61 @@ internal fun LessonTopBar(
     }
 }
 
+/**
+ * Check (or Continue) before answering; after, the feedback sheet, which rises from the bottom
+ * with a spatial spring and sinks back when the learner continues.
+ */
 @Composable
 private fun LessonBottomBar(state: LessonUiState.Active, onAction: (LessonAction) -> Unit) {
-    val feedback = state.feedback
+    val rise = MaterialTheme.motionScheme.defaultSpatialSpec<IntOffset>()
+    val fade = MaterialTheme.motionScheme.defaultEffectsSpec<Float>()
+    val fastFade = MaterialTheme.motionScheme.fastEffectsSpec<Float>()
+    AnimatedContent(
+        targetState = state.feedback,
+        contentKey = { it?.type },
+        transitionSpec = {
+            val change = if (targetState != null) {
+                (slideInVertically(rise) { it } + fadeIn(fade)) togetherWith fadeOut(fastFade)
+            } else {
+                fadeIn(fade) togetherWith (slideOutVertically(rise) { it } + fadeOut(fade))
+            }
+            change using SizeTransform(clip = false)
+        },
+        label = "bottom bar",
+    ) { feedback ->
+        if (feedback != null) {
+            FeedbackSheet(feedback, onAction)
+        } else {
+            LessonActionButton(state, onAction)
+        }
+    }
+}
+
+@Composable
+private fun FeedbackSheet(feedback: FeedbackUi, onAction: (LessonAction) -> Unit) {
+    HitzFeedbackPanel(
+        kind = when (feedback.type) {
+            FeedbackType.Correct -> FeedbackKind.Correct
+            FeedbackType.AlmostCorrect -> FeedbackKind.AlmostCorrect
+            FeedbackType.Incorrect -> FeedbackKind.Incorrect
+        },
+        title = stringResource(feedback.title),
+        // A wrong answer says plainly that it is wrong, then gives the solution.
+        message = feedback.expected?.let { expected ->
+            if (feedback.type == FeedbackType.Incorrect) {
+                stringResource(R.string.feature_lesson_solution, expected)
+            } else {
+                expected
+            }
+        },
+        continueLabel = stringResource(R.string.feature_lesson_continue),
+        onContinue = { onAction(LessonAction.Continue) },
+    )
+}
+
+@Composable
+private fun LessonActionButton(state: LessonUiState.Active, onAction: (LessonAction) -> Unit) {
     when {
-        feedback != null -> HitzFeedbackPanel(
-            kind = when (feedback.type) {
-                FeedbackType.Correct -> FeedbackKind.Correct
-                FeedbackType.AlmostCorrect -> FeedbackKind.AlmostCorrect
-                FeedbackType.Incorrect -> FeedbackKind.Incorrect
-            },
-            title = stringResource(feedback.title),
-            message = feedback.expected,
-            continueLabel = stringResource(R.string.feature_lesson_continue),
-            onContinue = { onAction(LessonAction.Continue) },
-        )
         state.exercise is ExerciseUi.WordIntro -> HitzButton(
             text = stringResource(R.string.feature_lesson_continue),
             onClick = { onAction(LessonAction.Continue) },
@@ -304,11 +383,10 @@ private fun LessonBottomBar(state: LessonUiState.Active, onAction: (LessonAction
 }
 
 private val FeedbackUi.title: Int
-    get() = when {
-        type == FeedbackType.Correct -> R.string.feature_lesson_correct
-        type == FeedbackType.AlmostCorrect -> R.string.feature_lesson_almost
-        expected == null -> R.string.feature_lesson_incorrect_plain
-        else -> R.string.feature_lesson_incorrect
+    get() = when (type) {
+        FeedbackType.Correct -> R.string.feature_lesson_correct
+        FeedbackType.AlmostCorrect -> R.string.feature_lesson_almost
+        FeedbackType.Incorrect -> R.string.feature_lesson_incorrect_plain
     }
 
 @Composable

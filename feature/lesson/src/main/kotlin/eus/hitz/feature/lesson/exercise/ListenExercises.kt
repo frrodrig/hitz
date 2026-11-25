@@ -35,10 +35,11 @@ internal fun ListenTapExercise(
     onAction: (LessonAction) -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
+    bankDocked: Boolean = false,
 ) {
     Column(modifier, verticalArrangement = Arrangement.spacedBy(HitzSpacing.xl)) {
         ListenButton(onAction)
-        TileAnswerArea(exercise, onAction, enabled = enabled)
+        TileAnswerArea(exercise, onAction, enabled = enabled, showBank = !bankDocked)
     }
 }
 
