@@ -153,9 +153,11 @@ Rules:
 |---|---|
 | **Containment and grouping** | Answer options, practice units, achievements and settings form groups (2 dp gaps, large outer and small inner corners); the daily goal and the score sit in tonal chips; the daily-goal choice is a connected button group (`ToggleButton` + `ButtonGroupDefaults.connected*ButtonShapes`), which replaces segmented buttons. |
 | **Shape morphing** | Buttons morph on press (`ButtonDefaults.shapes()`); the active option morphs to fully rounded corners. |
-| **Shape variety** | `MaterialShapes` containers for the framed mascot (`Sunny`), the feedback badge (`Cookie9Sided` / `Cookie4Sided`), path nodes (one shape per level type) and unit badges. |
+| **Shape variety** | `MaterialShapes` containers for the framed mascot (`Sunny`), the feedback badge (`Cookie9Sided` / `Cookie4Sided`) and the current path step (`Cookie9Sided`); every other step is a circle, so the current one stands out. |
 | **Motion of the current step** | The current path node is 96 dp and its shape turns slowly (16 s a turn), like the expressive loading indicator; the icon stays upright. |
-| **Sticky context** | On the path, the unit header stays on top while its levels scroll, coloured by unit (primary, secondary, tertiary in turn) with its progress as a wavy bar. |
+| **Units as places** | On the path each unit opens with a cover on `secondaryContainer` (neutral and grey while locked): its scene and host, a display title, its first goal, the guide and its levels as segments. Once the cover scrolls away, a compact unit bar slides down and stays on top. One title names the section; the score chip says "pts". |
+| **The path** | A continuous 8 dp track joins the steps, walked in `secondary`. Size follows priority: the current step is 96 dp, the one expressive shape on the path, with a card under it that starts it; walked steps are 56 dp circles with a check, locked ones 52 dp with a lock, titles beside them. The star challenge is the last step of its unit, in the achievement colour. |
+| **Unlocking** | Back from a lesson, the track walks on to the new step and the step pops into place (slow effects fill, default spatial pop); the section name slides when it changes. |
 | **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour); see [Motion](#motion). |
 | **Emphasized type** | Screen and question titles, feedback result and counter values, set bold and wide (see [Typography](#typography)). |
 | **Tonal colour** | Tonal containers carry state; bold colour is reserved for the primary action and the hero of each screen (current unit, personal review). The profile's score card sits on `primaryContainer`; cards are tonal (`surfaceContainer`), not outlined. |
