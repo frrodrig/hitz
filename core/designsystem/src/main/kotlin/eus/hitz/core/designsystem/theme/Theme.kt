@@ -9,7 +9,6 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.MaterialExpressiveTheme
-import androidx.compose.material3.MotionScheme
 import androidx.compose.material3.Shapes
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
@@ -18,10 +17,12 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
+import eus.hitz.core.designsystem.motion.HitzMotionScheme
 
 /**
  * Hitz theme, built on [MaterialExpressiveTheme]: brand colour schemes, the expressive motion
- * scheme, the default expressive shapes and Google Sans Flex typography.
+ * scheme ([HitzMotionScheme]), the default expressive shapes and the Hitz type scale in Google
+ * Sans Flex ([HitzTypography], plus [HitzTextStyles] for hero numerals and lesson phrases).
  *
  * @param darkTheme use the dark colour scheme.
  * @param dynamicColor use the wallpaper-based colours on Android 12+. Off by default to keep the
@@ -49,7 +50,7 @@ fun HitzTheme(
     CompositionLocalProvider(LocalHitzExtendedColors provides extendedColors) {
         MaterialExpressiveTheme(
             colorScheme = colorScheme,
-            motionScheme = MotionScheme.expressive(),
+            motionScheme = HitzMotionScheme,
             shapes = Shapes(),
             typography = HitzTypography,
             content = content,

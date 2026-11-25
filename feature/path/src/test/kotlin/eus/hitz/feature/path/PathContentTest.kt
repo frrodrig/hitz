@@ -2,11 +2,14 @@ package eus.hitz.feature.path
 
 import androidx.compose.material3.Surface
 import androidx.compose.ui.test.assertIsNotEnabled
+import androidx.compose.ui.test.hasContentDescription
+import androidx.compose.ui.test.hasScrollAction
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollToNode
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
 import com.github.takahirom.roborazzi.captureRoboImage
@@ -91,9 +94,16 @@ class PathContentTest {
         composeRule.onNodeWithContentDescription("Repaso: Repaso, bloqueado").assertIsNotEnabled()
     }
 
+    /** Challenges close their unit, further down the path. */
+    private fun scrollToChallenge() {
+        composeRule.onNode(hasScrollAction())
+            .performScrollToNode(hasContentDescription("Reto de estrellas de la unidad 1.1", substring = true))
+    }
+
     @Test
     fun aLockedChallengeWaitsForTheUnit() {
         show()
+        scrollToChallenge()
         composeRule.onNodeWithContentDescription("Reto de estrellas de la unidad 1.1", substring = true)
             .assertIsNotEnabled()
     }
@@ -105,6 +115,7 @@ class PathContentTest {
         val section = PathTestData.path.sections.single()
         val units = listOf(unit.copy(challenge = challenge)) + section.units.drop(1)
         show(path = LearningPath(listOf(section.copy(units = units))))
+        scrollToChallenge()
         composeRule.onNodeWithContentDescription("Reto de estrellas de la unidad 1.1: 2 de 3 estrellas").performClick()
         assertThat(started).isEqualTo(Triple("u01-1", "u01-1.l5", null))
     }
@@ -115,6 +126,13 @@ class PathContentTest {
         composeRule.onNodeWithText("Unidad 1.1 · ", substring = true).assertExists()
         composeRule.onNodeWithContentDescription("Guía de la unidad 1.1").performClick()
         assertThat(guidebook).isEqualTo("u01-1")
+    }
+
+    @Test
+    fun theSectionIsNamedOnceAtTheTop() {
+        show()
+        composeRule.onNodeWithText("Primeros pasos").assertExists()
+        composeRule.onNodeWithText("7 pts", useUnmergedTree = true).assertExists()
     }
 
     @Test

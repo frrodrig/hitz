@@ -90,14 +90,69 @@ Never use colour alone to convey meaning: correct and incorrect also show an ico
 ## Typography
 
 **Google Sans Flex** (the Material 3 Expressive typeface, SIL OFL 1.1, `third_party/fonts/`) for every
-role, including the emphasized styles (`titleLargeEmphasized`, …). The font is subset to Latin and
-instanced to its weight axis (≈180 KB). Sizes follow the Material 3 scale in `sp`, so they respect
-the user's font scale; screenshots are also taken at 200 %.
+role. The font is subset to Latin and keeps two of its axes, weight (100–900) and width (100–125),
+≈240 KB; `tools/design/subset_font.py` rebuilds it from the variable font in google/fonts. Optical
+size is pinned at its default: keeping it would add ≈400 KB.
+
+The scale keeps the Material 3 sizes and line heights (in `sp`, so it follows the user's font
+size; screenshots are also taken at 200 %) and makes the levels distinct with weight and width:
+
+| Role | Weight | Width | Emphasized |
+|---|---|---|---|
+| Display | Bold (700) | Wide (112) | ExtraBold (800), widest (125) |
+| Headline | SemiBold (600) | Normal | Bold (700), wide (112) |
+| Title | SemiBold (600) | Normal | Bold (700) |
+| Body | Regular (400) | Normal | SemiBold (600) |
+| Label | Medium (500) | Normal | Bold (700) |
+
+Width is only for short text that carries a screen (unit titles, results, screen titles); body
+text stays at normal width so long Basque and Spanish sentences read easily. Two styles break the
+scale on purpose (`HitzTextStyles`):
+
+- `heroNumeral`: 88 sp, ExtraBold, widest. The figure of a hero moment (the end of a lesson).
+- `lessonPhrase`: 30 sp, SemiBold, normal width. The sentence an exercise is about.
 
 ## Shapes and spacing
 
 Default Material 3 Expressive `Shapes()`, plus `MaterialShapes` (e.g. `Cookie9Sided`, `Sunny`) for
 decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum touch targets.
+
+## Raised surface
+
+What is read or pressed above the page (the sentence of an exercise, word keys, the card that starts
+the current step, the achievement card) sits on `colorScheme.raisedSurface`: the lowest container
+(white) in light themes and a high container in dark ones, where the lowest container is the darkest
+and would read as a hole in the page.
+
+## Motion
+
+Motion follows the Material 3 Expressive physics system: springs, not durations
+(`HitzMotionScheme` = `MotionScheme.expressive()`, set on the theme). Read the tokens from
+`MaterialTheme.motionScheme`:
+
+| Token | For | Examples |
+|---|---|---|
+| `fastSpatialSpec` | Small things that move, grow or change shape | Word tiles, buttons, chips, the current node's press |
+| `defaultSpatialSpec` | Parts of the screen | The feedback sheet, a node unlocking, detail screens sliding in |
+| `slowSpatialSpec` | Whole screens and hero moments | A lesson rising over the path, the end-of-lesson reveal |
+| `*EffectsSpec` | Colour and opacity, never overshooting | State colours, fades, progress |
+
+Rules:
+
+- **Spatial springs move, effects springs fade.** Never animate opacity or colour with a spatial
+  spring (it would overshoot), and use effects springs for sizes that can shrink to zero.
+- **Every destination kind has its axis** (`HitzTransitions`, applied in `HitzApp`): top-level
+  destinations fade through; detail screens move forward and back along the horizontal axis
+  (predictive back scrubs it); sessions (lessons, stories, placement) rise from the bottom over the
+  path and sink back. Full-screen slides use the standard scheme so no gap opens at the far edge.
+  The navigation bar and rail make way for full-screen destinations.
+- **Motion explains a change of state**: something appears where it comes from, a result arrives
+  from below, an unlocked node grows into place. Decoration loops only on the current step and the
+  cast.
+- **Hero moments reveal in sequence** (`HitzReveal`, 70 ms apart, slow spatial lift + fade): only at
+  the start of a unit and the end of a lesson.
+- **Reduced motion**: with *Remove animations* on (`rememberReducedMotion()`), reveals, loops and
+  the cast's movement are skipped and content is simply there; previews show the end state.
 
 ## Expressive tactics applied
 
@@ -105,13 +160,15 @@ decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum to
 |---|---|
 | **Containment and grouping** | Answer options, practice units, achievements and settings form groups (2 dp gaps, large outer and small inner corners); the daily goal and the score sit in tonal chips; the daily-goal choice is a connected button group (`ToggleButton` + `ButtonGroupDefaults.connected*ButtonShapes`), which replaces segmented buttons. |
 | **Shape morphing** | Buttons morph on press (`ButtonDefaults.shapes()`); the active option morphs to fully rounded corners. |
-| **Shape variety** | `MaterialShapes` containers for the framed mascot (`Sunny`), the feedback badge (`Cookie9Sided` / `Cookie4Sided`), path nodes (one shape per level type) and unit badges. |
+| **Shape variety** | `MaterialShapes` containers for the framed mascot (`Sunny`), the feedback badge (`Cookie9Sided` / `Cookie4Sided`) and the current path step (`Cookie9Sided`); every other step is a circle, so the current one stands out. |
 | **Motion of the current step** | The current path node is 96 dp and its shape turns slowly (16 s a turn), like the expressive loading indicator; the icon stays upright. |
-| **Sticky context** | On the path, the unit header stays on top while its levels scroll, coloured by unit (primary, secondary, tertiary in turn) with its progress as a wavy bar. |
-| **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour). |
-| **Emphasized type** | Screen and question titles, feedback result and counter values. |
+| **Units as places** | On the path each unit opens with a cover on `secondaryContainer` (neutral and grey while locked): its scene and host, a display title, its first goal, the guide and its levels as segments. Once the cover scrolls away, a compact unit bar slides down and stays on top. One title names the section; the score chip says "pts". |
+| **The path** | A continuous 8 dp track joins the steps, walked in `secondary`. Size follows priority: the current step is 96 dp, the one expressive shape on the path, with a card under it that starts it; walked steps are 56 dp circles with a check, locked ones 52 dp with a lock, titles beside them. The star challenge is the last step of its unit, in the achievement colour. |
+| **Unlocking** | Back from a lesson, the track walks on to the new step and the step pops into place (slow effects fill, default spatial pop); the section name slides when it changes. |
+| **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour); see [Motion](#motion). |
+| **Emphasized type** | Screen and question titles, feedback result and counter values, set bold and wide (see [Typography](#typography)). |
 | **Tonal colour** | Tonal containers carry state; bold colour is reserved for the primary action and the hero of each screen (current unit, personal review). The profile's score card sits on `primaryContainer`; cards are tonal (`surfaceContainer`), not outlined. |
-| **Lessons** | The prompt is said by Ane in a speech bubble (its small corner points at her; with fonts over 150 % she steps aside). Mistakes are met by Maite. The end of a lesson is a hero on `tertiaryContainer` with Mikel celebrating, then three result tiles (first-try accuracy, active time, today's goal on the success container when met), each with one small corner towards the next. |
+| **Lessons** | The instruction is a small label in primary; the sentence is the hero, said by Ane in a white speech bubble in `lessonPhrase` (its small corner points at her; with fonts over 150 % she steps aside). The answer is built on ruled lines with no container, and the word bank is docked above Check, where the thumb is. Each exercise moves in from the right; the feedback sheet rises with a spatial spring. A wrong answer says "No es correcto" and then "Solución: …"; an almost-right one has its own pencil icon. Mistakes are met by Maite. The end of a lesson is a hero moment on `tertiaryContainer`: Mikel celebrating and first-try accuracy as a `heroNumeral` that counts up, revealed in sequence; then active time and today's goal as a connected pair (a met goal reads "Cumplido" on the success container, never "105 %"), and a new achievement as a card with its badge. |
 | **Navigation** | Detail screens (guide, unit introduction, score, unit review) go back with a Back arrow; only full-screen sessions (lessons, stories) close with an X. |
 
 ## Icons
@@ -135,8 +192,8 @@ so they stay consistent and any change is a reviewable diff; see the content gui
 |---|---|---|
 | `HitzButton` | `Button`, `FilledTonalButton`, `OutlinedButton`, `TextButton` with `ButtonDefaults.shapes()` (shape morph) and expressive sizes | Actions |
 | `HitzChoiceCard` / `HitzChoiceGroup` | `ListItem` + `RadioButton` on tonal surfaces, grouped as a segmented list | Answer option: default, selected, correct, incorrect, disabled |
-| `HitzWordChip` / `HitzWordBank` | 48 dp `Button` tile (lightest container, 2 dp outline, 16 dp corners) in a `FlowRow` | Word bank; used words keep an empty slot. In lessons the answer is built in a tonal tray ruled under each row of tiles |
-| `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel, announced as a live region |
+| `HitzWordChip` / `HitzWordBank` | 48 dp `Button` key (lightest container, 1 dp outline, 14 dp corners) on a 3 dp base, in a `FlowRow` | Word bank; keys sink onto their base when pressed and spring in when they appear; used words leave a dashed slot. In lessons the answer is built on lines ruled under each row of tiles |
+| `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel: check, pencil (almost) or cross; announced as a live region |
 | `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress |
 | `HitzDailyGoalRing` / `HitzDailyGoalChip` | `CircularWavyProgressIndicator` (flat with a check mark when met), in a tonal container | Today's share of the daily goal, spoken as a percentage |
 | `HitzMascot` | Animated stack of a `CastMember`'s layers in a `MascotPose` (or its single `Image` with reduced motion), optionally framed on a `MaterialShapes.Sunny` container | The cast: prompts, lesson end, errors, empty states, avatar |

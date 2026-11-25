@@ -2,8 +2,13 @@
 
 package eus.hitz.feature.path
 
-import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.background
+import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
+import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -11,33 +16,30 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
-import androidx.compose.material3.FilledTonalIconButton
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButtonDefaults
-import androidx.compose.material3.LinearWavyProgressIndicator
 import androidx.compose.material3.LoadingIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.material3.contentColorFor
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.Stable
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.clearAndSetSemantics
@@ -46,13 +48,17 @@ import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.onClick
 import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
-import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import eus.hitz.core.designsystem.component.HitzDailyGoalChip
 import eus.hitz.core.designsystem.icon.HitzIcons
+import eus.hitz.core.designsystem.motion.rememberReducedMotion
+import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
+import eus.hitz.core.designsystem.theme.HitzTheme
 import eus.hitz.core.domain.path.LearningPath
 import eus.hitz.core.domain.path.NodeState
 import eus.hitz.core.domain.path.NodeType
@@ -61,17 +67,24 @@ import eus.hitz.core.domain.path.PathNode
 import eus.hitz.core.domain.path.PathSection
 import eus.hitz.core.domain.path.PathUnit
 import eus.hitz.core.domain.score.ScoreRules
+import eus.hitz.core.model.content.LocalizedText
+import kotlinx.coroutines.delay
 
 /** Horizontal offsets that make the path wind gently down the screen. */
 private val Winding = listOf(0.dp, 44.dp, 64.dp, 44.dp, 0.dp, (-44).dp, (-64).dp, (-44).dp)
 
-/** How far from the centre the path runs beside a star challenge's scene. */
-private val BESIDE_CHALLENGE = 60.dp
-private val GUIDE_BUTTON = 56.dp
 private val CHIP_ICON = 18.dp
-private const val UNIT_COLORS = 3
-private const val SECONDARY_ALPHA = 0.8f
-private const val TRACK_ALPHA = 0.3f
+
+/** The unit bar appears once less than this much of the unit's cover is left on screen. */
+private val UnitBarThreshold = 72.dp
+
+/** How close to its unit's cover the current node must be for the path to open on the cover. */
+private const val COVER_REACH = 3
+
+/** A new step is unlocked once the lesson has sunk away. */
+private const val UNLOCK_DELAY_MILLIS = 450L
+private const val POP_START = 0.6f
+private const val HALF = 0.5f
 
 @Composable
 fun PathScreen(
@@ -111,68 +124,129 @@ internal fun PathContent(
         }
         is PathUiState.Ready -> {
             val rows = remember(state.path) { state.path.rows() }
+            val units = remember(state.path) { state.path.sections.flatMap { it.units }.associateBy { it.id } }
             // The bar names the section being read: the one of the first visible row.
             val section by remember(rows) {
                 derivedStateOf { rows.getOrNull(listState.firstVisibleItemIndex)?.sectionNumber ?: 1 }
             }
+            val unlock = rememberPathUnlock(state.path)
             Column(modifier.fillMaxSize()) {
-                PathTopBar(section, state.score, state.dailyGoal, onOpenProfile = onOpenProfile)
-                LearningPathList(
-                    rows = rows,
-                    onChallengeClick = { onStartLevel(it.unitId, it.levelId, null) },
-                    onNodeClick = { node ->
-                        when {
-                            node.type == NodeType.Story -> onStartStory(node.unitId, node.levelId)
-                            // A unit is introduced before its first lesson.
-                            node.type == NodeType.Lesson && node.unitId !in state.seenUnitIntros ->
-                                onOpenUnitIntro(node.unitId, node.levelId, node.nextLessonId)
-                            else -> onStartLevel(node.unitId, node.levelId, node.nextLessonId)
-                        }
-                    },
-                    onOpenGuidebook = onOpenGuidebook,
-                    listState = listState,
-                    modifier = Modifier.weight(1f),
+                PathTopBar(
+                    section = section,
+                    title = state.path.sections.getOrNull(section - 1)?.title,
+                    score = state.score,
+                    dailyGoal = state.dailyGoal,
+                    onOpenProfile = onOpenProfile,
                 )
+                Box(Modifier.weight(1f)) {
+                    LearningPathList(
+                        rows = rows,
+                        unlock = unlock,
+                        onChallengeClick = { onStartLevel(it.unitId, it.levelId, null) },
+                        onNodeClick = { node ->
+                            when {
+                                node.type == NodeType.Story -> onStartStory(node.unitId, node.levelId)
+                                // A unit is introduced before its first lesson.
+                                node.type == NodeType.Lesson && node.unitId !in state.seenUnitIntros ->
+                                    onOpenUnitIntro(node.unitId, node.levelId, node.nextLessonId)
+                                else -> onStartLevel(node.unitId, node.levelId, node.nextLessonId)
+                            }
+                        },
+                        onOpenGuidebook = onOpenGuidebook,
+                        listState = listState,
+                        modifier = Modifier.fillMaxSize(),
+                    )
+                    UnitBarOverlay(
+                        rows = rows,
+                        units = units,
+                        listState = listState,
+                        onOpenGuidebook = onOpenGuidebook,
+                        modifier = Modifier.align(Alignment.TopCenter),
+                    )
+                }
             }
         }
     }
 }
 
-/** The section being read, the score and today's goal; both chips open the profile. */
+/** From this font scale on, the chips go under the section's name instead of beside it. */
+private const val STACKED_FONT_SCALE = 1.5f
+
+/**
+ * The section being read, the score and today's goal; both chips open the profile. When the
+ * section changes, its name slides in from below. With large fonts the chips move under the name,
+ * so it is never cut short.
+ */
 @Composable
-private fun PathTopBar(section: Int, score: Int, dailyGoal: Float, onOpenProfile: () -> Unit) {
-    Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(start = HitzSpacing.lg, end = HitzSpacing.lg, top = HitzSpacing.sm, bottom = HitzSpacing.xs),
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
-    ) {
-        Column(Modifier.weight(1f)) {
+private fun PathTopBar(
+    section: Int,
+    title: LocalizedText?,
+    score: Int,
+    dailyGoal: Float,
+    onOpenProfile: () -> Unit,
+) {
+    val padding = Modifier
+        .fillMaxWidth()
+        .padding(start = HitzSpacing.xl, end = HitzSpacing.lg, top = HitzSpacing.sm, bottom = HitzSpacing.sm)
+    if (LocalDensity.current.fontScale >= STACKED_FONT_SCALE) {
+        Column(padding, verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
+            SectionTitle(section, title)
+            Row(horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
+                ScoreChip(score, onClick = onOpenProfile)
+                HitzDailyGoalChip(dailyGoal, onClick = onOpenProfile)
+            }
+        }
+    } else {
+        Row(
+            modifier = padding,
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
+        ) {
+            SectionTitle(section, title, Modifier.weight(1f))
+            ScoreChip(score, onClick = onOpenProfile)
+            HitzDailyGoalChip(dailyGoal, onClick = onOpenProfile)
+        }
+    }
+}
+
+@Composable
+private fun SectionTitle(section: Int, title: LocalizedText?, modifier: Modifier = Modifier) {
+    val slide = MaterialTheme.motionScheme.fastSpatialSpec<IntOffset>()
+    val fade = MaterialTheme.motionScheme.defaultEffectsSpec<Float>()
+    AnimatedContent(
+        targetState = section to title,
+        modifier = modifier,
+        transitionSpec = {
+            (slideInVertically(slide) { it / 2 } + fadeIn(fade)) togetherWith
+                (slideOutVertically(slide) { -it / 2 } + fadeOut(fade))
+        },
+        label = "section",
+    ) { (number, sectionTitle) ->
+        Column {
             Text(
-                text = stringResource(R.string.feature_path_section, section),
+                text = stringResource(R.string.feature_path_section, number),
                 style = MaterialTheme.typography.labelMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
             Text(
-                text = stringResource(R.string.feature_path_learn),
+                text = sectionTitle?.resolve().orEmpty(),
                 style = MaterialTheme.typography.titleLargeEmphasized,
+                maxLines = 2,
+                overflow = TextOverflow.Ellipsis,
                 modifier = Modifier.semantics { heading() },
             )
         }
-        ScoreChip(score, onClick = onOpenProfile)
-        HitzDailyGoalChip(dailyGoal, onClick = onOpenProfile)
     }
 }
 
+/** The score with its unit, so it reads as points and not as a count of something else. */
 @Composable
 private fun ScoreChip(score: Int, onClick: () -> Unit) {
     val description = stringResource(R.string.feature_path_score, score, ScoreRules.MAX)
     Surface(
         onClick = onClick,
         shape = MaterialTheme.shapes.extraLarge,
-        color = MaterialTheme.colorScheme.tertiaryContainer,
-        contentColor = MaterialTheme.colorScheme.onTertiaryContainer,
+        color = MaterialTheme.colorScheme.surfaceContainerHigh,
         modifier = Modifier.clearAndSetSemantics {
             contentDescription = description
             role = Role.Button
@@ -183,12 +257,20 @@ private fun ScoreChip(score: Int, onClick: () -> Unit) {
         },
     ) {
         Row(
-            modifier = Modifier.padding(horizontal = HitzSpacing.md, vertical = HitzSpacing.xs),
+            modifier = Modifier.padding(horizontal = HitzSpacing.md, vertical = HitzSpacing.sm),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(HitzSpacing.xs),
         ) {
-            Icon(painterResource(HitzIcons.Level), contentDescription = null, modifier = Modifier.size(CHIP_ICON))
-            Text(score.toString(), style = MaterialTheme.typography.labelLargeEmphasized)
+            Icon(
+                painterResource(HitzIcons.Level),
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.tertiary,
+                modifier = Modifier.size(CHIP_ICON),
+            )
+            Text(
+                text = stringResource(R.string.feature_path_score_short, score),
+                style = MaterialTheme.typography.labelLargeEmphasized,
+            )
         }
     }
 }
@@ -196,90 +278,173 @@ private fun ScoreChip(score: Int, onClick: () -> Unit) {
 private sealed interface PathRow {
     val sectionNumber: Int
 
-    data class SectionHeader(val section: PathSection, override val sectionNumber: Int) : PathRow
+    /** The unit the row belongs to; none for section headers. */
+    val unitId: String?
 
-    /** [index]: the unit's position in the whole course, which picks its colour. */
-    data class UnitHeader(val unit: PathUnit, val index: Int, override val sectionNumber: Int) : PathRow
+    data class SectionHeader(val section: PathSection, override val sectionNumber: Int) : PathRow {
+        override val unitId: String? get() = null
+    }
 
-    data class Node(val node: PathNode, val index: Int, override val sectionNumber: Int) : PathRow
+    data class UnitCover(val unit: PathUnit, val isCurrentUnit: Boolean, override val sectionNumber: Int) : PathRow {
+        override val unitId: String get() = unit.id
+    }
 
-    /**
-     * A unit's star challenge and the [nodes] beside it, with their indexes: the nodes keep their
-     * place on the path and the challenge fills the gap on the side the path bends away from.
-     */
-    data class Challenge(
-        val challenge: PathChallenge,
-        val nodes: List<Node>,
-        override val sectionNumber: Int,
-    ) : PathRow {
-        val alignStart: Boolean get() = nodes.sumOf { Winding[it.index % Winding.size].value.toDouble() } >= 0
+    data class Node(val node: PathNode, val track: Track, override val sectionNumber: Int) : PathRow {
+        override val unitId: String get() = node.unitId
+    }
+
+    data class Challenge(val challenge: PathChallenge, val track: Track, override val sectionNumber: Int) : PathRow {
+        override val unitId: String get() = challenge.unitId
     }
 }
 
+/**
+ * One row per step: each unit opens with its cover, then its levels wind down the screen and its
+ * star challenge closes it. The first section is named by the top bar; later ones get a header
+ * where they start.
+ */
 private fun LearningPath.rows(): List<PathRow> = buildList {
-    var unitIndex = 0
     sections.forEachIndexed { sectionIndex, section ->
         val number = sectionIndex + 1
-        add(PathRow.SectionHeader(section, number))
+        if (sectionIndex > 0) add(PathRow.SectionHeader(section, number))
         section.units.forEach { unit ->
-            add(PathRow.UnitHeader(unit, unitIndex++, number))
-            // The challenge goes halfway through the unit, beside its last lesson level and the next.
-            val nodes = unit.nodes.mapIndexed { index, node -> PathRow.Node(node, index, number) }
-            val first = unit.nodes.indexOfLast { it.type == NodeType.Lesson }.coerceAtLeast(0)
-            val beside = if (unit.challenge == null) IntRange.EMPTY else first..minOf(first + 1, nodes.lastIndex)
-            nodes.forEachIndexed { index, node ->
-                val challenge = unit.challenge
-                when {
-                    challenge == null || index !in beside -> add(node)
-                    index == beside.first -> add(PathRow.Challenge(challenge, nodes.slice(beside), number))
-                }
+            add(PathRow.UnitCover(unit, isCurrentUnit = unit.nodes.any { it.isCurrent }, sectionNumber = number))
+            val offsets = List(unit.nodes.size + 1) { Winding[it % Winding.size] }
+            val challenge = unit.challenge
+            val lastIndex = if (challenge == null) unit.nodes.lastIndex else unit.nodes.size
+            unit.nodes.forEachIndexed { index, node ->
+                val nextReached = unit.nodes.getOrNull(index + 1)?.let { it.state != NodeState.Locked }
+                    ?: (challenge?.isAvailable == true)
+                val track = Track(
+                    offset = offsets[index],
+                    previousOffset = offsets.getOrNull(index - 1).takeIf { index > 0 },
+                    nextOffset = offsets[index + 1].takeIf { index < lastIndex },
+                    reached = node.state != NodeState.Locked,
+                    walkedOn = node.state == NodeState.Completed && nextReached,
+                )
+                add(PathRow.Node(node, track, number))
+            }
+            if (challenge != null) {
+                val index = unit.nodes.size
+                val track = Track(
+                    offset = offsets[index],
+                    previousOffset = offsets.getOrNull(index - 1).takeIf { index > 0 },
+                    nextOffset = null,
+                    reached = challenge.isAvailable,
+                    walkedOn = false,
+                )
+                add(PathRow.Challenge(challenge, track, number))
             }
         }
     }
 }
 
-@OptIn(ExperimentalFoundationApi::class)
+/** The row the path opens on: the current unit's cover when the current step is near it. */
+private fun List<PathRow>.openingRow(): Int {
+    val current = indexOfFirst { it is PathRow.Node && it.node.isCurrent }
+    if (current <= 0) return 0
+    val cover = subList(0, current).indexOfLast { it is PathRow.UnitCover }
+    return if (cover >= 0 && current - cover <= COVER_REACH) cover else current - 1
+}
+
+/**
+ * Animates a step that was unlocked while the learner was away (in the lesson that unlocked it):
+ * the path walks on from the previous step to the new one, then the new step pops into place.
+ * The last step seen survives navigation; nothing moves the first time or with reduced motion.
+ */
+@Stable
+private class PathUnlock(val levelId: String?, val previousLevelId: String?) {
+    val fill = Animatable(if (levelId == null) 1f else 0f)
+    val pop = Animatable(if (levelId == null) 1f else POP_START)
+
+    /** Walked fraction of the track above [node], when it is the step being unlocked. */
+    fun above(node: PathNode): (() -> Float)? =
+        if (node.levelId == levelId) ({ ((fill.value - HALF) / HALF).coerceIn(0f, 1f) }) else null
+
+    /** Walked fraction of the track below [node], when the next step is the one being unlocked. */
+    fun below(node: PathNode): (() -> Float)? =
+        if (node.levelId == previousLevelId) ({ (fill.value / HALF).coerceIn(0f, 1f) }) else null
+
+    fun scale(node: PathNode): (() -> Float)? = if (node.levelId == levelId) ({ pop.value }) else null
+}
+
+@Composable
+private fun rememberPathUnlock(path: LearningPath): PathUnlock {
+    val current = path.currentNode?.levelId
+    var lastSeen by rememberSaveable { mutableStateOf<String?>(null) }
+    val still = rememberReducedMotion()
+    val unlocking = current?.takeIf { lastSeen != null && it != lastSeen && !still }
+    val previous = unlocking?.let { id ->
+        path.sections.flatMap { it.units }.firstNotNullOfOrNull { unit ->
+            val index = unit.nodes.indexOfFirst { it.levelId == id }
+            if (index > 0) unit.nodes[index - 1].levelId else null
+        }
+    }
+    val unlock = remember(unlocking, previous) { PathUnlock(unlocking, previous) }
+    val fillSpec = MaterialTheme.motionScheme.slowEffectsSpec<Float>()
+    val popSpec = MaterialTheme.motionScheme.defaultSpatialSpec<Float>()
+    LaunchedEffect(unlock) {
+        if (unlock.levelId != null) {
+            delay(UNLOCK_DELAY_MILLIS)
+            unlock.fill.animateTo(1f, fillSpec)
+            unlock.pop.animateTo(1f, popSpec)
+        }
+        lastSeen = current
+    }
+    return unlock
+}
+
 @Composable
 private fun LearningPathList(
     rows: List<PathRow>,
+    unlock: PathUnlock,
     onChallengeClick: (PathChallenge) -> Unit,
     onNodeClick: (PathNode) -> Unit,
     onOpenGuidebook: (unitId: String) -> Unit,
     listState: LazyListState,
     modifier: Modifier = Modifier,
 ) {
-    val currentIndex = rows.indexOfFirst { row ->
-        when (row) {
-            is PathRow.Node -> row.node.isCurrent
-            is PathRow.Challenge -> row.nodes.any { it.node.isCurrent }
-            else -> false
-        }
-    }
-    LaunchedEffect(currentIndex) {
-        if (currentIndex > 0) listState.scrollToItem((currentIndex - 2).coerceAtLeast(0))
+    val opening = remember(rows) { rows.openingRow() }
+    LaunchedEffect(opening) {
+        if (opening > 0) listState.scrollToItem(opening)
     }
     LazyColumn(
         state = listState,
-        modifier = modifier.fillMaxSize(),
-        contentPadding = PaddingValues(bottom = HitzSpacing.xl),
-        verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg),
-        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = modifier,
+        contentPadding = PaddingValues(bottom = HitzSpacing.xxl),
     ) {
         rows.forEach { row ->
             when (row) {
                 is PathRow.SectionHeader -> item(key = row.key) { SectionHeader(row.section, row.sectionNumber) }
-                // The unit stays on top while its levels scroll under it.
-                is PathRow.UnitHeader -> stickyHeader(key = row.key) {
-                    UnitHeader(row.unit, row.index, onOpenGuidebook = { onOpenGuidebook(row.unit.id) })
+                is PathRow.UnitCover -> item(key = row.key) {
+                    UnitCover(
+                        unit = row.unit,
+                        isCurrentUnit = row.isCurrentUnit,
+                        onOpenGuidebook = { onOpenGuidebook(row.unit.id) },
+                        modifier = Modifier.padding(
+                            start = HitzSpacing.md,
+                            end = HitzSpacing.md,
+                            top = HitzSpacing.xl,
+                            bottom = HitzSpacing.sm,
+                        ),
+                    )
                 }
                 is PathRow.Node -> item(key = row.key) {
-                    NodeRow(row.node, Winding[row.index % Winding.size]) { onNodeClick(row.node) }
+                    val track = row.track
+                    PathNodeRow(
+                        node = row.node,
+                        track = track,
+                        onClick = { onNodeClick(row.node) },
+                        above = unlock.above(row.node) ?: { if (track.reached) 1f else 0f },
+                        below = unlock.below(row.node) ?: { if (track.walkedOn) 1f else 0f },
+                        pop = unlock.scale(row.node) ?: { 1f },
+                    )
                 }
                 is PathRow.Challenge -> item(key = row.key) {
-                    ChallengeRows(
-                        row = row,
-                        onChallengeClick = { onChallengeClick(row.challenge) },
-                        onNodeClick = onNodeClick,
+                    ChallengeNodeRow(
+                        challenge = row.challenge,
+                        track = row.track,
+                        onClick = { onChallengeClick(row.challenge) },
                     )
                 }
             }
@@ -287,57 +452,64 @@ private fun LearningPathList(
     }
 }
 
-/** A node on its winding offset. */
-@Composable
-private fun NodeRow(node: PathNode, offset: Dp, onClick: () -> Unit) {
-    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
-        PathNodeButton(node = node, onClick = onClick, modifier = Modifier.offset(x = offset))
-    }
-}
-
 /**
- * The nodes beside a star challenge, spaced like the rest of the path, with the challenge's scene
- * in the gap the path leaves. The path bends a little further out here, to make room for it.
+ * Once a unit's cover has scrolled away, a compact bar with the unit stays at the top. It slides
+ * down when it appears and back up when the next cover arrives; between units it crossfades.
  */
 @Composable
-private fun ChallengeRows(row: PathRow.Challenge, onChallengeClick: () -> Unit, onNodeClick: (PathNode) -> Unit) {
-    Box(Modifier.fillMaxWidth()) {
-        Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg)) {
-            row.nodes.forEach { node ->
-                val winding = Winding[node.index % Winding.size]
-                val offset = if (row.alignStart) {
-                    maxOf(winding, BESIDE_CHALLENGE)
-                } else {
-                    minOf(winding, -BESIDE_CHALLENGE)
-                }
-                NodeRow(node.node, offset) { onNodeClick(node.node) }
-            }
+private fun UnitBarOverlay(
+    rows: List<PathRow>,
+    units: Map<String, PathUnit>,
+    listState: LazyListState,
+    onOpenGuidebook: (unitId: String) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val threshold = with(LocalDensity.current) { UnitBarThreshold.roundToPx() }
+    val unitId by remember(rows, threshold) {
+        derivedStateOf {
+            val first = listState.layoutInfo.visibleItemsInfo.firstOrNull() ?: return@derivedStateOf null
+            val row = rows.getOrNull(first.index) ?: return@derivedStateOf null
+            val coverGone = row !is PathRow.UnitCover || first.offset + first.size < threshold
+            row.unitId.takeIf { coverGone }
         }
-        PathChallengeItem(
-            challenge = row.challenge,
-            onClick = onChallengeClick,
-            modifier = Modifier
-                .matchParentSize()
-                .wrapContentSize(if (row.alignStart) Alignment.CenterStart else Alignment.CenterEnd)
-                .padding(horizontal = HitzSpacing.xl),
-        )
+    }
+    val slide = MaterialTheme.motionScheme.defaultSpatialSpec<IntOffset>()
+    val fade = MaterialTheme.motionScheme.defaultEffectsSpec<Float>()
+    AnimatedContent(
+        targetState = unitId,
+        modifier = modifier.fillMaxWidth(),
+        contentAlignment = Alignment.TopCenter,
+        transitionSpec = {
+            val change = if (initialState == null || targetState == null) {
+                (slideInVertically(slide) { -it } + fadeIn(fade)) togetherWith
+                    (slideOutVertically(slide) { -it } + fadeOut(fade))
+            } else {
+                fadeIn(fade) togetherWith fadeOut(fade)
+            }
+            change using null
+        },
+        label = "unit bar",
+    ) { id ->
+        val unit = id?.let(units::get)
+        if (unit != null) UnitBar(unit, onOpenGuidebook = { onOpenGuidebook(unit.id) })
     }
 }
 
 private val PathRow.key: String
     get() = when (this) {
         is PathRow.SectionHeader -> "section-${section.id}"
-        is PathRow.UnitHeader -> "unit-${unit.id}"
+        is PathRow.UnitCover -> "unit-${unit.id}"
         is PathRow.Node -> "node-${node.levelId}"
         is PathRow.Challenge -> "challenge-${challenge.levelId}"
     }
 
+/** Where a later section starts: its number, name and what it covers. */
 @Composable
 private fun SectionHeader(section: PathSection, number: Int) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(start = HitzSpacing.lg, end = HitzSpacing.lg, top = HitzSpacing.lg),
+            .padding(start = HitzSpacing.xl, end = HitzSpacing.xl, top = HitzSpacing.xxxl),
         verticalArrangement = Arrangement.spacedBy(HitzSpacing.xs),
     ) {
         Text(
@@ -354,88 +526,22 @@ private fun SectionHeader(section: PathSection, number: Int) {
     }
 }
 
-/** Units take the system's three colours in turn; locked ones stay neutral. */
+@HitzPreviews
 @Composable
-private fun unitColors(unit: PathUnit, index: Int): Triple<Color, Color, Color> = with(MaterialTheme.colorScheme) {
-    when {
-        !unit.isUnlocked -> Triple(surfaceContainerHigh, onSurfaceVariant, surfaceContainerHighest)
-        index % UNIT_COLORS == 0 -> Triple(primary, onPrimary, primaryContainer)
-        index % UNIT_COLORS == 1 -> Triple(secondary, onSecondary, secondaryContainer)
-        else -> Triple(tertiary, onTertiary, tertiaryContainer)
-    }
-}
-
-@Composable
-private fun UnitHeader(unit: PathUnit, index: Int, onOpenGuidebook: () -> Unit) {
-    val (container, content, button) = unitColors(unit, index)
-    val done = unit.nodes.count { it.state == NodeState.Completed }
-    val number = unit.id.unitNumber()
-    // An opaque strip behind the card, so levels scrolling under the sticky header don't show.
-    Box(
-        Modifier
-            .fillMaxWidth()
-            .background(MaterialTheme.colorScheme.surface)
-            .padding(horizontal = HitzSpacing.lg, vertical = HitzSpacing.xs),
-    ) {
-        Surface(shape = MaterialTheme.shapes.extraLarge, color = container, contentColor = content) {
-            Row(
-                modifier = Modifier.padding(
-                    start = HitzSpacing.xl,
-                    end = HitzSpacing.lg,
-                    top = HitzSpacing.lg,
-                    bottom = HitzSpacing.lg
+private fun PathContentPreview() {
+    HitzTheme {
+        Surface {
+            PathContent(
+                state = PathUiState.Ready(
+                    path = PathPreviewData.path,
+                    dailyGoal = 0.6f,
+                    seenUnitIntros = emptySet(),
+                    score = 7,
                 ),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(HitzSpacing.md),
-            ) {
-                Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(HitzSpacing.xs)) {
-                    Text(
-                        text = pluralStringResource(
-                            R.plurals.feature_path_unit_levels,
-                            unit.nodes.size,
-                            number,
-                            done,
-                            unit.nodes.size
-                        ),
-                        style = MaterialTheme.typography.labelLarge,
-                        color = content.copy(alpha = SECONDARY_ALPHA),
-                    )
-                    Text(
-                        text = unit.title.resolve(),
-                        style = MaterialTheme.typography.headlineSmallEmphasized,
-                        modifier = Modifier.semantics { heading() },
-                    )
-                    if (unit.isUnlocked) {
-                        LinearWavyProgressIndicator(
-                            progress = { if (unit.nodes.isEmpty()) 0f else done.toFloat() / unit.nodes.size },
-                            color = content,
-                            trackColor = content.copy(alpha = TRACK_ALPHA),
-                            modifier = Modifier.fillMaxWidth().padding(top = HitzSpacing.xs),
-                        )
-                    }
-                }
-                GuideButton(number, button, onOpenGuidebook)
-            }
+                onStartLevel = { _, _, _ -> },
+                onOpenGuidebook = {},
+            )
         }
-    }
-}
-
-/** The unit's guide: a large tonal icon button in the unit's container colour. */
-@Composable
-private fun GuideButton(number: String, container: Color, onClick: () -> Unit) {
-    FilledTonalIconButton(
-        onClick = onClick,
-        shape = MaterialTheme.shapes.large,
-        colors = IconButtonDefaults.filledTonalIconButtonColors(
-            containerColor = container,
-            contentColor = contentColorFor(container),
-        ),
-        modifier = Modifier.size(GUIDE_BUTTON),
-    ) {
-        Icon(
-            painterResource(HitzIcons.Book),
-            contentDescription = stringResource(R.string.feature_path_guidebook_title, number),
-        )
     }
 }
 

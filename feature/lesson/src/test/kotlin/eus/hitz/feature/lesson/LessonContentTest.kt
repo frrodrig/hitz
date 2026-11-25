@@ -34,7 +34,8 @@ class LessonContentTest {
     fun tappingAWordSelectsIt() {
         show(LessonPreviewData.active.copy(exercise = LessonPreviewData.wordBank.copy(selected = emptyList())))
         composeRule.onNodeWithText("Traduce esta frase").assertIsDisplayed()
-        composeRule.onNodeWithText("Hola").performScrollTo().performClick()
+        // The word bank is docked above Check, outside the scrolling content.
+        composeRule.onNodeWithText("Hola").performClick()
         assertThat(actions).containsExactly(LessonAction.SelectTile(2))
     }
 
@@ -67,7 +68,8 @@ class LessonContentTest {
         composeRule.onNodeWithText("A la primera").assertIsDisplayed()
         composeRule.onNodeWithText("80 %").assertIsDisplayed()
         composeRule.onNodeWithText("4 min").assertIsDisplayed()
-        composeRule.onNodeWithText("105 %").assertIsDisplayed()
+        // A goal over 100 % is shown as met, not as a percentage.
+        composeRule.onNodeWithText("Cumplido").assertIsDisplayed()
         composeRule.onNodeWithText("Has hecho lo necesario por hoy. ¡Bien hecho!").assertIsDisplayed()
         composeRule.onNodeWithText("Has conseguido 1 logro nuevo.").assertIsDisplayed()
     }

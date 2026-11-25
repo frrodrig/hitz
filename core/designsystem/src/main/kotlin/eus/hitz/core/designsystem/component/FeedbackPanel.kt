@@ -54,7 +54,8 @@ private fun feedbackColors(kind: FeedbackKind): ColorFamily {
  * Bottom panel shown after checking an answer. The sheet, the icon badge and the button all take
  * the result's colour family (success, warning or error), so the brand colour never sits next to a
  * wrong answer and the result is clear before reading it; the icon and the title say it too, for
- * people who cannot tell the colours apart. It is a polite live region, so TalkBack reads the
+ * people who cannot tell the colours apart (a check; a pencil for an almost-right answer; a
+ * cross). It is a polite live region, so TalkBack reads the
  * result and the correct answer without moving focus.
  */
 @Composable
@@ -87,7 +88,11 @@ fun HitzFeedbackPanel(
                         Box(contentAlignment = Alignment.Center) {
                             Icon(
                                 painter = painterResource(
-                                    if (kind == FeedbackKind.Incorrect) HitzIcons.Close else HitzIcons.Check,
+                                    when (kind) {
+                                        FeedbackKind.Correct -> HitzIcons.Check
+                                        FeedbackKind.AlmostCorrect -> HitzIcons.Almost
+                                        FeedbackKind.Incorrect -> HitzIcons.Close
+                                    },
                                 ),
                                 contentDescription = null,
                                 tint = colors.onColor,
@@ -127,7 +132,7 @@ private fun HitzFeedbackPanelPreview() {
         Column(verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
             HitzFeedbackPanel(FeedbackKind.Correct, "Oso ondo!", "Jarraitu", {})
             HitzFeedbackPanel(FeedbackKind.AlmostCorrect, "Ia-ia!", "Jarraitu", {}, message = "Ni Ane naiz.")
-            HitzFeedbackPanel(FeedbackKind.Incorrect, "Erantzun zuzena:", "Ados", {}, message = "Kalean nago.")
+            HitzFeedbackPanel(FeedbackKind.Incorrect, "Ez da zuzena", "Ados", {}, message = "Soluzioa: Kalean nago.")
         }
     }
 }

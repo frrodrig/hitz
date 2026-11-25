@@ -15,7 +15,7 @@
     <string name="feature_lesson_finish">Amaitu</string>
     <string name="feature_lesson_correct">Oso ondo!</string>
     <string name="feature_lesson_almost">Ia-ia! Begiratu nola idazten den:</string>
-    <string name="feature_lesson_incorrect">Erantzun zuzena:</string>
+    <string name="feature_lesson_solution">Soluzioa: %1$s</string>
     <string name="feature_lesson_close">Ikasgaitik irten</string>
     <string name="feature_lesson_quit_title">Ikasgaitik irten?</string>
     <string name="feature_lesson_quit_body">Ikasgai honetako aurrerapena galduko duzu.</string>
@@ -81,6 +81,7 @@
     <string name="feature_lesson_stat_first_try">Lehen saiakeran</string>
     <string name="feature_lesson_stat_time">Denbora aktiboa</string>
     <string name="feature_lesson_stat_goal">Gaurko helburua</string>
+    <string name="feature_lesson_stat_goal_met">Beteta</string>
     <string name="feature_lesson_stat_percent">%%%1$d</string>
     <string name="feature_lesson_stat_minutes">%1$d min</string>
     <string name="feature_lesson_goal_reached">Gaurko beharrezkoa egin duzu. Oso ondo!</string>

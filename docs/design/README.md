@@ -7,6 +7,7 @@ are not updated after the fact.
 
 | Where | What |
 |---|---|
+| [`redesign-b.md`](redesign-b.md) | Redesign B, "each unit, a place" (late November 2026): principles, screens and delivery plan |
 | [`m3-expressive/`](m3-expressive/) | The Material 3 Expressive redesign (November 2026), below |
 | [`../../tools/design/art/cast/`](../../tools/design/art/cast/) | The cast: 16 SVGs (4 members × 4 poses), the source of the in-app vectors and animations |
 | [`../../tools/design/illustrations/`](../../tools/design/illustrations/) | Exercise pictures, drawn as code |
