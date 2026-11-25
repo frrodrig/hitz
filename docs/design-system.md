@@ -117,6 +117,13 @@ scale on purpose (`HitzTextStyles`):
 Default Material 3 Expressive `Shapes()`, plus `MaterialShapes` (e.g. `Cookie9Sided`, `Sunny`) for
 decorative containers. Spacing: 4 dp grid (`HitzSpacing`), with 48 dp minimum touch targets.
 
+## Raised surface
+
+What is read or pressed above the page (the sentence of an exercise, word keys, the card that starts
+the current step, the achievement card) sits on `colorScheme.raisedSurface`: the lowest container
+(white) in light themes and a high container in dark ones, where the lowest container is the darkest
+and would read as a hole in the page.
+
 ## Motion
 
 Motion follows the Material 3 Expressive physics system: springs, not durations
@@ -161,7 +168,7 @@ Rules:
 | **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour); see [Motion](#motion). |
 | **Emphasized type** | Screen and question titles, feedback result and counter values, set bold and wide (see [Typography](#typography)). |
 | **Tonal colour** | Tonal containers carry state; bold colour is reserved for the primary action and the hero of each screen (current unit, personal review). The profile's score card sits on `primaryContainer`; cards are tonal (`surfaceContainer`), not outlined. |
-| **Lessons** | The instruction is a small label in primary; the sentence is the hero, said by Ane in a white speech bubble in `lessonPhrase` (its small corner points at her; with fonts over 150 % she steps aside). The answer is built on ruled lines with no container, and the word bank is docked above Check, where the thumb is. Each exercise moves in from the right; the feedback sheet rises with a spatial spring. A wrong answer says "No es correcto" and then "Solución: …"; an almost-right one has its own pencil icon. Mistakes are met by Maite. The end of a lesson is a hero on `tertiaryContainer` with Mikel celebrating, then three result tiles (first-try accuracy, active time, today's goal on the success container when met), each with one small corner towards the next. |
+| **Lessons** | The instruction is a small label in primary; the sentence is the hero, said by Ane in a white speech bubble in `lessonPhrase` (its small corner points at her; with fonts over 150 % she steps aside). The answer is built on ruled lines with no container, and the word bank is docked above Check, where the thumb is. Each exercise moves in from the right; the feedback sheet rises with a spatial spring. A wrong answer says "No es correcto" and then "Solución: …"; an almost-right one has its own pencil icon. Mistakes are met by Maite. The end of a lesson is a hero moment on `tertiaryContainer`: Mikel celebrating and first-try accuracy as a `heroNumeral` that counts up, revealed in sequence; then active time and today's goal as a connected pair (a met goal reads "Cumplido" on the success container, never "105 %"), and a new achievement as a card with its badge. |
 | **Navigation** | Detail screens (guide, unit introduction, score, unit review) go back with a Back arrow; only full-screen sessions (lessons, stories) close with an X. |
 
 ## Icons

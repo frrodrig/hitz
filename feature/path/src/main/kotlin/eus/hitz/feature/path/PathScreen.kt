@@ -169,9 +169,13 @@ internal fun PathContent(
     }
 }
 
+/** From this font scale on, the chips go under the section's name instead of beside it. */
+private const val STACKED_FONT_SCALE = 1.5f
+
 /**
  * The section being read, the score and today's goal; both chips open the profile. When the
- * section changes, its name slides in from below.
+ * section changes, its name slides in from below. With large fonts the chips move under the name,
+ * so it is never cut short.
  */
 @Composable
 private fun PathTopBar(
@@ -181,41 +185,57 @@ private fun PathTopBar(
     dailyGoal: Float,
     onOpenProfile: () -> Unit,
 ) {
-    val slide = MaterialTheme.motionScheme.fastSpatialSpec<IntOffset>()
-    val fade = MaterialTheme.motionScheme.defaultEffectsSpec<Float>()
-    Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(start = HitzSpacing.xl, end = HitzSpacing.lg, top = HitzSpacing.sm, bottom = HitzSpacing.sm),
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
-    ) {
-        AnimatedContent(
-            targetState = section to title,
-            modifier = Modifier.weight(1f),
-            transitionSpec = {
-                (slideInVertically(slide) { it / 2 } + fadeIn(fade)) togetherWith
-                    (slideOutVertically(slide) { -it / 2 } + fadeOut(fade))
-            },
-            label = "section",
-        ) { (number, sectionTitle) ->
-            Column {
-                Text(
-                    text = stringResource(R.string.feature_path_section, number),
-                    style = MaterialTheme.typography.labelMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-                Text(
-                    text = sectionTitle?.resolve().orEmpty(),
-                    style = MaterialTheme.typography.titleLargeEmphasized,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
-                    modifier = Modifier.semantics { heading() },
-                )
+    val padding = Modifier
+        .fillMaxWidth()
+        .padding(start = HitzSpacing.xl, end = HitzSpacing.lg, top = HitzSpacing.sm, bottom = HitzSpacing.sm)
+    if (LocalDensity.current.fontScale >= STACKED_FONT_SCALE) {
+        Column(padding, verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
+            SectionTitle(section, title)
+            Row(horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
+                ScoreChip(score, onClick = onOpenProfile)
+                HitzDailyGoalChip(dailyGoal, onClick = onOpenProfile)
             }
         }
-        ScoreChip(score, onClick = onOpenProfile)
-        HitzDailyGoalChip(dailyGoal, onClick = onOpenProfile)
+    } else {
+        Row(
+            modifier = padding,
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
+        ) {
+            SectionTitle(section, title, Modifier.weight(1f))
+            ScoreChip(score, onClick = onOpenProfile)
+            HitzDailyGoalChip(dailyGoal, onClick = onOpenProfile)
+        }
+    }
+}
+
+@Composable
+private fun SectionTitle(section: Int, title: LocalizedText?, modifier: Modifier = Modifier) {
+    val slide = MaterialTheme.motionScheme.fastSpatialSpec<IntOffset>()
+    val fade = MaterialTheme.motionScheme.defaultEffectsSpec<Float>()
+    AnimatedContent(
+        targetState = section to title,
+        modifier = modifier,
+        transitionSpec = {
+            (slideInVertically(slide) { it / 2 } + fadeIn(fade)) togetherWith
+                (slideOutVertically(slide) { -it / 2 } + fadeOut(fade))
+        },
+        label = "section",
+    ) { (number, sectionTitle) ->
+        Column {
+            Text(
+                text = stringResource(R.string.feature_path_section, number),
+                style = MaterialTheme.typography.labelMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            Text(
+                text = sectionTitle?.resolve().orEmpty(),
+                style = MaterialTheme.typography.titleLargeEmphasized,
+                maxLines = 2,
+                overflow = TextOverflow.Ellipsis,
+                modifier = Modifier.semantics { heading() },
+            )
+        }
     }
 }
 

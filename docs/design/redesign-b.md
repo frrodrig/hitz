@@ -32,10 +32,13 @@ own: the cast, their scenes and Google Sans Flex.
 
 ## Delivery
 
-Each step is a PR with its screenshots re-recorded by the UI tests workflow:
+One PR, `feat/redesign-b`, one commit per part, its screenshots recorded by the UI tests workflow:
 
 1. **Foundations**: type scale with the width axis, motion scheme and navigation transitions.
 2. **Path**: cover, track, nodes, top bar, challenge node; unlock and scroll motion.
 3. **Lesson**: phrase card, key tiles, docked word bank, feedback sheet; tile and sheet motion.
-4. **Lesson end**: hero reveal, count-up, connected results.
-5. **Details**: word-strength colours, hyphenation at large font sizes, tablet supporting pane.
+4. **Lesson end and fixes from the first screenshots**: hero reveal, count-up, connected results;
+   the raised surface in dark themes; the top bar at large font sizes; word strength without the
+   error colour.
+
+Still to do: the supporting pane on wide windows (the path is still the phone layout stretched).

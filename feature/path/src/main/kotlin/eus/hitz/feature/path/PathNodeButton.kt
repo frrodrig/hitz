@@ -63,6 +63,7 @@ import eus.hitz.core.designsystem.motion.rememberReducedMotion
 import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.designsystem.theme.HitzTheme
+import eus.hitz.core.designsystem.theme.raisedSurface
 import eus.hitz.core.domain.path.NodeState
 import eus.hitz.core.domain.path.NodeType
 import eus.hitz.core.domain.path.PathChallenge
@@ -394,7 +395,7 @@ private fun currentNodeTurn(): State<Float> = rememberInfiniteTransition(label =
 private fun StartCard(node: PathNode, title: String, onClick: () -> Unit) {
     Surface(
         shape = MaterialTheme.shapes.large,
-        color = MaterialTheme.colorScheme.surfaceContainerLowest,
+        color = MaterialTheme.colorScheme.raisedSurface,
         shadowElevation = HitzSpacing.xxs,
         modifier = Modifier.width(StartCardWidth),
     ) {

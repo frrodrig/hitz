@@ -24,6 +24,7 @@ import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.designsystem.theme.HitzTextStyles
 import eus.hitz.core.designsystem.theme.HitzTheme
+import eus.hitz.core.designsystem.theme.raisedSurface
 import eus.hitz.core.model.content.Language
 import eus.hitz.feature.lesson.R
 
@@ -62,7 +63,7 @@ internal fun PromptCard(
                 bottomEnd = BUBBLE_CORNER,
                 bottomStart = if (showMascot) BUBBLE_TAIL else BUBBLE_CORNER,
             ),
-            color = MaterialTheme.colorScheme.surfaceContainerLowest,
+            color = MaterialTheme.colorScheme.raisedSurface,
             shadowElevation = BUBBLE_ELEVATION,
         ) {
             Column(

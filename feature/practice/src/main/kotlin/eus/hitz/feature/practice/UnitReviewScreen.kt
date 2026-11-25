@@ -248,13 +248,18 @@ private fun LazyListScope.words(words: List<ReviewWord>, onPlay: (ReviewWord) ->
     }
 }
 
+/**
+ * How well a word is known, as bars filled in one colour, the path's: a weak word is not a
+ * mistake, so it is never shown in the error colour.
+ */
 @Composable
 private fun StrengthBars(strength: Strength) {
     val scheme = MaterialTheme.colorScheme
-    val (filled, color, label) = when (strength) {
-        Strength.Weak -> Triple(1, scheme.error, R.string.feature_practice_strength_weak)
-        Strength.Medium -> Triple(2, scheme.tertiary, R.string.feature_practice_strength_medium)
-        Strength.Strong -> Triple(BARS, scheme.primary, R.string.feature_practice_strength_strong)
+    val color = scheme.secondary
+    val (filled, label) = when (strength) {
+        Strength.Weak -> 1 to R.string.feature_practice_strength_weak
+        Strength.Medium -> 2 to R.string.feature_practice_strength_medium
+        Strength.Strong -> BARS to R.string.feature_practice_strength_strong
     }
     val description = stringResource(label)
     Row(

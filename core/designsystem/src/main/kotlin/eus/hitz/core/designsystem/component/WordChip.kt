@@ -42,6 +42,7 @@ import eus.hitz.core.designsystem.motion.HitzPopIn
 import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.designsystem.theme.HitzTheme
+import eus.hitz.core.designsystem.theme.raisedSurface
 
 /** Word tiles are 48 dp tall: a comfortable touch target and room for 200 % fonts to grow. */
 val HitzWordTileHeight = 48.dp
@@ -103,7 +104,7 @@ private fun WordKey(word: String, onClick: () -> Unit, modifier: Modifier) {
                 onClick = onClick,
                 shape = TileShape,
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = MaterialTheme.colorScheme.surfaceContainerLowest,
+                    containerColor = MaterialTheme.colorScheme.raisedSurface,
                     contentColor = MaterialTheme.colorScheme.onSurface,
                 ),
                 border = BorderStroke(TileBorder, base),

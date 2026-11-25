@@ -134,6 +134,7 @@ private fun AnswerTray(modifier: Modifier = Modifier, content: @Composable () ->
     Box(modifier.fillMaxWidth()) {
         FlowRow(
             modifier = Modifier
+                .fillMaxWidth()
                 .heightIn(min = rowHeight * TRAY_ROWS - HitzSpacing.sm + TRAY_PADDING * 2)
                 .drawBehind {
                     val step = rowHeight.toPx()

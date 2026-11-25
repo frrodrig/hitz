@@ -68,7 +68,8 @@ class LessonContentTest {
         composeRule.onNodeWithText("A la primera").assertIsDisplayed()
         composeRule.onNodeWithText("80 %").assertIsDisplayed()
         composeRule.onNodeWithText("4 min").assertIsDisplayed()
-        composeRule.onNodeWithText("105 %").assertIsDisplayed()
+        // A goal over 100 % is shown as met, not as a percentage.
+        composeRule.onNodeWithText("Cumplido").assertIsDisplayed()
         composeRule.onNodeWithText("Has hecho lo necesario por hoy. ¡Bien hecho!").assertIsDisplayed()
         composeRule.onNodeWithText("Has conseguido 1 logro nuevo.").assertIsDisplayed()
     }

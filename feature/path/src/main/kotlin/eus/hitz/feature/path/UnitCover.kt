@@ -49,6 +49,7 @@ import eus.hitz.core.designsystem.icon.HitzIcons
 import eus.hitz.core.designsystem.preview.HitzPreviews
 import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.designsystem.theme.HitzTheme
+import eus.hitz.core.designsystem.theme.raisedSurface
 import eus.hitz.core.domain.path.NodeState
 import eus.hitz.core.domain.path.PathUnit
 
@@ -158,7 +159,7 @@ private fun GuideButton(number: String, onClick: () -> Unit) {
         onClick = onClick,
         shapes = ButtonDefaults.shapes(),
         colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.surfaceContainerLowest,
+            containerColor = MaterialTheme.colorScheme.raisedSurface,
             contentColor = MaterialTheme.colorScheme.onSurface,
         ),
         contentPadding = ButtonDefaults.ButtonWithIconContentPadding,
@@ -174,7 +175,7 @@ private fun GuideButton(number: String, onClick: () -> Unit) {
 @Composable
 internal fun LevelSegments(done: Int, total: Int, compact: Boolean = false) {
     val walked = MaterialTheme.colorScheme.secondary
-    val ahead = MaterialTheme.colorScheme.surfaceContainerLowest
+    val ahead = MaterialTheme.colorScheme.raisedSurface
     val width = if (compact) BarSegmentWidth else SegmentWidth
     val height = if (compact) BarSegmentHeight else SegmentHeight
     Row(Modifier.clearAndSetSemantics {}, horizontalArrangement = Arrangement.spacedBy(SegmentGap)) {
