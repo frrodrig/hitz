@@ -1,0 +1,389 @@
+# Unit 17.1 · Nor da nor? — A2.1 book unit 5 (Atarian + A): animals and what they do; what is
+# happening right now; who is who in a photo, at the beach or at the carnival. Relative clauses with
+# -(E)N when the antecedent is NOR, and without antecedent (-(E)NA, -(E)NAK); synthetic present of
+# EKARRI. Recall: -T(Z)EN ARI IZAN (7.2) against synthetic verbs (EGON, JOAN, ETORRI, IBILI, EDUKI).
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u17-1
+section: s6
+bookUnit: 17
+title:
+  es: ¿Quién es quién?
+  eu: Nor da nor?
+goals:
+  - es: Describir animales y decir qué hacen.
+    eu: Animaliak deskribatu eta zer egiten duten esan.
+  - es: Decir qué está pasando en un momento dado.
+    eu: Une jakin batean zer gertatzen ari den esan.
+  - es: Identificar a personas y cosas («la que está de pie», «el que tiene sombrero»).
+    eu: Pertsonak eta gauzak identifikatu («zutik dagoena», «kapela daukana»).
+guidebook:
+  sections:
+    - title:
+        es: "Ahora mismo: ari naiz… pero noa, nago"
+        eu: "Orain: ari naiz… baina noa, nago"
+      body:
+        es: "Para lo que pasa ahora se usa «-t(z)en ari naiz» (jolasten ari da). Pero los verbos con forma propia (egon, joan, etorri, ibili, eduki, ekarri…) nunca la llevan: «mendira noa», no «joaten ari naiz»."
+        eu: "Orain gertatzen dena esateko «-t(z)en ari naiz» erabiltzen da (jolasten ari da). Baina forma trinkoa duten aditzek (egon, joan, etorri, ibili, eduki, ekarri…) ez dute inoiz hartzen: «mendira noa», ez «joaten ari naiz»."
+      examples:
+        - eu: Txakurra jolasten ari da.
+          es: El perro está jugando.
+        - eu: Mendira noa.
+          es: Voy al monte.
+    - title:
+        es: "La que está de pie: zutik dagoen emakumea"
+        eu: "Zutik dagoen emakumea"
+      body:
+        es: "En euskera la frase de relativo va delante del nombre, y el verbo termina en -(e)n: «zutik dago» → «zutik dagoen emakumea» (la mujer que está de pie). El artículo y el caso van al final: «emakumea», «emakumeak»."
+        eu: "Euskaraz erlatibozko esaldia izenaren aurrean doa, eta aditzak -(e)n amaiera hartzen du: «zutik dago» → «zutik dagoen emakumea». Artikulua eta kasua amaieran doaz: «emakumea», «emakumeak»."
+      examples:
+        - eu: Zutik dagoen gizona irakaslea da.
+          es: El hombre que está de pie es el profesor.
+        - eu: Kapela gorria daukan neska Ane da.
+          es: La chica que tiene el sombrero rojo es Ane.
+    - title:
+        es: "El que…, los que…: dagoena, daudenak"
+        eu: "Dagoena, daudenak"
+      body:
+        es: "Sin nombre, el artículo se pone al verbo: «zutik dagoena» (el que está de pie), «hondartzan daudenak» (los que están en la playa), «kapela daukana» (el que tiene sombrero)."
+        eu: "Izenik gabe, artikulua aditzari jartzen zaio: «zutik dagoena», «hondartzan daudenak», «kapela daukana»."
+      examples:
+        - eu: Hondartzan daudenak nire lagunak dira.
+          es: Los que están en la playa son mis amigos.
+        - eu: Kapela daukana Mikel da.
+          es: El que tiene sombrero es Mikel.
+    - title:
+        es: "Traer: dakart, dakarzu, dakar"
+        eu: "Ekarri: dakart, dakarzu, dakar"
+      body:
+        es: "«Ekarri» (traer) tiene forma propia en presente, como «eraman» (daramat): dakart, dakarzu, dakar, dakargu, dakarzue, dakarte."
+        eu: "«Ekarri» aditzak forma trinkoa du orainaldian, «eraman» aditzak bezala (daramat): dakart, dakarzu, dakar, dakargu, dakarzue, dakarte."
+      examples:
+        - eu: Zer dakarzu?
+          es: ¿Qué traes?
+        - eu: Txakurrak pilota bat dakar ahoan.
+          es: El perro trae una pelota en la boca.
+levels:
+  - type: lesson
+    title:
+      es: Animales
+      eu: Animaliak
+    lessons:
+      - structures: [animaliak]
+        sentences:
+          - Baserrian animalia asko daude. = En el caserío hay muchos animales.
+          - Behiak eta ardiak mendian daude. = Las vacas y las ovejas están en el monte.
+          - Txakurrak buztan luzea du. = El perro tiene la cola larga.
+          - Txoriek hegan egiten dute. = Los pájaros vuelan.
+          - Oiloek arrautzak jartzen dituzte. = Las gallinas ponen huevos.
+          - Zaldia oso azkarra da. = El caballo es muy rápido.
+          - Etxe-animaliarik duzu? = ¿Tienes animales de compañía?
+        pairs:
+          - - txakur = perro
+            - katu = gato
+            - behi = vaca
+            - ardi = oveja
+            - zaldi = caballo
+            - txerri = cerdo
+        meanings:
+          - text: Txoriek hegan egiten dute.
+            options:
+              - Los pájaros vuelan.
+              - Los pájaros cantan.
+              - Los pájaros comen.
+        blanks:
+          - text: Oiloek arrautzak ___ dituzte. = Las gallinas ponen huevos.
+            options:
+              - jartzen
+              - jarri
+              - jartzea
+        chats:
+          - messages:
+              - Gorka | Etxe-animaliarik duzu?
+            options:
+              - Bai, txakur bat eta bi katu.
+              - Bai, baserri bat.
+              - Ez, animalia naiz.
+      - structures: [baserria, landetxea]
+        sentences:
+          - Oporretan landetxe batean egon gara. = En vacaciones hemos estado en un agroturismo.
+          - Goizean oilarra entzun dugu. = Por la mañana hemos oído al gallo.
+          - Ahateak ibaian daude. = Los patos están en el río.
+          - Untxiak txikiak eta politak dira. = Los conejos son pequeños y bonitos.
+          - Baserrian txerri bat eta bi zaldi dituzte. = En el caserío tienen un cerdo y dos caballos.
+          - Haurrek animaliak maite dituzte. = A los niños les encantan los animales.
+        pairs:
+          - - oilo = gallina
+            - oilar = gallo
+            - ahate = pato
+            - untxi = conejo
+            - baserri = caserío
+            - landetxe = agroturismo
+        blanks:
+          - text: Ahateak ___ daude. = Los patos están en el río.
+            options:
+              - ibaian
+              - ibaira
+              - ibaiko
+        true_false:
+          - passage: Oporretan landetxe batean egon gara. Baserrian behiak, oiloak eta bi zaldi daude. Goizero oilarra entzuten dugu.
+            statement: En el caserío no hay caballos.
+            answer: false
+        images:
+          - river, forest, sea
+      - structures: [ari, trinkoak]
+        sentences:
+          - Zer egiten ari da txakurra? = ¿Qué está haciendo el perro?
+          - Txakurra parkean jolasten ari da. = El perro está jugando en el parque.
+          - Katua sofan eserita dago. = El gato está sentado en el sofá.
+          - Txoriak hegan egiten ari dira. = Los pájaros están volando.
+          - Mendira noa. = Voy al monte.
+          - Zaldiak korrika dabiltza. = Los caballos van corriendo.
+          - Ardiak etxera datoz. = Las ovejas vienen a casa.
+        pairs:
+          - - ari da = está (haciendo)
+            - noa = voy
+            - datoz = vienen
+            - dabiltza = andan
+            - eserita = sentado
+        blanks:
+          - text: Mendira ___. = Voy al monte.
+            options:
+              - noa
+              - joaten ari naiz
+              - joan
+          - text: Txakurra parkean jolasten ___ da. = El perro está jugando en el parque.
+            options:
+              - ari
+              - dago
+              - doa
+        chats:
+          - messages:
+              - Nahia | Non zaude? Zer egiten ari zara?
+            options:
+              - Parkean nago, txakurrarekin.
+              - Parkean egoten ari naiz.
+              - Parkea txakurra da.
+  - type: lesson
+    title:
+      es: ¿Quién es quién?
+      eu: Nor da nor?
+    lessons:
+      - structures: [erlatiboa]
+        sentences:
+          - Zutik dagoen gizona irakaslea da. = El hombre que está de pie es el profesor.
+          - Kapela gorria daukan neska Ane da. = La chica que tiene el sombrero rojo es Ane.
+          - Hizketan ari den emakumea nire ama da. = La mujer que está hablando es mi madre.
+          - Txakurrarekin dabilen mutila Jon da. = El chico que anda con el perro es Jon.
+          - Eserita dauden haurrak nire lagunak dira. = Los niños que están sentados son mis amigos.
+          - Nor da argazkian dagoen gizona? = ¿Quién es el hombre que está en la foto?
+        pairs:
+          - - zutik = de pie
+            - eserita = sentado
+            - kapela = sombrero
+            - hizketan = hablando
+            - dagoen = que está
+        blanks:
+          - text: Zutik ___ gizona irakaslea da. = El hombre que está de pie es el profesor.
+            options:
+              - dagoen
+              - dago
+              - dagoela
+          - text: Kapela gorria ___ neska Ane da. = La chica que tiene el sombrero rojo es Ane.
+            options:
+              - daukan
+              - dauka
+              - daukala
+        meanings:
+          - text: Txakurrarekin dabilen mutila Jon da.
+            options:
+              - El chico que anda con el perro es Jon.
+              - Jon anda con el perro del chico.
+              - El perro de Jon anda con el chico.
+      - structures: [erlatiboa, izenik-gabe]
+        sentences:
+          - Zutik dagoena nire anaia da. = El que está de pie es mi hermano.
+          - Hondartzan daudenak nire lagunak dira. = Los que están en la playa son mis amigos.
+          - Kapela daukana Mikel da. = El que tiene sombrero es Mikel.
+          - Nor da itzalkinaren azpian dagoena? = ¿Quién es el que está debajo de la sombrilla?
+          - Bainujantzi urdina duena nire ahizpa da. = La que tiene el bañador azul es mi hermana.
+          - Hizketan ari dena nagusia da. = El que está hablando es el jefe. | La que está hablando es la jefa.
+        pairs:
+          - - dagoena = el que está
+            - daudenak = los que están
+            - daukana = el que tiene
+            - itzalkin = sombrilla
+            - bainujantzi = bañador
+        blanks:
+          - text: Hondartzan ___ nire lagunak dira. = Los que están en la playa son mis amigos.
+            options:
+              - daudenak
+              - daude
+              - dagoena
+        chats:
+          - messages:
+              - Leire | Nor da zure ahizpa?
+            options:
+              - Bainujantzi urdina duena.
+              - Bainujantzi urdina du.
+              - Bainujantzi urdina dut.
+        meanings:
+          - text: Nor da itzalkinaren azpian dagoena?
+            options:
+              - ¿Quién es el que está debajo de la sombrilla?
+              - ¿Dónde está la sombrilla?
+              - ¿Quién tiene una sombrilla?
+      - structures: [ekarri]
+        sentences:
+          - Zer dakarzu? = ¿Qué traes?
+          - Ogi bat dakart. = Traigo un pan.
+          - Anek ura dakar. = Ane trae agua.
+          - Guk gazta dakargu. = Nosotros traemos queso. | Nosotras traemos queso.
+          - Zuek zer dakarzue? = ¿Qué traéis vosotros? | ¿Qué traéis vosotras?
+          - Lagunek lore bat dakarte. = Los amigos traen una flor.
+          - Txakurrak pilota bat dakar ahoan. = El perro trae una pelota en la boca.
+        pairs:
+          - - dakart = traigo
+            - dakarzu = traes
+            - dakar = trae
+            - dakargu = traemos
+            - dakarte = traen
+        blanks:
+          - text: Anek ura ___. = Ane trae agua.
+            options:
+              - dakar
+              - dakart
+              - dakarte
+          - text: Zer ___? = ¿Qué traes?
+            options:
+              - dakarzu
+              - dakart
+              - daramazu
+        chats:
+          - messages:
+              - Amona | Zer dakarzue afaltzeko?
+            options:
+              - Ogia eta gazta dakargu.
+              - Ogia eta gazta dakarte.
+              - Ogia eta gazta ekartzen ari gara.
+  - type: lesson
+    title:
+      es: En la playa y en carnaval
+      eu: Hondartzan eta inauterietan
+    lessons:
+      - structures: [hondartza]
+        sentences:
+          - Hondartzan jende asko dago. = En la playa hay mucha gente.
+          - Itzalkinaren azpian eserita nago. = Estoy sentado debajo de la sombrilla. | Estoy sentada debajo de la sombrilla.
+          - Bainujantzi berria erosi dut. = Me he comprado un bañador nuevo.
+          - Kapela jarri behar duzu; eguzki handia dago. = Tienes que ponerte el sombrero; hace mucho sol.
+          - Uretan dabilen gizona nire aita da. = El hombre que anda en el agua es mi padre.
+          - Etorri nirekin hondartzara! = ¡Ven conmigo a la playa!
+        pairs:
+          - - hondartza = playa
+            - itzalkin = sombrilla
+            - bainujantzi = bañador
+            - kapela = sombrero
+            - eguzki = sol
+        meanings:
+          - text: Uretan dabilen gizona nire aita da.
+            options:
+              - El hombre que anda en el agua es mi padre.
+              - Mi padre está en la playa con un hombre.
+              - El agua está fría para mi padre.
+        images:
+          - beach, mountain, pool
+        true_false:
+          - passage: Hondartzan gaude. Ama itzalkinaren azpian eserita dago, eta aita uretan dabil. Ni jolasten ari naiz.
+            statement: El padre está debajo de la sombrilla.
+            answer: false
+      - structures: [inauteriak, mozorroak]
+        sentences:
+          - Inauterietan mozorroak janzten ditugu. = En carnaval nos ponemos disfraces.
+          - Zer mozorro daukazu aurten? = ¿Qué disfraz tienes este año?
+          - Nire mozorroa katua da. = Mi disfraz es de gato.
+          - Zaldi mozorroa daukana nire lehengusua da. = El que tiene el disfraz de caballo es mi primo.
+          - Loreak dituen kapela oso polita da. = El sombrero que tiene flores es muy bonito.
+          - Kalean jende asko dabil mozorrotuta. = Por la calle anda mucha gente disfrazada.
+        pairs:
+          - - inauteri = carnaval
+            - mozorro = disfraz
+            - lore = flor
+            - lehengusu = primo
+            - aurten = este año
+        blanks:
+          - text: Loreak ___ kapela oso polita da. = El sombrero que tiene flores es muy bonito.
+            options:
+              - dituen
+              - ditu
+              - dituela
+        chats:
+          - messages:
+              - Gorka | Zer mozorro daukazu aurten?
+            options:
+              - Katu mozorroa. Eta zuk?
+              - Katua daukana.
+              - Inauteriak dira.
+      - structures: [argazkia, nor-da-nor]
+        sentences:
+          - Begira argazki hau! = ¡Mira esta foto!
+          - Aurrean dagoena ni naiz. = El que está delante soy yo. | La que está delante soy yo.
+          - Txakurra daukana nire aitona da. = El que tiene el perro es mi abuelo.
+          - Eserita dauden bi neskak bikiak dira. = Las dos chicas que están sentadas son gemelas.
+          - Kapela beltza duen emakumea nor da? = ¿Quién es la mujer que tiene el sombrero negro?
+          - Ez dakit; ez dut ezagutzen. = No lo sé; no la conozco.
+        meanings:
+          - text: Eserita dauden bi neskak bikiak dira.
+            options:
+              - Las dos chicas que están sentadas son gemelas.
+              - Las dos gemelas están de pie.
+              - Las chicas se sientan con las gemelas.
+        chats:
+          - messages:
+              - Uxue | Nor da zure aitona argazki honetan?
+            options:
+              - Txakurra daukana.
+              - Txakurra dauka.
+              - Txakurra aitona da.
+        true_false:
+          - passage: Argazki honetan gure familia dago. Aurrean dagoena amona da, eta kapela beltza daukana aitona. Zutik daudenak nire lehengusuak dira.
+            statement: El abuelo es el que tiene el sombrero negro.
+            answer: true
+  - type: story
+    title:
+      es: "Historia: la foto de carnaval"
+      eu: "Istorioa: inauterietako argazkia"
+    story:
+      title: Inauterietako argazkia
+      lines:
+        - Nahia | Gorka, begira argazki hau! Iazko inauterietakoa da. = Gorka, ¡mira esta foto! Es del carnaval del año pasado.
+        - Gorka | A zer mozorroak! Nor da zaldi mozorroa daukana? = ¡Vaya disfraces! ¿Quién es el que tiene el disfraz de caballo?
+        - Nahia | Hori nire anaia da. Eta ondoan dagoen katua ni naiz! = Ese es mi hermano. ¡Y el gato que está a su lado soy yo!
+        - Gorka | Eta loreak dituen kapela daukan emakumea? = ¿Y la mujer que tiene el sombrero con flores?
+        - Nahia | Nire ama da. Urtero mozorro berdina janzten du. = Es mi madre. Todos los años se pone el mismo disfraz.
+        - Gorka | Eta txakurra? Zer egiten ari da? = ¿Y el perro? ¿Qué está haciendo?
+        - Nahia | Ogi bat jaten ari da! Txakurrak ere mozorroa zeraman. = ¡Se está comiendo un pan! El perro también llevaba disfraz.
+        - Gorka | Aurten zer mozorro daukazu? = ¿Qué disfraz tienes este año?
+        - Nahia | Ez dizut esango. Baina gaur mozorro bat dakart zuretzat! = No te lo voy a decir. ¡Pero hoy traigo un disfraz para ti!
+        - Gorka | Benetan? Eskerrik asko! = ¿De verdad? ¡Muchas gracias!
+      questions:
+        - afterLine: 3
+          prompt: ¿Quién es el gato de la foto?
+          options:
+            - Nahia
+            - El hermano de Nahia
+            - La madre de Nahia
+        - afterLine: 5
+          prompt: ¿Qué hace la madre de Nahia todos los años?
+          options:
+            - Se pone el mismo disfraz
+            - Hace fotos
+            - Se queda en casa
+        - afterLine: 9
+          prompt: ¿Qué trae hoy Nahia?
+          options:
+            - Un disfraz para Gorka
+            - Un pan para el perro
+            - Una foto nueva
+  - type: review
+  - type: challenge
+    host: maite

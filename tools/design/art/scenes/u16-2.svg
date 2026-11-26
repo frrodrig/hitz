@@ -1,0 +1,44 @@
+<!-- Mikel junto a un calendario que pasa sus hojas y un globo en forma de corazón. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u16-2, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Mikel junto a un calendario y un globo" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#E4EEE3" />
+  <rect x="0" y="150" width="200" height="50" fill="#8FB08A" />
+  <g data-depth-generated="">
+    <clipPath id="u16-2-2">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u16-2-2)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#799070" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="122" y="30" width="56" height="62" rx="4" fill="#FFFFFF" />
+  <rect x="122" y="30" width="56" height="14" rx="4" fill="#C0566B" data-depth="none" />
+  <circle cx="136" cy="30" r="3" fill="#5A4A40" data-depth="none" />
+  <circle cx="164" cy="30" r="3" fill="#5A4A40" data-depth="none" />
+  <path d="M130 54 h40 M130 64 h40 M130 74 h40 M130 84 h28" stroke="#D5CFC6" stroke-width="2" />
+  <g data-motion="PageFlip" data-pivot="150 67">
+    <rect x="124" y="44" width="52" height="46" fill="#F7F3EC" />
+    <path d="M140 58 h20 v24 h-20 Z" fill="#E0A93B" data-depth="none" />
+  </g>
+  <g data-host="2 50 132" />
+  <path d="M160 144 Q156 124 158 110" stroke="#5A4A40" stroke-width="1.2" fill="none" />
+  <g data-motion="Bob" data-pivot="158 96">
+    <path d="M158 112 C150 104 140 98 140 89 C140 82 146 78 151 78 C155 78 157 81 158 84 C159 81 161 78 165 78 C170 78 176 82 176 89 C176 98 166 104 158 112 Z" fill="#D9534F" />
+    <g data-depth-generated="">
+      <clipPath id="u16-2-1">
+        <path d="M158 112 C150 104 140 98 140 89 C140 82 146 78 151 78 C155 78 157 81 158 84 C159 81 161 78 165 78 C170 78 176 82 176 89 C176 98 166 104 158 112 Z" />
+      </clipPath>
+      <g clip-path="url(#u16-2-1)">
+        <path d="M100 38 H216 V152 H100 Z M153.92 108.33 C145.92 100.33 135.92 94.33 135.92 85.33 C135.92 78.33 141.92 74.33 146.92 74.33 C150.92 74.33 152.92 77.33 153.92 80.33 C154.92 77.33 156.92 74.33 160.92 74.33 C165.92 74.33 171.92 78.33 171.92 85.33 C171.92 94.33 161.92 100.33 153.92 108.33 Z" fill-rule="evenodd" fill="#B34742" />
+        <path d="M100 38 H216 V152 H100 Z M160 115 C152 107 142 101 142 92 C142 85 148 81 153 81 C157 81 159 84 160 87 C161 84 163 81 167 81 C172 81 178 85 178 92 C178 101 168 107 160 115 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+      </g>
+    </g>
+  </g>
+  <rect x="128" y="124" width="66" height="7" rx="2" fill="#B07A4A" />
+  <rect x="128" y="134" width="66" height="7" rx="2" fill="#B07A4A" />
+  <rect x="124" y="144" width="74" height="8" rx="2" fill="#9C6B43" />
+  <rect x="132" y="152" width="6" height="14" fill="#5A4A40" data-depth="none" />
+  <rect x="184" y="152" width="6" height="14" fill="#5A4A40" data-depth="none" />
+</svg>

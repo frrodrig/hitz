@@ -1,0 +1,345 @@
+# Unit 18.2 · Kexa bat — A2.1 book unit 6 (B + C): comparing products and saying how much one likes
+# them; complaining about a product or a service, apologising and explaining what happened. Degree
+# words with verbs (batere, gutxi, dezente, asko, izugarri); BEZAIN for quality and ADINA for
+# quantity; BAIZIK; relative clauses when the antecedent is NORK in the main clause, and negative
+# relatives. Recall: BAINO …-AGO, HAIN / HAINBESTE (10.1), ez da … bezain (10.2); fixed phrases of
+# anger and apology.
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u18-2
+section: s6
+bookUnit: 18
+title:
+  es: Una queja
+  eu: Kexa bat
+goals:
+  - es: Comparar productos y decir cuánto te gustan.
+    eu: Produktuak alderatu eta zenbat gustatzen zaizkizun esan.
+  - es: Quejarte de un producto o un servicio.
+    eu: Produktu edo zerbitzu batez kexatu.
+  - es: Pedir perdón y explicar qué ha pasado.
+    eu: Barkamena eskatu eta zer gertatu den azaldu.
+guidebook:
+  sections:
+    - title:
+        es: "Tan… como, tanto… como: bezain, adina"
+        eu: "Bezain, adina"
+      body:
+        es: "«Bezain» compara cualidades: «hau hori bezain ona da» (este es tan bueno como ese). «Adina» compara cantidades: «hemen ez dago Bilbon adina jende» (aquí no hay tanta gente como en Bilbao). Los dos términos comparados llevan el mismo caso: «herrietan… hirietan»."
+        eu: "«Bezain»ek ezaugarriak alderatzen ditu: «hau hori bezain ona da». «Adina»k kopuruak: «hemen ez dago Bilbon adina jende». Alderatzen diren bi osagaiek kasu bera hartzen dute: «herrietan… hirietan»."
+      examples:
+        - eu: Krema hau hori bezain ona da.
+          es: Esta crema es tan buena como esa.
+        - eu: Herrietan ez dago hirietan adina jende.
+          es: En los pueblos no hay tanta gente como en las ciudades.
+    - title:
+        es: "Cuánto me gusta: batere, gutxi, dezente, asko, izugarri"
+        eu: "Batere, gutxi, dezente, asko, izugarri"
+      body:
+        es: "De menos a más: «ez zait batere gustatzen» (no me gusta nada), «gutxi», «dezente» (bastante), «asko», «izugarri» (muchísimo). «Batere» siempre con verbo negativo."
+        eu: "Gutxienetik gehienera: «ez zait batere gustatzen», «gutxi», «dezente», «asko», «izugarri». «Batere» beti ezezko aditzarekin."
+      examples:
+        - eu: Xanpu hau izugarri gustatzen zait.
+          es: Este champú me gusta muchísimo.
+        - eu: Krema hori ez zait batere gustatzen.
+          es: Esa crema no me gusta nada.
+    - title:
+        es: "No… sino…: baizik"
+        eu: "Ez…, …baizik"
+      body:
+        es: "Para corregir: la frase negativa primero y luego lo correcto con «baizik» al final: «ez dut gorria eskatu, urdina baizik» (no he pedido el rojo, sino el azul)."
+        eu: "Zuzentzeko: lehenengo ezezko esaldia, eta gero zuzena, «baizik» amaieran dela: «ez dut gorria eskatu, urdina baizik»."
+      examples:
+        - eu: Ez nago pozik, haserre baizik.
+          es: No estoy contento, sino enfadado.
+    - title:
+        es: "La estantería que he comprado tiene…: erosi dudan apalak"
+        eu: "Erosi dudan apalak"
+      body:
+        es: "Si el nombre con la frase de relativo hace algo en la frase principal, lleva -k al final, como cualquier sujeto de «du»: «erosi dudan apalak akats bat du» (la estantería que he comprado tiene un defecto)."
+        eu: "Erlatibozko esaldia duen izenak esaldi nagusian zerbait egiten badu, -k hartzen du amaieran, «du» aditzaren edozein subjektuk bezala: «erosi dudan apalak akats bat du»."
+      examples:
+        - eu: Erosi dudan apalak akats bat du.
+          es: La estantería que he comprado tiene un defecto.
+        - eu: Kalitaterik ez duen produktua ez dut erosiko.
+          es: No compraré un producto que no tenga calidad.
+levels:
+  - type: lesson
+    title:
+      es: Comparar productos
+      eu: Produktuak alderatu
+    lessons:
+      - structures: [markak, bezain]
+        sentences:
+          - Marka honen xanpua oso ona da. = El champú de esta marca es muy bueno.
+          - Krema hau hori bezain ona da. = Esta crema es tan buena como esa.
+          - Kalitate handiko produktua da. = Es un producto de gran calidad.
+          - Hortzetako pasta hau ez da hori bezain merkea. = Esta pasta de dientes no es tan barata como esa.
+          - Bi marken artean ez dago ezberdintasun handirik. = Entre las dos marcas no hay mucha diferencia.
+          - Azalerako krema bat behar dut. = Necesito una crema para la piel.
+        pairs:
+          - - marka = marca
+            - kalitate = calidad
+            - krema = crema
+            - xanpu = champú
+            - azal = piel
+            - ezberdintasun = diferencia
+        blanks:
+          - text: Krema hau hori ___ ona da. = Esta crema es tan buena como esa.
+            options:
+              - bezain
+              - adina
+              - baino
+        meanings:
+          - text: Hortzetako pasta hau ez da hori bezain merkea.
+            options:
+              - Esta pasta de dientes no es tan barata como esa.
+              - Esta pasta de dientes es más barata que esa.
+              - Esa pasta de dientes no es barata.
+        chats:
+          - messages:
+              - Saltzailea | Marka hau ala beste hori?
+            options:
+              - Berdin zait. Bata bestea bezain ona da.
+              - Berdin zait. Bata bestea adina ona da.
+              - Marka naiz.
+      - structures: [gustatu, maila]
+        sentences:
+          - Xanpu hau izugarri gustatzen zait. = Este champú me gusta muchísimo.
+          - Krema hori ez zait batere gustatzen. = Esa crema no me gusta nada.
+          - Marka hau dezente gustatzen zait. = Esta marca me gusta bastante.
+          - Tarta hau gutxi gustatzen zait. = Esta tarta me gusta poco.
+          - Plater hauek asko gustatzen zaizkit. = Estos platos me gustan mucho.
+        pairs:
+          - - batere = nada
+            - gutxi = poco
+            - dezente = bastante
+            - asko = mucho
+            - izugarri = muchísimo
+        blanks:
+          - text: Krema hori ez zait ___ gustatzen. = Esa crema no me gusta nada.
+            options:
+              - batere
+              - izugarri
+              - dezente
+        chats:
+          - messages:
+              - Haizea | Zer iruditzen zaizu tarta hau?
+            options:
+              - Izugarri gustatzen zait!
+              - Izugarri gustatzen dut!
+              - Batere gustatzen zait!
+        images:
+          - plate, cheese, apple
+      - structures: [adina, alderatu]
+        sentences:
+          - Herrietan ez dago hirietan adina jende. = En los pueblos no hay tanta gente como en las ciudades.
+          - Uharte honetan ez dago Bilbon adina biztanle. = En esta isla no hay tantos habitantes como en Bilbao.
+          - Nik zuk adina diru daukat. = Yo tengo tanto dinero como tú.
+          - Paisaia hau beste hura bezain polita da. = Este paisaje es tan bonito como aquel otro.
+          - Karabanan ez dago etxean adina leku. = En la caravana no hay tanto sitio como en casa.
+        pairs:
+          - - adina = tanto como
+            - bezain = tan como
+            - uharte = isla
+            - biztanle = habitante
+            - paisaia = paisaje
+            - karabana = caravana
+        blanks:
+          - text: Herrietan ez dago hirietan ___ jende. = En los pueblos no hay tanta gente como en las ciudades.
+            options:
+              - adina
+              - bezain
+              - baino
+        true_false:
+          - passage: Oporretan uharte txiki batean egon gara, karabanan. Uhartean ez dago Bilbon adina biztanle, baina paisaia izugarri polita da.
+            statement: En la isla hay más habitantes que en Bilbao.
+            answer: false
+  - type: lesson
+    title:
+      es: Quejas y disculpas
+      eu: Kexak eta barkamenak
+    lessons:
+      - structures: [kexak]
+        sentences:
+          - Kexa bat jarri nahi dut. = Quiero poner una queja.
+          - Erreklamazio bat egin nahi dut. = Quiero hacer una reclamación.
+          - Gehiegi kobratu didazue! = ¡Me habéis cobrado demasiado!
+          - Oso haserre nago. = Estoy muy enfadado. | Estoy muy enfadada.
+          - Kokoteraino nago! = ¡Estoy hasta las narices!
+          - Sutan nago! = ¡Estoy que echo chispas!
+        pairs:
+          - - kexa = queja
+            - kexatu = quejarse
+            - erreklamazio = reclamación
+            - kobratu = cobrar
+            - haserre = enfadado
+        meanings:
+          - text: Gehiegi kobratu didazue!
+            options:
+              - ¡Me habéis cobrado demasiado!
+              - ¡Os he pagado demasiado!
+              - ¡No me habéis cobrado!
+        chats:
+          - messages:
+              - Saltzailea | Egun on. Zer behar duzu?
+            options:
+              - Kexa bat jarri nahi dut. Gehiegi kobratu didazue.
+              - Kexa bat jarri nahi dut. Gehiegi kobratu dizuet.
+              - Kexa naiz.
+      - structures: [barkamena]
+        sentences:
+          - Sentitzen dut. = Lo siento.
+          - Barkatu, akats bat izan da. = Perdone, ha habido un error.
+          - Barkamena eskatzen dizut. = Le pido perdón.
+          - Berehala konponduko dugu. = Lo arreglaremos enseguida.
+          - Dirua itzuliko dizugu. = Le devolveremos el dinero.
+        pairs:
+          - - sentitu = sentir
+            - barkamen = perdón
+            - barkatu = perdonar
+            - akats = error
+            - itzuli = devolver
+        blanks:
+          - text: ___ dut. = Lo siento.
+            options:
+              - Sentitzen
+              - Sentitu
+              - Barkatu
+        chats:
+          - messages:
+              - Bezeroa | Gehiegi kobratu didazue!
+            options:
+              - Sentitzen dut. Berehala konponduko dugu.
+              - Sentitzen dut. Kexatu egingo naiz.
+              - Kokoteraino nago!
+      - structures: [baizik]
+        sentences:
+          - Ez dut gorria eskatu, urdina baizik. = No he pedido el rojo, sino el azul.
+          - Ez da azalerako krema, xanpua baizik. = No es crema para la piel, sino champú.
+          - Ez nago pozik, haserre baizik. = No estoy contento, sino enfadado. | No estoy contenta, sino enfadada.
+          - Ez zen astelehena izan, asteartea baizik. = No fue el lunes, sino el martes.
+        pairs:
+          - - baizik = sino
+            - baino = que
+            - bezain = tan
+            - adina = tanto
+            - baina = pero
+        blanks:
+          - text: Ez dut gorria eskatu, urdina ___. = No he pedido el rojo, sino el azul.
+            options:
+              - baizik
+              - baina
+              - baino
+        meanings:
+          - text: Ez nago pozik, haserre baizik.
+            options:
+              - No estoy contento, sino enfadado.
+              - Estoy contento y enfadado.
+              - No estoy enfadado, sino contento.
+  - type: lesson
+    title:
+      es: Muebles nuevos
+      eu: Altzari berriak
+    lessons:
+      - structures: [altzariak]
+        sentences:
+          - Etxeko altzariak berritu nahi ditugu. = Queremos renovar los muebles de casa.
+          - Apal berri bat jarri dugu horman. = Hemos puesto una estantería nueva en la pared.
+          - Zoru berria oso polita da. = El suelo nuevo es muy bonito.
+          - Kolore hauek ondo konbinatzen dute. = Estos colores combinan bien.
+          - Bi dendak konparatu ditut. = He comparado las dos tiendas.
+          - Prezioak ondo aztertu behar dira. = Hay que estudiar bien los precios.
+        pairs:
+          - - altzari = mueble
+            - apal = estantería
+            - horma = pared
+            - zoru = suelo
+            - berritu = renovar
+            - aztertu = estudiar
+        meanings:
+          - text: Kolore hauek ondo konbinatzen dute.
+            options:
+              - Estos colores combinan bien.
+              - Estos colores son bonitos.
+              - He combinado estos colores.
+        images:
+          - wardrobe, sofa, table
+      - structures: [erlatiboa-nork]
+        sentences:
+          - Erosi dudan apalak akats bat du. = La estantería que he comprado tiene un defecto.
+          - Erosi ditudan platerak oso txikiak dira. = Los platos que he comprado son muy pequeños.
+          - Erosi dugun karabanak arazo asko ditu. = La caravana que hemos comprado tiene muchos problemas.
+          - Kalitaterik ez duen produktua ez dut erosiko. = No compraré un producto que no tenga calidad.
+          - Ikusi dituzun altzariak garestiak dira. = Los muebles que has visto son caros.
+        blanks:
+          - text: Erosi dudan ___ akats bat du. = La estantería que he comprado tiene un defecto.
+            options:
+              - apalak
+              - apala
+              - apalari
+          - text: Ikusi ___ altzariak garestiak dira. = Los muebles que has visto son caros.
+            options:
+              - dituzun
+              - dituzu
+              - dituzula
+        meanings:
+          - text: Erosi dugun karabanak arazo asko ditu.
+            options:
+              - La caravana que hemos comprado tiene muchos problemas.
+              - Hemos comprado una caravana sin problemas.
+              - Tenemos muchos problemas para comprar una caravana.
+      - structures: [kexa-idatzia]
+        sentences:
+          - Atzo erosi nuen apalak akats bat du. = La estantería que compré ayer tiene un defecto.
+          - Horman jartzeko apala zen, baina ezin da jarri. = Era una estantería para poner en la pared, pero no se puede poner.
+          - Dirua itzultzea eskatzen dut. = Pido que me devuelvan el dinero.
+          - Laster erantzun, mesedez. = Respondan pronto, por favor.
+        true_false:
+          - passage: Kaixo. Atzo apal bat erosi nuen zuen dendan. Etxean akats bat ikusi nuen. Dirua itzultzea eskatzen dut.
+            statement: El cliente quiere que le devuelvan el dinero.
+            answer: true
+        chats:
+          - messages:
+              - Saltzailea | Zer gertatu da?
+            options:
+              - Erosi dudan apalak akats bat du.
+              - Erosi dudan apala akats bat du.
+              - Apala erosi dut akatsa.
+  - type: story
+    title:
+      es: "Historia: la queja"
+      eu: "Istorioa: kexa"
+    story:
+      title: Kexa
+      lines:
+        - Iker | Egun on. Kexa bat jarri nahi dut. = Buenos días. Quiero poner una queja.
+        - Saltzailea | Egun on. Zer gertatu da? = Buenos días. ¿Qué ha pasado?
+        - Iker | Larunbatean erosi nuen apalak akats bat du, eta gainera gehiegi ordaindu nuen! = La estantería que compré el sábado tiene un defecto, ¡y además pagué de más!
+        - Saltzailea | Sentitzen dut. Ordainagiria daukazu? = Lo siento. ¿Tiene el ticket?
+        - Iker | Bai, hemen dago. Kokoteraino nago! = Sí, aquí está. ¡Estoy hasta las narices!
+        - Saltzailea | Barkatu. Ez zen hirurogei euro, berrogeita hamar baizik. Hamar euro itzuliko dizkizugu. = Perdone. No eran sesenta euros, sino cincuenta. Le devolveremos diez euros.
+        - Iker | Eta apala? = ¿Y la estantería?
+        - Saltzailea | Beste bat emango dizugu. Hau hura bezain ona da, eta kolore hau ondo konbinatzen da zure hormarekin. = Le daremos otra. Esta es tan buena como aquella, y este color combina bien con su pared.
+        - Iker | Ados. Eskerrik asko. Orain ez nago haserre, pozik baizik! = De acuerdo. Gracias. ¡Ahora no estoy enfadado, sino contento!
+      questions:
+        - afterLine: 3
+          prompt: ¿Por qué se queja Iker?
+          options:
+            - Por un defecto y porque pagó de más
+            - Porque la tienda estaba cerrada
+            - Porque no le dieron el ticket
+        - afterLine: 6
+          prompt: ¿Cuánto dinero le devuelven?
+          options:
+            - Diez euros
+            - Cincuenta euros
+            - Sesenta euros
+        - afterLine: 8
+          prompt: ¿Qué le ofrece el vendedor por la estantería?
+          options:
+            - Otra estantería igual de buena
+            - El dinero de la estantería
+            - Un descuento en otra tienda
+  - type: review
+  - type: challenge
+    host: mikel

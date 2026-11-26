@@ -1,0 +1,389 @@
+# Unit 16.2 · Aldaketak — A2.1 book unit 4 (B + C): opinions and guesses about situations; rumours;
+# reacting to surprising news; life changes and getting used to them; starting, keeping on and
+# trying. DIRUDI / EMATEN DU + -(E)LA / -(E)NIK; fixed exclamations of surprise; GERO ETA …-AGO /
+# GEHIAGO / GUTXIAGO; HASI / JARRAITU / SAIATU + -T(Z)EN; stages of life.
+# Recall: -(E)LA (10.2) and -(E)NIK (15.1) after uste izan and iruditu; dirudi, ematen du (13.2).
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u16-2
+section: s6
+bookUnit: 16
+title:
+  es: Cambios
+  eu: Aldaketak
+goals:
+  - es: Dar tu opinión y hacer suposiciones sobre lo que pasa.
+    eu: Iritzia eman eta gertatzen denari buruz susmoak adierazi.
+  - es: Reaccionar ante noticias sorprendentes.
+    eu: Albiste harrigarriei erantzun.
+  - es: Contar cambios en tu vida y cómo te acostumbras a ellos.
+    eu: Zure bizitzako aldaketak kontatu eta haietara nola ohitzen zaren azaldu.
+guidebook:
+  sections:
+    - title:
+        es: "Parece que…: …-(e)la dirudi"
+        eu: "…-(e)la dirudi"
+      body:
+        es: "Para suponer algo, la frase termina en -(e)la y sigue «dirudi» o «ematen du»: «berandu etorriko dela dirudi» (parece que llegará tarde). También delante: «badirudi…», «ematen du…»."
+        eu: "Zerbait susmatzeko, esaldiak -(e)la amaiera hartzen du, eta gero «dirudi» edo «ematen du» dator: «berandu etorriko dela dirudi». Aurrean ere bai: «badirudi…», «ematen du…»."
+      examples:
+        - eu: Berandu etorriko dela dirudi.
+          es: Parece que llegará tarde.
+        - eu: Ematen du nekatuta zaudela.
+          es: Parece que estás cansado.
+    - title:
+        es: "No parece que…: siempre -(e)nik"
+        eu: "Ez dirudi…-(e)nik"
+      body:
+        es: "Si el verbo principal es negativo («ez dirudi», «ez du ematen», «ez dut uste», «ez zait iruditzen»), la frase termina en -(e)nik, nunca en -(e)la."
+        eu: "Aditz nagusia ezezkoa bada («ez dirudi», «ez du ematen», «ez dut uste», «ez zait iruditzen»), esaldiak -(e)nik amaiera hartzen du, inoiz ez -(e)la."
+      examples:
+        - eu: Ez du ematen gaixo dagoenik.
+          es: No parece que esté enfermo.
+        - eu: Ez dut uste oker zaudenik.
+          es: No creo que estés equivocado.
+    - title:
+        es: "Cada vez más: gero eta …-ago"
+        eu: "Gero eta …-ago"
+      body:
+        es: "«Gero eta» va con un comparativo: «gero eta handiagoa» (cada vez más grande), «gero eta jende gehiago» (cada vez más gente), «gero eta diru gutxiago» (cada vez menos dinero). Nunca con «oso»."
+        eu: "«Gero eta» konparatibo batekin doa: «gero eta handiagoa», «gero eta jende gehiago», «gero eta diru gutxiago». Inoiz ez «oso»rekin."
+      examples:
+        - eu: Gero eta hobeto hitz egiten duzu euskaraz.
+          es: Cada vez hablas mejor en euskera.
+        - eu: Gero eta diru gutxiago daukat.
+          es: Cada vez tengo menos dinero.
+    - title:
+        es: "Empezar, seguir, intentar: …-t(z)en hasi"
+        eu: "…-t(z)en hasi, jarraitu, saiatu"
+      body:
+        es: "Con «hasi» (empezar), «jarraitu» (seguir) y «saiatu» (intentar), el otro verbo va en -t(z)en: «kirola egiten hasi naiz». Para dejar de hacer algo: «-t(z)eari utzi»: «erretzeari utzi diot»."
+        eu: "«Hasi», «jarraitu» eta «saiatu» aditzekin, beste aditza -t(z)en forman doa: «kirola egiten hasi naiz». Zerbait egiteari uzteko: «-t(z)eari utzi»: «erretzeari utzi diot»."
+      examples:
+        - eu: Kirola egiten hasi naiz.
+          es: He empezado a hacer deporte.
+        - eu: Euskara ikasten jarraituko dut.
+          es: Seguiré estudiando euskera.
+        - eu: Erretzeari utzi diot.
+          es: He dejado de fumar.
+levels:
+  - type: lesson
+    title:
+      es: Parece que…
+      eu: Badirudi…
+    lessons:
+      - structures: [dirudi, ematen-du]
+        sentences:
+          - Berandu etorriko dela dirudi. = Parece que llegará tarde.
+          - Badirudi euria egingo duela. = Parece que va a llover.
+          - Ematen du nekatuta zaudela. = Parece que estás cansado. | Parece que estás cansada.
+          - Ez du ematen gaixo dagoenik. = No parece que esté enfermo. | No parece que esté enferma.
+          - Seguruenik bihar etorriko da. = Seguramente vendrá mañana.
+          - Agian ez da etorriko. = Quizá no venga.
+          - Ziur zaude? = ¿Estás seguro? | ¿Estás segura?
+        pairs:
+          - - dirudi = parece
+            - seguruenik = seguramente
+            - agian = quizá
+            - ziur = seguro
+            - nekatuta = cansado
+        blanks:
+          - text: Berandu etorriko ___ dirudi. = Parece que llegará tarde.
+            options:
+              - dela
+              - denik
+              - da
+          - text: Ez du ematen gaixo ___. = No parece que esté enfermo.
+            options:
+              - dagoenik
+              - dagoela
+              - dago
+        meanings:
+          - text: Agian ez da etorriko.
+            options:
+              - Quizá no venga.
+              - Seguro que no viene.
+              - Ya no viene nunca.
+        images:
+          - rain, sun, snow
+      - structures: [zurrumurruak, susmoak]
+        sentences:
+          - Bulegoan zurrumurru bat dabil. = En la oficina corre un rumor.
+          - Nagusia lanetik joango dela esaten dute. = Dicen que el jefe se irá del trabajo.
+          - Susmo bat daukat. = Tengo una sospecha.
+          - Jon eta Ane maiteminduta daudela dirudi. = Parece que Jon y Ane están enamorados.
+          - Banandu egin direla iruditzen zait. = Me parece que se han separado.
+          - Ez dut sinesten. = No me lo creo.
+          - Ez dut uste egia denik. = No creo que sea verdad.
+        pairs:
+          - - zurrumurru = rumor
+            - susmo = sospecha
+            - sinetsi = creer
+            - maitemindu = enamorarse
+            - banandu = separarse
+        blanks:
+          - text: Ez dut uste egia ___. = No creo que sea verdad.
+            options:
+              - denik
+              - dela
+              - da
+        chats:
+          - messages:
+              - Edurne | Badakizu zurrumurrua? Nagusia lanetik joango da!
+            options:
+              - Benetan? Ez dut sinesten!
+              - Bai, nagusia naiz.
+              - Ez dut uste joango dela.
+        true_false:
+          - passage: Bulegoan zurrumurru bat dabil. Badirudi Jon eta Ane maiteminduta daudela, baina Itziarrek ez du sinesten.
+            statement: Itziar cree que Jon y Ane están enamorados.
+            answer: false
+      - structures: [haurra, zaintza]
+        sentences:
+          - Ama haurdun dago. = La madre está embarazada.
+          - Jaioberria oso txikia da. = El recién nacido es muy pequeño.
+          - Haurrak gauean negar egiten du. = El bebé llora por la noche.
+          - Haurtzaindegira eramango dute. = Lo llevarán a la guardería.
+          - Amona etxean geratuko dela dirudi. = Parece que la abuela se quedará en casa.
+          - Nor geratuko da haurrarekin? = ¿Quién se quedará con el bebé?
+        pairs:
+          - - haurdun = embarazada
+            - jaioberri = recién nacido
+            - negar egin = llorar
+            - haurtzaindegi = guardería
+            - geratu = quedarse
+        meanings:
+          - text: Haurtzaindegira eramango dute.
+            options:
+              - Lo llevarán a la guardería.
+              - Lo traerán de la guardería.
+              - Trabaja en una guardería.
+        chats:
+          - messages:
+              - Josu | Nor geratuko da haurrarekin?
+            options:
+              - Amona geratuko dela dirudi.
+              - Amona geratuko denik dirudi.
+              - Haurra amona da.
+        images:
+          - child, grandmother, school
+  - type: lesson
+    title:
+      es: ¡No puede ser!
+      eu: Ez da egia izango!
+    lessons:
+      - structures: [harridura]
+        sentences:
+          - Benetan? = ¿De verdad?
+          - Ez da egia izango! = ¡No puede ser verdad!
+          - A zer ezustea! = ¡Qué sorpresa!
+          - Ez dut sinesten! = ¡No me lo creo!
+          - Ane eta Jon ezkonduko dira! = ¡Ane y Jon se van a casar!
+          - Ezkontza bat? Benetan? = ¿Una boda? ¿De verdad?
+        pairs:
+          - - benetan = de verdad
+            - ezuste = sorpresa
+            - ezkontza = boda
+            - sinetsi = creer
+            - egia = verdad
+        meanings:
+          - text: Ez da egia izango!
+            options:
+              - ¡No puede ser verdad!
+              - Será verdad.
+              - No es mentira.
+        chats:
+          - messages:
+              - Maialen | Haurdun nago!
+            options:
+              - A zer ezustea! Zorionak!
+              - Ez dut uste haurdun zaudela.
+              - Haurtzaindegira noa.
+          - messages:
+              - Gorka | Ane eta Jon ezkonduko dira!
+            options:
+              - Benetan? Ez dut sinesten!
+              - Bai, ezkontza da.
+              - Ez naiz ezkonduko.
+      - structures: [uste, iruditu, enik]
+        sentences:
+          - Uste dut oker zaudela. = Creo que estás equivocado. | Creo que estás equivocada.
+          - Ez dut uste oker zaudenik. = No creo que estés equivocado. | No creo que estés equivocada.
+          - Ziur dagoela iruditzen zait. = Me parece que está seguro. | Me parece que está segura.
+          - Ez zait iruditzen ziur dagoenik. = No me parece que esté seguro. | No me parece que esté segura.
+          - Ez du ematen ondo dagoenik. = No parece que esté bien.
+          - Ez dirudi lasai dagoenik. = No parece que esté tranquilo. | No parece que esté tranquila.
+        pairs:
+          - - oker = equivocado
+            - ziur = seguro
+            - lasai = tranquilo
+            - uste dut = creo
+            - iruditzen zait = me parece
+        blanks:
+          - text: Ez dut uste oker ___. = No creo que estés equivocado.
+            options:
+              - zaudenik
+              - zaudela
+              - zaude
+          - text: Ziur ___ iruditzen zait. = Me parece que está seguro.
+            options:
+              - dagoela
+              - dagoenik
+              - dago
+        meanings:
+          - text: Ez zait iruditzen ziur dagoenik.
+            options:
+              - No me parece que esté seguro.
+              - Me parece que está seguro.
+              - No estoy seguro.
+      - structures: [gero-eta]
+        sentences:
+          - Gero eta zaharragoa naiz. = Cada vez soy más viejo. | Cada vez soy más vieja.
+          - Gero eta jende gehiago bizi da hirian. = Cada vez vive más gente en la ciudad.
+          - Gero eta diru gutxiago daukat. = Cada vez tengo menos dinero.
+          - Gero eta hobeto hitz egiten duzu euskaraz. = Cada vez hablas mejor en euskera.
+          - Haurrak gero eta handiagoak dira. = Los niños son cada vez más grandes.
+        pairs:
+          - - gero eta = cada vez
+            - gehiago = más
+            - gutxiago = menos
+            - hobeto = mejor
+            - zaharrago = más viejo
+        blanks:
+          - text: Gero eta diru ___ daukat. = Cada vez tengo menos dinero.
+            options:
+              - gutxiago
+              - gutxi
+              - oso gutxi
+          - text: Gero eta hobeto hitz egiten ___ euskaraz. = Cada vez hablas mejor en euskera.
+            options:
+              - duzu
+              - zara
+              - dut
+        true_false:
+          - passage: Gure herrian gero eta jende gutxiago bizi da. Gazteak hirira joaten dira, eta herrian zaharrak geratzen dira.
+            statement: En el pueblo vive cada vez más gente.
+            answer: false
+  - type: lesson
+    title:
+      es: Cambios en la vida
+      eu: Bizitzako aldaketak
+    lessons:
+      - structures: [hasi, jarraitu, saiatu]
+        sentences:
+          - Kirola egiten hasi naiz. = He empezado a hacer deporte.
+          - Euskara ikasten jarraituko dut. = Seguiré estudiando euskera.
+          - Erretzeari utzi diot. = He dejado de fumar.
+          - Goiz jaikitzen saiatzen naiz. = Intento levantarme temprano.
+          - Gauean lasai egoten saiatuko naiz. = Intentaré estar tranquilo por la noche. | Intentaré estar tranquila por la noche.
+          - Lanean jarraitu nahi dut. = Quiero seguir trabajando.
+        pairs:
+          - - hasi = empezar
+            - jarraitu = seguir
+            - saiatu = intentar
+            - utzi = dejar
+            - lasai = tranquilo
+        blanks:
+          - text: Kirola egiten ___ naiz. = He empezado a hacer deporte.
+            options:
+              - hasi
+              - utzi
+              - jarraitu
+          - text: Erretzeari ___ diot. = He dejado de fumar.
+            options:
+              - utzi
+              - hasi
+              - saiatu
+        chats:
+          - messages:
+              - Patxi | Oraindik erretzen duzu?
+            options:
+              - Ez, erretzeari utzi diot.
+              - Ez, erretzen hasi naiz.
+              - Bai, erretzaileari utzi diot.
+      - structures: [bizitza]
+        sentences:
+          - Haurtzaroan herri txiki batean bizi nintzen. = En mi infancia vivía en un pueblo pequeño.
+          - Gaztaroan asko bidaiatzen nuen. = En mi juventud viajaba mucho.
+          - Helduaroan lan asko egiten dugu. = En la edad adulta trabajamos mucho.
+          - Zahartzaroan lasai bizi nahi dut. = En la vejez quiero vivir tranquilo. | En la vejez quiero vivir tranquila.
+          - Bizitzan aldaketa asko izan ditut. = He tenido muchos cambios en la vida.
+          - Une polita izan zen. = Fue un momento bonito.
+        pairs:
+          - - haurtzaro = infancia
+            - gaztaro = juventud
+            - helduaro = edad adulta
+            - zahartzaro = vejez
+            - une = momento
+        meanings:
+          - text: Gaztaroan asko bidaiatzen nuen.
+            options:
+              - En mi juventud viajaba mucho.
+              - En mi infancia viajaba mucho.
+              - Ahora viajo mucho.
+        images:
+          - child, man, grandfather
+      - structures: [ohitu, aldaketak]
+        sentences:
+          - Hirian bizitzera ohitu zara? = ¿Te has acostumbrado a vivir en la ciudad?
+          - Oraindik ez naiz ohitu. = Todavía no me he acostumbrado.
+          - Bizitza modua aldatu dut. = He cambiado de modo de vida.
+          - Banandu eta gero, beste hiri batera joan zen. = Después de separarse, se fue a otra ciudad.
+          - Ezkontzan negar egin nuen. = Lloré en la boda.
+          - Lasaitu egin naiz. = Me he tranquilizado.
+        pairs:
+          - - ohitu = acostumbrarse
+            - aldaketa = cambio
+            - modu = modo
+            - lasaitu = tranquilizarse
+            - ezkontza = boda
+        chats:
+          - messages:
+              - Nerea | Zer moduz herri berrian? Ohitu zara?
+            options:
+              - Oraindik ez naiz ohitu, baina gero eta pozago nago.
+              - Oraindik ez naiz ohitu, baina oso pozago nago.
+              - Herri berria naiz.
+        true_false:
+          - passage: Xabier duela urtebete joan zen hirira. Hasieran ez zen ohitu, baina orain gero eta pozago dago, eta euskara ikasten hasi da.
+            statement: Xabier ahora está cada vez más contento en la ciudad.
+            answer: true
+  - type: story
+    title:
+      es: "Historia: el rumor"
+      eu: "Istorioa: zurrumurrua"
+    story:
+      title: Zurrumurrua
+      lines:
+        - Itziar | Josu, badakizu zurrumurrua? Maialen haurdun dagoela dirudi! = Josu, ¿sabes el rumor? ¡Parece que Maialen está embarazada!
+        - Josu | Benetan? Ez dut sinesten! = ¿De verdad? ¡No me lo creo!
+        - Itziar | Bai, bai. Gaur ez du kaferik hartu, eta oso nekatuta dagoela ematen du. = Sí, sí. Hoy no ha tomado café, y parece que está muy cansada.
+        - Josu | Ez dut uste haurdun dagoenik. Agian gaixo dago. = No creo que esté embarazada. Quizá está enferma.
+        - Itziar | Eta atzo haurtzaindegi bati buruz hitz egiten ari zen! = ¡Y ayer estaba hablando de una guardería!
+        - Maialen | Kaixo! Zertaz ari zarete? = ¡Hola! ¿De qué estáis hablando?
+        - Josu | Itziarrek uste du haurdun zaudela. = Itziar cree que estás embarazada.
+        - Maialen | Ez da egia izango! Ez nago haurdun. Nire ahizpa dago haurdun! = ¡No puede ser! No estoy embarazada. ¡Mi hermana está embarazada!
+        - Itziar | A zer ezustea! Eta kafea? = ¡Qué sorpresa! ¿Y el café?
+        - Maialen | Kafea hartzeari utzi diot. Osasuna zaintzen saiatzen ari naiz! = He dejado de tomar café. ¡Estoy intentando cuidar mi salud!
+        - Josu | Ikusten? Zurrumurruak ez dira beti egia. = ¿Ves? Los rumores no siempre son verdad.
+      questions:
+        - afterLine: 3
+          prompt: ¿Por qué cree Itziar que Maialen está embarazada?
+          options:
+            - Porque no ha tomado café y parece cansada
+            - Porque se lo ha dicho Maialen
+            - Porque Josu se lo ha contado
+        - afterLine: 8
+          prompt: ¿Quién está embarazada de verdad?
+          options:
+            - La hermana de Maialen
+            - Maialen
+            - Itziar
+        - afterLine: 10
+          prompt: ¿Por qué ya no toma café Maialen?
+          options:
+            - Porque intenta cuidar su salud
+            - Porque está embarazada
+            - Porque no le gusta
+  - type: review
+  - type: challenge
+    host: mikel

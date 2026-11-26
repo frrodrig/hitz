@@ -1,0 +1,2888 @@
+{
+  "schemaVersion": 1,
+  "id": "u17-2",
+  "section": "s6",
+  "bookUnit": 17,
+  "title": {
+    "es": "¿A favor o en contra?",
+    "eu": "Alde ala kontra?"
+  },
+  "goals": [
+    {
+      "es": "Explicar qué sueles tener que hacer, querer o poder hacer en tu trabajo.",
+      "eu": "Lanean zer egin behar, nahi edo ahal izaten duzun azaldu."
+    },
+    {
+      "es": "Dar y pedir consejos, y decir qué te dejan hacer.",
+      "eu": "Aholkuak eman eta eskatu, eta zer egiten uzten dizuten esan."
+    },
+    {
+      "es": "Decir si estás a favor o en contra de algo.",
+      "eu": "Zerbaiten alde edo kontra zauden esan."
+    }
+  ],
+  "keyWords": [
+    {
+      "eu": "zeregin",
+      "es": "tarea; quehacer"
+    },
+    {
+      "eu": "atseden hartu",
+      "es": "descansar"
+    },
+    {
+      "eu": "txanda",
+      "es": "turno"
+    },
+    {
+      "eu": "beharrezko",
+      "es": "necesario"
+    },
+    {
+      "eu": "azalpen",
+      "es": "explicación"
+    },
+    {
+      "eu": "kontuan hartu",
+      "es": "tener en cuenta"
+    },
+    {
+      "eu": "gozoki",
+      "es": "golosina; caramelo"
+    },
+    {
+      "eu": "suhiltzaile",
+      "es": "bombero; bombera"
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Suelo tener que…: behar izaten dut",
+          "eu": "Behar izaten dut"
+        },
+        "body": {
+          "es": "Con «behar», «nahi», «ahal» y «ezin» la costumbre se dice con «izaten»: «gauean lan egin behar izaten dut» (suelo tener que trabajar de noche), «ezin izaten da erre» (no se suele poder fumar).",
+          "eu": "«Behar», «nahi», «ahal» eta «ezin» aditzekin, ohitura «izaten» erabiliz esaten da: «gauean lan egin behar izaten dut», «ezin izaten da erre»."
+        },
+        "examples": [
+          {
+            "eu": "Gauean lan egin behar izaten dut.",
+            "es": "Suelo tener que trabajar de noche."
+          },
+          {
+            "eu": "Liburutegian ezin izaten da hitz egin.",
+            "es": "En la biblioteca no se puede hablar."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Ayudar y dejar: …-t(z)en lagundu, …-t(z)en utzi",
+          "eu": "…-t(z)en lagundu, …-t(z)en utzi"
+        },
+        "body": {
+          "es": "El verbo de lo que se ayuda o se deja hacer va en -t(z)en, y la persona va con -(r)i: «amari etxeko lanak egiten laguntzen diot», «ez didate sartzen utzi» (no me han dejado entrar).",
+          "eu": "Laguntzen edo uzten den aditza -t(z)en forman doa, eta pertsonak -(r)i hartzen du: «amari etxeko lanak egiten laguntzen diot», «ez didate sartzen utzi»."
+        },
+        "examples": [
+          {
+            "eu": "Ez didate sartzen utzi.",
+            "es": "No me han dejado entrar."
+          },
+          {
+            "eu": "Haurrei telebista ikusten uzten diet.",
+            "es": "Dejo a los niños ver la tele."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Imperativo: ekar itzazu, ez zaitez etorri",
+          "eu": "Agintera: ekar itzazu, ez zaitez etorri"
+        },
+        "body": {
+          "es": "Con objeto plural, «ezazu» pasa a «itzazu»: «ekar itzazu edalontziak». Para «zuek», «ezazue / itzazue». En negativo, «ez» va delante del auxiliar: «ez itzazu ureztatu», «ez zaitez berandu etorri».",
+          "eu": "Objektua plurala bada, «ezazu» «itzazu» bihurtzen da: «ekar itzazu edalontziak». «Zuek» denean, «ezazue / itzazue». Ezezkoan, «ez» laguntzailearen aurrean doa: «ez itzazu ureztatu», «ez zaitez berandu etorri»."
+        },
+        "examples": [
+          {
+            "eu": "Ekar itzazu edalontziak, mesedez.",
+            "es": "Trae los vasos, por favor."
+          },
+          {
+            "eu": "Ez itzazue gozoki guztiak jan!",
+            "es": "¡No os comáis todos los caramelos!"
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "A favor, en contra: zerbaiten alde, kontra, aurka",
+          "eu": "Zerbaiten alde, kontra, aurka"
+        },
+        "body": {
+          "es": "«Alde», «kontra» y «aurka» van detrás de la cosa o persona con -(r)en: «proiektuaren alde nago», «zure kontra». Delante de un nombre: «proiektuaren aldeko jendea», «bidegorriaren kontrako hiritarrak».",
+          "eu": "«Alde», «kontra» eta «aurka» gauzaren edo pertsonaren atzean doaz, hark -(r)en hartuta: «proiektuaren alde nago», «zure kontra». Izen baten aurrean: «proiektuaren aldeko jendea», «bidegorriaren kontrako hiritarrak»."
+        },
+        "examples": [
+          {
+            "eu": "Proiektu berriaren alde nago.",
+            "es": "Estoy a favor del proyecto nuevo."
+          },
+          {
+            "eu": "Hiritar asko proiektuaren aurka daude.",
+            "es": "Muchos ciudadanos están en contra del proyecto."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u17-2.l1",
+      "type": "lesson",
+      "title": {
+        "es": "En el trabajo",
+        "eu": "Lanean"
+      },
+      "lessons": [
+        {
+          "id": "u17-2.l1.s1",
+          "exercises": [
+            {
+              "id": "u17-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "izaten",
+              "translation": "ser",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer egin behar izaten duzu lanean?"
+              },
+              "answers": [
+                "¿Qué sueles tener que hacer en el trabajo?"
+              ],
+              "distractors": [
+                "de",
+                "no",
+                "emergencias",
+                "tareas"
+              ],
+              "vocabulary": [
+                "zer",
+                "egin",
+                "behar izan",
+                "izan",
+                "ukan",
+                "lan"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e03",
+              "type": "word_intro",
+              "word": "suhiltzaile",
+              "translation": "bombero; bombera",
+              "vocabulary": [
+                "suhiltzaile"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e04",
+              "type": "word_intro",
+              "word": "larrialdi",
+              "translation": "emergencia",
+              "vocabulary": [
+                "larrialdi"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "ibili",
+              "translation": "andar",
+              "vocabulary": [
+                "ibili"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Suhiltzaileek larrialdietan azkar ibili behar izaten dute."
+              },
+              "answers": [
+                "Los bomberos suelen tener que ir rápido en las emergencias."
+              ],
+              "distractors": [
+                "hacer",
+                "de",
+                "tengo",
+                "descansar"
+              ],
+              "vocabulary": [
+                "suhiltzaile",
+                "larrialdi",
+                "azkar",
+                "ibili",
+                "behar izan",
+                "izan",
+                "ukan"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e07",
+              "type": "word_intro",
+              "word": "zeregin",
+              "translation": "tarea; quehacer",
+              "vocabulary": [
+                "zeregin"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e08",
+              "type": "word_intro",
+              "word": "txanda",
+              "translation": "turno",
+              "vocabulary": [
+                "txanda"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e09",
+              "type": "word_intro",
+              "word": "atseden hartu",
+              "translation": "descansar",
+              "vocabulary": [
+                "atseden hartu"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e10",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "zeregin",
+                  "es": "tarea"
+                },
+                {
+                  "eu": "txanda",
+                  "es": "turno"
+                },
+                {
+                  "eu": "atseden hartu",
+                  "es": "descansar"
+                },
+                {
+                  "eu": "suhiltzaile",
+                  "es": "bombero"
+                },
+                {
+                  "eu": "larrialdi",
+                  "es": "emergencia"
+                }
+              ],
+              "vocabulary": [
+                "zeregin",
+                "txanda",
+                "atseden hartu",
+                "suhiltzaile",
+                "larrialdi"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e11",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Suelo tener que trabajar de noche."
+              },
+              "answers": [
+                "Gauean lan egin behar izaten dut."
+              ],
+              "vocabulary": [
+                "lan egin",
+                "gau",
+                "behar izan",
+                "izan",
+                "ukan"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e12",
+              "type": "fill_blank",
+              "sentence": "Gauean lan egin behar ___ dut.",
+              "options": [
+                "izaten",
+                "izan",
+                "egiten"
+              ],
+              "correct": 0,
+              "translation": "Suelo tener que trabajar de noche.",
+              "vocabulary": [
+                "lan egin",
+                "gau",
+                "behar izan",
+                "izan",
+                "ukan"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e13",
+              "type": "order_sentence",
+              "answer": "Gaur gaueko txanda daukat.",
+              "translation": "Hoy tengo el turno de noche.",
+              "vocabulary": [
+                "gaur",
+                "gau",
+                "txanda",
+                "eduki"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e14",
+              "type": "choose_meaning",
+              "text": "Batzuetan ezin izaten dut atseden hartu.",
+              "options": [
+                "A veces no puedo descansar.",
+                "A veces descanso mucho.",
+                "Nunca trabajo de noche."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "atseden hartu",
+                "bat",
+                "ezin",
+                "izan",
+                "ukan"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e15",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Batzuetan ezin izaten dut atseden hartu."
+              },
+              "answers": [
+                "A veces no puedo descansar."
+              ],
+              "vocabulary": [
+                "atseden hartu",
+                "bat",
+                "ezin",
+                "izan",
+                "ukan"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e16",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Kazetaria",
+                  "text": "Zer egin behar izaten duzu lanean?"
+                }
+              ],
+              "options": [
+                "Larrialdietan jendeari lagundu behar izaten diot.",
+                "Larrialdietan jendeari lagundu behar izan diot.",
+                "Suhiltzailea naiz larrialdia."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "egin",
+                "behar izan",
+                "izan",
+                "ukan",
+                "lan",
+                "larrialdi",
+                "jende",
+                "lagundu"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s1.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Solemos tener muchas tareas."
+              },
+              "answers": [
+                "Zeregin asko izaten ditugu."
+              ],
+              "distractors": [
+                "ibili",
+                "duzu",
+                "Gaur"
+              ],
+              "vocabulary": [
+                "zeregin",
+                "asko",
+                "izan",
+                "ukan"
+              ],
+              "structures": [
+                "behar-izaten",
+                "lana"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-2.l1.s2",
+          "exercises": [
+            {
+              "id": "u17-2.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Asteburuetan lasai egon nahi izaten dut.",
+              "distractors": [
+                "Udan",
+                "da",
+                "lo",
+                "Hemen"
+              ],
+              "vocabulary": [
+                "asteburu",
+                "lasai",
+                "egon",
+                "nahi izan",
+                "izan",
+                "ukan"
+              ],
+              "structures": [
+                "nahi-izaten",
+                "ahal-izaten"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "En la biblioteca no se puede hablar."
+              },
+              "answers": [
+                "Liburutegian ezin izaten da hitz egin."
+              ],
+              "vocabulary": [
+                "hitz egin",
+                "liburutegi",
+                "ezin",
+                "izan"
+              ],
+              "structures": [
+                "nahi-izaten",
+                "ahal-izaten"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s2.e03",
+              "type": "word_intro",
+              "word": "ahal",
+              "translation": "poder",
+              "vocabulary": [
+                "ahal izan"
+              ],
+              "structures": [
+                "nahi-izaten",
+                "ahal-izaten"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s2.e04",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "nahi izaten",
+                  "es": "soler querer"
+                },
+                {
+                  "eu": "ahal izaten",
+                  "es": "soler poder"
+                },
+                {
+                  "eu": "ezin izaten",
+                  "es": "no soler poder"
+                },
+                {
+                  "eu": "behar izaten",
+                  "es": "soler tener que"
+                },
+                {
+                  "eu": "beti",
+                  "es": "siempre"
+                }
+              ],
+              "vocabulary": [
+                "nahi izan",
+                "izan",
+                "ahal izan",
+                "ezin",
+                "behar izan",
+                "beti"
+              ],
+              "structures": [
+                "nahi-izaten",
+                "ahal-izaten"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s2.e05",
+              "type": "order_sentence",
+              "answer": "Hemen erre ahal izaten da?",
+              "translation": "¿Aquí se puede fumar?",
+              "vocabulary": [
+                "hemen",
+                "erre",
+                "ahal izan",
+                "izan"
+              ],
+              "structures": [
+                "nahi-izaten",
+                "ahal-izaten"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s2.e06",
+              "type": "fill_blank",
+              "sentence": "Liburutegian ezin ___ da hitz egin.",
+              "options": [
+                "izaten",
+                "izan",
+                "egiten"
+              ],
+              "correct": 0,
+              "translation": "En la biblioteca no se puede hablar.",
+              "vocabulary": [
+                "hitz egin",
+                "liburutegi",
+                "ezin",
+                "izan"
+              ],
+              "structures": [
+                "nahi-izaten",
+                "ahal-izaten"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s2.e07",
+              "type": "word_intro",
+              "word": "jolastu",
+              "translation": "jugar",
+              "vocabulary": [
+                "jolastu"
+              ],
+              "structures": [
+                "nahi-izaten",
+                "ahal-izaten"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s2.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Haurrek beti jolastu nahi izaten dute."
+              },
+              "answers": [
+                "Los niños siempre quieren jugar."
+              ],
+              "vocabulary": [
+                "hau",
+                "beti",
+                "jolastu",
+                "nahi izan",
+                "izan",
+                "ukan"
+              ],
+              "structures": [
+                "nahi-izaten",
+                "ahal-izaten"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ander",
+                  "text": "Hemen erre ahal izaten da?"
+                }
+              ],
+              "options": [
+                "Ez, hemen ezin izaten da erre.",
+                "Ez, hemen ezin izaten dut erretzen.",
+                "Bai, erretzailea naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hemen",
+                "erre",
+                "ahal izan",
+                "izan",
+                "ez",
+                "ezin"
+              ],
+              "structures": [
+                "nahi-izaten",
+                "ahal-izaten"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s2.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "En verano no suelo poder dormir bien."
+              },
+              "answers": [
+                "Udan ezin izaten dut ondo lo egin."
+              ],
+              "distractors": [
+                "erre",
+                "da",
+                "beti",
+                "nahi"
+              ],
+              "vocabulary": [
+                "lo egin",
+                "uda",
+                "ezin",
+                "izan",
+                "ukan",
+                "ondo"
+              ],
+              "structures": [
+                "nahi-izaten",
+                "ahal-izaten"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-2.l1.s3",
+          "exercises": [
+            {
+              "id": "u17-2.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Ayudo a mi madre a hacer las tareas de casa."
+              },
+              "answers": [
+                "Amari etxeko lanak egiten laguntzen diot."
+              ],
+              "vocabulary": [
+                "ama",
+                "etxe",
+                "lan",
+                "egin",
+                "lagun",
+                "ukan"
+              ],
+              "structures": [
+                "lagundu"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s3.e02",
+              "type": "word_intro",
+              "word": "diote",
+              "translation": "(ellos) le (dicen / dan…)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "lagundu"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s3.e03",
+              "type": "order_sentence",
+              "answer": "Suhiltzaileek jendeari etxetik ateratzen laguntzen diote.",
+              "translation": "Los bomberos ayudan a la gente a salir de casa.",
+              "vocabulary": [
+                "suhiltzaile",
+                "jende",
+                "etxe",
+                "atera",
+                "lagun",
+                "ukan"
+              ],
+              "structures": [
+                "lagundu"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s3.e04",
+              "type": "word_intro",
+              "word": "azalpen",
+              "translation": "explicación",
+              "vocabulary": [
+                "azalpen"
+              ],
+              "structures": [
+                "lagundu"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "ulertu",
+              "translation": "entender",
+              "vocabulary": [
+                "ulertu"
+              ],
+              "structures": [
+                "lagundu"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s3.e06",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "lagundu",
+                  "es": "ayudar"
+                },
+                {
+                  "eu": "azalpen",
+                  "es": "explicación"
+                },
+                {
+                  "eu": "konpondu",
+                  "es": "arreglar"
+                },
+                {
+                  "eu": "ulertu",
+                  "es": "entender"
+                },
+                {
+                  "eu": "etxeko lanak",
+                  "es": "tareas de casa"
+                }
+              ],
+              "vocabulary": [
+                "lagundu",
+                "azalpen",
+                "konpondu",
+                "ulertu",
+                "etxe",
+                "lan"
+              ],
+              "structures": [
+                "lagundu"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s3.e07",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ordenagailua konpontzen lagunduko didazu?"
+              },
+              "answers": [
+                "¿Me ayudarás a arreglar el ordenador?"
+              ],
+              "vocabulary": [
+                "ordenagailu",
+                "konpondu",
+                "lagundu",
+                "ukan"
+              ],
+              "structures": [
+                "lagundu"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s3.e08",
+              "type": "fill_blank",
+              "sentence": "Amari etxeko lanak egiten ___ diot.",
+              "options": [
+                "laguntzen",
+                "lagundu",
+                "laguntzea"
+              ],
+              "correct": 0,
+              "translation": "Ayudo a mi madre a hacer las tareas de casa.",
+              "vocabulary": [
+                "ama",
+                "etxe",
+                "lan",
+                "egin",
+                "lagun",
+                "ukan"
+              ],
+              "structures": [
+                "lagundu"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s3.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La profesora me ayuda a entender las explicaciones."
+              },
+              "answers": [
+                "Irakasleak azalpenak ulertzen laguntzen dit."
+              ],
+              "distractors": [
+                "lanak",
+                "Ordenagailua",
+                "diote"
+              ],
+              "vocabulary": [
+                "irakasle",
+                "azalpen",
+                "ulertu",
+                "lagun",
+                "ukan"
+              ],
+              "structures": [
+                "lagundu"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s3.e10",
+              "type": "choose_meaning",
+              "text": "Ordenagailua konpontzen lagunduko didazu?",
+              "options": [
+                "¿Me ayudarás a arreglar el ordenador?",
+                "¿Te ayudo a arreglar el ordenador?",
+                "¿Has arreglado el ordenador?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ordenagailu",
+                "konpondu",
+                "lagundu",
+                "ukan"
+              ],
+              "structures": [
+                "lagundu"
+              ]
+            },
+            {
+              "id": "u17-2.l1.s3.e11",
+              "type": "speak",
+              "text": "Aitonari kalean ibiltzen laguntzen diogu.",
+              "translation": "Ayudamos al abuelo a andar por la calle.",
+              "vocabulary": [
+                "aitona",
+                "kale",
+                "ibili",
+                "lagun",
+                "ukan"
+              ],
+              "structures": [
+                "lagundu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u17-2.l2",
+      "type": "lesson",
+      "title": {
+        "es": "Consejos y permisos",
+        "eu": "Aholkuak eta baimenak"
+      },
+      "lessons": [
+        {
+          "id": "u17-2.l2.s1",
+          "exercises": [
+            {
+              "id": "u17-2.l2.s1.e01",
+              "type": "word_intro",
+              "word": "edalontzi",
+              "translation": "vaso",
+              "vocabulary": [
+                "edalontzi"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ekar itzazu edalontziak, mesedez."
+              },
+              "answers": [
+                "Trae los vasos, por favor."
+              ],
+              "distractors": [
+                "frío",
+                "al",
+                "caramelos"
+              ],
+              "vocabulary": [
+                "ekarri",
+                "ukan",
+                "edalontzi",
+                "mesedez"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e03",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez itzazu landareak egunero ureztatu."
+              },
+              "answers": [
+                "No riegues las plantas todos los días."
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "landare",
+                "egunero",
+                "ureztatu"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e04",
+              "type": "word_intro",
+              "word": "estali",
+              "translation": "cubrir",
+              "vocabulary": [
+                "estali"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e05",
+              "type": "word_intro",
+              "word": "gozoki",
+              "translation": "golosina; caramelo",
+              "vocabulary": [
+                "gozoki"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e06",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "itzazu",
+                  "es": "(imperativo, plural)"
+                },
+                {
+                  "eu": "ezazu",
+                  "es": "(imperativo, singular)"
+                },
+                {
+                  "eu": "estali",
+                  "es": "tapar"
+                },
+                {
+                  "eu": "gozoki",
+                  "es": "caramelo"
+                },
+                {
+                  "eu": "edalontzi",
+                  "es": "vaso"
+                }
+              ],
+              "vocabulary": [
+                "ukan",
+                "estali",
+                "gozoki",
+                "edalontzi"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e07",
+              "type": "word_intro",
+              "word": "estal",
+              "translation": "cubrir",
+              "vocabulary": [
+                "estali"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Estal ezazu haurra; hotz egiten du."
+              },
+              "answers": [
+                "Tapa al niño; hace frío."
+              ],
+              "distractors": [
+                "favor",
+                "Trae",
+                "a"
+              ],
+              "vocabulary": [
+                "estali",
+                "ukan",
+                "hau",
+                "hotz",
+                "egin"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e09",
+              "type": "fill_blank",
+              "sentence": "Ekar ___ edalontziak, mesedez.",
+              "options": [
+                "itzazu",
+                "ezazu",
+                "zaitez"
+              ],
+              "correct": 0,
+              "translation": "Trae los vasos, por favor.",
+              "vocabulary": [
+                "ekarri",
+                "ukan",
+                "edalontzi",
+                "mesedez"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e10",
+              "type": "speak",
+              "text": "Ez zaitez berandu etorri.",
+              "translation": "No vengas tarde.",
+              "vocabulary": [
+                "ez",
+                "izan",
+                "berandu",
+                "etorri"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e11",
+              "type": "fill_blank",
+              "sentence": "Ez ___ berandu etorri.",
+              "options": [
+                "zaitez",
+                "ezazu",
+                "itzazu"
+              ],
+              "correct": 0,
+              "translation": "No vengas tarde.",
+              "vocabulary": [
+                "ez",
+                "izan",
+                "berandu",
+                "etorri"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e12",
+              "type": "word_intro",
+              "word": "itzazue",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez itzazue gozoki guztiak jan!"
+              },
+              "answers": [
+                "¡No os comáis todos los caramelos!"
+              ],
+              "distractors": [
+                "a",
+                "al",
+                "hace",
+                "las"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "gozoki",
+                "guzti",
+                "jan"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e14",
+              "type": "choose_meaning",
+              "text": "Ez itzazu landareak egunero ureztatu.",
+              "options": [
+                "No riegues las plantas todos los días.",
+                "Riega las plantas todos los días.",
+                "No has regado las plantas."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "landare",
+                "egunero",
+                "ureztatu"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s1.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¡Llama a emergencias!"
+              },
+              "answers": [
+                "Deitu larrialdietara!"
+              ],
+              "distractors": [
+                "hotz",
+                "ezazu"
+              ],
+              "vocabulary": [
+                "deitu",
+                "larrialdi"
+              ],
+              "structures": [
+                "agintera"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-2.l2.s2",
+          "exercises": [
+            {
+              "id": "u17-2.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Landareak eguzkitan jarri behar dira."
+              },
+              "answers": [
+                "Hay que poner las plantas al sol."
+              ],
+              "vocabulary": [
+                "landare",
+                "eguzki",
+                "jarri",
+                "behar izan",
+                "izan"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e02",
+              "type": "word_intro",
+              "word": "hazten",
+              "translation": "crecer",
+              "vocabulary": [
+                "hazi"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Landare hau oso azkar hazten da."
+              },
+              "answers": [
+                "Esta planta crece muy rápido."
+              ],
+              "distractors": [
+                "los",
+                "hacer",
+                "Tapa"
+              ],
+              "vocabulary": [
+                "landare",
+                "hau",
+                "oso",
+                "azkar",
+                "hazi",
+                "izan"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e04",
+              "type": "word_intro",
+              "word": "hazi",
+              "translation": "crecer",
+              "vocabulary": [
+                "hazi"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e05",
+              "type": "word_intro",
+              "word": "beharrezko",
+              "translation": "necesario",
+              "vocabulary": [
+                "beharrezko"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e06",
+              "type": "word_intro",
+              "word": "kontuan hartu",
+              "translation": "tener en cuenta",
+              "vocabulary": [
+                "kontuan hartu"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e07",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "hazi",
+                  "es": "crecer"
+                },
+                {
+                  "eu": "beharrezko",
+                  "es": "necesario"
+                },
+                {
+                  "eu": "kontuan hartu",
+                  "es": "tener en cuenta"
+                },
+                {
+                  "eu": "aholku",
+                  "es": "consejo"
+                },
+                {
+                  "eu": "landare",
+                  "es": "planta"
+                }
+              ],
+              "vocabulary": [
+                "hazi",
+                "beharrezko",
+                "kontuan hartu",
+                "aholku",
+                "landare"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e08",
+              "type": "listen_tap",
+              "text": "Beharrezkoa da ura edatea.",
+              "distractors": [
+                "egin",
+                "estali",
+                "Ondo"
+              ],
+              "vocabulary": [
+                "beharrezko",
+                "izan",
+                "ur",
+                "edan"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e09",
+              "type": "choose_meaning",
+              "text": "Kontuan hartu behar duzu haurrak txikiak direla.",
+              "options": [
+                "Tienes que tener en cuenta que los niños son pequeños.",
+                "Los niños pequeños tienen que tener cuidado.",
+                "Tienes que contar a los niños pequeños."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kontuan hartu",
+                "behar izan",
+                "ukan",
+                "hau",
+                "txiki",
+                "izan"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kontuan hartu behar duzu haurrak txikiak direla."
+              },
+              "answers": [
+                "Tienes que tener en cuenta que los niños son pequeños."
+              ],
+              "distractors": [
+                "consejo",
+                "al",
+                "crece",
+                "hacer"
+              ],
+              "vocabulary": [
+                "kontuan hartu",
+                "behar izan",
+                "ukan",
+                "hau",
+                "txiki",
+                "izan"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e11",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Irati",
+                  "text": "Nire landareak hiltzen ari dira. Zer egin behar dut?"
+                }
+              ],
+              "options": [
+                "Jarri itzazu eguzkitan.",
+                "Jarri ezazu eguzkitan.",
+                "Landareak eguzkia dira."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ni",
+                "landare",
+                "hil",
+                "izan",
+                "zer",
+                "egin",
+                "behar izan",
+                "ukan",
+                "jarri",
+                "eguzki"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Tapa bien las plantas por la noche."
+              },
+              "answers": [
+                "Ondo estali landareak gauean."
+              ],
+              "distractors": [
+                "egin",
+                "Aholku",
+                "jarri"
+              ],
+              "vocabulary": [
+                "ondo",
+                "estali",
+                "landare",
+                "gau"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s2.e13",
+              "type": "listen_tap",
+              "text": "Zer egin behar dut? Aholku bat behar dut.",
+              "distractors": [
+                "hartu",
+                "Ondo",
+                "hau",
+                "oso"
+              ],
+              "vocabulary": [
+                "zer",
+                "egin",
+                "behar izan",
+                "ukan",
+                "aholku",
+                "bat"
+              ],
+              "structures": [
+                "aholkuak",
+                "landareak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-2.l2.s3",
+          "exercises": [
+            {
+              "id": "u17-2.l2.s3.e01",
+              "type": "word_intro",
+              "word": "didate",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e02",
+              "type": "word_intro",
+              "word": "sartzen",
+              "translation": "entrar; meter",
+              "vocabulary": [
+                "sartu"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez didate sartzen utzi."
+              },
+              "answers": [
+                "No me han dejado entrar."
+              ],
+              "distractors": [
+                "Mis",
+                "museo",
+                "a"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "sartu",
+                "utzi"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e04",
+              "type": "word_intro",
+              "word": "uzten",
+              "translation": "dejar",
+              "vocabulary": [
+                "utzi"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Haurrei telebista ikusten uzten diet."
+              },
+              "answers": [
+                "Dejo a los niños ver la tele."
+              ],
+              "distractors": [
+                "en",
+                "derecho",
+                "hacer",
+                "jugar"
+              ],
+              "vocabulary": [
+                "hau",
+                "telebista",
+                "ikusi",
+                "utzi",
+                "ukan"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e06",
+              "type": "word_intro",
+              "word": "baimen",
+              "translation": "permiso",
+              "vocabulary": [
+                "baimen"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e07",
+              "type": "word_intro",
+              "word": "eskubide",
+              "translation": "derecho",
+              "vocabulary": [
+                "eskubide"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e08",
+              "type": "word_intro",
+              "word": "zigortu",
+              "translation": "castigar",
+              "vocabulary": [
+                "zigortu"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "utzi",
+                  "es": "dejar"
+                },
+                {
+                  "eu": "baimen",
+                  "es": "permiso"
+                },
+                {
+                  "eu": "eskubide",
+                  "es": "derecho"
+                },
+                {
+                  "eu": "zigortu",
+                  "es": "castigar"
+                },
+                {
+                  "eu": "didate",
+                  "es": "me han"
+                }
+              ],
+              "vocabulary": [
+                "utzi",
+                "baimen",
+                "eskubide",
+                "zigortu",
+                "ukan"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e10",
+              "type": "word_intro",
+              "word": "digute",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez digute argazkiak ateratzen utzi museoan."
+              },
+              "answers": [
+                "No nos han dejado hacer fotos en el museo."
+              ],
+              "distractors": [
+                "noche",
+                "Mis",
+                "Necesitas",
+                "niños"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "argazki",
+                "atera",
+                "utzi",
+                "museo"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e12",
+              "type": "fill_blank",
+              "sentence": "Ez didate ___ utzi.",
+              "options": [
+                "sartzen",
+                "sartu",
+                "sartzeko"
+              ],
+              "correct": 0,
+              "translation": "No me han dejado entrar.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "sartu",
+                "utzi"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e13",
+              "type": "word_intro",
+              "word": "sartzeko",
+              "translation": "entrar; meter",
+              "vocabulary": [
+                "sartu"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Baimena behar duzu sartzeko."
+              },
+              "answers": [
+                "Necesitas permiso para entrar."
+              ],
+              "distractors": [
+                "Dejo",
+                "dejan",
+                "el"
+              ],
+              "vocabulary": [
+                "baimen",
+                "behar izan",
+                "ukan",
+                "sartu"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e15",
+              "type": "read_true_false",
+              "passage": "Leirek hamabost urte ditu. Gurasoek ez diote gauean ateratzen uzten, baina asteburuetan lagunekin zinemara joaten da.",
+              "statement": "Los padres de Leire la dejan salir por la noche.",
+              "answer": false,
+              "vocabulary": [
+                "hamabost",
+                "urte",
+                "ukan",
+                "guraso",
+                "ez",
+                "gau",
+                "atera",
+                "utzi",
+                "baina",
+                "asteburu",
+                "lagun",
+                "zinema",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e16",
+              "type": "listen_tap",
+              "text": "Haurrek jolasteko eskubidea dute.",
+              "distractors": [
+                "diet",
+                "Haurrei",
+                "didate"
+              ],
+              "vocabulary": [
+                "hau",
+                "jolastu",
+                "eskubide",
+                "ukan"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            },
+            {
+              "id": "u17-2.l2.s3.e17",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Mis padres no me dejan salir por la noche."
+              },
+              "answers": [
+                "Gurasoek ez didate gauean ateratzen uzten."
+              ],
+              "vocabulary": [
+                "guraso",
+                "ez",
+                "ukan",
+                "gau",
+                "atera",
+                "utzi"
+              ],
+              "structures": [
+                "utzi",
+                "baimena"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u17-2.l3",
+      "type": "lesson",
+      "title": {
+        "es": "¿A favor o en contra?",
+        "eu": "Alde ala kontra?"
+      },
+      "lessons": [
+        {
+          "id": "u17-2.l3.s1",
+          "exercises": [
+            {
+              "id": "u17-2.l3.s1.e01",
+              "type": "word_intro",
+              "word": "proiektu",
+              "translation": "proyecto",
+              "vocabulary": [
+                "proiektu"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e02",
+              "type": "word_intro",
+              "word": "alde",
+              "translation": "a favor",
+              "vocabulary": [
+                "alde"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Proiektu berriaren alde nago."
+              },
+              "answers": [
+                "Estoy a favor del proyecto nuevo."
+              ],
+              "distractors": [
+                "nadie",
+                "contra",
+                "tu",
+                "Estás"
+              ],
+              "vocabulary": [
+                "proiektu",
+                "berri",
+                "alde",
+                "egon"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e04",
+              "type": "word_intro",
+              "word": "bidegorri",
+              "translation": "carril bici",
+              "vocabulary": [
+                "bidegorri"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e05",
+              "type": "word_intro",
+              "word": "kontra",
+              "translation": "en contra",
+              "vocabulary": [
+                "kontra"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bidegorriaren kontra zaude?"
+              },
+              "answers": [
+                "¿Estás en contra del carril bici?"
+              ],
+              "distractors": [
+                "nadie",
+                "nuevo",
+                "tu",
+                "No"
+              ],
+              "vocabulary": [
+                "bidegorri",
+                "kontra",
+                "egon"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e07",
+              "type": "word_intro",
+              "word": "aurka",
+              "translation": "en contra",
+              "vocabulary": [
+                "aurka"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e08",
+              "type": "word_intro",
+              "word": "hiritar",
+              "translation": "ciudadano; ciudadana",
+              "vocabulary": [
+                "hiritar"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "alde",
+                  "es": "a favor"
+                },
+                {
+                  "eu": "kontra",
+                  "es": "en contra"
+                },
+                {
+                  "eu": "aurka",
+                  "es": "contra"
+                },
+                {
+                  "eu": "hiritar",
+                  "es": "ciudadano"
+                },
+                {
+                  "eu": "bidegorri",
+                  "es": "carril bici"
+                }
+              ],
+              "vocabulary": [
+                "alde",
+                "kontra",
+                "aurka",
+                "hiritar",
+                "bidegorri"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Muchos ciudadanos están en contra del proyecto."
+              },
+              "answers": [
+                "Hiritar asko proiektuaren aurka daude."
+              ],
+              "distractors": [
+                "Ez",
+                "berriaren",
+                "Proiektu"
+              ],
+              "vocabulary": [
+                "hiritar",
+                "asko",
+                "proiektu",
+                "aurka",
+                "egon"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e11",
+              "type": "fill_blank",
+              "sentence": "Proiektu berriaren ___ nago.",
+              "options": [
+                "alde",
+                "aldeko",
+                "aurrean"
+              ],
+              "correct": 0,
+              "translation": "Estoy a favor del proyecto nuevo.",
+              "vocabulary": [
+                "proiektu",
+                "berri",
+                "alde",
+                "egon"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e12",
+              "type": "listen_tap",
+              "text": "Zure alde nago.",
+              "distractors": [
+                "asko",
+                "Hiritar"
+              ],
+              "vocabulary": [
+                "zu",
+                "alde",
+                "egon"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e13",
+              "type": "word_intro",
+              "word": "aukera",
+              "translation": "oportunidad; opción",
+              "vocabulary": [
+                "aukera"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e14",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Kazetaria",
+                  "text": "Bidegorri berriaren alde zaude?"
+                }
+              ],
+              "options": [
+                "Bai, alde nago. Oso aukera ona da.",
+                "Bai, bidegorria naiz.",
+                "Bai, aldeko nago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bidegorri",
+                "berri",
+                "alde",
+                "egon",
+                "bai",
+                "oso",
+                "aukera",
+                "on",
+                "izan"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e15",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "No estoy en contra de nadie."
+              },
+              "answers": [
+                "Ez nago inoren kontra."
+              ],
+              "vocabulary": [
+                "ez",
+                "egon",
+                "inor",
+                "kontra"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s1.e16",
+              "type": "choose_image",
+              "prompt": "la bicicleta",
+              "options": [
+                {
+                  "text": "autobusa",
+                  "image": "transport_bus.webp"
+                },
+                {
+                  "text": "autoa",
+                  "image": "transport_car.webp"
+                },
+                {
+                  "text": "bizikleta",
+                  "image": "transport_bicycle.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "bizikleta"
+              ],
+              "structures": [
+                "alde",
+                "kontra"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-2.l3.s2",
+          "exercises": [
+            {
+              "id": "u17-2.l3.s2.e01",
+              "type": "word_intro",
+              "word": "aldeko",
+              "translation": "a favor",
+              "vocabulary": [
+                "alde"
+              ],
+              "structures": [
+                "aldeko",
+                "kontrako",
+                "erabakia"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Proiektuaren aldeko jendea plazan dago."
+              },
+              "answers": [
+                "La gente a favor del proyecto está en la plaza."
+              ],
+              "distractors": [
+                "Es",
+                "opción",
+                "mejor",
+                "una"
+              ],
+              "vocabulary": [
+                "proiektu",
+                "alde",
+                "jende",
+                "plaza",
+                "egon"
+              ],
+              "structures": [
+                "aldeko",
+                "kontrako",
+                "erabakia"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s2.e03",
+              "type": "word_intro",
+              "word": "kontrako",
+              "translation": "en contra",
+              "vocabulary": [
+                "kontra"
+              ],
+              "structures": [
+                "aldeko",
+                "kontrako",
+                "erabakia"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bidegorriaren kontrako hiritarrek beste aukera bat nahi dute."
+              },
+              "answers": [
+                "Los ciudadanos en contra del carril bici quieren otra opción."
+              ],
+              "distractors": [
+                "el",
+                "proyecto",
+                "a",
+                "Qué"
+              ],
+              "vocabulary": [
+                "bidegorri",
+                "kontra",
+                "hiritar",
+                "beste",
+                "aukera",
+                "bat",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "aldeko",
+                "kontrako",
+                "erabakia"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s2.e05",
+              "type": "word_intro",
+              "word": "erabaki",
+              "translation": "decidir; decisión",
+              "vocabulary": [
+                "erabaki"
+              ],
+              "structures": [
+                "aldeko",
+                "kontrako",
+                "erabakia"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s2.e06",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "aldeko",
+                  "es": "a favor de"
+                },
+                {
+                  "eu": "kontrako",
+                  "es": "en contra de"
+                },
+                {
+                  "eu": "erabaki",
+                  "es": "decisión"
+                },
+                {
+                  "eu": "aukera",
+                  "es": "opción"
+                },
+                {
+                  "eu": "proiektu",
+                  "es": "proyecto"
+                }
+              ],
+              "vocabulary": [
+                "alde",
+                "kontra",
+                "erabaki",
+                "aukera",
+                "proiektu"
+              ],
+              "structures": [
+                "aldeko",
+                "kontrako",
+                "erabakia"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s2.e07",
+              "type": "listen_tap",
+              "text": "Erabaki zaila da.",
+              "distractors": [
+                "Proiektuaren",
+                "Bidegorriaren"
+              ],
+              "vocabulary": [
+                "erabaki",
+                "zail",
+                "izan"
+              ],
+              "structures": [
+                "aldeko",
+                "kontrako",
+                "erabakia"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s2.e08",
+              "type": "fill_blank",
+              "sentence": "Proiektuaren ___ jendea plazan dago.",
+              "options": [
+                "aldeko",
+                "alde",
+                "aldean"
+              ],
+              "correct": 0,
+              "translation": "La gente a favor del proyecto está en la plaza.",
+              "vocabulary": [
+                "proiektu",
+                "alde",
+                "jende",
+                "plaza",
+                "egon"
+              ],
+              "structures": [
+                "aldeko",
+                "kontrako",
+                "erabakia"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s2.e09",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué habéis decidido?"
+              },
+              "answers": [
+                "Zer erabaki duzue?"
+              ],
+              "vocabulary": [
+                "zer",
+                "erabaki",
+                "ukan"
+              ],
+              "structures": [
+                "aldeko",
+                "kontrako",
+                "erabakia"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s2.e10",
+              "type": "choose_meaning",
+              "text": "Erabaki zaila da.",
+              "options": [
+                "Es una decisión difícil.",
+                "Es fácil decidir.",
+                "Ha decidido algo difícil."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "erabaki",
+                "zail",
+                "izan"
+              ],
+              "structures": [
+                "aldeko",
+                "kontrako",
+                "erabakia"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s2.e11",
+              "type": "order_sentence",
+              "answer": "Aukera onena bidegorria da.",
+              "translation": "La mejor opción es el carril bici.",
+              "vocabulary": [
+                "aukera",
+                "on",
+                "bidegorri",
+                "izan"
+              ],
+              "structures": [
+                "aldeko",
+                "kontrako",
+                "erabakia"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-2.l3.s3",
+          "exercises": [
+            {
+              "id": "u17-2.l3.s3.e01",
+              "type": "word_intro",
+              "word": "udaltzain",
+              "translation": "policía municipal",
+              "vocabulary": [
+                "udaltzain"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e02",
+              "type": "word_intro",
+              "word": "isun",
+              "translation": "multa",
+              "vocabulary": [
+                "isun"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Udaltzainak isun bat jarri dit."
+              },
+              "answers": [
+                "El policía municipal me ha puesto una multa."
+              ],
+              "distractors": [
+                "noche",
+                "la",
+                "dos",
+                "cambian"
+              ],
+              "vocabulary": [
+                "udaltzain",
+                "isun",
+                "bat",
+                "jarri",
+                "ukan"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e04",
+              "type": "listen_tap",
+              "text": "Gauean ezin izaten da kalean edan.",
+              "distractors": [
+                "dit",
+                "dute",
+                "kalte",
+                "du"
+              ],
+              "vocabulary": [
+                "gau",
+                "ezin",
+                "izan",
+                "kale",
+                "edan"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e05",
+              "type": "word_intro",
+              "word": "kalte",
+              "translation": "daño",
+              "vocabulary": [
+                "kalte"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e06",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "udaltzain",
+                  "es": "policía municipal"
+                },
+                {
+                  "eu": "isun",
+                  "es": "multa"
+                },
+                {
+                  "eu": "kalte",
+                  "es": "daño"
+                },
+                {
+                  "eu": "zigortu",
+                  "es": "castigar"
+                },
+                {
+                  "eu": "bi urtetik behin",
+                  "es": "cada dos años"
+                }
+              ],
+              "vocabulary": [
+                "udaltzain",
+                "isun",
+                "kalte",
+                "zigortu",
+                "bi",
+                "urte",
+                "behi"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e07",
+              "type": "word_intro",
+              "word": "uzteak",
+              "translation": "dejar",
+              "vocabulary": [
+                "utzi"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Edalontziak kalean uzteak kalte handia egiten du."
+              },
+              "answers": [
+                "Dejar los vasos en la calle hace mucho daño."
+              ],
+              "distractors": [
+                "municipal",
+                "se",
+                "beber",
+                "puesto"
+              ],
+              "vocabulary": [
+                "edalontzi",
+                "kale",
+                "utzi",
+                "kalte",
+                "handi",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e09",
+              "type": "word_intro",
+              "word": "aldatzen",
+              "translation": "cambiar",
+              "vocabulary": [
+                "aldatu"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e10",
+              "type": "choose_meaning",
+              "text": "Bi urtetik behin aldatzen dute.",
+              "options": [
+                "Lo cambian cada dos años.",
+                "Lo cambiaron hace dos años.",
+                "Lo cambian dos veces al año."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bi",
+                "urte",
+                "behi",
+                "aldatu",
+                "ukan"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e11",
+              "type": "order_sentence",
+              "answer": "Bi urtetik behin aldatzen dute.",
+              "translation": "Lo cambian cada dos años.",
+              "vocabulary": [
+                "bi",
+                "urte",
+                "behi",
+                "aldatu",
+                "ukan"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e12",
+              "type": "read_true_false",
+              "passage": "Larunbat gauean jende asko kalean edaten ari zen, eta udaltzainek isun asko jarri zituzten. Hiritar batzuk erabakiaren alde daude, eta beste batzuk kontra.",
+              "statement": "Todos los ciudadanos están a favor de las multas.",
+              "answer": false,
+              "vocabulary": [
+                "larunbat",
+                "gau",
+                "jende",
+                "asko",
+                "kale",
+                "edan",
+                "izan",
+                "eta",
+                "udaltzain",
+                "isun",
+                "jarri",
+                "ukan",
+                "hiritar",
+                "bat",
+                "erabaki",
+                "alde",
+                "egon",
+                "beste",
+                "kontra"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            },
+            {
+              "id": "u17-2.l3.s3.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez dute inor zigortu."
+              },
+              "answers": [
+                "No han castigado a nadie."
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "inor",
+                "zigortu"
+              ],
+              "structures": [
+                "udaltzaina",
+                "isuna"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u17-2.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: el carril bici",
+        "eu": "Istorioa: bidegorria"
+      },
+      "story": {
+        "id": "u17-2.l4.story",
+        "title": "Bidegorria",
+        "lines": [
+          {
+            "speaker": "Kazetaria",
+            "eu": "Egun on! Bidegorri berriari buruz galdetzen ari gara. Proiektuaren alde zaude?",
+            "es": "¡Buenos días! Estamos preguntando sobre el nuevo carril bici. ¿Está a favor del proyecto?"
+          },
+          {
+            "speaker": "Asier",
+            "eu": "Bai, alde nago. Egunero bizikletaz joan behar izaten dut lanera.",
+            "es": "Sí, estoy a favor. Suelo tener que ir en bici al trabajo todos los días."
+          },
+          {
+            "speaker": "Kazetaria",
+            "eu": "Eta zuk?",
+            "es": "¿Y usted?"
+          },
+          {
+            "speaker": "Amona",
+            "eu": "Ni kontra nago. Bidegorriarekin ez dugu aparkalekurik izango gure kalean!",
+            "es": "Yo estoy en contra. ¡Con el carril bici no tendremos aparcamiento en nuestra calle!"
+          },
+          {
+            "speaker": "Asier",
+            "eu": "Baina aukera ona da hiritar guztientzat. Haurrek ere bizikletaz ibiltzeko eskubidea dute.",
+            "es": "Pero es una buena opción para todos los ciudadanos. Los niños también tienen derecho a ir en bici."
+          },
+          {
+            "speaker": "Amona",
+            "eu": "Haurrei ez diet errepidean bizikletaz ibiltzen uzten.",
+            "es": "A los niños no les dejo ir en bici por la carretera."
+          },
+          {
+            "speaker": "Asier",
+            "eu": "Horregatik behar dugu bidegorria!",
+            "es": "¡Por eso necesitamos el carril bici!"
+          },
+          {
+            "speaker": "Amona",
+            "eu": "Kontuan hartuko dut. Baina ez nago ziur.",
+            "es": "Lo tendré en cuenta. Pero no estoy segura."
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 2,
+            "prompt": "¿Por qué está Asier a favor del carril bici?",
+            "options": [
+              "Porque suele ir en bici al trabajo",
+              "Porque es periodista",
+              "Porque no tiene coche"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 4,
+            "prompt": "¿Por qué está la abuela en contra?",
+            "options": [
+              "Porque no tendrán aparcamiento en su calle",
+              "Porque no le gustan las bicis",
+              "Porque los niños no tienen bici"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 7,
+            "prompt": "¿Qué argumento usa Asier al final?",
+            "options": [
+              "Que el carril bici es más seguro para los niños",
+              "Que la abuela debería comprar una bici",
+              "Que habrá más aparcamiento"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u17-2.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u17-2.l6",
+      "type": "challenge",
+      "title": {
+        "es": "Reto de estrellas",
+        "eu": "Izarren erronka"
+      },
+      "host": "unai"
+    }
+  ]
+}

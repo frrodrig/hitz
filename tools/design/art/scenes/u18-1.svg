@@ -1,0 +1,45 @@
+<!-- Ane en una tienda, con una bolsa de la compra y una etiqueta de rebajas. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u18-1, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ane en una tienda con una bolsa de la compra" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#F6E6EA" />
+  <rect x="108" y="30" width="84" height="8" rx="2" fill="#A0566B" />
+  <rect x="112" y="38" width="76" height="80" fill="#FFFFFF" />
+  <rect x="118" y="46" width="64" height="4" fill="#D5CFC6" data-depth="none" />
+  <rect x="120" y="62" width="14" height="18" rx="2" fill="#6F9D7A" data-depth="none" />
+  <rect x="138" y="62" width="14" height="18" rx="2" fill="#E9C46A" data-depth="none" />
+  <rect x="156" y="62" width="14" height="18" rx="2" fill="#5B7FA6" data-depth="none" />
+  <rect x="118" y="82" width="64" height="4" fill="#D5CFC6" data-depth="none" />
+  <rect x="120" y="94" width="20" height="20" rx="2" fill="#C0566B" data-depth="none" />
+  <rect x="146" y="98" width="16" height="16" rx="2" fill="#E9A23B" data-depth="none" />
+  <rect x="0" y="150" width="200" height="50" fill="#C9A4AE" />
+  <g data-depth-generated="">
+    <clipPath id="u18-1-2">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u18-1-2)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#A9888F" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <g data-motion="Swing" data-pivot="174 92">
+    <path d="M174 92 L174 100" stroke="#5A4A40" stroke-width="1.2" />
+    <path d="M164 100 h20 v14 l-10 6 l-10 -6 Z" fill="#D9534F" />
+    <circle cx="174" cy="106" r="2" fill="#FFFFFF" data-depth="none" />
+  </g>
+  <g data-host="2 50 132" />
+  <g data-motion="Bob" data-pivot="140 150">
+    <path d="M128 132 q12 -16 24 0" fill="none" stroke="#7A4E35" stroke-width="2.5" />
+    <path d="M122 132 h36 l-4 32 h-28 Z" fill="#E9C46A" />
+    <g data-depth-generated="">
+      <clipPath id="u18-1-1">
+        <path d="M122 132 h36 l-4 32 h-28 Z" />
+      </clipPath>
+      <g clip-path="url(#u18-1-1)">
+        <path d="M82 92 H198 V204 H82 Z M118 128.4 h36 l-4 32 h-28 Z" fill-rule="evenodd" fill="#C1A158" />
+        <path d="M82 92 H198 V204 H82 Z M124 135 h36 l-4 32 h-28 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+      </g>
+    </g>
+    <path d="M132 142 h16" stroke="#B0553E" stroke-width="2" />
+  </g>
+</svg>

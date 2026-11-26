@@ -1,0 +1,52 @@
+<!-- Maite en un caserío, junto a una valla y una gallina que picotea. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u17-1, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Maite en un caserío con una gallina" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#E3EEF5" />
+  <circle cx="160" cy="34" r="14" fill="#F5D76E" />
+  <g data-depth-generated="">
+    <clipPath id="u17-1-3">
+      <path d="M146,34 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0 Z" />
+    </clipPath>
+    <g clip-path="url(#u17-1-3)">
+      <path d="M92 -20 H228 V88 H92 Z M142 30.4 a14 14 0 1 0 28 0 a14 14 0 1 0 -28 0 Z" fill-rule="evenodd" fill="#CCB15B" />
+      <path d="M92 -20 H228 V88 H92 Z M148 37 a14 14 0 1 0 28 0 a14 14 0 1 0 -28 0 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <path d="M90 150 L150 70 L210 150 Z" fill="#A8C58E" data-depth="none" />
+  <rect x="0" y="150" width="200" height="50" fill="#8FB070" />
+  <g data-depth-generated="">
+    <clipPath id="u17-1-2">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u17-1-2)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#798F5B" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="104" y="96" width="70" height="50" fill="#F7EFE4" />
+  <path d="M98 100 L139 70 L180 100 Z" fill="#B0553E" />
+  <g data-depth-generated="">
+    <clipPath id="u17-1-1">
+      <path d="M98 100 L139 70 L180 100 Z" />
+    </clipPath>
+    <g clip-path="url(#u17-1-1)">
+      <path d="M58 30 H220 V140 H58 Z M94 96.4 L135 66.4 L176 96.4 Z" fill-rule="evenodd" fill="#914734" />
+      <path d="M58 30 H220 V140 H58 Z M100 103 L141 73 L182 103 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="132" y="116" width="16" height="30" fill="#7A4E35" data-depth="none" />
+  <g data-host="2 50 132" />
+  <rect x="100" y="140" width="96" height="6" fill="#B07A4A" data-depth="none" />
+  <rect x="100" y="152" width="96" height="6" fill="#B07A4A" data-depth="none" />
+  <rect x="106" y="134" width="6" height="34" fill="#9C6B43" data-depth="none" />
+  <rect x="184" y="134" width="6" height="34" fill="#9C6B43" data-depth="none" />
+  <g data-motion="Bob" data-pivot="150 176">
+    <ellipse cx="150" cy="172" rx="12" ry="9" fill="#FFFFFF" />
+    <circle cx="160" cy="162" r="6" fill="#FFFFFF" />
+    <path d="M160 155 l2 -4 l2 4 Z" fill="#D9534F" data-depth="none" />
+    <path d="M166 162 l5 1 l-5 2 Z" fill="#E9A23B" data-depth="none" />
+    <circle cx="161" cy="161" r="1" fill="#3F2A20" data-depth="none" />
+    <path d="M146 181 v6 M154 181 v6" stroke="#E9A23B" stroke-width="1.5" />
+  </g>
+</svg>

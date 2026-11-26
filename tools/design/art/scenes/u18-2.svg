@@ -1,0 +1,40 @@
+<!-- Mikel ante una estantería torcida que se balancea. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u18-2, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Mikel ante una estantería torcida" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#EFE9DF" />
+  <rect x="0" y="0" width="200" height="12" fill="#DCD3C4" data-depth="none" />
+  <rect x="0" y="150" width="200" height="50" fill="#A9825C" />
+  <g data-depth-generated="">
+    <clipPath id="u18-2-2">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u18-2-2)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#8C6A4B" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="162" width="200" height="2" fill="#93704E" data-depth="none" />
+  <rect x="0" y="180" width="200" height="2" fill="#93704E" data-depth="none" />
+  <rect x="120" y="40" width="64" height="8" rx="2" fill="#9C6B43" />
+  <rect x="126" y="24" width="10" height="16" fill="#5B7FA6" data-depth="none" />
+  <rect x="138" y="28" width="8" height="12" fill="#C0566B" data-depth="none" />
+  <rect x="150" y="22" width="10" height="18" fill="#6F9D7A" data-depth="none" />
+  <g data-motion="Swing" data-pivot="124 84">
+    <rect x="120" y="80" width="64" height="8" rx="2" fill="#9C6B43" />
+    <circle cx="140" cy="72" r="8" fill="#E9C46A" />
+    <rect x="160" y="66" width="12" height="14" rx="2" fill="#B0553E" />
+  </g>
+  <g data-host="2 50 132" />
+  <rect x="112" y="118" width="80" height="44" rx="5" fill="#7E9BB8" />
+  <g data-depth-generated="">
+    <clipPath id="u18-2-1">
+      <path d="M117,118 h70 a5,5 0 0,1 5,5 v34 a5,5 0 0,1 -5,5 h-70 a5,5 0 0,1 -5,-5 v-34 a5,5 0 0,1 5,-5 Z" />
+    </clipPath>
+    <g clip-path="url(#u18-2-1)">
+      <path d="M67 73 H237 V207 H67 Z M110.52 112.17 h70 a5 5 0 0 1 5 5 v34 a5 5 0 0 1 -5 5 h-70 a5 5 0 0 1 -5 -5 v-34 a5 5 0 0 1 5 -5 Z" fill-rule="evenodd" fill="#6C7F94" />
+      <path d="M67 73 H237 V207 H67 Z M119 121 h70 a5 5 0 0 1 5 5 v34 a5 5 0 0 1 -5 5 h-70 a5 5 0 0 1 -5 -5 v-34 a5 5 0 0 1 5 -5 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="112" y="118" width="80" height="10" rx="4" fill="#6A86A2" data-depth="none" />
+</svg>

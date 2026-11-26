@@ -1,0 +1,381 @@
+# Unit 16.1 · Nor bezalakoa? — A2.1 book unit 4 (Atarian + A): who one looks like; comparing
+# people's looks, ways and habits; objections and contrasts. NOREN ANTZA EDUKI / IZAN; BEZALA
+# against BEZALAKO(A)(K); concessive NAHIZ ETA + verb and -ARREN; contrast with ORDEA and BERRIZ.
+# Recall: baina (1.2), NOREN (3.1).
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u16-1
+section: s6
+bookUnit: 16
+title:
+  es: ¿A quién te pareces?
+  eu: Nor bezalakoa?
+goals:
+  - es: Decir a quién te pareces y comparar el aspecto de las personas.
+    eu: Esan zeinen antza duzun eta pertsonen itxura alderatu.
+  - es: Comparar maneras de ser y costumbres.
+    eu: Izaerak eta ohiturak alderatu.
+  - es: Expresar contrastes y objeciones con «aunque».
+    eu: Kontrasteak eta eragozpenak adierazi «nahiz eta» erabiliz.
+guidebook:
+  sections:
+    - title:
+        es: "Parecerse a alguien: amaren antza daukat"
+        eu: "Norbaiten antza izan: amaren antza daukat"
+      body:
+        es: "Para decir a quién te pareces, la persona va con -(r)en y después «antza» con «daukat» o «dut»: «amaren antza daukat» (me parezco a mi madre). En negativo, «antzik»: «ez daukat aitaren antzik»."
+        eu: "Norbaiten antza duzula esateko, pertsonak -(r)en hartzen du, eta gero «antza» dator, «daukat» edo «dut» aditzarekin: «amaren antza daukat». Ezezkoan, «antzik»: «ez daukat aitaren antzik»."
+      examples:
+        - eu: Amaren antza daukat.
+          es: Me parezco a mi madre.
+        - eu: Ez dut aitaren antzik.
+          es: No me parezco a mi padre.
+        - eu: Zure ahizpak zure antz handia du.
+          es: Tu hermana se parece mucho a ti.
+    - title:
+        es: "«Como»: bezala o bezalakoa"
+        eu: "Bezala ala bezalakoa"
+      body:
+        es: "Las dos son «como» en castellano. «Bezala» dice cómo se hace algo (pregunta «nola?»): «aitona bezala ibiltzen da». «Bezalakoa» dice cómo es algo o alguien (pregunta «nolakoa?»): «aita bezalakoa da». Delante de un nombre, «bezalako»: «zu bezalako lagunak»."
+        eu: "Biak «como» dira gaztelaniaz. «Bezala»k zerbait nola egiten den esaten du («nola?»): «aitona bezala ibiltzen da». «Bezalakoa»k zerbait edo norbait nolakoa den («nolakoa?»): «aita bezalakoa da». Izen baten aurrean, «bezalako»: «zu bezalako lagunak»."
+      examples:
+        - eu: Aitona bezala ibiltzen da.
+          es: Anda como su abuelo.
+        - eu: Ama bezalakoa da.
+          es: Es como su madre.
+        - eu: Zu bezalako lagunak behar ditut.
+          es: Necesito amigos como tú.
+    - title:
+        es: "Aunque: nahiz eta… / …-(e)n arren"
+        eu: "Nahiz eta… / …arren"
+      body:
+        es: "«Nahiz eta» va delante y el verbo pierde el auxiliar: «nahiz eta baxua izan» (aunque es bajo). Con «arren» el verbo puede conservar el auxiliar: «euria egin arren» o «euria egiten duen arren» (aunque llueve)."
+        eu: "«Nahiz eta» aurrean doa, eta aditzak ez du laguntzailerik: «nahiz eta baxua izan». «Arren»ekin aditzak laguntzailea izan dezake: «euria egin arren» edo «euria egiten duen arren»."
+      examples:
+        - eu: Nahiz eta baxua izan, saskibaloian ondo jokatzen du.
+          es: Aunque es bajo, juega bien al baloncesto.
+        - eu: Euria egin arren, mendira joan ginen.
+          es: Aunque llovía, fuimos al monte.
+    - title:
+        es: "En cambio: ordea, berriz"
+        eu: "Ordea, berriz"
+      body:
+        es: "Como «baina», contraponen dos ideas, pero van detrás de la primera palabra de la segunda frase: «Nik kafea hartzen dut; nire anaiak, berriz, tea»."
+        eu: "«Baina» bezala, bi ideia kontrajartzen dituzte, baina bigarren esaldiaren lehen hitzaren ondoren doaz: «Nik kafea hartzen dut; nire anaiak, berriz, tea»."
+      examples:
+        - eu: Nire anaia kirolaria da; ni, berriz, ez.
+          es: Mi hermano es deportista; yo, en cambio, no.
+        - eu: Jonek asko hitz egiten du; bere bikiak, ordea, oso gutxi.
+          es: Jon habla mucho; su gemelo, en cambio, muy poco.
+levels:
+  - type: lesson
+    title:
+      es: Parecidos de familia
+      eu: Familiako antzak
+    lessons:
+      - structures: [antza, senideak]
+        sentences:
+          - Noren antza duzu? = ¿A quién te pareces?
+          - Amaren antza daukat. = Me parezco a mi madre.
+          - Ez dut aitaren antzik. = No me parezco a mi padre.
+          - Zure ahizpak zure antz handia du. = Tu hermana se parece mucho a ti.
+          - Aitonaren antza duzu! = ¡Te pareces a tu abuelo!
+          - Senide guztiek antz handia dute. = Todos los parientes se parecen mucho.
+          - Ez daukat inoren antzik. = No me parezco a nadie.
+        pairs:
+          - - antz = parecido
+            - senide = pariente
+            - biki = gemelo
+            - aurpegi = cara
+            - ahots = voz
+        meanings:
+          - text: Ez dut aitaren antzik.
+            options:
+              - No me parezco a mi padre.
+              - Me parezco a mi padre.
+              - No conozco a mi padre.
+        blanks:
+          - text: Ez daukat aitaren ___. = No me parezco a mi padre.
+            options:
+              - antzik
+              - antza
+              - antzeko
+        chats:
+          - messages:
+              - Amaia | Noren antza duzu, amarena ala aitarena?
+            options:
+              - Amaren antza daukat.
+              - Ama bezala ibiltzen naiz.
+              - Amak antza du.
+      - structures: [aurpegia, ahotsa]
+        sentences:
+          - Amaren aurpegia du, baina aitaren ahotsa. = Tiene la cara de su madre, pero la voz de su padre.
+          - Ile kizkurra eta begi urdinak ditu. = Tiene el pelo rizado y los ojos azules.
+          - Ahots polita du. = Tiene una voz bonita.
+          - Bi bikiek aurpegi berdina dute. = Los dos gemelos tienen la misma cara.
+          - Gure gustuak antzekoak dira. = Nuestros gustos son parecidos.
+          - Nire anaia eta ni oso desberdinak gara. = Mi hermano y yo somos muy diferentes.
+        pairs:
+          - - kizkur = rizado
+            - berdin = igual
+            - antzeko = parecido
+            - desberdin = diferente
+            - aurpegi = cara
+        blanks:
+          - text: Bi bikiek aurpegi ___ dute. = Los dos gemelos tienen la misma cara.
+            options:
+              - berdina
+              - desberdina
+              - antza
+        meanings:
+          - text: Gure gustuak antzekoak dira.
+            options:
+              - Nuestros gustos son parecidos.
+              - Nuestros gustos son diferentes.
+              - Nos gustan las mismas personas.
+        images:
+          - long_hair, short_hair, tall
+      - structures: [bezala, bezalakoa]
+        sentences:
+          - Aitona bezala ibiltzen da. = Anda como su abuelo.
+          - Ama bezalakoa da. = Es como su madre.
+          - Aita bezala janzten naiz. = Me visto como mi padre.
+          - Zu bezalako lagunak behar ditut. = Necesito amigos como tú.
+          - Amona bezala egiten du barre. = Se ríe como su abuela.
+          - Zure anaia ez da zu bezalakoa. = Tu hermano no es como tú.
+          - Nolakoa da zure bikia? = ¿Cómo es tu gemelo? | ¿Cómo es tu gemela?
+        pairs:
+          - - bezala = como (de qué manera)
+            - bezalakoa = como (cómo es)
+            - jantzi = vestirse
+            - barre egin = reírse
+            - nolakoa = cómo es
+        blanks:
+          - text: Aitona ___ ibiltzen da. = Anda como su abuelo.
+            options:
+              - bezala
+              - bezalakoa
+              - antza
+          - text: Ama ___ da. = Es como su madre.
+            options:
+              - bezalakoa
+              - bezala
+              - antzik
+        chats:
+          - messages:
+              - Mikel | Nolakoa da zure ahizpa?
+            options:
+              - Ni bezalakoa da, baina altuagoa.
+              - Ni bezala ibiltzen da.
+              - Ahizparen antza dut.
+  - type: lesson
+    title:
+      es: Aunque…
+      eu: Nahiz eta…
+    lessons:
+      - structures: [nahiz-eta]
+        sentences:
+          - Nahiz eta baxua izan, saskibaloian ondo jokatzen du. = Aunque es bajo, juega bien al baloncesto.
+          - Nahiz eta medikua izan, erretzailea da. = Aunque es médico, es fumador.
+          - Nahiz eta diruduna izan, ez da zoriontsua. = Aunque es rico, no es feliz.
+          - Nahiz eta nekatuta egon, kalera aterako naiz. = Aunque estoy cansado, saldré a la calle. | Aunque estoy cansada, saldré a la calle.
+          - Nahiz eta asko ikasi, ez du azterketa gainditu. = Aunque ha estudiado mucho, no ha aprobado el examen.
+          - Nahiz eta begetarianoa izan, arraina jaten du. = Aunque es vegetariano, come pescado. | Aunque es vegetariana, come pescado.
+        pairs:
+          - - nahiz eta = aunque
+            - erretzaile = fumador
+            - dirudun = rico
+            - zoriontsu = feliz
+            - begetariano = vegetariano
+        blanks:
+          - text: Nahiz eta medikua ___, erretzailea da. = Aunque es médico, es fumador.
+            options:
+              - izan
+              - da
+              - delako
+        meanings:
+          - text: Nahiz eta diruduna izan, ez da zoriontsua.
+            options:
+              - Aunque es rico, no es feliz.
+              - Como es rico, es feliz.
+              - No es rico, pero es feliz.
+        chats:
+          - messages:
+              - Josu | Igerilekura joango zara gaur?
+            options:
+              - Bai, nahiz eta hotz egin.
+              - Bai, hotz egiten duelako.
+              - Bai, nahiz eta hotz egiten du.
+      - structures: [arren]
+        sentences:
+          - Euria egin arren, mendira joan ginen. = Aunque llovía, fuimos al monte.
+          - Asko ikasi arren, ez dut azterketa gainditu. = Aunque he estudiado mucho, no he aprobado el examen.
+          - Gaixo egon arren, lanera joan da. = Aunque está enfermo, ha ido a trabajar. | Aunque está enferma, ha ido a trabajar.
+          - Ez du erretzen, erretzaileen artean bizi arren. = No fuma, aunque vive entre fumadores.
+          - Goiz jaiki arren, berandu iritsi naiz. = Aunque me he levantado pronto, he llegado tarde.
+          - Lotsa eman arren, abestu egingo dut. = Aunque me dé vergüenza, cantaré.
+        pairs:
+          - - arren = aunque
+            - erre = fumar
+            - gainditu = aprobar
+            - azterketa = examen
+            - lotsa = vergüenza
+        blanks:
+          - text: Euria egin ___, mendira joan ginen. = Aunque llovía, fuimos al monte.
+            options:
+              - arren
+              - eta
+              - nahiz
+        meanings:
+          - text: Goiz jaiki arren, berandu iritsi naiz.
+            options:
+              - Aunque me he levantado pronto, he llegado tarde.
+              - Como me he levantado pronto, he llegado a tiempo.
+              - Me he levantado tarde y he llegado tarde.
+        true_false:
+          - passage: Peiok asko ikasi zuen, baina ez zuen azterketa gainditu. Datorren hilean berriro ikasiko du.
+            statement: Peio aprobó el examen.
+            answer: false
+      - structures: [ordea, berriz]
+        sentences:
+          - Nire anaia kirolaria da; ni, berriz, ez. = Mi hermano es deportista; yo, en cambio, no.
+          - Jonek asko hitz egiten du; bere bikiak, ordea, oso gutxi. = Jon habla mucho; su gemelo, en cambio, muy poco.
+          - Nik kafea hartzen dut; amak, berriz, tea. = Yo tomo café; mi madre, en cambio, té.
+          - Gaur eguzkia dago; bihar, ordea, euria egingo du. = Hoy hace sol; mañana, en cambio, lloverá.
+          - Ama erretzailea zen; aitak, berriz, ez du inoiz erre. = Mi madre era fumadora; mi padre, en cambio, nunca ha fumado.
+        pairs:
+          - - ordea = en cambio
+            - berriz = por otro lado
+            - baina = pero
+            - kirolari = deportista
+            - erretzaile = fumador
+        blanks:
+          - text: Nik kafea hartzen dut; amak, ___, tea. = Yo tomo café; mi madre, en cambio, té.
+            options:
+              - berriz
+              - baina
+              - arren
+        chats:
+          - messages:
+              - Olatz | Zuk eta zure bikiak gauza berdinak egiten dituzue?
+            options:
+              - Ez. Nik kirola egiten dut; nire bikiak, ordea, liburuak irakurtzen ditu.
+              - Ez. Nik kirola egiten dut; ordea nire bikiak liburuak irakurtzen ditu.
+              - Bai, nahiz eta kirola egin.
+  - type: lesson
+    title:
+      es: Personas distintas
+      eu: Pertsona desberdinak
+    lessons:
+      - structures: [bikiak]
+        sentences:
+          - Bikiak dira, baina ez dute antzik. = Son gemelos, pero no se parecen.
+          - Batek ile kizkurra du; besteak, berriz, ile luzea. = Uno tiene el pelo rizado; el otro, en cambio, el pelo largo.
+          - Biak dira kirolariak, baina kirol desberdinak egiten dituzte. = Los dos son deportistas, pero hacen deportes diferentes.
+          - Ahots berdina dute; telefonoz ez dakit nor den nor. = Tienen la misma voz; por teléfono no sé quién es quién.
+          - Txikitan berdin janzten ziren. = De pequeños se vestían igual.
+        pairs:
+          - - biki = gemelo
+            - bat = uno
+            - beste = otro
+            - berdin = igual
+            - telefonoz = por teléfono
+        meanings:
+          - text: Bikiak dira, baina ez dute antzik.
+            options:
+              - Son gemelos, pero no se parecen.
+              - Son gemelos y se parecen mucho.
+              - No son gemelos, pero se parecen.
+        true_false:
+          - passage: Ane eta Nerea bikiak dira. Anek ile kizkurra du eta kirola maite du. Nerea, berriz, ez da kirolaria; liburuak maite ditu.
+            statement: Nerea es muy deportista.
+            answer: false
+        images:
+          - tall, short, happy
+      - structures: [osasuna, ohiturak]
+        sentences:
+          - Osasuna da garrantzitsuena. = La salud es lo más importante.
+          - Ez dut erretzen, eta kirola egiten dut. = No fumo y hago deporte.
+          - Begetarianoa naiz; ez dut haragirik jaten. = Soy vegetariano; no como carne. | Soy vegetariana; no como carne.
+          - Kirolaria izan arren, garagardo asko edaten du. = Aunque es deportista, bebe mucha cerveza.
+          - Erretzaileek osasun arazo asko dituzte. = Los fumadores tienen muchos problemas de salud.
+        pairs:
+          - - osasun = salud
+            - begetariano = vegetariano
+            - erre = fumar
+            - kirolari = deportista
+            - arazo = problema
+        blanks:
+          - text: Kirolaria izan ___, garagardo asko edaten du. = Aunque es deportista, bebe mucha cerveza.
+            options:
+              - arren
+              - eta
+              - ordea
+        chats:
+          - messages:
+              - Garazi | Haragia jaten duzu?
+            options:
+              - Ez, begetarianoa naiz.
+              - Ez, erretzailea naiz.
+              - Bai, nahiz eta haragia.
+      - structures: [zortea, maitasuna]
+        sentences:
+          - Zorte ona izan dut. = He tenido buena suerte.
+          - Lanpostu berri bat du, eta oso zoriontsua da. = Tiene un puesto de trabajo nuevo y es muy feliz.
+          - Maitasuna ez da dena. = El amor no lo es todo.
+          - Azterketa gainditu dut! = ¡He aprobado el examen!
+          - Abeslari ezaguna da, baina ez da diruduna. = Es un cantante conocido, pero no es rico. | Es una cantante conocida, pero no es rica.
+          - Zorte on! = ¡Buena suerte!
+        pairs:
+          - - zorte = suerte
+            - maitasun = amor
+            - lanpostu = puesto de trabajo
+            - ezagun = conocido
+            - gainditu = aprobar
+        meanings:
+          - text: Abeslari ezaguna da, baina ez da diruduna.
+            options:
+              - Es un cantante conocido, pero no es rico.
+              - Es un cantante rico, pero no es conocido.
+              - Conoce a un cantante rico.
+        true_false:
+          - passage: Ibaik lanpostu berri bat du. Nahiz eta dirua gutxi irabazi, oso zoriontsua da, lana maite duelako.
+            statement: Ibai está contento con su nuevo trabajo.
+            answer: true
+  - type: story
+    title:
+      es: "Historia: los gemelos"
+      eu: "Istorioa: bikiak"
+    story:
+      title: Bikiak
+      lines:
+        - Leire | Begira argazki hau! Nor da mutil hau, zu ala zure bikia? = ¡Mira esta foto! ¿Quién es este chico, tú o tu gemelo?
+        - Jon | Hori Iker da, nire bikia. Ile kizkurra du; nik, berriz, ile luzea. = Ese es Iker, mi gemelo. Él tiene el pelo rizado; yo, en cambio, el pelo largo.
+        - Leire | Bai antza duzuen! Aurpegi berdina duzue. = ¡Cómo os parecéis! Tenéis la misma cara.
+        - Jon | Aurpegia bai, baina oso desberdinak gara. Iker kirolaria da; ni, ordea, ez. = La cara sí, pero somos muy diferentes. Iker es deportista; yo, en cambio, no.
+        - Leire | Eta noren antza duzue, amarena ala aitarena? = ¿Y a quién os parecéis, a vuestra madre o a vuestro padre?
+        - Jon | Ikerrek aitaren antza du; aita bezala ibiltzen da eta aita bezala egiten du barre. = Iker se parece a nuestro padre; anda como él y se ríe como él.
+        - Leire | Eta zuk? = ¿Y tú?
+        - Jon | Ni amona bezalakoa naiz. Amonak eta nik liburuak maite ditugu, eta lotsa ematen digu jende askoren aurrean hitz egiteak. = Yo soy como mi abuela. Mi abuela y yo adoramos los libros, y nos da vergüenza hablar delante de mucha gente.
+        - Leire | Lotsa izan arren, oso lagun ona zara! = Aunque tengas vergüenza, ¡eres muy buen amigo!
+      questions:
+        - afterLine: 2
+          prompt: ¿En qué se diferencian Jon e Iker a primera vista?
+          options:
+            - En el pelo
+            - En la cara
+            - En la voz
+        - afterLine: 6
+          prompt: ¿A quién se parece Iker?
+          options:
+            - A su padre
+            - A su madre
+            - A su abuela
+        - afterLine: 8
+          prompt: ¿Qué le da vergüenza a Jon?
+          options:
+            - Hablar delante de mucha gente
+            - Leer libros
+            - Hacer deporte
+  - type: review
+  - type: challenge
+    host: ane
