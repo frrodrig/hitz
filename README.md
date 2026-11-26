@@ -37,6 +37,9 @@ trikitilari, **Mikel** the aizkolari, **Maite** the amona and **Unai** the pelot
   <img src="docs/images/screenshots/profile.png" alt="Profile with score and daily goal" width="200">
   <img src="docs/images/screenshots/path-dark.png" alt="Learning path in dark theme" width="200">
 </p>
+<p align="center">
+  <img src="docs/images/screenshots/tablet.png" alt="On a tablet, the path with the current unit beside it" width="640">
+</p>
 
 ## What's inside
 
@@ -57,8 +60,9 @@ trikitilari, **Mikel** the aizkolari, **Maite** the amona and **Unai** the pelot
 - **Motivation without pressure**: a daily goal in minutes, achievements, a score on the CEFR
   A1 scale (0–29) and a star challenge in every unit: 30 hard questions, one to three stars. No
   lives, no streaks to lose, no ads, no account.
-- **Built with care**: Material 3 Expressive, light and dark themes, TalkBack, large fonts and
-  tablets; interface in Spanish and Basque.
+- **Built with care**: Material 3 Expressive, the system's colours (Material You) or Hitz's own,
+  light and dark themes, TalkBack, large fonts and tablets (with the current unit beside the
+  path); interface in Spanish and Basque.
 - **Private**: everything stays on the phone. The only network request is a daily check for a new
   version, which can be turned off.
 
