@@ -25,10 +25,11 @@ class ScoreTest {
     fun `required steps share the points evenly`() {
         // 5 steps in u01-1 and 6 in u01-2 (with the section review).
         assertThat(ScoreRules.steps(TestContent.course, TestContent.units)).hasSize(11)
-        val a1 = CefrLevel.A1
-        assertThat(ScoreRules.value(ScoreRules.points(a1, 11, 11), 29)).isEqualTo(ScoreRules.A1_TOP)
-        assertThat(ScoreRules.value(ScoreRules.points(a1, 5, 11), 29)).isEqualTo(13)
-        assertThat(ScoreRules.progressToNext(ScoreRules.points(a1, 11, 11), 29)).isEqualTo(1f)
+        val a1 = ScoreRules.groups(TestContent.course, TestContent.units).single()
+        assertThat(a1.span).isEqualTo(29f)
+        assertThat(ScoreRules.value(ScoreRules.points(a1, 11), 29)).isEqualTo(ScoreRules.A1_TOP)
+        assertThat(ScoreRules.value(ScoreRules.points(a1, 5), 29)).isEqualTo(13)
+        assertThat(ScoreRules.progressToNext(ScoreRules.points(a1, 11), 29)).isEqualTo(1f)
     }
 
     @Test
@@ -67,42 +68,57 @@ class ScoreTest {
         assertThat(score.canDo.map { it.unitId }).containsExactly("u01-1", "u01-2").inOrder()
     }
 
-    @Test
-    fun `a2_1 fills its own stretch after A1, so adding it lowers no score`() = runTest {
-        val a2 = listOf(TestContent.unit("u13-1"), TestContent.unit("u13-2", sectionReview = true))
-        val units = TestContent.units + a2.associateBy { it.id }
+    /** The A1 course plus A2.1 sections made of two units each, like TestContent's s1. */
+    private fun withA21(vararg sections: String): Pair<Course, Map<String, CourseUnit>> {
         val text = TestContent.course.title
+        val a2 = sections.associateWith { id ->
+            val book = 12 + id.removePrefix("s").toInt()
+            listOf(TestContent.unit("u$book-1"), TestContent.unit("u$book-2", sectionReview = true))
+        }
         val course = TestContent.course.copy(
-            sections = TestContent.course.sections +
-                Section("s5", text, text, a2.map { it.id }, level = CefrLevel.A2_1),
+            sections = TestContent.course.sections + a2.map { (id, units) ->
+                Section(id, text, text, units.map { it.id }, level = CefrLevel.A2_1)
+            },
         )
+        return course to TestContent.units + a2.values.flatten().associateBy { it.id }
+    }
+
+    private fun observing(course: Course, units: Map<String, CourseUnit>): ObserveScoreUseCase {
         val repository = object : CourseRepository {
             override suspend fun getCourse(courseId: CourseId): Course = course
 
             override suspend fun getUnit(courseId: CourseId, unitId: String): CourseUnit = units.getValue(unitId)
         }
-        val observeBoth = ObserveScoreUseCase(repository, progress, { NOW }, { ZoneOffset.UTC })
+        return ObserveScoreUseCase(repository, progress, { NOW }, { ZoneOffset.UTC })
+    }
+
+    @Test
+    fun `each A2_1 section fills its share after A1, so publishing more never lowers a score`() = runTest {
         ScoreRules.steps(TestContent.course, TestContent.units).forEach { complete(it.substringBefore('.'), it) }
 
-        val afterA1 = observeBoth().first()
+        // Section 5 published alone: half of the A2.1 stretch, 29 + 7.5.
+        val (oneCourse, oneUnits) = withA21("s5")
+        val afterA1 = observing(oneCourse, oneUnits)().first()
         assertThat(afterA1.value).isEqualTo(ScoreRules.A1_TOP)
-        assertThat(afterA1.max).isEqualTo(ScoreRules.A2_1_TOP)
+        assertThat(afterA1.max).isEqualTo(36)
         assertThat(afterA1.level).isEqualTo(CefrLevel.A2_1)
-        assertThat(afterA1.isTop).isFalse()
 
-        // 5 of the 11 A2.1 steps: 15 points × 5/11 on top of 29.
-        complete("u13-1", "u13-1.l1.s1", "u13-1.l2.s1", "u13-1.l2.s2", "u13-1.l3", "u13-1.l4")
-        val halfway = observeBoth().first()
-        assertThat(halfway.value).isEqualTo(35)
-        assertThat(halfway.band).isEqualTo(ScoreBand.TowardsA2)
+        ScoreRules.stepsByLevel(oneCourse, oneUnits).getValue(CefrLevel.A2_1)
+            .forEach { complete(it.substringBefore('.'), it) }
+        val sectionDone = observing(oneCourse, oneUnits)().first()
+        assertThat(sectionDone.value).isEqualTo(36)
+        assertThat(sectionDone.isTop).isTrue()
+        assertThat(sectionDone.band).isEqualTo(ScoreBand.TowardsA2)
 
-        ScoreRules.stepsByLevel(
-            course,
-            units
-        ).getValue(CefrLevel.A2_1).forEach { complete(it.substringBefore('.'), it) }
-        val top = observeBoth().first()
-        assertThat(top.value).isEqualTo(ScoreRules.A2_1_TOP)
-        assertThat(top.isTop).isTrue()
+        // Section 6 arrives: the score stays where it was, and the top becomes 44.
+        val (twoCourse, twoUnits) = withA21("s5", "s6")
+        val later = observing(twoCourse, twoUnits)().first()
+        assertThat(later.value).isEqualTo(36)
+        assertThat(later.max).isEqualTo(ScoreRules.A2_1_TOP)
+        assertThat(later.isTop).isFalse()
+
+        ScoreRules.steps(twoCourse, twoUnits).forEach { complete(it.substringBefore('.'), it) }
+        assertThat(observing(twoCourse, twoUnits)().first().value).isEqualTo(ScoreRules.A2_1_TOP)
     }
 
     private companion object {
