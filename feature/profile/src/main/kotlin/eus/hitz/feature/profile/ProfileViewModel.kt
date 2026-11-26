@@ -9,7 +9,6 @@ import eus.hitz.core.domain.gamification.PlayerSummary
 import eus.hitz.core.domain.path.ObserveLearningPathUseCase
 import eus.hitz.core.domain.score.ObserveScoreUseCase
 import eus.hitz.core.domain.score.Score
-import eus.hitz.core.domain.settings.ReminderScheduler
 import eus.hitz.core.domain.settings.SettingsRepository
 import eus.hitz.core.domain.settings.UserSettings
 import kotlinx.coroutines.flow.SharingStarted
@@ -40,7 +39,6 @@ class ProfileViewModel @Inject constructor(
     observeScore: ObserveScoreUseCase,
     observeLearningPath: ObserveLearningPathUseCase,
     private val settingsRepository: SettingsRepository,
-    private val reminders: ReminderScheduler,
 ) : ViewModel() {
     val state: StateFlow<ProfileUiState> = combine(
         observePlayer(),
@@ -60,29 +58,5 @@ class ProfileViewModel @Inject constructor(
 
     fun setDailyGoal(minutes: Int) {
         viewModelScope.launch { settingsRepository.setDailyGoalMinutes(minutes) }
-    }
-
-    fun setSpeakingEnabled(enabled: Boolean) {
-        viewModelScope.launch { settingsRepository.setSpeakingEnabled(enabled) }
-    }
-
-    fun setListeningEnabled(enabled: Boolean) {
-        viewModelScope.launch { settingsRepository.setListeningEnabled(enabled) }
-    }
-
-    fun setSoundEffectsEnabled(enabled: Boolean) {
-        viewModelScope.launch { settingsRepository.setSoundEffectsEnabled(enabled) }
-    }
-
-    fun setUpdateChecksEnabled(enabled: Boolean) {
-        viewModelScope.launch { settingsRepository.setUpdateChecksEnabled(enabled) }
-    }
-
-    /** Call with true only once notifications are allowed. */
-    fun setReminderEnabled(enabled: Boolean) {
-        viewModelScope.launch {
-            settingsRepository.setReminderEnabled(enabled)
-            if (enabled) reminders.schedule() else reminders.cancel()
-        }
     }
 }

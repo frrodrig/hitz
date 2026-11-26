@@ -64,14 +64,23 @@ one exists; Hitz wrappers only fix sizes, colours and accessibility semantics.
 
 ## Colour
 
-`theme/Color.kt` is **generated** by `tools/design/generate_color_scheme.py` with the Material
-Color Utilities algorithm (`pip install materialyoucolor`, tonal-spot variant). It produces:
+**The interface follows the colours the learner chose for Android** (Material You, dynamic colour,
+Android 12+), unless they turn *Usar los colores del sistema* off in Ajustes. Hitz's identity does
+not depend on the interface colours: it lives in the icon, the cast, the scenes and the
+celebrations, which keep their own colours with any scheme. The answer families (success,
+warning) are fixed too, so right, almost and wrong always look the same.
+
+Hitz's own scheme (below Android 12, or with the setting off) is in `theme/Color.kt`, **generated**
+by `tools/design/generate_color_scheme.py` with the Material Color Utilities algorithm
+(`pip install materialyoucolor`, tonal-spot variant). Primary and tertiary keep their seeds' own
+chroma and the teal most of it (26), so the brand stays recognisable without loud containers. It
+produces:
 
 | Scheme | Used when |
 |---|---|
-| `LightColorScheme` / `DarkColorScheme` | Default |
+| `LightColorScheme` / `DarkColorScheme` | Below Android 12, or with the system's colours turned off |
 | `LightHighContrastColorScheme` / `DarkHighContrastColorScheme` | System contrast ≥ 0.5 (Android 14+) or `highContrast = true` |
-| Dynamic colour | Opt-in setting (`dynamicColor = true`, Android 12+) |
+| Dynamic colour | Default on Android 12+ (`UserSettings.systemColors`, passed as `dynamicColor`); Ajustes turns it off |
 
 Extended colour families (`ColorFamily`: `color`, `onColor`, `container`, `onContainer`):
 
@@ -158,7 +167,7 @@ Rules:
 
 | Tactic | Where |
 |---|---|
-| **Containment and grouping** | Answer options, practice units, achievements and settings form groups (2 dp gaps, large outer and small inner corners); the daily goal and the score sit in tonal chips; the daily-goal choice is a connected button group (`ToggleButton` + `ButtonGroupDefaults.connected*ButtonShapes`), which replaces segmented buttons. |
+| **Containment and grouping** | Answer options, practice units, achievements and settings form groups (2 dp gaps, large outer and small inner corners); the daily goal and the score sit in tonal chips; the daily-goal choice is a connected button group (`ToggleButton` + `ButtonGroupDefaults.connected*ButtonShapes`), which replaces segmented buttons. Settings have their own screen, **Ajustes**, behind the gear in the profile's header, grouped by what they change: exercises, sound and reminders, appearance (system colours, Android 12+), language (Android's per-app language, Android 13+) and the app (update checks, version, typeface licence). The profile keeps who the learner is and how they are doing, and the daily-goal choice next to the goal. |
 | **Shape morphing** | Buttons morph on press (`ButtonDefaults.shapes()`); the active option morphs to fully rounded corners. |
 | **Shape variety** | `MaterialShapes` containers for the framed mascot (`Sunny`), the feedback badge (`Cookie9Sided` / `Cookie4Sided`) and the current path step (`Cookie9Sided`); every other step is a circle, so the current one stands out. |
 | **Motion of the current step** | The current path node is 96 dp and its shape turns slowly (16 s a turn), like the expressive loading indicator; the icon stays upright. |

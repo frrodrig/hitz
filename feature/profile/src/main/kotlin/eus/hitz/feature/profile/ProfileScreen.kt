@@ -2,11 +2,6 @@
 
 package eus.hitz.feature.profile
 
-import android.Manifest
-import android.content.pm.PackageManager
-import android.os.Build
-import androidx.activity.compose.rememberLauncherForActivityResult
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -16,19 +11,16 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyListScope
-import androidx.compose.foundation.selection.toggleable
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ButtonGroupDefaults
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.LoadingIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.ToggleButton
 import androidx.compose.runtime.Composable
@@ -38,7 +30,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.platform.LocalConfiguration
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
@@ -50,7 +41,6 @@ import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
-import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import eus.hitz.core.designsystem.component.HitzDailyGoalRing
@@ -76,63 +66,34 @@ import java.util.Locale
 private const val PERCENT = 100
 private val TODAY_RING = 72.dp
 private val DAY_RING = 32.dp
-private val GROUP_GAP = 2.dp
-private val GROUP_OUTER = 24.dp
-private val GROUP_INNER = 6.dp
 
 @Composable
 fun ProfileScreen(
     onOpenScore: () -> Unit,
+    onOpenSettings: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: ProfileViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
-    val onReminderChange = rememberReminderToggle(viewModel)
     ProfileContent(
         state = state,
-        onSettingChange = { setting, enabled ->
-            when (setting) {
-                Setting.Speaking -> viewModel.setSpeakingEnabled(enabled)
-                Setting.Listening -> viewModel.setListeningEnabled(enabled)
-                Setting.SoundEffects -> viewModel.setSoundEffectsEnabled(enabled)
-                Setting.Reminder -> onReminderChange(enabled)
-                Setting.UpdateChecks -> viewModel.setUpdateChecksEnabled(enabled)
-            }
-        },
         onGoalChange = viewModel::setDailyGoal,
         onOpenScore = onOpenScore,
+        onOpenSettings = onOpenSettings,
         modifier = modifier,
     )
 }
 
-/** The learner's switches in the profile. */
-internal enum class Setting { Speaking, Listening, SoundEffects, Reminder, UpdateChecks }
-
-@Composable
-private fun rememberReminderToggle(viewModel: ProfileViewModel): (Boolean) -> Unit {
-    val context = LocalContext.current
-    val permission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
-        if (granted) viewModel.setReminderEnabled(true)
-    }
-    return { enabled ->
-        val needsPermission = enabled && Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
-            ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) !=
-            PackageManager.PERMISSION_GRANTED
-        if (needsPermission) {
-            permission.launch(Manifest.permission.POST_NOTIFICATIONS)
-        } else {
-            viewModel.setReminderEnabled(enabled)
-        }
-    }
-}
-
-/** The score, the daily goal and this week, achievements and settings. */
+/**
+ * Who the learner is and how they are doing: the score, the daily goal and this week, and
+ * achievements. The settings have their own screen, behind the gear in the header.
+ */
 @Composable
 internal fun ProfileContent(
     state: ProfileUiState,
-    onSettingChange: (Setting, Boolean) -> Unit,
     onGoalChange: (minutes: Int) -> Unit,
     onOpenScore: () -> Unit,
+    onOpenSettings: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Surface(modifier.fillMaxSize()) {
@@ -142,7 +103,7 @@ internal fun ProfileContent(
                 contentPadding = PaddingValues(vertical = HitzSpacing.xl),
                 verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
             ) {
-                item(key = "header") { Header() }
+                item(key = "header") { Header(onOpenSettings) }
                 sectionTitle(R.string.feature_profile_score_title)
                 item(key = "score") { ScoreCard(state.score, onOpenScore) }
                 sectionTitle(R.string.feature_profile_daily_goal)
@@ -162,62 +123,15 @@ internal fun ProfileContent(
                 item(key = "achievements") {
                     Group(state.player.achievements) { achievement, shape -> AchievementRow(achievement, shape) }
                 }
-                sectionTitle(R.string.feature_profile_settings)
-                item(key = "settings") {
-                    Group(settingRows(state.settings)) { row, shape ->
-                        SettingRow(
-                            title = stringResource(row.title),
-                            description = stringResource(row.description),
-                            checked = row.checked,
-                            onChange = { onSettingChange(row.setting, it) },
-                            shape = shape,
-                        )
-                    }
-                }
             }
         }
     }
 }
 
-private data class SettingRowUi(val setting: Setting, val title: Int, val description: Int, val checked: Boolean)
-
-private fun settingRows(settings: UserSettings) = listOf(
-    SettingRowUi(
-        Setting.Speaking,
-        R.string.feature_profile_speaking,
-        R.string.feature_profile_speaking_description,
-        settings.speakingEnabled,
-    ),
-    SettingRowUi(
-        Setting.Listening,
-        R.string.feature_profile_listening,
-        R.string.feature_profile_listening_description,
-        settings.listeningEnabled,
-    ),
-    SettingRowUi(
-        Setting.SoundEffects,
-        R.string.feature_profile_sound_effects,
-        R.string.feature_profile_sound_effects_description,
-        settings.soundEffectsEnabled,
-    ),
-    SettingRowUi(
-        Setting.Reminder,
-        R.string.feature_profile_reminder,
-        R.string.feature_profile_reminder_description,
-        settings.reminderEnabled,
-    ),
-    SettingRowUi(
-        Setting.UpdateChecks,
-        R.string.feature_profile_update_checks,
-        R.string.feature_profile_update_checks_description,
-        settings.updateChecksEnabled,
-    ),
-)
-
 @Composable
-private fun Header() {
+private fun Header(onOpenSettings: () -> Unit) {
     Row(
-        modifier = Modifier.padding(horizontal = HitzSpacing.xl),
+        modifier = Modifier.padding(start = HitzSpacing.xl, end = HitzSpacing.sm),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(HitzSpacing.lg),
     ) {
@@ -225,28 +139,18 @@ private fun Header() {
         Text(
             text = stringResource(R.string.feature_profile_title),
             style = MaterialTheme.typography.headlineMediumEmphasized,
-            modifier = Modifier.semantics { heading() },
+            modifier = Modifier
+                .weight(1f)
+                .semantics { heading() },
         )
+        IconButton(onClick = onOpenSettings) {
+            Icon(
+                painter = painterResource(HitzIcons.Settings),
+                contentDescription = stringResource(R.string.feature_profile_settings),
+            )
+        }
     }
 }
-
-/** Rows of a group: tonal, 2 dp apart, large outer corners and small inner ones. */
-@Composable
-private fun <T> Group(items: List<T>, row: @Composable (T, Shape) -> Unit) {
-    Column(
-        modifier = Modifier.padding(horizontal = HitzSpacing.lg),
-        verticalArrangement = Arrangement.spacedBy(GROUP_GAP),
-    ) {
-        items.forEachIndexed { index, item -> row(item, groupShape(index, items.size)) }
-    }
-}
-
-private fun groupShape(index: Int, count: Int) = RoundedCornerShape(
-    topStart = if (index == 0) GROUP_OUTER else GROUP_INNER,
-    topEnd = if (index == 0) GROUP_OUTER else GROUP_INNER,
-    bottomStart = if (index == count - 1) GROUP_OUTER else GROUP_INNER,
-    bottomEnd = if (index == count - 1) GROUP_OUTER else GROUP_INNER,
-)
 
 /** The hero of the profile: where the learner stands, on the brand's tonal container. */
 @Composable
@@ -422,19 +326,6 @@ private fun GoalChoice(selected: Int, onGoalChange: (Int) -> Unit) {
     }
 }
 
-private fun LazyListScope.sectionTitle(title: Int) {
-    item(key = "title-$title") {
-        Text(
-            text = stringResource(title),
-            style = MaterialTheme.typography.titleMediumEmphasized,
-            color = MaterialTheme.colorScheme.primary,
-            modifier = Modifier
-                .padding(start = HitzSpacing.xl, end = HitzSpacing.xl, top = HitzSpacing.lg)
-                .semantics { heading() },
-        )
-    }
-}
-
 @Composable
 private fun AchievementRow(progress: AchievementProgress, shape: Shape) {
     val name = stringResource(
@@ -486,34 +377,15 @@ private fun ProgressRow(title: String, supporting: String, fraction: Float, done
     )
 }
 
-@Composable
-private fun SettingRow(
-    title: String,
-    description: String,
-    checked: Boolean,
-    onChange: (Boolean) -> Unit,
-    shape: Shape,
-) {
-    ListItem(
-        modifier = Modifier
-            .clip(shape)
-            .toggleable(value = checked, role = Role.Switch, onValueChange = onChange),
-        headlineContent = { Text(title) },
-        supportingContent = { Text(description) },
-        trailingContent = { Switch(checked = checked, onCheckedChange = null) },
-        colors = ListItemDefaults.colors(containerColor = MaterialTheme.colorScheme.surfaceContainer),
-    )
-}
-
 @HitzPreviews
 @Composable
 private fun ProfileContentPreview() {
     HitzTheme {
         ProfileContent(
             state = ProfilePreviewData.ready,
-            onSettingChange = { _, _ -> },
             onGoalChange = {},
             onOpenScore = {},
+            onOpenSettings = {},
         )
     }
 }
