@@ -1,6 +1,6 @@
 {
   "_comment": "Voice of each dialogue speaker (complete_chat messages and story lines). maider: women, antton: men. Roles take the voice opposite to the person they talk to. Used by tools/audio/cast_voices.py.",
-  "maider": ["Alaitz", "Amaia", "Amona", "Ane", "Arantza", "Edurne", "Garazi", "Haizea", "Irati", "Itziar", "Izaro", "June", "Leire", "Maialen", "Maite", "Miren", "Nahia", "Nerea", "Olatz", "Uxue"],
+  "maider": ["Alaitz", "Ama", "Amaia", "Amona", "Ane", "Arantza", "Edurne", "Garazi", "Haizea", "Irati", "Itziar", "Izaro", "June", "Leire", "Maialen", "Maite", "Miren", "Nahia", "Nerea", "Olatz", "Uxue"],
   "antton": ["Aitor", "Ander", "Asier", "Eneko", "Gorka", "Ibai", "Iker", "Jon", "Josu", "Julen", "Kepa", "Markel", "Mikel", "Oier", "Patxi", "Peio", "Unai", "Xabier"],
-  "roles": ["Bezeroa", "Erizaina", "Ertzaina", "Irakaslea", "Langilea", "Medikua", "Saltzailea"]
+  "roles": ["Bezeroa", "Erizaina", "Ertzaina", "Irakaslea", "Kazetaria", "Langilea", "Medikua", "Nagusia", "Saltzailea"]
 }

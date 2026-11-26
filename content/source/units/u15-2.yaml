@@ -1,0 +1,377 @@
+# Unit 15.2 · Benetan? — A2.1 book unit 3 (B + C): asking about activities and events and
+# reporting the answers; explaining causes; reacting with surprise. Indirect questions (EA) …-(E)N
+# in reported speech; causal -T(Z)EAGATIK and NORENGATIK; exclamatives (Hau da …!, A zer-nolako …!,
+# Zein … den!, Zenbat … duen!, Bai … -(e)la!); degree words. BAIT- for recognition only.
+# Recall: EA …-(E)N (11.2), -(E)LAKO and causal eta.
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u15-2
+section: s5
+bookUnit: 15
+title:
+  es: ¿De verdad?
+  eu: Benetan?
+goals:
+  - es: Preguntar por actividades y sucesos, y contar las respuestas.
+    eu: Ekintzei eta gertaerei buruz galdetu, eta erantzunak kontatu.
+  - es: Explicar las causas de algo.
+    eu: Zerbaiten arrazoiak azaldu.
+  - es: Expresar sorpresa de varias maneras.
+    eu: Harridura hainbat modutan adierazi.
+guidebook:
+  sections:
+    - title:
+        es: "Le hemos preguntado…: galdetu diogu ea …-(e)n"
+        eu: "Galdetu diogu ea …-(e)n"
+      body:
+        es: "Repaso y ampliación. Una pregunta contada lleva -(e)n en el verbo (duen, den, dagoen). Al contarla cambia la persona: «Zenbat denbora pasatu duzu?» se convierte en «zenbat denbora pasatu duen galdetu diogu»."
+        eu: "Errepasoa eta gehiago. Kontatutako galdera batean, aditzak -(e)n hartzen du (duen, den, dagoen). Kontatzean pertsona aldatzen da: «Zenbat denbora pasatu duzu?» → «zenbat denbora pasatu duen galdetu diogu»."
+      examples:
+        - eu: Itsasoan zenbat denbora pasatu duen galdetu diogu.
+          es: Le hemos preguntado cuánto tiempo ha pasado en el mar.
+        - eu: Ea pozik dagoen galdetu dit.
+          es: Me ha preguntado si está contento.
+    - title:
+        es: "Por qué: -t(z)eagatik, elurragatik"
+        eu: "Zergatik: -t(z)eagatik, elurragatik"
+      body:
+        es: "Además de -(e)lako, la causa puede ir con -t(z)eagatik detrás del verbo (hitz egiteagatik, por hablar) o con -(a)gatik detrás de un nombre (elurragatik, por la nieve; lainoagatik, por la niebla). En textos formales verás también «bait-» (ez baitu ikasi, ya que no ha estudiado); basta con entenderlo."
+        eu: "-(e)lako formaz gain, arrazoia -t(z)eagatik formarekin adieraz daiteke aditzaren ondoren (hitz egiteagatik), edo -(a)gatik izenaren ondoren (elurragatik, lainoagatik). Testu jasoetan «bait-» ere ikusiko duzu (ez baitu ikasi); ulertzea nahikoa da."
+      examples:
+        - eu: Istripu asko telefonoz hitz egiteagatik gertatzen dira.
+          es: Muchos accidentes pasan por hablar por teléfono.
+        - eu: Elurragatik berandu iritsi naiz.
+          es: He llegado tarde por la nieve.
+    - title:
+        es: "¡Qué…!: exclamaciones"
+        eu: "Harridura-esaldiak"
+      body:
+        es: "Para expresar sorpresa: «Hau da etxea!» (¡vaya casa!); «A zer-nolako etxea!»; «Zein handia den!» (¡qué grande es!), «Zenbat diru duen!» (¡cuánto dinero tiene!), con el verbo en -(e)n; y «Bai harroa dela!» (¡sí que es orgulloso!), con -(e)la."
+        eu: "Harridura adierazteko: «Hau da etxea!»; «A zer-nolako etxea!»; «Zein handia den!», «Zenbat diru duen!», aditza -(e)n forman; eta «Bai harroa dela!», -(e)la formarekin."
+      examples:
+        - eu: A zer-nolako kontzertua!
+          es: ¡Vaya concierto!
+        - eu: Zein garestia den!
+          es: ¡Qué caro es!
+        - eu: Bai pozik zaudela!
+          es: ¡Sí que estás contento!
+levels:
+  - type: lesson
+    title:
+      es: La entrevista
+      eu: Elkarrizketa
+    lessons:
+      - structures: [zehar-galdera]
+        sentences:
+          - Olatzi elkarrizketa bat egin diogu. = Le hemos hecho una entrevista a Olatz.
+          - Urte bat pasatu du belaontzian. = Ha pasado un año en velero.
+          - Zenbat denbora pasatu duzu itsasoan? = ¿Cuánto tiempo has pasado en el mar?
+          - Itsasoan zenbat denbora pasatu duen galdetu diogu. = Le hemos preguntado cuánto tiempo ha pasado en el mar.
+          - Ea bidaia zaila izan den galdetu dut. = He preguntado si el viaje ha sido difícil.
+          - Ea arazorik izan duen galdetu diogu. = Le hemos preguntado si ha tenido problemas.
+          - Bi arazo izan dituela esan digu. = Nos ha dicho que ha tenido dos problemas.
+          - Abentura berri bat egin nahi duela esan du. = Ha dicho que quiere hacer una aventura nueva.
+        pairs:
+          - - elkarrizketa = entrevista
+            - belaontzi = velero
+            - abentura = aventura
+            - arazo = problema
+            - itsaso = mar
+        blanks:
+          - text: Itsasoan zenbat denbora pasatu ___ galdetu diogu. = Le hemos preguntado cuánto tiempo ha pasado en el mar.
+            options:
+              - duen
+              - du
+              - duela
+        meanings:
+          - text: Ea arazorik izan duen galdetu diogu.
+            options:
+              - Le hemos preguntado si ha tenido problemas.
+              - Nos ha dicho que ha tenido problemas.
+              - No ha tenido ningún problema.
+        chats:
+          - messages:
+              - Kazetaria | Zer galdetu diozu?
+            options:
+              - Ea bidaia zaila izan den.
+              - Bidaia zaila izan da.
+              - Bidaia zaila izango da.
+        images:
+          - sea, trip, plane
+      - structures: [zehar-galdera, kontatu]
+        sentences:
+          - Non bizi den galdetu diot. = Le he preguntado dónde vive.
+          - Zer egiten duen galdetu dit. = Me ha preguntado qué hace.
+          - Ea etorriko den galdetu dute. = Han preguntado si vendrá.
+          - Noiz itzuliko den ez dakigu. = No sabemos cuándo volverá.
+          - Ea dena ondo dagoen galdetu dit amak. = Mi madre me ha preguntado si todo está bien.
+          - Gidariari ea logura duen galdetu diot. = Le he preguntado al conductor si tiene sueño.
+        pairs:
+          - - galdetu = preguntar
+            - ea = si (pregunta)
+            - logura = sueño
+            - gidari = conductor
+            - mugikor = móvil
+        blanks:
+          - text: Ea etorriko ___ galdetu dute. = Han preguntado si vendrá.
+            options:
+              - den
+              - da
+              - dela
+        chats:
+          - messages:
+              - Ama | Zer galdetu dizu Itziarrek?
+            options:
+              - Ea bihar etorriko naizen.
+              - Bihar etorriko naiz.
+              - Itziar etorri da.
+        true_false:
+          - passage: Kazetariak ea bidaia zaila izan den galdetu dio. Olatzek bidaia zaila izan dela esan du.
+            statement: Olatz dice que el viaje no ha sido difícil.
+            answer: false
+      - structures: [harremanak, mugikorra]
+        sentences:
+          - Mugikorrez hitz egiten genuen egunero. = Hablábamos por el móvil todos los días.
+          - Familiarekin egunero hitz egin dut. = He hablado con la familia todos los días.
+          - Abentura hau zoragarria izan da. = Esta aventura ha sido maravillosa.
+          - Itsasoa arriskutsua da neguan. = El mar es peligroso en invierno.
+          - Ez dut uste arriskutsua denik. = No creo que sea peligroso.
+          - Datorren urtean berriro joango naiz. = El año que viene iré otra vez.
+        chats:
+          - messages:
+              - Gorka | Nola hitz egiten zenuen familiarekin?
+            options:
+              - Mugikorrez, egunero.
+              - Belaontzian, egunero.
+              - Familia itsasoan dago.
+        meanings:
+          - text: Abentura hau zoragarria izan da.
+            options:
+              - Esta aventura ha sido maravillosa.
+              - Esta aventura ha sido peligrosa.
+              - Esta aventura será maravillosa.
+        true_false:
+          - passage: Olatzek mugikorrez hitz egiten zuen bere familiarekin egunero. Datorren urtean berriro joango da.
+            statement: Olatz no volverá a viajar.
+            answer: false
+  - type: lesson
+    title:
+      es: ¿Por qué?
+      eu: Zergatik?
+    lessons:
+      - structures: [istripuak, teagatik]
+        sentences:
+          - Zergatik gertatzen dira istripuak? = ¿Por qué ocurren los accidentes?
+          - Telefonoz hitz egiteagatik. = Por hablar por teléfono.
+          - Seinaleak ez ikusteagatik. = Por no ver las señales.
+          - Azkarregi joateagatik. = Por ir demasiado deprisa.
+          - Logura izateagatik. = Por tener sueño.
+          - Errepide hau oso arriskutsua da. = Esta carretera es muy peligrosa.
+          - Gidariak ez zuen seinalea ikusi. = El conductor no vio la señal.
+        pairs:
+          - - istripu = accidente
+            - errepide = carretera
+            - seinale = señal
+            - logura = sueño
+            - arriskutsu = peligroso
+        blanks:
+          - text: Azkarregi ___. = Por ir demasiado deprisa.
+            options:
+              - joateagatik
+              - joan delako
+              - joaten
+        meanings:
+          - text: Logura izateagatik.
+            options:
+              - Por tener sueño.
+              - Porque tiene hambre.
+              - Para no tener sueño.
+        images:
+          - car, bus, train
+      - structures: [norengatik, eguraldia]
+        sentences:
+          - Elurragatik berandu iritsi naiz. = He llegado tarde por la nieve.
+          - Lainoagatik ez dut ezer ikusten. = Por la niebla no veo nada.
+          - Euriagatik ez gara mendira joan. = Por la lluvia no hemos ido al monte.
+          - Eguraldi txarragatik ez dago autobusik. = Por el mal tiempo no hay autobús.
+          - Zergatik ez zara etorri? = ¿Por qué no has venido?
+          - Gaixo nengoelako. = Porque estaba enfermo. | Porque estaba enferma.
+          - Etxean geratu naiz, hotz handia egiten du eta. = Me he quedado en casa, pues hace mucho frío.
+        pairs:
+          - - elurragatik = por la nieve
+            - lainoagatik = por la niebla
+            - euriagatik = por la lluvia
+            - laino = niebla
+            - elur = nieve
+        blanks:
+          - text: ___ berandu iritsi naiz. = He llegado tarde por la nieve.
+            options:
+              - Elurragatik
+              - Elurrean
+              - Elurrarekin
+        chats:
+          - messages:
+              - Nagusia | Zergatik iritsi zara berandu?
+            options:
+              - Lainoagatik.
+              - Lainoarekin.
+              - Lainoa dago.
+        true_false:
+          - passage: Euriagatik ez gara hondartzara joan. Etxean geratu gara, eta film bat ikusi dugu.
+            statement: Han ido a la playa a pesar de la lluvia.
+            answer: false
+      - structures: [kausazkoak, bait]
+        sentences:
+          - Ez dago pozik, bere laguna joan da eta. = No está contento, pues su amigo se ha ido.
+          - Ez da etorri, gaixo dagoelako. = No ha venido porque está enfermo.
+          - Ez da etorri, gaixo baitago. = No ha venido, ya que está enfermo.
+          - Asko ikasi behar du, ez baitu ondo ulertzen. = Tiene que estudiar mucho, ya que no lo entiende bien.
+          - Lanera oinez joan naiz, autoa ez dabil eta. = He ido andando al trabajo, pues el coche no funciona.
+          - Zergatik zaude pozik? = ¿Por qué estás contento?
+        chats:
+          - messages:
+              - Edurne | Zergatik ez da Jon etorri?
+            options:
+              - Gaixo dagoelako.
+              - Gaixo dago eta etorri da.
+              - Jon gaixo da.
+        meanings:
+          - text: Ez da etorri, gaixo baitago.
+            options:
+              - No ha venido, ya que está enfermo.
+              - Ha venido, aunque está enfermo.
+              - Vendrá cuando esté bien.
+        true_false:
+          - passage: Peio ez da gaur lanera joan, gaixo baitago.
+            statement: Peio no ha ido a trabajar porque está enfermo.
+            answer: true
+  - type: lesson
+    title:
+      es: ¡Qué sorpresa!
+      eu: Zer ezustea!
+    lessons:
+      - structures: [harridura, hau-da]
+        sentences:
+          - Hau da etxea! = ¡Vaya casa!
+          - Hauek dira zapatak! = ¡Vaya zapatos!
+          - Hau da neska altua! = ¡Qué chica más alta!
+          - A zer-nolako kontzertua! = ¡Vaya concierto!
+          - A zer-nolako jaka polita! = ¡Qué chaqueta más bonita!
+          - Benetan? Harrigarria da! = ¿De verdad? ¡Es asombroso!
+        pairs:
+          - - benetan = de verdad
+            - harritu = sorprenderse
+            - harrigarri = asombroso
+            - zoragarri = maravilloso
+            - ezuste = sorpresa
+        meanings:
+          - text: A zer-nolako kontzertua!
+            options:
+              - ¡Vaya concierto!
+              - ¿Qué concierto es?
+              - El concierto es mañana.
+        chats:
+          - messages:
+              - Josu | Begira nire bizikleta berria!
+            options:
+              - A zer-nolako bizikleta!
+              - Zer bizikleta da?
+              - Bizikleta bat nuen.
+        images:
+          - gift, birthday, concert
+      - structures: [harridura, en]
+        sentences:
+          - Zein handia den! = ¡Qué grande es!
+          - Zer garestia den! = ¡Qué caro es!
+          - Zein pozik dagoen! = ¡Qué contento está!
+          - Zer berandu iritsi den! = ¡Qué tarde ha llegado!
+          - Zenbat diru duen! = ¡Cuánto dinero tiene!
+          - Nolako begiak dauzkazun! = ¡Qué ojos tienes!
+          - Abeslaria agertokian dago. Zein itxura polita duen! = El cantante está en el escenario. ¡Qué buen aspecto tiene!
+        pairs:
+          - - agertoki = escenario
+            - itxura = aspecto
+            - ikaragarri = tremendo
+            - dezente = bastante
+            - nahiko = suficiente
+        blanks:
+          - text: Zein handia ___! = ¡Qué grande es!
+            options:
+              - den
+              - da
+              - dela
+          - text: Zenbat diru ___! = ¡Cuánto dinero tiene!
+            options:
+              - duen
+              - du
+              - duela
+        meanings:
+          - text: Zein pozik dagoen!
+            options:
+              - ¡Qué contento está!
+              - ¿Por qué está contento?
+              - No está contento.
+      - structures: [harridura, bai-ela, aldaketak]
+        sentences:
+          - Bai harroak zaretela! = ¡Sí que sois orgullosos!
+          - Bai pozik zaudela! = ¡Sí que estás contento! | ¡Sí que estás contenta!
+          - Osaba asko aldatu da. = El tío ha cambiado mucho.
+          - Zahartu egin da, eta zimur asko ditu. = Ha envejecido y tiene muchas arrugas.
+          - Dezente lodiago dago. = Está bastante más gordo.
+          - Ez du batere ilerik! = ¡No tiene nada de pelo!
+          - Ikaragarri aldatu zara! = ¡Has cambiado muchísimo!
+        chats:
+          - messages:
+              - Amona | Begira argazki hau. Hau zure osaba da.
+            options:
+              - Bai aldatu dela!
+              - Bai aldatu da!
+              - Osaba naiz.
+        meanings:
+          - text: Ez du batere ilerik!
+            options:
+              - ¡No tiene nada de pelo!
+              - ¡Tiene mucho pelo!
+              - ¡Tiene el pelo muy largo!
+        true_false:
+          - passage: Familiaren bazkarian, Mirenek bere lehengusua ikusi zuen. Ikaragarri aldatu zen; orain ez du batere ilerik.
+            statement: El primo de Miren ahora tiene mucho pelo.
+            answer: false
+  - type: story
+    title:
+      es: "Historia: la comida familiar"
+      eu: "Istorioa: familia-bazkaria"
+    story:
+      title: Familia-bazkaria
+      lines:
+        - Miren | Ama, begira! Nor da gizon hori? = ¡Mamá, mira! ¿Quién es ese hombre?
+        - Ama | Zure osaba Josu da! Ez duzu ezagutzen? = ¡Es tu tío Josu! ¿No lo conoces?
+        - Miren | Josu? Benetan? Zein aldatuta dagoen! = ¿Josu? ¿De verdad? ¡Qué cambiado está!
+        - Ama | Bai, duela hamar urte ikusi zenuen. = Sí, lo viste hace diez años.
+        - Miren | Bai zahartu dela! Eta ez du batere ilerik! = ¡Sí que ha envejecido! ¡Y no tiene nada de pelo!
+        - Josu | Kaixo, Miren! A zer-nolako neska handia! = ¡Hola, Miren! ¡Vaya chica tan mayor!
+        - Miren | Kaixo, osaba! Zer moduz? = ¡Hola, tío! ¿Qué tal?
+        - Josu | Oso ondo. Galdetu dut ea Londresen bizi zaren. Egia da? = Muy bien. He preguntado si vives en Londres. ¿Es verdad?
+        - Miren | Bai, bi urte daramatzat han, lanagatik. = Sí, llevo dos años allí, por el trabajo.
+        - Josu | Zoragarria! = ¡Maravilloso!
+      questions:
+        - afterLine: 3
+          prompt: ¿Por qué se sorprende Miren?
+          options:
+            - Porque su tío ha cambiado mucho
+            - Porque su tío vive en Londres
+            - Porque no conoce a su madre
+        - afterLine: 5
+          prompt: ¿Cómo está ahora el tío Josu?
+          options:
+            - Más mayor y sin pelo
+            - Más joven y con barba
+            - Igual que antes
+        - afterLine: 9
+          prompt: ¿Por qué vive Miren en Londres?
+          options:
+            - Por el trabajo
+            - Por sus estudios
+            - Por su familia
+  - type: review
+  - type: challenge
+    host: maite
