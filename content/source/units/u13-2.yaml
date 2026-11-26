@@ -1,0 +1,423 @@
+# Unit 13.2 · Zer iruditzen zaizu? — A2.1 book unit 1 (B + C): making proposals and giving reasons
+# to agree; first impressions of other people's character and hobbies. Potential of NOR-NORK with
+# a third-person object (dezakegu, ditzakegu) and NOR (gaitezke); bururatu / pentsatu / proposatu +
+# -T(Z)EA; ordinals; dirudi and ematen du; -ZALE. Recall: DAITEKE (9.1), -(E)LAKO, baina.
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u13-2
+section: s5
+bookUnit: 13
+title:
+  es: ¿Qué te parece?
+  eu: Zer iruditzen zaizu?
+goals:
+  - es: Hacer propuestas y dar razones para ponerse de acuerdo.
+    eu: Proposamenak egin eta arrazoiak eman, besteekin ados jartzeko.
+  - es: Decir qué se te ha ocurrido o qué has pensado hacer.
+    eu: Zer egitea bururatu zaizun edo pentsatu duzun esan.
+  - es: Dar tu primera impresión sobre el carácter y las aficiones de otras personas.
+    eu: Besteen izaerari eta zaletasunei buruzko lehen iritzia eman.
+guidebook:
+  sections:
+    - title:
+        es: "Lo que podemos hacer: dezakegu, ditzakegu"
+        eu: "Egin dezakeguna: dezakegu, ditzakegu"
+      body:
+        es: Para proponer algo se usa el potencial. Con verbos que llevan «dut» (egin, antolatu, saldu) va «dezaket, dezakezu, dezake, dezakegu…»; si lo que se hace es plural, «ditzaket, ditzakegu…». Con verbos que llevan «naiz» (joan, etorri) va «naiteke, zaitezke, gaitezke…», como el «daiteke» que ya conoces.
+        eu: Zerbait proposatzeko ahalera erabiltzen da. «Dut» hartzen duten aditzekin (egin, antolatu, saldu), «dezaket, dezakezu, dezake, dezakegu…»; egiten dena plurala bada, «ditzaket, ditzakegu…». «Naiz» hartzen duten aditzekin (joan, etorri), «naiteke, zaitezke, gaitezke…», ezagutzen duzun «daiteke» bezala.
+      examples:
+        - eu: Kontzertu bat antola dezakegu.
+          es: Podemos organizar un concierto.
+        - eu: Kamisetak sal ditzakegu.
+          es: Podemos vender camisetas.
+        - eu: Trenez joan gaitezke.
+          es: Podemos ir en tren.
+    - title:
+        es: "Lo que se nos ha ocurrido: …-t(z)ea bururatu zaigu"
+        eu: "Bururatu zaiguna: …-t(z)ea bururatu zaigu"
+      body:
+        es: "Con «bururatu» (ocurrirse), «pentsatu» (pensar) y «proposatu» (proponer), lo que se propone va en -t(z)ea. «Bururatu» funciona como «gustatu»: bururatu zait, zaizu, zaigu…"
+        eu: "«Bururatu», «pentsatu» eta «proposatu» aditzekin, proposatzen dena -t(z)ea forman doa. «Bururatu» «gustatu» bezala jokatzen da: bururatu zait, zaizu, zaigu…"
+      examples:
+        - eu: Kontzertu bat antolatzea bururatu zaigu.
+          es: Se nos ha ocurrido organizar un concierto.
+        - eu: Kamisetak saltzea pentsatu dute.
+          es: Han pensado vender camisetas.
+        - eu: Mendira joatea proposatu digu.
+          es: Nos ha propuesto ir al monte.
+    - title:
+        es: "Parece: dirudi, ematen du"
+        eu: "Dirudi, ematen du"
+      body:
+        es: «Lasaia dirudi» y «lasaia ematen du» significan lo mismo, «parece tranquilo». Quien parece va con -k (Ainhoak, mutil horrek); si son varios, «dirudite» o «ematen dute». En negativo, «ez dirudi» o «ez du … ematen».
+        eu: «Lasaia dirudi» eta «lasaia ematen du» gauza bera dira. Iruditzen zaigun pertsonak -k hartzen du (Anek, mutil horrek); asko badira, «dirudite» edo «ematen dute». Ezezkoan, «ez dirudi» edo «ez du … ematen».
+      examples:
+        - eu: Anek lasaia dirudi.
+          es: Ane parece tranquila.
+        - eu: Mutil horiek anaiak dirudite.
+          es: Esos chicos parecen hermanos.
+        - eu: Mikelek ez du oso serioa ematen.
+          es: Mikel no parece muy serio.
+    - title:
+        es: "Aficionados: -zale"
+        eu: "Zaleak: -zale"
+      body:
+        es: "«-zale» se añade a un nombre para decir que a alguien le gusta mucho, como «-ero» o «aficionado a»: mendizale, futbolzale, irakurzale."
+        eu: "«-zale» atzizkia izen bati eransten zaio, norbaiti zerbait asko gustatzen zaiola adierazteko: mendizale, futbolzale, irakurzale."
+      examples:
+        - eu: Nire aita mendizalea da.
+          es: Mi padre es montañero.
+        - eu: Irakurzale handia dirudi.
+          es: Parece muy aficionado a la lectura.
+levels:
+  - type: lesson
+    title:
+      es: Proponemos
+      eu: Proposamenak
+    lessons:
+      - structures: [proposamenak]
+        sentences:
+          - Proposamen bat daukat. = Tengo una propuesta.
+          - Kontzertu bat antola dezakegu. = Podemos organizar un concierto.
+          - Kamisetak sal ditzakegu. = Podemos vender camisetas.
+          - Dirua lortu nahi dugu. = Queremos conseguir dinero.
+          - Proposamen guztiak bozkatuko ditugu. = Votaremos todas las propuestas.
+          - Gure taldeak bozkatu du. = Nuestro grupo ha votado.
+          - Zuen proposamenak irabazi du. = Vuestra propuesta ha ganado.
+          - Asteburuan bilera bat daukagu. = El fin de semana tenemos una reunión.
+        pairs:
+          - - proposamen = propuesta
+            - antolatu = organizar
+            - bozkatu = votar
+            - irabazi = ganar
+            - lortu = conseguir
+            - talde = grupo
+        meanings:
+          - text: Kamisetak sal ditzakegu.
+            options:
+              - Podemos vender camisetas.
+              - Hemos vendido camisetas.
+              - Queremos comprar camisetas.
+        blanks:
+          - text: Kontzertu bat antola ___. = Podemos organizar un concierto.
+            options:
+              - dezakegu
+              - ditzakegu
+              - gaitezke
+        chats:
+          - messages:
+              - Irati | Dirua behar dugu bidaiarako.
+            options:
+              - Kamisetak sal ditzakegu.
+              - Kamisetak saldu ditugu.
+              - Kamisetak gustatzen zaizkit.
+        images:
+          - concert, music, money
+      - structures: [bizilagunak, arrazoiak]
+        sentences:
+          - Gure bizilagunak oso jatorrak dira. = Nuestros vecinos son muy majos.
+          - Bizilagunek bilera bat egin dute. = Los vecinos han hecho una reunión.
+          - Igogailu bat behar dugu. = Necesitamos un ascensor.
+          - Bosgarren solairuan bizi naiz. = Vivo en el quinto piso. | Vivo en la quinta planta.
+          - Etxe honetan eskailera asko daude. = En esta casa hay muchas escaleras.
+          - Zein da zure arrazoia? = ¿Cuál es tu razón? | ¿Cuál es tu motivo?
+          - Igogailua garestia delako, ez dut nahi. = No lo quiero porque el ascensor es caro.
+          - Amona zaharra delako, igogailua behar du. = La abuela necesita el ascensor porque es mayor.
+        pairs:
+          - - bizilagun = vecino
+            - bilera = reunión
+            - igogailu = ascensor
+            - eskailera = escalera
+            - arrazoi = razón
+        meanings:
+          - text: Bosgarren solairuan bizi naiz.
+            options:
+              - Vivo en el quinto piso.
+              - Vivo en el piso cinco de la calle.
+              - Vivo con cinco vecinos.
+        blanks:
+          - text: Bilera ___ solairuan da. = La reunión es en el segundo piso.
+            options:
+              - bigarren
+              - bi
+              - bigarrena
+        true_false:
+          - passage: Nerea laugarren solairuan bizi da. Igogailua nahi du, eskailera asko daudelako.
+            statement: Nerea quiere el ascensor porque hay muchas escaleras.
+            answer: true
+        images:
+          - lift, stairs, door
+      - structures: [bururatu-tzea, pentsatu-tzea]
+        sentences:
+          - Kontzertu bat antolatzea bururatu zaigu. = Se nos ha ocurrido organizar un concierto.
+          - Zer bururatu zaizu? = ¿Qué se te ha ocurrido?
+          - Kamisetak saltzea pentsatu dute. = Han pensado vender camisetas.
+          - Mendira joatea proposatu digu. = Nos ha propuesto ir al monte.
+          - Lehenengo proposamena gustatzen zait. = Me gusta la primera propuesta.
+          - Hirugarren proposamena merkeena da. = La tercera propuesta es la más barata.
+          - Zer pentsatu duzue? = ¿Qué habéis pensado?
+          - Trenez joan gaitezke. = Podemos ir en tren.
+        pairs:
+          - - bururatu = ocurrirse
+            - pentsatu = pensar
+            - proposatu = proponer
+            - lehenengo = primero
+            - hirugarren = tercero
+        blanks:
+          - text: Kontzertu bat ___ bururatu zaigu. = Se nos ha ocurrido organizar un concierto.
+            options:
+              - antolatzea
+              - antolatu
+              - antolatzen
+        chats:
+          - messages:
+              - Jon | Zer bururatu zaizu?
+            options:
+              - Mendira joatea.
+              - Mendira joan naiz.
+              - Mendia gustatzen zait.
+        meanings:
+          - text: Mendira joatea proposatu digu.
+            options:
+              - Nos ha propuesto ir al monte.
+              - Hemos ido al monte.
+              - Nos ha dicho que va al monte.
+  - type: lesson
+    title:
+      es: Primeras impresiones
+      eu: Lehen iritziak
+    lessons:
+      - structures: [izaera]
+        sentences:
+          - Nolako izaera du? = ¿Qué carácter tiene?
+          - Oso urduria da. = Es muy nervioso. | Es muy nerviosa.
+          - Lotsatia naiz, baina oso alaia. = Soy tímido, pero muy alegre. | Soy tímida, pero muy alegre.
+          - Nire anaia oso ausarta da. = Mi hermano es muy valiente.
+          - Ume hau beldurtia da. = Este niño es miedoso. | Esta niña es miedosa.
+          - Gure irakaslea serioa da, baina jatorra. = Nuestro profesor es serio, pero majo. | Nuestra profesora es seria, pero maja.
+          - Mikel oso arduratsua da. = Mikel es muy responsable.
+          - Zure logela oso ordenatua dago. = Tu habitación está muy ordenada.
+        pairs:
+          - - izaera = carácter
+            - urduri = nervioso
+            - lotsati = tímido
+            - ausart = valiente
+            - beldurti = miedoso
+            - arduratsu = responsable
+        meanings:
+          - text: Lotsatia naiz, baina oso alaia.
+            options:
+              - Soy tímido, pero muy alegre.
+              - Soy muy alegre y valiente.
+              - No soy tímido ni alegre.
+        blanks:
+          - text: Ume hau ___ da. = Este niño es miedoso.
+            options:
+              - beldurtia
+              - ausarta
+              - serioa
+        true_false:
+          - passage: Itziar oso ausarta da, baina bere ahizpa Maialen beldurtia da.
+            statement: Maialen es valiente.
+            answer: false
+        images:
+          - happy, tired, tall
+      - structures: [irudi, eman-iruditu]
+        sentences:
+          - Anek lasaia dirudi. = Ane parece tranquila.
+          - Mutil horiek anaiak dirudite. = Esos chicos parecen hermanos.
+          - Zuk ez dirudizu oso beldurtia. = Tú no pareces muy miedoso. | Tú no pareces muy miedosa.
+          - Leirek eta bere lagunek oso jatorrak ematen dute. = Leire y sus amigos parecen muy majos.
+          - Mikelek ez du oso serioa ematen. = Mikel no parece muy serio.
+          - Urduria dirudi, baina lasaia da. = Parece nervioso, pero es tranquilo. | Parece nerviosa, pero es tranquila.
+          - Ane oso pozik dago. = Ane está muy contenta.
+          - Egia da, oso arduratsua da. = Es verdad, es muy responsable.
+        pairs:
+          - - dirudi = parece
+            - dirudite = parecen
+            - serio = serio
+            - pozik = contento
+            - egia = verdad
+        blanks:
+          - text: Mutil horiek anaiak ___. = Esos chicos parecen hermanos.
+            options:
+              - dirudite
+              - dirudi
+              - dira
+          - text: Mikelek ez du oso serioa ___. = Mikel no parece muy serio.
+            options:
+              - ematen
+              - dirudi
+              - eman
+        chats:
+          - messages:
+              - Olatz | Zer iruditzen zaizu Ander?
+            options:
+              - Oso jatorra dirudi.
+              - Oso jatorra dirudite.
+              - Ander naiz.
+        meanings:
+          - text: Urduria dirudi, baina lasaia da.
+            options:
+              - Parece nervioso, pero es tranquilo.
+              - Es nervioso y no está tranquilo.
+              - Está tranquilo porque no es nervioso.
+      - structures: [zale, pisukidea]
+        sentences:
+          - Nire aita mendizalea da. = Mi padre es montañero. | Mi padre es aficionado al monte.
+          - Irakurzale handia dirudi. = Parece muy aficionado a la lectura. | Parece una gran lectora.
+          - Futbolzaleak gara. = Somos aficionados al fútbol. | Somos futboleros.
+          - Pisukide bat behar dut. = Necesito un compañero de piso. | Necesito una compañera de piso.
+          - Iragarki hau irakurri dut. = He leído este anuncio.
+          - Gela bat alokatu nahi dut. = Quiero alquilar una habitación.
+          - Umezain bat behar dugu umeak zaintzeko. = Necesitamos una niñera para cuidar a los niños. | Necesitamos un niñero para cuidar a los niños.
+          - Lagun berriak ezagutu nahi ditut. = Quiero conocer amigos nuevos. | Quiero conocer a gente nueva.
+        pairs:
+          - - mendizale = montañero
+            - irakurzale = aficionado a la lectura
+            - pisukide = compañero de piso
+            - umezain = niñera
+            - ezagutu = conocer
+        meanings:
+          - text: Nire aita mendizalea da.
+            options:
+              - Mi padre es montañero.
+              - Mi padre vive en el monte.
+              - Mi padre va al monte en coche.
+        chats:
+          - messages:
+              - Josu | Pisukide bat behar dut. Zer iruditzen zaizu Ane?
+              - Edurne | Ane ordenatua eta lasaia da.
+            options:
+              - Orduan, Ane pisukide ona da.
+              - Orduan, Ane urduria da.
+              - Ane ez dut ezagutzen.
+        true_false:
+          - passage: Gorka mendizalea da eta irakurzalea ere bai. Asteburuetan mendira joaten da liburu batekin.
+            statement: A Gorka le gustan el monte y la lectura.
+            answer: true
+  - type: lesson
+    title:
+      es: Nos ponemos de acuerdo
+      eu: Ados jartzen
+    lessons:
+      - structures: [proposamenak, ahalera]
+        sentences:
+          - Larunbatean zinemara joan gaitezke. = El sábado podemos ir al cine.
+          - Zuk janaria ekar dezakezu. = Tú puedes traer la comida.
+          - Nik afaria presta dezaket. = Yo puedo preparar la cena.
+          - Gurasoek autoa eraman dezakete. = Los padres pueden llevar el coche.
+          - Zer egin dezakegu? = ¿Qué podemos hacer?
+          - Bizikletaz etor zaitezke. = Puedes venir en bicicleta.
+        chats:
+          - messages:
+              - Ibai | Zer egin dezakegu larunbatean?
+            options:
+              - Mendira joan gaitezke.
+              - Mendira joan gara.
+              - Mendira joan nahi dut eta.
+          - messages:
+              - Uxue | Nik afaria presta dezaket.
+              - Kepa | Eta nik?
+            options:
+              - Zuk ardoa ekar dezakezu.
+              - Zuk ardoa ekarri duzu.
+              - Zuk ardoa ekar ditzakezu.
+        blanks:
+          - text: Zuk janaria ___ dezakezu. = Tú puedes traer la comida.
+            options:
+              - ekar
+              - ekarri
+              - ekartzen
+        true_false:
+          - passage: Larunbatean Olatzek afaria prestatuko du, eta Josuk ardoa ekarriko du.
+            statement: Josu va a preparar la cena.
+            answer: false
+      - structures: [arrazoiak, kausazkoak]
+        sentences:
+          - Zergatik ez zara etorriko? = ¿Por qué no vas a venir?
+          - Lanpetuta nagoelako. = Porque estoy ocupado. | Porque estoy ocupada.
+          - Igogailua behar dugu, umeak ditugulako. = Necesitamos ascensor porque tenemos niños.
+          - Ados nago, baina garestia da. = Estoy de acuerdo, pero es caro.
+          - Zein proposamen da onena? = ¿Cuál es la mejor propuesta?
+          - Bigarrena, merkeena delako. = La segunda, porque es la más barata.
+        chats:
+          - messages:
+              - Leire | Zergatik ez duzu igogailua nahi?
+            options:
+              - Oso garestia delako.
+              - Igogailu bat dago.
+              - Igogailua bosgarren solairuan dago.
+        meanings:
+          - text: Ados nago, baina garestia da.
+            options:
+              - Estoy de acuerdo, pero es caro.
+              - No estoy de acuerdo porque es caro.
+              - Es barato y estoy de acuerdo.
+        true_false:
+          - passage: Bizilagun guztiak ados daude. Igogailua garestia da, baina behar dute.
+            statement: Todos los vecinos están de acuerdo.
+            answer: true
+      - structures: [iritziak]
+        sentences:
+          - Zer iruditzen zaizu Jon? = ¿Qué te parece Jon?
+          - Jatorra iruditzen zait. = Me parece majo.
+          - Ez zait oso serioa iruditzen. = No me parece muy serio.
+          - Lehen eguna da, eta urduri nago. = Es el primer día y estoy nervioso. | Es el primer día y estoy nerviosa.
+          - Lasaia dirudi, baina ez dut ezagutzen. = Parece tranquilo, pero no lo conozco. | Parece tranquila, pero no la conozco.
+          - Lagun berriak ezagutu ditut. = He conocido a amigos nuevos. | He conocido amigas nuevas.
+        chats:
+          - messages:
+              - Garazi | Zer iruditzen zaizu pisukide berria?
+            options:
+              - Oso ordenatua dirudi.
+              - Pisu berria da.
+              - Bosgarren solairuan.
+        true_false:
+          - passage: Peiok pisukide berria du, Julen. Julenek lotsatia dirudi, baina oso alaia da.
+            statement: Julen parece tímido, pero es alegre.
+            answer: true
+        meanings:
+          - text: Lagun berriak ezagutu ditut.
+            options:
+              - He conocido a amigos nuevos.
+              - Quiero conocer amigos nuevos.
+              - Mis amigos son nuevos.
+  - type: story
+    title:
+      es: "Historia: un compañero de piso"
+      eu: "Istorioa: pisukide bat"
+    story:
+      title: Pisukide berria
+      lines:
+        - Alaitz | Markel, hiru iragarki irakurri ditut. Pisukide bat behar dugu. = Markel, he leído tres anuncios. Necesitamos un compañero de piso.
+        - Markel | Ondo. Nolakoak dira? = Bien. ¿Cómo son?
+        - Alaitz | Lehenengoa Aitor da. Futbolzalea da, eta oso alaia dirudi. = El primero es Aitor. Es aficionado al fútbol y parece muy alegre.
+        - Markel | Futbolzalea? Telebista beti piztuta egongo da! = ¿Futbolero? ¡La tele estará siempre encendida!
+        - Alaitz | Bigarrena Nahia da. Irakurzalea eta oso ordenatua da. = La segunda es Nahia. Es aficionada a la lectura y muy ordenada.
+        - Markel | Ordenatua? Hori ona da! Eta hirugarrena? = ¿Ordenada? ¡Eso está bien! ¿Y el tercero?
+        - Alaitz | Hirugarrena Gorka da. Mendizalea da, baina serioa dirudi. = El tercero es Gorka. Es montañero, pero parece serio.
+        - Markel | Nik Nahia proposatzen dut, lasaia delako. = Yo propongo a Nahia, porque es tranquila.
+        - Alaitz | Ados. Bihar deituko diogu. = De acuerdo. Mañana la llamaremos.
+        - Markel | Primeran! = ¡Estupendo!
+      questions:
+        - afterLine: 3
+          prompt: ¿Por qué no le convence Aitor a Markel?
+          options:
+            - Porque es futbolero y verá mucho la tele
+            - Porque es muy serio
+            - Porque es muy desordenado
+        - afterLine: 7
+          prompt: ¿Cómo parece Gorka?
+          options:
+            - Serio
+            - Muy alegre
+            - Tímido
+        - afterLine: 8
+          prompt: ¿A quién propone Markel y por qué?
+          options:
+            - A Nahia, porque es tranquila
+            - A Gorka, porque le gusta el monte
+            - A Aitor, porque es alegre
+  - type: review
+  - type: challenge
+    host: maite

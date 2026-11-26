@@ -1,0 +1,467 @@
+# Unit 13.1 · Zaletasunak — A2.1 book unit 1 (Atarian + A): introducing oneself at the start of a
+# course, how long one has been learning and why, what is hard and what one should do; what we talk
+# about with friends, habits and hobbies. ERAMAN (duration), zaila da + -T(Z)EA, komeni zait +
+# -T(Z)EA, NORI / ZERI BURUZ; recall of -(E)LAKO, habitual present and gustatu + -T(Z)EA.
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u13-1
+section: s5
+bookUnit: 13
+title:
+  es: Aficiones
+  eu: Zaletasunak
+goals:
+  - es: Presentarte en un curso y decir cuánto tiempo llevas aprendiendo y por qué.
+    eu: Ikastaro batean zure burua aurkeztu, eta zenbat denbora daramazun ikasten eta zergatik esan.
+  - es: Decir qué te resulta difícil y qué te conviene hacer.
+    eu: Zer egitea zaila den eta zer egitea komeni zaizun esan.
+  - es: Contar de qué hablas con tus amigos, tus costumbres y tus aficiones.
+    eu: Lagunekin zeri buruz hitz egiten duzun, zure ohiturak eta zure zaletasunak kontatu.
+guidebook:
+  sections:
+    - title:
+        es: "Cuánto tiempo llevas: daramat"
+        eu: "Zenbat denbora daramazu: daramat"
+      body:
+        es: Para decir cuánto tiempo llevas haciendo algo se usa «eraman» (llevar) con el verbo en -t(z)en. Con una cantidad en singular (urte bat, hilabete bat) va «daramat»; con dos o más, «daramatzat».
+        eu: Zerbait egiten zenbat denbora daramazun esateko, «eraman» aditza erabiltzen da, eta beste aditza -t(z)en forman. Urte bat edo hilabete bat bada, «daramat»; bi edo gehiago badira, «daramatzat».
+      examples:
+        - eu: Urte bat daramat euskara ikasten.
+          es: Llevo un año aprendiendo euskera.
+        - eu: Bi urte daramatzat Bilbon bizitzen.
+          es: Llevo dos años viviendo en Bilbao.
+        - eu: Zenbat denbora daramazu hemen lanean?
+          es: ¿Cuánto tiempo llevas trabajando aquí?
+    - title:
+        es: "Lo difícil y lo que conviene: zaila da …-t(z)ea"
+        eu: "Zaila dena eta komeni dena: zaila da …-t(z)ea"
+      body:
+        es: Tras «zaila da», «erraza da» o «komeni zait» el verbo termina en -t(z)ea y va siempre en singular. «Komeni» cambia según a quién le conviene, como «gustatu» (zait, zaizu, zaio…). «Zailena» es «lo más difícil».
+        eu: «Zaila da», «erraza da» edo «komeni zait» esan ondoren, aditzak -t(z)ea amaiera hartzen du, beti singularrean. «Komeni» norentzat den aldatzen da, «gustatu» bezala (zait, zaizu, zaio…). «Zailena» esaldi baten gauzarik zailena da.
+      examples:
+        - eu: Niretzat zailena aditzak ikastea da.
+          es: Para mí lo más difícil es aprender los verbos.
+        - eu: Euskara ulertzea erraza da.
+          es: Entender euskera es fácil.
+        - eu: Egunero irratia entzutea komeni zaizu.
+          es: Te conviene escuchar la radio todos los días.
+    - title:
+        es: "Sobre qué: Aneri buruz, filmari buruz"
+        eu: "Zeri buruz: Aneri buruz, filmari buruz"
+      body:
+        es: «Sobre» o «de» un tema se dice con el caso «nori» más «buruz». Con nombres propios, -(r)i buruz (Aneri buruz); con nombres comunes, -ari buruz en singular y -ei buruz en plural. Para preguntar, «zeri buruz?» o «nori buruz?».
+        eu: Gai bati buruz hitz egiteko, hitzak nori kasua hartzen du, eta gero «buruz». Izen berezietan -(r)i buruz (Aneri buruz); izen arruntetan -ari buruz singularrean eta -ei buruz pluralean. Galdetzeko, «zeri buruz?» edo «nori buruz?».
+      examples:
+        - eu: Zeri buruz hitz egin duzue?
+          es: ¿De qué habéis hablado?
+        - eu: Lanari buruz hitz egin dugu.
+          es: Hemos hablado del trabajo.
+        - eu: Liburu hau euskarari buruz da.
+          es: Este libro es sobre el euskera.
+    - title:
+        es: "Por qué: -(e)lako, eta"
+        eu: "Zergatik: -(e)lako, eta"
+      body:
+        es: Repaso. A «zergatik?» se responde con el verbo en -(e)lako (nahi dudalako, delako). También se puede añadir la razón detrás, con «eta» al final.
+        eu: Errepasoa. «Zergatik?» galderari aditza -(e)lako forman erantzuten zaio (nahi dudalako, delako). Arrazoia atzean ere jar daiteke, «eta» amaieran duela.
+      examples:
+        - eu: Euskara ikasten ari naiz, bilobekin hitz egin nahi dudalako.
+          es: Estoy aprendiendo euskera porque quiero hablar con mis nietos.
+        - eu: Euskara ikasten ari naiz, bezeroekin hitz egin nahi dut eta.
+          es: Estoy aprendiendo euskera, pues quiero hablar con los clientes.
+levels:
+  - type: lesson
+    title:
+      es: Alumnos nuevos
+      eu: Ikasle berriak
+    lessons:
+      - structures: [ikastaroak]
+        sentences:
+          - Ikasturte berria da. = Es un curso nuevo. | Es el curso nuevo.
+          - Euskara ikastaro batean nago. = Estoy en un curso de euskera.
+          - Aditzak ikastea zaila da. = Aprender los verbos es difícil.
+          - Hitz berriak gogoratzea zaila da. = Recordar las palabras nuevas es difícil. | Acordarse de las palabras nuevas es difícil.
+          - Euskara ulertzea erraza da. = Entender euskera es fácil.
+          - Hitz hau nola ahoskatzen da? = ¿Cómo se pronuncia esta palabra?
+          - Barkatu, errepikatu mesedez. = Perdón, repite por favor. | Perdona, repite por favor.
+          - Hiztegia erabiltzen dut. = Uso el diccionario.
+        pairs:
+          - - ikasturte = curso escolar
+            - hitz = palabra
+            - hiztegi = diccionario
+            - aditz = verbo
+            - zail = difícil
+            - erraz = fácil
+        meanings:
+          - text: Hitz berriak gogoratzea zaila da.
+            options:
+              - Recordar las palabras nuevas es difícil.
+              - Las palabras nuevas son fáciles.
+              - Escribir palabras nuevas es difícil.
+        blanks:
+          - text: Euskara ___ erraza da. = Entender euskera es fácil.
+            options:
+              - ulertzea
+              - ulertu
+              - ulertzen
+        chats:
+          - messages:
+              - Irakaslea | Ulertu duzu?
+            options:
+              - Ez, errepikatu mesedez.
+              - Bai, zaila da.
+              - Ez dut hiztegirik.
+        images:
+          - book, computer, phone
+      - structures: [jendea]
+        sentences:
+          - Nire amona erretiratua da. = Mi abuela está jubilada. | Mi abuela es jubilada.
+          - Amonak hiru biloba ditu. = La abuela tiene tres nietos.
+          - Bilobekin euskaraz hitz egin nahi dut. = Quiero hablar en euskera con mis nietos.
+          - Bezeroekin euskaraz hitz egiten dut. = Hablo en euskera con los clientes.
+          - Kazetaria naiz, eta egunkari batean lan egiten dut. = Soy periodista y trabajo en un periódico.
+          - Nire familia Gasteizen bizi da. = Mi familia vive en Vitoria. | Mi familia vive en Gasteiz.
+          - Pertsona asko daude ikastaroan. = Hay muchas personas en el curso. | Hay mucha gente en el curso.
+          - Lagunari mezu bat idatzi diot. = Le he escrito un mensaje a mi amigo. | Le he escrito un mensaje a mi amiga.
+        pairs:
+          - - biloba = nieto
+            - erretiratu = jubilado
+            - bezero = cliente
+            - kazetari = periodista
+            - familia = familia
+            - mezu = mensaje
+        meanings:
+          - text: Bezeroekin euskaraz hitz egiten dut.
+            options:
+              - Hablo en euskera con los clientes.
+              - Hablo en euskera con mis nietos.
+              - Escribo mensajes a los clientes.
+        true_false:
+          - passage: Patxi erretiratua da. Bi biloba ditu, eta haiekin euskaraz hitz egin nahi du.
+            statement: Patxi quiere hablar en euskera con sus nietos.
+            answer: true
+        chats:
+          - messages:
+              - Maialen | Zer lan egiten duzu?
+            options:
+              - Kazetaria naiz.
+              - Bi biloba ditut.
+              - Egunkaria irakurtzen dut.
+        images:
+          - grandmother, grandfather, child
+      - structures: [ohiturak, hedabideak]
+        sentences:
+          - Normalean egunkaria irakurtzen dut. = Normalmente leo el periódico.
+          - Gauean telebista ikusten dugu. = Por la noche vemos la tele. | Por la noche vemos la televisión.
+          - Goizean irratia entzuten dut. = Por la mañana escucho la radio.
+          - Aldizkari bat erosi dut. = He comprado una revista.
+          - Egunero mezu asko idazten ditut. = Escribo muchos mensajes todos los días.
+          - Jaiegunetan ez dut lanik egiten. = Los días de fiesta no trabajo. | Los festivos no trabajo.
+          - Astelehenetik ostiralera oso lanpetuta nago. = De lunes a viernes estoy muy ocupado. | De lunes a viernes estoy muy ocupada.
+          - Igandean arropa lisatzen dut. = El domingo plancho la ropa. | Los domingos plancho la ropa.
+        pairs:
+          - - telebista = televisión
+            - irrati = radio
+            - egunkari = periódico
+            - aldizkari = revista
+            - jaiegun = día festivo
+            - lanpetuta = ocupado
+        meanings:
+          - text: Jaiegunetan ez dut lanik egiten.
+            options:
+              - Los días de fiesta no trabajo.
+              - Trabajo todos los días.
+              - Los domingos estoy muy ocupado.
+        blanks:
+          - text: Goizean ___ entzuten dut. = Por la mañana escucho la radio.
+            options:
+              - irratia
+              - telebista
+              - egunkaria
+        true_false:
+          - passage: Astelehenetik ostiralera Nerea oso lanpetuta dago. Jaiegunetan telebista ikusten du eta aldizkariak irakurtzen ditu.
+            statement: Nerea lee revistas los días de fiesta.
+            answer: true
+  - type: lesson
+    title:
+      es: ¿Cuánto tiempo llevas?
+      eu: Zenbat denbora daramazu?
+    lessons:
+      - structures: [eraman-iraupena]
+        sentences:
+          - Urte bat daramat euskara ikasten. = Llevo un año aprendiendo euskera. | Llevo un año estudiando euskera.
+          - Bi urte daramatzat euskara ikasten. = Llevo dos años aprendiendo euskera. | Llevo dos años estudiando euskera.
+          - Zenbat denbora daramazu euskara ikasten? = ¿Cuánto tiempo llevas aprendiendo euskera? | ¿Cuánto tiempo llevas estudiando euskera?
+          - Hilabete bat darama Donostian bizitzen. = Lleva un mes viviendo en San Sebastián. | Lleva un mes viviendo en Donostia.
+          - Hiru ikasturte daramatzagu hemen. = Llevamos tres cursos aquí.
+          - Sei urte daramatzate lantegi horretan lanean. = Llevan seis años trabajando en esa fábrica.
+          - Zuek zenbat ikasturte daramatzazue euskaltegian? = ¿Cuántos cursos lleváis en el euskaltegi?
+        pairs:
+          - - daramat = llevo (uno)
+            - daramatzat = llevo (varios)
+            - daramazu = llevas
+            - darama = lleva
+            - daramatzagu = llevamos (varios)
+        blanks:
+          - text: Bi urte ___ euskara ikasten. = Llevo dos años aprendiendo euskera.
+            options:
+              - daramatzat
+              - daramat
+              - darama
+          - text: Urte bat ___ Bilbon bizitzen. = Llevo un año viviendo en Bilbao.
+            options:
+              - daramat
+              - daramatzat
+              - daramatza
+        chats:
+          - messages:
+              - Irakaslea | Zenbat denbora daramazu euskara ikasten?
+            options:
+              - Bi ikasturte daramatzat.
+              - Bi ikasturte ditut.
+              - Bi urte ditut.
+        meanings:
+          - text: Hilabete bat darama Donostian bizitzen.
+            options:
+              - Lleva un mes viviendo en San Sebastián.
+              - Va a vivir un mes en San Sebastián.
+              - Vivió un mes en San Sebastián.
+      - structures: [zaila-da, kausazkoak]
+        sentences:
+          - Zergatik ari zara euskara ikasten? = ¿Por qué estás aprendiendo euskera?
+          - Lan berri bat nahi dudalako. = Porque quiero un trabajo nuevo.
+          - Bezeroekin euskaraz hitz egin nahi dudalako. = Porque quiero hablar en euskera con los clientes.
+          - Euskara ikasten ari naiz, nire bilobak euskaldunak dira eta. = Estoy aprendiendo euskera, pues mis nietos son vascohablantes.
+          - Niretzat zailena aditzak ikastea da. = Para mí lo más difícil es aprender los verbos.
+          - Zergatik da zaila jendearekin hitz egitea? = ¿Por qué es difícil hablar con la gente?
+          - Hitz asko ez ditudalako ulertzen. = Porque no entiendo muchas palabras.
+          - Euskaldunek oso azkar hitz egiten dutelako. = Porque los vascohablantes hablan muy deprisa.
+        pairs:
+          - - zail = difícil
+            - erraz = fácil
+            - zailtasun = dificultad
+            - zergatik = por qué
+            - gogoratu = recordar
+        meanings:
+          - text: Niretzat zailena aditzak ikastea da.
+            options:
+              - Para mí lo más difícil es aprender los verbos.
+              - Para mí aprender los verbos es fácil.
+              - Los verbos son lo más fácil.
+        blanks:
+          - text: Niretzat zailena hitzak ___ da. = Para mí lo más difícil es recordar las palabras.
+            options:
+              - gogoratzea
+              - gogoratu
+              - gogoratzen
+        chats:
+          - messages:
+              - Jon | Zergatik ari zara euskara ikasten?
+            options:
+              - Bezeroekin euskaraz hitz egin nahi dudalako.
+              - Bi urte daramatzat ikasten.
+              - Euskara ulertzea erraza da.
+        true_false:
+          - passage: Iratik bi ikasturte daramatza euskara ikasten. Zailena aditzak ikastea da, oso luzeak direlako.
+            statement: Para Irati lo más difícil son los verbos.
+            answer: true
+      - structures: [komeni-zait, aholkuak]
+        sentences:
+          - Egunero irratia entzutea komeni zaizu. = Te conviene escuchar la radio todos los días.
+          - Hitz berriak errepikatzea komeni zaizu. = Te conviene repetir las palabras nuevas.
+          - Euskaldunekin hitz egitea komeni zaio. = Le conviene hablar con vascohablantes.
+          - Hiztegia erabiltzea komeni zaigu. = Nos conviene usar el diccionario.
+          - Aholku bat eman dit irakasleak. = El profesor me ha dado un consejo. | La profesora me ha dado un consejo.
+          - Zer egitea komeni zait? = ¿Qué me conviene hacer?
+          - Poliki irakurtzea komeni zaizue. = Os conviene leer despacio.
+          - Irakasleak asko lagundu dit. = El profesor me ha ayudado mucho. | La profesora me ha ayudado mucho.
+        pairs:
+          - - aholku = consejo
+            - lagundu = ayudar
+            - komeni zait = me conviene
+            - komeni zaizu = te conviene
+            - komeni zaio = le conviene
+        blanks:
+          - text: Egunero irratia entzutea ___. = Te conviene escuchar la radio todos los días.
+            options:
+              - komeni zaizu
+              - komeni zait
+              - komeni da zu
+          - text: Hitz berriak ___ komeni zaizu. = Te conviene repetir las palabras nuevas.
+            options:
+              - errepikatzea
+              - errepikatu
+              - errepikatzen
+        chats:
+          - messages:
+              - Ander | Niretzat zailena euskaldunak ulertzea da.
+            options:
+              - Egunero irratia entzutea komeni zaizu.
+              - Egunero irratia entzun dut.
+              - Irratia gustatzen zait.
+        meanings:
+          - text: Euskaldunekin hitz egitea komeni zaio.
+            options:
+              - Le conviene hablar con vascohablantes.
+              - Le gusta hablar con vascohablantes.
+              - Habla mucho con vascohablantes.
+  - type: lesson
+    title:
+      es: Entre amigos
+      eu: Lagunekin
+    lessons:
+      - structures: [nori-buruz]
+        sentences:
+          - Zeri buruz hitz egin duzue? = ¿De qué habéis hablado? | ¿Sobre qué habéis hablado?
+          - Lanari buruz hitz egin dugu. = Hemos hablado del trabajo. | Hemos hablado sobre el trabajo.
+          - Nori buruz ari zarete hitz egiten? = ¿De quién estáis hablando?
+          - Anderri buruz hitz egiten ari gara. = Estamos hablando de Ander. | Estamos hablando sobre Ander.
+          - Film hau familiari buruz da. = Esta película es sobre la familia. | Esta película trata de la familia.
+          - Lagunekin kirolari buruz hitz egiten dut. = Con mis amigos hablo de deporte. | Con los amigos hablo de deporte.
+          - Irratian ingurumenari buruz hitz egin dute. = En la radio han hablado del medio ambiente. | En la radio han hablado sobre el medio ambiente.
+          - Egunkariak bidaiei buruz idazten du. = El periódico escribe sobre viajes.
+        pairs:
+          - - buruz = sobre
+            - zeri buruz = sobre qué
+            - nori buruz = sobre quién
+            - gai = tema
+            - lanari buruz = sobre el trabajo
+        blanks:
+          - text: Lagunekin ___ buruz hitz egiten dut. = Con mis amigos hablo de deporte.
+            options:
+              - kirolari
+              - kirolarekin
+              - kirolean
+        meanings:
+          - text: Zeri buruz hitz egin duzue?
+            options:
+              - ¿De qué habéis hablado?
+              - ¿Con quién habéis hablado?
+              - ¿Cuándo habéis hablado?
+        chats:
+          - messages:
+              - Olatz | Atzo Mikelekin egon nintzen.
+              - Unai | Bai? Zeri buruz hitz egin zenuten?
+            options:
+              - Bere lanari buruz.
+              - Bere lanarekin.
+              - Bere lanean.
+        true_false:
+          - passage: Lagunekin askotan hitz egiten dut futbolari buruz. Familiarekin, berriz, bidaiei buruz.
+            statement: Con la familia habla de fútbol.
+            answer: false
+      - structures: [ohiturak, ohiturazko-aspektua]
+        sentences:
+          - Normalean zazpietan jaikitzen naiz. = Normalmente me levanto a las siete.
+          - Lanera bizikletaz joaten naiz. = Voy a trabajar en bicicleta. | Voy al trabajo en bici.
+          - Ordu bietan etxean bazkaltzen dugu. = A las dos comemos en casa.
+          - Gauean hamarretan oheratzen naiz. = Por la noche me acuesto a las diez.
+          - Asteburuetan berandu jaikitzen gara. = Los fines de semana nos levantamos tarde.
+          - Zer egiten duzu jaiegunetan? = ¿Qué haces los días de fiesta? | ¿Qué haces los festivos?
+          - Nire bizimodua oso lasaia da. = Mi vida es muy tranquila. | Mi modo de vida es muy tranquilo.
+          - Ohitura onak ditut. = Tengo buenas costumbres. | Tengo buenos hábitos.
+        pairs:
+          - - ohitura = costumbre
+            - bizimodu = modo de vida
+            - normalean = normalmente
+            - oheratu = acostarse
+            - jaiki = levantarse
+        blanks:
+          - text: Normalean zazpietan ___ naiz. = Normalmente me levanto a las siete.
+            options:
+              - jaikitzen
+              - jaiki
+              - jaikiko
+        chats:
+          - messages:
+              - Leire | Zer egiten duzu jaiegunetan?
+            options:
+              - Mendira joaten naiz.
+              - Mendira joan nintzen.
+              - Mendia gustuko dut eta.
+        true_false:
+          - passage: Normalean Peio seietan jaikitzen da eta lanera oinez joaten da. Asteburuetan berandu jaikitzen da.
+            statement: Peio va al trabajo en coche.
+            answer: false
+        meanings:
+          - text: Nire bizimodua oso lasaia da.
+            options:
+              - Mi vida es muy tranquila.
+              - Mi casa es muy tranquila.
+              - Mi trabajo es muy tranquilo.
+      - structures: [zaletasunak, gustatu-tzea]
+        sentences:
+          - Zein dira zure zaletasunak? = ¿Cuáles son tus aficiones?
+          - Mendian ibiltzea gustatzen zait. = Me gusta andar por el monte. | Me gusta caminar por el monte.
+          - Ez zait telebista ikustea gustatzen. = No me gusta ver la tele. | No me gusta ver la televisión.
+          - Anderri janaria prestatzea asko gustatzen zaio. = A Ander le gusta mucho preparar la comida. | A Ander le gusta mucho cocinar.
+          - Zer gustatzen zaizu egitea asteburuetan? = ¿Qué te gusta hacer los fines de semana?
+          - Lagunekin afaltzea gustatzen zaigu. = Nos gusta cenar con los amigos.
+          - Irakurtzea da nire zaletasunik handiena. = Leer es mi mayor afición.
+          - Dantza egitea gustatzen zaie. = Les gusta bailar.
+        pairs:
+          - - zaletasun = afición
+            - irakurri = leer
+            - dantza egin = bailar
+            - abestu = cantar
+            - marraztu = dibujar
+        meanings:
+          - text: Ez zait telebista ikustea gustatzen.
+            options:
+              - No me gusta ver la tele.
+              - Me gusta mucho ver la tele.
+              - No tengo televisión.
+        blanks:
+          - text: Mendian ___ gustatzen zait. = Me gusta andar por el monte.
+            options:
+              - ibiltzea
+              - ibiltzen
+              - ibili
+        chats:
+          - messages:
+              - Gorka | Zein dira zure zaletasunak?
+            options:
+              - Irakurtzea eta dantza egitea gustatzen zaizkit.
+              - Irakurtzea eta dantza egitea gustatzen zait.
+              - Irakurri eta dantzatu nahi dut.
+        images:
+          - dance, music, cycling
+          - swimming, football, film
+  - type: story
+    title:
+      es: "Historia: el primer día del curso"
+      eu: "Istorioa: ikastaroaren lehen eguna"
+    story:
+      title: Ikastaroaren lehen eguna
+      lines:
+        - Irakaslea | Kaixo guztioi! Nor zarete? = ¡Hola a todos! ¿Quiénes sois?
+        - Patxi | Ni Patxi naiz. Erretiratua naiz, eta urte bat daramat euskara ikasten. = Yo soy Patxi. Estoy jubilado y llevo un año aprendiendo euskera.
+        - Irakaslea | Eta zergatik ari zara euskara ikasten, Patxi? = ¿Y por qué estás aprendiendo euskera, Patxi?
+        - Patxi | Bilobekin euskaraz hitz egin nahi dudalako. = Porque quiero hablar en euskera con mis nietos.
+        - Edurne | Ni Edurne naiz, kazetaria. Bi ikasturte daramatzat hemen. = Yo soy Edurne, periodista. Llevo dos cursos aquí.
+        - Irakaslea | Zer da zailena zuretzat, Edurne? = ¿Qué es lo más difícil para ti, Edurne?
+        - Edurne | Niretzat zailena jendea ulertzea da. Oso azkar hitz egiten dute! = Para mí lo más difícil es entender a la gente. ¡Hablan muy deprisa!
+        - Irakaslea | Egunero irratia entzutea komeni zaizu, orduan. = Entonces te conviene escuchar la radio todos los días.
+        - Edurne | Ados. Eta zer gustatzen zaizu zuri egitea jaiegunetan? = De acuerdo. ¿Y a ti qué te gusta hacer los días de fiesta?
+        - Irakaslea | Niri? Mendian ibiltzea eta lagunekin afaltzea. = ¿A mí? Andar por el monte y cenar con los amigos.
+      questions:
+        - afterLine: 3
+          prompt: ¿Por qué aprende euskera Patxi?
+          options:
+            - Para hablar con sus nietos
+            - Para encontrar trabajo
+            - Para hablar con sus clientes
+        - afterLine: 6
+          prompt: ¿Qué le resulta más difícil a Edurne?
+          options:
+            - Entender a la gente
+            - Aprender los verbos
+            - Recordar las palabras
+        - afterLine: 7
+          prompt: ¿Qué le aconseja el profesor?
+          options:
+            - Escuchar la radio todos los días
+            - Leer el periódico
+            - Hablar más despacio
+  - type: review
+  - type: challenge
+    host: unai

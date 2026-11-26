@@ -123,7 +123,7 @@ class ValidateContentTest(unittest.TestCase):
         self.assert_error("unknown exercise type 'dance'")
 
     def test_unlisted_unit_file_is_reported(self) -> None:
-        shutil.copy(self.assets / UNIT, self.assets / "courses/eu-es/units/u13-1.json")
+        shutil.copy(self.assets / UNIT, self.assets / "courses/eu-es/units/u19-1.json")
         self.assert_error("unit is not listed in course.json")
 
     def test_wordbank_distractor_in_answer_is_reported(self) -> None:

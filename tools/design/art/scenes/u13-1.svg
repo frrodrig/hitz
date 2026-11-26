@@ -1,0 +1,45 @@
+<!-- Unai en clase de euskera: una pizarra con palabras y un libro que pasa páginas. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u13-1, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Unai en clase de euskera, ante la pizarra" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#F3E4CC" />
+  <g data-depth-generated="">
+    <clipPath id="u13-1-3">
+      <path d="M0,0 h200 v200 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u13-1-3)">
+      <path d="M-40 -40 H240 V240 H-40 Z M-10 -9 h200 v200 h-200 Z" fill-rule="evenodd" fill="#CFC0AB" />
+      <path d="M-40 -40 H240 V240 H-40 Z M2 3 h200 v200 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="150" width="200" height="50" fill="#B98B5E" />
+  <g data-depth-generated="">
+    <clipPath id="u13-1-2">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u13-1-2)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#99724D" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="96" y="30" width="92" height="66" rx="4" fill="#2F5D50" />
+  <g data-depth-generated="">
+    <clipPath id="u13-1-1">
+      <path d="M100,30 h84 a4,4 0 0,1 4,4 v58 a4,4 0 0,1 -4,4 h-84 a4,4 0 0,1 -4,-4 v-58 a4,4 0 0,1 4,-4 Z" />
+    </clipPath>
+    <g clip-path="url(#u13-1-1)">
+      <path d="M52 -14 H232 V140 H52 Z M91.12 22.01 h84 a4 4 0 0 1 4 4 v58 a4 4 0 0 1 -4 4 h-84 a4 4 0 0 1 -4 -4 v-58 a4 4 0 0 1 4 -4 Z" fill-rule="evenodd" fill="#2E4B40" />
+      <path d="M52 -14 H232 V140 H52 Z M102 33 h84 a4 4 0 0 1 4 4 v58 a4 4 0 0 1 -4 4 h-84 a4 4 0 0 1 -4 -4 v-58 a4 4 0 0 1 4 -4 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="92" y="96" width="100" height="6" rx="2" fill="#8A6440" data-depth="none" />
+  <path d="M106 46 H150 M106 58 H172 M106 70 H140 M106 82 H164" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.85" />
+  <g data-host="2 50 132" />
+  <rect x="118" y="132" width="76" height="10" rx="3" fill="#7A5232" />
+  <rect x="126" y="142" width="8" height="40" fill="#6A4529" data-depth="none" />
+  <rect x="180" y="142" width="8" height="40" fill="#6A4529" data-depth="none" />
+  <g data-motion="PageFlip" data-pivot="156 126">
+    <path d="M132 126 Q144 116 156 124 Q168 116 180 126 V132 H132 Z" fill="#FFFFFF" />
+    <path d="M156 124 V132" stroke="#C9B79A" stroke-width="1.5" />
+  </g>
+</svg>

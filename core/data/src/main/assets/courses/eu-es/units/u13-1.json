@@ -1,0 +1,4034 @@
+{
+  "schemaVersion": 1,
+  "id": "u13-1",
+  "section": "s5",
+  "bookUnit": 13,
+  "title": {
+    "es": "Aficiones",
+    "eu": "Zaletasunak"
+  },
+  "goals": [
+    {
+      "es": "Presentarte en un curso y decir cuánto tiempo llevas aprendiendo y por qué.",
+      "eu": "Ikastaro batean zure burua aurkeztu, eta zenbat denbora daramazun ikasten eta zergatik esan."
+    },
+    {
+      "es": "Decir qué te resulta difícil y qué te conviene hacer.",
+      "eu": "Zer egitea zaila den eta zer egitea komeni zaizun esan."
+    },
+    {
+      "es": "Contar de qué hablas con tus amigos, tus costumbres y tus aficiones.",
+      "eu": "Lagunekin zeri buruz hitz egiten duzun, zure ohiturak eta zure zaletasunak kontatu."
+    }
+  ],
+  "keyWords": [
+    {
+      "eu": "ikasturte",
+      "es": "curso (escolar)"
+    },
+    {
+      "eu": "zail",
+      "es": "difícil"
+    },
+    {
+      "eu": "erraz",
+      "es": "fácil"
+    },
+    {
+      "eu": "zailtasun",
+      "es": "dificultad"
+    },
+    {
+      "eu": "hitz",
+      "es": "palabra (hitz egin: hablar)"
+    },
+    {
+      "eu": "hiztegi",
+      "es": "vocabulario; diccionario"
+    },
+    {
+      "eu": "aditz",
+      "es": "verbo"
+    },
+    {
+      "eu": "ahoskatu",
+      "es": "pronunciar"
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Cuánto tiempo llevas: daramat",
+          "eu": "Zenbat denbora daramazu: daramat"
+        },
+        "body": {
+          "es": "Para decir cuánto tiempo llevas haciendo algo se usa «eraman» (llevar) con el verbo en -t(z)en. Con una cantidad en singular (urte bat, hilabete bat) va «daramat»; con dos o más, «daramatzat».",
+          "eu": "Zerbait egiten zenbat denbora daramazun esateko, «eraman» aditza erabiltzen da, eta beste aditza -t(z)en forman. Urte bat edo hilabete bat bada, «daramat»; bi edo gehiago badira, «daramatzat»."
+        },
+        "examples": [
+          {
+            "eu": "Urte bat daramat euskara ikasten.",
+            "es": "Llevo un año aprendiendo euskera."
+          },
+          {
+            "eu": "Bi urte daramatzat Bilbon bizitzen.",
+            "es": "Llevo dos años viviendo en Bilbao."
+          },
+          {
+            "eu": "Zenbat denbora daramazu hemen lanean?",
+            "es": "¿Cuánto tiempo llevas trabajando aquí?"
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Lo difícil y lo que conviene: zaila da …-t(z)ea",
+          "eu": "Zaila dena eta komeni dena: zaila da …-t(z)ea"
+        },
+        "body": {
+          "es": "Tras «zaila da», «erraza da» o «komeni zait» el verbo termina en -t(z)ea y va siempre en singular. «Komeni» cambia según a quién le conviene, como «gustatu» (zait, zaizu, zaio…). «Zailena» es «lo más difícil».",
+          "eu": "«Zaila da», «erraza da» edo «komeni zait» esan ondoren, aditzak -t(z)ea amaiera hartzen du, beti singularrean. «Komeni» norentzat den aldatzen da, «gustatu» bezala (zait, zaizu, zaio…). «Zailena» esaldi baten gauzarik zailena da."
+        },
+        "examples": [
+          {
+            "eu": "Niretzat zailena aditzak ikastea da.",
+            "es": "Para mí lo más difícil es aprender los verbos."
+          },
+          {
+            "eu": "Euskara ulertzea erraza da.",
+            "es": "Entender euskera es fácil."
+          },
+          {
+            "eu": "Egunero irratia entzutea komeni zaizu.",
+            "es": "Te conviene escuchar la radio todos los días."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Sobre qué: Aneri buruz, filmari buruz",
+          "eu": "Zeri buruz: Aneri buruz, filmari buruz"
+        },
+        "body": {
+          "es": "«Sobre» o «de» un tema se dice con el caso «nori» más «buruz». Con nombres propios, -(r)i buruz (Aneri buruz); con nombres comunes, -ari buruz en singular y -ei buruz en plural. Para preguntar, «zeri buruz?» o «nori buruz?».",
+          "eu": "Gai bati buruz hitz egiteko, hitzak nori kasua hartzen du, eta gero «buruz». Izen berezietan -(r)i buruz (Aneri buruz); izen arruntetan -ari buruz singularrean eta -ei buruz pluralean. Galdetzeko, «zeri buruz?» edo «nori buruz?»."
+        },
+        "examples": [
+          {
+            "eu": "Zeri buruz hitz egin duzue?",
+            "es": "¿De qué habéis hablado?"
+          },
+          {
+            "eu": "Lanari buruz hitz egin dugu.",
+            "es": "Hemos hablado del trabajo."
+          },
+          {
+            "eu": "Liburu hau euskarari buruz da.",
+            "es": "Este libro es sobre el euskera."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Por qué: -(e)lako, eta",
+          "eu": "Zergatik: -(e)lako, eta"
+        },
+        "body": {
+          "es": "Repaso. A «zergatik?» se responde con el verbo en -(e)lako (nahi dudalako, delako). También se puede añadir la razón detrás, con «eta» al final.",
+          "eu": "Errepasoa. «Zergatik?» galderari aditza -(e)lako forman erantzuten zaio (nahi dudalako, delako). Arrazoia atzean ere jar daiteke, «eta» amaieran duela."
+        },
+        "examples": [
+          {
+            "eu": "Euskara ikasten ari naiz, bilobekin hitz egin nahi dudalako.",
+            "es": "Estoy aprendiendo euskera porque quiero hablar con mis nietos."
+          },
+          {
+            "eu": "Euskara ikasten ari naiz, bezeroekin hitz egin nahi dut eta.",
+            "es": "Estoy aprendiendo euskera, pues quiero hablar con los clientes."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u13-1.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Alumnos nuevos",
+        "eu": "Ikasle berriak"
+      },
+      "lessons": [
+        {
+          "id": "u13-1.l1.s1",
+          "exercises": [
+            {
+              "id": "u13-1.l1.s1.e01",
+              "type": "word_intro",
+              "word": "ikasturte",
+              "translation": "curso (escolar)",
+              "vocabulary": [
+                "ikasturte"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ikasturte berria da."
+              },
+              "answers": [
+                "Es un curso nuevo.",
+                "Es el curso nuevo."
+              ],
+              "distractors": [
+                "fácil",
+                "pronuncia",
+                "euskera"
+              ],
+              "vocabulary": [
+                "ikasturte",
+                "berri",
+                "izan"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e03",
+              "type": "listen_tap",
+              "text": "Euskara ikastaro batean nago.",
+              "distractors": [
+                "Aditzak",
+                "zaila",
+                "Barkatu"
+              ],
+              "vocabulary": [
+                "euskara",
+                "ikastaro",
+                "bat",
+                "egon"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e04",
+              "type": "word_intro",
+              "word": "hitz",
+              "translation": "palabra (hitz egin: hablar)",
+              "vocabulary": [
+                "hitz"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e05",
+              "type": "word_intro",
+              "word": "hiztegi",
+              "translation": "vocabulario; diccionario",
+              "vocabulary": [
+                "hiztegi"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e06",
+              "type": "word_intro",
+              "word": "aditz",
+              "translation": "verbo",
+              "vocabulary": [
+                "aditz"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e07",
+              "type": "word_intro",
+              "word": "zail",
+              "translation": "difícil",
+              "vocabulary": [
+                "zail"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e08",
+              "type": "word_intro",
+              "word": "erraz",
+              "translation": "fácil",
+              "vocabulary": [
+                "erraz"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "ikasturte",
+                  "es": "curso escolar"
+                },
+                {
+                  "eu": "hitz",
+                  "es": "palabra"
+                },
+                {
+                  "eu": "hiztegi",
+                  "es": "diccionario"
+                },
+                {
+                  "eu": "aditz",
+                  "es": "verbo"
+                },
+                {
+                  "eu": "zail",
+                  "es": "difícil"
+                },
+                {
+                  "eu": "erraz",
+                  "es": "fácil"
+                }
+              ],
+              "vocabulary": [
+                "ikasturte",
+                "hitz",
+                "hiztegi",
+                "aditz",
+                "zail",
+                "erraz"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e10",
+              "type": "word_intro",
+              "word": "ikastea",
+              "translation": "aprender; estudiar",
+              "vocabulary": [
+                "ikasi"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Aditzak ikastea zaila da."
+              },
+              "answers": [
+                "Aprender los verbos es difícil."
+              ],
+              "distractors": [
+                "las",
+                "nuevo",
+                "nuevas"
+              ],
+              "vocabulary": [
+                "aditz",
+                "ikasi",
+                "zail",
+                "izan"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e12",
+              "type": "word_intro",
+              "word": "ulertzea",
+              "translation": "entender",
+              "vocabulary": [
+                "ulertu"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e13",
+              "type": "fill_blank",
+              "sentence": "Euskara ___ erraza da.",
+              "options": [
+                "ulertzea",
+                "ulertu",
+                "ulertzen"
+              ],
+              "correct": 0,
+              "translation": "Entender euskera es fácil.",
+              "vocabulary": [
+                "euskara",
+                "ulertu",
+                "erraz",
+                "izan"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hitz berriak gogoratzea zaila da."
+              },
+              "answers": [
+                "Recordar las palabras nuevas es difícil.",
+                "Acordarse de las palabras nuevas es difícil."
+              ],
+              "distractors": [
+                "un",
+                "verbos",
+                "Estoy",
+                "favor"
+              ],
+              "vocabulary": [
+                "hitz",
+                "berri",
+                "gogoratu",
+                "zail",
+                "izan"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e15",
+              "type": "choose_meaning",
+              "text": "Hitz berriak gogoratzea zaila da.",
+              "options": [
+                "Recordar las palabras nuevas es difícil.",
+                "Las palabras nuevas son fáciles.",
+                "Escribir palabras nuevas es difícil."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hitz",
+                "berri",
+                "gogoratu",
+                "zail",
+                "izan"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e16",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Euskara ulertzea erraza da."
+              },
+              "answers": [
+                "Entender euskera es fácil."
+              ],
+              "vocabulary": [
+                "euskara",
+                "ulertu",
+                "erraz",
+                "izan"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e17",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Irakaslea",
+                  "text": "Ulertu duzu?"
+                }
+              ],
+              "options": [
+                "Ez, errepikatu mesedez.",
+                "Bai, zaila da.",
+                "Ez dut hiztegirik."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ulertu",
+                "ukan",
+                "ez",
+                "errepikatu",
+                "mesedez"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e18",
+              "type": "listen_type",
+              "text": "Hitz hau nola ahoskatzen da?",
+              "answers": [
+                "Hitz hau nola ahoskatzen da?"
+              ],
+              "vocabulary": [
+                "hitz",
+                "hau",
+                "nola",
+                "aho",
+                "izan"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e19",
+              "type": "choose_image",
+              "prompt": "el libro",
+              "options": [
+                {
+                  "text": "liburua",
+                  "image": "object_book.webp"
+                },
+                {
+                  "text": "telefonoa",
+                  "image": "object_phone.webp"
+                },
+                {
+                  "text": "ordenagailua",
+                  "image": "object_computer.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "liburu"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e20",
+              "type": "listen_tap",
+              "text": "Barkatu, errepikatu mesedez.",
+              "distractors": [
+                "Hiztegia",
+                "erraza"
+              ],
+              "vocabulary": [
+                "barkatu",
+                "errepikatu",
+                "mesedez"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s1.e21",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hiztegia erabiltzen dut."
+              },
+              "answers": [
+                "Uso el diccionario."
+              ],
+              "distractors": [
+                "Entender",
+                "esta"
+              ],
+              "vocabulary": [
+                "hiztegi",
+                "erabili",
+                "ukan"
+              ],
+              "structures": [
+                "ikastaroak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-1.l1.s2",
+          "exercises": [
+            {
+              "id": "u13-1.l1.s2.e01",
+              "type": "word_intro",
+              "word": "erretiratu",
+              "translation": "jubilado; jubilada",
+              "vocabulary": [
+                "erretiratu"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nire amona erretiratua da."
+              },
+              "answers": [
+                "Mi abuela está jubilada.",
+                "Mi abuela es jubilada."
+              ],
+              "distractors": [
+                "La",
+                "clientes",
+                "Quiero"
+              ],
+              "vocabulary": [
+                "ni",
+                "amona",
+                "erretiratu",
+                "izan"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e03",
+              "type": "word_intro",
+              "word": "biloba",
+              "translation": "nieto; nieta",
+              "vocabulary": [
+                "biloba"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Amonak hiru biloba ditu."
+              },
+              "answers": [
+                "La abuela tiene tres nietos."
+              ],
+              "distractors": [
+                "amigo",
+                "familia",
+                "Vitoria"
+              ],
+              "vocabulary": [
+                "amona",
+                "hiru",
+                "biloba",
+                "ukan"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e05",
+              "type": "word_intro",
+              "word": "kazetari",
+              "translation": "periodista",
+              "vocabulary": [
+                "kazetari"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e06",
+              "type": "word_intro",
+              "word": "familia",
+              "translation": "familia",
+              "vocabulary": [
+                "familia"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e07",
+              "type": "word_intro",
+              "word": "mezu",
+              "translation": "mensaje",
+              "vocabulary": [
+                "mezu"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "biloba",
+                  "es": "nieto"
+                },
+                {
+                  "eu": "erretiratu",
+                  "es": "jubilado"
+                },
+                {
+                  "eu": "bezero",
+                  "es": "cliente"
+                },
+                {
+                  "eu": "kazetari",
+                  "es": "periodista"
+                },
+                {
+                  "eu": "familia",
+                  "es": "familia"
+                },
+                {
+                  "eu": "mezu",
+                  "es": "mensaje"
+                }
+              ],
+              "vocabulary": [
+                "biloba",
+                "erretiratu",
+                "bezero",
+                "kazetari",
+                "familia",
+                "mezu"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e09",
+              "type": "word_intro",
+              "word": "bilobekin",
+              "translation": "nieto; nieta",
+              "vocabulary": [
+                "biloba"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bilobekin euskaraz hitz egin nahi dut."
+              },
+              "answers": [
+                "Quiero hablar en euskera con mis nietos."
+              ],
+              "distractors": [
+                "el",
+                "tres",
+                "Soy",
+                "curso"
+              ],
+              "vocabulary": [
+                "hitz egin",
+                "biloba",
+                "euskara",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e11",
+              "type": "choose_meaning",
+              "text": "Bezeroekin euskaraz hitz egiten dut.",
+              "options": [
+                "Hablo en euskera con los clientes.",
+                "Hablo en euskera con mis nietos.",
+                "Escribo mensajes a los clientes."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bezero",
+                "euskara",
+                "hitz",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bezeroekin euskaraz hitz egiten dut."
+              },
+              "answers": [
+                "Hablo en euskera con los clientes."
+              ],
+              "vocabulary": [
+                "bezero",
+                "euskara",
+                "hitz",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e13",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Maialen",
+                  "text": "Zer lan egiten duzu?"
+                }
+              ],
+              "options": [
+                "Kazetaria naiz.",
+                "Bi biloba ditut.",
+                "Egunkaria irakurtzen dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "lan",
+                "egin",
+                "ukan",
+                "kazetari",
+                "izan"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e14",
+              "type": "word_intro",
+              "word": "egunkari",
+              "translation": "periódico",
+              "vocabulary": [
+                "egunkari"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kazetaria naiz, eta egunkari batean lan egiten dut."
+              },
+              "answers": [
+                "Soy periodista y trabajo en un periódico."
+              ],
+              "distractors": [
+                "amigo",
+                "vive",
+                "personas",
+                "familia"
+              ],
+              "vocabulary": [
+                "kazetari",
+                "izan",
+                "eta",
+                "egunkari",
+                "bat",
+                "lan",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e16",
+              "type": "word_intro",
+              "word": "haiekin",
+              "translation": "con ellos",
+              "vocabulary": [
+                "haiek"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e17",
+              "type": "read_true_false",
+              "passage": "Patxi erretiratua da. Bi biloba ditu, eta haiekin euskaraz hitz egin nahi du.",
+              "statement": "Patxi quiere hablar en euskera con sus nietos.",
+              "answer": true,
+              "vocabulary": [
+                "hitz egin",
+                "erretiratu",
+                "izan",
+                "bi",
+                "biloba",
+                "ukan",
+                "eta",
+                "haiek",
+                "euskara",
+                "nahi izan"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e18",
+              "type": "listen_tap",
+              "text": "Nire familia Gasteizen bizi da.",
+              "distractors": [
+                "naiz",
+                "diot",
+                "nahi"
+              ],
+              "vocabulary": [
+                "ni",
+                "familia",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e19",
+              "type": "choose_image",
+              "prompt": "la abuela",
+              "options": [
+                {
+                  "text": "umea",
+                  "image": "people_child.webp"
+                },
+                {
+                  "text": "amona",
+                  "image": "people_grandmother.webp"
+                },
+                {
+                  "text": "aitona",
+                  "image": "people_grandfather.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "amona"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Pertsona asko daude ikastaroan."
+              },
+              "answers": [
+                "Hay muchas personas en el curso.",
+                "Hay mucha gente en el curso."
+              ],
+              "distractors": [
+                "mensaje",
+                "Mi",
+                "periodista",
+                "abuela"
+              ],
+              "vocabulary": [
+                "pertsona",
+                "asko",
+                "egon",
+                "ikastaro"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s2.e21",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Le he escrito un mensaje a mi amigo."
+              },
+              "answers": [
+                "Lagunari mezu bat idatzi diot."
+              ],
+              "distractors": [
+                "lan",
+                "daude",
+                "asko"
+              ],
+              "vocabulary": [
+                "lagun",
+                "mezu",
+                "bat",
+                "idatzi",
+                "ukan"
+              ],
+              "structures": [
+                "jendea"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-1.l1.s3",
+          "exercises": [
+            {
+              "id": "u13-1.l1.s3.e01",
+              "type": "word_intro",
+              "word": "normalean",
+              "translation": "normalmente",
+              "vocabulary": [
+                "normalean"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Normalean egunkaria irakurtzen dut."
+              },
+              "answers": [
+                "Normalmente leo el periódico."
+              ],
+              "distractors": [
+                "Los",
+                "viernes",
+                "no"
+              ],
+              "vocabulary": [
+                "normalean",
+                "egunkari",
+                "irakurri",
+                "ukan"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e03",
+              "type": "word_intro",
+              "word": "telebista",
+              "translation": "televisión",
+              "vocabulary": [
+                "telebista"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gauean telebista ikusten dugu."
+              },
+              "answers": [
+                "Por la noche vemos la tele.",
+                "Por la noche vemos la televisión."
+              ],
+              "distractors": [
+                "una",
+                "fiesta",
+                "De"
+              ],
+              "vocabulary": [
+                "gau",
+                "telebista",
+                "ikusi",
+                "ukan"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e05",
+              "type": "word_intro",
+              "word": "irrati",
+              "translation": "radio",
+              "vocabulary": [
+                "irrati"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e06",
+              "type": "word_intro",
+              "word": "aldizkari",
+              "translation": "revista",
+              "vocabulary": [
+                "aldizkari"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e07",
+              "type": "word_intro",
+              "word": "jaiegun",
+              "translation": "día festivo",
+              "vocabulary": [
+                "jaiegun"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e08",
+              "type": "word_intro",
+              "word": "lanpetuta",
+              "translation": "ocupado; atareado",
+              "vocabulary": [
+                "lanpetuta"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "telebista",
+                  "es": "televisión"
+                },
+                {
+                  "eu": "irrati",
+                  "es": "radio"
+                },
+                {
+                  "eu": "egunkari",
+                  "es": "periódico"
+                },
+                {
+                  "eu": "aldizkari",
+                  "es": "revista"
+                },
+                {
+                  "eu": "jaiegun",
+                  "es": "día festivo"
+                },
+                {
+                  "eu": "lanpetuta",
+                  "es": "ocupado"
+                }
+              ],
+              "vocabulary": [
+                "telebista",
+                "irrati",
+                "egunkari",
+                "aldizkari",
+                "jaiegun",
+                "lanpetuta"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Goizean irratia entzuten dut."
+              },
+              "answers": [
+                "Por la mañana escucho la radio."
+              ],
+              "vocabulary": [
+                "goiz",
+                "irrati",
+                "entzun",
+                "ukan"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e11",
+              "type": "fill_blank",
+              "sentence": "Goizean ___ entzuten dut.",
+              "options": [
+                "irratia",
+                "telebista",
+                "egunkaria"
+              ],
+              "correct": 0,
+              "translation": "Por la mañana escucho la radio.",
+              "vocabulary": [
+                "goiz",
+                "irrati",
+                "entzun",
+                "ukan"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "He comprado una revista."
+              },
+              "answers": [
+                "Aldizkari bat erosi dut."
+              ],
+              "distractors": [
+                "Goizean",
+                "lanpetuta",
+                "Jaiegunetan"
+              ],
+              "vocabulary": [
+                "aldizkari",
+                "bat",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e13",
+              "type": "choose_meaning",
+              "text": "Jaiegunetan ez dut lanik egiten.",
+              "options": [
+                "Los días de fiesta no trabajo.",
+                "Trabajo todos los días.",
+                "Los domingos estoy muy ocupado."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "jaiegun",
+                "ez",
+                "ukan",
+                "lan",
+                "egin"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e14",
+              "type": "speak",
+              "text": "Egunero mezu asko idazten ditut.",
+              "translation": "Escribo muchos mensajes todos los días.",
+              "vocabulary": [
+                "egunero",
+                "mezu",
+                "asko",
+                "idatzi",
+                "ukan"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e15",
+              "type": "read_true_false",
+              "passage": "Astelehenetik ostiralera Nerea oso lanpetuta dago. Jaiegunetan telebista ikusten du eta aldizkariak irakurtzen ditu.",
+              "statement": "Nerea lee revistas los días de fiesta.",
+              "answer": true,
+              "vocabulary": [
+                "astelehen",
+                "ostiral",
+                "oso",
+                "lanpetuta",
+                "egon",
+                "jaiegun",
+                "telebista",
+                "ikusi",
+                "ukan",
+                "eta",
+                "aldizkari",
+                "irakurri"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Jaiegunetan ez dut lanik egiten."
+              },
+              "answers": [
+                "Los días de fiesta no trabajo.",
+                "Los festivos no trabajo."
+              ],
+              "distractors": [
+                "mañana",
+                "comprado",
+                "mensajes",
+                "leo"
+              ],
+              "vocabulary": [
+                "jaiegun",
+                "ez",
+                "ukan",
+                "lan",
+                "egin"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "De lunes a viernes estoy muy ocupado."
+              },
+              "answers": [
+                "Astelehenetik ostiralera oso lanpetuta nago."
+              ],
+              "distractors": [
+                "mezu",
+                "irakurtzen",
+                "bat"
+              ],
+              "vocabulary": [
+                "astelehen",
+                "ostiral",
+                "oso",
+                "lanpetuta",
+                "egon"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e18",
+              "type": "word_intro",
+              "word": "lisatzen",
+              "translation": "planchar",
+              "vocabulary": [
+                "lisatu"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            },
+            {
+              "id": "u13-1.l1.s3.e19",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Igandean arropa lisatzen dut."
+              },
+              "answers": [
+                "El domingo plancho la ropa.",
+                "Los domingos plancho la ropa."
+              ],
+              "distractors": [
+                "radio",
+                "noche",
+                "Por"
+              ],
+              "vocabulary": [
+                "igande",
+                "arropa",
+                "lisatu",
+                "ukan"
+              ],
+              "structures": [
+                "ohiturak",
+                "hedabideak"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u13-1.l2",
+      "type": "lesson",
+      "title": {
+        "es": "¿Cuánto tiempo llevas?",
+        "eu": "Zenbat denbora daramazu?"
+      },
+      "lessons": [
+        {
+          "id": "u13-1.l2.s1",
+          "exercises": [
+            {
+              "id": "u13-1.l2.s1.e01",
+              "type": "word_intro",
+              "word": "daramat",
+              "translation": "llevar",
+              "vocabulary": [
+                "eraman"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Urte bat daramat euskara ikasten."
+              },
+              "answers": [
+                "Llevo un año aprendiendo euskera.",
+                "Llevo un año estudiando euskera."
+              ],
+              "distractors": [
+                "euskaltegi",
+                "Llevan",
+                "dos"
+              ],
+              "vocabulary": [
+                "urte",
+                "bat",
+                "eraman",
+                "euskara",
+                "ikasi"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e03",
+              "type": "word_intro",
+              "word": "daramatzat",
+              "translation": "llevar",
+              "vocabulary": [
+                "eraman"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bi urte daramatzat euskara ikasten."
+              },
+              "answers": [
+                "Llevo dos años aprendiendo euskera.",
+                "Llevo dos años estudiando euskera."
+              ],
+              "distractors": [
+                "tiempo",
+                "Sebastián",
+                "San"
+              ],
+              "vocabulary": [
+                "bi",
+                "urte",
+                "eraman",
+                "euskara",
+                "ikasi"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e05",
+              "type": "word_intro",
+              "word": "daramazu",
+              "translation": "llevar",
+              "vocabulary": [
+                "eraman"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e06",
+              "type": "word_intro",
+              "word": "darama",
+              "translation": "llevar",
+              "vocabulary": [
+                "eraman"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e07",
+              "type": "word_intro",
+              "word": "daramatzagu",
+              "translation": "llevar",
+              "vocabulary": [
+                "eraman"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "daramat",
+                  "es": "llevo (uno)"
+                },
+                {
+                  "eu": "daramatzat",
+                  "es": "llevo (varios)"
+                },
+                {
+                  "eu": "daramazu",
+                  "es": "llevas"
+                },
+                {
+                  "eu": "darama",
+                  "es": "lleva"
+                },
+                {
+                  "eu": "daramatzagu",
+                  "es": "llevamos (varios)"
+                }
+              ],
+              "vocabulary": [
+                "eraman"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e09",
+              "type": "word_intro",
+              "word": "denbora",
+              "translation": "tiempo (duración)",
+              "vocabulary": [
+                "denbora"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zenbat denbora daramazu euskara ikasten?"
+              },
+              "answers": [
+                "¿Cuánto tiempo llevas aprendiendo euskera?",
+                "¿Cuánto tiempo llevas estudiando euskera?"
+              ],
+              "distractors": [
+                "Cuántos",
+                "dos",
+                "Lleva"
+              ],
+              "vocabulary": [
+                "zenbat",
+                "denbora",
+                "eraman",
+                "euskara",
+                "ikasi"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e11",
+              "type": "fill_blank",
+              "sentence": "Bi urte ___ euskara ikasten.",
+              "options": [
+                "daramatzat",
+                "daramat",
+                "darama"
+              ],
+              "correct": 0,
+              "translation": "Llevo dos años aprendiendo euskera.",
+              "vocabulary": [
+                "bi",
+                "urte",
+                "eraman",
+                "euskara",
+                "ikasi"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e12",
+              "type": "word_intro",
+              "word": "bizitzen",
+              "translation": "vivir",
+              "vocabulary": [
+                "bizi izan"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hilabete bat darama Donostian bizitzen."
+              },
+              "answers": [
+                "Lleva un mes viviendo en San Sebastián.",
+                "Lleva un mes viviendo en Donostia."
+              ],
+              "distractors": [
+                "año",
+                "fábrica",
+                "aquí",
+                "el"
+              ],
+              "vocabulary": [
+                "hilabete",
+                "bat",
+                "eraman",
+                "bizi izan"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e14",
+              "type": "fill_blank",
+              "sentence": "Urte bat ___ Bilbon bizitzen.",
+              "options": [
+                "daramat",
+                "daramatzat",
+                "daramatza"
+              ],
+              "correct": 0,
+              "translation": "Llevo un año viviendo en Bilbao.",
+              "vocabulary": [
+                "urte",
+                "bat",
+                "eraman",
+                "bizi izan"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hiru ikasturte daramatzagu hemen."
+              },
+              "answers": [
+                "Llevamos tres cursos aquí."
+              ],
+              "distractors": [
+                "Llevan",
+                "el",
+                "Lleva"
+              ],
+              "vocabulary": [
+                "hiru",
+                "ikasturte",
+                "eraman",
+                "hemen"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e16",
+              "type": "choose_meaning",
+              "text": "Hilabete bat darama Donostian bizitzen.",
+              "options": [
+                "Lleva un mes viviendo en San Sebastián.",
+                "Va a vivir un mes en San Sebastián.",
+                "Vivió un mes en San Sebastián."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hilabete",
+                "bat",
+                "eraman",
+                "bizi izan"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e17",
+              "type": "word_intro",
+              "word": "daramatzate",
+              "translation": "llevar",
+              "vocabulary": [
+                "eraman"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Sei urte daramatzate lantegi horretan lanean."
+              },
+              "answers": [
+                "Llevan seis años trabajando en esa fábrica."
+              ],
+              "distractors": [
+                "Cuántos",
+                "llevas",
+                "cursos",
+                "San"
+              ],
+              "vocabulary": [
+                "sei",
+                "urte",
+                "eraman",
+                "lantegi",
+                "hori",
+                "lan"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e19",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Irakaslea",
+                  "text": "Zenbat denbora daramazu euskara ikasten?"
+                }
+              ],
+              "options": [
+                "Bi ikasturte daramatzat.",
+                "Bi ikasturte ditut.",
+                "Bi urte ditut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zenbat",
+                "denbora",
+                "eraman",
+                "euskara",
+                "ikasi",
+                "bi",
+                "ikasturte"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s1.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zuek zenbat ikasturte daramatzazue euskaltegian?"
+              },
+              "answers": [
+                "¿Cuántos cursos lleváis en el euskaltegi?"
+              ],
+              "distractors": [
+                "esa",
+                "Llevo",
+                "Sebastián",
+                "Llevan"
+              ],
+              "vocabulary": [
+                "zuek",
+                "zenbat",
+                "ikasturte",
+                "eraman"
+              ],
+              "structures": [
+                "eraman-iraupena"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-1.l2.s2",
+          "exercises": [
+            {
+              "id": "u13-1.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zergatik ari zara euskara ikasten?"
+              },
+              "answers": [
+                "¿Por qué estás aprendiendo euskera?"
+              ],
+              "vocabulary": [
+                "zergatik",
+                "izan",
+                "euskara",
+                "ikasi"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e02",
+              "type": "word_intro",
+              "word": "dudalako",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lan berri bat nahi dudalako."
+              },
+              "answers": [
+                "Porque quiero un trabajo nuevo."
+              ],
+              "distractors": [
+                "no",
+                "mí",
+                "entiendo"
+              ],
+              "vocabulary": [
+                "lan",
+                "berri",
+                "bat",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e04",
+              "type": "word_intro",
+              "word": "zailtasun",
+              "translation": "dificultad",
+              "vocabulary": [
+                "zailtasun"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e05",
+              "type": "word_intro",
+              "word": "gogoratu",
+              "translation": "recordar; acordarse",
+              "vocabulary": [
+                "gogoratu"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e06",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "zail",
+                  "es": "difícil"
+                },
+                {
+                  "eu": "erraz",
+                  "es": "fácil"
+                },
+                {
+                  "eu": "zailtasun",
+                  "es": "dificultad"
+                },
+                {
+                  "eu": "zergatik",
+                  "es": "por qué"
+                },
+                {
+                  "eu": "gogoratu",
+                  "es": "recordar"
+                }
+              ],
+              "vocabulary": [
+                "zail",
+                "erraz",
+                "zailtasun",
+                "zergatik",
+                "gogoratu"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e07",
+              "type": "listen_tap",
+              "text": "Bezeroekin euskaraz hitz egin nahi dudalako.",
+              "distractors": [
+                "aditzak",
+                "ikasten",
+                "ikastea",
+                "Zergatik"
+              ],
+              "vocabulary": [
+                "hitz egin",
+                "bezero",
+                "euskara",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e08",
+              "type": "word_intro",
+              "word": "zailena",
+              "translation": "difícil",
+              "vocabulary": [
+                "zail"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e09",
+              "type": "word_intro",
+              "word": "gogoratzea",
+              "translation": "recordar; acordarse",
+              "vocabulary": [
+                "gogoratu"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e10",
+              "type": "fill_blank",
+              "sentence": "Niretzat zailena hitzak ___ da.",
+              "options": [
+                "gogoratzea",
+                "gogoratu",
+                "gogoratzen"
+              ],
+              "correct": 0,
+              "translation": "Para mí lo más difícil es recordar las palabras.",
+              "vocabulary": [
+                "ni",
+                "zail",
+                "hitz",
+                "gogoratu",
+                "izan"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e11",
+              "type": "word_intro",
+              "word": "euskaldun",
+              "translation": "vascohablante",
+              "vocabulary": [
+                "euskaldun"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Euskara ikasten ari naiz, nire bilobak euskaldunak dira eta."
+              },
+              "answers": [
+                "Estoy aprendiendo euskera, pues mis nietos son vascohablantes."
+              ],
+              "distractors": [
+                "entiendo",
+                "clientes",
+                "aprender",
+                "Porque"
+              ],
+              "vocabulary": [
+                "euskara",
+                "ikasi",
+                "izan",
+                "ni",
+                "biloba",
+                "euskaldun",
+                "eta"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e13",
+              "type": "choose_meaning",
+              "text": "Niretzat zailena aditzak ikastea da.",
+              "options": [
+                "Para mí lo más difícil es aprender los verbos.",
+                "Para mí aprender los verbos es fácil.",
+                "Los verbos son lo más fácil."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ni",
+                "zail",
+                "aditz",
+                "ikasi",
+                "izan"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Para mí lo más difícil es aprender los verbos."
+              },
+              "answers": [
+                "Niretzat zailena aditzak ikastea da."
+              ],
+              "distractors": [
+                "ari",
+                "egin",
+                "Hitz"
+              ],
+              "vocabulary": [
+                "ni",
+                "zail",
+                "aditz",
+                "ikasi",
+                "izan"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e15",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Jon",
+                  "text": "Zergatik ari zara euskara ikasten?"
+                }
+              ],
+              "options": [
+                "Bezeroekin euskaraz hitz egin nahi dudalako.",
+                "Bi urte daramatzat ikasten.",
+                "Euskara ulertzea erraza da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zergatik",
+                "izan",
+                "euskara",
+                "ikasi",
+                "hitz egin",
+                "bezero",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e16",
+              "type": "listen_tap",
+              "text": "Zergatik da zaila jendearekin hitz egitea?",
+              "distractors": [
+                "Euskara",
+                "dudalako",
+                "ikasten",
+                "dutelako"
+              ],
+              "vocabulary": [
+                "zergatik",
+                "izan",
+                "zail",
+                "jende",
+                "hitz",
+                "egin"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e17",
+              "type": "word_intro",
+              "word": "daramatza",
+              "translation": "llevar",
+              "vocabulary": [
+                "eraman"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e18",
+              "type": "read_true_false",
+              "passage": "Iratik bi ikasturte daramatza euskara ikasten. Zailena aditzak ikastea da, oso luzeak direlako.",
+              "statement": "Para Irati lo más difícil son los verbos.",
+              "answer": true,
+              "vocabulary": [
+                "bi",
+                "ikasturte",
+                "eraman",
+                "euskara",
+                "ikasi",
+                "zail",
+                "aditz",
+                "izan",
+                "oso",
+                "luze"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e19",
+              "type": "word_intro",
+              "word": "ditudalako",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hitz asko ez ditudalako ulertzen."
+              },
+              "answers": [
+                "Porque no entiendo muchas palabras."
+              ],
+              "distractors": [
+                "mis",
+                "Por",
+                "nuevo"
+              ],
+              "vocabulary": [
+                "hitz",
+                "asko",
+                "ez",
+                "ukan",
+                "ulertu"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s2.e21",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Euskaldunek oso azkar hitz egiten dutelako."
+              },
+              "answers": [
+                "Porque los vascohablantes hablan muy deprisa."
+              ],
+              "distractors": [
+                "estás",
+                "Por",
+                "muchas",
+                "verbos"
+              ],
+              "vocabulary": [
+                "euskaldun",
+                "oso",
+                "azkar",
+                "hitz",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "zaila-da",
+                "kausazkoak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-1.l2.s3",
+          "exercises": [
+            {
+              "id": "u13-1.l2.s3.e01",
+              "type": "word_intro",
+              "word": "entzutea",
+              "translation": "escuchar",
+              "vocabulary": [
+                "entzun"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Egunero irratia entzutea komeni zaizu."
+              },
+              "answers": [
+                "Te conviene escuchar la radio todos los días."
+              ],
+              "distractors": [
+                "hacer",
+                "Le",
+                "un",
+                "ha"
+              ],
+              "vocabulary": [
+                "egunero",
+                "irrati",
+                "entzun",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e03",
+              "type": "word_intro",
+              "word": "errepikatzea",
+              "translation": "repetir",
+              "vocabulary": [
+                "errepikatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hitz berriak errepikatzea komeni zaizu."
+              },
+              "answers": [
+                "Te conviene repetir las palabras nuevas."
+              ],
+              "distractors": [
+                "dado",
+                "me",
+                "Os",
+                "mucho"
+              ],
+              "vocabulary": [
+                "hitz",
+                "berri",
+                "errepikatu",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e05",
+              "type": "word_intro",
+              "word": "aholku",
+              "translation": "consejo",
+              "vocabulary": [
+                "aholku"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e06",
+              "type": "word_intro",
+              "word": "lagundu",
+              "translation": "ayudar",
+              "vocabulary": [
+                "lagundu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e07",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "aholku",
+                  "es": "consejo"
+                },
+                {
+                  "eu": "lagundu",
+                  "es": "ayudar"
+                },
+                {
+                  "eu": "komeni zait",
+                  "es": "me conviene"
+                },
+                {
+                  "eu": "komeni zaizu",
+                  "es": "te conviene"
+                },
+                {
+                  "eu": "komeni zaio",
+                  "es": "le conviene"
+                }
+              ],
+              "vocabulary": [
+                "aholku",
+                "lagundu",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Euskaldunekin hitz egitea komeni zaio."
+              },
+              "answers": [
+                "Le conviene hablar con vascohablantes."
+              ],
+              "distractors": [
+                "repetir",
+                "Nos",
+                "las"
+              ],
+              "vocabulary": [
+                "euskaldun",
+                "hitz",
+                "egin",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e09",
+              "type": "fill_blank",
+              "sentence": "Egunero irratia entzutea ___.",
+              "options": [
+                "komeni zaizu",
+                "komeni zait",
+                "komeni da zu"
+              ],
+              "correct": 0,
+              "translation": "Te conviene escuchar la radio todos los días.",
+              "vocabulary": [
+                "egunero",
+                "irrati",
+                "entzun",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Nos conviene usar el diccionario."
+              },
+              "answers": [
+                "Hiztegia erabiltzea komeni zaigu."
+              ],
+              "distractors": [
+                "eman",
+                "zaio",
+                "Euskaldunekin"
+              ],
+              "vocabulary": [
+                "hiztegi",
+                "erabili",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e11",
+              "type": "fill_blank",
+              "sentence": "Hitz berriak ___ komeni zaizu.",
+              "options": [
+                "errepikatzea",
+                "errepikatu",
+                "errepikatzen"
+              ],
+              "correct": 0,
+              "translation": "Te conviene repetir las palabras nuevas.",
+              "vocabulary": [
+                "hitz",
+                "berri",
+                "errepikatu",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e12",
+              "type": "listen_tap",
+              "text": "Aholku bat eman dit irakasleak.",
+              "distractors": [
+                "irratia",
+                "egitea",
+                "asko"
+              ],
+              "vocabulary": [
+                "aholku",
+                "bat",
+                "eman",
+                "ukan",
+                "irakasle"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e13",
+              "type": "choose_meaning",
+              "text": "Euskaldunekin hitz egitea komeni zaio.",
+              "options": [
+                "Le conviene hablar con vascohablantes.",
+                "Le gusta hablar con vascohablantes.",
+                "Habla mucho con vascohablantes."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "euskaldun",
+                "hitz",
+                "egin",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e14",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué me conviene hacer?"
+              },
+              "answers": [
+                "Zer egitea komeni zait?"
+              ],
+              "vocabulary": [
+                "zer",
+                "egin",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e15",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ander",
+                  "text": "Niretzat zailena euskaldunak ulertzea da."
+                }
+              ],
+              "options": [
+                "Egunero irratia entzutea komeni zaizu.",
+                "Egunero irratia entzun dut.",
+                "Irratia gustatzen zait."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ni",
+                "zail",
+                "euskaldun",
+                "ulertu",
+                "izan",
+                "egunero",
+                "irrati",
+                "entzun",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e16",
+              "type": "word_intro",
+              "word": "irakurtzea",
+              "translation": "leer",
+              "vocabulary": [
+                "irakurri"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Poliki irakurtzea komeni zaizue."
+              },
+              "answers": [
+                "Os conviene leer despacio."
+              ],
+              "distractors": [
+                "palabras",
+                "Qué",
+                "la"
+              ],
+              "vocabulary": [
+                "poliki",
+                "irakurri",
+                "komeni izan",
+                "gustatu"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            },
+            {
+              "id": "u13-1.l2.s3.e18",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Irakasleak asko lagundu dit."
+              },
+              "answers": [
+                "El profesor me ha ayudado mucho.",
+                "La profesora me ha ayudado mucho."
+              ],
+              "vocabulary": [
+                "irakasle",
+                "asko",
+                "lagundu",
+                "ukan"
+              ],
+              "structures": [
+                "komeni-zait",
+                "aholkuak"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u13-1.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Entre amigos",
+        "eu": "Lagunekin"
+      },
+      "lessons": [
+        {
+          "id": "u13-1.l3.s1",
+          "exercises": [
+            {
+              "id": "u13-1.l3.s1.e01",
+              "type": "word_intro",
+              "word": "zeri",
+              "translation": "qué",
+              "vocabulary": [
+                "zer"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e02",
+              "type": "word_intro",
+              "word": "buruz",
+              "translation": "sobre; acerca de",
+              "vocabulary": [
+                "buruz"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zeri buruz hitz egin duzue?"
+              },
+              "answers": [
+                "¿De qué habéis hablado?",
+                "¿Sobre qué habéis hablado?"
+              ],
+              "distractors": [
+                "mis",
+                "la",
+                "Estamos"
+              ],
+              "vocabulary": [
+                "hitz egin",
+                "zer",
+                "buruz",
+                "ukan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lanari buruz hitz egin dugu."
+              },
+              "answers": [
+                "Hemos hablado del trabajo.",
+                "Hemos hablado sobre el trabajo."
+              ],
+              "distractors": [
+                "Con",
+                "Ander",
+                "hablando"
+              ],
+              "vocabulary": [
+                "hitz egin",
+                "lan",
+                "buruz",
+                "ukan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e05",
+              "type": "word_intro",
+              "word": "nori",
+              "translation": "quién",
+              "vocabulary": [
+                "nor"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e06",
+              "type": "word_intro",
+              "word": "gai",
+              "translation": "tema",
+              "vocabulary": [
+                "gai"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e07",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "buruz",
+                  "es": "sobre"
+                },
+                {
+                  "eu": "zeri buruz",
+                  "es": "sobre qué"
+                },
+                {
+                  "eu": "nori buruz",
+                  "es": "sobre quién"
+                },
+                {
+                  "eu": "gai",
+                  "es": "tema"
+                },
+                {
+                  "eu": "lanari buruz",
+                  "es": "sobre el trabajo"
+                }
+              ],
+              "vocabulary": [
+                "buruz",
+                "zer",
+                "nor",
+                "gai",
+                "lan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿De quién estáis hablando?"
+              },
+              "answers": [
+                "Nori buruz ari zarete hitz egiten?"
+              ],
+              "distractors": [
+                "dute",
+                "Lagunekin",
+                "gara",
+                "Film"
+              ],
+              "vocabulary": [
+                "nor",
+                "buruz",
+                "izan",
+                "hitz",
+                "egin"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e09",
+              "type": "fill_blank",
+              "sentence": "Lagunekin ___ buruz hitz egiten dut.",
+              "options": [
+                "kirolari",
+                "kirolarekin",
+                "kirolean"
+              ],
+              "correct": 0,
+              "translation": "Con mis amigos hablo de deporte.",
+              "vocabulary": [
+                "lagun",
+                "kirol",
+                "buruz",
+                "hitz",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e10",
+              "type": "listen_tap",
+              "text": "Anderri buruz hitz egiten ari gara.",
+              "distractors": [
+                "kirolari",
+                "ingurumenari",
+                "bidaiei",
+                "du"
+              ],
+              "vocabulary": [
+                "buruz",
+                "hitz",
+                "egin",
+                "izan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e11",
+              "type": "choose_meaning",
+              "text": "Zeri buruz hitz egin duzue?",
+              "options": [
+                "¿De qué habéis hablado?",
+                "¿Con quién habéis hablado?",
+                "¿Cuándo habéis hablado?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hitz egin",
+                "zer",
+                "buruz",
+                "ukan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Esta película es sobre la familia."
+              },
+              "answers": [
+                "Film hau familiari buruz da."
+              ],
+              "vocabulary": [
+                "film",
+                "hau",
+                "familia",
+                "buruz",
+                "izan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e13",
+              "type": "word_intro",
+              "word": "zenuten",
+              "translation": "(vosotros) teníais · auxiliar pasado",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e14",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Olatz",
+                  "text": "Atzo Mikelekin egon nintzen."
+                },
+                {
+                  "speaker": "Unai",
+                  "text": "Bai? Zeri buruz hitz egin zenuten?"
+                }
+              ],
+              "options": [
+                "Bere lanari buruz.",
+                "Bere lanarekin.",
+                "Bere lanean."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "atzo",
+                "egon",
+                "izan",
+                "hitz egin",
+                "bai",
+                "zer",
+                "buruz",
+                "ukan",
+                "hura",
+                "lan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e15",
+              "type": "order_sentence",
+              "answer": "Lagunekin kirolari buruz hitz egiten dut.",
+              "translation": "Con mis amigos hablo de deporte.",
+              "vocabulary": [
+                "lagun",
+                "kirol",
+                "buruz",
+                "hitz",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e16",
+              "type": "word_intro",
+              "word": "bidaiei",
+              "translation": "viaje",
+              "vocabulary": [
+                "bidaia"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e17",
+              "type": "read_true_false",
+              "passage": "Lagunekin askotan hitz egiten dut futbolari buruz. Familiarekin, berriz, bidaiei buruz.",
+              "statement": "Con la familia habla de fútbol.",
+              "answer": false,
+              "vocabulary": [
+                "lagun",
+                "askotan",
+                "hitz",
+                "egin",
+                "ukan",
+                "futbol",
+                "buruz",
+                "familia",
+                "berri",
+                "bidaia"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e18",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Irratian ingurumenari buruz hitz egin dute."
+              },
+              "answers": [
+                "En la radio han hablado del medio ambiente.",
+                "En la radio han hablado sobre el medio ambiente."
+              ],
+              "vocabulary": [
+                "hitz egin",
+                "irrati",
+                "ingurumen",
+                "buruz",
+                "ukan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s1.e19",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Egunkariak bidaiei buruz idazten du."
+              },
+              "answers": [
+                "El periódico escribe sobre viajes."
+              ],
+              "vocabulary": [
+                "egunkari",
+                "bidaia",
+                "buruz",
+                "idatzi",
+                "ukan"
+              ],
+              "structures": [
+                "nori-buruz"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-1.l3.s2",
+          "exercises": [
+            {
+              "id": "u13-1.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Normalean zazpietan jaikitzen naiz."
+              },
+              "answers": [
+                "Normalmente me levanto a las siete."
+              ],
+              "distractors": [
+                "vida",
+                "fiesta",
+                "diez",
+                "Los"
+              ],
+              "vocabulary": [
+                "normalean",
+                "zazpi",
+                "jaiki",
+                "izan"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Voy a trabajar en bicicleta."
+              },
+              "answers": [
+                "Lanera bizikletaz joaten naiz."
+              ],
+              "distractors": [
+                "Ohitura",
+                "dugu",
+                "Ordu"
+              ],
+              "vocabulary": [
+                "lan",
+                "bizikleta",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e03",
+              "type": "word_intro",
+              "word": "ohitura",
+              "translation": "costumbre; hábito",
+              "vocabulary": [
+                "ohitura"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e04",
+              "type": "word_intro",
+              "word": "bizimodu",
+              "translation": "modo de vida",
+              "vocabulary": [
+                "bizimodu"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e05",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "ohitura",
+                  "es": "costumbre"
+                },
+                {
+                  "eu": "bizimodu",
+                  "es": "modo de vida"
+                },
+                {
+                  "eu": "normalean",
+                  "es": "normalmente"
+                },
+                {
+                  "eu": "oheratu",
+                  "es": "acostarse"
+                },
+                {
+                  "eu": "jaiki",
+                  "es": "levantarse"
+                }
+              ],
+              "vocabulary": [
+                "ohitura",
+                "bizimodu",
+                "normalean",
+                "oheratu",
+                "jaiki"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e06",
+              "type": "word_intro",
+              "word": "bietan",
+              "translation": "dos",
+              "vocabulary": [
+                "bi"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e07",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ordu bietan etxean bazkaltzen dugu."
+              },
+              "answers": [
+                "A las dos comemos en casa."
+              ],
+              "distractors": [
+                "muy",
+                "fines",
+                "nos",
+                "haces"
+              ],
+              "vocabulary": [
+                "ordu",
+                "bi",
+                "etxe",
+                "bazkaldu",
+                "ukan"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e08",
+              "type": "fill_blank",
+              "sentence": "Normalean zazpietan ___ naiz.",
+              "options": [
+                "jaikitzen",
+                "jaiki",
+                "jaikiko"
+              ],
+              "correct": 0,
+              "translation": "Normalmente me levanto a las siete.",
+              "vocabulary": [
+                "normalean",
+                "zazpi",
+                "jaiki",
+                "izan"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e09",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Por la noche me acuesto a las diez."
+              },
+              "answers": [
+                "Gauean hamarretan oheratzen naiz."
+              ],
+              "vocabulary": [
+                "gau",
+                "hamar",
+                "oheratu",
+                "izan"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e10",
+              "type": "choose_meaning",
+              "text": "Nire bizimodua oso lasaia da.",
+              "options": [
+                "Mi vida es muy tranquila.",
+                "Mi casa es muy tranquila.",
+                "Mi trabajo es muy tranquilo."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ni",
+                "bizimodu",
+                "oso",
+                "lasai",
+                "izan"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e11",
+              "type": "order_sentence",
+              "answer": "Asteburuetan berandu jaikitzen gara.",
+              "translation": "Los fines de semana nos levantamos tarde.",
+              "vocabulary": [
+                "asteburu",
+                "berandu",
+                "jaiki",
+                "izan"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e12",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Zer egiten duzu jaiegunetan?"
+                }
+              ],
+              "options": [
+                "Mendira joaten naiz.",
+                "Mendira joan nintzen.",
+                "Mendia gustuko dut eta."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "egin",
+                "ukan",
+                "jaiegun",
+                "mendi",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer egiten duzu jaiegunetan?"
+              },
+              "answers": [
+                "¿Qué haces los días de fiesta?",
+                "¿Qué haces los festivos?"
+              ],
+              "vocabulary": [
+                "zer",
+                "egin",
+                "ukan",
+                "jaiegun"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e14",
+              "type": "read_true_false",
+              "passage": "Normalean Peio seietan jaikitzen da eta lanera oinez joaten da. Asteburuetan berandu jaikitzen da.",
+              "statement": "Peio va al trabajo en coche.",
+              "answer": false,
+              "vocabulary": [
+                "normalean",
+                "sei",
+                "jaiki",
+                "izan",
+                "eta",
+                "lan",
+                "oinez",
+                "joan",
+                "asteburu",
+                "berandu"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e15",
+              "type": "listen_type",
+              "text": "Nire bizimodua oso lasaia da.",
+              "answers": [
+                "Nire bizimodua oso lasaia da."
+              ],
+              "vocabulary": [
+                "ni",
+                "bizimodu",
+                "oso",
+                "lasai",
+                "izan"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s2.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ohitura onak ditut."
+              },
+              "answers": [
+                "Tengo buenas costumbres.",
+                "Tengo buenos hábitos."
+              ],
+              "distractors": [
+                "es",
+                "levanto"
+              ],
+              "vocabulary": [
+                "ohitura",
+                "on",
+                "ukan"
+              ],
+              "structures": [
+                "ohiturak",
+                "ohiturazko-aspektua"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-1.l3.s3",
+          "exercises": [
+            {
+              "id": "u13-1.l3.s3.e01",
+              "type": "word_intro",
+              "word": "zaletasun",
+              "translation": "afición",
+              "vocabulary": [
+                "zaletasun"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zein dira zure zaletasunak?"
+              },
+              "answers": [
+                "¿Cuáles son tus aficiones?"
+              ],
+              "distractors": [
+                "mi",
+                "Les",
+                "A"
+              ],
+              "vocabulary": [
+                "zein",
+                "izan",
+                "zu",
+                "zaletasun"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e03",
+              "type": "word_intro",
+              "word": "ibiltzea",
+              "translation": "andar",
+              "vocabulary": [
+                "ibili"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mendian ibiltzea gustatzen zait."
+              },
+              "answers": [
+                "Me gusta andar por el monte.",
+                "Me gusta caminar por el monte."
+              ],
+              "distractors": [
+                "Nos",
+                "aficiones",
+                "los",
+                "ver"
+              ],
+              "vocabulary": [
+                "mendi",
+                "ibili",
+                "gustatu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e05",
+              "type": "word_intro",
+              "word": "abestu",
+              "translation": "cantar",
+              "vocabulary": [
+                "abestu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e06",
+              "type": "word_intro",
+              "word": "marraztu",
+              "translation": "dibujar",
+              "vocabulary": [
+                "marraztu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e07",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "zaletasun",
+                  "es": "afición"
+                },
+                {
+                  "eu": "irakurri",
+                  "es": "leer"
+                },
+                {
+                  "eu": "dantza egin",
+                  "es": "bailar"
+                },
+                {
+                  "eu": "abestu",
+                  "es": "cantar"
+                },
+                {
+                  "eu": "marraztu",
+                  "es": "dibujar"
+                }
+              ],
+              "vocabulary": [
+                "zaletasun",
+                "irakurri",
+                "dantza",
+                "egin",
+                "abestu",
+                "marraztu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e08",
+              "type": "word_intro",
+              "word": "ikustea",
+              "translation": "ver",
+              "vocabulary": [
+                "ikusi"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez zait telebista ikustea gustatzen."
+              },
+              "answers": [
+                "No me gusta ver la tele.",
+                "No me gusta ver la televisión."
+              ],
+              "distractors": [
+                "Ander",
+                "mi",
+                "afición",
+                "andar"
+              ],
+              "vocabulary": [
+                "ez",
+                "gustatu",
+                "telebista",
+                "ikusi"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e10",
+              "type": "fill_blank",
+              "sentence": "Mendian ___ gustatzen zait.",
+              "options": [
+                "ibiltzea",
+                "ibiltzen",
+                "ibili"
+              ],
+              "correct": 0,
+              "translation": "Me gusta andar por el monte.",
+              "vocabulary": [
+                "mendi",
+                "ibili",
+                "gustatu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e11",
+              "type": "word_intro",
+              "word": "prestatzea",
+              "translation": "preparar",
+              "vocabulary": [
+                "prestatu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Anderri janaria prestatzea asko gustatzen zaio."
+              },
+              "answers": [
+                "A Ander le gusta mucho preparar la comida.",
+                "A Ander le gusta mucho cocinar."
+              ],
+              "distractors": [
+                "bailar",
+                "amigos",
+                "son",
+                "fines"
+              ],
+              "vocabulary": [
+                "janari",
+                "prestatu",
+                "asko",
+                "gustatu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e13",
+              "type": "choose_meaning",
+              "text": "Ez zait telebista ikustea gustatzen.",
+              "options": [
+                "No me gusta ver la tele.",
+                "Me gusta mucho ver la tele.",
+                "No tengo televisión."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "gustatu",
+                "telebista",
+                "ikusi"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e14",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer gustatzen zaizu egitea asteburuetan?"
+              },
+              "answers": [
+                "¿Qué te gusta hacer los fines de semana?"
+              ],
+              "vocabulary": [
+                "zer",
+                "gustatu",
+                "egin",
+                "asteburu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e15",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Gorka",
+                  "text": "Zein dira zure zaletasunak?"
+                }
+              ],
+              "options": [
+                "Irakurtzea eta dantza egitea gustatzen zaizkit.",
+                "Irakurtzea eta dantza egitea gustatzen zait.",
+                "Irakurri eta dantzatu nahi dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zein",
+                "izan",
+                "zu",
+                "zaletasun",
+                "irakurri",
+                "eta",
+                "dantza",
+                "egin",
+                "gustatu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e16",
+              "type": "word_intro",
+              "word": "afaltzea",
+              "translation": "cenar",
+              "vocabulary": [
+                "afaldu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lagunekin afaltzea gustatzen zaigu."
+              },
+              "answers": [
+                "Nos gusta cenar con los amigos."
+              ],
+              "distractors": [
+                "bailar",
+                "mucho",
+                "comida",
+                "Me"
+              ],
+              "vocabulary": [
+                "lagun",
+                "afaldu",
+                "gustatu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e18",
+              "type": "choose_image",
+              "prompt": "el baile",
+              "options": [
+                {
+                  "text": "dantza",
+                  "image": "leisure_dance.webp"
+                },
+                {
+                  "text": "txirrindularitza",
+                  "image": "leisure_cycling.webp"
+                },
+                {
+                  "text": "musika",
+                  "image": "leisure_music.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "dantza"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e19",
+              "type": "speak",
+              "text": "Irakurtzea da nire zaletasunik handiena.",
+              "translation": "Leer es mi mayor afición.",
+              "vocabulary": [
+                "irakurri",
+                "izan",
+                "ni",
+                "zaletasun",
+                "handi"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e20",
+              "type": "choose_image",
+              "prompt": "la natación",
+              "options": [
+                {
+                  "text": "futbola",
+                  "image": "leisure_football.webp"
+                },
+                {
+                  "text": "filma",
+                  "image": "leisure_film.webp"
+                },
+                {
+                  "text": "igeriketa",
+                  "image": "leisure_swimming.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "igeriketa"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-1.l3.s3.e21",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Dantza egitea gustatzen zaie."
+              },
+              "answers": [
+                "Les gusta bailar."
+              ],
+              "distractors": [
+                "semana",
+                "Nos"
+              ],
+              "vocabulary": [
+                "dantza",
+                "egin",
+                "gustatu"
+              ],
+              "structures": [
+                "zaletasunak",
+                "gustatu-tzea"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u13-1.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: el primer día del curso",
+        "eu": "Istorioa: ikastaroaren lehen eguna"
+      },
+      "story": {
+        "id": "u13-1.l4.story",
+        "title": "Ikastaroaren lehen eguna",
+        "lines": [
+          {
+            "speaker": "Irakaslea",
+            "eu": "Kaixo guztioi! Nor zarete?",
+            "es": "¡Hola a todos! ¿Quiénes sois?"
+          },
+          {
+            "speaker": "Patxi",
+            "eu": "Ni Patxi naiz. Erretiratua naiz, eta urte bat daramat euskara ikasten.",
+            "es": "Yo soy Patxi. Estoy jubilado y llevo un año aprendiendo euskera."
+          },
+          {
+            "speaker": "Irakaslea",
+            "eu": "Eta zergatik ari zara euskara ikasten, Patxi?",
+            "es": "¿Y por qué estás aprendiendo euskera, Patxi?"
+          },
+          {
+            "speaker": "Patxi",
+            "eu": "Bilobekin euskaraz hitz egin nahi dudalako.",
+            "es": "Porque quiero hablar en euskera con mis nietos."
+          },
+          {
+            "speaker": "Edurne",
+            "eu": "Ni Edurne naiz, kazetaria. Bi ikasturte daramatzat hemen.",
+            "es": "Yo soy Edurne, periodista. Llevo dos cursos aquí."
+          },
+          {
+            "speaker": "Irakaslea",
+            "eu": "Zer da zailena zuretzat, Edurne?",
+            "es": "¿Qué es lo más difícil para ti, Edurne?"
+          },
+          {
+            "speaker": "Edurne",
+            "eu": "Niretzat zailena jendea ulertzea da. Oso azkar hitz egiten dute!",
+            "es": "Para mí lo más difícil es entender a la gente. ¡Hablan muy deprisa!"
+          },
+          {
+            "speaker": "Irakaslea",
+            "eu": "Egunero irratia entzutea komeni zaizu, orduan.",
+            "es": "Entonces te conviene escuchar la radio todos los días."
+          },
+          {
+            "speaker": "Edurne",
+            "eu": "Ados. Eta zer gustatzen zaizu zuri egitea jaiegunetan?",
+            "es": "De acuerdo. ¿Y a ti qué te gusta hacer los días de fiesta?"
+          },
+          {
+            "speaker": "Irakaslea",
+            "eu": "Niri? Mendian ibiltzea eta lagunekin afaltzea.",
+            "es": "¿A mí? Andar por el monte y cenar con los amigos."
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 3,
+            "prompt": "¿Por qué aprende euskera Patxi?",
+            "options": [
+              "Para hablar con sus nietos",
+              "Para encontrar trabajo",
+              "Para hablar con sus clientes"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 6,
+            "prompt": "¿Qué le resulta más difícil a Edurne?",
+            "options": [
+              "Entender a la gente",
+              "Aprender los verbos",
+              "Recordar las palabras"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 7,
+            "prompt": "¿Qué le aconseja el profesor?",
+            "options": [
+              "Escuchar la radio todos los días",
+              "Leer el periódico",
+              "Hablar más despacio"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u13-1.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u13-1.l6",
+      "type": "challenge",
+      "title": {
+        "es": "Reto de estrellas",
+        "eu": "Izarren erronka"
+      },
+      "host": "unai"
+    }
+  ]
+}

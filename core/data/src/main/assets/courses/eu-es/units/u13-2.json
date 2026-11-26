@@ -1,0 +1,3572 @@
+{
+  "schemaVersion": 1,
+  "id": "u13-2",
+  "section": "s5",
+  "bookUnit": 13,
+  "title": {
+    "es": "¿Qué te parece?",
+    "eu": "Zer iruditzen zaizu?"
+  },
+  "goals": [
+    {
+      "es": "Hacer propuestas y dar razones para ponerse de acuerdo.",
+      "eu": "Proposamenak egin eta arrazoiak eman, besteekin ados jartzeko."
+    },
+    {
+      "es": "Decir qué se te ha ocurrido o qué has pensado hacer.",
+      "eu": "Zer egitea bururatu zaizun edo pentsatu duzun esan."
+    },
+    {
+      "es": "Dar tu primera impresión sobre el carácter y las aficiones de otras personas.",
+      "eu": "Besteen izaerari eta zaletasunei buruzko lehen iritzia eman."
+    }
+  ],
+  "keyWords": [
+    {
+      "eu": "proposamen",
+      "es": "propuesta"
+    },
+    {
+      "eu": "proposatu",
+      "es": "proponer"
+    },
+    {
+      "eu": "bururatu",
+      "es": "ocurrirse"
+    },
+    {
+      "eu": "pentsatu",
+      "es": "pensar"
+    },
+    {
+      "eu": "antolatu",
+      "es": "organizar"
+    },
+    {
+      "eu": "bozkatu",
+      "es": "votar"
+    },
+    {
+      "eu": "irabazi",
+      "es": "ganar"
+    },
+    {
+      "eu": "lortu",
+      "es": "conseguir"
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Lo que podemos hacer: dezakegu, ditzakegu",
+          "eu": "Egin dezakeguna: dezakegu, ditzakegu"
+        },
+        "body": {
+          "es": "Para proponer algo se usa el potencial. Con verbos que llevan «dut» (egin, antolatu, saldu) va «dezaket, dezakezu, dezake, dezakegu…»; si lo que se hace es plural, «ditzaket, ditzakegu…». Con verbos que llevan «naiz» (joan, etorri) va «naiteke, zaitezke, gaitezke…», como el «daiteke» que ya conoces.",
+          "eu": "Zerbait proposatzeko ahalera erabiltzen da. «Dut» hartzen duten aditzekin (egin, antolatu, saldu), «dezaket, dezakezu, dezake, dezakegu…»; egiten dena plurala bada, «ditzaket, ditzakegu…». «Naiz» hartzen duten aditzekin (joan, etorri), «naiteke, zaitezke, gaitezke…», ezagutzen duzun «daiteke» bezala."
+        },
+        "examples": [
+          {
+            "eu": "Kontzertu bat antola dezakegu.",
+            "es": "Podemos organizar un concierto."
+          },
+          {
+            "eu": "Kamisetak sal ditzakegu.",
+            "es": "Podemos vender camisetas."
+          },
+          {
+            "eu": "Trenez joan gaitezke.",
+            "es": "Podemos ir en tren."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Lo que se nos ha ocurrido: …-t(z)ea bururatu zaigu",
+          "eu": "Bururatu zaiguna: …-t(z)ea bururatu zaigu"
+        },
+        "body": {
+          "es": "Con «bururatu» (ocurrirse), «pentsatu» (pensar) y «proposatu» (proponer), lo que se propone va en -t(z)ea. «Bururatu» funciona como «gustatu»: bururatu zait, zaizu, zaigu…",
+          "eu": "«Bururatu», «pentsatu» eta «proposatu» aditzekin, proposatzen dena -t(z)ea forman doa. «Bururatu» «gustatu» bezala jokatzen da: bururatu zait, zaizu, zaigu…"
+        },
+        "examples": [
+          {
+            "eu": "Kontzertu bat antolatzea bururatu zaigu.",
+            "es": "Se nos ha ocurrido organizar un concierto."
+          },
+          {
+            "eu": "Kamisetak saltzea pentsatu dute.",
+            "es": "Han pensado vender camisetas."
+          },
+          {
+            "eu": "Mendira joatea proposatu digu.",
+            "es": "Nos ha propuesto ir al monte."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Parece: dirudi, ematen du",
+          "eu": "Dirudi, ematen du"
+        },
+        "body": {
+          "es": "«Lasaia dirudi» y «lasaia ematen du» significan lo mismo, «parece tranquilo». Quien parece va con -k (Ainhoak, mutil horrek); si son varios, «dirudite» o «ematen dute». En negativo, «ez dirudi» o «ez du … ematen».",
+          "eu": "«Lasaia dirudi» eta «lasaia ematen du» gauza bera dira. Iruditzen zaigun pertsonak -k hartzen du (Anek, mutil horrek); asko badira, «dirudite» edo «ematen dute». Ezezkoan, «ez dirudi» edo «ez du … ematen»."
+        },
+        "examples": [
+          {
+            "eu": "Anek lasaia dirudi.",
+            "es": "Ane parece tranquila."
+          },
+          {
+            "eu": "Mutil horiek anaiak dirudite.",
+            "es": "Esos chicos parecen hermanos."
+          },
+          {
+            "eu": "Mikelek ez du oso serioa ematen.",
+            "es": "Mikel no parece muy serio."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Aficionados: -zale",
+          "eu": "Zaleak: -zale"
+        },
+        "body": {
+          "es": "«-zale» se añade a un nombre para decir que a alguien le gusta mucho, como «-ero» o «aficionado a»: mendizale, futbolzale, irakurzale.",
+          "eu": "«-zale» atzizkia izen bati eransten zaio, norbaiti zerbait asko gustatzen zaiola adierazteko: mendizale, futbolzale, irakurzale."
+        },
+        "examples": [
+          {
+            "eu": "Nire aita mendizalea da.",
+            "es": "Mi padre es montañero."
+          },
+          {
+            "eu": "Irakurzale handia dirudi.",
+            "es": "Parece muy aficionado a la lectura."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u13-2.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Proponemos",
+        "eu": "Proposamenak"
+      },
+      "lessons": [
+        {
+          "id": "u13-2.l1.s1",
+          "exercises": [
+            {
+              "id": "u13-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "proposamen",
+              "translation": "propuesta",
+              "vocabulary": [
+                "proposamen"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Proposamen bat daukat."
+              },
+              "answers": [
+                "Tengo una propuesta."
+              ],
+              "distractors": [
+                "conseguir",
+                "concierto"
+              ],
+              "vocabulary": [
+                "proposamen",
+                "bat",
+                "eduki"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e03",
+              "type": "word_intro",
+              "word": "antola",
+              "translation": "organizar",
+              "vocabulary": [
+                "antolatu"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e04",
+              "type": "word_intro",
+              "word": "dezakegu",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kontzertu bat antola dezakegu."
+              },
+              "answers": [
+                "Podemos organizar un concierto."
+              ],
+              "distractors": [
+                "todas",
+                "vender",
+                "grupo"
+              ],
+              "vocabulary": [
+                "kontzertu",
+                "bat",
+                "antolatu",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e06",
+              "type": "word_intro",
+              "word": "antolatu",
+              "translation": "organizar",
+              "vocabulary": [
+                "antolatu"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e07",
+              "type": "word_intro",
+              "word": "bozkatu",
+              "translation": "votar",
+              "vocabulary": [
+                "bozkatu"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e08",
+              "type": "word_intro",
+              "word": "irabazi",
+              "translation": "ganar",
+              "vocabulary": [
+                "irabazi"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e09",
+              "type": "word_intro",
+              "word": "lortu",
+              "translation": "conseguir",
+              "vocabulary": [
+                "lortu"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e10",
+              "type": "word_intro",
+              "word": "talde",
+              "translation": "grupo",
+              "vocabulary": [
+                "talde"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e11",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "proposamen",
+                  "es": "propuesta"
+                },
+                {
+                  "eu": "antolatu",
+                  "es": "organizar"
+                },
+                {
+                  "eu": "bozkatu",
+                  "es": "votar"
+                },
+                {
+                  "eu": "irabazi",
+                  "es": "ganar"
+                },
+                {
+                  "eu": "lortu",
+                  "es": "conseguir"
+                },
+                {
+                  "eu": "talde",
+                  "es": "grupo"
+                }
+              ],
+              "vocabulary": [
+                "proposamen",
+                "antolatu",
+                "bozkatu",
+                "irabazi",
+                "lortu",
+                "talde"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kamisetak sal ditzakegu."
+              },
+              "answers": [
+                "Podemos vender camisetas."
+              ],
+              "distractors": [
+                "ganado",
+                "propuesta"
+              ],
+              "vocabulary": [
+                "kamiseta",
+                "saldu",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e13",
+              "type": "fill_blank",
+              "sentence": "Kontzertu bat antola ___.",
+              "options": [
+                "dezakegu",
+                "ditzakegu",
+                "gaitezke"
+              ],
+              "correct": 0,
+              "translation": "Podemos organizar un concierto.",
+              "vocabulary": [
+                "kontzertu",
+                "bat",
+                "antolatu",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e14",
+              "type": "order_sentence",
+              "answer": "Dirua lortu nahi dugu.",
+              "translation": "Queremos conseguir dinero.",
+              "vocabulary": [
+                "diru",
+                "lortu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e15",
+              "type": "choose_meaning",
+              "text": "Kamisetak sal ditzakegu.",
+              "options": [
+                "Podemos vender camisetas.",
+                "Hemos vendido camisetas.",
+                "Queremos comprar camisetas."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kamiseta",
+                "saldu",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Proposamen guztiak bozkatuko ditugu."
+              },
+              "answers": [
+                "Votaremos todas las propuestas."
+              ],
+              "distractors": [
+                "tenemos",
+                "ganado",
+                "de"
+              ],
+              "vocabulary": [
+                "proposamen",
+                "guzti",
+                "bozkatu",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e17",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Irati",
+                  "text": "Dirua behar dugu bidaiarako."
+                }
+              ],
+              "options": [
+                "Kamisetak sal ditzakegu.",
+                "Kamisetak saldu ditugu.",
+                "Kamisetak gustatzen zaizkit."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "diru",
+                "behar izan",
+                "ukan",
+                "bidaia",
+                "kamiseta",
+                "saldu"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Nuestro grupo ha votado."
+              },
+              "answers": [
+                "Gure taldeak bozkatu du."
+              ],
+              "distractors": [
+                "dezakegu",
+                "lortu",
+                "Kamisetak"
+              ],
+              "vocabulary": [
+                "gu",
+                "talde",
+                "bozkatu",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e19",
+              "type": "choose_image",
+              "prompt": "el concierto",
+              "options": [
+                {
+                  "text": "kontzertua",
+                  "image": "leisure_concert.webp"
+                },
+                {
+                  "text": "dirua",
+                  "image": "object_money.webp"
+                },
+                {
+                  "text": "musika",
+                  "image": "leisure_music.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kontzertu"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e20",
+              "type": "listen_tap",
+              "text": "Zuen proposamenak irabazi du.",
+              "distractors": [
+                "Gure",
+                "Proposamen",
+                "taldeak"
+              ],
+              "vocabulary": [
+                "zuek",
+                "proposamen",
+                "irabazi",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s1.e21",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Asteburuan bilera bat daukagu."
+              },
+              "answers": [
+                "El fin de semana tenemos una reunión."
+              ],
+              "distractors": [
+                "Podemos",
+                "propuestas",
+                "conseguir",
+                "camisetas"
+              ],
+              "vocabulary": [
+                "asteburu",
+                "bilera",
+                "bat",
+                "eduki"
+              ],
+              "structures": [
+                "proposamenak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-2.l1.s2",
+          "exercises": [
+            {
+              "id": "u13-2.l1.s2.e01",
+              "type": "word_intro",
+              "word": "bizilagun",
+              "translation": "vecino; vecina",
+              "vocabulary": [
+                "bizilagun"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gure bizilagunak oso jatorrak dira."
+              },
+              "answers": [
+                "Nuestros vecinos son muy majos."
+              ],
+              "distractors": [
+                "piso",
+                "el",
+                "ascensor"
+              ],
+              "vocabulary": [
+                "gu",
+                "bizilagun",
+                "oso",
+                "jator",
+                "izan"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e03",
+              "type": "word_intro",
+              "word": "bilera",
+              "translation": "reunión",
+              "vocabulary": [
+                "bilera"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e04",
+              "type": "order_sentence",
+              "answer": "Bizilagunek bilera bat egin dute.",
+              "translation": "Los vecinos han hecho una reunión.",
+              "vocabulary": [
+                "bizilagun",
+                "bilera",
+                "bat",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e05",
+              "type": "word_intro",
+              "word": "arrazoi",
+              "translation": "razón; motivo",
+              "vocabulary": [
+                "arrazoi"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e06",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "bizilagun",
+                  "es": "vecino"
+                },
+                {
+                  "eu": "bilera",
+                  "es": "reunión"
+                },
+                {
+                  "eu": "igogailu",
+                  "es": "ascensor"
+                },
+                {
+                  "eu": "eskailera",
+                  "es": "escalera"
+                },
+                {
+                  "eu": "arrazoi",
+                  "es": "razón"
+                }
+              ],
+              "vocabulary": [
+                "bizilagun",
+                "bilera",
+                "igogailu",
+                "eskailera",
+                "arrazoi"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e07",
+              "type": "order_sentence",
+              "answer": "Igogailu bat behar dugu.",
+              "translation": "Necesitamos un ascensor.",
+              "vocabulary": [
+                "igogailu",
+                "bat",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e08",
+              "type": "word_intro",
+              "word": "bigarren",
+              "translation": "segundo",
+              "vocabulary": [
+                "bigarren"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e09",
+              "type": "fill_blank",
+              "sentence": "Bilera ___ solairuan da.",
+              "options": [
+                "bigarren",
+                "bi",
+                "bigarrena"
+              ],
+              "correct": 0,
+              "translation": "La reunión es en el segundo piso.",
+              "vocabulary": [
+                "bilera",
+                "bigarren",
+                "solairu",
+                "izan"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e10",
+              "type": "word_intro",
+              "word": "bosgarren",
+              "translation": "quinto",
+              "vocabulary": [
+                "bosgarren"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bosgarren solairuan bizi naiz."
+              },
+              "answers": [
+                "Vivo en el quinto piso.",
+                "Vivo en la quinta planta."
+              ],
+              "distractors": [
+                "majos",
+                "No",
+                "han"
+              ],
+              "vocabulary": [
+                "bosgarren",
+                "solairu",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e12",
+              "type": "choose_meaning",
+              "text": "Bosgarren solairuan bizi naiz.",
+              "options": [
+                "Vivo en el quinto piso.",
+                "Vivo en el piso cinco de la calle.",
+                "Vivo con cinco vecinos."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bosgarren",
+                "solairu",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e13",
+              "type": "listen_type",
+              "text": "Etxe honetan eskailera asko daude.",
+              "answers": [
+                "Etxe honetan eskailera asko daude."
+              ],
+              "vocabulary": [
+                "etxe",
+                "hau",
+                "eskailera",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e14",
+              "type": "word_intro",
+              "word": "laugarren",
+              "translation": "cuarto",
+              "vocabulary": [
+                "laugarren"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e15",
+              "type": "word_intro",
+              "word": "daudelako",
+              "translation": "estar",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e16",
+              "type": "read_true_false",
+              "passage": "Nerea laugarren solairuan bizi da. Igogailua nahi du, eskailera asko daudelako.",
+              "statement": "Nerea quiere el ascensor porque hay muchas escaleras.",
+              "answer": true,
+              "vocabulary": [
+                "laugarren",
+                "solairu",
+                "bizi izan",
+                "izan",
+                "igogailu",
+                "nahi izan",
+                "ukan",
+                "eskailera",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e17",
+              "type": "listen_tap",
+              "text": "Zein da zure arrazoia?",
+              "distractors": [
+                "jatorrak",
+                "Bizilagunek",
+                "honetan"
+              ],
+              "vocabulary": [
+                "zein",
+                "izan",
+                "zu",
+                "arrazoi"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e18",
+              "type": "choose_image",
+              "prompt": "el ascensor",
+              "options": [
+                {
+                  "text": "eskailera",
+                  "image": "home_stairs.webp"
+                },
+                {
+                  "text": "igogailua",
+                  "image": "home_elevator.webp"
+                },
+                {
+                  "text": "atea",
+                  "image": "home_door.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "igogailu"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e19",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Igogailua garestia delako, ez dut nahi."
+              },
+              "answers": [
+                "No lo quiero porque el ascensor es caro."
+              ],
+              "distractors": [
+                "hay",
+                "piso",
+                "tu",
+                "Nuestros"
+              ],
+              "vocabulary": [
+                "igogailu",
+                "garesti",
+                "izan",
+                "ez",
+                "ukan",
+                "nahi izan"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s2.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La abuela necesita el ascensor porque es mayor."
+              },
+              "answers": [
+                "Amona zaharra delako, igogailua behar du."
+              ],
+              "distractors": [
+                "jatorrak",
+                "Igogailu",
+                "ez",
+                "daude"
+              ],
+              "vocabulary": [
+                "amona",
+                "zahar",
+                "izan",
+                "igogailu",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "bizilagunak",
+                "arrazoiak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-2.l1.s3",
+          "exercises": [
+            {
+              "id": "u13-2.l1.s3.e01",
+              "type": "word_intro",
+              "word": "antolatzea",
+              "translation": "organizar",
+              "vocabulary": [
+                "antolatu"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e02",
+              "type": "word_intro",
+              "word": "bururatu",
+              "translation": "ocurrirse",
+              "vocabulary": [
+                "bururatu"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kontzertu bat antolatzea bururatu zaigu."
+              },
+              "answers": [
+                "Se nos ha ocurrido organizar un concierto."
+              ],
+              "distractors": [
+                "habéis",
+                "en",
+                "tren",
+                "vender"
+              ],
+              "vocabulary": [
+                "kontzertu",
+                "bat",
+                "antolatu",
+                "bururatu",
+                "gustatu"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e04",
+              "type": "order_sentence",
+              "answer": "Zer bururatu zaizu?",
+              "translation": "¿Qué se te ha ocurrido?",
+              "vocabulary": [
+                "zer",
+                "bururatu",
+                "gustatu"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "pentsatu",
+              "translation": "pensar",
+              "vocabulary": [
+                "pentsatu"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e06",
+              "type": "word_intro",
+              "word": "proposatu",
+              "translation": "proponer",
+              "vocabulary": [
+                "proposatu"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e07",
+              "type": "word_intro",
+              "word": "hirugarren",
+              "translation": "tercero",
+              "vocabulary": [
+                "hirugarren"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "bururatu",
+                  "es": "ocurrirse"
+                },
+                {
+                  "eu": "pentsatu",
+                  "es": "pensar"
+                },
+                {
+                  "eu": "proposatu",
+                  "es": "proponer"
+                },
+                {
+                  "eu": "lehenengo",
+                  "es": "primero"
+                },
+                {
+                  "eu": "hirugarren",
+                  "es": "tercero"
+                }
+              ],
+              "vocabulary": [
+                "bururatu",
+                "pentsatu",
+                "proposatu",
+                "lehenengo",
+                "hirugarren"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e09",
+              "type": "word_intro",
+              "word": "saltzea",
+              "translation": "vender",
+              "vocabulary": [
+                "saldu"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kamisetak saltzea pentsatu dute."
+              },
+              "answers": [
+                "Han pensado vender camisetas."
+              ],
+              "distractors": [
+                "concierto",
+                "Qué",
+                "tren"
+              ],
+              "vocabulary": [
+                "kamiseta",
+                "saldu",
+                "pentsatu",
+                "ukan"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e11",
+              "type": "fill_blank",
+              "sentence": "Kontzertu bat ___ bururatu zaigu.",
+              "options": [
+                "antolatzea",
+                "antolatu",
+                "antolatzen"
+              ],
+              "correct": 0,
+              "translation": "Se nos ha ocurrido organizar un concierto.",
+              "vocabulary": [
+                "kontzertu",
+                "bat",
+                "antolatu",
+                "bururatu",
+                "gustatu"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e12",
+              "type": "word_intro",
+              "word": "joatea",
+              "translation": "ir",
+              "vocabulary": [
+                "joan"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mendira joatea proposatu digu."
+              },
+              "answers": [
+                "Nos ha propuesto ir al monte."
+              ],
+              "distractors": [
+                "Podemos",
+                "vender",
+                "gusta",
+                "más"
+              ],
+              "vocabulary": [
+                "mendi",
+                "joan",
+                "proposatu",
+                "ukan"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e14",
+              "type": "choose_meaning",
+              "text": "Mendira joatea proposatu digu.",
+              "options": [
+                "Nos ha propuesto ir al monte.",
+                "Hemos ido al monte.",
+                "Nos ha dicho que va al monte."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "mendi",
+                "joan",
+                "proposatu",
+                "ukan"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e15",
+              "type": "speak",
+              "text": "Lehenengo proposamena gustatzen zait.",
+              "translation": "Me gusta la primera propuesta.",
+              "vocabulary": [
+                "lehenengo",
+                "proposamen",
+                "gustatu"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e16",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Jon",
+                  "text": "Zer bururatu zaizu?"
+                }
+              ],
+              "options": [
+                "Mendira joatea.",
+                "Mendira joan naiz.",
+                "Mendia gustatzen zait."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "bururatu",
+                "gustatu",
+                "mendi",
+                "joan"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hirugarren proposamena merkeena da."
+              },
+              "answers": [
+                "La tercera propuesta es la más barata."
+              ],
+              "distractors": [
+                "habéis",
+                "primera",
+                "un",
+                "te"
+              ],
+              "vocabulary": [
+                "hirugarren",
+                "proposamen",
+                "merke",
+                "izan"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué habéis pensado?"
+              },
+              "answers": [
+                "Zer pentsatu duzue?"
+              ],
+              "distractors": [
+                "gustatzen",
+                "dute"
+              ],
+              "vocabulary": [
+                "zer",
+                "pentsatu",
+                "ukan"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e19",
+              "type": "word_intro",
+              "word": "gaitezke",
+              "translation": "ser",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            },
+            {
+              "id": "u13-2.l1.s3.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Trenez joan gaitezke."
+              },
+              "answers": [
+                "Podemos ir en tren."
+              ],
+              "distractors": [
+                "habéis",
+                "Han",
+                "Se"
+              ],
+              "vocabulary": [
+                "tren",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "bururatu-tzea",
+                "pentsatu-tzea"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u13-2.l2",
+      "type": "lesson",
+      "title": {
+        "es": "Primeras impresiones",
+        "eu": "Lehen iritziak"
+      },
+      "lessons": [
+        {
+          "id": "u13-2.l2.s1",
+          "exercises": [
+            {
+              "id": "u13-2.l2.s1.e01",
+              "type": "word_intro",
+              "word": "izaera",
+              "translation": "carácter; forma de ser",
+              "vocabulary": [
+                "izaera"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nolako izaera du?"
+              },
+              "answers": [
+                "¿Qué carácter tiene?"
+              ],
+              "distractors": [
+                "tímido",
+                "serio"
+              ],
+              "vocabulary": [
+                "nola",
+                "izaera",
+                "ukan"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e03",
+              "type": "word_intro",
+              "word": "urduri",
+              "translation": "nervioso",
+              "vocabulary": [
+                "urduri"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Oso urduria da."
+              },
+              "answers": [
+                "Es muy nervioso.",
+                "Es muy nerviosa."
+              ],
+              "distractors": [
+                "Nuestro",
+                "Mikel"
+              ],
+              "vocabulary": [
+                "oso",
+                "urduri",
+                "izan"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e05",
+              "type": "word_intro",
+              "word": "lotsati",
+              "translation": "tímido; vergonzoso",
+              "vocabulary": [
+                "lotsati"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e06",
+              "type": "word_intro",
+              "word": "ausart",
+              "translation": "valiente; atrevido",
+              "vocabulary": [
+                "ausart"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e07",
+              "type": "word_intro",
+              "word": "beldurti",
+              "translation": "miedoso",
+              "vocabulary": [
+                "beldurti"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e08",
+              "type": "word_intro",
+              "word": "arduratsu",
+              "translation": "responsable",
+              "vocabulary": [
+                "arduratsu"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "izaera",
+                  "es": "carácter"
+                },
+                {
+                  "eu": "urduri",
+                  "es": "nervioso"
+                },
+                {
+                  "eu": "lotsati",
+                  "es": "tímido"
+                },
+                {
+                  "eu": "ausart",
+                  "es": "valiente"
+                },
+                {
+                  "eu": "beldurti",
+                  "es": "miedoso"
+                },
+                {
+                  "eu": "arduratsu",
+                  "es": "responsable"
+                }
+              ],
+              "vocabulary": [
+                "izaera",
+                "urduri",
+                "lotsati",
+                "ausart",
+                "beldurti",
+                "arduratsu"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Soy tímido, pero muy alegre."
+              },
+              "answers": [
+                "Lotsatia naiz, baina oso alaia."
+              ],
+              "distractors": [
+                "Ume",
+                "jatorra",
+                "arduratsua"
+              ],
+              "vocabulary": [
+                "lotsati",
+                "izan",
+                "baina",
+                "oso",
+                "alai"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e11",
+              "type": "fill_blank",
+              "sentence": "Ume hau ___ da.",
+              "options": [
+                "beldurtia",
+                "ausarta",
+                "serioa"
+              ],
+              "correct": 0,
+              "translation": "Este niño es miedoso.",
+              "vocabulary": [
+                "ume",
+                "hau",
+                "beldurti",
+                "izan"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e12",
+              "type": "listen_tap",
+              "text": "Nire anaia oso ausarta da.",
+              "distractors": [
+                "naiz",
+                "dago",
+                "hau"
+              ],
+              "vocabulary": [
+                "ni",
+                "anaia",
+                "oso",
+                "ausart",
+                "izan"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e13",
+              "type": "choose_meaning",
+              "text": "Lotsatia naiz, baina oso alaia.",
+              "options": [
+                "Soy tímido, pero muy alegre.",
+                "Soy muy alegre y valiente.",
+                "No soy tímido ni alegre."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "lotsati",
+                "izan",
+                "baina",
+                "oso",
+                "alai"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ume hau beldurtia da."
+              },
+              "answers": [
+                "Este niño es miedoso.",
+                "Esta niña es miedosa."
+              ],
+              "distractors": [
+                "pero",
+                "Mikel",
+                "habitación"
+              ],
+              "vocabulary": [
+                "ume",
+                "hau",
+                "beldurti",
+                "izan"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e15",
+              "type": "read_true_false",
+              "passage": "Itziar oso ausarta da, baina bere ahizpa Maialen beldurtia da.",
+              "statement": "Maialen es valiente.",
+              "answer": false,
+              "vocabulary": [
+                "oso",
+                "ausart",
+                "izan",
+                "baina",
+                "hura",
+                "ahizpa",
+                "beldurti"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e16",
+              "type": "word_intro",
+              "word": "serio",
+              "translation": "serio",
+              "vocabulary": [
+                "serio"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gure irakaslea serioa da, baina jatorra."
+              },
+              "answers": [
+                "Nuestro profesor es serio, pero majo.",
+                "Nuestra profesora es seria, pero maja."
+              ],
+              "distractors": [
+                "carácter",
+                "alegre",
+                "tiene",
+                "ordenada"
+              ],
+              "vocabulary": [
+                "gu",
+                "irakasle",
+                "serio",
+                "izan",
+                "baina",
+                "jator"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e18",
+              "type": "choose_image",
+              "prompt": "alegre",
+              "options": [
+                {
+                  "text": "alaia",
+                  "image": "describe_happy.webp"
+                },
+                {
+                  "text": "nekatuta",
+                  "image": "describe_tired.webp"
+                },
+                {
+                  "text": "altua",
+                  "image": "describe_tall.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "alai"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e19",
+              "type": "listen_tap",
+              "text": "Mikel oso arduratsua da.",
+              "distractors": [
+                "anaia",
+                "serioa",
+                "ausarta"
+              ],
+              "vocabulary": [
+                "oso",
+                "arduratsu",
+                "izan"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e20",
+              "type": "word_intro",
+              "word": "ordenatu",
+              "translation": "ordenado",
+              "vocabulary": [
+                "ordenatu"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s1.e21",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zure logela oso ordenatua dago."
+              },
+              "answers": [
+                "Tu habitación está muy ordenada."
+              ],
+              "distractors": [
+                "Este",
+                "Nuestro",
+                "responsable"
+              ],
+              "vocabulary": [
+                "zu",
+                "logela",
+                "oso",
+                "ordenatu",
+                "egon"
+              ],
+              "structures": [
+                "izaera"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-2.l2.s2",
+          "exercises": [
+            {
+              "id": "u13-2.l2.s2.e01",
+              "type": "word_intro",
+              "word": "dirudi",
+              "translation": "parecer (dirudi)",
+              "vocabulary": [
+                "irudi"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Anek lasaia dirudi."
+              },
+              "answers": [
+                "Ane parece tranquila."
+              ],
+              "distractors": [
+                "majos",
+                "verdad"
+              ],
+              "vocabulary": [
+                "lasai",
+                "irudi"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e03",
+              "type": "word_intro",
+              "word": "horiek",
+              "translation": "esos / esas",
+              "vocabulary": [
+                "hori"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e04",
+              "type": "word_intro",
+              "word": "dirudite",
+              "translation": "parecer (dirudi)",
+              "vocabulary": [
+                "irudi"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mutil horiek anaiak dirudite."
+              },
+              "answers": [
+                "Esos chicos parecen hermanos."
+              ],
+              "distractors": [
+                "tranquila",
+                "y",
+                "responsable"
+              ],
+              "vocabulary": [
+                "mutil",
+                "hori",
+                "anaia",
+                "irudi"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e06",
+              "type": "word_intro",
+              "word": "pozik",
+              "translation": "contento",
+              "vocabulary": [
+                "pozik"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e07",
+              "type": "word_intro",
+              "word": "egia",
+              "translation": "verdad",
+              "vocabulary": [
+                "egia"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "dirudi",
+                  "es": "parece"
+                },
+                {
+                  "eu": "dirudite",
+                  "es": "parecen"
+                },
+                {
+                  "eu": "serio",
+                  "es": "serio"
+                },
+                {
+                  "eu": "pozik",
+                  "es": "contento"
+                },
+                {
+                  "eu": "egia",
+                  "es": "verdad"
+                }
+              ],
+              "vocabulary": [
+                "irudi",
+                "serio",
+                "pozik",
+                "egia"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e09",
+              "type": "word_intro",
+              "word": "dirudizu",
+              "translation": "parecer (dirudi)",
+              "vocabulary": [
+                "irudi"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zuk ez dirudizu oso beldurtia."
+              },
+              "answers": [
+                "Tú no pareces muy miedoso.",
+                "Tú no pareces muy miedosa."
+              ],
+              "distractors": [
+                "tranquila",
+                "Parece",
+                "responsable"
+              ],
+              "vocabulary": [
+                "zu",
+                "ez",
+                "irudi",
+                "oso",
+                "beldurti"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e11",
+              "type": "fill_blank",
+              "sentence": "Mutil horiek anaiak ___.",
+              "options": [
+                "dirudite",
+                "dirudi",
+                "dira"
+              ],
+              "correct": 0,
+              "translation": "Esos chicos parecen hermanos.",
+              "vocabulary": [
+                "mutil",
+                "hori",
+                "anaia",
+                "irudi"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e12",
+              "type": "word_intro",
+              "word": "ematen",
+              "translation": "dar",
+              "vocabulary": [
+                "eman"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Leirek eta bere lagunek oso jatorrak ematen dute."
+              },
+              "answers": [
+                "Leire y sus amigos parecen muy majos."
+              ],
+              "distractors": [
+                "tranquila",
+                "Esos",
+                "pareces",
+                "Parece"
+              ],
+              "vocabulary": [
+                "eta",
+                "hura",
+                "lagun",
+                "oso",
+                "jator",
+                "eman",
+                "ukan"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e14",
+              "type": "fill_blank",
+              "sentence": "Mikelek ez du oso serioa ___.",
+              "options": [
+                "ematen",
+                "dirudi",
+                "eman"
+              ],
+              "correct": 0,
+              "translation": "Mikel no parece muy serio.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "oso",
+                "serio",
+                "eman"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Mikel no parece muy serio."
+              },
+              "answers": [
+                "Mikelek ez du oso serioa ematen."
+              ],
+              "distractors": [
+                "Egia",
+                "lasaia",
+                "jatorrak",
+                "pozik"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "oso",
+                "serio",
+                "eman"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e16",
+              "type": "choose_meaning",
+              "text": "Urduria dirudi, baina lasaia da.",
+              "options": [
+                "Parece nervioso, pero es tranquilo.",
+                "Es nervioso y no está tranquilo.",
+                "Está tranquilo porque no es nervioso."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "urduri",
+                "irudi",
+                "baina",
+                "lasai",
+                "izan"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e17",
+              "type": "listen_tap",
+              "text": "Urduria dirudi, baina lasaia da.",
+              "distractors": [
+                "serioa",
+                "du",
+                "beldurtia"
+              ],
+              "vocabulary": [
+                "urduri",
+                "irudi",
+                "baina",
+                "lasai",
+                "izan"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e18",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Olatz",
+                  "text": "Zer iruditzen zaizu Ander?"
+                }
+              ],
+              "options": [
+                "Oso jatorra dirudi.",
+                "Oso jatorra dirudite.",
+                "Ander naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "iruditu",
+                "gustatu",
+                "oso",
+                "jator",
+                "irudi"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e19",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Ane está muy contenta."
+              },
+              "answers": [
+                "Ane oso pozik dago."
+              ],
+              "distractors": [
+                "lasaia",
+                "ez",
+                "Egia"
+              ],
+              "vocabulary": [
+                "oso",
+                "pozik",
+                "egon"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s2.e20",
+              "type": "order_sentence",
+              "answer": "Egia da, oso arduratsua da.",
+              "translation": "Es verdad, es muy responsable.",
+              "vocabulary": [
+                "egia",
+                "izan",
+                "oso",
+                "arduratsu"
+              ],
+              "structures": [
+                "irudi",
+                "eman-iruditu"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-2.l2.s3",
+          "exercises": [
+            {
+              "id": "u13-2.l2.s3.e01",
+              "type": "word_intro",
+              "word": "mendizale",
+              "translation": "montañero; aficionado al monte",
+              "vocabulary": [
+                "mendizale"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nire aita mendizalea da."
+              },
+              "answers": [
+                "Mi padre es montañero.",
+                "Mi padre es aficionado al monte."
+              ],
+              "distractors": [
+                "lectura",
+                "anuncio",
+                "Necesitamos"
+              ],
+              "vocabulary": [
+                "ni",
+                "aita",
+                "mendizale",
+                "izan"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e03",
+              "type": "word_intro",
+              "word": "irakurzale",
+              "translation": "aficionado a la lectura",
+              "vocabulary": [
+                "irakurzale"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Irakurzale handia dirudi."
+              },
+              "answers": [
+                "Parece muy aficionado a la lectura.",
+                "Parece una gran lectora."
+              ],
+              "distractors": [
+                "leído",
+                "cuidar",
+                "amigos",
+                "al"
+              ],
+              "vocabulary": [
+                "irakurzale",
+                "handi",
+                "irudi"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e05",
+              "type": "word_intro",
+              "word": "pisukide",
+              "translation": "compañero de piso",
+              "vocabulary": [
+                "pisukide"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e06",
+              "type": "word_intro",
+              "word": "umezain",
+              "translation": "niñero; niñera",
+              "vocabulary": [
+                "umezain"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e07",
+              "type": "word_intro",
+              "word": "ezagutu",
+              "translation": "conocer",
+              "vocabulary": [
+                "ezagutu"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "mendizale",
+                  "es": "montañero"
+                },
+                {
+                  "eu": "irakurzale",
+                  "es": "aficionado a la lectura"
+                },
+                {
+                  "eu": "pisukide",
+                  "es": "compañero de piso"
+                },
+                {
+                  "eu": "umezain",
+                  "es": "niñera"
+                },
+                {
+                  "eu": "ezagutu",
+                  "es": "conocer"
+                }
+              ],
+              "vocabulary": [
+                "mendizale",
+                "irakurzale",
+                "pisukide",
+                "umezain",
+                "ezagutu"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Futbolzaleak gara."
+              },
+              "answers": [
+                "Somos aficionados al fútbol.",
+                "Somos futboleros."
+              ],
+              "distractors": [
+                "cuidar",
+                "lectura",
+                "Mi"
+              ],
+              "vocabulary": [
+                "futbol",
+                "izan"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e10",
+              "type": "choose_meaning",
+              "text": "Nire aita mendizalea da.",
+              "options": [
+                "Mi padre es montañero.",
+                "Mi padre vive en el monte.",
+                "Mi padre va al monte en coche."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ni",
+                "aita",
+                "mendizale",
+                "izan"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Necesito un compañero de piso."
+              },
+              "answers": [
+                "Pisukide bat behar dut."
+              ],
+              "distractors": [
+                "ezagutu",
+                "aita",
+                "berriak"
+              ],
+              "vocabulary": [
+                "pisukide",
+                "bat",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e12",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Josu",
+                  "text": "Pisukide bat behar dut. Zer iruditzen zaizu Ane?"
+                },
+                {
+                  "speaker": "Edurne",
+                  "text": "Ane ordenatua eta lasaia da."
+                }
+              ],
+              "options": [
+                "Orduan, Ane pisukide ona da.",
+                "Orduan, Ane urduria da.",
+                "Ane ez dut ezagutzen."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "pisukide",
+                "bat",
+                "behar izan",
+                "ukan",
+                "zer",
+                "iruditu",
+                "gustatu",
+                "ordenatu",
+                "eta",
+                "lasai",
+                "izan",
+                "ordu",
+                "on"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e13",
+              "type": "listen_tap",
+              "text": "Iragarki hau irakurri dut.",
+              "distractors": [
+                "nahi",
+                "Futbolzaleak",
+                "ditut"
+              ],
+              "vocabulary": [
+                "iragarki",
+                "hau",
+                "irakurri",
+                "ukan"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e14",
+              "type": "read_true_false",
+              "passage": "Gorka mendizalea da eta irakurzalea ere bai. Asteburuetan mendira joaten da liburu batekin.",
+              "statement": "A Gorka le gustan el monte y la lectura.",
+              "answer": true,
+              "vocabulary": [
+                "mendizale",
+                "izan",
+                "eta",
+                "irakurzale",
+                "ere",
+                "bai",
+                "asteburu",
+                "mendi",
+                "joan",
+                "liburu",
+                "bat"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e15",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Quiero alquilar una habitación."
+              },
+              "answers": [
+                "Gela bat alokatu nahi dut."
+              ],
+              "vocabulary": [
+                "gela",
+                "bat",
+                "alokatu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e16",
+              "type": "order_sentence",
+              "answer": "Umezain bat behar dugu umeak zaintzeko.",
+              "translation": "Necesitamos una niñera para cuidar a los niños.",
+              "vocabulary": [
+                "umezain",
+                "bat",
+                "behar izan",
+                "ukan",
+                "ume",
+                "zaindu"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            },
+            {
+              "id": "u13-2.l2.s3.e17",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lagun berriak ezagutu nahi ditut."
+              },
+              "answers": [
+                "Quiero conocer amigos nuevos.",
+                "Quiero conocer a gente nueva."
+              ],
+              "vocabulary": [
+                "lagun",
+                "berri",
+                "ezagutu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "zale",
+                "pisukidea"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u13-2.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Nos ponemos de acuerdo",
+        "eu": "Ados jartzen"
+      },
+      "lessons": [
+        {
+          "id": "u13-2.l3.s1",
+          "exercises": [
+            {
+              "id": "u13-2.l3.s1.e01",
+              "type": "listen_tap",
+              "text": "Larunbatean zinemara joan gaitezke.",
+              "distractors": [
+                "dezakete",
+                "etor",
+                "Nik"
+              ],
+              "vocabulary": [
+                "larunbat",
+                "zinema",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e02",
+              "type": "word_intro",
+              "word": "ekar",
+              "translation": "traer",
+              "vocabulary": [
+                "ekarri"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e03",
+              "type": "word_intro",
+              "word": "dezakezu",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zuk janaria ekar dezakezu."
+              },
+              "answers": [
+                "Tú puedes traer la comida."
+              ],
+              "distractors": [
+                "venir",
+                "padres",
+                "Qué"
+              ],
+              "vocabulary": [
+                "zu",
+                "janari",
+                "ekarri",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e05",
+              "type": "fill_blank",
+              "sentence": "Zuk janaria ___ dezakezu.",
+              "options": [
+                "ekar",
+                "ekarri",
+                "ekartzen"
+              ],
+              "correct": 0,
+              "translation": "Tú puedes traer la comida.",
+              "vocabulary": [
+                "zu",
+                "janari",
+                "ekarri",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e06",
+              "type": "word_intro",
+              "word": "presta",
+              "translation": "preparar",
+              "vocabulary": [
+                "prestatu"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e07",
+              "type": "word_intro",
+              "word": "dezaket",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nik afaria presta dezaket."
+              },
+              "answers": [
+                "Yo puedo preparar la cena."
+              ],
+              "distractors": [
+                "El",
+                "Tú",
+                "ir"
+              ],
+              "vocabulary": [
+                "ni",
+                "afari",
+                "prestatu",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ibai",
+                  "text": "Zer egin dezakegu larunbatean?"
+                }
+              ],
+              "options": [
+                "Mendira joan gaitezke.",
+                "Mendira joan gara.",
+                "Mendira joan nahi dut eta."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "egin",
+                "ukan",
+                "larunbat",
+                "mendi",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e10",
+              "type": "word_intro",
+              "word": "dezakete",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gurasoek autoa eraman dezakete."
+              },
+              "answers": [
+                "Los padres pueden llevar el coche."
+              ],
+              "distractors": [
+                "hacer",
+                "bicicleta",
+                "ir",
+                "la"
+              ],
+              "vocabulary": [
+                "guraso",
+                "auto",
+                "eraman",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e12",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Uxue",
+                  "text": "Nik afaria presta dezaket."
+                },
+                {
+                  "speaker": "Kepa",
+                  "text": "Eta nik?"
+                }
+              ],
+              "options": [
+                "Zuk ardoa ekar dezakezu.",
+                "Zuk ardoa ekarri duzu.",
+                "Zuk ardoa ekar ditzakezu."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ni",
+                "afari",
+                "prestatu",
+                "ukan",
+                "eta",
+                "zu",
+                "ardo",
+                "ekarri"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué podemos hacer?"
+              },
+              "answers": [
+                "Zer egin dezakegu?"
+              ],
+              "vocabulary": [
+                "zer",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e14",
+              "type": "read_true_false",
+              "passage": "Larunbatean Olatzek afaria prestatuko du, eta Josuk ardoa ekarriko du.",
+              "statement": "Josu va a preparar la cena.",
+              "answer": false,
+              "vocabulary": [
+                "larunbat",
+                "afari",
+                "prestatu",
+                "ukan",
+                "eta",
+                "ardo",
+                "ekarri"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e15",
+              "type": "word_intro",
+              "word": "etor",
+              "translation": "venir",
+              "vocabulary": [
+                "etorri"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e16",
+              "type": "word_intro",
+              "word": "zaitezke",
+              "translation": "ser",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s1.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bizikletaz etor zaitezke."
+              },
+              "answers": [
+                "Puedes venir en bicicleta."
+              ],
+              "distractors": [
+                "llevar",
+                "preparar",
+                "pueden"
+              ],
+              "vocabulary": [
+                "bizikleta",
+                "etorri",
+                "izan"
+              ],
+              "structures": [
+                "proposamenak",
+                "ahalera"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-2.l3.s2",
+          "exercises": [
+            {
+              "id": "u13-2.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zergatik ez zara etorriko?"
+              },
+              "answers": [
+                "¿Por qué no vas a venir?"
+              ],
+              "distractors": [
+                "es",
+                "de",
+                "Necesitamos",
+                "propuesta"
+              ],
+              "vocabulary": [
+                "zergatik",
+                "ez",
+                "izan",
+                "etorri"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s2.e02",
+              "type": "word_intro",
+              "word": "nagoelako",
+              "translation": "estar",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lanpetuta nagoelako."
+              },
+              "answers": [
+                "Porque estoy ocupado.",
+                "Porque estoy ocupada."
+              ],
+              "distractors": [
+                "de",
+                "niños"
+              ],
+              "vocabulary": [
+                "lanpetuta",
+                "egon"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s2.e04",
+              "type": "choose_meaning",
+              "text": "Ados nago, baina garestia da.",
+              "options": [
+                "Estoy de acuerdo, pero es caro.",
+                "No estoy de acuerdo porque es caro.",
+                "Es barato y estoy de acuerdo."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ados",
+                "egon",
+                "baina",
+                "garesti",
+                "izan"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s2.e05",
+              "type": "word_intro",
+              "word": "ditugulako",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Igogailua behar dugu, umeak ditugulako."
+              },
+              "answers": [
+                "Necesitamos ascensor porque tenemos niños."
+              ],
+              "distractors": [
+                "La",
+                "Cuál",
+                "caro"
+              ],
+              "vocabulary": [
+                "igogailu",
+                "behar izan",
+                "ukan",
+                "ume"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s2.e07",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Zergatik ez duzu igogailua nahi?"
+                }
+              ],
+              "options": [
+                "Oso garestia delako.",
+                "Igogailu bat dago.",
+                "Igogailua bosgarren solairuan dago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zergatik",
+                "ez",
+                "ukan",
+                "igogailu",
+                "nahi izan",
+                "oso",
+                "garesti",
+                "izan"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s2.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Estoy de acuerdo, pero es caro."
+              },
+              "answers": [
+                "Ados nago, baina garestia da."
+              ],
+              "vocabulary": [
+                "ados",
+                "egon",
+                "baina",
+                "garesti",
+                "izan"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s2.e09",
+              "type": "word_intro",
+              "word": "guzti",
+              "translation": "todo; todos",
+              "vocabulary": [
+                "guzti"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s2.e10",
+              "type": "read_true_false",
+              "passage": "Bizilagun guztiak ados daude. Igogailua garestia da, baina behar dute.",
+              "statement": "Todos los vecinos están de acuerdo.",
+              "answer": true,
+              "vocabulary": [
+                "bizilagun",
+                "guzti",
+                "ados",
+                "egon",
+                "igogailu",
+                "garesti",
+                "izan",
+                "baina",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s2.e11",
+              "type": "order_sentence",
+              "answer": "Zein proposamen da onena?",
+              "translation": "¿Cuál es la mejor propuesta?",
+              "vocabulary": [
+                "zein",
+                "proposamen",
+                "izan",
+                "on"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s2.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bigarrena, merkeena delako."
+              },
+              "answers": [
+                "La segunda, porque es la más barata."
+              ],
+              "vocabulary": [
+                "bigarren",
+                "merke",
+                "izan"
+              ],
+              "structures": [
+                "arrazoiak",
+                "kausazkoak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u13-2.l3.s3",
+          "exercises": [
+            {
+              "id": "u13-2.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué te parece Jon?"
+              },
+              "answers": [
+                "Zer iruditzen zaizu Jon?"
+              ],
+              "distractors": [
+                "Ez",
+                "eta",
+                "Lasaia"
+              ],
+              "vocabulary": [
+                "zer",
+                "iruditu",
+                "gustatu"
+              ],
+              "structures": [
+                "iritziak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Jatorra iruditzen zait.",
+              "distractors": [
+                "serioa",
+                "Lagun"
+              ],
+              "vocabulary": [
+                "jator",
+                "iruditu",
+                "gustatu"
+              ],
+              "structures": [
+                "iritziak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Lagun berriak ezagutu ditut.",
+              "options": [
+                "He conocido a amigos nuevos.",
+                "Quiero conocer amigos nuevos.",
+                "Mis amigos son nuevos."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "lagun",
+                "berri",
+                "ezagutu",
+                "ukan"
+              ],
+              "structures": [
+                "iritziak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "No me parece muy serio."
+              },
+              "answers": [
+                "Ez zait oso serioa iruditzen."
+              ],
+              "vocabulary": [
+                "ez",
+                "gustatu",
+                "oso",
+                "serio",
+                "iruditu"
+              ],
+              "structures": [
+                "iritziak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Garazi",
+                  "text": "Zer iruditzen zaizu pisukide berria?"
+                }
+              ],
+              "options": [
+                "Oso ordenatua dirudi.",
+                "Pisu berria da.",
+                "Bosgarren solairuan."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "iruditu",
+                "gustatu",
+                "pisukide",
+                "berri",
+                "oso",
+                "ordenatu",
+                "irudi"
+              ],
+              "structures": [
+                "iritziak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Lehen eguna da, eta urduri nago.",
+              "translation": "Es el primer día y estoy nervioso.",
+              "vocabulary": [
+                "egun",
+                "izan",
+                "eta",
+                "urduri",
+                "egon"
+              ],
+              "structures": [
+                "iritziak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s3.e07",
+              "type": "read_true_false",
+              "passage": "Peiok pisukide berria du, Julen. Julenek lotsatia dirudi, baina oso alaia da.",
+              "statement": "Julen parece tímido, pero es alegre.",
+              "answer": true,
+              "vocabulary": [
+                "pisukide",
+                "berri",
+                "ukan",
+                "lotsati",
+                "irudi",
+                "baina",
+                "oso",
+                "alai",
+                "izan"
+              ],
+              "structures": [
+                "iritziak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s3.e08",
+              "type": "word_intro",
+              "word": "ezagutzen",
+              "translation": "conocer",
+              "vocabulary": [
+                "ezagutu"
+              ],
+              "structures": [
+                "iritziak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s3.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lasaia dirudi, baina ez dut ezagutzen."
+              },
+              "answers": [
+                "Parece tranquilo, pero no lo conozco.",
+                "Parece tranquila, pero no la conozco."
+              ],
+              "distractors": [
+                "te",
+                "Qué",
+                "Es",
+                "estoy"
+              ],
+              "vocabulary": [
+                "lasai",
+                "irudi",
+                "baina",
+                "ez",
+                "ukan",
+                "ezagutu"
+              ],
+              "structures": [
+                "iritziak"
+              ]
+            },
+            {
+              "id": "u13-2.l3.s3.e10",
+              "type": "listen_type",
+              "text": "Lagun berriak ezagutu ditut.",
+              "answers": [
+                "Lagun berriak ezagutu ditut."
+              ],
+              "vocabulary": [
+                "lagun",
+                "berri",
+                "ezagutu",
+                "ukan"
+              ],
+              "structures": [
+                "iritziak"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u13-2.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: un compañero de piso",
+        "eu": "Istorioa: pisukide bat"
+      },
+      "story": {
+        "id": "u13-2.l4.story",
+        "title": "Pisukide berria",
+        "lines": [
+          {
+            "speaker": "Alaitz",
+            "eu": "Markel, hiru iragarki irakurri ditut. Pisukide bat behar dugu.",
+            "es": "Markel, he leído tres anuncios. Necesitamos un compañero de piso."
+          },
+          {
+            "speaker": "Markel",
+            "eu": "Ondo. Nolakoak dira?",
+            "es": "Bien. ¿Cómo son?"
+          },
+          {
+            "speaker": "Alaitz",
+            "eu": "Lehenengoa Aitor da. Futbolzalea da, eta oso alaia dirudi.",
+            "es": "El primero es Aitor. Es aficionado al fútbol y parece muy alegre."
+          },
+          {
+            "speaker": "Markel",
+            "eu": "Futbolzalea? Telebista beti piztuta egongo da!",
+            "es": "¿Futbolero? ¡La tele estará siempre encendida!"
+          },
+          {
+            "speaker": "Alaitz",
+            "eu": "Bigarrena Nahia da. Irakurzalea eta oso ordenatua da.",
+            "es": "La segunda es Nahia. Es aficionada a la lectura y muy ordenada."
+          },
+          {
+            "speaker": "Markel",
+            "eu": "Ordenatua? Hori ona da! Eta hirugarrena?",
+            "es": "¿Ordenada? ¡Eso está bien! ¿Y el tercero?"
+          },
+          {
+            "speaker": "Alaitz",
+            "eu": "Hirugarrena Gorka da. Mendizalea da, baina serioa dirudi.",
+            "es": "El tercero es Gorka. Es montañero, pero parece serio."
+          },
+          {
+            "speaker": "Markel",
+            "eu": "Nik Nahia proposatzen dut, lasaia delako.",
+            "es": "Yo propongo a Nahia, porque es tranquila."
+          },
+          {
+            "speaker": "Alaitz",
+            "eu": "Ados. Bihar deituko diogu.",
+            "es": "De acuerdo. Mañana la llamaremos."
+          },
+          {
+            "speaker": "Markel",
+            "eu": "Primeran!",
+            "es": "¡Estupendo!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 3,
+            "prompt": "¿Por qué no le convence Aitor a Markel?",
+            "options": [
+              "Porque es futbolero y verá mucho la tele",
+              "Porque es muy serio",
+              "Porque es muy desordenado"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 7,
+            "prompt": "¿Cómo parece Gorka?",
+            "options": [
+              "Serio",
+              "Muy alegre",
+              "Tímido"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 8,
+            "prompt": "¿A quién propone Markel y por qué?",
+            "options": [
+              "A Nahia, porque es tranquila",
+              "A Gorka, porque le gusta el monte",
+              "A Aitor, porque es alegre"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u13-2.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u13-2.l6",
+      "type": "challenge",
+      "title": {
+        "es": "Reto de estrellas",
+        "eu": "Izarren erronka"
+      },
+      "host": "maite"
+    },
+    {
+      "id": "u13-2.l7",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la sección",
+        "eu": "Atalaren errepasoa"
+      },
+      "scope": "section"
+    }
+  ]
+}
