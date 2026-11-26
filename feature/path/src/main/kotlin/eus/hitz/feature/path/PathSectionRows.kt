@@ -83,21 +83,22 @@ internal fun RecallCard(recall: PathRecall, onClick: () -> Unit, modifier: Modif
                     )
                 }
             }
-            if (recall.isAvailable) {
-                FilledTonalButton(
-                    onClick = onClick,
-                    shapes = ButtonDefaults.shapes(),
-                    modifier = Modifier.fillMaxWidth(),
-                ) {
-                    val label = if (recall.isDone) {
-                        R.string.feature_path_recall_again
-                    } else {
-                        R.string.feature_path_recall_start
-                    }
-                    Text(stringResource(label))
-                }
-            }
+            if (recall.isAvailable) RecallButton(recall.isDone, onClick)
         }
+    }
+}
+
+/** On the secondary container, a tonal button would vanish into the card: it takes the secondary colour. */
+@Composable
+private fun RecallButton(isDone: Boolean, onClick: () -> Unit) {
+    val scheme = MaterialTheme.colorScheme
+    Button(
+        onClick = onClick,
+        shapes = ButtonDefaults.shapes(),
+        colors = ButtonDefaults.buttonColors(containerColor = scheme.secondary, contentColor = scheme.onSecondary),
+        modifier = Modifier.fillMaxWidth(),
+    ) {
+        Text(stringResource(if (isDone) R.string.feature_path_recall_again else R.string.feature_path_recall_start))
     }
 }
 

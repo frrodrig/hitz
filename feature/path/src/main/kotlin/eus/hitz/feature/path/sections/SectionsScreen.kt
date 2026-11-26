@@ -155,7 +155,7 @@ private fun LevelHeader(level: String) {
         Text(
             text = stringResource(
                 R.string.feature_path_sections_points,
-                ScoreRules.bottom(level),
+                ScoreRules.bottom(level).let { if (it == 0) 0 else it + 1 },
                 ScoreRules.top(level)
             ),
             style = MaterialTheme.typography.labelLarge,
