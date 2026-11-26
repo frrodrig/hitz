@@ -76,7 +76,13 @@
     <string name="feature_profile_listening">Entzuteko ariketak</string>
     <string name="feature_profile_listening_description">Esaldiak entzun eta idazten edo osatzen dituzun ikasgaiak.</string>
     <string name="feature_profile_update_checks">Eguneratzeak bilatu</string>
-    <string name="feature_profile_update_checks_description">Egunean behin, bertsio berririk dagoen galdetzen dio GitHubi. Interneta erabiltzen duen gauza bakarra da.</string>
+    <string name="feature_profile_update_checks_description">Aktibatzean eta gero egunean behin, bertsio berririk dagoen galdetzen dio GitHubi. Interneta erabiltzen duen gauza bakarra da.</string>
     <string name="feature_profile_sound_effects">Soinu-efektuak</string>
     <string name="feature_profile_sound_effects_description">Soinua eta bibrazioa asmatzean, huts egitean eta amaitzean.</string>
+    <string name="feature_profile_update_check_now">Egiaztatu</string>
+    <string name="feature_profile_update_checking">%1$s · Bertsio berria bilatzen…</string>
+    <string name="feature_profile_update_up_to_date">%1$s · Azken bertsioa da</string>
+    <string name="feature_profile_update_failed">%1$s · Ezin izan da egiaztatu. Begiratu konexioa.</string>
+    <string name="feature_profile_update_available">%1$s · Bertsio berria dago: %2$s</string>
+    <string name="feature_profile_update_download">Deskargatu</string>
 </resources>

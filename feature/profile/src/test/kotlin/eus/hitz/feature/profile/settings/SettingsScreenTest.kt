@@ -17,6 +17,7 @@ import com.github.takahirom.roborazzi.captureRoboImage
 import com.google.common.truth.Truth.assertThat
 import eus.hitz.core.designsystem.theme.HitzTheme
 import eus.hitz.core.domain.settings.UserSettings
+import eus.hitz.core.domain.update.AppRelease
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -34,11 +35,14 @@ class SettingsScreenTest {
     private val changes = mutableListOf<Pair<Setting, Boolean>>()
     private var back = false
     private var languageOpened = false
+    private var checks = 0
+    private val downloads = mutableListOf<AppRelease>()
 
     private fun show(
         systemColorsAvailable: Boolean = true,
         language: Boolean = true,
         darkTheme: Boolean = false,
+        updateStatus: UpdateStatus = UpdateStatus.Idle,
     ) {
         composeRule.setContent {
             HitzTheme(darkTheme = darkTheme) {
@@ -49,6 +53,11 @@ class SettingsScreenTest {
                     version = "1.3.0",
                     systemColorsAvailable = systemColorsAvailable,
                     onOpenLanguage = if (language) ({ languageOpened = true }) else null,
+                    updates = UpdateActions(
+                        status = updateStatus,
+                        onCheck = { checks++ },
+                        onDownload = { downloads += it },
+                    ),
                 )
             }
         }
@@ -104,9 +113,40 @@ class SettingsScreenTest {
     }
 
     @Test
+    fun theVersionRowLooksForUpdatesOnRequest() {
+        show()
+        scrollTo("Comprobar")
+        composeRule.onNodeWithText("Comprobar").performClick()
+        assertThat(checks).isEqualTo(1)
+    }
+
+    @Test
+    fun aNewerVersionCanBeDownloadedFromTheVersionRow() {
+        val release = AppRelease("1.5.0", "https://example.org/hitz-1.5.0.apk", "https://example.org/v1.5.0")
+        show(updateStatus = UpdateStatus.Available(release))
+        scrollTo("1.3.0 · Hay una versión nueva: 1.5.0")
+        composeRule.onNodeWithText("Descargar").performClick()
+        assertThat(downloads).containsExactly(release)
+    }
+
+    @Test
+    fun theVersionRowSaysWhenTheAppIsUpToDate() {
+        show(updateStatus = UpdateStatus.UpToDate)
+        scrollTo("1.3.0 · Es la última versión")
+        composeRule.onNodeWithText("1.3.0 · Es la última versión").assertIsDisplayed()
+    }
+
+    @Test
     fun screenshot() {
         show()
         composeRule.onRoot().captureRoboImage("src/test/screenshots/settings.png")
+    }
+
+    @Test
+    fun screenshotUpdateAvailable() {
+        show(updateStatus = UpdateStatus.Available(AppRelease("1.5.0", "", "")))
+        scrollTo("Versión")
+        composeRule.onRoot().captureRoboImage("src/test/screenshots/settings_update_available.png")
     }
 
     @Test

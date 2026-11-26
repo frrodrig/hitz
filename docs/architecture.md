@@ -244,6 +244,10 @@ in the browser (Android then installs it as an update, since it is signed with t
 no* waits for the next day's check.
 
 - Debug builds never check; learners can turn checks off in the profile (*Buscar actualizaciones*).
+- Learners can also ask: the *Versión* row in the settings has a *Comprobar* button, and turning
+  checks on looks at once. Both call `CheckForUpdateUseCase.checkNow()`, which ignores the daily
+  interval and the switch (asking is consent) and returns `UpdateCheck` (`Available`, `UpToDate`,
+  `Failed`). The row shows the result and, for a newer version, a *Descargar* button.
 - Offline or on any error nothing happens and the next launch tries again; the last successful
   check is kept in DataStore.
 - This is why the app has the `INTERNET` permission (declared in `:core:data`, with a comment).
