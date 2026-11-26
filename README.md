@@ -5,7 +5,7 @@
 <h1 align="center">Hitz</h1>
 
 <p align="center">
-  <b>Learn Basque (euskara batua) from Spanish, from zero to A1.</b><br>
+  <b>Learn Basque (euskara batua) from Spanish, from zero to A1 and on into A2.</b><br>
   Short lessons, real Basque voices, no account and no ads. Works offline.
 </p>
 
@@ -43,9 +43,10 @@ trikitilari, **Mikel** the aizkolari, **Maite** the amona and **Unai** the pelot
 
 ## What's inside
 
-- **A full A1 course**: 4 sections, 24 units, 216 lessons, a story per unit and about 550 words,
-  in the curricular order of the *Arian A1* textbook (see [`docs/syllabus.md`](docs/syllabus.md)).
-  All texts, dialogues, exercises and illustrations are original.
+- **A full A1 course and the start of A2**: 5 sections, 30 units, 270 lessons, a story per unit
+  and about 750 words, in the curricular order of the *Arian A1* and *Arian A2.1* textbooks (see
+  [`docs/syllabus.md`](docs/syllabus.md)). The A2.1 part goes on section by section. All texts,
+  dialogues, exercises and illustrations are original.
 - **13 kinds of exercise**: translate with a word bank or by typing, choose the picture or the
   meaning, match pairs, listen and tap, listen and type, fill the gap, complete a chat, read and
   answer true or false, order the sentence, speak (optional) and "new word" cards. Answers are
@@ -55,10 +56,13 @@ trikitilari, **Mikel** the aizkolari, **Maite** the amona and **Unai** the pelot
   Basque.
 - **Real Basque pronunciation**: every sentence of the course is bundled as audio, with the
   Basque voices of HiTZ – Aholab (EHU); playable slowly too.
+- **One section at a time**: the path shows the current section, with a sections overview
+  (level, goals, progress) and a test to jump ahead; after every textbook unit, an optional
+  review mixes earlier units, chosen by your mistakes and by how long ago you saw them.
 - **Practice**: a personal review of the words and structures you get wrong (spaced repetition),
   listening and speaking practice, and a review of every unit you have started.
 - **Motivation without pressure**: a daily goal in minutes, achievements, a score on the CEFR
-  A1 scale (0–29) and a star challenge in every unit: 30 hard questions, one to three stars. No
+  scale (A1 0–29, A2.1 from 30) and a star challenge in every unit: 30 hard questions, one to three stars. No
   lives, no streaks to lose, no ads, no account.
 - **Built with care**: Material 3 Expressive, the system's colours (Material You) or Hitz's own,
   light and dark themes, TalkBack, large fonts and tablets (with the current unit beside the
