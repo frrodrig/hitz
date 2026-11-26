@@ -143,6 +143,13 @@ class SettingsScreenTest {
     }
 
     @Test
+    fun screenshotUpdateAvailable() {
+        show(updateStatus = UpdateStatus.Available(AppRelease("1.5.0", "", "")))
+        scrollTo("Versión")
+        composeRule.onRoot().captureRoboImage("src/test/screenshots/settings_update_available.png")
+    }
+
+    @Test
     fun screenshotDark() {
         show(darkTheme = true)
         composeRule.onRoot().captureRoboImage("src/test/screenshots/settings_dark.png")
