@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material3.CircularWavyProgressIndicator
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -36,8 +36,8 @@ import eus.hitz.core.designsystem.theme.HitzTheme
 private const val PERCENT = 100
 
 /**
- * Today's progress towards the daily goal as a ring: wavy while in progress, a check mark once
- * the goal is met. [progress] can go over 1; the ring stays full.
+ * Today's progress towards the daily goal as a ring, with a check mark once the goal is met. The
+ * ring is plain: only the lesson's progress, which is under way, waves. [progress] can go over 1; the ring stays full.
  */
 @Composable
 fun HitzDailyGoalRing(
@@ -47,12 +47,11 @@ fun HitzDailyGoalRing(
 ) {
     val done = progress >= 1f
     Box(modifier.size(size), contentAlignment = Alignment.Center) {
-        CircularWavyProgressIndicator(
+        CircularProgressIndicator(
             progress = { progress.coerceIn(0f, 1f) },
             modifier = Modifier.size(size),
             color = if (done) HitzTheme.extendedColors.success.color else MaterialTheme.colorScheme.primary,
             trackColor = MaterialTheme.colorScheme.surfaceContainerHighest,
-            amplitude = { if (done) 0f else 1f },
         )
         if (done) {
             Icon(

@@ -194,8 +194,8 @@ so they stay consistent and any change is a reviewable diff; see the content gui
 | `HitzChoiceCard` / `HitzChoiceGroup` | `ListItem` + `RadioButton` on tonal surfaces, grouped as a segmented list | Answer option: default, selected, correct, incorrect, disabled |
 | `HitzWordChip` / `HitzWordBank` | 48 dp `Button` key (lightest container, 1 dp outline, 14 dp corners) on a 3 dp base, in a `FlowRow` | Word bank; keys sink onto their base when pressed and spring in when they appear; used words leave a dashed slot. In lessons the answer is built on lines ruled under each row of tiles |
 | `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel: check, pencil (almost) or cross; announced as a live region |
-| `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress |
-| `HitzDailyGoalRing` / `HitzDailyGoalChip` | `CircularWavyProgressIndicator` (flat with a check mark when met), in a tonal container | Today's share of the daily goal, spoken as a percentage |
+| `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress: the only wavy indicator, because it is the only progress under way |
+| `HitzDailyGoalRing` / `HitzDailyGoalChip` | `CircularProgressIndicator` (with a check mark when met), in a tonal container | Today's share of the daily goal, spoken as a percentage |
 | `HitzMascot` | Animated stack of a `CastMember`'s layers in a `MascotPose` (or its single `Image` with reduced motion), optionally framed on a `MaterialShapes.Sunny` container | The cast: prompts, lesson end, errors, empty states, avatar |
 | `PlaceholderScreen` | — | Temporary screen for unfinished features |
 

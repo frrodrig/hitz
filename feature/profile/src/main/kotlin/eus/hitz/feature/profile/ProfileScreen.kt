@@ -22,7 +22,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ButtonGroupDefaults
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
-import androidx.compose.material3.LinearWavyProgressIndicator
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.LoadingIndicator
@@ -464,7 +464,7 @@ private fun ProgressRow(title: String, supporting: String, fraction: Float, done
         supportingContent = {
             Column(verticalArrangement = Arrangement.spacedBy(HitzSpacing.xs)) {
                 Text(supporting)
-                LinearWavyProgressIndicator(
+                LinearProgressIndicator(
                     progress = { fraction.coerceIn(0f, 1f) },
                     modifier = Modifier.fillMaxWidth()
                 )
