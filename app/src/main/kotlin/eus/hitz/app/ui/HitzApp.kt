@@ -43,6 +43,7 @@ import eus.hitz.feature.lesson.navigation.PlacementRoute
 import eus.hitz.feature.lesson.navigation.PracticeSessionRoute
 import eus.hitz.feature.lesson.navigation.StoryRoute
 import eus.hitz.feature.lesson.navigation.lessonScreen
+import eus.hitz.feature.lesson.navigation.navigateToJump
 import eus.hitz.feature.lesson.navigation.navigateToLesson
 import eus.hitz.feature.lesson.navigation.navigateToPlacement
 import eus.hitz.feature.lesson.navigation.navigateToPractice
@@ -55,11 +56,15 @@ import eus.hitz.feature.onboarding.navigation.OnboardingRoute
 import eus.hitz.feature.onboarding.navigation.onboardingScreen
 import eus.hitz.feature.path.navigation.GuidebookRoute
 import eus.hitz.feature.path.navigation.PathRoute
+import eus.hitz.feature.path.navigation.SectionsRoute
 import eus.hitz.feature.path.navigation.UnitIntroRoute
 import eus.hitz.feature.path.navigation.guidebookScreen
 import eus.hitz.feature.path.navigation.navigateToGuidebook
+import eus.hitz.feature.path.navigation.navigateToSections
 import eus.hitz.feature.path.navigation.navigateToUnitIntro
 import eus.hitz.feature.path.navigation.pathScreen
+import eus.hitz.feature.path.navigation.sectionsScreen
+import eus.hitz.feature.path.navigation.showSection
 import eus.hitz.feature.path.navigation.unitIntroScreen
 import eus.hitz.feature.practice.navigation.UnitReviewRoute
 import eus.hitz.feature.practice.navigation.navigateToUnitReview
@@ -80,6 +85,7 @@ private val fullScreenRoutes = listOf(
     PracticeSessionRoute::class,
     StoryRoute::class,
     GuidebookRoute::class,
+    SectionsRoute::class,
     UnitIntroRoute::class,
     UnitReviewRoute::class,
     OnboardingRoute::class,
@@ -96,6 +102,7 @@ private val sessionRoutes = listOf(
 )
 private val detailRoutes = listOf(
     GuidebookRoute::class,
+    SectionsRoute::class,
     UnitIntroRoute::class,
     UnitReviewRoute::class,
     ScoreRoute::class,
@@ -159,8 +166,8 @@ fun HitzApp(
 
 private val RAIL_MIN_WIDTH = 600.dp
 
-/** Every destination of the app and how they lead to each other. */
-private fun NavGraphBuilder.hitzGraph(navController: NavHostController) {
+/** The path and what opens from it: the sections, a unit's guidebook and introduction. */
+private fun NavGraphBuilder.pathGraph(navController: NavHostController) {
     pathScreen(
         onStartLevel = { unitId, levelId, lessonId ->
             navController.navigateToLesson(unitId, levelId, lessonId)
@@ -171,20 +178,16 @@ private fun NavGraphBuilder.hitzGraph(navController: NavHostController) {
         onOpenUnitIntro = { unitId, levelId, lessonId ->
             navController.navigateToUnitIntro(unitId, levelId, lessonId)
         },
+        onOpenSections = { navController.navigateToSections() },
+        onJump = { sectionId -> navController.navigateToJump(sectionId) },
     )
-    onboardingScreen(
-        onFinish = { level ->
-            navController.navigate(PathRoute) { popUpTo<OnboardingRoute> { inclusive = true } }
-            if (level == StartingLevel.SomeBasque) navController.navigateToPlacement(FIRST_SECTION)
-        },
-    )
-    placementScreen(
-        onClose = { navController.popBackStack() },
-        onNext = { sectionId ->
-            navController.navigateToPlacement(
-                sectionId,
-                navOptions { popUpTo<PlacementRoute> { inclusive = true } }
-            )
+    sectionsScreen(
+        onBack = { navController.popBackStack() },
+        onSelect = { sectionId -> navController.showSection(sectionId) },
+        onJump = { sectionId ->
+            // Back from the test, the path shows the section the learner jumped to (if passed).
+            navController.showSection(sectionId)
+            navController.navigateToJump(sectionId)
         },
     )
     guidebookScreen(onBack = { navController.popBackStack() })
@@ -200,6 +203,26 @@ private fun NavGraphBuilder.hitzGraph(navController: NavHostController) {
         },
         onOpenGuidebook = { unitId -> navController.navigateToGuidebook(unitId) },
         onBack = { navController.popBackStack() },
+    )
+}
+
+/** Every destination of the app and how they lead to each other. */
+private fun NavGraphBuilder.hitzGraph(navController: NavHostController) {
+    pathGraph(navController)
+    onboardingScreen(
+        onFinish = { level ->
+            navController.navigate(PathRoute) { popUpTo<OnboardingRoute> { inclusive = true } }
+            if (level == StartingLevel.SomeBasque) navController.navigateToPlacement(FIRST_SECTION)
+        },
+    )
+    placementScreen(
+        onClose = { navController.popBackStack() },
+        onNext = { sectionId ->
+            navController.navigateToPlacement(
+                sectionId,
+                navOptions { popUpTo<PlacementRoute> { inclusive = true } }
+            )
+        },
     )
     lessonScreen(onClose = { navController.popBackStack() })
     storyScreen(onClose = { navController.popBackStack() })

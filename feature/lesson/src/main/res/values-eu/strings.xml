@@ -76,6 +76,11 @@
     <string name="feature_lesson_placement_all_body">%%%1$d asmatu duzu. Ikastaro osoa ezagutzen duzu! Nahi duzunean errepasa dezakezu.</string>
     <string name="feature_lesson_placement_next">Probatu %1$d. atala</string>
     <string name="feature_lesson_placement_go_to_path">Ikasten hasi</string>
+    <string name="feature_lesson_jump_passed">%1$d. atala desblokeatuta!</string>
+    <string name="feature_lesson_jump_passed_body">%%%1$d asmatu duzu, eta aurreko guztia eginda bezala markatu dugu. Hemendik jarrai dezakezu.</string>
+    <string name="feature_lesson_jump_failed">Oraindik ez</string>
+    <string name="feature_lesson_jump_failed_body">%%%1$d asmatu duzu. Jarraitu zeunden lekutik: falta zaizunak atal honetarako prestatuko zaitu.</string>
+    <string name="feature_lesson_jump_back">Itzuli ibilbidera</string>
     <string name="feature_lesson_daily_goal">Eguneko helburua</string>
     <string name="feature_lesson_daily_goal_change">%%%1$d → %%%2$d</string>
     <string name="feature_lesson_stat_first_try">Lehen saiakeran</string>

@@ -22,7 +22,7 @@ class PracticeTest {
     private val progress = FakeProgressRepository()
     private val hub = ObservePracticeHubUseCase(TestContent.courseRepository, progress)
     private val review = GetUnitReviewUseCase(TestContent.courseRepository, progress)
-    private val plan = PlanSessionUseCase(TestContent.courseRepository, progress)
+    private val plan = PlanSessionUseCase(TestContent.courseRepository, progress, { 0L })
     private val gamification = FakeGamificationRepository()
     private val clock = TestClock()
     private val studyTime = RecordStudyTimeUseCase(gamification, FakeSettingsRepository(), clock.gameClock)

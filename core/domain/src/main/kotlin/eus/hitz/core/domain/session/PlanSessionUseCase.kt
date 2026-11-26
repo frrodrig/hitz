@@ -9,6 +9,9 @@ import eus.hitz.core.domain.practice.isStarted
 import eus.hitz.core.domain.practice.seenExercises
 import eus.hitz.core.domain.progress.MistakeStats
 import eus.hitz.core.domain.progress.ProgressRepository
+import eus.hitz.core.domain.recall.RecallRules
+import eus.hitz.core.domain.score.ScoreRules.steps
+import eus.hitz.core.domain.time.EpochClock
 import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.CourseUnit
 import eus.hitz.core.model.content.Exercise
@@ -43,10 +46,12 @@ data class SessionPlan(
  *   exercise, word and grammar structure), topped up with the rest.
  * * Star challenges play the unit's hardest exercises once each, with no hints, allowing
  *   [ChallengeRules.MISTAKES_ALLOWED] wrong answers (see [ChallengeRules]).
+ * * A cumulative review (a level id from [RecallRules.levelId]) mixes the earlier units.
  */
 class PlanSessionUseCase @Inject constructor(
     private val courses: CourseRepository,
     private val progress: ProgressRepository,
+    private val clock: EpochClock,
 ) {
     suspend operator fun invoke(
         unitId: String,
@@ -55,6 +60,7 @@ class PlanSessionUseCase @Inject constructor(
         random: Random = Random.Default,
         courseId: CourseId = CourseId.BASQUE_FROM_SPANISH,
     ): SessionPlan {
+        if (RecallRules.isRecall(levelId)) return recall(unitId, random, courseId)
         val unit = courses.getUnit(courseId, unitId)
         val level = unit.levels.firstOrNull { it.id == levelId }
             ?: throw NoSuchElementException("level $levelId not found in unit $unitId")
@@ -130,6 +136,28 @@ class PlanSessionUseCase @Inject constructor(
         return SessionPlan(
             sessionId = sessionId,
             exercises = reviewSelection(pool, stats, random),
+            kind = ActivityKind.Review,
+            glossary = courses.getGlossary(courseId),
+        )
+    }
+
+    /**
+     * The cumulative review after [unitId]: exercises the learner has seen in the earlier textbook
+     * units, picked by mistakes and by how long ago each unit was studied (see [RecallRules]).
+     */
+    private suspend fun recall(unitId: String, random: Random, courseId: CourseId): SessionPlan {
+        val order = courses.getCourse(courseId).sections.flatMap { it.units }
+        val completions = progress.observeCompletions().first()
+        val units = RecallRules.sourceUnits(unitId, order).map { courses.getUnit(courseId, it) }
+        val seen = units.associate { it.id to it.seenExercises(completions.keys) }.filterValues { it.isNotEmpty() }
+        if (seen.isEmpty()) throw NoSuchElementException("nothing to recall before $unitId")
+        val lastStudied = units.associate { unit ->
+            unit.id to (unit.steps().mapNotNull { completions[it] }.maxOrNull() ?: 0L)
+        }
+        val stats = seen.keys.map { progress.mistakeStats(it) }.fold(MistakeStats(), MistakeStats::plus)
+        return SessionPlan(
+            sessionId = RecallRules.levelId(unitId),
+            exercises = RecallRules.select(seen, stats, lastStudied, clock.now(), random),
             kind = ActivityKind.Review,
             glossary = courses.getGlossary(courseId),
         )

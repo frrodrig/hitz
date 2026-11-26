@@ -35,6 +35,28 @@ class PlacementUseCaseTest {
     }
 
     @Test
+    fun `a jump covers every section before the target and unlocks it`() = runTest {
+        val jumps = PlacementUseCase(TestContent.longCourseRepository, progress)
+        val test = jumps.jumpTest("s2", Random(1))
+        assertThat(test.isJump).isTrue()
+        assertThat(test.sectionNumber).isEqualTo(2)
+        assertThat(test.nextSectionId).isNull()
+        assertThat(test.sectionIds).containsExactly("s1")
+        assertThat(test.exercises.map { it.id.substringBefore(".l") }.toSet())
+            .containsExactly("u01-1", "u01-2", "u02-1", "u02-2")
+
+        jumps.skipSections(test.sectionIds, accuracy = 0.9f, now = 0L)
+        val path = LearningPathBuilder.build(TestContent.longCourse, TestContent.longUnits, progress.completed.value)
+        assertThat(path.currentSection?.id).isEqualTo("s2")
+        assertThat(path.sections[1].isUnlocked).isTrue()
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun `there is no jump to the first section`() = runTest {
+        PlacementUseCase(TestContent.longCourseRepository, progress).jumpTest("s1")
+    }
+
+    @Test
     fun `the pass mark is 80 percent`() {
         assertThat(PlacementUseCase.passed(0.8f)).isTrue()
         assertThat(PlacementUseCase.passed(0.75f)).isFalse()

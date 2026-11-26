@@ -9,6 +9,7 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -46,6 +47,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -72,9 +74,9 @@ import eus.hitz.core.domain.path.NodeState
 import eus.hitz.core.domain.path.NodeType
 import eus.hitz.core.domain.path.PathChallenge
 import eus.hitz.core.domain.path.PathNode
+import eus.hitz.core.domain.path.PathRecall
 import eus.hitz.core.domain.path.PathSection
 import eus.hitz.core.domain.path.PathUnit
-import eus.hitz.core.domain.score.ScoreRules
 import eus.hitz.core.model.content.LocalizedText
 import kotlinx.coroutines.delay
 
@@ -108,6 +110,8 @@ fun PathScreen(
     onOpenGuidebook: (unitId: String) -> Unit,
     onStartStory: (unitId: String, levelId: String) -> Unit,
     onOpenProfile: () -> Unit,
+    onOpenSections: () -> Unit,
+    onJump: (sectionId: String) -> Unit,
     viewModel: PathViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -118,6 +122,13 @@ fun PathScreen(
         onOpenGuidebook = onOpenGuidebook,
         onStartStory = onStartStory,
         onOpenProfile = onOpenProfile,
+        onOpenSections = onOpenSections,
+        onSelectSection = viewModel::selectSection,
+        onJump = { sectionId ->
+            // Back from a passed jump, the path shows the section jumped to.
+            viewModel.selectSection(sectionId)
+            onJump(sectionId)
+        },
     )
 }
 
@@ -130,6 +141,9 @@ internal fun PathContent(
     onStartStory: (unitId: String, levelId: String) -> Unit = { _, _ -> },
     onOpenProfile: () -> Unit = {},
     onOpenUnitIntro: (unitId: String, levelId: String, lessonId: String?) -> Unit = onStartLevel,
+    onOpenSections: () -> Unit = {},
+    onSelectSection: (sectionId: String) -> Unit = {},
+    onJump: (sectionId: String) -> Unit = {},
     listState: LazyListState = rememberLazyListState(),
 ) {
     when (state) {
@@ -161,8 +175,12 @@ internal fun PathContent(
                             listState = listState,
                             onNodeClick = openNode,
                             onChallengeClick = { onStartLevel(it.unitId, it.levelId, null) },
+                            onRecallClick = { onStartLevel(it.unitId, it.levelId, null) },
                             onOpenGuidebook = onOpenGuidebook,
                             onOpenProfile = onOpenProfile,
+                            onOpenSections = onOpenSections,
+                            onSelectSection = onSelectSection,
+                            onJump = onJump,
                             modifier = Modifier.widthIn(max = PathMaxWidth).fillMaxHeight(),
                         )
                     }
@@ -180,39 +198,54 @@ internal fun PathContent(
     }
 }
 
-/** The top bar over the path, its rows and the unit bar that replaces a cover once it scrolls away. */
+/**
+ * The top bar over the path, the rows of the section on show and the unit bar that replaces a cover
+ * once it scrolls away. The path shows one section at a time; its name in the top bar opens the
+ * sections overview, and the end of a section leads to the next one.
+ */
 @Composable
 private fun LearningPath(
     state: PathUiState.Ready,
     listState: LazyListState,
     onNodeClick: (PathNode) -> Unit,
     onChallengeClick: (PathChallenge) -> Unit,
+    onRecallClick: (PathRecall) -> Unit,
     onOpenGuidebook: (unitId: String) -> Unit,
     onOpenProfile: () -> Unit,
+    onOpenSections: () -> Unit,
+    onSelectSection: (sectionId: String) -> Unit,
+    onJump: (sectionId: String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    val rows = remember(state.path) { state.path.rows() }
-    val units = remember(state.path) { state.path.sections.flatMap { it.units }.associateBy { it.id } }
-    // The bar names the section being read: the one of the first visible row.
-    val section by remember(rows) {
-        derivedStateOf { rows.getOrNull(listState.firstVisibleItemIndex)?.sectionNumber ?: 1 }
-    }
+    val sections = state.path.sections
+    val index = sections.indexOfFirst { it.id == state.sectionId }.takeIf { it >= 0 }
+        ?: sections.indexOf(state.path.currentSection).coerceAtLeast(0)
+    val section = sections.getOrNull(index)
+    val rows = remember(state.path, index) { state.path.rows(index) }
+    val units = remember(state.path) { sections.flatMap { it.units }.associateBy { it.id } }
     val unlock = rememberPathUnlock(state.path)
     Column(modifier) {
         PathTopBar(
-            section = section,
-            title = state.path.sections.getOrNull(section - 1)?.title,
+            section = index + 1,
+            title = section?.title,
+            level = section?.level,
             score = state.score,
+            scoreMax = state.scoreMax,
             dailyGoal = state.dailyGoal,
             onOpenProfile = onOpenProfile,
+            onOpenSections = onOpenSections,
         )
         Box(Modifier.weight(1f)) {
             LearningPathList(
                 rows = rows,
+                sectionId = section?.id,
                 unlock = unlock,
                 onChallengeClick = onChallengeClick,
+                onRecallClick = onRecallClick,
                 onNodeClick = onNodeClick,
                 onOpenGuidebook = onOpenGuidebook,
+                onSelectSection = onSelectSection,
+                onJump = onJump,
                 listState = listState,
                 modifier = Modifier.fillMaxSize(),
             )
@@ -288,26 +321,29 @@ private fun CurrentUnitPane(
 private const val STACKED_FONT_SCALE = 1.5f
 
 /**
- * The section being read, the score and today's goal; both chips open the profile. When the
- * section changes, its name slides in from below. With large fonts the chips move under the name,
- * so it is never cut short.
+ * The section on show, the score and today's goal; both chips open the profile and the section's
+ * name opens the sections overview. When the section changes, its name slides in from below. With
+ * large fonts the chips move under the name, so it is never cut short.
  */
 @Composable
 private fun PathTopBar(
     section: Int,
     title: LocalizedText?,
+    level: String?,
     score: Int,
+    scoreMax: Int,
     dailyGoal: Float,
     onOpenProfile: () -> Unit,
+    onOpenSections: () -> Unit,
 ) {
     val padding = Modifier
         .fillMaxWidth()
         .padding(start = HitzSpacing.xl, end = HitzSpacing.lg, top = HitzSpacing.sm, bottom = HitzSpacing.sm)
     if (LocalDensity.current.fontScale >= STACKED_FONT_SCALE) {
         Column(padding, verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
-            SectionTitle(section, title)
+            SectionTitle(section, title, level, onOpenSections)
             Row(horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
-                ScoreChip(score, onClick = onOpenProfile)
+                ScoreChip(score, scoreMax, onClick = onOpenProfile)
                 HitzDailyGoalChip(dailyGoal, onClick = onOpenProfile)
             }
         }
@@ -317,47 +353,69 @@ private fun PathTopBar(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
         ) {
-            SectionTitle(section, title, Modifier.weight(1f))
-            ScoreChip(score, onClick = onOpenProfile)
+            SectionTitle(section, title, level, onOpenSections, Modifier.weight(1f))
+            ScoreChip(score, scoreMax, onClick = onOpenProfile)
             HitzDailyGoalChip(dailyGoal, onClick = onOpenProfile)
         }
     }
 }
 
+/** The section's number, level and name, with a chevron: a tap opens the sections overview. */
 @Composable
-private fun SectionTitle(section: Int, title: LocalizedText?, modifier: Modifier = Modifier) {
+private fun SectionTitle(
+    section: Int,
+    title: LocalizedText?,
+    level: String?,
+    onOpenSections: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
     val slide = MaterialTheme.motionScheme.fastSpatialSpec<IntOffset>()
     val fade = MaterialTheme.motionScheme.defaultEffectsSpec<Float>()
+    val action = stringResource(R.string.feature_path_sections_open)
     AnimatedContent(
         targetState = section to title,
-        modifier = modifier,
+        modifier = modifier
+            .clip(MaterialTheme.shapes.medium)
+            .clickable(onClickLabel = action, role = Role.Button, onClick = onOpenSections),
         transitionSpec = {
             (slideInVertically(slide) { it / 2 } + fadeIn(fade)) togetherWith
                 (slideOutVertically(slide) { -it / 2 } + fadeOut(fade))
         },
         label = "section",
     ) { (number, sectionTitle) ->
-        Column {
+        Column(Modifier.padding(vertical = HitzSpacing.xs)) {
             Text(
-                text = stringResource(R.string.feature_path_section, number),
+                text = if (level != null) {
+                    stringResource(R.string.feature_path_section_level, number, level)
+                } else {
+                    stringResource(R.string.feature_path_section, number)
+                },
                 style = MaterialTheme.typography.labelMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
-            Text(
-                text = sectionTitle?.resolve().orEmpty(),
-                style = MaterialTheme.typography.titleLargeEmphasized,
-                maxLines = 2,
-                overflow = TextOverflow.Ellipsis,
-                modifier = Modifier.semantics { heading() },
-            )
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text(
+                    text = sectionTitle?.resolve().orEmpty(),
+                    style = MaterialTheme.typography.titleLargeEmphasized,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.weight(1f, fill = false).semantics { heading() },
+                )
+                Icon(
+                    painterResource(HitzIcons.ExpandMore),
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.size(CHIP_ICON + HitzSpacing.xs),
+                )
+            }
         }
     }
 }
 
 /** The score with its unit, so it reads as points and not as a count of something else. */
 @Composable
-private fun ScoreChip(score: Int, onClick: () -> Unit) {
-    val description = stringResource(R.string.feature_path_score, score, ScoreRules.MAX)
+private fun ScoreChip(score: Int, max: Int, onClick: () -> Unit) {
+    val description = stringResource(R.string.feature_path_score, score, max)
     Surface(
         onClick = onClick,
         shape = MaterialTheme.shapes.extraLarge,
@@ -391,67 +449,68 @@ private fun ScoreChip(score: Int, onClick: () -> Unit) {
 }
 
 private sealed interface PathRow {
-    val sectionNumber: Int
-
-    /** The unit the row belongs to; none for section headers. */
+    /** The unit the row belongs to; none for the way to the next section. */
     val unitId: String?
 
-    data class SectionHeader(val section: PathSection, override val sectionNumber: Int) : PathRow {
-        override val unitId: String? get() = null
-    }
-
-    data class UnitCover(val unit: PathUnit, val isCurrentUnit: Boolean, override val sectionNumber: Int) : PathRow {
+    data class UnitCover(val unit: PathUnit, val isCurrentUnit: Boolean) : PathRow {
         override val unitId: String get() = unit.id
     }
 
-    data class Node(val node: PathNode, val track: Track, override val sectionNumber: Int) : PathRow {
+    data class Node(val node: PathNode, val track: Track) : PathRow {
         override val unitId: String get() = node.unitId
     }
 
-    data class Challenge(val challenge: PathChallenge, val track: Track, override val sectionNumber: Int) : PathRow {
+    data class Challenge(val challenge: PathChallenge, val track: Track) : PathRow {
         override val unitId: String get() = challenge.unitId
+    }
+
+    data class Recall(val recall: PathRecall) : PathRow {
+        override val unitId: String get() = recall.unitId
+    }
+
+    data class NextSection(val section: PathSection, val number: Int) : PathRow {
+        override val unitId: String? get() = null
     }
 }
 
 /**
- * One row per step: each unit opens with its cover, then its levels wind down the screen and its
- * star challenge closes it. The first section is named by the top bar; later ones get a header
- * where they start.
+ * One row per step of section [sectionIndex]: each unit opens with its cover, then its levels wind
+ * down the screen and its star challenge closes it; a cumulative review follows the units that end
+ * a textbook unit. The section ends with the way to the next one.
  */
-private fun LearningPath.rows(): List<PathRow> = buildList {
-    sections.forEachIndexed { sectionIndex, section ->
-        val number = sectionIndex + 1
-        if (sectionIndex > 0) add(PathRow.SectionHeader(section, number))
-        section.units.forEach { unit ->
-            add(PathRow.UnitCover(unit, isCurrentUnit = unit.nodes.any { it.isCurrent }, sectionNumber = number))
-            val offsets = List(unit.nodes.size + 1) { Winding[it % Winding.size] }
-            val challenge = unit.challenge
-            val lastIndex = if (challenge == null) unit.nodes.lastIndex else unit.nodes.size
-            unit.nodes.forEachIndexed { index, node ->
-                val nextReached = unit.nodes.getOrNull(index + 1)?.let { it.state != NodeState.Locked }
-                    ?: (challenge?.isAvailable == true)
-                val track = Track(
-                    offset = offsets[index],
-                    previousOffset = offsets.getOrNull(index - 1).takeIf { index > 0 },
-                    nextOffset = offsets[index + 1].takeIf { index < lastIndex },
-                    reached = node.state != NodeState.Locked,
-                    walkedOn = node.state == NodeState.Completed && nextReached,
-                )
-                add(PathRow.Node(node, track, number))
-            }
-            if (challenge != null) {
-                val index = unit.nodes.size
-                val track = Track(
-                    offset = offsets[index],
-                    previousOffset = offsets.getOrNull(index - 1).takeIf { index > 0 },
-                    nextOffset = null,
-                    reached = challenge.isAvailable,
-                    walkedOn = false,
-                )
-                add(PathRow.Challenge(challenge, track, number))
-            }
+private fun LearningPath.rows(sectionIndex: Int): List<PathRow> = buildList {
+    val section = sections.getOrNull(sectionIndex) ?: return@buildList
+    section.units.forEach { unit ->
+        add(PathRow.UnitCover(unit, isCurrentUnit = unit.nodes.any { it.isCurrent }))
+        val offsets = List(unit.nodes.size + 1) { Winding[it % Winding.size] }
+        val challenge = unit.challenge
+        val lastIndex = if (challenge == null) unit.nodes.lastIndex else unit.nodes.size
+        unit.nodes.forEachIndexed { index, node ->
+            val nextReached = unit.nodes.getOrNull(index + 1)?.let { it.state != NodeState.Locked }
+                ?: (challenge?.isAvailable == true)
+            val track = Track(
+                offset = offsets[index],
+                previousOffset = offsets.getOrNull(index - 1).takeIf { index > 0 },
+                nextOffset = offsets[index + 1].takeIf { index < lastIndex },
+                reached = node.state != NodeState.Locked,
+                walkedOn = node.state == NodeState.Completed && nextReached,
+            )
+            add(PathRow.Node(node, track))
         }
+        if (challenge != null) {
+            val index = unit.nodes.size
+            val track = Track(
+                offset = offsets[index],
+                previousOffset = offsets.getOrNull(index - 1).takeIf { index > 0 },
+                nextOffset = null,
+                reached = challenge.isAvailable,
+                walkedOn = false,
+            )
+            add(PathRow.Challenge(challenge, track))
+        }
+        unit.recall?.let { add(PathRow.Recall(it)) }
     }
+    sections.getOrNull(sectionIndex + 1)?.let { add(PathRow.NextSection(it, sectionIndex + 2)) }
 }
 
 /** The row the path opens on: the current unit's cover when the current step is near it. */
@@ -512,17 +571,18 @@ private fun rememberPathUnlock(path: LearningPath): PathUnlock {
 @Composable
 private fun LearningPathList(
     rows: List<PathRow>,
+    sectionId: String?,
     unlock: PathUnlock,
     onChallengeClick: (PathChallenge) -> Unit,
+    onRecallClick: (PathRecall) -> Unit,
     onNodeClick: (PathNode) -> Unit,
     onOpenGuidebook: (unitId: String) -> Unit,
+    onSelectSection: (sectionId: String) -> Unit,
+    onJump: (sectionId: String) -> Unit,
     listState: LazyListState,
     modifier: Modifier = Modifier,
 ) {
-    val opening = remember(rows) { rows.openingRow() }
-    LaunchedEffect(opening) {
-        if (opening > 0) listState.scrollToItem(opening)
-    }
+    OpenOnTheCurrentStep(rows, sectionId, listState)
     LazyColumn(
         state = listState,
         modifier = modifier,
@@ -530,7 +590,6 @@ private fun LearningPathList(
     ) {
         rows.forEach { row ->
             when (row) {
-                is PathRow.SectionHeader -> item(key = row.key) { SectionHeader(row.section, row.sectionNumber) }
                 is PathRow.UnitCover -> item(key = row.key) {
                     UnitCover(
                         unit = row.unit,
@@ -562,7 +621,34 @@ private fun LearningPathList(
                         onClick = { onChallengeClick(row.challenge) },
                     )
                 }
+                is PathRow.Recall -> item(key = row.key) {
+                    RecallCard(row.recall, { onRecallClick(row.recall) }, Modifier.padding(HitzSpacing.lg))
+                }
+                is PathRow.NextSection -> item(key = row.key) {
+                    NextSectionCard(
+                        section = row.section,
+                        number = row.number,
+                        onOpen = { onSelectSection(row.section.id) },
+                        onJump = { onJump(row.section.id) },
+                        modifier = Modifier.padding(horizontal = HitzSpacing.lg).padding(top = HitzSpacing.xxl),
+                    )
+                }
             }
+        }
+    }
+}
+
+/** A new section opens at its current step, or at its top; the same section keeps up with its current step. */
+@Composable
+private fun OpenOnTheCurrentStep(rows: List<PathRow>, sectionId: String?, listState: LazyListState) {
+    val opening = remember(rows) { rows.openingRow() }
+    var openedSection by rememberSaveable { mutableStateOf<String?>(null) }
+    LaunchedEffect(sectionId, opening) {
+        if (sectionId != openedSection) {
+            listState.scrollToItem(opening)
+            openedSection = sectionId
+        } else if (opening > 0) {
+            listState.scrollToItem(opening)
         }
     }
 }
@@ -612,34 +698,12 @@ private fun UnitBarOverlay(
 
 private val PathRow.key: String
     get() = when (this) {
-        is PathRow.SectionHeader -> "section-${section.id}"
         is PathRow.UnitCover -> "unit-${unit.id}"
         is PathRow.Node -> "node-${node.levelId}"
         is PathRow.Challenge -> "challenge-${challenge.levelId}"
+        is PathRow.Recall -> "recall-${recall.levelId}"
+        is PathRow.NextSection -> "next-${section.id}"
     }
-
-/** Where a later section starts: its number, name and what it covers. */
-@Composable
-private fun SectionHeader(section: PathSection, number: Int) {
-    Column(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(start = HitzSpacing.xl, end = HitzSpacing.xl, top = HitzSpacing.xxxl),
-        verticalArrangement = Arrangement.spacedBy(HitzSpacing.xs),
-    ) {
-        Text(
-            text = stringResource(R.string.feature_path_section, number),
-            style = MaterialTheme.typography.labelLarge,
-            color = MaterialTheme.colorScheme.primary,
-        )
-        Text(
-            text = section.title.resolve(),
-            style = MaterialTheme.typography.headlineSmallEmphasized,
-            modifier = Modifier.semantics { heading() },
-        )
-        Text(section.description.resolve(), style = MaterialTheme.typography.bodyMedium)
-    }
-}
 
 @HitzPreviews
 @Composable

@@ -50,6 +50,9 @@ class LessonViewModel @Inject constructor(
 ) : ViewModel() {
     /** Set for a placement test (PlacementRoute); unit and level are then unused. */
     private val placementSection: String? = savedStateHandle["sectionId"]
+
+    /** A placement test to jump to [placementSection] from the sections overview. */
+    private val jump: Boolean = savedStateHandle["jump"] ?: false
     private val unitId: String = savedStateHandle["unitId"] ?: ""
     private val levelId: String = savedStateHandle["levelId"] ?: ""
     private val lessonId: String? = savedStateHandle["lessonId"]
@@ -120,7 +123,7 @@ class LessonViewModel @Inject constructor(
 
     /** A placement test: no mistake limit, no hints, and no second chances. */
     private suspend fun placementPlan(sectionId: String): SessionPlan {
-        val test = placement.test(sectionId)
+        val test = if (jump) placement.jumpTest(sectionId) else placement.test(sectionId)
         placementTest = test
         return SessionPlan("placement.$sectionId", test.exercises, ActivityKind.Review)
     }
@@ -371,17 +374,21 @@ class LessonViewModel @Inject constructor(
     /** Whole minutes, rounded, and at least one: a finished session always took some time. */
     private fun activeMinutes(): Int = ((activeMillis + MINUTE / 2) / MINUTE).toInt().coerceAtLeast(1)
 
-    /** Passing marks the whole section as done; the learner can then try the next one. */
+    /**
+     * Passing marks the whole section as done (every skipped section, for a jump); the learner can
+     * then try the next one.
+     */
     private fun placementResult(test: PlacementTest, result: LessonResult): LessonUiState {
         val passed = PlacementUseCase.passed(result.accuracy)
         if (passed) {
-            viewModelScope.launch { placement.skipSection(test.sectionId, result.accuracy, clock.now()) }
+            viewModelScope.launch { placement.skipSections(test.sectionIds, result.accuracy, clock.now()) }
         }
         return LessonUiState.PlacementFinished(
             sectionNumber = test.sectionNumber,
             accuracy = result.accuracy,
             passed = passed,
             nextSectionId = test.nextSectionId.takeIf { passed },
+            isJump = test.isJump,
         )
     }
 

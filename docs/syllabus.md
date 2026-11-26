@@ -1711,7 +1711,7 @@ book words of lower frequency, which stay out of the core list.
 - Score: CEFR bands. The A1 sections fill 0–29 as today; the A2.1 sections fill 30–44 (half of the
   A2 band, 30–59), so no learner loses points.
 - *Recuerda y amplía* lessons for the recall points above.
-- Cumulative review: a node after each textbook unit (every two app units) that mixes earlier
+- Cumulative review: a card after each textbook unit (every two app units) that mixes earlier
   units, chosen by the learner's mistakes and by how long ago each was seen. Optional and worth no
-  points; added to the A1 units as well.
+  points; added to the A1 units as well (done in phase 2: `RecallRules`).
 - Placement test and onboarding texts that say "from zero to A1".

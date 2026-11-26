@@ -39,19 +39,29 @@ class ObserveScoreUseCase @Inject constructor(
     private fun score(course: Course, units: Map<String, CourseUnit>, completions: Map<String, Long>): Score {
         val zone = zones.zone()
         val today = epochDay(clock.now(), zone)
-        val steps = steps(course, units)
-        val total = steps.size
-        // The day each required step was first completed.
-        val days = steps.mapNotNull { step -> completions[step]?.let { epochDay(it, zone) } }.sorted()
-        val points = ScoreRules.points(days.size, total)
-        val history = days.distinct().map { day ->
-            ScorePoint(day, ScoreRules.value(ScoreRules.points(days.count { it <= day }, total)))
+        val byLevel = ScoreRules.stepsByLevel(course, units)
+        val max = ScoreRules.max(byLevel.keys)
+        // The day each required step was first completed, per level.
+        val days = byLevel.mapValues { (_, steps) ->
+            steps.mapNotNull { step -> completions[step]?.let { epochDay(it, zone) } }
         }
-        val now = ScoreRules.value(points)
-        val weekAgo = ScoreRules.value(ScoreRules.points(days.count { it <= today - WEEK_DAYS }, total))
+        fun pointsUntil(day: Long?): Float = byLevel.entries.sumOf { (level, steps) ->
+            val done = days.getValue(level).count { day == null || it <= day }
+            ScoreRules.points(level, done, steps.size).toDouble()
+        }.toFloat()
+        val points = pointsUntil(null)
+        val now = ScoreRules.value(points, max)
+        val history = days.values.flatten().distinct().sorted().map { day ->
+            ScorePoint(day, ScoreRules.value(pointsUntil(day), max))
+        }
+        val weekAgo = ScoreRules.value(pointsUntil(today - WEEK_DAYS), max)
+        val level = byLevel.entries.firstOrNull { (level, steps) -> days.getValue(level).size < steps.size }?.key
+            ?: byLevel.keys.last()
         return Score(
             value = now,
-            progressToNext = ScoreRules.progressToNext(points),
+            max = max,
+            level = level,
+            progressToNext = ScoreRules.progressToNext(points, max),
             gainedThisWeek = now - weekAgo,
             history = history.filter { it.epochDay < today } + ScorePoint(today, now),
             canDo = course.sections.flatMap { it.units }.mapNotNull { units[it] }

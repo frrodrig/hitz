@@ -48,6 +48,12 @@ object HitzIcons {
     /** The star challenges' stars, and lesson nodes. */
     @DrawableRes val Star = R.drawable.core_designsystem_ic_star
 
-    /** The score on the A1 scale. */
+    /** The score on the CEFR scale. */
     @DrawableRes val Level = R.drawable.core_designsystem_ic_level
+
+    /** Opens a list, such as the sections overview from the section's name. */
+    @DrawableRes val ExpandMore = R.drawable.core_designsystem_ic_expand_more
+
+    /** The cumulative review of earlier units. */
+    @DrawableRes val Recall = R.drawable.core_designsystem_ic_recall
 }

@@ -118,8 +118,20 @@ question. Finishing records the story level as completed.
   **section review** (`scope: section`, closing each section), so spaced repetition follows the
   learner's weak words and grammar; the **star challenge** is described above.
   `RecordSessionUseCase` saves mistakes always and the completion only when the session is finished.
-- `feature:path` shows sections, unit headers with the guidebook, and nodes whose Material
-  expressive shape depends on the level type (lesson, story, review), and each unit's star challenge.
+- **Cumulative review** (`RecallRules`, `core:domain`): generated, not authored. After each textbook
+  unit but the first (`u02-2`, `u03-2`…) the path shows a *Repaso acumulado* card (`PathRecall`),
+  available once that unit's levels are completed. It plays 15 exercises the learner has seen in the
+  earlier textbook units, ranked by mistake score plus a point for every week since the unit was last
+  studied (up to 4), at most 3 per unit. Its level id is `<unit>.recall`: it is recorded as completed
+  only to show it as done, adds no points, never blocks the path, and each mistake is saved under
+  its own unit.
+- `feature:path` shows **one section at a time**: unit headers with the guidebook, nodes whose
+  Material expressive shape depends on the level type (lesson, story, review), each unit's star
+  challenge and the cumulative reviews. The section's name in the top bar opens the **sections
+  overview** (`SectionsRoute`): every section grouped by CEFR level with its points range, progress
+  and a button to continue, review or jump to it. The overview writes the chosen section into the
+  path's saved state (`PathViewModel.SELECTED_SECTION`); a locked section is never shown. The end of
+  a section leads to the next one, or offers a jump test when it is still locked.
 - **Unit introduction** (`UnitIntroRoute`, `feature:path`): the first time a learner opens a lesson
   of a unit, the path shows what the unit teaches first: its goals, its key words (`keyWords` in the
   unit JSON: the first core lemmas of the syllabus, with picture and audio `<unit>.kw<i>`) and the
@@ -156,6 +168,10 @@ question. Finishing records the story level as completed.
   speaking), with no hints and no second chances. 80 % right skips the section: every
   required level of its units is recorded as completed (star challenges stay optional), and the
   learner can try the next section or start learning. Placement tests do not count towards the daily goal.
+- **Jump tests** (`PlacementUseCase.jumpTest`; `PlacementRoute(jump = true)`): from the sections
+  overview or the end of a section, a learner can jump to a locked section. The test asks about 18
+  exercises spread over every unit between the first unfinished section and the target; passing
+  (80 %) marks all those sections as done.
 
 ## Accessibility and adaptive layout
 
@@ -196,14 +212,16 @@ tables for XP, streaks, hearts, gems and leagues). Days follow the learner's loc
 
 ## Score
 
-The profile shows a score on a CEFR-aligned scale: 0 to 29 covers A1, so finishing the course
-gives 29 (`ScoreRules`, `ObserveScoreUseCase`, `eus.hitz.core.domain.score`).
+The profile shows a score on a CEFR-aligned scale (`ScoreRules`, `ObserveScoreUseCase`,
+`eus.hitz.core.domain.score`). Each section has a CEFR `level` in `course.json`, and each level fills
+its own stretch: A1 goes from 0 to 29 and A2.1, the first half of A2 (30–59), from 29 to 44. Adding
+a level to the course never lowers a learner's score; the top is that of the course's last level.
 
-- Every *required* step counts the same: each lesson of a lesson level, each story and each review
-  (star challenges are optional practice). Score = ⌊29 × steps done / steps⌋; the bar shows the
-  way to the next point.
-- Bands: 0–9 first steps, 10–19 solid basics, 20–29 A1 within reach, each with a short
-  description.
+- Inside a level every *required* step counts the same: each lesson of a lesson level, each story
+  and each review (star challenges and cumulative reviews are optional practice). Score = ⌊Σ span ×
+  steps done / steps⌋ over the levels; the bar shows the way to the next point.
+- Bands: 0–9 first steps, 10–19 solid basics, 20–29 A1 within reach, 30–44 on the way to A2, each
+  with a short description.
 - The history is rebuilt from the first completion time of each step
   (`ProgressRepository.observeCompletions`), so it needs no storage of its own and includes
   sections skipped with a placement test. The score page (`ScoreRoute`) draws it as a line, with

@@ -75,6 +75,11 @@
     <string name="feature_lesson_placement_all_body">Has acertado el %1$d %%. ¡Ya conoces todo el curso! Puedes repasarlo cuando quieras.</string>
     <string name="feature_lesson_placement_next">Probar la sección %1$d</string>
     <string name="feature_lesson_placement_go_to_path">Empezar a aprender</string>
+    <string name="feature_lesson_jump_passed">¡Sección %1$d desbloqueada!</string>
+    <string name="feature_lesson_jump_passed_body">Has acertado el %1$d %% y hemos marcado como completado todo lo anterior. Puedes seguir desde aquí.</string>
+    <string name="feature_lesson_jump_failed">Todavía no</string>
+    <string name="feature_lesson_jump_failed_body">Has acertado el %1$d %%. Sigue por donde ibas: lo que te queda te preparará para esta sección.</string>
+    <string name="feature_lesson_jump_back">Volver a la ruta</string>
     <string name="feature_lesson_daily_goal">Objetivo diario</string>
     <string name="feature_lesson_daily_goal_change">%1$d %% → %2$d %%</string>
     <string name="feature_lesson_stat_first_try">A la primera</string>

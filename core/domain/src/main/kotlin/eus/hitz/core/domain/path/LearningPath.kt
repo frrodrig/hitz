@@ -1,5 +1,6 @@
 package eus.hitz.core.domain.path
 
+import eus.hitz.core.model.content.CefrLevel
 import eus.hitz.core.model.content.LocalizedText
 
 enum class NodeType { Lesson, Story, Review }
@@ -34,12 +35,24 @@ data class PathChallenge(
     val stars: Int,
 )
 
+/**
+ * The cumulative review after a textbook unit (see [eus.hitz.core.domain.recall.RecallRules]):
+ * optional, available once the unit's levels are completed, and never blocking the path.
+ */
+data class PathRecall(
+    val unitId: String,
+    val levelId: String,
+    val isAvailable: Boolean,
+    val isDone: Boolean,
+)
+
 data class PathUnit(
     val id: String,
     val title: LocalizedText,
     val goals: List<LocalizedText>,
     val nodes: List<PathNode>,
     val challenge: PathChallenge? = null,
+    val recall: PathRecall? = null,
 ) {
     val isUnlocked: Boolean get() = nodes.any { it.state != NodeState.Locked }
 }
@@ -49,9 +62,22 @@ data class PathSection(
     val title: LocalizedText,
     val description: LocalizedText,
     val units: List<PathUnit>,
-)
+    /** CEFR level of the section, as in the course (`A1`, `A2.1`). */
+    val level: String = CefrLevel.A1,
+) {
+    val isCompleted: Boolean get() = units.all { unit -> unit.nodes.all { it.state == NodeState.Completed } }
+
+    val isUnlocked: Boolean get() = units.any { it.isUnlocked }
+
+    val isCurrent: Boolean get() = units.any { unit -> unit.nodes.any { it.isCurrent } }
+
+    val completedUnits: Int get() = units.count { unit -> unit.nodes.all { it.state == NodeState.Completed } }
+}
 
 data class LearningPath(val sections: List<PathSection>) {
+    /** The section of the current step; the last one when the course is finished. */
+    val currentSection: PathSection? get() = sections.firstOrNull { it.isCurrent } ?: sections.lastOrNull()
+
     val currentNode: PathNode? get() = sections.flatMap { it.units }.flatMap { it.nodes }.firstOrNull { it.isCurrent }
 
     val challenges: List<PathChallenge> get() = sections.flatMap { it.units }.mapNotNull { it.challenge }

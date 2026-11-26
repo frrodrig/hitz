@@ -23,10 +23,21 @@ data class Course(
     val sections: List<Section>,
 )
 
+/**
+ * A section of the course. [level] is the CEFR level it belongs to ([CefrLevel.A1] or
+ * [CefrLevel.A2_1]); sections of the same level follow each other.
+ */
 @Serializable
 data class Section(
     val id: String,
     val title: LocalizedText,
     val description: LocalizedText,
     val units: List<String>,
+    val level: String = CefrLevel.A1,
 )
+
+/** The CEFR levels the course covers, as written in `course.json`. */
+object CefrLevel {
+    const val A1 = "A1"
+    const val A2_1 = "A2.1"
+}

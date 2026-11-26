@@ -152,18 +152,23 @@ private fun PlacementMessage(
     val percent = (state.accuracy * PERCENT).roundToInt()
     val next = state.nextSectionId
     LessonMessage(
-        title = if (state.passed) {
-            stringResource(R.string.feature_lesson_placement_passed, state.sectionNumber)
-        } else {
-            stringResource(R.string.feature_lesson_placement_start_here, state.sectionNumber)
+        title = when {
+            state.isJump && state.passed -> stringResource(R.string.feature_lesson_jump_passed, state.sectionNumber)
+            state.isJump -> stringResource(R.string.feature_lesson_jump_failed)
+            state.passed -> stringResource(R.string.feature_lesson_placement_passed, state.sectionNumber)
+            else -> stringResource(R.string.feature_lesson_placement_start_here, state.sectionNumber)
         },
         body = when {
+            state.isJump && state.passed -> stringResource(R.string.feature_lesson_jump_passed_body, percent)
+            state.isJump -> stringResource(R.string.feature_lesson_jump_failed_body, percent)
             !state.passed -> stringResource(R.string.feature_lesson_placement_failed_body, percent)
             next != null -> stringResource(R.string.feature_lesson_placement_next_body, percent)
             else -> stringResource(R.string.feature_lesson_placement_all_body, percent)
         },
         action = if (next != null) {
             stringResource(R.string.feature_lesson_placement_next, state.sectionNumber + 1)
+        } else if (state.isJump) {
+            stringResource(R.string.feature_lesson_jump_back)
         } else {
             stringResource(R.string.feature_lesson_placement_go_to_path)
         },
