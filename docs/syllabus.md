@@ -61,7 +61,7 @@ amplía* lesson when the point was already taught in A1 (see Part A2.1).
 | 2 | 127 |
 | 3 | 115 |
 | 4 | 102 |
-| 5 | 173 |
+| 5 | 175 |
 | 6 | 159 |
 <!-- counts:end -->
 
@@ -1219,7 +1219,7 @@ Each grammar point is tagged:
   it is over); *gaur* goes with the present perfect, *atzo* with the preterite.
 
 <!-- vocab:15.1:start -->
-**Vocabulary (27 words)**
+**Vocabulary (28 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -1250,8 +1250,9 @@ Each grammar point is tagged:
 | atera | sacar; salir | verb | bridge: assumed by the A2 book; not in Hitz A1 |
 | itxaron | esperar (aguardar) | verb | bridge: assumed by the A2 book; not in Hitz A1 |
 | ezuste | sorpresa | noun |  |
+| agindu | mandar; ordenar | verb | bridge: assumed by the A2 book; not in Hitz A1 |
 
-**Function words and survival phrases (not counted towards the limit):** ezer (nada), inor (nadie), dena (todo), laster (pronto)
+**Function words and survival phrases (not counted towards the limit):** ezer (nada), inor (nadie), dena (todo), laster (pronto), hona (aquí (hacia aquí))
 <!-- vocab:15.1:end -->
 
 #### Unit 15.2 · Benetan?
@@ -1271,7 +1272,7 @@ Each grammar point is tagged:
   exclamatives reuse the -(E)N and -(E)LA endings already known.
 
 <!-- vocab:15.2:start -->
-**Vocabulary (23 words)**
+**Vocabulary (24 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -1298,6 +1299,7 @@ Each grammar point is tagged:
 | dezente | bastante | adv. |  |
 | nahiko | bastante (suficiente) | adv. |  |
 | arazo | problema | noun |  |
+| begiratu | mirar | verb | bridge: assumed by the A2 book; not in Hitz A1 |
 
 **Function words and survival phrases (not counted towards the limit):** batere (nada (en absoluto))
 <!-- vocab:15.2:end -->

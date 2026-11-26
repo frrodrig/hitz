@@ -1,0 +1,46 @@
+<!-- Maite en un concierto, con focos que brillan sobre el escenario. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u15-2, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Maite en un concierto, con focos" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#2E2A4A" />
+  <g data-depth-generated="">
+    <clipPath id="u15-2-3">
+      <path d="M0,0 h200 v200 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u15-2-3)">
+      <path d="M-40 -40 H240 V240 H-40 Z M-10 -9 h200 v200 h-200 Z" fill-rule="evenodd" fill="#2D263B" />
+      <path d="M-40 -40 H240 V240 H-40 Z M2 3 h200 v200 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="96" y="92" width="104" height="24" fill="#4A3F6B" />
+  <g data-depth-generated="">
+    <clipPath id="u15-2-2">
+      <path d="M96,92 h104 v24 h-104 Z" />
+    </clipPath>
+    <g clip-path="url(#u15-2-2)">
+      <path d="M56 52 H240 V156 H56 Z M92 88.4 h104 v24 h-104 Z" fill-rule="evenodd" fill="#423654" />
+      <path d="M56 52 H240 V156 H56 Z M98 95 h104 v24 h-104 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <path d="M120 0 L104 92 H136 Z" fill="#F7E7A1" opacity="0.35" />
+  <path d="M176 0 L156 92 H190 Z" fill="#F7E7A1" opacity="0.35" />
+  <rect x="140" y="60" width="6" height="32" fill="#1F1B33" data-depth="none" />
+  <circle cx="143" cy="58" r="6" fill="#1F1B33" />
+  <rect x="0" y="150" width="200" height="50" fill="#3C3560" />
+  <g data-depth-generated="">
+    <clipPath id="u15-2-1">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u15-2-1)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#372E4C" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <g data-host="2 50 132" />
+  <g data-motion="Twinkle" data-pivot="112 40">
+    <path d="M112 30 L115 38 L123 40 L115 42 L112 50 L109 42 L101 40 L109 38 Z" fill="#FFD36E" />
+  </g>
+  <g data-motion="TwinkleLate" data-pivot="170 48">
+    <path d="M170 40 L172 46 L178 48 L172 50 L170 56 L168 50 L162 48 L168 46 Z" fill="#FF9FB2" />
+  </g>
+</svg>
