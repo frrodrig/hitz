@@ -4,7 +4,7 @@
     python3 tools/readme_images.py
 
 * ``docs/images/screenshots/<name>.png``: the Roborazzi reference screenshots listed in
-  ``SCREENSHOTS``, scaled to 540 px wide. Re-run it after the references are re-recorded (the
+  ``SCREENSHOTS``, scaled to 540 px wide (``WIDE`` ones, in landscape, to 1080 px). Re-run it after the references are re-recorded (the
   *UI tests* workflow with ``record_screenshots``) so the README shows the current app.
 * ``docs/images/cast.png``: the four cast members in their *Hola* pose, from
   ``tools/design/art/cast/``.
@@ -33,7 +33,9 @@ SCREENSHOTS = {
     "practice": "feature/practice/src/test/screenshots/practice_hub.png",
     "profile": "feature/profile/src/test/screenshots/profile.png",
     "path-dark": "feature/path/src/test/screenshots/path_dark.png",
+    "tablet": "app/src/test/screenshots/app_path_tablet.png",
 }
+WIDE = {"tablet"}
 CAST = ["ane", "mikel", "maite", "unai"]
 CAST_HEIGHT = 280
 
@@ -46,7 +48,8 @@ def screenshots() -> None:
             stale.unlink()
     for name, source in SCREENSHOTS.items():
         image = Image.open(ROOT / source).convert("RGB")
-        image = image.resize((WIDTH, round(image.height * WIDTH / image.width)), Image.LANCZOS)
+        width = WIDTH * 2 if name in WIDE else WIDTH
+        image = image.resize((width, round(image.height * width / image.width)), Image.LANCZOS)
         image.save(target / f"{name}.png", optimize=True)
         print(f"docs/images/screenshots/{name}.png <- {source}")
 
