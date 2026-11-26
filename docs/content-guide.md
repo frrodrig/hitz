@@ -52,7 +52,7 @@ Course ─ Section ─ Unit (guidebook) ─ Level ─ Lesson ─ Exercise
 
 | Element | Id pattern | Notes |
 |---|---|---|
-| Section | `s1` | Groups three textbook units. `level` is its CEFR level (`A1` or `A2.1`): the score has a stretch per level. |
+| Section | `s1` | Groups three textbook units. `level` is its CEFR level (`A1` or `A2`): the score has a stretch per level. |
 | Unit | `u01-1` | `u<textbook unit>-<half>`; file `units/u01-1.json`. `bookUnit` must match. |
 | Level | `u01-1.l1` | `lesson`, `story`, `review` or `challenge`. |
 | Lesson | `u01-1.l1.s1` | 10–15 exercises in real content. |

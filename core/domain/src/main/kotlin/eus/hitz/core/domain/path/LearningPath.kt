@@ -62,7 +62,7 @@ data class PathSection(
     val title: LocalizedText,
     val description: LocalizedText,
     val units: List<PathUnit>,
-    /** CEFR level of the section, as in the course (`A1`, `A2.1`). */
+    /** CEFR level of the section, as in the course (`A1`, `A2`). */
     val level: String = CefrLevel.A1,
 ) {
     val isCompleted: Boolean get() = units.all { unit -> unit.nodes.all { it.state == NodeState.Completed } }

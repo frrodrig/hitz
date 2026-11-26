@@ -98,7 +98,7 @@ internal fun ScoreContent(score: Score?, onBack: () -> Unit, modifier: Modifier 
                 Section(stringResource(R.string.feature_profile_score_can_do)) { CanDoList(score.canDo) }
                 Section(stringResource(R.string.feature_profile_score_how)) {
                     val how = if (score.max > ScoreRules.A1_TOP) {
-                        stringResource(R.string.feature_profile_score_how_body_a2, ScoreRules.A1_TOP, score.max)
+                        stringResource(R.string.feature_profile_score_how_body_a2, ScoreRules.A1_TOP, ScoreRules.A2_TOP, score.max)
                     } else {
                         stringResource(R.string.feature_profile_score_how_body, score.max)
                     }
