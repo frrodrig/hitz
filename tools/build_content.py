@@ -174,6 +174,14 @@ class Lemmatizer:
             return None
         _, stems = self._known((99, 9))
         stem = next((s for s in stems if token.startswith(s) and len(token) - len(s) <= MAX_SUFFIX), None)
+        # A declined name (Bermeokoa, Amaiak) is not the shorter common word it starts with
+        # (berme, ama). A name that is the word with its article (Haizea, Herria) or the word
+        # itself (Ibai) keeps the word's gloss: herrian is still "pueblo".
+        name = max((n for n in self.proper_nouns
+                    if len(n) >= MIN_STEM and token.startswith(n) and len(token) - len(n) <= MAX_SUFFIX),
+                   key=len, default="")
+        if stem and len(name) > len(stem) and name != stem + "a":
+            return None
         return {"es": self.glosses[stem], "lemma": stem} if stem else None
 
     def lemmas_in(self, texts: list[str], unit: tuple[int, int]) -> list[str]:

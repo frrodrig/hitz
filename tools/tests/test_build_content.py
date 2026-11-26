@@ -113,6 +113,12 @@ class BuildContentTest(unittest.TestCase):
         self.assertEqual(entries["naiz"], {"es": "soy / estoy", "lemma": "izan"})
         self.assertNotIn("ane", entries)
 
+    def test_a_declined_name_is_not_glossed_as_the_shorter_word_it_starts_with(self) -> None:
+        entries = bc.glossary(["Amaiak Bermeon lan egiten du. Herrian bizi da."], self.lemmatizer)["entries"]
+        self.assertNotIn("amaiak", entries)  # not "ama"
+        self.assertNotIn("bermeon", entries)  # not "berme"
+        self.assertEqual(entries["herrian"]["lemma"], "herri")  # Euskal Herria does not hide herri
+
     def test_pictures_come_from_the_catalog_with_the_first_one_correct(self) -> None:
         built = bc.build_lesson("u05-1.l1.s1", lesson(SENTENCES[:2], images=["bread, water, milk"]), offset=0,
                                 lemmatizer=self.lemmatizer)
