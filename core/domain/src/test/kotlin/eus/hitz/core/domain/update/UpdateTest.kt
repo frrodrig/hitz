@@ -85,6 +85,30 @@ class UpdateTest {
         assertThat(releases.fetches).isEqualTo(0)
     }
 
+    @Test
+    fun askingLooksAtOnceEvenWithChecksOff() = runTest {
+        val releases = FakeReleases(release, last = DAY * 10 - 1_000)
+        assertThat(check(releases, enabled = false).checkNow()).isEqualTo(UpdateCheck.Available(release))
+        assertThat(releases.last).isEqualTo(DAY * 10)
+    }
+
+    @Test
+    fun askingSaysWhenTheAppIsUpToDateOrTheCheckFailed() = runTest {
+        assertThat(check(FakeReleases(release), installed = "1.2.0").checkNow()).isEqualTo(UpdateCheck.UpToDate)
+        val offline = FakeReleases(latest = null)
+        assertThat(check(offline).checkNow()).isEqualTo(UpdateCheck.Failed)
+        assertThat(offline.last).isEqualTo(0)
+    }
+
+    @Test
+    fun debugBuildsCannotBeAskedEither() = runTest {
+        val releases = FakeReleases(release)
+        val debug = check(releases, debug = true)
+        assertThat(debug.canCheck).isFalse()
+        assertThat(debug.checkNow()).isEqualTo(UpdateCheck.Failed)
+        assertThat(releases.fetches).isEqualTo(0)
+    }
+
     private companion object {
         const val DAY = CheckForUpdateUseCase.CHECK_INTERVAL_MILLIS
     }

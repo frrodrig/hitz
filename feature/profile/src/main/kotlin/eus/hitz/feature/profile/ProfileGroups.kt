@@ -85,11 +85,12 @@ internal fun InfoRow(
     title: String,
     description: String,
     shape: Shape,
+    modifier: Modifier = Modifier,
     onClick: (() -> Unit)? = null,
     trailing: @Composable (() -> Unit)? = null,
 ) {
     ListItem(
-        modifier = Modifier
+        modifier = modifier
             .clip(shape)
             .then(if (onClick != null) Modifier.clickableRow(onClick) else Modifier),
         headlineContent = { Text(title) },

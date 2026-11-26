@@ -74,7 +74,13 @@
     <string name="feature_profile_listening">Ejercicios de escuchar</string>
     <string name="feature_profile_listening_description">Lecciones en las que escuchas frases y las escribes o las montas.</string>
     <string name="feature_profile_update_checks">Buscar actualizaciones</string>
-    <string name="feature_profile_update_checks_description">Una vez al día, pregunta a GitHub si hay una versión nueva. Es lo único que usa internet.</string>
+    <string name="feature_profile_update_checks_description">Al activarlo y luego una vez al día, pregunta a GitHub si hay una versión nueva. Es lo único que usa internet.</string>
     <string name="feature_profile_sound_effects">Efectos de sonido</string>
     <string name="feature_profile_sound_effects_description">Sonido y vibración al acertar, fallar y terminar.</string>
+    <string name="feature_profile_update_check_now">Comprobar</string>
+    <string name="feature_profile_update_checking">%1$s · Buscando una versión nueva…</string>
+    <string name="feature_profile_update_up_to_date">%1$s · Es la última versión</string>
+    <string name="feature_profile_update_failed">%1$s · No se ha podido comprobar. Revisa la conexión.</string>
+    <string name="feature_profile_update_available">%1$s · Hay una versión nueva: %2$s</string>
+    <string name="feature_profile_update_download">Descargar</string>
 </resources>
