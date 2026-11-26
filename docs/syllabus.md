@@ -61,7 +61,7 @@ amplía* lesson when the point was already taught in A1 (see Part A2.1).
 | 2 | 127 |
 | 3 | 115 |
 | 4 | 102 |
-| 5 | 172 |
+| 5 | 173 |
 | 6 | 159 |
 <!-- counts:end -->
 
@@ -1115,7 +1115,7 @@ Each grammar point is tagged:
   vs ZEREZKOA (what a thing *has* vs what it is *made of*).
 
 <!-- vocab:14.1:start -->
-**Vocabulary (35 words)**
+**Vocabulary (36 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -1153,6 +1153,7 @@ Each grammar point is tagged:
 | erloju | reloj | noun | bridge: assumed by the A2 book; not in Hitz A1 |
 | kolore | color | noun | bridge: assumed by the A2 book; not in Hitz A1 |
 | tamaina | tamaño | noun |  |
+| objektu | objeto | noun |  |
 | aurkitu | encontrar | verb |  |
 <!-- vocab:14.1:end -->
 

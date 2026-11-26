@@ -1,0 +1,3443 @@
+{
+  "schemaVersion": 1,
+  "id": "u14-1",
+  "section": "s5",
+  "bookUnit": 14,
+  "title": {
+    "es": "De pequeño",
+    "eu": "Txikitan"
+  },
+  "goals": [
+    {
+      "es": "Describir cómo eran las personas antes y qué tenían.",
+      "eu": "Pertsonak lehen nolakoak ziren eta zer zuten deskribatu."
+    },
+    {
+      "es": "Contar qué juguetes y cosas tenías de pequeño.",
+      "eu": "Txikitan zer jostailu eta gauza zenituen kontatu."
+    },
+    {
+      "es": "Describir objetos en pasado: color, tamaño, dibujo y material.",
+      "eu": "Objektuak lehenaldian deskribatu: kolorea, tamaina, marrazkia eta materiala."
+    }
+  ],
+  "keyWords": [
+    {
+      "eu": "gaztetan",
+      "es": "de joven"
+    },
+    {
+      "eu": "txikitan",
+      "es": "de pequeño"
+    },
+    {
+      "eu": "lehen",
+      "es": "antes"
+    },
+    {
+      "eu": "jostailu",
+      "es": "juguete"
+    },
+    {
+      "eu": "panpina",
+      "es": "muñeca (juguete)"
+    },
+    {
+      "eu": "pilota",
+      "es": "pelota"
+    },
+    {
+      "eu": "bideo-joko",
+      "es": "videojuego"
+    },
+    {
+      "eu": "ilehori",
+      "es": "rubio"
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Cómo era, qué tenía: zen, zuen, zituen",
+          "eu": "Nolakoa zen, zer zuen: zen, zuen, zituen"
+        },
+        "body": {
+          "es": "Repaso del pasado de «izan» (nintzen, zen, ginen…) y de «ukan» (nuen, zuen, genuen…). Si lo que se tenía es plural, «ukan» lleva -it-, como en presente (ditut → nituen, ditu → zituen). «Ba-» delante afirma o pregunta, como en presente (banuen, bazenuen?).",
+          "eu": "«Izan» (nintzen, zen, ginen…) eta «ukan» (nuen, zuen, genuen…) aditzen lehenaldia errepasatzen dugu. Zuena plurala bada, «ukan» aditzak -it- hartzen du, orainaldian bezala (ditut → nituen, ditu → zituen). «Ba-» aurrean baieztatzeko edo galdetzeko erabiltzen da (banuen, bazenuen?)."
+        },
+        "examples": [
+          {
+            "eu": "Txikitan ilehoria nintzen.",
+            "es": "De pequeño era rubio."
+          },
+          {
+            "eu": "Amonak begi urdinak zituen.",
+            "es": "La abuela tenía los ojos azules."
+          },
+          {
+            "eu": "Bazenuen bizikletarik txikitan?",
+            "es": "¿Tenías bicicleta de pequeño?"
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Rubio, calvo, de ojos azules: ilehori, burusoil, begiurdin",
+          "eu": "Ilehori, burusoil, begiurdin"
+        },
+        "body": {
+          "es": "Muchos rasgos físicos son un nombre seguido de un adjetivo, escritos juntos en una palabra (ile + hori = ilehori, buru + soil = burusoil). También se puede decir con «-k … ditu»: «begi urdinak ditu».",
+          "eu": "Ezaugarri fisiko asko izen bat eta adjektibo bat dira, hitz bakarrean idatzita (ile + hori = ilehori, buru + soil = burusoil). «Begi urdinak ditu» esan daiteke ere."
+        },
+        "examples": [
+          {
+            "eu": "Aitona burusoila zen, eta bizarra zuen.",
+            "es": "El abuelo era calvo y tenía barba."
+          },
+          {
+            "eu": "Neska begiurdina da.",
+            "es": "La chica tiene los ojos azules."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "De rayas, de flores: -dun",
+          "eu": "Marraduna, loreduna: -dun"
+        },
+        "body": {
+          "es": "«-dun» significa «que tiene»: marradun (de rayas), loredun (de flores), koadrodun (de cuadros), poltsikodun (con bolsillos). Se dice qué tiene una cosa; «zerezkoa» dice de qué está hecha.",
+          "eu": "«-dun» atzizkiak «duena» esan nahi du: marradun, loredun, koadrodun. Gauza batek zer duen adierazten du; «zerezkoa» galderak, berriz, zerez egina dagoen."
+        },
+        "examples": [
+          {
+            "eu": "Jaka marraduna zen.",
+            "es": "La chaqueta era de rayas."
+          },
+          {
+            "eu": "Eraztuna zilarrezkoa zen.",
+            "es": "El anillo era de plata."
+          },
+          {
+            "eu": "Zapatak larruzkoak ziren.",
+            "es": "Los zapatos eran de cuero."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u14-1.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Así éramos",
+        "eu": "Horrelakoak ginen"
+      },
+      "lessons": [
+        {
+          "id": "u14-1.l1.s1",
+          "exercises": [
+            {
+              "id": "u14-1.l1.s1.e01",
+              "type": "word_intro",
+              "word": "txikitan",
+              "translation": "de pequeño",
+              "vocabulary": [
+                "txikitan"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e02",
+              "type": "word_intro",
+              "word": "ilehori",
+              "translation": "rubio",
+              "vocabulary": [
+                "ilehori"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Txikitan ilehoria nintzen."
+              },
+              "answers": [
+                "De pequeño era rubio.",
+                "De pequeña era rubia."
+              ],
+              "distractors": [
+                "largo",
+                "Mi",
+                "los"
+              ],
+              "vocabulary": [
+                "txikitan",
+                "ilehori",
+                "izan"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e04",
+              "type": "word_intro",
+              "word": "gaztetan",
+              "translation": "de joven",
+              "vocabulary": [
+                "gaztetan"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nire aita gaztetan oso argala zen."
+              },
+              "answers": [
+                "Mi padre de joven era muy delgado."
+              ],
+              "distractors": [
+                "morena",
+                "eras",
+                "y",
+                "azules"
+              ],
+              "vocabulary": [
+                "ni",
+                "aita",
+                "gaztetan",
+                "oso",
+                "argal",
+                "izan"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e06",
+              "type": "word_intro",
+              "word": "ilebeltz",
+              "translation": "moreno (de pelo negro)",
+              "vocabulary": [
+                "ilebeltz"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e07",
+              "type": "word_intro",
+              "word": "begiurdin",
+              "translation": "de ojos azules",
+              "vocabulary": [
+                "begiurdin"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e08",
+              "type": "word_intro",
+              "word": "burusoil",
+              "translation": "calvo",
+              "vocabulary": [
+                "burusoil"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e09",
+              "type": "word_intro",
+              "word": "bizar",
+              "translation": "barba",
+              "vocabulary": [
+                "bizar"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e10",
+              "type": "word_intro",
+              "word": "betaurreko",
+              "translation": "gafas",
+              "vocabulary": [
+                "betaurreko"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e11",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "ilehori",
+                  "es": "rubio"
+                },
+                {
+                  "eu": "ilebeltz",
+                  "es": "moreno"
+                },
+                {
+                  "eu": "begiurdin",
+                  "es": "de ojos azules"
+                },
+                {
+                  "eu": "burusoil",
+                  "es": "calvo"
+                },
+                {
+                  "eu": "bizar",
+                  "es": "barba"
+                },
+                {
+                  "eu": "betaurreko",
+                  "es": "gafas"
+                }
+              ],
+              "vocabulary": [
+                "ilehori",
+                "ilebeltz",
+                "begiurdin",
+                "burusoil",
+                "bizar",
+                "betaurreko"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e12",
+              "type": "order_sentence",
+              "answer": "Aitona burusoila zen.",
+              "translation": "El abuelo era calvo.",
+              "vocabulary": [
+                "aitona",
+                "burusoil",
+                "izan"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e13",
+              "type": "fill_blank",
+              "sentence": "Txikitan ilehoria ___.",
+              "options": [
+                "nintzen",
+                "naiz",
+                "nuen"
+              ],
+              "correct": 0,
+              "translation": "De pequeño era rubio.",
+              "vocabulary": [
+                "txikitan",
+                "ilehori",
+                "izan"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e14",
+              "type": "order_sentence",
+              "answer": "Osabak bizar luzea zuen.",
+              "translation": "El tío tenía barba larga.",
+              "vocabulary": [
+                "osaba",
+                "bizar",
+                "luze",
+                "zuek"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e15",
+              "type": "choose_meaning",
+              "text": "Aitona burusoila zen.",
+              "options": [
+                "El abuelo era calvo.",
+                "El abuelo era rubio.",
+                "El abuelo tenía barba."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "aitona",
+                "burusoil",
+                "izan"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e16",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Amona ilebeltza eta begiurdina zen."
+              },
+              "answers": [
+                "La abuela era morena y tenía los ojos azules."
+              ],
+              "vocabulary": [
+                "amona",
+                "ilebeltz",
+                "eta",
+                "begiurdin",
+                "izan"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e17",
+              "type": "choose_image",
+              "prompt": "el abuelo",
+              "options": [
+                {
+                  "text": "gizona",
+                  "image": "people_man.webp"
+                },
+                {
+                  "text": "aitona",
+                  "image": "people_grandfather.webp"
+                },
+                {
+                  "text": "amona",
+                  "image": "people_grandmother.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "aitona"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Betaurrekoak zituen."
+              },
+              "answers": [
+                "Llevaba gafas.",
+                "Tenía gafas."
+              ],
+              "distractors": [
+                "abuelo",
+                "muy"
+              ],
+              "vocabulary": [
+                "betaurreko",
+                "ukan"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e19",
+              "type": "choose_image",
+              "prompt": "el pelo largo",
+              "options": [
+                {
+                  "text": "altua",
+                  "image": "describe_tall.webp"
+                },
+                {
+                  "text": "ile luzea",
+                  "image": "describe_long_hair.webp"
+                },
+                {
+                  "text": "ile motza",
+                  "image": "describe_short_hair.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "ile",
+                "luze"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaztetan oso sendoa zinen."
+              },
+              "answers": [
+                "De joven eras muy fuerte."
+              ],
+              "distractors": [
+                "rubio",
+                "El",
+                "calvo"
+              ],
+              "vocabulary": [
+                "gaztetan",
+                "oso",
+                "sendo",
+                "izan"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s1.e21",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lehen ile luzea nuen."
+              },
+              "answers": [
+                "Antes tenía el pelo largo."
+              ],
+              "distractors": [
+                "y",
+                "azules",
+                "La"
+              ],
+              "vocabulary": [
+                "lehen",
+                "ile",
+                "luze",
+                "ukan"
+              ],
+              "structures": [
+                "itxura-fisikoa"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u14-1.l1.s2",
+          "exercises": [
+            {
+              "id": "u14-1.l1.s2.e01",
+              "type": "word_intro",
+              "word": "jostailu",
+              "translation": "juguete",
+              "vocabulary": [
+                "jostailu"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e02",
+              "type": "word_intro",
+              "word": "nituen",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Txikitan jostailu asko nituen."
+              },
+              "answers": [
+                "De pequeño tenía muchos juguetes.",
+                "De pequeña tenía muchos juguetes."
+              ],
+              "distractors": [
+                "Tenías",
+                "bicicleta",
+                "azul"
+              ],
+              "vocabulary": [
+                "txikitan",
+                "jostailu",
+                "asko",
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e04",
+              "type": "word_intro",
+              "word": "panpina",
+              "translation": "muñeca (juguete)",
+              "vocabulary": [
+                "panpina"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nire ahizpak panpina bat zuen."
+              },
+              "answers": [
+                "Mi hermana tenía una muñeca."
+              ],
+              "distractors": [
+                "Nuestro",
+                "azul",
+                "Tenías"
+              ],
+              "vocabulary": [
+                "ni",
+                "ahizpa",
+                "panpina",
+                "bat",
+                "zuek"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e06",
+              "type": "word_intro",
+              "word": "pilota",
+              "translation": "pelota",
+              "vocabulary": [
+                "pilota"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e07",
+              "type": "word_intro",
+              "word": "bideo-joko",
+              "translation": "videojuego",
+              "vocabulary": [
+                "bideo-joko"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e08",
+              "type": "word_intro",
+              "word": "lehen",
+              "translation": "antes",
+              "vocabulary": [
+                "lehen"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "jostailu",
+                  "es": "juguete"
+                },
+                {
+                  "eu": "panpina",
+                  "es": "muñeca"
+                },
+                {
+                  "eu": "pilota",
+                  "es": "pelota"
+                },
+                {
+                  "eu": "bideo-joko",
+                  "es": "videojuego"
+                },
+                {
+                  "eu": "txikitan",
+                  "es": "de pequeño"
+                },
+                {
+                  "eu": "lehen",
+                  "es": "antes"
+                }
+              ],
+              "vocabulary": [
+                "jostailu",
+                "panpina",
+                "pilota",
+                "bideo-joko",
+                "txikitan",
+                "lehen"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e10",
+              "type": "order_sentence",
+              "answer": "Gure aitonak ez zuen bideo-jokorik.",
+              "translation": "Nuestro abuelo no tenía videojuegos.",
+              "vocabulary": [
+                "gu",
+                "aitona",
+                "ez",
+                "zuek",
+                "bideo-joko"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e11",
+              "type": "fill_blank",
+              "sentence": "Txikitan jostailu asko ___.",
+              "options": [
+                "nituen",
+                "nuen",
+                "ditut"
+              ],
+              "correct": 0,
+              "translation": "De pequeño tenía muchos juguetes.",
+              "vocabulary": [
+                "txikitan",
+                "jostailu",
+                "asko",
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Pilota gorri bat genuen."
+              },
+              "answers": [
+                "Teníamos una pelota roja."
+              ],
+              "vocabulary": [
+                "pilota",
+                "gorri",
+                "bat",
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e13",
+              "type": "fill_blank",
+              "sentence": "Nire ahizpak panpina bat ___.",
+              "options": [
+                "zuen",
+                "zituen",
+                "zen"
+              ],
+              "correct": 0,
+              "translation": "Mi hermana tenía una muñeca.",
+              "vocabulary": [
+                "ni",
+                "ahizpa",
+                "panpina",
+                "bat",
+                "zuek"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e14",
+              "type": "word_intro",
+              "word": "bazenuen",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bazenuen bizikletarik txikitan?"
+              },
+              "answers": [
+                "¿Tenías bicicleta de pequeño?",
+                "¿Tenías bicicleta de pequeña?"
+              ],
+              "distractors": [
+                "abuelo",
+                "una",
+                "pelota"
+              ],
+              "vocabulary": [
+                "ukan",
+                "bizikleta",
+                "txikitan"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e16",
+              "type": "word_intro",
+              "word": "banuen",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e17",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Amaia",
+                  "text": "Bazenuen bizikletarik txikitan?"
+                }
+              ],
+              "options": [
+                "Bai, banuen bizikleta gorri bat.",
+                "Bai, badut bizikleta gorri bat.",
+                "Bai, bizikleta gorria da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ukan",
+                "bizikleta",
+                "txikitan",
+                "bai",
+                "gorri",
+                "bat"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e18",
+              "type": "listen_tap",
+              "text": "Bai, banuen bizikleta urdin bat.",
+              "distractors": [
+                "jostailu",
+                "zenituen",
+                "bideo-jokorik"
+              ],
+              "vocabulary": [
+                "bai",
+                "ukan",
+                "bizikleta",
+                "urdin",
+                "bat"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e19",
+              "type": "read_true_false",
+              "passage": "Txikitan Ibaik ez zuen bideo-jokorik. Pilota bat eta bizikleta bat zituen.",
+              "statement": "Ibai tenía videojuegos.",
+              "answer": false,
+              "vocabulary": [
+                "txikitan",
+                "ibai",
+                "ez",
+                "zuek",
+                "bideo-joko",
+                "pilota",
+                "bat",
+                "eta",
+                "bizikleta",
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lehen zer jostailu zenituen?"
+              },
+              "answers": [
+                "¿Qué juguetes tenías antes?"
+              ],
+              "distractors": [
+                "tenían",
+                "una",
+                "Mis"
+              ],
+              "vocabulary": [
+                "lehen",
+                "zer",
+                "jostailu",
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e21",
+              "type": "choose_image",
+              "prompt": "la bicicleta",
+              "options": [
+                {
+                  "text": "bizikleta",
+                  "image": "transport_bicycle.webp"
+                },
+                {
+                  "text": "futbola",
+                  "image": "leisure_football.webp"
+                },
+                {
+                  "text": "liburua",
+                  "image": "object_book.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "bizikleta"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s2.e22",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nire lehengusuek bideo-joko asko zituzten."
+              },
+              "answers": [
+                "Mis primos tenían muchos videojuegos."
+              ],
+              "distractors": [
+                "Teníamos",
+                "juguetes",
+                "tenía"
+              ],
+              "vocabulary": [
+                "ni",
+                "lehengusu",
+                "bideo-joko",
+                "asko",
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "ukan-lehenaldia"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u14-1.l1.s3",
+          "exercises": [
+            {
+              "id": "u14-1.l1.s3.e01",
+              "type": "word_intro",
+              "word": "jaka",
+              "translation": "chaqueta",
+              "vocabulary": [
+                "jaka"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e02",
+              "type": "word_intro",
+              "word": "marradun",
+              "translation": "de rayas",
+              "vocabulary": [
+                "marradun"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Jaka marraduna zen."
+              },
+              "answers": [
+                "La chaqueta era de rayas."
+              ],
+              "distractors": [
+                "camiseta",
+                "camisa",
+                "manga"
+              ],
+              "vocabulary": [
+                "jaka",
+                "marradun",
+                "izan"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e04",
+              "type": "word_intro",
+              "word": "loredun",
+              "translation": "de flores",
+              "vocabulary": [
+                "loredun"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gona loreduna nahi nuen."
+              },
+              "answers": [
+                "Quería una falda de flores."
+              ],
+              "distractors": [
+                "camisa",
+                "pantalones",
+                "tenía"
+              ],
+              "vocabulary": [
+                "gona",
+                "loredun",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e06",
+              "type": "word_intro",
+              "word": "koadrodun",
+              "translation": "de cuadros",
+              "vocabulary": [
+                "koadrodun"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e07",
+              "type": "word_intro",
+              "word": "poltsiko",
+              "translation": "bolsillo",
+              "vocabulary": [
+                "poltsiko"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e08",
+              "type": "word_intro",
+              "word": "mahuka",
+              "translation": "manga",
+              "vocabulary": [
+                "mahuka"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "jaka",
+                  "es": "chaqueta"
+                },
+                {
+                  "eu": "marradun",
+                  "es": "de rayas"
+                },
+                {
+                  "eu": "loredun",
+                  "es": "de flores"
+                },
+                {
+                  "eu": "koadrodun",
+                  "es": "de cuadros"
+                },
+                {
+                  "eu": "poltsiko",
+                  "es": "bolsillo"
+                },
+                {
+                  "eu": "mahuka",
+                  "es": "manga"
+                }
+              ],
+              "vocabulary": [
+                "jaka",
+                "marradun",
+                "loredun",
+                "koadrodun",
+                "poltsiko",
+                "mahuka"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Alkandora koadroduna zuen."
+              },
+              "answers": [
+                "Llevaba una camisa de cuadros.",
+                "Tenía una camisa de cuadros."
+              ],
+              "vocabulary": [
+                "alkandora",
+                "koadrodun",
+                "zuek"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e11",
+              "type": "fill_blank",
+              "sentence": "Jaka ___ zen.",
+              "options": [
+                "marraduna",
+                "loreduna",
+                "koadroduna"
+              ],
+              "correct": 0,
+              "translation": "La chaqueta era de rayas.",
+              "vocabulary": [
+                "jaka",
+                "marradun",
+                "izan"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e12",
+              "type": "word_intro",
+              "word": "galtzek",
+              "translation": "pantalón",
+              "vocabulary": [
+                "galtza"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e13",
+              "type": "word_intro",
+              "word": "zituzten",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Galtzek bi poltsiko zituzten."
+              },
+              "answers": [
+                "Los pantalones tenían dos bolsillos."
+              ],
+              "distractors": [
+                "camisa",
+                "corta",
+                "Quería"
+              ],
+              "vocabulary": [
+                "galtza",
+                "bi",
+                "poltsiko",
+                "ukan"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e15",
+              "type": "choose_meaning",
+              "text": "Kamisetak mahuka motzak zituen.",
+              "options": [
+                "La camiseta tenía manga corta.",
+                "La camiseta era de manga larga.",
+                "La camiseta no tenía bolsillos."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kamiseta",
+                "mahuka",
+                "motz",
+                "ukan"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e16",
+              "type": "speak",
+              "text": "Kamisetak mahuka motzak zituen.",
+              "translation": "La camiseta tenía manga corta.",
+              "vocabulary": [
+                "kamiseta",
+                "mahuka",
+                "motz",
+                "ukan"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e17",
+              "type": "choose_image",
+              "prompt": "la camisa",
+              "options": [
+                {
+                  "text": "alkandora",
+                  "image": "clothes_shirt.webp"
+                },
+                {
+                  "text": "gona",
+                  "image": "clothes_skirt.webp"
+                },
+                {
+                  "text": "berokia",
+                  "image": "clothes_coat.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "alkandora"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Galtza horiek oso estuak dira."
+              },
+              "answers": [
+                "Esos pantalones son muy estrechos."
+              ],
+              "distractors": [
+                "falda",
+                "chaqueta",
+                "camiseta"
+              ],
+              "vocabulary": [
+                "galtza",
+                "hori",
+                "oso",
+                "estu",
+                "izan"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e19",
+              "type": "choose_image",
+              "prompt": "el pantalón",
+              "options": [
+                {
+                  "text": "galtzak",
+                  "image": "clothes_trousers.webp"
+                },
+                {
+                  "text": "soinekoa",
+                  "image": "clothes_dress.webp"
+                },
+                {
+                  "text": "kamiseta",
+                  "image": "clothes_tshirt.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "galtza"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Prefiero una chaqueta ancha."
+              },
+              "answers": [
+                "Jaka zabala nahiago dut."
+              ],
+              "distractors": [
+                "nahi",
+                "Galtza",
+                "Alkandora"
+              ],
+              "vocabulary": [
+                "jaka",
+                "zabal",
+                "nahiago izan",
+                "ukan"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            },
+            {
+              "id": "u14-1.l1.s3.e21",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer kolore zen soinekoa?"
+              },
+              "answers": [
+                "¿De qué color era el vestido?"
+              ],
+              "distractors": [
+                "estrechos",
+                "Llevaba",
+                "son",
+                "Quería"
+              ],
+              "vocabulary": [
+                "zer",
+                "kolore",
+                "izan",
+                "soineko"
+              ],
+              "structures": [
+                "arropa",
+                "dun"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u14-1.l2",
+      "type": "lesson",
+      "title": {
+        "es": "¿De qué era?",
+        "eu": "Zerezkoa zen?"
+      },
+      "lessons": [
+        {
+          "id": "u14-1.l2.s1",
+          "exercises": [
+            {
+              "id": "u14-1.l2.s1.e01",
+              "type": "word_intro",
+              "word": "eraztun",
+              "translation": "anillo",
+              "vocabulary": [
+                "eraztun"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e02",
+              "type": "word_intro",
+              "word": "zilarrezkoa",
+              "translation": "plata",
+              "vocabulary": [
+                "zilar"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Eraztuna zilarrezkoa zen."
+              },
+              "answers": [
+                "El anillo era de plata."
+              ],
+              "distractors": [
+                "Este",
+                "y",
+                "mesa"
+              ],
+              "vocabulary": [
+                "eraztun",
+                "zilar",
+                "izan"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e04",
+              "type": "word_intro",
+              "word": "erloju",
+              "translation": "reloj",
+              "vocabulary": [
+                "erloju"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e05",
+              "type": "word_intro",
+              "word": "urrezkoa",
+              "translation": "oro",
+              "vocabulary": [
+                "urre"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Erlojua urrezkoa zen."
+              },
+              "answers": [
+                "El reloj era de oro."
+              ],
+              "distractors": [
+                "camiseta",
+                "plata",
+                "es"
+              ],
+              "vocabulary": [
+                "erloju",
+                "urre",
+                "izan"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e07",
+              "type": "word_intro",
+              "word": "larru",
+              "translation": "cuero; piel",
+              "vocabulary": [
+                "larru"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e08",
+              "type": "word_intro",
+              "word": "artile",
+              "translation": "lana",
+              "vocabulary": [
+                "artile"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e09",
+              "type": "word_intro",
+              "word": "kotoi",
+              "translation": "algodón",
+              "vocabulary": [
+                "kotoi"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e10",
+              "type": "word_intro",
+              "word": "urre",
+              "translation": "oro",
+              "vocabulary": [
+                "urre"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e11",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "larru",
+                  "es": "cuero"
+                },
+                {
+                  "eu": "artile",
+                  "es": "lana"
+                },
+                {
+                  "eu": "kotoi",
+                  "es": "algodón"
+                },
+                {
+                  "eu": "urre",
+                  "es": "oro"
+                },
+                {
+                  "eu": "zilar",
+                  "es": "plata"
+                },
+                {
+                  "eu": "eraztun",
+                  "es": "anillo"
+                }
+              ],
+              "vocabulary": [
+                "larru",
+                "artile",
+                "kotoi",
+                "urre",
+                "zilar",
+                "eraztun"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zapatak larruzkoak ziren."
+              },
+              "answers": [
+                "Los zapatos eran de cuero."
+              ],
+              "distractors": [
+                "era",
+                "camiseta",
+                "madera"
+              ],
+              "vocabulary": [
+                "zapata",
+                "larru",
+                "izan"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e13",
+              "type": "fill_blank",
+              "sentence": "Eraztuna ___ zen.",
+              "options": [
+                "zilarrezkoa",
+                "zilarra",
+                "zilarrekoa"
+              ],
+              "correct": 0,
+              "translation": "El anillo era de plata.",
+              "vocabulary": [
+                "eraztun",
+                "zilar",
+                "izan"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Jertse hau artilezkoa da."
+              },
+              "answers": [
+                "Este jersey es de lana."
+              ],
+              "distractors": [
+                "algodón",
+                "eran",
+                "oro"
+              ],
+              "vocabulary": [
+                "jertse",
+                "hau",
+                "artile",
+                "izan"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e15",
+              "type": "fill_blank",
+              "sentence": "Zapatak larruzkoak ___.",
+              "options": [
+                "ziren",
+                "zen",
+                "zituen"
+              ],
+              "correct": 0,
+              "translation": "Los zapatos eran de cuero.",
+              "vocabulary": [
+                "zapata",
+                "larru",
+                "izan"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kamiseta kotoizkoa da."
+              },
+              "answers": [
+                "La camiseta es de algodón."
+              ],
+              "distractors": [
+                "qué",
+                "bolso",
+                "oro"
+              ],
+              "vocabulary": [
+                "kamiseta",
+                "kotoi",
+                "izan"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e17",
+              "type": "choose_meaning",
+              "text": "Erlojua urrezkoa zen.",
+              "options": [
+                "El reloj era de oro.",
+                "El reloj era de plata.",
+                "El anillo era de oro."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "erloju",
+                "urre",
+                "izan"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿De qué era el bolso?"
+              },
+              "answers": [
+                "Zerezkoa zen poltsa?"
+              ],
+              "distractors": [
+                "beltza",
+                "egurrezkoa"
+              ],
+              "vocabulary": [
+                "zer",
+                "izan",
+                "poltsa"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e19",
+              "type": "choose_image",
+              "prompt": "el zapato",
+              "options": [
+                {
+                  "text": "zapata",
+                  "image": "clothes_shoe.webp"
+                },
+                {
+                  "text": "jertsea",
+                  "image": "clothes_jumper.webp"
+                },
+                {
+                  "text": "berokia",
+                  "image": "clothes_coat.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zapata"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e20",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Poltsa larruzkoa zen, eta beltza."
+              },
+              "answers": [
+                "El bolso era de cuero, y negro."
+              ],
+              "distractors": [
+                "mesa",
+                "zapatos",
+                "qué",
+                "eran"
+              ],
+              "vocabulary": [
+                "poltsa",
+                "larru",
+                "izan",
+                "eta",
+                "beltz"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s1.e21",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "La mesa era de madera."
+              },
+              "answers": [
+                "Mahaia egurrezkoa zen."
+              ],
+              "vocabulary": [
+                "mahai",
+                "egur",
+                "izan"
+              ],
+              "structures": [
+                "zerezkoa",
+                "materialak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u14-1.l2.s2",
+          "exercises": [
+            {
+              "id": "u14-1.l2.s2.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Atzo poltsa bat galdu nuen."
+              },
+              "answers": [
+                "Ayer perdí un bolso."
+              ],
+              "vocabulary": [
+                "atzo",
+                "poltsa",
+                "bat",
+                "galdu",
+                "ukan"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e02",
+              "type": "listen_type",
+              "text": "Nolakoa zen?",
+              "answers": [
+                "Nolakoa zen?"
+              ],
+              "vocabulary": [
+                "nola",
+                "izan"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e03",
+              "type": "word_intro",
+              "word": "aurkitu",
+              "translation": "encontrar",
+              "vocabulary": [
+                "aurkitu"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e04",
+              "type": "word_intro",
+              "word": "kolore",
+              "translation": "color",
+              "vocabulary": [
+                "kolore"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e05",
+              "type": "word_intro",
+              "word": "tamaina",
+              "translation": "tamaño",
+              "vocabulary": [
+                "tamaina"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e06",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "galdu",
+                  "es": "perder"
+                },
+                {
+                  "eu": "aurkitu",
+                  "es": "encontrar"
+                },
+                {
+                  "eu": "kolore",
+                  "es": "color"
+                },
+                {
+                  "eu": "tamaina",
+                  "es": "tamaño"
+                },
+                {
+                  "eu": "erloju",
+                  "es": "reloj"
+                }
+              ],
+              "vocabulary": [
+                "galdu",
+                "aurkitu",
+                "kolore",
+                "tamaina",
+                "erloju"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e07",
+              "type": "speak",
+              "text": "Handia zen, eta gorria.",
+              "translation": "Era grande, y roja.",
+              "vocabulary": [
+                "handi",
+                "izan",
+                "eta",
+                "gorri"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e08",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Langilea",
+                  "text": "Zer galdu duzu?"
+                },
+                {
+                  "speaker": "Nerea",
+                  "text": "Erloju bat."
+                },
+                {
+                  "speaker": "Langilea",
+                  "text": "Nolakoa zen?"
+                }
+              ],
+              "options": [
+                "Txikia zen, eta zilarrezkoa.",
+                "Txikia da, eta zilarrezkoa.",
+                "Zilarrezko erlojuak ditut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "galdu",
+                "ukan",
+                "erloju",
+                "bat",
+                "nola",
+                "izan",
+                "txiki",
+                "eta",
+                "zilar"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kolore gorria eta tamaina handia zuen."
+              },
+              "answers": [
+                "Era de color rojo y de tamaño grande."
+              ],
+              "distractors": [
+                "Dinero",
+                "reloj",
+                "perdí",
+                "bolso"
+              ],
+              "vocabulary": [
+                "kolore",
+                "gorri",
+                "eta",
+                "tamaina",
+                "handi",
+                "zuek"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e10",
+              "type": "word_intro",
+              "word": "zituen",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e11",
+              "type": "read_true_false",
+              "passage": "Atzo Josuk bere jaka galdu zuen. Jaka urdina zen, marraduna, eta bi poltsiko zituen.",
+              "statement": "La chaqueta de Josu tenía bolsillos.",
+              "answer": true,
+              "vocabulary": [
+                "atzo",
+                "hura",
+                "jaka",
+                "galdu",
+                "zuek",
+                "urdin",
+                "izan",
+                "marradun",
+                "eta",
+                "bi",
+                "poltsiko",
+                "ukan"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué tenías en el bolso?"
+              },
+              "answers": [
+                "Zer zenuen poltsan?"
+              ],
+              "distractors": [
+                "tamaina",
+                "honetan"
+              ],
+              "vocabulary": [
+                "zer",
+                "ukan",
+                "poltsa"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e13",
+              "type": "choose_image",
+              "prompt": "la bolsa",
+              "options": [
+                {
+                  "text": "telefonoa",
+                  "image": "object_phone.webp"
+                },
+                {
+                  "text": "txartela",
+                  "image": "object_card.webp"
+                },
+                {
+                  "text": "poltsa",
+                  "image": "object_bag.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "poltsa"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e14",
+              "type": "listen_tap",
+              "text": "Dirua eta liburu bat.",
+              "distractors": [
+                "galdu",
+                "Handia",
+                "galdutako"
+              ],
+              "vocabulary": [
+                "diru",
+                "eta",
+                "liburu",
+                "bat"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e15",
+              "type": "word_intro",
+              "word": "galdutako",
+              "translation": "perder",
+              "vocabulary": [
+                "galdu"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e16",
+              "type": "word_intro",
+              "word": "objektu",
+              "translation": "objeto",
+              "vocabulary": [
+                "objektu"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bulego honetan galdutako objektuak daude."
+              },
+              "answers": [
+                "En esta oficina están los objetos perdidos."
+              ],
+              "distractors": [
+                "tenías",
+                "rojo",
+                "el",
+                "de"
+              ],
+              "vocabulary": [
+                "bulego",
+                "hau",
+                "galdu",
+                "objektu",
+                "egon"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s2.e18",
+              "type": "order_sentence",
+              "answer": "Zure erlojua aurkitu dugu!",
+              "translation": "¡Hemos encontrado tu reloj!",
+              "vocabulary": [
+                "zu",
+                "erloju",
+                "aurkitu",
+                "ukan"
+              ],
+              "structures": [
+                "galdutako-objektuak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u14-1.l2.s3",
+          "exercises": [
+            {
+              "id": "u14-1.l2.s3.e01",
+              "type": "word_intro",
+              "word": "lapurreta",
+              "translation": "robo",
+              "vocabulary": [
+                "lapurreta"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lapurreta bat egon da bankuan."
+              },
+              "answers": [
+                "Ha habido un robo en el banco."
+              ],
+              "distractors": [
+                "pantalones",
+                "gafas",
+                "y",
+                "delgado"
+              ],
+              "vocabulary": [
+                "lapurreta",
+                "bat",
+                "egon",
+                "izan",
+                "banku"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e03",
+              "type": "word_intro",
+              "word": "lekuko",
+              "translation": "testigo",
+              "vocabulary": [
+                "lekuko"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e04",
+              "type": "word_intro",
+              "word": "lapur",
+              "translation": "ladrón; ladrona",
+              "vocabulary": [
+                "lapur"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lekukoak lapurra ikusi zuen."
+              },
+              "answers": [
+                "El testigo vio al ladrón."
+              ],
+              "distractors": [
+                "ertzainas",
+                "un",
+                "anchos"
+              ],
+              "vocabulary": [
+                "lekuko",
+                "lapur",
+                "ikusi",
+                "zuek"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e06",
+              "type": "word_intro",
+              "word": "ertzain",
+              "translation": "ertzaina",
+              "vocabulary": [
+                "ertzain"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e07",
+              "type": "word_intro",
+              "word": "sendo",
+              "translation": "fuerte; robusto",
+              "vocabulary": [
+                "sendo"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "lapur",
+                  "es": "ladrón"
+                },
+                {
+                  "eu": "lapurreta",
+                  "es": "robo"
+                },
+                {
+                  "eu": "lekuko",
+                  "es": "testigo"
+                },
+                {
+                  "eu": "ertzain",
+                  "es": "ertzaina"
+                },
+                {
+                  "eu": "sendo",
+                  "es": "fuerte"
+                }
+              ],
+              "vocabulary": [
+                "lapur",
+                "lapurreta",
+                "lekuko",
+                "ertzain",
+                "sendo"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lapurra altua eta argala zen."
+              },
+              "answers": [
+                "El ladrón era alto y delgado."
+              ],
+              "distractors": [
+                "anchos",
+                "Los",
+                "un",
+                "banco"
+              ],
+              "vocabulary": [
+                "lapur",
+                "altu",
+                "eta",
+                "argal",
+                "izan"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e10",
+              "type": "choose_meaning",
+              "text": "Lekukoak lapurra ikusi zuen.",
+              "options": [
+                "El testigo vio al ladrón.",
+                "El ladrón vio al testigo.",
+                "El testigo es un ladrón."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "lekuko",
+                "lapur",
+                "ikusi",
+                "zuek"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Tenía barba y llevaba gafas."
+              },
+              "answers": [
+                "Bizarra eta betaurrekoak zituen."
+              ],
+              "distractors": [
+                "Lapurra",
+                "argala",
+                "bankuan"
+              ],
+              "vocabulary": [
+                "bizar",
+                "eta",
+                "betaurreko",
+                "ukan"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e12",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ertzaina",
+                  "text": "Nolakoa zen lapurra?"
+                }
+              ],
+              "options": [
+                "Altua zen, eta bizarra zuen.",
+                "Altua da, eta bizarra du.",
+                "Lapurreta bat izan da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nola",
+                "izan",
+                "lapur",
+                "altu",
+                "eta",
+                "bizar",
+                "zuek"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e13",
+              "type": "listen_tap",
+              "text": "Jaka beltza eta galtza zabalak zituen.",
+              "distractors": [
+                "lekukoarekin",
+                "Lapurra",
+                "Bizarra",
+                "ikusi"
+              ],
+              "vocabulary": [
+                "jaka",
+                "beltz",
+                "eta",
+                "galtza",
+                "zabal",
+                "ukan"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e14",
+              "type": "read_true_false",
+              "passage": "Lapurra ez zen altua. Ilehoria zen, eta jaka loreduna zuen.",
+              "statement": "El ladrón era moreno.",
+              "answer": false,
+              "vocabulary": [
+                "lapur",
+                "ez",
+                "izan",
+                "altu",
+                "ilehori",
+                "eta",
+                "jaka",
+                "loredun",
+                "zuek"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            },
+            {
+              "id": "u14-1.l2.s3.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Los ertzainas han hablado con el testigo."
+              },
+              "answers": [
+                "Ertzainek lekukoarekin hitz egin dute."
+              ],
+              "distractors": [
+                "galtza",
+                "bat",
+                "beltza"
+              ],
+              "vocabulary": [
+                "hitz egin",
+                "ertzain",
+                "lekuko",
+                "ukan"
+              ],
+              "structures": [
+                "lekukoak",
+                "deskribapenak"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u14-1.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Recuerdos",
+        "eu": "Oroitzapenak"
+      },
+      "lessons": [
+        {
+          "id": "u14-1.l3.s1",
+          "exercises": [
+            {
+              "id": "u14-1.l3.s1.e01",
+              "type": "speak",
+              "text": "Hau aitonaren eta amonaren argazki zahar bat da.",
+              "translation": "Esta es una foto antigua del abuelo y la abuela.",
+              "vocabulary": [
+                "hau",
+                "aitona",
+                "eta",
+                "amona",
+                "argazki",
+                "zahar",
+                "bat",
+                "izan"
+              ],
+              "structures": [
+                "argazkiak",
+                "lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s1.e02",
+              "type": "word_intro",
+              "word": "zineten",
+              "translation": "erais / estabais · fuisteis",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "argazkiak",
+                "lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaztetan oso politak zineten!"
+              },
+              "answers": [
+                "¡De jóvenes erais muy guapos!"
+              ],
+              "distractors": [
+                "eras",
+                "antigua",
+                "Esta"
+              ],
+              "vocabulary": [
+                "gaztetan",
+                "oso",
+                "polit",
+                "izan"
+              ],
+              "structures": [
+                "argazkiak",
+                "lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s1.e04",
+              "type": "choose_meaning",
+              "text": "Gaztetan oso politak zineten!",
+              "options": [
+                "¡De jóvenes erais muy guapos!",
+                "¡De jóvenes sois muy guapos!",
+                "¡Ahora sois muy jóvenes!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gaztetan",
+                "oso",
+                "polit",
+                "izan"
+              ],
+              "structures": [
+                "argazkiak",
+                "lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s1.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La abuela era alta y tenía el pelo largo."
+              },
+              "answers": [
+                "Amona altua zen, eta ile luzea zuen."
+              ],
+              "distractors": [
+                "ilehori",
+                "da",
+                "politak",
+                "handiak"
+              ],
+              "vocabulary": [
+                "amona",
+                "altu",
+                "izan",
+                "eta",
+                "ile",
+                "luze",
+                "zuek"
+              ],
+              "structures": [
+                "argazkiak",
+                "lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s1.e06",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Amaia",
+                  "text": "Amona, hau zu zara?"
+                }
+              ],
+              "options": [
+                "Bai, gaztetan ilehoria nintzen.",
+                "Bai, gaztetan ilehoria naiz.",
+                "Bai, argazkia zaharra da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "amona",
+                "hau",
+                "zu",
+                "izan",
+                "bai",
+                "gaztetan",
+                "ilehori"
+              ],
+              "structures": [
+                "argazkiak",
+                "lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s1.e07",
+              "type": "listen_tap",
+              "text": "Aitonak betaurreko handiak zituen.",
+              "distractors": [
+                "bat",
+                "zinen",
+                "Amona"
+              ],
+              "vocabulary": [
+                "aitona",
+                "betaurreko",
+                "handi",
+                "ukan"
+              ],
+              "structures": [
+                "argazkiak",
+                "lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s1.e08",
+              "type": "read_true_false",
+              "passage": "Argazki zaharrean, aitona burusoila da eta bizar luzea du. Amonak betaurrekoak ditu.",
+              "statement": "En la foto la abuela lleva gafas.",
+              "answer": true,
+              "vocabulary": [
+                "argazki",
+                "zahar",
+                "aitona",
+                "burusoil",
+                "izan",
+                "eta",
+                "bizar",
+                "luze",
+                "ukan",
+                "amona",
+                "betaurreko"
+              ],
+              "structures": [
+                "argazkiak",
+                "lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s1.e09",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Quién es este chico rubio?"
+              },
+              "answers": [
+                "Nor da mutil ilehori hau?"
+              ],
+              "vocabulary": [
+                "nor",
+                "izan",
+                "mutil",
+                "ilehori",
+                "hau"
+              ],
+              "structures": [
+                "argazkiak",
+                "lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s1.e10",
+              "type": "choose_image",
+              "prompt": "la foto",
+              "options": [
+                {
+                  "text": "liburua",
+                  "image": "object_book.webp"
+                },
+                {
+                  "text": "argazkia",
+                  "image": "object_photo.webp"
+                },
+                {
+                  "text": "telefonoa",
+                  "image": "object_phone.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "argazki"
+              ],
+              "structures": [
+                "argazkiak",
+                "lehenaldia"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s1.e11",
+              "type": "order_sentence",
+              "answer": "Zu zara! Txikitan oso ilehoria zinen.",
+              "translation": "¡Eres tú! De pequeño eras muy rubio.",
+              "vocabulary": [
+                "zu",
+                "izan",
+                "txikitan",
+                "oso",
+                "ilehori"
+              ],
+              "structures": [
+                "argazkiak",
+                "lehenaldia"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u14-1.l3.s2",
+          "exercises": [
+            {
+              "id": "u14-1.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lehen pilota batekin jolasten genuen."
+              },
+              "answers": [
+                "Antes jugábamos con una pelota."
+              ],
+              "distractors": [
+                "televisión",
+                "niños",
+                "los"
+              ],
+              "vocabulary": [
+                "lehen",
+                "pilota",
+                "bat",
+                "jolastu",
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Ahora los niños tienen videojuegos."
+              },
+              "answers": [
+                "Orain umeek bideo-jokoak dituzte."
+              ],
+              "distractors": [
+                "nuen",
+                "zen",
+                "egurrezkoak"
+              ],
+              "vocabulary": [
+                "orain",
+                "ume",
+                "bideo-joko",
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s2.e03",
+              "type": "word_intro",
+              "word": "ziren",
+              "translation": "eran / estaban · fueron",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s2.e04",
+              "type": "fill_blank",
+              "sentence": "Lehen jostailuak egurrezkoak ___.",
+              "options": [
+                "ziren",
+                "dira",
+                "zituen"
+              ],
+              "correct": 0,
+              "translation": "Antes los juguetes eran de madera.",
+              "vocabulary": [
+                "lehen",
+                "jostailu",
+                "egur",
+                "izan"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s2.e05",
+              "type": "word_intro",
+              "word": "artilezkoa",
+              "translation": "lana",
+              "vocabulary": [
+                "artile"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s2.e06",
+              "type": "listen_tap",
+              "text": "Nire panpina zaharra artilezkoa zen.",
+              "distractors": [
+                "dira",
+                "telebistarik",
+                "nuen"
+              ],
+              "vocabulary": [
+                "ni",
+                "panpina",
+                "zahar",
+                "artile",
+                "izan"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s2.e07",
+              "type": "choose_meaning",
+              "text": "Txikitan ez nuen telebistarik.",
+              "options": [
+                "De pequeño no tenía televisión.",
+                "De pequeño no veía la televisión.",
+                "Ahora no tengo televisión."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "txikitan",
+                "ez",
+                "ukan",
+                "telebista"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s2.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "De pequeño no tenía televisión."
+              },
+              "answers": [
+                "Txikitan ez nuen telebistarik."
+              ],
+              "vocabulary": [
+                "txikitan",
+                "ez",
+                "ukan",
+                "telebista"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s2.e09",
+              "type": "word_intro",
+              "word": "zenituen",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s2.e10",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Unai",
+                  "text": "Zer jostailu zenituen txikitan?"
+                }
+              ],
+              "options": [
+                "Pilota bat eta panpina bat nituen.",
+                "Pilota bat eta panpina bat ditut.",
+                "Pilota bat eta panpina bat ziren."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "jostailu",
+                "ukan",
+                "txikitan",
+                "pilota",
+                "bat",
+                "eta",
+                "panpina"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s2.e11",
+              "type": "order_sentence",
+              "answer": "Lehen jostailuak egurrezkoak ziren.",
+              "translation": "Antes los juguetes eran de madera.",
+              "vocabulary": [
+                "lehen",
+                "jostailu",
+                "egur",
+                "izan"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s2.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Orain plastikozkoak dira."
+              },
+              "answers": [
+                "Ahora son de plástico."
+              ],
+              "vocabulary": [
+                "orain",
+                "plastiko",
+                "izan"
+              ],
+              "structures": [
+                "jostailuak",
+                "lehen-eta-orain"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u14-1.l3.s3",
+          "exercises": [
+            {
+              "id": "u14-1.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Mi primera bicicleta era azul y pequeña."
+              },
+              "answers": [
+                "Nire lehen bizikleta urdina eta txikia zen."
+              ],
+              "distractors": [
+                "Aitaren",
+                "autoak",
+                "Zer",
+                "marradunak"
+              ],
+              "vocabulary": [
+                "ni",
+                "lehen",
+                "bizikleta",
+                "urdin",
+                "eta",
+                "txiki",
+                "izan"
+              ],
+              "structures": [
+                "deskribapenak",
+                "laburpena"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Aitaren erlojua zilarrezkoa zen.",
+              "distractors": [
+                "Osabak",
+                "txikia",
+                "urdina"
+              ],
+              "vocabulary": [
+                "aita",
+                "erloju",
+                "zilar",
+                "izan"
+              ],
+              "structures": [
+                "deskribapenak",
+                "laburpena"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Osabak alkandora marradunak zituen.",
+              "options": [
+                "El tío tenía camisas de rayas.",
+                "El tío tenía una camisa de flores.",
+                "El tío llevaba una chaqueta de rayas."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "osaba",
+                "alkandora",
+                "marradun",
+                "ukan"
+              ],
+              "structures": [
+                "deskribapenak",
+                "laburpena"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "El tío tenía camisas de rayas."
+              },
+              "answers": [
+                "Osabak alkandora marradunak zituen."
+              ],
+              "vocabulary": [
+                "osaba",
+                "alkandora",
+                "marradun",
+                "ukan"
+              ],
+              "structures": [
+                "deskribapenak",
+                "laburpena"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Garazi",
+                  "text": "Nolakoa zen zure lehen irakaslea?"
+                }
+              ],
+              "options": [
+                "Altua zen, eta betaurrekoak zituen.",
+                "Altua da, eta betaurrekoak ditu.",
+                "Lehen irakaslea nintzen."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nola",
+                "izan",
+                "zu",
+                "lehen",
+                "irakasle",
+                "altu",
+                "eta",
+                "betaurreko",
+                "ukan"
+              ],
+              "structures": [
+                "deskribapenak",
+                "laburpena"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Gure eskolako irakaslea burusoila zen.",
+              "translation": "El profesor de nuestra escuela era calvo.",
+              "vocabulary": [
+                "gu",
+                "eskola",
+                "irakasle",
+                "burusoil",
+                "izan"
+              ],
+              "structures": [
+                "deskribapenak",
+                "laburpena"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s3.e07",
+              "type": "read_true_false",
+              "passage": "Kepak bizikleta zaharra zuen. Txikia eta berdea zen, baina oso polita.",
+              "statement": "La bicicleta de Kepa era grande.",
+              "answer": false,
+              "vocabulary": [
+                "bizikleta",
+                "zahar",
+                "zuek",
+                "txiki",
+                "eta",
+                "berde",
+                "izan",
+                "baina",
+                "oso",
+                "polit"
+              ],
+              "structures": [
+                "deskribapenak",
+                "laburpena"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer kolore zuen zure lehen autoak?"
+              },
+              "answers": [
+                "¿De qué color era tu primer coche?"
+              ],
+              "vocabulary": [
+                "zer",
+                "kolore",
+                "zuek",
+                "zu",
+                "lehen",
+                "auto"
+              ],
+              "structures": [
+                "deskribapenak",
+                "laburpena"
+              ]
+            },
+            {
+              "id": "u14-1.l3.s3.e09",
+              "type": "listen_type",
+              "text": "Gorria zen, eta oso zaharra.",
+              "answers": [
+                "Gorria zen, eta oso zaharra."
+              ],
+              "vocabulary": [
+                "gorri",
+                "izan",
+                "eta",
+                "oso",
+                "zahar"
+              ],
+              "structures": [
+                "deskribapenak",
+                "laburpena"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u14-1.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: objetos perdidos",
+        "eu": "Istorioa: galdutako objektuak"
+      },
+      "story": {
+        "id": "u14-1.l4.story",
+        "title": "Galdutako objektuak",
+        "lines": [
+          {
+            "speaker": "Langilea",
+            "eu": "Egun on. Zer galdu duzu?",
+            "es": "Buenos días. ¿Qué ha perdido?"
+          },
+          {
+            "speaker": "Itziar",
+            "eu": "Egun on. Atzo poltsa bat galdu nuen, autobusean.",
+            "es": "Buenos días. Ayer perdí un bolso, en el autobús."
+          },
+          {
+            "speaker": "Langilea",
+            "eu": "Nolakoa zen poltsa?",
+            "es": "¿Cómo era el bolso?"
+          },
+          {
+            "speaker": "Itziar",
+            "eu": "Handia zen, larruzkoa eta marroia.",
+            "es": "Era grande, de cuero y marrón."
+          },
+          {
+            "speaker": "Langilea",
+            "eu": "Poltsikorik bazuen?",
+            "es": "¿Tenía bolsillos?"
+          },
+          {
+            "speaker": "Itziar",
+            "eu": "Bai, bi poltsiko zituen. Poltsan nire amonaren eraztuna nuen.",
+            "es": "Sí, tenía dos bolsillos. En el bolso llevaba el anillo de mi abuela."
+          },
+          {
+            "speaker": "Langilea",
+            "eu": "Zerezkoa zen eraztuna?",
+            "es": "¿De qué era el anillo?"
+          },
+          {
+            "speaker": "Itziar",
+            "eu": "Urrezkoa. Oso zaharra da.",
+            "es": "De oro. Es muy antiguo."
+          },
+          {
+            "speaker": "Langilea",
+            "eu": "Begira! Poltsa hau zurea da?",
+            "es": "¡Mire! ¿Este bolso es suyo?"
+          },
+          {
+            "speaker": "Itziar",
+            "eu": "Bai! Eskerrik asko!",
+            "es": "¡Sí! ¡Muchas gracias!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 2,
+            "prompt": "¿Dónde perdió Itziar el bolso?",
+            "options": [
+              "En el autobús",
+              "En el banco",
+              "En la calle"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 4,
+            "prompt": "¿Cómo era el bolso?",
+            "options": [
+              "Grande, de cuero y marrón",
+              "Pequeño, de tela y rojo",
+              "Grande, de plástico y negro"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 8,
+            "prompt": "¿De qué era el anillo?",
+            "options": [
+              "De oro",
+              "De plata",
+              "De madera"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u14-1.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u14-1.l6",
+      "type": "challenge",
+      "title": {
+        "es": "Reto de estrellas",
+        "eu": "Izarren erronka"
+      },
+      "host": "mikel"
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+# Unit 14.1 · Txikitan — A2.1 book unit 2 (Atarian + A): describing what people looked like and
+# what they had in the past; describing objects in the past by colour, size, pattern and material.
+# Past of UKAN with a plural object (nituen, zituen) and ba- in the past; compound adjectives
+# (ilehori, begiurdin); -DUN; recall of the past of IZAN / UKAN (12.2) and ZEREZKOA (9.1).
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u14-1
+section: s5
+bookUnit: 14
+title:
+  es: De pequeño
+  eu: Txikitan
+goals:
+  - es: Describir cómo eran las personas antes y qué tenían.
+    eu: Pertsonak lehen nolakoak ziren eta zer zuten deskribatu.
+  - es: Contar qué juguetes y cosas tenías de pequeño.
+    eu: Txikitan zer jostailu eta gauza zenituen kontatu.
+  - es: "Describir objetos en pasado: color, tamaño, dibujo y material."
+    eu: "Objektuak lehenaldian deskribatu: kolorea, tamaina, marrazkia eta materiala."
+guidebook:
+  sections:
+    - title:
+        es: "Cómo era, qué tenía: zen, zuen, zituen"
+        eu: "Nolakoa zen, zer zuen: zen, zuen, zituen"
+      body:
+        es: Repaso del pasado de «izan» (nintzen, zen, ginen…) y de «ukan» (nuen, zuen, genuen…). Si lo que se tenía es plural, «ukan» lleva -it-, como en presente (ditut → nituen, ditu → zituen). «Ba-» delante afirma o pregunta, como en presente (banuen, bazenuen?).
+        eu: «Izan» (nintzen, zen, ginen…) eta «ukan» (nuen, zuen, genuen…) aditzen lehenaldia errepasatzen dugu. Zuena plurala bada, «ukan» aditzak -it- hartzen du, orainaldian bezala (ditut → nituen, ditu → zituen). «Ba-» aurrean baieztatzeko edo galdetzeko erabiltzen da (banuen, bazenuen?).
+      examples:
+        - eu: Txikitan ilehoria nintzen.
+          es: De pequeño era rubio.
+        - eu: Amonak begi urdinak zituen.
+          es: La abuela tenía los ojos azules.
+        - eu: Bazenuen bizikletarik txikitan?
+          es: ¿Tenías bicicleta de pequeño?
+    - title:
+        es: "Rubio, calvo, de ojos azules: ilehori, burusoil, begiurdin"
+        eu: "Ilehori, burusoil, begiurdin"
+      body:
+        es: "Muchos rasgos físicos son un nombre seguido de un adjetivo, escritos juntos en una palabra (ile + hori = ilehori, buru + soil = burusoil). También se puede decir con «-k … ditu»: «begi urdinak ditu»."
+        eu: Ezaugarri fisiko asko izen bat eta adjektibo bat dira, hitz bakarrean idatzita (ile + hori = ilehori, buru + soil = burusoil). «Begi urdinak ditu» esan daiteke ere.
+      examples:
+        - eu: Aitona burusoila zen, eta bizarra zuen.
+          es: El abuelo era calvo y tenía barba.
+        - eu: Neska begiurdina da.
+          es: La chica tiene los ojos azules.
+    - title:
+        es: "De rayas, de flores: -dun"
+        eu: "Marraduna, loreduna: -dun"
+      body:
+        es: "«-dun» significa «que tiene»: marradun (de rayas), loredun (de flores), koadrodun (de cuadros), poltsikodun (con bolsillos). Se dice qué tiene una cosa; «zerezkoa» dice de qué está hecha."
+        eu: "«-dun» atzizkiak «duena» esan nahi du: marradun, loredun, koadrodun. Gauza batek zer duen adierazten du; «zerezkoa» galderak, berriz, zerez egina dagoen."
+      examples:
+        - eu: Jaka marraduna zen.
+          es: La chaqueta era de rayas.
+        - eu: Eraztuna zilarrezkoa zen.
+          es: El anillo era de plata.
+        - eu: Zapatak larruzkoak ziren.
+          es: Los zapatos eran de cuero.
+levels:
+  - type: lesson
+    title:
+      es: Así éramos
+      eu: Horrelakoak ginen
+    lessons:
+      - structures: [itxura-fisikoa]
+        sentences:
+          - Txikitan ilehoria nintzen. = De pequeño era rubio. | De pequeña era rubia.
+          - Nire aita gaztetan oso argala zen. = Mi padre de joven era muy delgado.
+          - Aitona burusoila zen. = El abuelo era calvo.
+          - Osabak bizar luzea zuen. = El tío tenía barba larga.
+          - Amona ilebeltza eta begiurdina zen. = La abuela era morena y tenía los ojos azules.
+          - Betaurrekoak zituen. = Llevaba gafas. | Tenía gafas.
+          - Gaztetan oso sendoa zinen. = De joven eras muy fuerte.
+          - Lehen ile luzea nuen. = Antes tenía el pelo largo.
+        pairs:
+          - - ilehori = rubio
+            - ilebeltz = moreno
+            - begiurdin = de ojos azules
+            - burusoil = calvo
+            - bizar = barba
+            - betaurreko = gafas
+        meanings:
+          - text: Aitona burusoila zen.
+            options:
+              - El abuelo era calvo.
+              - El abuelo era rubio.
+              - El abuelo tenía barba.
+        blanks:
+          - text: Txikitan ilehoria ___. = De pequeño era rubio.
+            options:
+              - nintzen
+              - naiz
+              - nuen
+        images:
+          - grandfather, grandmother, man
+          - long_hair, short_hair, tall
+      - structures: [jostailuak, ukan-lehenaldia]
+        sentences:
+          - Txikitan jostailu asko nituen. = De pequeño tenía muchos juguetes. | De pequeña tenía muchos juguetes.
+          - Nire ahizpak panpina bat zuen. = Mi hermana tenía una muñeca.
+          - Gure aitonak ez zuen bideo-jokorik. = Nuestro abuelo no tenía videojuegos.
+          - Pilota gorri bat genuen. = Teníamos una pelota roja.
+          - Bazenuen bizikletarik txikitan? = ¿Tenías bicicleta de pequeño? | ¿Tenías bicicleta de pequeña?
+          - Bai, banuen bizikleta urdin bat. = Sí, tenía una bicicleta azul.
+          - Lehen zer jostailu zenituen? = ¿Qué juguetes tenías antes?
+          - Nire lehengusuek bideo-joko asko zituzten. = Mis primos tenían muchos videojuegos.
+        pairs:
+          - - jostailu = juguete
+            - panpina = muñeca
+            - pilota = pelota
+            - bideo-joko = videojuego
+            - txikitan = de pequeño
+            - lehen = antes
+        blanks:
+          - text: Txikitan jostailu asko ___. = De pequeño tenía muchos juguetes.
+            options:
+              - nituen
+              - nuen
+              - ditut
+          - text: Nire ahizpak panpina bat ___. = Mi hermana tenía una muñeca.
+            options:
+              - zuen
+              - zituen
+              - zen
+        chats:
+          - messages:
+              - Amaia | Bazenuen bizikletarik txikitan?
+            options:
+              - Bai, banuen bizikleta gorri bat.
+              - Bai, badut bizikleta gorri bat.
+              - Bai, bizikleta gorria da.
+        true_false:
+          - passage: Txikitan Ibaik ez zuen bideo-jokorik. Pilota bat eta bizikleta bat zituen.
+            statement: Ibai tenía videojuegos.
+            answer: false
+        images:
+          - bicycle, football, book
+      - structures: [arropa, dun]
+        sentences:
+          - Jaka marraduna zen. = La chaqueta era de rayas.
+          - Gona loreduna nahi nuen. = Quería una falda de flores.
+          - Alkandora koadroduna zuen. = Llevaba una camisa de cuadros. | Tenía una camisa de cuadros.
+          - Galtzek bi poltsiko zituzten. = Los pantalones tenían dos bolsillos.
+          - Kamisetak mahuka motzak zituen. = La camiseta tenía manga corta.
+          - Galtza horiek oso estuak dira. = Esos pantalones son muy estrechos.
+          - Jaka zabala nahiago dut. = Prefiero una chaqueta ancha.
+          - Zer kolore zen soinekoa? = ¿De qué color era el vestido?
+        pairs:
+          - - jaka = chaqueta
+            - marradun = de rayas
+            - loredun = de flores
+            - koadrodun = de cuadros
+            - poltsiko = bolsillo
+            - mahuka = manga
+        meanings:
+          - text: Kamisetak mahuka motzak zituen.
+            options:
+              - La camiseta tenía manga corta.
+              - La camiseta era de manga larga.
+              - La camiseta no tenía bolsillos.
+        blanks:
+          - text: Jaka ___ zen. = La chaqueta era de rayas.
+            options:
+              - marraduna
+              - loreduna
+              - koadroduna
+        images:
+          - shirt, skirt, coat
+          - trousers, dress, tshirt
+  - type: lesson
+    title:
+      es: ¿De qué era?
+      eu: Zerezkoa zen?
+    lessons:
+      - structures: [zerezkoa, materialak]
+        sentences:
+          - Eraztuna zilarrezkoa zen. = El anillo era de plata.
+          - Erlojua urrezkoa zen. = El reloj era de oro.
+          - Zapatak larruzkoak ziren. = Los zapatos eran de cuero.
+          - Jertse hau artilezkoa da. = Este jersey es de lana.
+          - Kamiseta kotoizkoa da. = La camiseta es de algodón.
+          - Zerezkoa zen poltsa? = ¿De qué era el bolso? | ¿De qué material era el bolso?
+          - Poltsa larruzkoa zen, eta beltza. = El bolso era de cuero, y negro.
+          - Mahaia egurrezkoa zen. = La mesa era de madera.
+        pairs:
+          - - larru = cuero
+            - artile = lana
+            - kotoi = algodón
+            - urre = oro
+            - zilar = plata
+            - eraztun = anillo
+        blanks:
+          - text: Eraztuna ___ zen. = El anillo era de plata.
+            options:
+              - zilarrezkoa
+              - zilarra
+              - zilarrekoa
+          - text: Zapatak larruzkoak ___. = Los zapatos eran de cuero.
+            options:
+              - ziren
+              - zen
+              - zituen
+        meanings:
+          - text: Erlojua urrezkoa zen.
+            options:
+              - El reloj era de oro.
+              - El reloj era de plata.
+              - El anillo era de oro.
+        images:
+          - shoe, coat, jumper
+      - structures: [galdutako-objektuak]
+        sentences:
+          - Atzo poltsa bat galdu nuen. = Ayer perdí un bolso.
+          - Nolakoa zen? = ¿Cómo era?
+          - Handia zen, eta gorria. = Era grande, y roja. | Era grande y rojo.
+          - Kolore gorria eta tamaina handia zuen. = Era de color rojo y de tamaño grande.
+          - Zer zenuen poltsan? = ¿Qué tenías en el bolso?
+          - Dirua eta liburu bat. = Dinero y un libro.
+          - Bulego honetan galdutako objektuak daude. = En esta oficina están los objetos perdidos.
+          - Zure erlojua aurkitu dugu! = ¡Hemos encontrado tu reloj!
+        pairs:
+          - - galdu = perder
+            - aurkitu = encontrar
+            - kolore = color
+            - tamaina = tamaño
+            - erloju = reloj
+        chats:
+          - messages:
+              - Langilea | Zer galdu duzu?
+              - Nerea | Erloju bat.
+              - Langilea | Nolakoa zen?
+            options:
+              - Txikia zen, eta zilarrezkoa.
+              - Txikia da, eta zilarrezkoa.
+              - Zilarrezko erlojuak ditut.
+        true_false:
+          - passage: Atzo Josuk bere jaka galdu zuen. Jaka urdina zen, marraduna, eta bi poltsiko zituen.
+            statement: La chaqueta de Josu tenía bolsillos.
+            answer: true
+        images:
+          - bag, phone, card
+      - structures: [lekukoak, deskribapenak]
+        sentences:
+          - Lapurreta bat egon da bankuan. = Ha habido un robo en el banco.
+          - Lekukoak lapurra ikusi zuen. = El testigo vio al ladrón.
+          - Lapurra altua eta argala zen. = El ladrón era alto y delgado.
+          - Bizarra eta betaurrekoak zituen. = Tenía barba y llevaba gafas.
+          - Jaka beltza eta galtza zabalak zituen. = Llevaba una chaqueta negra y pantalones anchos.
+          - Ertzainek lekukoarekin hitz egin dute. = Los ertzainas han hablado con el testigo.
+        pairs:
+          - - lapur = ladrón
+            - lapurreta = robo
+            - lekuko = testigo
+            - ertzain = ertzaina
+            - sendo = fuerte
+        chats:
+          - messages:
+              - Ertzaina | Nolakoa zen lapurra?
+            options:
+              - Altua zen, eta bizarra zuen.
+              - Altua da, eta bizarra du.
+              - Lapurreta bat izan da.
+        meanings:
+          - text: Lekukoak lapurra ikusi zuen.
+            options:
+              - El testigo vio al ladrón.
+              - El ladrón vio al testigo.
+              - El testigo es un ladrón.
+        true_false:
+          - passage: Lapurra ez zen altua. Ilehoria zen, eta jaka loreduna zuen.
+            statement: El ladrón era moreno.
+            answer: false
+  - type: lesson
+    title:
+      es: Recuerdos
+      eu: Oroitzapenak
+    lessons:
+      - structures: [argazkiak, lehenaldia]
+        sentences:
+          - Hau aitonaren eta amonaren argazki zahar bat da. = Esta es una foto antigua del abuelo y la abuela.
+          - Gaztetan oso politak zineten! = ¡De jóvenes erais muy guapos!
+          - Amona altua zen, eta ile luzea zuen. = La abuela era alta y tenía el pelo largo.
+          - Aitonak betaurreko handiak zituen. = El abuelo llevaba unas gafas grandes.
+          - Nor da mutil ilehori hau? = ¿Quién es este chico rubio?
+          - Zu zara! Txikitan oso ilehoria zinen. = ¡Eres tú! De pequeño eras muy rubio.
+        chats:
+          - messages:
+              - Amaia | Amona, hau zu zara?
+            options:
+              - Bai, gaztetan ilehoria nintzen.
+              - Bai, gaztetan ilehoria naiz.
+              - Bai, argazkia zaharra da.
+        meanings:
+          - text: Gaztetan oso politak zineten!
+            options:
+              - ¡De jóvenes erais muy guapos!
+              - ¡De jóvenes sois muy guapos!
+              - ¡Ahora sois muy jóvenes!
+        true_false:
+          - passage: Argazki zaharrean, aitona burusoila da eta bizar luzea du. Amonak betaurrekoak ditu.
+            statement: En la foto la abuela lleva gafas.
+            answer: true
+        images:
+          - photo, book, phone
+      - structures: [jostailuak, lehen-eta-orain]
+        sentences:
+          - Lehen pilota batekin jolasten genuen. = Antes jugábamos con una pelota.
+          - Orain umeek bideo-jokoak dituzte. = Ahora los niños tienen videojuegos.
+          - Nire panpina zaharra artilezkoa zen. = Mi vieja muñeca era de lana.
+          - Txikitan ez nuen telebistarik. = De pequeño no tenía televisión. | De pequeña no tenía tele.
+          - Lehen jostailuak egurrezkoak ziren. = Antes los juguetes eran de madera.
+          - Orain plastikozkoak dira. = Ahora son de plástico.
+        chats:
+          - messages:
+              - Unai | Zer jostailu zenituen txikitan?
+            options:
+              - Pilota bat eta panpina bat nituen.
+              - Pilota bat eta panpina bat ditut.
+              - Pilota bat eta panpina bat ziren.
+        blanks:
+          - text: Lehen jostailuak egurrezkoak ___. = Antes los juguetes eran de madera.
+            options:
+              - ziren
+              - dira
+              - zituen
+        meanings:
+          - text: Txikitan ez nuen telebistarik.
+            options:
+              - De pequeño no tenía televisión.
+              - De pequeño no veía la televisión.
+              - Ahora no tengo televisión.
+      - structures: [deskribapenak, laburpena]
+        sentences:
+          - Nire lehen bizikleta urdina eta txikia zen. = Mi primera bicicleta era azul y pequeña.
+          - Aitaren erlojua zilarrezkoa zen. = El reloj de mi padre era de plata. | El reloj del padre era de plata.
+          - Osabak alkandora marradunak zituen. = El tío tenía camisas de rayas.
+          - Gure eskolako irakaslea burusoila zen. = El profesor de nuestra escuela era calvo.
+          - Zer kolore zuen zure lehen autoak? = ¿De qué color era tu primer coche?
+          - Gorria zen, eta oso zaharra. = Era rojo, y muy viejo.
+        chats:
+          - messages:
+              - Garazi | Nolakoa zen zure lehen irakaslea?
+            options:
+              - Altua zen, eta betaurrekoak zituen.
+              - Altua da, eta betaurrekoak ditu.
+              - Lehen irakaslea nintzen.
+        true_false:
+          - passage: Kepak bizikleta zaharra zuen. Txikia eta berdea zen, baina oso polita.
+            statement: La bicicleta de Kepa era grande.
+            answer: false
+        meanings:
+          - text: Osabak alkandora marradunak zituen.
+            options:
+              - El tío tenía camisas de rayas.
+              - El tío tenía una camisa de flores.
+              - El tío llevaba una chaqueta de rayas.
+  - type: story
+    title:
+      es: "Historia: objetos perdidos"
+      eu: "Istorioa: galdutako objektuak"
+    story:
+      title: Galdutako objektuak
+      lines:
+        - Langilea | Egun on. Zer galdu duzu? = Buenos días. ¿Qué ha perdido?
+        - Itziar | Egun on. Atzo poltsa bat galdu nuen, autobusean. = Buenos días. Ayer perdí un bolso, en el autobús.
+        - Langilea | Nolakoa zen poltsa? = ¿Cómo era el bolso?
+        - Itziar | Handia zen, larruzkoa eta marroia. = Era grande, de cuero y marrón.
+        - Langilea | Poltsikorik bazuen? = ¿Tenía bolsillos?
+        - Itziar | Bai, bi poltsiko zituen. Poltsan nire amonaren eraztuna nuen. = Sí, tenía dos bolsillos. En el bolso llevaba el anillo de mi abuela.
+        - Langilea | Zerezkoa zen eraztuna? = ¿De qué era el anillo?
+        - Itziar | Urrezkoa. Oso zaharra da. = De oro. Es muy antiguo.
+        - Langilea | Begira! Poltsa hau zurea da? = ¡Mire! ¿Este bolso es suyo?
+        - Itziar | Bai! Eskerrik asko! = ¡Sí! ¡Muchas gracias!
+      questions:
+        - afterLine: 2
+          prompt: ¿Dónde perdió Itziar el bolso?
+          options:
+            - En el autobús
+            - En el banco
+            - En la calle
+        - afterLine: 4
+          prompt: ¿Cómo era el bolso?
+          options:
+            - Grande, de cuero y marrón
+            - Pequeño, de tela y rojo
+            - Grande, de plástico y negro
+        - afterLine: 8
+          prompt: ¿De qué era el anillo?
+          options:
+            - De oro
+            - De plata
+            - De madera
+  - type: review
+  - type: challenge
+    host: mikel
