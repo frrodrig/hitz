@@ -3,16 +3,15 @@
     android:height="24dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
+    <!-- A cogwheel: eight teeth around a hub. -->
     <path
         android:strokeColor="#FF000000"
         android:strokeWidth="2"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
+        android:pathData="M10.05 4.96L10.38 2.54L13.62 2.54L13.95 4.96A7.3 7.3 0 0 1 15.60 5.65L17.54 4.16L19.84 6.46L18.35 8.40A7.3 7.3 0 0 1 19.04 10.05L21.46 10.38L21.46 13.62L19.04 13.95A7.3 7.3 0 0 1 18.35 15.60L19.84 17.54L17.54 19.84L15.60 18.35A7.3 7.3 0 0 1 13.95 19.04L13.62 21.46L10.38 21.46L10.05 19.04A7.3 7.3 0 0 1 8.40 18.35L6.46 19.84L4.16 17.54L5.65 15.60A7.3 7.3 0 0 1 4.96 13.95L2.54 13.62L2.54 10.38L4.96 10.05A7.3 7.3 0 0 1 5.65 8.40L4.16 6.46L6.46 4.16L8.40 5.65A7.3 7.3 0 0 1 10.05 4.96Z"/>
+    <path
+        android:strokeColor="#FF000000"
+        android:strokeWidth="2"
         android:pathData="M9 12a3 3 0 1 0 6 0 3 3 0 1 0-6 0z"/>
-    <path
-        android:strokeColor="#FF000000"
-        android:strokeWidth="2"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:pathData="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M5.6 18.4l1.8-1.8M16.6 7.4l1.8-1.8"/>
 </vector>

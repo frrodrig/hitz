@@ -6,6 +6,8 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -75,6 +77,7 @@ internal fun UnitCover(
     isCurrentUnit: Boolean,
     onOpenGuidebook: () -> Unit,
     modifier: Modifier = Modifier,
+    showGoal: Boolean = true,
 ) {
     val scheme = MaterialTheme.colorScheme
     val unlocked = unit.isUnlocked
@@ -94,7 +97,7 @@ internal fun UnitCover(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
         ) {
-            CoverText(unit, onOpenGuidebook, Modifier.weight(1f))
+            CoverText(unit, onOpenGuidebook, showGoal, Modifier.weight(1f))
             HitzScene(
                 unitId = unit.id,
                 host = CastMember.fromName(unit.challenge?.host.orEmpty()),
@@ -106,9 +109,13 @@ internal fun UnitCover(
     }
 }
 
-/** Levels done, title, first goal, and the guide beside the levels as segments. */
+/**
+ * Levels done, title, first goal (unless [showGoal] is false, where the goals are listed beside
+ * the cover), and the guide with the levels as segments, which go under it when there is no room.
+ */
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun CoverText(unit: PathUnit, onOpenGuidebook: () -> Unit, modifier: Modifier = Modifier) {
+private fun CoverText(unit: PathUnit, onOpenGuidebook: () -> Unit, showGoal: Boolean, modifier: Modifier = Modifier) {
     val done = unit.nodes.count { it.state == NodeState.Completed }
     val number = unit.id.unitNumber()
     val title = unit.title.resolve()
@@ -132,7 +139,7 @@ private fun CoverText(unit: PathUnit, onOpenGuidebook: () -> Unit, modifier: Mod
             },
             modifier = Modifier.semantics { heading() },
         )
-        unit.goals.firstOrNull()?.let { goal ->
+        unit.goals.firstOrNull()?.takeIf { showGoal }?.let { goal ->
             Text(
                 text = goal.resolve(),
                 style = MaterialTheme.typography.bodyMedium,
@@ -141,12 +148,14 @@ private fun CoverText(unit: PathUnit, onOpenGuidebook: () -> Unit, modifier: Mod
             )
         }
         Spacer(Modifier.height(HitzSpacing.sm))
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
+        FlowRow(
             horizontalArrangement = Arrangement.spacedBy(HitzSpacing.md),
+            verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm),
         ) {
             GuideButton(number, onOpenGuidebook)
-            if (unit.isUnlocked) LevelSegments(done, unit.nodes.size)
+            if (unit.isUnlocked) {
+                Box(Modifier.align(Alignment.CenterVertically)) { LevelSegments(done, unit.nodes.size) }
+            }
         }
     }
 }

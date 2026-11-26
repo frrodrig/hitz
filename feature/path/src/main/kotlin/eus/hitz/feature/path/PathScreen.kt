@@ -251,7 +251,8 @@ private fun CurrentUnitPane(
                 style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
-            UnitCover(unit, isCurrentUnit = false, onOpenGuidebook = onOpenGuidebook)
+            // Its goals are listed right below, so the cover leaves out the first one.
+            UnitCover(unit, isCurrentUnit = false, onOpenGuidebook = onOpenGuidebook, showGoal = false)
             if (unit.goals.isNotEmpty()) {
                 Text(
                     text = stringResource(R.string.feature_path_pane_goals),

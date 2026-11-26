@@ -32,6 +32,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -48,6 +49,9 @@ import eus.hitz.feature.profile.InfoRow
 import eus.hitz.feature.profile.R
 import eus.hitz.feature.profile.SettingRow
 import eus.hitz.feature.profile.sectionTitle
+
+/** The back arrow, turned to point forward. */
+private const val CHEVRON_TURN = 180f
 
 @Composable
 fun SettingsScreen(onBack: () -> Unit, viewModel: SettingsViewModel = hiltViewModel()) {
@@ -188,6 +192,14 @@ internal fun SettingsContent(
                                 description = stringResource(R.string.feature_profile_app_language_description),
                                 shape = shape,
                                 onClick = onOpenLanguage,
+                                // It opens another screen: a chevron says so.
+                                trailing = {
+                                    Icon(
+                                        painter = painterResource(HitzIcons.Back),
+                                        contentDescription = null,
+                                        modifier = Modifier.rotate(CHEVRON_TURN),
+                                    )
+                                },
                             )
                         }
                     }
