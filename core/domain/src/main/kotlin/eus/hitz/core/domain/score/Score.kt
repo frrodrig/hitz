@@ -11,7 +11,7 @@ import eus.hitz.core.model.content.LocalizedText
  */
 data class Score(
     val value: Int,
-    /** The top of the course: 29 with A1 only, 44 with A2.1. */
+    /** The top of the course: what its published sections add up to (29 with A1 only). */
     val max: Int,
     /** The CEFR level being worked on: the first one not finished, or the last one. */
     val level: String,
@@ -32,15 +32,15 @@ data class ScorePoint(val epochDay: Long, val value: Int)
 
 data class CanDo(val unitId: String, val unitTitle: LocalizedText, val goals: List<LocalizedText>)
 
-/** Thirds of the A1 scale and the A2.1 stretch, each with its own description. */
+/** Thirds of the A1 scale and the A2 stretch, each with its own description. */
 enum class ScoreBand(val range: IntRange) {
     FirstSteps(0..9),
     Basics(10..19),
     Confident(20..ScoreRules.A1_TOP),
-    TowardsA2(ScoreRules.A1_TOP + 1..ScoreRules.A2_1_TOP),
+    TowardsA2(ScoreRules.A1_TOP + 1..ScoreRules.A2_TOP),
     ;
 
     companion object {
-        fun of(value: Int): ScoreBand = entries.first { value.coerceIn(0, ScoreRules.A2_1_TOP) in it.range }
+        fun of(value: Int): ScoreBand = entries.first { value.coerceIn(0, ScoreRules.A2_TOP) in it.range }
     }
 }
