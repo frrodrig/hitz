@@ -1,8 +1,6 @@
 package eus.hitz.feature.profile
 
 import androidx.compose.ui.test.assertIsDisplayed
-import androidx.compose.ui.test.assertIsOff
-import androidx.compose.ui.test.assertIsOn
 import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.hasScrollAction
 import androidx.compose.ui.test.hasText
@@ -31,18 +29,18 @@ class ProfileScreenTest {
     @get:Rule
     val composeRule = createComposeRule()
 
-    private val changes = mutableListOf<Pair<Setting, Boolean>>()
     private var goal: Int? = null
     private var scoreOpened = false
+    private var settingsOpened = false
 
     private fun show(darkTheme: Boolean = false) {
         composeRule.setContent {
             HitzTheme(darkTheme = darkTheme) {
                 ProfileContent(
                     state = ProfilePreviewData.ready,
-                    onSettingChange = { setting, enabled -> changes += setting to enabled },
                     onGoalChange = { goal = it },
                     onOpenScore = { scoreOpened = true },
+                    onOpenSettings = { settingsOpened = true },
                 )
             }
         }
@@ -89,22 +87,10 @@ class ProfileScreenTest {
     }
 
     @Test
-    fun settingsCanBeToggled() {
+    fun theGearOpensTheSettings() {
         show()
-        scrollTo("Ejercicios de hablar")
-        composeRule.onNodeWithText("Ejercicios de hablar").assertIsOn().performClick()
-        scrollTo("Efectos de sonido")
-        composeRule.onNodeWithText("Efectos de sonido").assertIsOn().performClick()
-        scrollTo("Recordatorio diario")
-        composeRule.onNodeWithText("Recordatorio diario").assertIsOff().performClick()
-        scrollTo("Buscar actualizaciones")
-        composeRule.onNodeWithText("Buscar actualizaciones").assertIsOn().performClick()
-        assertThat(changes).containsExactly(
-            Setting.Speaking to false,
-            Setting.SoundEffects to false,
-            Setting.Reminder to true,
-            Setting.UpdateChecks to false,
-        ).inOrder()
+        composeRule.onNodeWithContentDescription("Ajustes").performClick()
+        assertThat(settingsOpened).isTrue()
     }
 
     @Test

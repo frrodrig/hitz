@@ -75,4 +75,12 @@ class DataStoreSettingsRepositoryTest {
         repository.setDailyGoalMinutes(15)
         assertThat(repository.settings.first().dailyGoalMinutes).isEqualTo(15)
     }
+
+    @Test
+    fun `the interface follows the system colours until turned off`() = runTest {
+        val repository = repository()
+        assertThat(repository.settings.first().systemColors).isTrue()
+        repository.setSystemColors(false)
+        assertThat(repository.settings.first().systemColors).isFalse()
+    }
 }

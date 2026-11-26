@@ -66,9 +66,12 @@ import eus.hitz.feature.practice.navigation.navigateToUnitReview
 import eus.hitz.feature.practice.navigation.practiceScreen
 import eus.hitz.feature.practice.navigation.unitReviewScreen
 import eus.hitz.feature.profile.navigation.ScoreRoute
+import eus.hitz.feature.profile.navigation.SettingsRoute
 import eus.hitz.feature.profile.navigation.navigateToScore
+import eus.hitz.feature.profile.navigation.navigateToSettings
 import eus.hitz.feature.profile.navigation.profileScreen
 import eus.hitz.feature.profile.navigation.scoreScreen
+import eus.hitz.feature.profile.navigation.settingsScreen
 
 /** Destinations shown full screen, without the top-level navigation. */
 private val fullScreenRoutes = listOf(
@@ -81,6 +84,7 @@ private val fullScreenRoutes = listOf(
     UnitReviewRoute::class,
     OnboardingRoute::class,
     ScoreRoute::class,
+    SettingsRoute::class,
 )
 
 /** Sessions rise over the path; details move forward along the horizontal axis. */
@@ -95,6 +99,7 @@ private val detailRoutes = listOf(
     UnitIntroRoute::class,
     UnitReviewRoute::class,
     ScoreRoute::class,
+    SettingsRoute::class,
 )
 
 /** How a destination moves in and out; see [HitzTransitions]. */
@@ -208,8 +213,12 @@ private fun NavGraphBuilder.hitzGraph(navController: NavHostController) {
         onReadStory = { unitId, levelId -> navController.navigateToStory(unitId, levelId) },
     )
     practiceSessionScreen(onClose = { navController.popBackStack() })
-    profileScreen(onOpenScore = { navController.navigateToScore() })
+    profileScreen(
+        onOpenScore = { navController.navigateToScore() },
+        onOpenSettings = { navController.navigateToSettings() },
+    )
     scoreScreen(onBack = { navController.popBackStack() })
+    settingsScreen(onBack = { navController.popBackStack() })
 }
 
 @Composable

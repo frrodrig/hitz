@@ -51,6 +51,21 @@
     <string name="feature_profile_achievement_next">%2$d mailatik %1$d · %4$d-tik %3$d</string>
     <string name="feature_profile_achievement_complete">%1$d mailak lortuta!</string>
     <string name="feature_profile_settings">Ezarpenak</string>
+    <!-- TODO(revisión-nativa): textos de la pantalla de ajustes. -->
+    <string name="feature_profile_settings_exercises">Ariketak</string>
+    <string name="feature_profile_settings_sound">Soinua eta abisuak</string>
+    <string name="feature_profile_settings_appearance">Itxura</string>
+    <string name="feature_profile_settings_language">Hizkuntza</string>
+    <string name="feature_profile_settings_app">Aplikazioa</string>
+    <string name="feature_profile_system_colors">Sistemaren koloreak erabili</string>
+    <string name="feature_profile_system_colors_description">Aplikazioak Androiderako aukeratu dituzun koloreak hartzen ditu. Desaktibatu Hitz-en koloreak erabiltzeko.</string>
+    <string name="feature_profile_app_language">Aplikazioaren hizkuntza</string>
+    <string name="feature_profile_app_language_description">Gaztelania edo euskara, Androiden ezarpenetan.</string>
+    <string name="feature_profile_version">Bertsioa</string>
+    <string name="feature_profile_typeface">Tipografia</string>
+    <string name="feature_profile_typeface_licence">Google Sans Flex · SIL Open Font License 1.1</string>
+    <string name="feature_profile_icons">Ikonoak</string>
+    <string name="feature_profile_icons_licence">Material Symbols · Apache License 2.0</string>
     <string name="feature_profile_speaking">Hitz egiteko ariketak</string>
     <string name="feature_profile_speaking_description">Esaldiak ozen errepikatzeko ariketak dituzten ikasgaiak.</string>
     <string name="feature_profile_reminder">Eguneko gogorarazlea</string>

@@ -18,8 +18,9 @@ own: the cast, their scenes and Google Sans Flex.
    tonal containers; the background stays cream. Fewer containers overall.
 5. **Two hero moments only**: the start of a unit and the end of a lesson, revealed in sequence.
 6. **Motion explains state** (see [Motion](../design-system.md#motion)).
-7. **Colour keeps one meaning each**: primary = act, secondary = path walked, tertiary (ochre) =
-   achievement, error red = wrong. Almost-right answers get their own icon.
+7. **Colour keeps one meaning each**: primary = act, secondary = path walked, tertiary =
+   achievement, error red = wrong. Almost-right answers get their own icon. The interface follows
+   the system's colours (Material You); the identity lives in the icon, the cast and the scenes.
 
 ## Screens
 
@@ -41,4 +42,8 @@ One PR, `feat/redesign-b`, one commit per part, its screenshots recorded by the 
    the raised surface in dark themes; the top bar at large font sizes; word strength without the
    error colour.
 
-Still to do: the supporting pane on wide windows (the path is still the phone layout stretched).
+5. **Follow-ups** (after v1.3.0): result tiles stacked at large font sizes; the wavy indicator kept
+   for the lesson's progress only; on wide windows the path keeps a readable width (600 dp) and the
+   current unit gets a pane beside it (cover, what the unit teaches, Continue); system colours
+   (Material You) by default, with Hitz's own scheme regenerated to keep the brand's teal; the
+   settings moved from the profile to their own screen, Ajustes.

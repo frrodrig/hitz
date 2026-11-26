@@ -32,6 +32,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
@@ -180,51 +181,92 @@ private fun CountUp(target: Int, style: TextStyle) {
     )
 }
 
-/** Active time and today's goal, a connected pair: their facing corners are small. */
+/** From this font scale on, the result tiles are stacked, each as wide as the screen. */
+private const val STACKED_FONT_SCALE = 1.5f
+
+/**
+ * Active time and today's goal, a connected pair: their facing corners are small. Side by side
+ * normally; stacked with large fonts, where "Cumplido" does not fit in half the width.
+ */
 @Composable
 private fun ResultTiles(state: LessonUiState.Finished) {
     val reward = state.reward
-    val scheme = MaterialTheme.colorScheme
+    val paired = reward != null
+    if (LocalDensity.current.fontScale >= STACKED_FONT_SCALE) {
+        Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(TILE_GAP)) {
+            TimeTile(
+                state = state,
+                shape = tileShape(
+                    bottomStart = if (paired) TILE_INNER else TILE_OUTER,
+                    bottomEnd = if (paired) TILE_INNER else TILE_OUTER,
+                ),
+                modifier = Modifier.fillMaxWidth(),
+            )
+            if (reward != null) {
+                GoalTile(reward, tileShape(topStart = TILE_INNER, topEnd = TILE_INNER), Modifier.fillMaxWidth())
+            }
+        }
+    } else {
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(TILE_GAP)) {
+            TimeTile(
+                state = state,
+                shape = tileShape(
+                    topEnd = if (paired) TILE_INNER else TILE_OUTER,
+                    bottomEnd = if (paired) TILE_INNER else TILE_OUTER,
+                ),
+                modifier = Modifier.weight(1f),
+            )
+            if (reward != null) {
+                GoalTile(reward, tileShape(topStart = TILE_INNER, bottomStart = TILE_INNER), Modifier.weight(1f))
+            }
+        }
+    }
+}
+
+@Composable
+private fun TimeTile(state: LessonUiState.Finished, shape: Shape, modifier: Modifier) {
+    ResultTile(
+        label = stringResource(R.string.feature_lesson_stat_time),
+        shape = shape,
+        container = MaterialTheme.colorScheme.surfaceContainerHigh,
+        content = MaterialTheme.colorScheme.onSurface,
+        modifier = modifier,
+    ) {
+        Text(
+            text = stringResource(R.string.feature_lesson_stat_minutes, state.activeMinutes),
+            style = MaterialTheme.typography.headlineMediumEmphasized,
+        )
+    }
+}
+
+@Composable
+private fun GoalTile(reward: RewardUi, shape: Shape, modifier: Modifier) {
+    val met = reward.after >= PERCENT
     val success = HitzTheme.extendedColors.success
-    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(TILE_GAP)) {
-        ResultTile(
-            label = stringResource(R.string.feature_lesson_stat_time),
-            shape = tileShape(topEnd = TILE_INNER, bottomEnd = if (reward != null) TILE_INNER else TILE_OUTER),
-            container = scheme.surfaceContainerHigh,
-            content = scheme.onSurface,
-            modifier = Modifier.weight(1f),
-        ) {
+    ResultTile(
+        label = stringResource(R.string.feature_lesson_stat_goal),
+        shape = shape,
+        container = if (met) success.container else MaterialTheme.colorScheme.secondaryContainer,
+        content = if (met) success.onContainer else MaterialTheme.colorScheme.onSecondaryContainer,
+        modifier = modifier,
+    ) {
+        // Over 100 % reads as a mistake: a met goal is simply met.
+        if (met) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(HitzSpacing.xs),
+            ) {
+                Icon(painterResource(HitzIcons.Check), contentDescription = null, Modifier.size(GOAL_ICON))
+                Text(
+                    text = stringResource(R.string.feature_lesson_stat_goal_met),
+                    style = MaterialTheme.typography.titleLargeEmphasized,
+                )
+            }
+        } else {
             Text(
-                text = stringResource(R.string.feature_lesson_stat_minutes, state.activeMinutes),
+                text = stringResource(R.string.feature_lesson_stat_percent, reward.after),
                 style = MaterialTheme.typography.headlineMediumEmphasized,
             )
-        }
-        if (reward != null) {
-            val met = reward.after >= PERCENT
-            ResultTile(
-                label = stringResource(R.string.feature_lesson_stat_goal),
-                shape = tileShape(topStart = TILE_INNER, bottomStart = TILE_INNER),
-                container = if (met) success.container else scheme.secondaryContainer,
-                content = if (met) success.onContainer else scheme.onSecondaryContainer,
-                modifier = Modifier.weight(1f),
-            ) {
-                // Over 100 % reads as a mistake: a met goal is simply met. The check goes above the
-                // word, so that at large font sizes the word keeps the tile's whole width.
-                if (met) {
-                    Column(verticalArrangement = Arrangement.spacedBy(HitzSpacing.xxs)) {
-                        Icon(painterResource(HitzIcons.Check), contentDescription = null, Modifier.size(GOAL_ICON))
-                        Text(
-                            text = stringResource(R.string.feature_lesson_stat_goal_met),
-                            style = MaterialTheme.typography.titleLargeEmphasized,
-                        )
-                    }
-                } else {
-                    Text(
-                        text = stringResource(R.string.feature_lesson_stat_percent, reward.after),
-                        style = MaterialTheme.typography.headlineMediumEmphasized,
-                    )
-                }
-            }
         }
     }
 }

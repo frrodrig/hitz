@@ -64,14 +64,23 @@ one exists; Hitz wrappers only fix sizes, colours and accessibility semantics.
 
 ## Colour
 
-`theme/Color.kt` is **generated** by `tools/design/generate_color_scheme.py` with the Material
-Color Utilities algorithm (`pip install materialyoucolor`, tonal-spot variant). It produces:
+**The interface follows the colours the learner chose for Android** (Material You, dynamic colour,
+Android 12+), unless they turn *Usar los colores del sistema* off in Ajustes. Hitz's identity does
+not depend on the interface colours: it lives in the icon, the cast, the scenes and the
+celebrations, which keep their own colours with any scheme. The answer families (success,
+warning) are fixed too, so right, almost and wrong always look the same.
+
+Hitz's own scheme (below Android 12, or with the setting off) is in `theme/Color.kt`, **generated**
+by `tools/design/generate_color_scheme.py` with the Material Color Utilities algorithm
+(`pip install materialyoucolor`, tonal-spot variant). Primary and tertiary keep their seeds' own
+chroma and the teal most of it (26), so the brand stays recognisable without loud containers. It
+produces:
 
 | Scheme | Used when |
 |---|---|
-| `LightColorScheme` / `DarkColorScheme` | Default |
+| `LightColorScheme` / `DarkColorScheme` | Below Android 12, or with the system's colours turned off |
 | `LightHighContrastColorScheme` / `DarkHighContrastColorScheme` | System contrast ≥ 0.5 (Android 14+) or `highContrast = true` |
-| Dynamic colour | Opt-in setting (`dynamicColor = true`, Android 12+) |
+| Dynamic colour | Default on Android 12+ (`UserSettings.systemColors`, passed as `dynamicColor`); Ajustes turns it off |
 
 Extended colour families (`ColorFamily`: `color`, `onColor`, `container`, `onContainer`):
 
@@ -158,12 +167,12 @@ Rules:
 
 | Tactic | Where |
 |---|---|
-| **Containment and grouping** | Answer options, practice units, achievements and settings form groups (2 dp gaps, large outer and small inner corners); the daily goal and the score sit in tonal chips; the daily-goal choice is a connected button group (`ToggleButton` + `ButtonGroupDefaults.connected*ButtonShapes`), which replaces segmented buttons. |
+| **Containment and grouping** | Answer options, practice units, achievements and settings form groups (2 dp gaps, large outer and small inner corners); the daily goal and the score sit in tonal chips; the daily-goal choice is a connected button group (`ToggleButton` + `ButtonGroupDefaults.connected*ButtonShapes`), which replaces segmented buttons. Settings have their own screen, **Ajustes**, behind the gear in the profile's header, grouped by what they change: exercises, sound and reminders, appearance (system colours, Android 12+), language (Android's per-app language, Android 13+) and the app (update checks, version, typeface licence). The profile keeps who the learner is and how they are doing, and the daily-goal choice next to the goal. |
 | **Shape morphing** | Buttons morph on press (`ButtonDefaults.shapes()`); the active option morphs to fully rounded corners. |
 | **Shape variety** | `MaterialShapes` containers for the framed mascot (`Sunny`), the feedback badge (`Cookie9Sided` / `Cookie4Sided`) and the current path step (`Cookie9Sided`); every other step is a circle, so the current one stands out. |
 | **Motion of the current step** | The current path node is 96 dp and its shape turns slowly (16 s a turn), like the expressive loading indicator; the icon stays upright. |
 | **Units as places** | On the path each unit opens with a cover on `secondaryContainer` (neutral and grey while locked): its scene and host, a display title, its first goal, the guide and its levels as segments. Once the cover scrolls away, a compact unit bar slides down and stays on top. One title names the section; the score chip says "pts". |
-| **The path** | A continuous 8 dp track joins the steps, walked in `secondary`. Size follows priority: the current step is 96 dp, the one expressive shape on the path, with a card under it that starts it; walked steps are 56 dp circles with a check, locked ones 52 dp with a lock, titles beside them. The star challenge is the last step of its unit, in the achievement colour. |
+| **The path** | A continuous 8 dp track joins the steps, walked in `secondary`. Size follows priority: the current step is 96 dp, the one expressive shape on the path, with a card under it that starts it; walked steps are 56 dp circles with a check, locked ones 52 dp with a lock, titles beside them. The star challenge is the last step of its unit, in the achievement colour. On wide windows the path stays 600 dp wide and, from 840 dp, the current unit gets a pane beside it: its cover, what it teaches and a Continue button. |
 | **Unlocking** | Back from a lesson, the track walks on to the new step and the step pops into place (slow effects fill, default spatial pop); the section name slides when it changes. |
 | **Motion** | All state animations use `MaterialTheme.motionScheme` springs (spatial for shape, effects for colour); see [Motion](#motion). |
 | **Emphasized type** | Screen and question titles, feedback result and counter values, set bold and wide (see [Typography](#typography)). |
@@ -173,8 +182,13 @@ Rules:
 
 ## Icons
 
-`HitzIcons`: original icons on a 24 dp grid. UI icons use 2 dp rounded strokes; counters
-(bolt, trophy, star, level) are solid shapes. All are tinted by the caller. The star belongs to
+`HitzIcons`: **Material Symbols** (Rounded, weight 400, 24 dp; Apache 2.0, `third_party/material-symbols/`),
+the icons Android users already know, imported as vector drawables, only the ones the app uses
+(the Compose icon libraries stopped shipping after Compose 1.7 and held the older Material Icons).
+Outlined by default; filled for the selected navigation destination and for the bolt and the star.
+`Almost` is the pencil (*edit*), `Slow` the 0.5× speed, `Level` the rising bars. All are tinted by
+the caller. The identity is not in the icons: the app icon (the lauburu), the cast and the scenes
+are Hitz's own. The star belongs to
 the star challenges (`HitzStars`: earned stars in `tertiary`, the rest in `outlineVariant`); the
 score uses the level icon, three rising bars.
 
@@ -194,8 +208,8 @@ so they stay consistent and any change is a reviewable diff; see the content gui
 | `HitzChoiceCard` / `HitzChoiceGroup` | `ListItem` + `RadioButton` on tonal surfaces, grouped as a segmented list | Answer option: default, selected, correct, incorrect, disabled |
 | `HitzWordChip` / `HitzWordBank` | 48 dp `Button` key (lightest container, 1 dp outline, 14 dp corners) on a 3 dp base, in a `FlowRow` | Word bank; keys sink onto their base when pressed and spring in when they appear; used words leave a dashed slot. In lessons the answer is built on lines ruled under each row of tiles |
 | `HitzFeedbackPanel` | `Surface` + `ListItem` + `MaterialShapes` badge + `HitzButton` | Result panel: check, pencil (almost) or cross; announced as a live region |
-| `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress |
-| `HitzDailyGoalRing` / `HitzDailyGoalChip` | `CircularWavyProgressIndicator` (flat with a check mark when met), in a tonal container | Today's share of the daily goal, spoken as a percentage |
+| `HitzLessonProgressBar` | `LinearWavyProgressIndicator` | Lesson progress: the only wavy indicator, because it is the only progress under way |
+| `HitzDailyGoalRing` / `HitzDailyGoalChip` | `CircularProgressIndicator` (with a check mark when met), in a tonal container | Today's share of the daily goal, spoken as a percentage |
 | `HitzMascot` | Animated stack of a `CastMember`'s layers in a `MascotPose` (or its single `Image` with reduced motion), optionally framed on a `MaterialShapes.Sunny` container | The cast: prompts, lesson end, errors, empty states, avatar |
 | `PlaceholderScreen` | — | Temporary screen for unfinished features |
 
