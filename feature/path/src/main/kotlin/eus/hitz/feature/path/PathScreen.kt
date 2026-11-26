@@ -151,6 +151,8 @@ internal fun PathContent(
                 val currentUnit = remember(state.path) {
                     state.path.sections.flatMap { it.units }.firstOrNull { unit -> unit.nodes.any { it.isCurrent } }
                 }
+                // Read here: inside the Row, the Row's scope hides BoxWithConstraints' maxWidth.
+                val showPane = maxWidth >= PaneMinWidth && currentUnit != null
                 Row(Modifier.fillMaxSize()) {
                     // The path keeps a readable width; on wide windows the current unit stays in view beside it.
                     Box(Modifier.weight(1f).fillMaxHeight(), contentAlignment = Alignment.TopCenter) {
@@ -164,7 +166,7 @@ internal fun PathContent(
                             modifier = Modifier.widthIn(max = PathMaxWidth).fillMaxHeight(),
                         )
                     }
-                    if (maxWidth >= PaneMinWidth && currentUnit != null) {
+                    if (showPane && currentUnit != null) {
                         CurrentUnitPane(
                             unit = currentUnit,
                             onStart = openNode,
