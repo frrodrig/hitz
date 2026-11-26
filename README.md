@@ -45,7 +45,7 @@ trikitilari, **Mikel** the aizkolari, **Maite** the amona and **Unai** the pelot
 
 - **A full A1 course and the start of A2**: 5 sections, 30 units, 270 lessons, a story per unit
   and about 750 words, in the curricular order of the *Arian A1* and *Arian A2.1* textbooks (see
-  [`docs/syllabus.md`](docs/syllabus.md)). The A2.1 part goes on section by section. All texts,
+  [`docs/syllabus.md`](docs/syllabus.md)). The A2 part grows section by section. All texts,
   dialogues, exercises and illustrations are original.
 - **13 kinds of exercise**: translate with a word bank or by typing, choose the picture or the
   meaning, match pairs, listen and tap, listen and type, fill the gap, complete a chat, read and
@@ -62,7 +62,7 @@ trikitilari, **Mikel** the aizkolari, **Maite** the amona and **Unai** the pelot
 - **Practice**: a personal review of the words and structures you get wrong (spaced repetition),
   listening and speaking practice, and a review of every unit you have started.
 - **Motivation without pressure**: a daily goal in minutes, achievements, a score on the CEFR
-  scale (A1 0–29, A2.1 from 30) and a star challenge in every unit: 30 hard questions, one to three stars. No
+  scale (A1 0–29, A2 30–59) and a star challenge in every unit: 30 hard questions, one to three stars. No
   lives, no streaks to lose, no ads, no account.
 - **Built with care**: Material 3 Expressive, the system's colours (Material You) or Hitz's own,
   light and dark themes, TalkBack, large fonts and tablets (with the current unit beside the

@@ -11,7 +11,7 @@ import eus.hitz.core.model.content.Section
 
 /**
  * The score follows the CEFR: each level of the course fills its own stretch of the scale. A1 goes
- * from 0 to [A1_TOP]; A2.1, the first half of A2 (30–59), from there to [A2_1_TOP]. Points grow
+ * from 0 to [A1_TOP] and A2 from there to [A2_TOP]. Points grow
  * with the *required* steps (every lesson of a lesson level, every story and every review); star
  * challenges and cumulative reviews are optional practice and add nothing.
  *
@@ -22,13 +22,16 @@ import eus.hitz.core.model.content.Section
  */
 object ScoreRules {
     const val A1_TOP = 29
-    const val A2_1_TOP = 44
+    const val A2_TOP = 59
 
     /** The top of each level, in course order. */
-    private val TOPS = linkedMapOf(CefrLevel.A1 to A1_TOP, CefrLevel.A2_1 to A2_1_TOP)
+    private val TOPS = linkedMapOf(CefrLevel.A1 to A1_TOP, CefrLevel.A2 to A2_TOP)
 
-    /** Sections each level published section by section will have; A1 was published whole. */
-    private val PLANNED_SECTIONS = mapOf(CefrLevel.A2_1 to 2)
+    /**
+     * Sections each level published section by section will have; A1 was published whole. A2 has
+     * four: two from the *Arian A2.1* textbook (5 and 6) and two to come with A2.2.
+     */
+    private val PLANNED_SECTIONS = mapOf(CefrLevel.A2 to 4)
 
     /** Where [level] ends on the scale. */
     fun top(level: String): Int = TOPS[level] ?: error("unknown CEFR level $level")

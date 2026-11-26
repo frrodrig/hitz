@@ -25,7 +25,7 @@ data class Course(
 
 /**
  * A section of the course. [level] is the CEFR level it belongs to ([CefrLevel.A1] or
- * [CefrLevel.A2_1]); sections of the same level follow each other.
+ * [CefrLevel.A2]); sections of the same level follow each other.
  */
 @Serializable
 data class Section(
@@ -39,5 +39,5 @@ data class Section(
 /** The CEFR levels the course covers, as written in `course.json`. */
 object CefrLevel {
     const val A1 = "A1"
-    const val A2_1 = "A2.1"
+    const val A2 = "A2"
 }

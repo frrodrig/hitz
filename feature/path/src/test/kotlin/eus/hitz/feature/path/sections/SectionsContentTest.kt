@@ -32,7 +32,7 @@ class SectionsContentTest {
     private var selected: String? = null
     private var jumpedTo: String? = null
 
-    /** The preview path, with a finished first section, one under way and a locked A2.1 one. */
+    /** The preview path, with a finished first section, one under way and a locked A2 one. */
     private val path: LearningPath = PathPreviewData.path.let { preview ->
         val first = preview.sections[0].let { section ->
             section.copy(
@@ -52,7 +52,7 @@ class SectionsContentTest {
         val third = preview.sections[1].copy(
             id = "s5",
             title = preview.sections[1].title.copy(es = "Entre amigos", eu = "Lagunartean"),
-            level = CefrLevel.A2_1,
+            level = CefrLevel.A2,
         )
         LearningPath(listOf(first, second, third))
     }
@@ -75,7 +75,7 @@ class SectionsContentTest {
         show()
         composeRule.onNodeWithText("Nivel A1").assertExists()
         composeRule.onNodeWithText("Puntuación de 0 a 29").assertExists()
-        composeRule.onNodeWithText("Nivel A2.1").assertExists()
+        composeRule.onNodeWithText("Nivel A2").assertExists()
     }
 
     @Test
