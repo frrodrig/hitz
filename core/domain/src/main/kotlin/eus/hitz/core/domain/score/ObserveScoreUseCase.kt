@@ -7,6 +7,7 @@ import eus.hitz.core.domain.time.EpochClock
 import eus.hitz.core.domain.time.ZoneProvider
 import eus.hitz.core.domain.time.epochDay
 import eus.hitz.core.model.CourseId
+import eus.hitz.core.model.content.CefrLevel
 import eus.hitz.core.model.content.Course
 import eus.hitz.core.model.content.CourseUnit
 import kotlinx.coroutines.flow.Flow
@@ -39,24 +40,31 @@ class ObserveScoreUseCase @Inject constructor(
     private fun score(course: Course, units: Map<String, CourseUnit>, completions: Map<String, Long>): Score {
         val zone = zones.zone()
         val today = epochDay(clock.now(), zone)
-        val byLevel = ScoreRules.stepsByLevel(course, units)
-        val max = ScoreRules.max(byLevel.keys)
-        // The day each required step was first completed, per level.
-        val days = byLevel.mapValues { (_, steps) ->
-            steps.mapNotNull { step -> completions[step]?.let { epochDay(it, zone) } }
+        val groups = ScoreRules.groups(course, units)
+        val max = ScoreRules.max(groups)
+        // The day each required step was first completed, per group.
+        val days = groups.map { group ->
+            group.steps.mapNotNull { step ->
+                completions[step]?.let {
+                    epochDay(
+                        it,
+                        zone
+                    )
+                }
+            }
         }
-        fun pointsUntil(day: Long?): Float = byLevel.entries.sumOf { (level, steps) ->
-            val done = days.getValue(level).count { day == null || it <= day }
-            ScoreRules.points(level, done, steps.size).toDouble()
+        fun pointsUntil(day: Long?): Float = groups.indices.sumOf { index ->
+            val done = days[index].count { day == null || it <= day }
+            ScoreRules.points(groups[index], done).toDouble()
         }.toFloat()
         val points = pointsUntil(null)
         val now = ScoreRules.value(points, max)
-        val history = days.values.flatten().distinct().sorted().map { day ->
+        val history = days.flatten().distinct().sorted().map { day ->
             ScorePoint(day, ScoreRules.value(pointsUntil(day), max))
         }
         val weekAgo = ScoreRules.value(pointsUntil(today - WEEK_DAYS), max)
-        val level = byLevel.entries.firstOrNull { (level, steps) -> days.getValue(level).size < steps.size }?.key
-            ?: byLevel.keys.last()
+        val level = groups.indices.firstOrNull { days[it].size < groups[it].steps.size }?.let { groups[it].level }
+            ?: groups.lastOrNull()?.level ?: CefrLevel.A1
         return Score(
             value = now,
             max = max,

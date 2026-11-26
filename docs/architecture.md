@@ -217,9 +217,13 @@ The profile shows a score on a CEFR-aligned scale (`ScoreRules`, `ObserveScoreUs
 its own stretch: A1 goes from 0 to 29 and A2.1, the first half of A2 (30–59), from 29 to 44. Adding
 a level to the course never lowers a learner's score; the top is that of the course's last level.
 
-- Inside a level every *required* step counts the same: each lesson of a lesson level, each story
-  and each review (star challenges and cumulative reviews are optional practice). Score = ⌊Σ span ×
-  steps done / steps⌋ over the levels; the bar shows the way to the next point.
+- Points come from the *required* steps: each lesson of a lesson level, each story and each review
+  (star challenges and cumulative reviews are optional practice). They are counted in groups
+  (`ScoreGroup`): A1 is one group whose 29 points are spread over all its steps; A2.1 is published
+  section by section, so its 15 points are split evenly between its planned sections (2), 7.5 each,
+  spread over that section's steps. Score = ⌊Σ span × steps done / steps⌋ over the groups, and the
+  top is what the published groups add up to (36 with section 5, 44 with sections 5 and 6), so a new
+  section never lowers a score. The bar shows the way to the next point.
 - Bands: 0–9 first steps, 10–19 solid basics, 20–29 A1 within reach, 30–44 on the way to A2, each
   with a short description.
 - The history is rebuilt from the first completion time of each step
