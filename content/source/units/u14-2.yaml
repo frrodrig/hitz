@@ -1,0 +1,407 @@
+# Unit 14.2 · Garai bateko herria — A2.1 book unit 2 (B + C): where one lived as a child, what
+# there was in the town and at home, old schools and appliances; childhood games, holidays and
+# tastes. Past of EGON (zegoen, bazegoen …-rik?) and EDUKI (neukan, zeuzkan), NOR-NORI in the past
+# (gustatzen zitzaidan / zitzaizkidan), time markers; recall of BIZI IZAN in the past, gustatu +
+# -T(Z)EA in the past (10.2) and the habitual past (12.2).
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u14-2
+section: s5
+bookUnit: 14
+title:
+  es: El pueblo de antes
+  eu: Garai bateko herria
+goals:
+  - es: Decir dónde vivías de pequeño y preguntar a los demás.
+    eu: Txikitan non bizi zinen esan, eta besteei galdetu.
+  - es: Contar qué había en tu pueblo y qué teníais en casa.
+    eu: Zure herrian zer zegoen eta etxean zer zeneukaten kontatu.
+  - es: Hablar de los juegos, las vacaciones y los gustos de tu infancia.
+    eu: Haurtzaroko jolasez, oporrez eta gustuez hitz egin.
+guidebook:
+  sections:
+    - title:
+        es: "Dónde estaba, qué había: zegoen, zeuden"
+        eu: "Non zegoen, zer zegoen: zegoen, zeuden"
+      body:
+        es: "Pasado de «egon»: nengoen, zeunden, zegoen, geunden, zeundeten, zeuden. Sirve para «estaba» y para «había»: «Herrian zinema bat zegoen» (había un cine). Para preguntar si había algo: «Bazegoen …-rik?»."
+        eu: "«Egon» aditzaren lehenaldia: nengoen, zeunden, zegoen, geunden, zeundeten, zeuden. «Non zegoen?» edo «zer zegoen?» galdetzeko balio du. Zerbait zegoen galdetzeko: «Bazegoen …-rik?»."
+      examples:
+        - eu: Herrian zinema txiki bat zegoen.
+          es: En el pueblo había un cine pequeño.
+        - eu: Bazegoen liburutegirik zure auzoan?
+          es: ¿Había biblioteca en tu barrio?
+        - eu: Atzo etxean nengoen.
+          es: Ayer estaba en casa.
+    - title:
+        es: "Qué tenía: neukan, zeuzkan"
+        eu: "Zer neukan: neukan, zeuzkan"
+      body:
+        es: "Pasado de «eduki»: neukan, zeneukan, zeukan, geneukan… Con algo plural lleva -z-: neuzkan, zeuzkan. Significa lo mismo que «nuen / nituen»."
+        eu: "«Eduki» aditzaren lehenaldia: neukan, zeneukan, zeukan, geneukan… Plurala bada, -z- hartzen du: neuzkan, zeuzkan. «Nuen / nituen» bezalakoa da."
+      examples:
+        - eu: Etxean labe zahar bat geneukan.
+          es: En casa teníamos un horno viejo.
+        - eu: Amonak bi irrati zeuzkan.
+          es: La abuela tenía dos radios.
+    - title:
+        es: "Me gustaba: gustatzen zitzaidan"
+        eu: "Gustatzen zitzaidan"
+      body:
+        es: "Pasado de «gustatu»: gustatzen zitzaidan (me gustaba), zitzaizun, zitzaion, zitzaigun… Si lo que gustaba es plural, -zki-: zitzaizkidan. Con un verbo, en -t(z)ea y en singular: «Irakurtzea gustatzen zitzaidan»."
+        eu: "«Gustatu» aditzaren lehenaldia: gustatzen zitzaidan, zitzaizun, zitzaion, zitzaigun… Gustatzen zitzaiguna plurala bada, -zki-: zitzaizkidan. Aditz batekin, -t(z)ea eta singularra: «Irakurtzea gustatzen zitzaidan»."
+      examples:
+        - eu: Txikitan ipuinak asko gustatzen zitzaizkidan.
+          es: De pequeño me gustaban mucho los cuentos.
+        - eu: Pilotan jokatzea gustatzen zitzaigun.
+          es: Nos gustaba jugar a pelota.
+    - title:
+        es: "Cuándo: txikitan, gaztetan, iaz"
+        eu: "Noiz: txikitan, gaztetan, iaz"
+      body:
+        es: "Algunas palabras piden pasado (atzo, iaz, txikitan, gaztetan, umetan), otras presente (orain, aurten) y otras futuro (bihar, datorren urtean). Con -t(z)en + nintzen / nuen se cuenta lo que se hacía a menudo."
+        eu: "Hitz batzuek lehenaldia eskatzen dute (atzo, iaz, txikitan, gaztetan, umetan), beste batzuek orainaldia (orain, aurten) eta beste batzuek geroaldia (bihar, datorren urtean). -T(z)en + nintzen / nuen formarekin ohiturak kontatzen dira."
+      examples:
+        - eu: Umetan udan hondartzara joaten ginen.
+          es: De niños, en verano íbamos a la playa.
+        - eu: Datorren urtean jaioterrira itzuliko naiz.
+          es: El año que viene volveré a mi pueblo natal.
+levels:
+  - type: lesson
+    title:
+      es: Mi pueblo natal
+      eu: Nire jaioterria
+    lessons:
+      - structures: [bizi-izan-lehenaldia, jaioterria]
+        sentences:
+          - Txikitan non bizi zinen? = ¿Dónde vivías de pequeño? | ¿Dónde vivías de pequeña?
+          - Herri txiki batean bizi nintzen. = Vivía en un pueblo pequeño.
+          - Gurasoekin bizi zinen? = ¿Vivías con tus padres?
+          - Lehen Tolosan bizi ginen, eta orain Bilbon. = Antes vivíamos en Tolosa y ahora en Bilbao.
+          - Hau da nire jaioterria. = Este es mi pueblo natal.
+          - Garai hartan aitonarekin bizi ziren. = En aquella época vivían con el abuelo.
+          - Ez nintzen hirian bizi. = No vivía en la ciudad.
+          - Zuek non bizi zineten? = ¿Dónde vivíais vosotros?
+        pairs:
+          - - jaioterri = pueblo natal
+            - garai = época
+            - bizi nintzen = vivía
+            - bizi ginen = vivíamos
+            - umetan = de niño
+            - iaz = el año pasado
+        meanings:
+          - text: Garai hartan aitonarekin bizi ziren.
+            options:
+              - En aquella época vivían con el abuelo.
+              - Ahora viven con el abuelo.
+              - El abuelo vivía solo en aquella época.
+        blanks:
+          - text: Herri txiki batean bizi ___. = Vivía en un pueblo pequeño.
+            options:
+              - nintzen
+              - naiz
+              - nuen
+        chats:
+          - messages:
+              - Uxue | Ama, txikitan non bizi zinen?
+            options:
+              - Herri honetan bizi nintzen.
+              - Herri honetan bizi naiz.
+              - Herri hau polita da.
+        images:
+          - town, city, house
+      - structures: [egon-lehenaldia, herria]
+        sentences:
+          - Herrian zinema txiki bat zegoen. = En el pueblo había un cine pequeño.
+          - Plazan azoka bat zegoen larunbatetan. = Los sábados había un mercado en la plaza.
+          - Bazegoen liburutegirik zure auzoan? = ¿Había biblioteca en tu barrio?
+          - Ez zegoen kiroldegirik. = No había polideportivo.
+          - Ibaian zubi zahar bat zegoen. = En el río había un puente viejo.
+          - Eskolan bi gela zeuden. = En la escuela había dos aulas.
+          - Atzo non zeunden? = ¿Dónde estabas ayer?
+          - Liburutegian nengoen. = Estaba en la biblioteca.
+        pairs:
+          - - zegoen = había; estaba
+            - zeuden = había; estaban
+            - nengoen = estaba (yo)
+            - zubi = puente
+            - azoka = mercado
+        blanks:
+          - text: Herrian zinema txiki bat ___. = En el pueblo había un cine pequeño.
+            options:
+              - zegoen
+              - zeuden
+              - dago
+          - text: Ez zegoen ___. = No había polideportivo.
+            options:
+              - kiroldegirik
+              - kiroldegia
+              - kiroldegiak
+        chats:
+          - messages:
+              - Josu | Bazegoen liburutegirik zure herrian?
+            options:
+              - Bai, liburutegi txiki bat zegoen.
+              - Bai, liburutegi txiki bat dago.
+              - Liburutegian nengoen.
+        true_false:
+          - passage: Lehen Arantzaren herrian ez zegoen zinemarik. Plazan azoka bat zegoen larunbatetan.
+            statement: En el pueblo de Arantza había un cine.
+            answer: false
+        images:
+          - library, cinema, church
+      - structures: [eduki-lehenaldia, etxetresnak]
+        sentences:
+          - Etxean labe zahar bat geneukan. = En casa teníamos un horno viejo.
+          - Ez geneukan garbigailurik. = No teníamos lavadora.
+          - Amonak etxetresna asko zeuzkan. = La abuela tenía muchos electrodomésticos.
+          - Zer zeneukan zure logelan? = ¿Qué tenías en tu habitación?
+          - Ohe bat eta mahai bat neuzkan. = Tenía una cama y una mesa.
+          - Lehen ez zeukaten hozkailurik. = Antes no tenían frigorífico.
+          - Irrati bat geneukan sukaldean. = Teníamos una radio en la cocina.
+          - Baneukan bizikleta bat, baina ez autorik. = Tenía una bicicleta, pero no coche.
+        pairs:
+          - - etxetresna = electrodoméstico
+            - labe = horno
+            - neukan = tenía (yo)
+            - geneukan = teníamos
+            - zeuzkan = tenía (varios)
+        meanings:
+          - text: Lehen ez zeukaten hozkailurik.
+            options:
+              - Antes no tenían frigorífico.
+              - Antes tenían un frigorífico nuevo.
+              - Ahora no tienen frigorífico.
+        blanks:
+          - text: Amonak etxetresna asko ___. = La abuela tenía muchos electrodomésticos.
+            options:
+              - zeuzkan
+              - zeukan
+              - dauzka
+        images:
+          - fridge, washing_machine, oven
+  - type: lesson
+    title:
+      es: La escuela de antes
+      eu: Garai bateko eskola
+    lessons:
+      - structures: [eskola-lehen]
+        sentences:
+          - Gure eskola oso txikia zen. = Nuestra escuela era muy pequeña.
+          - Maisuak arbelean idazten zuen. = El maestro escribía en la pizarra.
+          - Gelan arbel handi bat zegoen. = En el aula había una pizarra grande.
+          - Ikasle guztiak gela batean geunden. = Todos los alumnos estábamos en un aula.
+          - Maisua oso serioa zen, baina jatorra. = El maestro era muy serio, pero majo.
+          - Eskolan ez geneukan ordenagailurik. = En la escuela no teníamos ordenadores.
+          - Hitz berriak buruz ikasten genituen. = Aprendíamos las palabras nuevas de memoria.
+          - Eskolatik etxera oinez itzultzen ginen. = Volvíamos a casa de la escuela andando.
+        pairs:
+          - - maisu = maestro
+            - arbel = pizarra
+            - gela = aula
+            - eskola = escuela
+            - buruz ikasi = aprender de memoria
+        meanings:
+          - text: Maisuak arbelean idazten zuen.
+            options:
+              - El maestro escribía en la pizarra.
+              - El maestro escribe en la pizarra.
+              - Los alumnos escribían en la pizarra.
+        chats:
+          - messages:
+              - June | Nolakoa zen zure eskola?
+            options:
+              - Txikia zen, eta bi gela zeuden.
+              - Txikia da, eta bi gela daude.
+              - Eskolara joan naiz.
+        true_false:
+          - passage: Txikitan Patxiren eskolan ez zegoen ordenagailurik. Maisuak arbelean idazten zuen.
+            statement: En la escuela de Patxi había ordenadores.
+            answer: false
+        images:
+          - school, book, computer
+      - structures: [jolasak, gustatu-lehenaldia]
+        sentences:
+          - Txikitan zer jolas gustatzen zitzaizun? = De pequeño, ¿qué juegos te gustaban?
+          - Pilotan jokatzea gustatzen zitzaidan. = Me gustaba jugar a pelota.
+          - Ipuinak asko gustatzen zitzaizkigun. = Nos gustaban mucho los cuentos.
+          - Ez zitzaion korrika egitea gustatzen. = No le gustaba correr.
+          - Futbolean jokatzen genuen plazan. = Jugábamos a fútbol en la plaza.
+          - Udan ipuin bat irakurtzen nuen egunero. = En verano leía un cuento todos los días.
+          - Gure taldeak txapelketa bat irabazi zuen. = Nuestro equipo ganó un campeonato.
+          - Zer gustatzen zitzaien zure lagunei? = ¿Qué les gustaba a tus amigos?
+        pairs:
+          - - jolas = juego
+            - jokatu = jugar
+            - korrika = corriendo
+            - ipuin = cuento
+            - txapelketa = campeonato
+            - zitzaidan = me gustaba
+        blanks:
+          - text: Pilotan jokatzea gustatzen ___. = Me gustaba jugar a pelota.
+            options:
+              - zitzaidan
+              - zitzaizkidan
+              - zait
+          - text: Ipuinak asko gustatzen ___. = Nos gustaban mucho los cuentos.
+            options:
+              - zitzaizkigun
+              - zitzaigun
+              - zaizkigu
+        chats:
+          - messages:
+              - Oier | Txikitan zer gustatzen zitzaizun?
+            options:
+              - Korrika egitea gustatzen zitzaidan.
+              - Korrika egitea gustatzen zait.
+              - Korrika egin dut.
+        images:
+          - football, swimming, cycling
+      - structures: [urtaroak, oporrak]
+        sentences:
+          - Udan amonaren herrira joaten nintzen. = En verano iba al pueblo de la abuela.
+          - Neguan elurra egiten zuen. = En invierno nevaba.
+          - Udaberrian mendira joaten ginen. = En primavera íbamos al monte.
+          - Udazkenean eskolara itzultzen ginen. = En otoño volvíamos a la escuela.
+          - Oporretan asko gozatzen genuen. = En vacaciones disfrutábamos mucho.
+          - Iaz Frantziara joan ginen oporretan. = El año pasado fuimos a Francia de vacaciones.
+          - Datorren urtean Londresera joango gara. = El año que viene iremos a Londres.
+          - Umetan hondartza asko gustatzen zitzaidan. = De niño me gustaba mucho la playa. | De niña me gustaba mucho la playa.
+        pairs:
+          - - uda = verano
+            - negu = invierno
+            - udaberri = primavera
+            - udazken = otoño
+            - gozatu = disfrutar
+        meanings:
+          - text: Udan amonaren herrira joaten nintzen.
+            options:
+              - En verano iba al pueblo de la abuela.
+              - En verano iré al pueblo de la abuela.
+              - En invierno iba al pueblo de la abuela.
+        true_false:
+          - passage: Umetan Leire udan hondartzara joaten zen, eta neguan mendira.
+            statement: De niña, Leire iba a la playa en invierno.
+            answer: false
+        images:
+          - beach, snow, mountain
+  - type: lesson
+    title:
+      es: Recuerdos y gustos
+      eu: Oroitzapenak eta gustuak
+    lessons:
+      - structures: [oroitzapenak]
+        sentences:
+          - Herri horretako oroitzapen asko ditut. = Tengo muchos recuerdos de ese pueblo.
+          - Aitona duela bi urte hil zen. = El abuelo murió hace dos años.
+          - Lehen gure etxea egurrezkoa zen. = Antes nuestra casa era de madera.
+          - Garai hartan ez zegoen trenik. = En aquella época no había tren.
+          - Herria oso polita zen. = El pueblo era muy bonito.
+          - Gogoratzen duzu gure eskola? = ¿Te acuerdas de nuestra escuela?
+        chats:
+          - messages:
+              - Edurne | Gogoratzen duzu gure eskola?
+            options:
+              - Bai! Txikia zen, eta arbel handi bat zegoen.
+              - Bai! Txikia da, eta arbel handi bat dago.
+              - Ez, eskolara joango naiz.
+        meanings:
+          - text: Garai hartan ez zegoen trenik.
+            options:
+              - En aquella época no había tren.
+              - En aquella época había un tren.
+              - Ahora no hay tren.
+        true_false:
+          - passage: Iratiren aitona duela urte bat hil zen. Iratik oroitzapen asko ditu berarekin.
+            statement: El abuelo de Irati murió hace un año.
+            answer: true
+      - structures: [atzerritarrak, gustuak]
+        sentences:
+          - Atzerritarra naiz, Alemaniakoa. = Soy extranjero, de Alemania. | Soy extranjera, de Alemania.
+          - Lehen ez zitzaidan arraina gustatzen. = Antes no me gustaba el pescado.
+          - Orain asko gustatzen zait. = Ahora me gusta mucho.
+          - Euskal Herriko janaria gustatzen zitzaien nire gurasoei. = A mis padres les gustaba la comida del País Vasco.
+          - Gustu berriak ditut. = Tengo gustos nuevos.
+          - Lehen euskara ulertzea zaila zen niretzat. = Antes entender euskera era difícil para mí.
+        chats:
+          - messages:
+              - Ander | Lehen gustatzen zitzaizun ardoa?
+            options:
+              - Ez, baina orain asko gustatzen zait.
+              - Ez, baina orain asko gustatzen zitzaidan.
+              - Bai, ardoa edango dut.
+        blanks:
+          - text: Lehen ez ___ arraina gustatzen. = Antes no me gustaba el pescado.
+            options:
+              - zitzaidan
+              - zait
+              - zitzaizkidan
+        meanings:
+          - text: Atzerritarra naiz, Alemaniakoa.
+            options:
+              - Soy extranjero, de Alemania.
+              - Vivo en el extranjero, en Alemania.
+              - Mis padres son de Alemania.
+      - structures: [lehen-eta-orain]
+        sentences:
+          - Lehen herrian bizi nintzen; orain, hirian. = Antes vivía en el pueblo; ahora, en la ciudad.
+          - Lehen ez geneukan telebistarik; orain bi ditugu. = Antes no teníamos tele; ahora tenemos dos.
+          - Txikitan irakurtzea gustatzen zitzaidan, eta orain ere bai. = De pequeño me gustaba leer, y ahora también.
+          - Iaz hondartzan nengoen; aurten mendian nago. = El año pasado estaba en la playa; este año estoy en el monte.
+          - Bihar jaioterrira joango naiz. = Mañana iré a mi pueblo natal.
+          - Garai hartan janaria merkeagoa zen. = En aquella época la comida era más barata.
+        chats:
+          - messages:
+              - Nahia | Lehen telebista zenuten?
+            options:
+              - Ez, baina orain bi ditugu.
+              - Ez, baina orain bi genituen.
+              - Bai, telebista ikusiko dut.
+        true_false:
+          - passage: Lehen Garazi herri txiki batean bizi zen. Orain Donostian bizi da, eta hiria asko gustatzen zaio.
+            statement: Ahora Garazi vive en San Sebastián.
+            answer: true
+        meanings:
+          - text: Iaz hondartzan nengoen; aurten mendian nago.
+            options:
+              - El año pasado estaba en la playa; este año estoy en el monte.
+              - El año pasado estaba en el monte; este año, en la playa.
+              - Este año voy a la playa y al monte.
+  - type: story
+    title:
+      es: "Historia: el pueblo de la abuela"
+      eu: "Istorioa: amonaren herria"
+    story:
+      title: Amonaren herria
+      lines:
+        - Amona | Begira, Uxue, hau da nire jaioterria. = Mira, Uxue, este es mi pueblo natal.
+        - Uxue | Herri txiki honetan bizi zinen? = ¿Vivías en este pueblo tan pequeño?
+        - Amona | Bai, hemen bizi nintzen gurasoekin eta bi ahizpekin. = Sí, vivía aquí con mis padres y dos hermanas.
+        - Uxue | Zer zegoen herrian? = ¿Qué había en el pueblo?
+        - Amona | Eskola txiki bat, eliza eta taberna bat. Ez zegoen zinemarik. = Una escuela pequeña, la iglesia y un bar. No había cine.
+        - Uxue | Eta etxean telebista zeneukaten? = ¿Y teníais tele en casa?
+        - Amona | Ez! Irrati bat geneukan sukaldean. = ¡No! Teníamos una radio en la cocina.
+        - Uxue | Zer gustatzen zitzaizun egitea txikitan? = ¿Qué te gustaba hacer de pequeña?
+        - Amona | Plazan korrika egitea eta ipuinak irakurtzea. = Correr en la plaza y leer cuentos.
+        - Uxue | Niri ere ipuinak asko gustatzen zaizkit! = ¡A mí también me gustan mucho los cuentos!
+      questions:
+        - afterLine: 3
+          prompt: ¿Con quién vivía la abuela?
+          options:
+            - Con sus padres y dos hermanas
+            - Con sus abuelos
+            - Sola
+        - afterLine: 5
+          prompt: ¿Qué no había en el pueblo?
+          options:
+            - Cine
+            - Escuela
+            - Iglesia
+        - afterLine: 9
+          prompt: ¿Qué le gustaba hacer a la abuela?
+          options:
+            - Correr en la plaza y leer cuentos
+            - Ver la televisión
+            - Ir a la playa
+  - type: review
+  - type: challenge
+    host: ane
