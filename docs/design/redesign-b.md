@@ -41,4 +41,6 @@ One PR, `feat/redesign-b`, one commit per part, its screenshots recorded by the 
    the raised surface in dark themes; the top bar at large font sizes; word strength without the
    error colour.
 
-Still to do: the supporting pane on wide windows (the path is still the phone layout stretched).
+5. **Follow-ups** (after v1.3.0): result tiles stacked at large font sizes; the wavy indicator kept
+   for the lesson's progress only; on wide windows the path keeps a readable width (600 dp) and the
+   current unit gets a pane beside it (cover, what the unit teaches, Continue).

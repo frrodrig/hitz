@@ -11,16 +11,24 @@ import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LoadingIndicator
@@ -75,6 +83,13 @@ private val Winding = listOf(0.dp, 44.dp, 64.dp, 44.dp, 0.dp, (-44).dp, (-64).dp
 
 private val CHIP_ICON = 18.dp
 
+/** From this window width the current unit gets a pane beside the path. */
+private val PaneMinWidth = 840.dp
+private val PaneWidth = 360.dp
+
+/** The path never grows wider than this: on tablets it is centred instead of stretched. */
+private val PathMaxWidth = 600.dp
+
 /** The unit bar appears once less than this much of the unit's cover is left on screen. */
 private val UnitBarThreshold = 72.dp
 
@@ -123,46 +138,143 @@ internal fun PathContent(
             Text(stringResource(R.string.feature_path_error), Modifier.padding(HitzSpacing.xl))
         }
         is PathUiState.Ready -> {
-            val rows = remember(state.path) { state.path.rows() }
-            val units = remember(state.path) { state.path.sections.flatMap { it.units }.associateBy { it.id } }
-            // The bar names the section being read: the one of the first visible row.
-            val section by remember(rows) {
-                derivedStateOf { rows.getOrNull(listState.firstVisibleItemIndex)?.sectionNumber ?: 1 }
+            val openNode: (PathNode) -> Unit = { node ->
+                when {
+                    node.type == NodeType.Story -> onStartStory(node.unitId, node.levelId)
+                    // A unit is introduced before its first lesson.
+                    node.type == NodeType.Lesson && node.unitId !in state.seenUnitIntros ->
+                        onOpenUnitIntro(node.unitId, node.levelId, node.nextLessonId)
+                    else -> onStartLevel(node.unitId, node.levelId, node.nextLessonId)
+                }
             }
-            val unlock = rememberPathUnlock(state.path)
-            Column(modifier.fillMaxSize()) {
-                PathTopBar(
-                    section = section,
-                    title = state.path.sections.getOrNull(section - 1)?.title,
-                    score = state.score,
-                    dailyGoal = state.dailyGoal,
-                    onOpenProfile = onOpenProfile,
+            BoxWithConstraints(modifier.fillMaxSize()) {
+                val currentUnit = remember(state.path) {
+                    state.path.sections.flatMap { it.units }.firstOrNull { unit -> unit.nodes.any { it.isCurrent } }
+                }
+                Row(Modifier.fillMaxSize()) {
+                    // The path keeps a readable width; on wide windows the current unit stays in view beside it.
+                    Box(Modifier.weight(1f).fillMaxHeight(), contentAlignment = Alignment.TopCenter) {
+                        LearningPath(
+                            state = state,
+                            listState = listState,
+                            onNodeClick = openNode,
+                            onChallengeClick = { onStartLevel(it.unitId, it.levelId, null) },
+                            onOpenGuidebook = onOpenGuidebook,
+                            onOpenProfile = onOpenProfile,
+                            modifier = Modifier.widthIn(max = PathMaxWidth).fillMaxHeight(),
+                        )
+                    }
+                    if (maxWidth >= PaneMinWidth && currentUnit != null) {
+                        CurrentUnitPane(
+                            unit = currentUnit,
+                            onStart = openNode,
+                            onOpenGuidebook = { onOpenGuidebook(currentUnit.id) },
+                            modifier = Modifier.width(PaneWidth).fillMaxHeight(),
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+/** The top bar over the path, its rows and the unit bar that replaces a cover once it scrolls away. */
+@Composable
+private fun LearningPath(
+    state: PathUiState.Ready,
+    listState: LazyListState,
+    onNodeClick: (PathNode) -> Unit,
+    onChallengeClick: (PathChallenge) -> Unit,
+    onOpenGuidebook: (unitId: String) -> Unit,
+    onOpenProfile: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val rows = remember(state.path) { state.path.rows() }
+    val units = remember(state.path) { state.path.sections.flatMap { it.units }.associateBy { it.id } }
+    // The bar names the section being read: the one of the first visible row.
+    val section by remember(rows) {
+        derivedStateOf { rows.getOrNull(listState.firstVisibleItemIndex)?.sectionNumber ?: 1 }
+    }
+    val unlock = rememberPathUnlock(state.path)
+    Column(modifier) {
+        PathTopBar(
+            section = section,
+            title = state.path.sections.getOrNull(section - 1)?.title,
+            score = state.score,
+            dailyGoal = state.dailyGoal,
+            onOpenProfile = onOpenProfile,
+        )
+        Box(Modifier.weight(1f)) {
+            LearningPathList(
+                rows = rows,
+                unlock = unlock,
+                onChallengeClick = onChallengeClick,
+                onNodeClick = onNodeClick,
+                onOpenGuidebook = onOpenGuidebook,
+                listState = listState,
+                modifier = Modifier.fillMaxSize(),
+            )
+            UnitBarOverlay(
+                rows = rows,
+                units = units,
+                listState = listState,
+                onOpenGuidebook = onOpenGuidebook,
+                modifier = Modifier.align(Alignment.TopCenter),
+            )
+        }
+    }
+}
+
+/**
+ * Beside the path on wide windows: where the learner is (the current unit's cover), what the unit
+ * teaches and a button that continues with its current step, so the next action never scrolls away.
+ */
+@Composable
+private fun CurrentUnitPane(
+    unit: PathUnit,
+    onStart: (PathNode) -> Unit,
+    onOpenGuidebook: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val current = unit.nodes.firstOrNull { it.isCurrent }
+    Surface(color = MaterialTheme.colorScheme.surfaceContainerLow, modifier = modifier) {
+        Column(
+            modifier = Modifier
+                .verticalScroll(rememberScrollState())
+                .padding(HitzSpacing.xl),
+            verticalArrangement = Arrangement.spacedBy(HitzSpacing.lg),
+        ) {
+            Text(
+                text = stringResource(R.string.feature_path_now),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            UnitCover(unit, isCurrentUnit = false, onOpenGuidebook = onOpenGuidebook)
+            if (unit.goals.isNotEmpty()) {
+                Text(
+                    text = stringResource(R.string.feature_path_goals),
+                    style = MaterialTheme.typography.titleMediumEmphasized,
+                    modifier = Modifier.semantics { heading() },
                 )
-                Box(Modifier.weight(1f)) {
-                    LearningPathList(
-                        rows = rows,
-                        unlock = unlock,
-                        onChallengeClick = { onStartLevel(it.unitId, it.levelId, null) },
-                        onNodeClick = { node ->
-                            when {
-                                node.type == NodeType.Story -> onStartStory(node.unitId, node.levelId)
-                                // A unit is introduced before its first lesson.
-                                node.type == NodeType.Lesson && node.unitId !in state.seenUnitIntros ->
-                                    onOpenUnitIntro(node.unitId, node.levelId, node.nextLessonId)
-                                else -> onStartLevel(node.unitId, node.levelId, node.nextLessonId)
-                            }
-                        },
-                        onOpenGuidebook = onOpenGuidebook,
-                        listState = listState,
-                        modifier = Modifier.fillMaxSize(),
-                    )
-                    UnitBarOverlay(
-                        rows = rows,
-                        units = units,
-                        listState = listState,
-                        onOpenGuidebook = onOpenGuidebook,
-                        modifier = Modifier.align(Alignment.TopCenter),
-                    )
+                unit.goals.forEach { goal ->
+                    Row(horizontalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
+                        Icon(
+                            painterResource(HitzIcons.Check),
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.secondary,
+                            modifier = Modifier.size(CHIP_ICON),
+                        )
+                        Text(goal.resolve(), style = MaterialTheme.typography.bodyMedium)
+                    }
+                }
+            }
+            if (current != null) {
+                Button(
+                    onClick = { onStart(current) },
+                    shapes = ButtonDefaults.shapes(),
+                    modifier = Modifier.fillMaxWidth(),
+                ) {
+                    Text(stringResource(R.string.feature_path_continue_with, current.title.resolve()))
                 }
             }
         }
