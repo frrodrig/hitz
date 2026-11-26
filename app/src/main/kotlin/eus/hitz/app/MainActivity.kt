@@ -29,8 +29,10 @@ class MainActivity : ComponentActivity() {
             val startWithOnboarding by viewModel.startWithOnboarding.collectAsStateWithLifecycle()
             val start = remember(startWithOnboarding == null) { startWithOnboarding }
             val update by viewModel.update.collectAsStateWithLifecycle()
+            val systemColors by viewModel.systemColors.collectAsStateWithLifecycle()
             val uriHandler = LocalUriHandler.current
-            HitzTheme {
+            // The interface follows the colours chosen for Android unless the learner asks for Hitz's own.
+            HitzTheme(dynamicColor = systemColors) {
                 if (start != null) HitzApp(startWithOnboarding = start)
                 update?.let { release ->
                     UpdateDialog(

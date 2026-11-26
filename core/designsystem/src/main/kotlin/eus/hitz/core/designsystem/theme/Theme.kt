@@ -25,8 +25,9 @@ import eus.hitz.core.designsystem.motion.HitzMotionScheme
  * Sans Flex ([HitzTypography], plus [HitzTextStyles] for hero numerals and lesson phrases).
  *
  * @param darkTheme use the dark colour scheme.
- * @param dynamicColor use the wallpaper-based colours on Android 12+. Off by default to keep the
- * brand identity; the user can enable it in the settings.
+ * @param dynamicColor use the colours the learner chose for Android (Material You, Android 12+).
+ * Off here, so previews and screenshots show Hitz's own colours; the app passes the learner's
+ * setting, which is on by default. The cast, the scenes and the icon keep their own colours.
  * @param highContrast use the high-contrast schemes. Defaults to the system contrast setting
  * (Android 14+).
  */

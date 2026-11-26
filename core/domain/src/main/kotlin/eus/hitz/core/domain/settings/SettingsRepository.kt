@@ -21,6 +21,11 @@ data class UserSettings(
     val dailyGoalMinutes: Int = DailyGoalRules.DEFAULT_GOAL_MINUTES,
     /** Whether the app asks GitHub Releases, once a day, if there is a newer version. */
     val updateChecksEnabled: Boolean = true,
+    /**
+     * Whether the interface takes the colours the learner chose for Android (Material You, Android
+     * 12+); otherwise it uses Hitz's own. The cast, the scenes and the icon keep their colours.
+     */
+    val systemColors: Boolean = true,
 )
 
 interface SettingsRepository {
@@ -41,6 +46,8 @@ interface SettingsRepository {
     suspend fun setDailyGoalMinutes(minutes: Int)
 
     suspend fun setUpdateChecksEnabled(enabled: Boolean)
+
+    suspend fun setSystemColors(enabled: Boolean)
 }
 
 /** Schedules the daily goal reminder (a background job on Android). */

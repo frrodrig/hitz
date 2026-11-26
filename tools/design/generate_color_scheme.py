@@ -57,15 +57,27 @@ def palette(argb: int, chroma: float | None = None) -> TonalPalette:
     return TonalPalette.from_hue_and_chroma(hct.hue, chroma if chroma is not None else max(hct.chroma, 48.0))
 
 
+# The teal's full chroma (33) turns its tone-90 container, the unit covers, almost cyan: 26 keeps
+# the colour teal and the large surfaces calm.
+CHROMA_LIMIT = {"secondary": 26.0}
+
+
+def seed_chroma(role: str) -> float:
+    return min(Hct.from_int(SEEDS[role]).chroma, CHROMA_LIMIT.get(role, float("inf")))
+
+
 def scheme(dark: bool, contrast: float) -> DynamicScheme:
     return DynamicScheme(
         source_color_hct=Hct.from_int(SEEDS["primary"]),
         variant=Variant.TONAL_SPOT,
         contrast_level=contrast,
         is_dark=dark,
-        primary_palette=palette(SEEDS["primary"], chroma=40.0),
-        secondary_palette=palette(SEEDS["secondary"], chroma=18.0),
-        tertiary_palette=palette(SEEDS["tertiary"], chroma=40.0),
+        # Primary and tertiary keep their seed's own chroma and secondary most of it, so the brand's
+        # teal and ochre stay recognisable (at 18 the teal came out almost grey). This scheme is
+        # used when the learner turns off the system's colours, and below Android 12.
+        primary_palette=palette(SEEDS["primary"], chroma=seed_chroma("primary")),
+        secondary_palette=palette(SEEDS["secondary"], chroma=seed_chroma("secondary")),
+        tertiary_palette=palette(SEEDS["tertiary"], chroma=seed_chroma("tertiary")),
         neutral_palette=TonalPalette.from_hue_and_chroma(*NEUTRAL),
         neutral_variant_palette=TonalPalette.from_hue_and_chroma(*NEUTRAL_VARIANT),
     )

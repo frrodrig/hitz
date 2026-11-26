@@ -34,6 +34,11 @@ class MainViewModel @Inject constructor(
         .map { !it.onboardingCompleted }
         .stateIn(viewModelScope, SharingStarted.Eagerly, null)
 
+    /** Whether the interface takes the system's colours (Material You); on until the learner turns it off. */
+    val systemColors: StateFlow<Boolean> = settings.settings
+        .map { it.systemColors }
+        .stateIn(viewModelScope, SharingStarted.Eagerly, true)
+
     /** Keeps the daily goal reminder scheduled (WorkManager may have dropped it after an update). */
     fun onForeground() {
         viewModelScope.launch {

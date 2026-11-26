@@ -27,6 +27,7 @@ internal class DataStoreSettingsRepository @Inject constructor(
             onboardingCompleted = preferences[ONBOARDING_COMPLETED] ?: false,
             dailyGoalMinutes = preferences[DAILY_GOAL_MINUTES] ?: DailyGoalRules.DEFAULT_GOAL_MINUTES,
             updateChecksEnabled = preferences[UPDATE_CHECKS_ENABLED] ?: true,
+            systemColors = preferences[SYSTEM_COLORS] ?: true,
         )
     }
 
@@ -63,6 +64,10 @@ internal class DataStoreSettingsRepository @Inject constructor(
         dataStore.edit { it[UPDATE_CHECKS_ENABLED] = enabled }
     }
 
+    override suspend fun setSystemColors(enabled: Boolean) {
+        dataStore.edit { it[SYSTEM_COLORS] = enabled }
+    }
+
     companion object {
         const val FILE_NAME = "settings"
         private val SPEAKING_ENABLED = booleanPreferencesKey("speaking_enabled")
@@ -73,5 +78,6 @@ internal class DataStoreSettingsRepository @Inject constructor(
         private val ONBOARDING_COMPLETED = booleanPreferencesKey("onboarding_completed")
         private val DAILY_GOAL_MINUTES = intPreferencesKey("daily_goal_minutes")
         private val UPDATE_CHECKS_ENABLED = booleanPreferencesKey("update_checks_enabled")
+        private val SYSTEM_COLORS = booleanPreferencesKey("system_colors")
     }
 }

@@ -43,6 +43,10 @@ class FakeSettingsRepository(initial: UserSettings = UserSettings()) : SettingsR
     override suspend fun setUpdateChecksEnabled(enabled: Boolean) {
         settings.value = settings.value.copy(updateChecksEnabled = enabled)
     }
+
+    override suspend fun setSystemColors(enabled: Boolean) {
+        settings.value = settings.value.copy(systemColors = enabled)
+    }
 }
 
 /** Records what was played. */
