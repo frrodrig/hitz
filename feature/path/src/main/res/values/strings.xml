@@ -30,4 +30,28 @@
     <string name="feature_path_challenge">Reto de estrellas</string>
     <string name="feature_path_challenge_locked">Termina la unidad</string>
     <string name="feature_path_challenge_description">Reto de estrellas de la unidad %1$s: %2$d de %3$d estrellas</string>
+    <string name="feature_path_section_level">Sección %1$d · %2$s</string>
+    <string name="feature_path_sections_open">ver todas las secciones</string>
+    <string name="feature_path_sections_title">Secciones</string>
+    <string name="feature_path_sections_level">Nivel %1$s</string>
+    <string name="feature_path_sections_points">Puntuación de %1$d a %2$d</string>
+    <string name="feature_path_sections_continue">Continuar</string>
+    <string name="feature_path_sections_review">Repasar</string>
+    <string name="feature_path_sections_completed">Completada</string>
+    <string name="feature_path_sections_current">En curso</string>
+    <string name="feature_path_sections_locked">Bloqueada</string>
+    <string name="feature_path_jump">Saltar aquí</string>
+    <string name="feature_path_next_section">Siguiente · Sección %1$d · %2$s</string>
+    <string name="feature_path_next_open">Ir a la sección %1$d</string>
+    <string name="feature_path_next_locked">Se abre al terminar esta sección. ¿Ya dominas lo que queda? Haz una prueba y salta directamente.</string>
+    <string name="feature_path_recall">Repaso acumulado</string>
+    <string name="feature_path_recall_body">Mezcla lo que aprendiste en las unidades anteriores. Es opcional y no suma puntos.</string>
+    <string name="feature_path_recall_locked">Se abre al terminar esta unidad.</string>
+    <string name="feature_path_recall_done">Hecho. Puedes repetirlo cuando quieras: cada vez es distinto.</string>
+    <string name="feature_path_recall_start">Repasar</string>
+    <string name="feature_path_recall_again">Repasar otra vez</string>
+    <plurals name="feature_path_sections_units">
+        <item quantity="one">%1$d de %2$d unidad completada</item>
+        <item quantity="other">%1$d de %2$d unidades completadas</item>
+    </plurals>
 </resources>

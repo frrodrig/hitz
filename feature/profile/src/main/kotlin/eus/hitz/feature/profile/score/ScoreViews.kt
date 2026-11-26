@@ -33,7 +33,6 @@ import eus.hitz.core.designsystem.theme.HitzSpacing
 import eus.hitz.core.domain.score.Score
 import eus.hitz.core.domain.score.ScoreBand
 import eus.hitz.core.domain.score.ScorePoint
-import eus.hitz.core.domain.score.ScoreRules
 import eus.hitz.feature.profile.R
 
 private const val PERCENT = 100
@@ -41,8 +40,8 @@ private val CHART_HEIGHT = 180.dp
 private val LINE_WIDTH = 3.dp
 private val DOT_RADIUS = 5.dp
 
-/** The limits of the bands and the top. */
-private val GRID_LINES = ScoreBand.entries.drop(1).map { it.range.first } + ScoreRules.MAX
+/** The limits of the bands below [max], and [max] itself. */
+private fun gridLines(max: Int): List<Int> = ScoreBand.entries.drop(1).map { it.range.first }.filter { it < max } + max
 private val DASH = floatArrayOf(8f, 8f)
 
 internal val ScoreBand.title: Int
@@ -50,6 +49,7 @@ internal val ScoreBand.title: Int
         ScoreBand.FirstSteps -> R.string.feature_profile_score_band_first_steps
         ScoreBand.Basics -> R.string.feature_profile_score_band_basics
         ScoreBand.Confident -> R.string.feature_profile_score_band_confident
+        ScoreBand.TowardsA2 -> R.string.feature_profile_score_band_towards_a2
     }
 
 internal val ScoreBand.description: Int
@@ -57,12 +57,13 @@ internal val ScoreBand.description: Int
         ScoreBand.FirstSteps -> R.string.feature_profile_score_band_first_steps_body
         ScoreBand.Basics -> R.string.feature_profile_score_band_basics_body
         ScoreBand.Confident -> R.string.feature_profile_score_band_confident_body
+        ScoreBand.TowardsA2 -> R.string.feature_profile_score_band_towards_a2_body
     }
 
 /** The score, its band and the way to the next point. */
 @Composable
 internal fun ScoreSummary(score: Score, modifier: Modifier = Modifier) {
-    val spoken = stringResource(R.string.feature_profile_score_spoken, score.value, ScoreRules.MAX)
+    val spoken = stringResource(R.string.feature_profile_score_spoken, score.value, score.max)
     Column(modifier, verticalArrangement = Arrangement.spacedBy(HitzSpacing.sm)) {
         Row(verticalAlignment = Alignment.Bottom, horizontalArrangement = Arrangement.spacedBy(HitzSpacing.md)) {
             Text(
@@ -73,7 +74,7 @@ internal fun ScoreSummary(score: Score, modifier: Modifier = Modifier) {
             )
             Column(verticalArrangement = Arrangement.spacedBy(HitzSpacing.xs)) {
                 Text(
-                    text = stringResource(R.string.feature_profile_score_scale, ScoreRules.MAX),
+                    text = stringResource(R.string.feature_profile_score_scale, score.max, score.level),
                     style = MaterialTheme.typography.labelLarge,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
@@ -81,7 +82,10 @@ internal fun ScoreSummary(score: Score, modifier: Modifier = Modifier) {
             }
         }
         if (score.isTop) {
-            Text(stringResource(R.string.feature_profile_score_top), style = MaterialTheme.typography.bodyMedium)
+            Text(
+                stringResource(R.string.feature_profile_score_top, score.level),
+                style = MaterialTheme.typography.bodyMedium
+            )
         } else {
             val next = score.value + 1
             Text(
@@ -116,7 +120,7 @@ internal fun ScoreSummary(score: Score, modifier: Modifier = Modifier) {
  * for TalkBack: a sentence says where the score started and where it is now.
  */
 @Composable
-internal fun ScoreChart(history: List<ScorePoint>, modifier: Modifier = Modifier) {
+internal fun ScoreChart(history: List<ScorePoint>, max: Int, modifier: Modifier = Modifier) {
     val first = history.first()
     val last = history.last()
     val description = stringResource(R.string.feature_profile_score_chart_spoken, first.value, last.value)
@@ -141,11 +145,11 @@ internal fun ScoreChart(history: List<ScorePoint>, modifier: Modifier = Modifier
             val right = size.width - inset
             val top = inset
             val bottom = size.height - inset
-            fun y(value: Int) = bottom - (bottom - top) * value / ScoreRules.MAX
+            fun y(value: Int) = bottom - (bottom - top) * value / max
             val days = (last.epochDay - first.epochDay).coerceAtLeast(1)
             fun x(day: Long) = left + (right - left) * (day - first.epochDay) / days
 
-            GRID_LINES.forEach { value ->
+            gridLines(max).forEach { value ->
                 drawLine(
                     color = grid,
                     start = Offset(left, y(value)),

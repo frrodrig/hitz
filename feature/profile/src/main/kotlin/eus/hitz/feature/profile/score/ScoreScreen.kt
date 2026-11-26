@@ -41,6 +41,7 @@ import eus.hitz.core.domain.score.ObserveScoreUseCase
 import eus.hitz.core.domain.score.Score
 import eus.hitz.core.domain.score.ScorePoint
 import eus.hitz.core.domain.score.ScoreRules
+import eus.hitz.core.model.content.CefrLevel
 import eus.hitz.core.model.content.LocalizedText
 import eus.hitz.feature.profile.R
 import eus.hitz.feature.profile.resolve
@@ -93,11 +94,16 @@ internal fun ScoreContent(score: Score?, onBack: () -> Unit, modifier: Modifier 
             ) {
                 ScoreSummary(score)
                 Text(stringResource(score.band.description), style = MaterialTheme.typography.bodyLarge)
-                Section(stringResource(R.string.feature_profile_score_history)) { ScoreChart(score.history) }
+                Section(stringResource(R.string.feature_profile_score_history)) { ScoreChart(score.history, score.max) }
                 Section(stringResource(R.string.feature_profile_score_can_do)) { CanDoList(score.canDo) }
                 Section(stringResource(R.string.feature_profile_score_how)) {
+                    val how = if (score.max > ScoreRules.A1_TOP) {
+                        stringResource(R.string.feature_profile_score_how_body_a2, ScoreRules.A1_TOP, score.max)
+                    } else {
+                        stringResource(R.string.feature_profile_score_how_body, score.max)
+                    }
                     Text(
-                        text = stringResource(R.string.feature_profile_score_how_body, ScoreRules.MAX),
+                        text = how,
                         style = MaterialTheme.typography.bodyMedium,
                     )
                 }
@@ -146,6 +152,8 @@ internal object ScorePreviewData {
 
     val score = Score(
         value = 7,
+        max = ScoreRules.A1_TOP,
+        level = CefrLevel.A1,
         progressToNext = 0.4f,
         gainedThisWeek = 3,
         history = listOf(
@@ -167,7 +175,7 @@ internal object ScorePreviewData {
         ),
     )
 
-    val newLearner = Score(0, 0f, 0, listOf(ScorePoint(TODAY, 0)), emptyList())
+    val newLearner = Score(0, ScoreRules.A1_TOP, CefrLevel.A1, 0f, 0, listOf(ScorePoint(TODAY, 0)), emptyList())
 }
 
 @HitzPreviews

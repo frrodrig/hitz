@@ -6,8 +6,10 @@ import androidx.navigation.NavOptions
 import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
 import eus.hitz.feature.path.PathScreen
+import eus.hitz.feature.path.PathViewModel
 import eus.hitz.feature.path.guidebook.GuidebookScreen
 import eus.hitz.feature.path.intro.UnitIntroScreen
+import eus.hitz.feature.path.sections.SectionsScreen
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -21,7 +23,19 @@ data class GuidebookRoute(val unitId: String)
 @Serializable
 data class UnitIntroRoute(val unitId: String, val levelId: String, val lessonId: String?)
 
+/** Every section of the course, opened from the section's name over the path. */
+@Serializable
+data object SectionsRoute
+
 fun NavController.navigateToPath(navOptions: NavOptions? = null) = navigate(PathRoute, navOptions)
+
+fun NavController.navigateToSections() = navigate(SectionsRoute)
+
+/** Back from the sections overview to the path, which then shows [sectionId]. */
+fun NavController.showSection(sectionId: String) {
+    previousBackStackEntry?.savedStateHandle?.set(PathViewModel.SELECTED_SECTION, sectionId)
+    popBackStack()
+}
 
 fun NavController.navigateToGuidebook(unitId: String) = navigate(GuidebookRoute(unitId))
 
@@ -34,6 +48,8 @@ fun NavGraphBuilder.pathScreen(
     onStartStory: (unitId: String, levelId: String) -> Unit,
     onOpenProfile: () -> Unit,
     onOpenUnitIntro: (unitId: String, levelId: String, lessonId: String?) -> Unit,
+    onOpenSections: () -> Unit,
+    onJump: (sectionId: String) -> Unit,
 ) {
     composable<PathRoute> {
         PathScreen(
@@ -42,8 +58,19 @@ fun NavGraphBuilder.pathScreen(
             onOpenGuidebook = onOpenGuidebook,
             onStartStory = onStartStory,
             onOpenProfile = onOpenProfile,
+            onOpenSections = onOpenSections,
+            onJump = onJump,
         )
     }
+}
+
+/** [onSelect] goes back to the path showing a section; [onJump] starts a test to jump to one. */
+fun NavGraphBuilder.sectionsScreen(
+    onBack: () -> Unit,
+    onSelect: (sectionId: String) -> Unit,
+    onJump: (sectionId: String) -> Unit,
+) {
+    composable<SectionsRoute> { SectionsScreen(onBack = onBack, onSelect = onSelect, onJump = onJump) }
 }
 
 fun NavGraphBuilder.guidebookScreen(onBack: () -> Unit) {

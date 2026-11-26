@@ -4,6 +4,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.hasContentDescription
 import androidx.compose.ui.test.hasScrollAction
+import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
@@ -16,6 +17,8 @@ import com.github.takahirom.roborazzi.captureRoboImage
 import com.google.common.truth.Truth.assertThat
 import eus.hitz.core.designsystem.theme.HitzTheme
 import eus.hitz.core.domain.path.LearningPath
+import eus.hitz.core.domain.path.NodeState
+import eus.hitz.core.domain.path.PathRecall
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -35,6 +38,9 @@ class PathContentTest {
     private var storyTapped = false
     private var profileOpened = false
     private var intro: Triple<String, String, String?>? = null
+    private var sectionsOpened = false
+    private var selectedSection: String? = null
+    private var jumpedTo: String? = null
 
     private fun show(
         darkTheme: Boolean = false,
@@ -52,6 +58,9 @@ class PathContentTest {
                         onOpenGuidebook = { guidebook = it },
                         onStartStory = { _, _ -> storyTapped = true },
                         onOpenUnitIntro = { u, l, s -> intro = Triple(u, l, s) },
+                        onOpenSections = { sectionsOpened = true },
+                        onSelectSection = { selectedSection = it },
+                        onJump = { jumpedTo = it },
                     )
                 }
             }
@@ -133,6 +142,66 @@ class PathContentTest {
         show()
         composeRule.onNodeWithText("Primeros pasos").assertExists()
         composeRule.onNodeWithText("7 pts", useUnmergedTree = true).assertExists()
+    }
+
+    @Test
+    fun theSectionNameOpensTheSectionsOverview() {
+        show()
+        composeRule.onNodeWithText("Sección 1 · A1").performClick()
+        assertThat(sectionsOpened).isTrue()
+    }
+
+    /** The first section with a cumulative review after its second unit, then a locked one. */
+    private fun sectionEnd(recall: PathRecall, nextUnlocked: Boolean): LearningPath {
+        val section = PathTestData.path.sections.single()
+        val units = section.units.dropLast(1) + section.units.last().copy(recall = recall)
+        val next = PathPreviewData.nextSection.let { next ->
+            if (!nextUnlocked) {
+                next
+            } else {
+                val unit = next.units.single()
+                next.copy(units = listOf(unit.copy(nodes = unit.nodes.map { it.copy(state = NodeState.Available) })))
+            }
+        }
+        return LearningPath(listOf(section.copy(units = units), next))
+    }
+
+    @Test
+    fun anAvailableRecallStarts() {
+        show(path = sectionEnd(PathRecall("u01-2", "u01-2.recall", isAvailable = true, isDone = false), false))
+        composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Repaso acumulado"))
+        composeRule.onNodeWithText("Repasar").performClick()
+        assertThat(started).isEqualTo(Triple("u01-2", "u01-2.recall", null))
+    }
+
+    @Test
+    fun aLockedNextSectionOffersAJump() {
+        show(path = sectionEnd(PathRecall("u01-2", "u01-2.recall", isAvailable = false, isDone = false), false))
+        composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Saltar aquí"))
+        composeRule.onNodeWithText("Repasar").assertDoesNotExist()
+        composeRule.onNodeWithText("Saltar aquí").performClick()
+        assertThat(jumpedTo).isEqualTo("s2")
+    }
+
+    @Test
+    fun anUnlockedNextSectionOpens() {
+        show(path = sectionEnd(PathRecall("u01-2", "u01-2.recall", isAvailable = true, isDone = true), true))
+        composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Ir a la sección 2"))
+        composeRule.onNodeWithText("Ir a la sección 2").performClick()
+        assertThat(selectedSection).isEqualTo("s2")
+    }
+
+    @Test
+    fun onlyTheSectionOnShowIsListed() {
+        show(path = sectionEnd(PathRecall("u01-2", "u01-2.recall", isAvailable = false, isDone = false), false))
+        composeRule.onNodeWithText("Unidad 4.1", substring = true).assertDoesNotExist()
+    }
+
+    @Test
+    fun screenshotSectionEnd() {
+        show(path = sectionEnd(PathRecall("u01-2", "u01-2.recall", isAvailable = true, isDone = false), false))
+        composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Saltar aquí"))
+        composeRule.onRoot().captureRoboImage("src/test/screenshots/path_section_end.png")
     }
 
     @Test

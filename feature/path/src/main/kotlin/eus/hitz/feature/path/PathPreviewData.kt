@@ -9,7 +9,10 @@ import eus.hitz.core.domain.path.PathSection
 import eus.hitz.core.domain.path.PathUnit
 import eus.hitz.core.model.content.LocalizedText
 
-/** A short path for previews: one unit under way, with its challenge, and one locked. */
+/**
+ * A short path for previews: a first section with one unit under way, with its challenge, and one
+ * locked, then a locked second section.
+ */
 internal object PathPreviewData {
     private fun node(unit: String, n: Int, type: NodeType, title: LocalizedText, state: NodeState) = PathNode(
         unitId = unit,
@@ -21,6 +24,23 @@ internal object PathPreviewData {
         completedLessons = if (state == NodeState.Completed) 1 else 0,
         totalLessons = 1,
         nextLessonId = null,
+    )
+
+    val nextSection = PathSection(
+        id = "s2",
+        title = LocalizedText("En casa y en la calle", "Etxean eta kalean"),
+        description = LocalizedText(
+            "Describir la casa, hablar de comida y hacer compras.",
+            "Etxea deskribatu, janariaz hitz egin eta erosketak egin.",
+        ),
+        units = listOf(
+            PathUnit(
+                id = "u04-1",
+                title = LocalizedText("Etxea", "Etxea"),
+                goals = emptyList(),
+                nodes = listOf(node("u04-1", 1, NodeType.Lesson, LocalizedText("La casa", "Etxea"), NodeState.Locked)),
+            ),
+        ),
     )
 
     val path = LearningPath(
@@ -79,6 +99,7 @@ internal object PathPreviewData {
                     ),
                 ),
             ),
+            nextSection,
         ),
     )
 }

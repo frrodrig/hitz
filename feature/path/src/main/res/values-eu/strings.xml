@@ -31,4 +31,28 @@
     <string name="feature_path_challenge">Izarren erronka</string>
     <string name="feature_path_challenge_locked">Amaitu unitatea</string>
     <string name="feature_path_challenge_description">%1$s unitateko izarren erronka: %3$d izarretatik %2$d</string>
+    <string name="feature_path_section_level">%1$d. atala · %2$s</string>
+    <string name="feature_path_sections_open">ikusi atal guztiak</string>
+    <string name="feature_path_sections_title">Atalak</string>
+    <string name="feature_path_sections_level">%1$s maila</string>
+    <string name="feature_path_sections_points">Puntuazioa: %1$d-tik %2$d-ra</string>
+    <string name="feature_path_sections_continue">Jarraitu</string>
+    <string name="feature_path_sections_review">Errepasatu</string>
+    <string name="feature_path_sections_completed">Osatuta</string>
+    <string name="feature_path_sections_current">Martxan</string>
+    <string name="feature_path_sections_locked">Blokeatuta</string>
+    <string name="feature_path_jump">Salto egin hona</string>
+    <string name="feature_path_next_section">Hurrengoa · %1$d. atala · %2$s</string>
+    <string name="feature_path_next_open">Joan %1$d. atalera</string>
+    <string name="feature_path_next_locked">Atal hau amaitzean irekiko da. Falta zaizuna menderatzen duzu? Egin proba bat eta zuzenean salto egin.</string>
+    <string name="feature_path_recall">Errepaso metatua</string>
+    <string name="feature_path_recall_body">Aurreko unitateetan ikasitakoa nahasten du. Aukerakoa da, eta ez du punturik ematen.</string>
+    <string name="feature_path_recall_locked">Unitate hau amaitzean irekiko da.</string>
+    <string name="feature_path_recall_done">Eginda. Nahi duzunean errepika dezakezu: aldi bakoitzean desberdina da.</string>
+    <string name="feature_path_recall_start">Errepasatu</string>
+    <string name="feature_path_recall_again">Errepasatu berriro</string>
+    <plurals name="feature_path_sections_units">
+        <item quantity="one">%2$d unitatetik %1$d osatuta</item>
+        <item quantity="other">%2$d unitatetik %1$d osatuta</item>
+    </plurals>
 </resources>

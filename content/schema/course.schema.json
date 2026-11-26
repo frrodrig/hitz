@@ -41,7 +41,8 @@
           "id",
           "title",
           "description",
-          "units"
+          "units",
+          "level"
         ],
         "properties": {
           "id": {
@@ -61,6 +62,13 @@
               "type": "string",
               "pattern": "^u[0-9]{2}-[0-9]$"
             }
+          },
+          "level": {
+            "enum": [
+              "A1",
+              "A2.1"
+            ],
+            "description": "CEFR level of the section; the score has one band per level."
           }
         }
       }

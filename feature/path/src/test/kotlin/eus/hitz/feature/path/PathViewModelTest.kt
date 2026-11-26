@@ -1,5 +1,6 @@
 package eus.hitz.feature.path
 
+import androidx.lifecycle.SavedStateHandle
 import app.cash.turbine.test
 import com.google.common.truth.Truth.assertThat
 import eus.hitz.core.domain.content.CourseRepository
@@ -84,6 +85,7 @@ class PathViewModelTest {
         val gamification = FakeGamificationRepository()
         val settings = FakeSettingsRepository()
         val vm = PathViewModel(
+            SavedStateHandle(),
             ObserveLearningPathUseCase(courses, progress),
             ObservePlayerUseCase(gamification, settings, gamification.clock),
             ObserveScoreUseCase(courses, progress, { 0L }, { ZoneOffset.UTC }),
@@ -97,6 +99,14 @@ class PathViewModelTest {
             assertThat(ready.dailyGoal).isEqualTo(0f)
             assertThat(ready.seenUnitIntros).isEmpty()
             assertThat(ready.score).isEqualTo(0)
+            assertThat(ready.scoreMax).isEqualTo(29)
+            assertThat(ready.sectionId).isNull()
+            // A locked or unknown section is never shown; an unlocked one is.
+            vm.selectSection("s9")
+            vm.selectSection("s1")
+            var selected = awaitItem() as PathUiState.Ready
+            while (selected.sectionId == null) selected = awaitItem() as PathUiState.Ready
+            assertThat(selected.sectionId).isEqualTo("s1")
             settings.markUnitIntroSeen("u01-1")
             assertThat((awaitItem() as PathUiState.Ready).seenUnitIntros).containsExactly("u01-1")
             completed.value = setOf("u01-1.l1.s1")

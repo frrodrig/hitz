@@ -7,6 +7,7 @@ import eus.hitz.core.domain.gamification.RecordStudyTimeUseCase
 import eus.hitz.core.domain.gamification.SessionReward
 import eus.hitz.core.domain.lesson.LessonResult
 import eus.hitz.core.domain.progress.ProgressRepository
+import eus.hitz.core.domain.recall.RecallRules
 import eus.hitz.core.domain.time.EpochClock
 import javax.inject.Inject
 
@@ -29,7 +30,12 @@ class RecordSessionUseCase @Inject constructor(
         activeMillis: Long,
     ): SessionReward? {
         val now = clock.now()
-        if (result.mistakes.isNotEmpty()) {
+        if (RecallRules.isRecall(sessionId)) {
+            // A cumulative review mixes several units: each mistake goes to its own one.
+            result.mistakes.groupBy { it.exerciseId.substringBefore('.') }.forEach { (unit, mistakes) ->
+                progress.recordMistakes(unit, mistakes, now)
+            }
+        } else if (result.mistakes.isNotEmpty()) {
             progress.recordMistakes(unitId, result.mistakes, now)
         }
         if (!result.completed) {

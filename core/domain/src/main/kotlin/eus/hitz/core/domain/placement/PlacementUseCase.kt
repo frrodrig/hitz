@@ -6,17 +6,24 @@ import eus.hitz.core.model.CourseId
 import eus.hitz.core.model.content.CourseUnit
 import eus.hitz.core.model.content.Exercise
 import eus.hitz.core.model.content.Level
+import kotlinx.coroutines.flow.first
 import javax.inject.Inject
 import kotlin.random.Random
 
-/** A placement test for one section of the course. */
+/**
+ * A placement test. Passing it marks every section of [sectionIds] as done. A test from the first
+ * run covers one section; a jump from the sections overview covers every section before the one
+ * the learner jumps to ([isJump]).
+ */
 data class PlacementTest(
     val sectionId: String,
-    /** 1-based position of the section in the course. */
+    /** 1-based position in the course of the tested section, or of the target of a jump. */
     val sectionNumber: Int,
     val exercises: List<Exercise>,
-    /** The section after this one, if any: a learner who passes can try it too. */
+    /** The section after this one, if any: a learner who passes can try it too. None for jumps. */
     val nextSectionId: String?,
+    val sectionIds: List<String> = listOf(sectionId),
+    val isJump: Boolean = false,
 )
 
 /**
@@ -43,6 +50,39 @@ class PlacementUseCase @Inject constructor(
         return PlacementTest(sectionId, index + 1, exercises, sections.getOrNull(index + 1)?.id)
     }
 
+    /**
+     * A test to jump to [targetSectionId]: about [JUMP_SIZE] exercises spread over every unit of the
+     * sections between the first one not finished and the target. Passing it marks them all as
+     * done, which unlocks the target.
+     */
+    suspend fun jumpTest(
+        targetSectionId: String,
+        random: Random = Random.Default,
+        courseId: CourseId = CourseId.BASQUE_FROM_SPANISH,
+    ): PlacementTest {
+        val sections = courses.getCourse(courseId).sections
+        val target = sections.indexOfFirst { it.id == targetSectionId }
+        require(target > 0) { "cannot jump to section $targetSectionId" }
+        val completed = progress.observeCompleted().first()
+        val skipped = sections.subList(0, target).filterNot { section ->
+            section.units.all { unitId -> courses.getUnit(courseId, unitId).completionIds().all { it in completed } }
+        }
+        require(skipped.isNotEmpty()) { "section $targetSectionId is already unlocked" }
+        val units = skipped.flatMap { it.units }
+        val perUnit = (JUMP_SIZE + units.size - 1) / units.size
+        val exercises = units.flatMap { unitId ->
+            courses.getUnit(courseId, unitId).testableExercises().shuffled(random).take(perUnit)
+        }.shuffled(random).take(JUMP_SIZE.coerceAtLeast(units.size))
+        return PlacementTest(
+            sectionId = targetSectionId,
+            sectionNumber = target + 1,
+            exercises = exercises,
+            nextSectionId = null,
+            sectionIds = skipped.map { it.id },
+            isJump = true,
+        )
+    }
+
     /** Marks every required level of the section as completed (star challenges stay optional). */
     suspend fun skipSection(
         sectionId: String,
@@ -50,8 +90,18 @@ class PlacementUseCase @Inject constructor(
         now: Long,
         courseId: CourseId = CourseId.BASQUE_FROM_SPANISH,
     ) {
-        val section = courses.getCourse(courseId).sections.first { it.id == sectionId }
-        for (unitId in section.units) {
+        skipSections(listOf(sectionId), accuracy, now, courseId)
+    }
+
+    /** [skipSection] for every section of [sectionIds]. */
+    suspend fun skipSections(
+        sectionIds: List<String>,
+        accuracy: Float,
+        now: Long,
+        courseId: CourseId = CourseId.BASQUE_FROM_SPANISH,
+    ) {
+        val units = courses.getCourse(courseId).sections.filter { it.id in sectionIds }.flatMap { it.units }
+        for (unitId in units) {
             courses.getUnit(courseId, unitId).completionIds().forEach { completionId ->
                 progress.recordCompletion(unitId, completionId, accuracy, now)
             }
@@ -77,6 +127,9 @@ class PlacementUseCase @Inject constructor(
     companion object {
         /** Exercises per unit: a section of six units makes a test of 12. */
         const val PER_UNIT = 2
+
+        /** Exercises in a jump test, whatever the number of sections it covers. */
+        const val JUMP_SIZE = 18
         const val PASS_ACCURACY = 0.8f
 
         fun passed(accuracy: Float): Boolean = accuracy >= PASS_ACCURACY

@@ -50,7 +50,7 @@ class LessonViewModelTest {
                 )
             },
         ),
-        planSession = PlanSessionUseCase(TestLesson.repository(*exercises), progress),
+        planSession = PlanSessionUseCase(TestLesson.repository(*exercises), progress, { 0L }),
         placement = PlacementUseCase(TestLesson.repository(*exercises), progress),
         recordSession = gamification.recordSession(progress),
         settings = FakeSettingsRepository(settings),

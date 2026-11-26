@@ -18,11 +18,12 @@ import kotlinx.serialization.Serializable
 data class LessonRoute(val unitId: String, val levelId: String, val lessonId: String? = null)
 
 /**
- * A placement test for section [sectionId], played by the lesson screen. Argument name read by
- * [eus.hitz.feature.lesson.LessonViewModel].
+ * A placement test for section [sectionId], played by the lesson screen. With [jump], a test to
+ * jump to [sectionId] from the sections overview, covering the sections before it. Argument names
+ * read by [eus.hitz.feature.lesson.LessonViewModel].
  */
 @Serializable
-data class PlacementRoute(val sectionId: String)
+data class PlacementRoute(val sectionId: String, val jump: Boolean = false)
 
 /**
  * A practice session from the practice hub, played by the lesson screen: [mode] is a
@@ -44,6 +45,9 @@ fun NavController.navigateToStory(unitId: String, levelId: String, navOptions: N
 
 fun NavController.navigateToPlacement(sectionId: String, navOptions: NavOptions? = null) =
     navigate(PlacementRoute(sectionId), navOptions)
+
+fun NavController.navigateToJump(sectionId: String, navOptions: NavOptions? = null) =
+    navigate(PlacementRoute(sectionId, jump = true), navOptions)
 
 fun NavController.navigateToPractice(mode: PracticeMode, unitId: String? = null, navOptions: NavOptions? = null) =
     navigate(PracticeSessionRoute(mode.name, unitId), navOptions)

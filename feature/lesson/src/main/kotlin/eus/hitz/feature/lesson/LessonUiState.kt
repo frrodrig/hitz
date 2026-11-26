@@ -52,6 +52,8 @@ sealed interface LessonUiState {
         val accuracy: Float,
         val passed: Boolean,
         val nextSectionId: String?,
+        /** A jump from the sections overview: passing it unlocks [sectionNumber]. */
+        val isJump: Boolean = false,
     ) : LessonUiState
 }
 

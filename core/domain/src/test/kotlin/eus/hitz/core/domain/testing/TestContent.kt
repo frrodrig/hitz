@@ -75,6 +75,29 @@ internal object TestContent {
 
         override suspend fun getUnit(courseId: CourseId, unitId: String): CourseUnit = units.getValue(unitId)
     }
+
+    /** Two sections of two textbook units each: s1 (u01, u02) and s2 (u03, u04). */
+    val longUnits = listOf("u01", "u02", "u03", "u04").flatMap { book ->
+        listOf(unit("$book-1"), unit("$book-2", sectionReview = book == "u02" || book == "u04"))
+    }.associateBy { it.id }
+
+    val longCourse = Course(
+        1,
+        "eu-es",
+        "eu",
+        "es",
+        text,
+        listOf(
+            Section("s1", text, text, listOf("u01-1", "u01-2", "u02-1", "u02-2")),
+            Section("s2", text, text, listOf("u03-1", "u03-2", "u04-1", "u04-2")),
+        ),
+    )
+
+    val longCourseRepository = object : CourseRepository {
+        override suspend fun getCourse(courseId: CourseId): Course = longCourse
+
+        override suspend fun getUnit(courseId: CourseId, unitId: String): CourseUnit = longUnits.getValue(unitId)
+    }
 }
 
 internal class FakeProgressRepository(var stats: MistakeStats = MistakeStats()) : ProgressRepository {
