@@ -1,0 +1,38 @@
+<!-- Maite ante un tablón de anuncios de pisos, con una nota que se mueve. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u13-2, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Maite ante un tablón de anuncios de pisos" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#DCE9F2" />
+  <rect x="0" y="150" width="200" height="50" fill="#9DB3C4" />
+  <g data-depth-generated="">
+    <clipPath id="u13-2-2">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u13-2-2)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#8694A0" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="100" y="28" width="90" height="96" rx="6" fill="#C8955E" />
+  <g data-depth-generated="">
+    <clipPath id="u13-2-1">
+      <path d="M106,28 h78 a6,6 0 0,1 6,6 v84 a6,6 0 0,1 -6,6 h-78 a6,6 0 0,1 -6,-6 v-84 a6,6 0 0,1 6,-6 Z" />
+    </clipPath>
+    <g clip-path="url(#u13-2-1)">
+      <path d="M54 -18 H236 V170 H54 Z M96 19 h78 a6 6 0 0 1 6 6 v84 a6 6 0 0 1 -6 6 h-78 a6 6 0 0 1 -6 -6 v-84 a6 6 0 0 1 6 -6 Z" fill-rule="evenodd" fill="#A57A4D" />
+      <path d="M54 -18 H236 V170 H54 Z M108 31 h78 a6 6 0 0 1 6 6 v84 a6 6 0 0 1 -6 6 h-78 a6 6 0 0 1 -6 -6 v-84 a6 6 0 0 1 6 -6 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="110" y="38" width="32" height="34" rx="2" fill="#FFF6D8" data-depth="none" />
+  <path d="M115 48 H137 M115 56 H133 M115 64 H136" stroke="#8A7A5A" stroke-width="2" stroke-linecap="round" />
+  <circle cx="126" cy="40" r="3" fill="#D9534F" />
+  <rect x="148" y="40" width="32" height="30" rx="2" fill="#FFFFFF" data-depth="none" />
+  <path d="M153 50 H175 M153 58 H170" stroke="#8A7A5A" stroke-width="2" stroke-linecap="round" />
+  <circle cx="164" cy="42" r="3" fill="#3A7BD5" />
+  <g data-host="2 50 132" />
+  <g data-motion="Flutter" data-pivot="146 80">
+    <rect x="132" y="80" width="30" height="36" rx="2" fill="#E3F4E1" />
+    <path d="M137 92 H157 M137 100 H153 M137 108 H156" stroke="#5E7A5A" stroke-width="2" stroke-linecap="round" />
+    <circle cx="147" cy="82" r="3" fill="#3F8A5A" />
+  </g>
+</svg>

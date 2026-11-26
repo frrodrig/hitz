@@ -61,7 +61,7 @@ amplía* lesson when the point was already taught in A1 (see Part A2.1).
 | 2 | 127 |
 | 3 | 115 |
 | 4 | 102 |
-| 5 | 169 |
+| 5 | 172 |
 | 6 | 159 |
 <!-- counts:end -->
 
@@ -998,7 +998,7 @@ Each grammar point is tagged:
   *zaila da* never takes the plural; the NORI endings with proper and common nouns.
 
 <!-- vocab:13.1:start -->
-**Vocabulary (34 words)**
+**Vocabulary (37 words)**
 
 | Basque | Spanish | Type | Note |
 |---|---|---|---|
@@ -1036,6 +1036,9 @@ Each grammar point is tagged:
 | jaiegun | día festivo | noun |  |
 | lanpetuta | ocupado; atareado | adj. |  |
 | lisatu | planchar | verb |  |
+| euskaldun | vascohablante | noun | bridge: assumed by the A2 book; not in Hitz A1 |
+| denbora | tiempo (duración) | noun | bridge: assumed by the A2 book; not in Hitz A1 |
+| azkar | rápido; deprisa | adv. |  |
 
 **Function words and survival phrases (not counted towards the limit):** bakoitz (cada; cada uno), guzti (todo; todos)
 <!-- vocab:13.1:end -->
