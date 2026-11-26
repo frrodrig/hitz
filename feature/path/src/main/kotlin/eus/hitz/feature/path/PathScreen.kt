@@ -252,7 +252,7 @@ private fun CurrentUnitPane(
             UnitCover(unit, isCurrentUnit = false, onOpenGuidebook = onOpenGuidebook)
             if (unit.goals.isNotEmpty()) {
                 Text(
-                    text = stringResource(R.string.feature_path_goals),
+                    text = stringResource(R.string.feature_path_pane_goals),
                     style = MaterialTheme.typography.titleMediumEmphasized,
                     modifier = Modifier.semantics { heading() },
                 )
