@@ -182,8 +182,13 @@ Rules:
 
 ## Icons
 
-`HitzIcons`: original icons on a 24 dp grid. UI icons use 2 dp rounded strokes; counters
-(bolt, trophy, star, level) are solid shapes. All are tinted by the caller. The star belongs to
+`HitzIcons`: **Material Symbols** (Rounded, weight 400, 24 dp; Apache 2.0, `third_party/material-symbols/`),
+the icons Android users already know, imported as vector drawables, only the ones the app uses
+(the Compose icon libraries stopped shipping after Compose 1.7 and held the older Material Icons).
+Outlined by default; filled for the selected navigation destination and for the bolt and the star.
+`Almost` is the pencil (*edit*), `Slow` the 0.5× speed, `Level` the rising bars. All are tinted by
+the caller. The identity is not in the icons: the app icon (the lauburu), the cast and the scenes
+are Hitz's own. The star belongs to
 the star challenges (`HitzStars`: earned stars in `tertiary`, the rest in `outlineVariant`); the
 score uses the level icon, three rising bars.
 

@@ -231,10 +231,15 @@ private fun LazyListScope.switches(
     }
 }
 
-/** Update checks, the version installed and the typeface's licence. */
+/** Update checks, the version installed and the licences of the typeface and the icons. */
 @Composable
 private fun AppGroup(settings: UserSettings, onSettingChange: (Setting, Boolean) -> Unit, version: String?) {
-    val rows = listOfNotNull(AppRow.UpdateChecks, AppRow.Version.takeIf { version != null }, AppRow.Typeface)
+    val rows = listOfNotNull(
+        AppRow.UpdateChecks,
+        AppRow.Version.takeIf { version != null },
+        AppRow.Typeface,
+        AppRow.Icons,
+    )
     Group(rows) { row, shape ->
         when (row) {
             AppRow.UpdateChecks -> SettingRow(
@@ -254,11 +259,16 @@ private fun AppGroup(settings: UserSettings, onSettingChange: (Setting, Boolean)
                 description = stringResource(R.string.feature_profile_typeface_licence),
                 shape = shape,
             )
+            AppRow.Icons -> InfoRow(
+                title = stringResource(R.string.feature_profile_icons),
+                description = stringResource(R.string.feature_profile_icons_licence),
+                shape = shape,
+            )
         }
     }
 }
 
-private enum class AppRow { UpdateChecks, Version, Typeface }
+private enum class AppRow { UpdateChecks, Version, Typeface, Icons }
 
 @HitzPreviews
 @Composable
