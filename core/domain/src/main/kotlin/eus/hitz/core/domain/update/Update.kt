@@ -46,6 +46,16 @@ object Versions {
     }
 }
 
+/** What looking for a newer version found. */
+sealed interface UpdateCheck {
+    data class Available(val release: AppRelease) : UpdateCheck
+
+    data object UpToDate : UpdateCheck
+
+    /** Offline, no APK in the release, or an error: nothing can be said. */
+    data object Failed : UpdateCheck
+}
+
 /**
  * Looks for a newer published version, at most once a day: never in debug builds, never when the
  * learner turned update checks off, and quietly when the network is not there (the next launch
@@ -62,9 +72,25 @@ class CheckForUpdateUseCase @Inject constructor(
         val now = clock.now()
         val last = releases.lastCheckMillis()
         if (now in last until last + CHECK_INTERVAL_MILLIS) return null
-        val latest = releases.latestRelease() ?: return null
-        releases.setLastCheckMillis(now)
-        return latest.takeIf { Versions.isNewer(it.version, app.versionName) }
+        return (checkNow() as? UpdateCheck.Available)?.release
+    }
+
+    /** Whether this build can look at all: debug builds are not published. */
+    val canCheck: Boolean get() = !app.isDebugBuild
+
+    /**
+     * Looks now, whatever the time of the last check and the switch: for when the learner asks
+     * (the check button, or turning checks on). A successful look counts as today's check.
+     */
+    suspend fun checkNow(): UpdateCheck {
+        if (!canCheck) return UpdateCheck.Failed
+        val latest = releases.latestRelease() ?: return UpdateCheck.Failed
+        releases.setLastCheckMillis(clock.now())
+        return if (Versions.isNewer(latest.version, app.versionName)) {
+            UpdateCheck.Available(latest)
+        } else {
+            UpdateCheck.UpToDate
+        }
     }
 
     companion object {
