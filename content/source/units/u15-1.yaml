@@ -1,0 +1,412 @@
+# Unit 15.1 · Zertan ari zara? — A2.1 book unit 3 (Atarian + A): what one usually does at work and
+# what one has been doing today; passing on what others asked, ordered or told us; recent news.
+# Habitual ARI (-t(z)en aritzen naiz) and perfective ARI (-t(z)en aritu naiz); imperatives
+# (etorri!, etor zaitezte!; zatozte! for recognition); -(E)NIK after a negative main verb; the
+# preterite against the present perfect. Recall: -T(Z)EN ARI IZAN (7.2), -T(Z)EKO (9.1),
+# duela (7.1), -(E)LA (10.2).
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u15-1
+section: s5
+bookUnit: 15
+title:
+  es: ¿Qué estás haciendo?
+  eu: Zertan ari zara?
+goals:
+  - es: Explicar qué sueles hacer en el trabajo y qué has estado haciendo hoy.
+    eu: Lanean zertan aritzen zaren eta gaur zertan aritu zaren azaldu.
+  - es: Contar a otros lo que te han pedido, mandado o dicho.
+    eu: Besteei kontatu zer eskatu, agindu edo esan dizuten.
+  - es: Contar noticias recientes con el tiempo adecuado.
+    eu: Albiste berriak kontatu, denbora egokian.
+guidebook:
+  sections:
+    - title:
+        es: "Ahora, siempre, hoy: ari naiz, aritzen naiz, aritu naiz"
+        eu: "Orain, normalean, gaur: ari naiz, aritzen naiz, aritu naiz"
+      body:
+        es: "Con el verbo en -t(z)en: «ari naiz» es lo que haces ahora mismo; «aritzen naiz», lo que sueles hacer; «aritu naiz», lo que has estado haciendo hoy y ya terminó. Siempre con «naiz, zara, da…»."
+        eu: "Aditza -t(z)en forman dela: «ari naiz» orain egiten ari zarena da; «aritzen naiz», normalean egiten duzuna; «aritu naiz», gaur egiten aritu zarena, amaitu dena. Beti «naiz, zara, da…» laguntzailearekin."
+      examples:
+        - eu: Orain lorategia garbitzen ari naiz.
+          es: Ahora estoy limpiando el jardín.
+        - eu: Normalean harreran lanean aritzen naiz.
+          es: Normalmente suelo trabajar en recepción.
+        - eu: Gaur goizean ordenagailuak konpontzen aritu da.
+          es: Esta mañana ha estado arreglando ordenadores.
+    - title:
+        es: "Lo que me han pedido: …-t(z)eko eskatu dit"
+        eu: "Eskatu didatena: …-t(z)eko eskatu dit"
+      body:
+        es: "Para contar una orden o un favor, el verbo de lo pedido va en -t(z)eko: «Zaborra jaisteko eskatu dit» (me ha pedido que baje la basura). El verbo principal suele ser «eskatu», «esan» o «agindu»."
+        eu: "Agindu edo mesede bat kontatzeko, eskatutako aditza -t(z)eko forman doa: «Zaborra jaisteko eskatu dit». Aditz nagusia «eskatu», «esan» edo «agindu» izan ohi da."
+      examples:
+        - eu: Landareak ureztatzeko eskatu dit.
+          es: Me ha pedido que riegue las plantas.
+        - eu: Zaborra ateratzeko esan diot.
+          es: Le he dicho que saque la basura.
+    - title:
+        es: "No creo que…: -(e)nik"
+        eu: "Ez dut uste…-(e)nik"
+      body:
+        es: "Tras «uste dut», «esan du»… lo que se dice termina en -(e)la. Si el verbo principal es negativo («ez dut uste», «ez du esan»), termina en -(e)nik."
+        eu: "«Uste dut», «esan du»… esan ondoren, esaten denak -(e)la amaiera hartzen du. Aditz nagusia ezezkoa bada («ez dut uste», «ez du esan»), -(e)nik."
+      examples:
+        - eu: Lapurreta bat gertatu dela uste dut.
+          es: Creo que ha habido un robo.
+        - eu: Ez dut uste lapurreta bat gertatu denik.
+          es: No creo que haya habido un robo.
+    - title:
+        es: "Hoy o ayer: iritsi da, iritsi zen"
+        eu: "Gaur ala atzo: iritsi da, iritsi zen"
+      body:
+        es: "Con «gaur» se usa «da / du» (ha llegado, ha comido). Con «atzo», «herenegun», «duela bi egun»… se usa «zen / zuen» (llegó, comió)."
+        eu: "«Gaur» esaten denean, «da / du» erabiltzen da. «Atzo», «herenegun», «duela bi egun»… esaten denean, «zen / zuen»."
+      examples:
+        - eu: Gaur goiz jaiki naiz.
+          es: Hoy me he levantado pronto.
+        - eu: Abeslaria atzo iritsi zen Bilbora.
+          es: El cantante llegó ayer a Bilbao.
+        - eu: Duela bi egun etxe berrira joan ginen.
+          es: Hace dos días nos fuimos a la casa nueva.
+levels:
+  - type: lesson
+    title:
+      es: En el trabajo
+      eu: Lanean
+    lessons:
+      - structures: [lanak, aritzen]
+        sentences:
+          - Zertan aritzen zara lanean? = ¿Qué sueles hacer en el trabajo?
+          - Hotelean harreran aritzen naiz. = Suelo estar en la recepción del hotel. | Trabajo en la recepción del hotel.
+          - Igerilekua garbitzen aritzen da. = Suele limpiar la piscina.
+          - Ordenagailuak konpontzen aritzen gara. = Solemos arreglar ordenadores.
+          - Lorategiko landareak ureztatzen aritzen dira. = Suelen regar las plantas del jardín.
+          - Jatetxean zerbitzari lanean aritzen naiz. = Suelo trabajar de camarero en el restaurante. | Suelo trabajar de camarera en el restaurante.
+          - Ez naiz bulegoan aritzen. = No suelo estar en la oficina.
+          - Bezeroei giltza ematen diet. = A los clientes les doy la llave.
+        pairs:
+          - - garbitu = limpiar
+            - konpondu = arreglar
+            - ureztatu = regar
+            - landare = planta
+            - lorategi = jardín
+            - harrera = recepción
+        meanings:
+          - text: Igerilekua garbitzen aritzen da.
+            options:
+              - Suele limpiar la piscina.
+              - Ahora está limpiando la piscina.
+              - Hoy ha limpiado la piscina.
+        blanks:
+          - text: Ordenagailuak ___ aritzen gara. = Solemos arreglar ordenadores.
+            options:
+              - konpontzen
+              - konpondu
+              - konpontzea
+        chats:
+          - messages:
+              - Miren | Zertan aritzen zara lanean?
+            options:
+              - Harreran aritzen naiz.
+              - Harreran aritu naiz.
+              - Harrera hotelean dago.
+        images:
+          - hotel, pool, computer
+      - structures: [aritu, gaur]
+        sentences:
+          - Gaur zertan aritu zara? = ¿Qué has estado haciendo hoy?
+          - Gaur goizean etxea garbitzen aritu naiz. = Esta mañana he estado limpiando la casa.
+          - Gaur arratsaldean lorategian lanean aritu gara. = Esta tarde hemos estado trabajando en el jardín.
+          - Mikel ordenagailua konpontzen aritu da. = Mikel ha estado arreglando el ordenador.
+          - Ez naiz lanean aritu; jaieguna da. = No he estado trabajando; es día de fiesta.
+          - Umeak parkean jolasten aritu dira. = Los niños han estado jugando en el parque.
+          - Zer egiten ari zara orain? = ¿Qué estás haciendo ahora?
+          - Afaria prestatzen ari naiz. = Estoy preparando la cena.
+        pairs:
+          - - ari naiz = estoy (ahora)
+            - aritzen naiz = suelo
+            - aritu naiz = he estado
+            - gaur = hoy
+            - orain = ahora
+        blanks:
+          - text: Gaur arratsaldean lorategian lanean ___ gara. = Esta tarde hemos estado trabajando en el jardín.
+            options:
+              - aritu
+              - aritzen
+              - ari
+          - text: Afaria prestatzen ___ naiz. = Estoy preparando la cena.
+            options:
+              - ari
+              - aritu
+              - aritzen
+        chats:
+          - messages:
+              - Ane | Gaur zertan aritu zara?
+            options:
+              - Etxea garbitzen aritu naiz.
+              - Etxea garbitzen aritzen naiz.
+              - Etxea garbia da.
+        true_false:
+          - passage: Gaur Gorka ez da lanera joan. Goizean lorategian aritu da, eta arratsaldean afaria prestatzen.
+            statement: Hoy Gorka ha trabajado en la oficina.
+            answer: false
+      - structures: [etxeko-lanak, mesedeak]
+        sentences:
+          - Zaborra jaitsi behar dut. = Tengo que bajar la basura.
+          - Postontzia etxe aurrean dago. = El buzón está delante de casa.
+          - Landareak ureztatu ditut. = He regado las plantas.
+          - Mesede bat eskatu nahi dizut. = Quiero pedirte un favor.
+          - Parkera paseatzera aterako naiz. = Voy a salir a pasear al parque.
+          - Giltzak hartu dituzu? = ¿Has cogido las llaves?
+          - Arropa lisatu eta gela garbitu dut. = He planchado la ropa y he limpiado la habitación.
+        pairs:
+          - - zabor = basura
+            - jaitsi = bajar
+            - postontzi = buzón
+            - mesede = favor
+            - giltza = llave
+            - paseatu = pasear
+        meanings:
+          - text: Zaborra jaitsi behar dut.
+            options:
+              - Tengo que bajar la basura.
+              - He bajado la basura.
+              - Quiero tirar la basura.
+        images:
+          - bin, plate, bag
+  - type: lesson
+    title:
+      es: Lo que me han pedido
+      eu: Eskatu didatena
+    lessons:
+      - structures: [zehar-agintera]
+        sentences:
+          - Ahizpak landareak ureztatzeko eskatu dit. = Mi hermana me ha pedido que riegue las plantas.
+          - Zaborra jaisteko esan dit amak. = Mi madre me ha dicho que baje la basura.
+          - Zaborra ateratzeko eskatu dit. = Me ha pedido que saque la basura.
+          - Nagusiak berandu ez etortzeko esan digu. = El jefe nos ha dicho que no lleguemos tarde.
+          - Itxaroteko esan diot. = Le he dicho que espere.
+          - Zer egiteko eskatu dizu? = ¿Qué te ha pedido que hagas?
+          - Giltzak ekartzeko eskatu dit. = Me ha pedido que traiga las llaves.
+        pairs:
+          - - eskatu = pedir
+            - esan = decir
+            - itxaron = esperar
+            - jarri = poner
+            - atera = sacar
+        blanks:
+          - text: Ahizpak landareak ___ eskatu dit. = Mi hermana me ha pedido que riegue las plantas.
+            options:
+              - ureztatzeko
+              - ureztatu
+              - ureztatzen
+          - text: ___ esan diot. = Le he dicho que espere.
+            options:
+              - Itxaroteko
+              - Itxaroten
+              - Itxarotea
+        chats:
+          - messages:
+              - Iker | Zer esan dizu nagusiak?
+            options:
+              - Berandu ez etortzeko.
+              - Berandu etorri naiz.
+              - Nagusia berandu dago.
+        meanings:
+          - text: Zaborra jaisteko esan dit amak.
+            options:
+              - Mi madre me ha dicho que baje la basura.
+              - Mi madre ha bajado la basura.
+              - Le he dicho a mi madre que baje la basura.
+      - structures: [agintera]
+        sentences:
+          - Etorri hona! = ¡Ven aquí! | ¡Venid aquí!
+          - Etor zaitez hona, mesedez. = Ven aquí, por favor.
+          - Etor zaitezte bihar! = ¡Venid mañana!
+          - Zatozte! = ¡Venid!
+          - Itxaron pixka bat! = ¡Espera un poco! | ¡Esperad un poco!
+          - Jarri giltzak mahai gainean. = Pon las llaves encima de la mesa.
+          - Atera zaborra, mesedez. = Saca la basura, por favor.
+        pairs:
+          - - etor zaitez = ven
+            - etor zaitezte = venid
+            - zatozte = venid (forma corta)
+            - itxaron = espera
+            - jarri = pon
+        meanings:
+          - text: Etor zaitezte bihar!
+            options:
+              - ¡Venid mañana!
+              - ¡Ven mañana!
+              - Vendremos mañana.
+        blanks:
+          - text: Etor ___ hona, mesedez. = Ven aquí, por favor.
+            options:
+              - zaitez
+              - zara
+              - zaitezte
+        chats:
+          - messages:
+              - Amona | Etor zaitezte afaltzera!
+            options:
+              - Bai, orain goaz!
+              - Bai, etorri gara.
+              - Afaria ona da.
+      - structures: [enik, uste]
+        sentences:
+          - Bankuan lapurreta bat gertatu dela uste dut. = Creo que ha habido un robo en el banco.
+          - Ez dut uste lapurreta bat gertatu denik. = No creo que haya habido un robo.
+          - Polizia etorri dela esan dute. = Han dicho que ha venido la policía.
+          - Ez dute esan polizia etorri denik. = No han dicho que haya venido la policía.
+          - Ez dut uste Jon gaixo dagoenik. = No creo que Jon esté enfermo.
+          - Ez dut uste dirua duenik. = No creo que tenga dinero.
+        pairs:
+          - - denik = que sea / haya
+            - dela = que es / ha
+            - uste dut = creo
+            - ez dut uste = no creo
+            - gertatu = pasar
+        blanks:
+          - text: Ez dut uste lapurreta bat gertatu ___. = No creo que haya habido un robo.
+            options:
+              - denik
+              - dela
+              - da
+          - text: Polizia etorri ___ esan dute. = Han dicho que ha venido la policía.
+            options:
+              - dela
+              - denik
+              - da
+        meanings:
+          - text: Ez dut uste dirua duenik.
+            options:
+              - No creo que tenga dinero.
+              - Creo que tiene dinero.
+              - No tengo dinero.
+  - type: lesson
+    title:
+      es: Noticias
+      eu: Albisteak
+    lessons:
+      - structures: [albisteak, lehenaldi-burutua]
+        sentences:
+          - Atzo lapurreta bat gertatu zen bankuan. = Ayer hubo un robo en el banco.
+          - Lapurra bat-batean sartu zen. = El ladrón entró de repente.
+          - Polizia berehala iritsi zen. = La policía llegó enseguida.
+          - Poliziak lapurra atxilotu zuen. = La policía detuvo al ladrón.
+          - Gaur goizean albiste hau irakurri dut. = Esta mañana he leído esta noticia.
+          - Herenegun arratsaldean gertatu zen. = Pasó anteayer por la tarde.
+          - Duela bi egun hasi zen jaia. = La fiesta empezó hace dos días.
+        pairs:
+          - - albiste = noticia
+            - polizia = policía
+            - atxilotu = detener
+            - bat-batean = de repente
+            - berehala = enseguida
+            - iritsi = llegar
+        blanks:
+          - text: Polizia berehala iritsi ___. = La policía llegó enseguida.
+            options:
+              - zen
+              - da
+              - zuen
+          - text: Gaur goizean albiste hau irakurri ___. = Esta mañana he leído esta noticia.
+            options:
+              - dut
+              - nuen
+              - nintzen
+        true_false:
+          - passage: Atzo arratsaldean lapur bat sartu zen dendan. Polizia berehala iritsi zen, eta lapurra atxilotu zuen.
+            statement: La policía detuvo al ladrón.
+            answer: true
+      - structures: [abeslaria, iritsi]
+        sentences:
+          - Abeslari famatu bat atzo iritsi zen Donostiara. = Un cantante famoso llegó ayer a San Sebastián.
+          - Hotel batean dago. = Está en un hotel.
+          - Jendeak argazkiak atera zituen. = La gente hizo fotos. | La gente sacó fotos.
+          - Abeslaria oso pozik zegoen. = El cantante estaba muy contento.
+          - Kontzertua laster hasiko da. = El concierto empezará pronto.
+          - Ezuste handia izan da! = ¡Ha sido una gran sorpresa!
+        pairs:
+          - - abeslari = cantante
+            - famatu = famoso
+            - ezuste = sorpresa
+            - laster = pronto
+            - hasi = empezar
+        chats:
+          - messages:
+              - Itziar | Badakizu abeslari famatu bat iritsi dela?
+            options:
+              - Bai, atzo iritsi zen.
+              - Bai, bihar iritsiko zen.
+              - Ez, abeslaria naiz.
+        meanings:
+          - text: Kontzertua laster hasiko da.
+            options:
+              - El concierto empezará pronto.
+              - El concierto empezó tarde.
+              - El concierto ha terminado.
+      - structures: [kontatu, laburpena]
+        sentences:
+          - Zer gertatu da? = ¿Qué ha pasado?
+          - Ez da ezer gertatu. = No ha pasado nada.
+          - Inor ez da etorri. = No ha venido nadie.
+          - Dena ondo dago. = Todo está bien.
+          - Bihar dena kontatuko dizut. = Mañana te lo contaré todo.
+          - Duela ordu bat iritsi naiz. = He llegado hace una hora.
+        chats:
+          - messages:
+              - Uxue | Zer gertatu da?
+            options:
+              - Ez da ezer gertatu.
+              - Ez dut ezer gertatu.
+              - Inor gertatu da.
+        true_false:
+          - passage: Peio etxera iritsi zen, baina ez zegoen inor. Bat-batean bere lagun guztiak etorri ziren. Ezusteko afari bat zen!
+            statement: Los amigos de Peio le prepararon una fiesta sorpresa.
+            answer: true
+        meanings:
+          - text: Inor ez da etorri.
+            options:
+              - No ha venido nadie.
+              - Han venido todos.
+              - No ha venido nada.
+  - type: story
+    title:
+      es: "Historia: una semana rara"
+      eu: "Istorioa: aste bitxi bat"
+    story:
+      title: Aste bitxi bat
+      lines:
+        - Unai | Kaixo, Kepa! Zer moduz? Zertan aritu zara aste honetan? = ¡Hola, Kepa! ¿Qué tal? ¿Qué has estado haciendo esta semana?
+        - Kepa | Lan asko! Hotelean harreran aritzen naiz, eta gaur igerilekua garbitzen ere aritu naiz. = ¡Mucho trabajo! Suelo estar en la recepción del hotel, y hoy también he estado limpiando la piscina.
+        - Unai | Igerilekua? Zergatik? = ¿La piscina? ¿Por qué?
+        - Kepa | Nagusiak hura garbitzeko eskatu dit, langile bat gaixo dagoelako. = El jefe me ha pedido que la limpie, porque un trabajador está enfermo.
+        - Unai | Eta atzo? = ¿Y ayer?
+        - Kepa | Atzo abeslari famatu bat iritsi zen hotelera! = ¡Ayer llegó un cantante famoso al hotel!
+        - Unai | Bai? Nor? = ¿Sí? ¿Quién?
+        - Kepa | Ezin dut esan. Nagusiak ezer ez esateko agindu digu. = No puedo decirlo. El jefe nos ha mandado no decir nada.
+        - Unai | Ez dut uste abeslari famatua denik! = ¡No creo que sea un cantante famoso!
+        - Kepa | Bai, bai… Laster jakingo duzu! = Sí, sí… ¡Pronto lo sabrás!
+      questions:
+        - afterLine: 2
+          prompt: ¿Qué ha hecho Kepa hoy, además de su trabajo habitual?
+          options:
+            - Limpiar la piscina
+            - Arreglar ordenadores
+            - Regar las plantas
+        - afterLine: 4
+          prompt: ¿Por qué ha limpiado la piscina?
+          options:
+            - Porque un trabajador está enfermo
+            - Porque le gusta
+            - Porque llegó un cantante
+        - afterLine: 8
+          prompt: ¿Por qué no dice Kepa quién es el cantante?
+          options:
+            - Porque el jefe les ha mandado no decir nada
+            - Porque no lo sabe
+            - Porque no le gusta el cantante
+  - type: review
+  - type: challenge
+    host: unai

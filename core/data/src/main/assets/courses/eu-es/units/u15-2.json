@@ -1,0 +1,3089 @@
+{
+  "schemaVersion": 1,
+  "id": "u15-2",
+  "section": "s5",
+  "bookUnit": 15,
+  "title": {
+    "es": "¿De verdad?",
+    "eu": "Benetan?"
+  },
+  "goals": [
+    {
+      "es": "Preguntar por actividades y sucesos, y contar las respuestas.",
+      "eu": "Ekintzei eta gertaerei buruz galdetu, eta erantzunak kontatu."
+    },
+    {
+      "es": "Explicar las causas de algo.",
+      "eu": "Zerbaiten arrazoiak azaldu."
+    },
+    {
+      "es": "Expresar sorpresa de varias maneras.",
+      "eu": "Harridura hainbat modutan adierazi."
+    }
+  ],
+  "keyWords": [
+    {
+      "eu": "elkarrizketa",
+      "es": "entrevista; conversación"
+    },
+    {
+      "eu": "belaontzi",
+      "es": "velero"
+    },
+    {
+      "eu": "abentura",
+      "es": "aventura"
+    },
+    {
+      "eu": "istripu",
+      "es": "accidente"
+    },
+    {
+      "eu": "errepide",
+      "es": "carretera"
+    },
+    {
+      "eu": "seinale",
+      "es": "señal"
+    },
+    {
+      "eu": "laino",
+      "es": "niebla"
+    },
+    {
+      "eu": "logura",
+      "es": "sueño (ganas de dormir)"
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Le hemos preguntado…: galdetu diogu ea …-(e)n",
+          "eu": "Galdetu diogu ea …-(e)n"
+        },
+        "body": {
+          "es": "Repaso y ampliación. Una pregunta contada lleva -(e)n en el verbo (duen, den, dagoen). Al contarla cambia la persona: «Zenbat denbora pasatu duzu?» se convierte en «zenbat denbora pasatu duen galdetu diogu».",
+          "eu": "Errepasoa eta gehiago. Kontatutako galdera batean, aditzak -(e)n hartzen du (duen, den, dagoen). Kontatzean pertsona aldatzen da: «Zenbat denbora pasatu duzu?» → «zenbat denbora pasatu duen galdetu diogu»."
+        },
+        "examples": [
+          {
+            "eu": "Itsasoan zenbat denbora pasatu duen galdetu diogu.",
+            "es": "Le hemos preguntado cuánto tiempo ha pasado en el mar."
+          },
+          {
+            "eu": "Ea pozik dagoen galdetu dit.",
+            "es": "Me ha preguntado si está contento."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Por qué: -t(z)eagatik, elurragatik",
+          "eu": "Zergatik: -t(z)eagatik, elurragatik"
+        },
+        "body": {
+          "es": "Además de -(e)lako, la causa puede ir con -t(z)eagatik detrás del verbo (hitz egiteagatik, por hablar) o con -(a)gatik detrás de un nombre (elurragatik, por la nieve; lainoagatik, por la niebla). En textos formales verás también «bait-» (ez baitu ikasi, ya que no ha estudiado); basta con entenderlo.",
+          "eu": "-(e)lako formaz gain, arrazoia -t(z)eagatik formarekin adieraz daiteke aditzaren ondoren (hitz egiteagatik), edo -(a)gatik izenaren ondoren (elurragatik, lainoagatik). Testu jasoetan «bait-» ere ikusiko duzu (ez baitu ikasi); ulertzea nahikoa da."
+        },
+        "examples": [
+          {
+            "eu": "Istripu asko telefonoz hitz egiteagatik gertatzen dira.",
+            "es": "Muchos accidentes pasan por hablar por teléfono."
+          },
+          {
+            "eu": "Elurragatik berandu iritsi naiz.",
+            "es": "He llegado tarde por la nieve."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "¡Qué…!: exclamaciones",
+          "eu": "Harridura-esaldiak"
+        },
+        "body": {
+          "es": "Para expresar sorpresa: «Hau da etxea!» (¡vaya casa!); «A zer-nolako etxea!»; «Zein handia den!» (¡qué grande es!), «Zenbat diru duen!» (¡cuánto dinero tiene!), con el verbo en -(e)n; y «Bai harroa dela!» (¡sí que es orgulloso!), con -(e)la.",
+          "eu": "Harridura adierazteko: «Hau da etxea!»; «A zer-nolako etxea!»; «Zein handia den!», «Zenbat diru duen!», aditza -(e)n forman; eta «Bai harroa dela!», -(e)la formarekin."
+        },
+        "examples": [
+          {
+            "eu": "A zer-nolako kontzertua!",
+            "es": "¡Vaya concierto!"
+          },
+          {
+            "eu": "Zein garestia den!",
+            "es": "¡Qué caro es!"
+          },
+          {
+            "eu": "Bai pozik zaudela!",
+            "es": "¡Sí que estás contento!"
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u15-2.l1",
+      "type": "lesson",
+      "title": {
+        "es": "La entrevista",
+        "eu": "Elkarrizketa"
+      },
+      "lessons": [
+        {
+          "id": "u15-2.l1.s1",
+          "exercises": [
+            {
+              "id": "u15-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "elkarrizketa",
+              "translation": "entrevista; conversación",
+              "vocabulary": [
+                "elkarrizketa"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Olatzi elkarrizketa bat egin diogu."
+              },
+              "answers": [
+                "Le hemos hecho una entrevista a Olatz."
+              ],
+              "distractors": [
+                "dicho",
+                "preguntado",
+                "si",
+                "dos"
+              ],
+              "vocabulary": [
+                "elkarrizketa",
+                "bat",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e03",
+              "type": "word_intro",
+              "word": "belaontzi",
+              "translation": "velero",
+              "vocabulary": [
+                "belaontzi"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Urte bat pasatu du belaontzian."
+              },
+              "answers": [
+                "Ha pasado un año en velero."
+              ],
+              "distractors": [
+                "mar",
+                "el",
+                "preguntado",
+                "entrevista"
+              ],
+              "vocabulary": [
+                "urte",
+                "bat",
+                "pasatu",
+                "ukan",
+                "belaontzi"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "abentura",
+              "translation": "aventura",
+              "vocabulary": [
+                "abentura"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e06",
+              "type": "word_intro",
+              "word": "arazo",
+              "translation": "problema",
+              "vocabulary": [
+                "arazo"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e07",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "elkarrizketa",
+                  "es": "entrevista"
+                },
+                {
+                  "eu": "belaontzi",
+                  "es": "velero"
+                },
+                {
+                  "eu": "abentura",
+                  "es": "aventura"
+                },
+                {
+                  "eu": "arazo",
+                  "es": "problema"
+                },
+                {
+                  "eu": "itsaso",
+                  "es": "mar"
+                }
+              ],
+              "vocabulary": [
+                "elkarrizketa",
+                "belaontzi",
+                "abentura",
+                "arazo",
+                "itsaso"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Cuánto tiempo has pasado en el mar?"
+              },
+              "answers": [
+                "Zenbat denbora pasatu duzu itsasoan?"
+              ],
+              "vocabulary": [
+                "zenbat",
+                "denbora",
+                "pasatu",
+                "ukan",
+                "itsaso"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e09",
+              "type": "fill_blank",
+              "sentence": "Itsasoan zenbat denbora pasatu ___ galdetu diogu.",
+              "options": [
+                "duen",
+                "du",
+                "duela"
+              ],
+              "correct": 0,
+              "translation": "Le hemos preguntado cuánto tiempo ha pasado en el mar.",
+              "vocabulary": [
+                "itsaso",
+                "zenbat",
+                "denbora",
+                "pasatu",
+                "ukan",
+                "galdetu"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e10",
+              "type": "order_sentence",
+              "answer": "Itsasoan zenbat denbora pasatu duen galdetu diogu.",
+              "translation": "Le hemos preguntado cuánto tiempo ha pasado en el mar.",
+              "vocabulary": [
+                "itsaso",
+                "zenbat",
+                "denbora",
+                "pasatu",
+                "ukan",
+                "galdetu"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e11",
+              "type": "choose_meaning",
+              "text": "Ea arazorik izan duen galdetu diogu.",
+              "options": [
+                "Le hemos preguntado si ha tenido problemas.",
+                "Nos ha dicho que ha tenido problemas.",
+                "No ha tenido ningún problema."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "arazo",
+                "izan",
+                "ukan",
+                "galdetu"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ea bidaia zaila izan den galdetu dut."
+              },
+              "answers": [
+                "He preguntado si el viaje ha sido difícil."
+              ],
+              "vocabulary": [
+                "bidaia",
+                "zail",
+                "izan",
+                "galdetu",
+                "ukan"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e13",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Kazetaria",
+                  "text": "Zer galdetu diozu?"
+                }
+              ],
+              "options": [
+                "Ea bidaia zaila izan den.",
+                "Bidaia zaila izan da.",
+                "Bidaia zaila izango da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "galdetu",
+                "ukan",
+                "bidaia",
+                "zail",
+                "izan"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e14",
+              "type": "listen_type",
+              "text": "Ea arazorik izan duen galdetu diogu.",
+              "answers": [
+                "Ea arazorik izan duen galdetu diogu."
+              ],
+              "vocabulary": [
+                "arazo",
+                "izan",
+                "ukan",
+                "galdetu"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "el mar",
+              "options": [
+                {
+                  "text": "hegazkina",
+                  "image": "transport_plane.webp"
+                },
+                {
+                  "text": "bidaia",
+                  "image": "object_suitcase.webp"
+                },
+                {
+                  "text": "itsasoa",
+                  "image": "nature_sea.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "itsaso"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e16",
+              "type": "word_intro",
+              "word": "dituela",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bi arazo izan dituela esan digu."
+              },
+              "answers": [
+                "Nos ha dicho que ha tenido dos problemas."
+              ],
+              "distractors": [
+                "pasado",
+                "tiempo",
+                "hemos",
+                "viaje"
+              ],
+              "vocabulary": [
+                "bi",
+                "arazo",
+                "izan",
+                "ukan",
+                "esan"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Abentura berri bat egin nahi duela esan du."
+              },
+              "answers": [
+                "Ha dicho que quiere hacer una aventura nueva."
+              ],
+              "distractors": [
+                "mar",
+                "difícil",
+                "preguntado",
+                "hemos"
+              ],
+              "vocabulary": [
+                "abentura",
+                "berri",
+                "bat",
+                "egin",
+                "nahi izan",
+                "duela",
+                "esan",
+                "ukan"
+              ],
+              "structures": [
+                "zehar-galdera"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u15-2.l1.s2",
+          "exercises": [
+            {
+              "id": "u15-2.l1.s2.e01",
+              "type": "listen_tap",
+              "text": "Non bizi den galdetu diot.",
+              "distractors": [
+                "dit",
+                "Ea",
+                "dakigu"
+              ],
+              "vocabulary": [
+                "non",
+                "bizi izan",
+                "izan",
+                "galdetu",
+                "ukan"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Me ha preguntado qué hace."
+              },
+              "answers": [
+                "Zer egiten duen galdetu dit."
+              ],
+              "vocabulary": [
+                "zer",
+                "egin",
+                "ukan",
+                "galdetu"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e03",
+              "type": "word_intro",
+              "word": "logura",
+              "translation": "sueño (ganas de dormir)",
+              "vocabulary": [
+                "logura"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e04",
+              "type": "word_intro",
+              "word": "mugikor",
+              "translation": "móvil (teléfono)",
+              "vocabulary": [
+                "mugikor"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e05",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "galdetu",
+                  "es": "preguntar"
+                },
+                {
+                  "eu": "ea",
+                  "es": "si (pregunta)"
+                },
+                {
+                  "eu": "logura",
+                  "es": "sueño"
+                },
+                {
+                  "eu": "gidari",
+                  "es": "conductor"
+                },
+                {
+                  "eu": "mugikor",
+                  "es": "móvil"
+                }
+              ],
+              "vocabulary": [
+                "galdetu",
+                "logura",
+                "gidari",
+                "mugikor"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e06",
+              "type": "order_sentence",
+              "answer": "Ea etorriko den galdetu dute.",
+              "translation": "Han preguntado si vendrá.",
+              "vocabulary": [
+                "etorri",
+                "izan",
+                "galdetu",
+                "ukan"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e07",
+              "type": "fill_blank",
+              "sentence": "Ea etorriko ___ galdetu dute.",
+              "options": [
+                "den",
+                "da",
+                "dela"
+              ],
+              "correct": 0,
+              "translation": "Han preguntado si vendrá.",
+              "vocabulary": [
+                "etorri",
+                "izan",
+                "galdetu",
+                "ukan"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Noiz itzuliko den ez dakigu."
+              },
+              "answers": [
+                "No sabemos cuándo volverá."
+              ],
+              "vocabulary": [
+                "noiz",
+                "itzuli",
+                "izan",
+                "ez",
+                "jakin"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e09",
+              "type": "word_intro",
+              "word": "naizen",
+              "translation": "ser",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e10",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ama",
+                  "text": "Zer galdetu dizu Itziarrek?"
+                }
+              ],
+              "options": [
+                "Ea bihar etorriko naizen.",
+                "Bihar etorriko naiz.",
+                "Itziar etorri da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "galdetu",
+                "ukan",
+                "bihar",
+                "etorri",
+                "izan"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e11",
+              "type": "listen_type",
+              "text": "Ea dena ondo dagoen galdetu dit amak.",
+              "answers": [
+                "Ea dena ondo dagoen galdetu dit amak."
+              ],
+              "vocabulary": [
+                "dena",
+                "ondo",
+                "egon",
+                "galdetu",
+                "ukan",
+                "ama"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e12",
+              "type": "read_true_false",
+              "passage": "Kazetariak ea bidaia zaila izan den galdetu dio. Olatzek bidaia zaila izan dela esan du.",
+              "statement": "Olatz dice que el viaje no ha sido difícil.",
+              "answer": false,
+              "vocabulary": [
+                "kazetari",
+                "bidaia",
+                "zail",
+                "izan",
+                "galdetu",
+                "ukan",
+                "esan"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s2.e13",
+              "type": "listen_tap",
+              "text": "Gidariari ea logura duen galdetu diot.",
+              "distractors": [
+                "etorriko",
+                "Noiz",
+                "Zer",
+                "dute"
+              ],
+              "vocabulary": [
+                "gidari",
+                "logura",
+                "ukan",
+                "galdetu"
+              ],
+              "structures": [
+                "zehar-galdera",
+                "kontatu"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u15-2.l1.s3",
+          "exercises": [
+            {
+              "id": "u15-2.l1.s3.e01",
+              "type": "order_sentence",
+              "answer": "Mugikorrez hitz egiten genuen egunero.",
+              "translation": "Hablábamos por el móvil todos los días.",
+              "vocabulary": [
+                "mugikor",
+                "hitz",
+                "egin",
+                "ukan",
+                "egunero"
+              ],
+              "structures": [
+                "harremanak",
+                "mugikorra"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s3.e02",
+              "type": "order_sentence",
+              "answer": "Familiarekin egunero hitz egin dut.",
+              "translation": "He hablado con la familia todos los días.",
+              "vocabulary": [
+                "hitz egin",
+                "familia",
+                "egunero",
+                "ukan"
+              ],
+              "structures": [
+                "harremanak",
+                "mugikorra"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s3.e03",
+              "type": "word_intro",
+              "word": "zoragarri",
+              "translation": "maravilloso",
+              "vocabulary": [
+                "zoragarri"
+              ],
+              "structures": [
+                "harremanak",
+                "mugikorra"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s3.e04",
+              "type": "choose_meaning",
+              "text": "Abentura hau zoragarria izan da.",
+              "options": [
+                "Esta aventura ha sido maravillosa.",
+                "Esta aventura ha sido peligrosa.",
+                "Esta aventura será maravillosa."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "abentura",
+                "hau",
+                "zoragarri",
+                "izan"
+              ],
+              "structures": [
+                "harremanak",
+                "mugikorra"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s3.e05",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Abentura hau zoragarria izan da."
+              },
+              "answers": [
+                "Esta aventura ha sido maravillosa."
+              ],
+              "vocabulary": [
+                "abentura",
+                "hau",
+                "zoragarri",
+                "izan"
+              ],
+              "structures": [
+                "harremanak",
+                "mugikorra"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s3.e06",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Gorka",
+                  "text": "Nola hitz egiten zenuen familiarekin?"
+                }
+              ],
+              "options": [
+                "Mugikorrez, egunero.",
+                "Belaontzian, egunero.",
+                "Familia itsasoan dago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nola",
+                "hitz",
+                "egin",
+                "ukan",
+                "familia",
+                "mugikor",
+                "egunero"
+              ],
+              "structures": [
+                "harremanak",
+                "mugikorra"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s3.e07",
+              "type": "listen_type",
+              "text": "Itsasoa arriskutsua da neguan.",
+              "answers": [
+                "Itsasoa arriskutsua da neguan."
+              ],
+              "vocabulary": [
+                "itsaso",
+                "arriskutsu",
+                "izan",
+                "negu"
+              ],
+              "structures": [
+                "harremanak",
+                "mugikorra"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s3.e08",
+              "type": "read_true_false",
+              "passage": "Olatzek mugikorrez hitz egiten zuen bere familiarekin egunero. Datorren urtean berriro joango da.",
+              "statement": "Olatz no volverá a viajar.",
+              "answer": false,
+              "vocabulary": [
+                "mugikor",
+                "hitz",
+                "egin",
+                "zuek",
+                "hura",
+                "familia",
+                "egunero",
+                "datorren",
+                "urte",
+                "berriro",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "harremanak",
+                "mugikorra"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s3.e09",
+              "type": "speak",
+              "text": "Ez dut uste arriskutsua denik.",
+              "translation": "No creo que sea peligroso.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "uste izan",
+                "arriskutsu",
+                "izan"
+              ],
+              "structures": [
+                "harremanak",
+                "mugikorra"
+              ]
+            },
+            {
+              "id": "u15-2.l1.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Datorren urtean berriro joango naiz."
+              },
+              "answers": [
+                "El año que viene iré otra vez."
+              ],
+              "distractors": [
+                "por",
+                "con",
+                "creo",
+                "días"
+              ],
+              "vocabulary": [
+                "datorren",
+                "urte",
+                "berriro",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "harremanak",
+                "mugikorra"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u15-2.l2",
+      "type": "lesson",
+      "title": {
+        "es": "¿Por qué?",
+        "eu": "Zergatik?"
+      },
+      "lessons": [
+        {
+          "id": "u15-2.l2.s1",
+          "exercises": [
+            {
+              "id": "u15-2.l2.s1.e01",
+              "type": "word_intro",
+              "word": "gertatzen",
+              "translation": "pasar; ocurrir",
+              "vocabulary": [
+                "gertatu"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e02",
+              "type": "word_intro",
+              "word": "istripu",
+              "translation": "accidente",
+              "vocabulary": [
+                "istripu"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zergatik gertatzen dira istripuak?"
+              },
+              "answers": [
+                "¿Por qué ocurren los accidentes?"
+              ],
+              "distractors": [
+                "muy",
+                "peligrosa",
+                "teléfono"
+              ],
+              "vocabulary": [
+                "zergatik",
+                "gertatu",
+                "izan",
+                "istripu"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e04",
+              "type": "word_intro",
+              "word": "egiteagatik",
+              "translation": "hacer",
+              "vocabulary": [
+                "egin"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Telefonoz hitz egiteagatik."
+              },
+              "answers": [
+                "Por hablar por teléfono."
+              ],
+              "distractors": [
+                "ocurren",
+                "tener"
+              ],
+              "vocabulary": [
+                "telefono",
+                "hitz",
+                "egin"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e06",
+              "type": "word_intro",
+              "word": "errepide",
+              "translation": "carretera",
+              "vocabulary": [
+                "errepide"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e07",
+              "type": "word_intro",
+              "word": "seinale",
+              "translation": "señal",
+              "vocabulary": [
+                "seinale"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "istripu",
+                  "es": "accidente"
+                },
+                {
+                  "eu": "errepide",
+                  "es": "carretera"
+                },
+                {
+                  "eu": "seinale",
+                  "es": "señal"
+                },
+                {
+                  "eu": "logura",
+                  "es": "sueño"
+                },
+                {
+                  "eu": "arriskutsu",
+                  "es": "peligroso"
+                }
+              ],
+              "vocabulary": [
+                "istripu",
+                "errepide",
+                "seinale",
+                "logura",
+                "arriskutsu"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e09",
+              "type": "word_intro",
+              "word": "ikusteagatik",
+              "translation": "ver",
+              "vocabulary": [
+                "ikusi"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Seinaleak ez ikusteagatik."
+              },
+              "answers": [
+                "Por no ver las señales."
+              ],
+              "distractors": [
+                "Esta",
+                "la",
+                "hablar"
+              ],
+              "vocabulary": [
+                "seinale",
+                "ez",
+                "ikusi"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e11",
+              "type": "word_intro",
+              "word": "azkar",
+              "translation": "rápido; deprisa",
+              "vocabulary": [
+                "azkar"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e12",
+              "type": "word_intro",
+              "word": "joateagatik",
+              "translation": "ir",
+              "vocabulary": [
+                "joan"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e13",
+              "type": "fill_blank",
+              "sentence": "Azkarregi ___.",
+              "options": [
+                "joateagatik",
+                "joan delako",
+                "joaten"
+              ],
+              "correct": 0,
+              "translation": "Por ir demasiado deprisa.",
+              "vocabulary": [
+                "azkar",
+                "joan"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e14",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Azkarregi joateagatik."
+              },
+              "answers": [
+                "Por ir demasiado deprisa."
+              ],
+              "vocabulary": [
+                "azkar",
+                "joan"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e15",
+              "type": "choose_meaning",
+              "text": "Logura izateagatik.",
+              "options": [
+                "Por tener sueño.",
+                "Porque tiene hambre.",
+                "Para no tener sueño."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "logura",
+                "izan"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Logura izateagatik."
+              },
+              "answers": [
+                "Por tener sueño."
+              ],
+              "distractors": [
+                "ocurren",
+                "muy"
+              ],
+              "vocabulary": [
+                "logura",
+                "izan"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e17",
+              "type": "choose_image",
+              "prompt": "el coche",
+              "options": [
+                {
+                  "text": "autoa",
+                  "image": "transport_car.webp"
+                },
+                {
+                  "text": "autobusa",
+                  "image": "transport_bus.webp"
+                },
+                {
+                  "text": "trena",
+                  "image": "transport_train.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "auto"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Esta carretera es muy peligrosa."
+              },
+              "answers": [
+                "Errepide hau oso arriskutsua da."
+              ],
+              "distractors": [
+                "zuen",
+                "egiteagatik",
+                "Azkarregi"
+              ],
+              "vocabulary": [
+                "errepide",
+                "hau",
+                "oso",
+                "arriskutsu",
+                "izan"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s1.e19",
+              "type": "listen_tap",
+              "text": "Gidariak ez zuen seinalea ikusi.",
+              "distractors": [
+                "hitz",
+                "Seinaleak",
+                "hau"
+              ],
+              "vocabulary": [
+                "gidari",
+                "ez",
+                "zuek",
+                "seinale",
+                "ikusi"
+              ],
+              "structures": [
+                "istripuak",
+                "teagatik"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u15-2.l2.s2",
+          "exercises": [
+            {
+              "id": "u15-2.l2.s2.e01",
+              "type": "word_intro",
+              "word": "elurragatik",
+              "translation": "nieve",
+              "vocabulary": [
+                "elur"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Elurragatik berandu iritsi naiz."
+              },
+              "answers": [
+                "He llegado tarde por la nieve."
+              ],
+              "distractors": [
+                "frío",
+                "Me",
+                "mal",
+                "al"
+              ],
+              "vocabulary": [
+                "elur",
+                "berandu",
+                "iritsi",
+                "izan"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e03",
+              "type": "word_intro",
+              "word": "lainoagatik",
+              "translation": "niebla",
+              "vocabulary": [
+                "laino"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lainoagatik ez dut ezer ikusten."
+              },
+              "answers": [
+                "Por la niebla no veo nada."
+              ],
+              "distractors": [
+                "estaba",
+                "tarde",
+                "ido",
+                "quedado"
+              ],
+              "vocabulary": [
+                "laino",
+                "ez",
+                "ukan",
+                "ezer",
+                "ikusi"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e05",
+              "type": "word_intro",
+              "word": "laino",
+              "translation": "niebla",
+              "vocabulary": [
+                "laino"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e06",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "elurragatik",
+                  "es": "por la nieve"
+                },
+                {
+                  "eu": "lainoagatik",
+                  "es": "por la niebla"
+                },
+                {
+                  "eu": "euriagatik",
+                  "es": "por la lluvia"
+                },
+                {
+                  "eu": "laino",
+                  "es": "niebla"
+                },
+                {
+                  "eu": "elur",
+                  "es": "nieve"
+                }
+              ],
+              "vocabulary": [
+                "elur",
+                "laino",
+                "euri"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e07",
+              "type": "speak",
+              "text": "Euriagatik ez gara mendira joan.",
+              "translation": "Por la lluvia no hemos ido al monte.",
+              "vocabulary": [
+                "euri",
+                "ez",
+                "izan",
+                "mendi",
+                "joan"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e08",
+              "type": "fill_blank",
+              "sentence": "___ berandu iritsi naiz.",
+              "options": [
+                "Elurragatik",
+                "Elurrean",
+                "Elurrarekin"
+              ],
+              "correct": 0,
+              "translation": "He llegado tarde por la nieve.",
+              "vocabulary": [
+                "elur",
+                "berandu",
+                "iritsi",
+                "izan"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Eguraldi txarragatik ez dago autobusik."
+              },
+              "answers": [
+                "Por el mal tiempo no hay autobús."
+              ],
+              "distractors": [
+                "en",
+                "lluvia",
+                "veo",
+                "mucho"
+              ],
+              "vocabulary": [
+                "eguraldi",
+                "txar",
+                "ez",
+                "egon",
+                "autobus"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e10",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nagusia",
+                  "text": "Zergatik iritsi zara berandu?"
+                }
+              ],
+              "options": [
+                "Lainoagatik.",
+                "Lainoarekin.",
+                "Lainoa dago."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zergatik",
+                "iritsi",
+                "izan",
+                "berandu",
+                "laino"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Por qué no has venido?"
+              },
+              "answers": [
+                "Zergatik ez zara etorri?"
+              ],
+              "distractors": [
+                "dut",
+                "hotz",
+                "Euriagatik"
+              ],
+              "vocabulary": [
+                "zergatik",
+                "ez",
+                "izan",
+                "etorri"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e12",
+              "type": "read_true_false",
+              "passage": "Euriagatik ez gara hondartzara joan. Etxean geratu gara, eta film bat ikusi dugu.",
+              "statement": "Han ido a la playa a pesar de la lluvia.",
+              "answer": false,
+              "vocabulary": [
+                "euri",
+                "ez",
+                "izan",
+                "hondartza",
+                "joan",
+                "etxe",
+                "geratu",
+                "eta",
+                "film",
+                "bat",
+                "ikusi",
+                "ukan"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e13",
+              "type": "word_intro",
+              "word": "nengoelako",
+              "translation": "estar",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaixo nengoelako."
+              },
+              "answers": [
+                "Porque estaba enfermo.",
+                "Porque estaba enferma."
+              ],
+              "distractors": [
+                "mucho",
+                "nada"
+              ],
+              "vocabulary": [
+                "gaixo",
+                "egon"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s2.e15",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Me he quedado en casa, pues hace mucho frío."
+              },
+              "answers": [
+                "Etxean geratu naiz, hotz handia egiten du eta."
+              ],
+              "vocabulary": [
+                "etxe",
+                "geratu",
+                "izan",
+                "hotz",
+                "handi",
+                "egin",
+                "ukan",
+                "eta"
+              ],
+              "structures": [
+                "norengatik",
+                "eguraldia"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u15-2.l2.s3",
+          "exercises": [
+            {
+              "id": "u15-2.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Ez dago pozik, bere laguna joan da eta.",
+              "answers": [
+                "Ez dago pozik, bere laguna joan da eta."
+              ],
+              "vocabulary": [
+                "ez",
+                "egon",
+                "pozik",
+                "hura",
+                "lagun",
+                "joan",
+                "izan",
+                "eta"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s3.e02",
+              "type": "listen_tap",
+              "text": "Ez da etorri, gaixo dagoelako.",
+              "distractors": [
+                "Asko",
+                "Lanera",
+                "ondo"
+              ],
+              "vocabulary": [
+                "ez",
+                "izan",
+                "etorri",
+                "gaixo",
+                "egon"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s3.e03",
+              "type": "word_intro",
+              "word": "baitago",
+              "translation": "estar",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s3.e04",
+              "type": "choose_meaning",
+              "text": "Ez da etorri, gaixo baitago.",
+              "options": [
+                "No ha venido, ya que está enfermo.",
+                "Ha venido, aunque está enfermo.",
+                "Vendrá cuando esté bien."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "izan",
+                "etorri",
+                "gaixo",
+                "egon"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s3.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez da etorri, gaixo baitago."
+              },
+              "answers": [
+                "No ha venido, ya que está enfermo."
+              ],
+              "distractors": [
+                "Por",
+                "contento",
+                "trabajo",
+                "entiende"
+              ],
+              "vocabulary": [
+                "ez",
+                "izan",
+                "etorri",
+                "gaixo",
+                "egon"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s3.e06",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Edurne",
+                  "text": "Zergatik ez da Jon etorri?"
+                }
+              ],
+              "options": [
+                "Gaixo dagoelako.",
+                "Gaixo dago eta etorri da.",
+                "Jon gaixo da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zergatik",
+                "ez",
+                "izan",
+                "etorri",
+                "gaixo",
+                "egon"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s3.e07",
+              "type": "word_intro",
+              "word": "baitu",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s3.e08",
+              "type": "word_intro",
+              "word": "ulertzen",
+              "translation": "entender",
+              "vocabulary": [
+                "ulertu"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s3.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Asko ikasi behar du, ez baitu ondo ulertzen."
+              },
+              "answers": [
+                "Tiene que estudiar mucho, ya que no lo entiende bien."
+              ],
+              "distractors": [
+                "contento",
+                "enfermo",
+                "andando",
+                "qué"
+              ],
+              "vocabulary": [
+                "asko",
+                "ikasi",
+                "behar izan",
+                "ukan",
+                "ez",
+                "ondo",
+                "ulertu"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s3.e10",
+              "type": "read_true_false",
+              "passage": "Peio ez da gaur lanera joan, gaixo baitago.",
+              "statement": "Peio no ha ido a trabajar porque está enfermo.",
+              "answer": true,
+              "vocabulary": [
+                "ez",
+                "izan",
+                "gaur",
+                "lan",
+                "joan",
+                "gaixo",
+                "egon"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s3.e11",
+              "type": "listen_tap",
+              "text": "Lanera oinez joan naiz, autoa ez dabil eta.",
+              "distractors": [
+                "gaixo",
+                "dago",
+                "etorri",
+                "da"
+              ],
+              "vocabulary": [
+                "lan",
+                "oinez",
+                "joan",
+                "izan",
+                "auto",
+                "ez",
+                "ibili",
+                "eta"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            },
+            {
+              "id": "u15-2.l2.s3.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Por qué estás contento?"
+              },
+              "answers": [
+                "Zergatik zaude pozik?"
+              ],
+              "vocabulary": [
+                "zergatik",
+                "egon",
+                "pozik"
+              ],
+              "structures": [
+                "kausazkoak",
+                "bait"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u15-2.l3",
+      "type": "lesson",
+      "title": {
+        "es": "¡Qué sorpresa!",
+        "eu": "Zer ezustea!"
+      },
+      "lessons": [
+        {
+          "id": "u15-2.l3.s1",
+          "exercises": [
+            {
+              "id": "u15-2.l3.s1.e01",
+              "type": "speak",
+              "text": "Hau da etxea!",
+              "translation": "¡Vaya casa!",
+              "vocabulary": [
+                "hau",
+                "izan",
+                "etxe"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hauek dira zapatak!"
+              },
+              "answers": [
+                "¡Vaya zapatos!"
+              ],
+              "distractors": [
+                "verdad",
+                "alta"
+              ],
+              "vocabulary": [
+                "hau",
+                "izan",
+                "zapata"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e03",
+              "type": "word_intro",
+              "word": "benetan",
+              "translation": "de verdad",
+              "vocabulary": [
+                "benetan"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e04",
+              "type": "word_intro",
+              "word": "harritu",
+              "translation": "sorprender(se)",
+              "vocabulary": [
+                "harritu"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e05",
+              "type": "word_intro",
+              "word": "harrigarri",
+              "translation": "asombroso",
+              "vocabulary": [
+                "harrigarri"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e06",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "benetan",
+                  "es": "de verdad"
+                },
+                {
+                  "eu": "harritu",
+                  "es": "sorprenderse"
+                },
+                {
+                  "eu": "harrigarri",
+                  "es": "asombroso"
+                },
+                {
+                  "eu": "zoragarri",
+                  "es": "maravilloso"
+                },
+                {
+                  "eu": "ezuste",
+                  "es": "sorpresa"
+                }
+              ],
+              "vocabulary": [
+                "benetan",
+                "harritu",
+                "harrigarri",
+                "zoragarri",
+                "ezuste"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e07",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¡Qué chica más alta!"
+              },
+              "answers": [
+                "Hau da neska altua!"
+              ],
+              "distractors": [
+                "Benetan",
+                "dira",
+                "jaka"
+              ],
+              "vocabulary": [
+                "hau",
+                "izan",
+                "neska",
+                "altu"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e08",
+              "type": "choose_meaning",
+              "text": "A zer-nolako kontzertua!",
+              "options": [
+                "¡Vaya concierto!",
+                "¿Qué concierto es?",
+                "El concierto es mañana."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "kontzertu"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e09",
+              "type": "listen_tap",
+              "text": "A zer-nolako kontzertua!",
+              "distractors": [
+                "Hau",
+                "altua"
+              ],
+              "vocabulary": [
+                "zer",
+                "kontzertu"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e10",
+              "type": "word_intro",
+              "word": "begira",
+              "translation": "mirar",
+              "vocabulary": [
+                "begiratu"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e11",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Josu",
+                  "text": "Begira nire bizikleta berria!"
+                }
+              ],
+              "options": [
+                "A zer-nolako bizikleta!",
+                "Zer bizikleta da?",
+                "Bizikleta bat nuen."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "begiratu",
+                "ni",
+                "bizikleta",
+                "berri",
+                "zer"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¡Qué chaqueta más bonita!"
+              },
+              "answers": [
+                "A zer-nolako jaka polita!"
+              ],
+              "vocabulary": [
+                "zer",
+                "jaka",
+                "polit"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e13",
+              "type": "choose_image",
+              "prompt": "el regalo",
+              "options": [
+                {
+                  "text": "kontzertua",
+                  "image": "leisure_concert.webp"
+                },
+                {
+                  "text": "oparia",
+                  "image": "object_gift.webp"
+                },
+                {
+                  "text": "urtebetetzea",
+                  "image": "object_birthday_cake.webp"
+                }
+              ],
+              "correct": 1,
+              "vocabulary": [
+                "opari"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s1.e14",
+              "type": "order_sentence",
+              "answer": "Benetan? Harrigarria da!",
+              "translation": "¿De verdad? ¡Es asombroso!",
+              "vocabulary": [
+                "benetan",
+                "harrigarri",
+                "izan"
+              ],
+              "structures": [
+                "harridura",
+                "hau-da"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u15-2.l3.s2",
+          "exercises": [
+            {
+              "id": "u15-2.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zein handia den!"
+              },
+              "answers": [
+                "¡Qué grande es!"
+              ],
+              "distractors": [
+                "contento",
+                "ha"
+              ],
+              "vocabulary": [
+                "zein",
+                "handi",
+                "izan"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¡Qué caro es!"
+              },
+              "answers": [
+                "Zer garestia den!"
+              ],
+              "distractors": [
+                "Zenbat",
+                "pozik"
+              ],
+              "vocabulary": [
+                "zer",
+                "garesti",
+                "izan"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e03",
+              "type": "word_intro",
+              "word": "agertoki",
+              "translation": "escenario",
+              "vocabulary": [
+                "agertoki"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e04",
+              "type": "word_intro",
+              "word": "itxura",
+              "translation": "aspecto",
+              "vocabulary": [
+                "itxura"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e05",
+              "type": "word_intro",
+              "word": "ikaragarri",
+              "translation": "tremendo; muchísimo",
+              "vocabulary": [
+                "ikaragarri"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e06",
+              "type": "word_intro",
+              "word": "dezente",
+              "translation": "bastante",
+              "vocabulary": [
+                "dezente"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e07",
+              "type": "word_intro",
+              "word": "nahiko",
+              "translation": "bastante (suficiente)",
+              "vocabulary": [
+                "nahiko"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "agertoki",
+                  "es": "escenario"
+                },
+                {
+                  "eu": "itxura",
+                  "es": "aspecto"
+                },
+                {
+                  "eu": "ikaragarri",
+                  "es": "tremendo"
+                },
+                {
+                  "eu": "dezente",
+                  "es": "bastante"
+                },
+                {
+                  "eu": "nahiko",
+                  "es": "suficiente"
+                }
+              ],
+              "vocabulary": [
+                "agertoki",
+                "itxura",
+                "ikaragarri",
+                "dezente",
+                "nahiko"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e09",
+              "type": "listen_tap",
+              "text": "Zein pozik dagoen!",
+              "distractors": [
+                "agertokian",
+                "diru"
+              ],
+              "vocabulary": [
+                "zein",
+                "pozik",
+                "egon"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e10",
+              "type": "fill_blank",
+              "sentence": "Zein handia ___!",
+              "options": [
+                "den",
+                "da",
+                "dela"
+              ],
+              "correct": 0,
+              "translation": "¡Qué grande es!",
+              "vocabulary": [
+                "zein",
+                "handi",
+                "izan"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e11",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¡Qué tarde ha llegado!"
+              },
+              "answers": [
+                "Zer berandu iritsi den!"
+              ],
+              "vocabulary": [
+                "zer",
+                "berandu",
+                "iritsi",
+                "izan"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e12",
+              "type": "fill_blank",
+              "sentence": "Zenbat diru ___!",
+              "options": [
+                "duen",
+                "du",
+                "duela"
+              ],
+              "correct": 0,
+              "translation": "¡Cuánto dinero tiene!",
+              "vocabulary": [
+                "zenbat",
+                "diru",
+                "ukan"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e13",
+              "type": "order_sentence",
+              "answer": "Zenbat diru duen!",
+              "translation": "¡Cuánto dinero tiene!",
+              "vocabulary": [
+                "zenbat",
+                "diru",
+                "ukan"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e14",
+              "type": "choose_meaning",
+              "text": "Zein pozik dagoen!",
+              "options": [
+                "¡Qué contento está!",
+                "¿Por qué está contento?",
+                "No está contento."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zein",
+                "pozik",
+                "egon"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e15",
+              "type": "word_intro",
+              "word": "dauzkazun",
+              "translation": "tener",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nolako begiak dauzkazun!"
+              },
+              "answers": [
+                "¡Qué ojos tienes!"
+              ],
+              "distractors": [
+                "está",
+                "dinero"
+              ],
+              "vocabulary": [
+                "nola",
+                "begi",
+                "eduki"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s2.e17",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Abeslaria agertokian dago. Zein itxura polita duen!"
+              },
+              "answers": [
+                "El cantante está en el escenario. ¡Qué buen aspecto tiene!"
+              ],
+              "vocabulary": [
+                "abeslari",
+                "agertoki",
+                "egon",
+                "zein",
+                "itxura",
+                "polit",
+                "ukan"
+              ],
+              "structures": [
+                "harridura",
+                "en"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u15-2.l3.s3",
+          "exercises": [
+            {
+              "id": "u15-2.l3.s3.e01",
+              "type": "word_intro",
+              "word": "harro",
+              "translation": "orgulloso",
+              "vocabulary": [
+                "harro"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e02",
+              "type": "word_intro",
+              "word": "zaretela",
+              "translation": "ser",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bai harroak zaretela!"
+              },
+              "answers": [
+                "¡Sí que sois orgullosos!"
+              ],
+              "distractors": [
+                "mucho",
+                "nada",
+                "No"
+              ],
+              "vocabulary": [
+                "bai",
+                "harro",
+                "izan"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e04",
+              "type": "word_intro",
+              "word": "zaudela",
+              "translation": "estar",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bai pozik zaudela!"
+              },
+              "answers": [
+                "¡Sí que estás contento!",
+                "¡Sí que estás contenta!"
+              ],
+              "distractors": [
+                "sois",
+                "tío",
+                "muchísimo"
+              ],
+              "vocabulary": [
+                "bai",
+                "pozik",
+                "egon"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e06",
+              "type": "word_intro",
+              "word": "batere",
+              "translation": "nada (en absoluto)",
+              "vocabulary": [
+                "batere"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e07",
+              "type": "choose_meaning",
+              "text": "Ez du batere ilerik!",
+              "options": [
+                "¡No tiene nada de pelo!",
+                "¡Tiene mucho pelo!",
+                "¡Tiene el pelo muy largo!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "batere",
+                "ile"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e08",
+              "type": "word_intro",
+              "word": "aldatu",
+              "translation": "cambiar",
+              "vocabulary": [
+                "aldatu"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Osaba asko aldatu da."
+              },
+              "answers": [
+                "El tío ha cambiado mucho."
+              ],
+              "distractors": [
+                "arrugas",
+                "tiene",
+                "bastante"
+              ],
+              "vocabulary": [
+                "osaba",
+                "asko",
+                "aldatu",
+                "izan"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e10",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Amona",
+                  "text": "Begira argazki hau. Hau zure osaba da."
+                }
+              ],
+              "options": [
+                "Bai aldatu dela!",
+                "Bai aldatu da!",
+                "Osaba naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "begiratu",
+                "argazki",
+                "hau",
+                "zu",
+                "osaba",
+                "izan",
+                "bai",
+                "aldatu"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e11",
+              "type": "word_intro",
+              "word": "zahartu",
+              "translation": "envejecer",
+              "vocabulary": [
+                "zahartu"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e12",
+              "type": "word_intro",
+              "word": "zimur",
+              "translation": "arruga",
+              "vocabulary": [
+                "zimur"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zahartu egin da, eta zimur asko ditu."
+              },
+              "answers": [
+                "Ha envejecido y tiene muchas arrugas."
+              ],
+              "distractors": [
+                "sois",
+                "orgullosos",
+                "más",
+                "El"
+              ],
+              "vocabulary": [
+                "zahartu",
+                "egin",
+                "izan",
+                "eta",
+                "zimur",
+                "asko",
+                "ukan"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e14",
+              "type": "read_true_false",
+              "passage": "Familiaren bazkarian, Mirenek bere lehengusua ikusi zuen. Ikaragarri aldatu zen; orain ez du batere ilerik.",
+              "statement": "El primo de Miren ahora tiene mucho pelo.",
+              "answer": false,
+              "vocabulary": [
+                "familia",
+                "bazkari",
+                "hura",
+                "lehengusu",
+                "ikusi",
+                "zuek",
+                "ikaragarri",
+                "aldatu",
+                "izan",
+                "orain",
+                "ez",
+                "ukan",
+                "batere",
+                "ile"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e15",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Dezente lodiago dago."
+              },
+              "answers": [
+                "Está bastante más gordo."
+              ],
+              "vocabulary": [
+                "dezente",
+                "lodi",
+                "egon"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e16",
+              "type": "listen_type",
+              "text": "Ez du batere ilerik!",
+              "answers": [
+                "Ez du batere ilerik!"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "batere",
+                "ile"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u15-2.l3.s3.e17",
+              "type": "speak",
+              "text": "Ikaragarri aldatu zara!",
+              "translation": "¡Has cambiado muchísimo!",
+              "vocabulary": [
+                "ikaragarri",
+                "aldatu",
+                "izan"
+              ],
+              "structures": [
+                "harridura",
+                "bai-ela",
+                "aldaketak"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u15-2.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: la comida familiar",
+        "eu": "Istorioa: familia-bazkaria"
+      },
+      "story": {
+        "id": "u15-2.l4.story",
+        "title": "Familia-bazkaria",
+        "lines": [
+          {
+            "speaker": "Miren",
+            "eu": "Ama, begira! Nor da gizon hori?",
+            "es": "¡Mamá, mira! ¿Quién es ese hombre?"
+          },
+          {
+            "speaker": "Ama",
+            "eu": "Zure osaba Josu da! Ez duzu ezagutzen?",
+            "es": "¡Es tu tío Josu! ¿No lo conoces?"
+          },
+          {
+            "speaker": "Miren",
+            "eu": "Josu? Benetan? Zein aldatuta dagoen!",
+            "es": "¿Josu? ¿De verdad? ¡Qué cambiado está!"
+          },
+          {
+            "speaker": "Ama",
+            "eu": "Bai, duela hamar urte ikusi zenuen.",
+            "es": "Sí, lo viste hace diez años."
+          },
+          {
+            "speaker": "Miren",
+            "eu": "Bai zahartu dela! Eta ez du batere ilerik!",
+            "es": "¡Sí que ha envejecido! ¡Y no tiene nada de pelo!"
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Kaixo, Miren! A zer-nolako neska handia!",
+            "es": "¡Hola, Miren! ¡Vaya chica tan mayor!"
+          },
+          {
+            "speaker": "Miren",
+            "eu": "Kaixo, osaba! Zer moduz?",
+            "es": "¡Hola, tío! ¿Qué tal?"
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Oso ondo. Galdetu dut ea Londresen bizi zaren. Egia da?",
+            "es": "Muy bien. He preguntado si vives en Londres. ¿Es verdad?"
+          },
+          {
+            "speaker": "Miren",
+            "eu": "Bai, bi urte daramatzat han, lanagatik.",
+            "es": "Sí, llevo dos años allí, por el trabajo."
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Zoragarria!",
+            "es": "¡Maravilloso!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 3,
+            "prompt": "¿Por qué se sorprende Miren?",
+            "options": [
+              "Porque su tío ha cambiado mucho",
+              "Porque su tío vive en Londres",
+              "Porque no conoce a su madre"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 5,
+            "prompt": "¿Cómo está ahora el tío Josu?",
+            "options": [
+              "Más mayor y sin pelo",
+              "Más joven y con barba",
+              "Igual que antes"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 9,
+            "prompt": "¿Por qué vive Miren en Londres?",
+            "options": [
+              "Por el trabajo",
+              "Por sus estudios",
+              "Por su familia"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u15-2.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u15-2.l6",
+      "type": "challenge",
+      "title": {
+        "es": "Reto de estrellas",
+        "eu": "Izarren erronka"
+      },
+      "host": "maite"
+    },
+    {
+      "id": "u15-2.l7",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la sección",
+        "eu": "Atalaren errepasoa"
+      },
+      "scope": "section"
+    }
+  ]
+}

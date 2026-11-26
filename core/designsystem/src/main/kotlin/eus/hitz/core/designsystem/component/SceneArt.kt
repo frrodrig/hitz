@@ -615,4 +615,49 @@ internal val SceneArtwork: Map<String, SceneArt> = mapOf(
         hostY = 50f,
         hostHeight = 132f,
     ),
+    "u15-1" to SceneArt(
+        back = CastArt(
+            still = R.drawable.core_designsystem_scene_u15_1_back,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u15_1_back_1),
+                CastLayer(R.drawable.core_designsystem_scene_u15_1_back_2, Motion.Swing, 152f, 56f),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        front = CastArt(
+            still = R.drawable.core_designsystem_scene_u15_1_front,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u15_1_front_1),
+                CastLayer(R.drawable.core_designsystem_scene_u15_1_front_2, Motion.Bob, 136f, 104f),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        hostX = 2f,
+        hostY = 50f,
+        hostHeight = 132f,
+    ),
+    "u15-2" to SceneArt(
+        back = CastArt(
+            still = R.drawable.core_designsystem_scene_u15_2_back,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u15_2_back_1),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        front = CastArt(
+            still = R.drawable.core_designsystem_scene_u15_2_front,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u15_2_front_1, Motion.Twinkle, 112f, 40f),
+                CastLayer(R.drawable.core_designsystem_scene_u15_2_front_2, Motion.TwinkleLate, 170f, 48f),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        hostX = 2f,
+        hostY = 50f,
+        hostHeight = 132f,
+    ),
 )
