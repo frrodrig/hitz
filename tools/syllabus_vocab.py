@@ -6,7 +6,8 @@ Tables are written between the markers
 <!-- vocab:<app_unit>:start --> and <!-- vocab:<app_unit>:end -->.
 Usage: python3 tools/syllabus_vocab.py [--check]
 With --check it fails (exit 1) if the document is out of sync or if a
-section falls outside the 100–150 core-word range.
+section falls outside its core-word range: 100–150 for the A1 sections (1–4)
+and 150–200 for the A2.1 sections (5–6).
 """
 from __future__ import annotations
 
@@ -19,7 +20,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CSV_PATH = ROOT / "content" / "syllabus" / "vocabulary.csv"
 DOC_PATH = ROOT / "docs" / "syllabus.md"
-MIN_CORE, MAX_CORE = 100, 150
+A1_SECTIONS = 4
+A1_RANGE = (100, 150)
+A2_RANGE = (150, 200)
+
+
+def core_range(section: str) -> tuple[int, int]:
+    """The A2.1 texts are richer, so their sections may hold more words."""
+    return A1_RANGE if int(section) <= A1_SECTIONS else A2_RANGE
 
 POS = {
     "n": "noun", "v": "verb", "adj": "adj.", "adv": "adv.", "pron": "pron.",
@@ -74,9 +82,10 @@ def main() -> int:
     if dup:
         errors.append(f"duplicate lemmas: {dup}")
     counts = collections.Counter(r["section"] for r in rows if r["set"] == "core")
-    for sec, n in sorted(counts.items()):
-        if not MIN_CORE <= n <= MAX_CORE:
-            errors.append(f"section {sec}: {n} words (expected {MIN_CORE}–{MAX_CORE})")
+    for sec, n in sorted(counts.items(), key=lambda item: int(item[0])):
+        low, high = core_range(sec)
+        if not low <= n <= high:
+            errors.append(f"section {sec}: {n} words (expected {low}–{high})")
     doc = DOC_PATH.read_text(encoding="utf-8")
     new = render(doc, rows)
     if "--check" in sys.argv:
