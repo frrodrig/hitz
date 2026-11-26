@@ -43,7 +43,7 @@ def main() -> None:
             title = dict(GROUPS).get(kind, OTHER)
         sections.setdefault(title, []).append(text[0].upper() + text[1:])
     order = [title for _, title in GROUPS] + [OTHER, DEPENDENCIES]
-    print("Hitz, an app to learn Basque (euskera batua, A1.1) from Spanish.\n")
+    print("Hitz, an app to learn Basque (euskera batua, A1 and the start of A2) from Spanish.\n")
     print("Install `hitz-*.apk` on Android 8.0 or later; `hitz-*.aab` is the bundle for app stores.\n")
     for title in order:
         if title in sections:
