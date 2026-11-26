@@ -1,0 +1,3093 @@
+{
+  "schemaVersion": 1,
+  "id": "u17-1",
+  "section": "s6",
+  "bookUnit": 17,
+  "title": {
+    "es": "¿Quién es quién?",
+    "eu": "Nor da nor?"
+  },
+  "goals": [
+    {
+      "es": "Describir animales y decir qué hacen.",
+      "eu": "Animaliak deskribatu eta zer egiten duten esan."
+    },
+    {
+      "es": "Decir qué está pasando en un momento dado.",
+      "eu": "Une jakin batean zer gertatzen ari den esan."
+    },
+    {
+      "es": "Identificar a personas y cosas («la que está de pie», «el que tiene sombrero»).",
+      "eu": "Pertsonak eta gauzak identifikatu («zutik dagoena», «kapela daukana»)."
+    }
+  ],
+  "keyWords": [
+    {
+      "eu": "animalia",
+      "es": "animal"
+    },
+    {
+      "eu": "txakur",
+      "es": "perro; perra"
+    },
+    {
+      "eu": "katu",
+      "es": "gato; gata"
+    },
+    {
+      "eu": "behi",
+      "es": "vaca"
+    },
+    {
+      "eu": "ardi",
+      "es": "oveja"
+    },
+    {
+      "eu": "zaldi",
+      "es": "caballo"
+    },
+    {
+      "eu": "txerri",
+      "es": "cerdo"
+    },
+    {
+      "eu": "oilo",
+      "es": "gallina"
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Ahora mismo: ari naiz… pero noa, nago",
+          "eu": "Orain: ari naiz… baina noa, nago"
+        },
+        "body": {
+          "es": "Para lo que pasa ahora se usa «-t(z)en ari naiz» (jolasten ari da). Pero los verbos con forma propia (egon, joan, etorri, ibili, eduki, ekarri…) nunca la llevan: «mendira noa», no «joaten ari naiz».",
+          "eu": "Orain gertatzen dena esateko «-t(z)en ari naiz» erabiltzen da (jolasten ari da). Baina forma trinkoa duten aditzek (egon, joan, etorri, ibili, eduki, ekarri…) ez dute inoiz hartzen: «mendira noa», ez «joaten ari naiz»."
+        },
+        "examples": [
+          {
+            "eu": "Txakurra jolasten ari da.",
+            "es": "El perro está jugando."
+          },
+          {
+            "eu": "Mendira noa.",
+            "es": "Voy al monte."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "La que está de pie: zutik dagoen emakumea",
+          "eu": "Zutik dagoen emakumea"
+        },
+        "body": {
+          "es": "En euskera la frase de relativo va delante del nombre, y el verbo termina en -(e)n: «zutik dago» → «zutik dagoen emakumea» (la mujer que está de pie). El artículo y el caso van al final: «emakumea», «emakumeak».",
+          "eu": "Euskaraz erlatibozko esaldia izenaren aurrean doa, eta aditzak -(e)n amaiera hartzen du: «zutik dago» → «zutik dagoen emakumea». Artikulua eta kasua amaieran doaz: «emakumea», «emakumeak»."
+        },
+        "examples": [
+          {
+            "eu": "Zutik dagoen gizona irakaslea da.",
+            "es": "El hombre que está de pie es el profesor."
+          },
+          {
+            "eu": "Kapela gorria daukan neska Ane da.",
+            "es": "La chica que tiene el sombrero rojo es Ane."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "El que…, los que…: dagoena, daudenak",
+          "eu": "Dagoena, daudenak"
+        },
+        "body": {
+          "es": "Sin nombre, el artículo se pone al verbo: «zutik dagoena» (el que está de pie), «hondartzan daudenak» (los que están en la playa), «kapela daukana» (el que tiene sombrero).",
+          "eu": "Izenik gabe, artikulua aditzari jartzen zaio: «zutik dagoena», «hondartzan daudenak», «kapela daukana»."
+        },
+        "examples": [
+          {
+            "eu": "Hondartzan daudenak nire lagunak dira.",
+            "es": "Los que están en la playa son mis amigos."
+          },
+          {
+            "eu": "Kapela daukana Mikel da.",
+            "es": "El que tiene sombrero es Mikel."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Traer: dakart, dakarzu, dakar",
+          "eu": "Ekarri: dakart, dakarzu, dakar"
+        },
+        "body": {
+          "es": "«Ekarri» (traer) tiene forma propia en presente, como «eraman» (daramat): dakart, dakarzu, dakar, dakargu, dakarzue, dakarte.",
+          "eu": "«Ekarri» aditzak forma trinkoa du orainaldian, «eraman» aditzak bezala (daramat): dakart, dakarzu, dakar, dakargu, dakarzue, dakarte."
+        },
+        "examples": [
+          {
+            "eu": "Zer dakarzu?",
+            "es": "¿Qué traes?"
+          },
+          {
+            "eu": "Txakurrak pilota bat dakar ahoan.",
+            "es": "El perro trae una pelota en la boca."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u17-1.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Animales",
+        "eu": "Animaliak"
+      },
+      "lessons": [
+        {
+          "id": "u17-1.l1.s1",
+          "exercises": [
+            {
+              "id": "u17-1.l1.s1.e01",
+              "type": "word_intro",
+              "word": "baserri",
+              "translation": "caserío",
+              "vocabulary": [
+                "baserri"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e02",
+              "type": "word_intro",
+              "word": "animalia",
+              "translation": "animal",
+              "vocabulary": [
+                "animalia"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Baserrian animalia asko daude."
+              },
+              "answers": [
+                "En el caserío hay muchos animales."
+              ],
+              "distractors": [
+                "están",
+                "pájaros",
+                "de",
+                "cola"
+              ],
+              "vocabulary": [
+                "baserri",
+                "animalia",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e04",
+              "type": "word_intro",
+              "word": "behi",
+              "translation": "vaca",
+              "vocabulary": [
+                "behi"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e05",
+              "type": "word_intro",
+              "word": "ardi",
+              "translation": "oveja",
+              "vocabulary": [
+                "ardi"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Behiak eta ardiak mendian daude."
+              },
+              "answers": [
+                "Las vacas y las ovejas están en el monte."
+              ],
+              "distractors": [
+                "gallinas",
+                "compañía",
+                "caserío",
+                "muy"
+              ],
+              "vocabulary": [
+                "behi",
+                "eta",
+                "ardi",
+                "mendi",
+                "egon"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e07",
+              "type": "word_intro",
+              "word": "txakur",
+              "translation": "perro; perra",
+              "vocabulary": [
+                "txakur"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e08",
+              "type": "word_intro",
+              "word": "katu",
+              "translation": "gato; gata",
+              "vocabulary": [
+                "katu"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e09",
+              "type": "word_intro",
+              "word": "zaldi",
+              "translation": "caballo",
+              "vocabulary": [
+                "zaldi"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e10",
+              "type": "word_intro",
+              "word": "txerri",
+              "translation": "cerdo",
+              "vocabulary": [
+                "txerri"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e11",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "txakur",
+                  "es": "perro"
+                },
+                {
+                  "eu": "katu",
+                  "es": "gato"
+                },
+                {
+                  "eu": "behi",
+                  "es": "vaca"
+                },
+                {
+                  "eu": "ardi",
+                  "es": "oveja"
+                },
+                {
+                  "eu": "zaldi",
+                  "es": "caballo"
+                },
+                {
+                  "eu": "txerri",
+                  "es": "cerdo"
+                }
+              ],
+              "vocabulary": [
+                "txakur",
+                "katu",
+                "behi",
+                "ardi",
+                "zaldi",
+                "txerri"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Txakurrak buztan luzea du."
+              },
+              "answers": [
+                "El perro tiene la cola larga."
+              ],
+              "distractors": [
+                "huevos",
+                "ponen",
+                "muchos",
+                "En"
+              ],
+              "vocabulary": [
+                "txakur",
+                "buztan",
+                "luze",
+                "ukan"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e13",
+              "type": "fill_blank",
+              "sentence": "Oiloek arrautzak ___ dituzte.",
+              "options": [
+                "jartzen",
+                "jarri",
+                "jartzea"
+              ],
+              "correct": 0,
+              "translation": "Las gallinas ponen huevos.",
+              "vocabulary": [
+                "oilo",
+                "arrautza",
+                "jarri",
+                "ukan"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Txoriek hegan egiten dute."
+              },
+              "answers": [
+                "Los pájaros vuelan."
+              ],
+              "distractors": [
+                "En",
+                "El"
+              ],
+              "vocabulary": [
+                "txori",
+                "hegan egin",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e15",
+              "type": "choose_meaning",
+              "text": "Txoriek hegan egiten dute.",
+              "options": [
+                "Los pájaros vuelan.",
+                "Los pájaros cantan.",
+                "Los pájaros comen."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "txori",
+                "hegan egin",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e16",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Oiloek arrautzak jartzen dituzte."
+              },
+              "answers": [
+                "Las gallinas ponen huevos."
+              ],
+              "vocabulary": [
+                "oilo",
+                "arrautza",
+                "jarri",
+                "ukan"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e17",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Gorka",
+                  "text": "Etxe-animaliarik duzu?"
+                }
+              ],
+              "options": [
+                "Bai, txakur bat eta bi katu.",
+                "Bai, baserri bat.",
+                "Ez, animalia naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "etxe-animalia",
+                "ukan",
+                "bai",
+                "txakur",
+                "bat",
+                "eta",
+                "bi",
+                "katu"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "El caballo es muy rápido."
+              },
+              "answers": [
+                "Zaldia oso azkarra da."
+              ],
+              "distractors": [
+                "ardiak",
+                "Etxe-animaliarik",
+                "hegan"
+              ],
+              "vocabulary": [
+                "zaldi",
+                "oso",
+                "azkar",
+                "izan"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s1.e19",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Etxe-animaliarik duzu?"
+              },
+              "answers": [
+                "¿Tienes animales de compañía?"
+              ],
+              "vocabulary": [
+                "etxe-animalia",
+                "ukan"
+              ],
+              "structures": [
+                "animaliak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-1.l1.s2",
+          "exercises": [
+            {
+              "id": "u17-1.l1.s2.e01",
+              "type": "word_intro",
+              "word": "landetxe",
+              "translation": "casa rural",
+              "vocabulary": [
+                "landetxe"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Oporretan landetxe batean egon gara."
+              },
+              "answers": [
+                "En vacaciones hemos estado en un agroturismo."
+              ],
+              "distractors": [
+                "la",
+                "caserío",
+                "el",
+                "dos"
+              ],
+              "vocabulary": [
+                "opor",
+                "landetxe",
+                "bat",
+                "egon",
+                "izan"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e03",
+              "type": "word_intro",
+              "word": "oilar",
+              "translation": "gallo",
+              "vocabulary": [
+                "oilar"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Goizean oilarra entzun dugu."
+              },
+              "answers": [
+                "Por la mañana hemos oído al gallo."
+              ],
+              "distractors": [
+                "tienen",
+                "bonitos",
+                "dos",
+                "En"
+              ],
+              "vocabulary": [
+                "goiz",
+                "oilar",
+                "entzun",
+                "ukan"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e05",
+              "type": "word_intro",
+              "word": "oilo",
+              "translation": "gallina",
+              "vocabulary": [
+                "oilo"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e06",
+              "type": "word_intro",
+              "word": "ahate",
+              "translation": "pato",
+              "vocabulary": [
+                "ahate"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e07",
+              "type": "word_intro",
+              "word": "untxi",
+              "translation": "conejo",
+              "vocabulary": [
+                "untxi"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "oilo",
+                  "es": "gallina"
+                },
+                {
+                  "eu": "oilar",
+                  "es": "gallo"
+                },
+                {
+                  "eu": "ahate",
+                  "es": "pato"
+                },
+                {
+                  "eu": "untxi",
+                  "es": "conejo"
+                },
+                {
+                  "eu": "baserri",
+                  "es": "caserío"
+                },
+                {
+                  "eu": "landetxe",
+                  "es": "agroturismo"
+                }
+              ],
+              "vocabulary": [
+                "oilo",
+                "oilar",
+                "ahate",
+                "untxi",
+                "baserri",
+                "landetxe"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e09",
+              "type": "order_sentence",
+              "answer": "Ahateak ibaian daude.",
+              "translation": "Los patos están en el río.",
+              "vocabulary": [
+                "ahate",
+                "ibai",
+                "egon"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e10",
+              "type": "fill_blank",
+              "sentence": "Ahateak ___ daude.",
+              "options": [
+                "ibaian",
+                "ibaira",
+                "ibaiko"
+              ],
+              "correct": 0,
+              "translation": "Los patos están en el río.",
+              "vocabulary": [
+                "ahate",
+                "ibai",
+                "egon"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e11",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Untxiak txikiak eta politak dira."
+              },
+              "answers": [
+                "Los conejos son pequeños y bonitos."
+              ],
+              "vocabulary": [
+                "untxi",
+                "txiki",
+                "eta",
+                "polit",
+                "izan"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e12",
+              "type": "read_true_false",
+              "passage": "Oporretan landetxe batean egon gara. Baserrian behiak, oiloak eta bi zaldi daude. Goizero oilarra entzuten dugu.",
+              "statement": "En el caserío no hay caballos.",
+              "answer": false,
+              "vocabulary": [
+                "opor",
+                "landetxe",
+                "bat",
+                "egon",
+                "izan",
+                "baserri",
+                "behi",
+                "oilo",
+                "eta",
+                "bi",
+                "zaldi",
+                "goiz",
+                "oilar",
+                "entzun",
+                "ukan"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "En el caserío tienen un cerdo y dos caballos."
+              },
+              "answers": [
+                "Baserrian txerri bat eta bi zaldi dituzte."
+              ],
+              "distractors": [
+                "oilarra",
+                "daude",
+                "Untxiak",
+                "gara"
+              ],
+              "vocabulary": [
+                "baserri",
+                "txerri",
+                "bat",
+                "eta",
+                "bi",
+                "zaldi",
+                "ukan"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e14",
+              "type": "choose_image",
+              "prompt": "el río",
+              "options": [
+                {
+                  "text": "basoa",
+                  "image": "nature_forest.webp"
+                },
+                {
+                  "text": "itsasoa",
+                  "image": "nature_sea.webp"
+                },
+                {
+                  "text": "ibaia",
+                  "image": "nature_river.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "ibai"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s2.e15",
+              "type": "listen_tap",
+              "text": "Haurrek animaliak maite dituzte.",
+              "distractors": [
+                "gara",
+                "oilarra",
+                "egon"
+              ],
+              "vocabulary": [
+                "hau",
+                "animalia",
+                "maite",
+                "ukan"
+              ],
+              "structures": [
+                "baserria",
+                "landetxea"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-1.l1.s3",
+          "exercises": [
+            {
+              "id": "u17-1.l1.s3.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué está haciendo el perro?"
+              },
+              "answers": [
+                "Zer egiten ari da txakurra?"
+              ],
+              "vocabulary": [
+                "zer",
+                "egin",
+                "izan",
+                "txakur"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e02",
+              "type": "order_sentence",
+              "answer": "Txakurra parkean jolasten ari da.",
+              "translation": "El perro está jugando en el parque.",
+              "vocabulary": [
+                "txakur",
+                "parke",
+                "jolastu",
+                "izan"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e03",
+              "type": "word_intro",
+              "word": "dabiltza",
+              "translation": "andan",
+              "vocabulary": [
+                "ibili"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e04",
+              "type": "word_intro",
+              "word": "eserita",
+              "translation": "sentado",
+              "vocabulary": [
+                "eserita"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e05",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "ari da",
+                  "es": "está (haciendo)"
+                },
+                {
+                  "eu": "noa",
+                  "es": "voy"
+                },
+                {
+                  "eu": "datoz",
+                  "es": "vienen"
+                },
+                {
+                  "eu": "dabiltza",
+                  "es": "andan"
+                },
+                {
+                  "eu": "eserita",
+                  "es": "sentado"
+                }
+              ],
+              "vocabulary": [
+                "izan",
+                "joan",
+                "etorri",
+                "ibili",
+                "eserita"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Katua sofan eserita dago."
+              },
+              "answers": [
+                "El gato está sentado en el sofá."
+              ],
+              "vocabulary": [
+                "katu",
+                "sofa",
+                "eserita",
+                "egon"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e07",
+              "type": "fill_blank",
+              "sentence": "Mendira ___.",
+              "options": [
+                "noa",
+                "joaten ari naiz",
+                "joan"
+              ],
+              "correct": 0,
+              "translation": "Voy al monte.",
+              "vocabulary": [
+                "mendi",
+                "joan"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e08",
+              "type": "word_intro",
+              "word": "txori",
+              "translation": "pájaro",
+              "vocabulary": [
+                "txori"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e09",
+              "type": "word_intro",
+              "word": "hegan",
+              "translation": "volar",
+              "vocabulary": [
+                "hegan egin"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e10",
+              "type": "listen_type",
+              "text": "Txoriak hegan egiten ari dira.",
+              "answers": [
+                "Txoriak hegan egiten ari dira."
+              ],
+              "vocabulary": [
+                "txori",
+                "hegan egin",
+                "egin",
+                "izan"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e11",
+              "type": "fill_blank",
+              "sentence": "Txakurra parkean jolasten ___ da.",
+              "options": [
+                "ari",
+                "dago",
+                "doa"
+              ],
+              "correct": 0,
+              "translation": "El perro está jugando en el parque.",
+              "vocabulary": [
+                "txakur",
+                "parke",
+                "jolastu",
+                "izan"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e12",
+              "type": "speak",
+              "text": "Mendira noa.",
+              "translation": "Voy al monte.",
+              "vocabulary": [
+                "mendi",
+                "joan"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e13",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nahia",
+                  "text": "Non zaude? Zer egiten ari zara?"
+                }
+              ],
+              "options": [
+                "Parkean nago, txakurrarekin.",
+                "Parkean egoten ari naiz.",
+                "Parkea txakurra da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "non",
+                "egon",
+                "zer",
+                "egin",
+                "izan",
+                "parke",
+                "txakur"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zaldiak korrika dabiltza."
+              },
+              "answers": [
+                "Los caballos van corriendo."
+              ],
+              "distractors": [
+                "Qué",
+                "Las",
+                "está"
+              ],
+              "vocabulary": [
+                "zaldi",
+                "korrika",
+                "ibili"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            },
+            {
+              "id": "u17-1.l1.s3.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Las ovejas vienen a casa."
+              },
+              "answers": [
+                "Ardiak etxera datoz."
+              ],
+              "distractors": [
+                "Mendira",
+                "da"
+              ],
+              "vocabulary": [
+                "ardi",
+                "etxe",
+                "etorri"
+              ],
+              "structures": [
+                "ari",
+                "trinkoak"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u17-1.l2",
+      "type": "lesson",
+      "title": {
+        "es": "¿Quién es quién?",
+        "eu": "Nor da nor?"
+      },
+      "lessons": [
+        {
+          "id": "u17-1.l2.s1",
+          "exercises": [
+            {
+              "id": "u17-1.l2.s1.e01",
+              "type": "word_intro",
+              "word": "zutik",
+              "translation": "de pie",
+              "vocabulary": [
+                "zutik"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zutik dagoen gizona irakaslea da."
+              },
+              "answers": [
+                "El hombre que está de pie es el profesor."
+              ],
+              "distractors": [
+                "La",
+                "amigos",
+                "sombrero",
+                "foto"
+              ],
+              "vocabulary": [
+                "zutik",
+                "egon",
+                "gizon",
+                "irakasle",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e03",
+              "type": "word_intro",
+              "word": "kapela",
+              "translation": "sombrero",
+              "vocabulary": [
+                "kapela"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e04",
+              "type": "word_intro",
+              "word": "daukan",
+              "translation": "tener",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kapela gorria daukan neska Ane da."
+              },
+              "answers": [
+                "La chica que tiene el sombrero rojo es Ane."
+              ],
+              "distractors": [
+                "niños",
+                "anda",
+                "amigos",
+                "Jon"
+              ],
+              "vocabulary": [
+                "kapela",
+                "gorri",
+                "eduki",
+                "neska",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e06",
+              "type": "word_intro",
+              "word": "hizketan",
+              "translation": "hablar",
+              "vocabulary": [
+                "hitz egin"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e07",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "zutik",
+                  "es": "de pie"
+                },
+                {
+                  "eu": "eserita",
+                  "es": "sentado"
+                },
+                {
+                  "eu": "kapela",
+                  "es": "sombrero"
+                },
+                {
+                  "eu": "hizketan",
+                  "es": "hablando"
+                },
+                {
+                  "eu": "dagoen",
+                  "es": "que está"
+                }
+              ],
+              "vocabulary": [
+                "zutik",
+                "eserita",
+                "kapela",
+                "hitz egin",
+                "egon"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La mujer que está hablando es mi madre."
+              },
+              "answers": [
+                "Hizketan ari den emakumea nire ama da."
+              ],
+              "distractors": [
+                "mutila",
+                "irakaslea",
+                "daukan",
+                "argazkian"
+              ],
+              "vocabulary": [
+                "hitz egin",
+                "izan",
+                "emakume",
+                "ni",
+                "ama"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e09",
+              "type": "fill_blank",
+              "sentence": "Zutik ___ gizona irakaslea da.",
+              "options": [
+                "dagoen",
+                "dago",
+                "dagoela"
+              ],
+              "correct": 0,
+              "translation": "El hombre que está de pie es el profesor.",
+              "vocabulary": [
+                "zutik",
+                "egon",
+                "gizon",
+                "irakasle",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e10",
+              "type": "word_intro",
+              "word": "dabilen",
+              "translation": "andar",
+              "vocabulary": [
+                "ibili"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Txakurrarekin dabilen mutila Jon da."
+              },
+              "answers": [
+                "El chico que anda con el perro es Jon."
+              ],
+              "distractors": [
+                "Los",
+                "foto",
+                "está",
+                "Quién"
+              ],
+              "vocabulary": [
+                "txakur",
+                "ibili",
+                "mutil",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e12",
+              "type": "fill_blank",
+              "sentence": "Kapela gorria ___ neska Ane da.",
+              "options": [
+                "daukan",
+                "dauka",
+                "daukala"
+              ],
+              "correct": 0,
+              "translation": "La chica que tiene el sombrero rojo es Ane.",
+              "vocabulary": [
+                "kapela",
+                "gorri",
+                "eduki",
+                "neska",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e13",
+              "type": "word_intro",
+              "word": "dauden",
+              "translation": "estar",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Eserita dauden haurrak nire lagunak dira."
+              },
+              "answers": [
+                "Los niños que están sentados son mis amigos."
+              ],
+              "distractors": [
+                "tiene",
+                "Jon",
+                "sombrero",
+                "anda"
+              ],
+              "vocabulary": [
+                "eserita",
+                "egon",
+                "hau",
+                "ni",
+                "lagun",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e15",
+              "type": "choose_meaning",
+              "text": "Txakurrarekin dabilen mutila Jon da.",
+              "options": [
+                "El chico que anda con el perro es Jon.",
+                "Jon anda con el perro del chico.",
+                "El perro de Jon anda con el chico."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "txakur",
+                "ibili",
+                "mutil",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s1.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Quién es el hombre que está en la foto?"
+              },
+              "answers": [
+                "Nor da argazkian dagoen gizona?"
+              ],
+              "distractors": [
+                "gorria",
+                "mutila",
+                "haurrak"
+              ],
+              "vocabulary": [
+                "nor",
+                "izan",
+                "argazki",
+                "egon",
+                "gizon"
+              ],
+              "structures": [
+                "erlatiboa"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-1.l2.s2",
+          "exercises": [
+            {
+              "id": "u17-1.l2.s2.e01",
+              "type": "word_intro",
+              "word": "dagoena",
+              "translation": "estar",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zutik dagoena nire anaia da."
+              },
+              "answers": [
+                "El que está de pie es mi hermano."
+              ],
+              "distractors": [
+                "hermana",
+                "playa",
+                "en",
+                "sombrero"
+              ],
+              "vocabulary": [
+                "zutik",
+                "egon",
+                "ni",
+                "anaia",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e03",
+              "type": "word_intro",
+              "word": "daudenak",
+              "translation": "estar",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hondartzan daudenak nire lagunak dira."
+              },
+              "answers": [
+                "Los que están en la playa son mis amigos."
+              ],
+              "distractors": [
+                "es",
+                "mi",
+                "de",
+                "tiene"
+              ],
+              "vocabulary": [
+                "hondartza",
+                "egon",
+                "ni",
+                "lagun",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e05",
+              "type": "word_intro",
+              "word": "daukana",
+              "translation": "tener",
+              "vocabulary": [
+                "eduki"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e06",
+              "type": "word_intro",
+              "word": "itzalkin",
+              "translation": "sombrilla",
+              "vocabulary": [
+                "itzalkin"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e07",
+              "type": "word_intro",
+              "word": "bainujantzi",
+              "translation": "bañador",
+              "vocabulary": [
+                "bainujantzi"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "dagoena",
+                  "es": "el que está"
+                },
+                {
+                  "eu": "daudenak",
+                  "es": "los que están"
+                },
+                {
+                  "eu": "daukana",
+                  "es": "el que tiene"
+                },
+                {
+                  "eu": "itzalkin",
+                  "es": "sombrilla"
+                },
+                {
+                  "eu": "bainujantzi",
+                  "es": "bañador"
+                }
+              ],
+              "vocabulary": [
+                "egon",
+                "eduki",
+                "itzalkin",
+                "bainujantzi"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e09",
+              "type": "listen_tap",
+              "text": "Kapela daukana Mikel da.",
+              "distractors": [
+                "daudenak",
+                "duena",
+                "Nor"
+              ],
+              "vocabulary": [
+                "kapela",
+                "eduki",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e10",
+              "type": "fill_blank",
+              "sentence": "Hondartzan ___ nire lagunak dira.",
+              "options": [
+                "daudenak",
+                "daude",
+                "dagoena"
+              ],
+              "correct": 0,
+              "translation": "Los que están en la playa son mis amigos.",
+              "vocabulary": [
+                "hondartza",
+                "egon",
+                "ni",
+                "lagun",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nor da itzalkinaren azpian dagoena?"
+              },
+              "answers": [
+                "¿Quién es el que está debajo de la sombrilla?"
+              ],
+              "distractors": [
+                "hermana",
+                "son",
+                "mis",
+                "hablando"
+              ],
+              "vocabulary": [
+                "nor",
+                "izan",
+                "itzalkin",
+                "azpian",
+                "egon"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e12",
+              "type": "choose_meaning",
+              "text": "Nor da itzalkinaren azpian dagoena?",
+              "options": [
+                "¿Quién es el que está debajo de la sombrilla?",
+                "¿Dónde está la sombrilla?",
+                "¿Quién tiene una sombrilla?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nor",
+                "izan",
+                "itzalkin",
+                "azpian",
+                "egon"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e13",
+              "type": "word_intro",
+              "word": "duena",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bainujantzi urdina duena nire ahizpa da."
+              },
+              "answers": [
+                "La que tiene el bañador azul es mi hermana."
+              ],
+              "distractors": [
+                "playa",
+                "mis",
+                "de",
+                "está"
+              ],
+              "vocabulary": [
+                "bainujantzi",
+                "urdin",
+                "ukan",
+                "ni",
+                "ahizpa",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e15",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Leire",
+                  "text": "Nor da zure ahizpa?"
+                }
+              ],
+              "options": [
+                "Bainujantzi urdina duena.",
+                "Bainujantzi urdina du.",
+                "Bainujantzi urdina dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nor",
+                "izan",
+                "zu",
+                "ahizpa",
+                "bainujantzi",
+                "urdin",
+                "ukan"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s2.e16",
+              "type": "listen_tap",
+              "text": "Hizketan ari dena nagusia da.",
+              "distractors": [
+                "nire",
+                "duena",
+                "dira"
+              ],
+              "vocabulary": [
+                "hitz egin",
+                "dena",
+                "nagusi",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa",
+                "izenik-gabe"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-1.l2.s3",
+          "exercises": [
+            {
+              "id": "u17-1.l2.s3.e01",
+              "type": "word_intro",
+              "word": "dakarzu",
+              "translation": "traer",
+              "vocabulary": [
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer dakarzu?"
+              },
+              "answers": [
+                "¿Qué traes?"
+              ],
+              "distractors": [
+                "trae",
+                "traemos"
+              ],
+              "vocabulary": [
+                "zer",
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e03",
+              "type": "word_intro",
+              "word": "dakart",
+              "translation": "traer",
+              "vocabulary": [
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ogi bat dakart."
+              },
+              "answers": [
+                "Traigo un pan."
+              ],
+              "distractors": [
+                "pelota",
+                "Nosotros"
+              ],
+              "vocabulary": [
+                "ogi",
+                "bat",
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e05",
+              "type": "word_intro",
+              "word": "dakar",
+              "translation": "traer",
+              "vocabulary": [
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e06",
+              "type": "word_intro",
+              "word": "dakargu",
+              "translation": "traer",
+              "vocabulary": [
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e07",
+              "type": "word_intro",
+              "word": "dakarte",
+              "translation": "traer",
+              "vocabulary": [
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "dakart",
+                  "es": "traigo"
+                },
+                {
+                  "eu": "dakarzu",
+                  "es": "traes"
+                },
+                {
+                  "eu": "dakar",
+                  "es": "trae"
+                },
+                {
+                  "eu": "dakargu",
+                  "es": "traemos"
+                },
+                {
+                  "eu": "dakarte",
+                  "es": "traen"
+                }
+              ],
+              "vocabulary": [
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Anek ura dakar."
+              },
+              "answers": [
+                "Ane trae agua."
+              ],
+              "distractors": [
+                "la",
+                "perro"
+              ],
+              "vocabulary": [
+                "ur",
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e10",
+              "type": "fill_blank",
+              "sentence": "Anek ura ___.",
+              "options": [
+                "dakar",
+                "dakart",
+                "dakarte"
+              ],
+              "correct": 0,
+              "translation": "Ane trae agua.",
+              "vocabulary": [
+                "ur",
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Nosotros traemos queso."
+              },
+              "answers": [
+                "Guk gazta dakargu."
+              ],
+              "distractors": [
+                "Anek",
+                "Ogi"
+              ],
+              "vocabulary": [
+                "gu",
+                "gazta",
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e12",
+              "type": "fill_blank",
+              "sentence": "Zer ___?",
+              "options": [
+                "dakarzu",
+                "dakart",
+                "daramazu"
+              ],
+              "correct": 0,
+              "translation": "¿Qué traes?",
+              "vocabulary": [
+                "zer",
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e13",
+              "type": "word_intro",
+              "word": "dakarzue",
+              "translation": "traer",
+              "vocabulary": [
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zuek zer dakarzue?"
+              },
+              "answers": [
+                "¿Qué traéis vosotros?",
+                "¿Qué traéis vosotras?"
+              ],
+              "distractors": [
+                "flor",
+                "agua"
+              ],
+              "vocabulary": [
+                "zuek",
+                "zer",
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e15",
+              "type": "word_intro",
+              "word": "afaltzeko",
+              "translation": "cenar",
+              "vocabulary": [
+                "afaldu"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e16",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Amona",
+                  "text": "Zer dakarzue afaltzeko?"
+                }
+              ],
+              "options": [
+                "Ogia eta gazta dakargu.",
+                "Ogia eta gazta dakarte.",
+                "Ogia eta gazta ekartzen ari gara."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "ekarri",
+                "afaldu",
+                "ogi",
+                "eta",
+                "gazta"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e17",
+              "type": "word_intro",
+              "word": "lore",
+              "translation": "flor",
+              "vocabulary": [
+                "lore"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lagunek lore bat dakarte."
+              },
+              "answers": [
+                "Los amigos traen una flor."
+              ],
+              "distractors": [
+                "trae",
+                "agua",
+                "la"
+              ],
+              "vocabulary": [
+                "lagun",
+                "lore",
+                "bat",
+                "ekarri"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            },
+            {
+              "id": "u17-1.l2.s3.e19",
+              "type": "order_sentence",
+              "answer": "Txakurrak pilota bat dakar ahoan.",
+              "translation": "El perro trae una pelota en la boca.",
+              "vocabulary": [
+                "txakur",
+                "pilota",
+                "bat",
+                "ekarri",
+                "aho"
+              ],
+              "structures": [
+                "ekarri"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u17-1.l3",
+      "type": "lesson",
+      "title": {
+        "es": "En la playa y en carnaval",
+        "eu": "Hondartzan eta inauterietan"
+      },
+      "lessons": [
+        {
+          "id": "u17-1.l3.s1",
+          "exercises": [
+            {
+              "id": "u17-1.l3.s1.e01",
+              "type": "speak",
+              "text": "Hondartzan jende asko dago.",
+              "translation": "En la playa hay mucha gente.",
+              "vocabulary": [
+                "hondartza",
+                "jende",
+                "asko",
+                "egon"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Itzalkinaren azpian eserita nago."
+              },
+              "answers": [
+                "Estoy sentado debajo de la sombrilla.",
+                "Estoy sentada debajo de la sombrilla."
+              ],
+              "distractors": [
+                "Tienes",
+                "Ven",
+                "comprado",
+                "he"
+              ],
+              "vocabulary": [
+                "itzalkin",
+                "azpian",
+                "eserita",
+                "egon"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s1.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "hondartza",
+                  "es": "playa"
+                },
+                {
+                  "eu": "itzalkin",
+                  "es": "sombrilla"
+                },
+                {
+                  "eu": "bainujantzi",
+                  "es": "bañador"
+                },
+                {
+                  "eu": "kapela",
+                  "es": "sombrero"
+                },
+                {
+                  "eu": "eguzki",
+                  "es": "sol"
+                }
+              ],
+              "vocabulary": [
+                "hondartza",
+                "itzalkin",
+                "bainujantzi",
+                "kapela",
+                "eguzki"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Me he comprado un bañador nuevo."
+              },
+              "answers": [
+                "Bainujantzi berria erosi dut."
+              ],
+              "distractors": [
+                "Itzalkinaren",
+                "eguzki",
+                "eserita"
+              ],
+              "vocabulary": [
+                "bainujantzi",
+                "berri",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s1.e05",
+              "type": "word_intro",
+              "word": "uretan",
+              "translation": "agua",
+              "vocabulary": [
+                "ur"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s1.e06",
+              "type": "choose_meaning",
+              "text": "Uretan dabilen gizona nire aita da.",
+              "options": [
+                "El hombre que anda en el agua es mi padre.",
+                "Mi padre está en la playa con un hombre.",
+                "El agua está fría para mi padre."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ur",
+                "ibili",
+                "gizon",
+                "ni",
+                "aita",
+                "izan"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s1.e07",
+              "type": "listen_tap",
+              "text": "Kapela jarri behar duzu; eguzki handia dago.",
+              "distractors": [
+                "dut",
+                "azpian",
+                "jende",
+                "nirekin"
+              ],
+              "vocabulary": [
+                "kapela",
+                "jarri",
+                "behar izan",
+                "ukan",
+                "eguzki",
+                "handi",
+                "egon"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s1.e08",
+              "type": "read_true_false",
+              "passage": "Hondartzan gaude. Ama itzalkinaren azpian eserita dago, eta aita uretan dabil. Ni jolasten ari naiz.",
+              "statement": "El padre está debajo de la sombrilla.",
+              "answer": false,
+              "vocabulary": [
+                "hondartza",
+                "egon",
+                "ama",
+                "itzalkin",
+                "azpian",
+                "eserita",
+                "eta",
+                "aita",
+                "ur",
+                "ibili",
+                "ni",
+                "jolastu",
+                "izan"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s1.e09",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "El hombre que anda en el agua es mi padre."
+              },
+              "answers": [
+                "Uretan dabilen gizona nire aita da."
+              ],
+              "vocabulary": [
+                "ur",
+                "ibili",
+                "gizon",
+                "ni",
+                "aita",
+                "izan"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s1.e10",
+              "type": "choose_image",
+              "prompt": "la playa",
+              "options": [
+                {
+                  "text": "igerilekua",
+                  "image": "place_pool.webp"
+                },
+                {
+                  "text": "mendia",
+                  "image": "place_mountain.webp"
+                },
+                {
+                  "text": "hondartza",
+                  "image": "place_beach.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "hondartza"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s1.e11",
+              "type": "word_intro",
+              "word": "nirekin",
+              "translation": "conmigo",
+              "vocabulary": [
+                "ni"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s1.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Etorri nirekin hondartzara!"
+              },
+              "answers": [
+                "¡Ven conmigo a la playa!"
+              ],
+              "distractors": [
+                "nuevo",
+                "Me",
+                "hombre"
+              ],
+              "vocabulary": [
+                "etorri",
+                "ni",
+                "hondartza"
+              ],
+              "structures": [
+                "hondartza"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-1.l3.s2",
+          "exercises": [
+            {
+              "id": "u17-1.l3.s2.e01",
+              "type": "word_intro",
+              "word": "inauteri",
+              "translation": "carnaval",
+              "vocabulary": [
+                "inauteri"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s2.e02",
+              "type": "word_intro",
+              "word": "mozorro",
+              "translation": "disfraz",
+              "vocabulary": [
+                "mozorro"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Inauterietan mozorroak janzten ditugu."
+              },
+              "answers": [
+                "En carnaval nos ponemos disfraces."
+              ],
+              "distractors": [
+                "bonito",
+                "que",
+                "El"
+              ],
+              "vocabulary": [
+                "inauteri",
+                "mozorro",
+                "jantzi",
+                "ukan"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Qué disfraz tienes este año?"
+              },
+              "answers": [
+                "Zer mozorro daukazu aurten?"
+              ],
+              "distractors": [
+                "kapela",
+                "polita",
+                "mozorroak"
+              ],
+              "vocabulary": [
+                "zer",
+                "mozorro",
+                "eduki",
+                "aurten"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s2.e05",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "inauteri",
+                  "es": "carnaval"
+                },
+                {
+                  "eu": "mozorro",
+                  "es": "disfraz"
+                },
+                {
+                  "eu": "lore",
+                  "es": "flor"
+                },
+                {
+                  "eu": "lehengusu",
+                  "es": "primo"
+                },
+                {
+                  "eu": "aurten",
+                  "es": "este año"
+                }
+              ],
+              "vocabulary": [
+                "inauteri",
+                "mozorro",
+                "lore",
+                "lehengusu",
+                "aurten"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s2.e06",
+              "type": "listen_tap",
+              "text": "Nire mozorroa katua da.",
+              "distractors": [
+                "Kalean",
+                "lehengusua",
+                "mozorroak"
+              ],
+              "vocabulary": [
+                "ni",
+                "mozorro",
+                "katu",
+                "izan"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s2.e07",
+              "type": "word_intro",
+              "word": "dituen",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s2.e08",
+              "type": "fill_blank",
+              "sentence": "Loreak ___ kapela oso polita da.",
+              "options": [
+                "dituen",
+                "ditu",
+                "dituela"
+              ],
+              "correct": 0,
+              "translation": "El sombrero que tiene flores es muy bonito.",
+              "vocabulary": [
+                "lore",
+                "ukan",
+                "kapela",
+                "oso",
+                "polit",
+                "izan"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s2.e09",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "El que tiene el disfraz de caballo es mi primo."
+              },
+              "answers": [
+                "Zaldi mozorroa daukana nire lehengusua da."
+              ],
+              "vocabulary": [
+                "zaldi",
+                "mozorro",
+                "eduki",
+                "ni",
+                "lehengusu",
+                "izan"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s2.e10",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Gorka",
+                  "text": "Zer mozorro daukazu aurten?"
+                }
+              ],
+              "options": [
+                "Katu mozorroa. Eta zuk?",
+                "Katua daukana.",
+                "Inauteriak dira."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "mozorro",
+                "eduki",
+                "aurten",
+                "katu",
+                "eta",
+                "zu"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s2.e11",
+              "type": "order_sentence",
+              "answer": "Loreak dituen kapela oso polita da.",
+              "translation": "El sombrero que tiene flores es muy bonito.",
+              "vocabulary": [
+                "lore",
+                "ukan",
+                "kapela",
+                "oso",
+                "polit",
+                "izan"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s2.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kalean jende asko dabil mozorrotuta."
+              },
+              "answers": [
+                "Por la calle anda mucha gente disfrazada."
+              ],
+              "vocabulary": [
+                "kale",
+                "jende",
+                "asko",
+                "ibili",
+                "mozorro"
+              ],
+              "structures": [
+                "inauteriak",
+                "mozorroak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u17-1.l3.s3",
+          "exercises": [
+            {
+              "id": "u17-1.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¡Mira esta foto!"
+              },
+              "answers": [
+                "Begira argazki hau!"
+              ],
+              "distractors": [
+                "beltza",
+                "nor"
+              ],
+              "vocabulary": [
+                "begiratu",
+                "argazki",
+                "hau"
+              ],
+              "structures": [
+                "argazkia",
+                "nor-da-nor"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s3.e02",
+              "type": "listen_tap",
+              "text": "Aurrean dagoena ni naiz.",
+              "distractors": [
+                "Begira",
+                "argazki",
+                "dut"
+              ],
+              "vocabulary": [
+                "aurrean",
+                "egon",
+                "ni",
+                "izan"
+              ],
+              "structures": [
+                "argazkia",
+                "nor-da-nor"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s3.e03",
+              "type": "choose_meaning",
+              "text": "Eserita dauden bi neskak bikiak dira.",
+              "options": [
+                "Las dos chicas que están sentadas son gemelas.",
+                "Las dos gemelas están de pie.",
+                "Las chicas se sientan con las gemelas."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "eserita",
+                "egon",
+                "bi",
+                "neska",
+                "biki",
+                "izan"
+              ],
+              "structures": [
+                "argazkia",
+                "nor-da-nor"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s3.e04",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "El que tiene el perro es mi abuelo."
+              },
+              "answers": [
+                "Txakurra daukana nire aitona da."
+              ],
+              "vocabulary": [
+                "txakur",
+                "eduki",
+                "ni",
+                "aitona",
+                "izan"
+              ],
+              "structures": [
+                "argazkia",
+                "nor-da-nor"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s3.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Uxue",
+                  "text": "Nor da zure aitona argazki honetan?"
+                }
+              ],
+              "options": [
+                "Txakurra daukana.",
+                "Txakurra dauka.",
+                "Txakurra aitona da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nor",
+                "izan",
+                "zu",
+                "aitona",
+                "argazki",
+                "hau",
+                "txakur",
+                "eduki"
+              ],
+              "structures": [
+                "argazkia",
+                "nor-da-nor"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s3.e06",
+              "type": "order_sentence",
+              "answer": "Eserita dauden bi neskak bikiak dira.",
+              "translation": "Las dos chicas que están sentadas son gemelas.",
+              "vocabulary": [
+                "eserita",
+                "egon",
+                "bi",
+                "neska",
+                "biki",
+                "izan"
+              ],
+              "structures": [
+                "argazkia",
+                "nor-da-nor"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s3.e07",
+              "type": "read_true_false",
+              "passage": "Argazki honetan gure familia dago. Aurrean dagoena amona da, eta kapela beltza daukana aitona. Zutik daudenak nire lehengusuak dira.",
+              "statement": "El abuelo es el que tiene el sombrero negro.",
+              "answer": true,
+              "vocabulary": [
+                "argazki",
+                "hau",
+                "gu",
+                "familia",
+                "egon",
+                "aurrean",
+                "amona",
+                "izan",
+                "eta",
+                "kapela",
+                "beltz",
+                "eduki",
+                "aitona",
+                "zutik",
+                "ni",
+                "lehengusu"
+              ],
+              "structures": [
+                "argazkia",
+                "nor-da-nor"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s3.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kapela beltza duen emakumea nor da?"
+              },
+              "answers": [
+                "¿Quién es la mujer que tiene el sombrero negro?"
+              ],
+              "vocabulary": [
+                "kapela",
+                "beltz",
+                "ukan",
+                "emakume",
+                "nor",
+                "izan"
+              ],
+              "structures": [
+                "argazkia",
+                "nor-da-nor"
+              ]
+            },
+            {
+              "id": "u17-1.l3.s3.e09",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez dakit; ez dut ezagutzen."
+              },
+              "answers": [
+                "No lo sé; no la conozco."
+              ],
+              "vocabulary": [
+                "ez dakit",
+                "ez",
+                "ukan",
+                "ezagutu"
+              ],
+              "structures": [
+                "argazkia",
+                "nor-da-nor"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u17-1.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: la foto de carnaval",
+        "eu": "Istorioa: inauterietako argazkia"
+      },
+      "story": {
+        "id": "u17-1.l4.story",
+        "title": "Inauterietako argazkia",
+        "lines": [
+          {
+            "speaker": "Nahia",
+            "eu": "Gorka, begira argazki hau! Iazko inauterietakoa da.",
+            "es": "Gorka, ¡mira esta foto! Es del carnaval del año pasado."
+          },
+          {
+            "speaker": "Gorka",
+            "eu": "A zer mozorroak! Nor da zaldi mozorroa daukana?",
+            "es": "¡Vaya disfraces! ¿Quién es el que tiene el disfraz de caballo?"
+          },
+          {
+            "speaker": "Nahia",
+            "eu": "Hori nire anaia da. Eta ondoan dagoen katua ni naiz!",
+            "es": "Ese es mi hermano. ¡Y el gato que está a su lado soy yo!"
+          },
+          {
+            "speaker": "Gorka",
+            "eu": "Eta loreak dituen kapela daukan emakumea?",
+            "es": "¿Y la mujer que tiene el sombrero con flores?"
+          },
+          {
+            "speaker": "Nahia",
+            "eu": "Nire ama da. Urtero mozorro berdina janzten du.",
+            "es": "Es mi madre. Todos los años se pone el mismo disfraz."
+          },
+          {
+            "speaker": "Gorka",
+            "eu": "Eta txakurra? Zer egiten ari da?",
+            "es": "¿Y el perro? ¿Qué está haciendo?"
+          },
+          {
+            "speaker": "Nahia",
+            "eu": "Ogi bat jaten ari da! Txakurrak ere mozorroa zeraman.",
+            "es": "¡Se está comiendo un pan! El perro también llevaba disfraz."
+          },
+          {
+            "speaker": "Gorka",
+            "eu": "Aurten zer mozorro daukazu?",
+            "es": "¿Qué disfraz tienes este año?"
+          },
+          {
+            "speaker": "Nahia",
+            "eu": "Ez dizut esango. Baina gaur mozorro bat dakart zuretzat!",
+            "es": "No te lo voy a decir. ¡Pero hoy traigo un disfraz para ti!"
+          },
+          {
+            "speaker": "Gorka",
+            "eu": "Benetan? Eskerrik asko!",
+            "es": "¿De verdad? ¡Muchas gracias!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 3,
+            "prompt": "¿Quién es el gato de la foto?",
+            "options": [
+              "Nahia",
+              "El hermano de Nahia",
+              "La madre de Nahia"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 5,
+            "prompt": "¿Qué hace la madre de Nahia todos los años?",
+            "options": [
+              "Se pone el mismo disfraz",
+              "Hace fotos",
+              "Se queda en casa"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 9,
+            "prompt": "¿Qué trae hoy Nahia?",
+            "options": [
+              "Un disfraz para Gorka",
+              "Un pan para el perro",
+              "Una foto nueva"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u17-1.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u17-1.l6",
+      "type": "challenge",
+      "title": {
+        "es": "Reto de estrellas",
+        "eu": "Izarren erronka"
+      },
+      "host": "maite"
+    }
+  ]
+}

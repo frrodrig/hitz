@@ -1,0 +1,59 @@
+<!-- Unai junto a una señal de carril bici que se balancea. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u17-2, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Unai junto a una señal de carril bici" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#E6E9F2" />
+  <rect x="100" y="40" width="40" height="110" fill="#C9CCD8" />
+  <g data-depth-generated="">
+    <clipPath id="u17-2-4">
+      <path d="M100,40 h40 v110 h-40 Z" />
+    </clipPath>
+    <g clip-path="url(#u17-2-4)">
+      <path d="M60 0 H180 V190 H60 Z M95.2 35.68 h40 v110 h-40 Z" fill-rule="evenodd" fill="#ACABB3" />
+      <path d="M60 0 H180 V190 H60 Z M102 43 h40 v110 h-40 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="146" y="60" width="44" height="90" fill="#B5B9C9" />
+  <g data-depth-generated="">
+    <clipPath id="u17-2-3">
+      <path d="M146,60 h44 v90 h-44 Z" />
+    </clipPath>
+    <g clip-path="url(#u17-2-3)">
+      <path d="M106 20 H230 V190 H106 Z M140.72 55.25 h44 v90 h-44 Z" fill-rule="evenodd" fill="#9A9AA5" />
+      <path d="M106 20 H230 V190 H106 Z M148 63 h44 v90 h-44 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="108" y="52" width="10" height="12" fill="#F5D76E" data-depth="none" />
+  <rect x="124" y="52" width="10" height="12" fill="#F5D76E" data-depth="none" />
+  <rect x="108" y="76" width="10" height="12" fill="#F5D76E" data-depth="none" />
+  <rect x="154" y="72" width="10" height="12" fill="#F5D76E" data-depth="none" />
+  <rect x="172" y="92" width="10" height="12" fill="#F5D76E" data-depth="none" />
+  <rect x="0" y="150" width="200" height="50" fill="#8D93A6" />
+  <g data-depth-generated="">
+    <clipPath id="u17-2-2">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u17-2-2)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#787986" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="96" y="168" width="104" height="14" fill="#C0566B" data-depth="none" />
+  <g data-host="2 50 132" />
+  <rect x="166" y="96" width="4" height="64" fill="#5A5F70" data-depth="none" />
+  <g data-motion="Swing" data-pivot="168 98">
+    <circle cx="168" cy="84" r="16" fill="#3E7CB1" />
+    <g data-depth-generated="">
+      <clipPath id="u17-2-1">
+        <path d="M152,84 a16,16 0 1,0 32,0 a16,16 0 1,0 -32,0 Z" />
+      </clipPath>
+      <g clip-path="url(#u17-2-1)">
+        <path d="M96 28 H240 V140 H96 Z M148 80.4 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0 Z" fill-rule="evenodd" fill="#39658C" />
+        <path d="M96 28 H240 V140 H96 Z M154 87 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+      </g>
+    </g>
+    <circle cx="160" cy="88" r="5" fill="none" stroke="#FFFFFF" stroke-width="1.8" />
+    <circle cx="176" cy="88" r="5" fill="none" stroke="#FFFFFF" stroke-width="1.8" />
+    <path d="M160 88 L166 79 L172 88 M166 79 h6 L176 88" fill="none" stroke="#FFFFFF" stroke-width="1.8" />
+  </g>
+</svg>

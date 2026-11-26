@@ -660,4 +660,139 @@ internal val SceneArtwork: Map<String, SceneArt> = mapOf(
         hostY = 50f,
         hostHeight = 132f,
     ),
+    "u16-1" to SceneArt(
+        back = CastArt(
+            still = R.drawable.core_designsystem_scene_u16_1_back,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u16_1_back_1),
+                CastLayer(R.drawable.core_designsystem_scene_u16_1_back_2, Motion.Swing, 152f, 78f),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        front = CastArt(
+            still = R.drawable.core_designsystem_scene_u16_1_front,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u16_1_front_1),
+                CastLayer(R.drawable.core_designsystem_scene_u16_1_front_2, Motion.Bob, 140f, 124f),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        hostX = 2f,
+        hostY = 50f,
+        hostHeight = 132f,
+    ),
+    "u16-2" to SceneArt(
+        back = CastArt(
+            still = R.drawable.core_designsystem_scene_u16_2_back,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u16_2_back_1),
+                CastLayer(R.drawable.core_designsystem_scene_u16_2_back_2, Motion.PageFlip, 150f, 67f),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        front = CastArt(
+            still = R.drawable.core_designsystem_scene_u16_2_front,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u16_2_front_1),
+                CastLayer(R.drawable.core_designsystem_scene_u16_2_front_2, Motion.Bob, 158f, 96f),
+                CastLayer(R.drawable.core_designsystem_scene_u16_2_front_3),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        hostX = 2f,
+        hostY = 50f,
+        hostHeight = 132f,
+    ),
+    "u17-1" to SceneArt(
+        back = CastArt(
+            still = R.drawable.core_designsystem_scene_u17_1_back,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u17_1_back_1),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        front = CastArt(
+            still = R.drawable.core_designsystem_scene_u17_1_front,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u17_1_front_1),
+                CastLayer(R.drawable.core_designsystem_scene_u17_1_front_2, Motion.Bob, 150f, 176f),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        hostX = 2f,
+        hostY = 50f,
+        hostHeight = 132f,
+    ),
+    "u17-2" to SceneArt(
+        back = CastArt(
+            still = R.drawable.core_designsystem_scene_u17_2_back,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u17_2_back_1),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        front = CastArt(
+            still = R.drawable.core_designsystem_scene_u17_2_front,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u17_2_front_1),
+                CastLayer(R.drawable.core_designsystem_scene_u17_2_front_2, Motion.Swing, 168f, 98f),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        hostX = 2f,
+        hostY = 50f,
+        hostHeight = 132f,
+    ),
+    "u18-1" to SceneArt(
+        back = CastArt(
+            still = R.drawable.core_designsystem_scene_u18_1_back,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u18_1_back_1),
+                CastLayer(R.drawable.core_designsystem_scene_u18_1_back_2, Motion.Swing, 174f, 92f),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        front = CastArt(
+            still = R.drawable.core_designsystem_scene_u18_1_front,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u18_1_front_1, Motion.Bob, 140f, 150f),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        hostX = 2f,
+        hostY = 50f,
+        hostHeight = 132f,
+    ),
+    "u18-2" to SceneArt(
+        back = CastArt(
+            still = R.drawable.core_designsystem_scene_u18_2_back,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u18_2_back_1),
+                CastLayer(R.drawable.core_designsystem_scene_u18_2_back_2, Motion.Swing, 124f, 84f),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        front = CastArt(
+            still = R.drawable.core_designsystem_scene_u18_2_front,
+            nodes = listOf(
+                CastLayer(R.drawable.core_designsystem_scene_u18_2_front_1),
+            ),
+            width = SCENE_SIZE,
+            height = SCENE_SIZE,
+        ),
+        hostX = 2f,
+        hostY = 50f,
+        hostHeight = 132f,
+    ),
 )

@@ -1,0 +1,86 @@
+<!-- Ane ante una pared con retratos de familia, uno de ellos se balancea. Source of truth for tools/design/cast_to_vector.py: the star challenge's scene for u16-1, in a
+     200 x 200 viewBox shown in a circle. Shapes before data-host are behind the host, the rest in front;
+     data-host="x y height" places the host. data-motion names a Motion in CastMotion.kt, data-pivot its pivot. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ane ante una pared con retratos de familia" width="200" height="200">
+  <rect x="0" y="0" width="200" height="200" fill="#F3E6D8" />
+  <g data-depth-generated="">
+    <clipPath id="u16-1-6">
+      <path d="M0,0 h200 v200 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u16-1-6)">
+      <path d="M-40 -40 H240 V240 H-40 Z M-10 -9 h200 v200 h-200 Z" fill-rule="evenodd" fill="#D0C3B6" />
+      <path d="M-40 -40 H240 V240 H-40 Z M2 3 h200 v200 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="0" y="150" width="200" height="50" fill="#B8957A" />
+  <g data-depth-generated="">
+    <clipPath id="u16-1-5">
+      <path d="M0,150 h200 v50 h-200 Z" />
+    </clipPath>
+    <g clip-path="url(#u16-1-5)">
+      <path d="M-40 110 H240 V240 H-40 Z M-6 144.6 h200 v50 h-200 Z" fill-rule="evenodd" fill="#997A64" />
+      <path d="M-40 110 H240 V240 H-40 Z M2 153 h200 v50 h-200 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="112" y="24" width="38" height="46" rx="3" fill="#8A5A3C" />
+  <g data-depth-generated="">
+    <clipPath id="u16-1-4">
+      <path d="M115,24 h32 a3,3 0 0,1 3,3 v40 a3,3 0 0,1 -3,3 h-32 a3,3 0 0,1 -3,-3 v-40 a3,3 0 0,1 3,-3 Z" />
+    </clipPath>
+    <g clip-path="url(#u16-1-4)">
+      <path d="M69 -19 H193 V113 H69 Z M109.72 19.25 h32 a3 3 0 0 1 3 3 v40 a3 3 0 0 1 -3 3 h-32 a3 3 0 0 1 -3 -3 v-40 a3 3 0 0 1 3 -3 Z" fill-rule="evenodd" fill="#724A32" />
+      <path d="M69 -19 H193 V113 H69 Z M117 27 h32 a3 3 0 0 1 3 3 v40 a3 3 0 0 1 -3 3 h-32 a3 3 0 0 1 -3 -3 v-40 a3 3 0 0 1 3 -3 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="117" y="29" width="28" height="36" fill="#F7EFE4" data-depth="none" />
+  <circle cx="131" cy="42" r="7" fill="#C98E6B" data-depth="none" />
+  <path d="M121 65 Q131 50 141 65 Z" fill="#5B7FA6" data-depth="none" />
+  <path d="M124 40 Q131 30 138 40 Q138 34 131 33 Q124 34 124 40 Z" fill="#3F2A20" data-depth="none" />
+  <rect x="158" y="30" width="34" height="40" rx="3" fill="#8A5A3C" />
+  <g data-depth-generated="">
+    <clipPath id="u16-1-3">
+      <path d="M161,30 h28 a3,3 0 0,1 3,3 v34 a3,3 0 0,1 -3,3 h-28 a3,3 0 0,1 -3,-3 v-34 a3,3 0 0,1 3,-3 Z" />
+    </clipPath>
+    <g clip-path="url(#u16-1-3)">
+      <path d="M115 -13 H235 V113 H115 Z M156.2 25.68 h28 a3 3 0 0 1 3 3 v34 a3 3 0 0 1 -3 3 h-28 a3 3 0 0 1 -3 -3 v-34 a3 3 0 0 1 3 -3 Z" fill-rule="evenodd" fill="#724A32" />
+      <path d="M115 -13 H235 V113 H115 Z M163 33 h28 a3 3 0 0 1 3 3 v34 a3 3 0 0 1 -3 3 h-28 a3 3 0 0 1 -3 -3 v-34 a3 3 0 0 1 3 -3 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="162" y="34" width="26" height="32" fill="#F7EFE4" data-depth="none" />
+  <circle cx="175" cy="46" r="6.5" fill="#C98E6B" data-depth="none" />
+  <path d="M165 66 Q175 52 185 66 Z" fill="#C0566B" data-depth="none" />
+  <path d="M168 45 Q169 36 175 36 Q181 36 182 45 Q183 52 180 56 L180 45 Q175 40 170 45 L170 56 Q167 52 168 45 Z" fill="#3F2A20" data-depth="none" />
+  <g data-motion="Swing" data-pivot="152 78">
+    <path d="M152 78 L144 86 M152 78 L160 86" stroke="#6B4630" stroke-width="1.5" />
+    <rect x="136" y="86" width="32" height="28" rx="3" fill="#C9A227" />
+    <g data-depth-generated="">
+      <clipPath id="u16-1-2">
+        <path d="M139,86 h26 a3,3 0 0,1 3,3 v22 a3,3 0 0,1 -3,3 h-26 a3,3 0 0,1 -3,-3 v-22 a3,3 0 0,1 3,-3 Z" />
+      </clipPath>
+      <g clip-path="url(#u16-1-2)">
+        <path d="M93 43 H211 V157 H93 Z M134.92 82.33 h26 a3 3 0 0 1 3 3 v22 a3 3 0 0 1 -3 3 h-26 a3 3 0 0 1 -3 -3 v-22 a3 3 0 0 1 3 -3 Z" fill-rule="evenodd" fill="#A48222" />
+        <path d="M93 43 H211 V157 H93 Z M141 89 h26 a3 3 0 0 1 3 3 v22 a3 3 0 0 1 -3 3 h-26 a3 3 0 0 1 -3 -3 v-22 a3 3 0 0 1 3 -3 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+      </g>
+    </g>
+    <rect x="140" y="90" width="24" height="20" fill="#F7EFE4" data-depth="none" />
+    <circle cx="147" cy="99" r="4" fill="#C98E6B" data-depth="none" />
+    <circle cx="157" cy="99" r="4" fill="#C98E6B" data-depth="none" />
+    <path d="M142 110 Q147 102 152 110 Z M152 110 Q157 102 162 110 Z" fill="#6F9D7A" data-depth="none" />
+  </g>
+  <g data-host="2 50 132" />
+  <rect x="118" y="132" width="76" height="30" rx="5" fill="#9C6B43" />
+  <g data-depth-generated="">
+    <clipPath id="u16-1-1">
+      <path d="M123,132 h66 a5,5 0 0,1 5,5 v20 a5,5 0 0,1 -5,5 h-66 a5,5 0 0,1 -5,-5 v-20 a5,5 0 0,1 5,-5 Z" />
+    </clipPath>
+    <g clip-path="url(#u16-1-1)">
+      <path d="M73 87 H239 V207 H73 Z M118.2 127.68 h66 a5 5 0 0 1 5 5 v20 a5 5 0 0 1 -5 5 h-66 a5 5 0 0 1 -5 -5 v-20 a5 5 0 0 1 5 -5 Z" fill-rule="evenodd" fill="#815837" />
+      <path d="M73 87 H239 V207 H73 Z M125 135 h66 a5 5 0 0 1 5 5 v20 a5 5 0 0 1 -5 5 h-66 a5 5 0 0 1 -5 -5 v-20 a5 5 0 0 1 5 -5 Z" fill-rule="evenodd" fill="#FFFFFF" opacity="0.14" />
+    </g>
+  </g>
+  <rect x="118" y="132" width="76" height="8" rx="4" fill="#7E5232" data-depth="none" />
+  <g data-motion="Bob" data-pivot="140 124">
+    <rect x="132" y="116" width="16" height="16" rx="2" fill="#E9C46A" />
+    <path d="M136 120 h8 M136 124 h8 M136 128 h5" stroke="#8A5A3C" stroke-width="1.2" />
+  </g>
+</svg>

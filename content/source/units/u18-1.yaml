@@ -1,0 +1,359 @@
+# Unit 18.1 · Erosle onak — A2.1 book unit 6 (Atarian + A): kinds of shoppers and consumer advice;
+# shopping habits with percentages, fractions and frequency. KOMENIGARRIA / GOMENDAGARRIA DA +
+# -T(Z)EA and GOMENDATU + -T(Z)EA; fractions (erdia, herena, laurdena, hirutik bat); percentages
+# declined with the verb; frequency with -ERO, ZENBATEAN BEHIN? and SEKULA EZ.
+# Recall: relative clauses (17.1), now with NORK subjects inside the clause; komeni + -T(Z)EA
+# (5.2, 13.1); percentages (12.2); frequency (5.2, 8.2).
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u18-1
+section: s6
+bookUnit: 18
+title:
+  es: Buenos compradores
+  eu: Erosle onak
+goals:
+  - es: Describir tipos de compradores y dar consejos de consumo.
+    eu: Erosle motak deskribatu eta kontsumoari buruzko aholkuak eman.
+  - es: Contar hábitos de compra con porcentajes y fracciones.
+    eu: Erosteko ohiturak kontatu, ehunekoak eta zatikiak erabiliz.
+  - es: Decir con qué frecuencia haces algo.
+    eu: Zerbait zenbatean behin egiten duzun esan.
+guidebook:
+  sections:
+    - title:
+        es: "Es recomendable…: gomendagarria da …-t(z)ea"
+        eu: "Gomendagarria da …-t(z)ea"
+      body:
+        es: "Para aconsejar en general: «komenigarria da» o «gomendagarria da» con el verbo en -t(z)ea: «komenigarria da prezioak alderatzea». A alguien en concreto: «…-t(z)ea gomendatzen dizut»."
+        eu: "Oro har aholkatzeko: «komenigarria da» edo «gomendagarria da», aditza -t(z)ea forman dela: «komenigarria da prezioak alderatzea». Norbaiti zehazki: «…-t(z)ea gomendatzen dizut»."
+      examples:
+        - eu: Gomendagarria da ordainagiria gordetzea.
+          es: Es recomendable guardar el ticket.
+        - eu: Barazki ekologikoak erostea gomendatzen dizut.
+          es: Te recomiendo comprar verdura ecológica.
+    - title:
+        es: "La mitad, un tercio, uno de cada tres"
+        eu: "Erdia, herena, hirutik bat"
+      body:
+        es: "Erdia (la mitad), herena (un tercio), laurdena (un cuarto), hirutik bat (uno de cada tres). Si hacen algo con un verbo como «erosi», llevan -k: «erosleen erdiak», «hirutik batek». El verbo va en singular."
+        eu: "Erdia, herena, laurdena, hirutik bat. «Erosi» bezalako aditz batekin -k hartzen dute: «erosleen erdiak», «hirutik batek». Aditza singularrean doa."
+      examples:
+        - eu: Erosleen erdiak merkealdietan erosten du.
+          es: La mitad de los compradores compra en rebajas.
+        - eu: Hirutik batek sarean erosten du.
+          es: Uno de cada tres compra por internet.
+    - title:
+        es: "Porcentajes: ehuneko hirurogeik"
+        eu: "Ehunekoak: ehuneko hirurogeik"
+      body:
+        es: "% 60 se lee «ehuneko hirurogei». Como cualquier nombre, toma el caso que pide el verbo: «gazteen ehuneko hirurogeik sarean erosten du»."
+        eu: "% 60 «ehuneko hirurogei» irakurtzen da. Beste edozein izenek bezala, aditzak eskatzen duen kasua hartzen du: «gazteen ehuneko hirurogeik sarean erosten du»."
+      examples:
+        - eu: Gazteen ehuneko hirurogeik sarean erosten du.
+          es: El 60 % de los jóvenes compra por internet.
+    - title:
+        es: "Cada viernes, nunca: ostiralero, sekula ez"
+        eu: "Ostiralero, sekula ez"
+      body:
+        es: "-ero significa «cada»: ostiralero (cada viernes), hilero (cada mes). «Sekula ez» e «inoiz ez» (nunca) necesitan el verbo en negativo: «sekula ez dut sarean erosi»."
+        eu: "-ero atzizkiak «bakoitz» esan nahi du: ostiralero, hilero. «Sekula ez» eta «inoiz ez» ezezko aditzarekin doaz: «sekula ez dut sarean erosi»."
+      examples:
+        - eu: Zenbatean behin erosten duzu arropa?
+          es: ¿Cada cuánto compras ropa?
+        - eu: Sekula ez dut ezer sarean erosi.
+          es: Nunca he comprado nada por internet.
+levels:
+  - type: lesson
+    title:
+      es: Compradores
+      eu: Erosleak
+    lessons:
+      - structures: [erosleak, gastuak]
+        sentences:
+          - Erosle batzuek dena erosten dute. = Algunos compradores lo compran todo.
+          - Beste batzuek ez dute dirurik gastatzen. = Otros no gastan dinero.
+          - Merkealdietan erosten dut. = Compro en rebajas.
+          - Deskontuak maite ditut. = Me encantan los descuentos.
+          - Ez dut behar ez dudana erosten. = No compro lo que no necesito.
+          - Hilero gastu asko ditut. = Cada mes tengo muchos gastos.
+        pairs:
+          - - erosle = comprador
+            - merkealdi = rebajas
+            - deskontu = descuento
+            - gastatu = gastar
+            - gastu = gasto
+            - erosketa = compra
+        meanings:
+          - text: Ez dut behar ez dudana erosten.
+            options:
+              - No compro lo que no necesito.
+              - No necesito comprar nada.
+              - Compro todo lo que necesito.
+        blanks:
+          - text: Beste batzuek ez dute dirurik ___. = Otros no gastan dinero.
+            options:
+              - gastatzen
+              - gastu
+              - gastatu
+        chats:
+          - messages:
+              - Kazetaria | Merkealdietan erosten duzu?
+            options:
+              - Bai, deskontuak maite ditut.
+              - Bai, merkealdia naiz.
+              - Ez, deskontua erosten dut.
+      - structures: [produktuak, sarea]
+        sentences:
+          - Barazki ekologikoak erosten ditut. = Compro verdura ecológica.
+          - Zuzenean baserrian erosten ditut arrautzak. = Compro los huevos directamente en el caserío.
+          - Sarean erosten dut, merkeagoa delako. = Compro por internet, porque es más barato.
+          - Eskaintza ona da; deskontu handia dago. = Es una buena oferta; hay un gran descuento.
+          - Zalantza daukat; hau ala hori? = Tengo una duda, ¿este o ese?
+          - Kontsumoa gero eta handiagoa da. = El consumo es cada vez mayor.
+        pairs:
+          - - barazki = verdura
+            - ekologiko = ecológico
+            - zuzenean = directamente
+            - sare = internet (red)
+            - eskaintza = oferta
+            - zalantza = duda
+        blanks:
+          - text: Kontsumoa gero eta ___ da. = El consumo es cada vez mayor.
+            options:
+              - handiagoa
+              - handia
+              - oso handia
+        meanings:
+          - text: Zuzenean baserrian erosten ditut arrautzak.
+            options:
+              - Compro los huevos directamente en el caserío.
+              - Tengo gallinas en el caserío.
+              - Compro los huevos en el supermercado.
+        images:
+          - tomato, lettuce, egg
+      - structures: [ordainagiria, bermea]
+        sentences:
+          - Gorde ezazu ordainagiria. = Guarda el ticket.
+          - Bermea bi urtekoa da. = La garantía es de dos años.
+          - Mugikorrak akats bat dauka. = El móvil tiene un defecto.
+          - Ordenagailua hondatu da. = El ordenador se ha estropeado.
+          - Faktura behar dut. = Necesito la factura.
+          - Ordainagiria behar duzu produktua aldatzeko. = Necesitas el ticket para cambiar el producto.
+        pairs:
+          - - ordainagiri = ticket
+            - faktura = factura
+            - berme = garantía
+            - akats = defecto
+            - hondatu = estropearse
+            - gorde = guardar
+        blanks:
+          - text: ___ ezazu ordainagiria. = Guarda el ticket.
+            options:
+              - Gorde
+              - Gordetzen
+              - Gordeko
+        true_false:
+          - passage: Aitorrek mugikor berri bat erosi zuen. Bi astera hondatu zen, baina ordainagiria gorde zuen, eta dendan mugikorra aldatu zuten.
+            statement: Aitor no guardó el ticket.
+            answer: false
+  - type: lesson
+    title:
+      es: Consejos y datos
+      eu: Aholkuak eta datuak
+    lessons:
+      - structures: [komenigarria, gomendatu]
+        sentences:
+          - Komenigarria da prezioak alderatzea. = Es conveniente comparar los precios.
+          - Gomendagarria da ordainagiria gordetzea. = Es recomendable guardar el ticket.
+          - Ez da komenigarria dena sarean erostea. = No es conveniente comprarlo todo por internet.
+          - Komeni zaizu bermea begiratzea. = Te conviene mirar la garantía.
+          - Zer gomendatzen didazu? = ¿Qué me recomiendas?
+          - Barazki ekologikoak erostea gomendatzen dizut. = Te recomiendo comprar verdura ecológica.
+        pairs:
+          - - komenigarri = conveniente
+            - gomendagarri = recomendable
+            - gomendatu = recomendar
+            - gomendio = recomendación
+            - alderatu = comparar
+        blanks:
+          - text: Gomendagarria da ordainagiria ___. = Es recomendable guardar el ticket.
+            options:
+              - gordetzea
+              - gordetzen
+              - gorde
+          - text: Barazki ekologikoak ___ gomendatzen dizut. = Te recomiendo comprar verdura ecológica.
+            options:
+              - erostea
+              - erosten
+              - erosi
+        chats:
+          - messages:
+              - Nerea | Ordenagailu bat erosi nahi dut. Zer gomendatzen didazu?
+            options:
+              - Komenigarria da prezioak alderatzea.
+              - Komenigarria da prezioak alderatzen.
+              - Ordenagailua gomendioa da.
+      - structures: [zatikiak, ehunekoak]
+        sentences:
+          - Inkesta bat egin dugu erosleen artean. = Hemos hecho una encuesta entre los compradores.
+          - Erosleen erdiak merkealdietan erosten du. = La mitad de los compradores compra en rebajas.
+          - Herenak ez du ezer gastatzen. = Un tercio no gasta nada.
+          - Laurdenak produktu ekologikoak erosten ditu. = Un cuarto compra productos ecológicos.
+          - Hirutik batek sarean erosten du. = Uno de cada tres compra por internet.
+          - Gazteen ehuneko hirurogeik sarean erosten du. = El 60 % de los jóvenes compra por internet.
+          - Joera berri bat da. = Es una tendencia nueva.
+        pairs:
+          - - erdi = mitad
+            - heren = tercio
+            - laurden = cuarto
+            - hirutik bat = uno de cada tres
+            - inkesta = encuesta
+            - joera = tendencia
+        blanks:
+          - text: Erosleen ___ merkealdietan erosten du. = La mitad de los compradores compra en rebajas.
+            options:
+              - erdiak
+              - erdia
+              - erdian
+        meanings:
+          - text: Hirutik batek sarean erosten du.
+            options:
+              - Uno de cada tres compra por internet.
+              - Tres de cada uno compran por internet.
+              - Compra tres cosas por internet.
+        true_false:
+          - passage: Inkesta baten datuen arabera, gazteen ehuneko hirurogeik sarean erosten du. Nagusien artean, berriz, hirutik batek bakarrik.
+            statement: Los mayores compran por internet más que los jóvenes.
+            answer: false
+      - structures: [maiztasuna]
+        sentences:
+          - Zenbatean behin erosten duzu arropa? = ¿Cada cuánto compras ropa?
+          - Ostiralero joaten naiz supermerkatura. = Voy al supermercado cada viernes.
+          - Sarritan erosten dut sarean. = Compro a menudo por internet.
+          - Batzuetan bakarrik. = Solo a veces.
+          - Sekula ez dut ezer sarean erosi. = Nunca he comprado nada por internet.
+          - Inoiz ez naiz merkealdietara joaten. = Nunca voy a las rebajas.
+        pairs:
+          - - sarritan = a menudo
+            - batzuetan = a veces
+            - sekula ez = nunca
+            - ostiralero = cada viernes
+            - hilero = cada mes
+        blanks:
+          - text: Sekula ez ___ ezer sarean erosi. = Nunca he comprado nada por internet.
+            options:
+              - dut
+              - dudala
+              - nuen
+        chats:
+          - messages:
+              - Ibai | Zenbatean behin erosten duzu arropa?
+            options:
+              - Urtean bitan, merkealdietan.
+              - Ostiralero arropa naiz.
+              - Sekula erosten dut.
+  - type: lesson
+    title:
+      es: De compras
+      eu: Erosketak egiten
+    lessons:
+      - structures: [dendan]
+        sentences:
+          - Zer gomendatzen didazu? = ¿Qué me recomienda?
+          - Produktu hau oso ona da, eta bermea dauka. = Este producto es muy bueno, y tiene garantía.
+          - Deskonturik badago? = ¿Hay algún descuento?
+          - Zalantza daukat; gorria ala urdina? = Tengo una duda, ¿el rojo o el azul?
+          - Faktura emango didazu, mesedez? = ¿Me dará la factura, por favor?
+          - Txartelaz ordaindu nahi dut. = Quiero pagar con tarjeta.
+        chats:
+          - messages:
+              - Saltzailea | Kaixo! Zer behar duzu?
+            options:
+              - Mugikor bat. Zer gomendatzen didazu?
+              - Mugikor bat. Zer gomendatzen dizut?
+              - Mugikorra saltzailea da.
+        meanings:
+          - text: Deskonturik badago?
+            options:
+              - ¿Hay algún descuento?
+              - Hay muchos descuentos.
+              - ¿Dónde está la tienda?
+        images:
+          - card, money, gift
+      - structures: [aldatu, akatsa]
+        sentences:
+          - Kamiseta hau aldatu nahi dut; akats bat dauka. = Quiero cambiar esta camiseta; tiene un defecto.
+          - Ordainagiria gorde duzu? = ¿Ha guardado el ticket?
+          - Ez dut gorde. = No lo he guardado.
+          - Orduan ezin da aldatu. = Entonces no se puede cambiar.
+          - Hondatuta iritsi da. = Ha llegado estropeado.
+        chats:
+          - messages:
+              - Saltzailea | Ordainagiria gorde duzu?
+            options:
+              - Bai, hemen dago.
+              - Bai, gordetzea gomendatzen dut.
+              - Ez, ordainagiria naiz.
+        true_false:
+          - passage: Olatzek kamiseta bat erosi zuen sarean. Hondatuta iritsi zen, eta dendara deitu zuen. Ordainagiria gorde zuen, eta kamiseta aldatu zuten.
+            statement: A Olatz le cambiaron la camiseta.
+            answer: true
+      - structures: [erosle-onak, erlatiboa]
+        sentences:
+          - Prezioak alderatzen dituena erosle ona da. = El que compara los precios es un buen comprador.
+          - Sarean erosten dutenak, normalean, gazteak dira. = Los que compran por internet normalmente son jóvenes.
+          - Ordainagiria gordetzen ez duenak arazoak izaten ditu. = El que no guarda el ticket suele tener problemas.
+          - Ez dut erosten behar ez dudana. = No compro lo que no necesito.
+          - Dirua gordetzen duena ez da beti zoriontsua. = El que ahorra dinero no siempre es feliz.
+        meanings:
+          - text: Prezioak alderatzen dituena erosle ona da.
+            options:
+              - El que compara los precios es un buen comprador.
+              - Un buen comprador no compara los precios.
+              - Los precios de los buenos compradores son caros.
+        blanks:
+          - text: Prezioak alderatzen ___ erosle ona da. = El que compara los precios es un buen comprador.
+            options:
+              - dituena
+              - ditu
+              - dituela
+  - type: story
+    title:
+      es: "Historia: la encuesta"
+      eu: "Istorioa: inkesta"
+    story:
+      title: Inkesta
+      lines:
+        - Kazetaria | Egun on! Inkesta bat egiten ari gara erosketei buruz. Zenbatean behin erosten duzu arropa? = ¡Buenos días! Estamos haciendo una encuesta sobre las compras. ¿Cada cuánto compra ropa?
+        - Edurne | Urtean bitan, merkealdietan bakarrik. Deskontuak maite ditut! = Dos veces al año, solo en rebajas. ¡Me encantan los descuentos!
+        - Kazetaria | Eta sarean erosten duzu? = ¿Y compra por internet?
+        - Edurne | Sekula ez. Produktuak ikusi nahi izaten ditut erosi baino lehen. = Nunca. Suelo querer ver los productos antes de comprarlos.
+        - Peio | Nik, berriz, dena sarean erosten dut. Merkeagoa da, eta denbora gutxiago behar da. = Yo, en cambio, lo compro todo por internet. Es más barato, y hace falta menos tiempo.
+        - Kazetaria | Gure datuen arabera, gazteen ehuneko hirurogeik sarean erosten du. = Según nuestros datos, el 60 % de los jóvenes compra por internet.
+        - Edurne | Eta zer gomendatzen duzu? = ¿Y qué recomienda usted?
+        - Kazetaria | Komenigarria da prezioak alderatzea eta ordainagiria beti gordetzea. = Es conveniente comparar los precios y guardar siempre el ticket.
+        - Peio | Ordainagiria? Nik sekula ez dut gordetzen… = ¿El ticket? Yo nunca lo guardo…
+        - Edurne | Horregatik izaten dituzu hainbeste arazo! = ¡Por eso tienes tantos problemas!
+        - Peio | Bai, egia da… = Sí, es verdad…
+      questions:
+        - afterLine: 2
+          prompt: ¿Cuándo compra ropa Edurne?
+          options:
+            - Solo en rebajas
+            - Cada viernes
+            - Todos los meses
+        - afterLine: 5
+          prompt: ¿Por qué compra Peio por internet?
+          options:
+            - Porque es más barato y más rápido
+            - Porque no le gustan las tiendas
+            - Porque tiene descuentos
+        - afterLine: 10
+          prompt: ¿Qué le pasa a Peio por no guardar el ticket?
+          options:
+            - Tiene muchos problemas
+            - No le dan la factura
+            - No puede comprar por internet
+  - type: review
+  - type: challenge
+    host: ane

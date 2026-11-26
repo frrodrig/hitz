@@ -43,8 +43,8 @@ trikitilari, **Mikel** the aizkolari, **Maite** the amona and **Unai** the pelot
 
 ## What's inside
 
-- **A full A1 course and the start of A2**: 5 sections, 30 units, 270 lessons, a story per unit
-  and about 750 words, in the curricular order of the *Arian A1* and *Arian A2.1* textbooks (see
+- **A full A1 course and the start of A2**: 6 sections, 36 units, 324 lessons, a story per unit
+  and about 900 words, in the curricular order of the *Arian A1* and *Arian A2.1* textbooks (see
   [`docs/syllabus.md`](docs/syllabus.md)). The A2 part grows section by section. All texts,
   dialogues, exercises and illustrations are original.
 - **13 kinds of exercise**: translate with a word bank or by typing, choose the picture or the

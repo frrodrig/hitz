@@ -1,0 +1,2705 @@
+{
+  "schemaVersion": 1,
+  "id": "u18-2",
+  "section": "s6",
+  "bookUnit": 18,
+  "title": {
+    "es": "Una queja",
+    "eu": "Kexa bat"
+  },
+  "goals": [
+    {
+      "es": "Comparar productos y decir cuánto te gustan.",
+      "eu": "Produktuak alderatu eta zenbat gustatzen zaizkizun esan."
+    },
+    {
+      "es": "Quejarte de un producto o un servicio.",
+      "eu": "Produktu edo zerbitzu batez kexatu."
+    },
+    {
+      "es": "Pedir perdón y explicar qué ha pasado.",
+      "eu": "Barkamena eskatu eta zer gertatu den azaldu."
+    }
+  ],
+  "keyWords": [
+    {
+      "eu": "marka",
+      "es": "marca"
+    },
+    {
+      "eu": "kalitate",
+      "es": "calidad"
+    },
+    {
+      "eu": "krema",
+      "es": "crema"
+    },
+    {
+      "eu": "xanpu",
+      "es": "champú"
+    },
+    {
+      "eu": "hortzetako pasta",
+      "es": "pasta de dientes"
+    },
+    {
+      "eu": "azal",
+      "es": "piel"
+    },
+    {
+      "eu": "izugarri",
+      "es": "muchísimo"
+    },
+    {
+      "eu": "ezberdintasun",
+      "es": "diferencia"
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Tan… como, tanto… como: bezain, adina",
+          "eu": "Bezain, adina"
+        },
+        "body": {
+          "es": "«Bezain» compara cualidades: «hau hori bezain ona da» (este es tan bueno como ese). «Adina» compara cantidades: «hemen ez dago Bilbon adina jende» (aquí no hay tanta gente como en Bilbao). Los dos términos comparados llevan el mismo caso: «herrietan… hirietan».",
+          "eu": "«Bezain»ek ezaugarriak alderatzen ditu: «hau hori bezain ona da». «Adina»k kopuruak: «hemen ez dago Bilbon adina jende». Alderatzen diren bi osagaiek kasu bera hartzen dute: «herrietan… hirietan»."
+        },
+        "examples": [
+          {
+            "eu": "Krema hau hori bezain ona da.",
+            "es": "Esta crema es tan buena como esa."
+          },
+          {
+            "eu": "Herrietan ez dago hirietan adina jende.",
+            "es": "En los pueblos no hay tanta gente como en las ciudades."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Cuánto me gusta: batere, gutxi, dezente, asko, izugarri",
+          "eu": "Batere, gutxi, dezente, asko, izugarri"
+        },
+        "body": {
+          "es": "De menos a más: «ez zait batere gustatzen» (no me gusta nada), «gutxi», «dezente» (bastante), «asko», «izugarri» (muchísimo). «Batere» siempre con verbo negativo.",
+          "eu": "Gutxienetik gehienera: «ez zait batere gustatzen», «gutxi», «dezente», «asko», «izugarri». «Batere» beti ezezko aditzarekin."
+        },
+        "examples": [
+          {
+            "eu": "Xanpu hau izugarri gustatzen zait.",
+            "es": "Este champú me gusta muchísimo."
+          },
+          {
+            "eu": "Krema hori ez zait batere gustatzen.",
+            "es": "Esa crema no me gusta nada."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "No… sino…: baizik",
+          "eu": "Ez…, …baizik"
+        },
+        "body": {
+          "es": "Para corregir: la frase negativa primero y luego lo correcto con «baizik» al final: «ez dut gorria eskatu, urdina baizik» (no he pedido el rojo, sino el azul).",
+          "eu": "Zuzentzeko: lehenengo ezezko esaldia, eta gero zuzena, «baizik» amaieran dela: «ez dut gorria eskatu, urdina baizik»."
+        },
+        "examples": [
+          {
+            "eu": "Ez nago pozik, haserre baizik.",
+            "es": "No estoy contento, sino enfadado."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "La estantería que he comprado tiene…: erosi dudan apalak",
+          "eu": "Erosi dudan apalak"
+        },
+        "body": {
+          "es": "Si el nombre con la frase de relativo hace algo en la frase principal, lleva -k al final, como cualquier sujeto de «du»: «erosi dudan apalak akats bat du» (la estantería que he comprado tiene un defecto).",
+          "eu": "Erlatibozko esaldia duen izenak esaldi nagusian zerbait egiten badu, -k hartzen du amaieran, «du» aditzaren edozein subjektuk bezala: «erosi dudan apalak akats bat du»."
+        },
+        "examples": [
+          {
+            "eu": "Erosi dudan apalak akats bat du.",
+            "es": "La estantería que he comprado tiene un defecto."
+          },
+          {
+            "eu": "Kalitaterik ez duen produktua ez dut erosiko.",
+            "es": "No compraré un producto que no tenga calidad."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u18-2.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Comparar productos",
+        "eu": "Produktuak alderatu"
+      },
+      "lessons": [
+        {
+          "id": "u18-2.l1.s1",
+          "exercises": [
+            {
+              "id": "u18-2.l1.s1.e01",
+              "type": "word_intro",
+              "word": "marka",
+              "translation": "marca",
+              "vocabulary": [
+                "marka"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e02",
+              "type": "word_intro",
+              "word": "honen",
+              "translation": "este; esta",
+              "vocabulary": [
+                "hau"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e03",
+              "type": "word_intro",
+              "word": "xanpu",
+              "translation": "champú",
+              "vocabulary": [
+                "xanpu"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Marka honen xanpua oso ona da."
+              },
+              "answers": [
+                "El champú de esta marca es muy bueno."
+              ],
+              "distractors": [
+                "barata",
+                "crema",
+                "marcas",
+                "Necesito"
+              ],
+              "vocabulary": [
+                "marka",
+                "hau",
+                "xanpu",
+                "oso",
+                "on",
+                "izan"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "krema",
+              "translation": "crema",
+              "vocabulary": [
+                "krema"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Krema hau hori bezain ona da."
+              },
+              "answers": [
+                "Esta crema es tan buena como esa."
+              ],
+              "distractors": [
+                "mucha",
+                "Entre",
+                "El",
+                "hay"
+              ],
+              "vocabulary": [
+                "krema",
+                "hau",
+                "hori",
+                "on",
+                "izan"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e07",
+              "type": "word_intro",
+              "word": "kalitate",
+              "translation": "calidad",
+              "vocabulary": [
+                "kalitate"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e08",
+              "type": "word_intro",
+              "word": "azal",
+              "translation": "piel",
+              "vocabulary": [
+                "azal"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e09",
+              "type": "word_intro",
+              "word": "ezberdintasun",
+              "translation": "diferencia",
+              "vocabulary": [
+                "ezberdintasun"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e10",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "marka",
+                  "es": "marca"
+                },
+                {
+                  "eu": "kalitate",
+                  "es": "calidad"
+                },
+                {
+                  "eu": "krema",
+                  "es": "crema"
+                },
+                {
+                  "eu": "xanpu",
+                  "es": "champú"
+                },
+                {
+                  "eu": "azal",
+                  "es": "piel"
+                },
+                {
+                  "eu": "ezberdintasun",
+                  "es": "diferencia"
+                }
+              ],
+              "vocabulary": [
+                "marka",
+                "kalitate",
+                "krema",
+                "xanpu",
+                "azal",
+                "ezberdintasun"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e11",
+              "type": "order_sentence",
+              "answer": "Kalitate handiko produktua da.",
+              "translation": "Es un producto de gran calidad.",
+              "vocabulary": [
+                "kalitate",
+                "handi",
+                "produktu",
+                "izan"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e12",
+              "type": "fill_blank",
+              "sentence": "Krema hau hori ___ ona da.",
+              "options": [
+                "bezain",
+                "adina",
+                "baino"
+              ],
+              "correct": 0,
+              "translation": "Esta crema es tan buena como esa.",
+              "vocabulary": [
+                "krema",
+                "hau",
+                "hori",
+                "on",
+                "izan"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e13",
+              "type": "word_intro",
+              "word": "hortzetako pasta",
+              "translation": "pasta de dientes",
+              "vocabulary": [
+                "hortzetako pasta"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hortzetako pasta hau ez da hori bezain merkea."
+              },
+              "answers": [
+                "Esta pasta de dientes no es tan barata como esa."
+              ],
+              "distractors": [
+                "marcas",
+                "Entre",
+                "bueno",
+                "crema"
+              ],
+              "vocabulary": [
+                "hortzetako pasta",
+                "hau",
+                "ez",
+                "izan",
+                "hori",
+                "merke"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e15",
+              "type": "choose_meaning",
+              "text": "Hortzetako pasta hau ez da hori bezain merkea.",
+              "options": [
+                "Esta pasta de dientes no es tan barata como esa.",
+                "Esta pasta de dientes es más barata que esa.",
+                "Esa pasta de dientes no es barata."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hortzetako pasta",
+                "hau",
+                "ez",
+                "izan",
+                "hori",
+                "merke"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bi marken artean ez dago ezberdintasun handirik."
+              },
+              "answers": [
+                "Entre las dos marcas no hay mucha diferencia."
+              ],
+              "distractors": [
+                "un",
+                "pasta",
+                "bueno",
+                "Es"
+              ],
+              "vocabulary": [
+                "bi",
+                "marka",
+                "artean",
+                "ez",
+                "egon",
+                "ezberdintasun",
+                "handi"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e17",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Marka hau ala beste hori?"
+                }
+              ],
+              "options": [
+                "Berdin zait. Bata bestea bezain ona da.",
+                "Berdin zait. Bata bestea adina ona da.",
+                "Marka naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "marka",
+                "hau",
+                "beste",
+                "hori",
+                "berdin",
+                "gustatu",
+                "bat",
+                "on",
+                "izan"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Necesito una crema para la piel."
+              },
+              "answers": [
+                "Azalerako krema bat behar dut."
+              ],
+              "distractors": [
+                "produktua",
+                "da",
+                "Kalitate"
+              ],
+              "vocabulary": [
+                "azal",
+                "krema",
+                "bat",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "markak",
+                "bezain"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-2.l1.s2",
+          "exercises": [
+            {
+              "id": "u18-2.l1.s2.e01",
+              "type": "word_intro",
+              "word": "izugarri",
+              "translation": "muchísimo",
+              "vocabulary": [
+                "izugarri"
+              ],
+              "structures": [
+                "gustatu",
+                "maila"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Xanpu hau izugarri gustatzen zait."
+              },
+              "answers": [
+                "Este champú me gusta muchísimo."
+              ],
+              "distractors": [
+                "crema",
+                "Esa",
+                "bastante"
+              ],
+              "vocabulary": [
+                "xanpu",
+                "hau",
+                "izugarri",
+                "gustatu"
+              ],
+              "structures": [
+                "gustatu",
+                "maila"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s2.e03",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Esa crema no me gusta nada."
+              },
+              "answers": [
+                "Krema hori ez zait batere gustatzen."
+              ],
+              "vocabulary": [
+                "krema",
+                "hori",
+                "ez",
+                "gustatu",
+                "batere"
+              ],
+              "structures": [
+                "gustatu",
+                "maila"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s2.e04",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "batere",
+                  "es": "nada"
+                },
+                {
+                  "eu": "gutxi",
+                  "es": "poco"
+                },
+                {
+                  "eu": "dezente",
+                  "es": "bastante"
+                },
+                {
+                  "eu": "asko",
+                  "es": "mucho"
+                },
+                {
+                  "eu": "izugarri",
+                  "es": "muchísimo"
+                }
+              ],
+              "vocabulary": [
+                "batere",
+                "dezente",
+                "asko",
+                "izugarri"
+              ],
+              "structures": [
+                "gustatu",
+                "maila"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s2.e05",
+              "type": "order_sentence",
+              "answer": "Marka hau dezente gustatzen zait.",
+              "translation": "Esta marca me gusta bastante.",
+              "vocabulary": [
+                "marka",
+                "hau",
+                "dezente",
+                "gustatu"
+              ],
+              "structures": [
+                "gustatu",
+                "maila"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s2.e06",
+              "type": "fill_blank",
+              "sentence": "Krema hori ez zait ___ gustatzen.",
+              "options": [
+                "batere",
+                "izugarri",
+                "dezente"
+              ],
+              "correct": 0,
+              "translation": "Esa crema no me gusta nada.",
+              "vocabulary": [
+                "krema",
+                "hori",
+                "ez",
+                "gustatu",
+                "batere"
+              ],
+              "structures": [
+                "gustatu",
+                "maila"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s2.e07",
+              "type": "word_intro",
+              "word": "tarta",
+              "translation": "tarta",
+              "vocabulary": [
+                "tarta"
+              ],
+              "structures": [
+                "gustatu",
+                "maila"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Tarta hau gutxi gustatzen zait."
+              },
+              "answers": [
+                "Esta tarta me gusta poco."
+              ],
+              "distractors": [
+                "Este",
+                "Estos",
+                "Esa"
+              ],
+              "vocabulary": [
+                "tarta",
+                "hau",
+                "gustatu"
+              ],
+              "structures": [
+                "gustatu",
+                "maila"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s2.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Haizea",
+                  "text": "Zer iruditzen zaizu tarta hau?"
+                }
+              ],
+              "options": [
+                "Izugarri gustatzen zait!",
+                "Izugarri gustatzen dut!",
+                "Batere gustatzen zait!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "iruditu",
+                "gustatu",
+                "tarta",
+                "hau",
+                "izugarri"
+              ],
+              "structures": [
+                "gustatu",
+                "maila"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s2.e10",
+              "type": "listen_type",
+              "text": "Plater hauek asko gustatzen zaizkit.",
+              "answers": [
+                "Plater hauek asko gustatzen zaizkit."
+              ],
+              "vocabulary": [
+                "plater",
+                "hau",
+                "asko",
+                "gustatu"
+              ],
+              "structures": [
+                "gustatu",
+                "maila"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s2.e11",
+              "type": "choose_image",
+              "prompt": "el plato",
+              "options": [
+                {
+                  "text": "sagarra",
+                  "image": "food_apple.webp"
+                },
+                {
+                  "text": "gazta",
+                  "image": "food_cheese.webp"
+                },
+                {
+                  "text": "platera",
+                  "image": "kitchen_plate.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "plater"
+              ],
+              "structures": [
+                "gustatu",
+                "maila"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-2.l1.s3",
+          "exercises": [
+            {
+              "id": "u18-2.l1.s3.e01",
+              "type": "word_intro",
+              "word": "adina",
+              "translation": "tanto como",
+              "vocabulary": [
+                "adina"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Herrietan ez dago hirietan adina jende."
+              },
+              "answers": [
+                "En los pueblos no hay tanta gente como en las ciudades."
+              ],
+              "distractors": [
+                "otro",
+                "tantos",
+                "la",
+                "Yo"
+              ],
+              "vocabulary": [
+                "herri",
+                "ez",
+                "egon",
+                "hiri",
+                "adina",
+                "jende"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e03",
+              "type": "word_intro",
+              "word": "uharte",
+              "translation": "isla",
+              "vocabulary": [
+                "uharte"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e04",
+              "type": "word_intro",
+              "word": "biztanle",
+              "translation": "habitante",
+              "vocabulary": [
+                "biztanle"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Uharte honetan ez dago Bilbon adina biztanle."
+              },
+              "answers": [
+                "En esta isla no hay tantos habitantes como en Bilbao."
+              ],
+              "distractors": [
+                "caravana",
+                "Yo",
+                "tú",
+                "los"
+              ],
+              "vocabulary": [
+                "uharte",
+                "hau",
+                "ez",
+                "egon",
+                "adina",
+                "biztanle"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e06",
+              "type": "word_intro",
+              "word": "paisaia",
+              "translation": "paisaje",
+              "vocabulary": [
+                "paisaia"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e07",
+              "type": "word_intro",
+              "word": "karabana",
+              "translation": "caravana",
+              "vocabulary": [
+                "karabana"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "adina",
+                  "es": "tanto como"
+                },
+                {
+                  "eu": "bezain",
+                  "es": "tan como"
+                },
+                {
+                  "eu": "uharte",
+                  "es": "isla"
+                },
+                {
+                  "eu": "biztanle",
+                  "es": "habitante"
+                },
+                {
+                  "eu": "paisaia",
+                  "es": "paisaje"
+                },
+                {
+                  "eu": "karabana",
+                  "es": "caravana"
+                }
+              ],
+              "vocabulary": [
+                "adina",
+                "uharte",
+                "biztanle",
+                "paisaia",
+                "karabana"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e09",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nik zuk adina diru daukat."
+              },
+              "answers": [
+                "Yo tengo tanto dinero como tú."
+              ],
+              "vocabulary": [
+                "ni",
+                "zu",
+                "adina",
+                "diru",
+                "eduki"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e10",
+              "type": "fill_blank",
+              "sentence": "Herrietan ez dago hirietan ___ jende.",
+              "options": [
+                "adina",
+                "bezain",
+                "baino"
+              ],
+              "correct": 0,
+              "translation": "En los pueblos no hay tanta gente como en las ciudades.",
+              "vocabulary": [
+                "herri",
+                "ez",
+                "egon",
+                "hiri",
+                "adina",
+                "jende"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Este paisaje es tan bonito como aquel otro."
+              },
+              "answers": [
+                "Paisaia hau beste hura bezain polita da."
+              ],
+              "distractors": [
+                "honetan",
+                "adina",
+                "diru",
+                "zuk"
+              ],
+              "vocabulary": [
+                "paisaia",
+                "hau",
+                "beste",
+                "hura",
+                "polit",
+                "izan"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e12",
+              "type": "read_true_false",
+              "passage": "Oporretan uharte txiki batean egon gara, karabanan. Uhartean ez dago Bilbon adina biztanle, baina paisaia izugarri polita da.",
+              "statement": "En la isla hay más habitantes que en Bilbao.",
+              "answer": false,
+              "vocabulary": [
+                "opor",
+                "uharte",
+                "txiki",
+                "bat",
+                "egon",
+                "izan",
+                "karabana",
+                "ez",
+                "adina",
+                "biztanle",
+                "baina",
+                "paisaia",
+                "izugarri",
+                "polit"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            },
+            {
+              "id": "u18-2.l1.s3.e13",
+              "type": "speak",
+              "text": "Karabanan ez dago etxean adina leku.",
+              "translation": "En la caravana no hay tanto sitio como en casa.",
+              "vocabulary": [
+                "karabana",
+                "ez",
+                "egon",
+                "etxe",
+                "adina",
+                "leku"
+              ],
+              "structures": [
+                "adina",
+                "alderatu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u18-2.l2",
+      "type": "lesson",
+      "title": {
+        "es": "Quejas y disculpas",
+        "eu": "Kexak eta barkamenak"
+      },
+      "lessons": [
+        {
+          "id": "u18-2.l2.s1",
+          "exercises": [
+            {
+              "id": "u18-2.l2.s1.e01",
+              "type": "word_intro",
+              "word": "kexa",
+              "translation": "queja",
+              "vocabulary": [
+                "kexa"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kexa bat jarri nahi dut."
+              },
+              "answers": [
+                "Quiero poner una queja."
+              ],
+              "distractors": [
+                "demasiado",
+                "chispas",
+                "las"
+              ],
+              "vocabulary": [
+                "kexa",
+                "bat",
+                "jarri",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e03",
+              "type": "word_intro",
+              "word": "erreklamazio",
+              "translation": "reclamación",
+              "vocabulary": [
+                "erreklamazio"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Erreklamazio bat egin nahi dut."
+              },
+              "answers": [
+                "Quiero hacer una reclamación."
+              ],
+              "distractors": [
+                "Me",
+                "las",
+                "narices"
+              ],
+              "vocabulary": [
+                "erreklamazio",
+                "bat",
+                "egin",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e05",
+              "type": "word_intro",
+              "word": "kexatu",
+              "translation": "quejarse",
+              "vocabulary": [
+                "kexatu"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e06",
+              "type": "word_intro",
+              "word": "kobratu",
+              "translation": "cobrar",
+              "vocabulary": [
+                "kobratu"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e07",
+              "type": "word_intro",
+              "word": "haserre",
+              "translation": "enfadado; enfado",
+              "vocabulary": [
+                "haserre"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "kexa",
+                  "es": "queja"
+                },
+                {
+                  "eu": "kexatu",
+                  "es": "quejarse"
+                },
+                {
+                  "eu": "erreklamazio",
+                  "es": "reclamación"
+                },
+                {
+                  "eu": "kobratu",
+                  "es": "cobrar"
+                },
+                {
+                  "eu": "haserre",
+                  "es": "enfadado"
+                }
+              ],
+              "vocabulary": [
+                "kexa",
+                "kexatu",
+                "erreklamazio",
+                "kobratu",
+                "haserre"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e09",
+              "type": "word_intro",
+              "word": "gehiegi",
+              "translation": "demasiado",
+              "vocabulary": [
+                "gehiegi"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e10",
+              "type": "word_intro",
+              "word": "didazue",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gehiegi kobratu didazue!"
+              },
+              "answers": [
+                "¡Me habéis cobrado demasiado!"
+              ],
+              "distractors": [
+                "enfadado",
+                "echo",
+                "una"
+              ],
+              "vocabulary": [
+                "gehiegi",
+                "kobratu",
+                "ukan"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e12",
+              "type": "choose_meaning",
+              "text": "Gehiegi kobratu didazue!",
+              "options": [
+                "¡Me habéis cobrado demasiado!",
+                "¡Os he pagado demasiado!",
+                "¡No me habéis cobrado!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gehiegi",
+                "kobratu",
+                "ukan"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e13",
+              "type": "listen_tap",
+              "text": "Oso haserre nago.",
+              "distractors": [
+                "nahi",
+                "didazue"
+              ],
+              "vocabulary": [
+                "oso",
+                "haserre",
+                "egon"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e14",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Egun on. Zer behar duzu?"
+                }
+              ],
+              "options": [
+                "Kexa bat jarri nahi dut. Gehiegi kobratu didazue.",
+                "Kexa bat jarri nahi dut. Gehiegi kobratu dizuet.",
+                "Kexa naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "egun on",
+                "zer",
+                "behar izan",
+                "ukan",
+                "kexa",
+                "bat",
+                "jarri",
+                "nahi izan",
+                "gehiegi",
+                "kobratu"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kokoteraino nago!"
+              },
+              "answers": [
+                "¡Estoy hasta las narices!"
+              ],
+              "distractors": [
+                "cobrado",
+                "muy",
+                "echo"
+              ],
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s1.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Sutan nago!"
+              },
+              "answers": [
+                "¡Estoy que echo chispas!"
+              ],
+              "distractors": [
+                "una",
+                "enfadado",
+                "reclamación"
+              ],
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "kexak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-2.l2.s2",
+          "exercises": [
+            {
+              "id": "u18-2.l2.s2.e01",
+              "type": "word_intro",
+              "word": "sentitzen",
+              "translation": "sentir",
+              "vocabulary": [
+                "sentitu"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Sentitzen dut."
+              },
+              "answers": [
+                "Lo siento."
+              ],
+              "distractors": [
+                "arreglaremos",
+                "error"
+              ],
+              "vocabulary": [
+                "sentitu",
+                "ukan"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e03",
+              "type": "listen_type",
+              "text": "Barkatu, akats bat izan da.",
+              "answers": [
+                "Barkatu, akats bat izan da."
+              ],
+              "vocabulary": [
+                "barkatu",
+                "akats",
+                "bat",
+                "izan"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e04",
+              "type": "word_intro",
+              "word": "sentitu",
+              "translation": "sentir",
+              "vocabulary": [
+                "sentitu"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e05",
+              "type": "word_intro",
+              "word": "barkamen",
+              "translation": "perdón",
+              "vocabulary": [
+                "barkamen"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e06",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "sentitu",
+                  "es": "sentir"
+                },
+                {
+                  "eu": "barkamen",
+                  "es": "perdón"
+                },
+                {
+                  "eu": "barkatu",
+                  "es": "perdonar"
+                },
+                {
+                  "eu": "akats",
+                  "es": "error"
+                },
+                {
+                  "eu": "itzuli",
+                  "es": "devolver"
+                }
+              ],
+              "vocabulary": [
+                "sentitu",
+                "barkamen",
+                "barkatu",
+                "akats",
+                "itzuli"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e07",
+              "type": "word_intro",
+              "word": "eskatzen",
+              "translation": "pedir",
+              "vocabulary": [
+                "eskatu"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Barkamena eskatzen dizut."
+              },
+              "answers": [
+                "Le pido perdón."
+              ],
+              "distractors": [
+                "Perdone",
+                "error"
+              ],
+              "vocabulary": [
+                "barkamen",
+                "eskatu",
+                "ukan"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e09",
+              "type": "fill_blank",
+              "sentence": "___ dut.",
+              "options": [
+                "Sentitzen",
+                "Sentitu",
+                "Barkatu"
+              ],
+              "correct": 0,
+              "translation": "Lo siento.",
+              "vocabulary": [
+                "sentitu",
+                "ukan"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Berehala konponduko dugu."
+              },
+              "answers": [
+                "Lo arreglaremos enseguida."
+              ],
+              "distractors": [
+                "dinero",
+                "Le"
+              ],
+              "vocabulary": [
+                "berehala",
+                "konpondu",
+                "ukan"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e11",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Bezeroa",
+                  "text": "Gehiegi kobratu didazue!"
+                }
+              ],
+              "options": [
+                "Sentitzen dut. Berehala konponduko dugu.",
+                "Sentitzen dut. Kexatu egingo naiz.",
+                "Kokoteraino nago!"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gehiegi",
+                "kobratu",
+                "ukan",
+                "sentitu",
+                "berehala",
+                "konpondu"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e12",
+              "type": "word_intro",
+              "word": "dizugu",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s2.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Dirua itzuliko dizugu."
+              },
+              "answers": [
+                "Le devolveremos el dinero."
+              ],
+              "distractors": [
+                "habido",
+                "ha",
+                "perdón"
+              ],
+              "vocabulary": [
+                "diru",
+                "itzuli",
+                "ukan"
+              ],
+              "structures": [
+                "barkamena"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-2.l2.s3",
+          "exercises": [
+            {
+              "id": "u18-2.l2.s3.e01",
+              "type": "word_intro",
+              "word": "baizik",
+              "translation": "sino",
+              "vocabulary": [
+                "baizik"
+              ],
+              "structures": [
+                "baizik"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez dut gorria eskatu, urdina baizik."
+              },
+              "answers": [
+                "No he pedido el rojo, sino el azul."
+              ],
+              "distractors": [
+                "para",
+                "martes",
+                "champú",
+                "enfadado"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "gorri",
+                "eskatu",
+                "urdin",
+                "baizik"
+              ],
+              "structures": [
+                "baizik"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s3.e03",
+              "type": "listen_tap",
+              "text": "Ez da azalerako krema, xanpua baizik.",
+              "distractors": [
+                "astelehena",
+                "urdina",
+                "nago",
+                "dut"
+              ],
+              "vocabulary": [
+                "ez",
+                "izan",
+                "azal",
+                "krema",
+                "xanpu",
+                "baizik"
+              ],
+              "structures": [
+                "baizik"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s3.e04",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "baizik",
+                  "es": "sino"
+                },
+                {
+                  "eu": "baino",
+                  "es": "que"
+                },
+                {
+                  "eu": "bezain",
+                  "es": "tan"
+                },
+                {
+                  "eu": "adina",
+                  "es": "tanto"
+                },
+                {
+                  "eu": "baina",
+                  "es": "pero"
+                }
+              ],
+              "vocabulary": [
+                "baizik",
+                "baino",
+                "adina",
+                "baina"
+              ],
+              "structures": [
+                "baizik"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s3.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez nago pozik, haserre baizik."
+              },
+              "answers": [
+                "No estoy contento, sino enfadado.",
+                "No estoy contenta, sino enfadada."
+              ],
+              "distractors": [
+                "he",
+                "la",
+                "rojo"
+              ],
+              "vocabulary": [
+                "ez",
+                "egon",
+                "pozik",
+                "haserre",
+                "baizik"
+              ],
+              "structures": [
+                "baizik"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s3.e06",
+              "type": "fill_blank",
+              "sentence": "Ez dut gorria eskatu, urdina ___.",
+              "options": [
+                "baizik",
+                "baina",
+                "baino"
+              ],
+              "correct": 0,
+              "translation": "No he pedido el rojo, sino el azul.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "gorri",
+                "eskatu",
+                "urdin",
+                "baizik"
+              ],
+              "structures": [
+                "baizik"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s3.e07",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "No fue el lunes, sino el martes."
+              },
+              "answers": [
+                "Ez zen astelehena izan, asteartea baizik."
+              ],
+              "distractors": [
+                "urdina",
+                "eskatu",
+                "gorria",
+                "dut"
+              ],
+              "vocabulary": [
+                "ez",
+                "izan",
+                "astelehen",
+                "astearte",
+                "baizik"
+              ],
+              "structures": [
+                "baizik"
+              ]
+            },
+            {
+              "id": "u18-2.l2.s3.e08",
+              "type": "choose_meaning",
+              "text": "Ez nago pozik, haserre baizik.",
+              "options": [
+                "No estoy contento, sino enfadado.",
+                "Estoy contento y enfadado.",
+                "No estoy enfadado, sino contento."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "egon",
+                "pozik",
+                "haserre",
+                "baizik"
+              ],
+              "structures": [
+                "baizik"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u18-2.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Muebles nuevos",
+        "eu": "Altzari berriak"
+      },
+      "lessons": [
+        {
+          "id": "u18-2.l3.s1",
+          "exercises": [
+            {
+              "id": "u18-2.l3.s1.e01",
+              "type": "word_intro",
+              "word": "altzari",
+              "translation": "mueble",
+              "vocabulary": [
+                "altzari"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e02",
+              "type": "word_intro",
+              "word": "berritu",
+              "translation": "renovar",
+              "vocabulary": [
+                "berritu"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Etxeko altzariak berritu nahi ditugu."
+              },
+              "answers": [
+                "Queremos renovar los muebles de casa."
+              ],
+              "distractors": [
+                "dos",
+                "estudiar",
+                "estantería",
+                "colores"
+              ],
+              "vocabulary": [
+                "etxe",
+                "altzari",
+                "berritu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e04",
+              "type": "word_intro",
+              "word": "apal",
+              "translation": "estante",
+              "vocabulary": [
+                "apal"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e05",
+              "type": "word_intro",
+              "word": "horma",
+              "translation": "pared",
+              "vocabulary": [
+                "horma"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Apal berri bat jarri dugu horman."
+              },
+              "answers": [
+                "Hemos puesto una estantería nueva en la pared."
+              ],
+              "distractors": [
+                "muy",
+                "los",
+                "bien",
+                "He"
+              ],
+              "vocabulary": [
+                "apal",
+                "berri",
+                "bat",
+                "jarri",
+                "ukan",
+                "horma"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e07",
+              "type": "word_intro",
+              "word": "zoru",
+              "translation": "suelo",
+              "vocabulary": [
+                "zoru"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e08",
+              "type": "word_intro",
+              "word": "aztertu",
+              "translation": "analizar; examinar",
+              "vocabulary": [
+                "aztertu"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "altzari",
+                  "es": "mueble"
+                },
+                {
+                  "eu": "apal",
+                  "es": "estantería"
+                },
+                {
+                  "eu": "horma",
+                  "es": "pared"
+                },
+                {
+                  "eu": "zoru",
+                  "es": "suelo"
+                },
+                {
+                  "eu": "berritu",
+                  "es": "renovar"
+                },
+                {
+                  "eu": "aztertu",
+                  "es": "estudiar"
+                }
+              ],
+              "vocabulary": [
+                "altzari",
+                "apal",
+                "horma",
+                "zoru",
+                "berritu",
+                "aztertu"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "El suelo nuevo es muy bonito."
+              },
+              "answers": [
+                "Zoru berria oso polita da."
+              ],
+              "distractors": [
+                "berritu",
+                "ondo",
+                "Bi"
+              ],
+              "vocabulary": [
+                "zoru",
+                "berri",
+                "oso",
+                "polit",
+                "izan"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e11",
+              "type": "choose_meaning",
+              "text": "Kolore hauek ondo konbinatzen dute.",
+              "options": [
+                "Estos colores combinan bien.",
+                "Estos colores son bonitos.",
+                "He combinado estos colores."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kolore",
+                "hau",
+                "ondo",
+                "ukan"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e12",
+              "type": "listen_tap",
+              "text": "Kolore hauek ondo konbinatzen dute.",
+              "distractors": [
+                "berria",
+                "Etxeko",
+                "Apal"
+              ],
+              "vocabulary": [
+                "kolore",
+                "hau",
+                "ondo",
+                "ukan"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e13",
+              "type": "choose_image",
+              "prompt": "el armario",
+              "options": [
+                {
+                  "text": "armairua",
+                  "image": "home_wardrobe.webp"
+                },
+                {
+                  "text": "sofa",
+                  "image": "home_sofa.webp"
+                },
+                {
+                  "text": "mahaia",
+                  "image": "home_table.webp"
+                }
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "armairu"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e14",
+              "type": "word_intro",
+              "word": "konparatu",
+              "translation": "comparar",
+              "vocabulary": [
+                "konparatu"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bi dendak konparatu ditut."
+              },
+              "answers": [
+                "He comparado las dos tiendas."
+              ],
+              "distractors": [
+                "colores",
+                "Hay",
+                "El"
+              ],
+              "vocabulary": [
+                "bi",
+                "denda",
+                "konparatu",
+                "ukan"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s1.e16",
+              "type": "order_sentence",
+              "answer": "Prezioak ondo aztertu behar dira.",
+              "translation": "Hay que estudiar bien los precios.",
+              "vocabulary": [
+                "prezio",
+                "ondo",
+                "aztertu",
+                "behar izan",
+                "izan"
+              ],
+              "structures": [
+                "altzariak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-2.l3.s2",
+          "exercises": [
+            {
+              "id": "u18-2.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Erosi dudan apalak akats bat du."
+              },
+              "answers": [
+                "La estantería que he comprado tiene un defecto."
+              ],
+              "distractors": [
+                "caravana",
+                "problemas",
+                "pequeños",
+                "platos"
+              ],
+              "vocabulary": [
+                "erosi",
+                "ukan",
+                "apal",
+                "akats",
+                "bat"
+              ],
+              "structures": [
+                "erlatiboa-nork"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s2.e02",
+              "type": "word_intro",
+              "word": "ditudan",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "erlatiboa-nork"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Erosi ditudan platerak oso txikiak dira."
+              },
+              "answers": [
+                "Los platos que he comprado son muy pequeños."
+              ],
+              "distractors": [
+                "problemas",
+                "producto",
+                "tenga",
+                "No"
+              ],
+              "vocabulary": [
+                "erosi",
+                "ukan",
+                "plater",
+                "oso",
+                "txiki",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa-nork"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s2.e04",
+              "type": "fill_blank",
+              "sentence": "Erosi dudan ___ akats bat du.",
+              "options": [
+                "apalak",
+                "apala",
+                "apalari"
+              ],
+              "correct": 0,
+              "translation": "La estantería que he comprado tiene un defecto.",
+              "vocabulary": [
+                "erosi",
+                "ukan",
+                "apal",
+                "akats",
+                "bat"
+              ],
+              "structures": [
+                "erlatiboa-nork"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s2.e05",
+              "type": "word_intro",
+              "word": "dugun",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "erlatiboa-nork"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s2.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Erosi dugun karabanak arazo asko ditu."
+              },
+              "answers": [
+                "La caravana que hemos comprado tiene muchos problemas."
+              ],
+              "distractors": [
+                "has",
+                "calidad",
+                "estantería",
+                "muebles"
+              ],
+              "vocabulary": [
+                "erosi",
+                "ukan",
+                "karabana",
+                "arazo",
+                "asko"
+              ],
+              "structures": [
+                "erlatiboa-nork"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s2.e07",
+              "type": "word_intro",
+              "word": "dituzun",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "erlatiboa-nork"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s2.e08",
+              "type": "fill_blank",
+              "sentence": "Ikusi ___ altzariak garestiak dira.",
+              "options": [
+                "dituzun",
+                "dituzu",
+                "dituzula"
+              ],
+              "correct": 0,
+              "translation": "Los muebles que has visto son caros.",
+              "vocabulary": [
+                "ikusi",
+                "ukan",
+                "altzari",
+                "garesti",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa-nork"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s2.e09",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "No compraré un producto que no tenga calidad."
+              },
+              "answers": [
+                "Kalitaterik ez duen produktua ez dut erosiko."
+              ],
+              "vocabulary": [
+                "kalitate",
+                "ez",
+                "ukan",
+                "produktu",
+                "erosi"
+              ],
+              "structures": [
+                "erlatiboa-nork"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s2.e10",
+              "type": "choose_meaning",
+              "text": "Erosi dugun karabanak arazo asko ditu.",
+              "options": [
+                "La caravana que hemos comprado tiene muchos problemas.",
+                "Hemos comprado una caravana sin problemas.",
+                "Tenemos muchos problemas para comprar una caravana."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "erosi",
+                "ukan",
+                "karabana",
+                "arazo",
+                "asko"
+              ],
+              "structures": [
+                "erlatiboa-nork"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s2.e11",
+              "type": "order_sentence",
+              "answer": "Ikusi dituzun altzariak garestiak dira.",
+              "translation": "Los muebles que has visto son caros.",
+              "vocabulary": [
+                "ikusi",
+                "ukan",
+                "altzari",
+                "garesti",
+                "izan"
+              ],
+              "structures": [
+                "erlatiboa-nork"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-2.l3.s3",
+          "exercises": [
+            {
+              "id": "u18-2.l3.s3.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "La estantería que compré ayer tiene un defecto."
+              },
+              "answers": [
+                "Atzo erosi nuen apalak akats bat du."
+              ],
+              "distractors": [
+                "zen",
+                "apala",
+                "dut",
+                "erantzun"
+              ],
+              "vocabulary": [
+                "atzo",
+                "erosi",
+                "ukan",
+                "apal",
+                "akats",
+                "bat"
+              ],
+              "structures": [
+                "kexa-idatzia"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s3.e02",
+              "type": "word_intro",
+              "word": "jartzeko",
+              "translation": "poner",
+              "vocabulary": [
+                "jarri"
+              ],
+              "structures": [
+                "kexa-idatzia"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Horman jartzeko apala zen, baina ezin da jarri."
+              },
+              "answers": [
+                "Era una estantería para poner en la pared, pero no se puede poner."
+              ],
+              "distractors": [
+                "favor",
+                "defecto",
+                "tiene",
+                "Pido"
+              ],
+              "vocabulary": [
+                "horma",
+                "jarri",
+                "apal",
+                "izan",
+                "baina",
+                "ezin"
+              ],
+              "structures": [
+                "kexa-idatzia"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s3.e04",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Zer gertatu da?"
+                }
+              ],
+              "options": [
+                "Erosi dudan apalak akats bat du.",
+                "Erosi dudan apala akats bat du.",
+                "Apala erosi dut akatsa."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer",
+                "gertatu",
+                "izan",
+                "erosi",
+                "ukan",
+                "apal",
+                "akats",
+                "bat"
+              ],
+              "structures": [
+                "kexa-idatzia"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s3.e05",
+              "type": "word_intro",
+              "word": "itzultzea",
+              "translation": "volver; devolver",
+              "vocabulary": [
+                "itzuli"
+              ],
+              "structures": [
+                "kexa-idatzia"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Dirua itzultzea eskatzen dut."
+              },
+              "answers": [
+                "Pido que me devuelvan el dinero."
+              ],
+              "distractors": [
+                "pero",
+                "ayer",
+                "Era",
+                "no"
+              ],
+              "vocabulary": [
+                "diru",
+                "itzuli",
+                "eskatu",
+                "ukan"
+              ],
+              "structures": [
+                "kexa-idatzia"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s3.e07",
+              "type": "read_true_false",
+              "passage": "Kaixo. Atzo apal bat erosi nuen zuen dendan. Etxean akats bat ikusi nuen. Dirua itzultzea eskatzen dut.",
+              "statement": "El cliente quiere que le devuelvan el dinero.",
+              "answer": true,
+              "vocabulary": [
+                "kaixo",
+                "atzo",
+                "apal",
+                "bat",
+                "erosi",
+                "ukan",
+                "zuek",
+                "denda",
+                "etxe",
+                "akats",
+                "ikusi",
+                "diru",
+                "itzuli",
+                "eskatu"
+              ],
+              "structures": [
+                "kexa-idatzia"
+              ]
+            },
+            {
+              "id": "u18-2.l3.s3.e08",
+              "type": "order_sentence",
+              "answer": "Laster erantzun, mesedez.",
+              "translation": "Respondan pronto, por favor.",
+              "vocabulary": [
+                "laster",
+                "erantzun",
+                "mesedez"
+              ],
+              "structures": [
+                "kexa-idatzia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u18-2.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: la queja",
+        "eu": "Istorioa: kexa"
+      },
+      "story": {
+        "id": "u18-2.l4.story",
+        "title": "Kexa",
+        "lines": [
+          {
+            "speaker": "Iker",
+            "eu": "Egun on. Kexa bat jarri nahi dut.",
+            "es": "Buenos días. Quiero poner una queja."
+          },
+          {
+            "speaker": "Saltzailea",
+            "eu": "Egun on. Zer gertatu da?",
+            "es": "Buenos días. ¿Qué ha pasado?"
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Larunbatean erosi nuen apalak akats bat du, eta gainera gehiegi ordaindu nuen!",
+            "es": "La estantería que compré el sábado tiene un defecto, ¡y además pagué de más!"
+          },
+          {
+            "speaker": "Saltzailea",
+            "eu": "Sentitzen dut. Ordainagiria daukazu?",
+            "es": "Lo siento. ¿Tiene el ticket?"
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Bai, hemen dago. Kokoteraino nago!",
+            "es": "Sí, aquí está. ¡Estoy hasta las narices!"
+          },
+          {
+            "speaker": "Saltzailea",
+            "eu": "Barkatu. Ez zen hirurogei euro, berrogeita hamar baizik. Hamar euro itzuliko dizkizugu.",
+            "es": "Perdone. No eran sesenta euros, sino cincuenta. Le devolveremos diez euros."
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Eta apala?",
+            "es": "¿Y la estantería?"
+          },
+          {
+            "speaker": "Saltzailea",
+            "eu": "Beste bat emango dizugu. Hau hura bezain ona da, eta kolore hau ondo konbinatzen da zure hormarekin.",
+            "es": "Le daremos otra. Esta es tan buena como aquella, y este color combina bien con su pared."
+          },
+          {
+            "speaker": "Iker",
+            "eu": "Ados. Eskerrik asko. Orain ez nago haserre, pozik baizik!",
+            "es": "De acuerdo. Gracias. ¡Ahora no estoy enfadado, sino contento!"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 3,
+            "prompt": "¿Por qué se queja Iker?",
+            "options": [
+              "Por un defecto y porque pagó de más",
+              "Porque la tienda estaba cerrada",
+              "Porque no le dieron el ticket"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 6,
+            "prompt": "¿Cuánto dinero le devuelven?",
+            "options": [
+              "Diez euros",
+              "Cincuenta euros",
+              "Sesenta euros"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 8,
+            "prompt": "¿Qué le ofrece el vendedor por la estantería?",
+            "options": [
+              "Otra estantería igual de buena",
+              "El dinero de la estantería",
+              "Un descuento en otra tienda"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u18-2.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u18-2.l6",
+      "type": "challenge",
+      "title": {
+        "es": "Reto de estrellas",
+        "eu": "Izarren erronka"
+      },
+      "host": "mikel"
+    },
+    {
+      "id": "u18-2.l7",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la sección",
+        "eu": "Atalaren errepasoa"
+      },
+      "scope": "section"
+    }
+  ]
+}

@@ -1,0 +1,3081 @@
+{
+  "schemaVersion": 1,
+  "id": "u16-2",
+  "section": "s6",
+  "bookUnit": 16,
+  "title": {
+    "es": "Cambios",
+    "eu": "Aldaketak"
+  },
+  "goals": [
+    {
+      "es": "Dar tu opinión y hacer suposiciones sobre lo que pasa.",
+      "eu": "Iritzia eman eta gertatzen denari buruz susmoak adierazi."
+    },
+    {
+      "es": "Reaccionar ante noticias sorprendentes.",
+      "eu": "Albiste harrigarriei erantzun."
+    },
+    {
+      "es": "Contar cambios en tu vida y cómo te acostumbras a ellos.",
+      "eu": "Zure bizitzako aldaketak kontatu eta haietara nola ohitzen zaren azaldu."
+    }
+  ],
+  "keyWords": [
+    {
+      "eu": "haurtzaindegi",
+      "es": "guardería"
+    },
+    {
+      "eu": "zurrumurru",
+      "es": "rumor"
+    },
+    {
+      "eu": "sinetsi",
+      "es": "creer"
+    },
+    {
+      "eu": "ziur",
+      "es": "seguro (convencido)"
+    },
+    {
+      "eu": "seguruenik",
+      "es": "seguramente"
+    },
+    {
+      "eu": "agian",
+      "es": "quizás"
+    },
+    {
+      "eu": "susmo",
+      "es": "sospecha"
+    },
+    {
+      "eu": "banandu",
+      "es": "separarse"
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Parece que…: …-(e)la dirudi",
+          "eu": "…-(e)la dirudi"
+        },
+        "body": {
+          "es": "Para suponer algo, la frase termina en -(e)la y sigue «dirudi» o «ematen du»: «berandu etorriko dela dirudi» (parece que llegará tarde). También delante: «badirudi…», «ematen du…».",
+          "eu": "Zerbait susmatzeko, esaldiak -(e)la amaiera hartzen du, eta gero «dirudi» edo «ematen du» dator: «berandu etorriko dela dirudi». Aurrean ere bai: «badirudi…», «ematen du…»."
+        },
+        "examples": [
+          {
+            "eu": "Berandu etorriko dela dirudi.",
+            "es": "Parece que llegará tarde."
+          },
+          {
+            "eu": "Ematen du nekatuta zaudela.",
+            "es": "Parece que estás cansado."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "No parece que…: siempre -(e)nik",
+          "eu": "Ez dirudi…-(e)nik"
+        },
+        "body": {
+          "es": "Si el verbo principal es negativo («ez dirudi», «ez du ematen», «ez dut uste», «ez zait iruditzen»), la frase termina en -(e)nik, nunca en -(e)la.",
+          "eu": "Aditz nagusia ezezkoa bada («ez dirudi», «ez du ematen», «ez dut uste», «ez zait iruditzen»), esaldiak -(e)nik amaiera hartzen du, inoiz ez -(e)la."
+        },
+        "examples": [
+          {
+            "eu": "Ez du ematen gaixo dagoenik.",
+            "es": "No parece que esté enfermo."
+          },
+          {
+            "eu": "Ez dut uste oker zaudenik.",
+            "es": "No creo que estés equivocado."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Cada vez más: gero eta …-ago",
+          "eu": "Gero eta …-ago"
+        },
+        "body": {
+          "es": "«Gero eta» va con un comparativo: «gero eta handiagoa» (cada vez más grande), «gero eta jende gehiago» (cada vez más gente), «gero eta diru gutxiago» (cada vez menos dinero). Nunca con «oso».",
+          "eu": "«Gero eta» konparatibo batekin doa: «gero eta handiagoa», «gero eta jende gehiago», «gero eta diru gutxiago». Inoiz ez «oso»rekin."
+        },
+        "examples": [
+          {
+            "eu": "Gero eta hobeto hitz egiten duzu euskaraz.",
+            "es": "Cada vez hablas mejor en euskera."
+          },
+          {
+            "eu": "Gero eta diru gutxiago daukat.",
+            "es": "Cada vez tengo menos dinero."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Empezar, seguir, intentar: …-t(z)en hasi",
+          "eu": "…-t(z)en hasi, jarraitu, saiatu"
+        },
+        "body": {
+          "es": "Con «hasi» (empezar), «jarraitu» (seguir) y «saiatu» (intentar), el otro verbo va en -t(z)en: «kirola egiten hasi naiz». Para dejar de hacer algo: «-t(z)eari utzi»: «erretzeari utzi diot».",
+          "eu": "«Hasi», «jarraitu» eta «saiatu» aditzekin, beste aditza -t(z)en forman doa: «kirola egiten hasi naiz». Zerbait egiteari uzteko: «-t(z)eari utzi»: «erretzeari utzi diot»."
+        },
+        "examples": [
+          {
+            "eu": "Kirola egiten hasi naiz.",
+            "es": "He empezado a hacer deporte."
+          },
+          {
+            "eu": "Euskara ikasten jarraituko dut.",
+            "es": "Seguiré estudiando euskera."
+          },
+          {
+            "eu": "Erretzeari utzi diot.",
+            "es": "He dejado de fumar."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u16-2.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Parece que…",
+        "eu": "Badirudi…"
+      },
+      "lessons": [
+        {
+          "id": "u16-2.l1.s1",
+          "exercises": [
+            {
+              "id": "u16-2.l1.s1.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Parece que llegará tarde."
+              },
+              "answers": [
+                "Berandu etorriko dela dirudi."
+              ],
+              "distractors": [
+                "nekatuta",
+                "bihar",
+                "Ziur"
+              ],
+              "vocabulary": [
+                "berandu",
+                "etorri",
+                "izan",
+                "irudi"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e02",
+              "type": "word_intro",
+              "word": "badirudi",
+              "translation": "parecer (dirudi)",
+              "vocabulary": [
+                "irudi"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Badirudi euria egingo duela."
+              },
+              "answers": [
+                "Parece que va a llover."
+              ],
+              "distractors": [
+                "esté",
+                "Quizá",
+                "mañana"
+              ],
+              "vocabulary": [
+                "irudi",
+                "euri",
+                "egin",
+                "duela"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e04",
+              "type": "word_intro",
+              "word": "seguruenik",
+              "translation": "seguramente",
+              "vocabulary": [
+                "seguruenik"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e05",
+              "type": "word_intro",
+              "word": "agian",
+              "translation": "quizás",
+              "vocabulary": [
+                "agian"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e06",
+              "type": "word_intro",
+              "word": "ziur",
+              "translation": "seguro (convencido)",
+              "vocabulary": [
+                "ziur"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e07",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "dirudi",
+                  "es": "parece"
+                },
+                {
+                  "eu": "seguruenik",
+                  "es": "seguramente"
+                },
+                {
+                  "eu": "agian",
+                  "es": "quizá"
+                },
+                {
+                  "eu": "ziur",
+                  "es": "seguro"
+                },
+                {
+                  "eu": "nekatuta",
+                  "es": "cansado"
+                }
+              ],
+              "vocabulary": [
+                "irudi",
+                "seguruenik",
+                "agian",
+                "ziur",
+                "nekatuta"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e08",
+              "type": "order_sentence",
+              "answer": "Ematen du nekatuta zaudela.",
+              "translation": "Parece que estás cansado.",
+              "vocabulary": [
+                "eman",
+                "ukan",
+                "nekatuta",
+                "egon"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e09",
+              "type": "fill_blank",
+              "sentence": "Berandu etorriko ___ dirudi.",
+              "options": [
+                "dela",
+                "denik",
+                "da"
+              ],
+              "correct": 0,
+              "translation": "Parece que llegará tarde.",
+              "vocabulary": [
+                "berandu",
+                "etorri",
+                "izan",
+                "irudi"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e10",
+              "type": "order_sentence",
+              "answer": "Ez du ematen gaixo dagoenik.",
+              "translation": "No parece que esté enfermo.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "eman",
+                "gaixo",
+                "egon"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e11",
+              "type": "fill_blank",
+              "sentence": "Ez du ematen gaixo ___.",
+              "options": [
+                "dagoenik",
+                "dagoela",
+                "dago"
+              ],
+              "correct": 0,
+              "translation": "No parece que esté enfermo.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "eman",
+                "gaixo",
+                "egon"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Seguruenik bihar etorriko da."
+              },
+              "answers": [
+                "Seguramente vendrá mañana."
+              ],
+              "vocabulary": [
+                "seguruenik",
+                "bihar",
+                "etorri",
+                "izan"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e13",
+              "type": "choose_meaning",
+              "text": "Agian ez da etorriko.",
+              "options": [
+                "Quizá no venga.",
+                "Seguro que no viene.",
+                "Ya no viene nunca."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "agian",
+                "ez",
+                "izan",
+                "etorri"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e14",
+              "type": "listen_type",
+              "text": "Agian ez da etorriko.",
+              "answers": [
+                "Agian ez da etorriko."
+              ],
+              "vocabulary": [
+                "agian",
+                "ez",
+                "izan",
+                "etorri"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e15",
+              "type": "choose_image",
+              "prompt": "la lluvia",
+              "options": [
+                {
+                  "text": "eguzkia",
+                  "image": "weather_sun.webp"
+                },
+                {
+                  "text": "elurra",
+                  "image": "weather_snow.webp"
+                },
+                {
+                  "text": "euria",
+                  "image": "weather_rain.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "euri"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s1.e16",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ziur zaude?"
+              },
+              "answers": [
+                "¿Estás seguro?",
+                "¿Estás segura?"
+              ],
+              "vocabulary": [
+                "ziur",
+                "egon"
+              ],
+              "structures": [
+                "dirudi",
+                "ematen-du"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u16-2.l1.s2",
+          "exercises": [
+            {
+              "id": "u16-2.l1.s2.e01",
+              "type": "word_intro",
+              "word": "zurrumurru",
+              "translation": "rumor",
+              "vocabulary": [
+                "zurrumurru"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bulegoan zurrumurru bat dabil."
+              },
+              "answers": [
+                "En la oficina corre un rumor."
+              ],
+              "distractors": [
+                "están",
+                "Dicen",
+                "y",
+                "lo"
+              ],
+              "vocabulary": [
+                "bulego",
+                "zurrumurru",
+                "bat",
+                "ibili"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e03",
+              "type": "word_intro",
+              "word": "esaten",
+              "translation": "decir",
+              "vocabulary": [
+                "esan"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nagusia lanetik joango dela esaten dute."
+              },
+              "answers": [
+                "Dicen que el jefe se irá del trabajo."
+              ],
+              "distractors": [
+                "un",
+                "enamorados",
+                "creo",
+                "Ane"
+              ],
+              "vocabulary": [
+                "nagusi",
+                "lan",
+                "joan",
+                "izan",
+                "esan",
+                "ukan"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e05",
+              "type": "word_intro",
+              "word": "susmo",
+              "translation": "sospecha",
+              "vocabulary": [
+                "susmo"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e06",
+              "type": "word_intro",
+              "word": "sinetsi",
+              "translation": "creer",
+              "vocabulary": [
+                "sinetsi"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e07",
+              "type": "word_intro",
+              "word": "maitemindu",
+              "translation": "enamorarse",
+              "vocabulary": [
+                "maitemindu"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e08",
+              "type": "word_intro",
+              "word": "banandu",
+              "translation": "separarse",
+              "vocabulary": [
+                "banandu"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "zurrumurru",
+                  "es": "rumor"
+                },
+                {
+                  "eu": "susmo",
+                  "es": "sospecha"
+                },
+                {
+                  "eu": "sinetsi",
+                  "es": "creer"
+                },
+                {
+                  "eu": "maitemindu",
+                  "es": "enamorarse"
+                },
+                {
+                  "eu": "banandu",
+                  "es": "separarse"
+                }
+              ],
+              "vocabulary": [
+                "zurrumurru",
+                "susmo",
+                "sinetsi",
+                "maitemindu",
+                "banandu"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e10",
+              "type": "order_sentence",
+              "answer": "Susmo bat daukat.",
+              "translation": "Tengo una sospecha.",
+              "vocabulary": [
+                "susmo",
+                "bat",
+                "eduki"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e11",
+              "type": "fill_blank",
+              "sentence": "Ez dut uste egia ___.",
+              "options": [
+                "denik",
+                "dela",
+                "da"
+              ],
+              "correct": 0,
+              "translation": "No creo que sea verdad.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "uste izan",
+                "egia",
+                "izan"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Jon eta Ane maiteminduta daudela dirudi."
+              },
+              "answers": [
+                "Parece que Jon y Ane están enamorados."
+              ],
+              "vocabulary": [
+                "eta",
+                "maitemindu",
+                "egon",
+                "irudi"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e13",
+              "type": "word_intro",
+              "word": "sinesten",
+              "translation": "creer",
+              "vocabulary": [
+                "sinetsi"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e14",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Edurne",
+                  "text": "Badakizu zurrumurrua? Nagusia lanetik joango da!"
+                }
+              ],
+              "options": [
+                "Benetan? Ez dut sinesten!",
+                "Bai, nagusia naiz.",
+                "Ez dut uste joango dela."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "jakin",
+                "zurrumurru",
+                "nagusi",
+                "lan",
+                "joan",
+                "izan",
+                "benetan",
+                "ez",
+                "ukan",
+                "sinetsi"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e15",
+              "type": "word_intro",
+              "word": "direla",
+              "translation": "que son / que están",
+              "vocabulary": [
+                "izan"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Banandu egin direla iruditzen zait."
+              },
+              "answers": [
+                "Me parece que se han separado."
+              ],
+              "distractors": [
+                "Dicen",
+                "irá",
+                "oficina",
+                "rumor"
+              ],
+              "vocabulary": [
+                "banandu",
+                "egin",
+                "izan",
+                "iruditu",
+                "gustatu"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e17",
+              "type": "read_true_false",
+              "passage": "Bulegoan zurrumurru bat dabil. Badirudi Jon eta Ane maiteminduta daudela, baina Itziarrek ez du sinesten.",
+              "statement": "Itziar cree que Jon y Ane están enamorados.",
+              "answer": false,
+              "vocabulary": [
+                "bulego",
+                "zurrumurru",
+                "bat",
+                "ibili",
+                "irudi",
+                "eta",
+                "maitemindu",
+                "egon",
+                "baina",
+                "ez",
+                "ukan",
+                "sinetsi"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e18",
+              "type": "speak",
+              "text": "Ez dut sinesten.",
+              "translation": "No me lo creo.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "sinetsi"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s2.e19",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez dut uste egia denik."
+              },
+              "answers": [
+                "No creo que sea verdad."
+              ],
+              "distractors": [
+                "una",
+                "y",
+                "Parece"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "uste izan",
+                "egia",
+                "izan"
+              ],
+              "structures": [
+                "zurrumurruak",
+                "susmoak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u16-2.l1.s3",
+          "exercises": [
+            {
+              "id": "u16-2.l1.s3.e01",
+              "type": "word_intro",
+              "word": "haurdun",
+              "translation": "embarazada",
+              "vocabulary": [
+                "haurdun"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ama haurdun dago."
+              },
+              "answers": [
+                "La madre está embarazada."
+              ],
+              "distractors": [
+                "guardería",
+                "se",
+                "Lo"
+              ],
+              "vocabulary": [
+                "ama",
+                "haurdun",
+                "egon"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e03",
+              "type": "word_intro",
+              "word": "jaioberri",
+              "translation": "recién nacido",
+              "vocabulary": [
+                "jaioberri"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Jaioberria oso txikia da."
+              },
+              "answers": [
+                "El recién nacido es muy pequeño."
+              ],
+              "distractors": [
+                "que",
+                "noche",
+                "quedará",
+                "Parece"
+              ],
+              "vocabulary": [
+                "jaioberri",
+                "oso",
+                "txiki",
+                "izan"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e05",
+              "type": "word_intro",
+              "word": "negar egin",
+              "translation": "llorar",
+              "vocabulary": [
+                "negar egin"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e06",
+              "type": "word_intro",
+              "word": "haurtzaindegi",
+              "translation": "guardería",
+              "vocabulary": [
+                "haurtzaindegi"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e07",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "haurdun",
+                  "es": "embarazada"
+                },
+                {
+                  "eu": "jaioberri",
+                  "es": "recién nacido"
+                },
+                {
+                  "eu": "negar egin",
+                  "es": "llorar"
+                },
+                {
+                  "eu": "haurtzaindegi",
+                  "es": "guardería"
+                },
+                {
+                  "eu": "geratu",
+                  "es": "quedarse"
+                }
+              ],
+              "vocabulary": [
+                "haurdun",
+                "jaioberri",
+                "negar egin",
+                "haurtzaindegi",
+                "geratu"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e08",
+              "type": "word_intro",
+              "word": "negar",
+              "translation": "llorar",
+              "vocabulary": [
+                "negar egin"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Haurrak gauean negar egiten du."
+              },
+              "answers": [
+                "El bebé llora por la noche."
+              ],
+              "distractors": [
+                "está",
+                "embarazada",
+                "a",
+                "abuela"
+              ],
+              "vocabulary": [
+                "hau",
+                "gau",
+                "negar egin",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e10",
+              "type": "choose_meaning",
+              "text": "Haurtzaindegira eramango dute.",
+              "options": [
+                "Lo llevarán a la guardería.",
+                "Lo traerán de la guardería.",
+                "Trabaja en una guardería."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "haurtzaindegi",
+                "eraman",
+                "ukan"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e11",
+              "type": "listen_type",
+              "text": "Haurtzaindegira eramango dute.",
+              "answers": [
+                "Haurtzaindegira eramango dute."
+              ],
+              "vocabulary": [
+                "haurtzaindegi",
+                "eraman",
+                "ukan"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e12",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Josu",
+                  "text": "Nor geratuko da haurrarekin?"
+                }
+              ],
+              "options": [
+                "Amona geratuko dela dirudi.",
+                "Amona geratuko denik dirudi.",
+                "Haurra amona da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "nor",
+                "geratu",
+                "izan",
+                "amona",
+                "irudi"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e13",
+              "type": "speak",
+              "text": "Amona etxean geratuko dela dirudi.",
+              "translation": "Parece que la abuela se quedará en casa.",
+              "vocabulary": [
+                "amona",
+                "etxe",
+                "geratu",
+                "izan",
+                "irudi"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e14",
+              "type": "choose_image",
+              "prompt": "el niño",
+              "options": [
+                {
+                  "text": "eskola",
+                  "image": "place_school.webp"
+                },
+                {
+                  "text": "amona",
+                  "image": "people_grandmother.webp"
+                },
+                {
+                  "text": "umea",
+                  "image": "people_child.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "ume"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            },
+            {
+              "id": "u16-2.l1.s3.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Nor geratuko da haurrarekin?"
+              },
+              "answers": [
+                "¿Quién se quedará con el bebé?"
+              ],
+              "distractors": [
+                "es",
+                "La",
+                "embarazada",
+                "en"
+              ],
+              "vocabulary": [
+                "nor",
+                "geratu",
+                "izan"
+              ],
+              "structures": [
+                "haurra",
+                "zaintza"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u16-2.l2",
+      "type": "lesson",
+      "title": {
+        "es": "¡No puede ser!",
+        "eu": "Ez da egia izango!"
+      },
+      "lessons": [
+        {
+          "id": "u16-2.l2.s1",
+          "exercises": [
+            {
+              "id": "u16-2.l2.s1.e01",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Benetan?"
+              },
+              "answers": [
+                "¿De verdad?"
+              ],
+              "vocabulary": [
+                "benetan"
+              ],
+              "structures": [
+                "harridura"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s1.e02",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez da egia izango!"
+              },
+              "answers": [
+                "¡No puede ser verdad!"
+              ],
+              "vocabulary": [
+                "ez",
+                "izan",
+                "egia"
+              ],
+              "structures": [
+                "harridura"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s1.e03",
+              "type": "word_intro",
+              "word": "ezkontza",
+              "translation": "boda",
+              "vocabulary": [
+                "ezkontza"
+              ],
+              "structures": [
+                "harridura"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s1.e04",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "benetan",
+                  "es": "de verdad"
+                },
+                {
+                  "eu": "ezuste",
+                  "es": "sorpresa"
+                },
+                {
+                  "eu": "ezkontza",
+                  "es": "boda"
+                },
+                {
+                  "eu": "sinetsi",
+                  "es": "creer"
+                },
+                {
+                  "eu": "egia",
+                  "es": "verdad"
+                }
+              ],
+              "vocabulary": [
+                "benetan",
+                "ezuste",
+                "ezkontza",
+                "sinetsi",
+                "egia"
+              ],
+              "structures": [
+                "harridura"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s1.e05",
+              "type": "listen_type",
+              "text": "A zer ezustea!",
+              "answers": [
+                "A zer ezustea!"
+              ],
+              "vocabulary": [
+                "zer",
+                "ezuste"
+              ],
+              "structures": [
+                "harridura"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s1.e06",
+              "type": "choose_meaning",
+              "text": "Ez da egia izango!",
+              "options": [
+                "¡No puede ser verdad!",
+                "Será verdad.",
+                "No es mentira."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "izan",
+                "egia"
+              ],
+              "structures": [
+                "harridura"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s1.e07",
+              "type": "speak",
+              "text": "Ez dut sinesten!",
+              "translation": "¡No me lo creo!",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "sinetsi"
+              ],
+              "structures": [
+                "harridura"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s1.e08",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Maialen",
+                  "text": "Haurdun nago!"
+                }
+              ],
+              "options": [
+                "A zer ezustea! Zorionak!",
+                "Ez dut uste haurdun zaudela.",
+                "Haurtzaindegira noa."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "haurdun",
+                "egon",
+                "zer",
+                "ezuste",
+                "zorionak"
+              ],
+              "structures": [
+                "harridura"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s1.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ane eta Jon ezkonduko dira!"
+              },
+              "answers": [
+                "¡Ane y Jon se van a casar!"
+              ],
+              "distractors": [
+                "me",
+                "boda",
+                "puede",
+                "De"
+              ],
+              "vocabulary": [
+                "eta",
+                "ezkondu",
+                "izan"
+              ],
+              "structures": [
+                "harridura"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s1.e10",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Gorka",
+                  "text": "Ane eta Jon ezkonduko dira!"
+                }
+              ],
+              "options": [
+                "Benetan? Ez dut sinesten!",
+                "Bai, ezkontza da.",
+                "Ez naiz ezkonduko."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "eta",
+                "ezkondu",
+                "izan",
+                "benetan",
+                "ez",
+                "ukan",
+                "sinetsi"
+              ],
+              "structures": [
+                "harridura"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s1.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Una boda? ¿De verdad?"
+              },
+              "answers": [
+                "Ezkontza bat? Benetan?"
+              ],
+              "distractors": [
+                "zer",
+                "dut"
+              ],
+              "vocabulary": [
+                "ezkontza",
+                "bat",
+                "benetan"
+              ],
+              "structures": [
+                "harridura"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u16-2.l2.s2",
+          "exercises": [
+            {
+              "id": "u16-2.l2.s2.e01",
+              "type": "word_intro",
+              "word": "oker",
+              "translation": "equivocado; error",
+              "vocabulary": [
+                "oker"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Uste dut oker zaudela."
+              },
+              "answers": [
+                "Creo que estás equivocado.",
+                "Creo que estás equivocada."
+              ],
+              "distractors": [
+                "Me",
+                "bien",
+                "No"
+              ],
+              "vocabulary": [
+                "uste izan",
+                "ukan",
+                "oker",
+                "egon"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s2.e03",
+              "type": "word_intro",
+              "word": "zaudenik",
+              "translation": "estar",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez dut uste oker zaudenik."
+              },
+              "answers": [
+                "No creo que estés equivocado.",
+                "No creo que estés equivocada."
+              ],
+              "distractors": [
+                "parece",
+                "estás",
+                "Me"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "uste izan",
+                "oker",
+                "egon"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s2.e05",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "oker",
+                  "es": "equivocado"
+                },
+                {
+                  "eu": "ziur",
+                  "es": "seguro"
+                },
+                {
+                  "eu": "lasai",
+                  "es": "tranquilo"
+                },
+                {
+                  "eu": "uste dut",
+                  "es": "creo"
+                },
+                {
+                  "eu": "iruditzen zait",
+                  "es": "me parece"
+                }
+              ],
+              "vocabulary": [
+                "oker",
+                "ziur",
+                "lasai",
+                "uste izan",
+                "ukan",
+                "iruditu",
+                "gustatu"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s2.e06",
+              "type": "speak",
+              "text": "Ziur dagoela iruditzen zait.",
+              "translation": "Me parece que está seguro.",
+              "vocabulary": [
+                "ziur",
+                "egon",
+                "iruditu",
+                "gustatu"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s2.e07",
+              "type": "fill_blank",
+              "sentence": "Ez dut uste oker ___.",
+              "options": [
+                "zaudenik",
+                "zaudela",
+                "zaude"
+              ],
+              "correct": 0,
+              "translation": "No creo que estés equivocado.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "uste izan",
+                "oker",
+                "egon"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s2.e08",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez zait iruditzen ziur dagoenik."
+              },
+              "answers": [
+                "No me parece que esté seguro.",
+                "No me parece que esté segura."
+              ],
+              "distractors": [
+                "estés",
+                "equivocado",
+                "estás",
+                "tranquilo"
+              ],
+              "vocabulary": [
+                "ez",
+                "gustatu",
+                "iruditu",
+                "ziur",
+                "egon"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s2.e09",
+              "type": "fill_blank",
+              "sentence": "Ziur ___ iruditzen zait.",
+              "options": [
+                "dagoela",
+                "dagoenik",
+                "dago"
+              ],
+              "correct": 0,
+              "translation": "Me parece que está seguro.",
+              "vocabulary": [
+                "ziur",
+                "egon",
+                "iruditu",
+                "gustatu"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s2.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "No parece que esté bien."
+              },
+              "answers": [
+                "Ez du ematen ondo dagoenik."
+              ],
+              "distractors": [
+                "dagoela",
+                "Uste",
+                "dut"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "eman",
+                "ondo",
+                "egon"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s2.e11",
+              "type": "choose_meaning",
+              "text": "Ez zait iruditzen ziur dagoenik.",
+              "options": [
+                "No me parece que esté seguro.",
+                "Me parece que está seguro.",
+                "No estoy seguro."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "gustatu",
+                "iruditu",
+                "ziur",
+                "egon"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s2.e12",
+              "type": "listen_tap",
+              "text": "Ez dirudi lasai dagoenik.",
+              "distractors": [
+                "zaudela",
+                "zait",
+                "ematen"
+              ],
+              "vocabulary": [
+                "ez",
+                "irudi",
+                "lasai",
+                "egon"
+              ],
+              "structures": [
+                "uste",
+                "iruditu",
+                "enik"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u16-2.l2.s3",
+          "exercises": [
+            {
+              "id": "u16-2.l2.s3.e01",
+              "type": "listen_type",
+              "text": "Gero eta zaharragoa naiz.",
+              "answers": [
+                "Gero eta zaharragoa naiz."
+              ],
+              "vocabulary": [
+                "gero",
+                "eta",
+                "zahar",
+                "izan"
+              ],
+              "structures": [
+                "gero-eta"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s3.e02",
+              "type": "speak",
+              "text": "Gero eta jende gehiago bizi da hirian.",
+              "translation": "Cada vez vive más gente en la ciudad.",
+              "vocabulary": [
+                "gero",
+                "eta",
+                "jende",
+                "gehiago",
+                "bizi izan",
+                "izan",
+                "hiri"
+              ],
+              "structures": [
+                "gero-eta"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s3.e03",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "gero eta",
+                  "es": "cada vez"
+                },
+                {
+                  "eu": "gehiago",
+                  "es": "más"
+                },
+                {
+                  "eu": "gutxiago",
+                  "es": "menos"
+                },
+                {
+                  "eu": "hobeto",
+                  "es": "mejor"
+                },
+                {
+                  "eu": "zaharrago",
+                  "es": "más viejo"
+                }
+              ],
+              "vocabulary": [
+                "gero",
+                "eta",
+                "gehiago",
+                "gutxiago",
+                "hobe",
+                "zahar"
+              ],
+              "structures": [
+                "gero-eta"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gero eta diru gutxiago daukat."
+              },
+              "answers": [
+                "Cada vez tengo menos dinero."
+              ],
+              "distractors": [
+                "más",
+                "viejo",
+                "soy"
+              ],
+              "vocabulary": [
+                "gero",
+                "eta",
+                "diru",
+                "gutxiago",
+                "eduki"
+              ],
+              "structures": [
+                "gero-eta"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Gero eta diru ___ daukat.",
+              "options": [
+                "gutxiago",
+                "gutxi",
+                "oso gutxi"
+              ],
+              "correct": 0,
+              "translation": "Cada vez tengo menos dinero.",
+              "vocabulary": [
+                "gero",
+                "eta",
+                "diru",
+                "gutxiago",
+                "eduki"
+              ],
+              "structures": [
+                "gero-eta"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s3.e06",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Cada vez hablas mejor en euskera."
+              },
+              "answers": [
+                "Gero eta hobeto hitz egiten duzu euskaraz."
+              ],
+              "distractors": [
+                "daukat",
+                "da",
+                "Haurrak",
+                "naiz"
+              ],
+              "vocabulary": [
+                "gero",
+                "eta",
+                "hobe",
+                "hitz",
+                "egin",
+                "ukan",
+                "euskara"
+              ],
+              "structures": [
+                "gero-eta"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s3.e07",
+              "type": "fill_blank",
+              "sentence": "Gero eta hobeto hitz egiten ___ euskaraz.",
+              "options": [
+                "duzu",
+                "zara",
+                "dut"
+              ],
+              "correct": 0,
+              "translation": "Cada vez hablas mejor en euskera.",
+              "vocabulary": [
+                "gero",
+                "eta",
+                "hobe",
+                "hitz",
+                "egin",
+                "ukan",
+                "euskara"
+              ],
+              "structures": [
+                "gero-eta"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s3.e08",
+              "type": "listen_tap",
+              "text": "Haurrak gero eta handiagoak dira.",
+              "distractors": [
+                "hitz",
+                "daukat",
+                "egiten"
+              ],
+              "vocabulary": [
+                "hau",
+                "gero",
+                "eta",
+                "handi",
+                "izan"
+              ],
+              "structures": [
+                "gero-eta"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s3.e09",
+              "type": "word_intro",
+              "word": "geratzen",
+              "translation": "quedar(se)",
+              "vocabulary": [
+                "geratu"
+              ],
+              "structures": [
+                "gero-eta"
+              ]
+            },
+            {
+              "id": "u16-2.l2.s3.e10",
+              "type": "read_true_false",
+              "passage": "Gure herrian gero eta jende gutxiago bizi da. Gazteak hirira joaten dira, eta herrian zaharrak geratzen dira.",
+              "statement": "En el pueblo vive cada vez más gente.",
+              "answer": false,
+              "vocabulary": [
+                "gu",
+                "herri",
+                "gero",
+                "eta",
+                "jende",
+                "gutxiago",
+                "bizi izan",
+                "izan",
+                "gazte",
+                "hiri",
+                "joan",
+                "zahar",
+                "geratu"
+              ],
+              "structures": [
+                "gero-eta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u16-2.l3",
+      "type": "lesson",
+      "title": {
+        "es": "Cambios en la vida",
+        "eu": "Bizitzako aldaketak"
+      },
+      "lessons": [
+        {
+          "id": "u16-2.l3.s1",
+          "exercises": [
+            {
+              "id": "u16-2.l3.s1.e01",
+              "type": "speak",
+              "text": "Kirola egiten hasi naiz.",
+              "translation": "He empezado a hacer deporte.",
+              "vocabulary": [
+                "kirol",
+                "egin",
+                "hasi",
+                "izan"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e02",
+              "type": "word_intro",
+              "word": "jarraituko",
+              "translation": "seguir; continuar",
+              "vocabulary": [
+                "jarraitu"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Euskara ikasten jarraituko dut."
+              },
+              "answers": [
+                "Seguiré estudiando euskera."
+              ],
+              "distractors": [
+                "por",
+                "noche"
+              ],
+              "vocabulary": [
+                "euskara",
+                "ikasi",
+                "jarraitu",
+                "ukan"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e04",
+              "type": "word_intro",
+              "word": "jarraitu",
+              "translation": "seguir; continuar",
+              "vocabulary": [
+                "jarraitu"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e05",
+              "type": "word_intro",
+              "word": "saiatu",
+              "translation": "intentar",
+              "vocabulary": [
+                "saiatu"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e06",
+              "type": "word_intro",
+              "word": "utzi",
+              "translation": "dejar",
+              "vocabulary": [
+                "utzi"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e07",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "hasi",
+                  "es": "empezar"
+                },
+                {
+                  "eu": "jarraitu",
+                  "es": "seguir"
+                },
+                {
+                  "eu": "saiatu",
+                  "es": "intentar"
+                },
+                {
+                  "eu": "utzi",
+                  "es": "dejar"
+                },
+                {
+                  "eu": "lasai",
+                  "es": "tranquilo"
+                }
+              ],
+              "vocabulary": [
+                "hasi",
+                "jarraitu",
+                "saiatu",
+                "utzi",
+                "lasai"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e08",
+              "type": "word_intro",
+              "word": "erretzeari",
+              "translation": "fumar",
+              "vocabulary": [
+                "erre"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e09",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Erretzeari utzi diot."
+              },
+              "answers": [
+                "He dejado de fumar."
+              ],
+              "distractors": [
+                "Intentaré",
+                "Quiero",
+                "empezado"
+              ],
+              "vocabulary": [
+                "erre",
+                "utzi",
+                "ukan"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e10",
+              "type": "fill_blank",
+              "sentence": "Kirola egiten ___ naiz.",
+              "options": [
+                "hasi",
+                "utzi",
+                "jarraitu"
+              ],
+              "correct": 0,
+              "translation": "He empezado a hacer deporte.",
+              "vocabulary": [
+                "kirol",
+                "egin",
+                "hasi",
+                "izan"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e11",
+              "type": "word_intro",
+              "word": "saiatzen",
+              "translation": "intentar",
+              "vocabulary": [
+                "saiatu"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Goiz jaikitzen saiatzen naiz."
+              },
+              "answers": [
+                "Intento levantarme temprano."
+              ],
+              "distractors": [
+                "Quiero",
+                "Intentaré"
+              ],
+              "vocabulary": [
+                "goiz",
+                "jaiki",
+                "saiatu",
+                "izan"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e13",
+              "type": "fill_blank",
+              "sentence": "Erretzeari ___ diot.",
+              "options": [
+                "utzi",
+                "hasi",
+                "saiatu"
+              ],
+              "correct": 0,
+              "translation": "He dejado de fumar.",
+              "vocabulary": [
+                "erre",
+                "utzi",
+                "ukan"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e14",
+              "type": "word_intro",
+              "word": "egoten",
+              "translation": "estar",
+              "vocabulary": [
+                "egon"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e15",
+              "type": "word_intro",
+              "word": "saiatuko",
+              "translation": "intentar",
+              "vocabulary": [
+                "saiatu"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e16",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gauean lasai egoten saiatuko naiz."
+              },
+              "answers": [
+                "Intentaré estar tranquilo por la noche.",
+                "Intentaré estar tranquila por la noche."
+              ],
+              "distractors": [
+                "levantarme",
+                "deporte",
+                "temprano",
+                "fumar"
+              ],
+              "vocabulary": [
+                "gau",
+                "lasai",
+                "egon",
+                "saiatu",
+                "izan"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e17",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Patxi",
+                  "text": "Oraindik erretzen duzu?"
+                }
+              ],
+              "options": [
+                "Ez, erretzeari utzi diot.",
+                "Ez, erretzen hasi naiz.",
+                "Bai, erretzaileari utzi diot."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "orain",
+                "erre",
+                "ukan",
+                "ez",
+                "utzi"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s1.e18",
+              "type": "order_sentence",
+              "answer": "Lanean jarraitu nahi dut.",
+              "translation": "Quiero seguir trabajando.",
+              "vocabulary": [
+                "lan",
+                "jarraitu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "hasi",
+                "jarraitu",
+                "saiatu"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u16-2.l3.s2",
+          "exercises": [
+            {
+              "id": "u16-2.l3.s2.e01",
+              "type": "word_intro",
+              "word": "haurtzaro",
+              "translation": "infancia",
+              "vocabulary": [
+                "haurtzaro"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Haurtzaroan herri txiki batean bizi nintzen."
+              },
+              "answers": [
+                "En mi infancia vivía en un pueblo pequeño."
+              ],
+              "distractors": [
+                "Fue",
+                "vivir",
+                "muchos",
+                "bonito"
+              ],
+              "vocabulary": [
+                "haurtzaro",
+                "herri",
+                "txiki",
+                "bat",
+                "bizi izan",
+                "izan"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e03",
+              "type": "word_intro",
+              "word": "gaztaro",
+              "translation": "juventud",
+              "vocabulary": [
+                "gaztaro"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gaztaroan asko bidaiatzen nuen."
+              },
+              "answers": [
+                "En mi juventud viajaba mucho."
+              ],
+              "distractors": [
+                "vida",
+                "vivía",
+                "vivir"
+              ],
+              "vocabulary": [
+                "gaztaro",
+                "asko",
+                "bidaia",
+                "ukan"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e05",
+              "type": "word_intro",
+              "word": "helduaro",
+              "translation": "edad adulta",
+              "vocabulary": [
+                "helduaro"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e06",
+              "type": "word_intro",
+              "word": "zahartzaro",
+              "translation": "vejez",
+              "vocabulary": [
+                "zahartzaro"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e07",
+              "type": "word_intro",
+              "word": "une",
+              "translation": "momento",
+              "vocabulary": [
+                "une"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e08",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "haurtzaro",
+                  "es": "infancia"
+                },
+                {
+                  "eu": "gaztaro",
+                  "es": "juventud"
+                },
+                {
+                  "eu": "helduaro",
+                  "es": "edad adulta"
+                },
+                {
+                  "eu": "zahartzaro",
+                  "es": "vejez"
+                },
+                {
+                  "eu": "une",
+                  "es": "momento"
+                }
+              ],
+              "vocabulary": [
+                "haurtzaro",
+                "gaztaro",
+                "helduaro",
+                "zahartzaro",
+                "une"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e09",
+              "type": "listen_tap",
+              "text": "Helduaroan lan asko egiten dugu.",
+              "distractors": [
+                "txiki",
+                "Haurtzaroan",
+                "dut"
+              ],
+              "vocabulary": [
+                "helduaro",
+                "lan",
+                "asko",
+                "egin",
+                "ukan"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e10",
+              "type": "choose_meaning",
+              "text": "Gaztaroan asko bidaiatzen nuen.",
+              "options": [
+                "En mi juventud viajaba mucho.",
+                "En mi infancia viajaba mucho.",
+                "Ahora viajo mucho."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "gaztaro",
+                "asko",
+                "bidaia",
+                "ukan"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e11",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "En la vejez quiero vivir tranquilo."
+              },
+              "answers": [
+                "Zahartzaroan lasai bizi nahi dut."
+              ],
+              "distractors": [
+                "dugu",
+                "egiten",
+                "asko"
+              ],
+              "vocabulary": [
+                "zahartzaro",
+                "lasai",
+                "bizi izan",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e12",
+              "type": "choose_image",
+              "prompt": "el niño",
+              "options": [
+                {
+                  "text": "aitona",
+                  "image": "people_grandfather.webp"
+                },
+                {
+                  "text": "gizona",
+                  "image": "people_man.webp"
+                },
+                {
+                  "text": "umea",
+                  "image": "people_child.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "ume"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e13",
+              "type": "word_intro",
+              "word": "bizitza",
+              "translation": "vida",
+              "vocabulary": [
+                "bizitza"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e14",
+              "type": "word_intro",
+              "word": "aldaketa",
+              "translation": "cambio",
+              "vocabulary": [
+                "aldaketa"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bizitzan aldaketa asko izan ditut."
+              },
+              "answers": [
+                "He tenido muchos cambios en la vida."
+              ],
+              "distractors": [
+                "juventud",
+                "tranquilo",
+                "vejez",
+                "pequeño"
+              ],
+              "vocabulary": [
+                "bizitza",
+                "aldaketa",
+                "asko",
+                "izan",
+                "ukan"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s2.e16",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Une polita izan zen."
+              },
+              "answers": [
+                "Fue un momento bonito."
+              ],
+              "vocabulary": [
+                "une",
+                "polit",
+                "izan"
+              ],
+              "structures": [
+                "bizitza"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u16-2.l3.s3",
+          "exercises": [
+            {
+              "id": "u16-2.l3.s3.e01",
+              "type": "word_intro",
+              "word": "ohitu",
+              "translation": "acostumbrarse",
+              "vocabulary": [
+                "ohitu"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hirian bizitzera ohitu zara?"
+              },
+              "answers": [
+                "¿Te has acostumbrado a vivir en la ciudad?"
+              ],
+              "distractors": [
+                "boda",
+                "vida",
+                "fue",
+                "cambiado"
+              ],
+              "vocabulary": [
+                "hiri",
+                "ohitu",
+                "izan"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e03",
+              "type": "listen_tap",
+              "text": "Oraindik ez naiz ohitu.",
+              "distractors": [
+                "Lasaitu",
+                "dut",
+                "joan"
+              ],
+              "vocabulary": [
+                "orain",
+                "ez",
+                "izan",
+                "ohitu"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e04",
+              "type": "word_intro",
+              "word": "modu",
+              "translation": "manera; forma",
+              "vocabulary": [
+                "modu"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e05",
+              "type": "word_intro",
+              "word": "lasaitu",
+              "translation": "tranquilizarse",
+              "vocabulary": [
+                "lasaitu"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e06",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "ohitu",
+                  "es": "acostumbrarse"
+                },
+                {
+                  "eu": "aldaketa",
+                  "es": "cambio"
+                },
+                {
+                  "eu": "modu",
+                  "es": "modo"
+                },
+                {
+                  "eu": "lasaitu",
+                  "es": "tranquilizarse"
+                },
+                {
+                  "eu": "ezkontza",
+                  "es": "boda"
+                }
+              ],
+              "vocabulary": [
+                "ohitu",
+                "aldaketa",
+                "modu",
+                "lasaitu",
+                "ezkontza"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e07",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "He cambiado de modo de vida."
+              },
+              "answers": [
+                "Bizitza modua aldatu dut."
+              ],
+              "distractors": [
+                "Hirian",
+                "ez",
+                "ohitu"
+              ],
+              "vocabulary": [
+                "bizitza",
+                "modu",
+                "aldatu",
+                "ukan"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e08",
+              "type": "word_intro",
+              "word": "pozago",
+              "translation": "contento",
+              "vocabulary": [
+                "pozik"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e09",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nerea",
+                  "text": "Zer moduz herri berrian? Ohitu zara?"
+                }
+              ],
+              "options": [
+                "Oraindik ez naiz ohitu, baina gero eta pozago nago.",
+                "Oraindik ez naiz ohitu, baina oso pozago nago.",
+                "Herri berria naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zer moduz",
+                "herri",
+                "berri",
+                "ohitu",
+                "izan",
+                "orain",
+                "ez",
+                "baina",
+                "gero",
+                "eta",
+                "pozik",
+                "egon"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e10",
+              "type": "order_sentence",
+              "answer": "Banandu eta gero, beste hiri batera joan zen.",
+              "translation": "Después de separarse, se fue a otra ciudad.",
+              "vocabulary": [
+                "banandu",
+                "eta",
+                "gero",
+                "beste",
+                "hiri",
+                "bat",
+                "joan",
+                "izan"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e11",
+              "type": "read_true_false",
+              "passage": "Xabier duela urtebete joan zen hirira. Hasieran ez zen ohitu, baina orain gero eta pozago dago, eta euskara ikasten hasi da.",
+              "statement": "Xabier ahora está cada vez más contento en la ciudad.",
+              "answer": true,
+              "vocabulary": [
+                "duela",
+                "urte",
+                "joan",
+                "izan",
+                "hiri",
+                "hasi",
+                "ez",
+                "ohitu",
+                "baina",
+                "orain",
+                "gero",
+                "eta",
+                "pozik",
+                "egon",
+                "euskara",
+                "ikasi"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e12",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ezkontzan negar egin nuen."
+              },
+              "answers": [
+                "Lloré en la boda."
+              ],
+              "vocabulary": [
+                "negar egin",
+                "ezkontza",
+                "ukan"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            },
+            {
+              "id": "u16-2.l3.s3.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Lasaitu egin naiz."
+              },
+              "answers": [
+                "Me he tranquilizado."
+              ],
+              "vocabulary": [
+                "lasaitu",
+                "egin",
+                "izan"
+              ],
+              "structures": [
+                "ohitu",
+                "aldaketak"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u16-2.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: el rumor",
+        "eu": "Istorioa: zurrumurrua"
+      },
+      "story": {
+        "id": "u16-2.l4.story",
+        "title": "Zurrumurrua",
+        "lines": [
+          {
+            "speaker": "Itziar",
+            "eu": "Josu, badakizu zurrumurrua? Maialen haurdun dagoela dirudi!",
+            "es": "Josu, ¿sabes el rumor? ¡Parece que Maialen está embarazada!"
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Benetan? Ez dut sinesten!",
+            "es": "¿De verdad? ¡No me lo creo!"
+          },
+          {
+            "speaker": "Itziar",
+            "eu": "Bai, bai. Gaur ez du kaferik hartu, eta oso nekatuta dagoela ematen du.",
+            "es": "Sí, sí. Hoy no ha tomado café, y parece que está muy cansada."
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Ez dut uste haurdun dagoenik. Agian gaixo dago.",
+            "es": "No creo que esté embarazada. Quizá está enferma."
+          },
+          {
+            "speaker": "Itziar",
+            "eu": "Eta atzo haurtzaindegi bati buruz hitz egiten ari zen!",
+            "es": "¡Y ayer estaba hablando de una guardería!"
+          },
+          {
+            "speaker": "Maialen",
+            "eu": "Kaixo! Zertaz ari zarete?",
+            "es": "¡Hola! ¿De qué estáis hablando?"
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Itziarrek uste du haurdun zaudela.",
+            "es": "Itziar cree que estás embarazada."
+          },
+          {
+            "speaker": "Maialen",
+            "eu": "Ez da egia izango! Ez nago haurdun. Nire ahizpa dago haurdun!",
+            "es": "¡No puede ser! No estoy embarazada. ¡Mi hermana está embarazada!"
+          },
+          {
+            "speaker": "Itziar",
+            "eu": "A zer ezustea! Eta kafea?",
+            "es": "¡Qué sorpresa! ¿Y el café?"
+          },
+          {
+            "speaker": "Maialen",
+            "eu": "Kafea hartzeari utzi diot. Osasuna zaintzen saiatzen ari naiz!",
+            "es": "He dejado de tomar café. ¡Estoy intentando cuidar mi salud!"
+          },
+          {
+            "speaker": "Josu",
+            "eu": "Ikusten? Zurrumurruak ez dira beti egia.",
+            "es": "¿Ves? Los rumores no siempre son verdad."
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 3,
+            "prompt": "¿Por qué cree Itziar que Maialen está embarazada?",
+            "options": [
+              "Porque no ha tomado café y parece cansada",
+              "Porque se lo ha dicho Maialen",
+              "Porque Josu se lo ha contado"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 8,
+            "prompt": "¿Quién está embarazada de verdad?",
+            "options": [
+              "La hermana de Maialen",
+              "Maialen",
+              "Itziar"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 10,
+            "prompt": "¿Por qué ya no toma café Maialen?",
+            "options": [
+              "Porque intenta cuidar su salud",
+              "Porque está embarazada",
+              "Porque no le gusta"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u16-2.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u16-2.l6",
+      "type": "challenge",
+      "title": {
+        "es": "Reto de estrellas",
+        "eu": "Izarren erronka"
+      },
+      "host": "mikel"
+    }
+  ]
+}

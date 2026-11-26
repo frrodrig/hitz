@@ -1,0 +1,2948 @@
+{
+  "schemaVersion": 1,
+  "id": "u18-1",
+  "section": "s6",
+  "bookUnit": 18,
+  "title": {
+    "es": "Buenos compradores",
+    "eu": "Erosle onak"
+  },
+  "goals": [
+    {
+      "es": "Describir tipos de compradores y dar consejos de consumo.",
+      "eu": "Erosle motak deskribatu eta kontsumoari buruzko aholkuak eman."
+    },
+    {
+      "es": "Contar hábitos de compra con porcentajes y fracciones.",
+      "eu": "Erosteko ohiturak kontatu, ehunekoak eta zatikiak erabiliz."
+    },
+    {
+      "es": "Decir con qué frecuencia haces algo.",
+      "eu": "Zerbait zenbatean behin egiten duzun esan."
+    }
+  ],
+  "keyWords": [
+    {
+      "eu": "erosle",
+      "es": "comprador; compradora"
+    },
+    {
+      "eu": "kontsumo",
+      "es": "consumo"
+    },
+    {
+      "eu": "zalantza",
+      "es": "duda"
+    },
+    {
+      "eu": "eskaintza",
+      "es": "oferta"
+    },
+    {
+      "eu": "merkealdi",
+      "es": "rebajas"
+    },
+    {
+      "eu": "deskontu",
+      "es": "descuento"
+    },
+    {
+      "eu": "berme",
+      "es": "garantía"
+    },
+    {
+      "eu": "faktura",
+      "es": "factura"
+    }
+  ],
+  "guidebook": {
+    "sections": [
+      {
+        "title": {
+          "es": "Es recomendable…: gomendagarria da …-t(z)ea",
+          "eu": "Gomendagarria da …-t(z)ea"
+        },
+        "body": {
+          "es": "Para aconsejar en general: «komenigarria da» o «gomendagarria da» con el verbo en -t(z)ea: «komenigarria da prezioak alderatzea». A alguien en concreto: «…-t(z)ea gomendatzen dizut».",
+          "eu": "Oro har aholkatzeko: «komenigarria da» edo «gomendagarria da», aditza -t(z)ea forman dela: «komenigarria da prezioak alderatzea». Norbaiti zehazki: «…-t(z)ea gomendatzen dizut»."
+        },
+        "examples": [
+          {
+            "eu": "Gomendagarria da ordainagiria gordetzea.",
+            "es": "Es recomendable guardar el ticket."
+          },
+          {
+            "eu": "Barazki ekologikoak erostea gomendatzen dizut.",
+            "es": "Te recomiendo comprar verdura ecológica."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "La mitad, un tercio, uno de cada tres",
+          "eu": "Erdia, herena, hirutik bat"
+        },
+        "body": {
+          "es": "Erdia (la mitad), herena (un tercio), laurdena (un cuarto), hirutik bat (uno de cada tres). Si hacen algo con un verbo como «erosi», llevan -k: «erosleen erdiak», «hirutik batek». El verbo va en singular.",
+          "eu": "Erdia, herena, laurdena, hirutik bat. «Erosi» bezalako aditz batekin -k hartzen dute: «erosleen erdiak», «hirutik batek». Aditza singularrean doa."
+        },
+        "examples": [
+          {
+            "eu": "Erosleen erdiak merkealdietan erosten du.",
+            "es": "La mitad de los compradores compra en rebajas."
+          },
+          {
+            "eu": "Hirutik batek sarean erosten du.",
+            "es": "Uno de cada tres compra por internet."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Porcentajes: ehuneko hirurogeik",
+          "eu": "Ehunekoak: ehuneko hirurogeik"
+        },
+        "body": {
+          "es": "% 60 se lee «ehuneko hirurogei». Como cualquier nombre, toma el caso que pide el verbo: «gazteen ehuneko hirurogeik sarean erosten du».",
+          "eu": "% 60 «ehuneko hirurogei» irakurtzen da. Beste edozein izenek bezala, aditzak eskatzen duen kasua hartzen du: «gazteen ehuneko hirurogeik sarean erosten du»."
+        },
+        "examples": [
+          {
+            "eu": "Gazteen ehuneko hirurogeik sarean erosten du.",
+            "es": "El 60 % de los jóvenes compra por internet."
+          }
+        ]
+      },
+      {
+        "title": {
+          "es": "Cada viernes, nunca: ostiralero, sekula ez",
+          "eu": "Ostiralero, sekula ez"
+        },
+        "body": {
+          "es": "-ero significa «cada»: ostiralero (cada viernes), hilero (cada mes). «Sekula ez» e «inoiz ez» (nunca) necesitan el verbo en negativo: «sekula ez dut sarean erosi».",
+          "eu": "-ero atzizkiak «bakoitz» esan nahi du: ostiralero, hilero. «Sekula ez» eta «inoiz ez» ezezko aditzarekin doaz: «sekula ez dut sarean erosi»."
+        },
+        "examples": [
+          {
+            "eu": "Zenbatean behin erosten duzu arropa?",
+            "es": "¿Cada cuánto compras ropa?"
+          },
+          {
+            "eu": "Sekula ez dut ezer sarean erosi.",
+            "es": "Nunca he comprado nada por internet."
+          }
+        ]
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "u18-1.l1",
+      "type": "lesson",
+      "title": {
+        "es": "Compradores",
+        "eu": "Erosleak"
+      },
+      "lessons": [
+        {
+          "id": "u18-1.l1.s1",
+          "exercises": [
+            {
+              "id": "u18-1.l1.s1.e01",
+              "type": "word_intro",
+              "word": "erosle",
+              "translation": "comprador; compradora",
+              "vocabulary": [
+                "erosle"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Erosle batzuek dena erosten dute."
+              },
+              "answers": [
+                "Algunos compradores lo compran todo."
+              ],
+              "distractors": [
+                "Compro",
+                "que",
+                "dinero"
+              ],
+              "vocabulary": [
+                "erosle",
+                "bat",
+                "dena",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e03",
+              "type": "word_intro",
+              "word": "gastatzen",
+              "translation": "gastar",
+              "vocabulary": [
+                "gastatu"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Beste batzuek ez dute dirurik gastatzen."
+              },
+              "answers": [
+                "Otros no gastan dinero."
+              ],
+              "distractors": [
+                "gastos",
+                "muchos",
+                "tengo"
+              ],
+              "vocabulary": [
+                "beste",
+                "bat",
+                "ez",
+                "ukan",
+                "diru",
+                "gastatu"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e05",
+              "type": "word_intro",
+              "word": "merkealdi",
+              "translation": "rebajas",
+              "vocabulary": [
+                "merkealdi"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e06",
+              "type": "word_intro",
+              "word": "deskontu",
+              "translation": "descuento",
+              "vocabulary": [
+                "deskontu"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e07",
+              "type": "word_intro",
+              "word": "gastatu",
+              "translation": "gastar",
+              "vocabulary": [
+                "gastatu"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e08",
+              "type": "word_intro",
+              "word": "gastu",
+              "translation": "gasto",
+              "vocabulary": [
+                "gastu"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e09",
+              "type": "word_intro",
+              "word": "erosketa",
+              "translation": "compra",
+              "vocabulary": [
+                "erosketa"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e10",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "erosle",
+                  "es": "comprador"
+                },
+                {
+                  "eu": "merkealdi",
+                  "es": "rebajas"
+                },
+                {
+                  "eu": "deskontu",
+                  "es": "descuento"
+                },
+                {
+                  "eu": "gastatu",
+                  "es": "gastar"
+                },
+                {
+                  "eu": "gastu",
+                  "es": "gasto"
+                },
+                {
+                  "eu": "erosketa",
+                  "es": "compra"
+                }
+              ],
+              "vocabulary": [
+                "erosle",
+                "merkealdi",
+                "deskontu",
+                "gastatu",
+                "gastu",
+                "erosketa"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e11",
+              "type": "order_sentence",
+              "answer": "Merkealdietan erosten dut.",
+              "translation": "Compro en rebajas.",
+              "vocabulary": [
+                "merkealdi",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e12",
+              "type": "fill_blank",
+              "sentence": "Beste batzuek ez dute dirurik ___.",
+              "options": [
+                "gastatzen",
+                "gastu",
+                "gastatu"
+              ],
+              "correct": 0,
+              "translation": "Otros no gastan dinero.",
+              "vocabulary": [
+                "beste",
+                "bat",
+                "ez",
+                "ukan",
+                "diru",
+                "gastatu"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e13",
+              "type": "order_sentence",
+              "answer": "Deskontuak maite ditut.",
+              "translation": "Me encantan los descuentos.",
+              "vocabulary": [
+                "deskontu",
+                "maite",
+                "ukan"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e14",
+              "type": "word_intro",
+              "word": "dudana",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e15",
+              "type": "choose_meaning",
+              "text": "Ez dut behar ez dudana erosten.",
+              "options": [
+                "No compro lo que no necesito.",
+                "No necesito comprar nada.",
+                "Compro todo lo que necesito."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "behar izan",
+                "erosi"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e16",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ez dut behar ez dudana erosten."
+              },
+              "answers": [
+                "No compro lo que no necesito."
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "behar izan",
+                "erosi"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e17",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Kazetaria",
+                  "text": "Merkealdietan erosten duzu?"
+                }
+              ],
+              "options": [
+                "Bai, deskontuak maite ditut.",
+                "Bai, merkealdia naiz.",
+                "Ez, deskontua erosten dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "merkealdi",
+                "erosi",
+                "ukan",
+                "bai",
+                "deskontu",
+                "maite"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s1.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Hilero gastu asko ditut."
+              },
+              "answers": [
+                "Cada mes tengo muchos gastos."
+              ],
+              "distractors": [
+                "que",
+                "Compro",
+                "Algunos"
+              ],
+              "vocabulary": [
+                "hil",
+                "gastu",
+                "asko",
+                "ukan"
+              ],
+              "structures": [
+                "erosleak",
+                "gastuak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-1.l1.s2",
+          "exercises": [
+            {
+              "id": "u18-1.l1.s2.e01",
+              "type": "word_intro",
+              "word": "barazki",
+              "translation": "verdura; hortaliza",
+              "vocabulary": [
+                "barazki"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e02",
+              "type": "word_intro",
+              "word": "ekologiko",
+              "translation": "ecológico",
+              "vocabulary": [
+                "ekologiko"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Barazki ekologikoak erosten ditut."
+              },
+              "answers": [
+                "Compro verdura ecológica."
+              ],
+              "distractors": [
+                "por",
+                "consumo"
+              ],
+              "vocabulary": [
+                "barazki",
+                "ekologiko",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e04",
+              "type": "word_intro",
+              "word": "zuzenean",
+              "translation": "directamente",
+              "vocabulary": [
+                "zuzenean"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zuzenean baserrian erosten ditut arrautzak."
+              },
+              "answers": [
+                "Compro los huevos directamente en el caserío."
+              ],
+              "distractors": [
+                "vez",
+                "Es",
+                "internet",
+                "barato"
+              ],
+              "vocabulary": [
+                "zuzenean",
+                "baserri",
+                "erosi",
+                "ukan",
+                "arrautza"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e06",
+              "type": "word_intro",
+              "word": "sare",
+              "translation": "red",
+              "vocabulary": [
+                "sare"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e07",
+              "type": "word_intro",
+              "word": "eskaintza",
+              "translation": "oferta",
+              "vocabulary": [
+                "eskaintza"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e08",
+              "type": "word_intro",
+              "word": "zalantza",
+              "translation": "duda",
+              "vocabulary": [
+                "zalantza"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "barazki",
+                  "es": "verdura"
+                },
+                {
+                  "eu": "ekologiko",
+                  "es": "ecológico"
+                },
+                {
+                  "eu": "zuzenean",
+                  "es": "directamente"
+                },
+                {
+                  "eu": "sare",
+                  "es": "internet (red)"
+                },
+                {
+                  "eu": "eskaintza",
+                  "es": "oferta"
+                },
+                {
+                  "eu": "zalantza",
+                  "es": "duda"
+                }
+              ],
+              "vocabulary": [
+                "barazki",
+                "ekologiko",
+                "zuzenean",
+                "sare",
+                "eskaintza",
+                "zalantza"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e10",
+              "type": "order_sentence",
+              "answer": "Sarean erosten dut, merkeagoa delako.",
+              "translation": "Compro por internet, porque es más barato.",
+              "vocabulary": [
+                "sare",
+                "erosi",
+                "ukan",
+                "merke",
+                "izan"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e11",
+              "type": "word_intro",
+              "word": "kontsumo",
+              "translation": "consumo",
+              "vocabulary": [
+                "kontsumo"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e12",
+              "type": "fill_blank",
+              "sentence": "Kontsumoa gero eta ___ da.",
+              "options": [
+                "handiagoa",
+                "handia",
+                "oso handia"
+              ],
+              "correct": 0,
+              "translation": "El consumo es cada vez mayor.",
+              "vocabulary": [
+                "kontsumo",
+                "gero",
+                "eta",
+                "handi",
+                "izan"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e13",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Eskaintza ona da; deskontu handia dago."
+              },
+              "answers": [
+                "Es una buena oferta; hay un gran descuento."
+              ],
+              "vocabulary": [
+                "eskaintza",
+                "on",
+                "izan",
+                "deskontu",
+                "handi",
+                "egon"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e14",
+              "type": "choose_meaning",
+              "text": "Zuzenean baserrian erosten ditut arrautzak.",
+              "options": [
+                "Compro los huevos directamente en el caserío.",
+                "Tengo gallinas en el caserío.",
+                "Compro los huevos en el supermercado."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zuzenean",
+                "baserri",
+                "erosi",
+                "ukan",
+                "arrautza"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Tengo una duda, ¿este o ese?"
+              },
+              "answers": [
+                "Zalantza daukat; hau ala hori?"
+              ],
+              "distractors": [
+                "da",
+                "Sarean",
+                "dut"
+              ],
+              "vocabulary": [
+                "zalantza",
+                "eduki",
+                "hau",
+                "hori"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e16",
+              "type": "choose_image",
+              "prompt": "el tomate",
+              "options": [
+                {
+                  "text": "arrautza",
+                  "image": "food_egg.webp"
+                },
+                {
+                  "text": "letxuga",
+                  "image": "food_lettuce.webp"
+                },
+                {
+                  "text": "tomatea",
+                  "image": "food_tomato.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "tomate"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s2.e17",
+              "type": "listen_tap",
+              "text": "Kontsumoa gero eta handiagoa da.",
+              "distractors": [
+                "hori",
+                "erosten",
+                "ditut"
+              ],
+              "vocabulary": [
+                "kontsumo",
+                "gero",
+                "eta",
+                "handi",
+                "izan"
+              ],
+              "structures": [
+                "produktuak",
+                "sarea"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-1.l1.s3",
+          "exercises": [
+            {
+              "id": "u18-1.l1.s3.e01",
+              "type": "word_intro",
+              "word": "gorde",
+              "translation": "guardar",
+              "vocabulary": [
+                "gorde"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e02",
+              "type": "word_intro",
+              "word": "ordainagiri",
+              "translation": "recibo; tique",
+              "vocabulary": [
+                "ordainagiri"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e03",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gorde ezazu ordainagiria."
+              },
+              "answers": [
+                "Guarda el ticket."
+              ],
+              "distractors": [
+                "cambiar",
+                "se"
+              ],
+              "vocabulary": [
+                "gorde",
+                "ukan",
+                "ordainagiri"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e04",
+              "type": "word_intro",
+              "word": "berme",
+              "translation": "garantía",
+              "vocabulary": [
+                "berme"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e05",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Bermea bi urtekoa da."
+              },
+              "answers": [
+                "La garantía es de dos años."
+              ],
+              "distractors": [
+                "para",
+                "Necesitas",
+                "cambiar",
+                "ticket"
+              ],
+              "vocabulary": [
+                "berme",
+                "bi",
+                "urte",
+                "izan"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e06",
+              "type": "word_intro",
+              "word": "faktura",
+              "translation": "factura",
+              "vocabulary": [
+                "faktura"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e07",
+              "type": "word_intro",
+              "word": "akats",
+              "translation": "defecto; fallo",
+              "vocabulary": [
+                "akats"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e08",
+              "type": "word_intro",
+              "word": "hondatu",
+              "translation": "estropear(se)",
+              "vocabulary": [
+                "hondatu"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "ordainagiri",
+                  "es": "ticket"
+                },
+                {
+                  "eu": "faktura",
+                  "es": "factura"
+                },
+                {
+                  "eu": "berme",
+                  "es": "garantía"
+                },
+                {
+                  "eu": "akats",
+                  "es": "defecto"
+                },
+                {
+                  "eu": "hondatu",
+                  "es": "estropearse"
+                },
+                {
+                  "eu": "gorde",
+                  "es": "guardar"
+                }
+              ],
+              "vocabulary": [
+                "ordainagiri",
+                "faktura",
+                "berme",
+                "akats",
+                "hondatu",
+                "gorde"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Mugikorrak akats bat dauka."
+              },
+              "answers": [
+                "El móvil tiene un defecto."
+              ],
+              "vocabulary": [
+                "mugikor",
+                "akats",
+                "bat",
+                "eduki"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e11",
+              "type": "fill_blank",
+              "sentence": "___ ezazu ordainagiria.",
+              "options": [
+                "Gorde",
+                "Gordetzen",
+                "Gordeko"
+              ],
+              "correct": 0,
+              "translation": "Guarda el ticket.",
+              "vocabulary": [
+                "gorde",
+                "ukan",
+                "ordainagiri"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "El ordenador se ha estropeado."
+              },
+              "answers": [
+                "Ordenagailua hondatu da."
+              ],
+              "distractors": [
+                "dauka",
+                "Mugikorrak"
+              ],
+              "vocabulary": [
+                "ordenagailu",
+                "hondatu",
+                "izan"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e13",
+              "type": "word_intro",
+              "word": "zuten",
+              "translation": "(ellos) tenían · auxiliar pasado",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e14",
+              "type": "read_true_false",
+              "passage": "Aitorrek mugikor berri bat erosi zuen. Bi astera hondatu zen, baina ordainagiria gorde zuen, eta dendan mugikorra aldatu zuten.",
+              "statement": "Aitor no guardó el ticket.",
+              "answer": false,
+              "vocabulary": [
+                "mugikor",
+                "berri",
+                "bat",
+                "erosi",
+                "zuek",
+                "bi",
+                "aste",
+                "hondatu",
+                "izan",
+                "baina",
+                "ordainagiri",
+                "gorde",
+                "eta",
+                "denda",
+                "aldatu",
+                "ukan"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e15",
+              "type": "listen_tap",
+              "text": "Faktura behar dut.",
+              "distractors": [
+                "hondatu",
+                "produktua"
+              ],
+              "vocabulary": [
+                "faktura",
+                "behar izan",
+                "ukan"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e16",
+              "type": "word_intro",
+              "word": "produktu",
+              "translation": "producto",
+              "vocabulary": [
+                "produktu"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            },
+            {
+              "id": "u18-1.l1.s3.e17",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ordainagiria behar duzu produktua aldatzeko."
+              },
+              "answers": [
+                "Necesitas el ticket para cambiar el producto."
+              ],
+              "distractors": [
+                "de",
+                "años",
+                "móvil",
+                "un"
+              ],
+              "vocabulary": [
+                "ordainagiri",
+                "behar izan",
+                "ukan",
+                "produktu",
+                "aldatu"
+              ],
+              "structures": [
+                "ordainagiria",
+                "bermea"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u18-1.l2",
+      "type": "lesson",
+      "title": {
+        "es": "Consejos y datos",
+        "eu": "Aholkuak eta datuak"
+      },
+      "lessons": [
+        {
+          "id": "u18-1.l2.s1",
+          "exercises": [
+            {
+              "id": "u18-1.l2.s1.e01",
+              "type": "word_intro",
+              "word": "komenigarri",
+              "translation": "conveniente",
+              "vocabulary": [
+                "komenigarri"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Komenigarria da prezioak alderatzea."
+              },
+              "answers": [
+                "Es conveniente comparar los precios."
+              ],
+              "distractors": [
+                "No",
+                "recomiendas",
+                "todo"
+              ],
+              "vocabulary": [
+                "komenigarri",
+                "izan",
+                "prezio",
+                "alde"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e03",
+              "type": "word_intro",
+              "word": "gomendagarri",
+              "translation": "recomendable",
+              "vocabulary": [
+                "gomendagarri"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Gomendagarria da ordainagiria gordetzea."
+              },
+              "answers": [
+                "Es recomendable guardar el ticket."
+              ],
+              "distractors": [
+                "recomiendas",
+                "ecológica",
+                "me"
+              ],
+              "vocabulary": [
+                "gomendagarri",
+                "izan",
+                "ordainagiri",
+                "gorde"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e05",
+              "type": "word_intro",
+              "word": "gomendatu",
+              "translation": "recomendar",
+              "vocabulary": [
+                "gomendatu"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e06",
+              "type": "word_intro",
+              "word": "gomendio",
+              "translation": "recomendación",
+              "vocabulary": [
+                "gomendio"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e07",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "komenigarri",
+                  "es": "conveniente"
+                },
+                {
+                  "eu": "gomendagarri",
+                  "es": "recomendable"
+                },
+                {
+                  "eu": "gomendatu",
+                  "es": "recomendar"
+                },
+                {
+                  "eu": "gomendio",
+                  "es": "recomendación"
+                },
+                {
+                  "eu": "alderatu",
+                  "es": "comparar"
+                }
+              ],
+              "vocabulary": [
+                "komenigarri",
+                "gomendagarri",
+                "gomendatu",
+                "gomendio",
+                "alde"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e08",
+              "type": "listen_type",
+              "text": "Ez da komenigarria dena sarean erostea.",
+              "answers": [
+                "Ez da komenigarria dena sarean erostea."
+              ],
+              "vocabulary": [
+                "ez",
+                "izan",
+                "komenigarri",
+                "dena",
+                "sare",
+                "erosi"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e09",
+              "type": "fill_blank",
+              "sentence": "Gomendagarria da ordainagiria ___.",
+              "options": [
+                "gordetzea",
+                "gordetzen",
+                "gorde"
+              ],
+              "correct": 0,
+              "translation": "Es recomendable guardar el ticket.",
+              "vocabulary": [
+                "gomendagarri",
+                "izan",
+                "ordainagiri",
+                "gorde"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e10",
+              "type": "speak",
+              "text": "Komeni zaizu bermea begiratzea.",
+              "translation": "Te conviene mirar la garantía.",
+              "vocabulary": [
+                "komeni izan",
+                "gustatu",
+                "berme",
+                "begi"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e11",
+              "type": "word_intro",
+              "word": "gomendatzen",
+              "translation": "recomendar",
+              "vocabulary": [
+                "gomendatu"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e12",
+              "type": "fill_blank",
+              "sentence": "Barazki ekologikoak ___ gomendatzen dizut.",
+              "options": [
+                "erostea",
+                "erosten",
+                "erosi"
+              ],
+              "correct": 0,
+              "translation": "Te recomiendo comprar verdura ecológica.",
+              "vocabulary": [
+                "barazki",
+                "ekologiko",
+                "erosi",
+                "gomendatu",
+                "ukan"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e13",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zer gomendatzen didazu?"
+              },
+              "answers": [
+                "¿Qué me recomiendas?"
+              ],
+              "distractors": [
+                "mirar",
+                "los"
+              ],
+              "vocabulary": [
+                "zer",
+                "gomendatu",
+                "ukan"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e14",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Nerea",
+                  "text": "Ordenagailu bat erosi nahi dut. Zer gomendatzen didazu?"
+                }
+              ],
+              "options": [
+                "Komenigarria da prezioak alderatzea.",
+                "Komenigarria da prezioak alderatzen.",
+                "Ordenagailua gomendioa da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ordenagailu",
+                "bat",
+                "erosi",
+                "nahi izan",
+                "ukan",
+                "zer",
+                "gomendatu",
+                "komenigarri",
+                "izan",
+                "prezio",
+                "alde"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s1.e15",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Te recomiendo comprar verdura ecológica."
+              },
+              "answers": [
+                "Barazki ekologikoak erostea gomendatzen dizut."
+              ],
+              "distractors": [
+                "ordainagiria",
+                "sarean",
+                "Komenigarria"
+              ],
+              "vocabulary": [
+                "barazki",
+                "ekologiko",
+                "erosi",
+                "gomendatu",
+                "ukan"
+              ],
+              "structures": [
+                "komenigarria",
+                "gomendatu"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-1.l2.s2",
+          "exercises": [
+            {
+              "id": "u18-1.l2.s2.e01",
+              "type": "word_intro",
+              "word": "inkesta",
+              "translation": "encuesta",
+              "vocabulary": [
+                "inkesta"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Inkesta bat egin dugu erosleen artean."
+              },
+              "answers": [
+                "Hemos hecho una encuesta entre los compradores."
+              ],
+              "distractors": [
+                "ecológicos",
+                "jóvenes",
+                "El",
+                "gasta"
+              ],
+              "vocabulary": [
+                "inkesta",
+                "bat",
+                "egin",
+                "ukan",
+                "erosle",
+                "artean"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e03",
+              "type": "listen_type",
+              "text": "Erosleen erdiak merkealdietan erosten du.",
+              "answers": [
+                "Erosleen erdiak merkealdietan erosten du."
+              ],
+              "vocabulary": [
+                "erosle",
+                "erdi",
+                "merkealdi",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e04",
+              "type": "word_intro",
+              "word": "erdi",
+              "translation": "mitad",
+              "vocabulary": [
+                "erdi"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e05",
+              "type": "word_intro",
+              "word": "heren",
+              "translation": "tercio",
+              "vocabulary": [
+                "heren"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e06",
+              "type": "word_intro",
+              "word": "laurden",
+              "translation": "cuarto (fracción; eta laurden: y cuarto)",
+              "vocabulary": [
+                "laurden"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e07",
+              "type": "word_intro",
+              "word": "hirutik",
+              "translation": "tres",
+              "vocabulary": [
+                "hiru"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e08",
+              "type": "word_intro",
+              "word": "joera",
+              "translation": "tendencia",
+              "vocabulary": [
+                "joera"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "erdi",
+                  "es": "mitad"
+                },
+                {
+                  "eu": "heren",
+                  "es": "tercio"
+                },
+                {
+                  "eu": "laurden",
+                  "es": "cuarto"
+                },
+                {
+                  "eu": "hirutik bat",
+                  "es": "uno de cada tres"
+                },
+                {
+                  "eu": "inkesta",
+                  "es": "encuesta"
+                },
+                {
+                  "eu": "joera",
+                  "es": "tendencia"
+                }
+              ],
+              "vocabulary": [
+                "erdi",
+                "heren",
+                "laurden",
+                "hiru",
+                "bat",
+                "inkesta",
+                "joera"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e10",
+              "type": "listen_tap",
+              "text": "Herenak ez du ezer gastatzen.",
+              "distractors": [
+                "merkealdietan",
+                "Joera",
+                "bat"
+              ],
+              "vocabulary": [
+                "heren",
+                "ez",
+                "ukan",
+                "ezer",
+                "gastatu"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e11",
+              "type": "fill_blank",
+              "sentence": "Erosleen ___ merkealdietan erosten du.",
+              "options": [
+                "erdiak",
+                "erdia",
+                "erdian"
+              ],
+              "correct": 0,
+              "translation": "La mitad de los compradores compra en rebajas.",
+              "vocabulary": [
+                "erosle",
+                "erdi",
+                "merkealdi",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Laurdenak produktu ekologikoak erosten ditu."
+              },
+              "answers": [
+                "Un cuarto compra productos ecológicos."
+              ],
+              "distractors": [
+                "encuesta",
+                "nada",
+                "mitad"
+              ],
+              "vocabulary": [
+                "laurden",
+                "produktu",
+                "ekologiko",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e13",
+              "type": "choose_meaning",
+              "text": "Hirutik batek sarean erosten du.",
+              "options": [
+                "Uno de cada tres compra por internet.",
+                "Tres de cada uno compran por internet.",
+                "Compra tres cosas por internet."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "hiru",
+                "bat",
+                "sare",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e14",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Uno de cada tres compra por internet."
+              },
+              "answers": [
+                "Hirutik batek sarean erosten du."
+              ],
+              "distractors": [
+                "Erosleen",
+                "berri",
+                "ez"
+              ],
+              "vocabulary": [
+                "hiru",
+                "bat",
+                "sare",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e15",
+              "type": "word_intro",
+              "word": "datu",
+              "translation": "dato",
+              "vocabulary": [
+                "datu"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e16",
+              "type": "read_true_false",
+              "passage": "Inkesta baten datuen arabera, gazteen ehuneko hirurogeik sarean erosten du. Nagusien artean, berriz, hirutik batek bakarrik.",
+              "statement": "Los mayores compran por internet más que los jóvenes.",
+              "answer": false,
+              "vocabulary": [
+                "inkesta",
+                "bat",
+                "datu",
+                "gazte",
+                "ehuneko",
+                "hirurogei",
+                "sare",
+                "erosi",
+                "ukan",
+                "nagusi",
+                "artean",
+                "berriz",
+                "hiru",
+                "bakarrik"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e17",
+              "type": "listen_tap",
+              "text": "Gazteen ehuneko hirurogeik sarean erosten du.",
+              "distractors": [
+                "da",
+                "ekologikoak",
+                "gastatzen",
+                "artean"
+              ],
+              "vocabulary": [
+                "gazte",
+                "ehuneko",
+                "hirurogei",
+                "sare",
+                "erosi",
+                "ukan"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s2.e18",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Es una tendencia nueva."
+              },
+              "answers": [
+                "Joera berri bat da."
+              ],
+              "distractors": [
+                "egin",
+                "erosten",
+                "Gazteen"
+              ],
+              "vocabulary": [
+                "joera",
+                "berri",
+                "bat",
+                "izan"
+              ],
+              "structures": [
+                "zatikiak",
+                "ehunekoak"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-1.l2.s3",
+          "exercises": [
+            {
+              "id": "u18-1.l2.s3.e01",
+              "type": "word_intro",
+              "word": "zenbatean",
+              "translation": "cuánto",
+              "vocabulary": [
+                "zenbat"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Zenbatean behin erosten duzu arropa?"
+              },
+              "answers": [
+                "¿Cada cuánto compras ropa?"
+              ],
+              "distractors": [
+                "Voy",
+                "Solo",
+                "por"
+              ],
+              "vocabulary": [
+                "zenbat",
+                "behi",
+                "erosi",
+                "ukan",
+                "arropa"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e03",
+              "type": "word_intro",
+              "word": "ostiralero",
+              "translation": "viernes",
+              "vocabulary": [
+                "ostiral"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ostiralero joaten naiz supermerkatura."
+              },
+              "answers": [
+                "Voy al supermercado cada viernes."
+              ],
+              "distractors": [
+                "las",
+                "ropa",
+                "internet"
+              ],
+              "vocabulary": [
+                "ostiral",
+                "joan",
+                "izan",
+                "supermerkatu"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e05",
+              "type": "word_intro",
+              "word": "sarritan",
+              "translation": "a menudo",
+              "vocabulary": [
+                "sarritan"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e06",
+              "type": "word_intro",
+              "word": "batzuetan",
+              "translation": "a veces",
+              "vocabulary": [
+                "batzuetan"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e07",
+              "type": "word_intro",
+              "word": "sekula",
+              "translation": "nunca (sekula ez)",
+              "vocabulary": [
+                "sekula"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e08",
+              "type": "word_intro",
+              "word": "hilero",
+              "translation": "morir",
+              "vocabulary": [
+                "hil"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e09",
+              "type": "match_pairs",
+              "pairs": [
+                {
+                  "eu": "sarritan",
+                  "es": "a menudo"
+                },
+                {
+                  "eu": "batzuetan",
+                  "es": "a veces"
+                },
+                {
+                  "eu": "sekula ez",
+                  "es": "nunca"
+                },
+                {
+                  "eu": "ostiralero",
+                  "es": "cada viernes"
+                },
+                {
+                  "eu": "hilero",
+                  "es": "cada mes"
+                }
+              ],
+              "vocabulary": [
+                "sarritan",
+                "batzuetan",
+                "sekula",
+                "ez",
+                "ostiral",
+                "hil"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e10",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Sarritan erosten dut sarean."
+              },
+              "answers": [
+                "Compro a menudo por internet."
+              ],
+              "distractors": [
+                "Solo",
+                "al",
+                "rebajas"
+              ],
+              "vocabulary": [
+                "sarritan",
+                "erosi",
+                "ukan",
+                "sare"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e11",
+              "type": "fill_blank",
+              "sentence": "Sekula ez ___ ezer sarean erosi.",
+              "options": [
+                "dut",
+                "dudala",
+                "nuen"
+              ],
+              "correct": 0,
+              "translation": "Nunca he comprado nada por internet.",
+              "vocabulary": [
+                "sekula",
+                "ez",
+                "ukan",
+                "ezer",
+                "sare",
+                "erosi"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e12",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "Solo a veces."
+              },
+              "answers": [
+                "Batzuetan bakarrik."
+              ],
+              "distractors": [
+                "erosten",
+                "naiz"
+              ],
+              "vocabulary": [
+                "batzuetan",
+                "bakarrik"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e13",
+              "type": "word_intro",
+              "word": "bitan",
+              "translation": "dos",
+              "vocabulary": [
+                "bi"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e14",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Ibai",
+                  "text": "Zenbatean behin erosten duzu arropa?"
+                }
+              ],
+              "options": [
+                "Urtean bitan, merkealdietan.",
+                "Ostiralero arropa naiz.",
+                "Sekula erosten dut."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "zenbat",
+                "behi",
+                "erosi",
+                "ukan",
+                "arropa",
+                "urte",
+                "bi",
+                "merkealdi"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e15",
+              "type": "listen_tap",
+              "text": "Sekula ez dut ezer sarean erosi.",
+              "distractors": [
+                "Batzuetan",
+                "Zenbatean",
+                "Sarritan",
+                "merkealdietara"
+              ],
+              "vocabulary": [
+                "sekula",
+                "ez",
+                "ukan",
+                "ezer",
+                "sare",
+                "erosi"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            },
+            {
+              "id": "u18-1.l2.s3.e16",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Nunca voy a las rebajas."
+              },
+              "answers": [
+                "Inoiz ez naiz merkealdietara joaten."
+              ],
+              "vocabulary": [
+                "inoiz",
+                "ez",
+                "izan",
+                "merkealdi",
+                "joan"
+              ],
+              "structures": [
+                "maiztasuna"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u18-1.l3",
+      "type": "lesson",
+      "title": {
+        "es": "De compras",
+        "eu": "Erosketak egiten"
+      },
+      "lessons": [
+        {
+          "id": "u18-1.l3.s1",
+          "exercises": [
+            {
+              "id": "u18-1.l3.s1.e01",
+              "type": "speak",
+              "text": "Zer gomendatzen didazu?",
+              "translation": "¿Qué me recomienda?",
+              "vocabulary": [
+                "zer",
+                "gomendatu",
+                "ukan"
+              ],
+              "structures": [
+                "dendan"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s1.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Produktu hau oso ona da, eta bermea dauka."
+              },
+              "answers": [
+                "Este producto es muy bueno, y tiene garantía."
+              ],
+              "distractors": [
+                "descuento",
+                "dará",
+                "o",
+                "Quiero"
+              ],
+              "vocabulary": [
+                "produktu",
+                "hau",
+                "oso",
+                "on",
+                "izan",
+                "eta",
+                "berme",
+                "eduki"
+              ],
+              "structures": [
+                "dendan"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s1.e03",
+              "type": "choose_meaning",
+              "text": "Deskonturik badago?",
+              "options": [
+                "¿Hay algún descuento?",
+                "Hay muchos descuentos.",
+                "¿Dónde está la tienda?"
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "deskontu",
+                "egon"
+              ],
+              "structures": [
+                "dendan"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s1.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Hay algún descuento?"
+              },
+              "answers": [
+                "Deskonturik badago?"
+              ],
+              "distractors": [
+                "dut",
+                "mesedez"
+              ],
+              "vocabulary": [
+                "deskontu",
+                "egon"
+              ],
+              "structures": [
+                "dendan"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s1.e05",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Kaixo! Zer behar duzu?"
+                }
+              ],
+              "options": [
+                "Mugikor bat. Zer gomendatzen didazu?",
+                "Mugikor bat. Zer gomendatzen dizut?",
+                "Mugikorra saltzailea da."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "kaixo",
+                "zer",
+                "behar izan",
+                "ukan",
+                "mugikor",
+                "bat",
+                "gomendatu"
+              ],
+              "structures": [
+                "dendan"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s1.e06",
+              "type": "listen_tap",
+              "text": "Zalantza daukat; gorria ala urdina?",
+              "distractors": [
+                "eta",
+                "ona",
+                "nahi"
+              ],
+              "vocabulary": [
+                "zalantza",
+                "eduki",
+                "gorri",
+                "urdin"
+              ],
+              "structures": [
+                "dendan"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s1.e07",
+              "type": "choose_image",
+              "prompt": "la tarjeta",
+              "options": [
+                {
+                  "text": "oparia",
+                  "image": "object_gift.webp"
+                },
+                {
+                  "text": "dirua",
+                  "image": "object_money.webp"
+                },
+                {
+                  "text": "txartela",
+                  "image": "object_card.webp"
+                }
+              ],
+              "correct": 2,
+              "vocabulary": [
+                "txartel"
+              ],
+              "structures": [
+                "dendan"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s1.e08",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Me dará la factura, por favor?"
+              },
+              "answers": [
+                "Faktura emango didazu, mesedez?"
+              ],
+              "vocabulary": [
+                "faktura",
+                "eman",
+                "ukan",
+                "mesedez"
+              ],
+              "structures": [
+                "dendan"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s1.e09",
+              "type": "order_sentence",
+              "answer": "Txartelaz ordaindu nahi dut.",
+              "translation": "Quiero pagar con tarjeta.",
+              "vocabulary": [
+                "txartel",
+                "ordaindu",
+                "nahi izan",
+                "ukan"
+              ],
+              "structures": [
+                "dendan"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-1.l3.s2",
+          "exercises": [
+            {
+              "id": "u18-1.l3.s2.e01",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Kamiseta hau aldatu nahi dut; akats bat dauka."
+              },
+              "answers": [
+                "Quiero cambiar esta camiseta; tiene un defecto."
+              ],
+              "distractors": [
+                "estropeado",
+                "se",
+                "ticket",
+                "he"
+              ],
+              "vocabulary": [
+                "kamiseta",
+                "hau",
+                "aldatu",
+                "nahi izan",
+                "ukan",
+                "akats",
+                "bat",
+                "eduki"
+              ],
+              "structures": [
+                "aldatu",
+                "akatsa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s2.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "es",
+                "text": "¿Ha guardado el ticket?"
+              },
+              "answers": [
+                "Ordainagiria gorde duzu?"
+              ],
+              "distractors": [
+                "Ez",
+                "bat"
+              ],
+              "vocabulary": [
+                "ordainagiri",
+                "gorde",
+                "ukan"
+              ],
+              "structures": [
+                "aldatu",
+                "akatsa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s2.e03",
+              "type": "complete_chat",
+              "messages": [
+                {
+                  "speaker": "Saltzailea",
+                  "text": "Ordainagiria gorde duzu?"
+                }
+              ],
+              "options": [
+                "Bai, hemen dago.",
+                "Bai, gordetzea gomendatzen dut.",
+                "Ez, ordainagiria naiz."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "ordainagiri",
+                "gorde",
+                "ukan",
+                "bai",
+                "hemen",
+                "egon"
+              ],
+              "structures": [
+                "aldatu",
+                "akatsa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s2.e04",
+              "type": "listen_tap",
+              "text": "Ez dut gorde.",
+              "distractors": [
+                "da",
+                "Kamiseta"
+              ],
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "gorde"
+              ],
+              "structures": [
+                "aldatu",
+                "akatsa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s2.e05",
+              "type": "read_true_false",
+              "passage": "Olatzek kamiseta bat erosi zuen sarean. Hondatuta iritsi zen, eta dendara deitu zuen. Ordainagiria gorde zuen, eta kamiseta aldatu zuten.",
+              "statement": "A Olatz le cambiaron la camiseta.",
+              "answer": true,
+              "vocabulary": [
+                "kamiseta",
+                "bat",
+                "erosi",
+                "zuek",
+                "sare",
+                "hondatu",
+                "iritsi",
+                "izan",
+                "eta",
+                "denda",
+                "deitu",
+                "ordainagiri",
+                "gorde",
+                "aldatu",
+                "ukan"
+              ],
+              "structures": [
+                "aldatu",
+                "akatsa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s2.e06",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "es",
+                "text": "Entonces no se puede cambiar."
+              },
+              "answers": [
+                "Orduan ezin da aldatu."
+              ],
+              "vocabulary": [
+                "ordu",
+                "ezin",
+                "izan",
+                "aldatu"
+              ],
+              "structures": [
+                "aldatu",
+                "akatsa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s2.e07",
+              "type": "order_sentence",
+              "answer": "Hondatuta iritsi da.",
+              "translation": "Ha llegado estropeado.",
+              "vocabulary": [
+                "hondatu",
+                "iritsi",
+                "izan"
+              ],
+              "structures": [
+                "aldatu",
+                "akatsa"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18-1.l3.s3",
+          "exercises": [
+            {
+              "id": "u18-1.l3.s3.e01",
+              "type": "word_intro",
+              "word": "dituena",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "erosle-onak",
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s3.e02",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Prezioak alderatzen dituena erosle ona da."
+              },
+              "answers": [
+                "El que compara los precios es un buen comprador."
+              ],
+              "distractors": [
+                "internet",
+                "jóvenes",
+                "compro",
+                "ticket"
+              ],
+              "vocabulary": [
+                "prezio",
+                "alde",
+                "ukan",
+                "erosle",
+                "on",
+                "izan"
+              ],
+              "structures": [
+                "erosle-onak",
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s3.e03",
+              "type": "word_intro",
+              "word": "dutenak",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "erosle-onak",
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s3.e04",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Sarean erosten dutenak, normalean, gazteak dira."
+              },
+              "answers": [
+                "Los que compran por internet normalmente son jóvenes."
+              ],
+              "distractors": [
+                "guarda",
+                "No",
+                "suele",
+                "precios"
+              ],
+              "vocabulary": [
+                "sare",
+                "erosi",
+                "ukan",
+                "normalean",
+                "gazte",
+                "izan"
+              ],
+              "structures": [
+                "erosle-onak",
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s3.e05",
+              "type": "fill_blank",
+              "sentence": "Prezioak alderatzen ___ erosle ona da.",
+              "options": [
+                "dituena",
+                "ditu",
+                "dituela"
+              ],
+              "correct": 0,
+              "translation": "El que compara los precios es un buen comprador.",
+              "vocabulary": [
+                "prezio",
+                "alde",
+                "ukan",
+                "erosle",
+                "on",
+                "izan"
+              ],
+              "structures": [
+                "erosle-onak",
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s3.e06",
+              "type": "word_intro",
+              "word": "duenak",
+              "translation": "haber; tener (auxiliar)",
+              "vocabulary": [
+                "ukan"
+              ],
+              "structures": [
+                "erosle-onak",
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s3.e07",
+              "type": "translate_wordbank",
+              "prompt": {
+                "lang": "eu",
+                "text": "Ordainagiria gordetzen ez duenak arazoak izaten ditu."
+              },
+              "answers": [
+                "El que no guarda el ticket suele tener problemas."
+              ],
+              "distractors": [
+                "un",
+                "siempre",
+                "ahorra",
+                "compro"
+              ],
+              "vocabulary": [
+                "ordainagiri",
+                "gorde",
+                "ez",
+                "ukan",
+                "arazo",
+                "izan"
+              ],
+              "structures": [
+                "erosle-onak",
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s3.e08",
+              "type": "choose_meaning",
+              "text": "Prezioak alderatzen dituena erosle ona da.",
+              "options": [
+                "El que compara los precios es un buen comprador.",
+                "Un buen comprador no compara los precios.",
+                "Los precios de los buenos compradores son caros."
+              ],
+              "correct": 0,
+              "vocabulary": [
+                "prezio",
+                "alde",
+                "ukan",
+                "erosle",
+                "on",
+                "izan"
+              ],
+              "structures": [
+                "erosle-onak",
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s3.e09",
+              "type": "order_sentence",
+              "answer": "Ez dut erosten behar ez dudana.",
+              "translation": "No compro lo que no necesito.",
+              "vocabulary": [
+                "ez",
+                "ukan",
+                "erosi",
+                "behar izan"
+              ],
+              "structures": [
+                "erosle-onak",
+                "erlatiboa"
+              ]
+            },
+            {
+              "id": "u18-1.l3.s3.e10",
+              "type": "translate_typing",
+              "prompt": {
+                "lang": "eu",
+                "text": "Dirua gordetzen duena ez da beti zoriontsua."
+              },
+              "answers": [
+                "El que ahorra dinero no siempre es feliz."
+              ],
+              "vocabulary": [
+                "diru",
+                "gorde",
+                "ukan",
+                "ez",
+                "izan",
+                "beti",
+                "zoriontsu"
+              ],
+              "structures": [
+                "erosle-onak",
+                "erlatiboa"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u18-1.l4",
+      "type": "story",
+      "title": {
+        "es": "Historia: la encuesta",
+        "eu": "Istorioa: inkesta"
+      },
+      "story": {
+        "id": "u18-1.l4.story",
+        "title": "Inkesta",
+        "lines": [
+          {
+            "speaker": "Kazetaria",
+            "eu": "Egun on! Inkesta bat egiten ari gara erosketei buruz. Zenbatean behin erosten duzu arropa?",
+            "es": "¡Buenos días! Estamos haciendo una encuesta sobre las compras. ¿Cada cuánto compra ropa?"
+          },
+          {
+            "speaker": "Edurne",
+            "eu": "Urtean bitan, merkealdietan bakarrik. Deskontuak maite ditut!",
+            "es": "Dos veces al año, solo en rebajas. ¡Me encantan los descuentos!"
+          },
+          {
+            "speaker": "Kazetaria",
+            "eu": "Eta sarean erosten duzu?",
+            "es": "¿Y compra por internet?"
+          },
+          {
+            "speaker": "Edurne",
+            "eu": "Sekula ez. Produktuak ikusi nahi izaten ditut erosi baino lehen.",
+            "es": "Nunca. Suelo querer ver los productos antes de comprarlos."
+          },
+          {
+            "speaker": "Peio",
+            "eu": "Nik, berriz, dena sarean erosten dut. Merkeagoa da, eta denbora gutxiago behar da.",
+            "es": "Yo, en cambio, lo compro todo por internet. Es más barato, y hace falta menos tiempo."
+          },
+          {
+            "speaker": "Kazetaria",
+            "eu": "Gure datuen arabera, gazteen ehuneko hirurogeik sarean erosten du.",
+            "es": "Según nuestros datos, el 60 % de los jóvenes compra por internet."
+          },
+          {
+            "speaker": "Edurne",
+            "eu": "Eta zer gomendatzen duzu?",
+            "es": "¿Y qué recomienda usted?"
+          },
+          {
+            "speaker": "Kazetaria",
+            "eu": "Komenigarria da prezioak alderatzea eta ordainagiria beti gordetzea.",
+            "es": "Es conveniente comparar los precios y guardar siempre el ticket."
+          },
+          {
+            "speaker": "Peio",
+            "eu": "Ordainagiria? Nik sekula ez dut gordetzen…",
+            "es": "¿El ticket? Yo nunca lo guardo…"
+          },
+          {
+            "speaker": "Edurne",
+            "eu": "Horregatik izaten dituzu hainbeste arazo!",
+            "es": "¡Por eso tienes tantos problemas!"
+          },
+          {
+            "speaker": "Peio",
+            "eu": "Bai, egia da…",
+            "es": "Sí, es verdad…"
+          }
+        ],
+        "questions": [
+          {
+            "afterLine": 2,
+            "prompt": "¿Cuándo compra ropa Edurne?",
+            "options": [
+              "Solo en rebajas",
+              "Cada viernes",
+              "Todos los meses"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 5,
+            "prompt": "¿Por qué compra Peio por internet?",
+            "options": [
+              "Porque es más barato y más rápido",
+              "Porque no le gustan las tiendas",
+              "Porque tiene descuentos"
+            ],
+            "correct": 0
+          },
+          {
+            "afterLine": 10,
+            "prompt": "¿Qué le pasa a Peio por no guardar el ticket?",
+            "options": [
+              "Tiene muchos problemas",
+              "No le dan la factura",
+              "No puede comprar por internet"
+            ],
+            "correct": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "u18-1.l5",
+      "type": "review",
+      "title": {
+        "es": "Repaso de la unidad",
+        "eu": "Unitatearen errepasoa"
+      }
+    },
+    {
+      "id": "u18-1.l6",
+      "type": "challenge",
+      "title": {
+        "es": "Reto de estrellas",
+        "eu": "Izarren erronka"
+      },
+      "host": "ane"
+    }
+  ]
+}

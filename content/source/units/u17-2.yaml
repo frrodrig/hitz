@@ -1,0 +1,361 @@
+# Unit 17.2 · Alde ala kontra? — A2.1 book unit 5 (B + C): how a job is done and what one usually
+# has to, wants to, can or cannot do; advice; what others let us do; being for or against something.
+# Habitual modal verbs (behar / nahi / ahal / ezin izaten); -T(Z)EN LAGUNDU and -T(Z)EN UTZI with
+# NOR-NORI-NORK; ZEREN / NOREN ALDE, AURKA, KONTRA EGON; ALDEKO / KONTRAKO + noun.
+# Recall: imperative of NOR and NOR-NORK (9.1), now with plural objects, zuek and the negative;
+# frequency with -TIK BEHIN.
+# Source format: see u01-1.yaml and docs/content-guide.md.
+id: u17-2
+section: s6
+bookUnit: 17
+title:
+  es: ¿A favor o en contra?
+  eu: Alde ala kontra?
+goals:
+  - es: Explicar qué sueles tener que hacer, querer o poder hacer en tu trabajo.
+    eu: Lanean zer egin behar, nahi edo ahal izaten duzun azaldu.
+  - es: Dar y pedir consejos, y decir qué te dejan hacer.
+    eu: Aholkuak eman eta eskatu, eta zer egiten uzten dizuten esan.
+  - es: Decir si estás a favor o en contra de algo.
+    eu: Zerbaiten alde edo kontra zauden esan.
+guidebook:
+  sections:
+    - title:
+        es: "Suelo tener que…: behar izaten dut"
+        eu: "Behar izaten dut"
+      body:
+        es: "Con «behar», «nahi», «ahal» y «ezin» la costumbre se dice con «izaten»: «gauean lan egin behar izaten dut» (suelo tener que trabajar de noche), «ezin izaten da erre» (no se suele poder fumar)."
+        eu: "«Behar», «nahi», «ahal» eta «ezin» aditzekin, ohitura «izaten» erabiliz esaten da: «gauean lan egin behar izaten dut», «ezin izaten da erre»."
+      examples:
+        - eu: Gauean lan egin behar izaten dut.
+          es: Suelo tener que trabajar de noche.
+        - eu: Liburutegian ezin izaten da hitz egin.
+          es: En la biblioteca no se puede hablar.
+    - title:
+        es: "Ayudar y dejar: …-t(z)en lagundu, …-t(z)en utzi"
+        eu: "…-t(z)en lagundu, …-t(z)en utzi"
+      body:
+        es: "El verbo de lo que se ayuda o se deja hacer va en -t(z)en, y la persona va con -(r)i: «amari etxeko lanak egiten laguntzen diot», «ez didate sartzen utzi» (no me han dejado entrar)."
+        eu: "Laguntzen edo uzten den aditza -t(z)en forman doa, eta pertsonak -(r)i hartzen du: «amari etxeko lanak egiten laguntzen diot», «ez didate sartzen utzi»."
+      examples:
+        - eu: Ez didate sartzen utzi.
+          es: No me han dejado entrar.
+        - eu: Haurrei telebista ikusten uzten diet.
+          es: Dejo a los niños ver la tele.
+    - title:
+        es: "Imperativo: ekar itzazu, ez zaitez etorri"
+        eu: "Agintera: ekar itzazu, ez zaitez etorri"
+      body:
+        es: "Con objeto plural, «ezazu» pasa a «itzazu»: «ekar itzazu edalontziak». Para «zuek», «ezazue / itzazue». En negativo, «ez» va delante del auxiliar: «ez itzazu ureztatu», «ez zaitez berandu etorri»."
+        eu: "Objektua plurala bada, «ezazu» «itzazu» bihurtzen da: «ekar itzazu edalontziak». «Zuek» denean, «ezazue / itzazue». Ezezkoan, «ez» laguntzailearen aurrean doa: «ez itzazu ureztatu», «ez zaitez berandu etorri»."
+      examples:
+        - eu: Ekar itzazu edalontziak, mesedez.
+          es: Trae los vasos, por favor.
+        - eu: Ez itzazue gozoki guztiak jan!
+          es: ¡No os comáis todos los caramelos!
+    - title:
+        es: "A favor, en contra: zerbaiten alde, kontra, aurka"
+        eu: "Zerbaiten alde, kontra, aurka"
+      body:
+        es: "«Alde», «kontra» y «aurka» van detrás de la cosa o persona con -(r)en: «proiektuaren alde nago», «zure kontra». Delante de un nombre: «proiektuaren aldeko jendea», «bidegorriaren kontrako hiritarrak»."
+        eu: "«Alde», «kontra» eta «aurka» gauzaren edo pertsonaren atzean doaz, hark -(r)en hartuta: «proiektuaren alde nago», «zure kontra». Izen baten aurrean: «proiektuaren aldeko jendea», «bidegorriaren kontrako hiritarrak»."
+      examples:
+        - eu: Proiektu berriaren alde nago.
+          es: Estoy a favor del proyecto nuevo.
+        - eu: Hiritar asko proiektuaren aurka daude.
+          es: Muchos ciudadanos están en contra del proyecto.
+levels:
+  - type: lesson
+    title:
+      es: En el trabajo
+      eu: Lanean
+    lessons:
+      - structures: [behar-izaten, lana]
+        sentences:
+          - Zer egin behar izaten duzu lanean? = ¿Qué sueles tener que hacer en el trabajo?
+          - Suhiltzaileek larrialdietan azkar ibili behar izaten dute. = Los bomberos suelen tener que ir rápido en las emergencias.
+          - Gauean lan egin behar izaten dut. = Suelo tener que trabajar de noche.
+          - Gaur gaueko txanda daukat. = Hoy tengo el turno de noche.
+          - Batzuetan ezin izaten dut atseden hartu. = A veces no puedo descansar.
+          - Zeregin asko izaten ditugu. = Solemos tener muchas tareas.
+        pairs:
+          - - zeregin = tarea
+            - txanda = turno
+            - atseden hartu = descansar
+            - suhiltzaile = bombero
+            - larrialdi = emergencia
+        blanks:
+          - text: Gauean lan egin behar ___ dut. = Suelo tener que trabajar de noche.
+            options:
+              - izaten
+              - izan
+              - egiten
+        meanings:
+          - text: Batzuetan ezin izaten dut atseden hartu.
+            options:
+              - A veces no puedo descansar.
+              - A veces descanso mucho.
+              - Nunca trabajo de noche.
+        chats:
+          - messages:
+              - Kazetaria | Zer egin behar izaten duzu lanean?
+            options:
+              - Larrialdietan jendeari lagundu behar izaten diot.
+              - Larrialdietan jendeari lagundu behar izan diot.
+              - Suhiltzailea naiz larrialdia.
+      - structures: [nahi-izaten, ahal-izaten]
+        sentences:
+          - Asteburuetan lasai egon nahi izaten dut. = Los fines de semana suelo querer estar tranquilo. | Los fines de semana suelo querer estar tranquila.
+          - Liburutegian ezin izaten da hitz egin. = En la biblioteca no se puede hablar.
+          - Hemen erre ahal izaten da? = ¿Aquí se puede fumar?
+          - Haurrek beti jolastu nahi izaten dute. = Los niños siempre quieren jugar.
+          - Udan ezin izaten dut ondo lo egin. = En verano no suelo poder dormir bien.
+        pairs:
+          - - nahi izaten = soler querer
+            - ahal izaten = soler poder
+            - ezin izaten = no soler poder
+            - behar izaten = soler tener que
+            - beti = siempre
+        blanks:
+          - text: Liburutegian ezin ___ da hitz egin. = En la biblioteca no se puede hablar.
+            options:
+              - izaten
+              - izan
+              - egiten
+        chats:
+          - messages:
+              - Ander | Hemen erre ahal izaten da?
+            options:
+              - Ez, hemen ezin izaten da erre.
+              - Ez, hemen ezin izaten dut erretzen.
+              - Bai, erretzailea naiz.
+      - structures: [lagundu]
+        sentences:
+          - Amari etxeko lanak egiten laguntzen diot. = Ayudo a mi madre a hacer las tareas de casa.
+          - Suhiltzaileek jendeari etxetik ateratzen laguntzen diote. = Los bomberos ayudan a la gente a salir de casa.
+          - Ordenagailua konpontzen lagunduko didazu? = ¿Me ayudarás a arreglar el ordenador?
+          - Irakasleak azalpenak ulertzen laguntzen dit. = La profesora me ayuda a entender las explicaciones. | El profesor me ayuda a entender las explicaciones.
+          - Aitonari kalean ibiltzen laguntzen diogu. = Ayudamos al abuelo a andar por la calle.
+        pairs:
+          - - lagundu = ayudar
+            - azalpen = explicación
+            - konpondu = arreglar
+            - ulertu = entender
+            - etxeko lanak = tareas de casa
+        blanks:
+          - text: Amari etxeko lanak egiten ___ diot. = Ayudo a mi madre a hacer las tareas de casa.
+            options:
+              - laguntzen
+              - lagundu
+              - laguntzea
+        meanings:
+          - text: Ordenagailua konpontzen lagunduko didazu?
+            options:
+              - ¿Me ayudarás a arreglar el ordenador?
+              - ¿Te ayudo a arreglar el ordenador?
+              - ¿Has arreglado el ordenador?
+  - type: lesson
+    title:
+      es: Consejos y permisos
+      eu: Aholkuak eta baimenak
+    lessons:
+      - structures: [agintera]
+        sentences:
+          - Ekar itzazu edalontziak, mesedez. = Trae los vasos, por favor.
+          - Ez itzazu landareak egunero ureztatu. = No riegues las plantas todos los días.
+          - Estal ezazu haurra; hotz egiten du. = Tapa al niño; hace frío.
+          - Ez zaitez berandu etorri. = No vengas tarde.
+          - Ez itzazue gozoki guztiak jan! = ¡No os comáis todos los caramelos!
+          - Deitu larrialdietara! = ¡Llama a emergencias!
+        pairs:
+          - - itzazu = (imperativo, plural)
+            - ezazu = (imperativo, singular)
+            - estali = tapar
+            - gozoki = caramelo
+            - edalontzi = vaso
+        blanks:
+          - text: Ekar ___ edalontziak, mesedez. = Trae los vasos, por favor.
+            options:
+              - itzazu
+              - ezazu
+              - zaitez
+          - text: Ez ___ berandu etorri. = No vengas tarde.
+            options:
+              - zaitez
+              - ezazu
+              - itzazu
+        meanings:
+          - text: Ez itzazu landareak egunero ureztatu.
+            options:
+              - No riegues las plantas todos los días.
+              - Riega las plantas todos los días.
+              - No has regado las plantas.
+      - structures: [aholkuak, landareak]
+        sentences:
+          - Landareak eguzkitan jarri behar dira. = Hay que poner las plantas al sol.
+          - Landare hau oso azkar hazten da. = Esta planta crece muy rápido.
+          - Beharrezkoa da ura edatea. = Es necesario beber agua.
+          - Kontuan hartu behar duzu haurrak txikiak direla. = Tienes que tener en cuenta que los niños son pequeños.
+          - Ondo estali landareak gauean. = Tapa bien las plantas por la noche.
+          - Zer egin behar dut? Aholku bat behar dut. = ¿Qué tengo que hacer? Necesito un consejo.
+        pairs:
+          - - hazi = crecer
+            - beharrezko = necesario
+            - kontuan hartu = tener en cuenta
+            - aholku = consejo
+            - landare = planta
+        meanings:
+          - text: Kontuan hartu behar duzu haurrak txikiak direla.
+            options:
+              - Tienes que tener en cuenta que los niños son pequeños.
+              - Los niños pequeños tienen que tener cuidado.
+              - Tienes que contar a los niños pequeños.
+        chats:
+          - messages:
+              - Irati | Nire landareak hiltzen ari dira. Zer egin behar dut?
+            options:
+              - Jarri itzazu eguzkitan.
+              - Jarri ezazu eguzkitan.
+              - Landareak eguzkia dira.
+      - structures: [utzi, baimena]
+        sentences:
+          - Ez didate sartzen utzi. = No me han dejado entrar.
+          - Haurrei telebista ikusten uzten diet. = Dejo a los niños ver la tele.
+          - Ez digute argazkiak ateratzen utzi museoan. = No nos han dejado hacer fotos en el museo.
+          - Baimena behar duzu sartzeko. = Necesitas permiso para entrar.
+          - Haurrek jolasteko eskubidea dute. = Los niños tienen derecho a jugar.
+          - Gurasoek ez didate gauean ateratzen uzten. = Mis padres no me dejan salir por la noche.
+        pairs:
+          - - utzi = dejar
+            - baimen = permiso
+            - eskubide = derecho
+            - zigortu = castigar
+            - didate = me han
+        blanks:
+          - text: Ez didate ___ utzi. = No me han dejado entrar.
+            options:
+              - sartzen
+              - sartu
+              - sartzeko
+        true_false:
+          - passage: Leirek hamabost urte ditu. Gurasoek ez diote gauean ateratzen uzten, baina asteburuetan lagunekin zinemara joaten da.
+            statement: Los padres de Leire la dejan salir por la noche.
+            answer: false
+  - type: lesson
+    title:
+      es: ¿A favor o en contra?
+      eu: Alde ala kontra?
+    lessons:
+      - structures: [alde, kontra]
+        sentences:
+          - Proiektu berriaren alde nago. = Estoy a favor del proyecto nuevo.
+          - Bidegorriaren kontra zaude? = ¿Estás en contra del carril bici?
+          - Hiritar asko proiektuaren aurka daude. = Muchos ciudadanos están en contra del proyecto.
+          - Zure alde nago. = Estoy de tu parte.
+          - Ez nago inoren kontra. = No estoy en contra de nadie.
+        pairs:
+          - - alde = a favor
+            - kontra = en contra
+            - aurka = contra
+            - hiritar = ciudadano
+            - bidegorri = carril bici
+        blanks:
+          - text: Proiektu berriaren ___ nago. = Estoy a favor del proyecto nuevo.
+            options:
+              - alde
+              - aldeko
+              - aurrean
+        chats:
+          - messages:
+              - Kazetaria | Bidegorri berriaren alde zaude?
+            options:
+              - Bai, alde nago. Oso aukera ona da.
+              - Bai, bidegorria naiz.
+              - Bai, aldeko nago.
+        images:
+          - bicycle, car, bus
+      - structures: [aldeko, kontrako, erabakia]
+        sentences:
+          - Proiektuaren aldeko jendea plazan dago. = La gente a favor del proyecto está en la plaza.
+          - Bidegorriaren kontrako hiritarrek beste aukera bat nahi dute. = Los ciudadanos en contra del carril bici quieren otra opción.
+          - Erabaki zaila da. = Es una decisión difícil.
+          - Zer erabaki duzue? = ¿Qué habéis decidido?
+          - Aukera onena bidegorria da. = La mejor opción es el carril bici.
+        pairs:
+          - - aldeko = a favor de
+            - kontrako = en contra de
+            - erabaki = decisión
+            - aukera = opción
+            - proiektu = proyecto
+        blanks:
+          - text: Proiektuaren ___ jendea plazan dago. = La gente a favor del proyecto está en la plaza.
+            options:
+              - aldeko
+              - alde
+              - aldean
+        meanings:
+          - text: Erabaki zaila da.
+            options:
+              - Es una decisión difícil.
+              - Es fácil decidir.
+              - Ha decidido algo difícil.
+      - structures: [udaltzaina, isuna]
+        sentences:
+          - Udaltzainak isun bat jarri dit. = El policía municipal me ha puesto una multa.
+          - Gauean ezin izaten da kalean edan. = Por la noche no se puede beber en la calle.
+          - Edalontziak kalean uzteak kalte handia egiten du. = Dejar los vasos en la calle hace mucho daño.
+          - Bi urtetik behin aldatzen dute. = Lo cambian cada dos años.
+          - Ez dute inor zigortu. = No han castigado a nadie.
+        pairs:
+          - - udaltzain = policía municipal
+            - isun = multa
+            - kalte = daño
+            - zigortu = castigar
+            - bi urtetik behin = cada dos años
+        meanings:
+          - text: Bi urtetik behin aldatzen dute.
+            options:
+              - Lo cambian cada dos años.
+              - Lo cambiaron hace dos años.
+              - Lo cambian dos veces al año.
+        true_false:
+          - passage: Larunbat gauean jende asko kalean edaten ari zen, eta udaltzainek isun asko jarri zituzten. Hiritar batzuk erabakiaren alde daude, eta beste batzuk kontra.
+            statement: Todos los ciudadanos están a favor de las multas.
+            answer: false
+  - type: story
+    title:
+      es: "Historia: el carril bici"
+      eu: "Istorioa: bidegorria"
+    story:
+      title: Bidegorria
+      lines:
+        - Kazetaria | Egun on! Bidegorri berriari buruz galdetzen ari gara. Proiektuaren alde zaude? = ¡Buenos días! Estamos preguntando sobre el nuevo carril bici. ¿Está a favor del proyecto?
+        - Asier | Bai, alde nago. Egunero bizikletaz joan behar izaten dut lanera. = Sí, estoy a favor. Suelo tener que ir en bici al trabajo todos los días.
+        - Kazetaria | Eta zuk? = ¿Y usted?
+        - Amona | Ni kontra nago. Bidegorriarekin ez dugu aparkalekurik izango gure kalean! = Yo estoy en contra. ¡Con el carril bici no tendremos aparcamiento en nuestra calle!
+        - Asier | Baina aukera ona da hiritar guztientzat. Haurrek ere bizikletaz ibiltzeko eskubidea dute. = Pero es una buena opción para todos los ciudadanos. Los niños también tienen derecho a ir en bici.
+        - Amona | Haurrei ez diet errepidean bizikletaz ibiltzen uzten. = A los niños no les dejo ir en bici por la carretera.
+        - Asier | Horregatik behar dugu bidegorria! = ¡Por eso necesitamos el carril bici!
+        - Amona | Kontuan hartuko dut. Baina ez nago ziur. = Lo tendré en cuenta. Pero no estoy segura.
+      questions:
+        - afterLine: 2
+          prompt: ¿Por qué está Asier a favor del carril bici?
+          options:
+            - Porque suele ir en bici al trabajo
+            - Porque es periodista
+            - Porque no tiene coche
+        - afterLine: 4
+          prompt: ¿Por qué está la abuela en contra?
+          options:
+            - Porque no tendrán aparcamiento en su calle
+            - Porque no le gustan las bicis
+            - Porque los niños no tienen bici
+        - afterLine: 7
+          prompt: ¿Qué argumento usa Asier al final?
+          options:
+            - Que el carril bici es más seguro para los niños
+            - Que la abuela debería comprar una bici
+            - Que habrá más aparcamiento
+  - type: review
+  - type: challenge
+    host: unai

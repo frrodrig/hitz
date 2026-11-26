@@ -39,6 +39,9 @@
       "es": "agosto",
       "lemma": "abuztu"
     },
+    "adina": {
+      "es": "tanto como"
+    },
     "aditz": {
       "es": "verbo"
     },
@@ -57,6 +60,10 @@
       "lemma": "afaldu"
     },
     "afaltzea": {
+      "es": "cenar",
+      "lemma": "afaldu"
+    },
+    "afaltzeko": {
       "es": "cenar",
       "lemma": "afaldu"
     },
@@ -86,11 +93,25 @@
       "es": "escenario",
       "lemma": "agertoki"
     },
+    "agian": {
+      "es": "quizás"
+    },
     "agindu": {
       "es": "mandar; ordenar"
     },
     "agur": {
       "es": "adiós"
+    },
+    "ahal": {
+      "es": "poder",
+      "lemma": "ahal izan"
+    },
+    "ahate": {
+      "es": "pato"
+    },
+    "ahateak": {
+      "es": "pato",
+      "lemma": "ahate"
     },
     "ahizpa": {
       "es": "hermana (de una chica)"
@@ -100,6 +121,10 @@
       "lemma": "ahizpa"
     },
     "ahizparekin": {
+      "es": "hermana (de una chica)",
+      "lemma": "ahizpa"
+    },
+    "ahizparen": {
       "es": "hermana (de una chica)",
       "lemma": "ahizpa"
     },
@@ -122,12 +147,23 @@
       "es": "boca",
       "lemma": "aho"
     },
+    "ahoan": {
+      "es": "boca",
+      "lemma": "aho"
+    },
     "aholku": {
       "es": "consejo"
     },
     "ahoskatzen": {
       "es": "boca",
       "lemma": "aho"
+    },
+    "ahots": {
+      "es": "voz"
+    },
+    "ahotsa": {
+      "es": "voz",
+      "lemma": "ahots"
     },
     "aisialdi": {
       "es": "tiempo libre"
@@ -152,6 +188,10 @@
       "lemma": "aita"
     },
     "aitaren": {
+      "es": "padre",
+      "lemma": "aita"
+    },
+    "aitarena": {
       "es": "padre",
       "lemma": "aita"
     },
@@ -182,6 +222,17 @@
       "es": "abuelo",
       "lemma": "aitona"
     },
+    "aitonari": {
+      "es": "abuelo",
+      "lemma": "aitona"
+    },
+    "akats": {
+      "es": "defecto; fallo"
+    },
+    "akatsa": {
+      "es": "defecto; fallo",
+      "lemma": "akats"
+    },
     "ala": {
       "es": "o (en preguntas)"
     },
@@ -206,12 +257,46 @@
     "albiste": {
       "es": "noticia"
     },
+    "aldaketa": {
+      "es": "cambio"
+    },
     "aldatu": {
       "es": "cambiar"
     },
     "aldatuta": {
       "es": "cambiar",
       "lemma": "aldatu"
+    },
+    "aldatzeko": {
+      "es": "cambiar",
+      "lemma": "aldatu"
+    },
+    "aldatzen": {
+      "es": "cambiar",
+      "lemma": "aldatu"
+    },
+    "alde": {
+      "es": "a favor"
+    },
+    "aldean": {
+      "es": "a favor",
+      "lemma": "alde"
+    },
+    "aldeko": {
+      "es": "a favor",
+      "lemma": "alde"
+    },
+    "alderatu": {
+      "es": "a favor",
+      "lemma": "alde"
+    },
+    "alderatzea": {
+      "es": "a favor",
+      "lemma": "alde"
+    },
+    "alderatzen": {
+      "es": "a favor",
+      "lemma": "alde"
     },
     "aldizkari": {
       "es": "revista"
@@ -233,6 +318,17 @@
       "es": "alto",
       "lemma": "altu"
     },
+    "altuagoa": {
+      "es": "alto",
+      "lemma": "altu"
+    },
+    "altzari": {
+      "es": "mueble"
+    },
+    "altzariak": {
+      "es": "mueble",
+      "lemma": "altzari"
+    },
     "ama": {
       "es": "madre"
     },
@@ -245,6 +341,10 @@
       "lemma": "ama"
     },
     "amaren": {
+      "es": "madre",
+      "lemma": "ama"
+    },
+    "amarena": {
       "es": "madre",
       "lemma": "ama"
     },
@@ -302,6 +402,13 @@
       "es": "hermano (de un chico)",
       "lemma": "anaia"
     },
+    "animalia": {
+      "es": "animal"
+    },
+    "animaliak": {
+      "es": "animal",
+      "lemma": "animalia"
+    },
     "antola": {
       "es": "organizar",
       "lemma": "antolatu"
@@ -317,12 +424,30 @@
       "es": "organizar",
       "lemma": "antolatu"
     },
+    "antz": {
+      "es": "parecido"
+    },
+    "antza": {
+      "es": "parecido",
+      "lemma": "antz"
+    },
+    "antzeko": {
+      "es": "parecido; similar"
+    },
+    "antzekoak": {
+      "es": "parecido; similar",
+      "lemma": "antzeko"
+    },
     "antzerki": {
       "es": "teatro (obra)"
     },
     "antzerkia": {
       "es": "teatro (obra)",
       "lemma": "antzerki"
+    },
+    "antzik": {
+      "es": "parecido",
+      "lemma": "antz"
     },
     "antzoki": {
       "es": "teatro (edificio)"
@@ -358,6 +483,21 @@
       "es": "peluquería",
       "lemma": "apaindegi"
     },
+    "apal": {
+      "es": "estante"
+    },
+    "apala": {
+      "es": "estante",
+      "lemma": "apal"
+    },
+    "apalak": {
+      "es": "estante",
+      "lemma": "apal"
+    },
+    "apalari": {
+      "es": "estante",
+      "lemma": "apal"
+    },
     "aparkaleku": {
       "es": "aparcamiento"
     },
@@ -366,6 +506,10 @@
       "lemma": "aparkaleku"
     },
     "aparkalekuak": {
+      "es": "aparcamiento",
+      "lemma": "aparkaleku"
+    },
+    "aparkalekurik": {
       "es": "aparcamiento",
       "lemma": "aparkaleku"
     },
@@ -383,6 +527,10 @@
     "arazo": {
       "es": "problema"
     },
+    "arazoak": {
+      "es": "problema",
+      "lemma": "arazo"
+    },
     "arazorik": {
       "es": "problema",
       "lemma": "arazo"
@@ -393,6 +541,13 @@
     "arbelean": {
       "es": "pizarra",
       "lemma": "arbel"
+    },
+    "ardi": {
+      "es": "oveja"
+    },
+    "ardiak": {
+      "es": "oveja",
+      "lemma": "ardi"
     },
     "ardo": {
       "es": "vino"
@@ -427,6 +582,10 @@
       "lemma": "argazki"
     },
     "argazkiak": {
+      "es": "foto",
+      "lemma": "argazki"
+    },
+    "argazkian": {
       "es": "foto",
       "lemma": "argazki"
     },
@@ -544,6 +703,9 @@
       "es": "hermana (de un chico)",
       "lemma": "arreba"
     },
+    "arren": {
+      "es": "aunque (-arren)"
+    },
     "arriskutsu": {
       "es": "peligroso"
     },
@@ -569,6 +731,10 @@
     },
     "asko": {
       "es": "mucho"
+    },
+    "askoren": {
+      "es": "mucho",
+      "lemma": "asko"
     },
     "askotan": {
       "es": "a menudo"
@@ -666,6 +832,10 @@
       "es": "lunes",
       "lemma": "astelehen"
     },
+    "astera": {
+      "es": "semana",
+      "lemma": "aste"
+    },
     "astero": {
       "es": "cada semana"
     },
@@ -710,6 +880,13 @@
       "es": "sacar; salir",
       "lemma": "atera"
     },
+    "ateratzen": {
+      "es": "sacar; salir",
+      "lemma": "atera"
+    },
+    "atseden hartu": {
+      "es": "descansar"
+    },
     "atsegin": {
       "es": "agradable"
     },
@@ -744,6 +921,9 @@
     "atzo": {
       "es": "ayer"
     },
+    "aukera": {
+      "es": "oportunidad; opción"
+    },
     "aulki": {
       "es": "silla"
     },
@@ -755,8 +935,18 @@
       "es": "silla",
       "lemma": "aulki"
     },
+    "aurka": {
+      "es": "en contra"
+    },
     "aurkitu": {
       "es": "encontrar"
+    },
+    "aurpegi": {
+      "es": "cara"
+    },
+    "aurpegia": {
+      "es": "cara",
+      "lemma": "aurpegi"
     },
     "aurrean": {
       "es": "delante"
@@ -831,6 +1021,20 @@
       "es": "barrio",
       "lemma": "auzo"
     },
+    "azal": {
+      "es": "piel"
+    },
+    "azalerako": {
+      "es": "piel",
+      "lemma": "azal"
+    },
+    "azalpen": {
+      "es": "explicación"
+    },
+    "azalpenak": {
+      "es": "explicación",
+      "lemma": "azalpen"
+    },
     "azaro": {
       "es": "noviembre"
     },
@@ -840,6 +1044,10 @@
     },
     "azkar": {
       "es": "rápido; deprisa"
+    },
+    "azkarra": {
+      "es": "rápido; deprisa",
+      "lemma": "azkar"
     },
     "azkarregi": {
       "es": "rápido; deprisa",
@@ -853,6 +1061,12 @@
     },
     "azpian": {
       "es": "debajo"
+    },
+    "azterketa": {
+      "es": "examen"
+    },
+    "aztertu": {
+      "es": "analizar; examinar"
     },
     "azukre": {
       "es": "azúcar"
@@ -905,6 +1119,10 @@
       "es": "si tienes / ¿tienes?",
       "lemma": "eduki"
     },
+    "badirudi": {
+      "es": "parecer (dirudi)",
+      "lemma": "irudi"
+    },
     "badu": {
       "es": "¿tiene? / sí tiene",
       "lemma": "ukan"
@@ -919,6 +1137,13 @@
     },
     "bai": {
       "es": "sí"
+    },
+    "baimen": {
+      "es": "permiso"
+    },
+    "baimena": {
+      "es": "permiso",
+      "lemma": "baimen"
     },
     "baina": {
       "es": "pero"
@@ -941,6 +1166,9 @@
       "es": "cuarto de baño",
       "lemma": "bainugela"
     },
+    "bainujantzi": {
+      "es": "bañador"
+    },
     "baitago": {
       "es": "estar",
       "lemma": "egon"
@@ -949,12 +1177,18 @@
       "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
+    "baizik": {
+      "es": "sino"
+    },
     "bakarrik": {
       "es": "solo; solamente"
     },
     "balio": {
       "es": "valer (zenbat balio du?: ¿cuánto vale?)",
       "lemma": "balio izan"
+    },
+    "banandu": {
+      "es": "separarse"
     },
     "baneukan": {
       "es": "tener",
@@ -983,8 +1217,32 @@
       "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
+    "barazki": {
+      "es": "verdura; hortaliza"
+    },
+    "barkamen": {
+      "es": "perdón"
+    },
+    "barkamena": {
+      "es": "perdón",
+      "lemma": "barkamen"
+    },
     "barkatu": {
       "es": "perdón; perdona"
+    },
+    "barre": {
+      "es": "reír",
+      "lemma": "barre egin"
+    },
+    "barre egin": {
+      "es": "reír"
+    },
+    "baserri": {
+      "es": "caserío"
+    },
+    "baserrian": {
+      "es": "caserío",
+      "lemma": "baserri"
     },
     "baso": {
       "es": "bosque"
@@ -1019,6 +1277,10 @@
       "es": "uno",
       "lemma": "bat"
     },
+    "batek": {
+      "es": "uno",
+      "lemma": "bat"
+    },
     "batekin": {
       "es": "uno",
       "lemma": "bat"
@@ -1037,6 +1299,21 @@
     },
     "batere": {
       "es": "nada (en absoluto)"
+    },
+    "bati": {
+      "es": "uno",
+      "lemma": "bat"
+    },
+    "batzuek": {
+      "es": "uno",
+      "lemma": "bat"
+    },
+    "batzuetan": {
+      "es": "a veces"
+    },
+    "batzuk": {
+      "es": "uno",
+      "lemma": "bat"
     },
     "baxu": {
       "es": "bajo"
@@ -1110,6 +1387,13 @@
       "es": "nueve",
       "lemma": "bederatzi"
     },
+    "begetariano": {
+      "es": "vegetariano"
+    },
+    "begetarianoa": {
+      "es": "vegetariano",
+      "lemma": "begetariano"
+    },
     "begi": {
       "es": "ojo"
     },
@@ -1125,6 +1409,10 @@
       "es": "mirar",
       "lemma": "begiratu"
     },
+    "begiratzea": {
+      "es": "ojo",
+      "lemma": "begi"
+    },
     "begiurdin": {
       "es": "de ojos azules"
     },
@@ -1135,6 +1423,23 @@
     "behar": {
       "es": "necesitar (behar dut: necesito)",
       "lemma": "behar izan"
+    },
+    "behar izan": {
+      "es": "necesitar; tener que"
+    },
+    "beharrezko": {
+      "es": "necesario"
+    },
+    "beharrezkoa": {
+      "es": "necesario",
+      "lemma": "beharrezko"
+    },
+    "behi": {
+      "es": "vaca"
+    },
+    "behiak": {
+      "es": "vaca",
+      "lemma": "behi"
     },
     "behin": {
       "es": "una vez"
@@ -1238,12 +1543,30 @@
       "es": "verde",
       "lemma": "berde"
     },
+    "berdin": {
+      "es": "igual"
+    },
+    "berdina": {
+      "es": "igual",
+      "lemma": "berdin"
+    },
+    "berdinak": {
+      "es": "igual",
+      "lemma": "berdin"
+    },
     "bere": {
       "es": "su (de él / de ella)",
       "lemma": "hura"
     },
     "berehala": {
       "es": "enseguida"
+    },
+    "berme": {
+      "es": "garantía"
+    },
+    "bermea": {
+      "es": "garantía",
+      "lemma": "berme"
     },
     "bero": {
       "es": "calor"
@@ -1284,12 +1607,23 @@
       "es": "nuevo",
       "lemma": "berri"
     },
+    "berriaren": {
+      "es": "nuevo",
+      "lemma": "berri"
+    },
+    "berriari": {
+      "es": "nuevo",
+      "lemma": "berri"
+    },
     "berrira": {
       "es": "nuevo",
       "lemma": "berri"
     },
     "berriro": {
       "es": "otra vez"
+    },
+    "berritu": {
+      "es": "renovar"
     },
     "berriz": {
       "es": "en cambio"
@@ -1323,6 +1657,10 @@
       "es": "otro",
       "lemma": "beste"
     },
+    "besteak": {
+      "es": "otro",
+      "lemma": "beste"
+    },
     "betaurreko": {
       "es": "gafas"
     },
@@ -1335,6 +1673,17 @@
     },
     "bezain": {
       "es": "tan (… bezain … : tan … como)"
+    },
+    "bezala": {
+      "es": "como (de modo)"
+    },
+    "bezalako": {
+      "es": "como (de modo)",
+      "lemma": "bezala"
+    },
+    "bezalakoa": {
+      "es": "como (de modo)",
+      "lemma": "bezala"
     },
     "bezero": {
       "es": "cliente"
@@ -1387,6 +1736,10 @@
       "es": "viaje",
       "lemma": "bidaia"
     },
+    "bidaiatzen": {
+      "es": "viaje",
+      "lemma": "bidaia"
+    },
     "bidaiei": {
       "es": "viaje",
       "lemma": "bidaia"
@@ -1397,6 +1750,21 @@
     "bidaliko": {
       "es": "enviar",
       "lemma": "bidali"
+    },
+    "bidegorri": {
+      "es": "carril bici"
+    },
+    "bidegorria": {
+      "es": "carril bici",
+      "lemma": "bidegorri"
+    },
+    "bidegorriarekin": {
+      "es": "carril bici",
+      "lemma": "bidegorri"
+    },
+    "bidegorriaren": {
+      "es": "carril bici",
+      "lemma": "bidegorri"
     },
     "bideo-joko": {
       "es": "videojuego"
@@ -1425,6 +1793,21 @@
     },
     "bihar arte": {
       "es": "hasta mañana"
+    },
+    "biki": {
+      "es": "gemelo; mellizo"
+    },
+    "bikia": {
+      "es": "gemelo; mellizo",
+      "lemma": "biki"
+    },
+    "bikiak": {
+      "es": "gemelo; mellizo",
+      "lemma": "biki"
+    },
+    "bikiek": {
+      "es": "gemelo; mellizo",
+      "lemma": "biki"
     },
     "bilera": {
       "es": "reunión"
@@ -1462,6 +1845,10 @@
     "birziklatzen": {
       "es": "reciclando (birziklatu)",
       "lemma": "birziklatu"
+    },
+    "bitan": {
+      "es": "dos",
+      "lemma": "bi"
     },
     "bizar": {
       "es": "barba"
@@ -1514,6 +1901,13 @@
       "es": "modo de vida",
       "lemma": "bizimodu"
     },
+    "bizitza": {
+      "es": "vida"
+    },
+    "bizitzan": {
+      "es": "vida",
+      "lemma": "bizitza"
+    },
     "bizitzea": {
       "es": "vivir",
       "lemma": "bizi izan"
@@ -1536,6 +1930,9 @@
     "bizkarreko": {
       "es": "espalda",
       "lemma": "bizkar"
+    },
+    "biztanle": {
+      "es": "habitante"
     },
     "bosgarren": {
       "es": "quinto"
@@ -1652,12 +2049,19 @@
     "buruz": {
       "es": "sobre; acerca de"
     },
+    "buztan": {
+      "es": "cola; rabo"
+    },
     "da": {
       "es": "es / está",
       "lemma": "izan"
     },
     "dabil": {
       "es": "anda",
+      "lemma": "ibili"
+    },
+    "dabilen": {
+      "es": "andar",
       "lemma": "ibili"
     },
     "dabiltza": {
@@ -1680,6 +2084,10 @@
       "es": "que está / (si) está",
       "lemma": "egon"
     },
+    "dagoena": {
+      "es": "estar",
+      "lemma": "egon"
+    },
     "dagoenean": {
       "es": "cuando está",
       "lemma": "egon"
@@ -1695,6 +2103,30 @@
     "daitezke": {
       "es": "se pueden",
       "lemma": "izan"
+    },
+    "dakar": {
+      "es": "traer",
+      "lemma": "ekarri"
+    },
+    "dakargu": {
+      "es": "traer",
+      "lemma": "ekarri"
+    },
+    "dakart": {
+      "es": "traer",
+      "lemma": "ekarri"
+    },
+    "dakarte": {
+      "es": "traer",
+      "lemma": "ekarri"
+    },
+    "dakarzu": {
+      "es": "traer",
+      "lemma": "ekarri"
+    },
+    "dakarzue": {
+      "es": "traer",
+      "lemma": "ekarri"
     },
     "daki": {
       "es": "sabe",
@@ -1782,6 +2214,13 @@
       "es": "vienen",
       "lemma": "etorri"
     },
+    "datu": {
+      "es": "dato"
+    },
+    "datuen": {
+      "es": "dato",
+      "lemma": "datu"
+    },
     "daude": {
       "es": "están",
       "lemma": "egon"
@@ -1794,12 +2233,32 @@
       "es": "estar",
       "lemma": "egon"
     },
+    "dauden": {
+      "es": "estar",
+      "lemma": "egon"
+    },
+    "daudenak": {
+      "es": "estar",
+      "lemma": "egon"
+    },
     "dauka": {
       "es": "tiene",
       "lemma": "eduki"
     },
     "daukagu": {
       "es": "tenemos",
+      "lemma": "eduki"
+    },
+    "daukala": {
+      "es": "tener",
+      "lemma": "eduki"
+    },
+    "daukan": {
+      "es": "tener",
+      "lemma": "eduki"
+    },
+    "daukana": {
+      "es": "tener",
       "lemma": "eduki"
     },
     "daukat": {
@@ -1877,6 +2336,10 @@
       "es": "tienda",
       "lemma": "denda"
     },
+    "dendara": {
+      "es": "tienda",
+      "lemma": "denda"
+    },
     "dendari": {
       "es": "dependiente; dependienta"
     },
@@ -1895,6 +2358,32 @@
     "denik": {
       "es": "ser",
       "lemma": "izan"
+    },
+    "desberdin": {
+      "es": "diferente"
+    },
+    "desberdina": {
+      "es": "diferente",
+      "lemma": "desberdin"
+    },
+    "desberdinak": {
+      "es": "diferente",
+      "lemma": "desberdin"
+    },
+    "deskontu": {
+      "es": "descuento"
+    },
+    "deskontua": {
+      "es": "descuento",
+      "lemma": "deskontu"
+    },
+    "deskontuak": {
+      "es": "descuento",
+      "lemma": "deskontu"
+    },
+    "deskonturik": {
+      "es": "descuento",
+      "lemma": "deskontu"
     },
     "dezakegu": {
       "es": "haber; tener (auxiliar)",
@@ -1915,8 +2404,16 @@
     "dezente": {
       "es": "bastante"
     },
+    "didate": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
     "didazu": {
       "es": "(tú) me (dices / das…)",
+      "lemma": "ukan"
+    },
+    "didazue": {
+      "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
     "diet": {
@@ -1925,6 +2422,10 @@
     },
     "digu": {
       "es": "(él / ella) nos (dice / da…)",
+      "lemma": "ukan"
+    },
+    "digute": {
+      "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
     "dio": {
@@ -1951,6 +2452,10 @@
       "es": "son",
       "lemma": "izan"
     },
+    "direla": {
+      "es": "que son / que están",
+      "lemma": "izan"
+    },
     "direlako": {
       "es": "porque son",
       "lemma": "izan"
@@ -1974,6 +2479,13 @@
       "es": "parecer (dirudi)",
       "lemma": "irudi"
     },
+    "dirudun": {
+      "es": "rico (que tiene dinero)"
+    },
+    "diruduna": {
+      "es": "rico (que tiene dinero)",
+      "lemma": "dirudun"
+    },
     "dirurik": {
       "es": "dinero",
       "lemma": "diru"
@@ -1990,7 +2502,19 @@
       "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
+    "ditudan": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
     "dituela": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
+    "dituen": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
+    "dituena": {
       "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
@@ -2018,6 +2542,14 @@
       "es": "tenéis (varias cosas)",
       "lemma": "ukan"
     },
+    "dituzula": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
+    "dituzun": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
     "ditzakegu": {
       "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
@@ -2026,8 +2558,20 @@
       "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
+    "dizkizugu": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
     "dizu": {
       "es": "(él / ella) te (dice / da…)",
+      "lemma": "ukan"
+    },
+    "dizuet": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
+    "dizugu": {
+      "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
     "dizut": {
@@ -2046,12 +2590,20 @@
       "es": "tiene · auxiliar (él / ella)",
       "lemma": "ukan"
     },
+    "dudala": {
+      "es": "que tengo",
+      "lemma": "ukan"
+    },
     "dudalako": {
       "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
     "dudan": {
       "es": "que tengo / (si) tengo",
+      "lemma": "ukan"
+    },
+    "dudana": {
+      "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
     "dudanean": {
@@ -2069,12 +2621,24 @@
       "es": "que tiene / (si) tiene",
       "lemma": "ukan"
     },
+    "duena": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
+    "duenak": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
     "duenik": {
       "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
     "dugu": {
       "es": "tenemos · auxiliar (nosotros)",
+      "lemma": "ukan"
+    },
+    "dugun": {
+      "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
     "dut": {
@@ -2086,6 +2650,10 @@
       "lemma": "ukan"
     },
     "dutelako": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
+    "dutenak": {
       "es": "haber; tener (auxiliar)",
       "lemma": "ukan"
     },
@@ -2107,12 +2675,23 @@
       "es": "tenéis · auxiliar (vosotros)",
       "lemma": "ukan"
     },
+    "duzuen": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
     "duzun": {
       "es": "que tienes / (si) tienes",
       "lemma": "ukan"
     },
     "ea": {
       "es": "si (pregunta indirecta)"
+    },
+    "edalontzi": {
+      "es": "vaso"
+    },
+    "edalontziak": {
+      "es": "vaso",
+      "lemma": "edalontzi"
     },
     "edan": {
       "es": "beber"
@@ -2169,6 +2748,10 @@
       "es": "hacer",
       "lemma": "egin"
     },
+    "egiteak": {
+      "es": "hacer",
+      "lemma": "egin"
+    },
     "egiteko": {
       "es": "para hacer",
       "lemma": "egin"
@@ -2218,6 +2801,10 @@
       "lemma": "egosi"
     },
     "egotea": {
+      "es": "estar",
+      "lemma": "egon"
+    },
+    "egoten": {
       "es": "estar",
       "lemma": "egon"
     },
@@ -2282,6 +2869,10 @@
       "es": "sol",
       "lemma": "eguzki"
     },
+    "eguzkitan": {
+      "es": "sol",
+      "lemma": "eguzki"
+    },
     "eguzkitsu": {
       "es": "soleado"
     },
@@ -2339,6 +2930,13 @@
     "ekialdean": {
       "es": "este (punto cardinal)",
       "lemma": "ekialde"
+    },
+    "ekologiko": {
+      "es": "ecológico"
+    },
+    "ekologikoak": {
+      "es": "ecológico",
+      "lemma": "ekologiko"
     },
     "eliza": {
       "es": "iglesia"
@@ -2419,6 +3017,13 @@
       "es": "escuchando (entzun)",
       "lemma": "entzun"
     },
+    "erabaki": {
+      "es": "decidir; decisión"
+    },
+    "erabakiaren": {
+      "es": "decidir; decisión",
+      "lemma": "erabaki"
+    },
     "erabili": {
       "es": "usar"
     },
@@ -2458,8 +3063,19 @@
       "es": "anillo",
       "lemma": "eraztun"
     },
+    "erdi": {
+      "es": "mitad"
+    },
+    "erdia": {
+      "es": "mitad",
+      "lemma": "erdi"
+    },
     "erdiak": {
       "es": "y media (eta erdiak)",
+      "lemma": "erdi"
+    },
+    "erdian": {
+      "es": "mitad",
       "lemma": "erdi"
     },
     "erdietan": {
@@ -2498,6 +3114,20 @@
       "es": "comprar",
       "lemma": "erosi"
     },
+    "erosketa": {
+      "es": "compra"
+    },
+    "erosketei": {
+      "es": "compra",
+      "lemma": "erosketa"
+    },
+    "erosle": {
+      "es": "comprador; compradora"
+    },
+    "erosleen": {
+      "es": "comprador; compradora",
+      "lemma": "erosle"
+    },
     "eroso": {
       "es": "cómodo"
     },
@@ -2532,8 +3162,18 @@
       "es": "fácil",
       "lemma": "erraz"
     },
+    "erre": {
+      "es": "fumar"
+    },
+    "erreklamazio": {
+      "es": "reclamación"
+    },
     "errepide": {
       "es": "carretera"
+    },
+    "errepidean": {
+      "es": "carretera",
+      "lemma": "errepide"
     },
     "errepikatu": {
       "es": "repetir"
@@ -2553,6 +3193,33 @@
       "es": "jubilado; jubilada",
       "lemma": "erretiratu"
     },
+    "erretzaile": {
+      "es": "fumador; fumadora"
+    },
+    "erretzailea": {
+      "es": "fumador; fumadora",
+      "lemma": "erretzaile"
+    },
+    "erretzaileari": {
+      "es": "fumador; fumadora",
+      "lemma": "erretzaile"
+    },
+    "erretzaileek": {
+      "es": "fumador; fumadora",
+      "lemma": "erretzaile"
+    },
+    "erretzaileen": {
+      "es": "fumador; fumadora",
+      "lemma": "erretzaile"
+    },
+    "erretzeari": {
+      "es": "fumar",
+      "lemma": "erre"
+    },
+    "erretzen": {
+      "es": "fumar",
+      "lemma": "erre"
+    },
     "errezeta": {
       "es": "receta (médica)"
     },
@@ -2566,7 +3233,15 @@
     "esan": {
       "es": "decir"
     },
+    "esango": {
+      "es": "decir",
+      "lemma": "esan"
+    },
     "esateko": {
+      "es": "decir",
+      "lemma": "esan"
+    },
+    "esaten": {
       "es": "decir",
       "lemma": "esan"
     },
@@ -2579,8 +3254,15 @@
     "eskailera": {
       "es": "escalera"
     },
+    "eskaintza": {
+      "es": "oferta"
+    },
     "eskatu": {
       "es": "pedir"
+    },
+    "eskatzen": {
+      "es": "pedir",
+      "lemma": "eskatu"
     },
     "eskerrik asko": {
       "es": "muchas gracias"
@@ -2622,6 +3304,13 @@
     "eskuan": {
       "es": "mano",
       "lemma": "esku"
+    },
+    "eskubide": {
+      "es": "derecho"
+    },
+    "eskubidea": {
+      "es": "derecho",
+      "lemma": "eskubide"
     },
     "eskudiru": {
       "es": "dinero en efectivo"
@@ -2675,6 +3364,13 @@
       "es": "experiencia",
       "lemma": "esperientzia"
     },
+    "estal": {
+      "es": "cubrir",
+      "lemma": "estali"
+    },
+    "estali": {
+      "es": "cubrir"
+    },
     "estuak": {
       "es": "estrecho",
       "lemma": "estu"
@@ -2704,6 +3400,10 @@
     "etxe": {
       "es": "casa"
     },
+    "etxe-animaliarik": {
+      "es": "animal doméstico",
+      "lemma": "etxe-animalia"
+    },
     "etxea": {
       "es": "casa",
       "lemma": "etxe"
@@ -2717,6 +3417,10 @@
       "lemma": "etxe"
     },
     "etxearen": {
+      "es": "casa",
+      "lemma": "etxe"
+    },
+    "etxeko": {
       "es": "casa",
       "lemma": "etxe"
     },
@@ -2783,6 +3487,13 @@
     "ez horregatik": {
       "es": "de nada"
     },
+    "ezagun": {
+      "es": "conocido"
+    },
+    "ezaguna": {
+      "es": "conocido",
+      "lemma": "ezagun"
+    },
     "ezagutu": {
       "es": "conocer"
     },
@@ -2793,6 +3504,9 @@
     "ezazu": {
       "es": "(hazlo) tú",
       "lemma": "ukan"
+    },
+    "ezberdintasun": {
+      "es": "diferencia"
     },
     "ezer": {
       "es": "nada"
@@ -2814,6 +3528,10 @@
     "ezkondu": {
       "es": "casado; casarse"
     },
+    "ezkonduko": {
+      "es": "casado; casarse",
+      "lemma": "ezkondu"
+    },
     "ezkonduta": {
       "es": "casado; casarse",
       "lemma": "ezkondu"
@@ -2825,6 +3543,13 @@
       "es": "soltero; soltera",
       "lemma": "ezkongabe"
     },
+    "ezkontza": {
+      "es": "boda"
+    },
+    "ezkontzan": {
+      "es": "boda",
+      "lemma": "ezkontza"
+    },
     "eztul": {
       "es": "tos"
     },
@@ -2835,9 +3560,16 @@
     "ezuste": {
       "es": "sorpresa"
     },
+    "ezustea": {
+      "es": "sorpresa",
+      "lemma": "ezuste"
+    },
     "ezusteko": {
       "es": "sorpresa",
       "lemma": "ezuste"
+    },
+    "faktura": {
+      "es": "factura"
     },
     "famatu": {
       "es": "famoso"
@@ -2938,8 +3670,15 @@
     "gai": {
       "es": "tema"
     },
+    "gainditu": {
+      "es": "aprobar; superar"
+    },
     "gainean": {
       "es": "encima"
+    },
+    "gainera": {
+      "es": "tema",
+      "lemma": "gai"
     },
     "gaitezke": {
       "es": "ser",
@@ -2952,6 +3691,10 @@
       "es": "preguntar"
     },
     "galdetuko": {
+      "es": "preguntar",
+      "lemma": "galdetu"
+    },
+    "galdetzen": {
       "es": "preguntar",
       "lemma": "galdetu"
     },
@@ -3084,6 +3827,20 @@
       "es": "importante",
       "lemma": "garrantzitsu"
     },
+    "garrantzitsuena": {
+      "es": "importante",
+      "lemma": "garrantzitsu"
+    },
+    "gastatu": {
+      "es": "gastar"
+    },
+    "gastatzen": {
+      "es": "gastar",
+      "lemma": "gastatu"
+    },
+    "gastu": {
+      "es": "gasto"
+    },
     "gatoz": {
       "es": "venimos",
       "lemma": "etorri"
@@ -3125,8 +3882,19 @@
     "gaur": {
       "es": "hoy"
     },
+    "gauza": {
+      "es": "noche",
+      "lemma": "gau"
+    },
     "gazta": {
       "es": "queso"
+    },
+    "gaztaro": {
+      "es": "juventud"
+    },
+    "gaztaroan": {
+      "es": "juventud",
+      "lemma": "gaztaro"
     },
     "gazte": {
       "es": "joven"
@@ -3159,6 +3927,9 @@
     },
     "gehiago": {
       "es": "más"
+    },
+    "gehiegi": {
+      "es": "demasiado"
     },
     "gehitu": {
       "es": "añadir"
@@ -3217,6 +3988,10 @@
       "es": "quedar(se)"
     },
     "geratuko": {
+      "es": "quedar(se)",
+      "lemma": "geratu"
+    },
+    "geratzen": {
       "es": "quedar(se)",
       "lemma": "geratu"
     },
@@ -3337,9 +4112,34 @@
       "es": "mañana (parte del día)",
       "lemma": "goiz"
     },
+    "goizero": {
+      "es": "mañana (parte del día)",
+      "lemma": "goiz"
+    },
     "goizez": {
       "es": "mañana (parte del día)",
       "lemma": "goiz"
+    },
+    "gomendagarri": {
+      "es": "recomendable"
+    },
+    "gomendagarria": {
+      "es": "recomendable",
+      "lemma": "gomendagarri"
+    },
+    "gomendatu": {
+      "es": "recomendar"
+    },
+    "gomendatzen": {
+      "es": "recomendar",
+      "lemma": "gomendatu"
+    },
+    "gomendio": {
+      "es": "recomendación"
+    },
+    "gomendioa": {
+      "es": "recomendación",
+      "lemma": "gomendio"
     },
     "gona": {
       "es": "falda"
@@ -3347,6 +4147,21 @@
     "gonak": {
       "es": "falda",
       "lemma": "gona"
+    },
+    "gorde": {
+      "es": "guardar"
+    },
+    "gordeko": {
+      "es": "guardar",
+      "lemma": "gorde"
+    },
+    "gordetzea": {
+      "es": "guardar",
+      "lemma": "gorde"
+    },
+    "gordetzen": {
+      "es": "guardar",
+      "lemma": "gorde"
     },
     "gorri": {
       "es": "rojo"
@@ -3387,6 +4202,9 @@
     "gozatzen": {
       "es": "disfrutar",
       "lemma": "gozatu"
+    },
+    "gozoki": {
+      "es": "golosina; caramelo"
     },
     "gris": {
       "es": "gris"
@@ -3455,6 +4273,10 @@
     "gustu": {
       "es": "gusto"
     },
+    "gustuak": {
+      "es": "gusto",
+      "lemma": "gustu"
+    },
     "gustuko": {
       "es": "gustar (gustuko dut: me gusta)",
       "lemma": "gustuko izan"
@@ -3475,6 +4297,14 @@
       "es": "todo; todos"
     },
     "guztiak": {
+      "es": "todo; todos",
+      "lemma": "guzti"
+    },
+    "guztiek": {
+      "es": "todo; todos",
+      "lemma": "guzti"
+    },
+    "guztientzat": {
       "es": "todo; todos",
       "lemma": "guzti"
     },
@@ -3580,6 +4410,10 @@
       "es": "grande",
       "lemma": "handi"
     },
+    "handiagoak": {
+      "es": "grande",
+      "lemma": "handi"
+    },
     "handiak": {
       "es": "grande",
       "lemma": "handi"
@@ -3593,6 +4427,14 @@
       "lemma": "handi"
     },
     "handiena": {
+      "es": "grande",
+      "lemma": "handi"
+    },
+    "handiko": {
+      "es": "grande",
+      "lemma": "handi"
+    },
+    "handirik": {
       "es": "grande",
       "lemma": "handi"
     },
@@ -3684,12 +4526,23 @@
       "es": "coger; tomar",
       "lemma": "hartu"
     },
+    "hartzeari": {
+      "es": "coger; tomar",
+      "lemma": "hartu"
+    },
     "hartzen": {
       "es": "cogiendo / tomando (hartu)",
       "lemma": "hartu"
     },
+    "haserre": {
+      "es": "enfadado; enfado"
+    },
     "hasi": {
       "es": "empezar"
+    },
+    "hasieran": {
+      "es": "empezar",
+      "lemma": "hasi"
     },
     "hasiko": {
       "es": "empezar",
@@ -3709,12 +4562,56 @@
       "es": "estos / estas",
       "lemma": "hau"
     },
+    "haurdun": {
+      "es": "embarazada"
+    },
+    "haurra": {
+      "es": "este; esta",
+      "lemma": "hau"
+    },
+    "haurrak": {
+      "es": "este; esta",
+      "lemma": "hau"
+    },
+    "haurrei": {
+      "es": "este; esta",
+      "lemma": "hau"
+    },
+    "haurrek": {
+      "es": "este; esta",
+      "lemma": "hau"
+    },
+    "haurtzaindegi": {
+      "es": "guardería"
+    },
+    "haurtzaindegira": {
+      "es": "guardería",
+      "lemma": "haurtzaindegi"
+    },
+    "haurtzaro": {
+      "es": "infancia"
+    },
+    "haurtzaroan": {
+      "es": "infancia",
+      "lemma": "haurtzaro"
+    },
     "hautsi": {
       "es": "romper"
     },
     "hautsita": {
       "es": "romper",
       "lemma": "hautsi"
+    },
+    "hazi": {
+      "es": "crecer"
+    },
+    "hazten": {
+      "es": "crecer",
+      "lemma": "hazi"
+    },
+    "hegan": {
+      "es": "volar",
+      "lemma": "hegan egin"
     },
     "hegazkin": {
       "es": "avión"
@@ -3745,6 +4642,13 @@
       "es": "dirección",
       "lemma": "helbide"
     },
+    "helduaro": {
+      "es": "edad adulta"
+    },
+    "helduaroan": {
+      "es": "edad adulta",
+      "lemma": "helduaro"
+    },
     "hemen": {
       "es": "aquí"
     },
@@ -3758,6 +4662,13 @@
     "hemezortzi": {
       "es": "dieciocho"
     },
+    "heren": {
+      "es": "tercio"
+    },
+    "herenak": {
+      "es": "tercio",
+      "lemma": "heren"
+    },
     "herenegun": {
       "es": "anteayer"
     },
@@ -3769,6 +4680,10 @@
       "lemma": "herri"
     },
     "herrian": {
+      "es": "pueblo",
+      "lemma": "herri"
+    },
+    "herrietan": {
       "es": "pueblo",
       "lemma": "herri"
     },
@@ -3806,6 +4721,18 @@
       "es": "mes",
       "lemma": "hilabete"
     },
+    "hilean": {
+      "es": "morir",
+      "lemma": "hil"
+    },
+    "hilero": {
+      "es": "morir",
+      "lemma": "hil"
+    },
+    "hiltzen": {
+      "es": "morir",
+      "lemma": "hil"
+    },
     "hiri": {
       "es": "ciudad"
     },
@@ -3817,13 +4744,28 @@
       "es": "ciudad",
       "lemma": "hiri"
     },
+    "hirietan": {
+      "es": "ciudad",
+      "lemma": "hiri"
+    },
     "hiriko": {
+      "es": "ciudad",
+      "lemma": "hiri"
+    },
+    "hirira": {
       "es": "ciudad",
       "lemma": "hiri"
     },
     "hiririk": {
       "es": "ciudad",
       "lemma": "hiri"
+    },
+    "hiritar": {
+      "es": "ciudadano; ciudadana"
+    },
+    "hiritarrek": {
+      "es": "ciudadano; ciudadana",
+      "lemma": "hiritar"
     },
     "hiru": {
       "es": "tres"
@@ -3862,6 +4804,10 @@
       "es": "sesenta y…",
       "lemma": "hirurogei"
     },
+    "hirutik": {
+      "es": "tres",
+      "lemma": "hiru"
+    },
     "hitz": {
       "es": "palabra (hitz egin: hablar)"
     },
@@ -3878,6 +4824,10 @@
     "hitzordua": {
       "es": "cita",
       "lemma": "hitzordu"
+    },
+    "hizketan": {
+      "es": "hablar",
+      "lemma": "hitz egin"
     },
     "hizkuntza": {
       "es": "idioma"
@@ -3901,6 +4851,10 @@
       "es": "mejor"
     },
     "hobea": {
+      "es": "mejor",
+      "lemma": "hobe"
+    },
+    "hobeto": {
       "es": "mejor",
       "lemma": "hobe"
     },
@@ -3956,8 +4910,19 @@
       "es": "playa",
       "lemma": "hondartza"
     },
+    "hondatu": {
+      "es": "estropear(se)"
+    },
+    "hondatuta": {
+      "es": "estropear(se)",
+      "lemma": "hondatu"
+    },
     "honek": {
       "es": "este / esta (sujeto)",
+      "lemma": "hau"
+    },
+    "honen": {
+      "es": "este; esta",
       "lemma": "hau"
     },
     "honetan": {
@@ -3985,6 +4950,17 @@
     "horiek": {
       "es": "esos / esas",
       "lemma": "hori"
+    },
+    "horma": {
+      "es": "pared"
+    },
+    "horman": {
+      "es": "pared",
+      "lemma": "horma"
+    },
+    "hormarekin": {
+      "es": "pared",
+      "lemma": "horma"
     },
     "horregatik": {
       "es": "ahí",
@@ -4016,6 +4992,9 @@
     "hortzetako": {
       "es": "diente",
       "lemma": "hortz"
+    },
+    "hortzetako pasta": {
+      "es": "pasta de dientes"
     },
     "hotel": {
       "es": "hotel"
@@ -4079,6 +5058,10 @@
     "iaz": {
       "es": "el año pasado"
     },
+    "iazko": {
+      "es": "el año pasado",
+      "lemma": "iaz"
+    },
     "ibai": {
       "es": "río"
     },
@@ -4094,6 +5077,10 @@
       "es": "río",
       "lemma": "ibai"
     },
+    "ibaiko": {
+      "es": "río",
+      "lemma": "ibai"
+    },
     "ibaira": {
       "es": "río",
       "lemma": "ibai"
@@ -4106,6 +5093,10 @@
       "es": "andar"
     },
     "ibiltzea": {
+      "es": "andar",
+      "lemma": "ibili"
+    },
+    "ibiltzeko": {
       "es": "andar",
       "lemma": "ibili"
     },
@@ -4304,6 +5295,21 @@
       "es": "oscuro",
       "lemma": "ilun"
     },
+    "inauteri": {
+      "es": "carnaval"
+    },
+    "inauteriak": {
+      "es": "carnaval",
+      "lemma": "inauteri"
+    },
+    "inauterietakoa": {
+      "es": "carnaval",
+      "lemma": "inauteri"
+    },
+    "inauterietan": {
+      "es": "carnaval",
+      "lemma": "inauteri"
+    },
     "ingeles": {
       "es": "inglés"
     },
@@ -4341,11 +5347,18 @@
       "es": "medio ambiente",
       "lemma": "ingurumen"
     },
+    "inkesta": {
+      "es": "encuesta"
+    },
     "inoiz": {
       "es": "alguna vez; nunca (con ez)"
     },
     "inor": {
       "es": "nadie"
+    },
+    "inoren": {
+      "es": "nadie",
+      "lemma": "inor"
     },
     "interesgarri": {
       "es": "interesante"
@@ -4484,6 +5497,9 @@
       "es": "accidente",
       "lemma": "istripu"
     },
+    "isun": {
+      "es": "multa"
+    },
     "itsaso": {
       "es": "mar"
     },
@@ -4532,6 +5548,13 @@
     "itzali": {
       "es": "apagar"
     },
+    "itzalkin": {
+      "es": "sombrilla"
+    },
+    "itzalkinaren": {
+      "es": "sombrilla",
+      "lemma": "itzalkin"
+    },
     "itzaltzea": {
       "es": "apagar",
       "lemma": "itzali"
@@ -4544,10 +5567,18 @@
       "es": "(hazlos) tú",
       "lemma": "ukan"
     },
+    "itzazue": {
+      "es": "haber; tener (auxiliar)",
+      "lemma": "ukan"
+    },
     "itzuli": {
       "es": "volver; devolver"
     },
     "itzuliko": {
+      "es": "volver; devolver",
+      "lemma": "itzuli"
+    },
+    "itzultzea": {
       "es": "volver; devolver",
       "lemma": "itzuli"
     },
@@ -4569,6 +5600,10 @@
       "es": "ser",
       "lemma": "izan"
     },
+    "izaten": {
+      "es": "ser",
+      "lemma": "izan"
+    },
     "izeba": {
       "es": "tía"
     },
@@ -4581,6 +5616,9 @@
     },
     "izena eman": {
       "es": "apuntarse; inscribirse"
+    },
+    "izugarri": {
+      "es": "muchísimo"
     },
     "jai": {
       "es": "fiesta; día festivo"
@@ -4617,6 +5655,13 @@
     },
     "jaio": {
       "es": "nacer"
+    },
+    "jaioberri": {
+      "es": "recién nacido"
+    },
+    "jaioberria": {
+      "es": "recién nacido",
+      "lemma": "jaioberri"
     },
     "jaioterri": {
       "es": "pueblo natal"
@@ -4660,8 +5705,34 @@
       "es": "comer",
       "lemma": "jan"
     },
+    "jantzi": {
+      "es": "vestirse; ropa"
+    },
+    "janzten": {
+      "es": "vestirse; ropa",
+      "lemma": "jantzi"
+    },
+    "jarraitu": {
+      "es": "seguir; continuar"
+    },
+    "jarraituko": {
+      "es": "seguir; continuar",
+      "lemma": "jarraitu"
+    },
     "jarri": {
       "es": "poner"
+    },
+    "jartzea": {
+      "es": "poner",
+      "lemma": "jarri"
+    },
+    "jartzeko": {
+      "es": "poner",
+      "lemma": "jarri"
+    },
+    "jartzen": {
+      "es": "poner",
+      "lemma": "jarri"
     },
     "jatea": {
       "es": "comer",
@@ -4716,6 +5787,10 @@
       "es": "gente",
       "lemma": "jende"
     },
+    "jendeari": {
+      "es": "gente",
+      "lemma": "jende"
+    },
     "jertse": {
       "es": "jersey"
     },
@@ -4748,6 +5823,9 @@
     "joaten": {
       "es": "yendo (joan)",
       "lemma": "joan"
+    },
+    "joera": {
+      "es": "tendencia"
     },
     "jokatu": {
       "es": "jugar (un partido o un juego)"
@@ -4788,6 +5866,10 @@
       "es": "café",
       "lemma": "kafe"
     },
+    "kaferik": {
+      "es": "café",
+      "lemma": "kafe"
+    },
     "kaixo": {
       "es": "hola"
     },
@@ -4809,6 +5891,16 @@
     "kalera": {
       "es": "calle",
       "lemma": "kale"
+    },
+    "kalitate": {
+      "es": "calidad"
+    },
+    "kalitaterik": {
+      "es": "calidad",
+      "lemma": "kalitate"
+    },
+    "kalte": {
+      "es": "daño"
     },
     "kaltegarri": {
       "es": "perjudicial"
@@ -4843,6 +5935,20 @@
       "es": "camping",
       "lemma": "kanpin"
     },
+    "kapela": {
+      "es": "sombrero"
+    },
+    "karabana": {
+      "es": "caravana"
+    },
+    "karabanak": {
+      "es": "caravana",
+      "lemma": "karabana"
+    },
+    "karabanan": {
+      "es": "caravana",
+      "lemma": "karabana"
+    },
     "kartoi": {
       "es": "cartón"
     },
@@ -4858,6 +5964,13 @@
       "es": "cartón",
       "lemma": "kartoi"
     },
+    "katu": {
+      "es": "gato; gata"
+    },
+    "katua": {
+      "es": "gato; gata",
+      "lemma": "katu"
+    },
     "kazetari": {
       "es": "periodista"
     },
@@ -4868,6 +5981,12 @@
     "kazetariak": {
       "es": "periodista",
       "lemma": "kazetari"
+    },
+    "kexa": {
+      "es": "queja"
+    },
+    "kexatu": {
+      "es": "quejarse"
     },
     "kirol": {
       "es": "deporte"
@@ -4882,6 +6001,14 @@
     },
     "kirolari": {
       "es": "deportista"
+    },
+    "kirolaria": {
+      "es": "deportista",
+      "lemma": "kirolari"
+    },
+    "kirolariak": {
+      "es": "deportista",
+      "lemma": "kirolari"
     },
     "kiroldegi": {
       "es": "polideportivo"
@@ -4914,12 +6041,22 @@
       "es": "deporte",
       "lemma": "kirol"
     },
+    "kizkur": {
+      "es": "rizado"
+    },
+    "kizkurra": {
+      "es": "rizado",
+      "lemma": "kizkur"
+    },
     "koadrodun": {
       "es": "de cuadros"
     },
     "koadroduna": {
       "es": "de cuadros",
       "lemma": "koadrodun"
+    },
+    "kobratu": {
+      "es": "cobrar"
     },
     "kolore": {
       "es": "color"
@@ -4928,6 +6065,13 @@
       "es": "convenir (komeni da: conviene)",
       "lemma": "komeni izan"
     },
+    "komenigarri": {
+      "es": "conveniente"
+    },
+    "komenigarria": {
+      "es": "conveniente",
+      "lemma": "komenigarri"
+    },
     "komun": {
       "es": "váter; aseo"
     },
@@ -4935,8 +6079,15 @@
       "es": "váter; aseo",
       "lemma": "komun"
     },
+    "konparatu": {
+      "es": "comparar"
+    },
     "konpondu": {
       "es": "arreglar"
+    },
+    "konponduko": {
+      "es": "arreglar",
+      "lemma": "konpondu"
     },
     "konpontzea": {
       "es": "arreglar",
@@ -4953,12 +6104,33 @@
       "es": "contar (relatar)",
       "lemma": "kontatu"
     },
+    "kontra": {
+      "es": "en contra"
+    },
+    "kontrako": {
+      "es": "en contra",
+      "lemma": "kontra"
+    },
     "kontratu": {
       "es": "contrato"
     },
     "kontratua": {
       "es": "contrato",
       "lemma": "kontratu"
+    },
+    "kontsumo": {
+      "es": "consumo"
+    },
+    "kontsumoa": {
+      "es": "consumo",
+      "lemma": "kontsumo"
+    },
+    "kontuan": {
+      "es": "tener en cuenta",
+      "lemma": "kontuan hartu"
+    },
+    "kontuan hartu": {
+      "es": "tener en cuenta"
     },
     "kontzertu": {
       "es": "concierto"
@@ -4988,6 +6160,9 @@
     "kotoizkoa": {
       "es": "algodón",
       "lemma": "kotoi"
+    },
+    "krema": {
+      "es": "crema"
     },
     "kutsadura": {
       "es": "contaminación"
@@ -5025,6 +6200,10 @@
     "lagundu": {
       "es": "ayudar"
     },
+    "lagunduko": {
+      "es": "ayudar",
+      "lemma": "lagundu"
+    },
     "lagunei": {
       "es": "amigo; amiga",
       "lemma": "lagun"
@@ -5034,6 +6213,14 @@
       "lemma": "lagun"
     },
     "lagunekin": {
+      "es": "amigo; amiga",
+      "lemma": "lagun"
+    },
+    "laguntzea": {
+      "es": "amigo; amiga",
+      "lemma": "lagun"
+    },
+    "laguntzen": {
       "es": "amigo; amiga",
       "lemma": "lagun"
     },
@@ -5066,6 +6253,10 @@
       "es": "trabajo",
       "lemma": "lan"
     },
+    "lanak": {
+      "es": "trabajo",
+      "lemma": "lan"
+    },
     "lanaldi": {
       "es": "jornada"
     },
@@ -5091,6 +6282,9 @@
       "es": "planta",
       "lemma": "landare"
     },
+    "landetxe": {
+      "es": "casa rural"
+    },
     "lanean": {
       "es": "trabajo",
       "lemma": "lan"
@@ -5100,6 +6294,10 @@
       "lemma": "lan"
     },
     "lanerako": {
+      "es": "trabajo",
+      "lemma": "lan"
+    },
+    "lanetik": {
       "es": "trabajo",
       "lemma": "lan"
     },
@@ -5151,6 +6349,9 @@
     "lanpetuta": {
       "es": "ocupado; atareado"
     },
+    "lanpostu": {
+      "es": "puesto de trabajo"
+    },
     "lantegi": {
       "es": "fábrica; taller"
     },
@@ -5189,6 +6390,21 @@
     "laranjak": {
       "es": "naranja",
       "lemma": "laranja"
+    },
+    "larrialdi": {
+      "es": "emergencia"
+    },
+    "larrialdia": {
+      "es": "emergencia",
+      "lemma": "larrialdi"
+    },
+    "larrialdietan": {
+      "es": "emergencia",
+      "lemma": "larrialdi"
+    },
+    "larrialdietara": {
+      "es": "emergencia",
+      "lemma": "larrialdi"
     },
     "larru": {
       "es": "cuero; piel"
@@ -5239,6 +6455,9 @@
       "es": "tranquilo",
       "lemma": "lasai"
     },
+    "lasaitu": {
+      "es": "tranquilizarse"
+    },
     "laster": {
       "es": "pronto"
     },
@@ -5254,6 +6473,10 @@
     },
     "laurden": {
       "es": "cuarto (fracción; eta laurden: y cuarto)"
+    },
+    "laurdenak": {
+      "es": "cuarto (fracción; eta laurden: y cuarto)",
+      "lemma": "laurden"
     },
     "laurehun": {
       "es": "cuatro",
@@ -5440,6 +6663,13 @@
       "es": "jardín",
       "lemma": "lorategi"
     },
+    "lore": {
+      "es": "flor"
+    },
+    "loreak": {
+      "es": "flor",
+      "lemma": "lore"
+    },
     "loredun": {
       "es": "de flores"
     },
@@ -5449,6 +6679,9 @@
     },
     "lortu": {
       "es": "conseguir"
+    },
+    "lotsa": {
+      "es": "vergüenza"
     },
     "lotsati": {
       "es": "tímido; vergonzoso"
@@ -5519,6 +6752,30 @@
     "maisuak": {
       "es": "maestro; maestra",
       "lemma": "maisu"
+    },
+    "maitasun": {
+      "es": "amor"
+    },
+    "maitasuna": {
+      "es": "amor",
+      "lemma": "maitasun"
+    },
+    "maite": {
+      "es": "querido (maite izan: querer; amar)"
+    },
+    "maitemindu": {
+      "es": "enamorarse"
+    },
+    "maiteminduta": {
+      "es": "enamorarse",
+      "lemma": "maitemindu"
+    },
+    "marka": {
+      "es": "marca"
+    },
+    "marken": {
+      "es": "marca",
+      "lemma": "marka"
     },
     "marradun": {
       "es": "de rayas"
@@ -5650,6 +6907,21 @@
       "es": "barato",
       "lemma": "merke"
     },
+    "merkealdi": {
+      "es": "rebajas"
+    },
+    "merkealdia": {
+      "es": "rebajas",
+      "lemma": "merkealdi"
+    },
+    "merkealdietan": {
+      "es": "rebajas",
+      "lemma": "merkealdi"
+    },
+    "merkealdietara": {
+      "es": "rebajas",
+      "lemma": "merkealdi"
+    },
     "merkeena": {
       "es": "barato",
       "lemma": "merke"
@@ -5696,6 +6968,13 @@
       "es": "dolor",
       "lemma": "min"
     },
+    "modu": {
+      "es": "manera; forma"
+    },
+    "modua": {
+      "es": "manera; forma",
+      "lemma": "modu"
+    },
     "moduz": {
       "es": "qué tal (zer moduz)"
     },
@@ -5718,6 +6997,21 @@
       "es": "corto",
       "lemma": "motz"
     },
+    "mozorro": {
+      "es": "disfraz"
+    },
+    "mozorroa": {
+      "es": "disfraz",
+      "lemma": "mozorro"
+    },
+    "mozorroak": {
+      "es": "disfraz",
+      "lemma": "mozorro"
+    },
+    "mozorrotuta": {
+      "es": "disfraz",
+      "lemma": "mozorro"
+    },
     "moztu": {
       "es": "cortar"
     },
@@ -5732,6 +7026,14 @@
     "mugikor": {
       "es": "móvil (teléfono)"
     },
+    "mugikorra": {
+      "es": "móvil (teléfono)",
+      "lemma": "mugikor"
+    },
+    "mugikorrak": {
+      "es": "móvil (teléfono)",
+      "lemma": "mugikor"
+    },
     "mugikorrez": {
       "es": "móvil (teléfono)",
       "lemma": "mugikor"
@@ -5744,6 +7046,10 @@
       "lemma": "museo"
     },
     "museoak": {
+      "es": "museo",
+      "lemma": "museo"
+    },
+    "museoan": {
       "es": "museo",
       "lemma": "museo"
     },
@@ -5804,6 +7110,10 @@
       "es": "jefe; jefa",
       "lemma": "nagusi"
     },
+    "nagusien": {
+      "es": "jefe; jefa",
+      "lemma": "nagusi"
+    },
     "nahastu": {
       "es": "mezclar"
     },
@@ -5817,6 +7127,9 @@
     },
     "nahiko": {
       "es": "bastante (suficiente)"
+    },
+    "nahiz eta": {
+      "es": "aunque"
     },
     "naiz": {
       "es": "soy / estoy",
@@ -5844,6 +7157,13 @@
       "es": "hermano (de una chica)",
       "lemma": "neba"
     },
+    "negar": {
+      "es": "llorar",
+      "lemma": "negar egin"
+    },
+    "negar egin": {
+      "es": "llorar"
+    },
     "negu": {
       "es": "invierno"
     },
@@ -5864,6 +7184,10 @@
     },
     "neska": {
       "es": "chica"
+    },
+    "neskak": {
+      "es": "chica",
+      "lemma": "neska"
     },
     "neskaren": {
       "es": "chica",
@@ -6032,8 +7356,18 @@
       "es": "acostándose (oheratu)",
       "lemma": "oheratu"
     },
+    "ohitu": {
+      "es": "acostumbrarse"
+    },
     "ohitura": {
       "es": "costumbre; hábito"
+    },
+    "oilar": {
+      "es": "gallo"
+    },
+    "oilarra": {
+      "es": "gallo",
+      "lemma": "oilar"
     },
     "oilasko": {
       "es": "pollo"
@@ -6041,6 +7375,17 @@
     "oilaskoa": {
       "es": "pollo",
       "lemma": "oilasko"
+    },
+    "oilo": {
+      "es": "gallina"
+    },
+    "oiloak": {
+      "es": "gallina",
+      "lemma": "oilo"
+    },
+    "oiloek": {
+      "es": "gallina",
+      "lemma": "oilo"
     },
     "oin": {
       "es": "pie"
@@ -6055,6 +7400,9 @@
     },
     "oinez": {
       "es": "a pie"
+    },
+    "oker": {
+      "es": "equivocado; error"
     },
     "okindegi": {
       "es": "panadería"
@@ -6127,8 +7475,22 @@
     "orain": {
       "es": "ahora"
     },
+    "oraindik": {
+      "es": "ahora",
+      "lemma": "orain"
+    },
+    "ordainagiri": {
+      "es": "recibo; tique"
+    },
+    "ordainagiria": {
+      "es": "recibo; tique",
+      "lemma": "ordainagiri"
+    },
     "ordaindu": {
       "es": "pagar"
+    },
+    "ordea": {
+      "es": "sin embargo"
     },
     "ordenagailu": {
       "es": "ordenador"
@@ -6196,6 +7558,9 @@
       "es": "tío",
       "lemma": "osaba"
     },
+    "osasun": {
+      "es": "salud"
+    },
     "osasun-etxe": {
       "es": "centro de salud"
     },
@@ -6210,6 +7575,10 @@
     "osasun-etxera": {
       "es": "centro de salud",
       "lemma": "osasun-etxe"
+    },
+    "osasuna": {
+      "es": "salud",
+      "lemma": "osasun"
     },
     "osasuntsu": {
       "es": "sano"
@@ -6294,6 +7663,10 @@
       "es": "viernes",
       "lemma": "ostiral"
     },
+    "ostiralero": {
+      "es": "viernes",
+      "lemma": "ostiral"
+    },
     "ostiraletan": {
       "es": "viernes",
       "lemma": "ostiral"
@@ -6308,6 +7681,9 @@
     "otsailean": {
       "es": "febrero",
       "lemma": "otsail"
+    },
+    "paisaia": {
+      "es": "paisaje"
     },
     "panpina": {
       "es": "muñeca (juguete)"
@@ -6566,6 +7942,10 @@
       "es": "buzón",
       "lemma": "postontzi"
     },
+    "pozago": {
+      "es": "contento",
+      "lemma": "pozik"
+    },
     "pozik": {
       "es": "contento"
     },
@@ -6595,6 +7975,10 @@
       "es": "precio",
       "lemma": "prezio"
     },
+    "prezioak": {
+      "es": "precio",
+      "lemma": "prezio"
+    },
     "primeran": {
       "es": "estupendamente"
     },
@@ -6604,6 +7988,24 @@
     "probatzea": {
       "es": "probar(se)",
       "lemma": "probatu"
+    },
+    "produktu": {
+      "es": "producto"
+    },
+    "produktua": {
+      "es": "producto",
+      "lemma": "produktu"
+    },
+    "produktuak": {
+      "es": "producto",
+      "lemma": "produktu"
+    },
+    "proiektu": {
+      "es": "proyecto"
+    },
+    "proiektuaren": {
+      "es": "proyecto",
+      "lemma": "proiektu"
     },
     "proposamen": {
       "es": "propuesta"
@@ -6649,6 +8051,17 @@
       "es": "manzana",
       "lemma": "sagar"
     },
+    "saiatu": {
+      "es": "intentar"
+    },
+    "saiatuko": {
+      "es": "intentar",
+      "lemma": "saiatu"
+    },
+    "saiatzen": {
+      "es": "intentar",
+      "lemma": "saiatu"
+    },
     "sal": {
       "es": "vender",
       "lemma": "saldu"
@@ -6674,10 +8087,28 @@
     "sarbide": {
       "es": "acceso"
     },
+    "sare": {
+      "es": "red"
+    },
+    "sarean": {
+      "es": "red",
+      "lemma": "sare"
+    },
+    "sarritan": {
+      "es": "a menudo"
+    },
     "sartu": {
       "es": "entrar; meter"
     },
     "sartuko": {
+      "es": "entrar; meter",
+      "lemma": "sartu"
+    },
+    "sartzeko": {
+      "es": "entrar; meter",
+      "lemma": "sartu"
+    },
+    "sartzen": {
       "es": "entrar; meter",
       "lemma": "sartu"
     },
@@ -6705,6 +8136,9 @@
     "seguruagoa": {
       "es": "seguro",
       "lemma": "seguru"
+    },
+    "seguruenik": {
+      "es": "seguramente"
     },
     "sei": {
       "es": "seis"
@@ -6734,6 +8168,9 @@
     "seinaleak": {
       "es": "señal",
       "lemma": "seinale"
+    },
+    "sekula": {
+      "es": "nunca (sekula ez)"
     },
     "seme": {
       "es": "hijo"
@@ -6791,6 +8228,16 @@
       "es": "fuerte; robusto",
       "lemma": "sendo"
     },
+    "senide": {
+      "es": "pariente"
+    },
+    "sentitu": {
+      "es": "sentir"
+    },
+    "sentitzen": {
+      "es": "sentir",
+      "lemma": "sentitu"
+    },
     "serio": {
       "es": "serio"
     },
@@ -6798,8 +8245,19 @@
       "es": "serio",
       "lemma": "serio"
     },
+    "sinesten": {
+      "es": "creer",
+      "lemma": "sinetsi"
+    },
+    "sinetsi": {
+      "es": "creer"
+    },
     "sofa": {
       "es": "sofá"
+    },
+    "sofan": {
+      "es": "sofá",
+      "lemma": "sofa"
     },
     "soineko": {
       "es": "vestido"
@@ -6828,6 +8286,17 @@
     "sudurra": {
       "es": "nariz",
       "lemma": "sudur"
+    },
+    "suhiltzaile": {
+      "es": "bombero; bombera"
+    },
+    "suhiltzailea": {
+      "es": "bombero; bombera",
+      "lemma": "suhiltzaile"
+    },
+    "suhiltzaileek": {
+      "es": "bombero; bombera",
+      "lemma": "suhiltzaile"
     },
     "sukaldari": {
       "es": "cocinero; cocinera"
@@ -6888,6 +8357,9 @@
       "es": "supermercado",
       "lemma": "supermerkatu"
     },
+    "susmo": {
+      "es": "sospecha"
+    },
     "taberna": {
       "es": "bar"
     },
@@ -6912,6 +8384,9 @@
     },
     "tamaina": {
       "es": "tamaño"
+    },
+    "tarta": {
+      "es": "tarta"
     },
     "te": {
       "es": "té"
@@ -7000,6 +8475,24 @@
       "es": "turista",
       "lemma": "turista"
     },
+    "txakur": {
+      "es": "perro; perra"
+    },
+    "txakurra": {
+      "es": "perro; perra",
+      "lemma": "txakur"
+    },
+    "txakurrak": {
+      "es": "perro; perra",
+      "lemma": "txakur"
+    },
+    "txakurrarekin": {
+      "es": "perro; perra",
+      "lemma": "txakur"
+    },
+    "txanda": {
+      "es": "turno"
+    },
     "txango": {
       "es": "excursión"
     },
@@ -7040,6 +8533,13 @@
       "es": "tarjeta",
       "lemma": "txartel"
     },
+    "txartelaz": {
+      "es": "tarjeta",
+      "lemma": "txartel"
+    },
+    "txerri": {
+      "es": "cerdo"
+    },
     "txiki": {
       "es": "pequeño"
     },
@@ -7069,6 +8569,17 @@
     "txirrindularitza": {
       "es": "ciclismo"
     },
+    "txori": {
+      "es": "pájaro"
+    },
+    "txoriak": {
+      "es": "pájaro",
+      "lemma": "txori"
+    },
+    "txoriek": {
+      "es": "pájaro",
+      "lemma": "txori"
+    },
     "uda": {
       "es": "verano"
     },
@@ -7094,6 +8605,17 @@
       "es": "ayuntamiento",
       "lemma": "udaletxe"
     },
+    "udaltzain": {
+      "es": "policía municipal"
+    },
+    "udaltzainak": {
+      "es": "policía municipal",
+      "lemma": "udaltzain"
+    },
+    "udaltzainek": {
+      "es": "policía municipal",
+      "lemma": "udaltzain"
+    },
     "udan": {
       "es": "verano",
       "lemma": "uda"
@@ -7104,6 +8626,13 @@
     "udazkenean": {
       "es": "otoño",
       "lemma": "udazken"
+    },
+    "uharte": {
+      "es": "isla"
+    },
+    "uhartean": {
+      "es": "isla",
+      "lemma": "uharte"
     },
     "ulertu": {
       "es": "entender"
@@ -7153,6 +8682,16 @@
     "umezain": {
       "es": "niñero; niñera"
     },
+    "une": {
+      "es": "momento"
+    },
+    "untxi": {
+      "es": "conejo"
+    },
+    "untxiak": {
+      "es": "conejo",
+      "lemma": "untxi"
+    },
     "ur": {
       "es": "agua"
     },
@@ -7185,6 +8724,10 @@
     "urduria": {
       "es": "nervioso",
       "lemma": "urduri"
+    },
+    "uretan": {
+      "es": "agua",
+      "lemma": "ur"
     },
     "ureztatu": {
       "es": "regar"
@@ -7236,6 +8779,10 @@
       "es": "año",
       "lemma": "urte"
     },
+    "urtebete": {
+      "es": "año",
+      "lemma": "urte"
+    },
     "urtebetetze": {
       "es": "cumpleaños"
     },
@@ -7247,11 +8794,23 @@
       "es": "año",
       "lemma": "urte"
     },
+    "urtekoa": {
+      "es": "año",
+      "lemma": "urte"
+    },
     "urtera": {
       "es": "año",
       "lemma": "urte"
     },
     "urterako": {
+      "es": "año",
+      "lemma": "urte"
+    },
+    "urtero": {
+      "es": "año",
+      "lemma": "urte"
+    },
+    "urtetik": {
       "es": "año",
       "lemma": "urte"
     },
@@ -7270,12 +8829,30 @@
       "es": "en opinión (nire ustez: en mi opinión)",
       "lemma": "uste izan"
     },
+    "utzi": {
+      "es": "dejar"
+    },
     "uztail": {
       "es": "julio"
     },
     "uztailean": {
       "es": "julio",
       "lemma": "uztail"
+    },
+    "uzteak": {
+      "es": "dejar",
+      "lemma": "utzi"
+    },
+    "uzten": {
+      "es": "dejar",
+      "lemma": "utzi"
+    },
+    "xanpu": {
+      "es": "champú"
+    },
+    "xanpua": {
+      "es": "champú",
+      "lemma": "xanpu"
     },
     "zabal": {
       "es": "amplio; ancho"
@@ -7310,6 +8887,14 @@
       "es": "viejo; mayor",
       "lemma": "zahar"
     },
+    "zaharrago": {
+      "es": "viejo; mayor",
+      "lemma": "zahar"
+    },
+    "zaharragoa": {
+      "es": "viejo; mayor",
+      "lemma": "zahar"
+    },
     "zaharrak": {
       "es": "viejo; mayor",
       "lemma": "zahar"
@@ -7320,6 +8905,13 @@
     },
     "zahartu": {
       "es": "envejecer"
+    },
+    "zahartzaro": {
+      "es": "vejez"
+    },
+    "zahartzaroan": {
+      "es": "vejez",
+      "lemma": "zahartzaro"
     },
     "zaidalako": {
       "es": "porque me (gusta)",
@@ -7433,6 +9025,20 @@
       "es": "papelera; cubo de basura",
       "lemma": "zakarrontzi"
     },
+    "zalantza": {
+      "es": "duda"
+    },
+    "zaldi": {
+      "es": "caballo"
+    },
+    "zaldia": {
+      "es": "caballo",
+      "lemma": "zaldi"
+    },
+    "zaldiak": {
+      "es": "caballo",
+      "lemma": "zaldi"
+    },
     "zaletasun": {
       "es": "afición"
     },
@@ -7516,6 +9122,10 @@
       "es": "estar",
       "lemma": "egon"
     },
+    "zaudenik": {
+      "es": "estar",
+      "lemma": "egon"
+    },
     "zaudete": {
       "es": "estáis",
       "lemma": "egon"
@@ -7564,6 +9174,10 @@
     "zenbat": {
       "es": "cuánto"
     },
+    "zenbatean": {
+      "es": "cuánto",
+      "lemma": "zenbat"
+    },
     "zenbatek": {
       "es": "cuánto",
       "lemma": "zenbat"
@@ -7602,6 +9216,10 @@
       "es": "qué",
       "lemma": "zer"
     },
+    "zeraman": {
+      "es": "qué",
+      "lemma": "zer"
+    },
     "zerbitzari": {
       "es": "camarero; camarera"
     },
@@ -7611,6 +9229,9 @@
     "zerbitzuak": {
       "es": "servicio",
       "lemma": "zerbitzu"
+    },
+    "zeregin": {
+      "es": "tarea; quehacer"
     },
     "zerezkoa": {
       "es": "qué",
@@ -7634,6 +9255,10 @@
       "es": "qué",
       "lemma": "zer"
     },
+    "zertaz": {
+      "es": "qué",
+      "lemma": "zer"
+    },
     "zeuden": {
       "es": "estar",
       "lemma": "egon"
@@ -7653,6 +9278,9 @@
     "zeuzkan": {
       "es": "tener",
       "lemma": "eduki"
+    },
+    "zigortu": {
+      "es": "castigar"
     },
     "zikin": {
       "es": "sucio"
@@ -7754,6 +9382,9 @@
       "es": "gustar",
       "lemma": "gustatu"
     },
+    "ziur": {
+      "es": "seguro (convencido)"
+    },
     "zoaz": {
       "es": "vas",
       "lemma": "joan"
@@ -7767,6 +9398,16 @@
     },
     "zorionak": {
       "es": "felicidades"
+    },
+    "zoriontsu": {
+      "es": "feliz"
+    },
+    "zoriontsua": {
+      "es": "feliz",
+      "lemma": "zoriontsu"
+    },
+    "zorte": {
+      "es": "suerte"
     },
     "zortzi": {
       "es": "ocho"
@@ -7786,6 +9427,9 @@
     "zortzietatik": {
       "es": "ocho",
       "lemma": "zortzi"
+    },
+    "zoru": {
+      "es": "suelo"
     },
     "zu": {
       "es": "tú; usted"
@@ -7865,8 +9509,29 @@
       "es": "blanco",
       "lemma": "zuri"
     },
+    "zurrumurru": {
+      "es": "rumor"
+    },
+    "zurrumurrua": {
+      "es": "rumor",
+      "lemma": "zurrumurru"
+    },
+    "zurrumurruak": {
+      "es": "rumor",
+      "lemma": "zurrumurru"
+    },
+    "zuten": {
+      "es": "(ellos) tenían · auxiliar pasado",
+      "lemma": "ukan"
+    },
+    "zutik": {
+      "es": "de pie"
+    },
     "zuzen": {
       "es": "recto"
+    },
+    "zuzenean": {
+      "es": "directamente"
     }
   }
 }

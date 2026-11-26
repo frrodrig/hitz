@@ -5,8 +5,8 @@ Lan-koadernoa* (workbook), and *Arian A2.1 · Ikaslearen liburua* for the A2.1 p
 grammar points and lexical fields are taken from the books. No text, dialogue, exercise, word list
 or image from them goes into the app: all content is written from scratch for each goal.
 
-> Status: A1 units written (M7), pending native review. A2.1 mapped (sections 5–6), lessons not
-> written yet. Language doubts are flagged with `TODO(revisión-nativa)`.
+> Status: A1 (sections 1–4) and the A2.1 textbook (sections 5–6, level A2 in the app) written;
+> no native review yet. Language doubts are flagged with `TODO(revisión-nativa)`.
 
 ## 1. Structure
 
@@ -967,7 +967,8 @@ was not available (only the answer key), so grammar is taken from the student's 
 The same rule applies as in A1: only unit order, goals, grammar points and lexical fields are taken
 from the book; every text, dialogue and exercise is written from scratch.
 
-> Status: syllabus map for review (phase 1). No lessons are written yet.
+> Status: sections 5 and 6 written (units 13.1–18.2). In the app both are level A2; A2.2 will
+> follow when its textbook is available.
 
 Each grammar point is tagged:
 
@@ -1496,6 +1497,8 @@ Each grammar point is tagged:
 | isun | multa | noun |  |
 | kalte | daño | noun |  |
 | aukera | oportunidad; opción | noun |  |
+
+**Function words and survival phrases (not counted towards the limit):** ahal izan (poder)
 <!-- vocab:17.2:end -->
 
 ### Textbook A2.1 · 6 Diruaren hotsa → Units 18.1 and 18.2
@@ -1596,7 +1599,7 @@ Each grammar point is tagged:
 | aztertu | analizar; examinar | verb |  |
 | berritu | renovar | verb |  |
 
-**Function words and survival phrases (not counted towards the limit):** baizik (sino), adina (tanto como)
+**Function words and survival phrases (not counted towards the limit):** baizik (sino), adina (tanto como), gehiegi (demasiado)
 <!-- vocab:18.2:end -->
 
 
